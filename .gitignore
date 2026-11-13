@@ -1,0 +1,4 @@
+ceres-solver/build/
+*.gcda
+*.gcno
+__pycache__/
