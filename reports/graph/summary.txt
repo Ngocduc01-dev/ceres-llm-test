@@ -1,0 +1,65 @@
+Code graph – Ceres 2.2.0
+Translation unit đã parse: 292 (lỗi: 0)
+Node: {'class': 1363, 'file': 480, 'function': 9065}
+Cạnh: {'CALLS': 6696, 'DEFINED_IN': 6016, 'INCLUDES': 1326, 'INHERITS': 388, 'MEMBER_OF': 4118, 'USES_TYPE': 4751}
+
+UNIT trong phạm vi (hàm/method có thân, không phải test/generated): 1540
+  theo loại: {'CONSTRUCTOR': 177, 'CXX_METHOD': 871, 'DESTRUCTOR': 75, 'FUNCTION_DECL': 205, 'FUNCTION_TEMPLATE': 212}
+  tổng số nhánh ước lượng từ AST (2 × điểm quyết định): 5754
+  unit không có nhánh nào (chỉ cần gọi 1 lần là phủ hết): 846
+  unit linkage nội bộ (static / anonymous namespace): 80
+  unit private/protected: 140
+  unit được test có sẵn gọi trực tiếp: 372
+  unit lá (level 0, không gọi hàm Ceres khác): 974; level cao nhất: 9
+  số unit theo level: {0: 974, 1: 264, 2: 141, 3: 82, 4: 36, 5: 20, 6: 12, 7: 4, 8: 4, 9: 3}
+  chu trình gọi (đệ quy / gọi vòng): 2, lớn nhất 4 hàm
+Lời gọi ra thư viện ngoài (Eigen, std, glog...): 44182
+Lời gọi không resolve được (template phụ thuộc kiểu...): 6922
+
+Top 15 hàm được gọi nhiều nhất (fan-in):
+    39  ceres::internal::StringPrintf  (internal/ceres/stringprintf.cc)
+    29  ceres::internal::ResidualBlock::NumParameterBlocks  (internal/ceres/residual_block.h)
+    28  ceres::internal::BlockSparseMatrix::block_structure  (internal/ceres/block_sparse_matrix.cc)
+    26  ceres::internal::ResidualBlock::parameter_blocks  (internal/ceres/residual_block.h)
+    24  ceres::internal::BlockSparseMatrix::values  (internal/ceres/block_sparse_matrix.h)
+    24  ceres::internal::ParameterBlock::IsConstant  (internal/ceres/parameter_block.h)
+    21  ceres::internal::ParameterBlock::Size  (internal/ceres/parameter_block.h)
+    19  ceres::internal::ParameterBlock::TangentSize  (internal/ceres/parameter_block.h)
+    17  ceres::CostFunction::parameter_block_sizes  (include/ceres/cost_function.h)
+    17  ceres::internal::ResidualBlock::NumResiduals  (internal/ceres/residual_block.h)
+    17  ceres::UpperCase  (internal/ceres/types.cc)
+    16  ceres::internal::WallTimeInSeconds  (internal/ceres/wall_time.cc)
+    16  ceres::internal::Program::residual_blocks  (internal/ceres/program.cc)
+    15  ceres::CostFunction::num_residuals  (include/ceres/cost_function.h)
+    15  ceres::internal::BlockSparseMatrix::mutable_values  (internal/ceres/block_sparse_matrix.h)
+
+Top 15 hàm phức tạp nhất (cyclomatic):
+  cc=  53 nhánh≈ 104  ceres::internal::LineSearchMinimizer::Minimize  (internal/ceres/line_search_minimizer.cc:85)
+  cc=  44 nhánh≈  86  ceres::Solver::Summary::FullReport  (internal/ceres/solver.cc:852)
+  cc=  38 nhánh≈  74  ceres::internal::MatrixMatrixMultiplyNaive  (internal/ceres/small_blas.h:177)
+  cc=  38 nhánh≈  74  ceres::internal::MatrixTransposeMatrixMultiplyNaive  (internal/ceres/small_blas.h:280)
+  cc=  31 nhánh≈  60  ceres::internal::WolfeLineSearch::BracketingPhase  (internal/ceres/line_search.cc:499)
+  cc=  27 nhánh≈  52  ceres::internal::DetectStructure  (internal/ceres/detect_structure.cc:38)
+  cc=  26 nhánh≈  50  ceres::internal::ProgramEvaluator::Evaluate  (internal/ceres/program_evaluator.h:134)
+  cc=  26 nhánh≈  50  ceres::(anonymous)::TrustRegionOptionsAreValid  (internal/ceres/solver.cc:389)
+  cc=  25 nhánh≈  48  ceres::internal::CompressedRowSparseMatrix::CreateRandomMatrix  (internal/ceres/compressed_row_sparse_matrix.cc:640)
+  cc=  25 nhánh≈  48  ceres::internal::WolfeLineSearch::ZoomPhase  (internal/ceres/line_search.cc:698)
+  cc=  23 nhánh≈  44  ceres::DynamicAutoDiffCostFunction::Evaluate  (include/ceres/dynamic_autodiff_cost_function.h:101)
+  cc=  22 nhánh≈  42  ceres::internal::ResidualBlock::Evaluate  (internal/ceres/residual_block.cc:68)
+  cc=  20 nhánh≈  38  ceres::internal::MatrixVectorMultiply  (internal/ceres/small_blas.h:384)
+  cc=  20 nhánh≈  38  ceres::internal::MatrixTransposeVectorMultiply  (internal/ceres/small_blas.h:470)
+  cc=  20 nhánh≈  38  ceres::internal::ProblemImpl::Evaluate  (internal/ceres/problem_impl.cc:585)
+
+Top 10 hàm gọi nhiều hàm khác nhất (fan-out):
+    26  ceres::Solver::Solve  (internal/ceres/solver.cc)
+    26  ceres::internal::CreateGradientCheckingProblemImpl  (internal/ceres/gradient_checking_cost_function.cc)
+    24  ceres::internal::ProblemImpl::Evaluate  (internal/ceres/problem_impl.cc)
+    23  ceres::internal::LineSearchMinimizer::Minimize  (internal/ceres/line_search_minimizer.cc)
+    21  ceres::internal::IterativeSchurComplementSolver::SolveImpl  (internal/ceres/iterative_schur_complement_solver.cc)
+    21  ceres::internal::ResidualBlock::Evaluate  (internal/ceres/residual_block.cc)
+    18  ceres::Solver::Summary::FullReport  (internal/ceres/solver.cc)
+    18  ceres::internal::ProgramEvaluator::Evaluate  (internal/ceres/program_evaluator.h)
+    17  ceres::internal::CoordinateDescentMinimizer::Minimize  (internal/ceres/coordinate_descent_minimizer.cc)
+    16  ceres::internal::CompressedRowJacobianWriter::CreateJacobian  (internal/ceres/compressed_row_jacobian_writer.cc)
+
+Thời gian: 503s

@@ -1,0 +1,367 @@
+== 1/3 Dựng code graph (data/graph.db)
+[1/292] internal/ceres/accelerate_sparse.cc: 0 node, 0 cạnh, 0.0s
+[2/292] internal/ceres/array_selector_test.cc: 143 node, 187 cạnh, 4.6s
+[3/292] internal/ceres/array_utils.cc: 48 node, 6 cạnh, 1.5s
+[4/292] internal/ceres/array_utils_test.cc: 45 node, 47 cạnh, 3.3s
+[5/292] internal/ceres/autodiff_cost_function_test.cc: 345 node, 541 cạnh, 6.4s
+[6/292] internal/ceres/autodiff_first_order_function_test.cc: 107 node, 77 cạnh, 5.6s
+[7/292] internal/ceres/block_evaluate_preparer.cc: 323 node, 321 cạnh, 5.6s
+[8/292] internal/ceres/block_jacobi_preconditioner.cc: 351 node, 271 cạnh, 7.5s
+[9/292] internal/ceres/autodiff_manifold_test.cc: 511 node, 831 cạnh, 12.0s
+[10/292] internal/ceres/autodiff_test.cc: 206 node, 198 cạnh, 6.5s
+[11/292] internal/ceres/block_jacobi_preconditioner_test.cc: 390 node, 355 cạnh, 7.5s
+[12/292] internal/ceres/block_jacobian_writer.cc: 334 node, 250 cạnh, 4.1s
+[13/292] internal/ceres/block_random_access_dense_matrix.cc: 62 node, 49 cạnh, 3.0s
+[14/292] internal/ceres/block_random_access_dense_matrix_test.cc: 65 node, 48 cạnh, 4.4s
+[15/292] internal/ceres/block_random_access_matrix.cc: 8 node, 5 cạnh, 0.3s
+[16/292] internal/ceres/block_random_access_sparse_matrix.cc: 241 node, 117 cạnh, 4.6s
+[17/292] internal/ceres/block_random_access_sparse_matrix_test.cc: 205 node, 97 cạnh, 5.4s
+[18/292] internal/ceres/block_sparse_matrix.cc: 223 node, 215 cạnh, 4.6s
+[19/292] internal/ceres/block_random_access_diagonal_matrix.cc: 199 node, 179 cạnh, 6.0s
+[20/292] internal/ceres/block_random_access_diagonal_matrix_test.cc: 164 node, 66 cạnh, 7.5s
+[21/292] internal/ceres/block_sparse_matrix_test.cc: 364 node, 322 cạnh, 8.2s
+[22/292] internal/ceres/block_structure.cc: 9 node, 11 cạnh, 1.4s
+[23/292] internal/ceres/callbacks.cc: 93 node, 44 cạnh, 1.7s
+[24/292] internal/ceres/canonical_views_clustering.cc: 87 node, 93 cạnh, 1.6s
+[25/292] internal/ceres/c_api.cc: 188 node, 148 cạnh, 2.4s
+[26/292] internal/ceres/c_api_test.cc: 33 node, 34 cạnh, 2.6s
+[27/292] internal/ceres/compressed_col_sparse_matrix_utils.cc: 15 node, 13 cạnh, 1.4s
+[28/292] internal/ceres/compressed_col_sparse_matrix_utils_test.cc: 164 node, 106 cạnh, 4.6s
+[29/292] internal/ceres/canonical_views_clustering_test.cc: 108 node, 99 cạnh, 3.1s
+[30/292] internal/ceres/cgnr_solver.cc: 329 node, 163 cạnh, 4.9s
+[31/292] internal/ceres/compressed_row_jacobian_writer.cc: 252 node, 113 cạnh, 4.6s
+[32/292] internal/ceres/compressed_row_sparse_matrix.cc: 185 node, 159 cạnh, 3.2s
+[33/292] internal/ceres/conditioned_cost_function.cc: 58 node, 25 cạnh, 2.4s
+[34/292] internal/ceres/conditioned_cost_function_test.cc: 76 node, 47 cạnh, 3.9s
+[35/292] internal/ceres/conjugate_gradients_solver_test.cc: 360 node, 271 cạnh, 6.1s
+[36/292] internal/ceres/context.cc: 24 node, 16 cạnh, 2.0s
+[37/292] internal/ceres/compressed_row_sparse_matrix_test.cc: 306 node, 323 cạnh, 6.8s
+[38/292] internal/ceres/concurrent_queue_test.cc: 56 node, 80 cạnh, 4.0s
+[39/292] internal/ceres/context_impl.cc: 33 node, 16 cạnh, 1.7s
+[40/292] internal/ceres/coordinate_descent_minimizer.cc: 522 node, 235 cạnh, 5.6s
+[41/292] internal/ceres/corrector.cc: 8 node, 11 cạnh, 2.8s
+[42/292] internal/ceres/corrector_test.cc: 61 node, 82 cạnh, 6.7s
+[43/292] internal/ceres/cost_function.cc: 6 node, 7 cạnh, 0.5s
+[44/292] internal/ceres/cost_function_to_functor_test.cc: 300 node, 373 cạnh, 9.4s
+[45/292] internal/ceres/cuda_block_sparse_crs_view.cc: 0 node, 0 cạnh, 0.0s
+[46/292] internal/ceres/cuda_block_sparse_crs_view_test.cc: 0 node, 0 cạnh, 3.0s
+[47/292] internal/ceres/cuda_block_structure.cc: 0 node, 0 cạnh, 0.0s
+[48/292] internal/ceres/cuda_block_structure_test.cc: 0 node, 0 cạnh, 0.0s
+[49/292] internal/ceres/covariance_test.cc: 658 node, 823 cạnh, 6.3s
+[50/292] internal/ceres/cubic_interpolation_test.cc: 272 node, 360 cạnh, 7.0s
+[51/292] internal/ceres/cuda_dense_cholesky_test.cc: 260 node, 106 cạnh, 4.8s
+[52/292] internal/ceres/cuda_dense_qr_test.cc: 231 node, 41 cạnh, 5.0s
+[53/292] internal/ceres/cuda_kernels_vector_ops_test.cc: 25 node, 6 cạnh, 4.5s
+[54/292] internal/ceres/cuda_partitioned_block_sparse_crs_view.cc: 0 node, 0 cạnh, 0.0s
+[55/292] internal/ceres/cuda_partitioned_block_sparse_crs_view_test.cc: 0 node, 0 cạnh, 3.2s
+[56/292] internal/ceres/cuda_sparse_matrix.cc: 165 node, 23 cạnh, 3.2s
+[57/292] internal/ceres/cuda_sparse_matrix_test.cc: 195 node, 27 cạnh, 4.3s
+[58/292] internal/ceres/cuda_streamed_buffer_test.cc: 0 node, 0 cạnh, 0.0s
+[59/292] internal/ceres/covariance.cc: 205 node, 65 cạnh, 3.2s
+[60/292] internal/ceres/covariance_impl.cc: 321 node, 160 cạnh, 25.4s
+[61/292] internal/ceres/cuda_vector.cc: 63 node, 5 cạnh, 1.7s
+[62/292] internal/ceres/cuda_vector_test.cc: 64 node, 6 cạnh, 3.8s
+[63/292] internal/ceres/dense_linear_solver_test.cc: 246 node, 77 cạnh, 6.4s
+[64/292] internal/ceres/dense_normal_cholesky_solver.cc: 246 node, 71 cạnh, 4.1s
+[65/292] internal/ceres/dense_qr.cc: 231 node, 62 cạnh, 8.5s
+[66/292] internal/ceres/dense_qr_solver.cc: 240 node, 67 cạnh, 3.3s
+[67/292] internal/ceres/dense_cholesky.cc: 250 node, 94 cạnh, 7.5s
+[68/292] internal/ceres/dense_cholesky_test.cc: 297 node, 154 cạnh, 8.3s
+[69/292] internal/ceres/dense_qr_test.cc: 244 node, 72 cạnh, 5.8s
+[70/292] internal/ceres/dense_sparse_matrix.cc: 115 node, 67 cạnh, 3.2s
+[71/292] internal/ceres/dense_sparse_matrix_test.cc: 167 node, 84 cạnh, 4.7s
+[72/292] internal/ceres/detect_structure.cc: 11 node, 8 cạnh, 2.3s
+[73/292] internal/ceres/dynamic_compressed_row_jacobian_writer.cc: 295 node, 217 cạnh, 3.8s
+[74/292] internal/ceres/dynamic_compressed_row_sparse_matrix.cc: 106 node, 36 cạnh, 3.0s
+[75/292] internal/ceres/detect_structure_test.cc: 50 node, 60 cạnh, 3.6s
+[76/292] internal/ceres/dogleg_strategy.cc: 283 node, 151 cạnh, 10.8s
+[77/292] internal/ceres/dogleg_strategy_test.cc: 325 node, 198 cạnh, 6.4s
+[78/292] internal/ceres/dynamic_autodiff_cost_function_test.cc: 236 node, 272 cạnh, 5.4s
+[79/292] internal/ceres/dynamic_compressed_row_sparse_matrix_test.cc: 184 node, 102 cạnh, 4.1s
+[80/292] internal/ceres/dynamic_numeric_diff_cost_function_test.cc: 149 node, 146 cạnh, 4.9s
+[81/292] internal/ceres/dynamic_sparse_normal_cholesky_solver.cc: 241 node, 91 cạnh, 4.1s
+[82/292] internal/ceres/dynamic_sparse_normal_cholesky_solver_test.cc: 251 node, 80 cạnh, 6.3s
+[83/292] internal/ceres/dynamic_sparsity_test.cc: 425 node, 482 cạnh, 5.8s
+[84/292] internal/ceres/eigensparse.cc: 262 node, 84 cạnh, 4.8s
+[85/292] internal/ceres/evaluation_callback.cc: 3 node, 4 cạnh, 0.0s
+[86/292] internal/ceres/evaluation_callback_test.cc: 382 node, 316 cạnh, 5.0s
+[87/292] internal/ceres/file.cc: 3 node, 3 cạnh, 1.0s
+[88/292] internal/ceres/first_order_function.cc: 4 node, 4 cạnh, 0.0s
+[89/292] internal/ceres/evaluator.cc: 310 node, 192 cạnh, 4.6s
+[90/292] internal/ceres/evaluator_test.cc: 384 node, 318 cạnh, 4.5s
+[91/292] internal/ceres/evaluator_test_utils.cc: 3 node, 3 cạnh, 4.1s
+[92/292] internal/ceres/fake_bundle_adjustment_jacobian.cc: 281 node, 78 cạnh, 4.3s
+[93/292] internal/ceres/fixed_array_test.cc: 399 node, 481 cạnh, 5.7s
+[94/292] internal/ceres/float_suitesparse.cc: 235 node, 41 cạnh, 3.5s
+[95/292] internal/ceres/function_sample.cc: 12 node, 15 cạnh, 2.5s
+[96/292] internal/ceres/generated/partitioned_matrix_view_d_d_d.cc: 288 node, 196 cạnh, 4.5s
+[97/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_auto_threads_test.cc: 240 node, 163 cạnh, 4.6s
+[98/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_user_test.cc: 211 node, 82 cạnh, 4.7s
+[99/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_user_threads_test.cc: 243 node, 203 cạnh, 4.5s
+[100/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_auto_test.cc: 224 node, 99 cạnh, 4.8s
+[101/292] internal/ceres/generated/schur_eliminator_d_d_d.cc: 291 node, 206 cạnh, 13.2s
+[102/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_cuda_auto_test.cc: 243 node, 203 cạnh, 5.4s
+[103/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_auto_threads_test.cc: 224 node, 99 cạnh, 4.5s
+[104/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_user_test.cc: 224 node, 99 cạnh, 5.5s
+[105/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_eigen_user_threads_test.cc: 224 node, 99 cạnh, 5.3s
+[106/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_auto_test.cc: 211 node, 82 cạnh, 5.2s
+[107/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_auto_threads_test.cc: 211 node, 82 cạnh, 5.2s
+[108/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_user_test.cc: 211 node, 82 cạnh, 6.8s
+[109/292] internal/ceres/generated_bundle_adjustment_tests/ba_denseschur_lapack_user_threads_test.cc: 211 node, 82 cạnh, 6.2s
+[110/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_auto_test.cc: 211 node, 82 cạnh, 5.9s
+[111/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_auto_threads_test.cc: 211 node, 82 cạnh, 6.2s
+[112/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_user_test.cc: 211 node, 82 cạnh, 5.0s
+[113/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clustjacobi_user_threads_test.cc: 211 node, 82 cạnh, 5.3s
+[114/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_auto_test.cc: 211 node, 82 cạnh, 5.4s
+[115/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_auto_threads_test.cc: 211 node, 82 cạnh, 5.3s
+[116/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_user_test.cc: 211 node, 82 cạnh, 5.2s
+[117/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_acceleratesparse_clusttri_user_threads_test.cc: 211 node, 82 cạnh, 5.4s
+[118/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_auto_test.cc: 224 node, 99 cạnh, 5.1s
+[119/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_auto_threads_test.cc: 224 node, 99 cạnh, 5.2s
+[120/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_user_test.cc: 224 node, 99 cạnh, 5.0s
+[121/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clustjacobi_user_threads_test.cc: 224 node, 99 cạnh, 5.2s
+[122/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_auto_test.cc: 224 node, 99 cạnh, 5.2s
+[123/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_auto_threads_test.cc: 224 node, 99 cạnh, 4.7s
+[124/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_user_test.cc: 224 node, 99 cạnh, 5.8s
+[125/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_eigensparse_clusttri_user_threads_test.cc: 224 node, 99 cạnh, 4.7s
+[126/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_auto_test.cc: 224 node, 99 cạnh, 4.4s
+[127/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_auto_threads_test.cc: 224 node, 99 cạnh, 4.9s
+[128/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_user_test.cc: 224 node, 99 cạnh, 4.8s
+[129/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_jacobi_user_threads_test.cc: 224 node, 99 cạnh, 5.3s
+[130/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_auto_test.cc: 224 node, 99 cạnh, 5.1s
+[131/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_auto_threads_test.cc: 224 node, 99 cạnh, 5.1s
+[132/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_user_test.cc: 224 node, 99 cạnh, 5.1s
+[133/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_schurjacobi_user_threads_test.cc: 224 node, 99 cạnh, 5.0s
+[134/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_auto_test.cc: 224 node, 99 cạnh, 5.2s
+[135/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_auto_threads_test.cc: 224 node, 99 cạnh, 5.0s
+[136/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_user_test.cc: 224 node, 99 cạnh, 4.9s
+[137/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_spse_user_threads_test.cc: 224 node, 99 cạnh, 5.6s
+[138/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_auto_test.cc: 211 node, 82 cạnh, 5.4s
+[139/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_auto_threads_test.cc: 211 node, 82 cạnh, 4.8s
+[140/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_user_test.cc: 211 node, 82 cạnh, 5.2s
+[141/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clustjacobi_user_threads_test.cc: 211 node, 82 cạnh, 4.7s
+[142/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_auto_test.cc: 211 node, 82 cạnh, 5.0s
+[143/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_auto_threads_test.cc: 211 node, 82 cạnh, 5.0s
+[144/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_user_test.cc: 211 node, 82 cạnh, 5.0s
+[145/292] internal/ceres/generated_bundle_adjustment_tests/ba_iterschur_suitesparse_clusttri_user_threads_test.cc: 211 node, 82 cạnh, 5.3s
+[146/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_auto_test.cc: 211 node, 82 cạnh, 5.0s
+[147/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_auto_threads_test.cc: 211 node, 82 cạnh, 5.2s
+[148/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_user_test.cc: 211 node, 82 cạnh, 5.0s
+[149/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_acceleratesparse_user_threads_test.cc: 211 node, 82 cạnh, 4.8s
+[150/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_auto_test.cc: 224 node, 99 cạnh, 5.9s
+[151/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_auto_threads_test.cc: 224 node, 99 cạnh, 6.2s
+[152/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_user_test.cc: 224 node, 99 cạnh, 5.4s
+[153/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_eigensparse_user_threads_test.cc: 224 node, 99 cạnh, 5.7s
+[154/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_auto_test.cc: 211 node, 82 cạnh, 4.9s
+[155/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_auto_threads_test.cc: 211 node, 82 cạnh, 4.9s
+[156/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_user_test.cc: 211 node, 82 cạnh, 5.2s
+[157/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparsecholesky_suitesparse_user_threads_test.cc: 211 node, 82 cạnh, 5.5s
+[158/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_auto_test.cc: 211 node, 82 cạnh, 5.4s
+[159/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_auto_threads_test.cc: 211 node, 82 cạnh, 5.1s
+[160/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_user_test.cc: 211 node, 82 cạnh, 5.1s
+[161/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_acceleratesparse_user_threads_test.cc: 211 node, 82 cạnh, 5.6s
+[162/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_auto_test.cc: 224 node, 99 cạnh, 5.5s
+[163/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_auto_threads_test.cc: 224 node, 99 cạnh, 5.1s
+[164/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_user_test.cc: 224 node, 99 cạnh, 5.0s
+[165/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_eigensparse_user_threads_test.cc: 224 node, 99 cạnh, 5.7s
+[166/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_auto_test.cc: 211 node, 82 cạnh, 5.6s
+[167/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_auto_threads_test.cc: 211 node, 82 cạnh, 5.1s
+[168/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_user_test.cc: 211 node, 82 cạnh, 6.3s
+[169/292] internal/ceres/generated_bundle_adjustment_tests/ba_sparseschur_suitesparse_user_threads_test.cc: 211 node, 82 cạnh, 6.3s
+[170/292] internal/ceres/gradient_checker.cc: 120 node, 74 cạnh, 5.3s
+[171/292] internal/ceres/gradient_checker_test.cc: 256 node, 222 cạnh, 7.5s
+[172/292] internal/ceres/gradient_checking_cost_function.cc: 301 node, 143 cạnh, 4.4s
+[173/292] internal/ceres/gradient_checking_cost_function_test.cc: 355 node, 215 cạnh, 5.3s
+[174/292] internal/ceres/gradient_problem.cc: 79 node, 42 cạnh, 2.8s
+[175/292] internal/ceres/gradient_problem_solver.cc: 273 node, 187 cạnh, 3.5s
+[176/292] internal/ceres/gradient_problem_solver_test.cc: 122 node, 73 cạnh, 4.3s
+[177/292] internal/ceres/gradient_problem_test.cc: 121 node, 88 cạnh, 4.2s
+[178/292] internal/ceres/graph_algorithms_test.cc: 145 node, 151 cạnh, 3.5s
+[179/292] internal/ceres/graph_test.cc: 126 node, 125 cạnh, 3.1s
+[180/292] internal/ceres/householder_vector_test.cc: 67 node, 75 cạnh, 4.3s
+[181/292] internal/ceres/inner_product_computer.cc: 184 node, 103 cạnh, 4.1s
+[182/292] internal/ceres/inner_product_computer_test.cc: 224 node, 94 cạnh, 5.4s
+[183/292] internal/ceres/is_close.cc: 1 node, 1 cạnh, 0.5s
+[184/292] internal/ceres/is_close_test.cc: 41 node, 45 cạnh, 2.5s
+[185/292] internal/ceres/implicit_schur_complement.cc: 314 node, 174 cạnh, 6.7s
+[186/292] internal/ceres/implicit_schur_complement_test.cc: 345 node, 150 cạnh, 11.5s
+[187/292] internal/ceres/iteration_callback.cc: 43 node, 5 cạnh, 0.6s
+[188/292] internal/ceres/iterative_refiner.cc: 265 node, 83 cạnh, 4.2s
+[189/292] internal/ceres/iterative_refiner_test.cc: 325 node, 165 cạnh, 9.6s
+[190/292] internal/ceres/iterative_schur_complement_solver.cc: 410 node, 197 cạnh, 4.8s
+[191/292] internal/ceres/jet_traits_test.cc: 24 node, 29 cạnh, 2.8s
+[192/292] internal/ceres/levenberg_marquardt_strategy.cc: 270 node, 89 cạnh, 3.8s
+[193/292] internal/ceres/iterative_schur_complement_solver_test.cc: 324 node, 157 cạnh, 5.0s
+[194/292] internal/ceres/jet_test.cc: 668 node, 789 cạnh, 14.8s
+[195/292] internal/ceres/integer_sequence_algorithm_test.cc: 24 node, 29 cạnh, 0.2s
+[196/292] internal/ceres/invert_psd_matrix_test.cc: 47 node, 56 cạnh, 41.9s
+[197/292] internal/ceres/levenberg_marquardt_strategy_test.cc: 262 node, 94 cạnh, 5.0s
+[198/292] internal/ceres/line_search.cc: 138 node, 173 cạnh, 3.6s
+[199/292] internal/ceres/line_search_direction.cc: 152 node, 90 cạnh, 4.1s
+[200/292] internal/ceres/line_search_minimizer.cc: 209 node, 93 cạnh, 4.0s
+[201/292] internal/ceres/line_search_minimizer_test.cc: 321 node, 170 cạnh, 5.5s
+[202/292] internal/ceres/line_search_preprocessor.cc: 427 node, 99 cạnh, 3.9s
+[203/292] internal/ceres/linear_operator.cc: 49 node, 15 cạnh, 2.9s
+[204/292] internal/ceres/linear_solver.cc: 368 node, 125 cạnh, 5.1s
+[205/292] internal/ceres/line_search_preprocessor_test.cc: 498 node, 218 cạnh, 5.3s
+[206/292] internal/ceres/linear_least_squares_problems.cc: 212 node, 108 cạnh, 3.5s
+[207/292] internal/ceres/loss_function.cc: 68 node, 63 cạnh, 1.5s
+[208/292] internal/ceres/loss_function_test.cc: 159 node, 166 cạnh, 3.1s
+[209/292] internal/ceres/low_rank_inverse_hessian.cc: 52 node, 13 cạnh, 2.9s
+[210/292] internal/ceres/manifold.cc: 92 node, 100 cạnh, 3.8s
+[211/292] internal/ceres/minimizer_test.cc: 149 node, 86 cạnh, 3.2s
+[212/292] internal/ceres/normal_prior.cc: 53 node, 14 cạnh, 2.7s
+[213/292] internal/ceres/numeric_diff_first_order_function_test.cc: 102 node, 60 cạnh, 5.8s
+[214/292] internal/ceres/numeric_diff_test_utils.cc: 162 node, 98 cạnh, 3.8s
+[215/292] internal/ceres/normal_prior_test.cc: 28 node, 28 cạnh, 4.4s
+[216/292] internal/ceres/numeric_diff_cost_function_test.cc: 366 node, 370 cạnh, 9.4s
+[217/292] internal/ceres/parallel_invoke.cc: 32 node, 21 cạnh, 3.0s
+[218/292] internal/ceres/parallel_utils.cc: 1 node, 1 cạnh, 0.0s
+[219/292] internal/ceres/manifold_test.cc: 743 node, 1102 cạnh, 19.3s
+[220/292] internal/ceres/minimizer.cc: 325 node, 77 cạnh, 4.3s
+[221/292] internal/ceres/ordered_groups_test.cc: 83 node, 124 cạnh, 3.0s
+[222/292] internal/ceres/parallel_for_test.cc: 152 node, 162 cạnh, 5.5s
+[223/292] internal/ceres/parallel_utils_test.cc: 9 node, 9 cạnh, 2.8s
+[224/292] internal/ceres/parallel_vector_ops.cc: 33 node, 11 cạnh, 3.4s
+[225/292] internal/ceres/parameter_block_ordering.cc: 159 node, 83 cạnh, 4.1s
+[226/292] internal/ceres/parameter_block_ordering_test.cc: 279 node, 107 cạnh, 4.7s
+[227/292] internal/ceres/parameter_block_test.cc: 218 node, 228 cạnh, 4.7s
+[228/292] internal/ceres/parameter_dims_test.cc: 31 node, 34 cạnh, 2.3s
+[229/292] internal/ceres/partitioned_matrix_view.cc: 264 node, 51 cạnh, 3.9s
+[230/292] internal/ceres/partitioned_matrix_view_test.cc: 328 node, 200 cạnh, 7.1s
+[231/292] internal/ceres/preconditioner.cc: 241 node, 75 cạnh, 3.9s
+[232/292] internal/ceres/preprocessor.cc: 449 node, 108 cạnh, 4.0s
+[233/292] internal/ceres/polynomial.cc: 18 node, 25 cạnh, 12.5s
+[234/292] internal/ceres/polynomial_test.cc: 360 node, 298 cạnh, 4.0s
+[235/292] internal/ceres/power_series_expansion_preconditioner.cc: 325 node, 109 cạnh, 4.4s
+[236/292] internal/ceres/power_series_expansion_preconditioner_test.cc: 348 node, 119 cạnh, 11.2s
+[237/292] internal/ceres/problem.cc: 183 node, 187 cạnh, 3.3s
+[238/292] internal/ceres/problem_impl.cc: 418 node, 386 cạnh, 6.3s
+[239/292] internal/ceres/program_test.cc: 419 node, 325 cạnh, 5.9s
+[240/292] internal/ceres/reorder_program.cc: 440 node, 148 cạnh, 5.3s
+[241/292] internal/ceres/problem_test.cc: 916 node, 1302 cạnh, 8.3s
+[242/292] internal/ceres/program.cc: 356 node, 259 cạnh, 4.9s
+[243/292] internal/ceres/reorder_program_test.cc: 477 node, 180 cạnh, 6.5s
+[244/292] internal/ceres/residual_block.cc: 149 node, 83 cạnh, 4.1s
+[245/292] internal/ceres/residual_block_test.cc: 134 node, 87 cạnh, 4.5s
+[246/292] internal/ceres/residual_block_utils.cc: 96 node, 35 cạnh, 2.8s
+[247/292] internal/ceres/residual_block_utils_test.cc: 131 node, 77 cạnh, 4.2s
+[248/292] internal/ceres/rotation_test.cc: 728 node, 820 cạnh, 9.4s
+[249/292] internal/ceres/schur_jacobi_preconditioner.cc: 290 node, 102 cạnh, 4.1s
+[250/292] internal/ceres/schur_templates.cc: 224 node, 42 cạnh, 3.4s
+[251/292] internal/ceres/schur_complement_solver.cc: 370 node, 243 cạnh, 10.4s
+[252/292] internal/ceres/schur_complement_solver_test.cc: 376 node, 174 cạnh, 5.9s
+[253/292] internal/ceres/schur_eliminator.cc: 250 node, 56 cạnh, 4.2s
+[254/292] internal/ceres/schur_eliminator_test.cc: 392 node, 200 cạnh, 13.6s
+[255/292] internal/ceres/scratch_evaluate_preparer.cc: 132 node, 36 cạnh, 3.4s
+[256/292] internal/ceres/single_linkage_clustering.cc: 59 node, 14 cạnh, 1.8s
+[257/292] internal/ceres/solver_utils.cc: 44 node, 3 cạnh, 3.1s
+[258/292] internal/ceres/sparse_cholesky.cc: 262 node, 99 cạnh, 3.8s
+[259/292] internal/ceres/solver.cc: 509 node, 307 cạnh, 5.5s
+[260/292] internal/ceres/solver_test.cc: 560 node, 650 cạnh, 5.2s
+[261/292] internal/ceres/single_linkage_clustering_test.cc: 72 node, 49 cạnh, 2.8s
+[262/292] internal/ceres/small_blas_test.cc: 276 node, 332 cạnh, 10.6s
+[263/292] internal/ceres/stringprintf.cc: 5 node, 8 cạnh, 0.7s
+[264/292] internal/ceres/subset_preconditioner.cc: 275 node, 93 cạnh, 3.6s
+[265/292] internal/ceres/sparse_normal_cholesky_solver.cc: 270 node, 93 cạnh, 3.8s
+[266/292] internal/ceres/sparse_normal_cholesky_solver_test.cc: 259 node, 95 cạnh, 6.8s
+[267/292] internal/ceres/sparse_cholesky_test.cc: 330 node, 241 cạnh, 10.6s
+[268/292] internal/ceres/sparse_matrix.cc: 65 node, 17 cạnh, 2.3s
+[269/292] internal/ceres/subset_preconditioner_test.cc: 276 node, 104 cạnh, 7.7s
+[270/292] internal/ceres/suitesparse.cc: 0 node, 0 cạnh, 0.0s
+[271/292] internal/ceres/thread_pool.cc: 16 node, 38 cạnh, 1.8s
+[272/292] internal/ceres/thread_pool_test.cc: 44 node, 48 cạnh, 3.8s
+[273/292] internal/ceres/system_test.cc: 241 node, 191 cạnh, 4.9s
+[274/292] internal/ceres/test_util.cc: 119 node, 26 cạnh, 3.2s
+[275/292] internal/ceres/thread_token_provider.cc: 10 node, 14 cạnh, 1.6s
+[276/292] internal/ceres/tiny_solver_autodiff_function_test.cc: 121 node, 113 cạnh, 9.0s
+[277/292] internal/ceres/triplet_sparse_matrix.cc: 135 node, 120 cạnh, 4.0s
+[278/292] internal/ceres/triplet_sparse_matrix_test.cc: 183 node, 204 cạnh, 4.3s
+[279/292] internal/ceres/tiny_solver_cost_function_adapter_test.cc: 106 node, 81 cạnh, 4.6s
+[280/292] internal/ceres/tiny_solver_test.cc: 67 node, 95 cạnh, 11.8s
+[281/292] internal/ceres/trust_region_minimizer.cc: 475 node, 235 cạnh, 5.7s
+[282/292] internal/ceres/trust_region_minimizer_test.cc: 481 node, 276 cạnh, 6.8s
+[283/292] internal/ceres/trust_region_preprocessor.cc: 505 node, 199 cạnh, 4.5s
+[284/292] internal/ceres/trust_region_preprocessor_test.cc: 631 node, 469 cạnh, 5.4s
+[285/292] internal/ceres/trust_region_step_evaluator.cc: 7 node, 10 cạnh, 1.2s
+[286/292] internal/ceres/trust_region_strategy.cc: 262 node, 65 cạnh, 3.4s
+[287/292] internal/ceres/types.cc: 40 node, 56 cạnh, 1.4s
+[288/292] internal/ceres/visibility.cc: 56 node, 16 cạnh, 2.1s
+[289/292] internal/ceres/visibility_test.cc: 73 node, 41 cạnh, 2.5s
+[290/292] internal/ceres/wall_time.cc: 9 node, 16 cạnh, 1.3s
+[291/292] internal/ceres/visibility_based_preconditioner.cc: 345 node, 223 cạnh, 4.8s
+[292/292] internal/ceres/visibility_based_preconditioner_test.cc: 397 node, 79 cạnh, 5.1s
+Code graph – Ceres 2.2.0
+Translation unit đã parse: 292 (lỗi: 0)
+Node: {'class': 1363, 'file': 480, 'function': 9065}
+Cạnh: {'CALLS': 6696, 'DEFINED_IN': 6016, 'INCLUDES': 1326, 'INHERITS': 388, 'MEMBER_OF': 4118, 'USES_TYPE': 4751}
+
+UNIT trong phạm vi (hàm/method có thân, không phải test/generated): 1540
+  theo loại: {'CONSTRUCTOR': 177, 'CXX_METHOD': 871, 'DESTRUCTOR': 75, 'FUNCTION_DECL': 205, 'FUNCTION_TEMPLATE': 212}
+  tổng số nhánh ước lượng từ AST (2 × điểm quyết định): 5754
+  unit không có nhánh nào (chỉ cần gọi 1 lần là phủ hết): 846
+  unit linkage nội bộ (static / anonymous namespace): 80
+  unit private/protected: 140
+  unit được test có sẵn gọi trực tiếp: 372
+  unit lá (level 0, không gọi hàm Ceres khác): 974; level cao nhất: 9
+  số unit theo level: {0: 974, 1: 264, 2: 141, 3: 82, 4: 36, 5: 20, 6: 12, 7: 4, 8: 4, 9: 3}
+  chu trình gọi (đệ quy / gọi vòng): 2, lớn nhất 4 hàm
+Lời gọi ra thư viện ngoài (Eigen, std, glog...): 44182
+Lời gọi không resolve được (template phụ thuộc kiểu...): 6922
+
+Top 15 hàm được gọi nhiều nhất (fan-in):
+    39  ceres::internal::StringPrintf  (internal/ceres/stringprintf.cc)
+    29  ceres::internal::ResidualBlock::NumParameterBlocks  (internal/ceres/residual_block.h)
+    28  ceres::internal::BlockSparseMatrix::block_structure  (internal/ceres/block_sparse_matrix.cc)
+    26  ceres::internal::ResidualBlock::parameter_blocks  (internal/ceres/residual_block.h)
+    24  ceres::internal::BlockSparseMatrix::values  (internal/ceres/block_sparse_matrix.h)
+    24  ceres::internal::ParameterBlock::IsConstant  (internal/ceres/parameter_block.h)
+    21  ceres::internal::ParameterBlock::Size  (internal/ceres/parameter_block.h)
+    19  ceres::internal::ParameterBlock::TangentSize  (internal/ceres/parameter_block.h)
+    17  ceres::CostFunction::parameter_block_sizes  (include/ceres/cost_function.h)
+    17  ceres::internal::ResidualBlock::NumResiduals  (internal/ceres/residual_block.h)
+    17  ceres::UpperCase  (internal/ceres/types.cc)
+    16  ceres::internal::WallTimeInSeconds  (internal/ceres/wall_time.cc)
+    16  ceres::internal::Program::residual_blocks  (internal/ceres/program.cc)
+    15  ceres::CostFunction::num_residuals  (include/ceres/cost_function.h)
+    15  ceres::internal::BlockSparseMatrix::mutable_values  (internal/ceres/block_sparse_matrix.h)
+
+Top 15 hàm phức tạp nhất (cyclomatic):
+  cc=  53 nhánh≈ 104  ceres::internal::LineSearchMinimizer::Minimize  (internal/ceres/line_search_minimizer.cc:85)
+  cc=  44 nhánh≈  86  ceres::Solver::Summary::FullReport  (internal/ceres/solver.cc:852)
+  cc=  38 nhánh≈  74  ceres::internal::MatrixMatrixMultiplyNaive  (internal/ceres/small_blas.h:177)
+  cc=  38 nhánh≈  74  ceres::internal::MatrixTransposeMatrixMultiplyNaive  (internal/ceres/small_blas.h:280)
+  cc=  31 nhánh≈  60  ceres::internal::WolfeLineSearch::BracketingPhase  (internal/ceres/line_search.cc:499)
+  cc=  27 nhánh≈  52  ceres::internal::DetectStructure  (internal/ceres/detect_structure.cc:38)
+  cc=  26 nhánh≈  50  ceres::internal::ProgramEvaluator::Evaluate  (internal/ceres/program_evaluator.h:134)
+  cc=  26 nhánh≈  50  ceres::(anonymous)::TrustRegionOptionsAreValid  (internal/ceres/solver.cc:389)
+  cc=  25 nhánh≈  48  ceres::internal::CompressedRowSparseMatrix::CreateRandomMatrix  (internal/ceres/compressed_row_sparse_matrix.cc:640)
+  cc=  25 nhánh≈  48  ceres::internal::WolfeLineSearch::ZoomPhase  (internal/ceres/line_search.cc:698)
+  cc=  23 nhánh≈  44  ceres::DynamicAutoDiffCostFunction::Evaluate  (include/ceres/dynamic_autodiff_cost_function.h:101)
+  cc=  22 nhánh≈  42  ceres::internal::ResidualBlock::Evaluate  (internal/ceres/residual_block.cc:68)
+  cc=  20 nhánh≈  38  ceres::internal::MatrixVectorMultiply  (internal/ceres/small_blas.h:384)
+  cc=  20 nhánh≈  38  ceres::internal::MatrixTransposeVectorMultiply  (internal/ceres/small_blas.h:470)
+  cc=  20 nhánh≈  38  ceres::internal::ProblemImpl::Evaluate  (internal/ceres/problem_impl.cc:585)
+
+Top 10 hàm gọi nhiều hàm khác nhất (fan-out):
+    26  ceres::Solver::Solve  (internal/ceres/solver.cc)
+    26  ceres::internal::CreateGradientCheckingProblemImpl  (internal/ceres/gradient_checking_cost_function.cc)
+    24  ceres::internal::ProblemImpl::Evaluate  (internal/ceres/problem_impl.cc)
+    23  ceres::internal::LineSearchMinimizer::Minimize  (internal/ceres/line_search_minimizer.cc)
+    21  ceres::internal::IterativeSchurComplementSolver::SolveImpl  (internal/ceres/iterative_schur_complement_solver.cc)
+    21  ceres::internal::ResidualBlock::Evaluate  (internal/ceres/residual_block.cc)
+    18  ceres::Solver::Summary::FullReport  (internal/ceres/solver.cc)
+    18  ceres::internal::ProgramEvaluator::Evaluate  (internal/ceres/program_evaluator.h)
+    17  ceres::internal::CoordinateDescentMinimizer::Minimize  (internal/ceres/coordinate_descent_minimizer.cc)
+    16  ceres::internal::CompressedRowJacobianWriter::CreateJacobian  (internal/ceres/compressed_row_jacobian_writer.cc)
+
+Thời gian: 503s
+== 2/3 Xuất reports/graph/graph.html
+graph.html: 2141 node, 5724 cạnh, 371 cạnh file, 706 KB
+== 3/3 Xuất reports/ast/ast.html
+ast.html: 36 unit, 1238 KB
+PHASE 1 OK
+
+real	9m19.816s
+user	0m0.106s
+sys	0m0.136s

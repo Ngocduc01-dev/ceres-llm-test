@@ -1,0 +1,45 @@
+Test project /work/build-cov
+      Start 104: ba_denseschur_eigen_auto_test
+      Start 108: ba_sparsecholesky_eigensparse_auto_test
+      Start 111: ba_sparseschur_eigensparse_auto_test
+      Start 113: ba_iterschur_jacobi_auto_test
+      Start 114: ba_iterschur_schurjacobi_auto_test
+      Start 115: ba_iterschur_spse_auto_test
+      Start 117: ba_iterschur_eigensparse_clustjacobi_auto_test
+      Start 120: ba_iterschur_eigensparse_clusttri_auto_test
+      Start 126: ba_sparsecholesky_eigensparse_auto_threads_test
+      Start 131: ba_iterschur_jacobi_auto_threads_test
+ 1/20 Test #131: ba_iterschur_jacobi_auto_threads_test .............   Passed  846.47 sec
+      Start 132: ba_iterschur_schurjacobi_auto_threads_test
+ 2/20 Test #126: ba_sparsecholesky_eigensparse_auto_threads_test ...   Passed  911.24 sec
+      Start 133: ba_iterschur_spse_auto_threads_test
+ 3/20 Test #113: ba_iterschur_jacobi_auto_test .....................   Passed  1000.40 sec
+      Start 140: ba_denseschur_eigen_user_test
+ 4/20 Test #111: ba_sparseschur_eigensparse_auto_test ..............   Passed  1021.75 sec
+      Start 144: ba_sparsecholesky_eigensparse_user_test
+ 5/20 Test #104: ba_denseschur_eigen_auto_test .....................   Passed  1041.41 sec
+      Start 147: ba_sparseschur_eigensparse_user_test
+ 6/20 Test #114: ba_iterschur_schurjacobi_auto_test ................   Passed  1048.57 sec
+      Start 149: ba_iterschur_jacobi_user_test
+ 7/20 Test #108: ba_sparsecholesky_eigensparse_auto_test ...........   Passed  1064.35 sec
+      Start 150: ba_iterschur_schurjacobi_user_test
+ 8/20 Test #117: ba_iterschur_eigensparse_clustjacobi_auto_test ....   Passed  1071.53 sec
+      Start 151: ba_iterschur_spse_user_test
+ 9/20 Test #115: ba_iterschur_spse_auto_test .......................   Passed  1091.97 sec
+      Start 153: ba_iterschur_eigensparse_clustjacobi_user_test
+10/20 Test #120: ba_iterschur_eigensparse_clusttri_auto_test .......   Passed  1102.70 sec
+      Start 156: ba_iterschur_eigensparse_clusttri_user_test
+11/20 Test #132: ba_iterschur_schurjacobi_auto_threads_test ........   Passed  865.76 sec
+12/20 Test #133: ba_iterschur_spse_auto_threads_test ...............   Passed  931.14 sec
+13/20 Test #140: ba_denseschur_eigen_user_test .....................   Passed  1014.81 sec
+14/20 Test #149: ba_iterschur_jacobi_user_test .....................   Passed  983.39 sec
+15/20 Test #147: ba_sparseschur_eigensparse_user_test ..............   Passed  1003.45 sec
+16/20 Test #150: ba_iterschur_schurjacobi_user_test ................   Passed  989.78 sec
+17/20 Test #144: ba_sparsecholesky_eigensparse_user_test ...........   Passed  1042.84 sec
+18/20 Test #153: ba_iterschur_eigensparse_clustjacobi_user_test ....   Passed  979.43 sec
+19/20 Test #151: ba_iterschur_spse_user_test .......................   Passed  1007.12 sec
+20/20 Test #156: ba_iterschur_eigensparse_clusttri_user_test .......   Passed  1000.67 sec
+
+100% tests passed, 0 tests failed out of 20
+
+Total Test time (real) = 2103.40 sec

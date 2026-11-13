@@ -1,0 +1,8 @@
+Số file .cc trong internal/ceres có trong compile_commands: 292
+  trong đó file test có sẵn (*_test.cc): 175
+Parse không lỗi: 292/292
+Parse có lỗi:    0
+Số unit (hàm/method có thân, trong phạm vi, không trùng): 1540
+  nằm trong header (.h): 746
+  theo loại: {'FUNCTION_DECL': 205, 'FUNCTION_TEMPLATE': 212, 'CXX_METHOD': 871, 'CONSTRUCTOR': 177, 'DESTRUCTOR': 75}
+Thời gian: 489s

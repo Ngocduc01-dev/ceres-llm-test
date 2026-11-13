@@ -1,0 +1,17 @@
+20/20 Test #156: ba_iterschur_eigensparse_clusttri_user_test .......   Passed  1000.67 sec
+
+100% tests passed, 0 tests failed out of 20
+
+Total Test time (real) = 2103.40 sec
+(INFO) - MainThread - Reading coverage data...
+(INFO) - MainThread - Writing coverage report...
+lines: 85.8% (11886 out of 13846)
+functions: 89.6% (5267 out of 5881)
+branches: 59.5% (8770 out of 14745)
+(INFO) Reading coverage data...
+(INFO) Writing coverage report...
+COVERAGE OK -> /work/repo/reports/baseline
+
+real	36m7.207s
+user	0m0.060s
+sys	0m0.090s

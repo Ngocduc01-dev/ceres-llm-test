@@ -1,0 +1,4 @@
+# Script chạy trong Linux container: bắt buộc xuống dòng kiểu LF, không phải CRLF
+*.sh   text eol=lf
+*.py   text eol=lf
+Dockerfile text eol=lf

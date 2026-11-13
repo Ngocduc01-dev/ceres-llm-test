@@ -1,0 +1,283 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ceres Code Graph</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+<style>
+:root{--bg:#f7f7f5;--panel:#fff;--text:#1d1d1b;--muted:#6b6b66;--border:#e2e1dc;--accent:#c2410c;
+--callee:#2563eb;--caller:#d97706;--type:#059669;--klass:#7c3aed;--file:#64748b;--edge:#a8a29e;--hover:#f1f0ec}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161615;--panel:#1f1f1d;--text:#ecebe6;
+--muted:#9c9b94;--border:#34332f;--accent:#fb923c;--callee:#60a5fa;--caller:#fbbf24;--type:#34d399;--klass:#a78bfa;
+--file:#94a3b8;--edge:#57534e;--hover:#2a2a27}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:16px 20px 8px}h1{font-size:20px;margin:0 0 4px}.sub{color:var(--muted);font-size:13px}
+.cards{display:flex;flex-wrap:wrap;gap:8px;padding:8px 20px}
+.card{background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:8px 12px;min-width:120px}
+.card b{display:block;font-size:20px;font-variant-numeric:tabular-nums}.card span{color:var(--muted);font-size:12px}
+nav{display:flex;gap:4px;padding:8px 20px 0;border-bottom:1px solid var(--border);overflow-x:auto}
+nav button{background:none;border:0;border-bottom:2px solid transparent;padding:8px 12px;color:var(--muted);cursor:pointer;font:inherit;white-space:nowrap}
+nav button.on{color:var(--text);border-color:var(--accent);font-weight:600}
+.tab{display:none;padding:12px 20px}.tab.on{display:block}
+.row{display:flex;gap:12px;align-items:stretch}.cy{flex:1;height:68vh;background:var(--panel);border:1px solid var(--border);border-radius:8px;min-width:0}
+.side{width:320px;flex-shrink:0;background:var(--panel);border:1px solid var(--border);border-radius:8px;padding:12px;overflow:auto;height:68vh}
+.ctrl{display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;margin-bottom:10px}
+input[type=text],select{background:var(--panel);color:var(--text);border:1px solid var(--border);border-radius:6px;padding:6px 8px;font:inherit}
+input[type=text]{min-width:280px;flex:1;max-width:560px}
+label{color:var(--muted);font-size:13px;display:flex;gap:4px;align-items:center}
+.legend{display:flex;flex-wrap:wrap;gap:10px;font-size:12px;color:var(--muted);margin:6px 0}
+.dot{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:4px;vertical-align:-1px}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 10px;font-size:13px;margin-top:8px}.kv div:nth-child(odd){color:var(--muted)}
+code,.mono{font-family:ui-monospace,SFMono-Regular,Consolas,monospace;font-size:12px;word-break:break-all}
+a{color:var(--callee)}button.small{font:inherit;font-size:12px;padding:4px 8px;border-radius:6px;border:1px solid var(--border);background:var(--hover);color:var(--text);cursor:pointer;margin-top:10px}
+table{width:100%;border-collapse:collapse;background:var(--panel);font-size:13px}
+th,td{padding:5px 8px;border-bottom:1px solid var(--border);text-align:left}th{cursor:pointer;position:sticky;top:0;background:var(--panel);user-select:none}
+td.n{text-align:right;font-variant-numeric:tabular-nums}tr:hover td{background:var(--hover);cursor:pointer}
+.tablewrap{max-height:72vh;overflow:auto;border:1px solid var(--border);border-radius:8px}
+.note{color:var(--muted);font-size:12px;margin-top:6px}
+@media (max-width:820px){.row{flex-direction:column}.side{width:auto;height:auto}.cy{height:60vh}input[type=text]{min-width:0}}
+</style>
+</head>
+<body>
+<header><h1>Ceres Code Graph</h1><div class="sub" id="sub"></div></header>
+<div class="cards" id="cards"></div>
+<nav id="nav">
+  <button data-t="explore" class="on">Khám phá unit</button>
+  <button data-t="files">Tổng quan file</button>
+  <button data-t="classes">Kế thừa class</button>
+  <button data-t="table">Bảng unit</button>
+</nav>
+
+<section class="tab on" id="t-explore">
+  <div class="ctrl">
+    <input type="text" id="q" list="units" placeholder="Gõ tên hàm, vd. ComputeStep, Solve, Evaluate…">
+    <datalist id="units"></datalist>
+    <label>Số bước <select id="hops"><option>1</option><option selected>2</option><option>3</option></select></label>
+    <label><input type="checkbox" id="c-out" checked> Hàm nó gọi</label>
+    <label><input type="checkbox" id="c-in" checked> Hàm gọi nó</label>
+    <label><input type="checkbox" id="c-type" checked> Kiểu dùng</label>
+  </div>
+  <div class="legend"><span><i class="dot" style="background:var(--accent)"></i>unit đang xem</span>
+    <span><i class="dot" style="background:var(--callee)"></i>hàm nó gọi</span>
+    <span><i class="dot" style="background:var(--caller)"></i>hàm gọi nó</span>
+    <span><i class="dot" style="background:var(--type)"></i>class/kiểu dùng</span>
+    <span><i class="dot" style="background:var(--klass)"></i>class chứa method</span>
+    <span>kích thước node ∝ số nhánh · bấm node để xem, bấm đúp để khám phá từ node đó</span></div>
+  <div class="row"><div class="cy" id="cy1"></div><div class="side" id="side1"><div class="note">Chọn một unit ở ô tìm kiếm, hoặc mở tab “Bảng unit” rồi bấm một dòng.</div></div></div>
+</section>
+
+<section class="tab" id="t-files">
+  <div class="ctrl">
+    <label><input type="radio" name="fe" value="calls" checked> Cạnh = lời gọi hàm giữa file</label>
+    <label><input type="radio" name="fe" value="inc"> Cạnh = #include</label>
+    <label>Ẩn cạnh có ít hơn <select id="fmin"><option>1</option><option selected>3</option><option>10</option></select> lời gọi</label>
+  </div>
+  <div class="legend"><span><i class="dot" style="background:var(--callee)"></i>internal/ceres</span>
+    <span><i class="dot" style="background:var(--type)"></i>include/ceres (API công khai)</span><span>kích thước ∝ số unit trong file</span></div>
+  <div class="row"><div class="cy" id="cy2"></div><div class="side" id="side2"><div class="note">Bấm một file để xem các unit trong file.</div></div></div>
+</section>
+
+<section class="tab" id="t-classes">
+  <div class="ctrl"><label><input type="checkbox" id="cmin" checked> Chỉ hiện class cha có ≥ 2 class con (bỏ các cặp 1–1)</label></div>
+  <div class="legend"><span>Mũi tên: class con → class cha. Kích thước ∝ số class con.</span>
+    <span><i class="dot" style="background:var(--type)"></i>class</span><span><i class="dot" style="background:var(--klass)"></i>class template</span></div>
+  <div class="row"><div class="cy" id="cy3"></div><div class="side" id="side3"><div class="note">Bấm một class để xem chi tiết.</div></div></div>
+</section>
+
+<section class="tab" id="t-table">
+  <div class="ctrl"><input type="text" id="tf" placeholder="Lọc theo tên hoặc file…">
+    <label><input type="checkbox" id="tb"> Chỉ unit có nhánh</label><span class="note" id="tcount"></span></div>
+  <div class="tablewrap"><table><thead><tr>
+    <th data-k="q">Unit</th><th data-k="f">File</th><th data-k="br">Nhánh≈</th><th data-k="cc">Cyclomatic</th>
+    <th data-k="lv">Level</th><th data-k="fi">Fan-in</th><th data-k="bt">Test gọi</th><th data-k="lk">Linkage</th><th data-k="ac">Access</th>
+  </tr></thead><tbody id="tbody"></tbody></table></div>
+  <div class="note">Nhánh≈ = 2 × số điểm quyết định (if, for, while, case, ?:, &&, ||) đếm trên AST – ước lượng, số nhánh thật do gcov đếm. Level 0 = hàm lá (không gọi hàm Ceres khác), dùng để xếp thứ tự sinh test từ dưới lên.</div>
+</section>
+
+<script>
+const D = /*__DATA__*/null;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const S = D.stats, TAG = S.ceres_version || "2.2.0";
+const byId = new Map(D.nodes.map(n => [n.i, n]));
+const out = {}, inn = {};
+for (const [s, d, k, c] of D.edges) {
+  (out[k] ??= new Map()).has(s) || out[k].set(s, []); out[k].get(s).push([d, c]);
+  (inn[k] ??= new Map()).has(d) || inn[k].set(d, []); inn[k].get(d).push([s, c]);
+}
+const units = D.nodes.filter(n => n.t === "f");
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const gh = n => `https://github.com/ceres-solver/ceres-solver/blob/${TAG}/${n.f}#L${n.l}`;
+
+document.getElementById("sub").textContent =
+  `Ceres ${TAG} · ${S.translation_units} file .cc đã parse bằng libclang · ${S.seconds}s`;
+const cards = [[S.units, "unit trong phạm vi"], [S.estimated_branches_total, "nhánh ước lượng (AST)"],
+  [S.leaf_units_level0, "unit lá (level 0)"], [S.units_without_branches, "unit không có nhánh"],
+  [S.units_called_directly_by_existing_tests, "unit test có sẵn gọi trực tiếp"],
+  [S.units_internal_linkage, "unit static/anonymous ns"], [(S.edges_by_kind || {}).CALLS, "cạnh gọi hàm"],
+  [S.call_cycles, "chu trình gọi"]];
+document.getElementById("cards").innerHTML = cards.map(([v, l]) =>
+  `<div class="card"><b>${(v ?? 0).toLocaleString("vi-VN")}</b><span>${l}</span></div>`).join("");
+
+// ---------- tabs
+const inited = {};
+document.querySelectorAll("nav button").forEach(b => b.onclick = () => showTab(b.dataset.t));
+function showTab(t) {
+  document.querySelectorAll("nav button").forEach(x => x.classList.toggle("on", x.dataset.t === t));
+  document.querySelectorAll(".tab").forEach(x => x.classList.toggle("on", x.id === "t-" + t));
+  if (!inited[t]) { inited[t] = true; ({files: initFiles, classes: initClasses, table: initTable})[t]?.(); }
+  [cy1, cy2, cy3].forEach(c => c && c.resize());
+}
+
+function baseStyle() {
+  return [
+    {selector: "node", style: {"label": "data(label)", "font-size": 9, "color": css("--text"),
+      "text-valign": "bottom", "text-margin-y": 3, "background-color": "data(color)",
+      "width": "data(size)", "height": "data(size)", "text-max-width": 140, "text-wrap": "ellipsis",
+      "text-outline-color": css("--panel"), "text-outline-width": 2}},
+    {selector: "node[shape]", style: {"shape": "data(shape)"}},
+    {selector: "edge", style: {"width": "data(w)", "line-color": css("--edge"), "target-arrow-color": css("--edge"),
+      "target-arrow-shape": "triangle", "curve-style": "bezier", "arrow-scale": .7, "opacity": .8}},
+    {selector: "edge[dash]", style: {"line-style": "dashed"}},
+    {selector: ":selected", style: {"border-width": 3, "border-color": css("--accent")}},
+  ];
+}
+function detail(n) {
+  if (!n) return "";
+  if (n.t === "f") return `<div class="mono"><b>${esc(n.q)}</b></div><div class="kv">
+    <div>Signature</div><div class="mono">${esc(n.sg)}</div><div>Loại</div><div>${esc(n.k)}${n.tp ? " (template)" : ""}</div>
+    <div>File</div><div class="mono"><a href="${gh(n)}" target="_blank" rel="noopener">${esc(n.f)}:${n.l}</a></div>
+    <div>Số dòng</div><div>${n.loc}</div><div>Nhánh≈</div><div>${n.br}</div><div>Cyclomatic</div><div>${n.cc}</div>
+    <div>Level</div><div>${n.lv ?? "-"}</div><div>Fan-in / out</div><div>${n.fi} / ${n.fo}</div>
+    <div>Test có sẵn gọi</div><div>${n.bt}</div><div>Linkage</div><div>${n.lk}${n.lk === "internal" ? " (không gọi trực tiếp từ test)" : ""}</div>
+    <div>Access</div><div>${n.ac || "-"}</div></div>
+    <button class="small" onclick="explore(${n.i})">Khám phá từ unit này</button>`;
+  return `<div class="mono"><b>${esc(n.q)}</b></div><div class="kv"><div>Loại</div><div>${n.t === "c" ? "class" + (n.tp ? " template" : "") : "file"}</div>
+    <div>File</div><div class="mono"><a href="${gh(n)}" target="_blank" rel="noopener">${esc(n.f)}:${n.l}</a></div></div>`;
+}
+
+// ---------- 1. explore
+const cy1 = cytoscape({container: document.getElementById("cy1"), style: baseStyle(), wheelSensitivity: .3});
+const dl = document.getElementById("units");
+const qn2id = new Map();
+units.forEach(u => { qn2id.set(u.q, u.i); });
+dl.innerHTML = [...qn2id.keys()].sort().map(q => `<option value="${esc(q)}">`).join("");
+const q = document.getElementById("q");
+q.addEventListener("change", () => {
+  const v = q.value.trim(); let id = qn2id.get(v);
+  if (!id) { const m = units.find(u => u.q.endsWith("::" + v) || u.n === v) || units.find(u => u.q.includes(v)); id = m?.i; }
+  if (id) explore(id);
+});
+["hops", "c-out", "c-in", "c-type"].forEach(x => document.getElementById(x).onchange = () => cur && explore(cur));
+let cur = null;
+function explore(id) {
+  showTab("explore"); cur = id; const c = byId.get(id); q.value = c.q;
+  const hops = +document.getElementById("hops").value, LIMIT = 160;
+  const nodes = new Map([[id, "center"]]), edges = [];
+  const bfs = (dir, role) => {
+    let front = [id];
+    for (let h = 0; h < hops && nodes.size < LIMIT; h++) {
+      const nxt = [];
+      for (const v of front) for (const [w, cnt] of ((dir === "out" ? out : inn).C?.get(v) || [])) {
+        if (nodes.size >= LIMIT) break;
+        edges.push(dir === "out" ? [v, w, cnt] : [w, v, cnt]);
+        if (!nodes.has(w)) { nodes.set(w, role); nxt.push(w); }
+      }
+      front = nxt;
+    }
+  };
+  if (document.getElementById("c-out").checked) bfs("out", "callee");
+  if (document.getElementById("c-in").checked) bfs("in", "caller");
+  if (document.getElementById("c-type").checked)
+    for (const [w] of out.T?.get(id) || []) { if (!nodes.has(w)) nodes.set(w, "type"); edges.push([id, w, 1, true]); }
+  for (const [w] of out.M?.get(id) || []) { nodes.set(w, "klass"); edges.push([id, w, 1, true]); }
+  const col = {center: css("--accent"), callee: css("--callee"), caller: css("--caller"), type: css("--type"), klass: css("--klass")};
+  const els = [];
+  for (const [i, role] of nodes) { const n = byId.get(i); if (!n) continue;
+    els.push({data: {id: "n" + i, nid: i, label: n.n, color: col[role], size: role === "center" ? 34 : 12 + Math.min(26, Math.sqrt(n.br || 0) * 3),
+      shape: n.t === "c" ? "round-rectangle" : null}}); }
+  const seen = new Set();
+  for (const [s, d, cnt, dash] of edges) { const k = s + ">" + d; if (seen.has(k) || !nodes.has(s) || !nodes.has(d)) continue; seen.add(k);
+    els.push({data: {id: "e" + k, source: "n" + s, target: "n" + d, w: Math.min(4, 1 + Math.log2(cnt || 1)), dash: dash || null}}); }
+  cy1.elements().remove(); cy1.add(els);
+  cy1.layout({name: "concentric", concentric: e => e.data("nid") === id ? 10 : (nodes.get(e.data("nid")) === "callee" ? 5 : 3),
+    levelWidth: () => 1, minNodeSpacing: 18, animate: false}).run();
+  document.getElementById("side1").innerHTML = detail(c) +
+    `<div class="note">${nodes.size - 1} node lân cận${nodes.size >= LIMIT ? " (đã cắt ở " + LIMIT + ")" : ""}.</div>`;
+}
+cy1.on("tap", "node", e => document.getElementById("side1").innerHTML = detail(byId.get(e.target.data("nid"))));
+cy1.on("dbltap", "node", e => { const n = byId.get(e.target.data("nid")); if (n.t === "f") explore(n.i); });
+
+// ---------- 2. files
+let cy2;
+function initFiles() {
+  cy2 = cytoscape({container: document.getElementById("cy2"), style: baseStyle(), wheelSensitivity: .3});
+  cy2.on("tap", "node", e => { const n = byId.get(e.target.data("nid"));
+    const us = units.filter(u => u.f === n.f).sort((a, b) => b.cc - a.cc);
+    document.getElementById("side2").innerHTML = detail(n) + `<div class="note">${us.length} unit trong file:</div>` +
+      us.slice(0, 80).map(u => `<div class="mono"><a href="#" onclick="explore(${u.i});return false">${esc(u.n)}</a> · cc ${u.cc}</div>`).join(""); });
+  document.querySelectorAll("input[name=fe]").forEach(r => r.onchange = drawFiles);
+  document.getElementById("fmin").onchange = drawFiles; drawFiles();
+}
+function drawFiles() {
+  const mode = document.querySelector("input[name=fe]:checked").value, min = +document.getElementById("fmin").value;
+  const cnt = {}; units.forEach(u => cnt[u.f] = (cnt[u.f] || 0) + 1);
+  const files = D.nodes.filter(n => n.t === "F");
+  const fids = new Set(files.map(f => f.i));
+  const es = mode === "calls" ? D.file_calls.filter(e => e[2] >= min).map(([s, d, c]) => [s, d, c])
+    : D.edges.filter(e => e[2] === "N" && fids.has(e[0]) && fids.has(e[1])).map(([s, d]) => [s, d, 1]);
+  const used = new Set(es.flatMap(e => [e[0], e[1]]));
+  const els = files.filter(f => used.has(f.i)).map(f => ({data: {id: "n" + f.i, nid: f.i, label: f.n,
+    color: f.f.startsWith("include/") ? css("--type") : css("--callee"), size: 8 + Math.min(40, Math.sqrt(cnt[f.f] || 0) * 5)}}));
+  es.forEach(([s, d, c]) => els.push({data: {id: `e${s}_${d}`, source: "n" + s, target: "n" + d, w: Math.min(5, .5 + Math.log2(c + 1) / 2)}}));
+  cy2.elements().remove(); cy2.add(els);
+  cy2.layout({name: "cose", animate: false, nodeRepulsion: 9000, idealEdgeLength: 80, numIter: 1500}).run();
+}
+
+// ---------- 3. classes
+let cy3;
+function initClasses() {
+  cy3 = cytoscape({container: document.getElementById("cy3"), style: baseStyle(), wheelSensitivity: .3});
+  document.getElementById("cmin").onchange = drawClasses; drawClasses();
+  cy3.on("tap", "node", e => { const n = byId.get(e.target.data("nid"));
+    const ms = units.filter(u => (out.M?.get(u.i) || []).some(([c]) => c === n.i));
+    document.getElementById("side3").innerHTML = detail(n) + `<div class="note">${ms.length} method có thân:</div>` +
+      ms.slice(0, 80).map(u => `<div class="mono"><a href="#" onclick="explore(${u.i});return false">${esc(u.n)}</a> · cc ${u.cc}</div>`).join(""); });
+}
+
+function drawClasses() {
+  const all = D.edges.filter(e => e[2] === "I" && byId.has(e[0]) && byId.has(e[1]));
+  const kids = new Map(); all.forEach(([s, d]) => kids.set(d, (kids.get(d) || 0) + 1));
+  // giữ cạnh thuộc cây có class cha nhiều con: cạnh tới cha đó, và cạnh từ cha đó lên trên
+  const big = new Set([...kids].filter(([, n]) => n >= 2).map(([d]) => d));
+  const es = document.getElementById("cmin").checked ? all.filter(([s, d]) => big.has(d) || big.has(s)) : all;
+  const ids = new Set(es.flatMap(e => [e[0], e[1]]));
+  const els = [...ids].map(i => { const n = byId.get(i); return {data: {id: "n" + i, nid: i, label: n.n,
+    color: n.tp ? css("--klass") : css("--type"), size: 12 + Math.min(30, (kids.get(i) || 0) * 3), shape: "round-rectangle"}}; });
+  es.forEach(([s, d]) => els.push({data: {id: `e${s}_${d}`, source: "n" + s, target: "n" + d, w: 1.2}}));
+  cy3.elements().remove(); cy3.add(els);
+  // cose: mỗi cây kế thừa tự gom thành 1 cụm, class cha (nhiều con) ở giữa cụm
+  cy3.layout({name: "cose", animate: false, nodeRepulsion: 12000, idealEdgeLength: 60, numIter: 2000, componentSpacing: 60}).run();
+}
+
+// ---------- 4. table
+let sortK = "cc", sortD = -1;
+function initTable() {
+  document.querySelectorAll("th").forEach(th => th.onclick = () => { const k = th.dataset.k; sortD = sortK === k ? -sortD : -1; sortK = k; drawTable(); });
+  document.getElementById("tf").oninput = drawTable; document.getElementById("tb").onchange = drawTable; drawTable();
+}
+function drawTable() {
+  const f = document.getElementById("tf").value.toLowerCase(), onlyBr = document.getElementById("tb").checked;
+  const rows = units.filter(u => (!f || u.q.toLowerCase().includes(f) || u.f.toLowerCase().includes(f)) && (!onlyBr || u.br > 0))
+    .sort((a, b) => { const x = a[sortK] ?? -1, y = b[sortK] ?? -1; return (x > y ? 1 : x < y ? -1 : 0) * sortD; });
+  document.getElementById("tcount").textContent = `${rows.length} / ${units.length} unit`;
+  document.getElementById("tbody").innerHTML = rows.slice(0, 2000).map(u => `<tr onclick="explore(${u.i})">
+    <td class="mono">${esc(u.q)}</td><td class="mono">${esc(u.f)}:${u.l}</td><td class="n">${u.br}</td><td class="n">${u.cc}</td>
+    <td class="n">${u.lv ?? ""}</td><td class="n">${u.fi}</td><td class="n">${u.bt}</td><td>${u.lk}</td><td>${u.ac}</td></tr>`).join("");
+}
+
+// mở sẵn unit phức tạp nhất
+const firstUnit = units.slice().sort((a, b) => b.cc - a.cc)[0]; if (firstUnit) explore(firstUnit.i);
+</script>
+</body>
+</html>
