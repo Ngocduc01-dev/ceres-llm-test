@@ -2,3 +2,14 @@ ceres-solver/build/
 *.gcda
 *.gcno
 __pycache__/
+
+# Sinh ra khi build (đường dẫn phụ thuộc máy) – chạy scripts/build.sh để có lại
+data/compile_commands.json
+# Code graph SQLite (~10 MB) – chạy scripts/phase1.sh để có lại
+data/graph.db
+
+# Cấu hình cục bộ của editor/agent
+.claude/
+
+# Báo cáo HTML nặng (~24 MB) – sinh lại bằng: SKIP_TESTS=1 scripts/coverage.sh
+reports/**/html/

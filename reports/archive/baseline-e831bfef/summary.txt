@@ -1,0 +1,278 @@
+------------------------------------------------------------------------------
+                           GCC Code Coverage Report
+Directory: ../ceres-solver
+------------------------------------------------------------------------------
+File                                       Lines    Exec  Cover   Missing
+------------------------------------------------------------------------------
+include/ceres/accurate_norm.h                108     108   100%
+include/ceres/autodiff_cost_function.h        30      30   100%
+include/ceres/autodiff_first_order_function.h
+                                              28      26    92%   171,180
+include/ceres/autodiff_manifold.h             29      29   100%
+include/ceres/cost_function.h                  6       6   100%
+include/ceres/cost_function_to_functor.h      20      19    95%   126
+include/ceres/crs_matrix.h                     1       1   100%
+include/ceres/cubic_interpolation.h          101     101   100%
+include/ceres/dynamic_autodiff_cost_function.h
+                                              92      89    96%   133-134,252
+include/ceres/dynamic_cost_function.h          6       6   100%
+include/ceres/dynamic_cost_function_to_functor.h
+                                              32      31    96%   150
+include/ceres/dynamic_numeric_diff_cost_function.h
+                                              44      39    88%   133-134,138-139,183
+include/ceres/internal/array_selector.h       13      13   100%
+include/ceres/internal/autodiff.h             46      45    97%   305
+include/ceres/internal/householder_vector.h
+                                              23      23   100%
+include/ceres/internal/jet_traits.h            4       4   100%
+include/ceres/internal/numeric_diff.h        109     103    94%   154,168,205,219,322,349
+include/ceres/internal/parameter_dims.h        5       5   100%
+include/ceres/internal/sphere_manifold_functions.h
+                                              42      42   100%
+include/ceres/internal/variadic_evaluate.h
+                                              12      12   100%
+include/ceres/jet.h                          265     253    95%   255-258,1417-1422,1425-1426
+include/ceres/line_manifold.h                 70      69    98%   133
+include/ceres/loss_function.h                 30      29    96%   341
+include/ceres/manifold.h                      35      33    94%   248,252
+include/ceres/numeric_diff_cost_function.h
+                                              39      38    97%   255
+include/ceres/numeric_diff_first_order_function.h
+                                              45      43    95%   183,225
+include/ceres/ordered_groups.h                67      66    98%   65
+include/ceres/problem.h                        4       4   100%
+include/ceres/product_manifold.h              80      77    96%   138,185,206
+include/ceres/rotation.h                     315     315   100%
+include/ceres/sized_cost_function.h            4       4   100%
+include/ceres/sphere_manifold.h               42      42   100%
+include/ceres/tiny_solver.h                   95      80    84%   225,266-267,271-272,300,330-331,335-336,348,350-351,355-356
+include/ceres/tiny_solver_autodiff_function.h
+                                              29      28    96%   151
+include/ceres/tiny_solver_cost_function_adapter.h
+                                              22      20    90%   103,129
+internal/ceres/array_utils.cc                 36      35    97%   82
+internal/ceres/block_evaluate_preparer.cc
+                                              16      16   100%
+internal/ceres/block_jacobi_preconditioner.cc
+                                             105     105   100%
+internal/ceres/block_jacobi_preconditioner.h
+                                              11       2    18%   62-63,65-66,85-89
+internal/ceres/block_jacobian_writer.cc      109     104    95%   96-98,175,196
+internal/ceres/block_jacobian_writer.h         2       2   100%
+internal/ceres/block_random_access_dense_matrix.cc
+                                              20      20   100%
+internal/ceres/block_random_access_dense_matrix.h
+                                               5       5   100%
+internal/ceres/block_random_access_diagonal_matrix.cc
+                                              49      49   100%
+internal/ceres/block_random_access_diagonal_matrix.h
+                                               4       4   100%
+internal/ceres/block_random_access_matrix.cc
+                                               1       1   100%
+internal/ceres/block_random_access_matrix.h
+                                               2       2   100%
+internal/ceres/block_random_access_sparse_matrix.cc
+                                              69      68    98%   88
+internal/ceres/block_random_access_sparse_matrix.h
+                                              10       6    60%   103-106
+internal/ceres/block_sparse_matrix.cc        501     468    93%   119,210,289-290,297,461,473,558-571,573-575,580,615,665,703,808,822-823,839-840
+internal/ceres/block_sparse_matrix.h          10      10   100%
+internal/ceres/block_structure.cc             20      19    95%   41
+internal/ceres/block_structure.h              14      14   100%
+internal/ceres/c_api.cc                       58      48    82%   51,57,112-113,115-116,121-122,124-125
+internal/ceres/callbacks.cc                   55      54    98%   117
+internal/ceres/canonical_views_clustering.cc
+                                              74      73    98%   90
+internal/ceres/casts.h                         3       3   100%
+internal/ceres/cgnr_solver.cc                 75       8    10%   88,92-96,98,101-103,106-108,112,114,128-133,140-141,146,151-161,163-166,168,170,172-173,175-182,186,188-191,193-196,199,201,203-207
+internal/ceres/compressed_col_sparse_matrix_utils.cc
+                                              34      34   100%
+internal/ceres/compressed_col_sparse_matrix_utils.h
+                                              28      28   100%
+internal/ceres/compressed_row_jacobian_writer.cc
+                                             113     102    90%   156-159,161-167
+internal/ceres/compressed_row_jacobian_writer.h
+                                               4       4   100%
+internal/ceres/compressed_row_sparse_matrix.cc
+                                             389     356    91%   177-180,220-223,288-289,358,433,488-491,532-536,539,600,611-618,634,640
+internal/ceres/compressed_row_sparse_matrix.h
+                                              31      29    93%   238-239
+internal/ceres/concurrent_queue.h             33      33   100%
+internal/ceres/conditioned_cost_function.cc
+                                              44      40    90%   74,84,101,109
+internal/ceres/conjugate_gradients_solver.h
+                                             102      78    76%   132-135,148,150-151,169,171-172,180-181,186-187,198-199,203-205,210-211,215-216,306
+internal/ceres/context.cc                      3       2    66%   38
+internal/ceres/context_impl.cc                 6       6   100%
+internal/ceres/coordinate_descent_minimizer.cc
+                                             118     117    99%   273
+internal/ceres/corrector.cc                   30      30   100%
+internal/ceres/cost_function.cc                4       2    50%   36-37
+internal/ceres/covariance.cc                  20      20   100%
+internal/ceres/covariance_impl.cc            381     332    87%   102,138,140-141,193-195,247,266,272,285,287-288,346,514,518-522,526-531,534-536,539,541,703,706,776-784,839,846-847,851-854
+internal/ceres/covariance_impl.h               2       2   100%
+internal/ceres/dense_cholesky.cc              79      61    77%   98,108,111,120,123-126,137,158-159,170-171,186-187,197-198,343
+internal/ceres/dense_jacobian_writer.h        22      22   100%
+internal/ceres/dense_normal_cholesky_solver.cc
+                                              24      24   100%
+internal/ceres/dense_qr.cc                    32      23    71%   126,131,134,139,142-145,148
+internal/ceres/dense_qr_solver.cc             24      24   100%
+internal/ceres/dense_sparse_matrix.cc         46      40    87%   108-112,115
+internal/ceres/dense_sparse_matrix.h           2       1    50%   65
+internal/ceres/detect_structure.cc            48      39    81%   65,76,95-96,105,108,116-118
+internal/ceres/dogleg_strategy.cc            283     208    73%   93-96,98-100,102-105,143,158-159,213,221-226,254,285,315,323-326,349-357,365,438,488,574-575,577,579,581-583,589,595-597,599-600,616,622,636-639,641-644,656,660-664,677-682
+internal/ceres/dogleg_strategy.h               3       3   100%
+internal/ceres/dynamic_compressed_row_finalizer.h
+                                               4       4   100%
+internal/ceres/dynamic_compressed_row_jacobian_writer.cc
+                                              28      28   100%
+internal/ceres/dynamic_compressed_row_jacobian_writer.h
+                                               2       2   100%
+internal/ceres/dynamic_compressed_row_sparse_matrix.cc
+                                              45      43    95%   99-100
+internal/ceres/dynamic_cost_function_to_functor.cc
+                                              10      10   100%
+internal/ceres/dynamic_sparse_normal_cholesky_solver.cc
+                                              88      47    53%   77-78,88-90,94-101,109,147-150,154-156,162-164,171-173,181,187-189,193-194,238,240,246-248,253-254,297
+internal/ceres/eigen_vector_ops.h             30      30   100%
+internal/ceres/eigensparse.cc                 60      44    73%   72-75,78-79,87-88,111-112,172,174,181,201,203,210
+internal/ceres/eigensparse.h                   2       2   100%
+internal/ceres/evaluation_callback.cc          1       1   100%
+internal/ceres/evaluator.cc                   25      22    88%   95-97
+internal/ceres/evaluator.h                     5       3    60%   164-165
+internal/ceres/event_logger.cc                22      11    50%   50-51,53-54,60-61,69-70,73-75
+internal/ceres/execution_summary.h            14      14   100%
+internal/ceres/fake_bundle_adjustment_jacobian.cc
+                                              34       0     0%   44,51,53-54,56-58,62-64,67-73,75-80,82-84,86-88,90,94-97
+internal/ceres/file.cc                        28       4    14%   42,44-46,48-50,52-53,55-56,60-62,65,67-71,73-74,84,86
+internal/ceres/first_order_function.cc         1       1   100%
+internal/ceres/function_sample.cc             32      25    78%   66-67,70-74
+internal/ceres/gradient_checker.cc           118     114    96%   210-213
+internal/ceres/gradient_checking_cost_function.cc
+                                              95      92    96%   97,109,281
+internal/ceres/gradient_checking_cost_function.h
+                                               2       2   100%
+internal/ceres/gradient_problem.cc            28      28   100%
+internal/ceres/gradient_problem_evaluator.h
+                                              16      14    87%   53,88
+internal/ceres/gradient_problem_solver.cc
+                                             147      96    65%   87,126-127,210-211,217-220,223,225,227-230,233-234,236-237,239,242,245,249,251-253,255,257-262,265,267,269-270,272-274,276-278,280-282,284,286-289
+internal/ceres/graph.h                        51      50    98%   60
+internal/ceres/graph_algorithms.h            114     113    99%   333
+internal/ceres/implicit_schur_complement.cc
+                                             125     125   100%
+internal/ceres/implicit_schur_complement.h
+                                               9       6    66%   122-124
+internal/ceres/inner_product_computer.cc     115     113    98%   59,135
+internal/ceres/inner_product_computer.h        9       9   100%
+internal/ceres/invert_psd_matrix.h             9       9   100%
+internal/ceres/is_close.cc                    10      10   100%
+internal/ceres/iteration_callback.cc           1       1   100%
+internal/ceres/iterative_refiner.cc           39      39   100%
+internal/ceres/iterative_schur_complement_solver.cc
+                                              94      82    87%   116-121,169-172,196-197
+internal/ceres/levenberg_marquardt_strategy.cc
+                                              78      67    85%   120-121,124-125,127-128,139-140,142,146-147
+internal/ceres/levenberg_marquardt_strategy.h
+                                               3       0     0%   63,68-69
+internal/ceres/line_search.cc                380     267    70%   65-67,84-85,87,89,117,130,140,223,229,235-237,239-240,267-269,320,324-326,328,343,347-349,351,416,436-440,464,467,476,545-547,560-562,576-577,589-598,600-601,607,612-614,620,622-623,663,667-669,671,689,708-710,725-727,739,746-751,753-754,766,771-774,776,782,785-788,790,833,838-842,844,848-851,869-870,874
+internal/ceres/line_search.h                   2       2   100%
+internal/ceres/line_search_direction.cc      127      76    59%   46,49-50,70-81,115-117,129-134,153-158,169-171,213-216,253-254,256-258,321-326,345,366-367
+internal/ceres/line_search_minimizer.cc      261     180    69%   75-76,125-128,130,134,136-139,141,150,153-156,158,204-206,208,233-236,238,256,260,263-266,268,272,275-285,288-289,312,318-321,323,331,338-340,342-343,348,366-369,371,379,382-385,387,440,467,470-474,476
+internal/ceres/line_search_minimizer.h         7       7   100%
+internal/ceres/line_search_preprocessor.cc
+                                              34      33    97%   97
+internal/ceres/linear_least_squares_problems.cc
+                                             514     446    86%   67-68,930,935-938,940-941,944-945,948-949,951,954,957-962,964-965,967,973-974,976-977,979-980,983-988,990,993-995,997-1000,1002,1004-1007,1009,1011-1014,1016,1018-1020,1024,1031-1039
+internal/ceres/linear_least_squares_problems.h
+                                               1       1   100%
+internal/ceres/linear_operator.cc             13       5    38%   43-44,49,54-56,58-59
+internal/ceres/linear_operator.h              12       3    25%   67-69,71,75-76,78,82-83
+internal/ceres/linear_solver.cc               34      27    79%   54,58,68-69,72,124-125
+internal/ceres/linear_solver.h                42      18    42%   76,78-92,94,121-125,348-349
+internal/ceres/loss_function.cc               93      93   100%
+internal/ceres/low_rank_inverse_hessian.cc
+                                              49      40    81%   92-96,165,167-169
+internal/ceres/low_rank_inverse_hessian.h
+                                               5       0     0%   87-91
+internal/ceres/manifold.cc                   152     149    98%   112,118,190
+internal/ceres/map_util.h                     19      18    94%   126
+internal/ceres/minimizer.cc                   31      28    90%   51,85-86
+internal/ceres/minimizer.h                    50      50   100%
+internal/ceres/normal_prior.cc                14      14   100%
+internal/ceres/parallel_for.h                 42      41    97%   109
+internal/ceres/parallel_invoke.cc             25      25   100%
+internal/ceres/parallel_invoke.h              44      44   100%
+internal/ceres/parallel_utils.cc              19      19   100%
+internal/ceres/parallel_vector_ops.cc          7       7   100%
+internal/ceres/parallel_vector_ops.h          11      11   100%
+internal/ceres/parameter_block.h             163     138    84%   94,96,180-181,187,231,250,257-258,262-269,274,281,288,327-330,338
+internal/ceres/parameter_block_ordering.cc
+                                              76      74    97%   73,159
+internal/ceres/partition_range_for_parallel_for.h
+                                              43      43   100%
+internal/ceres/partitioned_matrix_view.cc
+                                               7       5    71%   144-145
+internal/ceres/partitioned_matrix_view.h      10      10   100%
+internal/ceres/partitioned_matrix_view_impl.h
+                                             362     360    99%   428,439
+internal/ceres/polynomial.cc                 186     179    96%   240-241,310-312,388-389
+internal/ceres/polynomial.h                    5       5   100%
+internal/ceres/power_series_expansion_preconditioner.cc
+                                              31      31   100%
+internal/ceres/preconditioner.cc              20      13    65%   39,41-42,44,46,69-70
+internal/ceres/preconditioner.h               25      19    76%   152-153,157,164-165,172
+internal/ceres/preprocessor.cc                38      32    84%   56,68-72
+internal/ceres/preprocessor.h                  1       1   100%
+internal/ceres/problem.cc                     85      68    80%   136,141,146,149,155,160,169,187,189-190,192,195-196,208,210-211,213
+internal/ceres/problem_impl.cc               440     387    88%   96,126,216,282-283,302,318-321,387-390,437,475,487,520,523-525,541-543,555-557,564,567-569,576,579-581,593,626-628,773-774,801,804-806,813,816-818,869,872-874
+internal/ceres/problem_impl.h                 13      11    84%   167,171
+internal/ceres/program.cc                    280     255    91%   84,108,128,138,168-170,181-184,410-411,481,556-564,566-567
+internal/ceres/program_evaluator.h           128     126    98%   151,382
+internal/ceres/reorder_program.cc            218     168    77%   86-87,115,128-129,205,239,243-244,265-267,283-284,310-311,316-317,336-337,346-347,352-353,363,404,443,478,481-483,498-499,531,548,572,575-577,589,591,602,605,641-643,645,647,649,664
+internal/ceres/residual_block.cc              74      74   100%
+internal/ceres/residual_block.h               11       9    81%   133-134
+internal/ceres/residual_block_utils.cc        47      47   100%
+internal/ceres/schur_complement_solver.cc
+                                             194     187    96%   127,204,315-317,320,351
+internal/ceres/schur_complement_solver.h       8       8   100%
+internal/ceres/schur_eliminator.cc             6       4    66%   139-140
+internal/ceres/schur_eliminator.h            119     116    97%   391-392,495
+internal/ceres/schur_eliminator_impl.h       287     272    94%   90-91,254,336,699-702,705-706,708,711-713,716
+internal/ceres/schur_jacobi_preconditioner.cc
+                                              44      42    95%   52,104
+internal/ceres/schur_templates.cc             10      10   100%
+internal/ceres/scratch_evaluate_preparer.cc
+                                              22      21    95%   50
+internal/ceres/single_linkage_clustering.cc
+                                              25      23    92%   69,75
+internal/ceres/small_blas.h                  175     175   100%
+internal/ceres/small_blas_generic.h           51      51   100%
+internal/ceres/solver.cc                     590     480    81%   114,179-180,208-209,253,273-274,287-288,299-300,304-305,396-397,399-400,428,432,436-437,446-448,475-478,480-481,491-496,498,519,716,748-749,864-865,871-874,894,896-897,930-931,933,942-943,948,956,959-961,980,983-984,989,992-993,1007,1009-1010,1014,1016-1017,1021-1025,1027,1030,1033-1034,1036-1037,1039,1042,1045,1049,1051-1053,1055,1057-1058,1060-1062,1088,1090,1098,1100,1112,1114,1121,1123,1134,1136,1140,1142,1159
+internal/ceres/solver_utils.cc                 1       1   100%
+internal/ceres/solver_utils.h                 10      10   100%
+internal/ceres/sparse_cholesky.cc             49      32    65%   51,61,78,89-90,92,103,106-109,114-117,119,160
+internal/ceres/sparse_matrix.cc                7       7   100%
+internal/ceres/sparse_matrix.h                 3       3   100%
+internal/ceres/sparse_normal_cholesky_solver.cc
+                                              39      39   100%
+internal/ceres/stl_util.h                     18      18   100%
+internal/ceres/subset_preconditioner.cc       40      37    92%   51,112-113
+internal/ceres/subset_preconditioner.h         2       0     0%   79-80
+internal/ceres/suitesparse.h                   1       0     0%   310
+internal/ceres/thread_pool.cc                 36      36   100%
+internal/ceres/triplet_sparse_matrix.cc      206     183    88%   280,282-285,287,289,291-296,300-301,303-309,311
+internal/ceres/triplet_sparse_matrix.h        11      11   100%
+internal/ceres/trust_region_minimizer.cc     388     312    80%   99-100,213-216,294-297,324,345,357,390-391,393-395,406,408-410,419,456-459,467,473-475,478-480,483,490-499,528-529,531,536-537,581,654,658-661,663,713,716-720,722,741,763,783-785,787-788,793-795,797,838
+internal/ceres/trust_region_preprocessor.cc
+                                             224     197    87%   71,82,93-94,96,98-101,140-142,145-148,151,250-251,253-255,317-318,352-353,428
+internal/ceres/trust_region_step_evaluator.cc
+                                              37      32    86%   57,85-88
+internal/ceres/trust_region_strategy.cc       10       7    70%   52-54
+internal/ceres/types.cc                      263      48    18%   47-49,58-61,65-74,79-80,82,86-87,91-100,109,111-112,116,118-124,127-132,136,138-141,149-151,155,157-161,167-169,173,175-178,181-186,190-194,197-202,206-210,213-220,224,226-231,234-239,243-247,250,252-257,261,263-267,270,272-277,281,283-287,290-295,299,301-304,307-313,317,319-323,326-331,335,337-340,346,348-351,355-360,364-368,371-376,380-384,432-433,436-437,454,456,462-463
+internal/ceres/visibility.cc                  50      49    98%   64
+internal/ceres/visibility_based_preconditioner.cc
+                                             257     205    79%   75,78,92-93,111-113,191-194,196,253,287-295,347,356-360,372-377,382-386,391-392,394,407-409,412,437,452,454,530,563,566
+------------------------------------------------------------------------------
+TOTAL                                      13975   12145    86%
+------------------------------------------------------------------------------

@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ceres AST Viewer</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cytoscape/3.26.0/cytoscape.min.js"></script>
+<style>
+:root{--bg:#f7f7f5;--panel:#fff;--text:#1d1d1b;--muted:#6b6b66;--border:#e2e1dc;--accent:#c2410c;--hl:#fde68a;
+--decl:#2563eb;--stmt:#7c3aed;--expr:#059669;--dec:#dc2626;--ref:#64748b;--hover:#f1f0ec}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#161615;--panel:#1f1f1d;--text:#ecebe6;--muted:#9c9b94;
+--border:#34332f;--accent:#fb923c;--hl:#5b4a12;--decl:#60a5fa;--stmt:#a78bfa;--expr:#34d399;--dec:#f87171;--ref:#94a3b8;--hover:#2a2a27}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font:14px/1.45 system-ui,-apple-system,"Segoe UI",sans-serif}
+header{padding:16px 20px 8px}h1{font-size:20px;margin:0 0 4px}.sub{color:var(--muted);font-size:13px}
+.wrap{display:flex;gap:12px;padding:8px 20px 20px}
+.list{width:300px;flex-shrink:0;background:var(--panel);border:1px solid var(--border);border-radius:8px;height:80vh;overflow:auto}
+.list input{width:calc(100% - 16px);margin:8px;padding:6px 8px;border:1px solid var(--border);border-radius:6px;background:var(--panel);color:var(--text);font:inherit}
+.it{padding:6px 10px;border-top:1px solid var(--border);cursor:pointer}.it:hover{background:var(--hover)}.it.on{background:var(--hover);box-shadow:inset 3px 0 var(--accent)}
+.it .n{font-family:ui-monospace,Consolas,monospace;font-size:12px;word-break:break-all}.it .m{color:var(--muted);font-size:11px}
+.main{flex:1;min-width:0;display:flex;flex-direction:column;gap:10px}
+.bar{display:flex;flex-wrap:wrap;gap:8px 16px;align-items:center;font-size:13px;color:var(--muted)}
+.bar b{color:var(--text)}button{font:inherit;font-size:12px;padding:4px 10px;border-radius:6px;border:1px solid var(--border);background:var(--panel);color:var(--text);cursor:pointer}
+button.on{border-color:var(--accent);color:var(--accent)}
+.panes{display:flex;gap:10px;min-height:0}.pane{flex:1;min-width:0;background:var(--panel);border:1px solid var(--border);border-radius:8px;height:70vh;overflow:auto;padding:8px}
+.tree ul{list-style:none;margin:0;padding-left:16px;border-left:1px dashed var(--border)}.tree>ul{border:0;padding-left:0}
+.tree li{margin:1px 0;white-space:nowrap}.node{cursor:pointer;border-radius:4px;padding:0 3px;font-family:ui-monospace,Consolas,monospace;font-size:12px}
+.node:hover{background:var(--hover)}.tg{display:inline-block;width:14px;color:var(--muted);cursor:pointer;user-select:none}
+.k{font-weight:600}.kd{color:var(--decl)}.ks{color:var(--stmt)}.ke{color:var(--expr)}.kr{color:var(--ref)}.kx{color:var(--dec)}
+.dec{background:color-mix(in srgb,var(--dec) 14%,transparent)}.s{color:var(--text)}.t{color:var(--muted)}.ln{color:var(--muted);font-size:11px}
+pre{margin:0;font:12px/1.5 ui-monospace,Consolas,monospace}.sl{display:block;padding:0 6px}.sl i{display:inline-block;width:42px;color:var(--muted);font-style:normal;user-select:none}
+.sl.h{background:var(--hl)}.sl.d i{color:var(--dec);font-weight:700}
+#cy{height:70vh}.decs{font-size:12px;color:var(--muted)}.decs span{display:inline-block;margin:2px 6px 2px 0;padding:1px 6px;border-radius:10px;border:1px solid var(--border);cursor:pointer}
+.note{color:var(--muted);font-size:12px}
+@media (max-width:900px){.wrap{flex-direction:column}.list{width:auto;height:30vh}.panes{flex-direction:column}.pane{height:50vh}}
+</style>
+</head>
+<body>
+<header><h1>Ceres AST Viewer</h1><div class="sub" id="sub"></div></header>
+<div class="wrap">
+  <div class="list"><input id="flt" placeholder="Lọc unit…"><div id="items"></div></div>
+  <div class="main">
+    <div class="bar" id="info"></div>
+    <div class="bar"><button id="b-tree" class="on">Dạng cây</button><button id="b-graph">Dạng sơ đồ</button>
+      <button id="b-exp">Mở hết</button><button id="b-col">Thu gọn</button>
+      <span class="note">Bấm 1 node để tô dòng code tương ứng. Màu đỏ = điểm quyết định (tạo nhánh – mục tiêu của C2).</span></div>
+    <div class="decs" id="decs"></div>
+    <div class="panes"><div class="pane tree" id="tree"></div><div class="pane" id="gpane" style="display:none;padding:0"><div id="cy"></div></div>
+      <div class="pane"><pre id="src"></pre></div></div>
+  </div>
+</div>
+<script>
+const D = /*__DATA__*/null;
+const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const esc = s => String(s ?? "").replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+document.getElementById("sub").textContent = `Ceres ${D.ceres_version} · ${D.units.length} unit · AST lấy bằng libclang (Clang 18)`;
+const cls = k => k.endsWith("_DECL") || k === "CONSTRUCTOR" || k === "DESTRUCTOR" || k === "CXX_METHOD" || k === "FUNCTION_TEMPLATE" ? "kd"
+  : k.endsWith("_STMT") ? "ks" : k.endsWith("_REF") || k === "DECL_REF_EXPR" || k === "MEMBER_REF_EXPR" ? "kr" : "ke";
+let U = null, view = "tree", cy = null;
+
+function list() {
+  const f = document.getElementById("flt").value.toLowerCase();
+  document.getElementById("items").innerHTML = D.units.filter(u => !f || u.q.toLowerCase().includes(f)).map(u =>
+    `<div class="it${U && U.id === u.id ? " on" : ""}" onclick="pick(${u.id})"><div class="n">${esc(u.q)}</div>
+     <div class="m">${esc(u.f)}:${u.l} · nhánh≈${u.br} · cc ${u.cc}</div></div>`).join("");
+}
+document.getElementById("flt").oninput = list;
+
+function count(n) { return 1 + (n.c || []).reduce((a, c) => a + count(c), 0); }
+function decisions(n, acc = []) { if (n.d) acc.push(n); (n.c || []).forEach(c => decisions(c, acc)); return acc; }
+function label(n) {
+  return `<span class="k ${n.d ? "kx" : cls(n.k)}">${esc(n.k)}</span>${n.op ? ` <span class="s">${esc(n.op)}</span>` : ""}` +
+    `${n.s ? ` <span class="s">${esc(n.s)}</span>` : ""}${n.t ? ` <span class="t">: ${esc(n.t)}</span>` : ""}` +
+    ` <span class="ln">L${n.l}${n.e !== n.l ? "–" + n.e : ""}</span>${n.cut ? ' <span class="t">… (cắt bớt)</span>' : ""}`;
+}
+function treeHTML(n, depth) {
+  const kids = n.c || [], open = depth < 4;
+  return `<li><span class="tg">${kids.length ? (open ? "▾" : "▸") : ""}</span><span class="node${n.d ? " dec" : ""}" data-l="${n.l}" data-e="${n.e}">${label(n)}</span>` +
+    (kids.length ? `<ul${open ? "" : ' style="display:none"'}>${kids.map(c => treeHTML(c, depth + 1)).join("")}</ul>` : "") + "</li>";
+}
+function hl(l, e) {
+  document.querySelectorAll(".sl").forEach(x => { const ln = +x.dataset.l; x.classList.toggle("h", ln >= l && ln <= e); });
+  document.querySelector(`.sl[data-l="${l}"]`)?.scrollIntoView({block: "nearest"});
+}
+function pick(id) {
+  U = D.units.find(u => u.id === id); list();
+  const decs = decisions(U.ast), dl = new Set(decs.map(d => d.l));
+  document.getElementById("info").innerHTML = `<b class="mono">${esc(U.q)}</b><span>${esc(U.f)}:${U.l}–${U.e}</span>
+    <span>${count(U.ast).toLocaleString("vi-VN")} node AST${U.truncated ? " (đã cắt)" : ""}</span><span>nhánh≈ <b>${U.br}</b></span>
+    <span>cyclomatic <b>${U.cc}</b></span><span>level <b>${U.lv ?? "-"}</b></span>
+    <a href="https://github.com/ceres-solver/ceres-solver/blob/${D.ceres_version}/${U.f}#L${U.l}-L${U.e}" target="_blank" rel="noopener">xem trên GitHub</a>`;
+  document.getElementById("decs").innerHTML = decs.length ? "Điểm quyết định: " + decs.map(d =>
+    `<span onclick="hl(${d.l},${d.e})">${esc(d.op || d.k.replace("_STMT", "").replace("CONDITIONAL_OPERATOR", "?:"))} L${d.l}</span>`).join("")
+    : "Không có điểm quyết định nào (if/for/while/case/?:/&&/||) trong code được compile.";
+  document.getElementById("src").innerHTML = U.src.map((s, i) => { const ln = U.l + i;
+    return `<span class="sl${dl.has(ln) ? " d" : ""}" data-l="${ln}"><i>${ln}</i>${esc(s)}</span>`; }).join("");
+  document.getElementById("tree").innerHTML = `<ul>${treeHTML(U.ast, 0)}</ul>`;
+  if (view === "graph") drawGraph();
+}
+document.getElementById("tree").addEventListener("click", e => {
+  const tg = e.target.closest(".tg");
+  if (tg) { const ul = tg.parentElement.querySelector(":scope>ul"); if (ul) { const o = ul.style.display === "none";
+    ul.style.display = o ? "" : "none"; tg.textContent = o ? "▾" : "▸"; } return; }
+  const nd = e.target.closest(".node"); if (nd) hl(+nd.dataset.l, +nd.dataset.e);
+});
+const setAll = open => document.querySelectorAll("#tree ul ul").forEach(ul => { ul.style.display = open ? "" : "none";
+  const tg = ul.parentElement.querySelector(":scope>.tg"); if (tg) tg.textContent = open ? "▾" : "▸"; });
+document.getElementById("b-exp").onclick = () => setAll(true);
+document.getElementById("b-col").onclick = () => setAll(false);
+function setView(v) {
+  view = v; document.getElementById("b-tree").classList.toggle("on", v === "tree"); document.getElementById("b-graph").classList.toggle("on", v === "graph");
+  document.getElementById("tree").style.display = v === "tree" ? "" : "none"; document.getElementById("gpane").style.display = v === "graph" ? "" : "none";
+  if (v === "graph") drawGraph();
+}
+document.getElementById("b-tree").onclick = () => setView("tree");
+document.getElementById("b-graph").onclick = () => setView("graph");
+function drawGraph() {
+  const els = [], LIMIT = 600; let n = 0;
+  const colors = {kd: css("--decl"), ks: css("--stmt"), ke: css("--expr"), kr: css("--ref"), kx: css("--dec")};
+  (function walk(x, parent) { if (n >= LIMIT) return; const id = "a" + (n++);
+    els.push({data: {id, label: x.k.replace(/_(STMT|EXPR|DECL)$/, "") + (x.op ? " " + x.op : x.s ? " " + x.s : ""), color: colors[x.d ? "kx" : cls(x.k)], l: x.l, e: x.e}});
+    if (parent) els.push({data: {id: "e" + id, source: parent, target: id}}); (x.c || []).forEach(c => walk(c, id)); })(U.ast, null);
+  if (!cy) { cy = cytoscape({container: document.getElementById("cy"), wheelSensitivity: .3, style: [
+    {selector: "node", style: {"label": "data(label)", "font-size": 8, "background-color": "data(color)", "width": 10, "height": 10,
+      "color": css("--text"), "text-valign": "bottom", "text-max-width": 90, "text-wrap": "ellipsis", "text-outline-color": css("--panel"), "text-outline-width": 2}},
+    {selector: "edge", style: {"width": 1, "line-color": css("--border"), "curve-style": "taxi", "taxi-direction": "downward"}}]});
+    cy.on("tap", "node", e => hl(e.target.data("l"), e.target.data("e"))); }
+  cy.elements().remove(); cy.add(els); cy.resize();
+  cy.layout({name: "breadthfirst", directed: true, roots: "#a0", spacingFactor: .9, animate: false}).run();
+  if (n >= LIMIT) document.getElementById("decs").insertAdjacentHTML("beforeend", ` <span>(sơ đồ chỉ vẽ ${LIMIT} node đầu)</span>`);
+}
+list(); if (D.units.length) pick(D.units[0].id);
+</script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+	150 - ba_iterschur_schurjacobi_user_test (Timeout)
+	151 - ba_iterschur_spse_user_test (Timeout)
+	153 - ba_iterschur_eigensparse_clustjacobi_user_test (Timeout)
+	156 - ba_iterschur_eigensparse_clusttri_user_test (Timeout)
+Errors while running CTest
+(INFO) - MainThread - Reading coverage data...
+(INFO) - MainThread - Writing coverage report...
+lines: 85.8% (11886 out of 13846)
+functions: 89.6% (5267 out of 5881)
+branches: 59.5% (8770 out of 14745)
+(INFO) Reading coverage data...
+(INFO) Writing coverage report...
+COVERAGE OK -> /work/repo/reports/baseline
+
+real	53m29.415s
+user	0m0.150s
+sys	0m0.075s

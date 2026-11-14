@@ -1,0 +1,389 @@
+Test project /work/build-cov
+        Start   1: accurate_norm_test
+        Start   2: array_utils_test
+        Start   3: array_selector_test
+        Start   4: autodiff_test
+        Start   5: autodiff_first_order_function_test
+        Start   6: autodiff_cost_function_test
+        Start   7: autodiff_manifold_test
+        Start   8: block_jacobi_preconditioner_test
+  1/192 Test   #1: accurate_norm_test ............................................   Passed    0.07 sec
+        Start   9: block_random_access_dense_matrix_test
+  2/192 Test   #2: array_utils_test ..............................................   Passed    0.07 sec
+        Start  10: block_random_access_diagonal_matrix_test
+  3/192 Test   #3: array_selector_test ...........................................   Passed    0.07 sec
+        Start  11: block_random_access_sparse_matrix_test
+  4/192 Test   #4: autodiff_test .................................................   Passed    0.07 sec
+        Start  12: block_sparse_matrix_test
+  5/192 Test   #5: autodiff_first_order_function_test ............................   Passed    0.08 sec
+        Start  13: c_api_test
+  6/192 Test   #6: autodiff_cost_function_test ...................................   Passed    0.08 sec
+        Start  14: canonical_views_clustering_test
+  7/192 Test   #8: block_jacobi_preconditioner_test ..............................   Passed    0.08 sec
+        Start  15: compressed_col_sparse_matrix_utils_test
+  8/192 Test   #9: block_random_access_dense_matrix_test .........................   Passed    0.08 sec
+        Start  16: compressed_row_sparse_matrix_test
+  9/192 Test  #10: block_random_access_diagonal_matrix_test ......................   Passed    0.08 sec
+        Start  17: concurrent_queue_test
+ 10/192 Test  #11: block_random_access_sparse_matrix_test ........................   Passed    0.09 sec
+        Start  18: conditioned_cost_function_test
+ 11/192 Test  #14: canonical_views_clustering_test ...............................   Passed    0.07 sec
+        Start  19: conjugate_gradients_solver_test
+ 12/192 Test  #15: compressed_col_sparse_matrix_utils_test .......................   Passed    0.07 sec
+        Start  20: corrector_test
+ 13/192 Test  #13: c_api_test ....................................................   Passed    0.11 sec
+        Start  21: coordinate_descent_minimizer_test
+ 14/192 Test  #18: conditioned_cost_function_test ................................   Passed    0.05 sec
+        Start  22: cost_function_to_functor_test
+ 15/192 Test  #19: conjugate_gradients_solver_test ...............................   Passed    0.06 sec
+        Start  23: covariance_test
+ 16/192 Test  #22: cost_function_to_functor_test .................................   Passed    0.03 sec
+        Start  24: cubic_interpolation_test
+ 17/192 Test  #21: coordinate_descent_minimizer_test .............................   Passed    0.11 sec
+        Start  25: cuda_partitioned_block_sparse_crs_view_test
+ 18/192 Test  #25: cuda_partitioned_block_sparse_crs_view_test ...................   Passed    0.02 sec
+        Start  26: cuda_block_sparse_crs_view_test
+ 19/192 Test  #26: cuda_block_sparse_crs_view_test ...............................   Passed    0.02 sec
+        Start  27: cuda_block_structure_test
+ 20/192 Test  #27: cuda_block_structure_test .....................................   Passed    0.02 sec
+        Start  28: cuda_dense_cholesky_test
+ 21/192 Test  #28: cuda_dense_cholesky_test ......................................   Passed    0.02 sec
+        Start  29: cuda_dense_qr_test
+ 22/192 Test  #29: cuda_dense_qr_test ............................................   Passed    0.02 sec
+        Start  30: cuda_kernels_vector_ops_test
+ 23/192 Test  #30: cuda_kernels_vector_ops_test ..................................   Passed    0.02 sec
+        Start  31: cuda_sparse_matrix_test
+ 24/192 Test  #31: cuda_sparse_matrix_test .......................................   Passed    0.03 sec
+        Start  32: cuda_streamed_buffer_test
+ 25/192 Test  #32: cuda_streamed_buffer_test .....................................   Passed    0.02 sec
+        Start  33: cuda_vector_test
+ 26/192 Test  #33: cuda_vector_test ..............................................   Passed    0.02 sec
+        Start  34: dense_linear_solver_test
+ 27/192 Test  #34: dense_linear_solver_test ......................................   Passed    0.06 sec
+        Start  35: dense_cholesky_test
+ 28/192 Test  #35: dense_cholesky_test ...........................................   Passed    0.05 sec
+        Start  36: dense_qr_test
+ 29/192 Test  #16: compressed_row_sparse_matrix_test .............................   Passed    0.58 sec
+        Start  37: dense_sparse_matrix_test
+ 30/192 Test  #37: dense_sparse_matrix_test ......................................   Passed    0.03 sec
+        Start  38: detect_structure_test
+ 31/192 Test  #38: detect_structure_test .........................................   Passed    0.03 sec
+        Start  39: dogleg_strategy_test
+ 32/192 Test  #39: dogleg_strategy_test ..........................................   Passed    0.08 sec
+        Start  40: dynamic_autodiff_cost_function_test
+ 33/192 Test  #36: dense_qr_test .................................................   Passed    0.20 sec
+        Start  41: dynamic_compressed_row_sparse_matrix_test
+ 34/192 Test  #40: dynamic_autodiff_cost_function_test ...........................   Passed    0.03 sec
+        Start  42: dynamic_numeric_diff_cost_function_test
+ 35/192 Test  #41: dynamic_compressed_row_sparse_matrix_test .....................   Passed    0.03 sec
+        Start  43: dynamic_sparse_normal_cholesky_solver_test
+ 36/192 Test  #42: dynamic_numeric_diff_cost_function_test .......................   Passed    0.02 sec
+        Start  44: dynamic_sparsity_test
+ 37/192 Test  #12: block_sparse_matrix_test ......................................   Passed    0.84 sec
+        Start  45: evaluation_callback_test
+ 38/192 Test  #43: dynamic_sparse_normal_cholesky_solver_test ....................   Passed    0.07 sec
+        Start  46: evaluator_test
+ 39/192 Test  #20: corrector_test ................................................   Passed    0.84 sec
+        Start  47: gradient_checker_test
+ 40/192 Test  #46: evaluator_test ................................................   Passed    0.11 sec
+        Start  48: gradient_checking_cost_function_test
+ 41/192 Test  #45: evaluation_callback_test ......................................   Passed    0.16 sec
+        Start  49: gradient_problem_test
+ 42/192 Test  #48: gradient_checking_cost_function_test ..........................   Passed    0.03 sec
+        Start  50: gradient_problem_solver_test
+ 43/192 Test  #49: gradient_problem_test .........................................   Passed    0.03 sec
+        Start  51: graph_test
+ 44/192 Test  #47: gradient_checker_test .........................................   Passed    0.10 sec
+        Start  52: graph_algorithms_test
+ 45/192 Test  #52: graph_algorithms_test .........................................   Passed    0.03 sec
+        Start  53: householder_vector_test
+ 46/192 Test  #53: householder_vector_test .......................................   Passed    0.02 sec
+        Start  54: implicit_schur_complement_test
+ 47/192 Test  #50: gradient_problem_solver_test ..................................   Passed    0.10 sec
+        Start  55: inner_product_computer_test
+ 48/192 Test  #54: implicit_schur_complement_test ................................   Passed    0.04 sec
+        Start  56: invert_psd_matrix_test
+ 49/192 Test  #56: invert_psd_matrix_test ........................................   Passed    0.07 sec
+        Start  57: integer_sequence_algorithm_test
+ 50/192 Test  #57: integer_sequence_algorithm_test ...............................   Passed    0.02 sec
+        Start  58: is_close_test
+ 51/192 Test  #58: is_close_test .................................................   Passed    0.02 sec
+        Start  59: iterative_refiner_test
+ 52/192 Test  #51: graph_test ....................................................   Passed    0.26 sec
+        Start  60: iterative_schur_complement_solver_test
+ 53/192 Test  #59: iterative_refiner_test ........................................   Passed    0.04 sec
+        Start  61: jet_test
+ 54/192 Test  #60: iterative_schur_complement_solver_test ........................   Passed    0.06 sec
+        Start  62: jet_traits_test
+ 55/192 Test  #62: jet_traits_test ...............................................   Passed    0.01 sec
+        Start  63: levenberg_marquardt_strategy_test
+ 56/192 Test  #61: jet_test ......................................................   Passed    0.11 sec
+        Start  64: line_search_minimizer_test
+ 57/192 Test  #63: levenberg_marquardt_strategy_test .............................   Passed    0.07 sec
+        Start  65: line_search_preprocessor_test
+ 58/192 Test  #64: line_search_minimizer_test ....................................   Passed    0.09 sec
+        Start  66: loss_function_test
+ 59/192 Test  #23: covariance_test ...............................................   Passed    1.38 sec
+        Start  67: manifold_test
+ 60/192 Test  #66: loss_function_test ............................................   Passed    0.02 sec
+        Start  68: minimizer_test
+ 61/192 Test  #65: line_search_preprocessor_test .................................   Passed    0.09 sec
+        Start  69: normal_prior_test
+ 62/192 Test  #17: concurrent_queue_test .........................................   Passed    1.53 sec
+        Start  70: numeric_diff_cost_function_test
+ 63/192 Test  #69: normal_prior_test .............................................   Passed    0.08 sec
+        Start  71: numeric_diff_first_order_function_test
+ 64/192 Test  #71: numeric_diff_first_order_function_test ........................   Passed    0.04 sec
+        Start  72: ordered_groups_test
+ 65/192 Test  #70: numeric_diff_cost_function_test ...............................   Passed    0.11 sec
+        Start  73: parallel_for_test
+ 66/192 Test  #68: minimizer_test ................................................   Passed    0.17 sec
+        Start  74: parallel_utils_test
+ 67/192 Test  #72: ordered_groups_test ...........................................   Passed    0.12 sec
+        Start  75: parameter_block_test
+ 68/192 Test  #75: parameter_block_test ..........................................   Passed    0.13 sec
+        Start  76: parameter_block_ordering_test
+ 69/192 Test  #74: parallel_utils_test ...........................................   Passed    0.24 sec
+        Start  77: parameter_dims_test
+ 70/192 Test  #76: parameter_block_ordering_test .................................   Passed    0.04 sec
+        Start  78: partitioned_matrix_view_test
+ 71/192 Test  #77: parameter_dims_test ...........................................   Passed    0.07 sec
+        Start  79: polynomial_test
+ 72/192 Test  #78: partitioned_matrix_view_test ..................................   Passed    0.07 sec
+        Start  80: power_series_expansion_preconditioner_test
+ 73/192 Test  #79: polynomial_test ...............................................   Passed    0.05 sec
+        Start  81: problem_test
+ 74/192 Test  #80: power_series_expansion_preconditioner_test ....................   Passed    0.07 sec
+        Start  82: program_test
+ 75/192 Test  #82: program_test ..................................................   Passed    0.18 sec
+        Start  83: reorder_program_test
+ 76/192 Test  #83: reorder_program_test ..........................................   Passed    0.10 sec
+        Start  84: residual_block_test
+ 77/192 Test  #84: residual_block_test ...........................................   Passed    0.06 sec
+        Start  85: residual_block_utils_test
+ 78/192 Test  #55: inner_product_computer_test ...................................   Passed    1.47 sec
+        Start  86: rotation_test
+ 79/192 Test  #85: residual_block_utils_test .....................................   Passed    0.17 sec
+        Start  87: schur_complement_solver_test
+ 80/192 Test  #87: schur_complement_solver_test ..................................   Passed    0.46 sec
+        Start  88: schur_eliminator_test
+ 81/192 Test  #88: schur_eliminator_test .........................................   Passed    0.11 sec
+        Start  89: single_linkage_clustering_test
+ 82/192 Test  #89: single_linkage_clustering_test ................................   Passed    0.07 sec
+        Start  90: small_blas_test
+ 83/192 Test  #73: parallel_for_test .............................................   Passed    2.77 sec
+        Start  91: solver_test
+ 84/192 Test   #7: autodiff_manifold_test ........................................   Passed    4.73 sec
+        Start  92: sparse_cholesky_test
+ 85/192 Test  #91: solver_test ...................................................   Passed    0.36 sec
+        Start  93: sparse_normal_cholesky_solver_test
+ 86/192 Test  #93: sparse_normal_cholesky_solver_test ............................   Passed    0.11 sec
+        Start  94: subset_preconditioner_test
+ 87/192 Test  #94: subset_preconditioner_test ....................................   Passed    0.08 sec
+        Start  95: system_test
+ 88/192 Test  #95: system_test ...................................................   Passed    0.26 sec
+        Start  96: tiny_solver_test
+ 89/192 Test  #92: sparse_cholesky_test ..........................................   Passed    0.76 sec
+        Start  97: tiny_solver_autodiff_function_test
+ 90/192 Test  #96: tiny_solver_test ..............................................   Passed    0.17 sec
+        Start  98: tiny_solver_cost_function_adapter_test
+ 91/192 Test  #97: tiny_solver_autodiff_function_test ............................   Passed    0.05 sec
+        Start  99: thread_pool_test
+ 92/192 Test  #98: tiny_solver_cost_function_adapter_test ........................   Passed    0.06 sec
+        Start 100: triplet_sparse_matrix_test
+ 93/192 Test #100: triplet_sparse_matrix_test ....................................   Passed    0.12 sec
+        Start 101: trust_region_minimizer_test
+ 94/192 Test  #99: thread_pool_test ..............................................   Passed    0.56 sec
+        Start 102: trust_region_preprocessor_test
+ 95/192 Test #101: trust_region_minimizer_test ...................................   Passed    0.63 sec
+        Start 103: visibility_test
+ 96/192 Test  #81: problem_test ..................................................   Passed    4.30 sec
+        Start 104: visibility_based_preconditioner_test
+ 97/192 Test #102: trust_region_preprocessor_test ................................   Passed    0.40 sec
+        Start 105: ba_denseschur_eigen_auto_test
+ 98/192 Test #103: visibility_test ...............................................   Passed    0.31 sec
+        Start 106: ba_denseschur_lapack_auto_test
+ 99/192 Test #104: visibility_based_preconditioner_test ..........................   Passed    0.17 sec
+        Start 107: ba_denseschur_cuda_auto_test
+100/192 Test #106: ba_denseschur_lapack_auto_test ................................   Passed    0.06 sec
+        Start 108: ba_sparsecholesky_suitesparse_auto_test
+101/192 Test #107: ba_denseschur_cuda_auto_test ..................................   Passed    0.06 sec
+        Start 109: ba_sparsecholesky_eigensparse_auto_test
+102/192 Test #108: ba_sparsecholesky_suitesparse_auto_test .......................   Passed    0.07 sec
+        Start 110: ba_sparsecholesky_acceleratesparse_auto_test
+103/192 Test #110: ba_sparsecholesky_acceleratesparse_auto_test ..................   Passed    0.06 sec
+        Start 111: ba_sparsecholesky_cudasparse_auto_test
+104/192 Test #111: ba_sparsecholesky_cudasparse_auto_test ........................   Passed    0.06 sec
+        Start 112: ba_sparseschur_suitesparse_auto_test
+105/192 Test #112: ba_sparseschur_suitesparse_auto_test ..........................   Passed    0.14 sec
+        Start 113: ba_sparseschur_eigensparse_auto_test
+106/192 Test  #67: manifold_test .................................................   Passed   22.39 sec
+        Start 114: ba_sparseschur_acceleratesparse_auto_test
+107/192 Test #114: ba_sparseschur_acceleratesparse_auto_test .....................   Passed    0.07 sec
+        Start 115: ba_sparseschur_cudasparse_auto_test
+108/192 Test #115: ba_sparseschur_cudasparse_auto_test ...........................   Passed    0.06 sec
+        Start 116: ba_iterschur_jacobi_auto_test
+109/192 Test  #24: cubic_interpolation_test ......................................   Passed   30.70 sec
+        Start 117: ba_iterschur_schurjacobi_auto_test
+110/192 Test  #44: dynamic_sparsity_test .........................................   Passed   45.87 sec
+        Start 118: ba_iterschur_spse_auto_test
+111/192 Test  #90: small_blas_test ...............................................   Passed   43.82 sec
+        Start 119: ba_iterschur_suitesparse_clustjacobi_auto_test
+112/192 Test #119: ba_iterschur_suitesparse_clustjacobi_auto_test ................   Passed    0.05 sec
+        Start 120: ba_iterschur_eigensparse_clustjacobi_auto_test
+113/192 Test  #86: rotation_test .................................................   Passed   48.26 sec
+        Start 121: ba_iterschur_acceleratesparse_clustjacobi_auto_test
+114/192 Test #121: ba_iterschur_acceleratesparse_clustjacobi_auto_test ...........   Passed    0.08 sec
+        Start 122: ba_iterschur_cudasparse_clustjacobi_auto_test
+115/192 Test #122: ba_iterschur_cudasparse_clustjacobi_auto_test .................   Passed    0.06 sec
+        Start 123: ba_iterschur_suitesparse_clusttri_auto_test
+116/192 Test #123: ba_iterschur_suitesparse_clusttri_auto_test ...................   Passed    0.05 sec
+        Start 124: ba_iterschur_eigensparse_clusttri_auto_test
+117/192 Test #105: ba_denseschur_eigen_auto_test .................................   Passed  274.16 sec
+        Start 125: ba_iterschur_acceleratesparse_clusttri_auto_test
+118/192 Test #125: ba_iterschur_acceleratesparse_clusttri_auto_test ..............   Passed    0.11 sec
+        Start 126: ba_iterschur_cudasparse_clusttri_auto_test
+119/192 Test #126: ba_iterschur_cudasparse_clusttri_auto_test ....................   Passed    0.10 sec
+        Start 127: ba_denseschur_eigen_auto_threads_test
+120/192 Test #116: ba_iterschur_jacobi_auto_test .................................   Passed  258.86 sec
+        Start 128: ba_denseschur_lapack_auto_threads_test
+121/192 Test #128: ba_denseschur_lapack_auto_threads_test ........................   Passed    0.18 sec
+        Start 129: ba_denseschur_cuda_auto_threads_test
+122/192 Test #129: ba_denseschur_cuda_auto_threads_test ..........................   Passed    0.11 sec
+        Start 130: ba_sparsecholesky_suitesparse_auto_threads_test
+123/192 Test #130: ba_sparsecholesky_suitesparse_auto_threads_test ...............   Passed    0.12 sec
+        Start 131: ba_sparsecholesky_eigensparse_auto_threads_test
+124/192 Test #109: ba_sparsecholesky_eigensparse_auto_test .......................   Passed  292.23 sec
+        Start 132: ba_sparsecholesky_acceleratesparse_auto_threads_test
+125/192 Test #132: ba_sparsecholesky_acceleratesparse_auto_threads_test ..........   Passed    0.05 sec
+        Start 133: ba_sparsecholesky_cudasparse_auto_threads_test
+126/192 Test #133: ba_sparsecholesky_cudasparse_auto_threads_test ................   Passed    0.04 sec
+        Start 134: ba_sparseschur_suitesparse_auto_threads_test
+127/192 Test #134: ba_sparseschur_suitesparse_auto_threads_test ..................   Passed    0.04 sec
+        Start 135: ba_sparseschur_eigensparse_auto_threads_test
+128/192 Test #113: ba_sparseschur_eigensparse_auto_test ..........................   Passed  295.72 sec
+        Start 136: ba_sparseschur_acceleratesparse_auto_threads_test
+129/192 Test #136: ba_sparseschur_acceleratesparse_auto_threads_test .............   Passed    0.05 sec
+        Start 137: ba_sparseschur_cudasparse_auto_threads_test
+130/192 Test #137: ba_sparseschur_cudasparse_auto_threads_test ...................   Passed    0.04 sec
+        Start 138: ba_iterschur_jacobi_auto_threads_test
+131/192 Test #117: ba_iterschur_schurjacobi_auto_test ............................   Passed  279.47 sec
+        Start 139: ba_iterschur_schurjacobi_auto_threads_test
+132/192 Test #120: ba_iterschur_eigensparse_clustjacobi_auto_test ................   Passed  267.76 sec
+        Start 140: ba_iterschur_spse_auto_threads_test
+133/192 Test #118: ba_iterschur_spse_auto_test ...................................   Passed  283.60 sec
+        Start 141: ba_iterschur_suitesparse_clustjacobi_auto_threads_test
+134/192 Test #141: ba_iterschur_suitesparse_clustjacobi_auto_threads_test ........   Passed    0.05 sec
+        Start 142: ba_iterschur_eigensparse_clustjacobi_auto_threads_test
+135/192 Test #124: ba_iterschur_eigensparse_clusttri_auto_test ...................   Passed  321.29 sec
+        Start 143: ba_iterschur_acceleratesparse_clustjacobi_auto_threads_test
+136/192 Test #143: ba_iterschur_acceleratesparse_clustjacobi_auto_threads_test ...   Passed    0.03 sec
+        Start 144: ba_iterschur_cudasparse_clustjacobi_auto_threads_test
+137/192 Test #144: ba_iterschur_cudasparse_clustjacobi_auto_threads_test .........   Passed    0.03 sec
+        Start 145: ba_iterschur_suitesparse_clusttri_auto_threads_test
+138/192 Test #145: ba_iterschur_suitesparse_clusttri_auto_threads_test ...........   Passed    0.03 sec
+        Start 146: ba_iterschur_eigensparse_clusttri_auto_threads_test
+139/192 Test #127: ba_denseschur_eigen_auto_threads_test .........................   Passed  349.74 sec
+        Start 147: ba_iterschur_acceleratesparse_clusttri_auto_threads_test
+140/192 Test #147: ba_iterschur_acceleratesparse_clusttri_auto_threads_test ......   Passed    0.11 sec
+        Start 148: ba_iterschur_cudasparse_clusttri_auto_threads_test
+141/192 Test #148: ba_iterschur_cudasparse_clusttri_auto_threads_test ............   Passed    0.07 sec
+        Start 149: ba_denseschur_eigen_user_test
+142/192 Test #138: ba_iterschur_jacobi_auto_threads_test .........................   Passed  339.06 sec
+        Start 150: ba_denseschur_lapack_user_test
+143/192 Test #150: ba_denseschur_lapack_user_test ................................   Passed    0.09 sec
+        Start 151: ba_denseschur_cuda_user_test
+144/192 Test #151: ba_denseschur_cuda_user_test ..................................   Passed    0.09 sec
+        Start 152: ba_sparsecholesky_suitesparse_user_test
+145/192 Test #152: ba_sparsecholesky_suitesparse_user_test .......................   Passed    0.09 sec
+        Start 153: ba_sparsecholesky_eigensparse_user_test
+146/192 Test #131: ba_sparsecholesky_eigensparse_auto_threads_test ...............   Passed  369.93 sec
+        Start 154: ba_sparsecholesky_acceleratesparse_user_test
+147/192 Test #154: ba_sparsecholesky_acceleratesparse_user_test ..................   Passed    0.10 sec
+        Start 155: ba_sparsecholesky_cudasparse_user_test
+148/192 Test #155: ba_sparsecholesky_cudasparse_user_test ........................   Passed    0.09 sec
+        Start 156: ba_sparseschur_suitesparse_user_test
+149/192 Test #156: ba_sparseschur_suitesparse_user_test ..........................   Passed    0.08 sec
+        Start 157: ba_sparseschur_eigensparse_user_test
+150/192 Test #135: ba_sparseschur_eigensparse_auto_threads_test ..................   Passed  365.98 sec
+        Start 158: ba_sparseschur_acceleratesparse_user_test
+151/192 Test #158: ba_sparseschur_acceleratesparse_user_test .....................   Passed    0.09 sec
+        Start 159: ba_sparseschur_cudasparse_user_test
+152/192 Test #159: ba_sparseschur_cudasparse_user_test ...........................   Passed    0.09 sec
+        Start 160: ba_iterschur_jacobi_user_test
+153/192 Test #140: ba_iterschur_spse_auto_threads_test ...........................   Passed  377.85 sec
+        Start 161: ba_iterschur_schurjacobi_user_test
+154/192 Test #139: ba_iterschur_schurjacobi_auto_threads_test ....................   Passed  386.23 sec
+        Start 162: ba_iterschur_spse_user_test
+155/192 Test #142: ba_iterschur_eigensparse_clustjacobi_auto_threads_test ........   Passed  386.69 sec
+        Start 163: ba_iterschur_suitesparse_clustjacobi_user_test
+156/192 Test #163: ba_iterschur_suitesparse_clustjacobi_user_test ................   Passed    0.05 sec
+        Start 164: ba_iterschur_eigensparse_clustjacobi_user_test
+157/192 Test #146: ba_iterschur_eigensparse_clusttri_auto_threads_test ...........   Passed  471.81 sec
+        Start 165: ba_iterschur_acceleratesparse_clustjacobi_user_test
+158/192 Test #165: ba_iterschur_acceleratesparse_clustjacobi_user_test ...........   Passed    0.06 sec
+        Start 166: ba_iterschur_cudasparse_clustjacobi_user_test
+159/192 Test #166: ba_iterschur_cudasparse_clustjacobi_user_test .................   Passed    0.09 sec
+        Start 167: ba_iterschur_suitesparse_clusttri_user_test
+160/192 Test #167: ba_iterschur_suitesparse_clusttri_user_test ...................   Passed    0.09 sec
+        Start 168: ba_iterschur_eigensparse_clusttri_user_test
+161/192 Test #160: ba_iterschur_jacobi_user_test .................................   Passed  335.51 sec
+        Start 169: ba_iterschur_acceleratesparse_clusttri_user_test
+162/192 Test #169: ba_iterschur_acceleratesparse_clusttri_user_test ..............   Passed    0.20 sec
+        Start 170: ba_iterschur_cudasparse_clusttri_user_test
+163/192 Test #170: ba_iterschur_cudasparse_clusttri_user_test ....................   Passed    0.10 sec
+        Start 171: ba_denseschur_eigen_user_threads_test
+164/192 Test #149: ba_denseschur_eigen_user_test .................................   Passed  377.72 sec
+        Start 172: ba_denseschur_lapack_user_threads_test
+165/192 Test #172: ba_denseschur_lapack_user_threads_test ........................   Passed    0.06 sec
+        Start 173: ba_denseschur_cuda_user_threads_test
+166/192 Test #173: ba_denseschur_cuda_user_threads_test ..........................   Passed    0.05 sec
+        Start 174: ba_sparsecholesky_suitesparse_user_threads_test
+167/192 Test #174: ba_sparsecholesky_suitesparse_user_threads_test ...............   Passed    0.05 sec
+        Start 175: ba_sparsecholesky_eigensparse_user_threads_test
+168/192 Test #153: ba_sparsecholesky_eigensparse_user_test .......................   Passed  391.93 sec
+        Start 176: ba_sparsecholesky_acceleratesparse_user_threads_test
+169/192 Test #176: ba_sparsecholesky_acceleratesparse_user_threads_test ..........   Passed    0.07 sec
+        Start 177: ba_sparsecholesky_cudasparse_user_threads_test
+170/192 Test #177: ba_sparsecholesky_cudasparse_user_threads_test ................   Passed    0.06 sec
+        Start 178: ba_sparseschur_suitesparse_user_threads_test
+171/192 Test #178: ba_sparseschur_suitesparse_user_threads_test ..................   Passed    0.06 sec
+        Start 179: ba_sparseschur_eigensparse_user_threads_test
+172/192 Test #161: ba_iterschur_schurjacobi_user_test ............................   Passed  354.98 sec
+        Start 180: ba_sparseschur_acceleratesparse_user_threads_test
+173/192 Test #180: ba_sparseschur_acceleratesparse_user_threads_test .............   Passed    0.06 sec
+        Start 181: ba_sparseschur_cudasparse_user_threads_test
+174/192 Test #181: ba_sparseschur_cudasparse_user_threads_test ...................   Passed    0.04 sec
+        Start 182: ba_iterschur_jacobi_user_threads_test
+175/192 Test #157: ba_sparseschur_eigensparse_user_test ..........................   Passed  419.00 sec
+        Start 183: ba_iterschur_schurjacobi_user_threads_test
+176/192 Test #162: ba_iterschur_spse_user_test ...................................   Passed  392.57 sec
+        Start 184: ba_iterschur_spse_user_threads_test
+177/192 Test #164: ba_iterschur_eigensparse_clustjacobi_user_test ................   Passed  402.67 sec
+        Start 185: ba_iterschur_suitesparse_clustjacobi_user_threads_test
+178/192 Test #185: ba_iterschur_suitesparse_clustjacobi_user_threads_test ........   Passed    0.08 sec
+        Start 186: ba_iterschur_eigensparse_clustjacobi_user_threads_test
+179/192 Test #168: ba_iterschur_eigensparse_clusttri_user_test ...................   Passed  368.75 sec
+        Start 187: ba_iterschur_acceleratesparse_clustjacobi_user_threads_test
+180/192 Test #187: ba_iterschur_acceleratesparse_clustjacobi_user_threads_test ...   Passed    0.08 sec
+        Start 188: ba_iterschur_cudasparse_clustjacobi_user_threads_test
+181/192 Test #188: ba_iterschur_cudasparse_clustjacobi_user_threads_test .........   Passed    0.05 sec
+        Start 189: ba_iterschur_suitesparse_clusttri_user_threads_test
+182/192 Test #189: ba_iterschur_suitesparse_clusttri_user_threads_test ...........   Passed    0.07 sec
+        Start 190: ba_iterschur_eigensparse_clusttri_user_threads_test
+183/192 Test #171: ba_denseschur_eigen_user_threads_test .........................   Passed  362.49 sec
+        Start 191: ba_iterschur_acceleratesparse_clusttri_user_threads_test
+184/192 Test #191: ba_iterschur_acceleratesparse_clusttri_user_threads_test ......   Passed    0.05 sec
+        Start 192: ba_iterschur_cudasparse_clusttri_user_threads_test
+185/192 Test #192: ba_iterschur_cudasparse_clusttri_user_threads_test ............   Passed    0.09 sec
+186/192 Test #175: ba_sparsecholesky_eigensparse_user_threads_test ...............   Passed  383.48 sec
+187/192 Test #182: ba_iterschur_jacobi_user_threads_test .........................   Passed  361.84 sec
+188/192 Test #179: ba_sparseschur_eigensparse_user_threads_test ..................   Passed  404.56 sec
+189/192 Test #183: ba_iterschur_schurjacobi_user_threads_test ....................   Passed  408.71 sec
+190/192 Test #184: ba_iterschur_spse_user_threads_test ...........................   Passed  443.90 sec
+191/192 Test #186: ba_iterschur_eigensparse_clustjacobi_user_threads_test ........   Passed  444.52 sec
+192/192 Test #190: ba_iterschur_eigensparse_clusttri_user_threads_test ...........   Passed  466.81 sec
+
+100% tests passed, 0 tests failed out of 192
+
+Total Test time (real) = 1680.58 sec

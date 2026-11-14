@@ -1,0 +1,52 @@
+{
+ "ceres_version": "2.2.0",
+ "translation_units": 292,
+ "tu_with_errors": 0,
+ "nodes_by_kind": {
+  "class": 1363,
+  "file": 480,
+  "function": 9065
+ },
+ "edges_by_kind": {
+  "CALLS": 6696,
+  "DEFINED_IN": 6016,
+  "INCLUDES": 1326,
+  "INHERITS": 388,
+  "MEMBER_OF": 4118,
+  "USES_TYPE": 4751
+ },
+ "edges_dropped": 0,
+ "units": 1540,
+ "units_by_kind": {
+  "CONSTRUCTOR": 177,
+  "CXX_METHOD": 871,
+  "DESTRUCTOR": 75,
+  "FUNCTION_DECL": 205,
+  "FUNCTION_TEMPLATE": 212
+ },
+ "estimated_branches_total": 5754,
+ "cyclomatic_total": 4417,
+ "units_without_branches": 846,
+ "units_internal_linkage": 80,
+ "units_private_or_protected": 140,
+ "units_called_directly_by_existing_tests": 372,
+ "leaf_units_level0": 974,
+ "max_level": 9,
+ "units_by_level": {
+  "0": 974,
+  "1": 264,
+  "2": 141,
+  "3": 82,
+  "4": 36,
+  "5": 20,
+  "6": 12,
+  "7": 4,
+  "8": 4,
+  "9": 3
+ },
+ "call_cycles": 2,
+ "largest_cycle": 4,
+ "calls_to_external_libs": 44182,
+ "unresolved_calls": 6922,
+ "seconds": 503
+}
