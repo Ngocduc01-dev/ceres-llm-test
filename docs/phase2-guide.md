@@ -15,7 +15,7 @@ Cần chạy Phase 1 `phase1.sh` trước (để có `data/graph.db`).
 
 | Bước | Script | Đầu ra |
 |---|---|---|
-| 1 | `scripts/list_units.py` | `data/units.json` (không commit – sinh lại được), `reports/units/summary.txt`, `data/smoke_test_units.txt` |
+| 1 | `scripts/list_units.py` | `data/units.json` (có commit; sinh lại được), `reports/units/summary.txt`, `data/smoke_test_units.txt` |
 
 ---
 

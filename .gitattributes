@@ -2,3 +2,6 @@
 *.sh   text eol=lf
 *.py   text eol=lf
 Dockerfile text eol=lf
+
+# File nhị phân: không đổi xuống dòng
+*.db binary

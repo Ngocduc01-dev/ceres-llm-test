@@ -81,5 +81,5 @@ ceres-llm-test/
 │   ├── ast/                       # [P1] ast.html
 │   └── archive/                   # các lần đo trước (lần 1 của nhóm, bản thử e831bfef)
 ├── logs/                          # nhật ký từng phase + raw/ (log thô từng lệnh)
-└── data/                          # sinh ra khi chạy, không commit (compile_commands.json, graph.db)
+└── data/                          # dữ liệu dùng chung: compile_commands.json, graph.db, units.json (có commit)
 ```

@@ -29,7 +29,7 @@ ceres-llm-test/
 │   ├── build.sh                 # build Ceres có đo độ phủ
 │   ├── coverage.sh              # chạy test có sẵn + đo độ phủ baseline
 │   └── parse_check.py           # parse thử bằng libclang
-├── data/compile_commands.json   # sinh ra sau build (không commit)
+├── data/compile_commands.json   # sinh ra sau build (có commit để dùng chung)
 ├── reports/baseline/            # độ phủ baseline (2.2.0) + index.html
 ├── reports/parse/               # kết quả parse
 ├── reports/archive/             # kết quả các lần đo trước, giữ để so sánh

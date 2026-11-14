@@ -17,7 +17,7 @@ scripts/run_docker.sh env JOBS=4 bash scripts/phase1.sh      # ~6–8 phút
 
 | Bước | Script | Đầu ra |
 |---|---|---|
-| 1 | `scripts/build_graph.py` | `data/graph.db` (SQLite, không commit – sinh lại được), `reports/graph/summary.txt`, `reports/graph/stats.json` |
+| 1 | `scripts/build_graph.py` | `data/graph.db` (SQLite ~10 MB, có commit; sinh lại bằng `phase1.sh`), `reports/graph/summary.txt`, `reports/graph/stats.json` |
 | 2 | `scripts/viz_graph.py` | `reports/graph/graph.html` – xem graph tương tác |
 | 3 | `scripts/ast_export.py` | `reports/ast/ast.html` – xem AST của các unit tiêu biểu |
 
@@ -87,7 +87,7 @@ Lời gọi từ **test có sẵn** (`*_test.cc`) cũng được ghi lại (`cal
 ### 3.2. Vì sao lưu SQLite?
 - 1 file, không cần cài server (khác Neo4j). Python có sẵn `sqlite3`.
 - Truy vấn bằng SQL đơn giản: "hàm nào gọi X", "unit nào chưa có test gọi"…
-- Kích thước ~10 MB, dựng lại mất vài phút → không commit, ai cần thì chạy lại.
+- Kích thước ~10 MB. Có commit vào repo để cả nhóm dùng ngay, không phải ai cũng chạy lại; khi code/script đổi thì chạy `phase1.sh` rồi commit lại.
 
 ### 3.3. Vì sao chỉ duyệt code của Ceres?
 - Mỗi file `.cc` include hàng trăm header của Eigen, glog, thư viện chuẩn. Duyệt hết thì chậm hàng chục lần và graph đầy node không liên quan.
