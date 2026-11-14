@@ -1,0 +1,10 @@
+UNIT u1511
+Hàm: SetManifold(double * values, Manifold * manifold)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 96–98
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   impl_->SetManifold(values, manifold)   → END

@@ -1,0 +1,11 @@
+UNIT u0986
+Hàm: Init(const int *const * jacobian_layout, int max_derivatives_per_residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockEvaluatePreparer
+Vị trí: internal/ceres/block_evaluate_preparer.cc, dòng 43–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   jacobian_layout_ = jacobian_layout
+    scratch_evaluate_preparer_.Init(max_derivatives_per_residual_block)   → END

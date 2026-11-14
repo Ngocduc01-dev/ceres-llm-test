@@ -6,7 +6,6 @@
   1351,
   1353
  ],
- "signature": "?::std::numeric_limits::denorm_min",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 158
+ "order": 158,
+ "short_name": "denorm_min",
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false
 }

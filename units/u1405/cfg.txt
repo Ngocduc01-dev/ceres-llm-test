@@ -1,0 +1,26 @@
+UNIT u1405
+Hàm: ComputeStableSchurOrdering(const Program & program, std::vector<ParameterBlock *> * ordering)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parameter_block_ordering.cc, dòng 50–80
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(ordering != nullptr)                                     đúng → 2   sai → DỪNG
+2   for (auto *parameter_block : parameter_blocks)                 đúng → 3   sai → 7
+3   auto *parameter_block                                          → 4
+4   if (vertices.count(parameter_block) > 0)                       đúng → 5   sai → 6
+5   ordering->push_back(parameter_block)                           → 6
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   event_logger.AddEvent("Preordering")
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    int independent_set_size = StableIndependentSetOrdering(* graph, ordering)
+    event_logger.AddEvent("StableIndependentSet")                  → 8
+8   for (auto *parameter_block : parameter_blocks)                 đúng → 9   sai → 13
+9   auto *parameter_block                                          → 10
+10  if (parameter_block->IsConstant())                             đúng → 11   sai → 12
+11  ordering->push_back(parameter_block)                           → 12
+12  ++ (bước tiếp của vòng for)                                    → 8
+13  event_logger.AddEvent("ConstantParameterBlocks")
+    return independent_set_size                                    → END

@@ -1,0 +1,13 @@
+UNIT u1069
+Hàm: MinusJacobian(const double * x, double * jacobian_ptr) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::ProductManifold
+Vị trí: include/ceres/product_manifold.h, dòng 126–133
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   jacobian_ptr, TangentSize(), AmbientSize()
+    jacobian.setZero()
+    return MinusJacobianImpl(x, jacobian, buffer, std::make_index_sequence<kNumManifolds>{})   → END

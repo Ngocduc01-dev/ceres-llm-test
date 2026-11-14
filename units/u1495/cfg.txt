@@ -1,0 +1,21 @@
+UNIT u1495
+Hàm: Minimize(internal::PreprocessedProblem * pp, Solver::Summary * summary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 627–654
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   Program *program = pp->reduced_program.get()                   → 2
+2   if (pp->reduced_program->NumParameterBlocks() == 0)            đúng → 3   sai → 6
+3   summary->message = "Function tolerance reached. No non-constant parameter blocks found."
+    summary->termination_type = CONVERGENCE                        → 4
+4   if (pp->options.logging_type != SILENT)                        đúng → 5   sai → 5
+5   summary->initial_cost = summary->fixed_cost
+    summary->final_cost = summary->fixed_cost
+    return                                                         → END
+6   minimizer->Minimize(pp->minimizer_options, pp->reduced_parameters.data(), summary)   → 7
+7   summary->IsSolutionUsable() ? ... : ...                        đúng → 8   sai → 8
+8   program->StateVectorToParameterBlocks(summary->IsSolutionUsable() ? pp->reduced_parameters.data() : original_reduced_parameters.data())
+    program->CopyParameterBlockStateToUserState()                  → END

@@ -1,0 +1,10 @@
+UNIT u0305
+Hàm: Plus(const double * x, const double * delta, double * x_plus_delta) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: internal/ceres/gradient_problem.cc, dòng 80–84
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return manifold_->Plus(x, delta, x_plus_delta)   → END

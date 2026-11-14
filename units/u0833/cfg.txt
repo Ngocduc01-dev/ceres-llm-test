@@ -1,0 +1,11 @@
+UNIT u0833
+Hàm: ceres_free_stock_loss_function_data(void * loss_function_data)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 127–129
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   reinterpret_cast<ceres::LossFunction *>(loss_function_data) (CXXReinterpretCastExpr, BitCast, ceres::LossFunction *)->~LossFunction() (Implicit destructor)
+    delete reinterpret_cast<ceres::LossFunction *>(loss_function_data) (CXXReinterpretCastExpr, BitCast, ceres::LossFunction *)   → END

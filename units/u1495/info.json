@@ -6,7 +6,6 @@
   627,
   654
  ],
- "signature": "ceres::(anonymous)::Minimize",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1495
+ "order": 1495,
+ "short_name": "Minimize",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(internal::PreprocessedProblem * pp, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   366,
   376
  ],
- "signature": "ceres::internal::TypedLinearSolver::Solve",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1363
+ "order": 1363,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TypedLinearSolver",
+ "class_is_template": true,
+ "params": "(LinearOperator * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

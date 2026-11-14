@@ -1,0 +1,22 @@
+UNIT u1231
+Hàm: UpdateImpl(const CompressedRowSparseMatrix & A, const double * D)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockCRSJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.cc, dòng 158–224
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const auto &col_blocks = A.col_blocks()
+    const auto &row_blocks = A.row_blocks()
+    const int num_col_blocks = col_blocks.size()
+    const int num_row_blocks = row_blocks.size()
+    const int *a_rows = A.rows()
+    const int *a_cols = A.cols()
+    const double *a_values = A.values()
+    double *m_values = m_->mutable_values()
+    const int *m_rows = m_->rows()
+    m_->SetZero()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:178:7) &&, int))(options_.context, 0, num_row_blocks, options_.num_threads, [this, row_blocks, a_rows, a_cols, a_values, m_values, m_rows](int i) {)
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:208:7) &&, int))(options_.context, 0, num_col_blocks, options_.num_threads, [col_blocks, m_rows, m_values, D](int i) {)
+    return true                                                    → END

@@ -6,7 +6,6 @@
   48,
   48
  ],
- "signature": "ceres::internal::LinearSolver::~LinearSolver",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 870
+ "order": 870,
+ "short_name": "~LinearSolver",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::LinearSolver",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

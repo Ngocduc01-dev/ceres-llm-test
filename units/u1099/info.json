@@ -6,7 +6,6 @@
   335,
   341
  ],
- "signature": "ceres::StringToVisibilityClusteringType",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1099
+ "order": 1099,
+ "short_name": "StringToVisibilityClusteringType",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::string value, VisibilityClusteringType * type)",
+ "return_type": "bool",
+ "is_const": false
 }

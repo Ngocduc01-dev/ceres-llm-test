@@ -1,0 +1,11 @@
+UNIT u0832
+Hàm: ceres_free_problem(ceres_problem_t * problem)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 62–64
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   reinterpret_cast<Problem *>(problem) (CXXReinterpretCastExpr, BitCast, Problem *)->~Problem() (Implicit destructor)
+    delete reinterpret_cast<Problem *>(problem) (CXXReinterpretCastExpr, BitCast, Problem *)   → END

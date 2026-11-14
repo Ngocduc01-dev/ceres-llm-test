@@ -1,0 +1,10 @@
+UNIT u0012
+Hàm: parameter_block_sizes() const  → trả về const std::vector<int32_t> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::CostFunction
+Vị trí: include/ceres/cost_function.h, dòng 120–122
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return parameter_block_sizes_   → END

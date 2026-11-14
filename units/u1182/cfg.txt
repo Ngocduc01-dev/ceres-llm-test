@@ -1,0 +1,22 @@
+UNIT u1182
+Hàm: CompressedRowSparseMatrix(const double * diagonal, int num_rows)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 254–273
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   SparseMatrix() (Base initializer)
+    rows_() (Member initializer)
+    cols_() (Member initializer)
+    values_() (Member initializer)
+    row_blocks_() (Member initializer)
+    col_blocks_() (Member initializer)                             → 2
+2   CHECK(diagonal != nullptr)                                     đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < num_rows_                             đúng → 4   sai → 6
+4   cols_[i] = i
+    values_[i] = diagonal[i]
+    rows_[i + 1] = i + 1                                           → 5
+5   ++i                                                            → 3
+6   CHECK_EQ(num_nonzeros(), num_rows)                             đúng → END   sai → DỪNG

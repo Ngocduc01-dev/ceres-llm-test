@@ -6,7 +6,6 @@
   50,
   54
  ],
- "signature": "ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1346
+ "order": 1346,
+ "short_name": "SparseNormalCholeskySolver",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SparseNormalCholeskySolver",
+ "class_is_template": false,
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

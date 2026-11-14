@@ -1,0 +1,10 @@
+UNIT u1308
+Hàm: RightMultiplyAndAccumulate(const Vector & x, Vector & y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::(namespace không tên)::BlockRandomAccessDiagonalMatrixAdapter
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 82–84
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   m_.RightMultiplyAndAccumulate(x.data(), y.data())   → END

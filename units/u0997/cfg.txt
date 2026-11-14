@@ -1,0 +1,11 @@
+UNIT u0997
+Hàm: ceres_create_tolerant_loss_function_data(double a, double b)  → trả về void *
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 123–125
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(ceres::TolerantLoss *)
+    return new ceres::TolerantLoss(a, b)                           → END

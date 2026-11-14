@@ -6,7 +6,6 @@
   220,
   228
  ],
- "signature": "ceres::SphereManifold::MinusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 217
+ "order": 217,
+ "short_name": "MinusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SphereManifold",
+ "class_is_template": true,
+ "params": "(const double * x_ptr, double * jacobian_ptr)",
+ "return_type": "bool",
+ "is_const": true
 }

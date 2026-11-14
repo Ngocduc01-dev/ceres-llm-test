@@ -1,0 +1,17 @@
+UNIT u0747
+Hàm: Solve(const double * rhs_ptr, double * solution_ptr, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EigenSparseCholeskyTemplate
+Vị trí: internal/ceres/eigensparse.cc, dòng 88–110
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(analyzed_)                                               đúng → 2   sai → DỪNG
+2   rhs_ptr, solver_.cols()
+    VectorRef(solution_ptr, solver_.cols()) = solver_.solve(scalar_rhs)   → 3
+3   if (solver_.info() != Eigen::Success)                          đúng → 4   sai → 5
+4   *message = "Eigen failure. Unable to do triangular solve."
+    return LinearSolverTerminationType::FAILURE                    → END
+5   return LinearSolverTerminationType::SUCCESS                    → END

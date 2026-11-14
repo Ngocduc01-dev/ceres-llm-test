@@ -1,0 +1,19 @@
+UNIT u1055
+Hàm: Minus(const double * y, const double * x, double * y_minus_x) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SubsetManifold
+Vị trí: internal/ceres/manifold.cc, dòng 236–250
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (tangent_size_ == 0)                                        đúng → 2   sai → 3
+2   return true                                                    → END
+3   const int ambient_size = AmbientSize()
+    int i = 0
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: i < ambient_size                          đúng → 5   sai → 8
+5   if (!constancy_mask_[i])                                       đúng → 6   sai → 7
+6   y_minus_x[j++] = y[i] - x[i]                                   → 7
+7   ++i                                                            → 4
+8   return true                                                    → END

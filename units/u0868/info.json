@@ -6,7 +6,6 @@
   68,
   69
  ],
- "signature": "ceres::internal::LineSearch::LineSearch",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 868
+ "order": 868,
+ "short_name": "LineSearch",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LineSearch",
+ "class_is_template": false,
+ "params": "(const LineSearch::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

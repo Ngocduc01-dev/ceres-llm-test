@@ -1,0 +1,9 @@
+UNIT u1422
+Hàm: CreateJacobian() const  → trả về std::unique_ptr<SparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseJacobianWriter
+Vị trí: internal/ceres/dense_jacobian_writer.h, dòng 66–69
+
+Số điểm rẽ nhánh: 0
+
+START → END

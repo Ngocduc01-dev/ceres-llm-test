@@ -6,7 +6,6 @@
   91,
   101
  ],
- "signature": "ceres::StringToPreconditionerType",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1125
+ "order": 1125,
+ "short_name": "StringToPreconditionerType",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::string value, PreconditionerType * type)",
+ "return_type": "bool",
+ "is_const": false
 }

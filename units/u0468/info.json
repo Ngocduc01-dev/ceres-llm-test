@@ -6,7 +6,6 @@
   146,
   162
  ],
- "signature": "ceres::internal::BFGS::BFGS",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 468
+ "order": 468,
+ "short_name": "BFGS",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BFGS",
+ "class_is_template": false,
+ "params": "(const int num_parameters, const bool use_approximate_eigenvalue_scaling)",
+ "return_type": null,
+ "is_const": false
 }

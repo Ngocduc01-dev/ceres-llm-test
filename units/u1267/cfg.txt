@@ -1,0 +1,23 @@
+UNIT u1267
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PowerSeriesExpansionPreconditioner
+Vị trí: internal/ceres/power_series_expansion_preconditioner.cc, dòng 57–82
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   y, num_rows()
+    ParallelSetZero(options_.context, options_.num_threads, yref)
+    isc_->block_diagonal_FtF_inverse()->RightMultiplyAndAccumulate(x, y, options_.context, options_.num_threads)
+    ParallelAssign(options_.context, options_.num_threads, previous_series_term, yref)
+    const double norm_threshold = spse_tolerance_ * Norm(yref, options_.context, options_.num_threads)
+    int i = 1                                                      → 2
+2   vòng for, điều kiện:                                           → 3
+3   ParallelSetZero(options_.context, options_.num_threads, series_term)
+    isc_->InversePowerSeriesOperatorRightMultiplyAccumulate(previous_series_term.data(), series_term.data())
+    ParallelAssign(options_.context, options_.num_threads, yref, yref + series_term)   → 4
+4   if (i >= max_num_spse_iterations_ || series_term.norm() < norm_threshold)   đúng → 5   sai → 6
+5   break                                                          → END
+6   std::swap(previous_series_term, series_term)                   → 7
+7   i++                                                            → 2

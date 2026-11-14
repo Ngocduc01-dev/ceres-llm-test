@@ -6,7 +6,6 @@
   66,
   75
  ],
- "signature": "ceres::internal::FunctionSample::ToDebugString",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1244
+ "order": 1244,
+ "short_name": "ToDebugString",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FunctionSample",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true
 }

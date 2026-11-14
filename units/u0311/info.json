@@ -6,7 +6,6 @@
   196,
   198
  ],
- "signature": "ceres::internal::WeightedGraph::InvalidWeight",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 311
+ "order": 311,
+ "short_name": "InvalidWeight",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "double",
+ "is_const": false
 }

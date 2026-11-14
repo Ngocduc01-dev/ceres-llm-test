@@ -1,0 +1,47 @@
+UNIT u1516
+Hàm: ComputeStep(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)  → trả về TrustRegionStrategy::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 78–166
+
+Số điểm rẽ nhánh: 8 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(jacobian != nullptr)                                     đúng → 2   sai → DỪNG
+2   CHECK(residuals != nullptr)                                    đúng → 3   sai → DỪNG
+3   CHECK(step != nullptr)                                         đúng → 4   sai → DỪNG
+4   const int n = jacobian->num_cols()                             → 5
+5   if (reuse_)                                                    đúng → 6   sai → 10
+6   switch (dogleg_type_)                                          nhánh → 7   nhánh → 9
+7   ComputeSubspaceDoglegStep(step)
+    break                                                          → 8
+8   summary.num_iterations = 0
+    summary.termination_type = LinearSolverTerminationType::SUCCESS   → END
+9   ComputeTraditionalDoglegStep(step)
+    break                                                          → 8
+10  reuse_ = true                                                  → 11
+11  if (diagonal_.rows() != n)                                     đúng → 12   sai → 13
+12  diagonal_.resize(n, 1)
+    gradient_.resize(n, 1)
+    gauss_newton_step_.resize(n, 1)                                → 13
+13  jacobian->SquaredColumnNorm(diagonal_.data())
+    int i = 0                                                      → 14
+14  vòng for, điều kiện: i < n                                     đúng → 15   sai → 17
+15  diagonal_[i] = std::min(std::max(diagonal_[i], min_diagonal_), max_diagonal_)   → 16
+16  ++i                                                            → 14
+17  diagonal_ = diagonal_.array().sqrt()
+    ComputeGradient(jacobian, residuals)
+    ComputeCauchyPoint(jacobian)
+    summary.residual_norm = linear_solver_summary.residual_norm
+    summary.num_iterations = linear_solver_summary.num_iterations
+    summary.termination_type = linear_solver_summary.termination_type   → 18
+18  if (linear_solver_summary.termination_type == LinearSolverTerminationType::FATAL_ERROR)   đúng → END   sai → 19
+19  if (linear_solver_summary.termination_type != LinearSolverTerminationType::FAILURE)   đúng → 20   sai → END
+20  switch (dogleg_type_)                                          nhánh → 21   nhánh → 24
+21  if (!ComputeSubspaceModel(jacobian))                           đúng → 22   sai → 23
+22  summary.termination_type = LinearSolverTerminationType::FAILURE
+    break                                                          → END
+23  ComputeSubspaceDoglegStep(step)
+    break                                                          → END
+24  ComputeTraditionalDoglegStep(step)
+    break                                                          → END

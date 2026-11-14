@@ -6,7 +6,6 @@
   108,
   112
  ],
- "signature": "ceres::Problem::SetParameterLowerBound",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1332
+ "order": 1332,
+ "short_name": "SetParameterLowerBound",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(double * values, int index, double lower_bound)",
+ "return_type": "void",
+ "is_const": false
 }

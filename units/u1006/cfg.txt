@@ -1,0 +1,12 @@
+UNIT u1006
+Hàm: TimeStatistics(double * cost_evaluation_time_in_seconds, double * gradient_evaluation_time_in_seconds) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.cc, dòng 163–184
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   evaluator_->Statistics()
+    *cost_evaluation_time_in_seconds = FindWithDefault(evaluator_time_statistics, "Evaluator::Residual", CallStatistics()).time - initial_evaluator_residual_time_in_seconds
+    *gradient_evaluation_time_in_seconds = FindWithDefault(evaluator_time_statistics, "Evaluator::Jacobian", CallStatistics()).time - initial_evaluator_jacobian_time_in_seconds   → END

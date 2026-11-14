@@ -6,7 +6,6 @@
   299,
   305
  ],
- "signature": "ceres::StringToCovarianceAlgorithmType",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1098
+ "order": 1098,
+ "short_name": "StringToCovarianceAlgorithmType",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::string value, CovarianceAlgorithmType * type)",
+ "return_type": "bool",
+ "is_const": false
 }

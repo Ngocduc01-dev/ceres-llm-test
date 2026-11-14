@@ -6,7 +6,6 @@
   53,
   71
  ],
- "signature": "ceres::internal::SparseIterativeRefiner::Refine",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1162
+ "order": 1162,
+ "short_name": "Refine",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseIterativeRefiner",
+ "class_is_template": false,
+ "params": "(const SparseMatrix & lhs, const double * rhs_ptr, SparseCholesky * cholesky, double * solution_ptr)",
+ "return_type": "void",
+ "is_const": false
 }

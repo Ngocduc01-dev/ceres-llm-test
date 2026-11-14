@@ -1,0 +1,13 @@
+UNIT u0716
+Hàm: operator()(const Vertex & lhs, const Vertex & rhs) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VertexTotalOrdering
+Vị trí: internal/ceres/graph_algorithms.h, dòng 57–62
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VertexTotalOrdering<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (graph_.Neighbors(lhs).size() == graph_.Neighbors(rhs).size())   đúng → 2   sai → 3
+2   return lhs < rhs                                               → END
+3   return graph_.Neighbors(lhs).size() < graph_.Neighbors(rhs).size()   → END

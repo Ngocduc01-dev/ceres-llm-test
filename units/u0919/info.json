@@ -6,7 +6,6 @@
   136,
   143
  ],
- "signature": "ceres::ComposedLoss::ComposedLoss",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 919
+ "order": 919,
+ "short_name": "ComposedLoss",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::ComposedLoss",
+ "class_is_template": false,
+ "params": "(const LossFunction * f, Ownership ownership_f, const LossFunction * g, Ownership ownership_g)",
+ "return_type": null,
+ "is_const": false
 }

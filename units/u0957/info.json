@@ -6,7 +6,6 @@
   175,
   180
  ],
- "signature": "ceres::internal::DoglegStrategy::ComputeGradient",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 957
+ "order": 957,
+ "short_name": "ComputeGradient",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(SparseMatrix * jacobian, const double * residuals)",
+ "return_type": "void",
+ "is_const": false
 }

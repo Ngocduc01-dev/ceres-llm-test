@@ -1,0 +1,15 @@
+UNIT u0062
+Hàm: ComputeSphereManifoldPlus(const VT& v, double beta, const XT& x, const DeltaT& delta, const double norm_delta, XPlusDeltaT* x_plus_delta)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: include/ceres/internal/sphere_manifold_functions.h, dòng 64–82
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ComputeSphereManifoldPlus<Matrix<double, 4, 1>, Map<const Matrix<double, 4, 1>>, Map<const Matrix<double, 3, 1>>, Map<Matrix<double, 4, 1>>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   constexpr int AmbientDim = Matrix<double, 4, 1>::RowsAtCompileTime
+    const double sin_delta_by_delta = std::sin(norm_delta) / norm_delta
+    v.size()
+    y << sin_delta_by_delta * delta , std::cos(norm_delta)
+    *x_plus_delta = x.norm() * ApplyHouseholderVector(y, v, beta)   → END

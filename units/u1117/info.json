@@ -6,7 +6,6 @@
   306,
   373
  ],
- "signature": "ceres::internal::SchurEliminator::BackSubstitute",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1117
+ "order": 1117,
+ "short_name": "BackSubstitute",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(const BlockSparseMatrixData & A, const double * b, const double * D, const double * z, double * y)",
+ "return_type": "void",
+ "is_const": false
 }

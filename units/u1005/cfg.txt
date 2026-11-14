@@ -1,0 +1,12 @@
+UNIT u1005
+Hàm: ResetTimeStatistics()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.cc, dòng 149–161
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   evaluator_->Statistics()
+    initial_evaluator_residual_time_in_seconds = FindWithDefault(evaluator_statistics, "Evaluator::Residual", CallStatistics()).time
+    initial_evaluator_jacobian_time_in_seconds = FindWithDefault(evaluator_statistics, "Evaluator::Jacobian", CallStatistics()).time   → END

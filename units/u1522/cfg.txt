@@ -1,0 +1,30 @@
+UNIT u1522
+Hàm: DoSearch(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::WolfeLineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 370–481
+
+Số điểm rẽ nhánh: 4 (và 5 lệnh CHECK)
+
+START → 1
+1   CHECK_GE(step_size_estimate, 0.0)                              đúng → 2   sai → DỪNG
+2   CHECK_GT(options().sufficient_decrease, 0.0)                   đúng → 3   sai → DỪNG
+3   options().sufficient_decrease)                                 đúng → 4   sai → DỪNG
+4   CHECK_LT(options().sufficient_curvature_decrease, 1.0)         đúng → 5   sai → DỪNG
+5   CHECK_GT(options().max_step_expansion, 1.0)                    đúng → 6   sai → DỪNG
+6   0., initial_cost, initial_gradient
+    initial_position.vector_x = options().function->position()
+    initial_position.vector_x_is_valid = true
+    bool do_zoom_search = false                                    → 7
+7   if (!BracketingPhase(initial_position, step_size_estimate, &bracket_low, &bracket_high, &do_zoom_search, summary))   đúng → 8   sai → 9
+8   return                                                         → END
+9   if (!do_zoom_search)                                           đúng → 10   sai → 11
+10  summary->optimal_point = bracket_low
+    summary->success = true
+    return                                                         → END
+11  if (!ZoomPhase(initial_position, bracket_low, bracket_high, &solution, summary) && !solution.value_is_valid)   đúng → 12   sai → 13
+12  return                                                         → END
+13  if (!solution.value_is_valid || solution.value > bracket_low.value)   đúng → 14   sai → 16
+14  summary->optimal_point = bracket_low                           → 15
+15  summary->success = true                                        → END
+16  summary->optimal_point = solution                              → 15

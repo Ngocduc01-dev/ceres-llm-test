@@ -1,0 +1,10 @@
+UNIT u0382
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Preconditioner
+Vị trí: internal/ceres/preconditioner.h, dòng 152–154
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return RightMultiplyAndAccumulate(x, y)   → END

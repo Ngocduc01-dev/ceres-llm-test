@@ -6,7 +6,6 @@
   90,
   93
  ],
- "signature": "ceres::internal::ThreadPool::Size",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 899
+ "order": 899,
+ "short_name": "Size",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": false
 }

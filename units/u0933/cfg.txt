@@ -1,0 +1,16 @@
+UNIT u0933
+Hàm: ToDenseMatrix(Matrix * dense_matrix) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 442–452
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(dense_matrix != nullptr)                  đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: r < num_rows_              đúng → 3   sai → END
+3   int idx = rows_[r]                              → 4
+4   vòng for, điều kiện: idx < rows_[r + 1]         đúng → 5   sai → 7
+5   (*dense_matrix)(r, cols_[idx]) = values_[idx]   → 6
+6   ++idx                                           → 4
+7   ++r                                             → 2

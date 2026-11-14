@@ -1,0 +1,15 @@
+UNIT u0647
+Hàm: TinySolverAutoDiffFunction(const CostFunctor & cost_functor)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::TinySolverAutoDiffFunction
+Vị trí: include/ceres/tiny_solver_autodiff_function.h, dòng 116–119
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   cost_functor_(cost_functor) (Member initializer)
+    num_residuals_(?) (Member initializer)
+    jet_parameters_() (Member initializer)
+    jet_residuals_() (Member initializer)
+    Initialize<2>(cost_functor)                                    → END

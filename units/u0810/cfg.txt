@@ -1,0 +1,16 @@
+UNIT u0810
+Hàm: WriteArrayToFileOrDie(const std::string & filename, const double * x, const int size)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 953–964
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                         đúng → 2   sai → DỪNG
+2   FILE *fptr = fopen(filename.c_str(), "w")   → 3
+3   CHECK(fptr != nullptr)                      đúng → 4   sai → DỪNG
+4   vòng for, điều kiện: i < size               đúng → 5   sai → 7
+5   fprintf(fptr, "%17f\n", x[i])               → 6
+6   ++i                                         → 4
+7   fclose(fptr)                                → END

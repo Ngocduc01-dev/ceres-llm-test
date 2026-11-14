@@ -6,7 +6,6 @@
   265,
   265
  ],
- "signature": "ceres::EuclideanManifold::AmbientSize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 178
+ "order": 178,
+ "short_name": "AmbientSize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EuclideanManifold",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

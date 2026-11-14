@@ -1,0 +1,18 @@
+UNIT u0725
+Hàm: ReadFileToStringOrDie(const std::string & filename, std::string * data)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/file.cc, dòng 52–74
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   FILE *file_descriptor = fopen(filename.c_str(), "r")           → 2
+2   LOG(FATAL)                                                     đúng → 3   sai → DỪNG
+3   fseek(file_descriptor, 0L, 2)
+    int64_t num_bytes = ftell(file_descriptor)
+    data->resize(num_bytes)
+    fseek(file_descriptor, 0L, 0)
+    int64_t num_read = fread(&((*data)[0]), sizeof ((*data)[0]), num_bytes, file_descriptor)   → 4
+4   LOG(FATAL)                                                     đúng → 5   sai → DỪNG
+5   fclose(file_descriptor)                                        → END

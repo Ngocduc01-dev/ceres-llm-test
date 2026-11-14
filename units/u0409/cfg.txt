@@ -1,0 +1,10 @@
+UNIT u0409
+Hàm: token() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ScopedThreadToken
+Vị trí: internal/ceres/scoped_thread_token.h, dòng 50–50
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return token_   → END

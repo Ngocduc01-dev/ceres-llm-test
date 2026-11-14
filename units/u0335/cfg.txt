@@ -1,0 +1,14 @@
+UNIT u0335
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::ArctanLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 84–91
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double sum = 1 + s * s * b_
+    const double inv = 1 / sum
+    rho[0] = a_ * atan2(s, a_)
+    rho[1] = std::max(std::numeric_limits<double>::min(), inv)
+    rho[2] = -2. * s * b_ * (inv * inv)                            → END

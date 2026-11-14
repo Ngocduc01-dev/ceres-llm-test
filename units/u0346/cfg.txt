@@ -1,0 +1,11 @@
+UNIT u0346
+Hàm: Plus(const double * x, const double * delta, double * x_plus_delta) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::EigenQuaternionManifold
+Vị trí: internal/ceres/manifold.cc, dòng 290–295
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   QuaternionPlusImpl<EigenQuaternionOrder>(x, delta, x_plus_delta)
+    return true                                                    → END

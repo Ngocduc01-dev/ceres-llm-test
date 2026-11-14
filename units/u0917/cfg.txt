@@ -1,0 +1,21 @@
+UNIT u0917
+Hàm: CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 164–179
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SparseMatrix() (Base initializer)
+    rows_() (Member initializer)
+    cols_() (Member initializer)
+    values_() (Member initializer)
+    row_blocks_() (Member initializer)
+    col_blocks_() (Member initializer)
+    num_rows_ = num_rows
+    num_cols_ = num_cols
+    storage_type_ = StorageType::UNSYMMETRIC
+    rows_.resize(num_rows + 1, 0)
+    cols_.resize(max_num_nonzeros, 0)
+    values_.resize(max_num_nonzeros, 0.)                           → END

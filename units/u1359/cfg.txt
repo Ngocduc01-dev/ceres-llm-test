@@ -1,0 +1,20 @@
+UNIT u1359
+Hàm: Prepare(const ResidualBlock * residual_block, int, SparseMatrix *, double ** jacobians)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ScratchEvaluatePreparer
+Vị trí: internal/ceres/scratch_evaluate_preparer.cc, dòng 58–75
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   double *jacobian_block_cursor = jacobian_scratch_.get()
+    int num_residuals = residual_block->NumResiduals()
+    int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 2
+2   vòng for, điều kiện: j < num_parameter_blocks                  đúng → 3   sai → END
+3   const ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]   → 4
+4   if (parameter_block->IsConstant())                             đúng → 5   sai → 7
+5   jacobians[j] = nullptr                                         → 6
+6   ++j                                                            → 2
+7   jacobians[j] = jacobian_block_cursor
+    jacobian_block_cursor += num_residuals * parameter_block->TangentSize()   → 6

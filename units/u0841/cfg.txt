@@ -1,0 +1,9 @@
+UNIT u0841
+Hàm: ~ContextImpl()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::ContextImpl
+Vị trí: internal/ceres/context_impl.cc, dòng 186–190
+
+Số điểm rẽ nhánh: 0
+
+START → END

@@ -1,0 +1,16 @@
+UNIT u0216
+Hàm: Minus(const double * y_ptr, const double * x_ptr, double * y_minus_x_ptr) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SphereManifold
+Vị trí: include/ceres/sphere_manifold.h, dòng 198–218
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SphereManifold<2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Eigen::Map<const AmbientVector>(y_ptr, size_)
+    y_minus_x_ptr, size_ - 1
+    double beta
+    internal::ComputeHouseholderVector<Eigen::Map<const AmbientVector>, double, 2>(x, &v, &beta)
+    internal::ComputeSphereManifoldMinus(v, beta, x, y, &y_minus_x)
+    return true                                                    → END

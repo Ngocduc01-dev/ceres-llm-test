@@ -6,7 +6,6 @@
   143,
   143
  ],
- "signature": "ceres::AutoDiffFirstOrderFunction::functor",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 3
+ "order": 3,
+ "short_name": "functor",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffFirstOrderFunction",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const FirstOrderFunctor &",
+ "is_const": true
 }

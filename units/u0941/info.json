@@ -6,7 +6,6 @@
   326,
   348
  ],
- "signature": "ceres::internal::BlockSparseMatrix::LeftMultiplyAndAccumulate",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 941
+ "order": 941,
+ "short_name": "LeftMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

@@ -1,0 +1,21 @@
+UNIT u0463
+Hàm: Plus(const double * x_ptr, const double * delta_ptr, double * x_plus_delta_ptr) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SphereManifold
+Vị trí: include/ceres/sphere_manifold.h, dòng 156–186
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SphereManifold<4> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   x_ptr, size_
+    delta_ptr, size_ - 1
+    x_plus_delta_ptr, size_
+    const double norm_delta = delta.norm()                         → 2
+2   if (norm_delta == 0.)                                          đúng → 3   sai → 4
+3   x_plus_delta = x
+    return true                                                    → END
+4   double beta
+    internal::ComputeHouseholderVector<Eigen::Map<const AmbientVector>, double, 4>(x, &v, &beta)
+    internal::ComputeSphereManifoldPlus(v, beta, x, delta, norm_delta, &x_plus_delta)
+    return true                                                    → END

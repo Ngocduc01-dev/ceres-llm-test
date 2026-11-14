@@ -1,0 +1,20 @@
+UNIT u1111
+Hàm: StringToLineSearchInterpolationType(std::string value, LineSearchInterpolationType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 261–268
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   UpperCase(&value)                → 2
+2   if (value == "BISECTION")        đúng → 3   sai → 4
+3   *type = BISECTION
+    return true                      → END
+4   if (value == "QUADRATIC")        đúng → 5   sai → 6
+5   *type = QUADRATIC
+    return true                      → END
+6   if (value == "CUBIC")            đúng → 7   sai → 8
+7   *type = CUBIC
+    return true                      → END
+8   return false                     → END

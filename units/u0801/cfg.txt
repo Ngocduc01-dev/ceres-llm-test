@@ -1,0 +1,10 @@
+UNIT u0801
+Hàm: IsIterativeSolver(LinearSolverType type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 119–121
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (type == CGNR || type == ITERATIVE_SCHUR)   → END

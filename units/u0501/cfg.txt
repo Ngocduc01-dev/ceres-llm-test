@@ -1,0 +1,26 @@
+UNIT u0501
+Hàm: AngleAxisRotatePoint(const T angle_axis[3], const T pt[3], T result[3])  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 791–857
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AngleAxisRotatePoint<double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   DCHECK_NE(pt, result)                                          đúng → 2   sai → DỪNG
+2   const double theta = hypot(angle_axis[0], angle_axis[1], angle_axis[2])   → 3
+3   if (fpclassify(theta) != 2)                                    đúng → 4   sai → 5
+4   const double costheta = cos(theta)
+    const double sintheta = sin(theta)
+    const double theta_inverse = double(1.) / theta
+    const double w[3] = {angle_axis[0] * theta_inverse, angle_axis[1] * theta_inverse, angle_axis[2] * theta_inverse}
+    const double w_cross_pt[3] = {w[1] * pt[2] - w[2] * pt[1], w[2] * pt[0] - w[0] * pt[2], w[0] * pt[1] - w[1] * pt[0]}
+    const double tmp = (w[0] * pt[0] + w[1] * pt[1] + w[2] * pt[2]) * (double(1.) - costheta)
+    result[0] = pt[0] * costheta + w_cross_pt[0] * sintheta + w[0] * tmp
+    result[1] = pt[1] * costheta + w_cross_pt[1] * sintheta + w[1] * tmp
+    result[2] = pt[2] * costheta + w_cross_pt[2] * sintheta + w[2] * tmp   → END
+5   const double w_cross_pt[3] = {angle_axis[1] * pt[2] - angle_axis[2] * pt[1], angle_axis[2] * pt[0] - angle_axis[0] * pt[2], angle_axis[0] * pt[1] - angle_axis[1] * pt[0]}
+    result[0] = pt[0] + w_cross_pt[0]
+    result[1] = pt[1] + w_cross_pt[1]
+    result[2] = pt[2] + w_cross_pt[2]                              → END

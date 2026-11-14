@@ -1,0 +1,24 @@
+UNIT u0606
+Hàm: AddSymmetricRandomBlock(const int num_rows, const int row_block_begin, RandomNormalFunctor&& randn, std::vector<int>* rows, std::vector<int>* cols, std::vector<double>* values)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 139–159
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AddSymmetricRandomBlock<(lambda at /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc:728:24) &> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   int r = 0                                                      → 2
+2   vòng for, điều kiện: r < num_rows                              đúng → 3   sai → END
+3   int c = r                                                      → 4
+4   vòng for, điều kiện: c < num_rows                              đúng → 5   sai → 9
+5   const double v = randn()
+    rows->push_back(row_block_begin + r)
+    cols->push_back(row_block_begin + c)
+    values->push_back(v)                                           → 6
+6   if (r != c)                                                    đúng → 7   sai → 8
+7   rows->push_back(row_block_begin + c)
+    cols->push_back(row_block_begin + r)
+    values->push_back(v)                                           → 8
+8   ++c                                                            → 4
+9   ++r                                                            → 2

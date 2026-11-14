@@ -1,0 +1,22 @@
+UNIT u1277
+Hàm: ScaleOffDiagonalCells()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 368–390
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   for (const auto &block_pair : block_pairs_)                    đúng → 2   sai → END
+2   const auto &block_pair
+    const int block1 = block_pair.first
+    const int block2 = block_pair.second                           → 3
+3   if (!IsBlockPairOffDiagonal(block1, block2))                   đúng → 4   sai → 6
+4   continue                                                       → 5
+5   ++ (bước tiếp của vòng for)                                    → 1
+6   int r
+    int c
+    int row_stride
+    int col_stride
+    CellInfo *cell_info = m_->GetCell(block1, block2, &r, &c, &row_stride, &col_stride)   → 7
+7   CHECK(cell_info != nullptr)                                    đúng → 5   sai → DỪNG

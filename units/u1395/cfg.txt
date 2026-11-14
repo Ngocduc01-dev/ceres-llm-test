@@ -1,0 +1,28 @@
+UNIT u1395
+Hàm: ComputeSubspaceDoglegStep(double * dogleg)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 265–365
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   dogleg, gradient_.rows()
+    const double gauss_newton_norm = gauss_newton_step_.norm()     → 2
+2   if (gauss_newton_norm <= radius_)                              đúng → 3   sai → 4
+3   dogleg_step = gauss_newton_step_
+    dogleg_step_norm_ = gauss_newton_norm
+    dogleg_step.array() /= diagonal_.array()                       → END
+4   if (subspace_is_one_dimensional_)                              đúng → 5   sai → 6
+5   dogleg_step = -(radius_ / gradient_.norm()) * gradient_
+    dogleg_step_norm_ = radius_
+    dogleg_step.array() /= diagonal_.array()                       → END
+6   0., 0.                                                         → 7
+7   if (!FindMinimumOnTrustRegionBoundary(&minimum))               đúng → END   sai → 8
+8   const double kCosineThreshold = 0.98999999999999999
+    subspace_B_ * minimum + subspace_g_
+    const double cosine_angle = -minimum.dot(grad_minimum) / (minimum.norm() * grad_minimum.norm())   → 9
+9   if (cosine_angle < kCosineThreshold)                           đúng → END   sai → 10
+10  dogleg_step = subspace_basis_ * minimum
+    dogleg_step_norm_ = radius_
+    dogleg_step.array() /= diagonal_.array()                       → END

@@ -1,0 +1,12 @@
+UNIT u0966
+Hàm: AllocateMemory()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 158–162
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   rows_ = std::make_unique<int[]>(max_num_nonzeros_)
+    cols_ = std::make_unique<int[]>(max_num_nonzeros_)
+    values_ = std::make_unique<double[]>(max_num_nonzeros_)        → END

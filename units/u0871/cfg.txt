@@ -1,0 +1,9 @@
+UNIT u0871
+Hàm: ~LossFunction()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::LossFunction
+Vị trí: internal/ceres/loss_function.cc, dòng 42–42
+
+Số điểm rẽ nhánh: 0
+
+START → END

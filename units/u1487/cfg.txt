@@ -1,0 +1,34 @@
+UNIT u1487
+Hàm: Minimize(const Minimizer::Options & options, double * parameters, Solver::Summary *)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CoordinateDescentMinimizer
+Vị trí: internal/ceres/coordinate_descent_minimizer.cc, dòng 128–208
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   for (auto *parameter_block : parameter_blocks_)                đúng → 2   sai → 4
+2   auto *parameter_block
+    parameter_block->SetState(parameters + parameter_block->state_offset())
+    parameter_block->SetConstant()                                 → 3
+3   ++ (bước tiếp của vòng for)                                    → 1
+4   options.num_threads
+    linear_solver_options.type = DENSE_QR
+    linear_solver_options.context = context_
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < options.num_threads                   đúng → 6   sai → 8
+6   linear_solvers[i] = LinearSolver::Create(linear_solver_options)   → 7
+7   ++i                                                            → 5
+8   int i = 0                                                      → 9
+9   vòng for, điều kiện: i < independent_set_offsets_.size() - 1   đúng → 10   sai → 15
+10  const int num_problems = independent_set_offsets_[i + 1] - independent_set_offsets_[i]   → 11
+11  if (num_problems == 0)                                         đúng → 12   sai → 14
+12  continue                                                       → 13
+13  ++i                                                            → 9
+14  const int num_inner_iteration_threads = std::min(options.num_threads, num_problems)
+    evaluator_options_.num_threads = std::max(1, options.num_threads / num_inner_iteration_threads)
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/coordinate_descent_minimizer.cc:168:9) &&, int))(context_, independent_set_offsets_[i], independent_set_offsets_[i + 1], num_inner_iteration_threads, [&](int thread_id, int j) {)   → 13
+15  for (auto *parameter_block : parameter_blocks_)                đúng → 16   sai → END
+16  auto *parameter_block
+    parameter_block->SetVarying()                                  → 17
+17  ++ (bước tiếp của vòng for)                                    → 15

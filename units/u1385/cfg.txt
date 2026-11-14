@@ -1,0 +1,15 @@
+UNIT u1385
+Hàm: MaxScratchDoublesNeededForEvaluate() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 510–519
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int max_scratch_bytes_for_evaluate = 0                         → 2
+2   for (auto *residual_block : residual_blocks_)                  đúng → 3   sai → 5
+3   auto *residual_block
+    max_scratch_bytes_for_evaluate = std::max(max_scratch_bytes_for_evaluate, residual_block->NumScratchDoublesForEvaluate())   → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   return max_scratch_bytes_for_evaluate                          → END

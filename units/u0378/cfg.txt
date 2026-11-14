@@ -1,0 +1,11 @@
+UNIT u0378
+Hàm: f_cols_partition() const  → trả về const std::vector<int> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view.h, dòng 189–191
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return f_cols_partition_   → END

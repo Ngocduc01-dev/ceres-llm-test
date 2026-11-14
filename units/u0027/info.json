@@ -6,7 +6,6 @@
   155,
   161
  ],
- "signature": "ceres::internal::FixedArray::FixedArray<T, N, A>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 27
+ "order": 27,
+ "short_name": "FixedArray<T, N, A>",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "(Iterator first, Iterator last, const allocator_type& a = allocator_type())",
+ "return_type": "void",
+ "is_const": false
 }

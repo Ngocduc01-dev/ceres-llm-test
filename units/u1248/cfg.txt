@@ -1,0 +1,10 @@
+UNIT u1248
+Hàm: HasManifold(const double * values) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 530–532
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return GetManifold(values) != nullptr   → END

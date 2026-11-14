@@ -1,0 +1,10 @@
+UNIT u0583
+Hàm: ResizeRhs(int n)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.h, dòng 133–133
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   rhs_.resize(n)   → END

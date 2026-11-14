@@ -6,7 +6,6 @@
   168,
   170
  ],
- "signature": "ceres::internal::IdentityPreconditioner::RightMultiplyAndAccumulate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 385
+ "order": 385,
+ "short_name": "RightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::IdentityPreconditioner",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

@@ -6,7 +6,6 @@
   647,
   716
  ],
- "signature": "ceres::internal::DoglegStrategy::ComputeSubspaceModel",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 972
+ "order": 972,
+ "short_name": "ComputeSubspaceModel",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(SparseMatrix * jacobian)",
+ "return_type": "bool",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   118,
   155
  ],
- "signature": "ceres::internal::Corrector::CorrectJacobian",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 552
+ "order": 552,
+ "short_name": "CorrectJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Corrector",
+ "class_is_template": false,
+ "params": "(const int num_rows, const int num_cols, double * residuals, double * jacobian)",
+ "return_type": "void",
+ "is_const": false
 }

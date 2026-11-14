@@ -1,0 +1,11 @@
+UNIT u1400
+Hàm: RemoveResidualBlock(ResidualBlock * residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 282–289
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(residual_blocks_.get() != nullptr)                       đúng → 2   sai → DỪNG
+2   CHECK(residual_blocks_->find(residual_block) != residual_blocks_->end())   đúng → END   sai → DỪNG

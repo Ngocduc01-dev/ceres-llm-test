@@ -1,0 +1,17 @@
+UNIT u0802
+Hàm: ComputeCumulativeNumberOfNonZeros(std::vector<CompressedList> & rows)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 56–65
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (rows.empty())                                              đúng → 2   sai → 3
+2   return                                                         → END
+3   rows[0].cumulative_nnz = rows[0].nnz
+    int c = 1                                                      → 4
+4   vòng for, điều kiện: c < rows.size()                           đúng → 5   sai → END
+5   const int curr_nnz = rows[c].nnz
+    rows[c].cumulative_nnz = curr_nnz + rows[c - 1].cumulative_nnz   → 6
+6   ++c                                                            → 4

@@ -1,0 +1,33 @@
+UNIT u0774
+Hàm: Init(int num_eliminate_blocks, bool, const CompressedRowBlockStructure * bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminatorForOneFBlock
+Vị trí: internal/ceres/schur_eliminator.h, dòng 386–428
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminatorForOneFBlock<2, 3, 6> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 4 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(num_eliminate_blocks, 0)                              đúng → 2   sai → DỪNG
+2   CHECK_EQ(bs->cols.size() - num_eliminate_blocks, 1)            đúng → 3   sai → DỪNG
+3   num_eliminate_blocks_ = num_eliminate_blocks
+    const int num_row_blocks = bs->rows.size()
+    chunks_.clear()
+    int r = 0                                                      → 4
+4   while (r < num_row_blocks)                                     đúng → 5   sai → 8
+5   const int e_block_id = bs->rows[r].cells.front().block_id      → 6
+6   if (e_block_id >= num_eliminate_blocks_)                       đúng → 7   sai → 9
+7   break                                                          → 8
+8   const Chunk &last_chunk = chunks_.back()
+    uneliminated_row_begins_ = last_chunk.start + last_chunk.num_rows
+    e_t_e_inverse_matrices_.resize(3 * 3 * chunks_.size())         → END
+9   chunks_.push_back(Chunk())
+    Chunk &chunk = chunks_.back()
+    chunk.num_rows = 0
+    chunk.start = r                                                → 10
+10  while (r + chunk.num_rows < num_row_blocks)                    đúng → 11   sai → 14
+11  const CompressedRow &row = bs->rows[r + chunk.num_rows]        → 12
+12  if (row.cells.front().block_id != e_block_id)                  đúng → 13   sai → 15
+13  break                                                          → 14
+14  r += chunk.num_rows                                            → 4
+15  ++chunk.num_rows                                               → 10

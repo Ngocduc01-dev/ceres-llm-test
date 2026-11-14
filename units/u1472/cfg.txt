@@ -1,0 +1,34 @@
+UNIT u1472
+Hàm: PreSolveSummarize(const Solver::Options & options, const internal::ProblemImpl * problem, Solver::Summary * summary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 530–563
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SummarizeGivenProgram(problem->program(), summary)
+    internal::OrderingToGroupSizes(options.linear_solver_ordering.get(), &(summary->linear_solver_ordering_given))
+    internal::OrderingToGroupSizes(options.inner_iteration_ordering.get(), &(summary->inner_iteration_ordering_given))
+    summary->dense_linear_algebra_library_type = options.dense_linear_algebra_library_type
+    summary->dogleg_type = options.dogleg_type
+    summary->inner_iteration_time_in_seconds = 0.
+    summary->num_line_search_steps = 0
+    summary->line_search_cost_evaluation_time_in_seconds = 0.
+    summary->line_search_gradient_evaluation_time_in_seconds = 0.
+    summary->line_search_polynomial_minimization_time_in_seconds = 0.
+    summary->line_search_total_time_in_seconds = 0.
+    summary->inner_iterations_given = options.use_inner_iterations
+    summary->line_search_direction_type = options.line_search_direction_type
+    summary->line_search_interpolation_type = options.line_search_interpolation_type
+    summary->line_search_type = options.line_search_type
+    summary->linear_solver_type_given = options.linear_solver_type
+    summary->max_lbfgs_rank = options.max_lbfgs_rank
+    summary->minimizer_type = options.minimizer_type
+    summary->nonlinear_conjugate_gradient_type = options.nonlinear_conjugate_gradient_type
+    summary->num_threads_given = options.num_threads
+    summary->preconditioner_type_given = options.preconditioner_type
+    summary->sparse_linear_algebra_library_type = options.sparse_linear_algebra_library_type
+    summary->linear_solver_ordering_type = options.linear_solver_ordering_type
+    summary->trust_region_strategy_type = options.trust_region_strategy_type
+    summary->visibility_clustering_type = options.visibility_clustering_type   → END

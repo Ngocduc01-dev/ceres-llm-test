@@ -6,7 +6,6 @@
   157,
   257
  ],
- "signature": "ceres::internal::(anonymous)::SetupLinearSolver",
  "branches": 20,
  "cyclomatic": 11,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1460
+ "order": 1460,
+ "short_name": "SetupLinearSolver",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(PreprocessedProblem * pp)",
+ "return_type": "bool",
+ "is_const": false
 }

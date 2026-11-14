@@ -1,0 +1,10 @@
+UNIT u0789
+Hàm: EvaluateSubspaceModel(const Vector2d & x) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 455–457
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return 0.5 * x.dot(subspace_B_ * x) + subspace_g_.dot(x)   → END

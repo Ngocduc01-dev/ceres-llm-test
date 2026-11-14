@@ -6,7 +6,6 @@
   63,
   170
  ],
- "signature": "ceres::internal::NumericDiff::EvaluateJacobianForParameterBlock",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1305
+ "order": 1305,
+ "short_name": "EvaluateJacobianForParameterBlock",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NumericDiff",
+ "class_is_template": true,
+ "params": "(const CostFunctor * functor, const double * residuals_at_eval_point, const NumericDiffOptions & options, int num_residuals, int parameter_block_index, int parameter_block_size, double ** parameters, double * jacobian)",
+ "return_type": "bool",
+ "is_const": false
 }

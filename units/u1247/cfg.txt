@@ -1,0 +1,9 @@
+UNIT u1247
+Hàm: ToString() const  → trả về std::string
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 253–266
+
+Số điểm rẽ nhánh: 0
+
+START → END

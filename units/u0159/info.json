@@ -6,7 +6,6 @@
   1355,
   1358
  ],
- "signature": "?::std::numeric_limits::max",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 159
+ "order": 159,
+ "short_name": "max",
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false
 }

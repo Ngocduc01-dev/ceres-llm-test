@@ -1,0 +1,17 @@
+UNIT u0935
+Hàm: operator<<(std::ostream & s, CompressedRowSparseMatrix::StorageType type)  → trả về std::ostream &
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/compressed_row_sparse_matrix.h, dòng 227–243
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)                    nhánh → 2   nhánh → 4   nhánh → 5
+2   s << "LOWER_TRIANGULAR"
+    break                            → 3
+3   return s                         → END
+4   s << "UPPER_TRIANGULAR"
+    break                            → 3
+5   s << "UNSYMMETRIC"
+    break                            → 3

@@ -1,0 +1,66 @@
+UNIT u1123
+Hàm: Eliminate(const BlockSparseMatrixData & A, const double * b, const double * D, BlockRandomAccessMatrix * lhs_bram, double * rhs_ptr)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminatorForOneFBlock
+Vị trí: internal/ceres/schur_eliminator.h, dòng 430–565
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminatorForOneFBlock<2, 3, 6> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   int r
+    int c
+    int row_stride
+    int col_stride
+    CellInfo *cell_info = lhs_bram->GetCell(0, 0, &r, &c, &row_stride, &col_stride)
+    cell_info->values, 6, 6
+    rhs_ptr, 6
+    lhs.setZero()
+    rhs.setZero()
+    const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()                              → 2
+2   if (D != nullptr)                                              đúng → 3   sai → 4
+3   D + bs->cols[num_eliminate_blocks_].position, 6
+    lhs.diagonal() = diag.array().square().matrix()                → 4
+4   int i = 0                                                      → 5
+5   vòng for, điều kiện: i < chunks_.size()                        đúng → 6   sai → 19
+6   const Chunk &chunk = chunks_[i]
+    const int e_block_id = bs->rows[chunk.start].cells.front().block_id   → 7
+7   if (D != nullptr)                                              đúng → 8   sai → 18
+8   D + bs->cols[e_block_id].position, 3
+    e_t_e = diag.array().square().matrix().asDiagonal()            → 9
+9   e_t_f.setZero()
+    e_t_b.setZero()
+    f_t_b.setZero()
+    int j = 0                                                      → 10
+10  vòng for, điều kiện: j < chunk.num_rows                        đúng → 11   sai → 16
+11  const int row_id = chunk.start + j
+    const auto &row = bs->rows[row_id]
+    values + row.cells[0].position, 2, 3
+    b + row.block.position, 2
+    e_t_e.noalias() += e_block.transpose() * e_block
+    e_t_b.noalias() += e_block.transpose() * b_block               → 12
+12  if (row.cells.size() == 1)                                     đúng → 13   sai → 15
+13  continue                                                       → 14
+14  ++j                                                            → 10
+15  values + row.cells[1].position, 2, 6
+    e_t_f.noalias() += e_block.transpose() * f_block
+    lhs.noalias() += f_block.transpose() * f_block
+    f_t_b.noalias() += f_block.transpose() * b_block               → 14
+16  &e_t_e_inverse_matrices_[3 * 3 * i], 3, 3
+    e_t_e_inverse.noalias() = e_t_e.inverse()
+    tmp.noalias() = e_t_e_inverse * e_t_f
+    tmp2.noalias() = e_t_e_inverse * e_t_b
+    lhs.noalias() -= e_t_f.transpose() * tmp
+    rhs.noalias() += f_t_b - e_t_f.transpose() * tmp2              → 17
+17  ++i                                                            → 5
+18  e_t_e.setZero()                                                → 9
+19  int row_id = uneliminated_row_begins_                          → 20
+20  vòng for, điều kiện: row_id < bs->rows.size()                  đúng → 21   sai → END
+21  const auto &row = bs->rows[row_id]
+    const auto &cell = row.cells[0]
+    values + cell.position, row.block.size, 6
+    b + row.block.position, row.block.size
+    lhs.noalias() += f_block.transpose() * f_block
+    rhs.noalias() += f_block.transpose() * b_block                 → 22
+22  ++row_id                                                       → 20

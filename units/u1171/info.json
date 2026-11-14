@@ -6,7 +6,6 @@
   71,
   86
  ],
- "signature": "ceres::internal::LineSearch::Create",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1171
+ "order": 1171,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearch",
+ "class_is_template": false,
+ "params": "(const LineSearchType line_search_type, const LineSearch::Options & options, std::string * error)",
+ "return_type": "std::unique_ptr<LineSearch>",
+ "is_const": false
 }

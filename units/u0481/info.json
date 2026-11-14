@@ -6,7 +6,6 @@
   127,
   130
  ],
- "signature": "ceres::internal::ParameterBlock::LowerBound",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 481
+ "order": 481,
+ "short_name": "LowerBound",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "(int index)",
+ "return_type": "double",
+ "is_const": true
 }

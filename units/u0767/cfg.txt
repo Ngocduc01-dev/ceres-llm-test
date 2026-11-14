@@ -1,0 +1,22 @@
+UNIT u0767
+Hàm: SubsetManifold(const int size, const std::vector<int> & constant_parameters)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::SubsetManifold
+Vị trí: internal/ceres/manifold.cc, dòng 157–179
+
+Số điểm rẽ nhánh: 2 (và 3 lệnh CHECK)
+
+START → 1
+1   Manifold() (Base initializer)
+    tangent_size_(size - constant_parameters.size()) (Member initializer)
+    constancy_mask_(size, false) (Member initializer)              → 2
+2   if (constant_parameters.empty())                               đúng → 3   sai → 4
+3   return                                                         → END
+4   constant_parameters                                            → 5
+5   CHECK_GE(constant.front(), 0)                                  đúng → 6   sai → DỪNG
+6   CHECK_LT(constant.back(), size)                                đúng → 7   sai → DỪNG
+7   CHECK(std::adjacent_find(constant.begin(), constant.end()) == constant.end())   đúng → 8   sai → DỪNG
+8   for (auto index : constant_parameters)                         đúng → 9   sai → END
+9   auto index
+    constancy_mask_[index] = true                                  → 10
+10  ++ (bước tiếp của vòng for)                                    → 8

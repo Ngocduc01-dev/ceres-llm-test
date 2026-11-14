@@ -6,7 +6,6 @@
   99,
   101
  ],
- "signature": "ceres::internal::BlockRandomAccessSparseMatrix::IntPairToInt64",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 574
+ "order": 574,
+ "short_name": "IntPairToInt64",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
+ "params": "(int row, int col)",
+ "return_type": "int64_t",
+ "is_const": true
 }

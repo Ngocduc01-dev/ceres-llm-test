@@ -6,7 +6,6 @@
   165,
   165
  ],
- "signature": "ceres::Problem::NumParameters",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1430
+ "order": 1430,
+ "short_name": "NumParameters",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

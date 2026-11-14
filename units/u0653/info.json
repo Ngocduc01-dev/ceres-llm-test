@@ -6,7 +6,6 @@
   76,
   78
  ],
- "signature": "ceres::internal::LoggingCallback::LoggingCallback",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 653
+ "order": 653,
+ "short_name": "LoggingCallback",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LoggingCallback",
+ "class_is_template": false,
+ "params": "(const MinimizerType minimizer_type, const bool log_to_stdout)",
+ "return_type": null,
+ "is_const": false
 }

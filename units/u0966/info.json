@@ -6,7 +6,6 @@
   158,
   162
  ],
- "signature": "ceres::internal::TripletSparseMatrix::AllocateMemory",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 966
+ "order": 966,
+ "short_name": "AllocateMemory",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

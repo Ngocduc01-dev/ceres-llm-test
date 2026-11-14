@@ -6,7 +6,6 @@
   776,
   784
  ],
- "signature": "ceres::CrossProduct",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 500
+ "order": 500,
+ "short_name": "CrossProduct",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T x[3], const T y[3], T x_cross_y[3])",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,13 @@
+UNIT u0508
+Hàm: ~ComposedLoss()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::ComposedLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 145–152
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (ownership_f_ == DO_NOT_TAKE_OWNERSHIP)   đúng → 2   sai → 3
+2   f_.release()                                 → 3
+3   if (ownership_g_ == DO_NOT_TAKE_OWNERSHIP)   đúng → 4   sai → END
+4   g_.release()                                 → END

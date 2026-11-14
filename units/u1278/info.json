@@ -6,7 +6,6 @@
   637,
   655
  ],
- "signature": "ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1278
+ "order": 1278,
+ "short_name": "MaxSolverTimeReached",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false
 }

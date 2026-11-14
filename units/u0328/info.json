@@ -6,7 +6,6 @@
   49,
   55
  ],
- "signature": "ceres::internal::LineSearchMinimizer::State::State",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 328
+ "order": 328,
+ "short_name": "State",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LineSearchMinimizer::State",
+ "class_is_template": false,
+ "params": "(int, int num_effective_parameters)",
+ "return_type": null,
+ "is_const": false
 }

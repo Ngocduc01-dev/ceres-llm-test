@@ -6,7 +6,6 @@
   88,
   90
  ],
- "signature": "ceres::internal::ArraySelector::ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, false>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 446
+ "order": 446,
+ "short_name": "ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, false>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ArraySelector",
+ "class_is_template": true,
+ "params": "(int s)",
+ "return_type": null,
+ "is_const": false
 }

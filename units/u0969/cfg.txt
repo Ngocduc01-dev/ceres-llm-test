@@ -1,0 +1,17 @@
+UNIT u0969
+Hàm: EvaluateGradientNorms(Evaluator * evaluator, const Vector & x, LineSearchMinimizer::State * state, std::string * message)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/line_search_minimizer.cc, dòng 65–81
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   - state->gradient
+    x.size()                                                       → 2
+2   if (!evaluator->Plus(x.data(), negative_gradient.data(), projected_gradient_step.data()))   đúng → 3   sai → 4
+3   *message = "projected_gradient_step = Plus(x, -gradient) failed."
+    return false                                                   → END
+4   state->gradient_squared_norm = (x - projected_gradient_step).squaredNorm()
+    state->gradient_max_norm = (x - projected_gradient_step).lpNorm<Eigen::Infinity>()
+    return true                                                    → END

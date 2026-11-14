@@ -6,7 +6,6 @@
   65,
   99
  ],
- "signature": "ceres::internal::DynamicCompressedRowSparseMatrix::Finalize",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1119
+ "order": 1119,
+ "short_name": "Finalize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(int num_additional_elements)",
+ "return_type": "void",
+ "is_const": false
 }

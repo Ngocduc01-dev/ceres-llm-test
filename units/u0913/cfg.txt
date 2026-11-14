@@ -1,0 +1,12 @@
+UNIT u0913
+Hàm: MaxNumThreadsAvailable()  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 48–54
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int num_hardware_threads = std::thread::hardware_concurrency()   → 2
+2   num_hardware_threads == 0 ? ... : ...                          đúng → 3   sai → 3
+3   return num_hardware_threads == 0 ? std::numeric_limits<int>::max() : num_hardware_threads   → END

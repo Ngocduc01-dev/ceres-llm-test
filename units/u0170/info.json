@@ -6,7 +6,6 @@
   240,
   270
  ],
- "signature": "ceres::LineManifold::Minus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 170
+ "order": 170,
+ "short_name": "Minus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::LineManifold",
+ "class_is_template": true,
+ "params": "(const double * y_ptr, const double * x_ptr, double * y_minus_x)",
+ "return_type": "bool",
+ "is_const": true
 }

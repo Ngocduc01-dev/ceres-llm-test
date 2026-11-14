@@ -1,0 +1,12 @@
+UNIT u1029
+Hàm: MinNonZeroGroup() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::OrderedGroups
+Vị trí: include/ceres/ordered_groups.h, dòng 176–179
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_NE(NumGroups(), 0)                   đúng → 2   sai → DỪNG
+2   return group_to_elements_.begin()->first   → END

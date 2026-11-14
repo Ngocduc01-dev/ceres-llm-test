@@ -6,7 +6,6 @@
   597,
   607
  ],
- "signature": "ceres::internal::ReorderResidualBlocksByPartition",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1081
+ "order": 1081,
+ "short_name": "ReorderResidualBlocksByPartition",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::unordered_set<ResidualBlockId> & bottom_residual_blocks, Program * program)",
+ "return_type": "int",
+ "is_const": false
 }

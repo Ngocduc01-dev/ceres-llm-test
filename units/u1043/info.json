@@ -6,7 +6,6 @@
   87,
   92
  ],
- "signature": "ceres::internal::Program::ParameterBlocksToStateVector",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1043
+ "order": 1043,
+ "short_name": "ParameterBlocksToStateVector",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "(double * state)",
+ "return_type": "void",
+ "is_const": true
 }

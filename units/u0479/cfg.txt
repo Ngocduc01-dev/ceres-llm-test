@@ -1,0 +1,11 @@
+UNIT u0479
+Hàm: GetState(double * x) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 104–108
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (x != state_)                       đúng → 2   sai → END
+2   std::copy(state_, state_ + size_, x)   → END

@@ -1,0 +1,11 @@
+UNIT u0194
+Hàm: NumElements() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::OrderedGroups
+Vị trí: include/ceres/ordered_groups.h, dòng 168–168
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return element_to_group_.size()   → END

@@ -1,0 +1,11 @@
+UNIT u0745
+Hàm: EulerAnglesToRotation(const T* euler, const MatrixAdapter<T, row_stride, col_stride>& R)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 501–555
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EulerAnglesToRotation<EulerSystem<Y, Odd, TaitBryan, Intrinsic>, double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   EulerAnglesToRotation<ceres::internal::EulerSystem<ceres::internal::axis::Y, ceres::internal::Odd, ceres::internal::TaitBryan, ceres::internal::Intrinsic>>(euler, RowMajorAdapter3x3(R))   → END

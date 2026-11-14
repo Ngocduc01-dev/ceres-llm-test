@@ -1,0 +1,10 @@
+UNIT u0684
+Hàm: LeftMultiplyAndAccumulate(const Vector & x, Vector & y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearOperator
+Vị trí: internal/ceres/linear_operator.h, dòng 67–69
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LeftMultiplyAndAccumulate(x.data(), y.data())   → END

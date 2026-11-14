@@ -6,7 +6,6 @@
   201,
   244
  ],
- "signature": "ceres::internal::CompressedRowJacobianWriter::Write",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1437
+ "order": 1437,
+ "short_name": "Write",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowJacobianWriter",
+ "class_is_template": false,
+ "params": "(int residual_id, int residual_offset, double ** jacobians, SparseMatrix * base_jacobian)",
+ "return_type": "void",
+ "is_const": false
 }

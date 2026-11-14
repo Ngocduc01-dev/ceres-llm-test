@@ -1,0 +1,18 @@
+UNIT u0751
+Hàm: OrderingToGroupSizes(const ParameterBlockOrdering * ordering, std::vector<int> * group_sizes)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parameter_block_ordering.cc, dòng 162–177
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(group_sizes != nullptr)                                  đúng → 2   sai → DỪNG
+2   group_sizes->clear()                                           → 3
+3   if (ordering == nullptr)                                       đúng → 4   sai → 5
+4   return                                                         → END
+5   const std::map<int, std::set<double *>> &group_to_elements = ordering->group_to_elements()   → 6
+6   for (const auto &g_t_e : group_to_elements)                    đúng → 7   sai → END
+7   const auto &g_t_e
+    group_sizes->push_back(g_t_e.second.size())                    → 8
+8   ++ (bước tiếp của vòng for)                                    → 6

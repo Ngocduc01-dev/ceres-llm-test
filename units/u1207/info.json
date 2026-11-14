@@ -6,7 +6,6 @@
   669,
   709
  ],
- "signature": "ceres::internal::BlockSparseMatrix::DeleteRowBlocks",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1207
+ "order": 1207,
+ "short_name": "DeleteRowBlocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "(const int delta_row_blocks)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,13 @@
+UNIT u0805
+Hàm: ComputeClusterVisibility(const std::vector<std::set<int>> & visibility, std::vector<std::set<int>> * cluster_visibility) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 479–490
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(cluster_visibility != nullptr)            đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < num_blocks_            đúng → 3   sai → END
+3   const int cluster_id = cluster_membership_[i]   → 4
+4   ++i                                             → 2

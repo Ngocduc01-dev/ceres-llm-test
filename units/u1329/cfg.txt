@@ -1,0 +1,10 @@
+UNIT u1329
+Hàm: SetParameterBlockConstant(const double * values)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 84–86
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   impl_->SetParameterBlockConstant(values)   → END

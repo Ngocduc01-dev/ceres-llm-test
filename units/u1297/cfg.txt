@@ -1,0 +1,31 @@
+UNIT u1297
+Hàm: ApplyOrdering(const ProblemImpl::ParameterMap & parameter_map, const ParameterBlockOrdering & ordering, Program * program, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 214–252
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const int num_parameter_blocks = program->NumParameterBlocks()   → 2
+2   if (ordering.NumElements() != num_parameter_blocks)            đúng → 3   sai → 4
+3   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("User specified ordering does not have the same number of parameters as the problem. The problemhas %d blocks while the ordering has %d blocks.", num_parameter_blocks, ordering.NumElements())
+    return false                                                   → END
+4   std::vector<ParameterBlock *> *parameter_blocks = program->mutable_parameter_blocks()
+    parameter_blocks->clear()
+    const std::map<int, std::set<double *>> &groups = ordering.group_to_elements()   → 5
+5   for (const auto &p : groups)                                   đúng → 6   sai → 14
+6   const auto &p
+    const std::set<double *> &group = p.second                     → 7
+7   for (double *parameter_block_ptr : group)                      đúng → 8   sai → 13
+8   double *parameter_block_ptr
+    parameter_map.find(parameter_block_ptr)                        → 9
+9   if (it == parameter_map.end())                                 đúng → 10   sai → 11
+10  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("User specified ordering contains a pointer to a double that is not a parameter block in the problem. The invalid double is in group: %d", p.first)
+    return false                                                   → END
+11  parameter_blocks->push_back(it->second)                        → 12
+12  ++ (bước tiếp của vòng for)                                    → 7
+13  ++ (bước tiếp của vòng for)                                    → 5
+14  return true                                                    → END

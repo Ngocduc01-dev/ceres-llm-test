@@ -1,0 +1,14 @@
+UNIT u0490
+Hàm: ThreadTokenProvider(int num_threads)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ThreadTokenProvider
+Vị trí: internal/ceres/thread_token_provider.cc, dòng 35–39
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   pool_() (Member initializer)
+    int i = 0                                 → 2
+2   vòng for, điều kiện: i < num_threads      đúng → 3   sai → END
+3   pool_.Push(i)                             → 4
+4   i++                                       → 2

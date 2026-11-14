@@ -235,10 +235,11 @@ node scripts/generate.mjs --limit 100               # các lần sau: 100 unit t
 **Đầu ra – mỗi unit 1 thư mục (tài liệu của từng prompt):**
 ```
 units/u0553/
-├── info.json       # thông tin unit (tên, file, dòng, số nhánh, độ khó, cách gọi…)
-├── cfg.txt         # Phase 4 – CFG Clang đã lọc nhiễu, gắn số dòng
+├── info.json       # thông tin unit (tên, tham số, class, file, dòng, cách gọi…)
+├── source.cc       # mã nguồn của unit, trích từ file gốc (chỉ để xem, không compile)
+├── cfg.txt         # Phase 4 – CFG Clang đã làm gọn (không có nếu Clang không dựng được -> LLM tự dựng)
 ├── prompt.md       # đúng prompt đã gửi
-├── response.md     # nguyên văn câu trả lời: bảng CFG, danh sách nhánh, test path, test case, C2 dự kiến
+├── response.md     # nguyên văn câu trả lời: test path, test case, nhánh không test + C2 dự kiến, code
 └── u0553_test.cc   # file test tách từ response
 ```
 
@@ -336,13 +337,13 @@ Nguyên tắc: **LLM → random → đánh dấu thất bại có lý do.** Unit
 
 ## 5. Phân công và lịch
 
-**Trạng thái:** Phase 0 ✅ · Phase 1 ✅ · Phase 2 ✅ · Phase 3 ✅ (còn 4 lỗi cần sửa) · Phase 4–8 ⏳
+**Trạng thái:** Phase 0 ✅ · Phase 1 ✅ · Phase 2 ✅ · Phase 3 ✅ (còn 4 lỗi cần sửa) · **Phase 4 ✅** (1491/1540 unit có CFG – `logs/phase4-log.md`) · Phase 5: đã có prompt cho 1540 unit, chưa gọi Claude · Phase 6–8 ⏳
 
 **Tuần này – mục tiêu: sinh được test cho toàn bộ 1540 unit và chạy 1 lượt**
 
 | Người | Việc | Đầu ra |
 |---|---|---|
-| A | Phase 4: `build_cfg.py` mức 1–2 (Clang `DumpCFG` → lọc → gắn số dòng); thử `-analyze-function` trên 20 unit smoke test | `units/<id>/cfg.txt` |
+| A | ~~Phase 4: `build_cfg.py`~~ ✅ xong; tiếp: script Phase 6 (compile, chạy, đo phủ từng unit) | `units/<id>/cfg.txt` ✅ |
 | B | Phase 3: sửa 4 lỗi context (include `.cc`, tóm tắt class, …) | `data/context/` |
 | C | Phase 5: `render_prompt.py` điền `prompts/master_prompt.md`; soát tay 10 prompt | `units/<id>/prompt.md` |
 | D | Phase 5: `generate.py` (Claude Code CLI, Sonnet 5.5 low, chạy tiếp được, tách code) | `units/<id>/response.md`, `<id>_test.cc` |

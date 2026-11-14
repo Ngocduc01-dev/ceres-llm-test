@@ -1,0 +1,10 @@
+UNIT u0394
+Hàm: residual_blocks() const  → trả về const std::vector<ResidualBlock *> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 61–63
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return residual_blocks_   → END

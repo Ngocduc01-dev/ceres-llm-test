@@ -1,0 +1,43 @@
+UNIT u1121
+Hàm: operator()(JetT const* const* inputs, JetT* output) const  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::DynamicCostFunctionToFunctor
+Vị trí: include/ceres/dynamic_cost_function_to_functor.h, dòng 117–184
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator()<Jet<double, 2>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   const std::vector<int32_t> &parameter_block_sizes = cost_function_->parameter_block_sizes()
+    const int num_parameter_blocks = static_cast<int>(parameter_block_sizes.size())
+    const int num_residuals = cost_function_->num_residuals()
+    const int num_parameters = std::accumulate(parameter_block_sizes.begin(), parameter_block_sizes.end(), 0)
+    num_residuals * num_parameters
+    double *parameter_ptr = parameters.data()
+    double *jacobian_ptr = jacobians.data()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 3   sai → 9
+3   parameter_blocks[i] = parameter_ptr
+    jacobian_blocks[i] = jacobian_ptr
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < parameter_block_sizes[i]              đúng → 5   sai → 7
+5   *parameter_ptr++ = inputs[i][j].a                              → 6
+6   ++j                                                            → 4
+7   jacobian_ptr += num_residuals * parameter_block_sizes[i]       → 8
+8   ++i                                                            → 2
+9   if (!cost_function_->Evaluate(parameter_blocks.data(), residuals.data(), jacobian_blocks.data()))   đúng → 10   sai → 11
+10  return false                                                   → END
+11  int i = 0                                                      → 12
+12  vòng for, điều kiện: i < num_residuals                         đúng → 13   sai → 21
+13  output[i].a = residuals[i]
+    output[i].v.setZero()
+    int j = 0                                                      → 14
+14  vòng for, điều kiện: j < num_parameter_blocks                  đúng → 15   sai → 20
+15  const int32_t block_size = parameter_block_sizes[j]
+    int k = 0                                                      → 16
+16  vòng for, điều kiện: k < parameter_block_sizes[j]              đúng → 17   sai → 19
+17  output[i].v += jacobian_blocks[j][i * block_size + k] * inputs[j][k].v   → 18
+18  ++k                                                            → 16
+19  ++j                                                            → 14
+20  ++i                                                            → 12
+21  return true                                                    → END

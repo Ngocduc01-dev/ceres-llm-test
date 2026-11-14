@@ -6,7 +6,6 @@
   286,
   334
  ],
- "signature": "ceres::internal::InnerProductComputer::Compute",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 1202
+ "order": 1202,
+ "short_name": "Compute",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

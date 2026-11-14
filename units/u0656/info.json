@@ -6,7 +6,6 @@
   319,
   323
  ],
- "signature": "ceres::internal::RefinedDenseCholesky::RefinedDenseCholesky",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 656
+ "order": 656,
+ "short_name": "RefinedDenseCholesky",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::RefinedDenseCholesky",
+ "class_is_template": false,
+ "params": "(std::unique_ptr<DenseCholesky> dense_cholesky, std::unique_ptr<DenseIterativeRefiner> iterative_refiner)",
+ "return_type": null,
+ "is_const": false
 }

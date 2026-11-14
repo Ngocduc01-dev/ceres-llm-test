@@ -1,0 +1,11 @@
+UNIT u0724
+Hàm: Create(const OrderingType ordering_type)  → trả về std::unique_ptr<SparseCholesky>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::FloatEigenSparseCholesky
+Vị trí: internal/ceres/eigensparse.cc, dòng 176–201
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   if (ordering_type == OrderingType::AMD)   đúng → END   sai → 2
+2   LOG(FATAL)                                đúng → END   sai → DỪNG

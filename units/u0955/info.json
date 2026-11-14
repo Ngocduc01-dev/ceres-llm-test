@@ -6,7 +6,6 @@
   74,
   127
  ],
- "signature": "ceres::internal::LinearSolver::Create",
  "branches": 20,
  "cyclomatic": 11,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 955
+ "order": 955,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LinearSolver",
+ "class_is_template": false,
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": "std::unique_ptr<LinearSolver>",
+ "is_const": false
 }

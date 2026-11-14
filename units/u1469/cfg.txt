@@ -1,0 +1,27 @@
+UNIT u1469
+Hàm: GetCovarianceMatrixInTangentOrAmbientSpace(const std::vector<const double *> & parameters, bool lift_covariance_to_ambient_space, double * covariance_matrix) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 276–356
+
+Số điểm rẽ nhánh: 2 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(is_computed_)                                            đúng → 2   sai → DỪNG
+2   CHECK(is_valid_)                                               đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < num_parameters                        đúng → 4   sai → 9
+4   FindOrDie(parameter_map, const_cast<double *>(parameters[i]) (CXXConstCastExpr, NoOp, double *))
+    ParameterBlock *block = FindOrDie(parameter_map, const_cast<double *>(parameters[i]))   → 5
+5   if (lift_covariance_to_ambient_space)                          đúng → 6   sai → 8
+6   parameter_sizes.push_back(block->Size())                       → 7
+7   ++i                                                            → 3
+8   parameter_sizes.push_back(block->TangentSize())                → 7
+9   const int max_covariance_block_size = * std::max_element(parameter_sizes.begin(), parameter_sizes.end())
+    const int covariance_size = cum_parameter_size.back()
+    covariance_matrix, covariance_size, covariance_size
+    const int num_threads = options_.num_threads
+    bool success = true
+    int iteration_count = (num_parameters * (num_parameters + 1)) / 2
+    problem_->context()->EnsureMinimumThreads(num_threads)
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/covariance_impl.cc:326:15) &&, int))(problem_->context(), 0, iteration_count, num_threads, [&](int thread_id, int k) {)
+    return success                                                 → END

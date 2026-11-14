@@ -1,0 +1,26 @@
+UNIT u0498
+Hàm: QuaternionToAngleAxis(const T* quaternion, T* angle_axis)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 344–388
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionToAngleAxis<double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const double &q1 = quaternion[1]
+    const double &q2 = quaternion[2]
+    const double &q3 = quaternion[3]
+    const double sin_theta = hypot(q1, q2, q3)                     → 2
+2   if (fpclassify(sin_theta) != 2)                                đúng → 3   sai → 6
+3   const double &cos_theta = quaternion[0]                        → 4
+4   (cos_theta < double(0.)) ? ... : ...                           đúng → 5   sai → 5
+5   const double two_theta = double(2.) * ((cos_theta < double(0.)) ? atan2(-sin_theta, -cos_theta) : atan2(sin_theta, cos_theta))
+    const double k = two_theta / sin_theta
+    angle_axis[0] = q1 * k
+    angle_axis[1] = q2 * k
+    angle_axis[2] = q3 * k                                         → END
+6   const double k(2.)
+    angle_axis[0] = q1 * k
+    angle_axis[1] = q2 * k
+    angle_axis[2] = q3 * k                                         → END

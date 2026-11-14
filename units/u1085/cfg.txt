@@ -1,0 +1,18 @@
+UNIT u1085
+Hàm: GetCell(int row_block_id, int col_block_id, int * row, int * col, int * row_stride, int * col_stride)  → trả về CellInfo *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDiagonalMatrix
+Vị trí: internal/ceres/block_random_access_diagonal_matrix.cc, dòng 62–81
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (row_block_id != col_block_id)                              đúng → 2   sai → 3
+2   return nullptr                                                 → END
+3   auto &blocks = m_->row_blocks()
+    const int stride = blocks[row_block_id].size
+    *row = 0
+    *col = 0
+    *row_stride = stride
+    *col_stride = stride
+    return layout_[row_block_id].get()                             → END

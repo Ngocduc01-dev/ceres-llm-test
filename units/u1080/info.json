@@ -6,7 +6,6 @@
   63,
   67
  ],
- "signature": "ceres::internal::SparseMatrixPreconditionerWrapper::RightMultiplyAndAccumulate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1080
+ "order": 1080,
+ "short_name": "RightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseMatrixPreconditionerWrapper",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

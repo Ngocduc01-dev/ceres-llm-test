@@ -1,0 +1,12 @@
+UNIT u0659
+Hàm: Solve(const double * rhs, double * solution, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EigenDenseQR
+Vị trí: internal/ceres/dense_qr.cc, dòng 172–179
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   VectorRef(solution, qr_->cols()) = qr_->solve(ConstVectorRef(rhs, qr_->rows()))
+    *message = "Success."
+    return LinearSolverTerminationType::SUCCESS                    → END

@@ -6,7 +6,6 @@
   68,
   196
  ],
- "signature": "ceres::internal::ResidualBlock::Evaluate",
  "branches": 42,
  "cyclomatic": 22,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1471
+ "order": 1471,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
+ "params": "(const bool apply_loss_function, double * cost, double * residuals, double ** jacobians, double * scratch)",
+ "return_type": "bool",
+ "is_const": true
 }

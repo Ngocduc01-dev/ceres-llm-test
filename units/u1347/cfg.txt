@@ -1,0 +1,25 @@
+UNIT u1347
+Hàm: BlockRandomAccessDenseMatrix(std::vector<Block> blocks, ContextImpl * context, int num_threads)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockRandomAccessDenseMatrix
+Vị trí: internal/ceres/block_random_access_dense_matrix.cc, dòng 42–54
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   BlockRandomAccessMatrix() (Base initializer)
+    blocks_(std::move(blocks)) (Member initializer)
+    context_(context) (Member initializer)
+    num_threads_(num_threads) (Member initializer)
+    num_rows_(?) (Member initializer)
+    values_() (Member initializer)
+    cell_infos_() (Member initializer)
+    const int num_blocks = blocks_.size()
+    num_rows_ = NumScalarEntries(blocks_)
+    values_ = std::make_unique<double[]>(num_rows_ * num_rows_)
+    cell_infos_ = std::make_unique<CellInfo[]>(num_blocks * num_blocks)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_blocks * num_blocks               đúng → 3   sai → 5
+3   cell_infos_[i].values = values_.get()                          → 4
+4   ++i                                                            → 2
+5   SetZero()                                                      → END

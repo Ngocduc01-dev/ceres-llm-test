@@ -6,7 +6,6 @@
   47,
   82
  ],
- "signature": "ceres::internal::ComputeHouseholderVector",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 554
+ "order": 554,
+ "short_name": "ComputeHouseholderVector",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const XVectorType& x, Eigen::Matrix<Scalar, N, 1>* v, Scalar* beta)",
+ "return_type": "void",
+ "is_const": false
 }

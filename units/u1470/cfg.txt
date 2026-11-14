@@ -1,0 +1,39 @@
+UNIT u1470
+Hàm: ReorderProgramForSchurTypeLinearSolver(const LinearSolverType linear_solver_type, const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type, const ProblemImpl::ParameterMap & parameter_map, ParameterBlockOrdering * parameter_block_ordering, Program * program, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 444–538
+
+Số điểm rẽ nhánh: 9 (và 1 lệnh CHECK)
+
+START → 1
+1   if (parameter_block_ordering->NumElements() != program->NumParameterBlocks())   đúng → 2   sai → 3
+2   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("The program has %d parameter blocks, but the parameter block ordering has %d parameter blocks.", program->NumParameterBlocks(), parameter_block_ordering->NumElements())
+    return false                                                   → END
+3   if (parameter_block_ordering->NumGroups() == 1)                đúng → 4   sai → 20
+4   const int size_of_first_elimination_group = ComputeStableSchurOrdering(*program, &schur_ordering)   → 5
+5   CHECK_EQ(schur_ordering.size(), program->NumParameterBlocks())   đúng → 6   sai → DỪNG
+6   int i = 0                                                      → 7
+7   vòng for, điều kiện: i < schur_ordering.size()                 đúng → 8   sai → 12
+8   double *parameter_block = schur_ordering[i]->mutable_user_state()   → 9
+9   (i < size_of_first_elimination_group) ? ... : ...              đúng → 10   sai → 10
+10  const int group_id = (i < size_of_first_elimination_group) ? 0 : 1
+    parameter_block_ordering->AddElementToGroup(parameter_block, group_id)   → 11
+11  ++i                                                            → 7
+12  swap (ImplicitCastExpr, FunctionToPointerDecay, void (*)(vector<ParameterBlock *, allocator<ParameterBlock *> > &, vector<ParameterBlock *, allocator<ParameterBlock *> > &) noexcept(noexcept(__x.swap(__y))))(*program->mutable_parameter_blocks(), schur_ordering)   → 13
+13  program->SetParameterOffsetsAndIndex()
+    const int size_of_first_elimination_group = parameter_block_ordering->group_to_elements().begin()->second.size()   → 14
+14  if (linear_solver_type == SPARSE_SCHUR)                        đúng → 15   sai → 17
+15  if (sparse_linear_algebra_library_type == SUITE_SPARSE && linear_solver_ordering_type == ceres::AMD)   đúng → 16   sai → 18
+16  ReorderSchurComplementColumnsUsingSuiteSparse(*parameter_block_ordering, program)   → 17
+17  return LexicographicallyOrderResidualBlocks(size_of_first_elimination_group, program, error)   → END
+18  if (sparse_linear_algebra_library_type == EIGEN_SPARSE)        đúng → 19   sai → 17
+19  ReorderSchurComplementColumnsUsingEigen(linear_solver_ordering_type, size_of_first_elimination_group, parameter_map, program)   → 17
+20  const std::set<double *> &first_elimination_group = parameter_block_ordering->group_to_elements().begin()->second   → 21
+21  if (!program->IsParameterBlockSetIndependent(first_elimination_group))   đúng → 22   sai → 23
+22  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("The first elimination group in the parameter block ordering of size %zd is not an independent set", first_elimination_group.size())
+    return false                                                   → END
+23  if (!ApplyOrdering(parameter_map, *parameter_block_ordering, program, error))   đúng → 24   sai → 13
+24  return false                                                   → END

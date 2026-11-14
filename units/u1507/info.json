@@ -6,7 +6,6 @@
   280,
   365
  ],
- "signature": "ceres::internal::ArmijoLineSearch::DoSearch",
  "branches": 24,
  "cyclomatic": 13,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1507
+ "order": 1507,
+ "short_name": "DoSearch",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ArmijoLineSearch",
+ "class_is_template": false,
+ "params": "(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary)",
+ "return_type": "void",
+ "is_const": true
 }

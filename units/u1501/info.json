@@ -6,7 +6,6 @@
   287,
   303
  ],
- "signature": "ceres::internal::Program::CreateReducedProgram",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 1501
+ "order": 1501,
+ "short_name": "CreateReducedProgram",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error)",
+ "return_type": "std::unique_ptr<Program>",
+ "is_const": true
 }

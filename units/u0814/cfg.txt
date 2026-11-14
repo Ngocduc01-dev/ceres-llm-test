@@ -1,0 +1,33 @@
+UNIT u0814
+Hàm: FindQuadraticPolynomialRoots(const Vector & polynomial, Vector * real, Vector * imaginary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/polynomial.cc, dòng 138–179
+
+Số điểm rẽ nhánh: 7 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(polynomial.size(), 3)                                 đúng → 2   sai → DỪNG
+2   const double a = polynomial(0)
+    const double b = polynomial(1)
+    const double c = polynomial(2)
+    const double D = b * b - 4 * a * c
+    const double sqrt_D = sqrt(fabs(D))                            → 3
+3   if (real != nullptr)                                           đúng → 4   sai → 5
+4   real->setZero(2)                                               → 5
+5   if (imaginary != nullptr)                                      đúng → 6   sai → 7
+6   imaginary->setZero(2)                                          → 7
+7   if (D >= 0)                                                    đúng → 8   sai → 13
+8   if (real != nullptr)                                           đúng → 9   sai → 11
+9   if (b >= 0)                                                    đúng → 10   sai → 12
+10  (*real)(0) = (-b - sqrt_D) / (2. * a)
+    (*real)(1) = (2. * c) / (-b - sqrt_D)                          → 11
+11  return                                                         → END
+12  (*real)(0) = (2. * c) / (-b + sqrt_D)
+    (*real)(1) = (-b + sqrt_D) / (2. * a)                          → 11
+13  if (real != nullptr)                                           đúng → 14   sai → 15
+14  (*real)(0) = -b / (2. * a)
+    (*real)(1) = -b / (2. * a)                                     → 15
+15  if (imaginary != nullptr)                                      đúng → 16   sai → END
+16  (*imaginary)(0) = sqrt_D / (2. * a)
+    (*imaginary)(1) = -sqrt_D / (2. * a)                           → END

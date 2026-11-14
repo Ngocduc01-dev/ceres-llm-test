@@ -6,7 +6,6 @@
   239,
   241
  ],
- "signature": "ceres::Jet::Jet<T, N>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "ceres::Jet<double, 4>"
  ],
  "called_by_tests": 0,
- "order": 71
+ "order": 71,
+ "short_name": "Jet<T, N>",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::Jet",
+ "class_is_template": true,
+ "params": "(const T& a, const Eigen::DenseBase<Derived>& v)",
+ "return_type": "void",
+ "is_const": false
 }

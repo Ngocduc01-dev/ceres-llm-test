@@ -6,7 +6,6 @@
   168,
   278
  ],
- "signature": "ceres::internal::CreateGradientCheckingProblemImpl",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 6,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1529
+ "order": 1529,
+ "short_name": "CreateGradientCheckingProblemImpl",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ProblemImpl * problem_impl, double relative_step_size, double relative_precision, GradientCheckingIterationCallback * callback)",
+ "return_type": "std::unique_ptr<ProblemImpl>",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   83,
   99
  ],
- "signature": "ceres::internal::DenseIterativeRefiner::Refine",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1087
+ "order": 1087,
+ "short_name": "Refine",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseIterativeRefiner",
+ "class_is_template": false,
+ "params": "(const int num_cols, const double * lhs_ptr, const double * rhs_ptr, DenseCholesky * cholesky, double * solution_ptr)",
+ "return_type": "void",
+ "is_const": false
 }

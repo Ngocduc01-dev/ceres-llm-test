@@ -1,0 +1,17 @@
+UNIT u0472
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::ScaledLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 165–176
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (rho_.get() == nullptr)                                     đúng → 2   sai → 3
+2   rho[0] = a_ * s
+    rho[1] = a_
+    rho[2] = 0.                                                    → END
+3   rho_->Evaluate(s, rho)
+    rho[0] *= a_
+    rho[1] *= a_
+    rho[2] *= a_                                                   → END

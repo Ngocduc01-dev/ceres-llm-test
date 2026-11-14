@@ -1,0 +1,14 @@
+UNIT u0518
+Hàm: fdim(const Lhs& f, const Rhs& g)  → trả về decltype(auto)
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 835–844
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp fdim<Jet<double, 2>, Jet<double, 2>, nullptr> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (isnan(f) || isnan(g))                              đúng → END   sai → 2
+2   isgreater(f, g) ? ... : ...                            đúng → 3   sai → 4
+3   operator-                                              → 4
+4   return isgreater(f, g) ? Jet<double, 2>{f - g} : J{}   → END

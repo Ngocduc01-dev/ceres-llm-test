@@ -1,0 +1,17 @@
+UNIT u0537
+Hàm: FindInvalidValue(const int64_t size, const double * x)  → trả về int64_t
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/array_utils.cc, dòng 55–67
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (x == nullptr)                                         đúng → 2   sai → 3
+2   return size                                               → END
+3   int64_t i = 0                                             → 4
+4   vòng for, điều kiện: i < size                             đúng → 5   sai → 8
+5   if (!std::isfinite(x[i]) || (x[i] == kImpossibleValue))   đúng → 6   sai → 7
+6   return i                                                  → END
+7   ++i                                                       → 4
+8   return size                                               → END

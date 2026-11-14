@@ -1,0 +1,14 @@
+UNIT u1519
+Hàm: IsValid(std::string * error) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Solver::Options
+Vị trí: internal/ceres/solver.cc, dòng 690–706
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (!CommonOptionsAreValid(*this, error))                      đúng → 2   sai → 3
+2   return false                                                   → END
+3   if (minimizer_type == TRUST_REGION && !TrustRegionOptionsAreValid(*this, error))   đúng → 4   sai → 5
+4   return false                                                   → END
+5   return LineSearchOptionsAreValid(*this, error)                 → END

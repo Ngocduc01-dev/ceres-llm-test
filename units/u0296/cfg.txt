@@ -1,0 +1,9 @@
+UNIT u0296
+Hàm: ~FirstOrderFunction()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::FirstOrderFunction
+Vị trí: internal/ceres/first_order_function.cc, dòng 35–35
+
+Số điểm rẽ nhánh: 0
+
+START → END

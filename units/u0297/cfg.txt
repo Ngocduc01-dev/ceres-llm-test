@@ -1,0 +1,17 @@
+UNIT u0297
+Hàm: FunctionSample()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::FunctionSample
+Vị trí: internal/ceres/function_sample.cc, dòng 37–44
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   x(0.) (Member initializer)
+    vector_x() (Member initializer)
+    vector_x_is_valid(false) (Member initializer)
+    value(0.) (Member initializer)
+    value_is_valid(false) (Member initializer)
+    vector_gradient() (Member initializer)
+    vector_gradient_is_valid(false) (Member initializer)
+    gradient(0.) (Member initializer)                              → END

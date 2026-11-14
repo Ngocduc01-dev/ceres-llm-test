@@ -1,0 +1,10 @@
+UNIT u1144
+Hàm: ~BlockSparseMatrix()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 217–217
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   FreeValues(values_)   → END

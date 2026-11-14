@@ -1,0 +1,10 @@
+UNIT u0908
+Hàm: block_diagonal_FtF_inverse() const  → trả về const BlockSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.h, dòng 145–148
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(compute_ftf_inverse_)   đúng → END   sai → DỪNG

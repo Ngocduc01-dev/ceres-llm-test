@@ -1,0 +1,16 @@
+UNIT u0752
+Hàm: DifferentiatePolynomial(const Vector & polynomial)  → trả về Vector
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/polynomial.cc, dòng 253–270
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   const int degree = polynomial.rows() - 1       → 2
+2   CHECK_GE(degree, 0)                            đúng → 3   sai → DỪNG
+3   if (degree == 0)                               đúng → END   sai → 4
+4   int i = 0                                      → 5
+5   vòng for, điều kiện: i < degree                đúng → 6   sai → END
+6   derivative(i) = (degree - i) * polynomial(i)   → 7
+7   ++i                                            → 5

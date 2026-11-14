@@ -1,0 +1,9 @@
+UNIT u0247
+Hàm: ~StateUpdatingCallback()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::StateUpdatingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 47–47
+
+Số điểm rẽ nhánh: 0
+
+START → END

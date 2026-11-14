@@ -1,0 +1,35 @@
+UNIT u1057
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::ConditionedCostFunction
+Vị trí: internal/ceres/conditioned_cost_function.cc, dòng 78–129
+
+Số điểm rẽ nhánh: 8
+
+START → 1
+1   bool success = wrapped_cost_function_->Evaluate(parameters, residuals, jacobians)   → 2
+2   if (!success)                                                  đúng → 3   sai → 4
+3   return false                                                   → END
+4   int r = 0                                                      → 5
+5   vòng for, điều kiện: r < wrapped_cost_function_->num_residuals()   đúng → 6   sai → 20
+6   if (conditioners_[r])                                          đúng → 7   sai → 19
+7   double conditioner_derivative
+    double *conditioner_derivative_pointer = &conditioner_derivative
+    double **conditioner_derivative_pointer2 = &conditioner_derivative_pointer   → 8
+8   if (!jacobians)                                                đúng → 9   sai → 10
+9   conditioner_derivative_pointer2 = nullptr                      → 10
+10  double unconditioned_residual = residuals[r]
+    double *parameter_pointer = &unconditioned_residual
+    success = conditioners_[r]->Evaluate(&parameter_pointer, &residuals[r], conditioner_derivative_pointer2)   → 11
+11  if (!success)                                                  đúng → 12   sai → 13
+12  return false                                                   → END
+13  if (jacobians)                                                 đúng → 14   sai → 19
+14  int i = 0                                                      → 15
+15  vòng for, điều kiện: i < wrapped_cost_function_->parameter_block_sizes().size()   đúng → 16   sai → 19
+16  if (jacobians[i])                                              đúng → 17   sai → 18
+17  int parameter_block_size = wrapped_cost_function_->parameter_block_sizes()[i]
+    jacobians[i] + r * parameter_block_size, parameter_block_size, 1
+    jacobian_row *= conditioner_derivative                         → 18
+18  i++                                                            → 15
+19  r++                                                            → 5
+20  return true                                                    → END

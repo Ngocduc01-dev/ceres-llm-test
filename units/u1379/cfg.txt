@@ -1,0 +1,63 @@
+UNIT u1379
+Hàm: ComputeOffsetsAndCreateResultMatrix(const CompressedRowSparseMatrix::StorageType product_storage_type, const std::vector<InnerProductComputer::ProductTerm> & product_terms)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 179–280
+
+Số điểm rẽ nhánh: 10
+
+START → 1
+1   const std::vector<Block> &col_blocks = m_.block_structure()->cols
+    const int num_nonzeros = ComputeNonzeros(product_terms, &row_block_nnz)
+    result_ = CreateResultMatrix(product_storage_type, num_nonzeros)
+    int *crsm_rows = result_->mutable_rows()
+    crsm_rows[0] = 0
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < col_blocks.size()                     đúng → 3   sai → 8
+3   int j = 0                                                      → 4
+4   vòng for, điều kiện: j < col_blocks[i].size                    đúng → 5   sai → 7
+5   *(crsm_rows + 1) = *crsm_rows + row_block_nnz[i]               → 6
+6   ++j                                                            → 4
+7   ++i                                                            → 2
+8   result_offsets_.resize(product_terms.size())                   → 9
+9   if (num_nonzeros == 0)                                         đúng → 10   sai → 11
+10  return                                                         → END
+11  int col_nnz = 0
+    int nnz = 0
+    const InnerProductComputer::ProductTerm *current = product_terms.data()
+    const int row_block = current->row
+    const int col_block = current->col
+    const int nnz_in_row = row_block_nnz[row_block]
+    int *crsm_cols = result_->mutable_cols()
+    result_offsets_[current->index] = nnz + col_nnz
+    int j = 0                                                      → 12
+12  vòng for, điều kiện: j < col_blocks[row_block].size            đúng → 13   sai → 18
+13  int k = 0                                                      → 14
+14  vòng for, điều kiện: k < col_blocks[col_block].size            đúng → 15   sai → 17
+15  crsm_cols[nnz + j * nnz_in_row + col_nnz + k] = col_blocks[col_block].position + k   → 16
+16  ++k                                                            → 14
+17  ++j                                                            → 12
+18  int i = 1                                                      → 19
+19  vòng for, điều kiện: i < product_terms.size()                  đúng → 20   sai → END
+20  current = &product_terms[i]
+    const InnerProductComputer::ProductTerm *previous = &product_terms[i - 1]   → 21
+21  if (previous->row == current->row && previous->col == current->col)   đúng → 22   sai → 24
+22  result_offsets_[current->index] = result_offsets_[previous->index]
+    continue                                                       → 23
+23  ++i                                                            → 19
+24  if (previous->row == current->row)                             đúng → 25   sai → 33
+25  col_nnz += col_blocks[previous->col].size                      → 26
+26  const int row_block = current->row
+    const int col_block = current->col
+    const int nnz_in_row = row_block_nnz[row_block]
+    int *crsm_cols = result_->mutable_cols()
+    result_offsets_[current->index] = nnz + col_nnz
+    int j = 0                                                      → 27
+27  vòng for, điều kiện: j < col_blocks[row_block].size            đúng → 28   sai → 23
+28  int k = 0                                                      → 29
+29  vòng for, điều kiện: k < col_blocks[col_block].size            đúng → 30   sai → 32
+30  crsm_cols[nnz + j * nnz_in_row + col_nnz + k] = col_blocks[col_block].position + k   → 31
+31  ++k                                                            → 29
+32  ++j                                                            → 27
+33  col_nnz = 0
+    nnz += row_block_nnz[previous->row] * col_blocks[previous->row].size   → 26

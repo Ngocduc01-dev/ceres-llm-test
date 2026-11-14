@@ -1,0 +1,13 @@
+UNIT u0300
+Hàm: GradientCheckingIterationCallback()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::GradientCheckingIterationCallback
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 131–132
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   IterationCallback() (Base initializer)
+    gradient_error_detected_(false) (Member initializer)
+    error_log_() (Member initializer)
+    mutex_() (Member initializer)                                  → END

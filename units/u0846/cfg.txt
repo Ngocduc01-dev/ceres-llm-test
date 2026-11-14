@@ -1,0 +1,18 @@
+UNIT u0846
+Hàm: CovarianceImpl(const Covariance::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 64–68
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   options_(options) (Member initializer)
+    evaluate_options_() (Member initializer)
+    is_computed_(false) (Member initializer)
+    is_valid_(false) (Member initializer)
+    parameter_block_to_row_index_() (Member initializer)
+    constant_parameter_blocks_() (Member initializer)
+    covariance_matrix_() (Member initializer)
+    evaluate_options_.num_threads = options_.num_threads
+    evaluate_options_.apply_loss_function = options_.apply_loss_function   → END

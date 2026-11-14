@@ -6,7 +6,6 @@
   60,
   66
  ],
- "signature": "ceres::Problem::AddResidualBlock",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 6,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1524
+ "order": 1524,
+ "short_name": "AddResidualBlock",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(CostFunction * cost_function, LossFunction * loss_function, double *const *const parameter_blocks, int num_parameter_blocks)",
+ "return_type": "ResidualBlockId",
+ "is_const": false
 }

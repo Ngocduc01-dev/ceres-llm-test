@@ -6,7 +6,6 @@
   239,
   245
  ],
- "signature": "ceres::internal::Take0thOrderPart",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 495
+ "order": 495,
+ "short_name": "Take0thOrderPart",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int M, const JetT* src, T dst)",
+ "return_type": "void",
+ "is_const": false
 }

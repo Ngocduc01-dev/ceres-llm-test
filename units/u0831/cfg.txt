@@ -1,0 +1,10 @@
+UNIT u0831
+Hàm: transpose_block_structure() const  → trả về const CompressedRowBlockStructure *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 552–555
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return transpose_block_structure_.get()   → END

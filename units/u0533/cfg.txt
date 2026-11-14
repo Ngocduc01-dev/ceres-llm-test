@@ -1,0 +1,12 @@
+UNIT u0533
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 424–431
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                  đúng → 2   sai → DỪNG
+2   CHECK(y != nullptr)                  đúng → 3   sai → DỪNG
+3   CHECK(sparse_cholesky_ != nullptr)   đúng → END   sai → DỪNG

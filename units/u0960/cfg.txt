@@ -1,0 +1,14 @@
+UNIT u0960
+Hàm: InnerProductComputer(const BlockSparseMatrix & m, const int start_row_block, const int end_row_block)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 98–101
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   m_(m) (Member initializer)
+    start_row_block_(start_row_block) (Member initializer)
+    end_row_block_(end_row_block) (Member initializer)
+    result_() (Member initializer)
+    result_offsets_() (Member initializer)                         → END

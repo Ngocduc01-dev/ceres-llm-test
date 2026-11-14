@@ -6,7 +6,6 @@
   369,
   400
  ],
- "signature": "ceres::internal::BlockSparseMatrix::SquaredColumnNorm",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1190
+ "order": 1190,
+ "short_name": "SquaredColumnNorm",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "(double * x, ContextImpl * context, int num_threads)",
+ "return_type": "void",
+ "is_const": true
 }

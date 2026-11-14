@@ -6,7 +6,6 @@
   54,
   54
  ],
- "signature": "ceres::internal::Preconditioner::Options::Options",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 381
+ "order": 381,
+ "short_name": "Options",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::Preconditioner::Options",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   698,
   881
  ],
- "signature": "ceres::internal::WolfeLineSearch::ZoomPhase",
  "branches": 48,
  "cyclomatic": 25,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1504
+ "order": 1504,
+ "short_name": "ZoomPhase",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WolfeLineSearch",
+ "class_is_template": false,
+ "params": "(const FunctionSample & initial_position, FunctionSample bracket_low, FunctionSample bracket_high, FunctionSample * solution, Summary * summary)",
+ "return_type": "bool",
+ "is_const": true
 }

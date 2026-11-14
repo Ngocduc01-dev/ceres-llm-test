@@ -1,0 +1,15 @@
+UNIT u0769
+Hàm: SparseLinearAlgebraLibraryTypeToString(SparseLinearAlgebraLibraryType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 103–114
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)                nhánh → 2   nhánh → 3   nhánh → 4   nhánh → 5   nhánh → 6
+2   return "NO_SPARSE"           → END
+3   return "CUDA_SPARSE"         → END
+4   return "ACCELERATE_SPARSE"   → END
+5   return "EIGEN_SPARSE"        → END
+6   return "SUITE_SPARSE"        → END

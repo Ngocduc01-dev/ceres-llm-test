@@ -6,7 +6,6 @@
   46,
   46
  ],
- "signature": "ceres::internal::ScopedThreadToken::~ScopedThreadToken",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1022
+ "order": 1022,
+ "short_name": "~ScopedThreadToken",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::ScopedThreadToken",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

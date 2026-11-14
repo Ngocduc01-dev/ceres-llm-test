@@ -1,0 +1,84 @@
+UNIT u0608
+Hàm: MTM_mat1x4(const int col_a, const double * a, const int col_stride_a, const double * b, const int col_stride_b, double * c, const int kOperation)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/small_blas_generic.h, dòng 153–190
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   double cvec4[4] = {0., 0., 0., 0.}
+    const double *pa = a
+    const double *pb = b
+    const int span = 4
+    int col_r = col_a & (span - 1)
+    int col_m = col_a - col_r
+    double av = 0.
+    int ai = 0
+    int bi = 0
+    int k = 0                                                      → 2
+2   vòng for, điều kiện: k < col_m                                 đúng → 3   sai → 5
+3   av = pa[ai]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    ai += col_stride_a
+    bi += col_stride_b
+    av = pa[ai]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    ai += col_stride_a
+    bi += col_stride_b
+    av = pa[ai]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    ai += col_stride_a
+    bi += col_stride_b
+    av = pa[ai]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    ai += col_stride_a
+    bi += col_stride_b                                             → 4
+4   k += span                                                      → 2
+5   int k = col_m                                                  → 6
+6   vòng for, điều kiện: k < col_a                                 đúng → 7   sai → 9
+7   av = pa[ai]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    ai += col_stride_a
+    bi += col_stride_b                                             → 8
+8   k++                                                            → 6
+9   if (kOperation > 0)                                            đúng → 10   sai → 12
+10  c[0] += cvec4[0]
+    c[1] += cvec4[1]
+    c[2] += cvec4[2]
+    c[3] += cvec4[3]                                               → 11
+11  c += 4                                                         → END
+12  if (kOperation < 0)                                            đúng → 13   sai → 14
+13  c[0] -= cvec4[0]
+    c[1] -= cvec4[1]
+    c[2] -= cvec4[2]
+    c[3] -= cvec4[3]                                               → 11
+14  c[0] = cvec4[0]
+    c[1] = cvec4[1]
+    c[2] = cvec4[2]
+    c[3] = cvec4[3]                                                → 11

@@ -6,7 +6,6 @@
   413,
   432
  ],
- "signature": "ceres::internal::Program::IsParameterBlockSetIndependent",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1295
+ "order": 1295,
+ "short_name": "IsParameterBlockSetIndependent",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "(const std::set<double *> & independent_set)",
+ "return_type": "bool",
+ "is_const": true
 }

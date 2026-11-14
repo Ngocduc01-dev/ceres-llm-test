@@ -6,7 +6,6 @@
   198,
   201
  ],
- "signature": "ceres::Problem::GetCostFunctionForResidualBlock",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1341
+ "order": 1341,
+ "short_name": "GetCostFunctionForResidualBlock",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(const ResidualBlockId residual_block)",
+ "return_type": "const CostFunction *",
+ "is_const": true
 }

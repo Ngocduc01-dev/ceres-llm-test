@@ -1,0 +1,18 @@
+UNIT u0604
+Hàm: UpdateCanonicalViewAssignments(const int canonical_view)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CanonicalViewsClustering
+Vị trí: internal/ceres/canonical_views_clustering.cc, dòng 183–195
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const IntSet &neighbors = graph_->Neighbors(canonical_view)    → 2
+2   for (const auto &neighbor : neighbors)                         đúng → 3   sai → END
+3   const auto &neighbor
+    const double old_similarity = FindWithDefault(view_to_canonical_view_similarity_, neighbor, 0.)
+    const double new_similarity = graph_->EdgeWeight(neighbor, canonical_view)   → 4
+4   if (new_similarity > old_similarity)                           đúng → 5   sai → 6
+5   view_to_canonical_view_[neighbor] = canonical_view
+    view_to_canonical_view_similarity_[neighbor] = new_similarity   → 6
+6   ++ (bước tiếp của vòng for)                                    → 2

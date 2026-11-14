@@ -1,0 +1,9 @@
+UNIT u0331
+Hàm: Statistics() const  → trả về std::map<std::string, CallStatistics>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearSolver
+Vị trí: internal/ceres/linear_solver.h, dòng 348–350
+
+Số điểm rẽ nhánh: 0
+
+START → END

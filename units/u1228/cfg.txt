@@ -1,0 +1,19 @@
+UNIT u1228
+Hàm: CreateBlockJacobian(const TripletSparseMatrix & block_jacobian_transpose)  → trả về Eigen::SparseMatrix<int>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/reorder_program.cc, dòng 92–110
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int *rows = block_jacobian_transpose.rows()
+    const int *cols = block_jacobian_transpose.cols()
+    int num_nonzeros = block_jacobian_transpose.num_nonzeros()
+    triplets.reserve(num_nonzeros)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_nonzeros                          đúng → 3   sai → 5
+3   triplets.emplace_back(cols[i], rows[i], 1)                     → 4
+4   ++i                                                            → 2
+5   block_jacobian_transpose.num_cols(), block_jacobian_transpose.num_rows()
+    block_jacobian.setFromTriplets(triplets.begin(), triplets.end())   → END

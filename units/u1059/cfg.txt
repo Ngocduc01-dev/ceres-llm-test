@@ -1,0 +1,55 @@
+UNIT u1059
+Hàm: MatrixVectorMultiply(const double* A, const int num_row_a, const int num_col_a, const double* b, double* c)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/small_blas.h, dòng 384–465
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixVectorMultiply<-1, -1, 1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 7 (và 2 lệnh CHECK)
+
+START → 1
+1   DCHECK_GT(num_row_a, 0)                                        đúng → 2   sai → DỪNG
+2   DCHECK_GT(num_col_a, 0)                                        đúng → 3   sai → DỪNG
+3   (-1 == Eigen::Dynamic) || ...                                  → 4
+4   !((__builtin_expect(!((-1 == Eigen::Dynamic) || (-1 == num_row_a)), 0))) ? ... : ...   → 5
+5   !((__builtin_expect(!((-1 == Eigen::Dynamic) || (-1 == num_col_a)), 0))) ? ... : ...   → 6
+6   const int NUM_ROW_A = (-1 != Eigen::Dynamic ? -1 : num_row_a)
+    -1 != Eigen::Dynamic ? ... : ...                               → 7
+7   const int NUM_COL_A = (-1 != Eigen::Dynamic ? -1 : num_col_a)
+    const int span = 4                                             → 8
+8   if (NUM_ROW_A & 1)                                             đúng → 9   sai → 17
+9   int row = NUM_ROW_A - 1
+    const double *pa = &A[row * NUM_COL_A]
+    const double *pb = &b[0]
+    double tmp = 0.
+    int col = 0                                                    → 10
+10  vòng for, điều kiện: col < NUM_COL_A                           đúng → 11   sai → 13
+11  tmp += (*pa++) * (*pb++)                                       → 12
+12  ++col                                                          → 10
+13  if 1 > 0                                                       → 14
+14  c[row] += tmp                                                  → 15
+15  if (NUM_ROW_A == 1)                                            đúng → 16   sai → 17
+16  return                                                         → END
+17  if (NUM_ROW_A & 2)                                             đúng → 18   sai → 26
+18  int row = NUM_ROW_A & (~(span - 1))
+    const double *pa1 = &A[row * NUM_COL_A]
+    const double *pa2 = pa1 + NUM_COL_A
+    const double *pb = &b[0]
+    double tmp1 = 0.
+    double tmp2 = 0.
+    int col = 0                                                    → 19
+19  vòng for, điều kiện: col < NUM_COL_A                           đúng → 20   sai → 22
+20  double bv = *pb++
+    tmp1 += *(pa1++) * bv
+    tmp2 += *(pa2++) * bv                                          → 21
+21  ++col                                                          → 19
+22  if 1 > 0                                                       → 23
+23  c[row] += tmp1
+    c[row + 1] += tmp2                                             → 24
+24  if (NUM_ROW_A < span)                                          đúng → 25   sai → 26
+25  return                                                         → END
+26  int row_m = NUM_ROW_A & (~(span - 1))
+    int row = 0                                                    → 27
+27  vòng for, điều kiện: row < row_m                               đúng → 28   sai → END
+28  MVM_mat4x1(NUM_COL_A, &A[row * NUM_COL_A], NUM_COL_A, &b[0], &c[row], 1)   → 29
+29  row += span                                                    → 27

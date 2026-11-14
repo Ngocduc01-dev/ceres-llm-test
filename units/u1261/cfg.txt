@@ -1,0 +1,15 @@
+UNIT u1261
+Hàm: MaxParametersPerResidualBlock() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 535–542
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int max_parameters = 0                                         → 2
+2   for (auto *residual_block : residual_blocks_)                  đúng → 3   sai → 5
+3   auto *residual_block
+    max_parameters = std::max(max_parameters, residual_block->NumParameterBlocks())   → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   return max_parameters                                          → END

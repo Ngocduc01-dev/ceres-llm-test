@@ -6,7 +6,6 @@
   552,
   562
  ],
- "signature": "ceres::internal::Program::ToString",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1386
+ "order": 1386,
+ "short_name": "ToString",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true
 }

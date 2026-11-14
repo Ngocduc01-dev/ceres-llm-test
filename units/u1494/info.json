@@ -6,7 +6,6 @@
   60,
   103
  ],
- "signature": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImpl",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1494
+ "order": 1494,
+ "short_name": "SolveImpl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicSparseNormalCholeskySolver",
+ "class_is_template": false,
+ "params": "(CompressedRowSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

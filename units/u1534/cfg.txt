@@ -1,0 +1,17 @@
+UNIT u1534
+Hàm: Compute(const std::vector<const double *> & parameter_blocks, ProblemImpl * problem)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 114–126
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < parameter_blocks.size()               đúng → 3   sai → 8
+3   int j = i                                                      → 4
+4   vòng for, điều kiện: j < parameter_blocks.size()               đúng → 5   sai → 7
+5   covariance_blocks.push_back(std::make_pair(parameter_blocks[i], parameter_blocks[j]))   → 6
+6   ++j                                                            → 4
+7   ++i                                                            → 2
+8   return Compute(covariance_blocks, problem)                     → END

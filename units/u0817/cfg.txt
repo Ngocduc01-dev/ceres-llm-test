@@ -1,0 +1,10 @@
+UNIT u0817
+Hàm: manifold() const  → trả về const Manifold *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: include/ceres/gradient_problem.h, dòng 112–112
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return manifold_.get()   → END

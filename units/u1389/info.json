@@ -6,7 +6,6 @@
   72,
   78
  ],
- "signature": "ceres::internal::EventLogger::~EventLogger",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1389
+ "order": 1389,
+ "short_name": "~EventLogger",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::EventLogger",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

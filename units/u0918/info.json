@@ -6,7 +6,6 @@
   434,
   440
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::ScaleColumns",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 918
+ "order": 918,
+ "short_name": "ScaleColumns",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(const double * scale)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,19 @@
+UNIT u0571
+Hàm: Initialize(int num_residuals, int num_parameters)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TinySolver
+Vị trí: include/ceres/tiny_solver.h, dòng 382–393
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   dx_.resize(num_parameters)
+    x_new_.resize(num_parameters)
+    jacobi_scaling_.resize(num_parameters)
+    lm_step_.resize(num_parameters)
+    residuals_.resize(num_residuals)
+    f_x_new_.resize(num_residuals)
+    jacobian_.resize(num_residuals, num_parameters)
+    jtj_.resize(num_parameters, num_parameters)
+    jtj_regularized_.resize(num_parameters, num_parameters)        → END

@@ -6,7 +6,6 @@
   448,
   451
  ],
- "signature": "ceres::AngleAxisToRotationMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 207
+ "order": 207,
+ "short_name": "AngleAxisToRotationMatrix",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T* angle_axis, T* R)",
+ "return_type": "void",
+ "is_const": false
 }

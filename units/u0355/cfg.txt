@@ -1,0 +1,10 @@
+UNIT u0355
+Hàm: Block()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockUntilFinished
+Vị trí: internal/ceres/parallel_invoke.cc, dòng 59–63
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   condition_.wait(lock, [this]() {)   → END

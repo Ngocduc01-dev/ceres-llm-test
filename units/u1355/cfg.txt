@@ -1,0 +1,12 @@
+UNIT u1355
+Hàm: Evaluate(const EvaluateOptions &, const double * state, double * cost, double *, double * gradient, SparseMatrix * jacobian)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientProblemEvaluator
+Vị trí: internal/ceres/gradient_problem_evaluator.h, dòng 55–74
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(jacobian == nullptr)                        đúng → 2   sai → DỪNG
+2   gradient == nullptr ? ... : ...                   đúng → 3   sai → 3
+3   return problem_.Evaluate(state, cost, gradient)   → END

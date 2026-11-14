@@ -1,0 +1,10 @@
+UNIT u1020
+Hàm: NumParameterBlocks() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.h, dòng 119–121
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return cost_function_->parameter_block_sizes().size()   → END

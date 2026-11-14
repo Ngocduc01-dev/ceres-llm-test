@@ -1,0 +1,17 @@
+UNIT u1278
+Hàm: MaxSolverTimeReached()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 637–655
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const double total_solver_time = WallTimeInSeconds() - start_time_in_secs_ + solver_summary_->preprocessor_time_in_seconds   → 2
+2   if (total_solver_time < options_.max_solver_time_in_seconds)   đúng → 3   sai → 4
+3   return false                                                   → END
+4   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    solver_summary_->message = StringPrintf("Maximum solver time reached. Total solver time: %e >= %e.", total_solver_time, options_.max_solver_time_in_seconds)
+    solver_summary_->termination_type = NO_CONVERGENCE             → 5
+5   if (is_not_silent_)                                            đúng → 6   sai → 6
+6   return true                                                    → END

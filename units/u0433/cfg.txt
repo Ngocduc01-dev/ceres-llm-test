@@ -1,0 +1,17 @@
+UNIT u0433
+Hàm: TrustRegionStepEvaluator(const double initial_cost, const int max_consecutive_nonmonotonic_steps)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::TrustRegionStepEvaluator
+Vị trí: internal/ceres/trust_region_step_evaluator.cc, dòng 40–49
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   max_consecutive_nonmonotonic_steps_(max_consecutive_nonmonotonic_steps) (Member initializer)
+    minimum_cost_(initial_cost) (Member initializer)
+    current_cost_(initial_cost) (Member initializer)
+    reference_cost_(initial_cost) (Member initializer)
+    candidate_cost_(initial_cost) (Member initializer)
+    accumulated_reference_model_cost_change_(0.) (Member initializer)
+    accumulated_candidate_model_cost_change_(0.) (Member initializer)
+    num_consecutive_nonmonotonic_steps_(0) (Member initializer)    → END

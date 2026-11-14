@@ -6,7 +6,6 @@
   272,
   324
  ],
- "signature": "ceres::internal::MinimizePolynomial",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1304
+ "order": 1304,
+ "short_name": "MinimizePolynomial",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Vector & polynomial, const double x_min, const double x_max, double * optimal_x, double * optimal_value)",
+ "return_type": "void",
+ "is_const": false
 }

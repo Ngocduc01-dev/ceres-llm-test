@@ -6,7 +6,6 @@
   47,
   105
  ],
- "signature": "ceres::internal::PartitionedMatrixView::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1212
+ "order": 1212,
+ "short_name": "PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
+ "return_type": null,
+ "is_const": false
 }

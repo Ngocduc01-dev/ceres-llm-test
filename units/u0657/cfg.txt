@@ -1,0 +1,12 @@
+UNIT u0657
+Hàm: Factorize(const int num_cols, double * lhs, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::RefinedDenseCholesky
+Vị trí: internal/ceres/dense_cholesky.cc, dòng 327–332
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   lhs_ = lhs
+    num_cols_ = num_cols
+    return dense_cholesky_->Factorize(num_cols, lhs, message)      → END

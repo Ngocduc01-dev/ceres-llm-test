@@ -6,7 +6,6 @@
   438,
   485
  ],
- "signature": "ceres::(anonymous)::LineSearchOptionsAreValid",
  "branches": 36,
  "cyclomatic": 19,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1142
+ "order": 1142,
+ "short_name": "LineSearchOptionsAreValid",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

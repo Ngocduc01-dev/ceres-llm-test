@@ -6,7 +6,6 @@
   99,
   108
  ],
- "signature": "ceres::FindOrNull",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 475
+ "order": 475,
+ "short_name": "FindOrNull",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Collection& collection, const typename Collection::value_type::first_type& key)",
+ "return_type": "typename Collection::value_type::second_type *",
+ "is_const": false
 }

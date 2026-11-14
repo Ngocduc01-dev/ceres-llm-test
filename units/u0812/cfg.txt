@@ -1,0 +1,22 @@
+UNIT u0812
+Hàm: FlattenMembershipMap(const std::unordered_map<int, int> & membership_map, std::vector<int> * membership_vector) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 536–572
+
+Số điểm rẽ nhánh: 3 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(membership_vector != nullptr)                            đúng → 2   sai → DỪNG
+2   for (const auto &m : membership_map)                           đúng → 3   sai → END
+3   const auto &m
+    const int camera_id = m.first
+    int cluster_id = m.second                                      → 4
+4   if (cluster_id == -1)                                          đúng → 5   sai → 6
+5   cluster_id = camera_id % num_clusters_                         → 6
+6   const int index = FindWithDefault(cluster_id_to_index, cluster_id, cluster_id_to_index.size())   → 7
+7   if (index == cluster_id_to_index.size())                       đúng → 8   sai → 9
+8   cluster_id_to_index[cluster_id] = index                        → 9
+9   CHECK_LT(index, num_clusters_)                                 đúng → 10   sai → DỪNG
+10  membership_vector->at(camera_id) = index                       → 11
+11  ++ (bước tiếp của vòng for)                                    → 2

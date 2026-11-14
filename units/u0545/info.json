@@ -6,7 +6,6 @@
   65,
   84
  ],
- "signature": "ceres::internal::CopyRange",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 545
+ "order": 545,
+ "short_name": "CopyRange",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Allocator& alloc, Iterator destination, InputIterator first, InputIterator last)",
+ "return_type": "void",
+ "is_const": false
 }

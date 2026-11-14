@@ -1,0 +1,16 @@
+UNIT u0916
+Hàm: ToDenseMatrix(Matrix * dense_matrix) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 206–213
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   dense_matrix->resize(num_rows_, num_cols_)
+    dense_matrix->setZero()
+    Matrix &m = *dense_matrix
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_nonzeros_                         đúng → 3   sai → END
+3   m(rows_[i], cols_[i]) += values_[i]                            → 4
+4   ++i                                                            → 2

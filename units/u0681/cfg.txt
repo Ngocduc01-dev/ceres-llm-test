@@ -1,0 +1,11 @@
+UNIT u0681
+Hàm: NextDirection(const LineSearchMinimizer::State &, const LineSearchMinimizer::State & current, Vector * search_direction)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SteepestDescent
+Vị trí: internal/ceres/line_search_direction.cc, dòng 45–50
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   *search_direction = - current.gradient
+    return true                                           → END

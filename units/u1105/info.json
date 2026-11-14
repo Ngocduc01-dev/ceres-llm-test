@@ -6,7 +6,6 @@
   91,
   106
  ],
- "signature": "ceres::internal::BlockOrderingToScalarOrdering",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1105
+ "order": 1105,
+ "short_name": "BlockOrderingToScalarOrdering",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::vector<Block> & blocks, const std::vector<int> & block_ordering, std::vector<int> * scalar_ordering)",
+ "return_type": "void",
+ "is_const": false
 }

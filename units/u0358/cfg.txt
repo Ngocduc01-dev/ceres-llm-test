@@ -1,0 +1,10 @@
+UNIT u0358
+Hàm: state() const  → trả về const double *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 111–111
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return state_   → END

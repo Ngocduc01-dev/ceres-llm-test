@@ -6,7 +6,6 @@
   63,
   156
  ],
- "signature": "ceres::internal::IterativeSchurComplementSolver::SolveImpl",
  "branches": 24,
  "cyclomatic": 13,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1461
+ "order": 1461,
+ "short_name": "SolveImpl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::IterativeSchurComplementSolver",
+ "class_is_template": false,
+ "params": "(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

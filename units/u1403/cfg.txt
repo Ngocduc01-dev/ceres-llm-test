@@ -1,0 +1,22 @@
+UNIT u1403
+Hàm: ParameterBlocksAreFinite(std::string * message) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 190–209
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(message != nullptr)                                      đúng → 2   sai → DỪNG
+2   for (auto *parameter_block : parameter_blocks_)                đúng → 3   sai → 7
+3   auto *parameter_block
+    const double *array = parameter_block->user_state()
+    const int size = parameter_block->Size()
+    const int invalid_index = FindInvalidValue(size, array)        → 4
+4   if (invalid_index != size)                                     đúng → 5   sai → 6
+5   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *message = StringPrintf("ParameterBlock: %p with size %d has at least one invalid value.\nFirst invalid value is at index: %d.\nParameter block values: ", array, size, invalid_index)
+    AppendArrayToString(size, array, message)
+    return false                                                   → END
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   return true                                                    → END

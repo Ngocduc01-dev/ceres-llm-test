@@ -1,0 +1,17 @@
+UNIT u1086
+Hàm: GetCell(int row_block_id, int col_block_id, int * row, int * col, int * row_stride, int * col_stride)  → trả về CellInfo *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.cc, dòng 100–117
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   layout_.find(IntPairToInt64(row_block_id, col_block_id))       → 2
+2   if (it == layout_.end())                                       đúng → 3   sai → 4
+3   return nullptr                                                 → END
+4   *row = 0
+    *col = 0
+    *row_stride = blocks_[row_block_id].size
+    *col_stride = blocks_[col_block_id].size
+    return it->second.get()                                        → END

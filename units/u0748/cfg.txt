@@ -1,0 +1,14 @@
+UNIT u0748
+Hàm: AddEdge(const Vertex & vertex1, const Vertex & vertex2)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Graph
+Vị trí: internal/ceres/graph.h, dòng 80–87
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Graph<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   DCHECK(vertices_.find(vertex1) != vertices_.end())   đúng → 2   sai → DỪNG
+2   DCHECK(vertices_.find(vertex2) != vertices_.end())   đúng → 3   sai → DỪNG
+3   if (edges_[vertex1].insert(vertex2).second)          đúng → 4   sai → END
+4   edges_[vertex2].insert(vertex1)                      → END

@@ -6,7 +6,6 @@
   129,
   164
  ],
- "signature": "ceres::TinySolverAutoDiffFunction::operator()",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 548
+ "order": 548,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolverAutoDiffFunction",
+ "class_is_template": true,
+ "params": "(const T * parameters, T * residuals, T * jacobian)",
+ "return_type": "bool",
+ "is_const": true
 }

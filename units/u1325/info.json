@@ -6,7 +6,6 @@
   45,
   46
  ],
- "signature": "ceres::internal::DenseQRSolver::DenseQRSolver",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 7,
- "order": 1325
+ "order": 1325,
+ "short_name": "DenseQRSolver",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DenseQRSolver",
+ "class_is_template": false,
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

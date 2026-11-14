@@ -1,0 +1,10 @@
+UNIT u0585
+Hàm: IsBlockPairOffDiagonal(const int block1, const int block2) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 448–451
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (cluster_membership_[block1] != cluster_membership_[block2])   → END

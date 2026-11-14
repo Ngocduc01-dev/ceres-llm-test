@@ -1,0 +1,15 @@
+UNIT u1290
+Hàm: Solve(const double * rhs, double * solution, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::RefinedSparseCholesky
+Vị trí: internal/ceres/sparse_cholesky.cc, dòng 139–150
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(lhs_ != nullptr)                                         đúng → 2   sai → DỪNG
+2   auto termination_type = sparse_cholesky_->Solve(rhs, solution, message)   → 3
+3   if (termination_type != LinearSolverTerminationType::SUCCESS)   đúng → 4   sai → 5
+4   return termination_type                                        → END
+5   iterative_refiner_->Refine(*lhs_, rhs, sparse_cholesky_.get(), solution)
+    return LinearSolverTerminationType::SUCCESS                    → END

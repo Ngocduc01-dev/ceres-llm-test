@@ -6,7 +6,6 @@
   47,
   58
  ],
- "signature": "ceres::internal::InnerProductComputer::CreateResultMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1219
+ "order": 1219,
+ "short_name": "CreateResultMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
+ "params": "(const CompressedRowSparseMatrix::StorageType storage_type, const int num_nonzeros)",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": false
 }

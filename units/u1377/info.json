@@ -6,7 +6,6 @@
   378,
   459
  ],
- "signature": "ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1377
+ "order": 1377,
+ "short_name": "ComputeTrustRegionStep",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false
 }

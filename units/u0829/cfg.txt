@@ -1,0 +1,10 @@
+UNIT u0829
+Hàm: SetZero()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 225–227
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   std::fill(values_, values_ + num_nonzeros_, 0.)   → END

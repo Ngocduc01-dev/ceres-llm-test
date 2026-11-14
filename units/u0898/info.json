@@ -6,7 +6,6 @@
   86,
   88
  ],
- "signature": "ceres::internal::ThreadPool::AddTask",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 898
+ "order": 898,
+ "short_name": "AddTask",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "(const std::function<void ()> & func)",
+ "return_type": "void",
+ "is_const": false
 }

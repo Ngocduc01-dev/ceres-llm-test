@@ -1,0 +1,12 @@
+UNIT u0699
+Hàm: CellLessThan(const Cell & lhs, const Cell & rhs)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/block_structure.cc, dòng 39–44
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (lhs.block_id == rhs.block_id)      đúng → 2   sai → 3
+2   return (lhs.position < rhs.position)   → END
+3   return (lhs.block_id < rhs.block_id)   → END

@@ -6,7 +6,6 @@
   188,
   191
  ],
- "signature": "ceres::Grid1D::Grid1D<T, kDataDimension, kInterleaved>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 440
+ "order": 440,
+ "short_name": "Grid1D<T, kDataDimension, kInterleaved>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Grid1D",
+ "class_is_template": true,
+ "params": "(const T * data, const int begin, const int end)",
+ "return_type": null,
+ "is_const": false
 }

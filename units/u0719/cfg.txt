@@ -1,0 +1,21 @@
+UNIT u0719
+Hàm: Update(const Function & function, const Parameters & x)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TinySolver
+Vị trí: include/ceres/tiny_solver.h, dòng 190–218
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (!function(x.data(), residuals_.data(), jacobian_.data()))   đúng → 2   sai → 3
+2   return false                                                   → END
+3   residuals_ = - residuals_                                      → 4
+4   if (summary.iterations == 0)                                   đúng → 5   sai → 6
+5   jacobi_scaling_ = 1. / (1. + jacobian_.colwise().norm().array())   → 6
+6   jacobian_ = jacobian_ * jacobi_scaling_.asDiagonal()
+    jtj_ = jacobian_.transpose() * jacobian_
+    g_ = jacobian_.transpose() * residuals_
+    summary.gradient_max_norm = g_.array().abs().maxCoeff()
+    cost_ = residuals_.squaredNorm() / 2
+    return true                                                    → END

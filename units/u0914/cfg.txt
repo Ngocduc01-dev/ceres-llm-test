@@ -1,0 +1,13 @@
+UNIT u0914
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 172–177
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int i = 0                                 → 2
+2   vòng for, điều kiện: i < num_nonzeros_    đúng → 3   sai → END
+3   y[rows_[i]] += values_[i] * x[cols_[i]]   → 4
+4   ++i                                       → 2

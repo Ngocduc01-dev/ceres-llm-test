@@ -6,7 +6,6 @@
   100,
   136
  ],
- "signature": "ceres::internal::ParallelFor",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 952
+ "order": 952,
+ "short_name": "ParallelFor",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ContextImpl* context, int start, int end, int num_threads, F&& function, const std::vector<int>& partitions)",
+ "return_type": "void",
+ "is_const": false
 }

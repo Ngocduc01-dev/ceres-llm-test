@@ -6,7 +6,6 @@
   41,
   91
  ],
- "signature": "ceres::internal::ComputeSingleLinkageClustering",
  "branches": 20,
  "cyclomatic": 11,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 781
+ "order": 781,
+ "short_name": "ComputeSingleLinkageClustering",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const SingleLinkageClusteringOptions & options, const WeightedGraph<int> & graph, std::unordered_map<int, int> * membership)",
+ "return_type": "int",
+ "is_const": false
 }

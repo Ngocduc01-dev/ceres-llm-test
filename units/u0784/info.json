@@ -6,7 +6,6 @@
   76,
   145
  ],
- "signature": "ceres::internal::CreateSchurComplementGraph",
  "branches": 24,
  "cyclomatic": 13,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 784
+ "order": 784,
+ "short_name": "CreateSchurComplementGraph",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::vector<std::set<int>> & visibility)",
+ "return_type": "std::unique_ptr<WeightedGraph<int>>",
+ "is_const": false
 }

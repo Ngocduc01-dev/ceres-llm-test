@@ -1,0 +1,24 @@
+UNIT u0553
+Hàm: Plus(const double * x, const double * delta, double * x_plus_delta)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 227–251
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   if (manifold_ != nullptr)                                      đúng → 2   sai → 15
+2   if (!manifold_->Plus(x, delta, x_plus_delta))                  đúng → 3   sai → 4
+3   return false                                                   → END
+4   if (lower_bounds_.get() != nullptr)                            đúng → 5   sai → 9
+5   int i = 0                                                      → 6
+6   vòng for, điều kiện: i < size_                                 đúng → 7   sai → 9
+7   x_plus_delta[i] = std::max(x_plus_delta[i], lower_bounds_[i])   → 8
+8   ++i                                                            → 6
+9   if (upper_bounds_.get() != nullptr)                            đúng → 10   sai → 14
+10  int i = 0                                                      → 11
+11  vòng for, điều kiện: i < size_                                 đúng → 12   sai → 14
+12  x_plus_delta[i] = std::min(x_plus_delta[i], upper_bounds_[i])   → 13
+13  ++i                                                            → 11
+14  return true                                                    → END
+15  VectorRef(x_plus_delta, size_) = ConstVectorRef(x, size_) + ConstVectorRef(delta, size_)   → 4

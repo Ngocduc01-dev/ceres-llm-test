@@ -6,7 +6,6 @@
   55,
   113
  ],
- "signature": "ceres::(anonymous)::EvaluateCostFunction",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1238
+ "order": 1238,
+ "short_name": "EvaluateCostFunction",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const CostFunction * function, const double *const * parameters, const std::vector<const Manifold *> & manifolds, Vector * residuals, std::vector<Matrix> * jacobians, std::vector<Matrix> * local_jacobians)",
+ "return_type": "bool",
+ "is_const": false
 }

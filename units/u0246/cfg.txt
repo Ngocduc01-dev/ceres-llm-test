@@ -1,0 +1,10 @@
+UNIT u0246
+Hàm: Evaluate(double sq_norm, double * rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: CallbackLossFunction
+Vị trí: internal/ceres/c_api.cc, dòng 101–103
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   (*loss_function_)(user_data_, sq_norm, rho)   → END

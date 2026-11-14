@@ -6,7 +6,6 @@
   100,
   100
  ],
- "signature": "ceres::internal::InnerProductComputer::mutable_result",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 864
+ "order": 864,
+ "short_name": "mutable_result",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "CompressedRowSparseMatrix *",
+ "is_const": true
 }

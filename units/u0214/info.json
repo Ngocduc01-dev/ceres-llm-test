@@ -6,7 +6,6 @@
   136,
   142
  ],
- "signature": "ceres::SphereManifold::SphereManifold<AmbientSpaceDimension>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 214
+ "order": 214,
+ "short_name": "SphereManifold<AmbientSpaceDimension>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::SphereManifold",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

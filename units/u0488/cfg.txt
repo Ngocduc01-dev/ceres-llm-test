@@ -1,0 +1,14 @@
+UNIT u0488
+Hàm: STLDeleteUniqueContainerPointers(ForwardIterator begin, ForwardIterator end)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: internal/ceres/stl_util.h, dòng 59–69
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp STLDeleteUniqueContainerPointers<__normal_iterator<CostFunction **, vector<CostFunction *>>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   while (begin != new_end)                                       đúng → 2   sai → END
+2   ++ begin
+    * temp->~CostFunction() (Implicit destructor)
+    delete * temp                                                  → 1

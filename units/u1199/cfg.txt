@@ -1,0 +1,32 @@
+UNIT u1199
+Hàm: ToTripletSparseMatrix(TripletSparseMatrix * matrix) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 515–542
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(matrix != nullptr)                                       đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < block_structure_->rows.size()         đúng → 3   sai → 14
+3   int row_block_pos = block_structure_->rows[i].block.position
+    int row_block_size = block_structure_->rows[i].block.size
+    const auto &cells = block_structure_->rows[i].cells            → 4
+4   for (const auto &cell : cells)                                 đúng → 5   sai → 13
+5   const auto &cell
+    int col_block_id = cell.block_id
+    int col_block_size = block_structure_->cols[col_block_id].size
+    int col_block_pos = block_structure_->cols[col_block_id].position
+    int jac_pos = cell.position
+    int r = 0                                                      → 6
+6   vòng for, điều kiện: r < row_block_size                        đúng → 7   sai → 12
+7   int c = 0                                                      → 8
+8   vòng for, điều kiện: c < col_block_size                        đúng → 9   sai → 11
+9   matrix->mutable_rows()[jac_pos] = row_block_pos + r
+    matrix->mutable_cols()[jac_pos] = col_block_pos + c
+    matrix->mutable_values()[jac_pos] = values_[jac_pos]           → 10
+10  ++c                                                            → 8
+11  ++r                                                            → 6
+12  ++ (bước tiếp của vòng for)                                    → 4
+13  ++i                                                            → 2
+14  matrix->set_num_nonzeros(num_nonzeros_)                        → END

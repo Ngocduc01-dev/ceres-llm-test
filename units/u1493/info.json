@@ -6,7 +6,6 @@
   211,
   237
  ],
- "signature": "ceres::internal::CoordinateDescentMinimizer::Solve",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1493
+ "order": 1493,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CoordinateDescentMinimizer",
+ "class_is_template": false,
+ "params": "(Program * program, LinearSolver * linear_solver, double * parameter, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false
 }

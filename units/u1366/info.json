@@ -6,7 +6,6 @@
   160,
   188
  ],
- "signature": "ceres::internal::ParameterBlock::SetManifold",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 9,
- "order": 1366
+ "order": 1366,
+ "short_name": "SetManifold",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "(Manifold * new_manifold)",
+ "return_type": "void",
+ "is_const": false
 }

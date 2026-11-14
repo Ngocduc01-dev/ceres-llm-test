@@ -1,0 +1,23 @@
+UNIT u1272
+Hàm: HandleInvalidStep()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 464–497
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (++num_consecutive_invalid_steps_ >= options_.max_num_consecutive_invalid_steps)   đúng → 2   sai → 3
+2   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    solver_summary_->message = StringPrintf("Number of consecutive invalid steps more than Solver::Options::max_num_consecutive_invalid_steps: %d", options_.max_num_consecutive_invalid_steps)
+    solver_summary_->termination_type = FAILURE
+    return false                                                   → END
+3   strategy_->StepIsInvalid()
+    iteration_summary_.cost = x_cost_ + solver_summary_->fixed_cost
+    iteration_summary_.cost_change = 0.
+    iteration_summary_.gradient_max_norm = solver_summary_->iterations.back().gradient_max_norm
+    iteration_summary_.gradient_norm = solver_summary_->iterations.back().gradient_norm
+    iteration_summary_.step_norm = 0.
+    iteration_summary_.relative_decrease = 0.
+    iteration_summary_.eta = options_.eta
+    return true                                                    → END

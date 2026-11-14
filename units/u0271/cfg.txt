@@ -1,0 +1,11 @@
+UNIT u0271
+Hàm: EnableWaiters()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ConcurrentQueue
+Vị trí: internal/ceres/concurrent_queue.h, dòng 122–125
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ConcurrentQueue<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   wait_ = true   → END

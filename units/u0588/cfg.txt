@@ -1,0 +1,16 @@
+UNIT u0588
+Hàm: ExclusiveScan(const std::array<T, N>& values)  → trả về std::array<T, N>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::ProductManifold
+Vị trí: include/ceres/product_manifold.h, dòng 257–268
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>::ExclusiveScan<int, 2UL> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int init = 0
+    std::size_t i = 0                     → 2
+2   vòng for, điều kiện: i != 2UL         đúng → 3   sai → END
+3   result[i] = init
+    init += values[i]                     → 4
+4   ++i                                   → 2

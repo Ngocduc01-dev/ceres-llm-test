@@ -6,7 +6,6 @@
   148,
   160
  ],
- "signature": "ceres::internal::DenseQR::FactorAndSolve",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 709
+ "order": 709,
+ "short_name": "FactorAndSolve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseQR",
+ "class_is_template": false,
+ "params": "(int num_rows, int num_cols, double * lhs, const double * rhs, double * solution, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

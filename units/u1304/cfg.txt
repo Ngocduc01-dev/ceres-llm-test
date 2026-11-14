@@ -1,0 +1,33 @@
+UNIT u1304
+Hàm: MinimizePolynomial(const Vector & polynomial, const double x_min, const double x_max, double * optimal_x, double * optimal_value)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/polynomial.cc, dòng 272–324
+
+Số điểm rẽ nhánh: 7
+
+START → 1
+1   *optimal_x = (x_min + x_max) / 2.
+    *optimal_value = EvaluatePolynomial(polynomial, *optimal_x)
+    const double x_min_value = EvaluatePolynomial(polynomial, x_min)   → 2
+2   if (x_min_value < *optimal_value)                              đúng → 3   sai → 4
+3   *optimal_value = x_min_value
+    *optimal_x = x_min                                             → 4
+4   const double x_max_value = EvaluatePolynomial(polynomial, x_max)   → 5
+5   if (x_max_value < *optimal_value)                              đúng → 6   sai → 7
+6   *optimal_value = x_max_value
+    *optimal_x = x_max                                             → 7
+7   if (polynomial.rows() <= 2)                                    đúng → 8   sai → 9
+8   return                                                         → END
+9   DifferentiatePolynomial(polynomial)                            → 10
+10  if (!FindPolynomialRoots(derivative, &roots_real, nullptr))    đúng → END   sai → 11
+11  int i = 0                                                      → 12
+12  vòng for, điều kiện: i < roots_real.rows()                     đúng → 13   sai → END
+13  const double root = roots_real(i)                              → 14
+14  if (root < x_min) || (root > x_max)                            đúng → 15   sai → 17
+15  continue                                                       → 16
+16  ++i                                                            → 12
+17  const double value = EvaluatePolynomial(polynomial, root)      → 18
+18  if (value < *optimal_value)                                    đúng → 19   sai → 16
+19  *optimal_value = value
+    *optimal_x = root                                              → 16

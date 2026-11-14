@@ -6,7 +6,6 @@
   61,
   63
  ],
- "signature": "ceres::internal::ExecutionSummary::statistics",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 295
+ "order": 295,
+ "short_name": "statistics",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ExecutionSummary",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const std::map<std::string, CallStatistics> &",
+ "is_const": true
 }

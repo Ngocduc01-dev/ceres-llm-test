@@ -1,0 +1,38 @@
+UNIT u1115
+Hàm: LeftMultiplyAndAccumulateFSingleThreaded(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 278–322
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const CompressedRowBlockStructure *bs = matrix_.block_structure()
+    const double *values = matrix_.values()
+    int r = 0                                                      → 2
+2   vòng for, điều kiện: r < num_row_blocks_e_                     đúng → 3   sai → 8
+3   const int row_block_pos = bs->rows[r].block.position
+    const int row_block_size = bs->rows[r].block.size
+    const std::vector<Cell> &cells = bs->rows[r].cells
+    int c = 1                                                      → 4
+4   vòng for, điều kiện: c < cells.size()                          đúng → 5   sai → 7
+5   const int col_block_id = cells[c].block_id
+    const int col_block_pos = bs->cols[col_block_id].position
+    const int col_block_size = bs->cols[col_block_id].size
+    MatrixTransposeVectorMultiply<-1, -1, 1>(values + cells[c].position, row_block_size, col_block_size, x + row_block_pos, y + col_block_pos - num_cols_e_)   → 6
+6   ++c                                                            → 4
+7   ++r                                                            → 2
+8   int r = num_row_blocks_e_                                      → 9
+9   vòng for, điều kiện: r < bs->rows.size()                       đúng → 10   sai → END
+10  const int row_block_pos = bs->rows[r].block.position
+    const int row_block_size = bs->rows[r].block.size
+    const std::vector<Cell> &cells = bs->rows[r].cells             → 11
+11  for (const auto &cell : cells)                                 đúng → 12   sai → 14
+12  const auto &cell
+    const int col_block_id = cell.block_id
+    const int col_block_pos = bs->cols[col_block_id].position
+    const int col_block_size = bs->cols[col_block_id].size
+    MatrixTransposeVectorMultiply<Eigen::Dynamic, Eigen::Dynamic, 1>(values + cell.position, row_block_size, col_block_size, x + row_block_pos, y + col_block_pos - num_cols_e_)   → 13
+13  ++ (bước tiếp của vòng for)                                    → 11
+14  ++r                                                            → 9

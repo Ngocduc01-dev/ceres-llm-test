@@ -1,0 +1,20 @@
+UNIT u0539
+Hàm: IsClose(double x, double y, double relative_precision, double * relative_error, double * absolute_error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/is_close.cc, dòng 37–58
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   double local_absolute_error
+    double local_relative_error                                    → 2
+2   if (!absolute_error)                                           đúng → 3   sai → 4
+3   absolute_error = &local_absolute_error                         → 4
+4   if (!relative_error)                                           đúng → 5   sai → 6
+5   relative_error = &local_relative_error                         → 6
+6   *absolute_error = std::fabs(x - y)
+    *relative_error = *absolute_error / std::max(std::fabs(x), std::fabs(y))   → 7
+7   if (x == 0 || y == 0)                                          đúng → 8   sai → 9
+8   *relative_error = *absolute_error                              → 9
+9   return *relative_error < std::fabs(relative_precision)         → END

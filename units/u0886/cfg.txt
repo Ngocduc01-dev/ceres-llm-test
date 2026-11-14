@@ -1,0 +1,9 @@
+UNIT u0886
+Hàm: operator()(SparseMatrix *, int)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::NullJacobianFinalizer
+Vị trí: internal/ceres/program_evaluator.h, dòng 109–109
+
+Số điểm rẽ nhánh: 0
+
+START → END

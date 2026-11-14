@@ -6,7 +6,6 @@
   50,
   64
  ],
- "signature": "ceres::HuberLoss::Evaluate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 469
+ "order": 469,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::HuberLoss",
+ "class_is_template": false,
+ "params": "(double s, double[3] rho)",
+ "return_type": "void",
+ "is_const": true
 }

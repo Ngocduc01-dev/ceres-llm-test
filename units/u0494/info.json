@@ -6,7 +6,6 @@
   64,
   90
  ],
- "signature": "ceres::CubicHermiteSpline",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 494
+ "order": 494,
+ "short_name": "CubicHermiteSpline",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Eigen::Matrix<double, kDataDimension, 1>& p0, const Eigen::Matrix<double, kDataDimension, 1>& p1, const Eigen::Matrix<double, kDataDimension, 1>& p2, const Eigen::Matrix<double, kDataDimension, 1>& p3, const double x, double* f, double* dfdx)",
+ "return_type": "void",
+ "is_const": false
 }

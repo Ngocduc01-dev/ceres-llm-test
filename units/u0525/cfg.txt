@@ -1,0 +1,16 @@
+UNIT u0525
+Hàm: StepAccepted(double step_quality)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 617–633
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(step_quality, 0.0)                                    đúng → 2   sai → DỪNG
+2   if (step_quality < decrease_threshold_)                        đúng → 3   sai → 4
+3   radius_ *= 0.5                                                 → 4
+4   if (step_quality > increase_threshold_)                        đúng → 5   sai → 6
+5   radius_ = std::max(radius_, 3. * dogleg_step_norm_)            → 6
+6   mu_ = std::max(min_mu_, 2. * mu_ / mu_increase_factor_)
+    reuse_ = false                                                 → END

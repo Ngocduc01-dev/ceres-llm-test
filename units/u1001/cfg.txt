@@ -1,0 +1,10 @@
+UNIT u1001
+Hàm: NumEffectiveParameters() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientProblemEvaluator
+Vị trí: internal/ceres/gradient_problem_evaluator.h, dòng 84–86
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return problem_.NumTangentParameters()   → END

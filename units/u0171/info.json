@@ -6,7 +6,6 @@
   272,
   293
  ],
- "signature": "ceres::LineManifold::MinusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 171
+ "order": 171,
+ "short_name": "MinusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::LineManifold",
+ "class_is_template": true,
+ "params": "(const double * x_ptr, double * jacobian_ptr)",
+ "return_type": "bool",
+ "is_const": true
 }

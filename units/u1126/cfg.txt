@@ -1,0 +1,29 @@
+UNIT u1126
+Hàm: ComputeClustering(const CanonicalViewsClusteringOptions & options, const WeightedGraph<int> & graph, std::vector<int> * centers, IntMap * membership)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CanonicalViewsClustering
+Vị trí: internal/ceres/canonical_views_clustering.cc, dòng 93–136
+
+Số điểm rẽ nhánh: 4 (và 3 lệnh CHECK)
+
+START → 1
+1   options_ = options                                             → 2
+2   CHECK(centers != nullptr)                                      đúng → 3   sai → DỪNG
+3   CHECK(membership != nullptr)                                   đúng → 4   sai → DỪNG
+4   while (!valid_views.empty())                                   đúng → 5   sai → 14
+5   double best_difference = -std::numeric_limits<double>::max()
+    int best_view = 0                                              → 6
+6   for (const auto &view : valid_views)                           đúng → 7   sai → 11
+7   const auto &view
+    const double difference = ComputeClusteringQualityDifference(view, *centers)   → 8
+8   if (difference > best_difference)                              đúng → 9   sai → 10
+9   best_difference = difference
+    best_view = view                                               → 10
+10  ++ (bước tiếp của vòng for)                                    → 6
+11  CHECK_GT(best_difference, -std::numeric_limits<double>::max())   đúng → 12   sai → DỪNG
+12  if (best_difference <= 0) && (centers->size() >= options_.min_views)   đúng → 13   sai → 15
+13  break                                                          → 14
+14  ComputeClusterMembership(*centers, membership)                 → END
+15  centers->push_back(best_view)
+    valid_views.erase(best_view)
+    UpdateCanonicalViewAssignments(best_view)                      → 4

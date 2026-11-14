@@ -1,0 +1,10 @@
+UNIT u1153
+Hàm: RightMultiplyAndAccumulate(const Vector & x, Vector & y, ContextImpl * context, int num_threads) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearOperator
+Vị trí: internal/ceres/linear_operator.h, dòng 71–76
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   RightMultiplyAndAccumulate(x.data(), y.data(), context, num_threads)   → END

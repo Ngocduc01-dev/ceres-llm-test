@@ -1,0 +1,18 @@
+UNIT u1399
+Hàm: IsOrderingValid(const Program & program, const ParameterBlockOrdering & ordering, std::string * message)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CoordinateDescentMinimizer
+Vị trí: internal/ceres/coordinate_descent_minimizer.cc, dòng 239–259
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const std::map<int, std::set<double *>> &group_to_elements = ordering.group_to_elements()   → 2
+2   for (const auto &g_t_e : group_to_elements)                    đúng → 3   sai → 7
+3   const auto &g_t_e                                              → 4
+4   if (!program.IsParameterBlockSetIndependent(g_t_e.second))     đúng → 5   sai → 6
+5   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *message = StringPrintf("The user-provided parameter_blocks_for_inner_iterations does not form an independent set. Group Id: %d", g_t_e.first)
+    return false                                                   → END
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   return true                                                    → END

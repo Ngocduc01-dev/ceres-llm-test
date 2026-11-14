@@ -1,0 +1,9 @@
+UNIT u0380
+Hàm: ~Preconditioner()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::Preconditioner
+Vị trí: internal/ceres/preconditioner.cc, dòng 37–37
+
+Số điểm rẽ nhánh: 0
+
+START → END

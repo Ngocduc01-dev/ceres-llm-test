@@ -1,0 +1,34 @@
+UNIT u1377
+Hàm: ComputeTrustRegionStep()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 378–459
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   const double strategy_start_time = WallTimeInSeconds()
+    iteration_summary_.step_is_valid = false
+    per_solve_options.eta = options_.eta                           → 2
+2   if (find(options_.trust_region_minimizer_iterations_to_dump.begin(), options_.trust_region_minimizer_iterations_to_dump.end(), iteration_summary_.iteration) != options_.trust_region_minimizer_iterations_to_dump.end())   đúng → 3   sai → 4
+3   per_solve_options.dump_format_type = options_.trust_region_problem_dump_format_type
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    per_solve_options.dump_filename_base = JoinPath(options_.trust_region_problem_dump_directory, StringPrintf("ceres_solver_iteration_%03d", iteration_summary_.iteration))   → 4
+4   strategy_->ComputeStep(per_solve_options, jacobian_, residuals_.data(), trust_region_step_.data())   → 5
+5   if (strategy_summary.termination_type == LinearSolverTerminationType::FATAL_ERROR)   đúng → 6   sai → 7
+6   solver_summary_->message = "Linear solver failed due to unrecoverable non-numeric causes. Please see the error log for clues. "
+    solver_summary_->termination_type = FAILURE
+    return false                                                   → END
+7   iteration_summary_.step_solver_time_in_seconds = WallTimeInSeconds() - strategy_start_time
+    iteration_summary_.linear_solver_iterations = strategy_summary.num_iterations   → 8
+8   if (strategy_summary.termination_type == LinearSolverTerminationType::FAILURE)   đúng → 9   sai → 10
+9   return true                                                    → END
+10  ParallelSetZero(options_.context, options_.num_threads, model_residuals_)
+    jacobian_->RightMultiplyAndAccumulate(trust_region_step_.data(), model_residuals_.data(), options_.context, options_.num_threads)
+    model_cost_change_ = -Dot(model_residuals_, residuals_ + model_residuals_ / 2., options_.context, options_.num_threads)
+    iteration_summary_.step_is_valid = (model_cost_change_ > 0.)   → 11
+11  if (iteration_summary_.step_is_valid)                          đúng → 12   sai → 13
+12  ParallelAssign(options_.context, options_.num_threads, delta_, (trust_region_step_.array() * jacobian_scaling_.array()))
+    num_consecutive_invalid_steps_ = 0                             → 13
+13  if (is_not_silent_ && !iteration_summary_.step_is_valid)       đúng → 14   sai → 14
+14  return true                                                    → END

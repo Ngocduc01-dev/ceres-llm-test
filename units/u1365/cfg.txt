@@ -1,0 +1,20 @@
+UNIT u1365
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 360–376
+
+Số điểm rẽ nhánh: 3 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                              đúng → 2   sai → DỪNG
+2   CHECK(y != nullptr)                              đúng → 3   sai → DỪNG
+3   if (storage_type_ == StorageType::UNSYMMETRIC)   đúng → 4   sai → 11
+4   int r = 0                                        → 5
+5   vòng for, điều kiện: r < num_rows_               đúng → 6   sai → END
+6   int idx = rows_[r]                               → 7
+7   vòng for, điều kiện: idx < rows_[r + 1]          đúng → 8   sai → 10
+8   y[cols_[idx]] += values_[idx] * x[r]             → 9
+9   ++idx                                            → 7
+10  ++r                                              → 5
+11  RightMultiplyAndAccumulate(x, y)                 → END

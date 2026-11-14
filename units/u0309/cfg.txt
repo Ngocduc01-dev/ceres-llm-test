@@ -1,0 +1,11 @@
+UNIT u0309
+Hàm: vertices() const  → trả về const std::unordered_set<Vertex> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Graph
+Vị trí: internal/ceres/graph.h, dòng 95–95
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Graph<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return vertices_   → END

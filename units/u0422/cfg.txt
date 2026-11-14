@@ -1,0 +1,10 @@
+UNIT u0422
+Hàm: Release(int thread_id)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadTokenProvider
+Vị trí: internal/ceres/thread_token_provider.cc, dòng 47–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   pool_.Push(thread_id)   → END

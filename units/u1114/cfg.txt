@@ -1,0 +1,15 @@
+UNIT u1114
+Hàm: InsertEntry(int row, int col, const double & value)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicCompressedRowSparseMatrix
+Vị trí: internal/ceres/dynamic_compressed_row_sparse_matrix.cc, dòng 44–53
+
+Số điểm rẽ nhánh: 0 (và 4 lệnh CHECK)
+
+START → 1
+1   CHECK_GE(row, 0)                                               đúng → 2   sai → DỪNG
+2   CHECK_LT(row, num_rows())                                      đúng → 3   sai → DỪNG
+3   CHECK_GE(col, 0)                                               đúng → 4   sai → DỪNG
+4   CHECK_LT(col, num_cols())                                      đúng → 5   sai → DỪNG
+5   dynamic_cols_[row].push_back(col)
+    dynamic_values_[row].push_back(value)                          → END

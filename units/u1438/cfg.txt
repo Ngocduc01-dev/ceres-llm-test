@@ -1,0 +1,11 @@
+UNIT u1438
+Hàm: DumpLinearLeastSquaresProblem(const std::string & filename_base, DumpFormatType dump_format_type, const SparseMatrix * A, const double * D, const double * b, const double * x, int num_eliminate_blocks)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 1023–1042
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)                                                     đúng → 2   sai → DỪNG
+2   return DumpLinearLeastSquaresProblemToTextFile(filename_base, A, D, b, x, num_eliminate_blocks)   → END

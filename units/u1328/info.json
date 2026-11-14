@@ -6,7 +6,6 @@
   50,
   64
  ],
- "signature": "ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1328
+ "order": 1328,
+ "short_name": "CreateFakeBundleAdjustmentPartitionedJacobian",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int num_cameras, int num_points, double visibility, std::mt19937& rng)",
+ "return_type": "std::pair<std::unique_ptr<PartitionedMatrixView<2, kEBlockSize, kFBlockSize>>, std::unique_ptr<BlockSparseMatrix>>",
+ "is_const": false
 }

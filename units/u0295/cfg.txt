@@ -1,0 +1,10 @@
+UNIT u0295
+Hàm: statistics() const  → trả về const std::map<std::string, CallStatistics> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ExecutionSummary
+Vị trí: internal/ceres/execution_summary.h, dòng 61–63
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return statistics_   → END

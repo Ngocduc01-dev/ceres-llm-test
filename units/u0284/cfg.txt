@@ -1,0 +1,9 @@
+UNIT u0284
+Hàm: gradient() const  → trả về Vector
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.h, dòng 71–71
+
+Số điểm rẽ nhánh: 0
+
+START → END

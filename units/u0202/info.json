@@ -6,7 +6,6 @@
   110,
   115
  ],
- "signature": "ceres::ProductManifold::Minus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 202
+ "order": 202,
+ "short_name": "Minus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const double * y, const double * x, double * y_minus_x)",
+ "return_type": "bool",
+ "is_const": true
 }

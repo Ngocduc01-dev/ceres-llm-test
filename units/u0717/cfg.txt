@@ -1,0 +1,15 @@
+UNIT u0717
+Hàm: EvaluatePolynomial(const Vector & polynomial, double x)  → trả về double
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/polynomial.h, dòng 53–59
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   double v = 0.
+    int i = 0                                    → 2
+2   vòng for, điều kiện: i < polynomial.size()   đúng → 3   sai → 5
+3   v = v * x + polynomial(i)                    → 4
+4   ++i                                          → 2
+5   return v                                     → END

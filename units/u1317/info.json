@@ -6,7 +6,6 @@
   66,
   165
  ],
- "signature": "ceres::internal::(anonymous)::BuildJacobianLayout",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1317
+ "order": 1317,
+ "short_name": "BuildJacobianLayout",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Program & program, int num_eliminate_blocks, std::vector<int *> * jacobian_layout, std::vector<int> * jacobian_layout_storage)",
+ "return_type": "bool",
+ "is_const": false
 }

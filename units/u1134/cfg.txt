@@ -1,0 +1,14 @@
+UNIT u1134
+Hàm: CreateDefaultLinearSolverOrdering(const Program & program)  → trả về std::shared_ptr<ParameterBlockOrdering>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/trust_region_preprocessor.cc, dòng 56–67
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const std::vector<ParameterBlock *> &parameter_blocks = program.parameter_blocks()   → 2
+2   for (auto *parameter_block : parameter_blocks)                 đúng → 3   sai → END
+3   auto *parameter_block
+    ordering->AddElementToGroup(const_cast<double *>(parameter_block->user_state()) (CXXConstCastExpr, NoOp, double *), 0)   → 4
+4   ++ (bước tiếp của vòng for)                                    → 2

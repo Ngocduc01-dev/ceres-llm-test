@@ -6,7 +6,6 @@
   397,
   427
  ],
- "signature": "ceres::RotationMatrixToQuaternion",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 744
+ "order": 744,
+ "short_name": "RotationMatrixToQuaternion",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const MatrixAdapter<const T, row_stride, col_stride>& R, T* quaternion)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,18 @@
+UNIT u0471
+Hàm: Evaluate(double s, double * rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TukeyLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 120–134
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (s <= a_squared_)                                           đúng → 2   sai → 3
+2   const double value = 1. - s / a_squared_
+    const double value_sq = value * value
+    rho[0] = a_squared_ / 3. * (1. - value_sq * value)
+    rho[1] = value_sq
+    rho[2] = -2. / a_squared_ * value                              → END
+3   rho[0] = a_squared_ / 3.
+    rho[1] = 0.
+    rho[2] = 0.                                                    → END

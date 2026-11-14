@@ -6,7 +6,6 @@
   108,
   305
  ],
- "signature": "ceres::internal::ConjugateGradientsSolver",
  "branches": 34,
  "cyclomatic": 18,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1369
+ "order": 1369,
+ "short_name": "ConjugateGradientsSolver",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const ConjugateGradientsSolverOptions options, ConjugateGradientsLinearOperator<DenseVectorType>& lhs, const DenseVectorType& rhs, ConjugateGradientsLinearOperator<DenseVectorType>& preconditioner, DenseVectorType* scratch[4], DenseVectorType& solution)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   43,
   91
  ],
- "signature": "ceres::internal::StringAppendV",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 768
+ "order": 768,
+ "short_name": "StringAppendV",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::string * dst, const char * format, va_list ap)",
+ "return_type": "void",
+ "is_const": false
 }

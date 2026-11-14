@@ -1,0 +1,12 @@
+UNIT u0682
+Hàm: NonlinearConjugateGradient(const NonlinearConjugateGradientType type, const double function_tolerance)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::NonlinearConjugateGradient
+Vị trí: internal/ceres/line_search_direction.cc, dòng 56–58
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LineSearchDirection() (Base initializer)
+    type_(type) (Member initializer)
+    function_tolerance_(function_tolerance) (Member initializer)   → END

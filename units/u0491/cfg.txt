@@ -1,0 +1,11 @@
+UNIT u0491
+Hàm: Acquire()  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadTokenProvider
+Vị trí: internal/ceres/thread_token_provider.cc, dòng 41–45
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   int thread_id                   → 2
+2   CHECK(pool_.Wait(&thread_id))   đúng → END   sai → DỪNG

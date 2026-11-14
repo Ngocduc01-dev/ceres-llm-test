@@ -6,7 +6,6 @@
   35,
   39
  ],
- "signature": "ceres::internal::ThreadTokenProvider::ThreadTokenProvider",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 490
+ "order": 490,
+ "short_name": "ThreadTokenProvider",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ThreadTokenProvider",
+ "class_is_template": false,
+ "params": "(int num_threads)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,20 @@
+UNIT u1210
+Hàm: CostFunctionToFunctor(CostFunction * cost_function)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::CostFunctionToFunctor
+Vị trí: include/ceres/cost_function_to_functor.h, dòng 109–131
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CostFunctionToFunctor<2, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2 (và 4 lệnh CHECK)
+
+START → 1
+1   cost_functor_(cost_function) (Member initializer)              → 2
+2   CHECK(cost_function != nullptr)                                đúng → 3   sai → DỪNG
+3   !((__builtin_expect(!(2 > 0 || 2 == DYNAMIC), 0))) ? ... : ...   → 4
+4   num_parameter_blocks)                                          đúng → 5   sai → DỪNG
+5   if (parameter_block_sizes.size() == num_parameter_blocks)      đúng → 6   sai → 10
+6   int block = 0                                                  → 7
+7   vòng for, điều kiện: block < num_parameter_blocks              đúng → 8   sai → 10
+8   CHECK_EQ(ParameterDims::GetDim(block), parameter_block_sizes[block])   đúng → 9   sai → DỪNG
+9   ++block                                                        → 7
+10  ParameterDims::kNumParameters)                                 đúng → END   sai → DỪNG

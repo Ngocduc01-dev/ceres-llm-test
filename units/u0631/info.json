@@ -6,7 +6,6 @@
   319,
   322
  ],
- "signature": "ceres::internal::operator<",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 631
+ "order": 631,
+ "short_name": "operator<",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const FixedArray<T, N, A> & lhs, const FixedArray<T, N, A> & rhs)",
+ "return_type": "bool",
+ "is_const": false
 }

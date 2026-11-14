@@ -6,7 +6,6 @@
   45,
   54
  ],
- "signature": "ceres::internal::InvokeWithThreadId",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 478
+ "order": 478,
+ "short_name": "InvokeWithThreadId",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int thread_id, F&& function, Args&&... args)",
+ "return_type": "void",
+ "is_const": false
 }

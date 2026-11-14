@@ -1,0 +1,13 @@
+UNIT u0763
+Hàm: Create(const LineSearchDirection::Options & options)  → trả về std::unique_ptr<LineSearchDirection>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchDirection
+Vị trí: internal/ceres/line_search_direction.cc, dòng 341–367
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (options.type == STEEPEST_DESCENT)               đúng → END   sai → 2
+2   if (options.type == NONLINEAR_CONJUGATE_GRADIENT)   đúng → END   sai → 3
+3   if (options.type == ceres::LBFGS)                   đúng → END   sai → 4
+4   if (options.type == ceres::BFGS)                    đúng → END   sai → END

@@ -6,7 +6,6 @@
   455,
   457
  ],
- "signature": "ceres::internal::DoglegStrategy::EvaluateSubspaceModel",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 789
+ "order": 789,
+ "short_name": "EvaluateSubspaceModel",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(const Vector2d & x)",
+ "return_type": "double",
+ "is_const": true
 }

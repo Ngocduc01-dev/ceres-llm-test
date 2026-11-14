@@ -1,0 +1,11 @@
+UNIT u0452
+Hàm: ~ScaledLoss()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::ScaledLoss
+Vị trí: include/ceres/loss_function.h, dòng 340–344
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (ownership_ == DO_NOT_TAKE_OWNERSHIP)   đúng → 2   sai → END
+2   rho_.release()                             → END

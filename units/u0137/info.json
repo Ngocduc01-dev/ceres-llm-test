@@ -6,7 +6,6 @@
   980,
   986
  ],
- "signature": "ceres::isgreater",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 137
+ "order": 137,
+ "short_name": "isgreater",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Lhs& f, const Rhs& g)",
+ "return_type": "bool",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   131,
   136
  ],
- "signature": "ceres_stock_loss_function",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 834
+ "order": 834,
+ "short_name": "ceres_stock_loss_function",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(void * user_data, double squared_norm, double[3] out)",
+ "return_type": "void",
+ "is_const": false
 }

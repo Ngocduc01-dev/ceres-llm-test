@@ -6,7 +6,6 @@
   47,
   87
  ],
- "signature": "ceres::internal::MaxPartitionCostIsFeasible",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 530
+ "order": 530,
+ "short_name": "MaxPartitionCostIsFeasible",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int start, int end, int max_num_partitions, int max_partition_cost, int cumulative_cost_offset, const CumulativeCostData* cumulative_cost_data, CumulativeCostFun&& cumulative_cost_fun, std::vector<int>* partition)",
+ "return_type": "bool",
+ "is_const": false
 }

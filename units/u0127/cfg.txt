@@ -1,0 +1,10 @@
+UNIT u0127
+Hàm: BesselJ1(double x)  → trả về double
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 881–885
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return j1(x)   → END

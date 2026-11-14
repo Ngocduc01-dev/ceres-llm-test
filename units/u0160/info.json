@@ -6,7 +6,6 @@
   1374,
   1376
  ],
- "signature": "Eigen::NumTraits::dummy_precision",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 160
+ "order": 160,
+ "short_name": "dummy_precision",
+ "kind": "method (hàm thành viên của class)",
+ "class": "Eigen::NumTraits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "typename ceres::Jet<T, N>",
+ "is_const": false
 }

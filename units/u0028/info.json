@@ -6,7 +6,6 @@
   177,
   177
  ],
- "signature": "ceres::internal::FixedArray::size",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 28
+ "order": 28,
+ "short_name": "size",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "size_type",
+ "is_const": true
 }

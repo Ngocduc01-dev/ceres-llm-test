@@ -6,7 +6,6 @@
   427,
   427
  ],
- "signature": "ceres::internal::FixedArray::Storage::size",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 53
+ "order": 53,
+ "short_name": "size",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::Storage",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "size_type",
+ "is_const": true
 }

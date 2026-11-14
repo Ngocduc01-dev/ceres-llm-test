@@ -1,0 +1,15 @@
+UNIT u0328
+Hàm: State(int, int num_effective_parameters)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LineSearchMinimizer::State
+Vị trí: internal/ceres/line_search_minimizer.h, dòng 49–55
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   cost(0.) (Member initializer)
+    gradient(num_effective_parameters) (Member initializer)
+    gradient_squared_norm(0.) (Member initializer)
+    search_direction(num_effective_parameters) (Member initializer)
+    directional_derivative(0.) (Member initializer)
+    step_size(0.) (Member initializer)                             → END

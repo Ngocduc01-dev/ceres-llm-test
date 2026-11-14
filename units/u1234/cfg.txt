@@ -1,0 +1,31 @@
+UNIT u1234
+Hàm: EvaluateGradientAndJacobian(bool new_evaluation_point)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 244–302
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   evaluate_options.new_evaluation_point = new_evaluation_point   → 2
+2   if (!evaluator_->Evaluate(evaluate_options, x_.data(), &x_cost_, residuals_.data(), gradient_.data(), jacobian_))   đúng → 3   sai → 4
+3   solver_summary_->message = "Residual and Jacobian evaluation failed."
+    solver_summary_->termination_type = FAILURE
+    return false                                                   → END
+4   iteration_summary_.cost = x_cost_ + solver_summary_->fixed_cost   → 5
+5   if (options_.jacobi_scaling)                                   đúng → 6   sai → 12
+6   if (iteration_summary_.iteration == 0)                         đúng → 7   sai → 11
+7   jacobian_->SquaredColumnNorm(jacobian_scaling_.data())
+    int i = 0                                                      → 8
+8   vòng for, điều kiện: i < jacobian_->num_cols()                 đúng → 9   sai → 11
+9   jacobian_scaling_[i] = 1. / (1. + sqrt(jacobian_scaling_[i]))   → 10
+10  ++i                                                            → 8
+11  jacobian_->ScaleColumns(jacobian_scaling_.data(), options_.context, options_.num_threads)   → 12
+12  negative_gradient_ = - gradient_                               → 13
+13  if (!evaluator_->Plus(x_.data(), negative_gradient_.data(), projected_gradient_step_.data()))   đúng → 14   sai → 15
+14  solver_summary_->message = "projected_gradient_step = Plus(x, -gradient) failed."
+    solver_summary_->termination_type = FAILURE
+    return false                                                   → END
+15  iteration_summary_.gradient_max_norm = (x_ - projected_gradient_step_).lpNorm<Eigen::Infinity>()
+    iteration_summary_.gradient_norm = (x_ - projected_gradient_step_).norm()
+    return true                                                    → END

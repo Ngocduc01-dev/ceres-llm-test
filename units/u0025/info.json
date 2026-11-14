@@ -6,7 +6,6 @@
   297,
   300
  ],
- "signature": "ceres::internal::Take1stOrderParts::Apply",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 25
+ "order": 25,
+ "short_name": "Apply",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::Take1stOrderParts",
+ "class_is_template": true,
+ "params": "(int /* NOT USED*/, JetT* /* NOT USED*/, T** /* NOT USED */)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,12 @@
+UNIT u0822
+Hàm: AddResidualBlock(CostFunction* cost_function, LossFunction* loss_function, double* x0, Ts*... xs)  → trả về ResidualBlockId
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::Problem
+Vị trí: include/ceres/problem.h, dòng 231–241
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AddResidualBlock<<double>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const std::array<double *, sizeof...(Ts) + 1> parameter_blocks{{x0, xs}}
+    return AddResidualBlock(cost_function, loss_function, parameter_blocks.data(), static_cast<int>(parameter_blocks.size()))   → END

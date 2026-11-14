@@ -1,0 +1,12 @@
+UNIT u0967
+Hàm: AllocateValues(int size)  → trả về double *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 809–825
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)                                            đúng → 2   sai → DỪNG
+2   CFGNewAllocator(double *)
+    return new double [size]                              → END

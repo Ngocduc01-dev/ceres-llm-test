@@ -6,7 +6,6 @@
   549,
   562
  ],
- "signature": "ceres::copysign",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 451
+ "order": 451,
+ "short_name": "copysign",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& f, const Jet<T, N> g)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

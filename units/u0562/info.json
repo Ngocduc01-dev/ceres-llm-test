@@ -6,7 +6,6 @@
   99,
   101
  ],
- "signature": "ceres::internal::FixedArray::DefaultConstructorIsNonTrivial",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 562
+ "order": 562,
+ "short_name": "DefaultConstructorIsNonTrivial",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false
 }

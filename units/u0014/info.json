@@ -6,7 +6,6 @@
   133,
   153
  ],
- "signature": "ceres::CostFunctionToFunctor::operator()",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 14
+ "order": 14,
+ "short_name": "operator()",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::CostFunctionToFunctor",
+ "class_is_template": true,
+ "params": "(const T* p1, Ts*... ps)",
+ "return_type": "bool",
+ "is_const": true
 }

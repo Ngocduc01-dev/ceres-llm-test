@@ -6,7 +6,6 @@
   506,
   578
  ],
- "signature": "ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded",
  "branches": 26,
  "cyclomatic": 14,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1466
+ "order": 1466,
+ "short_name": "DoInnerIterationsIfNeeded",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

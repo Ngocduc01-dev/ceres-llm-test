@@ -1,0 +1,22 @@
+UNIT u1439
+Hàm: Prepare(const ResidualBlock * residual_block, int residual_block_index, SparseMatrix * jacobian, double ** jacobians)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockEvaluatePreparer
+Vị trí: internal/ceres/block_evaluate_preparer.cc, dòng 50–78
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (jacobian == nullptr)                                       đúng → 2   sai → 3
+2   scratch_evaluate_preparer_.Prepare(residual_block, residual_block_index, jacobian, jacobians)
+    return                                                         → END
+3   double *jacobian_values = down_cast<BlockSparseMatrix *>(jacobian)->mutable_values()
+    const int *jacobian_block_offset = jacobian_layout_[residual_block_index]
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < num_parameter_blocks                  đúng → 5   sai → END
+5   if (!residual_block->parameter_blocks()[j]->IsConstant())      đúng → 6   sai → 8
+6   jacobians[j] = jacobian_values + *jacobian_block_offset
+    jacobian_block_offset++                                        → 7
+7   ++j                                                            → 4
+8   jacobians[j] = nullptr                                         → 7

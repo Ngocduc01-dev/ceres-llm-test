@@ -6,7 +6,6 @@
   185,
   185
  ],
- "signature": "ceres::OrderedGroups::element_to_group",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 197
+ "order": 197,
+ "short_name": "element_to_group",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const std::map<T, int> &",
+ "is_const": true
 }

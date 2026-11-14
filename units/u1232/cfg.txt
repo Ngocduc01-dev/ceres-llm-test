@@ -1,0 +1,19 @@
+UNIT u1232
+Hàm: DeleteBlock(ResidualBlock * residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 201–219
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const_cast<CostFunction *>(residual_block->cost_function()) (CXXConstCastExpr, NoOp, CostFunction *)
+    auto *cost_function = const_cast<CostFunction *>(residual_block->cost_function())   → 2
+2   if (options_.cost_function_ownership == TAKE_OWNERSHIP)        đúng → 3   sai → 4
+3   DecrementValueOrDeleteKey(cost_function, &cost_function_ref_count_)   → 4
+4   const_cast<LossFunction *>(residual_block->loss_function()) (CXXConstCastExpr, NoOp, LossFunction *)
+    auto *loss_function = const_cast<LossFunction *>(residual_block->loss_function())   → 5
+5   if (options_.loss_function_ownership == TAKE_OWNERSHIP && loss_function != nullptr)   đúng → 6   sai → 7
+6   DecrementValueOrDeleteKey(loss_function, &loss_function_ref_count_)   → 7
+7   residual_block->~ResidualBlock() (Implicit destructor)
+    delete residual_block                                          → END

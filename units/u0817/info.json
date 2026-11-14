@@ -6,7 +6,6 @@
   112,
   112
  ],
- "signature": "ceres::GradientProblem::manifold",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 817
+ "order": 817,
+ "short_name": "manifold",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblem",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const Manifold *",
+ "is_const": true
 }

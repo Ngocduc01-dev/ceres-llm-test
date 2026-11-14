@@ -6,7 +6,6 @@
   582,
   647
  ],
- "signature": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalFtFMultiThreaded",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1197
+ "order": 1197,
+ "short_name": "UpdateBlockDiagonalFtFMultiThreaded",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "(BlockSparseMatrix * block_diagonal)",
+ "return_type": "void",
+ "is_const": true
 }

@@ -6,7 +6,6 @@
   197,
   197
  ],
- "signature": "ceres::internal::MinusWrapper::MinusWrapper<Functor>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 619
+ "order": 619,
+ "short_name": "MinusWrapper<Functor>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::MinusWrapper",
+ "class_is_template": true,
+ "params": "(const Functor & functor)",
+ "return_type": null,
+ "is_const": false
 }

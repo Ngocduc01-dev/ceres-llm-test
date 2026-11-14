@@ -1,0 +1,36 @@
+UNIT u1489
+Hàm: ComputeStep(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)  → trả về TrustRegionStrategy::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LevenbergMarquardtStrategy
+Vị trí: internal/ceres/levenberg_marquardt_strategy.cc, dòng 68–155
+
+Số điểm rẽ nhánh: 8 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(jacobian != nullptr)                                     đúng → 2   sai → DỪNG
+2   CHECK(residuals != nullptr)                                    đúng → 3   sai → DỪNG
+3   CHECK(step != nullptr)                                         đúng → 4   sai → DỪNG
+4   const int num_parameters = jacobian->num_cols()                → 5
+5   if (!reuse_diagonal_)                                          đúng → 6   sai → 9
+6   if (diagonal_.rows() != num_parameters)                        đúng → 7   sai → 8
+7   diagonal_.resize(num_parameters, 1)                            → 8
+8   jacobian->SquaredColumnNorm(diagonal_.data(), context_, num_threads_)
+    ParallelAssign(context_, num_threads_, diagonal_, diagonal_.array().max(min_diagonal_).min(max_diagonal_))   → 9
+9   if (lm_diagonal_.size() == 0)                                  đúng → 10   sai → 11
+10  lm_diagonal_.resize(num_parameters)                            → 11
+11  ParallelAssign(context_, num_threads_, lm_diagonal_, (diagonal_ / radius_).cwiseSqrt())
+    solve_options.D = lm_diagonal_.data()
+    solve_options.q_tolerance = per_solve_options.eta
+    solve_options.r_tolerance = -1.
+    InvalidateArray(num_parameters, step)                          → 12
+12  if (linear_solver_summary.termination_type == LinearSolverTerminationType::FATAL_ERROR)   đúng → 13   sai → 17
+13  reuse_diagonal_ = true                                         → 14
+14  if (per_solve_options.dump_format_type == CONSOLE || (per_solve_options.dump_format_type != CONSOLE && !per_solve_options.dump_filename_base.empty()))   đúng → 15   sai → 16
+15  if (!DumpLinearLeastSquaresProblem(per_solve_options.dump_filename_base, per_solve_options.dump_format_type, jacobian, solve_options.D, residuals, step, 0))   đúng → 16   sai → 16
+16  summary.residual_norm = linear_solver_summary.residual_norm
+    summary.num_iterations = linear_solver_summary.num_iterations
+    summary.termination_type = linear_solver_summary.termination_type   → END
+17  if (linear_solver_summary.termination_type == LinearSolverTerminationType::FAILURE)   đúng → 13   sai → 18
+18  if (!IsArrayValid(num_parameters, step))                       đúng → 13   sai → 19
+19  step, num_parameters
+    ParallelAssign(context_, num_threads_, step_vec, - step_vec)   → 13

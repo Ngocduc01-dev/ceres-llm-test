@@ -1,0 +1,29 @@
+UNIT u0813
+Hàm: BalanceCompanionMatrix(Matrix * companion_matrix_ptr)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/polynomial.cc, dòng 51–100
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(companion_matrix_ptr != nullptr)                         đúng → 2   sai → DỪNG
+2   scaling_has_changed = false
+    int i = 0                                                      → 3
+3   vòng for, điều kiện: i < degree                                đúng → 4   sai → 10
+4   const double row_norm = companion_matrix_offdiagonal.row(i).lpNorm<1>()
+    const double col_norm = companion_matrix_offdiagonal.col(i).lpNorm<1>()
+    int exponent = 0
+    std::frexp(row_norm / col_norm, &exponent)
+    exponent /= 2                                                  → 5
+5   if (exponent != 0)                                             đúng → 6   sai → 9
+6   const double scaled_col_norm = std::ldexp(col_norm, exponent)
+    const double scaled_row_norm = std::ldexp(row_norm, -exponent)   → 7
+7   if (scaled_col_norm + scaled_row_norm < gamma * (col_norm + row_norm))   đúng → 8   sai → 9
+8   scaling_has_changed = true
+    companion_matrix_offdiagonal.row(i) *= std::ldexp(1., -exponent)
+    companion_matrix_offdiagonal.col(i) *= std::ldexp(1., exponent)   → 9
+9   ++i                                                            → 3
+10  do ... while scaling_has_changed                               đúng → 2   sai → 11
+11  companion_matrix_offdiagonal.diagonal() = companion_matrix.diagonal()
+    companion_matrix = companion_matrix_offdiagonal                → END

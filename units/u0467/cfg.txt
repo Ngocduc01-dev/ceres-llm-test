@@ -1,0 +1,14 @@
+UNIT u0467
+Hàm: StepAccepted(double step_quality)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LevenbergMarquardtStrategy
+Vị trí: internal/ceres/levenberg_marquardt_strategy.cc, dòng 157–164
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(step_quality, 0.0)                                    đúng → 2   sai → DỪNG
+2   radius_ = radius_ / std::max(1. / 3., 1. - pow(2. * step_quality - 1., 3))
+    radius_ = std::min(max_radius_, radius_)
+    decrease_factor_ = 2.
+    reuse_diagonal_ = false                                        → END

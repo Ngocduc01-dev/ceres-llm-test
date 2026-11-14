@@ -1,0 +1,11 @@
+UNIT u0482
+Hàm: TangentSize() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 154–156
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   (manifold_ == nullptr) ? ... : ...                             đúng → 2   sai → 2
+2   return (manifold_ == nullptr) ? size_ : manifold_->TangentSize()   → END

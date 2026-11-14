@@ -6,7 +6,6 @@
   118,
   128
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterJacobiSparsity",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1476
+ "order": 1476,
+ "short_name": "ComputeClusterJacobiSparsity",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const CompressedRowBlockStructure & bs)",
+ "return_type": "void",
+ "is_const": false
 }

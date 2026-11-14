@@ -1,0 +1,18 @@
+UNIT u0299
+Hàm: FunctionSample(const double x, const double value, const double gradient)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::FunctionSample
+Vị trí: internal/ceres/function_sample.cc, dòng 55–64
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   x(x) (Member initializer)
+    vector_x() (Member initializer)
+    vector_x_is_valid(false) (Member initializer)
+    value(value) (Member initializer)
+    value_is_valid(true) (Member initializer)
+    vector_gradient() (Member initializer)
+    vector_gradient_is_valid(false) (Member initializer)
+    gradient(gradient) (Member initializer)
+    gradient_is_valid(true) (Member initializer)                   → END

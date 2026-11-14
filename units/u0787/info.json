@@ -6,7 +6,6 @@
   220,
   226
  ],
- "signature": "ceres::ProductManifold::PlusJacobianImpl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 787
+ "order": 787,
+ "short_name": "PlusJacobianImpl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const double *, MatrixRef &, internal::FixedArray<double> &, std::index_sequence<>)",
+ "return_type": "bool",
+ "is_const": false
 }

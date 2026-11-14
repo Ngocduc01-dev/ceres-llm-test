@@ -1,0 +1,10 @@
+UNIT u1397
+Hàm: AddResidualBlock(ResidualBlock * residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 275–280
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(residual_blocks_.get() != nullptr)   đúng → END   sai → DỪNG

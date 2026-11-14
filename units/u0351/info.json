@@ -6,7 +6,6 @@
   112,
   116
  ],
- "signature": "ceres::ContainsKey",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 351
+ "order": 351,
+ "short_name": "ContainsKey",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Collection& collection, const Key& key)",
+ "return_type": "bool",
+ "is_const": false
 }

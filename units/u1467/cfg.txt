@@ -1,0 +1,12 @@
+UNIT u1467
+Hàm: operator()(const IterationSummary &)  → trả về CallbackReturnType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::StateUpdatingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 49–54
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   program_->StateVectorToParameterBlocks(parameters_)
+    program_->CopyParameterBlockStateToUserState()
+    return SOLVER_CONTINUE                                         → END

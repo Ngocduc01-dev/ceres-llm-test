@@ -6,7 +6,6 @@
   55,
   74
  ],
- "signature": "ceres::internal::ParallelAssign",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 909
+ "order": 909,
+ "short_name": "ParallelAssign",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ContextImpl* context, int num_threads, LhsExpression& lhs, const RhsExpression& rhs)",
+ "return_type": "void",
+ "is_const": false
 }

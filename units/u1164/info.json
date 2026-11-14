@@ -6,7 +6,6 @@
   518,
   528
  ],
- "signature": "ceres::internal::ProblemImpl::GetManifold",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1164
+ "order": 1164,
+ "short_name": "GetManifold",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "(const double * values)",
+ "return_type": "const Manifold *",
+ "is_const": true
 }

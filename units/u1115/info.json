@@ -6,7 +6,6 @@
   278,
   322
  ],
- "signature": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateFSingleThreaded",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1115
+ "order": 1115,
+ "short_name": "LeftMultiplyAndAccumulateFSingleThreaded",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

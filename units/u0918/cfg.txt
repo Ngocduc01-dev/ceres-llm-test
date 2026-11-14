@@ -1,0 +1,13 @@
+UNIT u0918
+Hàm: ScaleColumns(const double * scale)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 434–440
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(scale != nullptr)                       đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: idx < rows_[num_rows_]   đúng → 3   sai → END
+3   values_[idx] *= scale[cols_[idx]]             → 4
+4   ++idx                                         → 2

@@ -1,0 +1,23 @@
+UNIT u0941
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 326–348
+
+Số điểm rẽ nhánh: 2 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                                            đúng → 2   sai → DỪNG
+2   CHECK(y != nullptr)                                            đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < block_structure_->rows.size()         đúng → 4   sai → END
+4   int row_block_pos = block_structure_->rows[i].block.position
+    int row_block_size = block_structure_->rows[i].block.size
+    const auto &cells = block_structure_->rows[i].cells            → 5
+5   for (const auto &cell : cells)                                 đúng → 6   sai → 8
+6   const auto &cell
+    int col_block_id = cell.block_id
+    int col_block_size = block_structure_->cols[col_block_id].size
+    int col_block_pos = block_structure_->cols[col_block_id].position
+    MatrixTransposeVectorMultiply<Eigen::Dynamic, Eigen::Dynamic, 1>(values_ + cell.position, row_block_size, col_block_size, x + row_block_pos, y + col_block_pos)   → 7
+7   ++ (bước tiếp của vòng for)                                    → 5
+8   ++i                                                            → 3

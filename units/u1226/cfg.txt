@@ -1,0 +1,32 @@
+UNIT u1226
+Hàm: CreateBlockDiagonalMatrixLayout(int start_col_block, int end_col_block) const  → trả về std::unique_ptr<BlockSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 382–418
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const CompressedRowBlockStructure *bs = matrix_.block_structure()
+    CFGNewAllocator(CompressedRowBlockStructure *)
+    auto *block_diagonal_structure = new CompressedRowBlockStructure
+    int block_position = 0
+    int diagonal_cell_position = 0
+    int c = start_col_block                                        → 2
+2   vòng for, điều kiện: c < end_col_block                         đúng → 3   sai → END
+3   const Block &block = bs->cols[c]
+    block_diagonal_structure->cols.emplace_back()
+    Block &diagonal_block = block_diagonal_structure->cols.back()
+    diagonal_block.size = block.size
+    diagonal_block.position = block_position
+    block_diagonal_structure->rows.emplace_back()
+    CompressedRow &row = block_diagonal_structure->rows.back()
+    row.block = diagonal_block
+    row.cells.emplace_back()
+    Cell &cell = row.cells.back()
+    cell.block_id = c - start_col_block
+    cell.position = diagonal_cell_position
+    block_position += block.size
+    diagonal_cell_position += block.size * block.size              → 4
+4   ++c                                                            → 2

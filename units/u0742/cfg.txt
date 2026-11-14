@@ -1,0 +1,24 @@
+UNIT u0742
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::NumericDiffCostFunction
+Vị trí: include/ceres/numeric_diff_cost_function.h, dòng 205–248
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffCostFunction<EasyFunctor, FORWARD, 3, 5, 5> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   constexpr int kNumParameters = ParameterDims::kNumParameters
+    constexpr int kNumParameterBlocks = ParameterDims::kNumParameterBlocks
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))   → 2
+2   if (!internal::VariadicEvaluate<ParameterDims>(* functor_, parameters, residuals))   đúng → 3   sai → 4
+3   return false                                                   → END
+4   if (jacobians == nullptr)                                      đúng → 5   sai → 6
+5   return true                                                    → END
+6   ParameterDims::GetUnpackedParameters(parameters_copy.data())
+    int block = 0                                                  → 7
+7   vòng for, điều kiện: block < kNumParameterBlocks               đúng → 8   sai → 10
+8   memcpy(parameters_reference_copy[block], parameters[block], sizeof(double) * ParameterDims::GetDim(block))   → 9
+9   ++block                                                        → 7
+10  internal::EvaluateJacobianForParameterBlocks<ParameterDims>::template Apply<(ceres::NumericDiffMethodType)1U, 3>(functor_.get(), residuals, options_, SizedCostFunction<3, 5, 5>::num_residuals(), parameters_reference_copy.data(), jacobians)
+    return true                                                    → END

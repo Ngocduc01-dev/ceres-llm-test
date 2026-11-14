@@ -1,0 +1,29 @@
+UNIT u1408
+Hàm: EvaluationToString(const ResidualBlock & block, const double *const * parameters, double * cost, double * residuals, double ** jacobians)  → trả về std::string
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/residual_block_utils.cc, dòng 65–116
+
+Số điểm rẽ nhánh: 4 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(cost != nullptr)                                         đúng → 2   sai → DỪNG
+2   CHECK(residuals != nullptr)                                    đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 4   sai → 15
+4   const int parameter_block_size = block.parameter_blocks()[i]->Size()
+    StringAppendF(&result, "Parameter Block %d, size: %d\n", i, parameter_block_size)
+    StringAppendF(&result, "\n")
+    int j = 0                                                      → 5
+5   vòng for, điều kiện: j < parameter_block_size                  đúng → 6   sai → 13
+6   AppendArrayToString(1, parameters[i] + j, &result)
+    StringAppendF(&result, "| ")
+    int k = 0                                                      → 7
+7   vòng for, điều kiện: k < num_residuals                         đúng → 8   sai → 11
+8   (jacobians != nullptr && jacobians[i] != nullptr) ? ... : ...   đúng → 9   sai → 9
+9   AppendArrayToString(1, (jacobians != nullptr && jacobians[i] != nullptr) ? jacobians[i] + k * parameter_block_size + j : nullptr, &result)   → 10
+10  ++k                                                            → 7
+11  StringAppendF(&result, "\n")                                   → 12
+12  ++j                                                            → 5
+13  StringAppendF(&result, "\n")                                   → 14
+14  ++i                                                            → 3
+15  StringAppendF(&result, "\n")                                   → END

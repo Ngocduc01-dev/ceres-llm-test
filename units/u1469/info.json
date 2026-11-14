@@ -6,7 +6,6 @@
   276,
   356
  ],
- "signature": "ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1469
+ "order": 1469,
+ "short_name": "GetCovarianceMatrixInTangentOrAmbientSpace",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
+ "params": "(const std::vector<const double *> & parameters, bool lift_covariance_to_ambient_space, double * covariance_matrix)",
+ "return_type": "bool",
+ "is_const": true
 }

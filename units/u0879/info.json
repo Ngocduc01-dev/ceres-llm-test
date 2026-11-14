@@ -6,7 +6,6 @@
   46,
   46
  ],
- "signature": "ceres::Problem::Problem",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 879
+ "order": 879,
+ "short_name": "Problem",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(Problem &&)",
+ "return_type": null,
+ "is_const": false
 }

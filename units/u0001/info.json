@@ -6,7 +6,6 @@
   219,
   219
  ],
- "signature": "ceres::AutoDiffCostFunction::functor",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1
+ "order": 1,
+ "short_name": "functor",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffCostFunction",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const CostFunctor &",
+ "is_const": true
 }

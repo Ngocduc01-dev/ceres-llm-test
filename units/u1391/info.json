@@ -6,7 +6,6 @@
   49,
   70
  ],
- "signature": "ceres::internal::CreateLinearLeastSquaresProblemFromId",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 14,
- "order": 1391
+ "order": 1391,
+ "short_name": "CreateLinearLeastSquaresProblemFromId",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int id)",
+ "return_type": "std::unique_ptr<LinearLeastSquaresProblem>",
+ "is_const": false
 }

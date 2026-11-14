@@ -1,0 +1,22 @@
+UNIT u1436
+Hàm: ParameterBlock(double * user_state, int size, int index, Manifold * manifold)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 77–85
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   user_state_(user_state) (Member initializer)
+    size_(size) (Member initializer)
+    is_set_constant_(?) (Member initializer)
+    manifold_(?) (Member initializer)
+    plus_jacobian_() (Member initializer)
+    index_(index) (Member initializer)
+    state_offset_(?) (Member initializer)
+    delta_offset_(?) (Member initializer)
+    residual_blocks_() (Member initializer)
+    upper_bounds_() (Member initializer)
+    lower_bounds_() (Member initializer)                           → 2
+2   if (manifold != nullptr)                                       đúng → 3   sai → END
+3   SetManifold(manifold)                                          → END

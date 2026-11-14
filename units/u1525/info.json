@@ -6,7 +6,6 @@
   68,
   70
  ],
- "signature": "ceres::Problem::AddParameterBlock",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 6,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 28,
- "order": 1525
+ "order": 1525,
+ "short_name": "AddParameterBlock",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(double * values, int size)",
+ "return_type": "void",
+ "is_const": false
 }

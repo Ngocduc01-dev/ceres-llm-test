@@ -6,7 +6,6 @@
   362,
   369
  ],
- "signature": "ceres::internal::ProblemImpl::InternalSetManifold",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1451
+ "order": 1451,
+ "short_name": "InternalSetManifold",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "(double *, ParameterBlock * parameter_block, Manifold * manifold)",
+ "return_type": "void",
+ "is_const": false
 }

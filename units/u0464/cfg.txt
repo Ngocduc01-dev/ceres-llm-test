@@ -1,0 +1,14 @@
+UNIT u0464
+Hàm: MapValuesToContiguousRange(const int64_t size, int * array)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/array_utils.cc, dòng 93–104
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   array, array + size
+    int64_t i = 0                                                  → 2
+2   vòng for, điều kiện: i < size                                  đúng → 3   sai → END
+3   array[i] = std::lower_bound(unique_values.begin(), unique_values.end(), array[i]) - unique_values.begin()   → 4
+4   ++i                                                            → 2

@@ -6,7 +6,6 @@
   454,
   478
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::DeleteRows",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 949
+ "order": 949,
+ "short_name": "DeleteRows",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(int delta_rows)",
+ "return_type": "void",
+ "is_const": false
 }

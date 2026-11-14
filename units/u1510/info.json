@@ -6,7 +6,6 @@
   87,
   93
  ],
- "signature": "ceres::Covariance::GetCovarianceMatrixInTangentSpace",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1510
+ "order": 1510,
+ "short_name": "GetCovarianceMatrixInTangentSpace",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Covariance",
+ "class_is_template": false,
+ "params": "(const std::vector<const double *> & parameter_blocks, double * covariance_matrix)",
+ "return_type": "bool",
+ "is_const": true
 }

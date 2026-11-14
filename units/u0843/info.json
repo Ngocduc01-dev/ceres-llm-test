@@ -6,7 +6,6 @@
   37,
   37
  ],
- "signature": "ceres::CostFunction::~CostFunction",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 843
+ "order": 843,
+ "short_name": "~CostFunction",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::CostFunction",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

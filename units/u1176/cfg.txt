@@ -1,0 +1,13 @@
+UNIT u1176
+Hàm: ChangeNumThreadsIfNeeded(Solver::Options * options)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/preprocessor.cc, dòng 61–73
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (options->num_threads == 1)                                 đúng → 2   sai → 3
+2   return                                                         → END
+3   const int num_threads_available = ThreadPool::MaxNumThreadsAvailable()   → 4
+4   if (options->num_threads > num_threads_available)              đúng → END   sai → END

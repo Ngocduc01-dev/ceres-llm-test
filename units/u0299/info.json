@@ -6,7 +6,6 @@
   55,
   64
  ],
- "signature": "ceres::internal::FunctionSample::FunctionSample",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 299
+ "order": 299,
+ "short_name": "FunctionSample",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::FunctionSample",
+ "class_is_template": false,
+ "params": "(const double x, const double value, const double gradient)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,17 @@
+UNIT u1030
+Hàm: CallbackCostFunction(ceres_cost_function_t cost_function, void * user_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: CallbackCostFunction
+Vị trí: internal/ceres/c_api.cc, dòng 70–80
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   CostFunction() (Base initializer)
+    cost_function_(cost_function) (Member initializer)
+    user_data_(user_data) (Member initializer)
+    set_num_residuals(num_residuals)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 3   sai → END
+3   mutable_parameter_block_sizes()->push_back(parameter_block_sizes[i])   → 4
+4   ++i                                                            → 2

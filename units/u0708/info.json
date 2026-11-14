@@ -6,7 +6,6 @@
   191,
   203
  ],
- "signature": "ceres::internal::FloatEigenDenseCholesky::Solve",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 708
+ "order": 708,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FloatEigenDenseCholesky",
+ "class_is_template": false,
+ "params": "(const double * rhs, double * solution, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

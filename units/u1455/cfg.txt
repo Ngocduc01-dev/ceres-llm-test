@@ -1,0 +1,21 @@
+UNIT u1455
+Hàm: Factorize()  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 394–422
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   const BlockSparseMatrix *bsm = down_cast<BlockRandomAccessSparseMatrix *>(m_.get())->matrix()
+    const CompressedRowSparseMatrix::StorageType storage_type = sparse_cholesky_->StorageType()   → 2
+2   if (storage_type == CompressedRowSparseMatrix::StorageType::UPPER_TRIANGULAR)   đúng → 3   sai → 7
+3   if (!m_crs_)                                                   đúng → 4   sai → 6
+4   m_crs_ = bsm->ToCompressedRowSparseMatrix()
+    m_crs_->set_storage_type(CompressedRowSparseMatrix::StorageType::UPPER_TRIANGULAR)   → 5
+5   return sparse_cholesky_->Factorize(m_crs_.get(), &message)     → END
+6   bsm->UpdateCompressedRowSparseMatrix(m_crs_.get())             → 5
+7   if (!m_crs_)                                                   đúng → 8   sai → 9
+8   m_crs_ = bsm->ToCompressedRowSparseMatrixTranspose()
+    m_crs_->set_storage_type(CompressedRowSparseMatrix::StorageType::LOWER_TRIANGULAR)   → 5
+9   bsm->UpdateCompressedRowSparseMatrixTranspose(m_crs_.get())    → 5

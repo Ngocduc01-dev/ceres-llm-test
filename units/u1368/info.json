@@ -6,7 +6,6 @@
   196,
   261
  ],
- "signature": "ceres::internal::BlockJacobianWriter::CreateJacobian",
  "branches": 18,
  "cyclomatic": 10,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1368
+ "order": 1368,
+ "short_name": "CreateJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockJacobianWriter",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::unique_ptr<SparseMatrix>",
+ "is_const": true
 }

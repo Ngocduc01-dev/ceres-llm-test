@@ -1,0 +1,10 @@
+UNIT u0992
+Hàm: num_cols() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.h, dòng 92–92
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return bsm_->num_cols()   → END

@@ -6,7 +6,6 @@
   136,
   148
  ],
- "signature": "ceres::internal::DenseCholesky::FactorAndSolve",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 704
+ "order": 704,
+ "short_name": "FactorAndSolve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseCholesky",
+ "class_is_template": false,
+ "params": "(int num_cols, double * lhs, const double * rhs, double * solution, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

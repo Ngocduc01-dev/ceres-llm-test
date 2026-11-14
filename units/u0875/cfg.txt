@@ -1,0 +1,11 @@
+UNIT u0875
+Hàm: ParallelSetZero(ContextImpl* context, int num_threads, VectorType& vector)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parallel_vector_ops.h, dòng 77–82
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ParallelSetZero<Matrix<double, -1, 1>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelSetZero(context, num_threads, vector.data(), vector.rows())   → END

@@ -6,7 +6,6 @@
   677,
   799
  ],
- "signature": "ceres::internal::LinearLeastSquaresProblem5",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1187
+ "order": 1187,
+ "short_name": "LinearLeastSquaresProblem5",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::unique_ptr<LinearLeastSquaresProblem>",
+ "is_const": false
 }

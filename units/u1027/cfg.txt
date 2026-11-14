@@ -1,0 +1,12 @@
+UNIT u1027
+Hàm: operator[](size_type i) const  → trả về const_reference
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::FixedArray
+Vị trí: include/ceres/internal/fixed_array.h, dòng 221–224
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<Jet<double, 4>, 37> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(…)           đúng → 2   sai → DỪNG
+2   return data()[i]   → END

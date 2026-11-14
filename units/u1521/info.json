@@ -6,7 +6,6 @@
   374,
   406
  ],
- "signature": "ceres::internal::TrustRegionPreprocessor::Preprocess",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 6,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 16,
- "order": 1521
+ "order": 1521,
+ "short_name": "Preprocess",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionPreprocessor",
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, ProblemImpl * problem, PreprocessedProblem * pp)",
+ "return_type": "bool",
+ "is_const": false
 }

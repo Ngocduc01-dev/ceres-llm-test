@@ -1,0 +1,39 @@
+UNIT u1410
+Hàm: LexicographicallyOrderResidualBlocks(const int size_of_first_elimination_group, Program * program, std::string *)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 254–335
+
+Số điểm rẽ nhánh: 4 (và 7 lệnh CHECK)
+
+START → 1
+1   CHECK_GE(size_of_first_elimination_group, 1)                   đúng → 2   sai → DỪNG
+2   size_of_first_elimination_group + 1
+    std::vector<ResidualBlock *> *residual_blocks = program->mutable_residual_blocks()
+    residual_blocks->size()
+    int i = 0                                                      → 3
+3   vòng for, điều kiện: i < residual_blocks->size()               đúng → 4   sai → 8
+4   ResidualBlock *residual_block = (*residual_blocks)[i]
+    int position = MinParameterBlock(residual_block, size_of_first_elimination_group)
+    min_position_per_residual[i] = position                        → 5
+5   DCHECK_LE(position, size_of_first_elimination_group)           đúng → 6   sai → DỪNG
+6   residual_blocks_per_e_block[position]++                        → 7
+7   ++i                                                            → 3
+8   size_of_first_elimination_group + 1                            → 9
+9   CHECK_EQ(offsets.back(), residual_blocks->size())              đúng → 10   sai → DỪNG
+10  0) == residual_blocks_per_e_block.end() - 1)                   đúng → 11   sai → DỪNG
+11  vòng for, điều kiện: i < residual_blocks->size()               đúng → 12   sai → 15
+12  int bucket = min_position_per_residual[i]
+    offsets[bucket]--                                              → 13
+13  CHECK(reordered_residual_blocks[offsets[bucket]] == nullptr)   đúng → 14   sai → DỪNG
+14  ++i                                                            → 11
+15  int i = 0                                                      → 16
+16  vòng for, điều kiện: i < size_of_first_elimination_group       đúng → 17   sai → 19
+17  CHECK_EQ(residual_blocks_per_e_block[i], offsets[i + 1] - offsets[i])   đúng → 18   sai → DỪNG
+18  ++i                                                            → 16
+19  for (auto *residual_block : reordered_residual_blocks)         đúng → 20   sai → 23
+20  auto *residual_block                                           → 21
+21  CHECK(residual_block != nullptr)                               đúng → 22   sai → DỪNG
+22  ++ (bước tiếp của vòng for)                                    → 19
+23  swap (ImplicitCastExpr, FunctionToPointerDecay, void (*)(vector<ResidualBlock *, allocator<ResidualBlock *> > &, vector<ResidualBlock *, allocator<ResidualBlock *> > &) noexcept(noexcept(__x.swap(__y))))(*program->mutable_residual_blocks(), reordered_residual_blocks)
+    return true                                                    → END

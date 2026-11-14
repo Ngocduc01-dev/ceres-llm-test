@@ -1,0 +1,12 @@
+UNIT u0713
+Hàm: AddVertex(const Vertex & vertex)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Graph
+Vị trí: internal/ceres/graph.h, dòng 53–57
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Graph<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (vertices_.insert(vertex).second)         đúng → 2   sai → END
+2   edges_[vertex] = std::unordered_set<int>()   → END

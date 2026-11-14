@@ -1,0 +1,34 @@
+UNIT u1419
+Hàm: OptionsAreValidForCgnr(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 307–361
+
+Số điểm rẽ nhánh: 9 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(options.linear_solver_type, CGNR)                     đúng → 2   sai → DỪNG
+2   if (options.preconditioner_type != IDENTITY && options.preconditioner_type != JACOBI && options.preconditioner_type != SUBSET)   đúng → 3   sai → 4
+3   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("Can't use CGNR with preconditioner_type = %s.", PreconditionerTypeToString(options.preconditioner_type))
+    return false                                                   → END
+4   if (options.use_mixed_precision_solves)                        đúng → 5   sai → 6
+5   *error = "use_mixed_precision_solves cannot be used with CGNR"
+    return false                                                   → END
+6   if (options.dynamic_sparsity)                                  đúng → 7   sai → 8
+7   *error = "Dynamic sparsity is only supported with SPARSE_NORMAL_CHOLESKY."
+    return false                                                   → END
+8   if (options.preconditioner_type == SUBSET)                     đúng → 9   sai → 15
+9   if (options.sparse_linear_algebra_library_type == CUDA_SPARSE)   đúng → 10   sai → 11
+10  *error = "Can't use CGNR with preconditioner_type = SUBSET when sparse_linear_algebra_library_type = CUDA_SPARSE."
+    return false                                                   → END
+11  if (options.residual_blocks_for_subset_preconditioner.empty())   đúng → 12   sai → 13
+12  *error = "When using SUBSET preconditioner, residual_blocks_for_subset_preconditioner cannot be empty"
+    return false                                                   → END
+13  if (!OptionsAreValidForSparseCholeskyBasedSolver(options, error))   đúng → 14   sai → 15
+14  return false                                                   → END
+15  if (options.sparse_linear_algebra_library_type == CUDA_SPARSE)   đúng → 16   sai → 18
+16  if (!IsSparseLinearAlgebraLibraryTypeAvailable(CUDA_SPARSE))   đúng → 17   sai → 18
+17  *error = "Can't use CGNR with sparse_linear_algebra_library_type = CUDA_SPARSE because support was not enabled when Ceres was built."
+    return false                                                   → END
+18  return true                                                    → END

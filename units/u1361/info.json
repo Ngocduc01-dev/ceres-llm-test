@@ -6,7 +6,6 @@
   116,
   139
  ],
- "signature": "ceres::GradientChecker::GradientChecker",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1361
+ "order": 1361,
+ "short_name": "GradientChecker",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::GradientChecker",
+ "class_is_template": false,
+ "params": "(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options)",
+ "return_type": null,
+ "is_const": false
 }

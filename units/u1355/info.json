@@ -6,7 +6,6 @@
   55,
   74
  ],
- "signature": "ceres::internal::GradientProblemEvaluator::Evaluate",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1355
+ "order": 1355,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::GradientProblemEvaluator",
+ "class_is_template": false,
+ "params": "(const EvaluateOptions &, const double * state, double * cost, double *, double * gradient, SparseMatrix * jacobian)",
+ "return_type": "bool",
+ "is_const": false
 }

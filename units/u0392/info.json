@@ -6,7 +6,6 @@
   162,
   162
  ],
- "signature": "ceres::internal::ProblemImpl::parameter_map",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 392
+ "order": 392,
+ "short_name": "parameter_map",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const ParameterMap &",
+ "is_const": true
 }

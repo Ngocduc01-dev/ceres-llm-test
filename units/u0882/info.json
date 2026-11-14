@@ -6,7 +6,6 @@
   215,
   215
  ],
- "signature": "ceres::Problem::mutable_impl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 882
+ "order": 882,
+ "short_name": "mutable_impl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "internal::ProblemImpl *",
+ "is_const": false
 }

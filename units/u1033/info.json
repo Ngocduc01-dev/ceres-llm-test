@@ -6,7 +6,6 @@
   146,
   174
  ],
- "signature": "ceres::internal::ImplicitSchurComplement::InversePowerSeriesOperatorRightMultiplyAccumulate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1033
+ "order": 1033,
+ "short_name": "InversePowerSeriesOperatorRightMultiplyAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ImplicitSchurComplement",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

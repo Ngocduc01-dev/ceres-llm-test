@@ -1,0 +1,11 @@
+UNIT u0005
+Hàm: AmbientSize() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::AutoDiffManifold
+Vị trí: include/ceres/autodiff_manifold.h, dòng 155–155
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffManifold<EuclideanFunctor, 3, 3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return 3   → END

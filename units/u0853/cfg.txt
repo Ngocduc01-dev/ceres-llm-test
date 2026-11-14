@@ -1,0 +1,10 @@
+UNIT u0853
+Hàm: Axpby(double a, const Vector & x, double b, const Vector & y, Vector & z, ContextImpl * context, int num_threads)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/eigen_vector_ops.h, dòng 66–74
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelAssign(context, num_threads, z, a * x + b * y)   → END

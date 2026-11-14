@@ -6,7 +6,6 @@
   98,
   100
  ],
- "signature": "CallbackLossFunction::CallbackLossFunction",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 245
+ "order": 245,
+ "short_name": "CallbackLossFunction",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "CallbackLossFunction",
+ "class_is_template": false,
+ "params": "(ceres_loss_function_t loss_function, void * user_data)",
+ "return_type": null,
+ "is_const": false
 }

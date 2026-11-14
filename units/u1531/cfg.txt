@@ -1,0 +1,15 @@
+UNIT u1531
+Hàm: Compute(const CovarianceBlocks & covariance_blocks, ProblemImpl * problem)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 101–112
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   problem_ = problem
+    parameter_block_to_row_index_.clear()
+    covariance_matrix_ = nullptr                                   → 2
+2   is_valid_ = (ComputeCovarianceSparsity(covariance_blocks, problem) && ComputeCovarianceValues())
+    is_computed_ = true
+    return is_valid_                                               → END

@@ -6,7 +6,6 @@
   330,
   332
  ],
- "signature": "ceres::BiCubicInterpolator::Evaluate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 18
+ "order": 18,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::BiCubicInterpolator",
+ "class_is_template": true,
+ "params": "(const double & r, const double & c, double * f)",
+ "return_type": "void",
+ "is_const": true
 }

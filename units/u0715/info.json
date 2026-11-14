@@ -6,7 +6,6 @@
   178,
   186
  ],
- "signature": "ceres::internal::WeightedGraph::EdgeWeight",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 715
+ "order": 715,
+ "short_name": "EdgeWeight",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
+ "params": "(const Vertex & vertex1, const Vertex & vertex2)",
+ "return_type": "double",
+ "is_const": true
 }

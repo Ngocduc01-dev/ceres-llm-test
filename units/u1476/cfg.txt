@@ -1,0 +1,17 @@
+UNIT u1476
+Hàm: ComputeClusterJacobiSparsity(const CompressedRowBlockStructure & bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 118–128
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   ComputeVisibility(bs, options_.elimination_groups[0], &visibility)   → 2
+2   CHECK_EQ(num_blocks_, visibility.size())                       đúng → 3   sai → DỪNG
+3   ClusterCameras(visibility)
+    cluster_pairs_.clear()
+    int i = 0                                                      → 4
+4   vòng for, điều kiện: i < num_clusters_                         đúng → 5   sai → END
+5   cluster_pairs_.insert(std::make_pair(i, i))                    → 6
+6   ++i                                                            → 4

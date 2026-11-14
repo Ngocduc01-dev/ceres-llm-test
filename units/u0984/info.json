@@ -6,7 +6,6 @@
   129,
   129
  ],
- "signature": "ceres::TinySolverCostFunctionAdapter::NumResiduals",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 984
+ "order": 984,
+ "short_name": "NumResiduals",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolverCostFunctionAdapter",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

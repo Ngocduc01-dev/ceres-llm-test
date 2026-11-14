@@ -1,0 +1,13 @@
+UNIT u1044
+Hàm: CopyParameterBlockStateToUserState()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 94–98
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   for (auto *parameter_block : parameter_blocks_)                đúng → 2   sai → END
+2   auto *parameter_block
+    parameter_block->GetState(parameter_block->mutable_user_state())   → 3
+3   ++ (bước tiếp của vòng for)                                    → 1

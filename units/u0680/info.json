@@ -6,7 +6,6 @@
   96,
   99
  ],
- "signature": "ceres::internal::LineSearchFunction::Init",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 680
+ "order": 680,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearchFunction",
+ "class_is_template": false,
+ "params": "(const Vector & position, const Vector & direction)",
+ "return_type": "void",
+ "is_const": false
 }

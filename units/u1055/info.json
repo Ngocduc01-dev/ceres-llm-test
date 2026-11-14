@@ -6,7 +6,6 @@
   236,
   250
  ],
- "signature": "ceres::SubsetManifold::Minus",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1055
+ "order": 1055,
+ "short_name": "Minus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SubsetManifold",
+ "class_is_template": false,
+ "params": "(const double * y, const double * x, double * y_minus_x)",
+ "return_type": "bool",
+ "is_const": true
 }

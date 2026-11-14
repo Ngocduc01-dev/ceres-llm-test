@@ -1,0 +1,9 @@
+UNIT u0434
+Hàm: ~VisibilityBasedPreconditioner()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 112–112
+
+Số điểm rẽ nhánh: 0
+
+START → END

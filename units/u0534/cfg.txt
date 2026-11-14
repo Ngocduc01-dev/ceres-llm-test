@@ -1,0 +1,19 @@
+UNIT u0534
+Hàm: GetValue(const int r, const int c, double * f) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Grid2D
+Vị trí: include/ceres/cubic_interpolation.h, dòng 403–421
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid2D<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int row_idx = (std::min)((std::max)(row_begin_, r), row_end_ - 1) - row_begin_
+    const int col_idx = (std::min)((std::max)(col_begin_, c), col_end_ - 1) - col_begin_
+    (true) ? ... : ...                                             → 2
+2   const int n = (true) ? num_cols_ * row_idx + col_idx : num_rows_ * col_idx + row_idx
+    if true                                                        → 3
+3   int i = 0                                                      → 4
+4   vòng for, điều kiện: i < 1                                     đúng → 5   sai → END
+5   f[i] = static_cast<double>(data_[1 * n + i])                   → 6
+6   ++i                                                            → 4

@@ -1,0 +1,10 @@
+UNIT u0291
+Hàm: IsNestedDissectionAvailable()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EigenSparse
+Vị trí: internal/ceres/eigensparse.h, dòng 53–59
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return false   → END

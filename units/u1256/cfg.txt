@@ -1,0 +1,9 @@
+UNIT u1256
+Hàm: BriefReport() const  → trả về std::string
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Solver::Summary
+Vị trí: internal/ceres/solver.cc, dòng 839–850
+
+Số điểm rẽ nhánh: 0
+
+START → END

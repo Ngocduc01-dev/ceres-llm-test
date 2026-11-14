@@ -6,7 +6,6 @@
   126,
   133
  ],
- "signature": "ceres::ProductManifold::MinusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1069
+ "order": 1069,
+ "short_name": "MinusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const double * x, double * jacobian_ptr)",
+ "return_type": "bool",
+ "is_const": true
 }

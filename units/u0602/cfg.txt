@@ -1,0 +1,11 @@
+UNIT u0602
+Hàm: IsStepSuccessful()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 792–818
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   iteration_summary_.relative_decrease = step_evaluator_->StepQuality(candidate_cost_, model_cost_change_)   → 2
+2   return (inner_iterations_were_useful_ || iteration_summary_.relative_decrease > options_.min_relative_decrease)   → END

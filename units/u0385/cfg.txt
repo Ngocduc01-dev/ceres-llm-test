@@ -1,0 +1,10 @@
+UNIT u0385
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::IdentityPreconditioner
+Vị trí: internal/ceres/preconditioner.h, dòng 168–170
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   VectorRef(y, num_rows_) += ConstVectorRef(x, num_rows_)   → END

@@ -6,7 +6,6 @@
   102,
   107
  ],
- "signature": "ceres::internal::VariadicEvaluate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 66
+ "order": 66,
+ "short_name": "VariadicEvaluate",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Functor& functor, T const* const* input, T* output)",
+ "return_type": "bool",
+ "is_const": false
 }

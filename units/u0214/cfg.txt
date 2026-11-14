@@ -1,0 +1,12 @@
+UNIT u0214
+Hàm: SphereManifold()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::SphereManifold
+Vị trí: include/ceres/sphere_manifold.h, dòng 136–142
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SphereManifold<4> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Manifold() (Base initializer)
+    size_({4}) (Member initializer)                                → END

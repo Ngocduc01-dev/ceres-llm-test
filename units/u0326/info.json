@@ -6,7 +6,6 @@
   238,
   238
  ],
- "signature": "ceres::internal::LineSearchFunction::direction",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 326
+ "order": 326,
+ "short_name": "direction",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearchFunction",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const Vector &",
+ "is_const": true
 }

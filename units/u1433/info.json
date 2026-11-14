@@ -6,7 +6,6 @@
   58,
   58
  ],
- "signature": "ceres::internal::ThreadPool::ThreadPool",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 1433
+ "order": 1433,
+ "short_name": "ThreadPool",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "(int num_threads)",
+ "return_type": null,
+ "is_const": false
 }

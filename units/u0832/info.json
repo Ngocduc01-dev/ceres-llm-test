@@ -6,7 +6,6 @@
   62,
   64
  ],
- "signature": "ceres_free_problem",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 832
+ "order": 832,
+ "short_name": "ceres_free_problem",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ceres_problem_t * problem)",
+ "return_type": "void",
+ "is_const": false
 }

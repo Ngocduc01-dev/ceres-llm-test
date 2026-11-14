@@ -1,0 +1,9 @@
+UNIT u0307
+Hàm: ~GradientProblemSolver()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::GradientProblemSolver
+Vị trí: internal/ceres/gradient_problem_solver.cc, dòng 96–96
+
+Số điểm rẽ nhánh: 0
+
+START → END

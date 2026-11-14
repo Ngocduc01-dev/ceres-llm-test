@@ -1,0 +1,28 @@
+UNIT u0779
+Hàm: NextDirection(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BFGS
+Vị trí: internal/ceres/line_search_direction.cc, dòng 164–329
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(is_positive_definite_)                                   đúng → 2   sai → DỪNG
+2   previous.search_direction * previous.step_size
+    current.gradient - previous.gradient
+    const double delta_x_dot_delta_gradient = delta_x.dot(delta_gradient)
+    const double kBFGSSecantConditionHessianUpdateTolerance = 9.9999999999999999E-15   → 3
+3   if (delta_x_dot_delta_gradient <= kBFGSSecantConditionHessianUpdateTolerance)   đúng → 4   sai → 7
+4   *search_direction = inverse_hessian_.selfadjointView<Eigen::Lower>() * (-1. * current.gradient)   → 5
+5   if (search_direction->dot(current.gradient) >= 0.)             đúng → END   sai → 6
+6   return true                                                    → END
+7   if (!initialized_ && use_approximate_eigenvalue_scaling_)      đúng → 8   sai → 9
+8   const double approximate_eigenvalue_scale = delta_x_dot_delta_gradient / delta_gradient.dot(delta_gradient)
+    inverse_hessian_ *= approximate_eigenvalue_scale               → 9
+9   initialized_ = true
+    const double rho_k = 1. / delta_x_dot_delta_gradient
+    delta_x * (delta_gradient.transpose() * inverse_hessian_.selfadjointView<Eigen::Lower>())
+    const double delta_x_times_delta_x_transpose_scale_factor = (1. + (rho_k * delta_gradient.transpose() * inverse_hessian_.selfadjointView<Eigen::Lower>() * delta_gradient))
+    Matrix::Zero(num_parameters_, num_parameters_)
+    B.selfadjointView<Eigen::Lower>().rankUpdate(delta_x, delta_x_times_delta_x_transpose_scale_factor)
+    inverse_hessian_.triangularView<Eigen::Lower>() += rho_k * (B - A - A.transpose())   → 4

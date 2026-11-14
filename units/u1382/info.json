@@ -6,7 +6,6 @@
   315,
   315
  ],
- "signature": "ceres::internal::ProgramEvaluator::NumResiduals",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1382
+ "order": 1382,
+ "short_name": "NumResiduals",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

@@ -6,7 +6,6 @@
   88,
   88
  ],
- "signature": "ceres::internal::ParameterBlock::Size",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 357
+ "order": 357,
+ "short_name": "Size",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

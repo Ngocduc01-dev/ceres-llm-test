@@ -6,7 +6,6 @@
   44,
   49
  ],
- "signature": "ceres::internal::IsSolutionUsable",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 512
+ "order": 512,
+ "short_name": "IsSolutionUsable",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const SummaryType& summary)",
+ "return_type": "bool",
+ "is_const": false
 }

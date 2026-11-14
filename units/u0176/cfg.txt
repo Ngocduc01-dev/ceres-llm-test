@@ -1,0 +1,11 @@
+UNIT u0176
+Hàm: TukeyLoss(double a)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::TukeyLoss
+Vị trí: include/ceres/loss_function.h, dòng 289–289
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LossFunction() (Base initializer)
+    a_squared_(a * a) (Member initializer)                         → END

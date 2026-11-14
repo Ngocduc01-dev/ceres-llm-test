@@ -1,0 +1,41 @@
+UNIT u0778
+Hàm: FindInterpolatingPolynomial(const std::vector<FunctionSample> & samples)  → trả về Vector
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/polynomial.cc, dòng 326–367
+
+Số điểm rẽ nhánh: 8
+
+START → 1
+1   const int num_samples = samples.size()
+    int num_constraints = 0
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_samples                           đúng → 3   sai → 8
+3   if (samples[i].value_is_valid)                                 đúng → 4   sai → 5
+4   ++num_constraints                                              → 5
+5   if (samples[i].gradient_is_valid)                              đúng → 6   sai → 7
+6   ++num_constraints                                              → 7
+7   ++i                                                            → 2
+8   const int degree = num_constraints - 1
+    Matrix::Zero(num_constraints, num_constraints)
+    Vector::Zero(num_constraints)
+    int row = 0
+    int i = 0                                                      → 9
+9   vòng for, điều kiện: i < num_samples                           đúng → 10   sai → 24
+10  const FunctionSample &sample = samples[i]                      → 11
+11  if (sample.value_is_valid)                                     đúng → 12   sai → 17
+12  int j = 0                                                      → 13
+13  vòng for, điều kiện: j <= degree                               đúng → 14   sai → 16
+14  lhs(row, j) = pow(sample.x, degree - j)                        → 15
+15  ++j                                                            → 13
+16  rhs(row) = sample.value
+    ++row                                                          → 17
+17  if (sample.gradient_is_valid)                                  đúng → 18   sai → 23
+18  int j = 0                                                      → 19
+19  vòng for, điều kiện: j < degree                                đúng → 20   sai → 22
+20  lhs(row, j) = (degree - j) * pow(sample.x, degree - j - 1)     → 21
+21  ++j                                                            → 19
+22  rhs(row) = sample.gradient
+    ++row                                                          → 23
+23  ++i                                                            → 9
+24  lhs                                                            → END

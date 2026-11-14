@@ -1,0 +1,10 @@
+UNIT u0701
+Hàm: operator==(const Block & left, const Block & right)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/block_structure.h, dòng 62–64
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (left.size == right.size) && (left.position == right.position)   → END

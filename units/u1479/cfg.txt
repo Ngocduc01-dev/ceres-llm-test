@@ -1,0 +1,16 @@
+UNIT u1479
+Hàm: ComputeClusterTridiagonalSparsity(const CompressedRowBlockStructure & bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 136–154
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   ComputeVisibility(bs, options_.elimination_groups[0], &visibility)   → 2
+2   CHECK_EQ(num_blocks_, visibility.size())                       đúng → 3   sai → DỪNG
+3   ClusterCameras(visibility)
+    ComputeClusterVisibility(visibility, &cluster_visibility)      → 4
+4   CHECK(cluster_graph != nullptr)                                đúng → 5   sai → DỪNG
+5   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))   → 6
+6   CHECK(forest != nullptr)                                       đúng → END   sai → DỪNG

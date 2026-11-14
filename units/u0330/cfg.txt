@@ -1,0 +1,9 @@
+UNIT u0330
+Hàm: ~LinearOperator()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::LinearOperator
+Vị trí: internal/ceres/linear_operator.cc, dòng 61–61
+
+Số điểm rẽ nhánh: 0
+
+START → END

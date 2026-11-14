@@ -1,0 +1,11 @@
+UNIT u0580
+Hàm: Allocate(int num_cols)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseIterativeRefiner
+Vị trí: internal/ceres/iterative_refiner.cc, dòng 78–81
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   residual_.resize(num_cols)
+    correction_.resize(num_cols)                               → END

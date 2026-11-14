@@ -1,0 +1,12 @@
+UNIT u0734
+Hàm: LineSearchTypeToString(LineSearchType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 234–241
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)     nhánh → 2   nhánh → 3
+2   return "WOLFE"    → END
+3   return "ARMIJO"   → END

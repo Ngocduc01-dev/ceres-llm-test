@@ -54,27 +54,83 @@ def render(template, values, has_cfg):
     return re.sub(r"\n{3,}", "\n\n", text).strip() + "\n"
 
 
+def include_path(rel):
+    """Đường dẫn #include theo thư mục include của Ceres: internal/ceres/x.cc -> ceres/x.cc."""
+    for pre in ("internal/", "include/"):
+        if rel.startswith(pre):
+            return rel[len(pre):]
+    return rel
+
+
+def unit_info_block(u, info):
+    """Thông tin unit, viết dễ đọc (đầu mục 3.1)."""
+    name = f"{info.get('short_name') or u['name'].split('::')[-1]}{info.get('params') or '()'}"
+    name = re.sub(r"^(~?\w+)<[^()]*>(?=\()", r"\1", name)  # LineManifold<N>() -> LineManifold()
+    if info.get("is_const"):
+        name += " const"
+    lines = [f"- Hàm: `{name}`" + (f", trả về `{info['return_type']}`" if info.get("return_type") else "")]
+    if info.get("kind"):
+        lines.append(f"- Loại: {info['kind']}")
+    if info.get("class"):
+        lines.append(f"- Thuộc class: `{info['class']}`" + (" (class template)" if info.get("class_is_template") else ""))
+    else:
+        lines.append(f"- Namespace: `{'::'.join(u['name'].split('::')[:-1]) or '(toàn cục)'}`")
+    lines.append(f"- Vị trí: `{u['file']}`, dòng {u['lines'][0]}–{u['lines'][1]}")
+    return "\n".join(lines).replace("(anonymous)", "(namespace không tên)")
+
+
+def call_rules(u, info):
+    """Cách gọi unit trong file test, viết bằng lời đơn giản."""
+    rules = []
+    if info.get("linkage") == "internal" or u.get("linkage") == "internal":
+        rules.append(f"- Hàm này chỉ dùng được bên trong file `{u['file']}` (khai báo `static` hoặc trong namespace "
+                     f"không tên). Để gọi được, thêm `#include \"{include_path(u['file'])}\"` vào file test.")
+    if (u.get("access") or "") in ("private", "protected"):
+        rules.append(f"- Method này là `{u['access']}` (bên ngoài class không gọi được). Thêm 2 dòng "
+                     "`#define private public` và `#define protected public` **sau** `#include \"gtest/gtest.h\"` "
+                     "và **trước** các `#include` của Ceres.")
+    if info.get("class"):
+        rules.append(f"- Đây là method của class `{info['class']}`: tạo một object của class rồi gọi method trên object đó.")
+    if u.get("template_args") or info.get("class_is_template"):
+        rules.append("- Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp "
+                     "(xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).")
+    if not rules:
+        rules.append("- Hàm gọi trực tiếp được.")
+    return "\n".join(rules).replace("(anonymous)", "(namespace không tên)")
+
+
 def build(u, template):
     uid, (start, end) = u["id"], u["lines"]
     c = context_sections(uid)
     d = REPO / "units" / uid
+    info_p = d / "info.json"
+    info = json.loads(info_p.read_text(encoding="utf-8")) if info_p.exists() else {}
     cfg_p = d / "cfg.txt"
-    cfg = cfg_p.read_text(encoding="utf-8").strip() if cfg_p.exists() else ""
-    callees = "\n".join(x for x in (c.get("6A", ""), c.get("6B", "")) if x)
+    cfg = ""
+    if cfg_p.exists():
+        # cfg.txt = [thông tin unit] + dòng trống + [CFG]. Thông tin unit đã có ở 3.1 -> chỉ giữ ghi chú template + CFG
+        head, _, body = cfg_p.read_text(encoding="utf-8").strip().partition("\n\n")
+        note = [l for l in head.splitlines() if l.startswith("Ghi chú:")]
+        cfg = "\n".join(note + ([""] if note else []) + [body.strip()])
+    includes = [l for l in (c.get("2") or "").splitlines() if l.strip()]
+    if (info.get("linkage") == "internal" or u.get("linkage") == "internal"):
+        inc = f'#include "{include_path(u["file"])}"'
+        if inc not in includes:
+            includes.append(inc)
     values = {
-        "qualname": u["name"], "file": u["file"], "line_start": start, "line_end": end,
         "source_numbered": source_numbered(u["file"], start, end),
+        "unit_info": unit_info_block(u, info),
         "cfg_text": cfg,
-        "includes": c.get("2") or NONE,
-        "call_rules": c.get("3") or "- Hàm `public`, gọi trực tiếp.",
-        "class_decl": c.get("4") or NONE,
-        "types": c.get("5") or NONE,
-        "callees": callees or NONE,
-        "helpers": c.get("7") or NONE,
-        "sample_tests": c.get("8") or NONE,
+        "includes": "\n".join(includes) or '#include "gtest/gtest.h"',
+        "call_rules": call_rules(u, info),
         "test_file_name": f"{uid}_test.cc",
     }
     d.mkdir(parents=True, exist_ok=True)
+    # mã nguồn của unit, để xem nhanh (không compile; chỉ là đoạn trích từ file gốc)
+    src = (SRC / u["file"]).read_text(encoding="utf-8", errors="replace").splitlines()[start - 1:end]
+    (d / "source.cc").write_text(
+        f"// {uid} – {u['name']}\n// Trích từ {u['file']}, dòng {start}–{end} (chỉ để xem, không compile)\n\n"
+        + "\n".join(src) + "\n", encoding="utf-8")
     (d / "prompt.md").write_text(render(template, values, bool(cfg)), encoding="utf-8")
     return bool(cfg)
 

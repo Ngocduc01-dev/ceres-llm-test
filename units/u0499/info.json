@@ -6,7 +6,6 @@
   762,
   773
  ],
- "signature": "ceres::QuaternionProduct",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 499
+ "order": 499,
+ "short_name": "QuaternionProduct",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T z[4], const T w[4], T zw[4])",
+ "return_type": "void",
+ "is_const": false
 }

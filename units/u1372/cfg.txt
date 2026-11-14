@@ -1,0 +1,17 @@
+UNIT u1372
+Hàm: UpdateImpl(const BlockSparseMatrix & A, const double * D)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.cc, dòng 58–114
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()
+    m_->SetZero()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:68:15) &&, int))(options_.context, 0, bs->rows.size(), options_.num_threads, [this, bs, values](int i) {)   → 2
+2   if (D != nullptr)                                              đúng → 3   sai → 4
+3   ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:98:17) &&, int))(options_.context, 0, bs->cols.size(), options_.num_threads, [this, bs, D](int i) {)   → 4
+4   m_->Invert()
+    return true                                                    → END

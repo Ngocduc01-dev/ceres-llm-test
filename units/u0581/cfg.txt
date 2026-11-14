@@ -1,0 +1,22 @@
+UNIT u0581
+Hàm: QuaternionPlusJacobianImpl(const double* x, double* jacobian_ptr)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/manifold.cc, dòng 62–79
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionPlusJacobianImpl<(anonymous namespace)::CeresQuaternionOrder> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   jacobian(CeresQuaternionOrder::kW, 0) = -x[CeresQuaternionOrder::kX]
+    jacobian(CeresQuaternionOrder::kW, 1) = -x[CeresQuaternionOrder::kY]
+    jacobian(CeresQuaternionOrder::kW, 2) = -x[CeresQuaternionOrder::kZ]
+    jacobian(CeresQuaternionOrder::kX, 0) = x[CeresQuaternionOrder::kW]
+    jacobian(CeresQuaternionOrder::kX, 1) = x[CeresQuaternionOrder::kZ]
+    jacobian(CeresQuaternionOrder::kX, 2) = -x[CeresQuaternionOrder::kY]
+    jacobian(CeresQuaternionOrder::kY, 0) = -x[CeresQuaternionOrder::kZ]
+    jacobian(CeresQuaternionOrder::kY, 1) = x[CeresQuaternionOrder::kW]
+    jacobian(CeresQuaternionOrder::kY, 2) = x[CeresQuaternionOrder::kX]
+    jacobian(CeresQuaternionOrder::kZ, 0) = x[CeresQuaternionOrder::kY]
+    jacobian(CeresQuaternionOrder::kZ, 1) = -x[CeresQuaternionOrder::kX]
+    jacobian(CeresQuaternionOrder::kZ, 2) = x[CeresQuaternionOrder::kW]   → END

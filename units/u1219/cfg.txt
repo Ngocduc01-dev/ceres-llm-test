@@ -1,0 +1,13 @@
+UNIT u1219
+Hàm: CreateResultMatrix(const CompressedRowSparseMatrix::StorageType storage_type, const int num_nonzeros)  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 47–58
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   matrix->set_storage_type(storage_type)
+    const CompressedRowBlockStructure *bs = m_.block_structure()
+    *matrix->mutable_row_blocks() = bs->cols
+    *matrix->mutable_col_blocks() = bs->cols                       → END

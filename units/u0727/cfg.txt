@@ -1,0 +1,14 @@
+UNIT u0727
+Hàm: operator<(const ProductTerm & right) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer::ProductTerm
+Vị trí: internal/ceres/inner_product_computer.h, dòng 109–117
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (row == right.row)        đúng → 2   sai → 5
+2   if (col == right.col)        đúng → 3   sai → 4
+3   return index < right.index   → END
+4   return col < right.col       → END
+5   return row < right.row       → END

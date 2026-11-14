@@ -1,0 +1,10 @@
+UNIT u1332
+Hàm: SetParameterLowerBound(double * values, int index, double lower_bound)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 108–112
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   impl_->SetParameterLowerBound(values, index, lower_bound)   → END

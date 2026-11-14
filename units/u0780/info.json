@@ -6,7 +6,6 @@
   79,
   174
  ],
- "signature": "ceres::internal::SchurEliminator::Init",
  "branches": 20,
  "cyclomatic": 11,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 780
+ "order": 780,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(int num_eliminate_blocks, bool assume_full_rank_ete, const CompressedRowBlockStructure * bs)",
+ "return_type": "void",
+ "is_const": false
 }

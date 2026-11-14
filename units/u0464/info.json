@@ -6,7 +6,6 @@
   93,
   104
  ],
- "signature": "ceres::internal::MapValuesToContiguousRange",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 464
+ "order": 464,
+ "short_name": "MapValuesToContiguousRange",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int64_t size, int * array)",
+ "return_type": "void",
+ "is_const": false
 }

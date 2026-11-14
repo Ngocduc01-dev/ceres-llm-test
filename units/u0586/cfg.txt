@@ -1,0 +1,13 @@
+UNIT u0586
+Hàm: PlusImpl(const double* x, const double* delta, double* x_plus_delta, std::index_sequence<Index0, Indices...>) const  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::ProductManifold
+Vị trí: include/ceres/product_manifold.h, dòng 155–168
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold, SubsetManifold, SubsetManifold>::PlusImpl<0UL, <1UL, 2UL, 3UL>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (!Dereference(std::get<0UL>(manifolds_)).Plus(x + ambient_offsets_[0UL], delta + tangent_offsets_[0UL], x_plus_delta + ambient_offsets_[0UL]))   đúng → 2   sai → 3
+2   return false                                                   → END
+3   return PlusImpl(x, delta, x_plus_delta, std::index_sequence<1UL, 2UL, 3UL>{})   → END

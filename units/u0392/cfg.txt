@@ -1,0 +1,10 @@
+UNIT u0392
+Hàm: parameter_map() const  → trả về const ParameterMap &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.h, dòng 162–162
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return parameter_block_map_   → END

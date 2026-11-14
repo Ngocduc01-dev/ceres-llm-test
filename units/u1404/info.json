@@ -6,7 +6,6 @@
   369,
   387
  ],
- "signature": "ceres::internal::MinimizeInterpolatingPolynomial",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1404
+ "order": 1404,
+ "short_name": "MinimizeInterpolatingPolynomial",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::vector<FunctionSample> & samples, double x_min, double x_max, double * optimal_x, double * optimal_value)",
+ "return_type": "void",
+ "is_const": false
 }

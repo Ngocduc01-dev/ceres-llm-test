@@ -6,7 +6,6 @@
   95,
   100
  ],
- "signature": "ceres::internal::ThreadPool::ThreadMainLoop",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 970
+ "order": 970,
+ "short_name": "ThreadMainLoop",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

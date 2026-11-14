@@ -1,0 +1,22 @@
+UNIT u1056
+Hàm: RightMultiplyByPlusJacobian(const double *, const int num_rows, const double * ambient_matrix, double * tangent_matrix) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SubsetManifold
+Vị trí: internal/ceres/manifold.cc, dòng 216–234
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (tangent_size_ == 0)                                        đúng → 2   sai → 3
+2   return true                                                    → END
+3   const int ambient_size = AmbientSize()
+    int r = 0                                                      → 4
+4   vòng for, điều kiện: r < num_rows                              đúng → 5   sai → 11
+5   int idx = 0
+    int c = 0                                                      → 6
+6   vòng for, điều kiện: idx < ambient_size                        đúng → 7   sai → 10
+7   if (!constancy_mask_[idx])                                     đúng → 8   sai → 9
+8   tangent_matrix[r * tangent_size_ + c++] = ambient_matrix[r * ambient_size + idx]   → 9
+9   ++idx                                                          → 6
+10  ++r                                                            → 4
+11  return true                                                    → END

@@ -6,7 +6,6 @@
   711,
   781
  ],
- "signature": "ceres::internal::BlockSparseMatrix::CreateRandomMatrix",
  "branches": 36,
  "cyclomatic": 19,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 7,
- "order": 1218
+ "order": 1218,
+ "short_name": "CreateRandomMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "(const BlockSparseMatrix::RandomMatrixOptions & options, std::mt19937 & prng, bool use_page_locked_memory)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": false
 }

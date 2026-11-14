@@ -6,7 +6,6 @@
   146,
   146
  ],
- "signature": "ceres::CubicInterpolator::Evaluate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 17
+ "order": 17,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::CubicInterpolator",
+ "class_is_template": true,
+ "params": "(const double & x, double * f)",
+ "return_type": "void",
+ "is_const": true
 }

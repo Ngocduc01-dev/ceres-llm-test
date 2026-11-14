@@ -1,0 +1,11 @@
+UNIT u1327
+Hàm: CreateFakeBundleAdjustmentPartitionedJacobian(int num_cameras, int num_points, int camera_size, int landmark_size, double visibility, std::mt19937 & rng)  → trả về std::pair<std::unique_ptr<PartitionedMatrixView<2, Eigen::Dynamic, Eigen::Dynamic>>, std::unique_ptr<BlockSparseMatrix>>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/fake_bundle_adjustment_jacobian.cc, dòng 99–118
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   options.elimination_groups.push_back(num_points)
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))   → END

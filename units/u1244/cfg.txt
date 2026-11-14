@@ -1,0 +1,9 @@
+UNIT u1244
+Hàm: ToDebugString() const  → trả về std::string
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::FunctionSample
+Vị trí: internal/ceres/function_sample.cc, dòng 66–75
+
+Số điểm rẽ nhánh: 0
+
+START → END

@@ -1,0 +1,10 @@
+UNIT u1222
+Hàm: GetNumAllowedThreads(int requested_num_threads)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/thread_pool.cc, dòng 42–44
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return std::min(requested_num_threads, ThreadPool::MaxNumThreadsAvailable())   → END

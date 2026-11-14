@@ -1,0 +1,9 @@
+UNIT u0250
+Hàm: ~LoggingCallback()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::LoggingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 80–80
+
+Số điểm rẽ nhánh: 0
+
+START → END

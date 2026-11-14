@@ -1,0 +1,19 @@
+UNIT u0973
+Hàm: Init(const Minimizer::Options & options, double * parameters, Solver::Summary * solver_summary)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 139–188
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   options_ = options
+    parameters_ = parameters
+    solver_summary_ = solver_summary
+    solver_summary_->termination_type = NO_CONVERGENCE
+    solver_summary_->num_successful_steps = 0
+    solver_summary_->num_unsuccessful_steps = 0
+    solver_summary_->is_constrained = options.is_constrained       → 2
+2   CHECK(options_.evaluator != nullptr)                           đúng → 3   sai → DỪNG
+3   CHECK(options_.jacobian != nullptr)                            đúng → 4   sai → DỪNG
+4   CHECK(options_.trust_region_strategy != nullptr)               đúng → END   sai → DỪNG

@@ -1,0 +1,16 @@
+UNIT u1194
+Hàm: Transpose() const  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 600–638
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)                                                     đúng → 2   sai → DỪNG
+2   transpose->set_storage_type(StorageType::LOWER_TRIANGULAR)
+    break                                                          → 3
+3   TransposeForCompressedRowSparseStructure(num_rows(), num_cols(), num_nonzeros(), rows(), cols(), values(), transpose->mutable_rows(), transpose->mutable_cols(), transpose->mutable_values())   → 4
+4   if (row_blocks_.empty())                                       đúng → END   sai → 5
+5   *(transpose->mutable_row_blocks()) = col_blocks_
+    *(transpose->mutable_col_blocks()) = row_blocks_               → END

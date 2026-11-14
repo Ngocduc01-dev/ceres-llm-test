@@ -6,7 +6,6 @@
   48,
   52
  ],
- "signature": "ceres::internal::MakeConditionalLock",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 477
+ "order": 477,
+ "short_name": "MakeConditionalLock",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int num_threads, std::mutex & m)",
+ "return_type": "std::unique_lock<std::mutex>",
+ "is_const": false
 }

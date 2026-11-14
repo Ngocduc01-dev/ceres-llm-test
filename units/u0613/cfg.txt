@@ -1,0 +1,13 @@
+UNIT u0613
+Hàm: AutoDiffCostFunction(CostFunctor * functor, Ownership ownership)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::AutoDiffCostFunction
+Vị trí: include/ceres/autodiff_cost_function.h, dòng 159–165
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SizedCostFunction() (Base initializer)
+    functor_(functor) (Member initializer)
+    ownership_(ownership) (Member initializer)                     → END

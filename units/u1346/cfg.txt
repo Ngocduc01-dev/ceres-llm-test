@@ -1,0 +1,15 @@
+UNIT u1346
+Hàm: SparseNormalCholeskySolver(const LinearSolver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::SparseNormalCholeskySolver
+Vị trí: internal/ceres/sparse_normal_cholesky_solver.cc, dòng 50–54
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   TypedLinearSolver() (Base initializer)
+    options_(options) (Member initializer)
+    rhs_() (Member initializer)
+    sparse_cholesky_() (Member initializer)
+    inner_product_computer_() (Member initializer)
+    sparse_cholesky_ = SparseCholesky::Create(options)             → END

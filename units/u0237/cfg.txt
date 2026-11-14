@@ -1,0 +1,11 @@
+UNIT u0237
+Hàm: Block()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::Block
+Vị trí: internal/ceres/block_structure.h, dòng 55–55
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   size(?) (Member initializer)
+    position(?) (Member initializer)                               → END

@@ -1,0 +1,45 @@
+UNIT u1517
+Hàm: AddResidualBlock(CostFunction * cost_function, LossFunction * loss_function, double *const *const parameter_blocks, int num_parameter_blocks)  → trả về ResidualBlockId
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 267–356
+
+Số điểm rẽ nhánh: 10 (và 5 lệnh CHECK)
+
+START → 1
+1   CHECK(cost_function != nullptr)                                đúng → 2   sai → DỪNG
+2   CHECK_EQ(num_parameter_blocks, cost_function->parameter_block_sizes().size())   đúng → 3   sai → DỪNG
+3   const std::vector<int32_t> &parameter_block_sizes = cost_function->parameter_block_sizes()   → 4
+4   if (!options_.disable_all_safety_checks)                       đúng → 5   sai → 12
+5   CHECK_EQ(parameter_block_sizes.size(), num_parameter_blocks)   đúng → 6   sai → DỪNG
+6   parameter_blocks, parameter_blocks + num_parameter_blocks
+    const bool has_duplicate_items = (std::adjacent_find(sorted_parameter_blocks.begin(), sorted_parameter_blocks.end()) != sorted_parameter_blocks.end())   → 7
+7   if (has_duplicate_items)                                       đúng → 8   sai → 12
+8   int i = 0                                                      → 9
+9   LOG(FATAL)                                                     đúng → 10   sai → DỪNG
+10  blocks += StringPrintf(" %p ", parameter_blocks[i])            → 11
+11  ++i                                                            → 9
+12  int i = 0                                                      → 13
+13  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 14   sai → 16
+14  parameter_block_ptrs[i] = InternalAddParameterBlock(parameter_blocks[i], parameter_block_sizes[i])   → 15
+15  ++i                                                            → 13
+16  if (!options_.disable_all_safety_checks)                       đúng → 17   sai → 21
+17  int i = 0                                                      → 18
+18  vòng for, điều kiện: i < parameter_block_ptrs.size()           đúng → 19   sai → 21
+19  parameter_block_ptrs[i]->Size())                               đúng → 20   sai → DỪNG
+20  ++i                                                            → 18
+21  CFGNewAllocator(ResidualBlock *)
+    auto *new_residual_block = new ResidualBlock(cost_function, loss_function, parameter_block_ptrs, program_->residual_blocks_.size())   → 22
+22  if (options_.enable_fast_removal)                              đúng → 23   sai → 27
+23  int i = 0                                                      → 24
+24  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 25   sai → 27
+25  parameter_block_ptrs[i]->AddResidualBlock(new_residual_block)   → 26
+26  ++i                                                            → 24
+27  program_->residual_blocks_.push_back(new_residual_block)       → 28
+28  if (options_.enable_fast_removal)                              đúng → 29   sai → 30
+29  residual_block_set_.insert(new_residual_block)                 → 30
+30  if (options_.cost_function_ownership == TAKE_OWNERSHIP)        đúng → 31   sai → 32
+31  ++cost_function_ref_count_[cost_function]                      → 32
+32  if (options_.loss_function_ownership == TAKE_OWNERSHIP && loss_function != nullptr)   đúng → 33   sai → 34
+33  ++loss_function_ref_count_[loss_function]                      → 34
+34  return new_residual_block                                      → END

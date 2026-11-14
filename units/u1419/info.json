@@ -6,7 +6,6 @@
   307,
   361
  ],
- "signature": "ceres::(anonymous)::OptionsAreValidForCgnr",
  "branches": 24,
  "cyclomatic": 13,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1419
+ "order": 1419,
+ "short_name": "OptionsAreValidForCgnr",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

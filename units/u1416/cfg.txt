@@ -1,0 +1,16 @@
+UNIT u1416
+Hàm: OptionsAreValidForDenseQr(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 205–219
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(options.linear_solver_type, DENSE_QR)                 đúng → 2   sai → DỪNG
+2   if (!OptionsAreValidForDenseSolver(options, error))            đúng → 3   sai → 4
+3   return false                                                   → END
+4   if (options.use_mixed_precision_solves)                        đúng → 5   sai → 6
+5   *error = "Can't use use_mixed_precision_solves with DENSE_QR."
+    return false                                                   → END
+6   return true                                                    → END

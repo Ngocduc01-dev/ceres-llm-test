@@ -6,7 +6,6 @@
   40,
   49
  ],
- "signature": "ceres::internal::TrustRegionStepEvaluator::TrustRegionStepEvaluator",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 433
+ "order": 433,
+ "short_name": "TrustRegionStepEvaluator",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::TrustRegionStepEvaluator",
+ "class_is_template": false,
+ "params": "(const double initial_cost, const int max_consecutive_nonmonotonic_steps)",
+ "return_type": null,
+ "is_const": false
 }

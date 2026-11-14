@@ -1,0 +1,15 @@
+UNIT u0758
+Hàm: IsDenseLinearAlgebraLibraryTypeAvailable(DenseLinearAlgebraLibraryType type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 440–464
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (type == EIGEN)    đúng → 2   sai → 3
+2   return true           → END
+3   if (type == LAPACK)   đúng → 4   sai → 5
+4   return false          → END
+5   if (type == CUDA)     đúng → 6   sai → END
+6   return false          → END

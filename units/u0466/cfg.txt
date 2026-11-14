@@ -1,0 +1,10 @@
+UNIT u0466
+Hàm: CorrectResiduals(const int num_rows, double * residuals)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Corrector
+Vị trí: internal/ceres/corrector.cc, dòng 112–116
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   DCHECK(residuals != nullptr)   đúng → END   sai → DỪNG

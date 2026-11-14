@@ -1,0 +1,10 @@
+UNIT u0848
+Hàm: DenseJacobianWriter(Evaluator::Options, Program * program)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DenseJacobianWriter
+Vị trí: internal/ceres/dense_jacobian_writer.h, dòng 53–54
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   program_(program) (Member initializer)   → END

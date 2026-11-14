@@ -1,0 +1,10 @@
+UNIT u0372
+Hàm: mutable_residual_blocks()  → trả về ResidualBlockSet *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 293–293
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return residual_blocks_.get()   → END

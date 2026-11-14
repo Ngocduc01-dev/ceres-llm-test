@@ -1,0 +1,10 @@
+UNIT u0097
+Hàm: IsInfinite(double x)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 512–513
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return std::isinf(x)   → END

@@ -1,0 +1,11 @@
+UNIT u0202
+Hàm: Minus(const double * y, const double * x, double * y_minus_x) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::ProductManifold
+Vị trí: include/ceres/product_manifold.h, dòng 110–115
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return MinusImpl(y, x, y_minus_x, std::make_index_sequence<kNumManifolds>{})   → END

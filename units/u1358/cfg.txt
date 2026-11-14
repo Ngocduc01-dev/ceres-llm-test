@@ -1,0 +1,23 @@
+UNIT u1358
+Hàm: SetupCommonMinimizerOptions(PreprocessedProblem * pp)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/preprocessor.cc, dòng 75–106
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const Solver::Options &options = pp->options
+    Program *program = pp->reduced_program.get()
+    pp->reduced_parameters.resize(program->NumParameters())
+    double *reduced_parameters = pp->reduced_parameters.data()
+    program->ParameterBlocksToStateVector(reduced_parameters)
+    auto context = pp->problem->context()
+    Minimizer::Options &minimizer_options = pp->minimizer_options
+    minimizer_options = Minimizer::Options(options)
+    minimizer_options.evaluator = pp->evaluator
+    minimizer_options.context = context                            → 2
+2   if (options.logging_type != SILENT)                            đúng → 3   sai → 4
+3   pp->logging_callback = std::make_unique<LoggingCallback>(options.minimizer_type, options.minimizer_progress_to_stdout)   → 4
+4   if (options.update_state_every_iteration)                      đúng → 5   sai → END
+5   pp->state_updating_callback = std::make_unique<StateUpdatingCallback>(program, reduced_parameters)   → END

@@ -1,0 +1,16 @@
+UNIT u1066
+Hàm: UpdatePlusJacobian()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 312–339
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (manifold_ == nullptr)                                      đúng → 2   sai → 3
+2   return true                                                    → END
+3   const int jacobian_size = Size() * TangentSize()
+    InvalidateArray(jacobian_size, plus_jacobian_.get())           → 4
+4   if (!manifold_->PlusJacobian(state_, plus_jacobian_.get()))    đúng → END   sai → 5
+5   if (!IsArrayValid(jacobian_size, plus_jacobian_.get()))        đúng → END   sai → 6
+6   return true                                                    → END

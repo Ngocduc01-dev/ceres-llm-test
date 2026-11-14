@@ -1,0 +1,10 @@
+UNIT u0397
+Hàm: mutable_evaluation_callback()  → trả về EvaluationCallback *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 73–75
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return evaluation_callback_   → END

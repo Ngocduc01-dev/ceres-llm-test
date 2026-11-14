@@ -6,7 +6,6 @@
   65,
   83
  ],
- "signature": "ceres::internal::TripletSparseMatrix::TripletSparseMatrix",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1198
+ "order": 1198,
+ "short_name": "TripletSparseMatrix",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "(const int num_rows, const int num_cols, const std::vector<int> & rows, const std::vector<int> & cols, const std::vector<double> & values)",
+ "return_type": null,
+ "is_const": false
 }

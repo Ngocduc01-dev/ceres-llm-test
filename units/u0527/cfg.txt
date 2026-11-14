@@ -1,0 +1,15 @@
+UNIT u0527
+Hàm: Finished(int num_jobs_finished)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockUntilFinished
+Vị trí: internal/ceres/parallel_invoke.cc, dòng 49–57
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   if (num_jobs_finished == 0)                           đúng → 2   sai → 3
+2   return                                                → END
+3   num_total_jobs_finished_ += num_jobs_finished         → 4
+4   CHECK_LE(num_total_jobs_finished_, num_total_jobs_)   đúng → 5   sai → DỪNG
+5   if (num_total_jobs_finished_ == num_total_jobs_)      đúng → 6   sai → END
+6   condition_.notify_one()                               → END

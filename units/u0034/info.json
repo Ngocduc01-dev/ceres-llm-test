@@ -6,7 +6,6 @@
   238,
   238
  ],
- "signature": "ceres::internal::FixedArray::back",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 34
+ "order": 34,
+ "short_name": "back",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "reference",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0402
+Hàm: index() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.h, dòng 130–130
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return index_   → END

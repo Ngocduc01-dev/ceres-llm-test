@@ -1,0 +1,10 @@
+UNIT u1155
+Hàm: HasParameterBlock(const double * values) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 179–181
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->HasParameterBlock(values)   → END

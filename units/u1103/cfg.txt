@@ -1,0 +1,28 @@
+UNIT u1103
+Hàm: SymmetricRightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.cc, dòng 125–163
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   const auto bs = bsm_->block_structure()
+    const auto values = bsm_->values()
+    const int num_blocks = blocks_.size()
+    int row_block_id = 0                                           → 2
+2   vòng for, điều kiện: row_block_id < num_blocks                 đúng → 3   sai → END
+3   const auto &row_block = bs->rows[row_block_id]
+    const int row_block_size = row_block.block.size
+    const int row_block_pos = row_block.block.position             → 4
+4   for (auto &c : row_block.cells)                                đúng → 5   sai → 10
+5   auto &c
+    const int col_block_id = c.block_id
+    const int col_block_size = blocks_[col_block_id].size
+    const int col_block_pos = blocks_[col_block_id].position
+    MatrixVectorMultiply<Eigen::Dynamic, Eigen::Dynamic, 1>(values + c.position, row_block_size, col_block_size, x + col_block_pos, y + row_block_pos)   → 6
+6   if (col_block_id == row_block_id)                              đúng → 7   sai → 9
+7   continue                                                       → 8
+8   ++ (bước tiếp của vòng for)                                    → 4
+9   MatrixTransposeVectorMultiply<Eigen::Dynamic, Eigen::Dynamic, 1>(values + c.position, row_block_size, col_block_size, x + row_block_pos, y + col_block_pos)   → 8
+10  ++row_block_id                                                 → 2

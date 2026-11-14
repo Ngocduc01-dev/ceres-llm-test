@@ -6,7 +6,6 @@
   324,
   336
  ],
- "signature": "ceres::internal::ProgramEvaluator::EvaluateScratch::Init",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 400
+ "order": 400,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator::EvaluateScratch",
+ "class_is_template": false,
+ "params": "(int max_parameters_per_residual_block, int max_scratch_doubles_needed_for_evaluate, int max_residuals_per_residual_block, int num_parameters)",
+ "return_type": "void",
+ "is_const": false
 }

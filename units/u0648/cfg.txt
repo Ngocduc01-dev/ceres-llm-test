@@ -1,0 +1,11 @@
+UNIT u0648
+Hàm: matrix() const  → trả về const BlockRandomAccessDiagonalMatrix &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.h, dòng 67–67
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return * m_                                                    → END

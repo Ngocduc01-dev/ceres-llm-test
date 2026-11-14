@@ -1,0 +1,11 @@
+UNIT u0598
+Hàm: RegionsAlias(const double * a, int size_a, const double * b, int size_b)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/problem_impl.cc, dòng 70–72
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   (a < b) ? ... : ...                                    đúng → 2   sai → 2
+2   return (a < b) ? b < (a + size_a) : a < (b + size_b)   → END

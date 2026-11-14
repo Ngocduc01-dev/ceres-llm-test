@@ -1,0 +1,17 @@
+UNIT u0776
+Hàm: LinearSolverTypeToString(LinearSolverType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 51–63
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)                     nhánh → 2   nhánh → 3   nhánh → 4   nhánh → 5   nhánh → 6   nhánh → 7   nhánh → 8
+2   return "CGNR"                     → END
+3   return "ITERATIVE_SCHUR"          → END
+4   return "SPARSE_SCHUR"             → END
+5   return "DENSE_SCHUR"              → END
+6   return "SPARSE_NORMAL_CHOLESKY"   → END
+7   return "DENSE_QR"                 → END
+8   return "DENSE_NORMAL_CHOLESKY"    → END

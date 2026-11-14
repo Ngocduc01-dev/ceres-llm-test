@@ -6,7 +6,6 @@
   98,
   201
  ],
- "signature": "ceres::GradientProblemSolver::Solve",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 8,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1537
+ "order": 1537,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblemSolver",
+ "class_is_template": false,
+ "params": "(const GradientProblemSolver::Options & options, const GradientProblem & problem, double * parameters_ptr, GradientProblemSolver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,23 @@
+UNIT u1374
+Hàm: UpdateImpl(const BlockSparseMatrix & A, const double * D)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SubsetPreconditioner
+Vị trí: internal/ceres/subset_preconditioner.cc, dòng 68–115
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const_cast<BlockSparseMatrix *>(&A) (CXXConstCastExpr, NoOp, BlockSparseMatrix *)
+    auto *m = const_cast<BlockSparseMatrix *>(&A)
+    const CompressedRowBlockStructure *bs = m->block_structure()   → 2
+2   if (D != nullptr)                                              đúng → 3   sai → 4
+3   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    m->AppendRows(* regularizer)                                   → 4
+4   if (inner_product_computer_ == nullptr)                        đúng → 5   sai → 6
+5   inner_product_computer_ = InnerProductComputer::Create(*m, options_.subset_preconditioner_start_row_block, bs->rows.size(), sparse_cholesky_->StorageType())   → 6
+6   inner_product_computer_->Compute()                             → 7
+7   if (D != nullptr)                                              đúng → 8   sai → 9
+8   m->DeleteRowBlocks(bs->cols.size())                            → 9
+9   const LinearSolverTerminationType termination_type = sparse_cholesky_->Factorize(inner_product_computer_->mutable_result(), &message)   → 10
+10  if (termination_type != LinearSolverTerminationType::SUCCESS)   đúng → END   sai → 11
+11  return true                                                    → END

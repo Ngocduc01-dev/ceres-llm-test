@@ -6,7 +6,6 @@
   141,
   283
  ],
- "signature": "ceres::GradientChecker::Probe",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1306
+ "order": 1306,
+ "short_name": "Probe",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientChecker",
+ "class_is_template": false,
+ "params": "(const double *const * parameters, double relative_precision, ProbeResults * results_param)",
+ "return_type": "bool",
+ "is_const": true
 }

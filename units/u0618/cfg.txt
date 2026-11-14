@@ -1,0 +1,11 @@
+UNIT u0618
+Hàm: PlusWrapper(const Functor & functor)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::PlusWrapper
+Vị trí: include/ceres/autodiff_manifold.h, dòng 187–187
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PlusWrapper<EuclideanFunctor> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   functor(functor) (Member initializer)   → END

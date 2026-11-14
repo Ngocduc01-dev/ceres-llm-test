@@ -1,0 +1,13 @@
+UNIT u0354
+Hàm: BlockUntilFinished(int num_total_jobs)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockUntilFinished
+Vị trí: internal/ceres/parallel_invoke.cc, dòng 46–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   mutex_() (Member initializer)
+    condition_() (Member initializer)
+    num_total_jobs_finished_(0) (Member initializer)
+    num_total_jobs_(num_total_jobs) (Member initializer)           → END

@@ -6,7 +6,6 @@
   104,
   107
  ],
- "signature": "ceres::internal::AsScalar",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 57
+ "order": 57,
+ "short_name": "AsScalar",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(T&& value)",
+ "return_type": "decltype(auto)",
+ "is_const": false
 }

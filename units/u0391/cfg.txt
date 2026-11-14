@@ -1,0 +1,10 @@
+UNIT u0391
+Hàm: mutable_program()  → trả về Program *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.h, dòng 160–160
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return program_.get()   → END

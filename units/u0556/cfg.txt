@@ -1,0 +1,42 @@
+UNIT u0556
+Hàm: Degree2MaximumSpanningForest(const WeightedGraph<Vertex>& graph)  → trả về std::unique_ptr<WeightedGraph<Vertex>>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/graph_algorithms.h, dòng 260–340
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Degree2MaximumSpanningForest<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 7
+
+START → 1
+1   const std::unordered_set<int> &vertices = graph.vertices()     → 2
+2   for (const int &vertex1 : vertices)                            đúng → 3   sai → 11
+3   const int &vertex1
+    forest->AddVertex(vertex1, graph.VertexWeight(vertex1))
+    disjoint_set[vertex1] = vertex1
+    const std::unordered_set<int> &neighbors = graph.Neighbors(vertex1)   → 4
+4   for (const int &vertex2 : neighbors)                           đúng → 5   sai → 10
+5   const int &vertex2                                             → 6
+6   if (vertex1 >= vertex2)                                        đúng → 7   sai → 9
+7   continue                                                       → 8
+8   ++ (bước tiếp của vòng for)                                    → 4
+9   const double weight = graph.EdgeWeight(vertex1, vertex2)
+    weighted_edges.push_back(std::make_pair(weight, std::make_pair(vertex1, vertex2)))   → 8
+10  ++ (bước tiếp của vòng for)                                    → 2
+11  int i = 0                                                      → 12
+12  vòng for, điều kiện: i < weighted_edges.size()                 đúng → 13   sai → END
+13  const std::pair<int, int> &edge = weighted_edges[i].second
+    const int vertex1 = edge.first
+    const int vertex2 = edge.second                                → 14
+14  if (forest->Neighbors(vertex1).size() == 2) || (forest->Neighbors(vertex2).size() == 2)   đúng → 15   sai → 17
+15  continue                                                       → 16
+16  ++i                                                            → 12
+17  int root1 = FindConnectedComponent(vertex1, &disjoint_set)
+    int root2 = FindConnectedComponent(vertex2, &disjoint_set)     → 18
+18  if (root1 == root2)                                            đúng → 19   sai → 20
+19  continue                                                       → 16
+20  const double edge_weight = graph.EdgeWeight(vertex1, vertex2)
+    forest->AddEdge(vertex1, vertex2, edge_weight)
+    forest->AddEdge(vertex2, vertex1, edge_weight)                 → 21
+21  if (root2 < root1)                                             đúng → 22   sai → 23
+22  std::swap(root1, root2)                                        → 23
+23  disjoint_set[root2] = root1                                    → 16

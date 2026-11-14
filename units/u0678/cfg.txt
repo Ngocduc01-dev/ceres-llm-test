@@ -1,0 +1,11 @@
+UNIT u0678
+Hàm: VertexDegreeLessThan(const Graph<Vertex> & graph)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::VertexDegreeLessThan
+Vị trí: internal/ceres/graph_algorithms.h, dòng 71–71
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VertexDegreeLessThan<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   graph_(graph) (Member initializer)   → END

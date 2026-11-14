@@ -6,7 +6,6 @@
   85,
   85
  ],
- "signature": "ceres::internal::CompressedList::CompressedList",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 242
+ "order": 242,
+ "short_name": "CompressedList",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::CompressedList",
+ "class_is_template": false,
+ "params": "(int num_cells)",
+ "return_type": null,
+ "is_const": false
 }

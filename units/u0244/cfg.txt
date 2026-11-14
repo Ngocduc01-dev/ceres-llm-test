@@ -1,0 +1,10 @@
+UNIT u0244
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: CallbackCostFunction
+Vị trí: internal/ceres/c_api.cc, dòng 82–87
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (*cost_function_)(user_data_, const_cast<double **>(parameters) (CXXConstCastExpr, NoOp, double **), residuals, jacobians)   → END

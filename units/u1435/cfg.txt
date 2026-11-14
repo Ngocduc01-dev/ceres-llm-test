@@ -1,0 +1,16 @@
+UNIT u1435
+Hàm: BlockJacobianWriter(const Evaluator::Options & options, Program * program)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockJacobianWriter
+Vị trí: internal/ceres/block_jacobian_writer.cc, dòng 169–179
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   options_(options) (Member initializer)
+    program_(program) (Member initializer)
+    jacobian_layout_() (Member initializer)
+    jacobian_layout_storage_() (Member initializer)
+    jacobian_layout_is_valid_(?) (Member initializer)              → 2
+2   CHECK_GE(options.num_eliminate_blocks, 0)                      đúng → 3   sai → DỪNG
+3   jacobian_layout_is_valid_ = BuildJacobianLayout(*program, options.num_eliminate_blocks, &jacobian_layout_, &jacobian_layout_storage_)   → END

@@ -1,0 +1,11 @@
+UNIT u0066
+Hàm: VariadicEvaluate(const Functor& functor, T const* const* input, T* output)  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: include/ceres/internal/variadic_evaluate.h, dòng 102–107
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VariadicEvaluate<ParameterDims<false, 2, 2>, BinaryScalarCost, double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return VariadicEvaluateImpl<ceres::internal::ParameterDims<false, 2, 2>>(functor, input, output, &functor)   → END

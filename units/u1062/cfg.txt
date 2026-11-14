@@ -1,0 +1,87 @@
+UNIT u1062
+Hàm: MatrixTransposeMatrixMultiplyNaive(xem mã nguồn – hàm được sinh ra từ macro)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/small_blas.h, dòng 280–351
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixTransposeMatrixMultiplyNaive<-1, -1, -1, -1, 1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 10 (và 11 lệnh CHECK)
+
+START → 1
+1   CERES_GEMM_NAIVE_HEADER                                        đúng → 2   sai → DỪNG
+2   CERES_GEMM_NAIVE_HEADER                                        đúng → 3   sai → DỪNG
+3   CERES_GEMM_NAIVE_HEADER                                        đúng → 4   sai → DỪNG
+4   CERES_GEMM_NAIVE_HEADER                                        đúng → 5   sai → DỪNG
+5   CERES_GEMM_NAIVE_HEADER                                        đúng → 6   sai → DỪNG
+6   CERES_GEMM_NAIVE_HEADER                                        đúng → 7   sai → DỪNG
+7   CERES_GEMM_NAIVE_HEADER                                        đúng → 8   sai → DỪNG
+8   CERES_GEMM_NAIVE_HEADER                                        đúng → 9   sai → DỪNG
+9   (-1 == Eigen::Dynamic) || ...                                  → 10
+10  !((__builtin_expect(!((-1 == Eigen::Dynamic) || (-1 == num_row_a)), 0))) ? ... : ...   → 11
+11  !((__builtin_expect(!((-1 == Eigen::Dynamic) || (-1 == num_col_a)), 0))) ? ... : ...   → 12
+12  !((__builtin_expect(!((-1 == Eigen::Dynamic) || (-1 == num_row_b)), 0))) ? ... : ...   → 13
+13  !((__builtin_expect(!((-1 == Eigen::Dynamic) || (-1 == num_col_b)), 0))) ? ... : ...   → 14
+14  const int NUM_ROW_A = (-1 != Eigen::Dynamic ? -1 : num_row_a)
+    -1 != Eigen::Dynamic ? ... : ...                               → 15
+15  const int NUM_COL_A = (-1 != Eigen::Dynamic ? -1 : num_col_a)
+    -1 != Eigen::Dynamic ? ... : ...                               → 16
+16  const int NUM_ROW_B = (-1 != Eigen::Dynamic ? -1 : num_row_b)
+    -1 != Eigen::Dynamic ? ... : ...                               → 17
+17  const int NUM_COL_B = (-1 != Eigen::Dynamic ? -1 : num_col_b)   → 18
+18  DCHECK_EQ(NUM_ROW_A, NUM_ROW_B)                                đúng → 19   sai → DỪNG
+19  const int NUM_ROW_C = NUM_COL_A
+    const int NUM_COL_C = NUM_COL_B                                → 20
+20  DCHECK_LE(start_row_c + NUM_ROW_C, row_stride_c)               đúng → 21   sai → DỪNG
+21  DCHECK_LE(start_col_c + NUM_COL_C, col_stride_c)               đúng → 22   sai → DỪNG
+22  const int span = 4                                             → 23
+23  if (NUM_COL_C & 1)                                             đúng → 24   sai → 35
+24  int col = NUM_COL_C - 1
+    int row = 0                                                    → 25
+25  vòng for, điều kiện: row < NUM_ROW_C                           đúng → 26   sai → 33
+26  const double *pa = &A[row]
+    const double *pb = &B[col]
+    double tmp = 0.
+    int k = 0                                                      → 27
+27  vòng for, điều kiện: k < NUM_ROW_A                             đúng → 28   sai → 30
+28  tmp += pa[0] * pb[0]
+    pa += NUM_COL_A
+    pb += NUM_COL_B                                                → 29
+29  ++k                                                            → 27
+30  const int index = (row + start_row_c) * col_stride_c + start_col_c + col
+    if 1 > 0                                                       → 31
+31  C[index] += tmp                                                → 32
+32  ++row                                                          → 25
+33  if (NUM_COL_C == 1)                                            đúng → 34   sai → 35
+34  return                                                         → END
+35  if (NUM_COL_C & 2)                                             đúng → 36   sai → 47
+36  int col = NUM_COL_C & (~(span - 1))
+    int row = 0                                                    → 37
+37  vòng for, điều kiện: row < NUM_ROW_C                           đúng → 38   sai → 45
+38  const double *pa = &A[row]
+    const double *pb = &B[col]
+    double tmp1 = 0.
+    double tmp2 = 0.
+    int k = 0                                                      → 39
+39  vòng for, điều kiện: k < NUM_ROW_A                             đúng → 40   sai → 42
+40  double av = *pa
+    tmp1 += av * pb[0]
+    tmp2 += av * pb[1]
+    pa += NUM_COL_A
+    pb += NUM_COL_B                                                → 41
+41  ++k                                                            → 39
+42  const int index = (row + start_row_c) * col_stride_c + start_col_c + col
+    if 1 > 0                                                       → 43
+43  C[index] += tmp1
+    C[index + 1] += tmp2                                           → 44
+44  ++row                                                          → 37
+45  if (NUM_COL_C < span)                                          đúng → 46   sai → 47
+46  return                                                         → END
+47  int col_m = NUM_COL_C & (~(span - 1))
+    int col = 0                                                    → 48
+48  vòng for, điều kiện: col < col_m                               đúng → 49   sai → END
+49  int row = 0                                                    → 50
+50  vòng for, điều kiện: row < NUM_ROW_C                           đúng → 51   sai → 53
+51  const int index = (row + start_row_c) * col_stride_c + start_col_c + col
+    MTM_mat1x4(NUM_ROW_A, &A[row], NUM_COL_A, &B[col], NUM_COL_B, &C[index], 1)   → 52
+52  ++row                                                          → 50
+53  col += span                                                    → 48

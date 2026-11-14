@@ -6,7 +6,6 @@
   116,
   154
  ],
- "signature": "ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1189
+ "order": 1189,
+ "short_name": "BlockCRSJacobiPreconditioner",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockCRSJacobiPreconditioner",
+ "class_is_template": false,
+ "params": "(Preconditioner::Options options, const CompressedRowSparseMatrix & A)",
+ "return_type": null,
+ "is_const": false
 }

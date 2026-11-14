@@ -6,7 +6,6 @@
   253,
   270
  ],
- "signature": "ceres::internal::DifferentiatePolynomial",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 752
+ "order": 752,
+ "short_name": "DifferentiatePolynomial",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Vector & polynomial)",
+ "return_type": "Vector",
+ "is_const": false
 }

@@ -1,0 +1,23 @@
+UNIT u1105
+Hàm: BlockOrderingToScalarOrdering(const std::vector<Block> & blocks, const std::vector<int> & block_ordering, std::vector<int> * scalar_ordering)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/compressed_col_sparse_matrix_utils.cc, dòng 91–106
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(blocks.size(), block_ordering.size())                 đúng → 2   sai → DỪNG
+2   const int num_blocks = blocks.size()
+    scalar_ordering->resize(NumScalarEntries(blocks))
+    int cursor = 0
+    int i = 0                                                      → 3
+3   vòng for, điều kiện: i < num_blocks                            đúng → 4   sai → END
+4   const int block_id = block_ordering[i]
+    const int block_size = blocks[block_id].size
+    int block_position = blocks[block_id].position
+    int j = 0                                                      → 5
+5   vòng for, điều kiện: j < block_size                            đúng → 6   sai → 8
+6   (*scalar_ordering)[cursor++] = block_position++                → 7
+7   ++j                                                            → 5
+8   ++i                                                            → 3

@@ -1,0 +1,20 @@
+UNIT u1113
+Hàm: StringToNumericDiffMethodType(std::string value, NumericDiffMethodType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 317–324
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   UpperCase(&value)              → 2
+2   if (value == "CENTRAL")        đúng → 3   sai → 4
+3   *type = CENTRAL
+    return true                    → END
+4   if (value == "FORWARD")        đúng → 5   sai → 6
+5   *type = FORWARD
+    return true                    → END
+6   if (value == "RIDDERS")        đúng → 7   sai → 8
+7   *type = RIDDERS
+    return true                    → END
+8   return false                   → END

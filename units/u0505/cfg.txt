@@ -1,0 +1,20 @@
+UNIT u0505
+Hàm: SolveUpperTriangularTransposeInPlace(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, double* rhs_and_solution)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/compressed_col_sparse_matrix_utils.h, dòng 95–109
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SolveUpperTriangularTransposeInPlace<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   int c = 0                                                      → 2
+2   vòng for, điều kiện: c < num_cols                              đúng → 3   sai → END
+3   int idx = cols[c]                                              → 4
+4   vòng for, điều kiện: idx < cols[c + 1] - 1                     đúng → 5   sai → 7
+5   const int r = rows[idx]
+    const double v = values[idx]
+    rhs_and_solution[c] -= v * rhs_and_solution[r]                 → 6
+6   ++idx                                                          → 4
+7   rhs_and_solution[c] = rhs_and_solution[c] / values[cols[c + 1] - 1]   → 8
+8   ++c                                                            → 2

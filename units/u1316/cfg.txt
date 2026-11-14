@@ -1,0 +1,38 @@
+UNIT u1316
+Hàm: OptionsAreValidForSparseCholeskyBasedSolver(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 141–197
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   const char *library_name = SparseLinearAlgebraLibraryTypeToString(options.sparse_linear_algebra_library_type)   → 2
+2   IsIterativeSolver(options.linear_solver_type) ? ... : ...      đúng → 3   sai → 3
+3   const char *solver_name = IsIterativeSolver(options.linear_solver_type) ? PreconditionerTypeToString(options.preconditioner_type) : LinearSolverTypeToString(options.linear_solver_type)
+    constexpr char kNoSparseFormat[] = "Can't use %s with sparse_linear_algebra_library_type = %s."
+    constexpr char kNoLibraryFormat[] = "Can't use %s sparse_linear_algebra_library_type = %s, because support was not enabled when Ceres Solver was built."
+    constexpr char kNoNesdisFormat[] = "NESDIS is not available with sparse_linear_algebra_library_type = %s."
+    constexpr char kMixedFormat[] = "use_mixed_precision_solves with %s is not supported with sparse_linear_algebra_library_type = %s"
+    constexpr char kDynamicSparsityFormat[] = "dynamic sparsity is not supported with sparse_linear_algebra_library_type = %s"   → 4
+4   if (options.sparse_linear_algebra_library_type == NO_SPARSE)   đúng → 5   sai → 6
+5   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf(kNoSparseFormat, solver_name, library_name)
+    return false                                                   → END
+6   if (!IsSparseLinearAlgebraLibraryTypeAvailable(options.sparse_linear_algebra_library_type))   đúng → 7   sai → 8
+7   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf(kNoLibraryFormat, solver_name, library_name)
+    return false                                                   → END
+8   if (options.linear_solver_ordering_type == ceres::NESDIS && !IsNestedDissectionAvailable(options.sparse_linear_algebra_library_type))   đúng → 9   sai → 10
+9   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf(kNoNesdisFormat, library_name)
+    return false                                                   → END
+10  if (options.use_mixed_precision_solves && options.sparse_linear_algebra_library_type == SUITE_SPARSE)   đúng → 11   sai → 12
+11  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf(kMixedFormat, solver_name, library_name)
+    return false                                                   → END
+12  if (options.dynamic_sparsity && options.sparse_linear_algebra_library_type == ACCELERATE_SPARSE)   đúng → 13   sai → 14
+13  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf(kDynamicSparsityFormat, library_name)
+    return false                                                   → END
+14  return true                                                    → END

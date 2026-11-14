@@ -1,0 +1,14 @@
+UNIT u0687
+Hàm: PowerSeriesExpansionPreconditioner(const ImplicitSchurComplement * isc, const int max_num_spse_iterations, const double spse_tolerance, const Preconditioner::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::PowerSeriesExpansionPreconditioner
+Vị trí: internal/ceres/power_series_expansion_preconditioner.cc, dòng 39–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Preconditioner() (Base initializer)
+    isc_(isc) (Member initializer)
+    max_num_spse_iterations_(max_num_spse_iterations) (Member initializer)
+    spse_tolerance_(spse_tolerance) (Member initializer)
+    options_(options) (Member initializer)                         → END

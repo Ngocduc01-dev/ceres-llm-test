@@ -6,7 +6,6 @@
   516,
   517
  ],
- "signature": "ceres::IsNormal",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 99
+ "order": 99,
+ "short_name": "IsNormal",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(double x)",
+ "return_type": "bool",
+ "is_const": false
 }

@@ -1,0 +1,9 @@
+UNIT u0249
+Hàm: ~GradientProblemSolverStateUpdatingCallback()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::GradientProblemSolverStateUpdatingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 65–66
+
+Số điểm rẽ nhánh: 0
+
+START → END

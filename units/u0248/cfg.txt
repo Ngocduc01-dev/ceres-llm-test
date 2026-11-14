@@ -1,0 +1,13 @@
+UNIT u0248
+Hàm: GradientProblemSolverStateUpdatingCallback(int num_parameters, const double * internal_parameters, double * user_parameters)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::GradientProblemSolverStateUpdatingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 56–63
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   IterationCallback() (Base initializer)
+    num_parameters_(num_parameters) (Member initializer)
+    internal_parameters_(internal_parameters) (Member initializer)
+    user_parameters_(user_parameters) (Member initializer)         → END

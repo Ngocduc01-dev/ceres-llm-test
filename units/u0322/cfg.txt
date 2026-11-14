@@ -1,0 +1,12 @@
+UNIT u0322
+Hàm: StepRejected(double)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LevenbergMarquardtStrategy
+Vị trí: internal/ceres/levenberg_marquardt_strategy.cc, dòng 166–170
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   radius_ = radius_ / decrease_factor_
+    decrease_factor_ *= 2.
+    reuse_diagonal_ = true                                         → END

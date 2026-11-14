@@ -1,0 +1,17 @@
+UNIT u1310
+Hàm: OptionsAreValidForDenseSolver(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 123–139
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const char *library_name = DenseLinearAlgebraLibraryTypeToString(options.dense_linear_algebra_library_type)
+    const char *solver_name = LinearSolverTypeToString(options.linear_solver_type)
+    constexpr char kFormat[] = "Can't use %s with dense_linear_algebra_library_type = %s because support not enabled when Ceres was built."   → 2
+2   if (!IsDenseLinearAlgebraLibraryTypeAvailable(options.dense_linear_algebra_library_type))   đúng → 3   sai → 4
+3   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf(kFormat, solver_name, library_name)
+    return false                                                   → END
+4   return true                                                    → END

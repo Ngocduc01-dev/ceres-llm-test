@@ -6,7 +6,6 @@
   109,
   115
  ],
- "signature": "ceres::internal::WeightedGraph::AddVertex",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 714
+ "order": 714,
+ "short_name": "AddVertex",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
+ "params": "(const Vertex & vertex, double weight)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   136,
   154
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterTridiagonalSparsity",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1479
+ "order": 1479,
+ "short_name": "ComputeClusterTridiagonalSparsity",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const CompressedRowBlockStructure & bs)",
+ "return_type": "void",
+ "is_const": false
 }

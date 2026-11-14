@@ -1,0 +1,10 @@
+UNIT u0795
+Hàm: lhs() const  → trả về const BlockRandomAccessMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.h, dòng 131–131
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return lhs_.get()   → END

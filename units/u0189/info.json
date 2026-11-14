@@ -6,7 +6,6 @@
   250,
   250
  ],
- "signature": "ceres::NumericDiffCostFunction::functor",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 189
+ "order": 189,
+ "short_name": "functor",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::NumericDiffCostFunction",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const CostFunctor &",
+ "is_const": true
 }

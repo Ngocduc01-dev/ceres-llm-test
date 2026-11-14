@@ -1,0 +1,75 @@
+UNIT u0815
+Hàm: CommonOptionsAreValid(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 97–109
+
+Số điểm rẽ nhánh: 9
+
+START → 1
+1   if (!(options.max_num_iterations >= 0))                        đúng → 2   sai → 3
+2   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_num_iterations = ") << options.max_num_iterations << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_num_iterations >= 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+3   if (!(options.max_solver_time_in_seconds >= 0.))               đúng → 4   sai → 5
+4   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_solver_time_in_seconds = ") << options.max_solver_time_in_seconds << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_solver_time_in_seconds >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+5   if (!(options.function_tolerance >= 0.))                       đúng → 6   sai → 7
+6   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::function_tolerance = ") << options.function_tolerance << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::function_tolerance >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+7   if (!(options.gradient_tolerance >= 0.))                       đúng → 8   sai → 9
+8   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::gradient_tolerance = ") << options.gradient_tolerance << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::gradient_tolerance >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+9   if (!(options.parameter_tolerance >= 0.))                      đúng → 10   sai → 11
+10  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::parameter_tolerance = ") << options.parameter_tolerance << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::parameter_tolerance >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+11  if (!(options.num_threads > 0))                                đúng → 12   sai → 13
+12  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::num_threads = ") << options.num_threads << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::num_threads > 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+13  if (options.check_gradients)                                   đúng → 14   sai → 18
+14  if (!(options.gradient_check_relative_precision > 0.))         đúng → 15   sai → 16
+15  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::gradient_check_relative_precision = ") << options.gradient_check_relative_precision << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::gradient_check_relative_precision > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+16  if (!(options.gradient_check_numeric_derivative_relative_step_size > 0.))   đúng → 17   sai → 18
+17  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::gradient_check_numeric_derivative_relative_step_size = ") << options.gradient_check_numeric_derivative_relative_step_size << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::gradient_check_numeric_derivative_relative_step_size > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+18  return true                                                    → END

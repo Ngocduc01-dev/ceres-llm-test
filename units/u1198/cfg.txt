@@ -1,0 +1,21 @@
+UNIT u1198
+Hàm: TripletSparseMatrix(const int num_rows, const int num_cols, const std::vector<int> & rows, const std::vector<int> & cols, const std::vector<double> & values)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 65–83
+
+Số điểm rẽ nhánh: 0 (và 4 lệnh CHECK)
+
+START → 1
+1   SparseMatrix() (Base initializer)
+    num_rows_(num_rows) (Member initializer)
+    num_cols_(num_cols) (Member initializer)
+    max_num_nonzeros_(values.size()) (Member initializer)
+    rows_() (Member initializer)
+    cols_() (Member initializer)
+    values_() (Member initializer)                                 → 2
+2   CHECK_GE(num_rows, 0)                                          đúng → 3   sai → DỪNG
+3   CHECK_GE(num_cols, 0)                                          đúng → 4   sai → DỪNG
+4   CHECK_EQ(rows.size(), cols.size())                             đúng → 5   sai → DỪNG
+5   CHECK_EQ(rows.size(), values.size())                           đúng → 6   sai → DỪNG
+6   AllocateMemory()                                               → END

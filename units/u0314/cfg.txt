@@ -1,0 +1,10 @@
+UNIT u0314
+Hàm: rhs() const  → trả về const Vector &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.h, dòng 139–139
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return rhs_   → END

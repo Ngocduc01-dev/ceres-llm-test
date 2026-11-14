@@ -6,7 +6,6 @@
   46,
   62
  ],
- "signature": "ceres::internal::Norm",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 851
+ "order": 851,
+ "short_name": "Norm",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Eigen::DenseBase<Derived>& x, ContextImpl* context, int num_threads)",
+ "return_type": "double",
+ "is_const": false
 }

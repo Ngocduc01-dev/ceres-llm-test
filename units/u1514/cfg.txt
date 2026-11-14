@@ -1,0 +1,21 @@
+UNIT u1514
+Hàm: ProgramEvaluator(const Evaluator::Options & options, Program * program)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ProgramEvaluator
+Vị trí: internal/ceres/program_evaluator.h, dòng 117–127
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Evaluator() (Base initializer)
+    options_(options) (Member initializer)
+    program_(program) (Member initializer)
+    jacobian_writer_(options, program) (Member initializer)
+    evaluate_preparers_(std::move(jacobian_writer_.CreateEvaluatePreparers(options.num_threads))) (Member initializer)
+    evaluate_scratch_() (Member initializer)
+    residual_layout_() (Member initializer)
+    num_parameters_(program->NumEffectiveParameters()) (Member initializer)
+    execution_summary_() (Member initializer)
+    BuildResidualLayout(*program, &residual_layout_)
+    evaluate_scratch_ = std::move(CreateEvaluatorScratch(*program, static_cast<unsigned int>(options.num_threads)))   → END

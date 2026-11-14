@@ -1,0 +1,14 @@
+UNIT u1288
+Hàm: GetParameterBlocksForResidualBlock(const ResidualBlockId residual_block, std::vector<double *> * parameter_blocks) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 843–853
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   int num_parameter_blocks = residual_block->NumParameterBlocks()   → 2
+2   CHECK(parameter_blocks != nullptr)                             đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 4   sai → END
+4   (*parameter_blocks)[i] = residual_block->parameter_blocks()[i]->mutable_user_state()   → 5
+5   ++i                                                            → 3

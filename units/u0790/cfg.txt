@@ -1,0 +1,32 @@
+UNIT u0790
+Hàm: GradientProblemSolverOptionsToSolverOptions(const GradientProblemSolver::Options & options)  → trả về Solver::Options
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/gradient_problem_solver.cc, dòng 56–86
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   solver_options.minimizer_type = LINE_SEARCH
+    solver_options.line_search_direction_type = options.line_search_direction_type
+    solver_options.line_search_type = options.line_search_type
+    solver_options.nonlinear_conjugate_gradient_type = options.nonlinear_conjugate_gradient_type
+    solver_options.max_lbfgs_rank = options.max_lbfgs_rank
+    solver_options.use_approximate_eigenvalue_bfgs_scaling = options.use_approximate_eigenvalue_bfgs_scaling
+    solver_options.line_search_interpolation_type = options.line_search_interpolation_type
+    solver_options.min_line_search_step_size = options.min_line_search_step_size
+    solver_options.line_search_sufficient_function_decrease = options.line_search_sufficient_function_decrease
+    solver_options.max_line_search_step_contraction = options.max_line_search_step_contraction
+    solver_options.min_line_search_step_contraction = options.min_line_search_step_contraction
+    solver_options.max_num_line_search_step_size_iterations = options.max_num_line_search_step_size_iterations
+    solver_options.max_num_line_search_direction_restarts = options.max_num_line_search_direction_restarts
+    solver_options.line_search_sufficient_curvature_decrease = options.line_search_sufficient_curvature_decrease
+    solver_options.max_line_search_step_expansion = options.max_line_search_step_expansion
+    solver_options.max_num_iterations = options.max_num_iterations
+    solver_options.max_solver_time_in_seconds = options.max_solver_time_in_seconds
+    solver_options.parameter_tolerance = options.parameter_tolerance
+    solver_options.function_tolerance = options.function_tolerance
+    solver_options.gradient_tolerance = options.gradient_tolerance
+    solver_options.logging_type = options.logging_type
+    solver_options.minimizer_progress_to_stdout = options.minimizer_progress_to_stdout
+    solver_options.callbacks = options.callbacks                   → END

@@ -1,0 +1,10 @@
+UNIT u0961
+Hàm: options() const  → trả về const LineSearch::Options &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearch
+Vị trí: internal/ceres/line_search.h, dòng 194–194
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return options_   → END

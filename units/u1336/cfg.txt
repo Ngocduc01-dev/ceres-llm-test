@@ -1,0 +1,10 @@
+UNIT u1336
+Hàm: NumParameterBlocks() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 163–163
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->NumParameterBlocks()   → END

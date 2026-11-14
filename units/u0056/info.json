@@ -6,7 +6,6 @@
   84,
   90
  ],
- "signature": "ceres::internal::ApplyHouseholderVector",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 56
+ "order": 56,
+ "short_name": "ApplyHouseholderVector",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const XVectorType& y, const Eigen::MatrixBase<Derived>& v, const typename Derived::Scalar& beta)",
+ "return_type": "typename Derived::PlainObject",
+ "is_const": false
 }

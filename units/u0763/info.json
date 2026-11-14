@@ -6,7 +6,6 @@
   341,
   367
  ],
- "signature": "ceres::internal::LineSearchDirection::Create",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 763
+ "order": 763,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearchDirection",
+ "class_is_template": false,
+ "params": "(const LineSearchDirection::Options & options)",
+ "return_type": "std::unique_ptr<LineSearchDirection>",
+ "is_const": false
 }

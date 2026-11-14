@@ -1,0 +1,10 @@
+UNIT u1341
+Hàm: GetCostFunctionForResidualBlock(const ResidualBlockId residual_block) const  → trả về const CostFunction *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 198–201
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->GetCostFunctionForResidualBlock(residual_block)   → END

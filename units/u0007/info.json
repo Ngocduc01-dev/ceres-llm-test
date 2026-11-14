@@ -6,7 +6,6 @@
   158,
   162
  ],
- "signature": "ceres::AutoDiffManifold::Plus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 7
+ "order": 7,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
+ "params": "(const double * x, const double * delta, double * x_plus_delta)",
+ "return_type": "bool",
+ "is_const": true
 }

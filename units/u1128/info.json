@@ -6,7 +6,6 @@
   220,
   330
  ],
- "signature": "ceres::TinySolver::Solve",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1128
+ "order": 1128,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolver",
+ "class_is_template": true,
+ "params": "(const Function & function, Parameters * x_and_min)",
+ "return_type": "const Summary &",
+ "is_const": false
 }

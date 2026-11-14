@@ -1,0 +1,11 @@
+UNIT u1468
+Hàm: CreateOrdering(const Program & program)  → trả về std::shared_ptr<ParameterBlockOrdering>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CoordinateDescentMinimizer
+Vị trí: internal/ceres/coordinate_descent_minimizer.cc, dòng 265–271
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ComputeRecursiveIndependentSetOrdering(program, ordering.get())
+    ordering->Reverse()                                            → END

@@ -1,0 +1,62 @@
+UNIT u1505
+Hàm: BracketingPhase(const FunctionSample & initial_position, const double step_size_estimate, FunctionSample * bracket_low, FunctionSample * bracket_high, bool * do_zoom_search, Summary * summary) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::WolfeLineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 499–692
+
+Số điểm rẽ nhánh: 14 (và 1 lệnh CHECK)
+
+START → 1
+1   LineSearchFunction *function = options().function
+    const double descent_direction_max_norm = function->DirectionInfinityNorm()
+    *do_zoom_search = false
+    *bracket_low = initial_position
+    ++summary->num_function_evaluations
+    ++summary->num_gradient_evaluations
+    const bool kEvaluateGradient = true
+    function->Evaluate(step_size_estimate, kEvaluateGradient, &current)   → 2
+2   while true                                                     → 3
+3   ++summary->num_iterations                                      → 4
+4   if (current.value_is_valid && (current.value > (initial_position.value + options().sufficient_decrease * initial_position.gradient * current.x) || (previous.value_is_valid && current.value > previous.value)))   đúng → 5   sai → 9
+5   *do_zoom_search = true
+    *bracket_low = previous
+    *bracket_high = current                                        → 6
+6   if (*do_zoom_search && fabs(bracket_high->x - bracket_low->x) * descent_direction_max_norm < options().min_step_size)   đúng → 7   sai → 8
+7   *do_zoom_search = false                                        → 8
+8   return true                                                    → END
+9   if (current.value_is_valid && fabs(current.gradient) <= -options().sufficient_curvature_decrease * initial_position.gradient)   đúng → 10   sai → 11
+10  *bracket_low = current
+    *bracket_high = current                                        → 6
+11  if (current.value_is_valid && current.gradient >= 0)           đúng → 12   sai → 13
+12  *do_zoom_search = true
+    *bracket_low = current
+    *bracket_high = previous                                       → 6
+13  if (current.value_is_valid && fabs(current.x - previous.x) * descent_direction_max_norm < options().min_step_size)   đúng → 14   sai → 16
+14  if (!options().is_silent)                                      đúng → 15   sai → 15
+15  *bracket_low = current
+    break                                                          → 6
+16  if (summary->num_iterations >= options().max_num_iterations)   đúng → 17   sai → 21
+17  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: Wolfe bracketing phase failed to find a point satisfying strong Wolfe conditions, or a bracket containing such a point within specified max_num_iterations: %d", options().max_num_iterations)   → 18
+18  if (!options().is_silent)                                      đúng → 19   sai → 19
+19  current.value_is_valid && current.value < bracket_low->value ? ... : ...   đúng → 20   sai → 20
+20  *bracket_low = current.value_is_valid && current.value < bracket_low->value ? current : *bracket_low
+    break                                                          → 6
+21  current.value_is_valid ? ... : ...                             đúng → 22   sai → 22
+22  const double min_step_size = current.value_is_valid ? current.x : previous.x   → 23
+23  current.value_is_valid ? ... : ...                             đúng → 24   sai → 24
+24  const double max_step_size = current.value_is_valid ? (current.x * options().max_step_expansion) : current.x   → 25
+25  DCHECK(!unused_previous.value_is_valid)                        đúng → 26   sai → DỪNG
+26  const double polynomial_minimization_start_time = WallTimeInSeconds()
+    const double step_size = InterpolatingPolynomialMinimizingStepSize(options().interpolation_type, previous, unused_previous, current, min_step_size, max_step_size)
+    summary->polynomial_minimization_time_in_seconds += (WallTimeInSeconds() - polynomial_minimization_start_time)   → 27
+27  if (step_size * descent_direction_max_norm < options().min_step_size)   đúng → 28   sai → 31
+28  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: step_size too small: %.5e with descent_direction_max_norm: %.5e", step_size, descent_direction_max_norm)   → 29
+29  if (!options().is_silent)                                      đúng → 30   sai → 30
+30  return false                                                   → END
+31  current.value_is_valid ? ... : ...                             đúng → 32   sai → 32
+32  previous = current.value_is_valid ? current : previous
+    ++summary->num_function_evaluations
+    ++summary->num_gradient_evaluations
+    function->Evaluate(step_size, kEvaluateGradient, &current)     → 2

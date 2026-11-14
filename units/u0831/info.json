@@ -6,7 +6,6 @@
   552,
   555
  ],
- "signature": "ceres::internal::BlockSparseMatrix::transpose_block_structure",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 831
+ "order": 831,
+ "short_name": "transpose_block_structure",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const CompressedRowBlockStructure *",
+ "is_const": true
 }

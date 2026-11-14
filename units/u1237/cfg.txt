@@ -1,0 +1,15 @@
+UNIT u1237
+Hàm: CreatePreconditioner(BlockSparseMatrix * A)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::IterativeSchurComplementSolver
+Vị trí: internal/ceres/iterative_schur_complement_solver.cc, dòng 158–198
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   if (preconditioner_ != nullptr)                                đúng → 2   sai → 3
+2   return                                                         → END
+3   CHECK(options_.context != nullptr)                             đúng → 4   sai → DỪNG
+4   LOG(FATAL)                                                     đúng → 5   sai → DỪNG
+5   preconditioner_ = std::make_unique<VisibilityBasedPreconditioner>(*A->block_structure(), preconditioner_options)
+    break                                                          → END

@@ -1,0 +1,11 @@
+UNIT u0210
+Hàm: EulerAnglesToRotationMatrix(const T* euler, const int row_stride_parameter, T* R)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 631–636
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EulerAnglesToRotationMatrix<double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   EulerAnglesToRotationMatrix(euler, RowMajorAdapter3x3(R))   → END

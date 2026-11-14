@@ -6,7 +6,6 @@
   495,
   526
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 809
+ "order": 809,
+ "short_name": "CreateClusterGraph",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const std::vector<std::set<int>> & cluster_visibility)",
+ "return_type": "std::unique_ptr<WeightedGraph<int>>",
+ "is_const": true
 }

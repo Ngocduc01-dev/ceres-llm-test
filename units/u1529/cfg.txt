@@ -1,0 +1,41 @@
+UNIT u1529
+Hàm: CreateGradientCheckingProblemImpl(ProblemImpl * problem_impl, double relative_step_size, double relative_precision, GradientCheckingIterationCallback * callback)  → trả về std::unique_ptr<ProblemImpl>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 168–278
+
+Số điểm rẽ nhánh: 6 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(callback != nullptr)                                     đúng → 2   sai → DỪNG
+2   for (auto *parameter_block : parameter_blocks)                 đúng → 3   sai → 11
+3   auto *parameter_block
+    gradient_checking_problem_impl->AddParameterBlock(parameter_block->mutable_user_state(), parameter_block->Size(), parameter_block->mutable_manifold())   → 4
+4   if (parameter_block->IsConstant())                             đúng → 5   sai → 6
+5   gradient_checking_problem_impl->SetParameterBlockConstant(parameter_block->mutable_user_state())   → 6
+6   int i = 0                                                      → 7
+7   vòng for, điều kiện: i < parameter_block->Size()               đúng → 8   sai → 10
+8   gradient_checking_problem_impl->SetParameterUpperBound(parameter_block->mutable_user_state(), i, parameter_block->UpperBound(i))
+    gradient_checking_problem_impl->SetParameterLowerBound(parameter_block->mutable_user_state(), i, parameter_block->LowerBound(i))   → 9
+9   ++i                                                            → 7
+10  ++ (bước tiếp của vòng for)                                    → 2
+11  const std::vector<ResidualBlock *> &residual_blocks = program->residual_blocks()
+    int i = 0                                                      → 12
+12  vòng for, điều kiện: i < residual_blocks.size()                đúng → 13   sai → 21
+13  ResidualBlock *residual_block = residual_blocks[i]
+    parameter_blocks.reserve(residual_block->NumParameterBlocks())
+    manifolds.reserve(residual_block->NumParameterBlocks())
+    int j = 0                                                      → 14
+14  vòng for, điều kiện: j < residual_block->NumParameterBlocks()   đúng → 15   sai → 19
+15  ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]
+    parameter_blocks.push_back(parameter_block->mutable_user_state())
+    StringAppendF(&extra_info, "%p", parameter_block->mutable_user_state())   → 16
+16  (j < residual_block->NumParameterBlocks() - 1) ? ... : ...     đúng → 17   sai → 17
+17  extra_info += (j < residual_block->NumParameterBlocks() - 1) ? ", " : "]"
+    manifolds.push_back(problem_impl->GetManifold(parameter_block->mutable_user_state()))   → 18
+18  ++j                                                            → 14
+19  CFGNewAllocator(GradientCheckingCostFunction *)
+    CostFunction *gradient_checking_cost_function = new GradientCheckingCostFunction(residual_block->cost_function(), &manifolds, numeric_diff_options, relative_precision, extra_info, callback)
+    gradient_checking_problem_impl->AddResidualBlock(gradient_checking_cost_function, const_cast<LossFunction *>(residual_block->loss_function()) (CXXConstCastExpr, NoOp, LossFunction *), parameter_blocks.data(), static_cast<int>(parameter_blocks.size()))   → 20
+20  ++i                                                            → 12
+21  gradient_checking_problem_impl->mutable_program()->SetParameterBlockStatePtrsToUserStatePtrs()   → END

@@ -1,0 +1,16 @@
+UNIT u1279
+Hàm: MaxSolverIterationsReached()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 660–675
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (iteration_summary_.iteration < options_.max_num_iterations)   đúng → 2   sai → 3
+2   return false                                                   → END
+3   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    solver_summary_->message = StringPrintf("Maximum number of iterations reached. Number of iterations: %d.", iteration_summary_.iteration)
+    solver_summary_->termination_type = NO_CONVERGENCE             → 4
+4   if (is_not_silent_)                                            đúng → 5   sai → 5
+5   return true                                                    → END

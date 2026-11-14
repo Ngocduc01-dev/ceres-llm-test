@@ -1,0 +1,20 @@
+UNIT u1493
+Hàm: Solve(Program * program, LinearSolver * linear_solver, double * parameter, Solver::Summary * summary)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CoordinateDescentMinimizer
+Vị trí: internal/ceres/coordinate_descent_minimizer.cc, dòng 211–237
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   *summary = Solver::Summary()
+    summary->initial_cost = 0.
+    summary->fixed_cost = 0.
+    summary->final_cost = 0.
+    minimizer_options.evaluator = Evaluator::Create(evaluator_options_, program, &error)   → 2
+2   CHECK(minimizer_options.evaluator != nullptr)                  đúng → 3   sai → DỪNG
+3   minimizer_options.jacobian = minimizer_options.evaluator->CreateJacobian()   → 4
+4   CHECK(minimizer_options.jacobian != nullptr)                   đúng → 5   sai → DỪNG
+5   trs_options.linear_solver = linear_solver
+    minimizer_options.trust_region_strategy = TrustRegionStrategy::Create(trs_options)   → 6
+6   CHECK(minimizer_options.trust_region_strategy != nullptr)      đúng → END   sai → DỪNG

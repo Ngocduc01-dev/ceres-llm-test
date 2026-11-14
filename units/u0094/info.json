@@ -6,7 +6,6 @@
   414,
   414
  ],
- "signature": "ceres::operator==",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 94
+ "order": 94,
+ "short_name": "operator==",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "bool",
+ "is_const": false
 }

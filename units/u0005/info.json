@@ -6,7 +6,6 @@
   155,
   155
  ],
- "signature": "ceres::AutoDiffManifold::AmbientSize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 5
+ "order": 5,
+ "short_name": "AmbientSize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

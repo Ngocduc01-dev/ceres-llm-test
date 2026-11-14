@@ -1,0 +1,12 @@
+UNIT u0695
+Hàm: BiCubicInterpolator(const Grid & grid)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::BiCubicInterpolator
+Vị trí: include/ceres/cubic_interpolation.h, dòng 254–259
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp BiCubicInterpolator<Grid2D<double>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   grid_(grid) (Member initializer)     → 2
+2   CHECK_GE(+Grid::DATA_DIMENSION, 1)   đúng → END   sai → DỪNG

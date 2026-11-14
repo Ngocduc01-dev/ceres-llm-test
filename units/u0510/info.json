@@ -6,7 +6,6 @@
   163,
   175
  ],
- "signature": "ceres::internal::MatrixMatrixMultiplyEigen",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 510
+ "order": 510,
+ "short_name": "MatrixMatrixMultiplyEigen",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,40 @@
+UNIT u1140
+Hàm: EBlockRowOuterProduct(const BlockSparseMatrixData & A, int row_block_index, BlockRandomAccessMatrix * lhs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 664–714
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 4 (và 3 lệnh CHECK)
+
+START → 1
+1   const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()
+    const CompressedRow &row = bs->rows[row_block_index]
+    int i = 1                                                      → 2
+2   vòng for, điều kiện: i < row.cells.size()                      đúng → 3   sai → END
+3   const int block1 = row.cells[i].block_id - num_eliminate_blocks_   → 4
+4   DCHECK_GE(block1, 0)                                           đúng → 5   sai → DỪNG
+5   const int block1_size = bs->cols[row.cells[i].block_id].size
+    int r
+    int c
+    int row_stride
+    int col_stride
+    CellInfo *cell_info = lhs->GetCell(block1, block1, &r, &c, &row_stride, &col_stride)   → 6
+6   if (cell_info != nullptr)                                      đúng → 7   sai → 8
+7   MatrixTransposeMatrixMultiply<-1, -1, -1, -1, 1>(values + row.cells[i].position, row.block.size, block1_size, values + row.cells[i].position, row.block.size, block1_size, cell_info->values, r, c, row_stride, col_stride)   → 8
+8   int j = i + 1                                                  → 9
+9   vòng for, điều kiện: j < row.cells.size()                      đúng → 10   sai → 17
+10  const int block2 = row.cells[j].block_id - num_eliminate_blocks_   → 11
+11  DCHECK_GE(block2, 0)                                           đúng → 12   sai → DỪNG
+12  DCHECK_LT(block1, block2)                                      đúng → 13   sai → DỪNG
+13  const int block2_size = bs->cols[row.cells[j].block_id].size
+    int r
+    int c
+    int row_stride
+    int col_stride
+    CellInfo *cell_info = lhs->GetCell(block1, block2, &r, &c, &row_stride, &col_stride)   → 14
+14  if (cell_info != nullptr)                                      đúng → 15   sai → 16
+15  MatrixTransposeMatrixMultiply<-1, -1, -1, -1, 1>(values + row.cells[i].position, row.block.size, block1_size, values + row.cells[j].position, row.block.size, block2_size, cell_info->values, r, c, row_stride, col_stride)   → 16
+16  ++j                                                            → 9
+17  ++i                                                            → 2

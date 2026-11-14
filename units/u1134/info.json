@@ -6,7 +6,6 @@
   56,
   67
  ],
- "signature": "ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1134
+ "order": 1134,
+ "short_name": "CreateDefaultLinearSolverOrdering",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Program & program)",
+ "return_type": "std::shared_ptr<ParameterBlockOrdering>",
+ "is_const": false
 }

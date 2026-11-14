@@ -6,7 +6,6 @@
   157,
   179
  ],
- "signature": "ceres::SubsetManifold::SubsetManifold",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 767
+ "order": 767,
+ "short_name": "SubsetManifold",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::SubsetManifold",
+ "class_is_template": false,
+ "params": "(const int size, const std::vector<int> & constant_parameters)",
+ "return_type": null,
+ "is_const": false
 }

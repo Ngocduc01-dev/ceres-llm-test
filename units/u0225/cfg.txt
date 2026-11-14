@@ -1,0 +1,10 @@
+UNIT u0225
+Hàm: mutable_values()  → trả về double *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDenseMatrix
+Vị trí: internal/ceres/block_random_access_dense_matrix.h, dòng 83–83
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return values_.get()   → END

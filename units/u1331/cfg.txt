@@ -1,0 +1,10 @@
+UNIT u1331
+Hàm: GetManifold(const double * values) const  → trả về const Manifold *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 100–102
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->GetManifold(values)   → END

@@ -1,0 +1,18 @@
+UNIT u1102
+Hàm: Remove(const std::vector<T> & elements)  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::OrderedGroups
+Vị trí: include/ceres/ordered_groups.h, dòng 112–122
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (NumElements() == 0 || elements.size() == 0)   đúng → 2   sai → 3
+2   return 0                                          → END
+3   int num_removed = 0
+    int i = 0                                         → 4
+4   vòng for, điều kiện: i < elements.size()          đúng → 5   sai → 7
+5   num_removed += Remove(elements[i])                → 6
+6   ++i                                               → 4
+7   return num_removed                                → END

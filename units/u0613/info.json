@@ -6,7 +6,6 @@
   159,
   165
  ],
- "signature": "ceres::AutoDiffCostFunction::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 613
+ "order": 613,
+ "short_name": "AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::AutoDiffCostFunction",
+ "class_is_template": true,
+ "params": "(CostFunctor * functor, Ownership ownership)",
+ "return_type": null,
+ "is_const": false
 }

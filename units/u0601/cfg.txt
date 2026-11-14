@@ -1,0 +1,16 @@
+UNIT u0601
+Hàm: DeleteBlockInVector(std::vector<Block*>* mutable_blocks, Block* block_to_remove)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 382–403
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DeleteBlockInVector<ResidualBlock> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ((*mutable_blocks)[block_to_remove->index()], block_to_remove)   đúng → 2   sai → DỪNG
+2   ceres::internal::ResidualBlock *tmp = mutable_blocks->back()
+    tmp->set_index(block_to_remove->index())
+    (*mutable_blocks)[block_to_remove->index()] = tmp
+    DeleteBlock(block_to_remove)
+    mutable_blocks->pop_back()                                     → END

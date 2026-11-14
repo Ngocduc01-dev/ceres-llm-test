@@ -6,7 +6,6 @@
   124,
   126
  ],
- "signature": "ceres::internal::FirstOrderFunctorAdapter::operator()",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 67
+ "order": 67,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FirstOrderFunctorAdapter",
+ "class_is_template": true,
+ "params": "(const double *const * parameters, double * cost)",
+ "return_type": "bool",
+ "is_const": true
 }

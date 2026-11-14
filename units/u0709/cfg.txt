@@ -1,0 +1,13 @@
+UNIT u0709
+Hàm: FactorAndSolve(int num_rows, int num_cols, double * lhs, const double * rhs, double * solution, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseQR
+Vị trí: internal/ceres/dense_qr.cc, dòng 148–160
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   LinearSolverTerminationType termination_type = Factorize(num_rows, num_cols, lhs, message)   → 2
+2   if (termination_type == LinearSolverTerminationType::SUCCESS)   đúng → 3   sai → 4
+3   termination_type = Solve(rhs, solution, message)               → 4
+4   return termination_type                                        → END

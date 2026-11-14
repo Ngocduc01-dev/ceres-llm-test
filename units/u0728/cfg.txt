@@ -1,0 +1,11 @@
+UNIT u0728
+Hàm: Create(MinimizerType minimizer_type)  → trả về std::unique_ptr<Preprocessor>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Preprocessor
+Vị trí: internal/ceres/preprocessor.cc, dòng 45–57
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   if (minimizer_type == TRUST_REGION)   đúng → END   sai → 2
+2   LOG(FATAL)                            đúng → END   sai → DỪNG

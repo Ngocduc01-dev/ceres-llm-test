@@ -1,0 +1,10 @@
+UNIT u0302
+Hàm: error_log() const  → trả về const std::string &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientCheckingIterationCallback
+Vị trí: internal/ceres/gradient_checking_cost_function.h, dòng 65–65
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return error_log_   → END

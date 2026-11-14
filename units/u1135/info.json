@@ -6,7 +6,6 @@
   378,
   420
  ],
- "signature": "ceres::internal::SchurEliminator::UpdateRhs",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1135
+ "order": 1135,
+ "short_name": "UpdateRhs",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, const double * inverse_ete_g, double * rhs)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   152,
   156
  ],
- "signature": "ceres::NumericDiffFirstOrderFunction::~NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 456
+ "order": 456,
+ "short_name": "~NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::NumericDiffFirstOrderFunction",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

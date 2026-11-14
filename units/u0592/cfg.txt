@@ -1,0 +1,11 @@
+UNIT u0592
+Hàm: Initialize(const Function& function)  → trả về typename enable_if<(R != Eigen::Dynamic && P == Eigen::Dynamic), void>::type
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::TinySolver
+Vị trí: include/ceres/tiny_solver.h, dòng 371–375
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>>::Initialize<-1, 3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Initialize(function.NumResiduals(), 3)   → END

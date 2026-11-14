@@ -1,0 +1,12 @@
+UNIT u0938
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y, ContextImpl * context, int num_threads) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearOperator
+Vị trí: internal/ceres/linear_operator.cc, dòng 49–59
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   (void)context                     → 2
+2   if (num_threads != 1)             đúng → 3   sai → 3
+3   LeftMultiplyAndAccumulate(x, y)   → END

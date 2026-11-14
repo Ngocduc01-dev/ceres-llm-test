@@ -1,0 +1,10 @@
+UNIT u0341
+Hàm: TangentSize() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SubsetManifold
+Vị trí: internal/ceres/manifold.cc, dòng 183–183
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return tangent_size_   → END

@@ -1,0 +1,10 @@
+UNIT u0021
+Hàm: function() const  → trả về const FirstOrderFunction *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: include/ceres/gradient_problem.h, dòng 109–109
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return function_.get()   → END

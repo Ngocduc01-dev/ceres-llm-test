@@ -6,7 +6,6 @@
   145,
   148
  ],
- "signature": "ceres::internal::ImplicitSchurComplement::block_diagonal_FtF_inverse",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 908
+ "order": 908,
+ "short_name": "block_diagonal_FtF_inverse",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ImplicitSchurComplement",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const BlockSparseMatrix *",
+ "is_const": true
 }

@@ -1,0 +1,9 @@
+UNIT u0411
+Hàm: ~Solver()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::Solver
+Vị trí: internal/ceres/solver.cc, dòng 708–708
+
+Số điểm rẽ nhánh: 0
+
+START → END

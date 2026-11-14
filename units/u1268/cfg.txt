@@ -1,0 +1,26 @@
+UNIT u1268
+Hàm: SetParameterOffsetsAndIndex()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 140–158
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   for (auto *residual_block : residual_blocks_)                  đúng → 2   sai → 7
+2   auto *residual_block
+    int j = 0                                                      → 3
+3   vòng for, điều kiện: j < residual_block->NumParameterBlocks()   đúng → 4   sai → 6
+4   residual_block->parameter_blocks()[j]->set_index(-1)           → 5
+5   ++j                                                            → 3
+6   ++ (bước tiếp của vòng for)                                    → 1
+7   int state_offset = 0
+    int delta_offset = 0
+    int i = 0                                                      → 8
+8   vòng for, điều kiện: i < parameter_blocks_.size()              đúng → 9   sai → END
+9   parameter_blocks_[i]->set_index(i)
+    parameter_blocks_[i]->set_state_offset(state_offset)
+    parameter_blocks_[i]->set_delta_offset(delta_offset)
+    state_offset += parameter_blocks_[i]->Size()
+    delta_offset += parameter_blocks_[i]->TangentSize()            → 10
+10  ++i                                                            → 8

@@ -1,0 +1,28 @@
+UNIT u1452
+Hàm: SetupMinimizerOptions(PreprocessedProblem * pp)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/trust_region_preprocessor.cc, dòng 339–370
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   const Solver::Options &options = pp->options
+    SetupCommonMinimizerOptions(pp)
+    pp->minimizer_options.is_constrained = pp->reduced_program->IsBoundsConstrained()
+    pp->minimizer_options.jacobian = pp->evaluator->CreateJacobian()   → 2
+2   if (pp->minimizer_options.jacobian == nullptr)                 đúng → 3   sai → 4
+3   pp->error = "Unable to create Jacobian matrix. Likely because it is too large."
+    return false                                                   → END
+4   pp->minimizer_options.inner_iteration_minimizer = pp->inner_iteration_minimizer
+    strategy_options.linear_solver = pp->linear_solver.get()
+    strategy_options.initial_radius = options.initial_trust_region_radius
+    strategy_options.max_radius = options.max_trust_region_radius
+    strategy_options.min_lm_diagonal = options.min_lm_diagonal
+    strategy_options.max_lm_diagonal = options.max_lm_diagonal
+    strategy_options.trust_region_strategy_type = options.trust_region_strategy_type
+    strategy_options.dogleg_type = options.dogleg_type
+    strategy_options.context = pp->problem->context()
+    strategy_options.num_threads = options.num_threads
+    pp->minimizer_options.trust_region_strategy = TrustRegionStrategy::Create(strategy_options)   → 5
+5   CHECK(pp->minimizer_options.trust_region_strategy != nullptr)   đúng → END   sai → DỪNG

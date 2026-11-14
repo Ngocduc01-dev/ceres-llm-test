@@ -1,0 +1,17 @@
+UNIT u1093
+Hàm: StringToLinearSolverOrderingType(std::string value, LinearSolverOrderingType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 136–142
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)             → 2
+2   if (value == "AMD")           đúng → 3   sai → 4
+3   *type = AMD
+    return true                   → END
+4   if (value == "NESDIS")        đúng → 5   sai → 6
+5   *type = NESDIS
+    return true                   → END
+6   return false                  → END

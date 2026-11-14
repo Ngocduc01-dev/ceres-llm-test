@@ -1,0 +1,14 @@
+UNIT u0798
+Hàm: PlusJacobianImpl(const double* x, MatrixRef& jacobian, internal::FixedArray<double>& buffer, std::index_sequence<Index0, Indices...>) const  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::ProductManifold
+Vị trí: include/ceres/product_manifold.h, dòng 199–218
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>::PlusJacobianImpl<0UL, <1UL>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (!Dereference(std::get<0UL>(manifolds_)).PlusJacobian(x + ambient_offsets_[0UL], buffer.data()))   đúng → 2   sai → 3
+2   return false                                                   → END
+3   jacobian.block(ambient_offsets_[0UL], tangent_offsets_[0UL], ambient_sizes_[0UL], tangent_sizes_[0UL]) = MatrixRef(buffer.data(), ambient_sizes_[0UL], tangent_sizes_[0UL])
+    return PlusJacobianImpl(x, jacobian, buffer, std::index_sequence<1UL>{})   → END

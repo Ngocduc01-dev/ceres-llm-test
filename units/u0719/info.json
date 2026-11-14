@@ -6,7 +6,6 @@
   190,
   218
  ],
- "signature": "ceres::TinySolver::Update",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 719
+ "order": 719,
+ "short_name": "Update",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolver",
+ "class_is_template": true,
+ "params": "(const Function & function, const Parameters & x)",
+ "return_type": "bool",
+ "is_const": false
 }

@@ -1,0 +1,21 @@
+UNIT u0811
+Hàm: ForestToClusterPairs(const WeightedGraph<int> & forest, std::unordered_set<std::pair<int, int>, pair_hash> * cluster_pairs) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 455–474
+
+Số điểm rẽ nhánh: 3 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(cluster_pairs != nullptr)                                đúng → 2   sai → DỪNG
+2   CHECK_EQ(vertices.size(), num_clusters_)                       đúng → 3   sai → DỪNG
+3   for (const int cluster1 : vertices)                            đúng → 4   sai → END
+4   const int cluster1
+    cluster_pairs->insert(std::make_pair(cluster1, cluster1))
+    const std::unordered_set<int> &neighbors = forest.Neighbors(cluster1)   → 5
+5   for (const int cluster2 : neighbors)                           đúng → 6   sai → 10
+6   const int cluster2                                             → 7
+7   if (cluster1 < cluster2)                                       đúng → 8   sai → 9
+8   cluster_pairs->insert(std::make_pair(cluster1, cluster2))      → 9
+9   ++ (bước tiếp của vòng for)                                    → 5
+10  ++ (bước tiếp của vòng for)                                    → 3

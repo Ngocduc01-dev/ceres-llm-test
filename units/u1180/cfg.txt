@@ -1,0 +1,35 @@
+UNIT u1180
+Hàm: CreateDiagonalMatrix(const double * diagonal, const std::vector<Block> & column_blocks)  → trả về std::unique_ptr<BlockSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 581–614
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   CFGNewAllocator(CompressedRowBlockStructure *)
+    auto *bs = new CompressedRowBlockStructure()
+    bs->cols = column_blocks
+    int position = 0
+    bs->rows.resize(column_blocks.size(), CompressedRow(1))
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < column_blocks.size()                  đúng → 3   sai → 5
+3   CompressedRow &row = bs->rows[i]
+    row.block = column_blocks[i]
+    Cell &cell = row.cells[0]
+    cell.block_id = i
+    cell.position = position
+    position += row.block.size * row.block.size                    → 4
+4   ++i                                                            → 2
+5   matrix->SetZero()
+    double *values = matrix->mutable_values()                      → 6
+6   for (const auto &column_block : column_blocks)                 đúng → 7   sai → END
+7   const auto &column_block
+    const int size = column_block.size
+    int j = 0                                                      → 8
+8   vòng for, điều kiện: j < size                                  đúng → 9   sai → 11
+9   values[j * (size + 1)] = diagonal[j]                           → 10
+10  ++j                                                            → 8
+11  diagonal += size
+    values += size * size                                          → 12
+12  ++ (bước tiếp của vòng for)                                    → 6

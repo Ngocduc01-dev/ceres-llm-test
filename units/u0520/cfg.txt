@@ -1,0 +1,29 @@
+UNIT u0520
+Hàm: Plus(const double * x_ptr, const double * delta_ptr, double * x_plus_delta_ptr) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::LineManifold
+Vị trí: include/ceres/line_manifold.h, dòng 141–216
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   x_ptr, size_
+    x_ptr + size_, size_
+    delta_ptr, size_ - 1
+    delta_ptr + size_ - 1, size_ - 1
+    x_plus_delta_ptr, size_
+    x_plus_delta_ptr + size_, size_
+    const double norm_delta_d = delta_d.norm()
+    o_plus_delta = o                                               → 2
+2   if (norm_delta_d == 0.)                                        đúng → 3   sai → 6
+3   d_plus_delta = d                                               → 4
+4   if (delta_o.isZero(0.))                                        đúng → 5   sai → 6
+5   return true                                                    → END
+6   double beta
+    internal::ComputeHouseholderVector<Eigen::Map<const AmbientVector>, double, 3>(d, &v, &beta)   → 7
+7   if (norm_delta_d != 0.)                                        đúng → 8   sai → 9
+8   internal::ComputeSphereManifoldPlus(v, beta, d, delta_d, norm_delta_d, &d_plus_delta)   → 9
+9   y << delta_o , 0
+    o_plus_delta += internal::ApplyHouseholderVector(y, v, beta)
+    return true                                                    → END

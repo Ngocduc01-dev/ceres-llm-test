@@ -1,0 +1,58 @@
+UNIT u1503
+Hàm: ComputeCovarianceValuesUsingDenseSVD()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 704–793
+
+Số điểm rẽ nhánh: 8
+
+START → 1
+1   "CovarianceImpl::ComputeCovarianceValuesUsingDenseSVD"         → 2
+2   if (covariance_matrix_ == nullptr)                             đúng → 3   sai → 4
+3   return true                                                    → END
+4   problem_->Evaluate(evaluate_options_, nullptr, nullptr, nullptr, &jacobian)
+    event_logger.AddEvent("Evaluate")
+    jacobian.num_rows, jacobian.num_cols
+    dense_jacobian.setZero()
+    int r = 0                                                      → 5
+5   vòng for, điều kiện: r < jacobian.num_rows                     đúng → 6   sai → 11
+6   int idx = jacobian.rows[r]                                     → 7
+7   vòng for, điều kiện: idx < jacobian.rows[r + 1]                đúng → 8   sai → 10
+8   const int c = jacobian.cols[idx]
+    dense_jacobian(r, c) = jacobian.values[idx]                    → 9
+9   ++idx                                                          → 7
+10  ++r                                                            → 5
+11  event_logger.AddEvent("ConvertToDenseMatrix")
+    dense_jacobian, Eigen::ComputeThinU | Eigen::ComputeThinV
+    event_logger.AddEvent("SingularValueDecomposition")
+    svd.singularValues()
+    const int num_singular_values = singular_values.rows()
+    inverse_squared_singular_values.setZero()
+    const double max_singular_value = singular_values[0]
+    const double min_singular_value_ratio = sqrt(options_.min_reciprocal_condition_number)
+    const bool automatic_truncation = (options_.null_space_rank < 0)
+    const int max_rank = std::min(num_singular_values, num_singular_values - options_.null_space_rank)
+    int i = 0                                                      → 12
+12  vòng for, điều kiện: i < max_rank                              đúng → 13   sai → 17
+13  const double singular_value_ratio = singular_values[i] / max_singular_value   → 14
+14  if (singular_value_ratio < min_singular_value_ratio)           đúng → 15   sai → 25
+15  if (automatic_truncation)                                      đúng → 16   sai → END
+16  break                                                          → 17
+17  svd.matrixV() * inverse_squared_singular_values.asDiagonal() * svd.matrixV().transpose()
+    event_logger.AddEvent("PseudoInverse")
+    const int num_rows = covariance_matrix_->num_rows()
+    const int *rows = covariance_matrix_->rows()
+    const int *cols = covariance_matrix_->cols()
+    double *values = covariance_matrix_->mutable_values()
+    int r = 0                                                      → 18
+18  vòng for, điều kiện: r < num_rows                              đúng → 19   sai → 24
+19  int idx = rows[r]                                              → 20
+20  vòng for, điều kiện: idx < rows[r + 1]                         đúng → 21   sai → 23
+21  const int c = cols[idx]
+    values[idx] = dense_covariance(r, c)                           → 22
+22  ++idx                                                          → 20
+23  ++r                                                            → 18
+24  event_logger.AddEvent("CopyToCovarianceMatrix")
+    return true                                                    → END
+25  inverse_squared_singular_values[i] = 1. / (singular_values[i] * singular_values[i])   → 26
+26  ++i                                                            → 12

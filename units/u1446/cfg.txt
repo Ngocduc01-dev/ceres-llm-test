@@ -1,0 +1,85 @@
+UNIT u1446
+Hàm: ComputeCovarianceSparsity(const CovarianceBlocks & original_covariance_blocks, ProblemImpl * problem)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 360–498
+
+Số điểm rẽ nhánh: 14
+
+START → 1
+1   "CovarianceImpl::ComputeCovarianceSparsity"
+    problem->GetParameterBlocks(&all_parameter_blocks)
+    const ProblemImpl::ParameterMap &parameter_map = problem->parameter_map()
+    problem->GetResidualBlocks(&residual_blocks)                   → 2
+2   for (auto *residual_block : residual_blocks)                   đúng → 3   sai → 5
+3   auto *residual_block
+    parameter_blocks_in_use.insert(residual_block->parameter_blocks(), residual_block->parameter_blocks() + residual_block->NumParameterBlocks())   → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   constant_parameter_blocks_.clear()
+    std::vector<double *> &active_parameter_blocks = evaluate_options_.parameter_blocks
+    active_parameter_blocks.clear()                                → 6
+6   for (auto *parameter_block : all_parameter_blocks)             đúng → 7   sai → 12
+7   auto *parameter_block
+    ParameterBlock *block = FindOrDie(parameter_map, parameter_block)   → 8
+8   if (!block->IsConstant() && (parameter_blocks_in_use.count(block) > 0))   đúng → 9   sai → 11
+9   active_parameter_blocks.push_back(parameter_block)             → 10
+10  ++ (bước tiếp của vòng for)                                    → 6
+11  constant_parameter_blocks_.insert(parameter_block)             → 10
+12  int num_rows = 0
+    parameter_block_to_row_index_.clear()                          → 13
+13  for (auto *parameter_block : active_parameter_blocks)          đúng → 14   sai → 16
+14  auto *parameter_block
+    const int parameter_block_size = problem->ParameterBlockTangentSize(parameter_block)
+    parameter_block_to_row_index_[parameter_block] = num_rows
+    num_rows += parameter_block_size                               → 15
+15  ++ (bước tiếp của vòng for)                                    → 13
+16  int num_nonzeros = 0                                           → 17
+17  for (const auto &block_pair : original_covariance_blocks)      đúng → 18   sai → 26
+18  const auto &block_pair                                         → 19
+19  if (constant_parameter_blocks_.count(block_pair.first) > 0 || constant_parameter_blocks_.count(block_pair.second) > 0)   đúng → 20   sai → 22
+20  continue                                                       → 21
+21  ++ (bước tiếp của vòng for)                                    → 17
+22  int index1 = FindOrDie(parameter_block_to_row_index_, block_pair.first)
+    int index2 = FindOrDie(parameter_block_to_row_index_, block_pair.second)
+    const int size1 = problem->ParameterBlockTangentSize(block_pair.first)
+    const int size2 = problem->ParameterBlockTangentSize(block_pair.second)
+    num_nonzeros += size1 * size2                                  → 23
+23  if (index1 > index2)                                           đúng → 24   sai → 25
+24  covariance_blocks.push_back(std::make_pair(block_pair.second, block_pair.first))   → 21
+25  covariance_blocks.push_back(block_pair)                        → 21
+26  if (covariance_blocks.empty())                                 đúng → END   sai → 27
+27  covariance_matrix_ = std::make_unique<CompressedRowSparseMatrix>(num_rows, num_rows, num_nonzeros)
+    int *rows = covariance_matrix_->mutable_rows()
+    int *cols = covariance_matrix_->mutable_cols()
+    int i = 0
+    int cursor = 0                                                 → 28
+28  for (const auto &entry : parameter_block_to_row_index_)        đúng → 29   sai → 47
+29  const auto &entry
+    const double *row_block = entry.first
+    const int row_block_size = problem->ParameterBlockTangentSize(row_block)
+    int row_begin = entry.second
+    int num_col_blocks = 0
+    int j = i                                                      → 30
+30  vòng for, điều kiện: j < covariance_blocks.size()              đúng → 31   sai → 34
+31  const std::pair<const double *, const double *> &block_pair = covariance_blocks[j]   → 32
+32  if (block_pair.first != row_block)                             đúng → 33   sai → 46
+33  break                                                          → 34
+34  int r = 0                                                      → 35
+35  vòng for, điều kiện: r < row_block_size                        đúng → 36   sai → 44
+36  rows[row_begin + r] = cursor
+    int c = 0                                                      → 37
+37  vòng for, điều kiện: c < num_col_blocks                        đúng → 38   sai → 43
+38  const double *col_block = covariance_blocks[i + c].second
+    const int col_block_size = problem->ParameterBlockTangentSize(col_block)
+    int col_begin = FindOrDie(parameter_block_to_row_index_, col_block)
+    int k = 0                                                      → 39
+39  vòng for, điều kiện: k < col_block_size                        đúng → 40   sai → 42
+40  cols[cursor++] = col_begin++                                   → 41
+41  ++k                                                            → 39
+42  ++c                                                            → 37
+43  ++r                                                            → 35
+44  i += num_col_blocks                                            → 45
+45  ++ (bước tiếp của vòng for)                                    → 28
+46  ++j                                                            → 30
+47  rows[num_rows] = cursor
+    return true                                                    → END

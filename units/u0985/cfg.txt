@@ -1,0 +1,11 @@
+UNIT u0985
+Hàm: NumParameters() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TinySolverCostFunctionAdapter
+Vị trí: include/ceres/tiny_solver_cost_function_adapter.h, dòng 130–132
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverCostFunctionAdapter<2, 3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return cost_function_.parameter_block_sizes()[0]   → END

@@ -6,7 +6,6 @@
   80,
   84
  ],
- "signature": "ceres::GradientProblem::Plus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 305
+ "order": 305,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblem",
+ "class_is_template": false,
+ "params": "(const double * x, const double * delta, double * x_plus_delta)",
+ "return_type": "bool",
+ "is_const": true
 }

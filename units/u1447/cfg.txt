@@ -1,0 +1,189 @@
+UNIT u1447
+Hàm: Minimize(const Minimizer::Options & options, double * parameters, Solver::Summary * summary)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchMinimizer
+Vị trí: internal/ceres/line_search_minimizer.cc, dòng 85–473
+
+Số điểm rẽ nhánh: 34 (và 3 lệnh CHECK)
+
+START → 1
+1   const bool is_not_silent = !options.is_silent
+    double start_time = WallTimeInSeconds()
+    double iteration_start_time = start_time                       → 2
+2   CHECK(options.evaluator != nullptr)                            đúng → 3   sai → DỪNG
+3   Evaluator *evaluator = options.evaluator.get()
+    const int num_parameters = evaluator->NumParameters()
+    const int num_effective_parameters = evaluator->NumEffectiveParameters()
+    summary->termination_type = NO_CONVERGENCE
+    summary->num_successful_steps = 0
+    summary->num_unsuccessful_steps = 0
+    parameters, num_parameters
+    num_parameters, num_effective_parameters
+    num_parameters, num_effective_parameters
+    iteration_summary.iteration = 0
+    iteration_summary.step_is_valid = false
+    iteration_summary.step_is_successful = false
+    iteration_summary.cost_change = 0.
+    iteration_summary.gradient_max_norm = 0.
+    iteration_summary.gradient_norm = 0.
+    iteration_summary.step_norm = 0.
+    iteration_summary.linear_solver_iterations = 0
+    iteration_summary.step_solver_time_in_seconds = 0              → 4
+4   if (!evaluator->Evaluate(x.data(), &(current_state.cost), nullptr, current_state.gradient.data(), nullptr))   đúng → 5   sai → 8
+5   summary->termination_type = FAILURE
+    summary->message = "Initial cost and jacobian evaluation failed."   → 6
+6   if (is_not_silent)                                             đúng → 7   sai → 7
+7   return                                                         → END
+8   if (!EvaluateGradientNorms(evaluator, x, &current_state, &summary->message))   đúng → 9   sai → 12
+9   summary->termination_type = FAILURE
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = "Initial cost and jacobian evaluation failed. More details: " + summary->message   → 10
+10  if (is_not_silent)                                             đúng → 11   sai → 11
+11  return                                                         → END
+12  summary->initial_cost = current_state.cost + summary->fixed_cost
+    iteration_summary.cost = current_state.cost + summary->fixed_cost
+    iteration_summary.gradient_norm = sqrt(current_state.gradient_squared_norm)
+    iteration_summary.gradient_max_norm = current_state.gradient_max_norm   → 13
+13  if (iteration_summary.gradient_max_norm <= options.gradient_tolerance)   đúng → 14   sai → 17
+14  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Gradient tolerance reached. Gradient max norm: %e <= %e", iteration_summary.gradient_max_norm, options.gradient_tolerance)
+    summary->termination_type = CONVERGENCE                        → 15
+15  if (is_not_silent)                                             đúng → 16   sai → 16
+16  return                                                         → END
+17  iteration_summary.iteration_time_in_seconds = WallTimeInSeconds() - iteration_start_time
+    iteration_summary.cumulative_time_in_seconds = WallTimeInSeconds() - start_time + summary->preprocessor_time_in_seconds
+    summary->iterations.push_back(iteration_summary)
+    line_search_direction_options.num_parameters = num_effective_parameters
+    line_search_direction_options.type = options.line_search_direction_type
+    line_search_direction_options.nonlinear_conjugate_gradient_type = options.nonlinear_conjugate_gradient_type
+    line_search_direction_options.max_lbfgs_rank = options.max_lbfgs_rank
+    line_search_direction_options.use_approximate_eigenvalue_bfgs_scaling = options.use_approximate_eigenvalue_bfgs_scaling
+    line_search_options.interpolation_type = options.line_search_interpolation_type
+    line_search_options.min_step_size = options.min_line_search_step_size
+    line_search_options.sufficient_decrease = options.line_search_sufficient_function_decrease
+    line_search_options.max_step_contraction = options.max_line_search_step_contraction
+    line_search_options.min_step_contraction = options.min_line_search_step_contraction
+    line_search_options.max_num_iterations = options.max_num_line_search_step_size_iterations
+    line_search_options.sufficient_curvature_decrease = options.line_search_sufficient_curvature_decrease
+    line_search_options.max_step_expansion = options.max_line_search_step_expansion
+    line_search_options.is_silent = options.is_silent
+    line_search_options.function = &line_search_function           → 18
+18  if (line_search.get() == nullptr)                              đúng → 19   sai → 22
+19  summary->termination_type = FAILURE                            → 20
+20  if (is_not_silent)                                             đúng → 21   sai → 21
+21  return                                                         → END
+22  int num_line_search_direction_restarts = 0                     → 23
+23  while true                                                     → 24
+24  if (!RunCallbacks(options, iteration_summary, summary))        đúng → 25   sai → 26
+25  break                                                          → END
+26  iteration_start_time = WallTimeInSeconds()                     → 27
+27  if (iteration_summary.iteration >= options.max_num_iterations)   đúng → 28   sai → 31
+28  summary->message = "Maximum number of iterations reached."
+    summary->termination_type = NO_CONVERGENCE                     → 29
+29  if (is_not_silent)                                             đúng → 30   sai → 30
+30  break                                                          → END
+31  const double total_solver_time = iteration_start_time - start_time + summary->preprocessor_time_in_seconds   → 32
+32  if (total_solver_time >= options.max_solver_time_in_seconds)   đúng → 33   sai → 36
+33  summary->message = "Maximum solver time reached."
+    summary->termination_type = NO_CONVERGENCE                     → 34
+34  if (is_not_silent)                                             đúng → 35   sai → 35
+35  break                                                          → END
+36  iteration_summary = IterationSummary()
+    iteration_summary.iteration = summary->iterations.back().iteration + 1
+    iteration_summary.step_is_valid = false
+    iteration_summary.step_is_successful = false
+    bool line_search_status = true                                 → 37
+37  if (iteration_summary.iteration == 1)                          đúng → 38   sai → 88
+38  current_state.search_direction = - current_state.gradient      → 39
+39  if (!line_search_status && num_line_search_direction_restarts >= options.max_num_line_search_direction_restarts)   đúng → 40   sai → 43
+40  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Line search direction failure: specified max_num_line_search_direction_restarts: %d reached.", options.max_num_line_search_direction_restarts)
+    summary->termination_type = FAILURE                            → 41
+41  if (is_not_silent)                                             đúng → 42   sai → 42
+42  break                                                          → END
+43  if (!line_search_status)                                       đúng → 44   sai → 48
+44  options.max_num_line_search_direction_restarts)                đúng → 45   sai → DỪNG
+45  ++num_line_search_direction_restarts                           → 46
+46  if (is_not_silent)                                             đúng → 47   sai → 47
+47  line_search_direction = LineSearchDirection::Create(line_search_direction_options)
+    current_state.search_direction = - current_state.gradient      → 48
+48  line_search_function.Init(x, current_state.search_direction)
+    current_state.directional_derivative = current_state.gradient.dot(current_state.search_direction)   → 49
+49  (iteration_summary.iteration == 1 || !line_search_status) ? ... : ...   đúng → 50   sai → 50
+50  const double initial_step_size = (iteration_summary.iteration == 1 || !line_search_status) ? std::min(1., 1. / current_state.gradient_max_norm) : std::min(1., 2. * (current_state.cost - previous_state.cost) / current_state.directional_derivative)   → 51
+51  if (initial_step_size < 0.)                                    đúng → 52   sai → 55
+52  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Numerical failure in line search, initial_step_size is negative: %.5e, directional_derivative: %.5e, (current_cost - previous_cost): %.5e", initial_step_size, current_state.directional_derivative, (current_state.cost - previous_state.cost))
+    summary->termination_type = FAILURE                            → 53
+53  if (is_not_silent)                                             đúng → 54   sai → 54
+54  break                                                          → END
+55  line_search->Search(initial_step_size, current_state.cost, current_state.directional_derivative, &line_search_summary)   → 56
+56  if (!line_search_summary.success)                              đúng → 57   sai → 60
+57  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Numerical failure in line search, failed to find a valid step size, (did not run out of iterations) using initial_step_size: %.5e, initial_cost: %.5e, initial_gradient: %.5e.", initial_step_size, current_state.cost, current_state.directional_derivative)   → 58
+58  if (is_not_silent)                                             đúng → 59   sai → 59
+59  summary->termination_type = FAILURE
+    break                                                          → END
+60  const FunctionSample &optimal_point = line_search_summary.optimal_point   → 61
+61  CHECK(optimal_point.vector_x_is_valid)                         đúng → 62   sai → DỪNG
+62  current_state.step_size = optimal_point.x
+    previous_state = current_state
+    iteration_summary.step_solver_time_in_seconds = WallTimeInSeconds() - iteration_start_time   → 63
+63  if (optimal_point.vector_gradient_is_valid)                    đúng → 64   sai → 83
+64  current_state.cost = optimal_point.value
+    current_state.gradient = optimal_point.vector_gradient         → 65
+65  if (!EvaluateGradientNorms(evaluator, optimal_point.vector_x, &current_state, &summary->message))   đúng → 66   sai → 69
+66  summary->termination_type = FAILURE
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = "Step failed to evaluate. This should not happen as the step was valid when it was selected by the line search. More details: " + summary->message   → 67
+67  if (is_not_silent)                                             đúng → 68   sai → 68
+68  break                                                          → END
+69  iteration_summary.step_norm = (optimal_point.vector_x - x).norm()
+    const double x_norm = x.norm()
+    x = optimal_point.vector_x
+    iteration_summary.gradient_max_norm = current_state.gradient_max_norm
+    iteration_summary.gradient_norm = sqrt(current_state.gradient_squared_norm)
+    iteration_summary.cost_change = previous_state.cost - current_state.cost
+    iteration_summary.cost = current_state.cost + summary->fixed_cost
+    iteration_summary.step_is_valid = true
+    iteration_summary.step_is_successful = true
+    iteration_summary.step_size = current_state.step_size
+    iteration_summary.line_search_function_evaluations = line_search_summary.num_function_evaluations
+    iteration_summary.line_search_gradient_evaluations = line_search_summary.num_gradient_evaluations
+    iteration_summary.line_search_iterations = line_search_summary.num_iterations
+    iteration_summary.iteration_time_in_seconds = WallTimeInSeconds() - iteration_start_time
+    iteration_summary.cumulative_time_in_seconds = WallTimeInSeconds() - start_time + summary->preprocessor_time_in_seconds
+    summary->iterations.push_back(iteration_summary)
+    summary->num_line_search_steps += line_search_summary.num_iterations
+    summary->line_search_cost_evaluation_time_in_seconds += line_search_summary.cost_evaluation_time_in_seconds
+    summary->line_search_gradient_evaluation_time_in_seconds += line_search_summary.gradient_evaluation_time_in_seconds
+    summary->line_search_polynomial_minimization_time_in_seconds += line_search_summary.polynomial_minimization_time_in_seconds
+    summary->line_search_total_time_in_seconds += line_search_summary.total_time_in_seconds
+    ++summary->num_successful_steps
+    const double step_size_tolerance = options.parameter_tolerance * (x_norm + options.parameter_tolerance)   → 70
+70  if (iteration_summary.step_norm <= step_size_tolerance)        đúng → 71   sai → 74
+71  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Parameter tolerance reached. Relative step_norm: %e <= %e.", (iteration_summary.step_norm / (x_norm + options.parameter_tolerance)), options.parameter_tolerance)
+    summary->termination_type = CONVERGENCE                        → 72
+72  if (is_not_silent)                                             đúng → 73   sai → 73
+73  return                                                         → END
+74  if (iteration_summary.gradient_max_norm <= options.gradient_tolerance)   đúng → 75   sai → 78
+75  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Gradient tolerance reached. Gradient max norm: %e <= %e", iteration_summary.gradient_max_norm, options.gradient_tolerance)
+    summary->termination_type = CONVERGENCE                        → 76
+76  if (is_not_silent)                                             đúng → 77   sai → 77
+77  break                                                          → END
+78  const double absolute_function_tolerance = options.function_tolerance * std::abs(previous_state.cost)   → 79
+79  if (std::abs(iteration_summary.cost_change) <= absolute_function_tolerance)   đúng → 80   sai → 23
+80  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->message = StringPrintf("Function tolerance reached. |cost_change|/cost: %e <= %e", std::abs(iteration_summary.cost_change) / previous_state.cost, options.function_tolerance)
+    summary->termination_type = CONVERGENCE                        → 81
+81  if (is_not_silent)                                             đúng → 82   sai → 82
+82  break                                                          → END
+83  evaluate_options.new_evaluation_point = false                  → 84
+84  if (!evaluator->Evaluate(evaluate_options, optimal_point.vector_x.data(), &(current_state.cost), nullptr, current_state.gradient.data(), nullptr))   đúng → 85   sai → 65
+85  summary->termination_type = FAILURE
+    summary->message = "Cost and jacobian evaluation failed."      → 86
+86  if (is_not_silent)                                             đúng → 87   sai → 87
+87  return                                                         → END
+88  line_search_status = line_search_direction->NextDirection(previous_state, current_state, &current_state.search_direction)   → 39

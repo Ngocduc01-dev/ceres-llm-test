@@ -1,0 +1,10 @@
+UNIT u1292
+Hàm: AddEvent(const std::string & event_name)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EventLogger
+Vị trí: internal/ceres/wall_time.cc, dòng 80–95
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return   → END

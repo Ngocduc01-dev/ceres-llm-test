@@ -1,0 +1,10 @@
+UNIT u1152
+Hàm: WolfeLineSearch(const LineSearch::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::WolfeLineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 367–368
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LineSearch(options) (Base initializer)   → END

@@ -6,7 +6,6 @@
   68,
   69
  ],
- "signature": "ceres::internal::Cell::Cell",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 240
+ "order": 240,
+ "short_name": "Cell",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::Cell",
+ "class_is_template": false,
+ "params": "(int block_id_, int position_)",
+ "return_type": null,
+ "is_const": false
 }

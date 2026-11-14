@@ -1,0 +1,19 @@
+UNIT u0442
+Hàm: Evaluate(const JetT& r, const JetT& c, JetT* f) const  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::BiCubicInterpolator
+Vị trí: include/ceres/cubic_interpolation.h, dòng 334–344
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp BiCubicInterpolator<Grid2D<double, 2>>::Evaluate<Jet<double, 4>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   double frc[2]
+    double dfdr[2]
+    double dfdc[2]
+    Evaluate(r.a, c.a, frc, dfdr, dfdc)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < Grid2D<double, 2>::DATA_DIMENSION     đúng → 3   sai → END
+3   f[i].a = frc[i]
+    f[i].v = dfdr[i] * r.v + dfdc[i] * c.v                         → 4
+4   ++i                                                            → 2

@@ -1,0 +1,66 @@
+UNIT u1317
+Hàm: BuildJacobianLayout(const Program & program, int num_eliminate_blocks, std::vector<int *> * jacobian_layout, std::vector<int> * jacobian_layout_storage)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/block_jacobian_writer.cc, dòng 66–165
+
+Số điểm rẽ nhánh: 11
+
+START → 1
+1   const std::vector<ResidualBlock *> &residual_blocks = program.residual_blocks()
+    unsigned int f_block_pos = 0
+    unsigned int num_jacobian_blocks = 0                           → 2
+2   for (auto *residual_block : residual_blocks)                   đúng → 3   sai → 13
+3   auto *residual_block
+    const int num_residuals = residual_block->NumResiduals()
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < num_parameter_blocks                  đúng → 5   sai → 11
+5   ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]   → 6
+6   if (!parameter_block->IsConstant())                            đúng → 7   sai → 10
+7   num_jacobian_blocks++                                          → 8
+8   if (parameter_block->index() < num_eliminate_blocks)           đúng → 9   sai → 10
+9   f_block_pos += num_residuals * parameter_block->TangentSize()   → 10
+10  ++j                                                            → 4
+11  if (num_jacobian_blocks > std::numeric_limits<int>::max())     đúng → END   sai → 12
+12  ++ (bước tiếp của vòng for)                                    → 2
+13  jacobian_layout->resize(program.NumResidualBlocks())
+    jacobian_layout_storage->resize(num_jacobian_blocks)
+    int e_block_pos = 0
+    int *jacobian_pos = jacobian_layout_storage->data()
+    int i = 0                                                      → 14
+14  vòng for, điều kiện: i < residual_blocks.size()                đúng → 15   sai → 32
+15  const ResidualBlock *residual_block = residual_blocks[i]
+    const int num_residuals = residual_block->NumResiduals()
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    (*jacobian_layout)[i] = jacobian_pos
+    active_parameter_blocks.clear()
+    active_parameter_blocks.reserve(num_parameter_blocks)
+    int j = 0                                                      → 16
+16  vòng for, điều kiện: j < num_parameter_blocks                  đúng → 17   sai → 22
+17  ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]   → 18
+18  if (parameter_block->IsConstant())                             đúng → 19   sai → 21
+19  continue                                                       → 20
+20  ++j                                                            → 16
+21  const int k = active_parameter_blocks.size()
+    active_parameter_blocks.emplace_back(k, j)                     → 20
+22  residual_block                                                 → 23
+23  for (const auto &indices : active_parameter_blocks)            đúng → 24   sai → 30
+24  const auto &indices
+    get<0UL>(?)
+    std::tuple_element<0, const std::pair<int, int>>::type k = get<0UL>()
+    get<1UL>(?)
+    std::tuple_element<1, const std::pair<int, int>>::type j = get<1UL>()
+    ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]
+    const int parameter_block_index = parameter_block->index()
+    const int jacobian_block_size = num_residuals * parameter_block->TangentSize()   → 25
+25  if (parameter_block_index < num_eliminate_blocks)              đúng → 26   sai → 28
+26  jacobian_pos[k] = e_block_pos
+    e_block_pos += jacobian_block_size                             → 27
+27  ++ (bước tiếp của vòng for)                                    → 23
+28  jacobian_pos[k] = static_cast<int>(f_block_pos)
+    f_block_pos += jacobian_block_size                             → 29
+29  if (f_block_pos > std::numeric_limits<int>::max())             đúng → END   sai → 27
+30  jacobian_pos += active_parameter_blocks.size()                 → 31
+31  ++i                                                            → 14
+32  return true                                                    → END

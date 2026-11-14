@@ -1,0 +1,16 @@
+UNIT u1449
+Hàm: GradientCheckingCostFunction(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options, double relative_precision, std::string extra_info, GradientCheckingIterationCallback * callback)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::(namespace không tên)::GradientCheckingCostFunction
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 61–77
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CostFunction() (Base initializer)
+    function_(function) (Member initializer)
+    gradient_checker_(function, manifolds, options) (Member initializer)
+    relative_precision_(relative_precision) (Member initializer)
+    extra_info_(std::move(extra_info)) (Member initializer)
+    callback_(callback) (Member initializer)                       → 2
+2   CHECK(callback_ != nullptr)                                    đúng → END   sai → DỪNG

@@ -1,0 +1,13 @@
+UNIT u1079
+Hàm: RightMultiplyAndAccumulateE(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 112–137
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   auto bs = matrix_.block_structure()
+    const double *values = matrix_.values()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:123:15) &&, int))(options_.context, 0, num_row_blocks_e_, options_.num_threads, [values, bs, x, y](int row_block_id) {)   → END

@@ -6,7 +6,6 @@
   112,
   116
  ],
- "signature": "ceres::internal::Corrector::CorrectResiduals",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 466
+ "order": 466,
+ "short_name": "CorrectResiduals",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Corrector",
+ "class_is_template": false,
+ "params": "(const int num_rows, double * residuals)",
+ "return_type": "void",
+ "is_const": false
 }

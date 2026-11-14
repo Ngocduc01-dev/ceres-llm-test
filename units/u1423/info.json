@@ -6,7 +6,6 @@
   51,
   57
  ],
- "signature": "ceres::internal::DynamicCompressedRowJacobianWriter::CreateJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1423
+ "order": 1423,
+ "short_name": "CreateJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicCompressedRowJacobianWriter",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::unique_ptr<SparseMatrix>",
+ "is_const": true
 }

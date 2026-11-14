@@ -1,0 +1,11 @@
+UNIT u1530
+Hàm: IsValid(std::string * error) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblemSolver::Options
+Vị trí: internal/ceres/gradient_problem_solver.cc, dòng 90–94
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   GradientProblemSolverOptionsToSolverOptions(*this)
+    return solver_options.IsValid(error)                           → END

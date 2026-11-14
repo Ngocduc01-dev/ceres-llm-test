@@ -1,0 +1,18 @@
+UNIT u1063
+Hàm: UpdateRhs()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.cc, dòng 251–276
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelSetZero(options_.context, options_.num_threads, tmp_e_cols_)
+    A_->LeftMultiplyAndAccumulateE(b_, tmp_e_cols_.data())
+    ParallelSetZero(options_.context, options_.num_threads, tmp_e_cols_2_)
+    block_diagonal_EtE_inverse_->RightMultiplyAndAccumulate(tmp_e_cols_.data(), tmp_e_cols_2_.data(), options_.context, options_.num_threads)
+    ParallelSetZero(options_.context, options_.num_threads, tmp_rows_)
+    A_->RightMultiplyAndAccumulateE(tmp_e_cols_2_.data(), tmp_rows_.data())
+    ParallelAssign(options_.context, options_.num_threads, tmp_rows_, ConstVectorRef(b_, A_->num_rows()) - tmp_rows_)
+    ParallelSetZero(options_.context, options_.num_threads, rhs_)
+    A_->LeftMultiplyAndAccumulateF(tmp_rows_.data(), rhs_.data())   → END

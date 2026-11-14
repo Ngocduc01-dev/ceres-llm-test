@@ -1,0 +1,10 @@
+UNIT u1021
+Hàm: NumResiduals() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.h, dòng 124–124
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return cost_function_->num_residuals()   → END

@@ -1,0 +1,15 @@
+UNIT u0947
+Hàm: AllTripletsWithinBounds() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 109–119
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_nonzeros_                         đúng → 3   sai → 6
+3   if (rows_[i] < 0) || (rows_[i] >= num_rows_) || (cols_[i] < 0) || (cols_[i] >= num_cols_)   đúng → 4   sai → 5
+4   return false                                                   → END
+5   ++i                                                            → 2
+6   return true                                                    → END

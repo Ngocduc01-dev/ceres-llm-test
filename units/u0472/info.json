@@ -6,7 +6,6 @@
   165,
   176
  ],
- "signature": "ceres::ScaledLoss::Evaluate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 472
+ "order": 472,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ScaledLoss",
+ "class_is_template": false,
+ "params": "(double s, double[3] rho)",
+ "return_type": "void",
+ "is_const": true
 }

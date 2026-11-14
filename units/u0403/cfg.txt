@@ -1,0 +1,10 @@
+UNIT u0403
+Hàm: set_index(int index)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.h, dòng 131–131
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   index_ = index   → END

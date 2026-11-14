@@ -1,0 +1,14 @@
+UNIT u0458
+Hàm: GroupSize(const int group) const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::OrderedGroups
+Vị trí: include/ceres/ordered_groups.h, dòng 163–166
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   group_to_elements_.find(group)                                 → 2
+2   (it == group_to_elements_.end()) ? ... : ...                   đúng → 3   sai → 4
+3   return (it == group_to_elements_.end()) ? 0 : it->second.size()   → END
+4   operator->                                                     → 3

@@ -6,7 +6,6 @@
   95,
   109
  ],
- "signature": "ceres::internal::SolveUpperTriangularTransposeInPlace",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 505
+ "order": 505,
+ "short_name": "SolveUpperTriangularTransposeInPlace",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, double* rhs_and_solution)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   138,
   153
  ],
- "signature": "ceres::ProductManifold::ProductManifold<Manifold0, Manifold1, ManifoldN...>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 566
+ "order": 566,
+ "short_name": "ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(std::index_sequence<Indices...>, Args&&... manifolds)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0383
+Hàm: num_cols() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Preconditioner
+Vị trí: internal/ceres/preconditioner.h, dòng 157–157
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_rows()   → END

@@ -1,0 +1,11 @@
+UNIT u1380
+Hàm: ComputeCovarianceValuesUsingSuiteSparseQR()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 535–702
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   "CovarianceImpl::ComputeCovarianceValuesUsingSparseQR"
+    return false                                                   → END

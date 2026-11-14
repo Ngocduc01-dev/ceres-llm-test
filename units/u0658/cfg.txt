@@ -1,0 +1,13 @@
+UNIT u0658
+Hàm: Factorize(int num_rows, int num_cols, double * lhs, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EigenDenseQR
+Vị trí: internal/ceres/dense_qr.cc, dòng 162–170
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   lhs, num_rows, num_cols
+    qr_ = std::make_unique<QRType>(m)
+    *message = "Success."
+    return LinearSolverTerminationType::SUCCESS                    → END

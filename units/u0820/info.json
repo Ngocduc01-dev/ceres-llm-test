@@ -6,7 +6,6 @@
   335,
   336
  ],
- "signature": "ceres::ScaledLoss::ScaledLoss",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 820
+ "order": 820,
+ "short_name": "ScaledLoss",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::ScaledLoss",
+ "class_is_template": false,
+ "params": "(const LossFunction * rho, double a, Ownership ownership)",
+ "return_type": null,
+ "is_const": false
 }

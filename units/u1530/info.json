@@ -6,7 +6,6 @@
   90,
   94
  ],
- "signature": "ceres::GradientProblemSolver::Options::IsValid",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 7,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1530
+ "order": 1530,
+ "short_name": "IsValid",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblemSolver::Options",
+ "class_is_template": false,
+ "params": "(std::string * error)",
+ "return_type": "bool",
+ "is_const": true
 }

@@ -1,0 +1,23 @@
+UNIT u0809
+Hàm: CreateClusterGraph(const std::vector<std::set<int>> & cluster_visibility) const  → trả về std::unique_ptr<WeightedGraph<int>>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 495–526
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_clusters_                         đúng → 3   sai → 5
+3   cluster_graph->AddVertex(i)                                    → 4
+4   ++i                                                            → 2
+5   int i = 0                                                      → 6
+6   vòng for, điều kiện: i < num_clusters_                         đúng → 7   sai → END
+7   const std::set<int> &cluster_i = cluster_visibility[i]
+    int j = i + 1                                                  → 8
+8   vòng for, điều kiện: j < num_clusters_                         đúng → 9   sai → 13
+9   const std::set<int> &cluster_j = cluster_visibility[j]         → 10
+10  if (intersection.size() > 0)                                   đúng → 11   sai → 12
+11  cluster_graph->AddEdge(i, j, intersection.size())              → 12
+12  ++j                                                            → 8
+13  ++i                                                            → 6

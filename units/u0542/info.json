@@ -6,7 +6,6 @@
   246,
   262
  ],
- "signature": "ceres::internal::MatrixMatrixMultiply",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 542
+ "order": 542,
+ "short_name": "MatrixMatrixMultiply",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "void",
+ "is_const": false
 }

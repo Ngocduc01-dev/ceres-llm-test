@@ -1,0 +1,46 @@
+UNIT u1490
+Hàm: Minimize(const Minimizer::Options & options, double * parameters, Solver::Summary * solver_summary)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 66–135
+
+Số điểm rẽ nhánh: 11
+
+START → 1
+1   start_time_in_secs_ = WallTimeInSeconds()
+    iteration_start_time_in_secs_ = start_time_in_secs_
+    Init(options, parameters, solver_summary)                      → 2
+2   if (!(IterationZero()))                                        đúng → END   sai → 3
+3   do ... while 0                                                 → 4
+4   options_.use_nonmonotonic_steps ? ... : ...                    đúng → 5   sai → 5
+5   step_evaluator_ = std::make_unique<TrustRegionStepEvaluator>(x_cost_, options_.use_nonmonotonic_steps ? options_.max_consecutive_nonmonotonic_steps : 0)
+    bool atleast_one_successful_step = false                       → 6
+6   while (FinalizeIterationAndCheckIfMinimizerCanContinue())      đúng → 7   sai → END
+7   iteration_start_time_in_secs_ = WallTimeInSeconds()
+    const double previous_gradient_norm = iteration_summary_.gradient_norm
+    const double previous_gradient_max_norm = iteration_summary_.gradient_max_norm
+    iteration_summary_ = IterationSummary()
+    iteration_summary_.iteration = solver_summary->iterations.back().iteration + 1   → 8
+8   if (!(ComputeTrustRegionStep()))                               đúng → END   sai → 9
+9   do ... while 0                                                 → 10
+10  if (!iteration_summary_.step_is_valid)                         đúng → 11   sai → 14
+11  if (!(HandleInvalidStep()))                                    đúng → END   sai → 12
+12  do ... while 0                                                 → 13
+13  continue                                                       → 6
+14  if (options_.is_constrained && options_.max_num_line_search_step_size_iterations > 0)   đúng → 15   sai → 16
+15  DoLineSearch(x_, gradient_, x_cost_, &delta_)                  → 16
+16  ComputeCandidatePointAndEvaluateCost()
+    DoInnerIterationsIfNeeded()                                    → 17
+17  if (atleast_one_successful_step && ParameterToleranceReached())   đúng → 18   sai → 19
+18  return                                                         → END
+19  if (FunctionToleranceReached())                                đúng → 20   sai → 21
+20  return                                                         → END
+21  if (IsStepSuccessful())                                        đúng → 22   sai → 25
+22  atleast_one_successful_step = true                             → 23
+23  if (!(HandleSuccessfulStep()))                                 đúng → END   sai → 24
+24  do ... while 0                                                 → 6
+25  iteration_summary_.step_is_successful = false
+    iteration_summary_.cost = candidate_cost_ + solver_summary_->fixed_cost
+    iteration_summary_.gradient_norm = previous_gradient_norm
+    iteration_summary_.gradient_max_norm = previous_gradient_max_norm
+    strategy_->StepRejected(iteration_summary_.relative_decrease)   → 6

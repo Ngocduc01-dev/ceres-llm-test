@@ -1,0 +1,15 @@
+UNIT u0974
+Hàm: DumpLinearLeastSquaresProblemToConsole(const SparseMatrix * A, const double * D, const double * b, const double * x, int)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 929–951
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(A != nullptr)     đúng → 2   sai → DỪNG
+2   A->ToDenseMatrix(&AA)   → 3
+3   if (D != nullptr)       đúng → 4   sai → 4
+4   if (b != nullptr)       đúng → 5   sai → 5
+5   if (x != nullptr)       đúng → 6   sai → 6
+6   return true             → END

@@ -1,0 +1,10 @@
+UNIT u1074
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 62–65
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   VectorRef(y, num_rows()).noalias() += m_ * ConstVectorRef(x, num_cols())   → END

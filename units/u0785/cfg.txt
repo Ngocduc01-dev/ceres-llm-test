@@ -1,0 +1,40 @@
+UNIT u0785
+Hàm: DetectStructure(const CompressedRowBlockStructure & bs, const int num_eliminate_blocks, int * row_block_size, int * e_block_size, int * f_block_size)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/detect_structure.cc, dòng 38–119
+
+Số điểm rẽ nhánh: 11 (và 2 lệnh CHECK)
+
+START → 1
+1   const int num_row_blocks = bs.rows.size()
+    *row_block_size = 0
+    *e_block_size = 0
+    *f_block_size = 0
+    int r = 0                                                      → 2
+2   vòng for, điều kiện: r < num_row_blocks                        đúng → 3   sai → 6
+3   const CompressedRow &row = bs.rows[r]                          → 4
+4   if (row.cells.front().block_id >= num_eliminate_blocks)        đúng → 5   sai → 8
+5   break                                                          → 6
+6   CHECK_NE(*row_block_size, 0)                                   đúng → 7   sai → DỪNG
+7   CHECK_NE(*e_block_size, 0)                                     đúng → END   sai → DỪNG
+8   if (*row_block_size == 0)                                      đúng → 9   sai → 26
+9   *row_block_size = row.block.size                               → 10
+10  const int e_block_id = row.cells.front().block_id              → 11
+11  if (*e_block_size == 0)                                        đúng → 12   sai → 25
+12  *e_block_size = bs.cols[e_block_id].size                       → 13
+13  if (row.cells.size() > 1)                                      đúng → 14   sai → 21
+14  if (*f_block_size == 0)                                        đúng → 15   sai → 16
+15  const int f_block_id = row.cells[1].block_id
+    *f_block_size = bs.cols[f_block_id].size                       → 16
+16  int c = 1                                                      → 17
+17  vòng for, điều kiện: (c < row.cells.size()) && (*f_block_size != Eigen::Dynamic)   đúng → 18   sai → 21
+18  const int f_block_id = row.cells[c].block_id                   → 19
+19  if (*f_block_size != bs.cols[f_block_id].size)                 đúng → 20   sai → 20
+20  ++c                                                            → 17
+21  const bool is_everything_dynamic = (*row_block_size == Eigen::Dynamic && *e_block_size == Eigen::Dynamic && *f_block_size == Eigen::Dynamic)   → 22
+22  if (is_everything_dynamic)                                     đúng → 23   sai → 24
+23  break                                                          → 6
+24  ++r                                                            → 2
+25  if (*e_block_size != Eigen::Dynamic && *e_block_size != bs.cols[e_block_id].size)   đúng → 13   sai → 13
+26  if (*row_block_size != Eigen::Dynamic && *row_block_size != row.block.size)   đúng → 10   sai → 10

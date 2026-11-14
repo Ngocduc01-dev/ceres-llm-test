@@ -1,0 +1,32 @@
+UNIT u1313
+Hàm: ChunkDiagonalBlockAndGradient(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, typename EigenTypes<kEBlockSize, kEBlockSize>::Matrix * ete, double * g, double * buffer, BlockRandomAccessMatrix * lhs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 441–505
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()
+    int b_pos = bs->rows[row_block_counter].block.position
+    const int e_block_size = ete->rows()
+    int j = 0                                                      → 2
+2   vòng for, điều kiện: j < chunk.size                            đúng → 3   sai → END
+3   const CompressedRow &row = bs->rows[row_block_counter + j]     → 4
+4   if (row.cells.size() > 1)                                      đúng → 5   sai → 6
+5   EBlockRowOuterProduct(A, row_block_counter + j, lhs)           → 6
+6   const Cell &e_cell = row.cells.front()
+    MatrixTransposeMatrixMultiply<-1, -1, -1, -1, 1>(values + e_cell.position, row.block.size, e_block_size, values + e_cell.position, row.block.size, e_block_size, ete->data(), 0, 0, e_block_size, e_block_size)   → 7
+7   if (b)                                                         đúng → 8   sai → 9
+8   MatrixTransposeVectorMultiply<-1, -1, 1>(values + e_cell.position, row.block.size, e_block_size, b + b_pos, g)   → 9
+9   int c = 1                                                      → 10
+10  vòng for, điều kiện: c < row.cells.size()                      đúng → 11   sai → 13
+11  const int f_block_id = row.cells[c].block_id
+    const int f_block_size = bs->cols[f_block_id].size
+    double *buffer_ptr = buffer + FindOrDie(chunk.buffer_layout, f_block_id)
+    MatrixTransposeMatrixMultiply<-1, -1, -1, -1, 1>(values + e_cell.position, row.block.size, e_block_size, values + row.cells[c].position, row.block.size, f_block_size, buffer_ptr, 0, 0, e_block_size, f_block_size)   → 12
+12  ++c                                                            → 10
+13  b_pos += row.block.size                                        → 14
+14  ++j                                                            → 2

@@ -6,7 +6,6 @@
   145,
   206
  ],
- "signature": "ceres::internal::CgnrSolver::SolveImpl",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1441
+ "order": 1441,
+ "short_name": "SolveImpl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CgnrSolver",
+ "class_is_template": false,
+ "params": "(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

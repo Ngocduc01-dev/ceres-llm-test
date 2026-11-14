@@ -1,0 +1,16 @@
+UNIT u1417
+Hàm: OptionsAreValidForDenseSchur(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 227–241
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(options.linear_solver_type, DENSE_SCHUR)              đúng → 2   sai → DỪNG
+2   if (options.dynamic_sparsity)                                  đúng → 3   sai → 4
+3   *error = "dynamic sparsity is only supported with SPARSE_NORMAL_CHOLESKY"
+    return false                                                   → END
+4   if (!OptionsAreValidForDenseSolver(options, error))            đúng → 5   sai → 6
+5   return false                                                   → END
+6   return true                                                    → END

@@ -1,0 +1,41 @@
+UNIT u1515
+Hàm: VisibilityBasedPreconditioner(const CompressedRowBlockStructure & bs, Preconditioner::Options options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 67–110
+
+Số điểm rẽ nhánh: 0 (và 6 lệnh CHECK)
+
+START → 1
+1   TypedPreconditioner() (Base initializer)
+    options_(std::move(options)) (Member initializer)
+    num_blocks_(0) (Member initializer)
+    num_clusters_(0) (Member initializer)
+    blocks_() (Member initializer)
+    cluster_membership_() (Member initializer)
+    block_pairs_() (Member initializer)
+    cluster_pairs_() (Member initializer)
+    eliminator_() (Member initializer)
+    m_() (Member initializer)
+    m_crs_() (Member initializer)
+    sparse_cholesky_() (Member initializer)                        → 2
+2   CHECK_GT(options_.elimination_groups.size(), 1)                đúng → 3   sai → DỪNG
+3   CHECK_GT(options_.elimination_groups[0], 0)                    đúng → 4   sai → DỪNG
+4   CHECK(options_.type == CLUSTER_JACOBI || options_.type == CLUSTER_TRIDIAGONAL)   đúng → 5   sai → DỪNG
+5   CHECK_GT(num_blocks_, 0)                                       đúng → 6   sai → DỪNG
+6   CHECK(options_.context != nullptr)                             đúng → 7   sai → DỪNG
+7   operator= (ImplicitCastExpr, FunctionToPointerDecay, vector<Block> &(*)(vector<Block> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    blocks_ = Tail(bs.cols, bs.cols.size() - options_.elimination_groups[0])
+    const time_t start_time = time(nullptr)                        → 8
+8   LOG(FATAL)                                                     đúng → 9   sai → DỪNG
+9   ComputeClusterTridiagonalSparsity(bs)
+    break                                                          → 10
+10  const time_t structure_time = time(nullptr)
+    InitStorage(bs)
+    const time_t storage_time = time(nullptr)
+    InitEliminator(bs)
+    const time_t eliminator_time = time(nullptr)
+    sparse_cholesky_options.sparse_linear_algebra_library_type = options_.sparse_linear_algebra_library_type
+    sparse_cholesky_options.ordering_type = options_.ordering_type
+    sparse_cholesky_ = SparseCholesky::Create(sparse_cholesky_options)
+    const time_t init_time = time(nullptr)                         → END

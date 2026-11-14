@@ -1,0 +1,30 @@
+UNIT u1466
+Hàm: DoInnerIterationsIfNeeded()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 506–578
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   inner_iterations_were_useful_ = false                          → 2
+2   if (!inner_iterations_are_enabled_ || candidate_cost_ >= std::numeric_limits<double>::max())   đúng → 3   sai → 4
+3   return                                                         → END
+4   double inner_iteration_start_time = WallTimeInSeconds()
+    ++solver_summary_->num_inner_iteration_steps
+    inner_iteration_x_ = candidate_x_
+    options_.inner_iteration_minimizer->Minimize(options_, inner_iteration_x_.data(), &inner_iteration_summary)
+    double inner_iteration_cost                                    → 5
+5   if (!evaluator_->Evaluate(inner_iteration_x_.data(), &inner_iteration_cost, nullptr, nullptr, nullptr))   đúng → 6   sai → 8
+6   if (is_not_silent_)                                            đúng → 7   sai → 7
+7   return                                                         → END
+8   if (is_not_silent_)                                            đúng → 9   sai → 9
+9   candidate_x_ = inner_iteration_x_
+    const double inner_iteration_cost_change = candidate_cost_ - inner_iteration_cost
+    model_cost_change_ += inner_iteration_cost_change
+    inner_iterations_were_useful_ = inner_iteration_cost < x_cost_
+    const double inner_iteration_relative_progress = 1. - inner_iteration_cost / candidate_cost_
+    inner_iterations_are_enabled_ = (inner_iteration_relative_progress > options_.inner_iteration_tolerance)   → 10
+10  if (is_not_silent_ && !inner_iterations_are_enabled_)          đúng → 11   sai → 11
+11  candidate_cost_ = inner_iteration_cost
+    solver_summary_->inner_iteration_time_in_seconds += WallTimeInSeconds() - inner_iteration_start_time   → END

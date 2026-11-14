@@ -6,7 +6,6 @@
   120,
   122
  ],
- "signature": "ceres::CostFunction::parameter_block_sizes",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 7,
- "order": 12
+ "order": 12,
+ "short_name": "parameter_block_sizes",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::CostFunction",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const std::vector<int32_t> &",
+ "is_const": true
 }

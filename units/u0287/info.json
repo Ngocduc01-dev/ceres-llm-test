@@ -6,7 +6,6 @@
   74,
   74
  ],
- "signature": "ceres::internal::DoglegStrategy::subspace_g",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 287
+ "order": 287,
+ "short_name": "subspace_g",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "Vector",
+ "is_const": true
 }

@@ -1,0 +1,21 @@
+UNIT u1265
+Hàm: MaxDerivativesPerResidualBlock() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 521–533
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   int max_derivatives = 0                                        → 2
+2   for (auto *residual_block : residual_blocks_)                  đúng → 3   sai → 9
+3   auto *residual_block
+    int derivatives = 0
+    int num_parameters = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < num_parameters                        đúng → 5   sai → 7
+5   derivatives += residual_block->NumResiduals() * residual_block->parameter_blocks()[j]->TangentSize()   → 6
+6   ++j                                                            → 4
+7   max_derivatives = std::max(max_derivatives, derivatives)       → 8
+8   ++ (bước tiếp của vòng for)                                    → 2
+9   return max_derivatives                                         → END

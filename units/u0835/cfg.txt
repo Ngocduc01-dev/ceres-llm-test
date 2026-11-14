@@ -1,0 +1,15 @@
+UNIT u0835
+Hàm: CgnrLinearOperator(const LinearOperator & A, const double * D, ContextImpl * context, int num_threads)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CgnrLinearOperator
+Vị trí: internal/ceres/cgnr_solver.cc, dòng 87–95
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ConjugateGradientsLinearOperator() (Base initializer)
+    A_(A) (Member initializer)
+    D_(D) (Member initializer)
+    z_(Vector::Zero(A.num_rows())) (Member initializer)
+    context_(context) (Member initializer)
+    num_threads_(num_threads) (Member initializer)                 → END

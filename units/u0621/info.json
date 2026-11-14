@@ -6,7 +6,6 @@
   87,
   88
  ],
- "signature": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 621
+ "order": 621,
+ "short_name": "DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::DynamicAutoDiffCostFunction",
+ "class_is_template": true,
+ "params": "(DynamicAutoDiffCostFunction<CostFunctor, Stride> && other)",
+ "return_type": null,
+ "is_const": false
 }

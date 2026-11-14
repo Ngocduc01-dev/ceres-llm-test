@@ -1,0 +1,43 @@
+UNIT u1207
+Hàm: DeleteRowBlocks(const int delta_row_blocks)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 669–709
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   const int num_row_blocks = block_structure_->rows.size()
+    const int new_num_row_blocks = num_row_blocks - delta_row_blocks
+    int delta_num_nonzeros = 0
+    int delta_num_rows = 0
+    const std::vector<Block> &column_blocks = block_structure_->cols
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < delta_row_blocks                      đúng → 3   sai → 12
+3   const CompressedRow &row = block_structure_->rows[num_row_blocks - i - 1]
+    delta_num_rows += row.block.size
+    int c = 0                                                      → 4
+4   vòng for, điều kiện: c < row.cells.size()                      đúng → 5   sai → 11
+5   const Cell &cell = row.cells[c]
+    delta_num_nonzeros += row.block.size * column_blocks[cell.block_id].size   → 6
+6   if (transpose_block_structure_)                                đúng → 7   sai → 10
+7   auto &col_cells = transpose_block_structure_->rows[cell.block_id].cells   → 8
+8   while (!col_cells.empty() && col_cells.back().block_id >= new_num_row_blocks)   đúng → 9   sai → 10
+9   const int del_block_id = col_cells.back().block_id
+    const int del_block_rows = block_structure_->rows[del_block_id].block.size
+    const int del_block_cols = column_blocks[cell.block_id].size
+    const int del_cell_nnz = del_block_rows * del_block_cols
+    transpose_block_structure_->rows[cell.block_id].nnz -= del_cell_nnz
+    col_cells.pop_back()                                           → 8
+10  ++c                                                            → 4
+11  ++i                                                            → 2
+12  num_nonzeros_ -= delta_num_nonzeros
+    num_rows_ -= delta_num_rows
+    block_structure_->rows.resize(new_num_row_blocks)              → 13
+13  if (transpose_block_structure_ == nullptr)                     đúng → 14   sai → 15
+14  return                                                         → END
+15  int i = 0                                                      → 16
+16  vòng for, điều kiện: i < delta_row_blocks                      đúng → 17   sai → 19
+17  transpose_block_structure_->cols.pop_back()                    → 18
+18  ++i                                                            → 16
+19  ComputeCumulativeNumberOfNonZeros(transpose_block_structure_->rows)   → END

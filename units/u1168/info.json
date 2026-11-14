@@ -6,7 +6,6 @@
   266,
   278
  ],
- "signature": "ceres::internal::TripletSparseMatrix::CreateSparseDiagonalMatrix",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1168
+ "order": 1168,
+ "short_name": "CreateSparseDiagonalMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "(const double * values, int num_rows)",
+ "return_type": "std::unique_ptr<TripletSparseMatrix>",
+ "is_const": false
 }

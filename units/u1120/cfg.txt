@@ -1,0 +1,26 @@
+UNIT u1120
+Hàm: StringToSparseLinearAlgebraLibraryType(std::string value, SparseLinearAlgebraLibraryType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 116–125
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   UpperCase(&value)                        → 2
+2   if (value == "SUITE_SPARSE")             đúng → 3   sai → 4
+3   *type = SUITE_SPARSE
+    return true                              → END
+4   if (value == "EIGEN_SPARSE")             đúng → 5   sai → 6
+5   *type = EIGEN_SPARSE
+    return true                              → END
+6   if (value == "ACCELERATE_SPARSE")        đúng → 7   sai → 8
+7   *type = ACCELERATE_SPARSE
+    return true                              → END
+8   if (value == "CUDA_SPARSE")              đúng → 9   sai → 10
+9   *type = CUDA_SPARSE
+    return true                              → END
+10  if (value == "NO_SPARSE")                đúng → 11   sai → 12
+11  *type = NO_SPARSE
+    return true                              → END
+12  return false                             → END

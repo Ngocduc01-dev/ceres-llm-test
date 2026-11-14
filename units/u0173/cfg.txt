@@ -1,0 +1,12 @@
+UNIT u0173
+Hàm: SoftLOneLoss(double a)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::SoftLOneLoss
+Vị trí: include/ceres/loss_function.h, dòng 193–193
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LossFunction() (Base initializer)
+    b_(a * a) (Member initializer)
+    c_(1 / b_) (Member initializer)                                → END

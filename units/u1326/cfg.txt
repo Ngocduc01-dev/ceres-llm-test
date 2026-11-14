@@ -1,0 +1,11 @@
+UNIT u1326
+Hàm: operator()(SparseMatrix * base_jacobian, int num_parameters)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicCompressedRowJacobianFinalizer
+Vị trí: internal/ceres/dynamic_compressed_row_finalizer.h, dòng 41–45
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   auto *jacobian = down_cast<DynamicCompressedRowSparseMatrix *>(base_jacobian)
+    jacobian->Finalize(num_parameters)                             → END

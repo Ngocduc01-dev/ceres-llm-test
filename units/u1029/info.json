@@ -6,7 +6,6 @@
   176,
   179
  ],
- "signature": "ceres::OrderedGroups::MinNonZeroGroup",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1029
+ "order": 1029,
+ "short_name": "MinNonZeroGroup",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

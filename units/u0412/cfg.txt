@@ -1,0 +1,10 @@
+UNIT u0412
+Hàm: IsSolutionUsable() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Solver::Summary
+Vị trí: internal/ceres/solver.cc, dòng 1136–1138
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return internal::IsSolutionUsable(*this)   → END

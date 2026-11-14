@@ -6,7 +6,6 @@
   297,
   301
  ],
- "signature": "ceres::EigenQuaternionManifold::PlusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 347
+ "order": 347,
+ "short_name": "PlusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EigenQuaternionManifold",
+ "class_is_template": false,
+ "params": "(const double * x, double * jacobian)",
+ "return_type": "bool",
+ "is_const": true
 }

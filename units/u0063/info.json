@@ -6,7 +6,6 @@
   46,
   56
  ],
- "signature": "ceres::internal::VariadicEvaluateImpl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 63
+ "order": 63,
+ "short_name": "VariadicEvaluateImpl",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Functor& functor, T const* const* input, T* output, std::false_type /*is_dynamic*/, std::integer_sequence<int, Indices...>)",
+ "return_type": "bool",
+ "is_const": false
 }

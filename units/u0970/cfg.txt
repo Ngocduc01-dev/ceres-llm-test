@@ -1,0 +1,11 @@
+UNIT u0970
+Hàm: ThreadMainLoop()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 95–100
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   while (task_queue_.Wait(&task))   đúng → 2   sai → END
+2   task()                            → 1

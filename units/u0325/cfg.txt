@@ -1,0 +1,10 @@
+UNIT u0325
+Hàm: position() const  → trả về const Vector &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.h, dòng 237–237
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return position_   → END

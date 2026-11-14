@@ -1,0 +1,11 @@
+UNIT u1482
+Hàm: ceres_create_problem()  → trả về ceres_problem_t *
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 58–60
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(Problem *)
+    return reinterpret_cast<ceres_problem_t *>(new Problem) (CXXReinterpretCastExpr, BitCast, ceres_problem_t *)   → END

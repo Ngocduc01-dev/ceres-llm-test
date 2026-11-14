@@ -1,0 +1,11 @@
+UNIT u0445
+Hàm: ArraySelector(int s)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ArraySelector
+Vị trí: include/ceres/internal/array_selector.h, dòng 82–82
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ArraySelector<int, -1, 20> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   FixedArray(s) (Base initializer)   → END

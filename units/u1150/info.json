@@ -6,7 +6,6 @@
   117,
   122
  ],
- "signature": "ceres::internal::InnerProductComputer::Create",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 1150
+ "order": 1150,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
+ "params": "(const BlockSparseMatrix & m, CompressedRowSparseMatrix::StorageType product_storage_type)",
+ "return_type": "std::unique_ptr<InnerProductComputer>",
+ "is_const": false
 }

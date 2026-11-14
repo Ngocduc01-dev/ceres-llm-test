@@ -1,0 +1,20 @@
+UNIT u1204
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y, ContextImpl * context, int num_threads) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 277–324
+
+Số điểm rẽ nhánh: 2 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                                            đúng → 2   sai → DỪNG
+2   CHECK(y != nullptr)                                            đúng → 3   sai → DỪNG
+3   if (transpose_block_structure_ == nullptr || num_threads == 1)   đúng → 4   sai → 5
+4   LeftMultiplyAndAccumulate(x, y)
+    return                                                         → END
+5   auto transpose_bs = transpose_block_structure_.get()
+    const auto values = values_
+    const int num_col_blocks = transpose_bs->rows.size()           → 6
+6   if (!num_col_blocks)                                           đúng → 7   sai → 8
+7   return                                                         → END
+8   ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7) &&, const struct ceres::internal::CompressedList *, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:323:7) &&))(context, 0, num_col_blocks, num_threads, [values, transpose_bs, x, y](int row_block_id) {, transpose_bs->rows.data(), [](const CompressedRow &row) {)   → END

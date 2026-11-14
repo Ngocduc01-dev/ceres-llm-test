@@ -6,7 +6,6 @@
   117,
   184
  ],
- "signature": "ceres::DynamicCostFunctionToFunctor::operator()",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1121
+ "order": 1121,
+ "short_name": "operator()",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::DynamicCostFunctionToFunctor",
+ "class_is_template": false,
+ "params": "(JetT const* const* inputs, JetT* output)",
+ "return_type": "bool",
+ "is_const": true
 }

@@ -1,0 +1,58 @@
+UNIT u1481
+Hàm: RemoveFixedBlocks(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 305–411
+
+Số điểm rẽ nhánh: 10 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(removed_parameter_blocks != nullptr)                     đúng → 2   sai → DỪNG
+2   CHECK(fixed_cost != nullptr)                                   đúng → 3   sai → DỪNG
+3   CHECK(error != nullptr)                                        đúng → 4   sai → DỪNG
+4   for (auto *parameter_block : parameter_blocks_)                đúng → 5   sai → 7
+5   auto *parameter_block
+    parameter_block->set_index(-1)                                 → 6
+6   ++ (bước tiếp của vòng for)                                    → 4
+7   int num_active_residual_blocks = 0
+    int i = 0                                                      → 8
+8   vòng for, điều kiện: i < residual_blocks_.size()               đúng → 9   sai → 24
+9   ResidualBlock *residual_block = residual_blocks_[i]
+    int num_parameter_blocks = residual_block->NumParameterBlocks()
+    bool all_constant = true
+    int k = 0                                                      → 10
+10  vòng for, điều kiện: k < num_parameter_blocks                  đúng → 11   sai → 15
+11  ParameterBlock *parameter_block = residual_block->parameter_blocks()[k]   → 12
+12  if (!parameter_block->IsConstant())                            đúng → 13   sai → 14
+13  all_constant = false
+    parameter_block->set_index(1)                                  → 14
+14  k++                                                            → 10
+15  if (!all_constant)                                             đúng → 16   sai → 18
+16  residual_blocks_[num_active_residual_blocks++] = residual_block
+    continue                                                       → 17
+17  ++i                                                            → 8
+18  if (need_to_call_prepare_for_evaluation)                       đúng → 19   sai → 20
+19  constexpr bool kNewPoint = true
+    constexpr bool kDoNotEvaluateJacobians = false
+    evaluation_callback_->PrepareForEvaluation(kDoNotEvaluateJacobians, kNewPoint)
+    need_to_call_prepare_for_evaluation = false                    → 20
+20  double cost = 0.                                               → 21
+21  if (!residual_block->Evaluate(true, &cost, nullptr, nullptr, residual_block_evaluate_scratch.get()))   đúng → 22   sai → 23
+22  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("Evaluation of the residual %d failed during removal of fixed residual blocks.", i)
+    return false                                                   → END
+23  *fixed_cost += cost                                            → 17
+24  residual_blocks_.resize(num_active_residual_blocks)
+    int num_active_parameter_blocks = 0
+    removed_parameter_blocks->clear()                              → 25
+25  for (auto *parameter_block : parameter_blocks_)                đúng → 26   sai → 31
+26  auto *parameter_block                                          → 27
+27  if (parameter_block->index() == -1)                            đúng → 28   sai → 30
+28  removed_parameter_blocks->push_back(parameter_block->mutable_user_state())   → 29
+29  ++ (bước tiếp của vòng for)                                    → 25
+30  parameter_blocks_[num_active_parameter_blocks++] = parameter_block   → 29
+31  parameter_blocks_.resize(num_active_parameter_blocks)          → 32
+32  if (!(((NumResidualBlocks() == 0) && (NumParameterBlocks() == 0)) || ((NumResidualBlocks() != 0) && (NumParameterBlocks() != 0))))   đúng → 33   sai → 34
+33  *error = "Congratulations, you found a bug in Ceres. Please report it."
+    return false                                                   → END
+34  return true                                                    → END

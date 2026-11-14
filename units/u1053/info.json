@@ -6,7 +6,6 @@
   125,
   144
  ],
- "signature": "ceres::OrderedGroups::Reverse",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1053
+ "order": 1053,
+ "short_name": "Reverse",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

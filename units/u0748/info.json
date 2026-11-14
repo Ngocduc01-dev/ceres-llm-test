@@ -6,7 +6,6 @@
   80,
   87
  ],
- "signature": "ceres::internal::Graph::AddEdge",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 748
+ "order": 748,
+ "short_name": "AddEdge",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Graph",
+ "class_is_template": true,
+ "params": "(const Vertex & vertex1, const Vertex & vertex2)",
+ "return_type": "void",
+ "is_const": false
 }

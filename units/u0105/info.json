@@ -6,7 +6,6 @@
   594,
   599
  ],
- "signature": "ceres::expm1",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 105
+ "order": 105,
+ "short_name": "expm1",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& f)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

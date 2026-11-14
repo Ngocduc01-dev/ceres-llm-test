@@ -6,7 +6,6 @@
   66,
   67
  ],
- "signature": "ceres::internal::LinearOperatorAdapter::LinearOperatorAdapter",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 655
+ "order": 655,
+ "short_name": "LinearOperatorAdapter",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LinearOperatorAdapter",
+ "class_is_template": false,
+ "params": "(LinearOperator & linear_operator)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,20 @@
+UNIT u1366
+Hàm: SetManifold(Manifold * new_manifold)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 160–188
+
+Số điểm rẽ nhánh: 2 (và 3 lệnh CHECK)
+
+START → 1
+1   if (new_manifold == manifold_)                                 đúng → 2   sai → 3
+2   return                                                         → END
+3   if (new_manifold == nullptr)                                   đúng → 4   sai → 5
+4   manifold_ = nullptr
+    plus_jacobian_ = nullptr
+    return                                                         → END
+5   CHECK_EQ(new_manifold->AmbientSize(), size_)                   đúng → 6   sai → DỪNG
+6   CHECK_GE(new_manifold->TangentSize(), 0)                       đúng → 7   sai → DỪNG
+7   manifold_ = new_manifold
+    plus_jacobian_ = std::make_unique<double[]>(manifold_->AmbientSize() * manifold_->TangentSize())   → 8
+8   CHECK(UpdatePlusJacobian())                                    đúng → END   sai → DỪNG

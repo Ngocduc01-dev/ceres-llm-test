@@ -6,7 +6,6 @@
   1336,
   1338
  ],
- "signature": "?::std::numeric_limits::epsilon",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 153
+ "order": 153,
+ "short_name": "epsilon",
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false
 }

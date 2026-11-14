@@ -1,0 +1,16 @@
+UNIT u1387
+Hàm: StateVectorToParameterBlocks(const double * state)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 77–85
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   for (auto *parameter_block : parameter_blocks_)                đúng → 2   sai → 7
+2   auto *parameter_block                                          → 3
+3   if (!parameter_block->IsConstant() && !parameter_block->SetState(state))   đúng → 4   sai → 5
+4   return false                                                   → END
+5   state += parameter_block->Size()                               → 6
+6   ++ (bước tiếp của vòng for)                                    → 1
+7   return true                                                    → END

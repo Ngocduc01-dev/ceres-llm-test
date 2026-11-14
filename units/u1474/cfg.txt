@@ -1,0 +1,18 @@
+UNIT u1474
+Hàm: CreateEvaluatorScratch(const Program & program, unsigned int num_threads)  → trả về std::unique_ptr<EvaluateScratch[]>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProgramEvaluator
+Vị trí: internal/ceres/program_evaluator.h, dòng 361–379
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int max_parameters_per_residual_block = program.MaxParametersPerResidualBlock()
+    int max_scratch_doubles_needed_for_evaluate = program.MaxScratchDoublesNeededForEvaluate()
+    int max_residuals_per_residual_block = program.MaxResidualsPerResidualBlock()
+    int num_parameters = program.NumEffectiveParameters()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_threads                           đúng → 3   sai → END
+3   evaluate_scratch[i].Init(max_parameters_per_residual_block, max_scratch_doubles_needed_for_evaluate, max_residuals_per_residual_block, num_parameters)   → 4
+4   i++                                                            → 2

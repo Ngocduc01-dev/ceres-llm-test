@@ -1,0 +1,11 @@
+UNIT u1286
+Hàm: ComputeCanonicalViewsClustering(const CanonicalViewsClusteringOptions & options, const WeightedGraph<int> & graph, std::vector<int> * centers, IntMap * membership)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/canonical_views_clustering.cc, dòng 80–90
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   time_t start_time = time(nullptr)
+    cv.ComputeClustering(options, graph, centers, membership)      → END

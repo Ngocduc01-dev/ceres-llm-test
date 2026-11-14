@@ -6,7 +6,6 @@
   162,
   170
  ],
- "signature": "ceres::internal::EigenDenseQR::Factorize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 658
+ "order": 658,
+ "short_name": "Factorize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenDenseQR",
+ "class_is_template": false,
+ "params": "(int num_rows, int num_cols, double * lhs, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

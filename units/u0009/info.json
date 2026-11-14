@@ -6,7 +6,6 @@
   174,
   174
  ],
- "signature": "ceres::AutoDiffManifold::functor",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 9
+ "order": 9,
+ "short_name": "functor",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const Functor &",
+ "is_const": true
 }

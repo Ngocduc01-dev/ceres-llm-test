@@ -1,0 +1,18 @@
+UNIT u1050
+Hàm: Plus(const double * x, const double * delta, double * x_plus_delta) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SubsetManifold
+Vị trí: internal/ceres/manifold.cc, dòng 185–197
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const int ambient_size = AmbientSize()
+    int i = 0
+    int j = 0                                                      → 2
+2   vòng for, điều kiện: i < ambient_size                          đúng → 3   sai → 7
+3   if (constancy_mask_[i])                                        đúng → 4   sai → 6
+4   x_plus_delta[i] = x[i]                                         → 5
+5   ++i                                                            → 2
+6   x_plus_delta[i] = x[i] + delta[j++]                            → 5
+7   return true                                                    → END

@@ -1,0 +1,9 @@
+UNIT u1463
+Hàm: CreateEvaluatePreparers(int num_threads)  → trả về std::unique_ptr<ScratchEvaluatePreparer[]>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseJacobianWriter
+Vị trí: internal/ceres/dense_jacobian_writer.h, dòng 61–64
+
+Số điểm rẽ nhánh: 0
+
+START → END

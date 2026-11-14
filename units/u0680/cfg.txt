@@ -1,0 +1,11 @@
+UNIT u0680
+Hàm: Init(const Vector & position, const Vector & direction)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.cc, dòng 96–99
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   position_ = position
+    direction_ = direction                         → END

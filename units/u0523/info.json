@@ -6,7 +6,6 @@
   89,
   104
  ],
- "signature": "ceres::down_cast",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 523
+ "order": 523,
+ "short_name": "down_cast",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(foo)",
+ "return_type": "To",
+ "is_const": false
 }

@@ -1,0 +1,43 @@
+UNIT u1172
+Hàm: LinearLeastSquaresProblem0()  → trả về std::unique_ptr<LinearLeastSquaresProblem>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 90–135
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   problem->b = std::make_unique<double[]>(3)
+    problem->D = std::make_unique<double[]>(2)
+    problem->x = std::make_unique<double[]>(2)
+    problem->x_D = std::make_unique<double[]>(2)
+    int *Ai = A->mutable_rows()
+    int *Aj = A->mutable_cols()
+    double *Ax = A->mutable_values()
+    int counter = 0
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < 3                                     đúng → 3   sai → 8
+3   int j = 0                                                      → 4
+4   vòng for, điều kiện: j < 2                                     đúng → 5   sai → 7
+5   Ai[counter] = i
+    Aj[counter] = j
+    ++counter                                                      → 6
+6   ++j                                                            → 4
+7   ++i                                                            → 2
+8   Ax[0] = 1.
+    Ax[1] = 2.
+    Ax[2] = 3.
+    Ax[3] = 4.
+    Ax[4] = 6
+    Ax[5] = -10
+    A->set_num_nonzeros(6)
+    problem->A = std::move(A)
+    problem->b[0] = 8
+    problem->b[1] = 18
+    problem->b[2] = -18
+    problem->x[0] = 2.
+    problem->x[1] = 3.
+    problem->D[0] = 1
+    problem->D[1] = 2
+    problem->x_D[0] = 1.78448275
+    problem->x_D[1] = 2.8232758599999999                           → END

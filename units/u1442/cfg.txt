@@ -1,0 +1,29 @@
+UNIT u1442
+Hàm: ReorderProgramForSparseCholesky(const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type, const ParameterBlockOrdering & parameter_block_ordering, int start_row_block, Program * program, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 540–595
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   if (parameter_block_ordering.NumElements() != program->NumParameterBlocks())   đúng → 2   sai → 3
+2   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = StringPrintf("The program has %d parameter blocks, but the parameter block ordering has %d parameter blocks.", program->NumParameterBlocks(), parameter_block_ordering.NumElements())
+    return false                                                   → END
+3   program->NumParameterBlocks(), 0
+    std::vector<ParameterBlock *> &parameter_blocks = *(program->mutable_parameter_blocks())   → 4
+4   if (sparse_linear_algebra_library_type == SUITE_SPARSE)        đúng → 5   sai → 11
+5   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    OrderingForSparseNormalCholeskyUsingSuiteSparse(linear_solver_ordering_type, * tsm_block_jacobian_transpose, parameter_blocks, parameter_block_ordering, ordering.data())   → 6
+6   int i = 0                                                      → 7
+7   vòng for, điều kiện: i < program->NumParameterBlocks()         đúng → 8   sai → 10
+8   parameter_blocks[i] = parameter_blocks_copy[ordering[i]]       → 9
+9   ++i                                                            → 7
+10  program->SetParameterOffsetsAndIndex()
+    return true                                                    → END
+11  if (sparse_linear_algebra_library_type == ACCELERATE_SPARSE)   đúng → 12   sai → 13
+12  return true                                                    → END
+13  if (sparse_linear_algebra_library_type == EIGEN_SPARSE)        đúng → 14   sai → 6
+14  operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, * tsm_block_jacobian_transpose, ordering.data())   → 6

@@ -1,0 +1,18 @@
+UNIT u1311
+Hàm: MinParameterBlock(const ResidualBlock * residual_block, int size_of_first_elimination_group)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/reorder_program.cc, dòng 76–90
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   int min_parameter_block_position = size_of_first_elimination_group
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < residual_block->NumParameterBlocks()   đúng → 3   sai → 8
+3   ParameterBlock *parameter_block = residual_block->parameter_blocks()[i]   → 4
+4   if (!parameter_block->IsConstant())                            đúng → 5   sai → 7
+5   CHECK_NE(parameter_block->index(), -1)                         đúng → 6   sai → DỪNG
+6   min_parameter_block_position = std::min(parameter_block->index(), min_parameter_block_position)   → 7
+7   ++i                                                            → 2
+8   return min_parameter_block_position                            → END

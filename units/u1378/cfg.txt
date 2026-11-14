@@ -1,0 +1,54 @@
+UNIT u1378
+Hàm: SolveReducedLinearSystemUsingConjugateGradients(const LinearSolver::PerSolveOptions & per_solve_options, double * solution)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 335–406
+
+Số điểm rẽ nhánh: 5 (và 4 lệnh CHECK)
+
+START → 1
+1   CHECK(options().use_explicit_schur_complement)                 đúng → 2   sai → DỪNG
+2   const int num_rows = lhs()->num_rows()                         → 3
+3   if (num_rows == 0)                                             đúng → 4   sai → 5
+4   summary.num_iterations = 0
+    summary.termination_type = LinearSolverTerminationType::SUCCESS
+    summary.message = "Success."                                   → END
+5   CHECK_EQ(options().preconditioner_type, SCHUR_JACOBI)          đúng → 6   sai → DỪNG
+6   if (preconditioner_ == nullptr)                                đúng → 7   sai → 8
+7   preconditioner_ = std::make_unique<BlockRandomAccessDiagonalMatrix>(blocks_, options().context, options().num_threads)   → 8
+8   auto *sc = down_cast<BlockRandomAccessSparseMatrix *>(mutable_lhs())
+    int i = 0                                                      → 9
+9   vòng for, điều kiện: i < blocks_.size()                        đúng → 10   sai → 15
+10  const int block_size = blocks_[i].size
+    int sc_r
+    int sc_c
+    int sc_row_stride
+    int sc_col_stride
+    CellInfo *sc_cell_info = sc->GetCell(i, i, &sc_r, &sc_c, &sc_row_stride, &sc_col_stride)   → 11
+11  CHECK(sc_cell_info != nullptr)                                 đúng → 12   sai → DỪNG
+12  sc_cell_info->values, sc_row_stride, sc_col_stride
+    int pre_r
+    int pre_c
+    int pre_row_stride
+    int pre_col_stride
+    CellInfo *pre_cell_info = preconditioner_->GetCell(i, i, &pre_r, &pre_c, &pre_row_stride, &pre_col_stride)   → 13
+13  CHECK(pre_cell_info != nullptr)                                đúng → 14   sai → DỪNG
+14  ++i                                                            → 9
+15  preconditioner_->Invert()
+    VectorRef(solution, num_rows).setZero()
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    cg_options.min_num_iterations = options().min_num_iterations
+    cg_options.max_num_iterations = options().max_num_iterations
+    cg_options.residual_reset_period = options().residual_reset_period
+    cg_options.q_tolerance = per_solve_options.q_tolerance
+    cg_options.r_tolerance = per_solve_options.r_tolerance
+    cg_solution_ = Vector::Zero(sc->num_rows())
+    int i = 0                                                      → 16
+16  vòng for, điều kiện: i < 4                                     đúng → 17   sai → 20
+17  if (scratch_[i] == nullptr)                                    đúng → 18   sai → 19
+18  CFGNewAllocator(Vector *)
+    scratch_[i] = new Vector(sc->num_rows())                       → 19
+19  ++i                                                            → 16
+20  operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    VectorRef(solution, sc->num_rows()) = cg_solution_             → END

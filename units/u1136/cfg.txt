@@ -1,0 +1,29 @@
+UNIT u1136
+Hàm: ChunkOuterProduct(int thread_id, const CompressedRowBlockStructure * bs, const Matrix & inverse_ete, const double * buffer, const BufferLayoutType & buffer_layout, BlockRandomAccessMatrix * lhs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 511–561
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   const int e_block_size = inverse_ete.rows()
+    buffer_layout.begin()
+    double *b1_transpose_inverse_ete = chunk_outer_product_buffer_.get() + thread_id * buffer_size_   → 2
+2   for (; it1 != buffer_layout.end(); ...)                        đúng → 3   sai → END
+3   const int block1 = it1->first - num_eliminate_blocks_
+    const int block1_size = bs->cols[it1->first].size
+    MatrixTransposeMatrixMultiply<-1, -1, -1, -1, 0>(buffer + it1->second, e_block_size, block1_size, inverse_ete.data(), e_block_size, e_block_size, b1_transpose_inverse_ete, 0, 0, block1_size, e_block_size)   → 4
+4   for (; it2 != buffer_layout.end(); ...)                        đúng → 5   sai → 9
+5   const int block2 = it2->first - num_eliminate_blocks_
+    int r
+    int c
+    int row_stride
+    int col_stride
+    CellInfo *cell_info = lhs->GetCell(block1, block2, &r, &c, &row_stride, &col_stride)   → 6
+6   if (cell_info != nullptr)                                      đúng → 7   sai → 8
+7   const int block2_size = bs->cols[it2->first].size
+    MatrixMatrixMultiply<-1, -1, -1, -1, -1>(b1_transpose_inverse_ete, block1_size, e_block_size, buffer + it2->second, e_block_size, block2_size, cell_info->values, r, c, row_stride, col_stride)   → 8
+8   ++ it2                                                         → 4
+9   ++ it1                                                         → 2

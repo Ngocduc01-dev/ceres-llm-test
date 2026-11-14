@@ -6,7 +6,6 @@
   389,
   436
  ],
- "signature": "ceres::(anonymous)::TrustRegionOptionsAreValid",
  "branches": 50,
  "cyclomatic": 26,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1508
+ "order": 1508,
+ "short_name": "TrustRegionOptionsAreValid",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

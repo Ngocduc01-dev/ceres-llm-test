@@ -6,7 +6,6 @@
   303,
   359
  ],
- "signature": "ceres::internal::AutoDifferentiate",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 772
+ "order": 772,
+ "short_name": "AutoDifferentiate",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Functor& functor, T const* const* parameters, int dynamic_num_outputs, T* function_value, T** jacobians)",
+ "return_type": "bool",
+ "is_const": false
 }

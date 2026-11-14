@@ -6,7 +6,6 @@
   159,
   162
  ],
- "signature": "ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1345
+ "order": 1345,
+ "short_name": "DenseSchurComplementSolver",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DenseSchurComplementSolver",
+ "class_is_template": false,
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

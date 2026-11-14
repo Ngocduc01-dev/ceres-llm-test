@@ -1,0 +1,26 @@
+UNIT u0552
+Hàm: CorrectJacobian(const int num_rows, const int num_cols, double * residuals, double * jacobian)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Corrector
+Vị trí: internal/ceres/corrector.cc, dòng 118–155
+
+Số điểm rẽ nhánh: 4 (và 2 lệnh CHECK)
+
+START → 1
+1   DCHECK(residuals != nullptr)                                   đúng → 2   sai → DỪNG
+2   DCHECK(jacobian != nullptr)                                    đúng → 3   sai → DỪNG
+3   if (alpha_sq_norm_ == 0.)                                      đúng → 4   sai → 5
+4   VectorRef(jacobian, num_rows * num_cols) *= sqrt_rho1_
+    return                                                         → END
+5   int c = 0                                                      → 6
+6   vòng for, điều kiện: c < num_cols                              đúng → 7   sai → END
+7   double r_transpose_j = 0.
+    int r = 0                                                      → 8
+8   vòng for, điều kiện: r < num_rows                              đúng → 9   sai → 11
+9   r_transpose_j += jacobian[r * num_cols + c] * residuals[r]     → 10
+10  ++r                                                            → 8
+11  int r = 0                                                      → 12
+12  vòng for, điều kiện: r < num_rows                              đúng → 13   sai → 15
+13  jacobian[r * num_cols + c] = sqrt_rho1_ * (jacobian[r * num_cols + c] - alpha_sq_norm_ * residuals[r] * r_transpose_j)   → 14
+14  ++r                                                            → 12
+15  ++c                                                            → 6

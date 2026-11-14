@@ -6,7 +6,6 @@
   43,
   44
  ],
- "signature": "ceres::internal::DenseSparseMatrix::DenseSparseMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 660
+ "order": 660,
+ "short_name": "DenseSparseMatrix",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
+ "params": "(int num_rows, int num_cols)",
+ "return_type": null,
+ "is_const": false
 }

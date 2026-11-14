@@ -1,0 +1,10 @@
+UNIT u0232
+Hàm: num_nonzeros() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.h, dòng 118–118
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_nonzeros_   → END

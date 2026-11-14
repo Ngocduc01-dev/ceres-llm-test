@@ -6,7 +6,6 @@
   250,
   259
  ],
- "signature": "ceres::LineSearchInterpolationTypeToString",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 755
+ "order": 755,
+ "short_name": "LineSearchInterpolationTypeToString",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(LineSearchInterpolationType type)",
+ "return_type": "const char *",
+ "is_const": false
 }

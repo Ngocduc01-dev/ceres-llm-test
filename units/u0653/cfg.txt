@@ -1,0 +1,12 @@
+UNIT u0653
+Hàm: LoggingCallback(const MinimizerType minimizer_type, const bool log_to_stdout)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LoggingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 76–78
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   IterationCallback() (Base initializer)
+    minimizer_type(minimizer_type) (Member initializer)
+    log_to_stdout_(log_to_stdout) (Member initializer)             → END

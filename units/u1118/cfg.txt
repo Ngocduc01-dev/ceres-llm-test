@@ -1,0 +1,23 @@
+UNIT u1118
+Hàm: StringToLineSearchDirectionType(std::string value, LineSearchDirectionType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 224–232
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   UpperCase(&value)                                   → 2
+2   if (value == "STEEPEST_DESCENT")                    đúng → 3   sai → 4
+3   *type = STEEPEST_DESCENT
+    return true                                         → END
+4   if (value == "NONLINEAR_CONJUGATE_GRADIENT")        đúng → 5   sai → 6
+5   *type = NONLINEAR_CONJUGATE_GRADIENT
+    return true                                         → END
+6   if (value == "LBFGS")                               đúng → 7   sai → 8
+7   *type = LBFGS
+    return true                                         → END
+8   if (value == "BFGS")                                đúng → 9   sai → 10
+9   *type = BFGS
+    return true                                         → END
+10  return false                                        → END

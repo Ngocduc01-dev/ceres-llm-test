@@ -6,7 +6,6 @@
   361,
   379
  ],
- "signature": "ceres::internal::ProgramEvaluator::CreateEvaluatorScratch",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 4,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1474
+ "order": 1474,
+ "short_name": "CreateEvaluatorScratch",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "(const Program & program, unsigned int num_threads)",
+ "return_type": "std::unique_ptr<EvaluateScratch[]>",
+ "is_const": false
 }

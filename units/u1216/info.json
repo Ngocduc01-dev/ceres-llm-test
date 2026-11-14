@@ -6,7 +6,6 @@
   378,
   433
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::SquaredColumnNorm",
  "branches": 28,
  "cyclomatic": 15,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1216
+ "order": 1216,
+ "short_name": "SquaredColumnNorm",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(double * x)",
+ "return_type": "void",
+ "is_const": true
 }

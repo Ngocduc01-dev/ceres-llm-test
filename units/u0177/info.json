@@ -6,7 +6,6 @@
   248,
   252
  ],
- "signature": "ceres::EuclideanManifold::EuclideanManifold<Size>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 177
+ "order": 177,
+ "short_name": "EuclideanManifold<Size>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::EuclideanManifold",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   120,
   120
  ],
- "signature": "ceres::internal::ParameterBlock::IsConstant",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1034
+ "order": 1034,
+ "short_name": "IsConstant",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "bool",
+ "is_const": true
 }

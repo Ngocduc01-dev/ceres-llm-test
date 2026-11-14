@@ -6,7 +6,6 @@
   41,
   45
  ],
- "signature": "ceres::internal::ThreadTokenProvider::Acquire",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 491
+ "order": 491,
+ "short_name": "Acquire",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadTokenProvider",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": false
 }

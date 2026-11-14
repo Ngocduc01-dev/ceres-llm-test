@@ -1,0 +1,16 @@
+UNIT u0951
+Hàm: Factorize(const Eigen::SparseMatrix<typename Solver::Scalar> & lhs, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EigenSparseCholeskyTemplate
+Vị trí: internal/ceres/eigensparse.cc, dòng 60–86
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(lhs->storage_type(), StorageType())                   đúng → 2   sai → DỪNG
+2   typename SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>::Scalar *values_ptr = nullptr
+    if std::is_same_v<typename SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>::Scalar, double>   → 3
+3   values_ptr = lhs->mutable_values()                             → 4
+4   lhs->num_rows(), lhs->num_rows(), lhs->num_nonzeros(), lhs->rows(), lhs->cols(), values_ptr
+    return Factorize(eigen_lhs, message)                           → END

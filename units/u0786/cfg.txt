@@ -1,0 +1,11 @@
+UNIT u0786
+Hàm: AsValueType(StorageElementWrapper<value_type> * ptr)  → trả về pointer
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::FixedArray
+Vị trí: include/ceres/internal/fixed_array.h, dòng 370–372
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 20> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return ptr   → END

@@ -1,0 +1,590 @@
+[
+ {
+  "id": "u0017",
+  "n": 2,
+  "names": [
+   "x",
+   "f"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::CubicInterpolator<ceres::Grid1D<double>>::Evaluate(double, double *, double *)",
+    3,
+    "void Evaluate(double x, double *f, double *dfdx) const"
+   ],
+   [
+    "ceres::CubicInterpolator<ceres::Grid1D<double, 3>>::Evaluate(double, double *, double *)",
+    3,
+    "void Evaluate(double x, double *f, double *dfdx) const"
+   ],
+   [
+    "ceres::CubicInterpolator<ceres::Grid1D<double, 2>>::Evaluate(double, double *, double *)",
+    3,
+    "void Evaluate(double x, double *f, double *dfdx) const"
+   ],
+   [
+    "ceres::CubicInterpolator<ceres::Grid1D<double, 2>>::Evaluate(const struct ceres::Jet<double, 4> &, struct ceres::Jet<double, 4> *)",
+    2,
+    "template<> void Evaluate<ceres::Jet<double, 4>>(const ceres::Jet<double, 4> &x, ceres::Jet<double, 4> *f) const"
+   ]
+  ]
+ },
+ {
+  "id": "u0018",
+  "n": 3,
+  "names": [
+   "r",
+   "c",
+   "f"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::BiCubicInterpolator<ceres::Grid2D<double>>::Evaluate(double, double, double *, double *, double *)",
+    5,
+    "void Evaluate(double r, double c, double *f, double *dfdr, double *dfdc) const"
+   ],
+   [
+    "ceres::BiCubicInterpolator<ceres::Grid2D<double, 3>>::Evaluate(double, double, double *, double *, double *)",
+    5,
+    "void Evaluate(double r, double c, double *f, double *dfdr, double *dfdc) const"
+   ],
+   [
+    "ceres::BiCubicInterpolator<ceres::Grid2D<double, 2>>::Evaluate(double, double, double *, double *, double *)",
+    5,
+    "void Evaluate(double r, double c, double *f, double *dfdr, double *dfdc) const"
+   ],
+   [
+    "ceres::BiCubicInterpolator<ceres::Grid2D<double, 2>>::Evaluate(const struct ceres::Jet<double, 4> &, const struct ceres::Jet<double, 4> &, struct ceres::Jet<double, 4> *)",
+    3,
+    "template<> void Evaluate<ceres::Jet<double, 4>>(const ceres::Jet<double, 4> &r, const ceres::Jet<double, 4> &c, ceres::Jet<double, 4> *f) const"
+   ]
+  ]
+ },
+ {
+  "id": "u0144",
+  "n": 1,
+  "names": [],
+  "ftmpl": true,
+  "cands": [
+   [
+    "ceres::IsFinite(double)",
+    1,
+    "inline bool IsFinite(double x)"
+   ]
+  ]
+ },
+ {
+  "id": "u0145",
+  "n": 1,
+  "names": [],
+  "ftmpl": true,
+  "cands": [
+   [
+    "ceres::IsNaN(double)",
+    1,
+    "inline bool IsNaN(double x)"
+   ]
+  ]
+ },
+ {
+  "id": "u0146",
+  "n": 1,
+  "names": [],
+  "ftmpl": true,
+  "cands": [
+   [
+    "ceres::IsNormal(double)",
+    1,
+    "inline bool IsNormal(double x)"
+   ]
+  ]
+ },
+ {
+  "id": "u0147",
+  "n": 1,
+  "names": [],
+  "ftmpl": true,
+  "cands": [
+   [
+    "ceres::IsInfinite(double)",
+    1,
+    "inline bool IsInfinite(double x)"
+   ]
+  ]
+ },
+ {
+  "id": "u0615",
+  "n": 1,
+  "names": [
+   "other"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::BinaryScalarCost, 1, 2, 2>::AutoDiffCostFunction(class ceres::internal::BinaryScalarCost *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::BinaryScalarCost *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::TenParameterCost, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1>::AutoDiffCostFunction(struct ceres::internal::TenParameterCost *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::TenParameterCost *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::OnlyFillsOneOutputFunctor, 2, 1>::AutoDiffCostFunction(struct ceres::internal::OnlyFillsOneOutputFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::OnlyFillsOneOutputFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::LinearCostFunction, 2, 1, 1>::AutoDiffCostFunction(struct ceres::internal::LinearCostFunction *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::LinearCostFunction *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::OneParameterBlockFunctor, 2, 2>::AutoDiffCostFunction(struct ceres::internal::OneParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::OneParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2>, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::TwoParameterBlockFunctor, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::TwoParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::TwoParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2>, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::ThreeParameterBlockFunctor, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::ThreeParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::ThreeParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2>, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::FourParameterBlockFunctor, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::FourParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::FourParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2>, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::FiveParameterBlockFunctor, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::FiveParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::FiveParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2>, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::SixParameterBlockFunctor, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::SixParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::SixParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2>, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::SevenParameterBlockFunctor, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::SevenParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::SevenParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2>, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::EightParameterBlockFunctor, 2, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::EightParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::EightParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2>, 2, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::NineParameterBlockFunctor, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::NineParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::NineParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2, 2>, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::TenParameterBlockFunctor, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(struct ceres::internal::TenParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::TenParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2>, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2> *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::CostFunctionToFunctor<2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2> *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::CostFunctionToFunctor<-1, 2, 2>, -1, 2, 2>::AutoDiffCostFunction(class ceres::CostFunctionToFunctor<-1, 2, 2> *, int, Ownership)",
+    3,
+    "AutoDiffCostFunction(ceres::CostFunctionToFunctor<-1, 2, 2> *functor, int num_residuals, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::EuclideanDistanceFunctor, 2, 2, 2>::AutoDiffCostFunction(class ceres::internal::EuclideanDistanceFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::EuclideanDistanceFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::LinearResidual, 1, 1>::AutoDiffCostFunction(struct ceres::internal::LinearResidual *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::LinearResidual *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::EvaluationCallbackResidual, 1, 1>::AutoDiffCostFunction(struct ceres::internal::EvaluationCallbackResidual *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::EvaluationCallbackResidual *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::BundleAdjustmentProblem::BundlerResidual, 2, 9, 3>::AutoDiffCostFunction(struct ceres::internal::BundleAdjustmentProblem::BundlerResidual *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::BundleAdjustmentProblem::BundlerResidual *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::IdentityFunctor, 5, 2, 3>::AutoDiffCostFunction(struct ceres::internal::IdentityFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::IdentityFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::QuadraticCostFunctor, 1, 1>::AutoDiffCostFunction(struct ceres::internal::QuadraticCostFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::QuadraticCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::Quadratic4DCostFunction, 1, 1, 1, 1, 1>::AutoDiffCostFunction(struct ceres::internal::Quadratic4DCostFunction *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::Quadratic4DCostFunction *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::PowellsFunction::F1, 1, 1, 1>::AutoDiffCostFunction(class ceres::internal::PowellsFunction::F1 *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::PowellsFunction::F1 *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::PowellsFunction::F2, 1, 1, 1>::AutoDiffCostFunction(class ceres::internal::PowellsFunction::F2 *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::PowellsFunction::F2 *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::PowellsFunction::F3, 1, 1, 1>::AutoDiffCostFunction(class ceres::internal::PowellsFunction::F3 *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::PowellsFunction::F3 *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::PowellsFunction::F4, 1, 1, 1>::AutoDiffCostFunction(class ceres::internal::PowellsFunction::F4 *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::PowellsFunction::F4 *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::AutoDiffCostFunction<ceres::internal::ExpCostFunctor, 1, 1>::AutoDiffCostFunction(struct ceres::internal::ExpCostFunctor *, Ownership)",
+    2,
+    "explicit AutoDiffCostFunction(ceres::internal::ExpCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ]
+  ]
+ },
+ {
+  "id": "u0621",
+  "n": 1,
+  "names": [
+   "other"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::internal::DynamicTwoParameterBlockFunctor>::DynamicAutoDiffCostFunction(class ceres::internal::DynamicTwoParameterBlockFunctor *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::internal::DynamicTwoParameterBlockFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::DynamicCostFunctionToFunctor>::DynamicAutoDiffCostFunction(class ceres::DynamicCostFunctionToFunctor *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::DynamicCostFunctionToFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::internal::MyCostFunctor, 3>::DynamicAutoDiffCostFunction(class ceres::internal::MyCostFunctor *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::internal::MyCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::internal::MyThreeParameterCostFunctor, 3>::DynamicAutoDiffCostFunction(class ceres::internal::MyThreeParameterCostFunctor *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::internal::MyThreeParameterCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::internal::MySixParameterCostFunctor, 3>::DynamicAutoDiffCostFunction(class ceres::internal::MySixParameterCostFunctor *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::internal::MySixParameterCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::internal::DynamicValueError, 1>::DynamicAutoDiffCostFunction(class ceres::internal::DynamicValueError *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::internal::DynamicValueError *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ],
+   [
+    "ceres::DynamicAutoDiffCostFunction<ceres::internal::MyCostFunctor>::DynamicAutoDiffCostFunction(class ceres::internal::MyCostFunctor *, Ownership)",
+    2,
+    "explicit DynamicAutoDiffCostFunction(ceres::internal::MyCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP)"
+   ]
+  ]
+ },
+ {
+  "id": "u0623",
+  "n": 1,
+  "names": [
+   "other"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::DynamicNumericDiffCostFunction<ceres::PlusFunctor, ceres::RIDDERS>::DynamicNumericDiffCostFunction(const struct ceres::PlusFunctor *, Ownership, const NumericDiffOptions &)",
+    3,
+    "explicit DynamicNumericDiffCostFunction(const ceres::PlusFunctor *functor, Ownership ownership, const NumericDiffOptions &options)"
+   ],
+   [
+    "ceres::DynamicNumericDiffCostFunction<ceres::MinusFunctor, ceres::RIDDERS>::DynamicNumericDiffCostFunction(const struct ceres::MinusFunctor *, Ownership, const NumericDiffOptions &)",
+    3,
+    "explicit DynamicNumericDiffCostFunction(const ceres::MinusFunctor *functor, Ownership ownership, const NumericDiffOptions &options)"
+   ],
+   [
+    "ceres::DynamicNumericDiffCostFunction<ceres::internal::MyCostFunctor>::DynamicNumericDiffCostFunction(const class ceres::internal::MyCostFunctor *, Ownership, const NumericDiffOptions &)",
+    3,
+    "explicit DynamicNumericDiffCostFunction(const ceres::internal::MyCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, const NumericDiffOptions "
+   ],
+   [
+    "ceres::DynamicNumericDiffCostFunction<ceres::internal::MyThreeParameterCostFunctor>::DynamicNumericDiffCostFunction(const class ceres::internal::MyThreeParameterCostFunctor *, Ownership, const NumericDiffOptions &)",
+    3,
+    "explicit DynamicNumericDiffCostFunction(const ceres::internal::MyThreeParameterCostFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, const Numer"
+   ],
+   [
+    "ceres::DynamicNumericDiffCostFunction<ceres::CostFunction, ceres::RIDDERS>::DynamicNumericDiffCostFunction(const class ceres::CostFunction *, Ownership, const NumericDiffOptions &)",
+    3,
+    "explicit DynamicNumericDiffCostFunction(const ceres::CostFunction *functor, Ownership ownership, const NumericDiffOptions &options)"
+   ]
+  ]
+ },
+ {
+  "id": "u0640",
+  "n": 1,
+  "names": [
+   "other"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::CENTRAL, 3, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 3, const NumericDiff"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::FORWARD, 3, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 3, const NumericDiff"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::RIDDERS, 3, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 3, const NumericDiff"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyCostFunction, ceres::CENTRAL, 3, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyCostFunction *functor, Ownership ownership, int num_residuals = 3, const NumericDiffOptions &opt"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyCostFunction, ceres::FORWARD, 3, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyCostFunction *functor, Ownership ownership, int num_residuals = 3, const NumericDiffOptions &opt"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyCostFunction, ceres::RIDDERS, 3, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyCostFunction *functor, Ownership ownership, int num_residuals = 3, const NumericDiffOptions &opt"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::TranscendentalFunctor, ceres::CENTRAL, 2, 5, 5>::NumericDiffCostFunction(class ceres::internal::TranscendentalFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::TranscendentalFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 2, const N"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::TranscendentalFunctor, ceres::FORWARD, 2, 5, 5>::NumericDiffCostFunction(class ceres::internal::TranscendentalFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::TranscendentalFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 2, const N"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::TranscendentalFunctor, ceres::RIDDERS, 2, 5, 5>::NumericDiffCostFunction(class ceres::internal::TranscendentalFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::TranscendentalFunctor *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &op"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::TranscendentalCostFunction, ceres::CENTRAL, 2, 5, 5>::NumericDiffCostFunction(class ceres::internal::TranscendentalCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::TranscendentalCostFunction *functor, Ownership ownership, int num_residuals = 2, const NumericDiffOp"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::TranscendentalCostFunction, ceres::FORWARD, 2, 5, 5>::NumericDiffCostFunction(class ceres::internal::TranscendentalCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::TranscendentalCostFunction *functor, Ownership ownership, int num_residuals = 2, const NumericDiffOp"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::TranscendentalCostFunction, ceres::RIDDERS, 2, 5, 5>::NumericDiffCostFunction(class ceres::internal::TranscendentalCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::TranscendentalCostFunction *functor, Ownership ownership, int num_residuals, const NumericDiffOption"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::SizeTestingCostFunction<1, 1>, ceres::CENTRAL, 1, 1>::NumericDiffCostFunction(class ceres::internal::SizeTestingCostFunction<1, 1> *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::SizeTestingCostFunction<1, 1> *functor, Ownership ownership, int num_residuals = 1, const NumericDif"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::SizeTestingCostFunction<2, 1>, ceres::CENTRAL, 2, 1>::NumericDiffCostFunction(class ceres::internal::SizeTestingCostFunction<2, 1> *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::SizeTestingCostFunction<2, 1> *functor, Ownership ownership, int num_residuals = 2, const NumericDif"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::SizeTestingCostFunction<1, 2>, ceres::CENTRAL, 1, 2>::NumericDiffCostFunction(class ceres::internal::SizeTestingCostFunction<1, 2> *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::SizeTestingCostFunction<1, 2> *functor, Ownership ownership, int num_residuals = 1, const NumericDif"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::SizeTestingCostFunction<2, 2>, ceres::CENTRAL, 2, 2>::NumericDiffCostFunction(class ceres::internal::SizeTestingCostFunction<2, 2> *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::SizeTestingCostFunction<2, 2> *functor, Ownership ownership, int num_residuals = 2, const NumericDif"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::CENTRAL, -1, 1, 1>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &options = Nu"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::CENTRAL, -1, 1, 2>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &options = Nu"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::CENTRAL, -1, 2, 1>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &options = Nu"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::EasyFunctor, ceres::CENTRAL, -1, 5, 5>::NumericDiffCostFunction(class ceres::internal::EasyFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::EasyFunctor *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &options = Nu"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::ExponentialFunctor, ceres::RIDDERS, 1, 1>::NumericDiffCostFunction(class ceres::internal::ExponentialFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::ExponentialFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 1, const Nume"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::ExponentialCostFunction, ceres::RIDDERS, 1, 1>::NumericDiffCostFunction(class ceres::internal::ExponentialCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::ExponentialCostFunction *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 1, const"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::RandomizedFunctor, ceres::RIDDERS, 1, 1>::NumericDiffCostFunction(class ceres::internal::RandomizedFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::RandomizedFunctor *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &option"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::RandomizedCostFunction, ceres::RIDDERS, 1, 1>::NumericDiffCostFunction(class ceres::internal::RandomizedCostFunction *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::RandomizedCostFunction *functor, Ownership ownership, int num_residuals, const NumericDiffOptions &o"
+   ],
+   [
+    "ceres::NumericDiffCostFunction<ceres::internal::OnlyFillsOneOutputFunctor, ceres::CENTRAL, 2, 1>::NumericDiffCostFunction(struct ceres::internal::OnlyFillsOneOutputFunctor *, Ownership, int, const NumericDiffOptions &)",
+    4,
+    "explicit NumericDiffCostFunction(ceres::internal::OnlyFillsOneOutputFunctor *functor, Ownership ownership = TAKE_OWNERSHIP, int num_residuals = 2, con"
+   ]
+  ]
+ },
+ {
+  "id": "u0674",
+  "n": 2,
+  "names": [
+   "vertex1",
+   "vertex2"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::internal::WeightedGraph<int>::AddEdge(const int &, const int &, double)",
+    3,
+    "void AddEdge(const int &vertex1, const int &vertex2, double weight)"
+   ]
+  ]
+ },
+ {
+  "id": "u1023",
+  "n": 2,
+  "names": [
+   "format"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::internal::StringPrintf(const char *)",
+    1,
+    "std::string StringPrintf(const char *format, ...)"
+   ]
+  ]
+ },
+ {
+  "id": "u1083",
+  "n": 3,
+  "names": [
+   "dst",
+   "format"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::internal::SStringPrintf(std::string *, const char *)",
+    2,
+    "const std::string &SStringPrintf(std::string *dst, const char *format, ...)"
+   ]
+  ]
+ },
+ {
+  "id": "u1084",
+  "n": 3,
+  "names": [
+   "dst",
+   "format"
+  ],
+  "ftmpl": false,
+  "cands": [
+   [
+    "ceres::internal::StringAppendF(std::string *, const char *)",
+    2,
+    "void StringAppendF(std::string *dst, const char *format, ...)"
+   ]
+  ]
+ }
+]

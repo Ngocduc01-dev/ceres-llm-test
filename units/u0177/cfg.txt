@@ -1,0 +1,12 @@
+UNIT u0177
+Hàm: EuclideanManifold()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::EuclideanManifold
+Vị trí: include/ceres/manifold.h, dòng 248–252
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EuclideanManifold<1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Manifold() (Base initializer)
+    size_({1}) (Member initializer)                                → END

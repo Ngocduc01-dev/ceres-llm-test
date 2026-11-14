@@ -6,7 +6,6 @@
   968,
   974
  ],
- "signature": "ceres::isless",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 136
+ "order": 136,
+ "short_name": "isless",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Lhs& f, const Rhs& g)",
+ "return_type": "bool",
+ "is_const": false
 }

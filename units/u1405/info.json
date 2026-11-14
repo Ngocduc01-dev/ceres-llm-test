@@ -6,7 +6,6 @@
   50,
   80
  ],
- "signature": "ceres::internal::ComputeStableSchurOrdering",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1405
+ "order": 1405,
+ "short_name": "ComputeStableSchurOrdering",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Program & program, std::vector<ParameterBlock *> * ordering)",
+ "return_type": "int",
+ "is_const": false
 }

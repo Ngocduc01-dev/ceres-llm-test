@@ -6,7 +6,6 @@
   48,
   63
  ],
- "signature": "ceres::internal::InvalidateEvaluation",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1289
+ "order": 1289,
+ "short_name": "InvalidateEvaluation",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const ResidualBlock & block, double * cost, double * residuals, double ** jacobians)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   99,
   118
  ],
- "signature": "ceres::TolerantLoss::Evaluate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 470
+ "order": 470,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TolerantLoss",
+ "class_is_template": false,
+ "params": "(double s, double[3] rho)",
+ "return_type": "void",
+ "is_const": true
 }

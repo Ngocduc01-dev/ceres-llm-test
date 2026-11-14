@@ -6,7 +6,6 @@
   76,
   95
  ],
- "signature": "ceres::internal::operator<<",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 764
+ "order": 764,
+ "short_name": "operator<<",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::ostream & s, LinearSolverTerminationType type)",
+ "return_type": "std::ostream &",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   284,
   290
  ],
- "signature": "ceres::EuclideanManifold::RightMultiplyByPlusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 182
+ "order": 182,
+ "short_name": "RightMultiplyByPlusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EuclideanManifold",
+ "class_is_template": true,
+ "params": "(const double * x, const int num_rows, const double * ambient_matrix, double * tangent_matrix)",
+ "return_type": "bool",
+ "is_const": true
 }

@@ -1,0 +1,30 @@
+UNIT u1375
+Hàm: DumpLinearLeastSquaresProblemToTextFile(const std::string & filename_base, const SparseMatrix * A, const double * D, const double * b, const double * x, int)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 966–1020
+
+Số điểm rẽ nhánh: 3 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(A != nullptr)                                            đúng → 2   sai → DỪNG
+2   StringAppendF(&matlab_script, "function lsqp = load_trust_region_problem()\n")
+    StringAppendF(&matlab_script, "lsqp.num_rows = %d;\n", A->num_rows())
+    StringAppendF(&matlab_script, "lsqp.num_cols = %d;\n", A->num_cols())
+    FILE *fptr = fopen(filename.c_str(), "w")                      → 3
+3   CHECK(fptr != nullptr)                                         đúng → 4   sai → DỪNG
+4   A->ToTextFile(fptr)
+    fclose(fptr)
+    StringAppendF(&matlab_script, "tmp = load('%s', '-ascii');\n", filename.c_str())
+    StringAppendF(&matlab_script, "lsqp.A = sparse(tmp(:, 1) + 1, tmp(:, 2) + 1, tmp(:, 3), %d, %d);\n", A->num_rows(), A->num_cols())   → 5
+5   if (D != nullptr)                                              đúng → 6   sai → 7
+6   WriteArrayToFileOrDie(filename, D, A->num_cols())
+    StringAppendF(&matlab_script, "lsqp.D = load('%s', '-ascii');\n", filename.c_str())   → 7
+7   if (b != nullptr)                                              đúng → 8   sai → 9
+8   WriteArrayToFileOrDie(filename, b, A->num_rows())
+    StringAppendF(&matlab_script, "lsqp.b = load('%s', '-ascii');\n", filename.c_str())   → 9
+9   if (x != nullptr)                                              đúng → 10   sai → 11
+10  WriteArrayToFileOrDie(filename, x, A->num_cols())
+    StringAppendF(&matlab_script, "lsqp.x = load('%s', '-ascii');\n", filename.c_str())   → 11
+11  WriteStringToFileOrDie(matlab_script, matlab_filename)
+    return true                                                    → END

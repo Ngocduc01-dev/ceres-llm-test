@@ -1,0 +1,12 @@
+UNIT u0241
+Hàm: CompressedList()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CompressedList
+Vị trí: internal/ceres/block_structure.h, dòng 81–81
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   block() (Member initializer)
+    cells() (Member initializer)
+    cumulative_nnz(?) (Member initializer)                         → END

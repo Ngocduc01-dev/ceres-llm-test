@@ -1,0 +1,10 @@
+UNIT u0876
+Hàm: manifold() const  → trả về const Manifold *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 114–114
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return manifold_   → END

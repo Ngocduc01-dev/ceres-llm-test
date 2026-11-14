@@ -1,0 +1,15 @@
+UNIT u0807
+Hàm: FindLinearPolynomialRoots(const Vector & polynomial, Vector * real, Vector * imaginary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/polynomial.cc, dòng 124–136
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(polynomial.size(), 2)                                 đúng → 2   sai → DỪNG
+2   if (real != nullptr)                                           đúng → 3   sai → 4
+3   real->resize(1)
+    (*real)(0) = -polynomial(1) / polynomial(0)                    → 4
+4   if (imaginary != nullptr)                                      đúng → 5   sai → END
+5   imaginary->setZero(1)                                          → END

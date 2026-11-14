@@ -1,0 +1,15 @@
+UNIT u1045
+Hàm: NumParameters() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 491–497
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int num_parameters = 0                                         → 2
+2   for (auto *parameter_block : parameter_blocks_)                đúng → 3   sai → 5
+3   auto *parameter_block
+    num_parameters += parameter_block->Size()                      → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   return num_parameters                                          → END

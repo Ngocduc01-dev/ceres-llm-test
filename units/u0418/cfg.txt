@@ -1,0 +1,10 @@
+UNIT u0418
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SubsetPreconditioner
+Vị trí: internal/ceres/subset_preconditioner.h, dòng 79–79
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_cols_   → END

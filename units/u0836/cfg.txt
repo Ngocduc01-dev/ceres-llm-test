@@ -1,0 +1,10 @@
+UNIT u0836
+Hàm: CompressedRowJacobianWriter(Evaluator::Options, Program * program)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CompressedRowJacobianWriter
+Vị trí: internal/ceres/compressed_row_jacobian_writer.h, dòng 52–54
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   program_(program) (Member initializer)   → END

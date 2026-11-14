@@ -6,7 +6,6 @@
   52,
   66
  ],
- "signature": "ceres::internal::ResidualBlock::ResidualBlock",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 1165
+ "order": 1165,
+ "short_name": "ResidualBlock",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
+ "params": "(const CostFunction * cost_function, const LossFunction * loss_function, const std::vector<ParameterBlock *> & parameter_blocks, int index)",
+ "return_type": null,
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   245,
   383
  ],
- "signature": "ceres::internal::NumericDiff::EvaluateRiddersJacobianColumn",
  "branches": 18,
  "cyclomatic": 10,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1127
+ "order": 1127,
+ "short_name": "EvaluateRiddersJacobianColumn",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NumericDiff",
+ "class_is_template": true,
+ "params": "(const CostFunctor * functor, int parameter_index, double delta, const NumericDiffOptions & options, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
+ "return_type": "bool",
+ "is_const": false
 }

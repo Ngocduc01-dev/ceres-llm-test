@@ -1,0 +1,10 @@
+UNIT u0998
+Hàm: ~ScopedExecutionTimer()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::ScopedExecutionTimer
+Vị trí: internal/ceres/execution_summary.h, dòng 77–79
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   summary_->IncrementTimeBy(name_, WallTimeInSeconds() - start_time_)   → END

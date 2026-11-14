@@ -1,0 +1,17 @@
+UNIT u1386
+Hàm: ToString() const  → trả về std::string
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 552–562
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   "Program dump\n"
+    ret += StringPrintf("Number of parameter blocks: %d\n", NumParameterBlocks())
+    ret += StringPrintf("Number of parameters: %d\n", NumParameters())
+    ret += "Parameters:\n"
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < parameter_blocks_.size()              đúng → 3   sai → END
+3   ret += StringPrintf("%d: %s\n", i, parameter_blocks_[i]->ToString().c_str())   → 4
+4   ++i                                                            → 2

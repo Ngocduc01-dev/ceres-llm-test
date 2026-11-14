@@ -1,0 +1,11 @@
+UNIT u0679
+Hàm: operator()(const Vertex & lhs, const Vertex & rhs) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VertexDegreeLessThan
+Vị trí: internal/ceres/graph_algorithms.h, dòng 73–75
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VertexDegreeLessThan<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return graph_.Neighbors(lhs).size() < graph_.Neighbors(rhs).size()   → END

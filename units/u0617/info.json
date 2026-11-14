@@ -6,7 +6,6 @@
   153,
   153
  ],
- "signature": "ceres::AutoDiffManifold::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 617
+ "order": 617,
+ "short_name": "AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
+ "params": "(Functor * functor)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,11 @@
+UNIT u0993
+Hàm: ceres_create_huber_loss_function_data(double a)  → trả về void *
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 111–113
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(ceres::HuberLoss *)
+    return new ceres::HuberLoss(a)                                 → END

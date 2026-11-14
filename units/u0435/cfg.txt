@@ -1,0 +1,11 @@
+UNIT u0435
+Hàm: WallTimeInSeconds()  → trả về double
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/wall_time.cc, dòng 45–58
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   gettimeofday(&time_val, nullptr)
+    return (time_val.tv_sec + time_val.tv_usec * 9.9999999999999995E-7)   → END

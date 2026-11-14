@@ -6,7 +6,6 @@
   184,
   186
  ],
- "signature": "ceres::internal::TypedPreconditioner::Update",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 692
+ "order": 692,
+ "short_name": "Update",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TypedPreconditioner",
+ "class_is_template": true,
+ "params": "(const LinearOperator & A, const double * D)",
+ "return_type": "bool",
+ "is_const": false
 }

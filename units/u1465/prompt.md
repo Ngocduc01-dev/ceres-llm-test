@@ -1,0 +1,193 @@
+# 1. NHIỆM VỤ
+
+Bạn là kỹ sư kiểm thử phần mềm. Hãy thiết kế bộ test cho **một hàm C++** (gọi là **unit**) ở mục 3 theo phương pháp **kiểm thử luồng điều khiển (CFT)**, sao cho đạt **độ phủ nhánh C2**, rồi viết bộ test đó thành **một file GoogleTest** (thư viện viết unit test cho C++) chạy được.
+
+- Dự án: thư viện **Ceres Solver 2.2.0**, viết bằng C++17.
+- Dự án **không có tài liệu mô tả kết quả đúng**, nên **không cần kiểm tra kết quả trả về**. Mục tiêu chỉ là gọi hàm sao cho chương trình **đi qua đủ các nhánh**.
+
+---
+
+# 2. KHÁI NIỆM CẦN DÙNG
+
+- **CFG (đồ thị luồng điều khiển):** sơ đồ các bước của hàm. Mỗi **node** là một đoạn lệnh chạy liền nhau hoặc một chỗ rẽ nhánh; mũi tên nối các node theo thứ tự chạy.
+- **Điểm rẽ nhánh:** chỗ chương trình chọn đường đi theo một điều kiện: `if`, `else if`, vòng `for` / `while`, `switch`, `?:`. Mỗi điểm rẽ nhánh có **2 nhánh**: điều kiện **đúng** và điều kiện **sai** (`switch` có 1 nhánh cho mỗi `case`).
+- **Độ phủ C2 (phủ nhánh):** mọi nhánh của mọi điểm rẽ nhánh đều được chạy qua ít nhất 1 lần.
+  **C2 = số nhánh đã chạy qua / tổng số nhánh × 100%.**
+  (C2 chặt hơn C1 – chỉ yêu cầu mỗi câu lệnh chạy ít nhất 1 lần. Ví dụ `if (x > 0) y = 1;`: chỉ cần x > 0 là đạt C1, nhưng C2 cần thêm 1 test với x ≤ 0.)
+  Điều kiện ghép như `a && b`, `a || b` được tính là **một** điểm rẽ nhánh.
+- **Test path (đường kiểm thử):** một đường đi trên CFG, từ `START` tới `END`, ghi rõ ở mỗi điểm rẽ nhánh đi theo nhánh nào.
+- **Điều kiện của đường đi:** các điều kiện phải đúng/sai dọc theo một test path. Dữ liệu đầu vào của test phải thoả các điều kiện này.
+- **Nhánh không thể đi tới:** nhánh mà không có dữ liệu nào làm chương trình đi vào (ví dụ điều kiện mâu thuẫn). Ghi rõ lý do, vẫn tính vào tổng số nhánh.
+- **Vòng lặp:**
+  - Có giới hạn số lần lặp n (ví dụ `for (i = 0; i < size; ...)`): test với **0, 1, 2, một số ở giữa, n−1, n** lần lặp; thêm **n+1** nếu làm được.
+  - Không có giới hạn (lặp đến khi thoả một điều kiện, ví dụ `while (!done)`): test với **0, 1, 2** lần lặp và **mỗi cách thoát khỏi vòng lặp** (`break`, `return`, điều kiện sai) ít nhất 1 lần.
+  - Số lần lặp nào không làm được thì ghi lý do.
+- **`CHECK(...)`:** lệnh kiểm tra của thư viện glog mà Ceres dùng. Nếu điều kiện sai, chương trình **dừng ngay**. **Không** cố tình làm `CHECK` sai; ghi nhánh đó là "không test (làm chương trình dừng)".
+
+---
+
+# 3. ĐẦU VÀO
+
+## 3.1. Unit cần test
+
+- Hàm: `InternalAddParameterBlock(double * values, int size)`, trả về `ParameterBlock *`
+- Loại: method (hàm thành viên của class)
+- Thuộc class: `ceres::internal::ProblemImpl`
+- Vị trí: `internal/ceres/problem_impl.cc`, dòng 122–174
+
+Mã nguồn (số ở đầu dòng là số dòng trong file):
+```cpp
+122 | ParameterBlock* ProblemImpl::InternalAddParameterBlock(double* values,
+123 |                                                        int size) {
+124 |   CHECK(values != nullptr) << "Null pointer passed to AddParameterBlock "
+125 |                            << "for a parameter with size " << size;
+126 | 
+127 |   // Ignore the request if there is a block for the given pointer already.
+128 |   auto it = parameter_block_map_.find(values);
+129 |   if (it != parameter_block_map_.end()) {
+130 |     if (!options_.disable_all_safety_checks) {
+131 |       int existing_size = it->second->Size();
+132 |       CHECK(size == existing_size)
+133 |           << "Tried adding a parameter block with the same double pointer, "
+134 |           << values << ", twice, but with different block sizes. Original "
+135 |           << "size was " << existing_size << " but new size is " << size;
+136 |     }
+137 |     return it->second;
+138 |   }
+139 | 
+140 |   if (!options_.disable_all_safety_checks) {
+141 |     // Before adding the parameter block, also check that it doesn't alias any
+142 |     // other parameter blocks.
+143 |     if (!parameter_block_map_.empty()) {
+144 |       auto lb = parameter_block_map_.lower_bound(values);
+145 | 
+146 |       // If lb is not the first block, check the previous block for aliasing.
+147 |       if (lb != parameter_block_map_.begin()) {
+148 |         auto previous = lb;
+149 |         --previous;
+150 |         CheckForNoAliasing(
+151 |             previous->first, previous->second->Size(), values, size);
+152 |       }
+153 | 
+154 |       // If lb is not off the end, check lb for aliasing.
+155 |       if (lb != parameter_block_map_.end()) {
+156 |         CheckForNoAliasing(lb->first, lb->second->Size(), values, size);
+157 |       }
+158 |     }
+159 |   }
+160 | 
+161 |   // Pass the index of the new parameter block as well to keep the index in
+162 |   // sync with the position of the parameter in the program's parameter vector.
+163 |   auto* new_parameter_block =
+164 |       new ParameterBlock(values, size, program_->parameter_blocks_.size());
+165 | 
+166 |   // For dynamic problems, add the list of dependent residual blocks, which is
+167 |   // empty to start.
+168 |   if (options_.enable_fast_removal) {
+169 |     new_parameter_block->EnableResidualBlockDependencies();
+170 |   }
+171 |   parameter_block_map_[values] = new_parameter_block;
+172 |   program_->parameter_blocks_.push_back(new_parameter_block);
+173 |   return new_parameter_block;
+174 | }
+```
+
+## 3.2. CFG của unit
+
+CFG đã được dựng sẵn bằng công cụ phân tích mã nguồn:
+```
+Số điểm rẽ nhánh: 7 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(values != nullptr)                                       đúng → 2   sai → DỪNG
+2   parameter_block_map_.find(values)                              → 3
+3   if (it != parameter_block_map_.end())                          đúng → 4   sai → 8
+4   if (!options_.disable_all_safety_checks)                       đúng → 5   sai → 7
+5   int existing_size = it->second->Size()                         → 6
+6   CHECK(size == existing_size)                                   đúng → 7   sai → DỪNG
+7   return it->second                                              → END
+8   if (!options_.disable_all_safety_checks)                       đúng → 9   sai → 15
+9   if (!parameter_block_map_.empty())                             đúng → 10   sai → 15
+10  parameter_block_map_.lower_bound(values)                       → 11
+11  if (lb != parameter_block_map_.begin())                        đúng → 12   sai → 13
+12  -- previous
+    CheckForNoAliasing(previous->first, previous->second->Size(), values, size)   → 13
+13  if (lb != parameter_block_map_.end())                          đúng → 14   sai → 15
+14  CheckForNoAliasing(lb->first, lb->second->Size(), values, size)   → 15
+15  CFGNewAllocator(ParameterBlock *)
+    auto *new_parameter_block = new ParameterBlock(values, size, program_->parameter_blocks_.size())   → 16
+16  if (options_.enable_fast_removal)                              đúng → 17   sai → 18
+17  new_parameter_block->EnableResidualBlockDependencies()         → 18
+18  parameter_block_map_[values] = new_parameter_block
+    program_->parameter_blocks_.push_back(new_parameter_block)
+    return new_parameter_block                                     → END
+```
+
+**Cách đọc:** dòng đầu cho biết hàm có bao nhiêu điểm rẽ nhánh. Mỗi dòng sau đó là **một node**: số node, nội dung (câu lệnh hoặc điều kiện), rồi mũi tên tới node tiếp theo. Dòng "Ghi chú" (nếu có) cho biết unit là template và CFG được dựng với kiểu dữ liệu cụ thể nào.
+- Node có điều kiện ghi `đúng → x   sai → y`: điều kiện đúng thì đi tới node x, sai thì đi tới node y.
+- `START`: bắt đầu hàm · `END`: kết thúc hàm · `DỪNG`: chương trình dừng do `CHECK` sai.
+- Nếu thấy CFG không khớp với mã nguồn, **tin mã nguồn** và ghi chú lại.
+- Khi trả lời, gọi các node bằng **đúng số node này**.
+
+## 3.3. Cách gọi unit trong file test
+
+Các dòng `#include` được dùng:
+```cpp
+#include "gtest/gtest.h"
+#include "ceres/parameter_block.h"
+#include "ceres/problem_impl.h"
+```
+
+- Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
+- Đây là method của class `ceres::internal::ProblemImpl`: tạo một object của class rồi gọi method trên object đó.
+
+---
+
+# 4. YÊU CẦU ĐỐI VỚI BỘ TEST
+
+1. Mỗi nhánh (đúng và sai) của mỗi điểm rẽ nhánh có **ít nhất 1 test** đi qua.
+2. Mỗi vòng lặp được test với số lần lặp như mục 2.
+3. Mỗi test ứng với **một test path**, ghi rõ các nhánh nó đi qua (ví dụ `node 2: đúng, node 4: sai`).
+4. Dùng **ít test nhất** có thể: một test nên đi qua nhiều nhánh chưa được phủ.
+5. **Dữ liệu đầu vào:** từ điều kiện của đường đi, xác định **khoảng giá trị** hợp lệ cho từng đầu vào (ví dụ `n` từ 1 đến 5), rồi **chọn ngẫu nhiên một giá trị** trong khoảng đó. Nếu dùng hàm sinh số ngẫu nhiên trong code thì **cố định giá trị khởi tạo (seed)** để mỗi lần chạy ra cùng một giá trị. Mảng, ma trận nhỏ (tối đa 5 phần tử). Không dùng file, mạng, đa luồng.
+6. **Không** kiểm tra kết quả trả về (không có kết quả đúng để so).
+
+---
+
+# 5. CÁC BƯỚC THỰC HIỆN
+
+1. Đọc mã nguồn và CFG của unit.
+2. Liệt kê các điểm rẽ nhánh và các nhánh cần phủ.
+3. Chọn các test path sao cho phủ hết các nhánh (trừ nhánh không thể đi tới và nhánh `CHECK` sai).
+4. Với mỗi test path: viết điều kiện của đường đi → khoảng giá trị đầu vào → chọn giá trị ngẫu nhiên trong khoảng.
+5. Viết code GoogleTest: mỗi test chuẩn bị dữ liệu rồi gọi unit **một lần**.
+6. Kiểm tra lại: mọi nhánh đã có test chưa, code có dùng đúng tên hàm và `#include` ở mục 3.3 không.
+
+---
+
+# 6. KẾT QUẢ CẦN TRẢ VỀ
+
+**A. Test paths**
+
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
+|---|---|---|
+| P1 | START → 1 → 2 → … → END | node 1: đúng, node 2: sai |
+
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | … | … |
+
+**C. Nhánh không test** (nếu có): nhánh nào, vì sao. Kèm 1 dòng: `C2 dự kiến = <số nhánh có test> / <tổng số nhánh>` (dự kiến, chưa chạy thật).
+
+**D. File test:** đúng **một** khối code C++, dòng đầu là `// FILE: u1465_test.cc`. Mỗi test case ở bảng B là một `TEST(...)`, ngay trên đó có 1 dòng comment ghi path.
+
+---
+
+# 7. LƯU Ý
+
+- Chỉ dùng tên hàm, kiểu dữ liệu có trong mã nguồn và các `#include` ở mục 3.3. Không tự bịa hàm.
+- Không sửa mã nguồn của Ceres.
+- Code phải đầy đủ, không viết `...` thay cho phần code còn thiếu.
+- Không giải thích lý thuyết ngoài các bảng ở mục 6.

@@ -6,7 +6,6 @@
   953,
   964
  ],
- "signature": "ceres::internal::(anonymous)::WriteArrayToFileOrDie",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 810
+ "order": 810,
+ "short_name": "WriteArrayToFileOrDie",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::string & filename, const double * x, const int size)",
+ "return_type": "void",
+ "is_const": false
 }

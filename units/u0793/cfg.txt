@@ -1,0 +1,11 @@
+UNIT u0793
+Hàm: BlockRandomAccessDiagonalMatrixAdapter(const BlockRandomAccessDiagonalMatrix & m)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::(namespace không tên)::BlockRandomAccessDiagonalMatrixAdapter
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 77–79
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ConjugateGradientsLinearOperator() (Base initializer)
+    m_(m) (Member initializer)                                     → END

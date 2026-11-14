@@ -1,0 +1,19 @@
+UNIT u0720
+Hàm: Tail(const std::vector<Block> & blocks, int n)  → trả về std::vector<Block>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/block_structure.cc, dòng 46–60
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_LE(n, blocks.size())                                     đúng → 2   sai → DỪNG
+2   const int num_blocks = blocks.size()
+    const int start = num_blocks - n
+    int position = 0
+    tail.reserve(n)
+    int i = start                                                  → 3
+3   vòng for, điều kiện: i < num_blocks                            đúng → 4   sai → END
+4   tail.emplace_back(blocks[i].size, position)
+    position += blocks[i].size                                     → 5
+5   ++i                                                            → 3

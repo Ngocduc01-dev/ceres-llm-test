@@ -1,0 +1,20 @@
+UNIT u1404
+Hàm: MinimizeInterpolatingPolynomial(const std::vector<FunctionSample> & samples, double x_min, double x_max, double * optimal_x, double * optimal_value)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/polynomial.cc, dòng 369–387
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   FindInterpolatingPolynomial(samples)
+    MinimizePolynomial(polynomial, x_min, x_max, optimal_x, optimal_value)   → 2
+2   for (const auto &sample : samples)                             đúng → 3   sai → END
+3   const auto &sample                                             → 4
+4   if (sample.x < x_min) || (sample.x > x_max)                    đúng → 5   sai → 7
+5   continue                                                       → 6
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   const double value = EvaluatePolynomial(polynomial, sample.x)   → 8
+8   if (value < *optimal_value)                                    đúng → 9   sai → 6
+9   *optimal_x = sample.x
+    *optimal_value = value                                         → 6

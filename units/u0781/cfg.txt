@@ -1,0 +1,38 @@
+UNIT u0781
+Hàm: ComputeSingleLinkageClustering(const SingleLinkageClusteringOptions & options, const WeightedGraph<int> & graph, std::unordered_map<int, int> * membership)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/single_linkage_clustering.cc, dòng 41–91
+
+Số điểm rẽ nhánh: 8 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(membership != nullptr)                                   đúng → 2   sai → DỪNG
+2   for (const int v : vertices)                                   đúng → 3   sai → 5
+3   const int v
+    (*membership)[v] = v                                           → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   for (const int vertex1 : vertices)                             đúng → 6   sai → 19
+6   const int vertex1
+    const std::unordered_set<int> &neighbors = graph.Neighbors(vertex1)   → 7
+7   for (const int vertex2 : neighbors)                            đúng → 8   sai → 18
+8   const int vertex2                                              → 9
+9   if (vertex1 > vertex2) || (graph.EdgeWeight(vertex1, vertex2) < options.min_similarity)   đúng → 10   sai → 12
+10  continue                                                       → 11
+11  ++ (bước tiếp của vòng for)                                    → 7
+12  const int c1 = FindConnectedComponent(vertex1, membership)
+    const int c2 = FindConnectedComponent(vertex2, membership)     → 13
+13  if (c1 == c2)                                                  đúng → 14   sai → 15
+14  continue                                                       → 11
+15  if (c1 < c2)                                                   đúng → 16   sai → 17
+16  (*membership)[c2] = c1                                         → 11
+17  (*membership)[c1] = c2                                         → 11
+18  ++ (bước tiếp của vòng for)                                    → 5
+19  int num_clusters = 0                                           → 20
+20  for (auto &m : *membership)                                    đúng → 21   sai → 25
+21  auto &m
+    m.second = FindConnectedComponent(m.first, membership)         → 22
+22  if (m.first == m.second)                                       đúng → 23   sai → 24
+23  ++num_clusters                                                 → 24
+24  ++ (bước tiếp của vòng for)                                    → 20
+25  return num_clusters                                            → END

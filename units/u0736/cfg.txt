@@ -1,0 +1,12 @@
+UNIT u0736
+Hàm: VisibilityClusteringTypeToString(VisibilityClusteringType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 326–333
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)              nhánh → 2   nhánh → 3
+2   return "SINGLE_LINKAGE"    → END
+3   return "CANONICAL_VIEWS"   → END

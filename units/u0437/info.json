@@ -6,7 +6,6 @@
   201,
   217
  ],
- "signature": "ceres::AutoDiffCostFunction::Evaluate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 437
+ "order": 437,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffCostFunction",
+ "class_is_template": true,
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true
 }

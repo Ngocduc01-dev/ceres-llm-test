@@ -1,0 +1,23 @@
+UNIT u1205
+Hàm: ConditionedCostFunction(CostFunction * wrapped_cost_function, const std::vector<CostFunction *> & conditioners, Ownership ownership)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::ConditionedCostFunction
+Vị trí: internal/ceres/conditioned_cost_function.cc, dòng 46–67
+
+Số điểm rẽ nhánh: 2 (và 4 lệnh CHECK)
+
+START → 1
+1   CostFunction() (Base initializer)
+    wrapped_cost_function_(wrapped_cost_function) (Member initializer)
+    conditioners_(conditioners) (Member initializer)
+    ownership_(ownership) (Member initializer)
+    set_num_residuals(wrapped_cost_function_->num_residuals())
+    *mutable_parameter_block_sizes() = wrapped_cost_function_->parameter_block_sizes()   → 2
+2   CHECK_EQ(wrapped_cost_function_->num_residuals(), conditioners_.size())   đúng → 3   sai → DỪNG
+3   int i = 0                                                      → 4
+4   vòng for, điều kiện: i < wrapped_cost_function_->num_residuals()   đúng → 5   sai → END
+5   if (conditioners[i])                                           đúng → 6   sai → 9
+6   CHECK_EQ(1, conditioners[i]->num_residuals())                  đúng → 7   sai → DỪNG
+7   CHECK_EQ(1, conditioners[i]->parameter_block_sizes().size())   đúng → 8   sai → DỪNG
+8   CHECK_EQ(1, conditioners[i]->parameter_block_sizes()[0])       đúng → 9   sai → DỪNG
+9   i++                                                            → 4

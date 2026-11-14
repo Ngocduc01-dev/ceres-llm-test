@@ -6,7 +6,6 @@
   119,
   121
  ],
- "signature": "ceres::(anonymous)::IsIterativeSolver",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 801
+ "order": 801,
+ "short_name": "IsIterativeSolver",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(LinearSolverType type)",
+ "return_type": "bool",
+ "is_const": false
 }

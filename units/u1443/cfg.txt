@@ -1,0 +1,30 @@
+UNIT u1443
+Hàm: SolveImpl(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 100–158
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   "SchurComplementSolver::Solve"
+    const CompressedRowBlockStructure *bs = A->block_structure()   → 2
+2   if (eliminator_ == nullptr)                                    đúng → 3   sai → 7
+3   const int num_eliminate_blocks = options_.elimination_groups[0]
+    const int num_f_blocks = bs->cols.size() - num_eliminate_blocks
+    InitStorage(bs)
+    DetectStructure(*bs, num_eliminate_blocks, &options_.row_block_size, &options_.e_block_size, &options_.f_block_size)   → 4
+4   if (options_.row_block_size == 2 && options_.e_block_size == 3 && options_.f_block_size == 6 && num_f_blocks == 1)   đúng → 5   sai → 10
+5   eliminator_ = std::make_unique<SchurEliminatorForOneFBlock<2, 3, 6>>()   → 6
+6   CHECK(eliminator_)                                             đúng → 7   sai → DỪNG
+7   std::fill(x, x + A->num_cols(), 0.)
+    event_logger.AddEvent("Setup")
+    eliminator_->Eliminate(BlockSparseMatrixData(*A), b, per_solve_options.D, lhs_.get(), rhs_.data())
+    event_logger.AddEvent("Eliminate")
+    double *reduced_solution = x + A->num_cols() - lhs_->num_cols()
+    SolveReducedLinearSystem(per_solve_options, reduced_solution)
+    event_logger.AddEvent("ReducedSolve")                          → 8
+8   if (summary.termination_type == LinearSolverTerminationType::SUCCESS)   đúng → 9   sai → END
+9   eliminator_->BackSubstitute(BlockSparseMatrixData(*A), b, per_solve_options.D, reduced_solution, x)
+    event_logger.AddEvent("BackSubstitute")                        → END
+10  eliminator_ = SchurEliminatorBase::Create(options_)            → 6

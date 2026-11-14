@@ -1,0 +1,10 @@
+UNIT u1156
+Hàm: GetParameterBlocks(std::vector<double *> * parameter_blocks) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 183–185
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   impl_->GetParameterBlocks(parameter_blocks)   → END

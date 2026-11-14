@@ -6,7 +6,6 @@
   45,
   57
  ],
- "signature": "ceres::internal::Preprocessor::Create",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 728
+ "order": 728,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Preprocessor",
+ "class_is_template": false,
+ "params": "(MinimizerType minimizer_type)",
+ "return_type": "std::unique_ptr<Preprocessor>",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0665
+Hàm: num_cols() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 99–99
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return m_.cols()   → END

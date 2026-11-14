@@ -6,7 +6,6 @@
   102,
   108
  ],
- "signature": "ceres::internal::LBFGS::LBFGS",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1007
+ "order": 1007,
+ "short_name": "LBFGS",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LBFGS",
+ "class_is_template": false,
+ "params": "(const int num_parameters, const int max_lbfgs_rank, const bool use_approximate_eigenvalue_bfgs_scaling)",
+ "return_type": null,
+ "is_const": false
 }

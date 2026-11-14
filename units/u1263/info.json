@@ -6,7 +6,6 @@
   107,
   127
  ],
- "signature": "ceres::TinySolverCostFunctionAdapter::operator()",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1263
+ "order": 1263,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolverCostFunctionAdapter",
+ "class_is_template": true,
+ "params": "(const double * parameters, double * residuals, double * jacobian)",
+ "return_type": "bool",
+ "is_const": true
 }

@@ -1,0 +1,16 @@
+UNIT u1168
+Hàm: CreateSparseDiagonalMatrix(const double * values, int num_rows)  → trả về std::unique_ptr<TripletSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 266–278
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_rows                              đúng → 3   sai → 5
+3   m->mutable_rows()[i] = i
+    m->mutable_cols()[i] = i
+    m->mutable_values()[i] = values[i]                             → 4
+4   ++i                                                            → 2
+5   m->set_num_nonzeros(num_rows)                                  → END

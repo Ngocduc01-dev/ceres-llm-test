@@ -6,7 +6,6 @@
   710,
   830
  ],
- "signature": "ceres::Solver::Solve",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 7,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1533
+ "order": 1533,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Solver",
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, Problem * problem, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false
 }

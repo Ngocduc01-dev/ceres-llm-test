@@ -6,7 +6,6 @@
   430,
   439
  ],
- "signature": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalFtF",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1425
+ "order": 1425,
+ "short_name": "CreateBlockDiagonalFtF",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": true
 }

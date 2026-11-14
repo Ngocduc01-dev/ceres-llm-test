@@ -6,7 +6,6 @@
   47,
   47
  ],
- "signature": "ceres::internal::ThreadTokenProvider::Release",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 422
+ "order": 422,
+ "short_name": "Release",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadTokenProvider",
+ "class_is_template": false,
+ "params": "(int thread_id)",
+ "return_type": "void",
+ "is_const": false
 }

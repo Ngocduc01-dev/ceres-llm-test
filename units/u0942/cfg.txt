@@ -1,0 +1,33 @@
+UNIT u0942
+Hàm: DoglegStrategy(const TrustRegionStrategy::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 53–72
+
+Số điểm rẽ nhánh: 0 (và 4 lệnh CHECK)
+
+START → 1
+1   TrustRegionStrategy() (Base initializer)
+    linear_solver_(options.linear_solver) (Member initializer)
+    radius_(options.initial_radius) (Member initializer)
+    max_radius_(options.max_radius) (Member initializer)
+    min_diagonal_(options.min_lm_diagonal) (Member initializer)
+    max_diagonal_(options.max_lm_diagonal) (Member initializer)
+    min_mu_(kMinMu) (Member initializer)
+    max_mu_(kMaxMu) (Member initializer)
+    mu_increase_factor_(10.) (Member initializer)
+    increase_threshold_(0.75) (Member initializer)
+    decrease_threshold_(0.25) (Member initializer)
+    lm_diagonal_() (Member initializer)
+    gradient_() (Member initializer)
+    gauss_newton_step_() (Member initializer)
+    dogleg_step_norm_(0.) (Member initializer)
+    reuse_(false) (Member initializer)
+    dogleg_type_(options.dogleg_type) (Member initializer)
+    subspace_basis_() (Member initializer)
+    subspace_g_() (Member initializer)
+    subspace_B_() (Member initializer)                             → 2
+2   CHECK(linear_solver_ != nullptr)                               đúng → 3   sai → DỪNG
+3   CHECK_GT(min_diagonal_, 0.0)                                   đúng → 4   sai → DỪNG
+4   CHECK_LE(min_diagonal_, max_diagonal_)                         đúng → 5   sai → DỪNG
+5   CHECK_GT(max_radius_, 0.0)                                     đúng → END   sai → DỪNG

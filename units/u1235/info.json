@@ -6,7 +6,6 @@
   67,
   118
  ],
- "signature": "ceres::internal::(anonymous)::CreateStructureOfCompressedRowSparseMatrix",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1235
+ "order": 1235,
+ "short_name": "CreateStructureOfCompressedRowSparseMatrix",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const double* values, int num_rows, int num_cols, int num_nonzeros, const CompressedRowBlockStructure* block_structure)",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": false
 }

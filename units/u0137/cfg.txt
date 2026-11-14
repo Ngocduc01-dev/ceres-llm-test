@@ -1,0 +1,11 @@
+UNIT u0137
+Hàm: isgreater(const Lhs& f, const Rhs& g)  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 980–986
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp isgreater<Jet<double, 2>, Jet<double, 2>, nullptr> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return isgreater(AsScalar (ImplicitCastExpr, FunctionToPointerDecay, const double &(*)(const Jet<double, 2> &) noexcept(noexcept(AsScalar(value.a))))(f), AsScalar (ImplicitCastExpr, FunctionToPointerDecay, const double &(*)(const Jet<double, 2> &) noexcept(noexcept(AsScalar(value.a))))(g))   → END

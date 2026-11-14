@@ -6,7 +6,6 @@
   213,
   216
  ],
- "signature": "ceres::internal::FixedArray::operator[]",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1026
+ "order": 1026,
+ "short_name": "operator[]",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "(size_type i)",
+ "return_type": "reference",
+ "is_const": false
 }

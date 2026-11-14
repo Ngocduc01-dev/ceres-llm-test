@@ -1,0 +1,16 @@
+UNIT u1092
+Hàm: RightMultiplyAndAccumulateF(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 139–191
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const CompressedRowBlockStructure *bs = matrix_.block_structure()
+    const int num_row_blocks = bs->rows.size()
+    const int num_cols_e = num_cols_e_
+    const double *values = matrix_.values()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:155:15) &&, int))(options_.context, 0, num_row_blocks_e_, options_.num_threads, [values, bs, num_cols_e, x, y](int row_block_id) {)
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:175:15) &&, int))(options_.context, num_row_blocks_e_, num_row_blocks, options_.num_threads, [values, bs, num_cols_e, x, y](int row_block_id) {)   → END

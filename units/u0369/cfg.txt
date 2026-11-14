@@ -1,0 +1,10 @@
+UNIT u0369
+Hàm: delta_offset() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 144–144
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return delta_offset_   → END

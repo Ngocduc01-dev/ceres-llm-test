@@ -6,7 +6,6 @@
   266,
   276
  ],
- "signature": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateF",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1294
+ "order": 1294,
+ "short_name": "LeftMultiplyAndAccumulateF",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

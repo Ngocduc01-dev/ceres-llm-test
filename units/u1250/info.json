@@ -6,7 +6,6 @@
   303,
   308
  ],
- "signature": "ceres::internal::ProgramEvaluator::Plus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1250
+ "order": 1250,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "(const double * state, const double * delta, double * state_plus_delta)",
+ "return_type": "bool",
+ "is_const": true
 }

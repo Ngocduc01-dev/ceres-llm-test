@@ -6,7 +6,6 @@
   91,
   95
  ],
- "signature": "ceres::DynamicNumericDiffCostFunction::~DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 444
+ "order": 444,
+ "short_name": "~DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::DynamicNumericDiffCostFunction",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

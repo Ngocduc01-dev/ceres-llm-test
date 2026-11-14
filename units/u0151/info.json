@@ -6,7 +6,6 @@
   1329,
   1332
  ],
- "signature": "?::std::numeric_limits::min",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 151
+ "order": 151,
+ "short_name": "min",
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   39,
   39
  ],
- "signature": "ceres::Context::~Context",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 273
+ "order": 273,
+ "short_name": "~Context",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::Context",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

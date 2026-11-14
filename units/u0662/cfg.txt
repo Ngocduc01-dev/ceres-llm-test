@@ -1,0 +1,10 @@
+UNIT u0662
+Hàm: SetZero()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 60–60
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   m_.setZero()   → END

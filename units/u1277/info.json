@@ -6,7 +6,6 @@
   368,
   390
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1277
+ "order": 1277,
+ "short_name": "ScaleOffDiagonalCells",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

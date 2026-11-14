@@ -1,0 +1,72 @@
+UNIT u1362
+Hàm: LinearLeastSquaresProblem1()  → trả về std::unique_ptr<LinearLeastSquaresProblem>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 188–297
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   int num_rows = 6
+    int num_cols = 5
+    problem->b = std::make_unique<double[]>(num_rows)
+    problem->D = std::make_unique<double[]>(num_cols)
+    problem->num_eliminate_blocks = 2
+    problem->x = std::make_unique<double[]>(num_cols)
+    problem->x[0] = -2.3060999999999998
+    problem->x[1] = 0.31719999999999998
+    problem->x[2] = 0.2102
+    problem->x[3] = 2.1366999999999998
+    problem->x[4] = 0.13880000000000001
+    int *rows = A->mutable_rows()
+    int *cols = A->mutable_cols()
+    double *values = A->mutable_values()
+    int nnz = 0
+    rows[nnz] = 0
+    cols[nnz] = 0
+    values[nnz++] = 1
+    rows[nnz] = 0
+    cols[nnz] = 2
+    values[nnz++] = 2
+    rows[nnz] = 1
+    cols[nnz] = 0
+    values[nnz++] = 3
+    rows[nnz] = 1
+    cols[nnz] = 3
+    values[nnz++] = 4
+    rows[nnz] = 2
+    cols[nnz] = 1
+    values[nnz++] = 5
+    rows[nnz] = 2
+    cols[nnz] = 4
+    values[nnz++] = 6
+    rows[nnz] = 3
+    cols[nnz] = 1
+    values[nnz++] = 7
+    rows[nnz] = 3
+    cols[nnz] = 2
+    values[nnz++] = 8
+    rows[nnz] = 4
+    cols[nnz] = 1
+    values[nnz++] = 9
+    rows[nnz] = 4
+    cols[nnz] = 2
+    values[nnz++] = 1
+    rows[nnz] = 5
+    cols[nnz] = 2
+    values[nnz++] = 1
+    rows[nnz] = 5
+    cols[nnz] = 3
+    values[nnz++] = 1
+    rows[nnz] = 5
+    cols[nnz] = 4
+    values[nnz++] = 1
+    A->set_num_nonzeros(nnz)                                       → 2
+2   CHECK(A->IsValid())                                            đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < num_cols                              đúng → 4   sai → 6
+4   problem->D.get()[i] = 1                                        → 5
+5   ++i                                                            → 3
+6   int i = 0                                                      → 7
+7   vòng for, điều kiện: i < num_rows                              đúng → 8   sai → END
+8   problem->b.get()[i] = i                                        → 9
+9   ++i                                                            → 7

@@ -1,0 +1,18 @@
+UNIT u1047
+Hàm: Remove(const T element)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::OrderedGroups
+Vị trí: include/ceres/ordered_groups.h, dòng 93–108
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const int current_group = GroupId(element)           → 2
+2   if (current_group < 0)                               đúng → 3   sai → 4
+3   return false                                         → END
+4   group_to_elements_[current_group].erase(element)     → 5
+5   if (group_to_elements_[current_group].size() == 0)   đúng → 6   sai → 7
+6   group_to_elements_.erase(current_group)              → 7
+7   element_to_group_.erase(element)
+    return true                                          → END

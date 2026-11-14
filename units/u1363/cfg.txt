@@ -1,0 +1,13 @@
+UNIT u1363
+Hàm: Solve(LinearOperator * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TypedLinearSolver
+Vị trí: internal/ceres/linear_solver.h, dòng 366–376
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TypedLinearSolver<BlockSparseMatrix> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(A != nullptr)   đúng → 2   sai → DỪNG
+2   CHECK(b != nullptr)   đúng → 3   sai → DỪNG
+3   CHECK(x != nullptr)   đúng → END   sai → DỪNG

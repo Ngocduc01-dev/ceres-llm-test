@@ -6,7 +6,6 @@
   835,
   844
  ],
- "signature": "ceres::fdim",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 518
+ "order": 518,
+ "short_name": "fdim",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Lhs& f, const Rhs& g)",
+ "return_type": "decltype(auto)",
+ "is_const": false
 }

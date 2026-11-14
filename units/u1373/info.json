@@ -6,7 +6,6 @@
   169,
   210
  ],
- "signature": "ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1373
+ "order": 1373,
+ "short_name": "OrderingForSparseNormalCholeskyUsingEigenSparse",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const LinearSolverOrderingType linear_solver_ordering_type, const TripletSparseMatrix & tsm_block_jacobian_transpose, int * ordering)",
+ "return_type": "void",
+ "is_const": false
 }

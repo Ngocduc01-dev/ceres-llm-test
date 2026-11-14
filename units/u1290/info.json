@@ -6,7 +6,6 @@
   139,
   150
  ],
- "signature": "ceres::internal::RefinedSparseCholesky::Solve",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1290
+ "order": 1290,
+ "short_name": "Solve",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::RefinedSparseCholesky",
+ "class_is_template": false,
+ "params": "(const double * rhs, double * solution, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

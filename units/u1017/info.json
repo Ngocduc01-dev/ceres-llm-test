@@ -6,7 +6,6 @@
   786,
   788
  ],
- "signature": "ceres::internal::ProblemImpl::NumParameterBlocks",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 1017
+ "order": 1017,
+ "short_name": "NumParameterBlocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

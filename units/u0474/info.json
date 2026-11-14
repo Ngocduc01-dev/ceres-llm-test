@@ -6,7 +6,6 @@
   70,
   80
  ],
- "signature": "ceres::FindWithDefault",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 474
+ "order": 474,
+ "short_name": "FindWithDefault",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Collection& collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
+ "return_type": "const typename Collection::value_type::second_type",
+ "is_const": false
 }

@@ -1,0 +1,12 @@
+UNIT u0703
+Hàm: operator()(const IterationSummary & summary)  → trả về CallbackReturnType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientProblemSolverStateUpdatingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 68–74
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (summary.step_is_successful)                                đúng → 2   sai → 3
+2   std::copy_n(internal_parameters_, num_parameters_, user_parameters_)   → 3
+3   return SOLVER_CONTINUE                                         → END

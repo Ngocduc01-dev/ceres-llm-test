@@ -1,0 +1,14 @@
+UNIT u1184
+Hàm: Create(const BlockSparseMatrix & m, const int start_row_block, const int end_row_block, CompressedRowSparseMatrix::StorageType product_storage_type)  → trả về std::unique_ptr<InnerProductComputer>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 124–139
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   CompressedRowSparseMatrix::StorageType::UPPER_TRIANGULAR)      đúng → 2   sai → DỪNG
+2   CHECK_GT(m.num_nonzeros(), 0)                                  đúng → 3   sai → DỪNG
+3   CFGNewAllocator(InnerProductComputer *)
+    new InnerProductComputer(m, start_row_block, end_row_block)
+    inner_product_computer->Init(product_storage_type)             → END

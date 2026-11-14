@@ -1,0 +1,20 @@
+UNIT u1110
+Hàm: StringToDenseLinearAlgebraLibraryType(std::string value, DenseLinearAlgebraLibraryType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 155–162
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   UpperCase(&value)             → 2
+2   if (value == "EIGEN")         đúng → 3   sai → 4
+3   *type = EIGEN
+    return true                   → END
+4   if (value == "LAPACK")        đúng → 5   sai → 6
+5   *type = LAPACK
+    return true                   → END
+6   if (value == "CUDA")          đúng → 7   sai → 8
+7   *type = CUDA
+    return true                   → END
+8   return false                  → END

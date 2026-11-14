@@ -6,7 +6,6 @@
   514,
   523
  ],
- "signature": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalEtE",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1356
+ "order": 1356,
+ "short_name": "UpdateBlockDiagonalEtE",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "(BlockSparseMatrix * block_diagonal)",
+ "return_type": "void",
+ "is_const": true
 }

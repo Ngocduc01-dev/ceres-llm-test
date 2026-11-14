@@ -1,0 +1,21 @@
+UNIT u1162
+Hàm: Refine(const SparseMatrix & lhs, const double * rhs_ptr, SparseCholesky * cholesky, double * solution_ptr)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseIterativeRefiner
+Vị trí: internal/ceres/iterative_refiner.cc, dòng 53–71
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int num_cols = lhs.num_cols()
+    Allocate(num_cols)
+    rhs_ptr, num_cols
+    solution_ptr, num_cols
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < max_num_iterations_                   đúng → 3   sai → END
+3   lhs_x_solution_.setZero()
+    lhs.RightMultiplyAndAccumulate(solution_ptr, lhs_x_solution_.data())
+    residual_ = rhs - lhs_x_solution_
+    cholesky->Solve(residual_.data(), correction_.data(), &ignored_message)
+    solution += correction_                                        → 4
+4   ++i                                                            → 2

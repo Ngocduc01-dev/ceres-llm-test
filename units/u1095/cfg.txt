@@ -1,0 +1,17 @@
+UNIT u1095
+Hàm: StringToDoglegType(std::string value, DoglegType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 190–195
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)                         → 2
+2   if (value == "TRADITIONAL_DOGLEG")        đúng → 3   sai → 4
+3   *type = TRADITIONAL_DOGLEG
+    return true                               → END
+4   if (value == "SUBSPACE_DOGLEG")           đúng → 5   sai → 6
+5   *type = SUBSPACE_DOGLEG
+    return true                               → END
+6   return false                              → END

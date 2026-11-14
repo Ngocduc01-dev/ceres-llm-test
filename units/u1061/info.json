@@ -6,7 +6,6 @@
   177,
   244
  ],
- "signature": "ceres::internal::MatrixMatrixMultiplyNaive",
  "branches": 74,
  "cyclomatic": 38,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1061
+ "order": 1061,
+ "short_name": "MatrixMatrixMultiplyNaive",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "void",
+ "is_const": false
 }

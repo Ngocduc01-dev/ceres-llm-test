@@ -1,0 +1,53 @@
+UNIT u1533
+Hàm: Solve(const Solver::Options & options, Problem * problem, Solver::Summary * summary)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Solver
+Vị trí: internal/ceres/solver.cc, dòng 710–830
+
+Số điểm rẽ nhánh: 5 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(problem != nullptr)                                      đúng → 2   sai → DỪNG
+2   CHECK(summary != nullptr)                                      đúng → 3   sai → DỪNG
+3   double start_time = WallTimeInSeconds()
+    *summary = Summary()                                           → 4
+4   if (!options.IsValid(&summary->message))                       đúng → END   sai → 5
+5   ProblemImpl *problem_impl = problem->mutable_impl()
+    Program *program = problem_impl->mutable_program()
+    PreSolveSummarize(options, problem_impl, summary)              → 6
+6   if (options.check_gradients)                                   đúng → 7   sai → 8
+7   modified_options.callbacks.push_back(&gradient_checking_callback)
+    gradient_checking_problem = CreateGradientCheckingProblemImpl(problem_impl, options.gradient_check_numeric_derivative_relative_step_size, options.gradient_check_relative_precision, &gradient_checking_callback)
+    problem_impl = gradient_checking_problem.get()
+    program = problem_impl->mutable_program()                      → 8
+8   program->SetParameterBlockStatePtrsToUserStatePtrs()
+    problem_impl->context()->EnsureMinimumThreads(options.num_threads - 1)
+    const bool status = preprocessor->Preprocess(modified_options, problem_impl, &pp)   → 9
+9   if (IsSchurType(pp.linear_solver_options.type))                đúng → 10   sai → 11
+10  int row_block_size
+    int e_block_size
+    int f_block_size
+    DetectStructure(*static_cast<internal::BlockSparseMatrix *>(pp.minimizer_options.jacobian.get())->block_structure(), pp.linear_solver_options.elimination_groups[0], &row_block_size, &e_block_size, &f_block_size)
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->schur_structure_given = SchurStructureToString(row_block_size, e_block_size, f_block_size)
+    internal::GetBestSchurTemplateSpecialization(&row_block_size, &e_block_size, &f_block_size)
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->schur_structure_used = SchurStructureToString(row_block_size, e_block_size, f_block_size)   → 11
+11  summary->fixed_cost = pp.fixed_cost
+    summary->preprocessor_time_in_seconds = WallTimeInSeconds() - start_time   → 12
+12  if (status)                                                    đúng → 13   sai → 18
+13  const double minimizer_start_time = WallTimeInSeconds()
+    Minimize(&pp, summary)
+    summary->minimizer_time_in_seconds = WallTimeInSeconds() - minimizer_start_time   → 14
+14  const double postprocessor_start_time = WallTimeInSeconds()
+    problem_impl = problem->mutable_impl()
+    program = problem_impl->mutable_program()
+    program->SetParameterBlockStatePtrsToUserStatePtrs()
+    program->SetParameterOffsetsAndIndex()
+    PostSolveSummarize(pp, summary)
+    summary->postprocessor_time_in_seconds = WallTimeInSeconds() - postprocessor_start_time   → 15
+15  if (gradient_checking_callback.gradient_error_detected())      đúng → 16   sai → 17
+16  summary->termination_type = FAILURE
+    summary->message = gradient_checking_callback.error_log()      → 17
+17  summary->total_time_in_seconds = WallTimeInSeconds() - start_time   → END
+18  summary->message = pp.error                                    → 14

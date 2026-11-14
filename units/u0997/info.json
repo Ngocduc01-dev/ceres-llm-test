@@ -6,7 +6,6 @@
   123,
   125
  ],
- "signature": "ceres_create_tolerant_loss_function_data",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 997
+ "order": 997,
+ "short_name": "ceres_create_tolerant_loss_function_data",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(double a, double b)",
+ "return_type": "void *",
+ "is_const": false
 }

@@ -1,0 +1,13 @@
+UNIT u0656
+Hàm: RefinedDenseCholesky(std::unique_ptr<DenseCholesky> dense_cholesky, std::unique_ptr<DenseIterativeRefiner> iterative_refiner)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::RefinedDenseCholesky
+Vị trí: internal/ceres/dense_cholesky.cc, dòng 319–323
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   DenseCholesky() (Base initializer)
+    dense_cholesky_(std::move(dense_cholesky)) (Member initializer)
+    iterative_refiner_(std::move(iterative_refiner)) (Member initializer)
+    lhs_(?) (Member initializer)                                   → END

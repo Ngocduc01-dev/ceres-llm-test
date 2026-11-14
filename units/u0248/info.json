@@ -6,7 +6,6 @@
   56,
   63
  ],
- "signature": "ceres::internal::GradientProblemSolverStateUpdatingCallback::GradientProblemSolverStateUpdatingCallback",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 248
+ "order": 248,
+ "short_name": "GradientProblemSolverStateUpdatingCallback",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::GradientProblemSolverStateUpdatingCallback",
+ "class_is_template": false,
+ "params": "(int num_parameters, const double * internal_parameters, double * user_parameters)",
+ "return_type": null,
+ "is_const": false
 }

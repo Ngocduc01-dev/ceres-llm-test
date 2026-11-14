@@ -1,0 +1,12 @@
+UNIT u0594
+Hàm: operator()(const int x, const int y) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::(namespace không tên)::RowColLessThan
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 61–66
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (rows[x] == rows[y])      đúng → 2   sai → 3
+2   return (cols[x] < cols[y])   → END
+3   return (rows[x] < rows[y])   → END

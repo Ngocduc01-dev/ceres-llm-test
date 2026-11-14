@@ -6,7 +6,6 @@
   42,
   53
  ],
- "signature": "ceres::internal::Minimizer::Create",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 921
+ "order": 921,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Minimizer",
+ "class_is_template": false,
+ "params": "(MinimizerType minimizer_type)",
+ "return_type": "std::unique_ptr<Minimizer>",
+ "is_const": false
 }

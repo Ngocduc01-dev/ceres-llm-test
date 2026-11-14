@@ -6,7 +6,6 @@
   27,
   60
  ],
- "signature": "ceres::(anonymous)::QuaternionPlusImpl",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 596
+ "order": 596,
+ "short_name": "QuaternionPlusImpl",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const double* x, const double* delta, double* x_plus_delta)",
+ "return_type": "void",
+ "is_const": false
 }

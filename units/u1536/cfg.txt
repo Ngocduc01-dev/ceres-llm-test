@@ -1,0 +1,10 @@
+UNIT u1536
+Hàm: Solve(const Solver::Options & options, Problem * problem, Solver::Summary * summary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/solver.cc, dòng 832–837
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   solver.Solve(options, problem, summary)   → END

@@ -1,0 +1,10 @@
+UNIT u0794
+Hàm: set_lhs(std::unique_ptr<BlockRandomAccessMatrix> lhs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.h, dòng 128–130
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   lhs_ = std::move(lhs)   → END

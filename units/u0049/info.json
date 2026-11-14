@@ -6,7 +6,6 @@
   381,
   381
  ],
- "signature": "ceres::internal::FixedArray::NonEmptyInlinedStorage::AnnotateDestruct",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 49
+ "order": 49,
+ "short_name": "AnnotateDestruct",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::NonEmptyInlinedStorage",
+ "class_is_template": false,
+ "params": "(size_type)",
+ "return_type": "void",
+ "is_const": false
 }

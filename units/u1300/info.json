@@ -6,7 +6,6 @@
   82,
   126
  ],
- "signature": "ceres::internal::LoggingCallback::operator()",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1300
+ "order": 1300,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LoggingCallback",
+ "class_is_template": false,
+ "params": "(const IterationSummary & summary)",
+ "return_type": "CallbackReturnType",
+ "is_const": false
 }

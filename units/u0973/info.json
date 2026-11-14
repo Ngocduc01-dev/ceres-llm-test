@@ -6,7 +6,6 @@
   139,
   188
  ],
- "signature": "ceres::internal::TrustRegionMinimizer::Init",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 973
+ "order": 973,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
+ "params": "(const Minimizer::Options & options, double * parameters, Solver::Summary * solver_summary)",
+ "return_type": "void",
+ "is_const": false
 }

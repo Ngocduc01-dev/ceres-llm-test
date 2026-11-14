@@ -1,0 +1,31 @@
+UNIT u1457
+Hàm: Init(const CompressedRowSparseMatrix::StorageType product_storage_type)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 141–177
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const CompressedRowBlockStructure *bs = m_.block_structure()
+    int row_block = start_row_block_                               → 2
+2   vòng for, điều kiện: row_block < end_row_block_                đúng → 3   sai → 15
+3   const CompressedRow &row = bs->rows[row_block]
+    int c1 = 0                                                     → 4
+4   vòng for, điều kiện: c1 < row.cells.size()                     đúng → 5   sai → 14
+5   const Cell &cell1 = row.cells[c1]
+    int c2_begin
+    int c2_end                                                     → 6
+6   if (product_storage_type == CompressedRowSparseMatrix::StorageType::LOWER_TRIANGULAR)   đúng → 7   sai → 13
+7   c2_begin = 0
+    c2_end = c1 + 1                                                → 8
+8   int c2 = c2_begin                                              → 9
+9   vòng for, điều kiện: c2 < c2_end                               đúng → 10   sai → 12
+10  const Cell &cell2 = row.cells[c2]
+    product_terms.emplace_back(cell1.block_id, cell2.block_id, product_terms.size())   → 11
+11  ++c2                                                           → 9
+12  ++c1                                                           → 4
+13  c2_begin = c1
+    c2_end = row.cells.size()                                      → 8
+14  ++row_block                                                    → 2
+15  ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms)   → END

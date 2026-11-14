@@ -6,7 +6,6 @@
   164,
   179
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 917
+ "order": 917,
+ "short_name": "CompressedRowSparseMatrix",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(int num_rows, int num_cols, int max_num_nonzeros)",
+ "return_type": null,
+ "is_const": false
 }

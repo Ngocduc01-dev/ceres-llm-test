@@ -6,7 +6,6 @@
   852,
   1134
  ],
- "signature": "ceres::Solver::Summary::FullReport",
  "branches": 86,
  "cyclomatic": 44,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1392
+ "order": 1392,
+ "short_name": "FullReport",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Solver::Summary",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true
 }

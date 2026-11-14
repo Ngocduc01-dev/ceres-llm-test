@@ -1,0 +1,10 @@
+UNIT u0690
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseMatrixPreconditionerWrapper
+Vị trí: internal/ceres/preconditioner.cc, dòng 69–71
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return matrix_->num_rows()   → END

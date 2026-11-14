@@ -6,7 +6,6 @@
   91,
   91
  ],
- "signature": "ceres::internal::VersionString",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 413
+ "order": 413,
+ "short_name": "VersionString",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::string_view",
+ "is_const": false
 }

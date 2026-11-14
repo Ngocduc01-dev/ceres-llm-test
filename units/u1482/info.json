@@ -6,7 +6,6 @@
   58,
   60
  ],
- "signature": "ceres_create_problem",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1482
+ "order": 1482,
+ "short_name": "ceres_create_problem",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "ceres_problem_t *",
+ "is_const": false
 }

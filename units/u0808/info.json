@@ -6,7 +6,6 @@
   198,
   221
  ],
- "signature": "ceres::internal::CanonicalViewsClustering::ComputeClusterMembership",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 808
+ "order": 808,
+ "short_name": "ComputeClusterMembership",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CanonicalViewsClustering",
+ "class_is_template": false,
+ "params": "(const std::vector<int> & centers, IntMap * membership)",
+ "return_type": "void",
+ "is_const": true
 }

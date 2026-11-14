@@ -1,0 +1,10 @@
+UNIT u0859
+Hàm: CreateGradientCheckingCostFunction(const CostFunction * cost_function, const std::vector<const Manifold *> * manifolds, double relative_step_size, double relative_precision, const std::string & extra_info, GradientCheckingIterationCallback * callback)  → trả về std::unique_ptr<CostFunction>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 150–166
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   numeric_diff_options.relative_step_size = relative_step_size   → END

@@ -6,7 +6,6 @@
   63,
   84
  ],
- "signature": "ceres::OrderedGroups::AddElementToGroup",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 535
+ "order": 535,
+ "short_name": "AddElementToGroup",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "(const T element, const int group)",
+ "return_type": "bool",
+ "is_const": false
 }

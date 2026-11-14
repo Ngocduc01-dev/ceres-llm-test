@@ -1,0 +1,10 @@
+UNIT u0864
+Hàm: mutable_result() const  → trả về CompressedRowSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.h, dòng 100–100
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return result_.get()   → END

@@ -1,0 +1,15 @@
+UNIT u0641
+Hàm: NumericDiffFirstOrderFunction(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::NumericDiffFirstOrderFunction
+Vị trí: include/ceres/numeric_diff_first_order_function.h, dòng 119–132
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   FirstOrderFunction() (Base initializer)
+    functor_(functor) (Member initializer)
+    num_parameters_(4) (Member initializer)
+    ownership_(ownership) (Member initializer)
+    options_(options) (Member initializer)                         → END

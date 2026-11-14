@@ -1,0 +1,10 @@
+UNIT u1512
+Hàm: Evaluate(const EvaluateOptions & evaluate_options, double * cost, std::vector<double> * residuals, std::vector<double> * gradient, CRSMatrix * jacobian)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 128–134
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->Evaluate(evaluate_options, cost, residuals, gradient, jacobian)   → END

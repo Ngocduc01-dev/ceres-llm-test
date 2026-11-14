@@ -6,7 +6,6 @@
   75,
   85
  ],
- "signature": "ceres::internal::LowRankInverseHessian::LowRankInverseHessian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 337
+ "order": 337,
+ "short_name": "LowRankInverseHessian",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LowRankInverseHessian",
+ "class_is_template": false,
+ "params": "(int num_parameters, int max_num_corrections, bool use_approximate_eigenvalue_scaling)",
+ "return_type": null,
+ "is_const": false
 }

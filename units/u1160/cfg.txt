@@ -1,0 +1,19 @@
+UNIT u1160
+Hàm: TripletSparseMatrix(const TripletSparseMatrix & orig)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 85–93
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SparseMatrix() (Base initializer)
+    num_rows_(orig.num_rows_) (Member initializer)
+    num_cols_(orig.num_cols_) (Member initializer)
+    max_num_nonzeros_(orig.max_num_nonzeros_) (Member initializer)
+    num_nonzeros_(orig.num_nonzeros_) (Member initializer)
+    rows_() (Member initializer)
+    cols_() (Member initializer)
+    values_() (Member initializer)
+    AllocateMemory()
+    CopyData(orig)                                                 → END

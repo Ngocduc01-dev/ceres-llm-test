@@ -6,7 +6,6 @@
   70,
   80
  ],
- "signature": "CallbackCostFunction::CallbackCostFunction",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1030
+ "order": 1030,
+ "short_name": "CallbackCostFunction",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "CallbackCostFunction",
+ "class_is_template": false,
+ "params": "(ceres_cost_function_t cost_function, void * user_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,11 @@
+UNIT u0477
+Hàm: MakeConditionalLock(const int num_threads, std::mutex & m)  → trả về std::unique_lock<std::mutex>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parallel_for.h, dòng 48–52
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   (num_threads == 1) ? ... : ...                                 đúng → 2   sai → 2
+2   return (num_threads == 1) ? std::unique_lock<std::mutex>{} : std::unique_lock<std::mutex>{m}   → END

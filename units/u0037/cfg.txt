@@ -1,0 +1,11 @@
+UNIT u0037
+Hàm: begin() const  → trả về const_iterator
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::FixedArray
+Vị trí: include/ceres/internal/fixed_array.h, dòng 251–251
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return data()   → END

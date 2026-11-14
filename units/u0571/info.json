@@ -6,7 +6,6 @@
   382,
   393
  ],
- "signature": "ceres::TinySolver::Initialize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 571
+ "order": 571,
+ "short_name": "Initialize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolver",
+ "class_is_template": true,
+ "params": "(int num_residuals, int num_parameters)",
+ "return_type": "void",
+ "is_const": false
 }

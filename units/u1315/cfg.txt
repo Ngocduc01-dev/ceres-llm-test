@@ -1,0 +1,18 @@
+UNIT u1315
+Hàm: ReorderProgram(PreprocessedProblem * pp)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/trust_region_preprocessor.cc, dòng 110–151
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   const Solver::Options &options = pp->options                   → 2
+2   if (IsSchurType(options.linear_solver_type))                   đúng → 3   sai → 4
+3   return ReorderProgramForSchurTypeLinearSolver(options.linear_solver_type, options.sparse_linear_algebra_library_type, options.linear_solver_ordering_type, pp->problem->parameter_map(), options.linear_solver_ordering.get(), pp->reduced_program.get(), &pp->error)   → END
+4   if (options.linear_solver_type == SPARSE_NORMAL_CHOLESKY && !options.dynamic_sparsity)   đúng → 5   sai → 6
+5   return ReorderProgramForSparseCholesky(options.sparse_linear_algebra_library_type, options.linear_solver_ordering_type, * options.linear_solver_ordering, 0, pp->reduced_program.get(), &pp->error)   → END
+6   if (options.linear_solver_type == CGNR && options.preconditioner_type == SUBSET)   đúng → 7   sai → 8
+7   pp->linear_solver_options.subset_preconditioner_start_row_block = ReorderResidualBlocksByPartition(options.residual_blocks_for_subset_preconditioner, pp->reduced_program.get())
+    return ReorderProgramForSparseCholesky(options.sparse_linear_algebra_library_type, options.linear_solver_ordering_type, * options.linear_solver_ordering, pp->linear_solver_options.subset_preconditioner_start_row_block, pp->reduced_program.get(), &pp->error)   → END
+8   return true                                                    → END

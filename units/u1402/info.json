@@ -6,7 +6,6 @@
   102,
   124
  ],
- "signature": "ceres::internal::ComputeRecursiveIndependentSetOrdering",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1402
+ "order": 1402,
+ "short_name": "ComputeRecursiveIndependentSetOrdering",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Program & program, ParameterBlockOrdering * ordering)",
+ "return_type": "void",
+ "is_const": false
 }

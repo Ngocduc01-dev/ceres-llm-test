@@ -6,7 +6,6 @@
   42,
   43
  ],
- "signature": "ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 316
+ "order": 316,
+ "short_name": "SparseIterativeRefiner",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SparseIterativeRefiner",
+ "class_is_template": false,
+ "params": "(const int max_num_iterations)",
+ "return_type": null,
+ "is_const": false
 }

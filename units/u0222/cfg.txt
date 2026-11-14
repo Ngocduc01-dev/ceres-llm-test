@@ -1,0 +1,10 @@
+UNIT u0222
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDenseMatrix
+Vị trí: internal/ceres/block_random_access_dense_matrix.h, dòng 78–78
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_rows_   → END

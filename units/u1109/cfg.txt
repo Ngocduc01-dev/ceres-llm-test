@@ -1,0 +1,33 @@
+UNIT u1109
+Hàm: BackSubstitute(const BlockSparseMatrixData & A, const double * b, const double *, const double * z_ptr, double * y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminatorForOneFBlock
+Vị trí: internal/ceres/schur_eliminator.h, dòng 571–612
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminatorForOneFBlock<2, 3, 6> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   z_ptr, 6
+    const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < chunks_.size()                        đúng → 3   sai → END
+3   const Chunk &chunk = chunks_[i]
+    const int e_block_id = bs->rows[chunk.start].cells.front().block_id
+    tmp.setZero()
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < chunk.num_rows                        đúng → 5   sai → 10
+5   const int row_id = chunk.start + j
+    const auto &row = bs->rows[row_id]
+    values + row.cells[0].position, 2, 3
+    b + row.block.position, 2                                      → 6
+6   if (row.cells.size() == 1)                                     đúng → 7   sai → 9
+7   tmp += e_block.transpose() * b_block                           → 8
+8   ++j                                                            → 4
+9   values + row.cells[1].position, 2, 6
+    tmp += e_block.transpose() * (b_block - f_block * z)           → 8
+10  &e_t_e_inverse_matrices_[3 * 3 * i], 3, 3
+    y + bs->cols[e_block_id].position, 3
+    y_block.noalias() = e_t_e_inverse * tmp                        → 11
+11  ++i                                                            → 2

@@ -1,0 +1,15 @@
+UNIT u1285
+Hàm: RightMultiplyAndAccumulate(const Vector & x, Vector & y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CgnrLinearOperator
+Vị trí: internal/ceres/cgnr_solver.cc, dòng 97–113
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   z_.setZero()
+    A_.RightMultiplyAndAccumulate(x, z_, context_, num_threads_)
+    A_.LeftMultiplyAndAccumulate(z_, y, context_, num_threads_)    → 2
+2   if (D_ != nullptr)                                             đúng → 3   sai → END
+3   int n = A_.num_cols()
+    ParallelAssign(context_, num_threads_, y, y.array() + ConstVectorRef(D_, n).array().square() * x.array())   → END

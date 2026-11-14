@@ -1,0 +1,24 @@
+UNIT u0943
+Hàm: LevenbergMarquardtStrategy(const TrustRegionStrategy::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LevenbergMarquardtStrategy
+Vị trí: internal/ceres/levenberg_marquardt_strategy.cc, dòng 49–64
+
+Số điểm rẽ nhánh: 0 (và 4 lệnh CHECK)
+
+START → 1
+1   TrustRegionStrategy() (Base initializer)
+    linear_solver_(options.linear_solver) (Member initializer)
+    radius_(options.initial_radius) (Member initializer)
+    max_radius_(options.max_radius) (Member initializer)
+    min_diagonal_(options.min_lm_diagonal) (Member initializer)
+    max_diagonal_(options.max_lm_diagonal) (Member initializer)
+    decrease_factor_(2.) (Member initializer)
+    reuse_diagonal_(false) (Member initializer)
+    lm_diagonal_() (Member initializer)
+    context_(options.context) (Member initializer)
+    num_threads_(options.num_threads) (Member initializer)         → 2
+2   CHECK(linear_solver_ != nullptr)                               đúng → 3   sai → DỪNG
+3   CHECK_GT(min_diagonal_, 0.0)                                   đúng → 4   sai → DỪNG
+4   CHECK_LE(min_diagonal_, max_diagonal_)                         đúng → 5   sai → DỪNG
+5   CHECK_GT(max_radius_, 0.0)                                     đúng → END   sai → DỪNG

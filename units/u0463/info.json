@@ -6,7 +6,6 @@
   156,
   186
  ],
- "signature": "ceres::SphereManifold::Plus",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 463
+ "order": 463,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SphereManifold",
+ "class_is_template": true,
+ "params": "(const double * x_ptr, const double * delta_ptr, double * x_plus_delta_ptr)",
+ "return_type": "bool",
+ "is_const": true
 }

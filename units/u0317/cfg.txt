@@ -1,0 +1,9 @@
+UNIT u0317
+Hàm: ~SparseIterativeRefiner()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::SparseIterativeRefiner
+Vị trí: internal/ceres/iterative_refiner.cc, dòng 45–45
+
+Số điểm rẽ nhánh: 0
+
+START → END

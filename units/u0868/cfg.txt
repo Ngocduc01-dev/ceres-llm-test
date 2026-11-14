@@ -1,0 +1,10 @@
+UNIT u0868
+Hàm: LineSearch(const LineSearch::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 68–69
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   options_(options) (Member initializer)   → END

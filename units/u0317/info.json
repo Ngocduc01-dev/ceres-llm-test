@@ -6,7 +6,6 @@
   45,
   45
  ],
- "signature": "ceres::internal::SparseIterativeRefiner::~SparseIterativeRefiner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 317
+ "order": 317,
+ "short_name": "~SparseIterativeRefiner",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::SparseIterativeRefiner",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

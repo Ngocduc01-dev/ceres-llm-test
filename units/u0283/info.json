@@ -6,7 +6,6 @@
   645,
   645
  ],
- "signature": "ceres::internal::DoglegStrategy::Radius",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 283
+ "order": 283,
+ "short_name": "Radius",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "double",
+ "is_const": true
 }

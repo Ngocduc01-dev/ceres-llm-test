@@ -1,0 +1,48 @@
+UNIT u1211
+Hàm: AppendRows(const BlockSparseMatrix & m)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 616–667
+
+Số điểm rẽ nhánh: 6 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(m.num_cols(), num_cols())                             đúng → 2   sai → DỪNG
+2   const CompressedRowBlockStructure *m_bs = m.block_structure()   → 3
+3   CHECK_EQ(m_bs->cols.size(), block_structure_->cols.size())     đúng → 4   sai → DỪNG
+4   const int old_num_nonzeros = num_nonzeros_
+    const int old_num_row_blocks = block_structure_->rows.size()
+    block_structure_->rows.resize(old_num_row_blocks + m_bs->rows.size())
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < m_bs->rows.size()                     đúng → 6   sai → 17
+6   const CompressedRow &m_row = m_bs->rows[i]
+    const int row_block_id = old_num_row_blocks + i
+    CompressedRow &row = block_structure_->rows[row_block_id]
+    row.block.size = m_row.block.size
+    row.block.position = num_rows_
+    num_rows_ += m_row.block.size
+    row.cells.resize(m_row.cells.size())                           → 7
+7   if (transpose_block_structure_)                                đúng → 8   sai → 9
+8   transpose_block_structure_->cols.emplace_back(row.block)       → 9
+9   int c = 0                                                      → 10
+10  vòng for, điều kiện: c < m_row.cells.size()                    đúng → 11   sai → 16
+11  const int block_id = m_row.cells[c].block_id
+    row.cells[c].block_id = block_id
+    row.cells[c].position = num_nonzeros_
+    const int cell_nnz = m_row.block.size * m_bs->cols[block_id].size   → 12
+12  if (transpose_block_structure_)                                đúng → 13   sai → 14
+13  transpose_block_structure_->rows[block_id].cells.emplace_back(row_block_id, num_nonzeros_)
+    transpose_block_structure_->rows[block_id].nnz += cell_nnz     → 14
+14  num_nonzeros_ += cell_nnz                                      → 15
+15  ++c                                                            → 10
+16  ++i                                                            → 5
+17  if (num_nonzeros_ > max_num_nonzeros_)                         đúng → 18   sai → 19
+18  double *old_values = values_
+    values_ = AllocateValues(num_nonzeros_)
+    std::copy_n(old_values, old_num_nonzeros, values_)
+    max_num_nonzeros_ = num_nonzeros_
+    FreeValues(old_values)                                         → 19
+19  std::copy(m.values(), m.values() + m.num_nonzeros(), values_ + old_num_nonzeros)   → 20
+20  if (transpose_block_structure_ == nullptr)                     đúng → 21   sai → 22
+21  return                                                         → END
+22  ComputeCumulativeNumberOfNonZeros(transpose_block_structure_->rows)   → END

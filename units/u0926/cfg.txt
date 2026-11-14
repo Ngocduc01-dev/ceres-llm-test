@@ -1,0 +1,13 @@
+UNIT u0926
+Hàm: ScaleColumns(const double * scale)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 194–199
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(scale != nullptr)                     đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < num_nonzeros_      đúng → 3   sai → END
+3   values_[i] = values_[i] * scale[cols_[i]]   → 4
+4   ++i                                         → 2

@@ -6,7 +6,6 @@
   60,
   68
  ],
- "signature": "ceres::internal::ThreadPool::~ThreadPool",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1166
+ "order": 1166,
+ "short_name": "~ThreadPool",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

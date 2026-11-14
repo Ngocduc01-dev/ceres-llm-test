@@ -1,0 +1,10 @@
+UNIT u0975
+Hàm: AddParameterBlock(int size)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::DynamicCostFunction
+Vị trí: include/ceres/dynamic_cost_function.h, dòng 44–46
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   mutable_parameter_block_sizes()->push_back(size)   → END

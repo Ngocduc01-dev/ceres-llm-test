@@ -1,0 +1,9 @@
+UNIT u0287
+Hàm: subspace_g() const  → trả về Vector
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.h, dòng 74–74
+
+Số điểm rẽ nhánh: 0
+
+START → END

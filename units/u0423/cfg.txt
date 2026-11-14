@@ -1,0 +1,10 @@
+UNIT u0423
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.h, dòng 77–77
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_rows_   → END

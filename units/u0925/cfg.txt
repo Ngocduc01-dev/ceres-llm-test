@@ -1,0 +1,13 @@
+UNIT u0925
+Hàm: SquaredColumnNorm(double * x) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 186–192
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                      đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < num_nonzeros_   đúng → 3   sai → END
+3   x[cols_[i]] += values_[i] * values_[i]   → 4
+4   ++i                                      → 2

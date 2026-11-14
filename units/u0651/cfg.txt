@@ -1,0 +1,11 @@
+UNIT u0651
+Hàm: BlockSparseMatrixData(const CompressedRowBlockStructure * block_structure, const double * values)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockSparseMatrixData
+Vị trí: internal/ceres/block_sparse_matrix.h, dòng 189–191
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   block_structure_(block_structure) (Member initializer)
+    values_(values) (Member initializer)                           → END

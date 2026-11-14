@@ -1,0 +1,9 @@
+UNIT u0289
+Hàm: ~EigenSparseCholesky()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::EigenSparseCholesky
+Vị trí: internal/ceres/eigensparse.cc, dòng 174–174
+
+Số điểm rẽ nhánh: 0
+
+START → END

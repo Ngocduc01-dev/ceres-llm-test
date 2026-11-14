@@ -6,7 +6,6 @@
   77,
   85
  ],
- "signature": "ceres::internal::ParameterBlock::ParameterBlock",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 5,
- "order": 1436
+ "order": 1436,
+ "short_name": "ParameterBlock",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "(double * user_state, int size, int index, Manifold * manifold)",
+ "return_type": null,
+ "is_const": false
 }

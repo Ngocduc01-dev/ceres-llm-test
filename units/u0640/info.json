@@ -6,7 +6,6 @@
   196,
   197
  ],
- "signature": "ceres::NumericDiffCostFunction::NumericDiffCostFunction<CostFunctor, kMethod, kNumResiduals, Ns...>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 640
+ "order": 640,
+ "short_name": "NumericDiffCostFunction<CostFunctor, kMethod, kNumResiduals, Ns...>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::NumericDiffCostFunction",
+ "class_is_template": true,
+ "params": "(NumericDiffCostFunction<CostFunctor, kMethod, kNumResiduals, Ns...> && other)",
+ "return_type": null,
+ "is_const": false
 }

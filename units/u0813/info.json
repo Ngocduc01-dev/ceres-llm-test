@@ -6,7 +6,6 @@
   51,
   100
  ],
- "signature": "ceres::internal::(anonymous)::BalanceCompanionMatrix",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 813
+ "order": 813,
+ "short_name": "BalanceCompanionMatrix",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Matrix * companion_matrix_ptr)",
+ "return_type": "void",
+ "is_const": false
 }

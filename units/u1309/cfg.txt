@@ -1,0 +1,19 @@
+UNIT u1309
+Hàm: BuildResidualLayout(const Program & program, std::vector<int> * residual_layout)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProgramEvaluator
+Vị trí: internal/ceres/program_evaluator.h, dòng 347–358
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const std::vector<ResidualBlock *> &residual_blocks = program.residual_blocks()
+    residual_layout->resize(program.NumResidualBlocks())
+    int residual_pos = 0
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < residual_blocks.size()                đúng → 3   sai → END
+3   const int num_residuals = residual_blocks[i]->NumResiduals()
+    (*residual_layout)[i] = residual_pos
+    residual_pos += num_residuals                                  → 4
+4   ++i                                                            → 2

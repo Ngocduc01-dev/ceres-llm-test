@@ -6,7 +6,6 @@
   63,
   112
  ],
- "signature": "ceres::internal::Minimizer::Options::Init",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 685
+ "order": 685,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Minimizer::Options",
+ "class_is_template": false,
+ "params": "(const Solver::Options & options)",
+ "return_type": "void",
+ "is_const": false
 }

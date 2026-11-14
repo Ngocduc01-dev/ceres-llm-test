@@ -1,0 +1,19 @@
+UNIT u0771
+Hàm: IsSparseLinearAlgebraLibraryTypeAvailable(SparseLinearAlgebraLibraryType type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 398–438
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   if (type == SUITE_SPARSE)        đúng → 2   sai → 3
+2   return false                     → END
+3   if (type == ACCELERATE_SPARSE)   đúng → 4   sai → 5
+4   return false                     → END
+5   if (type == EIGEN_SPARSE)        đúng → 6   sai → 7
+6   return true                      → END
+7   if (type == CUDA_SPARSE)         đúng → 8   sai → 9
+8   return false                     → END
+9   if (type == NO_SPARSE)           đúng → 10   sai → END
+10  return true                      → END

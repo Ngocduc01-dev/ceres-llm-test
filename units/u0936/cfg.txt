@@ -1,0 +1,18 @@
+UNIT u0936
+Hàm: GradientProblem(FirstOrderFunction * function, Manifold * manifold)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::GradientProblem
+Vị trí: internal/ceres/gradient_problem.cc, dòng 47–58
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   function_(function) (Member initializer)
+    manifold_() (Member initializer)
+    CFGNewAllocator(double *)
+    scratch_(new double [function_->NumParameters()]) (Member initializer)   → 2
+2   CHECK(function != nullptr)                                     đúng → 3   sai → DỪNG
+3   if (manifold != nullptr)                                       đúng → 4   sai → 6
+4   manifold_.reset(manifold)                                      → 5
+5   CHECK_EQ(function_->NumParameters(), manifold_->AmbientSize())   đúng → END   sai → DỪNG
+6   manifold_ = std::make_unique<EuclideanManifold<DYNAMIC>>(function_->NumParameters())   → 5

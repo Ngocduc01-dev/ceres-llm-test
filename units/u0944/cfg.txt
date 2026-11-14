@@ -1,0 +1,29 @@
+UNIT u0944
+Hàm: ToTextFile(FILE * file) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 557–579
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(file != nullptr)                                         đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < block_structure_->rows.size()         đúng → 3   sai → END
+3   const int row_block_pos = block_structure_->rows[i].block.position
+    const int row_block_size = block_structure_->rows[i].block.size
+    const auto &cells = block_structure_->rows[i].cells            → 4
+4   for (const auto &cell : cells)                                 đúng → 5   sai → 13
+5   const auto &cell
+    const int col_block_id = cell.block_id
+    const int col_block_size = block_structure_->cols[col_block_id].size
+    const int col_block_pos = block_structure_->cols[col_block_id].position
+    int jac_pos = cell.position
+    int r = 0                                                      → 6
+6   vòng for, điều kiện: r < row_block_size                        đúng → 7   sai → 12
+7   int c = 0                                                      → 8
+8   vòng for, điều kiện: c < col_block_size                        đúng → 9   sai → 11
+9   fprintf(file, "% 10d % 10d %17f\n", row_block_pos + r, col_block_pos + c, values_[jac_pos++])   → 10
+10  ++c                                                            → 8
+11  ++r                                                            → 6
+12  ++ (bước tiếp của vòng for)                                    → 4
+13  ++i                                                            → 2

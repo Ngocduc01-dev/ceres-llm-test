@@ -6,7 +6,6 @@
   97,
   154
  ],
- "signature": "ceres::DynamicNumericDiffCostFunction::Evaluate",
  "branches": 18,
  "cyclomatic": 10,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1058
+ "order": 1058,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::DynamicNumericDiffCostFunction",
+ "class_is_template": true,
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true
 }

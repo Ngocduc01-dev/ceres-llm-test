@@ -6,7 +6,6 @@
   213,
   213
  ],
- "signature": "ceres::Problem::options",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1157
+ "order": 1157,
+ "short_name": "options",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const Problem::Options &",
+ "is_const": true
 }

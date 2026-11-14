@@ -1,0 +1,17 @@
+UNIT u0939
+Hàm: SchurComplementSolver(const LinearSolver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 92–98
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   TypedLinearSolver() (Base initializer)
+    options_(options) (Member initializer)
+    eliminator_() (Member initializer)
+    lhs_() (Member initializer)
+    rhs_() (Member initializer)                                    → 2
+2   CHECK_GT(options.elimination_groups.size(), 1)                 đúng → 3   sai → DỪNG
+3   CHECK_GT(options.elimination_groups[0], 0)                     đúng → 4   sai → DỪNG
+4   CHECK(options.context != nullptr)                              đúng → END   sai → DỪNG

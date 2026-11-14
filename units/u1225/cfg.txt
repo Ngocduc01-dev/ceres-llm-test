@@ -1,0 +1,11 @@
+UNIT u1225
+Hàm: AddDiagonalAndInvert(const double * D, BlockSparseMatrix * block_diagonal)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.cc, dòng 179–204
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const CompressedRowBlockStructure *block_diagonal_structure = block_diagonal->block_structure()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/implicit_schur_complement.cc:187:15) &&, int))(options_.context, 0, block_diagonal_structure->rows.size(), options_.num_threads, [block_diagonal_structure, D, block_diagonal](int row_block_id) {)   → END

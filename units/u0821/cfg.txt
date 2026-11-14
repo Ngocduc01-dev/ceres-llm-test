@@ -1,0 +1,12 @@
+UNIT u0821
+Hàm: LossFunctionWrapper(LossFunction * rho, Ownership ownership)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::LossFunctionWrapper
+Vị trí: include/ceres/loss_function.h, dòng 394–395
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LossFunction() (Base initializer)
+    rho_(rho) (Member initializer)
+    ownership_(ownership) (Member initializer)                     → END

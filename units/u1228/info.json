@@ -6,7 +6,6 @@
   92,
   110
  ],
- "signature": "ceres::internal::(anonymous)::CreateBlockJacobian",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1228
+ "order": 1228,
+ "short_name": "CreateBlockJacobian",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const TripletSparseMatrix & block_jacobian_transpose)",
+ "return_type": "Eigen::SparseMatrix<int>",
+ "is_const": false
 }

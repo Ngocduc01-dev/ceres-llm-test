@@ -6,7 +6,6 @@
   196,
   196
  ],
- "signature": "ceres::internal::FixedArray::memsize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 978
+ "order": 978,
+ "short_name": "memsize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "size_t",
+ "is_const": true
 }

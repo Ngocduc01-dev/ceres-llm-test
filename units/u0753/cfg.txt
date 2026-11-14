@@ -1,0 +1,12 @@
+UNIT u0753
+Hàm: PreconditionerForZeroEBlocks(PreconditionerType preconditioner_type)  → trả về PreconditionerType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Preconditioner
+Vị trí: internal/ceres/preconditioner.cc, dòng 39–47
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (preconditioner_type == SCHUR_JACOBI || preconditioner_type == CLUSTER_JACOBI || preconditioner_type == CLUSTER_TRIDIAGONAL)   đúng → 2   sai → 3
+2   return JACOBI                                                  → END
+3   return preconditioner_type                                     → END

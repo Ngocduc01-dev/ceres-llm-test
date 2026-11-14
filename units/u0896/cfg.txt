@@ -1,0 +1,10 @@
+UNIT u0896
+Hàm: SetZero(ContextImpl *, int)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseMatrix
+Vị trí: internal/ceres/sparse_matrix.h, dòng 93–95
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SetZero()   → END

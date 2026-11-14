@@ -6,7 +6,6 @@
   72,
   102
  ],
- "signature": "ceres::internal::LineSearchPreprocessor::Preprocess",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 6,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 1520
+ "order": 1520,
+ "short_name": "Preprocess",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearchPreprocessor",
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, ProblemImpl * problem, PreprocessedProblem * pp)",
+ "return_type": "bool",
+ "is_const": false
 }

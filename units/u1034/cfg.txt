@@ -1,0 +1,10 @@
+UNIT u1034
+Hàm: IsConstant() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 120–120
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (is_set_constant_ || TangentSize() == 0)   → END

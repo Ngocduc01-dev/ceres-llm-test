@@ -1,0 +1,30 @@
+UNIT u1440
+Hàm: Write(int residual_id, int residual_offset, double ** jacobians, SparseMatrix * base_jacobian)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicCompressedRowJacobianWriter
+Vị trí: internal/ceres/dynamic_compressed_row_jacobian_writer.cc, dòng 59–99
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   auto *jacobian = down_cast<DynamicCompressedRowSparseMatrix *>(base_jacobian)
+    const ResidualBlock *residual_block = program_->residual_blocks()[residual_id]
+    const int num_residuals = residual_block->NumResiduals()
+    CompressedRowJacobianWriter::GetOrderedParameterBlocks(program_, residual_id, &evaluated_jacobian_blocks)
+    jacobian->ClearRows(residual_offset, num_residuals)            → 2
+2   for (const auto &evaluated_jacobian_block : evaluated_jacobian_blocks)   đúng → 3   sai → END
+3   const auto &evaluated_jacobian_block
+    const ParameterBlock *parameter_block = program_->parameter_blocks()[evaluated_jacobian_block.first]
+    const int parameter_block_jacobian_index = evaluated_jacobian_block.second
+    const int parameter_block_size = parameter_block->TangentSize()
+    const double *parameter_jacobian = jacobians[parameter_block_jacobian_index]
+    int r = 0                                                      → 4
+4   vòng for, điều kiện: r < num_residuals                         đúng → 5   sai → 12
+5   int c = 0                                                      → 6
+6   vòng for, điều kiện: c < parameter_block_size                  đúng → 7   sai → 11
+7   const double v = *parameter_jacobian                           → 8
+8   if (v != 0.)                                                   đúng → 9   sai → 10
+9   jacobian->InsertEntry(residual_offset + r, parameter_block->delta_offset() + c, v)   → 10
+10  ++c                                                            → 6
+11  ++r                                                            → 4
+12  ++ (bước tiếp của vòng for)                                    → 2

@@ -6,7 +6,6 @@
   53,
   72
  ],
- "signature": "ceres::internal::DoglegStrategy::DoglegStrategy",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 942
+ "order": 942,
+ "short_name": "DoglegStrategy",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(const TrustRegionStrategy::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

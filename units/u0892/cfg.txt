@@ -1,0 +1,11 @@
+UNIT u0892
+Hàm: Factorize(CompressedRowSparseMatrix * lhs, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::RefinedSparseCholesky
+Vị trí: internal/ceres/sparse_cholesky.cc, dòng 133–137
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   lhs_ = lhs
+    return sparse_cholesky_->Factorize(lhs, message)               → END

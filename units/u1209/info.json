@@ -6,7 +6,6 @@
   164,
   268
  ],
- "signature": "ceres::internal::ParallelInvoke",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1209
+ "order": 1209,
+ "short_name": "ParallelInvoke",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ContextImpl* context, int start, int end, int num_threads, F&& function, int min_block_size)",
+ "return_type": "void",
+ "is_const": false
 }

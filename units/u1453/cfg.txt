@@ -1,0 +1,30 @@
+UNIT u1453
+Hàm: ReorderSchurComplementColumnsUsingEigen(LinearSolverOrderingType ordering_type, const int size_of_first_elimination_group, const ProblemImpl::ParameterMap &, Program * program)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 382–442
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    CreateBlockJacobian(* tsm_block_jacobian_transpose)
+    const int num_rows = block_jacobian.rows()
+    const int num_cols = block_jacobian.cols()
+    block_jacobian.block(0, 0, num_rows, size_of_first_elimination_group)
+    block_jacobian.block(0, size_of_first_elimination_group, num_rows, num_cols - size_of_first_elimination_group)
+    F.transpose() * F - F.transpose() * E * E.transpose() * F      → 2
+2   if (ordering_type == ceres::AMD)                               đúng → 3   sai → 13
+3   amd_ordering(block_schur_complement, perm)                     → 4
+4   const std::vector<ParameterBlock *> &parameter_blocks = program->parameter_blocks()
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < size_of_first_elimination_group       đúng → 6   sai → 8
+6   ordering[i] = parameter_blocks[i]                              → 7
+7   ++i                                                            → 5
+8   int i = 0                                                      → 9
+9   vòng for, điều kiện: i < block_schur_complement.cols()         đúng → 10   sai → 12
+10  ordering[size_of_first_elimination_group + i] = parameter_blocks[size_of_first_elimination_group + perm.indices()[i]]   → 11
+11  ++i                                                            → 9
+12  swap (ImplicitCastExpr, FunctionToPointerDecay, void (*)(vector<ParameterBlock *, allocator<ParameterBlock *> > &, vector<ParameterBlock *, allocator<ParameterBlock *> > &) noexcept(noexcept(__x.swap(__y))))(*program->mutable_parameter_blocks(), ordering)
+    program->SetParameterOffsetsAndIndex()                         → END
+13  perm.setIdentity(block_schur_complement.rows())                → 4

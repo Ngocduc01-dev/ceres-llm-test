@@ -10,10 +10,10 @@ Kế hoạch tổng thể 9 phase và phân công: [docs/PLAN.md](docs/PLAN.md)
 |---|---|---|
 | 0 | Môi trường Docker, build có coverage, baseline, parse thử | ✅ [hướng dẫn](docs/phase0-guide.md) · [nhật ký](logs/phase0-log.md) · [so khớp baseline](docs/baseline-comparison.md) |
 | 1 | Code graph + AST | ✅ [hướng dẫn](docs/phase1-guide.md) · [nhật ký](logs/phase1-log.md) |
-| 2 | Liệt kê & phân loại unit | ⏳ |
-| 3 | Gom context cho LLM | ⏳ (đã có `Graph.context()` trong `scripts/graph_query.py`) |
-| 4 | Lập kế hoạch nhánh (C2) | ⏳ |
-| 5 | Sinh test | ⏳ |
+| 2 | Liệt kê & phân loại unit | ✅ [hướng dẫn](docs/phase2-guide.md) |
+| 3 | Gom context cho LLM | ✅ `data_phase3.tar.gz` |
+| 4 | CFG cho từng unit (Clang `DumpCFG`) | ✅ 1491/1540 unit – [hướng dẫn](docs/phase4-guide.md) · [nhật ký](logs/phase4-log.md) |
+| 5 | Sinh test (1 prompt/unit, Claude Sonnet 5.5) | 🔄 đã có prompt cho 1540 unit (`units/<id>/prompt.md`), chưa gọi Claude |
 | 6 | Compile / chạy / vòng lặp phủ nhánh | ⏳ |
 | 7 | Hậu xử lý | ⏳ |
 | 8 | Chạy hàng loạt, báo cáo | ⏳ |

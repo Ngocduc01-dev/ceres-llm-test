@@ -6,7 +6,6 @@
   239,
   259
  ],
- "signature": "ceres::internal::CoordinateDescentMinimizer::IsOrderingValid",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1399
+ "order": 1399,
+ "short_name": "IsOrderingValid",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CoordinateDescentMinimizer",
+ "class_is_template": false,
+ "params": "(const Program & program, const ParameterBlockOrdering & ordering, std::string * message)",
+ "return_type": "bool",
+ "is_const": false
 }

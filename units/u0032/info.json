@@ -6,7 +6,6 @@
   229,
   229
  ],
- "signature": "ceres::internal::FixedArray::front",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 32
+ "order": 32,
+ "short_name": "front",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "reference",
+ "is_const": false
 }

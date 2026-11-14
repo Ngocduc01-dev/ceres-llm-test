@@ -1,0 +1,12 @@
+UNIT u0168
+Hàm: LineManifold()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::LineManifold
+Vị trí: include/ceres/line_manifold.h, dòng 121–127
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Manifold() (Base initializer)
+    size_({3}) (Member initializer)                                → END

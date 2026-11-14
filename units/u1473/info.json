@@ -6,7 +6,6 @@
   47,
   53
  ],
- "signature": "ceres::internal::(anonymous)::IsProgramValid",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1473
+ "order": 1473,
+ "short_name": "IsProgramValid",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Program & program, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

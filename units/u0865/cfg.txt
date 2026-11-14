@@ -1,0 +1,9 @@
+UNIT u0865
+Hàm: ~IterationCallback()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::IterationCallback
+Vị trí: internal/ceres/iteration_callback.cc, dòng 35–35
+
+Số điểm rẽ nhánh: 0
+
+START → END

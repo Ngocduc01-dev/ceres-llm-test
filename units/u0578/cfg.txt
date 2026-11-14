@@ -1,0 +1,10 @@
+UNIT u0578
+Hàm: ComputeSubspaceStepFromRoot(double y) const  → trả về DoglegStrategy::Vector2d
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 447–451
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   subspace_B_ + y * Matrix2d::Identity()   → END

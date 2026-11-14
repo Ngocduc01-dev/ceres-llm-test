@@ -1,0 +1,13 @@
+UNIT u0489
+Hàm: STLDeleteElements(T* container)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: internal/ceres/stl_util.h, dòng 81–86
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp STLDeleteElements<vector<mutex *>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (!container)      đúng → 2   sai → 3
+2   return               → END
+3   container->clear()   → END

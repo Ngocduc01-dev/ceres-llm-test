@@ -1,0 +1,10 @@
+UNIT u1089
+Hàm: GetResidualBlocks(std::vector<ResidualBlockId> * residual_blocks) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 837–841
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(residual_blocks != nullptr)   đúng → END   sai → DỪNG

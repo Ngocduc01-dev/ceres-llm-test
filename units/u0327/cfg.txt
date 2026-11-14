@@ -1,0 +1,9 @@
+UNIT u0327
+Hàm: ~LineSearchDirection()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::LineSearchDirection
+Vị trí: internal/ceres/line_search_direction.cc, dòng 339–339
+
+Số điểm rẽ nhánh: 0
+
+START → END

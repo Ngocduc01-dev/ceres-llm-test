@@ -1,0 +1,15 @@
+UNIT u0721
+Hàm: Solve(const double * rhs, double * solution, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::RefinedDenseCholesky
+Vị trí: internal/ceres/dense_cholesky.cc, dòng 334–346
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(lhs_ != nullptr)                                         đúng → 2   sai → DỪNG
+2   auto termination_type = dense_cholesky_->Solve(rhs, solution, message)   → 3
+3   if (termination_type != LinearSolverTerminationType::SUCCESS)   đúng → 4   sai → 5
+4   return termination_type                                        → END
+5   iterative_refiner_->Refine(num_cols_, lhs_, rhs, dense_cholesky_.get(), solution)
+    return LinearSolverTerminationType::SUCCESS                    → END

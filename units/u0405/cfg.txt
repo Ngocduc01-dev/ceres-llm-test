@@ -1,0 +1,9 @@
+UNIT u0405
+Hàm: ~SchurEliminatorBase()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::SchurEliminatorBase
+Vị trí: internal/ceres/schur_eliminator.cc, dòng 49–49
+
+Số điểm rẽ nhánh: 0
+
+START → END

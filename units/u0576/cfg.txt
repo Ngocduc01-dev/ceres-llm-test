@@ -1,0 +1,11 @@
+UNIT u0576
+Hàm: RowColLessThan(const int * rows, const int * cols)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::(namespace không tên)::RowColLessThan
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 59–59
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   rows(rows) (Member initializer)
+    cols(cols) (Member initializer)                                → END

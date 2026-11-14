@@ -6,7 +6,6 @@
   44,
   53
  ],
- "signature": "ceres::internal::DynamicCompressedRowSparseMatrix::InsertEntry",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1114
+ "order": 1114,
+ "short_name": "InsertEntry",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(int row, int col, const double & value)",
+ "return_type": "void",
+ "is_const": false
 }

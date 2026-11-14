@@ -1,0 +1,14 @@
+UNIT u1398
+Hàm: Create(const Program & program, unsigned int num_threads)  → trả về std::unique_ptr<ScratchEvaluatePreparer[]>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ScratchEvaluatePreparer
+Vị trí: internal/ceres/scratch_evaluate_preparer.cc, dòng 41–50
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int max_derivatives_per_residual_block = program.MaxDerivativesPerResidualBlock()
+    unsigned int i = 0                                             → 2
+2   vòng for, điều kiện: i < num_threads                           đúng → 3   sai → END
+3   preparers[i].Init(max_derivatives_per_residual_block)          → 4
+4   i++                                                            → 2

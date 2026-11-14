@@ -1,0 +1,11 @@
+UNIT u0902
+Hàm: SetZero()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 147–150
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   std::fill(values_.get(), values_.get() + max_num_nonzeros_, 0.)
+    num_nonzeros_ = 0                                              → END

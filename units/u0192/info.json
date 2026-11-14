@@ -6,7 +6,6 @@
   86,
   89
  ],
- "signature": "ceres::OrderedGroups::Clear",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 192
+ "order": 192,
+ "short_name": "Clear",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

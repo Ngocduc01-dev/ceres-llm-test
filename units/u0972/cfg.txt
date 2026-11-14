@@ -1,0 +1,27 @@
+UNIT u0972
+Hàm: ComputeSubspaceModel(SparseMatrix * jacobian)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 647–716
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   jacobian->num_cols(), 2
+    basis_vectors.col(0) = gradient_
+    basis_vectors.col(1) = gauss_newton_step_                      → 2
+2   switch (basis_qr.rank())                                       nhánh → 3   nhánh → 5   nhánh → END   nhánh → END
+3   subspace_is_one_dimensional_ = false
+    break                                                          → 4
+4   subspace_basis_ = basis_qr.householderQ() * Matrix::Identity(jacobian->num_cols(), 2)
+    subspace_g_ = subspace_basis_.transpose() * gradient_
+    2, jacobian->num_rows()
+    Jb.setZero()
+    tmp = (subspace_basis_.col(0).array() / diagonal_.array()).matrix()
+    jacobian->RightMultiplyAndAccumulate(tmp.data(), Jb.row(0).data())
+    tmp = (subspace_basis_.col(1).array() / diagonal_.array()).matrix()
+    jacobian->RightMultiplyAndAccumulate(tmp.data(), Jb.row(1).data())
+    subspace_B_ = Jb * Jb.transpose()
+    return true                                                    → END
+5   subspace_is_one_dimensional_ = true
+    return true                                                    → END

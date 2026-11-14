@@ -1,0 +1,24 @@
+UNIT u1448
+Hàm: SolveImpl(DenseSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseNormalCholeskySolver
+Vị trí: internal/ceres/dense_normal_cholesky_solver.cc, dòng 49–87
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   "DenseNormalCholeskySolver::Solve"
+    const int num_rows = A->num_rows()
+    const int num_cols = A->num_cols()
+    num_cols, num_cols
+    lhs.setZero()
+    event_logger.AddEvent("Setup")
+    lhs.selfadjointView<Eigen::Upper>().rankUpdate(A->matrix().transpose())
+    A->matrix().transpose() * ConstVectorRef(b, num_rows)          → 2
+2   if (per_solve_options.D != nullptr)                            đúng → 3   sai → 4
+3   per_solve_options.D, num_cols
+    lhs += D.array().square().matrix().asDiagonal()                → 4
+4   event_logger.AddEvent("Product")
+    summary.num_iterations = 1
+    summary.termination_type = cholesky_->FactorAndSolve(num_cols, lhs.data(), rhs.data(), x, &summary.message)
+    event_logger.AddEvent("FactorAndSolve")                        → END

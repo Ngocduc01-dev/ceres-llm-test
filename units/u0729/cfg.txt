@@ -1,0 +1,14 @@
+UNIT u0729
+Hàm: GetParameterBlocks(std::vector<double *> * parameter_blocks) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 827–835
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(parameter_blocks != nullptr)                            đúng → 2   sai → DỪNG
+2   for (const auto &entry : parameter_block_map_)                đúng → 3   sai → END
+3   const auto &entry
+    parameter_blocks->push_back(entry.first)                      → 4
+4   ++ (bước tiếp của vòng for)                                   → 2

@@ -6,7 +6,6 @@
   539,
   550
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::ToCRSMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 839
+ "order": 839,
+ "short_name": "ToCRSMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(CRSMatrix * matrix)",
+ "return_type": "void",
+ "is_const": true
 }

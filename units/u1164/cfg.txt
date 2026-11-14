@@ -1,0 +1,13 @@
+UNIT u1164
+Hàm: GetManifold(const double * values) const  → trả về const Manifold *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 518–528
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   FindWithDefault(parameter_block_map_, const_cast<double *>(values) (CXXConstCastExpr, NoOp, double *), nullptr)
+    ParameterBlock *parameter_block = FindWithDefault(parameter_block_map_, const_cast<double *>(values), nullptr)   → 2
+2   LOG(FATAL)                                                     đúng → 3   sai → DỪNG
+3   return parameter_block->manifold()                             → END

@@ -6,7 +6,6 @@
   134,
   141
  ],
- "signature": "ceres::internal::GradientCheckingIterationCallback::operator()",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 711
+ "order": 711,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::GradientCheckingIterationCallback",
+ "class_is_template": false,
+ "params": "(const IterationSummary &)",
+ "return_type": "CallbackReturnType",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0988
+Hàm: num_cols() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockCRSJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.h, dòng 89–89
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return m_->num_rows()   → END

@@ -1,0 +1,94 @@
+UNIT u1369
+Hàm: ConjugateGradientsSolver(const ConjugateGradientsSolverOptions options, ConjugateGradientsLinearOperator<DenseVectorType>& lhs, const DenseVectorType& rhs, ConjugateGradientsLinearOperator<DenseVectorType>& preconditioner, DenseVectorType* scratch[4], DenseVectorType& solution)  → trả về LinearSolver::Summary
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/conjugate_gradients_solver.h, dòng 108–305
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ConjugateGradientsSolver<Matrix<double, -1, 1>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 11
+
+START → 1
+1   auto IsZeroOrInfinity = [](double x) {
+    Eigen::Matrix<double, -1, 1> &p = *scratch[0]
+    Eigen::Matrix<double, -1, 1> &r = *scratch[1]
+    Eigen::Matrix<double, -1, 1> &z = *scratch[2]
+    Eigen::Matrix<double, -1, 1> &tmp = *scratch[3]
+    summary.termination_type = LinearSolverTerminationType::NO_CONVERGENCE
+    summary.message = "Maximum number of iterations reached."
+    summary.num_iterations = 0
+    const double norm_rhs = Norm(rhs, options.context, options.num_threads)   → 2
+2   if (norm_rhs == 0.)                                            đúng → 3   sai → 4
+3   SetZero(solution, options.context, options.num_threads)
+    summary.termination_type = LinearSolverTerminationType::SUCCESS
+    summary.message = "Convergence. |b| = 0."                      → END
+4   const double tol_r = options.r_tolerance * norm_rhs
+    SetZero(tmp, options.context, options.num_threads)
+    lhs.RightMultiplyAndAccumulate(solution, tmp)
+    Axpby(1., rhs, -1., tmp, r, options.context, options.num_threads)
+    double norm_r = Norm(r, options.context, options.num_threads)   → 5
+5   if (options.min_num_iterations == 0 && norm_r <= tol_r)        đúng → 6   sai → 7
+6   summary.termination_type = LinearSolverTerminationType::SUCCESS
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Convergence. |r| = %e <= %e.", norm_r, tol_r)   → END
+7   double rho = 1.
+    Axpby(1., rhs, 1., r, tmp, options.context, options.num_threads)
+    double Q0 = -Dot(solution, tmp, options.context, options.num_threads)
+    summary.num_iterations = 1                                     → 8
+8   vòng for, điều kiện:                                           → 9
+9   SetZero(z, options.context, options.num_threads)
+    preconditioner.RightMultiplyAndAccumulate(r, z)
+    const double last_rho = rho
+    rho = Dot(r, z, options.context, options.num_threads)          → 10
+10  if (IsZeroOrInfinity(rho))                                     đúng → 11   sai → 12
+11  summary.termination_type = LinearSolverTerminationType::FAILURE
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Numerical failure. rho = r'z = %e.", rho)
+    break                                                          → END
+12  if (summary.num_iterations == 1)                               đúng → 13   sai → 33
+13  Copy(z, p, options.context, options.num_threads)               → 14
+14  Eigen::Matrix<double, -1, 1> &q = z
+    SetZero(q, options.context, options.num_threads)
+    lhs.RightMultiplyAndAccumulate(p, q)
+    const double pq = Dot(p, q, options.context, options.num_threads)   → 15
+15  if (pq <= 0) || std::isinf(pq)                                 đúng → 16   sai → 17
+16  summary.termination_type = LinearSolverTerminationType::NO_CONVERGENCE
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Matrix is indefinite, no more progress can be made. p'q = %e. |p| = %e, |q| = %e", pq, Norm(p, options.context, options.num_threads), Norm(q, options.context, options.num_threads))
+    break                                                          → END
+17  const double alpha = rho / pq                                  → 18
+18  if (std::isinf(alpha))                                         đúng → 19   sai → 20
+19  summary.termination_type = LinearSolverTerminationType::FAILURE
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Numerical failure. alpha = rho / pq = %e, rho = %e, pq = %e.", alpha, rho, pq)
+    break                                                          → END
+20  Axpby(1., solution, alpha, p, solution, options.context, options.num_threads)   → 21
+21  if (summary.num_iterations % options.residual_reset_period == 0)   đúng → 22   sai → 32
+22  SetZero(tmp, options.context, options.num_threads)
+    lhs.RightMultiplyAndAccumulate(solution, tmp)
+    Axpby(1., rhs, -1., tmp, r, options.context, options.num_threads)   → 23
+23  Axpby(1., rhs, 1., r, tmp, options.context, options.num_threads)
+    const double Q1 = -Dot(solution, tmp, options.context, options.num_threads)
+    const double zeta = summary.num_iterations * (Q1 - Q0) / Q1    → 24
+24  if (zeta < options.q_tolerance && summary.num_iterations >= options.min_num_iterations)   đúng → 25   sai → 26
+25  summary.termination_type = LinearSolverTerminationType::SUCCESS
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Iteration: %d Convergence: zeta = %e < %e. |r| = %e", summary.num_iterations, zeta, options.q_tolerance, Norm(r, options.context, options.num_threads))
+    break                                                          → END
+26  Q0 = Q1
+    norm_r = Norm(r, options.context, options.num_threads)         → 27
+27  if (norm_r <= tol_r && summary.num_iterations >= options.min_num_iterations)   đúng → 28   sai → 29
+28  summary.termination_type = LinearSolverTerminationType::SUCCESS
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Iteration: %d Convergence. |r| = %e <= %e.", summary.num_iterations, norm_r, tol_r)
+    break                                                          → END
+29  if (summary.num_iterations >= options.max_num_iterations)      đúng → 30   sai → 31
+30  break                                                          → END
+31  ++summary.num_iterations                                       → 8
+32  Axpby(1., r, -alpha, q, r, options.context, options.num_threads)   → 23
+33  const double beta = rho / last_rho                             → 34
+34  if (IsZeroOrInfinity(beta))                                    đúng → 35   sai → 36
+35  summary.termination_type = LinearSolverTerminationType::FAILURE
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary.message = StringPrintf("Numerical failure. beta = rho_n / rho_{n-1} = %e, rho_n = %e, rho_{n-1} = %e", beta, rho, last_rho)
+    break                                                          → END
+36  Axpby(1., z, beta, p, p, options.context, options.num_threads)   → 14

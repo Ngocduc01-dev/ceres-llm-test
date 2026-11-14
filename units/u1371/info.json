@@ -6,7 +6,6 @@
   87,
   97
  ],
- "signature": "ceres::internal::SchurJacobiPreconditioner::UpdateImpl",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1371
+ "order": 1371,
+ "short_name": "UpdateImpl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurJacobiPreconditioner",
+ "class_is_template": false,
+ "params": "(const BlockSparseMatrix & A, const double * D)",
+ "return_type": "bool",
+ "is_const": false
 }

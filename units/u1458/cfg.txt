@@ -1,0 +1,27 @@
+UNIT u1458
+Hàm: SolveReducedLinearSystem(const LinearSolver::PerSolveOptions & per_solve_options, double * solution)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 290–333
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   if (options().type == ITERATIVE_SCHUR)                         đúng → END   sai → 2
+2   summary.num_iterations = 0
+    summary.termination_type = LinearSolverTerminationType::SUCCESS
+    summary.message = "Success."
+    const BlockSparseMatrix *bsm = down_cast<const BlockRandomAccessSparseMatrix *>(lhs())->matrix()   → 3
+3   if (bsm->num_rows() == 0)                                      đúng → END   sai → 4
+4   const CompressedRowSparseMatrix::StorageType storage_type = sparse_cholesky_->StorageType()   → 5
+5   if (storage_type == CompressedRowSparseMatrix::StorageType::UPPER_TRIANGULAR)   đúng → 6   sai → 10
+6   if (!crs_lhs_)                                                 đúng → 7   sai → 9
+7   crs_lhs_ = bsm->ToCompressedRowSparseMatrix()
+    crs_lhs_->set_storage_type(CompressedRowSparseMatrix::StorageType::UPPER_TRIANGULAR)   → 8
+8   summary.num_iterations = 1
+    summary.termination_type = sparse_cholesky_->FactorAndSolve(crs_lhs_.get(), rhs().data(), solution, &summary.message)   → END
+9   bsm->UpdateCompressedRowSparseMatrix(crs_lhs_.get())           → 8
+10  if (!crs_lhs_)                                                 đúng → 11   sai → 12
+11  crs_lhs_ = bsm->ToCompressedRowSparseMatrixTranspose()
+    crs_lhs_->set_storage_type(CompressedRowSparseMatrix::StorageType::LOWER_TRIANGULAR)   → 8
+12  bsm->UpdateCompressedRowSparseMatrixTranspose(crs_lhs_.get())   → 8

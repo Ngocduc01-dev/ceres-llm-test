@@ -1,0 +1,10 @@
+UNIT u1284
+Hàm: SetZero()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.cc, dòng 121–123
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   bsm_->SetZero(context_, num_threads_)   → END

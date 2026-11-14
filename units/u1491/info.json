@@ -6,7 +6,6 @@
   585,
   746
  ],
- "signature": "ceres::internal::ProblemImpl::Evaluate",
  "branches": 38,
  "cyclomatic": 20,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 1491
+ "order": 1491,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "(const Problem::EvaluateOptions & evaluate_options, double * cost, std::vector<double> * residuals, std::vector<double> * gradient, CRSMatrix * jacobian)",
+ "return_type": "bool",
+ "is_const": false
 }

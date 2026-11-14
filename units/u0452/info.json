@@ -6,7 +6,6 @@
   340,
   344
  ],
- "signature": "ceres::ScaledLoss::~ScaledLoss",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 452
+ "order": 452,
+ "short_name": "~ScaledLoss",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::ScaledLoss",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

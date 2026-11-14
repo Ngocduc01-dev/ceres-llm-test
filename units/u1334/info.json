@@ -6,7 +6,6 @@
   120,
   122
  ],
- "signature": "ceres::Problem::GetParameterUpperBound",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1334
+ "order": 1334,
+ "short_name": "GetParameterUpperBound",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(const double * values, int index)",
+ "return_type": "double",
+ "is_const": true
 }

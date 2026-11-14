@@ -1,0 +1,17 @@
+UNIT u1296
+Hàm: LeftMultiplyAndAccumulateE(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 193–204
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   if (!num_col_blocks_e_)                          đúng → 2   sai → 3
+2   return                                           → END
+3   if (!num_row_blocks_e_)                          đúng → 4   sai → 5
+4   return                                           → END
+5   if (options_.num_threads == 1)                   đúng → 6   sai → 7
+6   LeftMultiplyAndAccumulateESingleThreaded(x, y)   → END
+7   CHECK(options_.context != nullptr)               đúng → END   sai → DỪNG

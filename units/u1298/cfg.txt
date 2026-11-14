@@ -1,0 +1,21 @@
+UNIT u1298
+Hàm: IsEvaluationValid(const ResidualBlock & block, const double *const *, double * residuals, double ** jacobians)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/residual_block_utils.cc, dòng 121–142
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const int num_parameter_blocks = block.NumParameterBlocks()
+    const int num_residuals = block.NumResiduals()                 → 2
+2   if (!IsArrayValid(num_residuals, residuals))                   đúng → 3   sai → 4
+3   return false                                                   → END
+4   if (jacobians != nullptr)                                      đúng → 5   sai → 11
+5   int i = 0                                                      → 6
+6   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 7   sai → 11
+7   const int parameter_block_size = block.parameter_blocks()[i]->Size()   → 8
+8   if (!IsArrayValid(num_residuals * parameter_block_size, jacobians[i]))   đúng → 9   sai → 10
+9   return false                                                   → END
+10  ++i                                                            → 6
+11  return true                                                    → END

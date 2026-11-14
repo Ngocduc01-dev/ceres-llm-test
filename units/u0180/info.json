@@ -6,7 +6,6 @@
   268,
   276
  ],
- "signature": "ceres::EuclideanManifold::Plus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 180
+ "order": 180,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EuclideanManifold",
+ "class_is_template": true,
+ "params": "(const double * x_ptr, const double * delta_ptr, double * x_plus_delta_ptr)",
+ "return_type": "bool",
+ "is_const": true
 }

@@ -1,0 +1,61 @@
+UNIT u1471
+Hàm: Evaluate(const bool apply_loss_function, double * cost, double * residuals, double ** jacobians, double * scratch) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.cc, dòng 68–196
+
+Số điểm rẽ nhánh: 18
+
+START → 1
+1   const int num_parameter_blocks = NumParameterBlocks()
+    const int num_residuals = cost_function_->num_residuals()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 3   sai → 5
+3   parameters[i] = parameter_blocks_[i]->state()                  → 4
+4   ++i                                                            → 2
+5   if (jacobians != nullptr)                                      đúng → 6   sai → 13
+6   int i = 0                                                      → 7
+7   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 8   sai → 13
+8   const ParameterBlock *parameter_block = parameter_blocks_[i]   → 9
+9   if (jacobians[i] != nullptr && parameter_block->PlusJacobian() != nullptr)   đúng → 10   sai → 12
+10  global_jacobians[i] = scratch
+    scratch += num_residuals * parameter_block->Size()             → 11
+11  ++i                                                            → 7
+12  global_jacobians[i] = jacobians[i]                             → 11
+13  bool outputting_residuals = (residuals != nullptr)             → 14
+14  if (!outputting_residuals)                                     đúng → 15   sai → 16
+15  residuals = scratch                                            → 16
+16  (jacobians != nullptr) ? ... : ...                             đúng → 17   sai → 17
+17  double **eval_jacobians = (jacobians != nullptr) ? global_jacobians.data() : nullptr
+    InvalidateEvaluation(*this, cost, residuals, eval_jacobians)   → 18
+18  if (!cost_function_->Evaluate(parameters.data(), residuals, eval_jacobians))   đúng → 19   sai → 20
+19  return false                                                   → END
+20  if (!IsEvaluationValid(*this, parameters.data(), residuals, eval_jacobians))   đúng → END   sai → 21
+21  double squared_norm = VectorRef(residuals, num_residuals).squaredNorm()   → 22
+22  if (jacobians != nullptr)                                      đúng → 23   sai → 30
+23  int i = 0                                                      → 24
+24  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 25   sai → 30
+25  if (jacobians[i] != nullptr)                                   đúng → 26   sai → 29
+26  const ParameterBlock *parameter_block = parameter_blocks_[i]   → 27
+27  if (parameter_block->PlusJacobian() != nullptr)                đúng → 28   sai → 29
+28  MatrixMatrixMultiply<Dynamic, Dynamic, Dynamic, Dynamic, 0>(global_jacobians[i], num_residuals, parameter_block->Size(), parameter_block->PlusJacobian(), parameter_block->Size(), parameter_block->TangentSize(), jacobians[i], 0, 0, num_residuals, parameter_block->TangentSize())   → 29
+29  ++i                                                            → 24
+30  if (loss_function_ == nullptr || !apply_loss_function)         đúng → 31   sai → 32
+31  *cost = 0.5 * squared_norm
+    return true                                                    → END
+32  double rho[3]
+    loss_function_->Evaluate(squared_norm, rho)
+    *cost = 0.5 * rho[0]                                           → 33
+33  if (jacobians == nullptr && !outputting_residuals)             đúng → 34   sai → 35
+34  return true                                                    → END
+35  squared_norm, rho                                              → 36
+36  if (jacobians != nullptr)                                      đúng → 37   sai → 42
+37  int i = 0                                                      → 38
+38  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 39   sai → 42
+39  if (jacobians[i] != nullptr)                                   đúng → 40   sai → 41
+40  const ParameterBlock *parameter_block = parameter_blocks_[i]
+    correct.CorrectJacobian(num_residuals, parameter_block->TangentSize(), residuals, jacobians[i])   → 41
+41  ++i                                                            → 38
+42  if (outputting_residuals)                                      đúng → 43   sai → 44
+43  correct.CorrectResiduals(num_residuals, residuals)             → 44
+44  return true                                                    → END

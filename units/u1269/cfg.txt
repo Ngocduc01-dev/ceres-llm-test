@@ -1,0 +1,19 @@
+UNIT u1269
+Hàm: ~ProblemImpl()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 239–265
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (options_.cost_function_ownership == TAKE_OWNERSHIP)        đúng → 2   sai → 2
+2   if (options_.loss_function_ownership == TAKE_OWNERSHIP)        đúng → 3   sai → 3
+3   operator->                                                     → 4
+4   for (auto *parameter_block : program_->parameter_blocks_)      đúng → 5   sai → 7
+5   auto *parameter_block
+    DeleteBlock(parameter_block)                                   → 6
+6   ++ (bước tiếp của vòng for)                                    → 4
+7   if (context_impl_owned_)                                       đúng → 8   sai → END
+8   context_impl_->~ContextImpl() (Implicit destructor)
+    delete context_impl_                                           → END

@@ -6,7 +6,6 @@
   1382,
   1382
  ],
- "signature": "Eigen::NumTraits::digits10",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 162
+ "order": 162,
+ "short_name": "digits10",
+ "kind": "method (hàm thành viên của class)",
+ "class": "Eigen::NumTraits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": false
 }

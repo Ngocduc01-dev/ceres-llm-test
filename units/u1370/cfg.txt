@@ -1,0 +1,70 @@
+UNIT u1370
+Hàm: CreateRandomMatrix(CompressedRowSparseMatrix::RandomMatrixOptions options, std::mt19937 & prng)  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 640–767
+
+Số điểm rẽ nhánh: 10 (và 10 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(options.num_row_blocks, 0)                            đúng → 2   sai → DỪNG
+2   CHECK_GT(options.min_row_block_size, 0)                        đúng → 3   sai → DỪNG
+3   CHECK_GT(options.max_row_block_size, 0)                        đúng → 4   sai → DỪNG
+4   CHECK_LE(options.min_row_block_size, options.max_row_block_size)   đúng → 5   sai → DỪNG
+5   if (options.storage_type == StorageType::UNSYMMETRIC)          đúng → 6   sai → 39
+6   CHECK_GT(options.num_col_blocks, 0)                            đúng → 7   sai → DỪNG
+7   CHECK_GT(options.min_col_block_size, 0)                        đúng → 8   sai → DỪNG
+8   CHECK_GT(options.max_col_block_size, 0)                        đúng → 9   sai → DỪNG
+9   CHECK_LE(options.min_col_block_size, options.max_col_block_size)   đúng → 10   sai → DỪNG
+10  CHECK_GT(options.block_density, 0.0)                           đúng → 11   sai → DỪNG
+11  CHECK_LE(options.block_density, 1.0)                           đúng → 12   sai → DỪNG
+12  row_blocks.reserve(options.num_row_blocks)
+    col_blocks.reserve(options.num_col_blocks)
+    options.min_col_block_size, options.max_col_block_size
+    options.min_row_block_size, options.max_row_block_size
+    0., 1.
+    int row_pos = 0
+    int i = 0                                                      → 13
+13  vòng for, điều kiện: i < options.num_row_blocks                đúng → 14   sai → 16
+14  row_blocks.emplace_back(row_distribution(prng), row_pos)
+    row_pos += row_blocks.back().size                              → 15
+15  ++i                                                            → 13
+16  if (options.storage_type == StorageType::UNSYMMETRIC)          đúng → 17   sai → 38
+17  int col_pos = 0
+    int i = 0                                                      → 18
+18  vòng for, điều kiện: i < options.num_col_blocks                đúng → 19   sai → 21
+19  col_blocks.emplace_back(col_distribution(prng), col_pos)
+    col_pos += col_blocks.back().size                              → 20
+20  ++i                                                            → 18
+21  while (tsm_values.empty())                                     đúng → 22   sai → 37
+22  tsm_rows.clear()
+    tsm_cols.clear()
+    tsm_values.clear()
+    int row_block_begin = 0
+    int r = 0                                                      → 23
+23  vòng for, điều kiện: r < options.num_row_blocks                đúng → 24   sai → 21
+24  int col_block_begin = 0
+    int c = 0                                                      → 25
+25  vòng for, điều kiện: c < options.num_col_blocks                đúng → 26   sai → 35
+26  if ((options.storage_type == StorageType::UPPER_TRIANGULAR) && (r > c)) || ((options.storage_type == StorageType::LOWER_TRIANGULAR) && (r < c))   đúng → 27   sai → 29
+27  col_block_begin += col_blocks[c].size
+    continue                                                       → 28
+28  ++c                                                            → 25
+29  if (uniform01(prng) <= options.block_density)                  đúng → 30   sai → 33
+30  auto randn = [&standard_normal_distribution, &prng]            → 31
+31  if (options.storage_type == StorageType::UNSYMMETRIC || r != c)   đúng → 32   sai → 34
+32  AddRandomBlock (ImplicitCastExpr, FunctionToPointerDecay, void (*)(const int, const int, const int, const int, class (lambda at /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc:728:24) &, std::vector<int> *, std::vector<int> *, std::vector<double> *))(row_blocks[r].size, col_blocks[c].size, row_block_begin, col_block_begin, randn, &tsm_rows, &tsm_cols, &tsm_values)   → 33
+33  col_block_begin += col_blocks[c].size                          → 28
+34  AddSymmetricRandomBlock (ImplicitCastExpr, FunctionToPointerDecay, void (*)(const int, const int, class (lambda at /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc:728:24) &, std::vector<int> *, std::vector<int> *, std::vector<double> *))(row_blocks[r].size, row_block_begin, randn, &tsm_rows, &tsm_cols, &tsm_values)   → 33
+35  row_block_begin += row_blocks[r].size                          → 36
+36  ++r                                                            → 23
+37  const int num_rows = NumScalarEntries(row_blocks)
+    const int num_cols = NumScalarEntries(col_blocks)
+    const bool kDoNotTranspose = false
+    (*matrix->mutable_row_blocks()) = row_blocks
+    (*matrix->mutable_col_blocks()) = col_blocks
+    matrix->set_storage_type(options.storage_type)                 → END
+38  col_blocks = row_blocks                                        → 21
+39  options.num_col_blocks = options.num_row_blocks
+    options.min_col_block_size = options.min_row_block_size
+    options.max_col_block_size = options.max_row_block_size        → 10

@@ -1,0 +1,12 @@
+UNIT u0733
+Hàm: MinimizerTypeToString(MinimizerType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 197–204
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)           nhánh → 2   nhánh → 3
+2   return "LINE_SEARCH"    → END
+3   return "TRUST_REGION"   → END

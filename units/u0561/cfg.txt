@@ -1,0 +1,11 @@
+UNIT u0561
+Hàm: GetParameterPointers(const Tuple& paramPointers, std::integer_sequence<int, Indices...>)  → trả về std::array<const T *, ParameterDims::kNumParameterBlocks>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::CostFunctionToFunctor
+Vị trí: include/ceres/cost_function_to_functor.h, dòng 158–164
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CostFunctionToFunctor<2, 2>::GetParameterPointers<double, tuple<const double *, double *>, <0>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return std::array<const double *, ParameterDims::kNumParameterBlocks>{{std::get<0>(paramPointers)}}   → END

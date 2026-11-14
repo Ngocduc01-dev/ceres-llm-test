@@ -1,0 +1,16 @@
+UNIT u1203
+Hàm: Create(const LinearSolver::Options & options)  → trả về std::unique_ptr<SparseCholesky>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseCholesky
+Vị trí: internal/ceres/sparse_cholesky.cc, dòng 44–104
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)                                                     đúng → 2   sai → DỪNG
+2   if (options.use_mixed_precision_solves)                        đúng → 3   sai → 7
+3   sparse_cholesky = FloatEigenSparseCholesky::Create(options.ordering_type)   → 4
+4   break                                                          → 5
+5   if (options.max_num_refinement_iterations > 0)                 đúng → 6   sai → END
+6   sparse_cholesky = std::make_unique<RefinedSparseCholesky>(std::move(sparse_cholesky), std::move(refiner))   → END
+7   sparse_cholesky = EigenSparseCholesky::Create(options.ordering_type)   → 4

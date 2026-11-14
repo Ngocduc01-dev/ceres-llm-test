@@ -1,0 +1,10 @@
+UNIT u0234
+Hàm: mutable_values()  → trả về double *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.h, dòng 120–120
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return values_   → END

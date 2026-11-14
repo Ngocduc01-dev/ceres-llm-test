@@ -1,0 +1,55 @@
+UNIT u1141
+Hàm: InitStorage(const CompressedRowBlockStructure * bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 223–288
+
+Số điểm rẽ nhánh: 12 (và 1 lệnh CHECK)
+
+START → 1
+1   const int num_eliminate_blocks = options().elimination_groups[0]
+    const int num_col_blocks = bs->cols.size()
+    const int num_row_blocks = bs->rows.size()
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, vector<Block> &(*)(vector<Block> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    blocks_ = Tail(bs->cols, num_col_blocks - num_eliminate_blocks)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < blocks_.size()                        đúng → 3   sai → 5
+3   block_pairs.emplace(i, i)                                      → 4
+4   ++i                                                            → 2
+5   int r = 0                                                      → 6
+6   while (r < num_row_blocks)                                     đúng → 7   sai → 10
+7   int e_block_id = bs->rows[r].cells.front().block_id            → 8
+8   if (e_block_id >= num_eliminate_blocks)                        đúng → 9   sai → 24
+9   break                                                          → 10
+10  for (; r < num_row_blocks; ...)                                đúng → 11   sai → 23
+11  const CompressedRow &row = bs->rows[r]                         → 12
+12  CHECK_GE(row.cells.front().block_id, num_eliminate_blocks)     đúng → 13   sai → DỪNG
+13  int i = 0                                                      → 14
+14  vòng for, điều kiện: i < row.cells.size()                      đúng → 15   sai → 22
+15  int r_block1_id = row.cells[i].block_id - num_eliminate_blocks   → 16
+16  for (const auto &cell : row.cells)                             đúng → 17   sai → 21
+17  const auto &cell
+    int r_block2_id = cell.block_id - num_eliminate_blocks         → 18
+18  if (r_block1_id <= r_block2_id)                                đúng → 19   sai → 20
+19  block_pairs.emplace(r_block1_id, r_block2_id)                  → 20
+20  ++ (bước tiếp của vòng for)                                    → 16
+21  ++i                                                            → 14
+22  ++r                                                            → 10
+23  ResizeRhs(lhs()->num_rows())                                   → END
+24  for (; r < num_row_blocks; ...)                                đúng → 25   sai → 28
+25  const CompressedRow &row = bs->rows[r]                         → 26
+26  if (row.cells.front().block_id != e_block_id)                  đúng → 27   sai → 35
+27  break                                                          → 28
+28  int i = 0                                                      → 29
+29  vòng for, điều kiện: i < f_blocks.size()                       đúng → 30   sai → 6
+30  int j = i + 1                                                  → 31
+31  vòng for, điều kiện: j < f_blocks.size()                       đúng → 32   sai → 34
+32  block_pairs.emplace(f_blocks[i], f_blocks[j])                  → 33
+33  ++j                                                            → 31
+34  ++i                                                            → 29
+35  int c = 1                                                      → 36
+36  vòng for, điều kiện: c < row.cells.size()                      đúng → 37   sai → 39
+37  const Cell &cell = row.cells[c]
+    f_blocks.push_back(cell.block_id - num_eliminate_blocks)       → 38
+38  ++c                                                            → 36
+39  ++r                                                            → 24

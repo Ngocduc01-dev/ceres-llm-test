@@ -1,0 +1,13 @@
+UNIT u0820
+Hàm: ScaledLoss(const LossFunction * rho, double a, Ownership ownership)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::ScaledLoss
+Vị trí: include/ceres/loss_function.h, dòng 335–336
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LossFunction() (Base initializer)
+    rho_(rho) (Member initializer)
+    a_(a) (Member initializer)
+    ownership_(ownership) (Member initializer)                     → END

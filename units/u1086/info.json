@@ -6,7 +6,6 @@
   100,
   117
  ],
- "signature": "ceres::internal::BlockRandomAccessSparseMatrix::GetCell",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1086
+ "order": 1086,
+ "short_name": "GetCell",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
+ "params": "(int row_block_id, int col_block_id, int * row, int * col, int * row_stride, int * col_stride)",
+ "return_type": "CellInfo *",
+ "is_const": false
 }

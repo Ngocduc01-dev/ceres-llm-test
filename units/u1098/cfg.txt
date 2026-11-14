@@ -1,0 +1,17 @@
+UNIT u1098
+Hàm: StringToCovarianceAlgorithmType(std::string value, CovarianceAlgorithmType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 299–305
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)                → 2
+2   if (value == "DENSE_SVD")        đúng → 3   sai → 4
+3   *type = DENSE_SVD
+    return true                      → END
+4   if (value == "SPARSE_QR")        đúng → 5   sai → 6
+5   *type = SPARSE_QR
+    return true                      → END
+6   return false                     → END

@@ -1,0 +1,15 @@
+UNIT u1532
+Hàm: ceres_problem_add_residual_block(ceres_problem_t * problem, ceres_cost_function_t cost_function, void * cost_function_data, ceres_loss_function_t loss_function, void * loss_function_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes, double ** parameters)  → trả về ceres_residual_block_id_t *
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 138–169
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   reinterpret_cast<Problem *>(problem) (CXXReinterpretCastExpr, BitCast, Problem *)
+    auto *ceres_problem = reinterpret_cast<Problem *>(problem)     → 2
+2   if (loss_function != nullptr)                                  đúng → 3   sai → 4
+3   callback_loss_function = std::make_unique<CallbackLossFunction> (ImplicitCastExpr, FunctionToPointerDecay, __detail::__unique_ptr_t<CallbackLossFunction> (*)(void (*&)(void *, double, double *), void *&))(loss_function, loss_function_data)   → 4
+4   parameters, parameters + num_parameter_blocks
+    return reinterpret_cast<ceres_residual_block_id_t *>(ceres_problem->AddResidualBlock(callback_cost_function.release(), callback_loss_function.release(), parameter_blocks)) (CXXReinterpretCastExpr, BitCast, ceres_residual_block_id_t *)   → END

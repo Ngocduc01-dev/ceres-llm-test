@@ -1,0 +1,14 @@
+UNIT u1166
+Hàm: ~ThreadPool()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 60–68
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   Stop()                                     → 2
+2   for (std::thread &thread : thread_pool_)   đúng → 3   sai → END
+3   std::thread &thread
+    thread.join()                              → 4
+4   ++ (bước tiếp của vòng for)                → 2

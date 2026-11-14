@@ -1,0 +1,10 @@
+UNIT u1523
+Hàm: AddResidualBlock(CostFunction * cost_function, LossFunction * loss_function, const std::vector<double *> & parameter_blocks)  → trả về ResidualBlockId
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 50–58
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->AddResidualBlock(cost_function, loss_function, parameter_blocks.data(), static_cast<int>(parameter_blocks.size()))   → END

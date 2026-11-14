@@ -6,7 +6,6 @@
   117,
   127
  ],
- "signature": "ceres::internal::ProgramEvaluator::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 5,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1514
+ "order": 1514,
+ "short_name": "ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "(const Evaluator::Options & options, Program * program)",
+ "return_type": null,
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   260,
   340
  ],
- "signature": "ceres::internal::Degree2MaximumSpanningForest",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 556
+ "order": 556,
+ "short_name": "Degree2MaximumSpanningForest",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const WeightedGraph<Vertex>& graph)",
+ "return_type": "std::unique_ptr<WeightedGraph<Vertex>>",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0313
+Hàm: num_cols() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.h, dòng 138–138
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return A_->num_cols_f()   → END

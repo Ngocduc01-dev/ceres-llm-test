@@ -1,0 +1,16 @@
+UNIT u0919
+Hàm: ComposedLoss(const LossFunction * f, Ownership ownership_f, const LossFunction * g, Ownership ownership_g)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::ComposedLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 136–143
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   LossFunction() (Base initializer)
+    f_(f) (Member initializer)
+    g_(g) (Member initializer)
+    ownership_f_(ownership_f) (Member initializer)
+    ownership_g_(ownership_g) (Member initializer)                 → 2
+2   CHECK(f_ != nullptr)                                           đúng → 3   sai → DỪNG
+3   CHECK(g_ != nullptr)                                           đúng → END   sai → DỪNG

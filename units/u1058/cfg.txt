@@ -1,0 +1,33 @@
+UNIT u1058
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::DynamicNumericDiffCostFunction
+Vị trí: include/ceres/dynamic_numeric_diff_cost_function.h, dòng 97–154
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DynamicNumericDiffCostFunction<PlusFunctor, RIDDERS> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 5 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(num_residuals(), 0)                                   đúng → 2   sai → DỪNG
+2   const std::vector<int32_t> &block_sizes = parameter_block_sizes()   → 3
+3   CHECK(!block_sizes.empty())                                    đúng → 4   sai → DỪNG
+4   const bool status = internal::VariadicEvaluate<internal::DynamicParameterDims>(*functor_.get(), parameters, residuals)   → 5
+5   if (jacobians == nullptr || !status)                           đúng → 6   sai → 7
+6   return status                                                  → END
+7   int parameters_size = accumulate(block_sizes.begin(), block_sizes.end(), 0)
+    block_sizes.size()
+    parameters_references_copy[0] = &parameters_copy[0]
+    size_t block = 1                                               → 8
+8   vòng for, điều kiện: block < block_sizes.size()                đúng → 9   sai → 11
+9   parameters_references_copy[block] = parameters_references_copy[block - 1] + block_sizes[block - 1]   → 10
+10  ++block                                                        → 8
+11  size_t block = 0                                               → 12
+12  vòng for, điều kiện: block < block_sizes.size()                đúng → 13   sai → 15
+13  memcpy(parameters_references_copy[block], parameters[block], block_sizes[block] * sizeof (*parameters[block]))   → 14
+14  ++block                                                        → 12
+15  size_t block = 0                                               → 16
+16  vòng for, điều kiện: block < block_sizes.size()                đúng → 17   sai → 20
+17  if (jacobians[block] != nullptr && !NumericDiff<PlusFunctor, (NumericDiffMethodType)2U, ceres::DYNAMIC, internal::DynamicParameterDims, ceres::DYNAMIC, ceres::DYNAMIC>::EvaluateJacobianForParameterBlock(functor_.get(), residuals, options_, num_residuals(), block, block_sizes[block], &parameters_references_copy[0], jacobians[block]))   đúng → 18   sai → 19
+18  return false                                                   → END
+19  ++block                                                        → 16
+20  return true                                                    → END

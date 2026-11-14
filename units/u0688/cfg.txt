@@ -1,0 +1,10 @@
+UNIT u0688
+Hàm: Update(const LinearOperator &, const double *)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PowerSeriesExpansionPreconditioner
+Vị trí: internal/ceres/power_series_expansion_preconditioner.cc, dòng 52–55
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return true   → END

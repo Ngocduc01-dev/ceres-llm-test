@@ -1,0 +1,22 @@
+UNIT u0783
+Hàm: AreJacobianColumnsOrdered(const LinearSolverType linear_solver_type, const PreconditionerType preconditioner_type, const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 609–642
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   if (sparse_linear_algebra_library_type == SUITE_SPARSE)        đúng → 2   sai → 7
+2   if (linear_solver_type == SPARSE_NORMAL_CHOLESKY || (linear_solver_type == CGNR && preconditioner_type == SUBSET))   đúng → 3   sai → 4
+3   return true                                                    → END
+4   if (linear_solver_type == SPARSE_SCHUR && linear_solver_ordering_type == ceres::AMD)   đúng → 5   sai → 6
+5   return true                                                    → END
+6   return false                                                   → END
+7   if (sparse_linear_algebra_library_type == ceres::EIGEN_SPARSE)   đúng → 8   sai → 11
+8   if (linear_solver_type == SPARSE_NORMAL_CHOLESKY || linear_solver_type == SPARSE_SCHUR || (linear_solver_type == CGNR && preconditioner_type == SUBSET))   đúng → 9   sai → 10
+9   return true                                                    → END
+10  return false                                                   → END
+11  if (sparse_linear_algebra_library_type == ceres::ACCELERATE_SPARSE)   đúng → 12   sai → 13
+12  return false                                                   → END
+13  return false                                                   → END

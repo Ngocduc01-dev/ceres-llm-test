@@ -6,7 +6,6 @@
   86,
   94
  ],
- "signature": "ceres::InsertIfNotPresent",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 350
+ "order": 350,
+ "short_name": "InsertIfNotPresent",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
+ "return_type": "bool",
+ "is_const": false
 }

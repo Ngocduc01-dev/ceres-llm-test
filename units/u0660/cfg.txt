@@ -1,0 +1,11 @@
+UNIT u0660
+Hàm: DenseSparseMatrix(int num_rows, int num_cols)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 43–44
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SparseMatrix() (Base initializer)
+    m_(Matrix(num_rows, num_cols)) (Member initializer)            → END

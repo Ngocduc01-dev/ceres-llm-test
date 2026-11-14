@@ -1,0 +1,30 @@
+UNIT u0645
+Hàm: EulerAnglesToRotationMatrix(const T* euler, const MatrixAdapter<T, row_stride, col_stride>& R)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 638–666
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EulerAnglesToRotationMatrix<double, 3, 1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double kPi = 3.1415926535897931
+    const double degrees_to_radians(kPi / 180.)
+    const double pitch(euler[0] * degrees_to_radians)
+    const double roll(euler[1] * degrees_to_radians)
+    const double yaw(euler[2] * degrees_to_radians)
+    const double c1 = cos(yaw)
+    const double s1 = sin(yaw)
+    const double c2 = cos(roll)
+    const double s2 = sin(roll)
+    const double c3 = cos(pitch)
+    const double s3 = sin(pitch)
+    R(0, 0) = c1 * c2
+    R(0, 1) = -s1 * c3 + c1 * s2 * s3
+    R(0, 2) = s1 * s3 + c1 * s2 * c3
+    R(1, 0) = s1 * c2
+    R(1, 1) = c1 * c3 + s1 * s2 * s3
+    R(1, 2) = -c1 * s3 + s1 * s2 * c3
+    R(2, 0) = -s2
+    R(2, 1) = c2 * s3
+    R(2, 2) = c2 * c3                                              → END

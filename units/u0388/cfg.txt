@@ -1,0 +1,23 @@
+UNIT u0388
+Hàm: PreprocessedProblem()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::PreprocessedProblem
+Vị trí: internal/ceres/preprocessor.h, dòng 83–83
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   error() (Member initializer)
+    linear_solver_options() (Member initializer)
+    evaluator_options() (Member initializer)
+    minimizer_options() (Member initializer)
+    gradient_checking_problem() (Member initializer)
+    reduced_program() (Member initializer)
+    linear_solver() (Member initializer)
+    logging_callback() (Member initializer)
+    state_updating_callback() (Member initializer)
+    evaluator() (Member initializer)
+    inner_iteration_minimizer() (Member initializer)
+    removed_parameter_blocks() (Member initializer)
+    reduced_parameters() (Member initializer)
+    fixed_cost(?) (Member initializer)                             → END

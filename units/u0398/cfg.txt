@@ -1,0 +1,10 @@
+UNIT u0398
+Hàm: NumResidualBlocks() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 479–479
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return residual_blocks_.size()   → END

@@ -1,0 +1,17 @@
+UNIT u1094
+Hàm: StringToTrustRegionStrategyType(std::string value, TrustRegionStrategyType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 173–179
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)                          → 2
+2   if (value == "LEVENBERG_MARQUARDT")        đúng → 3   sai → 4
+3   *type = LEVENBERG_MARQUARDT
+    return true                                → END
+4   if (value == "DOGLEG")                     đúng → 5   sai → 6
+5   *type = DOGLEG
+    return true                                → END
+6   return false                               → END

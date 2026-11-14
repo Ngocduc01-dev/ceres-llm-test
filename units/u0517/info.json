@@ -6,7 +6,6 @@
   109,
   131
  ],
- "signature": "ceres::internal::ComputeSphereManifoldMinus",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 517
+ "order": 517,
+ "short_name": "ComputeSphereManifoldMinus",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const VT& v, double beta, const XT& x, const YT& y, YMinusXT* y_minus_x)",
+ "return_type": "void",
+ "is_const": false
 }

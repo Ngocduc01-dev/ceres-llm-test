@@ -1,0 +1,11 @@
+UNIT u0840
+Hàm: ContextImpl()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ContextImpl
+Vị trí: internal/ceres/context_impl.cc, dòng 47–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Context() (Base initializer)
+    thread_pool() (Member initializer)                             → END

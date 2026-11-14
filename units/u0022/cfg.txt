@@ -1,0 +1,10 @@
+UNIT u0022
+Hàm: mutable_function()  → trả về FirstOrderFunction *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: include/ceres/gradient_problem.h, dòng 110–110
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return function_.get()   → END

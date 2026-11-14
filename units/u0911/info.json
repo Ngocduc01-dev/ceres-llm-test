@@ -6,7 +6,6 @@
   229,
   232
  ],
- "signature": "ceres::internal::SchurEliminator::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 911
+ "order": 911,
+ "short_name": "SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

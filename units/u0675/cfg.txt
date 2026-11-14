@@ -1,0 +1,11 @@
+UNIT u0675
+Hàm: VertexWeight(const Vertex & vertex) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::WeightedGraph
+Vị trí: internal/ceres/graph.h, dòng 170–172
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp WeightedGraph<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return FindOrDie(vertex_weights_, vertex)   → END

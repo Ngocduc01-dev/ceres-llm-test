@@ -1,0 +1,13 @@
+UNIT u0954
+Hàm: Create(const Evaluator::Options & options, Program * program, std::string * error)  → trả về std::unique_ptr<Evaluator>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Evaluator
+Vị trí: internal/ceres/evaluator.cc, dòng 53–95
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(options.context != nullptr)                              đúng → 2   sai → DỪNG
+2   switch (options.linear_solver_type)                            nhánh → 3   nhánh → 4   nhánh → 4   nhánh → 4   nhánh → 4   nhánh → END   nhánh → END
+3   if (options.dynamic_sparsity)                                  đúng → END   sai → END
+4   if (options.sparse_linear_algebra_library_type == CUDA_SPARSE)   đúng → END   sai → END

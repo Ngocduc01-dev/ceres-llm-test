@@ -1,0 +1,32 @@
+UNIT u1394
+Hàm: FinalizeIterationAndCheckIfMinimizerCanContinue()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 314–358
+
+Số điểm rẽ nhánh: 7
+
+START → 1
+1   if (iteration_summary_.step_is_successful)                     đúng → 2   sai → 18
+2   ++solver_summary_->num_successful_steps                        → 3
+3   if (x_cost_ < minimum_cost_)                                   đúng → 4   sai → 17
+4   minimum_cost_ = x_cost_
+    VectorRef(parameters_, num_parameters_) = x_
+    iteration_summary_.step_is_nonmonotonic = false                → 5
+5   iteration_summary_.trust_region_radius = strategy_->Radius()
+    iteration_summary_.iteration_time_in_seconds = WallTimeInSeconds() - iteration_start_time_in_secs_
+    iteration_summary_.cumulative_time_in_seconds = WallTimeInSeconds() - start_time_in_secs_ + solver_summary_->preprocessor_time_in_seconds
+    solver_summary_->iterations.push_back(iteration_summary_)      → 6
+6   if (!RunCallbacks(options_, iteration_summary_, solver_summary_))   đúng → 7   sai → 8
+7   return false                                                   → END
+8   if (MaxSolverTimeReached())                                    đúng → 9   sai → 10
+9   return false                                                   → END
+10  if (MaxSolverIterationsReached())                              đúng → 11   sai → 12
+11  return false                                                   → END
+12  if (GradientToleranceReached())                                đúng → 13   sai → 14
+13  return false                                                   → END
+14  if (MinTrustRegionRadiusReached())                             đúng → 15   sai → 16
+15  return false                                                   → END
+16  return true                                                    → END
+17  iteration_summary_.step_is_nonmonotonic = true                 → 5
+18  ++solver_summary_->num_unsuccessful_steps                      → 5

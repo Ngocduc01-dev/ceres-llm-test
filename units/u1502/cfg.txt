@@ -1,0 +1,32 @@
+UNIT u1502
+Hàm: ComputeCovarianceValuesUsingEigenSparseQR()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 795–887
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   "CovarianceImpl::ComputeCovarianceValuesUsingEigenSparseQR"    → 2
+2   if (covariance_matrix_ == nullptr)                             đúng → 3   sai → 4
+3   return true                                                    → END
+4   problem_->Evaluate(evaluate_options_, nullptr, nullptr, nullptr, &jacobian)
+    event_logger.AddEvent("Evaluate")
+    Eigen::Map<Eigen::SparseMatrix<double, Eigen::RowMajor>>(jacobian.num_rows, jacobian.num_cols, static_cast<int>(jacobian.values.size()), jacobian.rows.data(), jacobian.cols.data(), jacobian.values.data())
+    event_logger.AddEvent("ConvertToSparseMatrix")                 → 5
+5   if (options_.column_pivot_threshold > 0)                       đúng → 6   sai → 7
+6   qr.setPivotThreshold(options_.column_pivot_threshold)          → 7
+7   qr.compute(sparse_jacobian)
+    event_logger.AddEvent("QRDecomposition")                       → 8
+8   if (qr.info() != Eigen::Success)                               đúng → END   sai → 9
+9   if (qr.rank() < jacobian.num_cols)                             đúng → END   sai → 10
+10  const int *rows = covariance_matrix_->rows()
+    const int *cols = covariance_matrix_->cols()
+    double *values = covariance_matrix_->mutable_values()
+    qr.colsPermutation().inverse()
+    const int num_cols = jacobian.num_cols
+    const int num_threads = options_.num_threads
+    problem_->context()->EnsureMinimumThreads(num_threads)
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/covariance_impl.cc:863:54) &&, int))(problem_->context(), 0, num_cols, num_threads, [&](int thread_id, int r) {)
+    event_logger.AddEvent("Inverse")
+    return true                                                    → END

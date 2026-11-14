@@ -6,7 +6,6 @@
   61,
   63
  ],
- "signature": "ceres::internal::Program::residual_blocks",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 6,
- "order": 394
+ "order": 394,
+ "short_name": "residual_blocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const std::vector<ResidualBlock *> &",
+ "is_const": true
 }

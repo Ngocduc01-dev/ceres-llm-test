@@ -6,7 +6,6 @@
   125,
   163
  ],
- "signature": "ceres::internal::BlockRandomAccessSparseMatrix::SymmetricRightMultiplyAndAccumulate",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1103
+ "order": 1103,
+ "short_name": "SymmetricRightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

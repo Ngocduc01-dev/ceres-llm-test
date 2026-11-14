@@ -6,7 +6,6 @@
   56,
   58
  ],
- "signature": "ceres::internal::EigenSparseCholeskyTemplate::StorageType",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 856
+ "order": 856,
+ "short_name": "StorageType",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenSparseCholeskyTemplate",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "CompressedRowSparseMatrix::StorageType",
+ "is_const": true
 }

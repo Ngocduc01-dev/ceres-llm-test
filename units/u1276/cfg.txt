@@ -1,0 +1,35 @@
+UNIT u1276
+Hàm: IterationZero()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 194–230
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   iteration_summary_ = IterationSummary()
+    iteration_summary_.iteration = 0
+    iteration_summary_.step_is_valid = false
+    iteration_summary_.step_is_successful = false
+    iteration_summary_.cost_change = 0.
+    iteration_summary_.gradient_max_norm = 0.
+    iteration_summary_.gradient_norm = 0.
+    iteration_summary_.step_norm = 0.
+    iteration_summary_.relative_decrease = 0.
+    iteration_summary_.eta = options_.eta
+    iteration_summary_.linear_solver_iterations = 0
+    iteration_summary_.step_solver_time_in_seconds = 0             → 2
+2   if (options_.is_constrained)                                   đúng → 3   sai → 7
+3   delta_.setZero()                                               → 4
+4   if (!evaluator_->Plus(x_.data(), delta_.data(), candidate_x_.data()))   đúng → 5   sai → 6
+5   solver_summary_->message = "Unable to project initial point onto the feasible set."
+    solver_summary_->termination_type = FAILURE
+    return false                                                   → END
+6   x_ = candidate_x_                                              → 7
+7   if (!EvaluateGradientAndJacobian(true))                        đúng → 8   sai → 9
+8   solver_summary_->message = "Initial residual and Jacobian evaluation failed."
+    return false                                                   → END
+9   solver_summary_->initial_cost = x_cost_ + solver_summary_->fixed_cost
+    iteration_summary_.step_is_valid = true
+    iteration_summary_.step_is_successful = true
+    return true                                                    → END

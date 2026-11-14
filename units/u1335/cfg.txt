@@ -1,0 +1,10 @@
+UNIT u1335
+Hàm: GetParameterLowerBound(const double * values, int index) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 124–126
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->GetParameterLowerBound(values, index)   → END

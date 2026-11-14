@@ -1,0 +1,11 @@
+UNIT u1031
+Hàm: Pop(T * value)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ConcurrentQueue
+Vị trí: internal/ceres/concurrent_queue.h, dòng 92–97
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ConcurrentQueue<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(value != nullptr)   đúng → END   sai → DỪNG

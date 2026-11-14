@@ -1,0 +1,11 @@
+UNIT u0282
+Hàm: StepIsInvalid()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 640–643
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   mu_ *= mu_increase_factor_
+    reuse_ = false                               → END

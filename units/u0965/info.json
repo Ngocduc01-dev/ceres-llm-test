@@ -6,7 +6,6 @@
   102,
   102
  ],
- "signature": "ceres::internal::ThreadPool::Stop",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 965
+ "order": 965,
+ "short_name": "Stop",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

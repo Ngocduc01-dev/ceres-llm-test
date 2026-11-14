@@ -6,7 +6,6 @@
   114,
   131
  ],
- "signature": "ceres::(anonymous)::QuaternionMinusJacobianImpl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 582
+ "order": 582,
+ "short_name": "QuaternionMinusJacobianImpl",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const double* x, double* jacobian_ptr)",
+ "return_type": "void",
+ "is_const": false
 }

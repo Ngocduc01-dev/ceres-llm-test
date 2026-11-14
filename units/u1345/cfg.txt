@@ -1,0 +1,11 @@
+UNIT u1345
+Hàm: DenseSchurComplementSolver(const LinearSolver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DenseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 159–162
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SchurComplementSolver(options) (Base initializer)
+    cholesky_(DenseCholesky::Create(options)) (Member initializer)   → END

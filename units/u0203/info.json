@@ -6,7 +6,6 @@
   297,
   297
  ],
- "signature": "ceres::MatrixAdapter::MatrixAdapter<T, row_stride, col_stride>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 203
+ "order": 203,
+ "short_name": "MatrixAdapter<T, row_stride, col_stride>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::MatrixAdapter",
+ "class_is_template": true,
+ "params": "(T * pointer)",
+ "return_type": null,
+ "is_const": false
 }

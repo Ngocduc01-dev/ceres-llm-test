@@ -6,7 +6,6 @@
   640,
   767
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::CreateRandomMatrix",
  "branches": 48,
  "cyclomatic": 25,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 5,
- "order": 1370
+ "order": 1370,
+ "short_name": "CreateRandomMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(CompressedRowSparseMatrix::RandomMatrixOptions options, std::mt19937 & prng)",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": false
 }

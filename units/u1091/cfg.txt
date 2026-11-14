@@ -1,0 +1,16 @@
+UNIT u1091
+Hàm: NextDirection(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LBFGS
+Vị trí: internal/ceres/line_search_direction.cc, dòng 110–137
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(is_positive_definite_)                                   đúng → 2   sai → DỪNG
+2   low_rank_inverse_hessian_.Update(previous.search_direction * previous.step_size, current.gradient - previous.gradient)
+    search_direction->setZero()
+    low_rank_inverse_hessian_.RightMultiplyAndAccumulate(current.gradient.data(), search_direction->data())
+    *search_direction *= -1.                                       → 3
+3   if (search_direction->dot(current.gradient) >= 0.)             đúng → END   sai → 4
+4   return true                                                    → END

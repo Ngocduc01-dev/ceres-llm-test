@@ -1,0 +1,44 @@
+UNIT u1216
+Hàm: SquaredColumnNorm(double * x) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 378–433
+
+Số điểm rẽ nhánh: 10 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                                            đúng → 2   sai → DỪNG
+2   std::fill(x, x + num_cols_, 0.)                                → 3
+3   if (storage_type_ == StorageType::UNSYMMETRIC)                 đúng → 4   sai → 8
+4   int idx = 0                                                    → 5
+5   vòng for, điều kiện: idx < rows_[num_rows_]                    đúng → 6   sai → END
+6   x[cols_[idx]] += values_[idx] * values_[idx]                   → 7
+7   ++idx                                                          → 5
+8   if (storage_type_ == StorageType::UPPER_TRIANGULAR)            đúng → 9   sai → 20
+9   int r = 0                                                      → 10
+10  vòng for, điều kiện: r < num_rows_                             đúng → 11   sai → END
+11  int idx = rows_[r]
+    const int idx_end = rows_[r + 1]                               → 12
+12  while (idx < idx_end && r > cols_[idx])                        đúng → 13   sai → 14
+13  ++idx                                                          → 12
+14  for (; idx < idx_end; ...)                                     đúng → 15   sai → 19
+15  const int c = cols_[idx]
+    const double v2 = values_[idx] * values_[idx]
+    x[c] += v2                                                     → 16
+16  if (r != c)                                                    đúng → 17   sai → 18
+17  x[r] += v2                                                     → 18
+18  ++idx                                                          → 14
+19  ++r                                                            → 10
+20  LOG(FATAL)                                                     đúng → 21   sai → DỪNG
+21  int r = 0                                                      → 22
+22  vòng for, điều kiện: r < num_rows_                             đúng → 23   sai → END
+23  int idx = rows_[r]
+    const int idx_end = rows_[r + 1]                               → 24
+24  for (; idx < idx_end && r >= cols_[idx]; ...)                  đúng → 25   sai → 29
+25  const int c = cols_[idx]
+    const double v2 = values_[idx] * values_[idx]
+    x[c] += v2                                                     → 26
+26  if (r != c)                                                    đúng → 27   sai → 28
+27  x[r] += v2                                                     → 28
+28  ++idx                                                          → 24
+29  ++r                                                            → 22

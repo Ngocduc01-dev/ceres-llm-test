@@ -1,0 +1,11 @@
+UNIT u0251
+Hàm: implicit_cast(typename identity_<To>::type to)  → trả về To
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: internal/ceres/casts.h, dòng 58–61
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp implicit_cast<SparseMatrix *, BlockSparseMatrix *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return f   → END

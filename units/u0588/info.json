@@ -6,7 +6,6 @@
   257,
   268
  ],
- "signature": "ceres::ProductManifold::ExclusiveScan",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 588
+ "order": 588,
+ "short_name": "ExclusiveScan",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const std::array<T, N>& values)",
+ "return_type": "std::array<T, N>",
+ "is_const": false
 }

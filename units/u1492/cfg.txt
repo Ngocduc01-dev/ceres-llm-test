@@ -1,0 +1,45 @@
+UNIT u1492
+Hàm: Evaluate(const Evaluator::EvaluateOptions & evaluate_options, const double * state, double * cost, double * residuals, double * gradient, SparseMatrix * jacobian)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProgramEvaluator
+Vị trí: internal/ceres/program_evaluator.h, dòng 134–301
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 13
+
+START → 1
+1   gradient == nullptr && jacobian == nullptr ? ... : ...         đúng → 2   sai → 2
+2   if (!program_->StateVectorToParameterBlocks(state))            đúng → 3   sai → 4
+3   return false                                                   → END
+4   if (options_.evaluation_callback != nullptr)                   đúng → 5   sai → 7
+5   program_->CopyParameterBlockStateToUserState()                 → 6
+6   options_.evaluation_callback->PrepareForEvaluation((gradient != nullptr || jacobian != nullptr), evaluate_options.new_evaluation_point)   → 7
+7   if (residuals != nullptr)                                      đúng → 8   sai → 9
+8   ParallelSetZero(options_.context, options_.num_threads, residuals, program_->NumResiduals())   → 9
+9   if (jacobian != nullptr)                                       đúng → 10   sai → 11
+10  jacobian->SetZero(options_.context, options_.num_threads)      → 11
+11  int i = 0                                                      → 12
+12  vòng for, điều kiện: i < options_.num_threads                  đúng → 13   sai → 17
+13  evaluate_scratch_[i].cost = 0.                                 → 14
+14  if (gradient != nullptr)                                       đúng → 15   sai → 16
+15  ParallelSetZero(options_.context, options_.num_threads, evaluate_scratch_[i].gradient.get(), num_parameters_)   → 16
+16  ++i                                                            → 12
+17  const int num_residual_blocks = program_->NumResidualBlocks()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/program_evaluator.h:191:9) &&, int))(options_.context, 0, num_residual_blocks, options_.num_threads, [&](int thread_id, int i) {)   → 18
+18  if (abort)                                                     đúng → 19   sai → 20
+19  return false                                                   → END
+20  (*cost) = 0.                                                   → 21
+21  if (gradient != nullptr)                                       đúng → 22   sai → 23
+22  VectorRef(gradient, num_parameters_)
+    ParallelSetZero(options_.context, options_.num_threads, gradient_vector)   → 23
+23  int i = 0                                                      → 24
+24  vòng for, điều kiện: i < options_.num_threads                  đúng → 25   sai → 29
+25  (*cost) += evaluate_scratch_[i].cost                           → 26
+26  if (gradient != nullptr)                                       đúng → 27   sai → 28
+27  VectorRef(gradient, num_parameters_)
+    ParallelAssign(options_.context, options_.num_threads, gradient_vector, gradient_vector + VectorRef(evaluate_scratch_[i].gradient.get(), num_parameters_))   → 28
+28  ++i                                                            → 24
+29  if (!std::isfinite(*cost))                                     đúng → END   sai → 30
+30  if (jacobian != nullptr)                                       đúng → 31   sai → 32
+31  f(jacobian, num_parameters_)                                   → 32
+32  return true                                                    → END

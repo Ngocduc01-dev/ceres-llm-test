@@ -6,7 +6,6 @@
   380,
   380
  ],
- "signature": "ceres::internal::FixedArray::NonEmptyInlinedStorage::AnnotateConstruct",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 48
+ "order": 48,
+ "short_name": "AnnotateConstruct",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::NonEmptyInlinedStorage",
+ "class_is_template": false,
+ "params": "(size_type)",
+ "return_type": "void",
+ "is_const": false
 }

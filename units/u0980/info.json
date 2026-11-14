@@ -6,7 +6,6 @@
   265,
   265
  ],
- "signature": "ceres::internal::FixedArray::end",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 980
+ "order": 980,
+ "short_name": "end",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const_iterator",
+ "is_const": true
 }

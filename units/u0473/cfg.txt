@@ -1,0 +1,12 @@
+UNIT u0473
+Hàm: FindOrDie(const Collection& collection, const typename Collection::value_type::first_type& key)  → trả về const typename Collection::value_type::second_type &
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: internal/ceres/map_util.h, dòng 58–65
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FindOrDie<unordered_map<int, double>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   collection.find(key)            → 2
+2   CHECK(it != collection.end())   đúng → END   sai → DỪNG

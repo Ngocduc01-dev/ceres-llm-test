@@ -1,0 +1,10 @@
+UNIT u0259
+Hàm: set_num_cols(const int num_cols)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.h, dòng 139–139
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   num_cols_ = num_cols   → END

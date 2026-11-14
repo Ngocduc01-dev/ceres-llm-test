@@ -6,7 +6,6 @@
   126,
   126
  ],
- "signature": "ceres::internal::RefinedSparseCholesky::~RefinedSparseCholesky",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 415
+ "order": 415,
+ "short_name": "~RefinedSparseCholesky",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::RefinedSparseCholesky",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

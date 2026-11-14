@@ -6,7 +6,6 @@
   80,
   95
  ],
- "signature": "ceres::internal::EventLogger::AddEvent",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1292
+ "order": 1292,
+ "short_name": "AddEvent",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EventLogger",
+ "class_is_template": false,
+ "params": "(const std::string & event_name)",
+ "return_type": "void",
+ "is_const": false
 }

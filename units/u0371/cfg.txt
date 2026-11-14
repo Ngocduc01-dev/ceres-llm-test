@@ -1,0 +1,10 @@
+UNIT u0371
+Hàm: PlusJacobian() const  → trả về const double *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 152–152
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return plus_jacobian_.get()   → END

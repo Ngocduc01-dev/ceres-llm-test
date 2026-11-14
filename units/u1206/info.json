@@ -6,7 +6,6 @@
   88,
   105
  ],
- "signature": "ceres::TinySolverCostFunctionAdapter::TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1206
+ "order": 1206,
+ "short_name": "TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::TinySolverCostFunctionAdapter",
+ "class_is_template": true,
+ "params": "(const CostFunction & cost_function)",
+ "return_type": null,
+ "is_const": false
 }

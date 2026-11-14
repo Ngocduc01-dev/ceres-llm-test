@@ -6,7 +6,6 @@
   56,
   56
  ],
- "signature": "ceres::internal::BlockSparseJacobiPreconditioner::~BlockSparseJacobiPreconditioner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 219
+ "order": 219,
+ "short_name": "~BlockSparseJacobiPreconditioner",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::BlockSparseJacobiPreconditioner",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

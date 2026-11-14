@@ -1,0 +1,19 @@
+UNIT u0750
+Hàm: operator<<(std::ostream & s, OrderingType type)  → trả về std::ostream &
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/linear_solver.h, dòng 113–128
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)                                nhánh → 2   nhánh → 4   nhánh → 5   nhánh → 6
+2   s << "LINEAR_SOLVER_FATAL_ERROR"
+    break                                        → 3
+3   return s                                     → END
+4   s << "LINEAR_SOLVER_FAILURE"
+    break                                        → 3
+5   s << "LINEAR_SOLVER_NO_CONVERGENCE"
+    break                                        → 3
+6   s << "LINEAR_SOLVER_SUCCESS"
+    break                                        → 3

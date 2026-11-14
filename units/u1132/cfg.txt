@@ -1,0 +1,12 @@
+UNIT u1132
+Hàm: InitStorage(const CompressedRowBlockStructure * bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 168–176
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const int num_eliminate_blocks = options().elimination_groups[0]
+    const int num_col_blocks = bs->cols.size()
+    ResizeRhs(lhs()->num_rows())                                   → END

@@ -1,0 +1,9 @@
+UNIT u0286
+Hàm: subspace_basis() const  → trả về Matrix
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.h, dòng 73–73
+
+Số điểm rẽ nhánh: 0
+
+START → END

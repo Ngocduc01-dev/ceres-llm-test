@@ -6,7 +6,6 @@
   557,
   560
  ],
- "signature": "ceres::RotationMatrixToEulerAngles",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 209
+ "order": 209,
+ "short_name": "RotationMatrixToEulerAngles",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T* R, T* euler)",
+ "return_type": "void",
+ "is_const": false
 }

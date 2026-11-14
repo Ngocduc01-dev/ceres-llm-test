@@ -6,7 +6,6 @@
   77,
   82
  ],
- "signature": "ceres::internal::ParallelSetZero",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 875
+ "order": 875,
+ "short_name": "ParallelSetZero",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ContextImpl* context, int num_threads, VectorType& vector)",
+ "return_type": "void",
+ "is_const": false
 }

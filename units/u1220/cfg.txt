@@ -1,0 +1,17 @@
+UNIT u1220
+Hàm: SetupEvaluator(PreprocessedProblem * pp)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/line_search_preprocessor.cc, dòng 55–68
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   pp->evaluator_options = Evaluator::Options()
+    pp->evaluator_options.linear_solver_type = CGNR
+    pp->evaluator_options.num_eliminate_blocks = 0
+    pp->evaluator_options.num_threads = pp->options.num_threads
+    pp->evaluator_options.context = pp->problem->context()
+    pp->evaluator_options.evaluation_callback = pp->reduced_program->mutable_evaluation_callback()
+    pp->evaluator = Evaluator::Create(pp->evaluator_options, pp->reduced_program.get(), &pp->error)
+    return (pp->evaluator.get() != nullptr)                        → END

@@ -6,7 +6,6 @@
   200,
   254
  ],
- "signature": "ceres::internal::DoglegStrategy::ComputeTraditionalDoglegStep",
  "branches": 18,
  "cyclomatic": 10,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 612
+ "order": 612,
+ "short_name": "ComputeTraditionalDoglegStep",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(double * dogleg)",
+ "return_type": "void",
+ "is_const": false
 }

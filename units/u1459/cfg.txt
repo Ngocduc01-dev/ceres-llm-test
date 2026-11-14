@@ -1,0 +1,31 @@
+UNIT u1459
+Hàm: SolveImplUsingEigen(CompressedRowSparseMatrix * A, double * rhs_and_solution)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicSparseNormalCholeskySolver
+Vị trí: internal/ceres/dynamic_sparse_normal_cholesky_solver.cc, dòng 105–172
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   "DynamicSparseNormalCholeskySolver::Eigen::Solve"
+    A->num_rows(), A->num_cols(), A->num_nonzeros(), A->mutable_rows(), A->mutable_cols(), A->mutable_values()
+    a.transpose() * a
+    summary.num_iterations = 1
+    summary.termination_type = LinearSolverTerminationType::SUCCESS
+    summary.message = "Success."
+    solver.analyzePattern(lhs)                                     → 2
+2   solver.dumpMemory(ss)                                          → 3
+3   event_logger.AddEvent("Analyze")                               → 4
+4   if (solver.info() != Eigen::Success)                           đúng → 5   sai → 6
+5   summary.termination_type = LinearSolverTerminationType::FATAL_ERROR
+    summary.message = "Eigen failure. Unable to find symbolic factorization."   → END
+6   solver.factorize(lhs)
+    event_logger.AddEvent("Factorize")                             → 7
+7   if (solver.info() != Eigen::Success)                           đúng → 8   sai → 9
+8   summary.termination_type = LinearSolverTerminationType::FAILURE
+    summary.message = "Eigen failure. Unable to find numeric factorization."   → END
+9   VectorRef(rhs_and_solution, lhs.cols()) = solver.solve(rhs)
+    event_logger.AddEvent("Solve")                                 → 10
+10  if (solver.info() != Eigen::Success)                           đúng → 11   sai → END
+11  summary.termination_type = LinearSolverTerminationType::FAILURE
+    summary.message = "Eigen failure. Unable to do triangular solve."   → END

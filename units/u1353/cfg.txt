@@ -1,0 +1,29 @@
+UNIT u1353
+Hàm: PopulateJacobianRowAndColumnBlockVectors(const Program * program, CompressedRowSparseMatrix * jacobian)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowJacobianWriter
+Vị trí: internal/ceres/compressed_row_jacobian_writer.cc, dòng 48–69
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const auto &parameter_blocks = program->parameter_blocks()
+    auto &col_blocks = *(jacobian->mutable_col_blocks())
+    col_blocks.resize(parameter_blocks.size())
+    int col_pos = 0
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < parameter_blocks.size()               đúng → 3   sai → 5
+3   col_blocks[i].size = parameter_blocks[i]->TangentSize()
+    col_blocks[i].position = col_pos
+    col_pos += col_blocks[i].size                                  → 4
+4   ++i                                                            → 2
+5   const auto &residual_blocks = program->residual_blocks()
+    auto &row_blocks = *(jacobian->mutable_row_blocks())
+    row_blocks.resize(residual_blocks.size())
+    int row_pos = 0
+    int i = 0                                                      → 6
+6   vòng for, điều kiện: i < residual_blocks.size()                đúng → 7   sai → END
+7   row_blocks[i].size = residual_blocks[i]->NumResiduals()
+    row_blocks[i].position = row_pos
+    row_pos += row_blocks[i].size                                  → 8
+8   ++i                                                            → 6

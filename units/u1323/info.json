@@ -6,7 +6,6 @@
   69,
   77
  ],
- "signature": "ceres::Covariance::GetCovarianceBlockInTangentSpace",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1323
+ "order": 1323,
+ "short_name": "GetCovarianceBlockInTangentSpace",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Covariance",
+ "class_is_template": false,
+ "params": "(const double * parameter_block1, const double * parameter_block2, double * covariance_block)",
+ "return_type": "bool",
+ "is_const": true
 }

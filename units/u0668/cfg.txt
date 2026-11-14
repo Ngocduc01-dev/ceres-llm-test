@@ -1,0 +1,10 @@
+UNIT u0668
+Hàm: mutable_matrix()  → trả về Matrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 105–105
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return &m_   → END

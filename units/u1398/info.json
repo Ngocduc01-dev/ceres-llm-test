@@ -6,7 +6,6 @@
   41,
   50
  ],
- "signature": "ceres::internal::ScratchEvaluatePreparer::Create",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1398
+ "order": 1398,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ScratchEvaluatePreparer",
+ "class_is_template": false,
+ "params": "(const Program & program, unsigned int num_threads)",
+ "return_type": "std::unique_ptr<ScratchEvaluatePreparer[]>",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   56,
   67
  ],
- "signature": "ceres::internal::BlockRandomAccessDenseMatrix::GetCell",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 649
+ "order": 649,
+ "short_name": "GetCell",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessDenseMatrix",
+ "class_is_template": false,
+ "params": "(const int row_block_id, const int col_block_id, int * row, int * col, int * row_stride, int * col_stride)",
+ "return_type": "CellInfo *",
+ "is_const": false
 }

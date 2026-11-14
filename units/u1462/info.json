@@ -6,7 +6,6 @@
   93,
   96
  ],
- "signature": "ceres::internal::CompressedRowJacobianWriter::CreateEvaluatePreparers",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1462
+ "order": 1462,
+ "short_name": "CreateEvaluatePreparers",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowJacobianWriter",
+ "class_is_template": false,
+ "params": "(int num_threads)",
+ "return_type": "std::unique_ptr<ScratchEvaluatePreparer[]>",
+ "is_const": false
 }

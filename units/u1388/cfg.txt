@@ -1,0 +1,15 @@
+UNIT u1388
+Hàm: SetParameterBlockStatePtrsToUserStatePtrs()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 100–108
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   for (auto *parameter_block : parameter_blocks_)                đúng → 2   sai → 6
+2   auto *parameter_block                                          → 3
+3   if (!parameter_block->IsConstant() && !parameter_block->SetState(parameter_block->user_state()))   đúng → 4   sai → 5
+4   return false                                                   → END
+5   ++ (bước tiếp của vòng for)                                    → 1
+6   return true                                                    → END

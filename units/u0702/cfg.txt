@@ -1,0 +1,13 @@
+UNIT u0702
+Hàm: NumScalarEntries(const std::vector<Block> & blocks)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/block_structure.h, dòng 184–191
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (blocks.empty())                                            đúng → 2   sai → 3
+2   return 0                                                       → END
+3   auto &block = blocks.back()
+    return block.position + block.size                             → END

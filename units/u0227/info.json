@@ -6,7 +6,6 @@
   88,
   88
  ],
- "signature": "ceres::internal::CellInfo::CellInfo",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 227
+ "order": 227,
+ "short_name": "CellInfo",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::CellInfo",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0389
+Hàm: HasParameterBlock(const double * values) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 822–825
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (parameter_block_map_.find(const_cast<double *>(values) (CXXConstCastExpr, NoOp, double *)) != parameter_block_map_.end())   → END

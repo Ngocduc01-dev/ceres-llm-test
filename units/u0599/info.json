@@ -6,7 +6,6 @@
   87,
   97
  ],
- "signature": "ceres::internal::(anonymous)::DecrementValueOrDeleteKey",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 599
+ "order": 599,
+ "short_name": "DecrementValueOrDeleteKey",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const KeyType key, std::map<KeyType, int>* container)",
+ "return_type": "void",
+ "is_const": false
 }

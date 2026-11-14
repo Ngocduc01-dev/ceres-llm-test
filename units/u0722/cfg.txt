@@ -1,0 +1,20 @@
+UNIT u0722
+Hàm: SquaredColumnNorm(double * x) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 73–87
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const int num_rows = m_.rows()
+    const int num_cols = m_.cols()
+    std::fill_n(x, num_cols, 0.)
+    const double *m = m_.data()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_rows                              đúng → 3   sai → END
+3   int j = 0                                                      → 4
+4   vòng for, điều kiện: j < num_cols                              đúng → 5   sai → 7
+5   x[j] += (*m) * (*m)                                            → 6
+6   ++j                                                            → 4
+7   ++i                                                            → 2

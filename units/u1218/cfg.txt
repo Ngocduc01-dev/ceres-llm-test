@@ -1,0 +1,54 @@
+UNIT u1218
+Hàm: CreateRandomMatrix(const BlockSparseMatrix::RandomMatrixOptions & options, std::mt19937 & prng, bool use_page_locked_memory)  → trả về std::unique_ptr<BlockSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 711–781
+
+Số điểm rẽ nhánh: 6 (và 10 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(options.num_row_blocks, 0)                            đúng → 2   sai → DỪNG
+2   CHECK_GT(options.min_row_block_size, 0)                        đúng → 3   sai → DỪNG
+3   CHECK_GT(options.max_row_block_size, 0)                        đúng → 4   sai → DỪNG
+4   CHECK_LE(options.min_row_block_size, options.max_row_block_size)   đúng → 5   sai → DỪNG
+5   CHECK_GT(options.block_density, 0.0)                           đúng → 6   sai → DỪNG
+6   CHECK_LE(options.block_density, 1.0)                           đúng → 7   sai → DỪNG
+7   options.min_col_block_size, options.max_col_block_size
+    options.min_row_block_size, options.max_row_block_size         → 8
+8   if (options.col_blocks.empty())                                đúng → 9   sai → 28
+9   CHECK_GT(options.num_col_blocks, 0)                            đúng → 10   sai → DỪNG
+10  CHECK_GT(options.min_col_block_size, 0)                        đúng → 11   sai → DỪNG
+11  CHECK_GT(options.max_col_block_size, 0)                        đúng → 12   sai → DỪNG
+12  CHECK_LE(options.min_col_block_size, options.max_col_block_size)   đúng → 13   sai → DỪNG
+13  int col_block_position = 0
+    int i = 0                                                      → 14
+14  vòng for, điều kiện: i < options.num_col_blocks                đúng → 15   sai → 17
+15  const int col_block_size = col_distribution(prng)
+    bs->cols.emplace_back(col_block_size, col_block_position)
+    col_block_position += col_block_size                           → 16
+16  ++i                                                            → 14
+17  bool matrix_has_blocks = false
+    0., 1.                                                         → 18
+18  while (!matrix_has_blocks)                                     đúng → 19   sai → 27
+19  vòng for, điều kiện: r < options.num_row_blocks                đúng → 20   sai → 18
+20  const int row_block_size = row_distribution(prng)
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = row_block_size
+    row.block.position = row_block_position
+    row_block_position += row_block_size
+    int c = 0                                                      → 21
+21  vòng for, điều kiện: c < bs->cols.size()                       đúng → 22   sai → 26
+22  if (uniform01(prng) > options.block_density)                   đúng → 23   sai → 25
+23  continue                                                       → 24
+24  ++c                                                            → 21
+25  row.cells.emplace_back()
+    Cell &cell = row.cells.back()
+    cell.block_id = c
+    cell.position = value_position
+    value_position += row_block_size * bs->cols[c].size
+    matrix_has_blocks = true                                       → 24
+26  ++r                                                            → 19
+27  double *values = matrix->mutable_values()
+    std::generate_n (ImplicitCastExpr, FunctionToPointerDecay, double *(*)(double *, int, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:776:39)))(values, matrix->num_nonzeros(), [&standard_normal_distribution, &prng] {)   → END
+28  bs->cols = options.col_blocks                                  → 17

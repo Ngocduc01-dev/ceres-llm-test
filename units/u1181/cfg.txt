@@ -1,0 +1,15 @@
+UNIT u1181
+Hàm: CgnrSolver(LinearSolver::Options options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CgnrSolver
+Vị trí: internal/ceres/cgnr_solver.cc, dòng 124–134
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   TypedLinearSolver() (Base initializer)
+    options_(std::move(options)) (Member initializer)
+    preconditioner_() (Member initializer)
+    cg_solution_() (Member initializer)
+    scratch_(?) (Member initializer)                               → 2
+2   LOG(FATAL)                                                     đúng → END   sai → DỪNG

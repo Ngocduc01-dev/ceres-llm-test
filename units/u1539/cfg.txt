@@ -1,0 +1,16 @@
+UNIT u1539
+Hàm: ceres_solve(ceres_problem_t * c_problem)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 171–185
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   reinterpret_cast<Problem *>(c_problem) (CXXReinterpretCastExpr, BitCast, Problem *)
+    auto *problem = reinterpret_cast<Problem *>(c_problem)
+    options.max_num_iterations = 100
+    options.linear_solver_type = ceres::DENSE_QR
+    options.minimizer_progress_to_stdout = true
+    ceres::Solve(options, problem, &summary)
+    std::cout << summary.FullReport() << "\n"                      → END

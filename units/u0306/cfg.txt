@@ -1,0 +1,10 @@
+UNIT u0306
+Hàm: NumResiduals() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientProblemEvaluator
+Vị trí: internal/ceres/gradient_problem_evaluator.h, dòng 88–88
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return 1   → END

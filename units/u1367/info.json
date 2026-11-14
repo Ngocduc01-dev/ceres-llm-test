@@ -6,7 +6,6 @@
   49,
   97
  ],
- "signature": "ceres::internal::ImplicitSchurComplement::Init",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1367
+ "order": 1367,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ImplicitSchurComplement",
+ "class_is_template": false,
+ "params": "(const BlockSparseMatrix & A, const double * D, const double * b)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,17 @@
+UNIT u1101
+Hàm: StringtoDumpFormatType(std::string value, DumpFormatType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 380–385
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)               → 2
+2   if (value == "CONSOLE")         đúng → 3   sai → 4
+3   *type = CONSOLE
+    return true                     → END
+4   if (value == "TEXTFILE")        đúng → 5   sai → 6
+5   *type = TEXTFILE
+    return true                     → END
+6   return false                    → END

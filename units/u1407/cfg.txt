@@ -1,0 +1,25 @@
+UNIT u1407
+Hàm: EvaluateResidualBlock(ResidualBlock * residual_block, bool apply_loss_function, bool new_point, double * cost, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 748–784
+
+Số điểm rẽ nhánh: 5 (và 1 lệnh CHECK)
+
+START → 1
+1   auto evaluation_callback = program_->mutable_evaluation_callback()   → 2
+2   if (evaluation_callback)                                       đúng → 3   sai → 4
+3   evaluation_callback->PrepareForEvaluation(jacobians != nullptr, new_point)   → 4
+4   ParameterBlock *const *parameter_blocks = residual_block->parameter_blocks()
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 6   sai → 11
+6   ParameterBlock *parameter_block = parameter_blocks[i]          → 7
+7   if (parameter_block->IsConstant())                             đúng → 8   sai → 10
+8   if (jacobians != nullptr && jacobians[i] != nullptr)           đúng → END   sai → 9
+9   ++i                                                            → 5
+10  CHECK(parameter_block->SetState(parameter_block->user_state()))   đúng → 9   sai → DỪNG
+11  double dummy_cost = 0.
+    residual_block->NumScratchDoublesForEvaluate()                 → 12
+12  cost ? ... : ...                                               đúng → 13   sai → 13
+13  return residual_block->Evaluate(apply_loss_function, cost ? cost : &dummy_cost, residuals, jacobians, scratch.data())   → END

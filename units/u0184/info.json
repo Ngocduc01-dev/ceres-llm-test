@@ -6,7 +6,6 @@
   302,
   306
  ],
- "signature": "ceres::EuclideanManifold::MinusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 184
+ "order": 184,
+ "short_name": "MinusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EuclideanManifold",
+ "class_is_template": true,
+ "params": "(const double * x_ptr, double * jacobian_ptr)",
+ "return_type": "bool",
+ "is_const": true
 }

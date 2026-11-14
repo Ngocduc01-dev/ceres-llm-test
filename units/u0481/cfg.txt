@@ -1,0 +1,12 @@
+UNIT u0481
+Hàm: LowerBound(int index) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 127–130
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   lower_bounds_ ? ... : ...                                      đúng → 2   sai → 3
+2   operator[]                                                     → 3
+3   return (lower_bounds_ ? lower_bounds_[index] : -std::numeric_limits<double>::max())   → END

@@ -1,0 +1,17 @@
+UNIT u1099
+Hàm: StringToVisibilityClusteringType(std::string value, VisibilityClusteringType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 335–341
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)                      → 2
+2   if (value == "CANONICAL_VIEWS")        đúng → 3   sai → 4
+3   *type = CANONICAL_VIEWS
+    return true                            → END
+4   if (value == "SINGLE_LINKAGE")         đúng → 5   sai → 6
+5   *type = SINGLE_LINKAGE
+    return true                            → END
+6   return false                           → END

@@ -6,7 +6,6 @@
   47,
   47
  ],
- "signature": "ceres::internal::ContextImpl::ContextImpl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 27,
- "order": 840
+ "order": 840,
+ "short_name": "ContextImpl",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ContextImpl",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

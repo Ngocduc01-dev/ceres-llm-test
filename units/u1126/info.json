@@ -6,7 +6,6 @@
   93,
   136
  ],
- "signature": "ceres::internal::CanonicalViewsClustering::ComputeClustering",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1126
+ "order": 1126,
+ "short_name": "ComputeClustering",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CanonicalViewsClustering",
+ "class_is_template": false,
+ "params": "(const CanonicalViewsClusteringOptions & options, const WeightedGraph<int> & graph, std::vector<int> * centers, IntMap * membership)",
+ "return_type": "void",
+ "is_const": false
 }

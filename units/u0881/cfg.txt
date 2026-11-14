@@ -1,0 +1,9 @@
+UNIT u0881
+Hàm: ~Problem()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 48–48
+
+Số điểm rẽ nhánh: 0
+
+START → END

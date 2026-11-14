@@ -1,0 +1,15 @@
+UNIT u1275
+Hàm: SchurStructureToString(const int row_block_size, const int e_block_size, const int f_block_size)  → trả về std::string
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 656–672
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   (row_block_size == Eigen::Dynamic) ? ... : ...                 đúng → 2   sai → 2
+2   const std::string row = (row_block_size == Eigen::Dynamic) ? "d" : internal::StringPrintf("%d", row_block_size)   → 3
+3   (e_block_size == Eigen::Dynamic) ? ... : ...                   đúng → 4   sai → 4
+4   const std::string e = (e_block_size == Eigen::Dynamic) ? "d" : internal::StringPrintf("%d", e_block_size)   → 5
+5   (f_block_size == Eigen::Dynamic) ? ... : ...                   đúng → 6   sai → 6
+6   const std::string f = (f_block_size == Eigen::Dynamic) ? "d" : internal::StringPrintf("%d", f_block_size)   → END

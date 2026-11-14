@@ -6,7 +6,6 @@
   82,
   86
  ],
- "signature": "ceres::DynamicNumericDiffCostFunction::DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 622
+ "order": 622,
+ "short_name": "DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::DynamicNumericDiffCostFunction",
+ "class_is_template": true,
+ "params": "(const CostFunctor * functor, Ownership ownership, const NumericDiffOptions & options)",
+ "return_type": null,
+ "is_const": false
 }

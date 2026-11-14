@@ -1,0 +1,11 @@
+UNIT u0823
+Hàm: matrix() const  → trả về const CompressedRowSparseMatrix &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockCRSJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.h, dòng 90–90
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return * m_                                                    → END

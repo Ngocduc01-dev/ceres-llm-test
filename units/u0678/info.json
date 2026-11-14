@@ -6,7 +6,6 @@
   71,
   71
  ],
- "signature": "ceres::internal::VertexDegreeLessThan::VertexDegreeLessThan<Vertex>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 678
+ "order": 678,
+ "short_name": "VertexDegreeLessThan<Vertex>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::VertexDegreeLessThan",
+ "class_is_template": true,
+ "params": "(const Graph<Vertex> & graph)",
+ "return_type": null,
+ "is_const": false
 }

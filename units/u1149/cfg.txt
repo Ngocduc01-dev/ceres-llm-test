@@ -1,0 +1,14 @@
+UNIT u1149
+Hàm: DynamicCompressedRowSparseMatrix(int num_rows, int num_cols, int initial_max_num_nonzeros)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DynamicCompressedRowSparseMatrix
+Vị trí: internal/ceres/dynamic_compressed_row_sparse_matrix.cc, dòng 37–42
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CompressedRowSparseMatrix(num_rows, num_cols, initial_max_num_nonzeros) (Base initializer)
+    dynamic_cols_() (Member initializer)
+    dynamic_values_() (Member initializer)
+    dynamic_cols_.resize(num_rows)
+    dynamic_values_.resize(num_rows)                               → END

@@ -1,0 +1,10 @@
+UNIT u1073
+Hàm: RightMultiplyAndAccumulate(const Vector & x, Vector & y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearOperatorAdapter
+Vị trí: internal/ceres/conjugate_gradients_solver.h, dòng 69–71
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   linear_operator_.RightMultiplyAndAccumulate(x, y)   → END

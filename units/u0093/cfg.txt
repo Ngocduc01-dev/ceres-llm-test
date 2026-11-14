@@ -1,0 +1,11 @@
+UNIT u0093
+Hàm: operator>=(xem mã nguồn – hàm được sinh ra từ macro)  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 413–413
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator>=<Jet<double, 2>, int, nullptr> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return AsScalar (ImplicitCastExpr, FunctionToPointerDecay, const double &(*)(const Jet<double, 2> &) noexcept(noexcept(AsScalar(value.a))))(f) >= AsScalar(g)   → END

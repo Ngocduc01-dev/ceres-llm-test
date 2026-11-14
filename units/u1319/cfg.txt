@@ -1,0 +1,11 @@
+UNIT u1319
+Hàm: ToCompressedRowSparseMatrix() const  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 462–472
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SetBlockStructureOfCompressedRowSparseMatrix(crs_matrix.get(), block_structure_.get())
+    UpdateCompressedRowSparseMatrix(crs_matrix.get())              → END

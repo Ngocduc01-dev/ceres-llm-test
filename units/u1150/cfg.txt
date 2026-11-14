@@ -1,0 +1,9 @@
+UNIT u1150
+Hàm: Create(const BlockSparseMatrix & m, CompressedRowSparseMatrix::StorageType product_storage_type)  → trả về std::unique_ptr<InnerProductComputer>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 117–122
+
+Số điểm rẽ nhánh: 0
+
+START → END

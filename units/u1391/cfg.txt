@@ -1,0 +1,10 @@
+UNIT u1391
+Hàm: CreateLinearLeastSquaresProblemFromId(int id)  → trả về std::unique_ptr<LinearLeastSquaresProblem>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 49–70
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)   đúng → END   sai → DỪNG

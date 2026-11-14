@@ -1,0 +1,9 @@
+UNIT u0421
+Hàm: Free(void *)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SuiteSparse
+Vị trí: internal/ceres/suitesparse.h, dòng 289–289
+
+Số điểm rẽ nhánh: 0
+
+START → END

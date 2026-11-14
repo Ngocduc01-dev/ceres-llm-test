@@ -6,7 +6,6 @@
   130,
   132
  ],
- "signature": "ceres::TinySolverCostFunctionAdapter::NumParameters",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 985
+ "order": 985,
+ "short_name": "NumParameters",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolverCostFunctionAdapter",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

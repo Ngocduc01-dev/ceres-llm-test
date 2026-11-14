@@ -1,0 +1,11 @@
+UNIT u0670
+Hàm: SetGradientErrorDetected(std::string & error_log)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientCheckingIterationCallback
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 143–148
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   gradient_error_detected_ = true
+    error_log_ += "\n" + error_log                                 → END

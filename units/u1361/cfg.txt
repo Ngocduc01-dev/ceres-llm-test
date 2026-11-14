@@ -1,0 +1,24 @@
+UNIT u1361
+Hàm: GradientChecker(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::GradientChecker
+Vị trí: internal/ceres/gradient_checker.cc, dòng 116–139
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   manifolds_() (Member initializer)
+    function_(function) (Member initializer)
+    finite_diff_cost_function_() (Member initializer)              → 2
+2   CHECK(function != nullptr)                                     đúng → 3   sai → DỪNG
+3   if (manifolds != nullptr)                                      đúng → 4   sai → 10
+4   manifolds_ = *manifolds                                        → 5
+5   const std::vector<int32_t> &parameter_block_sizes = function->parameter_block_sizes()
+    const int num_parameter_blocks = parameter_block_sizes.size()
+    int i = 0                                                      → 6
+6   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 7   sai → 9
+7   finite_diff_cost_function->AddParameterBlock(parameter_block_sizes[i])   → 8
+8   ++i                                                            → 6
+9   finite_diff_cost_function->SetNumResiduals(function->num_residuals())
+    finite_diff_cost_function_ = std::move(finite_diff_cost_function)   → END
+10  manifolds_.resize(function->parameter_block_sizes().size(), nullptr)   → 5

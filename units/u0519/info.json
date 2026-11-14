@@ -6,7 +6,6 @@
   129,
   139
  ],
- "signature": "ceres::LineManifold::LineManifold<AmbientSpaceDimension>",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 519
+ "order": 519,
+ "short_name": "LineManifold<AmbientSpaceDimension>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::LineManifold",
+ "class_is_template": true,
+ "params": "(int size)",
+ "return_type": null,
+ "is_const": false
 }

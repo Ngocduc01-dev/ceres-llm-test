@@ -6,7 +6,6 @@
   124,
   134
  ],
- "signature": "ceres::internal::CgnrSolver::CgnrSolver",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1181
+ "order": 1181,
+ "short_name": "CgnrSolver",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::CgnrSolver",
+ "class_is_template": false,
+ "params": "(LinearSolver::Options options)",
+ "return_type": null,
+ "is_const": false
 }

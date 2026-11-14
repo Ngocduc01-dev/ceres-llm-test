@@ -1,0 +1,30 @@
+UNIT u1499
+Hàm: RemoveParameterBlock(const double * values)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 435–471
+
+Số điểm rẽ nhánh: 5 (và 1 lệnh CHECK)
+
+START → 1
+1   FindWithDefault(parameter_block_map_, const_cast<double *>(values) (CXXConstCastExpr, NoOp, double *), nullptr)
+    ParameterBlock *parameter_block = FindWithDefault(parameter_block_map_, const_cast<double *>(values), nullptr)   → 2
+2   LOG(FATAL)                                                     đúng → 3   sai → DỪNG
+3   if (options_.enable_fast_removal)                              đúng → 4   sai → 8
+4   for (auto *residual_block : residual_blocks_to_remove)         đúng → 5   sai → 7
+5   auto *residual_block
+    InternalRemoveResidualBlock(residual_block)                    → 6
+6   ++ (bước tiếp của vòng for)                                    → 4
+7   DeleteBlockInVector(program_->mutable_parameter_blocks(), parameter_block)   → END
+8   const int num_residual_blocks = NumResidualBlocks()
+    int i = num_residual_blocks - 1                                → 9
+9   vòng for, điều kiện: i >= 0                                    đúng → 10   sai → 7
+10  ResidualBlock *residual_block = (*(program_->mutable_residual_blocks()))[i]
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 11
+11  vòng for, điều kiện: j < num_parameter_blocks                  đúng → 12   sai → 14
+12  if (residual_block->parameter_blocks()[j] == parameter_block)   đúng → 13   sai → 15
+13  InternalRemoveResidualBlock(residual_block)
+    break                                                          → 14
+14  --i                                                            → 9
+15  ++j                                                            → 11

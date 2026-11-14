@@ -6,7 +6,6 @@
   516,
   615
  ],
- "signature": "ceres::internal::DoglegStrategy::ComputeGaussNewtonStep",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1497
+ "order": 1497,
+ "short_name": "ComputeGaussNewtonStep",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(const PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

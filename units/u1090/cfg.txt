@@ -1,0 +1,11 @@
+UNIT u1090
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDiagonalMatrix
+Vị trí: internal/ceres/block_random_access_diagonal_matrix.cc, dòng 102–116
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)   đúng → 2   sai → DỪNG
+2   CHECK(y != nullptr)   đúng → END   sai → DỪNG

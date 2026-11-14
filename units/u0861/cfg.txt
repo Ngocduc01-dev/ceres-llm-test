@@ -1,0 +1,22 @@
+UNIT u0861
+Hàm: ImplicitSchurComplement(const LinearSolver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.cc, dòng 45–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LinearOperator() (Base initializer)
+    options_(options) (Member initializer)
+    compute_ftf_inverse_(?) (Member initializer)
+    A_() (Member initializer)
+    D_(?) (Member initializer)
+    b_(?) (Member initializer)
+    block_diagonal_EtE_inverse_() (Member initializer)
+    block_diagonal_FtF_inverse_() (Member initializer)
+    rhs_() (Member initializer)
+    tmp_rows_() (Member initializer)
+    tmp_e_cols_() (Member initializer)
+    tmp_e_cols_2_() (Member initializer)
+    tmp_f_cols_() (Member initializer)                             → END

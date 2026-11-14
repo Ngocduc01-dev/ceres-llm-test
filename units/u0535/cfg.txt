@@ -1,0 +1,22 @@
+UNIT u0535
+Hàm: AddElementToGroup(const T element, const int group)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::OrderedGroups
+Vị trí: include/ceres/ordered_groups.h, dòng 63–84
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (group < 0)                                                 đúng → 2   sai → 3
+2   return false                                                   → END
+3   element_to_group_.find(element)                                → 4
+4   if (it != element_to_group_.end())                             đúng → 5   sai → 10
+5   if (it->second == group)                                       đúng → 6   sai → 7
+6   return true                                                    → END
+7   group_to_elements_[it->second].erase(element)                  → 8
+8   if (group_to_elements_[it->second].size() == 0)                đúng → 9   sai → 10
+9   group_to_elements_.erase(it->second)                           → 10
+10  element_to_group_[element] = group
+    group_to_elements_[group].insert(element)
+    return true                                                    → END

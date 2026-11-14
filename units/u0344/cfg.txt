@@ -1,0 +1,11 @@
+UNIT u0344
+Hàm: Minus(const double * y, const double * x, double * y_minus_x) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::QuaternionManifold
+Vị trí: internal/ceres/manifold.cc, dòng 277–282
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   QuaternionMinusImpl<CeresQuaternionOrder>(y, x, y_minus_x)
+    return true                                                    → END

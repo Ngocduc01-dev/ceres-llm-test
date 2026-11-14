@@ -1,0 +1,21 @@
+UNIT u0450
+Hàm: ComputeSphereManifoldMinusJacobian(const VT& x, JacobianT* jacobian)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: include/ceres/internal/sphere_manifold_functions.h, dòng 133–159
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ComputeSphereManifoldMinusJacobian<Map<const Matrix<double, 4, 1>>, Map<Matrix<double, 3, 4, 1>>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   constexpr int AmbientSpaceDim = Map<const Matrix<double, 4, 1>>::RowsAtCompileTime
+    const int ambient_size = x.size()
+    const int tangent_size = x.size() - 1
+    double beta
+    ComputeHouseholderVector<Eigen::Map<const Eigen::Matrix<double, 4, 1>>, double, AmbientSpaceDim>(x, &v, &beta)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < tangent_size                          đúng → 3   sai → 5
+3   (*jacobian).row(i) = -beta * v(i) * v.transpose()
+    (*jacobian)(i, i) += 1.                                        → 4
+4   ++i                                                            → 2
+5   (*jacobian) /= x.norm()                                        → END

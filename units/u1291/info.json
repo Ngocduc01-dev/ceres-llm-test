@@ -6,7 +6,6 @@
   60,
   70
  ],
- "signature": "ceres::internal::EventLogger::EventLogger",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1291
+ "order": 1291,
+ "short_name": "EventLogger",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::EventLogger",
+ "class_is_template": false,
+ "params": "(const std::string & logger_name)",
+ "return_type": null,
+ "is_const": false
 }

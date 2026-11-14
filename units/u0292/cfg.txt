@@ -1,0 +1,9 @@
+UNIT u0292
+Hàm: ~EvaluationCallback()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::EvaluationCallback
+Vị trí: internal/ceres/evaluation_callback.cc, dòng 35–35
+
+Số điểm rẽ nhánh: 0
+
+START → END

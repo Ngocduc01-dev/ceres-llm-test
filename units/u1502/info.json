@@ -6,7 +6,6 @@
   795,
   887
  ],
- "signature": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingEigenSparseQR",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1502
+ "order": 1502,
+ "short_name": "ComputeCovarianceValuesUsingEigenSparseQR",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false
 }

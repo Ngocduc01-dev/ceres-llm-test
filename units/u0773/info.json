@@ -6,7 +6,6 @@
   41,
   89
  ],
- "signature": "ceres::internal::CompressedColumnScalarMatrixToBlockMatrix",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 773
+ "order": 773,
+ "short_name": "CompressedColumnScalarMatrixToBlockMatrix",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int * scalar_rows, const int * scalar_cols, const std::vector<Block> & row_blocks, const std::vector<Block> & col_blocks, std::vector<int> * block_rows, std::vector<int> * block_cols)",
+ "return_type": "void",
+ "is_const": false
 }

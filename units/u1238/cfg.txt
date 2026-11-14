@@ -1,0 +1,44 @@
+UNIT u1238
+Hàm: EvaluateCostFunction(const CostFunction * function, const double *const * parameters, const std::vector<const Manifold *> & manifolds, Vector * residuals, std::vector<Matrix> * jacobians, std::vector<Matrix> * local_jacobians)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/gradient_checker.cc, dòng 55–113
+
+Số điểm rẽ nhánh: 6 (và 5 lệnh CHECK)
+
+START → 1
+1   CHECK(residuals != nullptr)                                    đúng → 2   sai → DỪNG
+2   CHECK(jacobians != nullptr)                                    đúng → 3   sai → DỪNG
+3   CHECK(local_jacobians != nullptr)                              đúng → 4   sai → DỪNG
+4   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 5   sai → 10
+5   int block_size = block_sizes.at(i)                             → 6
+6   if (manifolds.at(i) != nullptr)                                đúng → 7   sai → 8
+7   block_size = manifolds.at(i)->TangentSize()                    → 8
+8   local_jacobians->at(i).resize(function->num_residuals(), block_size)
+    local_jacobians->at(i).setZero()
+    local_jacobian_data.at(i) = local_jacobians->at(i).data()      → 9
+9   ++i                                                            → 4
+10  jacobians->resize(num_parameter_blocks)
+    int i = 0                                                      → 11
+11  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 12   sai → 14
+12  jacobians->at(i).resize(function->num_residuals(), block_sizes.at(i))
+    jacobians->at(i).setZero()
+    jacobian_data.at(i) = jacobians->at(i).data()                  → 13
+13  ++i                                                            → 11
+14  CHECK_NE(0, function->num_residuals())                         đúng → 15   sai → DỪNG
+15  residuals->resize(function->num_residuals())
+    residuals->setZero()                                           → 16
+16  if (!function->Evaluate(parameters, residuals->data(), jacobian_data.data()))   đúng → 17   sai → 18
+17  return false                                                   → END
+18  size_t i = 0                                                   → 19
+19  vòng for, điều kiện: i < local_jacobians->size()               đúng → 20   sai → 26
+20  if (manifolds.at(i) == nullptr)                                đúng → 21   sai → 23
+21  local_jacobians->at(i) = jacobians->at(i)                      → 22
+22  ++i                                                            → 19
+23  int ambient_size = manifolds.at(i)->AmbientSize()
+    int tangent_size = manifolds.at(i)->TangentSize()              → 24
+24  CHECK_EQ(jacobians->at(i).cols(), ambient_size)                đúng → 25   sai → DỪNG
+25  ambient_size, tangent_size
+    manifolds.at(i)->PlusJacobian(parameters[i], ambient_J_tangent.data())
+    local_jacobians->at(i).noalias() = jacobians->at(i) * ambient_J_tangent   → 22
+26  return true                                                    → END

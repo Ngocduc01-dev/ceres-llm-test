@@ -6,7 +6,6 @@
   57,
   59
  ],
- "signature": "ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 866
+ "order": 866,
+ "short_name": "IterativeSchurComplementSolver",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::IterativeSchurComplementSolver",
+ "class_is_template": false,
+ "params": "(LinearSolver::Options options)",
+ "return_type": null,
+ "is_const": false
 }

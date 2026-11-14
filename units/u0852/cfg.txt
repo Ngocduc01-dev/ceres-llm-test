@@ -1,0 +1,10 @@
+UNIT u0852
+Hàm: SetZero(Vector & x, ContextImpl * context, int num_threads)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/eigen_vector_ops.h, dòng 63–65
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelSetZero(context, num_threads, x)   → END

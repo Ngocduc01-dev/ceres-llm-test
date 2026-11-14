@@ -6,7 +6,6 @@
   70,
   84
  ],
- "signature": "ceres::internal::ThreadPool::Resize",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1360
+ "order": 1360,
+ "short_name": "Resize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
+ "params": "(int num_threads)",
+ "return_type": "void",
+ "is_const": false
 }

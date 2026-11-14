@@ -1,0 +1,45 @@
+UNIT u1507
+Hàm: DoSearch(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ArmijoLineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 280–365
+
+Số điểm rẽ nhánh: 7 (và 4 lệnh CHECK)
+
+START → 1
+1   CHECK_GE(step_size_estimate, 0.0)                              đúng → 2   sai → DỪNG
+2   CHECK_GT(options().sufficient_decrease, 0.0)                   đúng → 3   sai → DỪNG
+3   CHECK_LT(options().sufficient_decrease, 1.0)                   đúng → 4   sai → DỪNG
+4   CHECK_GT(options().max_num_iterations, 0)                      đúng → 5   sai → DỪNG
+5   LineSearchFunction *function = options().function
+    0., initial_cost, initial_gradient
+    initial_position.vector_x = function->position()
+    initial_position.vector_x_is_valid = true
+    const double descent_direction_max_norm = function->DirectionInfinityNorm()
+    const bool kEvaluateGradient = options().interpolation_type == CUBIC
+    ++summary->num_function_evaluations                            → 6
+6   if (kEvaluateGradient)                                         đúng → 7   sai → 8
+7   ++summary->num_gradient_evaluations                            → 8
+8   function->Evaluate(step_size_estimate, kEvaluateGradient, &current)   → 9
+9   while (!current.value_is_valid || current.value > (initial_cost + options().sufficient_decrease * initial_gradient * current.x))   đúng → 10   sai → 24
+10  ++summary->num_iterations                                      → 11
+11  if (summary->num_iterations >= options().max_num_iterations)   đúng → 12   sai → 15
+12  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: Armijo failed to find a point satisfying the sufficient decrease condition within specified max_num_iterations: %d.", options().max_num_iterations)   → 13
+13  if (!options().is_silent)                                      đúng → 14   sai → 14
+14  return                                                         → END
+15  const double polynomial_minimization_start_time = WallTimeInSeconds()
+    const double step_size = InterpolatingPolynomialMinimizingStepSize(options().interpolation_type, initial_position, previous, current, (options().max_step_contraction * current.x), (options().min_step_contraction * current.x))
+    summary->polynomial_minimization_time_in_seconds += (WallTimeInSeconds() - polynomial_minimization_start_time)   → 16
+16  if (step_size * descent_direction_max_norm < options().min_step_size)   đúng → 17   sai → 20
+17  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: step_size too small: %.5e with descent_direction_max_norm: %.5e.", step_size, descent_direction_max_norm)   → 18
+18  if (!options().is_silent)                                      đúng → 19   sai → 19
+19  return                                                         → END
+20  previous = current
+    ++summary->num_function_evaluations                            → 21
+21  if (kEvaluateGradient)                                         đúng → 22   sai → 23
+22  ++summary->num_gradient_evaluations                            → 23
+23  function->Evaluate(step_size, kEvaluateGradient, &current)     → 9
+24  summary->optimal_point = current
+    summary->success = true                                        → END

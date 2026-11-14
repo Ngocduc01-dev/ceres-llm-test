@@ -6,7 +6,6 @@
   79,
   119
  ],
- "signature": "ceres::internal::(anonymous)::GradientCheckingCostFunction::Evaluate",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1393
+ "order": 1393,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::(anonymous)::GradientCheckingCostFunction",
+ "class_is_template": false,
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true
 }

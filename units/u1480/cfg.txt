@@ -1,0 +1,11 @@
+UNIT u1480
+Hàm: OptionsAreValidForLinearSolver(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 363–387
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)                                      đúng → 2   sai → DỪNG
+2   return OptionsAreValidForCgnr(options, error)   → END

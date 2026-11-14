@@ -6,7 +6,6 @@
   290,
   333
  ],
- "signature": "ceres::internal::SparseSchurComplementSolver::SolveReducedLinearSystem",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1458
+ "order": 1458,
+ "short_name": "SolveReducedLinearSystem",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseSchurComplementSolver",
+ "class_is_template": false,
+ "params": "(const LinearSolver::PerSolveOptions & per_solve_options, double * solution)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false
 }

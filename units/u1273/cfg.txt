@@ -1,0 +1,16 @@
+UNIT u1273
+Hàm: HandleSuccessfulStep()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 823–836
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   x_ = candidate_x_                                              → 2
+2   if (!EvaluateGradientAndJacobian(false))                       đúng → 3   sai → 4
+3   return false                                                   → END
+4   iteration_summary_.step_is_successful = true
+    strategy_->StepAccepted(iteration_summary_.relative_decrease)
+    step_evaluator_->StepAccepted(candidate_cost_, model_cost_change_)
+    return true                                                    → END

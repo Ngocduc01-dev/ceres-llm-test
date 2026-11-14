@@ -1,0 +1,24 @@
+UNIT u1390
+Hàm: IsValid() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 160–188
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < residual_blocks_.size()               đúng → 3   sai → 6
+3   const ResidualBlock *residual_block = residual_blocks_[i]      → 4
+4   if (residual_block->index() != i)                              đúng → END   sai → 5
+5   ++i                                                            → 2
+6   int state_offset = 0
+    int delta_offset = 0
+    int i = 0                                                      → 7
+7   vòng for, điều kiện: i < parameter_blocks_.size()              đúng → 8   sai → 12
+8   const ParameterBlock *parameter_block = parameter_blocks_[i]   → 9
+9   if (parameter_block->index() != i || parameter_block->state_offset() != state_offset || parameter_block->delta_offset() != delta_offset)   đúng → END   sai → 10
+10  state_offset += parameter_blocks_[i]->Size()
+    delta_offset += parameter_blocks_[i]->TangentSize()            → 11
+11  ++i                                                            → 7
+12  return true                                                    → END

@@ -6,7 +6,6 @@
   212,
   219
  ],
- "signature": "ceres::internal::SparseSchurComplementSolver::~SparseSchurComplementSolver",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 509
+ "order": 509,
+ "short_name": "~SparseSchurComplementSolver",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::SparseSchurComplementSolver",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

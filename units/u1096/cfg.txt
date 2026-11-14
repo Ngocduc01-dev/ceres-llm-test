@@ -1,0 +1,17 @@
+UNIT u1096
+Hàm: StringToMinimizerType(std::string value, MinimizerType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 206–211
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)                   → 2
+2   if (value == "TRUST_REGION")        đúng → 3   sai → 4
+3   *type = TRUST_REGION
+    return true                         → END
+4   if (value == "LINE_SEARCH")         đúng → 5   sai → 6
+5   *type = LINE_SEARCH
+    return true                         → END
+6   return false                        → END

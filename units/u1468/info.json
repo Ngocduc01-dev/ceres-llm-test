@@ -6,7 +6,6 @@
   265,
   271
  ],
- "signature": "ceres::internal::CoordinateDescentMinimizer::CreateOrdering",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1468
+ "order": 1468,
+ "short_name": "CreateOrdering",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CoordinateDescentMinimizer",
+ "class_is_template": false,
+ "params": "(const Program & program)",
+ "return_type": "std::shared_ptr<ParameterBlockOrdering>",
+ "is_const": false
 }

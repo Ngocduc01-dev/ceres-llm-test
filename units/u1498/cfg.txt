@@ -1,0 +1,10 @@
+UNIT u1498
+Hàm: AddParameterBlock(double * values, int size)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 358–360
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   InternalAddParameterBlock(values, size)   → END

@@ -1,0 +1,14 @@
+UNIT u0502
+Hàm: InvalidateArray(const int64_t size, double * x)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/array_utils.cc, dòng 69–75
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (x != nullptr)               đúng → 2   sai → END
+2   int64_t i = 0                   → 3
+3   vòng for, điều kiện: i < size   đúng → 4   sai → END
+4   x[i] = kImpossibleValue         → 5
+5   ++i                             → 3

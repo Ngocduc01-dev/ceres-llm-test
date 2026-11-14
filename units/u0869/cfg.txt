@@ -1,0 +1,14 @@
+UNIT u0869
+Hàm: LineSearchFunction(Evaluator * evaluator)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.cc, dòng 88–94
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   evaluator_(evaluator) (Member initializer)
+    position_(evaluator->NumParameters()) (Member initializer)
+    scaled_direction_(evaluator->NumEffectiveParameters()) (Member initializer)
+    initial_evaluator_residual_time_in_seconds(0.) (Member initializer)
+    initial_evaluator_jacobian_time_in_seconds(0.) (Member initializer)   → END

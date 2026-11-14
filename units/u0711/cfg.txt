@@ -1,0 +1,11 @@
+UNIT u0711
+Hàm: operator()(const IterationSummary &)  → trả về CallbackReturnType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientCheckingIterationCallback
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 134–141
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (gradient_error_detected_)   đúng → END   sai → 2
+2   return SOLVER_CONTINUE          → END

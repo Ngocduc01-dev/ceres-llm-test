@@ -6,7 +6,6 @@
   210,
   210
  ],
- "signature": "ceres::CauchyLoss::CauchyLoss",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 174
+ "order": 174,
+ "short_name": "CauchyLoss",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::CauchyLoss",
+ "class_is_template": false,
+ "params": "(double a)",
+ "return_type": null,
+ "is_const": false
 }

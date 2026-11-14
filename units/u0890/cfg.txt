@@ -1,0 +1,16 @@
+UNIT u0890
+Hàm: GetBestSchurTemplateSpecialization(int * row_block_size, int * e_block_size, int * f_block_size)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/schur_templates.cc, dòng 48–224
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   options.row_block_size = *row_block_size
+    options.e_block_size = *e_block_size
+    options.f_block_size = *f_block_size
+    *row_block_size = Eigen::Dynamic
+    *e_block_size = Eigen::Dynamic
+    *f_block_size = Eigen::Dynamic
+    return                                                         → END

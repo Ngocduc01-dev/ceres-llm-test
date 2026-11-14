@@ -6,7 +6,6 @@
   225,
   227
  ],
- "signature": "ceres::internal::BlockSparseMatrix::SetZero",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 829
+ "order": 829,
+ "short_name": "SetZero",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

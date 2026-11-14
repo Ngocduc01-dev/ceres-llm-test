@@ -1,0 +1,51 @@
+UNIT u1213
+Hàm: BlockRandomAccessSparseMatrix(const std::vector<Block> & blocks, const std::set<std::pair<int, int>> & block_pairs, ContextImpl * context, int num_threads)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.cc, dòng 47–98
+
+Số điểm rẽ nhánh: 5 (và 1 lệnh CHECK)
+
+START → 1
+1   BlockRandomAccessMatrix() (Base initializer)
+    blocks_(blocks) (Member initializer)
+    context_(context) (Member initializer)
+    num_threads_(num_threads) (Member initializer)
+    layout_() (Member initializer)
+    bsm_() (Member initializer)                                    → 2
+2   CHECK_LE(blocks.size(), std::numeric_limits<std::int32_t>::max())   đúng → 3   sai → DỪNG
+3   const int num_cols = NumScalarEntries(blocks)
+    const int num_blocks = blocks.size()                           → 4
+4   for (auto &p : block_pairs)                                    đúng → 5   sai → 7
+5   auto &p
+    ++num_cells_at_row[p.first]                                    → 6
+6   ++ (bước tiếp của vòng for)                                    → 4
+7   CFGNewAllocator(CompressedRowBlockStructure *)
+    auto block_structure_ = new CompressedRowBlockStructure
+    block_structure_->cols = blocks
+    block_structure_->rows.resize(num_blocks)
+    block_pairs.begin()
+    int num_nonzeros = 0
+    int row_block_id = 0                                           → 8
+8   vòng for, điều kiện: row_block_id < num_blocks                 đúng → 9   sai → 15
+9   auto &row = block_structure_->rows[row_block_id]
+    row.block = blocks[row_block_id]
+    row.cells.reserve(num_cells_at_row[row_block_id])
+    const int row_block_size = blocks[row_block_id].size           → 10
+10  operator->                                                     → 11
+11  for (; p != block_pairs.end() && row_block_id == p->first; ...)   đúng → 12   sai → 14
+12  const int col_block_id = p->second
+    row.cells.emplace_back(col_block_id, num_nonzeros)
+    num_nonzeros += row_block_size * blocks[col_block_id].size     → 13
+13  ++ p                                                           → 10
+14  ++row_block_id                                                 → 8
+15  bsm_ = std::make_unique<BlockSparseMatrix>(block_structure_)   → 16
+16  vòng for, điều kiện: row_block_id < num_blocks                 đúng → 17   sai → END
+17  const auto &cells = block_structure_->rows[row_block_id].cells   → 18
+18  for (auto &c : cells)                                          đúng → 19   sai → 21
+19  auto &c
+    const int col_block_id = c.block_id
+    double *const data = values + c.position
+    layout_[IntPairToInt64(row_block_id, col_block_id)] = std::make_unique<CellInfo>(data)   → 20
+20  ++ (bước tiếp của vòng for)                                    → 18
+21  ++row_block_id                                                 → 16

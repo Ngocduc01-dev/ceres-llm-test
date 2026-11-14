@@ -1,0 +1,71 @@
+UNIT u1217
+Hàm: GetCovarianceBlockInTangentOrAmbientSpace(const double * original_parameter_block1, const double * original_parameter_block2, bool lift_covariance_to_ambient_space, double * covariance_block) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 128–274
+
+Số điểm rẽ nhánh: 11 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(is_computed_)                                            đúng → 2   sai → DỪNG
+2   CHECK(is_valid_)                                               đúng → 3   sai → DỪNG
+3   if (constant_parameter_blocks_.count(original_parameter_block1) > 0 || constant_parameter_blocks_.count(original_parameter_block2) > 0)   đúng → 4   sai → 9
+4   const ProblemImpl::ParameterMap &parameter_map = problem_->parameter_map()
+    FindOrDie(parameter_map, const_cast<double *>(original_parameter_block1) (CXXConstCastExpr, NoOp, double *))
+    ParameterBlock *block1 = FindOrDie(parameter_map, const_cast<double *>(original_parameter_block1))
+    FindOrDie(parameter_map, const_cast<double *>(original_parameter_block2) (CXXConstCastExpr, NoOp, double *))
+    ParameterBlock *block2 = FindOrDie(parameter_map, const_cast<double *>(original_parameter_block2))
+    const int block1_size = block1->Size()
+    const int block2_size = block2->Size()
+    const int block1_tangent_size = block1->TangentSize()
+    const int block2_tangent_size = block2->TangentSize()          → 5
+5   if (!lift_covariance_to_ambient_space)                         đúng → 6   sai → 8
+6   MatrixRef(covariance_block, block1_tangent_size, block2_tangent_size).setZero()   → 7
+7   return true                                                    → END
+8   MatrixRef(covariance_block, block1_size, block2_size).setZero()   → 7
+9   const double *parameter_block1 = original_parameter_block1
+    const double *parameter_block2 = original_parameter_block2
+    const bool transpose = parameter_block1 > parameter_block2     → 10
+10  if (transpose)                                                 đúng → 11   sai → 12
+11  std::swap(parameter_block1, parameter_block2)                  → 12
+12  const int row_begin = FindOrDie(parameter_block_to_row_index_, parameter_block1)
+    const int col_begin = FindOrDie(parameter_block_to_row_index_, parameter_block2)
+    const int *rows = covariance_matrix_->rows()
+    const int *cols = covariance_matrix_->cols()
+    const int row_size = rows[row_begin + 1] - rows[row_begin]
+    const int *cols_begin = cols + rows[row_begin]
+    int offset = 0                                                 → 13
+13  while (cols_begin[offset] != col_begin && offset < row_size)   đúng → 14   sai → 15
+14  ++offset                                                       → 13
+15  if (offset == row_size)                                        đúng → END   sai → 16
+16  const ProblemImpl::ParameterMap &parameter_map = problem_->parameter_map()
+    FindOrDie(parameter_map, const_cast<double *>(parameter_block1) (CXXConstCastExpr, NoOp, double *))
+    ParameterBlock *block1 = FindOrDie(parameter_map, const_cast<double *>(parameter_block1))
+    FindOrDie(parameter_map, const_cast<double *>(parameter_block2) (CXXConstCastExpr, NoOp, double *))
+    ParameterBlock *block2 = FindOrDie(parameter_map, const_cast<double *>(parameter_block2))
+    const Manifold *manifold1 = block1->manifold()
+    const Manifold *manifold2 = block2->manifold()
+    const int block1_size = block1->Size()
+    const int block1_tangent_size = block1->TangentSize()
+    const int block2_size = block2->Size()
+    const int block2_tangent_size = block2->TangentSize()
+    covariance_matrix_->values() + rows[row_begin], block1_tangent_size, row_size   → 17
+17  if (manifold1 == nullptr && manifold2 == nullptr) || !lift_covariance_to_ambient_space   đúng → 18   sai → 22
+18  if (transpose)                                                 đúng → 19   sai → 21
+19  MatrixRef(covariance_block, block2_tangent_size, block1_tangent_size) = cov.block(0, offset, block1_tangent_size, block2_tangent_size).transpose()   → 20
+20  return true                                                    → END
+21  MatrixRef(covariance_block, block1_tangent_size, block2_tangent_size) = cov.block(0, offset, block1_tangent_size, block2_tangent_size)   → 20
+22  block1_size, block1_tangent_size                               → 23
+23  if (manifold1 == nullptr)                                      đúng → 24   sai → 35
+24  block1_jacobian.setIdentity()                                  → 25
+25  block2_size, block2_tangent_size                               → 26
+26  if (parameter_block1 == parameter_block2)                      đúng → 27   sai → 32
+27  block2_jacobian = block1_jacobian                              → 28
+28  if (transpose)                                                 đúng → 29   sai → 31
+29  MatrixRef(covariance_block, block2_size, block1_size) = block2_jacobian * cov.block(0, offset, block1_tangent_size, block2_tangent_size).transpose() * block1_jacobian.transpose()   → 30
+30  return true                                                    → END
+31  MatrixRef(covariance_block, block1_size, block2_size) = block1_jacobian * cov.block(0, offset, block1_tangent_size, block2_tangent_size) * block2_jacobian.transpose()   → 30
+32  if (manifold2 == nullptr)                                      đúng → 33   sai → 34
+33  block2_jacobian.setIdentity()                                  → 28
+34  manifold2->PlusJacobian(parameter_block2, block2_jacobian.data())   → 28
+35  manifold1->PlusJacobian(parameter_block1, block1_jacobian.data())   → 25

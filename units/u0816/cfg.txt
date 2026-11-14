@@ -1,0 +1,56 @@
+UNIT u0816
+Hàm: ComputeBlockPairsInPreconditioner(const CompressedRowBlockStructure & bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 220–299
+
+Số điểm rẽ nhánh: 14 (và 2 lệnh CHECK)
+
+START → 1
+1   block_pairs_.clear()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_blocks_                           đúng → 3   sai → 5
+3   block_pairs_.insert(std::make_pair(i, i))                      → 4
+4   ++i                                                            → 2
+5   int r = 0
+    const int num_row_blocks = bs.rows.size()
+    const int num_eliminate_blocks = options_.elimination_groups[0]   → 6
+6   while (r < num_row_blocks)                                     đúng → 7   sai → 10
+7   int e_block_id = bs.rows[r].cells.front().block_id             → 8
+8   if (e_block_id >= num_eliminate_blocks)                        đúng → 9   sai → 24
+9   break                                                          → 10
+10  for (; r < num_row_blocks; ...)                                đúng → 11   sai → END
+11  const CompressedRow &row = bs.rows[r]                          → 12
+12  CHECK_GE(row.cells.front().block_id, num_eliminate_blocks)     đúng → 13   sai → DỪNG
+13  int i = 0                                                      → 14
+14  vòng for, điều kiện: i < row.cells.size()                      đúng → 15   sai → 23
+15  const int block1 = row.cells[i].block_id - num_eliminate_blocks   → 16
+16  for (const auto &cell : row.cells)                             đúng → 17   sai → 22
+17  const auto &cell
+    const int block2 = cell.block_id - num_eliminate_blocks        → 18
+18  if (block1 <= block2)                                          đúng → 19   sai → 21
+19  if (IsBlockPairInPreconditioner(block1, block2))               đúng → 20   sai → 21
+20  block_pairs_.insert(std::make_pair(block1, block2))            → 21
+21  ++ (bước tiếp của vòng for)                                    → 16
+22  ++i                                                            → 14
+23  ++r                                                            → 10
+24  for (; r < num_row_blocks; ...)                                đúng → 25   sai → 28
+25  const CompressedRow &row = bs.rows[r]                          → 26
+26  if (row.cells.front().block_id != e_block_id)                  đúng → 27   sai → 36
+27  break                                                          → 28
+28  f_blocks.begin()                                               → 29
+29  vòng for, điều kiện: block1 != f_blocks.end()                  đúng → 30   sai → 6
+30  ++ block2                                                      → 31
+31  for (; block2 != f_blocks.end(); ...)                          đúng → 32   sai → 35
+32  if (IsBlockPairInPreconditioner(* block1, * block2))           đúng → 33   sai → 34
+33  block_pairs_.emplace(* block1, * block2)                       → 34
+34  ++ block2                                                      → 31
+35  ++ block1                                                      → 29
+36  int c = 1                                                      → 37
+37  vòng for, điều kiện: c < row.cells.size()                      đúng → 38   sai → 42
+38  const Cell &cell = row.cells[c]
+    const int f_block_id = cell.block_id - num_eliminate_blocks    → 39
+39  CHECK_GE(f_block_id, 0)                                        đúng → 40   sai → DỪNG
+40  f_blocks.insert(f_block_id)                                    → 41
+41  ++c                                                            → 37
+42  ++r                                                            → 24

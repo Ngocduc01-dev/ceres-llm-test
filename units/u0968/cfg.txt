@@ -1,0 +1,13 @@
+UNIT u0968
+Hàm: FreeValues(double *& values)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 827–841
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)                                   đúng → 2   sai → DỪNG
+2   delete [] values
+    values = nullptr
+    return                                       → END

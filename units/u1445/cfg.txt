@@ -1,0 +1,70 @@
+UNIT u1445
+Hàm: CreateJacobian() const  → trả về std::unique_ptr<SparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowJacobianWriter
+Vị trí: internal/ceres/compressed_row_jacobian_writer.cc, dòng 89–199
+
+Số điểm rẽ nhánh: 12 (và 2 lệnh CHECK)
+
+START → 1
+1   const auto &residual_blocks = program_->residual_blocks()
+    const int total_num_residuals = program_->NumResiduals()
+    const int total_num_effective_parameters = program_->NumEffectiveParameters()
+    unsigned int num_jacobian_nonzeros = total_num_effective_parameters   → 2
+2   for (auto *residual_block : residual_blocks)                   đúng → 3   sai → 11
+3   auto *residual_block
+    const int num_residuals = residual_block->NumResiduals()
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < num_parameter_blocks                  đúng → 5   sai → 10
+5   auto parameter_block = residual_block->parameter_blocks()[j]   → 6
+6   if (!parameter_block->IsConstant())                            đúng → 7   sai → 9
+7   num_jacobian_nonzeros += num_residuals * parameter_block->TangentSize()   → 8
+8   if (num_jacobian_nonzeros > std::numeric_limits<int>::max())   đúng → END   sai → 9
+9   ++j                                                            → 4
+10  ++ (bước tiếp của vòng for)                                    → 2
+11  int *rows = jacobian->mutable_rows()
+    int *cols = jacobian->mutable_cols()
+    int row_pos = 0
+    rows[0] = 0                                                    → 12
+12  for (auto *residual_block : residual_blocks)                   đúng → 13   sai → 41
+13  auto *residual_block
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int num_derivatives = 0
+    int j = 0                                                      → 14
+14  vòng for, điều kiện: j < num_parameter_blocks                  đúng → 15   sai → 19
+15  auto parameter_block = residual_block->parameter_blocks()[j]   → 16
+16  if (!parameter_block->IsConstant())                            đúng → 17   sai → 18
+17  parameter_indices.push_back(parameter_block->index())
+    num_derivatives += parameter_block->TangentSize()              → 18
+18  ++j                                                            → 14
+19  if (adjacent_find(parameter_indices.begin(), parameter_indices.end()) != parameter_indices.end())   đúng → 20   sai → 24
+20  int j = 0                                                      → 21
+21  LOG(FATAL)                                                     đúng → 22   sai → DỪNG
+22  auto parameter_block = residual_block->parameter_blocks()[j]
+    parameter_block_description += parameter_block->ToString() + "\n"   → 23
+23  ++j                                                            → 21
+24  const int num_residuals = residual_block->NumResiduals()
+    int j = 0                                                      → 25
+25  vòng for, điều kiện: j < num_residuals                         đúng → 26   sai → 28
+26  rows[row_pos + j + 1] = rows[row_pos + j] + num_derivatives    → 27
+27  ++j                                                            → 25
+28  int col_pos = 0                                                → 29
+29  for (int parameter_index : parameter_indices)                  đúng → 30   sai → 39
+30  int parameter_index
+    auto parameter_block = program_->parameter_blocks()[parameter_index]
+    const int parameter_block_size = parameter_block->TangentSize()
+    int r = 0                                                      → 31
+31  vòng for, điều kiện: r < num_residuals                         đúng → 32   sai → 37
+32  const int column_block_begin = rows[row_pos + r] + col_pos
+    int c = 0                                                      → 33
+33  vòng for, điều kiện: c < parameter_block_size                  đúng → 34   sai → 36
+34  cols[column_block_begin + c] = parameter_block->delta_offset() + c   → 35
+35  ++c                                                            → 33
+36  ++r                                                            → 31
+37  col_pos += parameter_block_size                                → 38
+38  ++ (bước tiếp của vòng for)                                    → 29
+39  row_pos += num_residuals                                       → 40
+40  ++ (bước tiếp của vòng for)                                    → 12
+41  rows[total_num_residuals])                                     đúng → 42   sai → DỪNG
+42  PopulateJacobianRowAndColumnBlockVectors(program_, jacobian.get())   → END

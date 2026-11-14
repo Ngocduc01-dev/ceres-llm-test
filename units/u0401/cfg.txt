@@ -1,0 +1,10 @@
+UNIT u0401
+Hàm: parameter_blocks() const  → trả về ParameterBlock *const *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.h, dòng 114–116
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return parameter_blocks_.get()   → END

@@ -6,7 +6,6 @@
   237,
   264
  ],
- "signature": "ceres::internal::TripletSparseMatrix::Resize",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 950
+ "order": 950,
+ "short_name": "Resize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "(int new_num_rows, int new_num_cols)",
+ "return_type": "void",
+ "is_const": false
 }

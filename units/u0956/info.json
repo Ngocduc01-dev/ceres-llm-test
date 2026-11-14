@@ -6,7 +6,6 @@
   57,
   89
  ],
- "signature": "ceres::internal::Minimizer::RunCallbacks",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 956
+ "order": 956,
+ "short_name": "RunCallbacks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Minimizer",
+ "class_is_template": false,
+ "params": "(const Minimizer::Options & options, const IterationSummary & iteration_summary, Solver::Summary * summary)",
+ "return_type": "bool",
+ "is_const": false
 }

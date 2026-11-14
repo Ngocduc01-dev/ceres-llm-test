@@ -1,0 +1,17 @@
+UNIT u1360
+Hàm: Resize(int num_threads)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 70–84
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const int num_current_threads = thread_pool_.size()            → 2
+2   if (num_current_threads >= num_threads)                        đúng → 3   sai → 4
+3   return                                                         → END
+4   const int create_num_threads = GetNumAllowedThreads(num_threads) - num_current_threads
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < create_num_threads                    đúng → 6   sai → END
+6   thread_pool_.emplace_back(&ThreadPool::ThreadMainLoop, this)   → 7
+7   ++i                                                            → 5

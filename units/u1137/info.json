@@ -6,7 +6,6 @@
   64,
   96
  ],
- "signature": "ceres::internal::InnerProductComputer::ComputeNonzeros",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1137
+ "order": 1137,
+ "short_name": "ComputeNonzeros",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
+ "params": "(const std::vector<InnerProductComputer::ProductTerm> & product_terms, std::vector<int> * row_nnz)",
+ "return_type": "int",
+ "is_const": false
 }

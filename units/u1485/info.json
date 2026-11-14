@@ -6,7 +6,6 @@
   169,
   169
  ],
- "signature": "ceres::Problem::NumResiduals",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1485
+ "order": 1485,
+ "short_name": "NumResiduals",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

@@ -1,0 +1,10 @@
+UNIT u0485
+Hàm: residual_block_set() const  → trả về const ResidualBlockSet &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.h, dòng 163–167
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(options_.enable_fast_removal)   đúng → END   sai → DỪNG

@@ -1,0 +1,12 @@
+UNIT u0111
+Hàm: tan(const Jet<T, N>& f)  → trả về Jet<T, N>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 636–641
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp tan<double, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double tan_a = tan(f.a)
+    const double tmp = double(1.) + tan_a * tan_a                  → END

@@ -1,0 +1,14 @@
+UNIT u1325
+Hàm: DenseQRSolver(const LinearSolver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DenseQRSolver
+Vị trí: internal/ceres/dense_qr_solver.cc, dòng 45–46
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   TypedLinearSolver() (Base initializer)
+    options_(options) (Member initializer)
+    lhs_() (Member initializer)
+    rhs_() (Member initializer)
+    dense_qr_(DenseQR::Create(options)) (Member initializer)       → END

@@ -1,0 +1,50 @@
+UNIT u0784
+Hàm: CreateSchurComplementGraph(const std::vector<std::set<int>> & visibility)  → trả về std::unique_ptr<WeightedGraph<int>>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/visibility.cc, dòng 76–145
+
+Số điểm rẽ nhánh: 10 (và 1 lệnh CHECK)
+
+START → 1
+1   const time_t start_time = time(nullptr)
+    int num_points = 0                                             → 2
+2   for (const auto &visible : visibility)                         đúng → 3   sai → 7
+3   const auto &visible                                            → 4
+4   if (!visible.empty())                                          đúng → 5   sai → 6
+5   num_points = std::max(num_points, (* visible.rbegin()) + 1)    → 6
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   int i = 0                                                      → 8
+8   vòng for, điều kiện: i < visibility.size()                     đúng → 9   sai → 14
+9   const std::set<int> &visibility_set = visibility[i]            → 10
+10  for (int v : visibility_set)                                   đúng → 11   sai → 13
+11  int v
+    inverse_visibility[v].insert(i)                                → 12
+12  ++ (bước tiếp của vòng for)                                    → 10
+13  i++                                                            → 8
+14  for (const auto &inverse_visibility_set : inverse_visibility)   đúng → 15   sai → 23
+15  const auto &inverse_visibility_set
+    inverse_visibility_set.begin()                                 → 16
+16  vòng for, điều kiện: camera1 != inverse_visibility_set.end()   đúng → 17   sai → 22
+17  ++ camera2                                                     → 18
+18  vòng for, điều kiện: camera2 != inverse_visibility_set.end()   đúng → 19   sai → 21
+19  ++(camera_pairs[std::make_pair(* camera1, * camera2)])         → 20
+20  ++ camera2                                                     → 18
+21  ++ camera1                                                     → 16
+22  ++ (bước tiếp của vòng for)                                    → 14
+23  static init kSelfEdgeWeight                                    đúng → 24   sai → 33
+24  int i = 0                                                      → 25
+25  vòng for, điều kiện: i < visibility.size()                     đúng → 26   sai → 28
+26  graph->AddVertex(i)
+    graph->AddEdge(i, i, kSelfEdgeWeight)                          → 27
+27  ++i                                                            → 25
+28  for (const auto &camera_pair_count : camera_pairs)             đúng → 29   sai → END
+29  const auto &camera_pair_count
+    const int camera1 = camera_pair_count.first.first
+    const int camera2 = camera_pair_count.first.second
+    const int count = camera_pair_count.second                     → 30
+30  DCHECK_NE(camera1, camera2)                                    đúng → 31   sai → DỪNG
+31  const double weight = static_cast<double>(count) / (sqrt(static_cast<double>(visibility[camera1].size() * visibility[camera2].size())))
+    graph->AddEdge(camera1, camera2, weight)                       → 32
+32  ++ (bước tiếp của vòng for)                                    → 28
+33  static constexpr double kSelfEdgeWeight = 1.                   → 24

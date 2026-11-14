@@ -6,7 +6,6 @@
   36,
   36
  ],
- "signature": "ceres::CostFunction::CostFunction",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 842
+ "order": 842,
+ "short_name": "CostFunction",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::CostFunction",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

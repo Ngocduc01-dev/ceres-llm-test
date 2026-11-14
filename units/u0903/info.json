@@ -6,7 +6,6 @@
   42,
   42
  ],
- "signature": "ceres::internal::TrustRegionStrategy::~TrustRegionStrategy",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 903
+ "order": 903,
+ "short_name": "~TrustRegionStrategy",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::TrustRegionStrategy",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

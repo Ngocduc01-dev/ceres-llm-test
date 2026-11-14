@@ -1,0 +1,25 @@
+UNIT u1312
+Hàm: NoEBlockRowsUpdate(const BlockSparseMatrixData & A, const double * b, int row_block_counter, BlockRandomAccessMatrix * lhs, double * rhs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 566–593
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()                              → 2
+2   for (; row_block_counter < bs->rows.size(); ...)               đúng → 3   sai → END
+3   NoEBlockRowOuterProduct(A, row_block_counter, lhs)             → 4
+4   if (!rhs)                                                      đúng → 5   sai → 7
+5   continue                                                       → 6
+6   ++row_block_counter                                            → 2
+7   const CompressedRow &row = bs->rows[row_block_counter]
+    int c = 0                                                      → 8
+8   vòng for, điều kiện: c < row.cells.size()                      đúng → 9   sai → 6
+9   const int block_id = row.cells[c].block_id
+    const int block_size = bs->cols[block_id].size
+    const int block = block_id - num_eliminate_blocks_
+    MatrixTransposeVectorMultiply<Eigen::Dynamic, Eigen::Dynamic, 1>(values + row.cells[c].position, row.block.size, block_size, b + row.block.position, rhs + lhs_row_layout_[block])   → 10
+10  ++c                                                            → 8

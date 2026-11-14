@@ -6,7 +6,6 @@
   185,
   197
  ],
- "signature": "ceres::SubsetManifold::Plus",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 1050
+ "order": 1050,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SubsetManifold",
+ "class_is_template": false,
+ "params": "(const double * x, const double * delta, double * x_plus_delta)",
+ "return_type": "bool",
+ "is_const": true
 }

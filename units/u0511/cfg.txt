@@ -1,0 +1,16 @@
+UNIT u0511
+Hàm: MatrixTransposeMatrixMultiplyEigen(xem mã nguồn – hàm được sinh ra từ macro)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/small_blas.h, dòng 264–278
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixTransposeMatrixMultiplyEigen<-1, -1, -1, -1, 1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   A, num_row_a, num_col_a
+    B, num_row_b, num_col_b
+    C, row_stride_c, col_stride_c
+    Cref, start_row_c, start_col_c, num_col_a, num_col_b
+    if 1 > 0                                                       → 2
+2   block.noalias() += Aref.transpose() * Bref                     → END

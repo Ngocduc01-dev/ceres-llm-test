@@ -1,0 +1,13 @@
+UNIT u0693
+Hàm: RefinedSparseCholesky(std::unique_ptr<SparseCholesky> sparse_cholesky, std::unique_ptr<SparseIterativeRefiner> iterative_refiner)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::RefinedSparseCholesky
+Vị trí: internal/ceres/sparse_cholesky.cc, dòng 120–124
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   SparseCholesky() (Base initializer)
+    sparse_cholesky_(std::move(sparse_cholesky)) (Member initializer)
+    iterative_refiner_(std::move(iterative_refiner)) (Member initializer)
+    lhs_(?) (Member initializer)                                   → END

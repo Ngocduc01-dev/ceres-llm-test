@@ -1,0 +1,20 @@
+UNIT u0497
+Hàm: operator<<(std::ostream& s, const Jet<T, N>& z)  → trả về std::ostream &
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 1278–1289
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator<< (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   s << "[" << z.a << " 
+    "
+    int i = 0                             → 2
+2   vòng for, điều kiện: i < 2            đúng → 3   sai → 7
+3   s << z.v[i]                           → 4
+4   if (i != 2 - 1)                       đúng → 5   sai → 6
+5   s << ", "                             → 6
+6   ++i                                   → 2
+7   s << "]"
+    return s                              → END

@@ -6,7 +6,6 @@
   663,
   668
  ],
- "signature": "ceres::tanh",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 115
+ "order": 115,
+ "short_name": "tanh",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& f)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

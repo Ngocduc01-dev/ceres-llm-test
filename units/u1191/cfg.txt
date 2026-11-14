@@ -1,0 +1,13 @@
+UNIT u1191
+Hàm: ScaleColumns(const double * scale, ContextImpl * context, int num_threads)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 420–449
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   if (transpose_block_structure_ == nullptr || num_threads == 1)   đúng → 2   sai → 3
+2   ScaleColumns(scale)
+    return                                                         → END
+3   CHECK(scale != nullptr)                                        đúng → END   sai → DỪNG

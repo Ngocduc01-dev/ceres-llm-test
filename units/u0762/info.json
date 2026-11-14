@@ -6,7 +6,6 @@
   60,
   93
  ],
- "signature": "ceres::internal::NonlinearConjugateGradient::NextDirection",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 762
+ "order": 762,
+ "short_name": "NextDirection",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NonlinearConjugateGradient",
+ "class_is_template": false,
+ "params": "(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)",
+ "return_type": "bool",
+ "is_const": false
 }

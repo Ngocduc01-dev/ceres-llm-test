@@ -1,0 +1,10 @@
+UNIT u0393
+Hàm: parameter_blocks() const  → trả về const std::vector<ParameterBlock *> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 57–59
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return parameter_blocks_   → END

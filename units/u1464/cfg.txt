@@ -1,0 +1,9 @@
+UNIT u1464
+Hàm: CreateEvaluatePreparers(int num_threads)  → trả về std::unique_ptr<ScratchEvaluatePreparer[]>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicCompressedRowJacobianWriter
+Vị trí: internal/ceres/dynamic_compressed_row_jacobian_writer.cc, dòng 46–49
+
+Số điểm rẽ nhánh: 0
+
+START → END

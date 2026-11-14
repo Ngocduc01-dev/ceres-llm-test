@@ -6,7 +6,6 @@
   540,
   595
  ],
- "signature": "ceres::internal::ReorderProgramForSparseCholesky",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1442
+ "order": 1442,
+ "short_name": "ReorderProgramForSparseCholesky",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type, const ParameterBlockOrdering & parameter_block_ordering, int start_row_block, Program * program, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

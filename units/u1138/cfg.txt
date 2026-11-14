@@ -1,0 +1,10 @@
+UNIT u1138
+Hàm: IsNestedDissectionAvailable(SparseLinearAlgebraLibraryType type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 111–117
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (((type == SUITE_SPARSE) && internal::SuiteSparse::IsNestedDissectionAvailable()) || (type == ACCELERATE_SPARSE) || ((type == EIGEN_SPARSE) && internal::EigenSparse::IsNestedDissectionAvailable()))   → END

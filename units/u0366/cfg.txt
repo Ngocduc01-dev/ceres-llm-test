@@ -1,0 +1,10 @@
+UNIT u0366
+Hàm: set_index(int index)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 137–137
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   index_ = index   → END

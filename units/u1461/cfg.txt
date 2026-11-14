@@ -1,0 +1,49 @@
+UNIT u1461
+Hàm: SolveImpl(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::IterativeSchurComplementSolver
+Vị trí: internal/ceres/iterative_schur_complement_solver.cc, dòng 63–156
+
+Số điểm rẽ nhánh: 7 (và 2 lệnh CHECK)
+
+START → 1
+1   "IterativeSchurComplementSolver::Solve"                        → 2
+2   CHECK(A->block_structure() != nullptr)                         đúng → 3   sai → DỪNG
+3   CHECK(A->transpose_block_structure() != nullptr)               đúng → 4   sai → DỪNG
+4   const int num_eliminate_blocks = options_.elimination_groups[0]   → 5
+5   if (schur_complement_ == nullptr)                              đúng → 6   sai → 7
+6   DetectStructure(*(A->block_structure()), num_eliminate_blocks, &options_.row_block_size, &options_.e_block_size, &options_.f_block_size)
+    schur_complement_ = std::make_unique<ImplicitSchurComplement>(options_)   → 7
+7   schur_complement_->Init(*A, per_solve_options.D, b)
+    const int num_schur_complement_blocks = A->block_structure()->cols.size() - num_eliminate_blocks   → 8
+8   if (num_schur_complement_blocks == 0)                          đúng → END   sai → 9
+9   reduced_linear_system_solution_.resize(schur_complement_->num_rows())
+    reduced_linear_system_solution_.setZero()                      → 10
+10  if (options_.use_spse_initialization)                          đúng → 11   sai → 12
+11  preconditioner_options.type = SCHUR_POWER_SERIES_EXPANSION
+    schur_complement_.get(), options_.max_num_spse_iterations, options_.spse_tolerance, preconditioner_options
+    pse_solver.RightMultiplyAndAccumulate(schur_complement_->rhs().data(), reduced_linear_system_solution_.data())   → 12
+12  CreatePreconditioner(A)                                        → 13
+13  if (preconditioner_ != nullptr)                                đúng → 14   sai → 16
+14  if (!preconditioner_->Update(*A, per_solve_options.D))         đúng → 15   sai → 16
+15  summary.num_iterations = 0
+    summary.termination_type = LinearSolverTerminationType::FAILURE
+    summary.message = "Preconditioner update failed."              → END
+16  cg_options.min_num_iterations = options_.min_num_iterations
+    cg_options.max_num_iterations = options_.max_num_iterations
+    cg_options.residual_reset_period = options_.residual_reset_period
+    cg_options.q_tolerance = per_solve_options.q_tolerance
+    cg_options.r_tolerance = per_solve_options.r_tolerance
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    * schur_complement_
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    * preconditioner_
+    int i = 0                                                      → 17
+17  vòng for, điều kiện: i < 4                                     đúng → 18   sai → 20
+18  scratch[i].resize(schur_complement_->num_cols())               → 19
+19  ++i                                                            → 17
+20  Vector *scratch_ptr[4] = {&scratch[0], &scratch[1], &scratch[2], &scratch[3]}
+    event_logger.AddEvent("Setup")                                 → 21
+21  if (summary.termination_type != LinearSolverTerminationType::FAILURE && summary.termination_type != LinearSolverTerminationType::FATAL_ERROR)   đúng → 22   sai → 23
+22  schur_complement_->BackSubstitute(reduced_linear_system_solution_.data(), x)   → 23
+23  event_logger.AddEvent("Solve")                                 → END

@@ -6,7 +6,6 @@
   716,
   725
  ],
- "signature": "ceres::hypot",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 121
+ "order": 121,
+ "short_name": "hypot",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& x, const Jet<T, N>& y)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

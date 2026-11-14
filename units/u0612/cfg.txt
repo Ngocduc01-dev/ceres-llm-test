@@ -1,0 +1,30 @@
+UNIT u0612
+Hàm: ComputeTraditionalDoglegStep(double * dogleg)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 200–254
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   dogleg, gradient_.rows()
+    const double gradient_norm = gradient_.norm()
+    const double gauss_newton_norm = gauss_newton_step_.norm()     → 2
+2   if (gauss_newton_norm <= radius_)                              đúng → 3   sai → 4
+3   dogleg_step = gauss_newton_step_
+    dogleg_step_norm_ = gauss_newton_norm
+    dogleg_step.array() /= diagonal_.array()                       → END
+4   if (gradient_norm * alpha_ >= radius_)                         đúng → 5   sai → 6
+5   dogleg_step = -(radius_ / gradient_norm) * gradient_
+    dogleg_step_norm_ = radius_
+    dogleg_step.array() /= diagonal_.array()                       → END
+6   const double b_dot_a = -alpha_ * gradient_.dot(gauss_newton_step_)
+    const double a_squared_norm = pow(alpha_ * gradient_norm, 2.)
+    const double b_minus_a_squared_norm = a_squared_norm - 2 * b_dot_a + pow(gauss_newton_norm, 2)
+    const double c = b_dot_a - a_squared_norm
+    const double d = sqrt(c * c + b_minus_a_squared_norm * (pow(radius_, 2.) - a_squared_norm))   → 7
+7   (c <= 0) ? ... : ...                                           đúng → 8   sai → 8
+8   double beta = (c <= 0) ? (d - c) / b_minus_a_squared_norm : (radius_ * radius_ - a_squared_norm) / (d + c)
+    dogleg_step = (-alpha_ * (1. - beta)) * gradient_ + beta * gauss_newton_step_
+    dogleg_step_norm_ = dogleg_step.norm()
+    dogleg_step.array() /= diagonal_.array()                       → END

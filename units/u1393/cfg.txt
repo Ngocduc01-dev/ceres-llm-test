@@ -1,0 +1,25 @@
+UNIT u1393
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::(namespace không tên)::GradientCheckingCostFunction
+Vị trí: internal/ceres/gradient_checking_cost_function.cc, dòng 79–119
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   if (!jacobians)                                                đúng → 2   sai → 3
+2   return function_->Evaluate(parameters, residuals, nullptr)     → END
+3   bool okay = gradient_checker_.Probe(parameters, relative_precision_, &results)   → 4
+4   if (results.return_value == false)                             đúng → 5   sai → 6
+5   return false                                                   → END
+6   const int num_residuals = function_->num_residuals()
+    MatrixRef(residuals, num_residuals, 1) = results.residuals
+    const std::vector<int32_t> &block_sizes = function_->parameter_block_sizes()
+    int k = 0                                                      → 7
+7   vòng for, điều kiện: k < block_sizes.size()                    đúng → 8   sai → 11
+8   if (jacobians[k] != nullptr)                                   đúng → 9   sai → 10
+9   MatrixRef(jacobians[k], results.jacobians[k].rows(), results.jacobians[k].cols()) = results.jacobians[k]   → 10
+10  k++                                                            → 7
+11  if (!okay)                                                     đúng → 12   sai → 13
+12  callback_->SetGradientErrorDetected(error_log)                 → 13
+13  return true                                                    → END

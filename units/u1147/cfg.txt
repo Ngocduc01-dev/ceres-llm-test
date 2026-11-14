@@ -1,0 +1,11 @@
+UNIT u1147
+Hàm: BlockSparseMatrixData(const BlockSparseMatrix & m)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockSparseMatrixData
+Vị trí: internal/ceres/block_sparse_matrix.h, dòng 186–187
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   block_structure_(m.block_structure()) (Member initializer)
+    values_(m.values()) (Member initializer)                       → END

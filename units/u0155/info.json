@@ -6,7 +6,6 @@
   1342,
   1344
  ],
- "signature": "?::std::numeric_limits::infinity",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 155
+ "order": 155,
+ "short_name": "infinity",
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false
 }

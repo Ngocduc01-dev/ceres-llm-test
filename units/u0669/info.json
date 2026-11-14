@@ -6,7 +6,6 @@
   54,
   59
  ],
- "signature": "ceres::internal::ExecutionSummary::IncrementTimeBy",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 669
+ "order": 669,
+ "short_name": "IncrementTimeBy",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ExecutionSummary",
+ "class_is_template": false,
+ "params": "(const std::string & name, const double value)",
+ "return_type": "void",
+ "is_const": false
 }

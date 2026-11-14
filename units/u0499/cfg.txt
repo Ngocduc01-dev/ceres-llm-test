@@ -1,0 +1,16 @@
+UNIT u0499
+Hàm: QuaternionProduct(const T z[4], const T w[4], T zw[4])  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 762–773
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionProduct<double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   DCHECK_NE(z, zw)                                               đúng → 2   sai → DỪNG
+2   DCHECK_NE(w, zw)                                               đúng → 3   sai → DỪNG
+3   zw[0] = z[0] * w[0] - z[1] * w[1] - z[2] * w[2] - z[3] * w[3]
+    zw[1] = z[0] * w[1] + z[1] * w[0] + z[2] * w[3] - z[3] * w[2]
+    zw[2] = z[0] * w[2] - z[1] * w[3] + z[2] * w[0] + z[3] * w[1]
+    zw[3] = z[0] * w[3] + z[1] * w[2] - z[2] * w[1] + z[3] * w[0]   → END

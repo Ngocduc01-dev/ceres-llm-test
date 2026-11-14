@@ -1,0 +1,18 @@
+UNIT u1179
+Hàm: AppendCols(const TripletSparseMatrix & B)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 226–235
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(B.num_rows(), num_rows_)                              đúng → 2   sai → DỪNG
+2   Reserve(num_nonzeros_ + B.num_nonzeros_)
+    int i = 0                                                      → 3
+3   vòng for, điều kiện: i < B.num_nonzeros_                       đúng → 4   sai → 6
+4   rows_.get()[num_nonzeros_] = B.rows()[i]
+    cols_.get()[num_nonzeros_] = B.cols()[i] + num_cols_
+    values_.get()[num_nonzeros_] = B.values()[i]                   → 5
+5   ++i                                                            → 3
+6   num_cols_ = num_cols_ + B.num_cols()                           → END

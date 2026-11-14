@@ -1,0 +1,12 @@
+UNIT u0484
+Hàm: UpperBoundForParameter(int index) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 303–309
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (upper_bounds_.get() == nullptr)         đúng → 2   sai → 3
+2   return std::numeric_limits<double>::max()   → END
+3   return upper_bounds_[index]                 → END

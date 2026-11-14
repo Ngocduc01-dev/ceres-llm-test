@@ -6,7 +6,6 @@
   162,
   162
  ],
- "signature": "ceres::internal::IdentityPreconditioner::IdentityPreconditioner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 384
+ "order": 384,
+ "short_name": "IdentityPreconditioner",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::IdentityPreconditioner",
+ "class_is_template": false,
+ "params": "(int num_rows)",
+ "return_type": null,
+ "is_const": false
 }

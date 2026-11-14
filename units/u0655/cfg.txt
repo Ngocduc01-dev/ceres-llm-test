@@ -1,0 +1,11 @@
+UNIT u0655
+Hàm: LinearOperatorAdapter(LinearOperator & linear_operator)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LinearOperatorAdapter
+Vị trí: internal/ceres/conjugate_gradients_solver.h, dòng 66–67
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ConjugateGradientsLinearOperator() (Base initializer)
+    linear_operator_(linear_operator) (Member initializer)         → END

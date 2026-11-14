@@ -1,0 +1,48 @@
+UNIT u1301
+Hàm: Init(const Program & program, const ProblemImpl::ParameterMap & parameter_map, const ParameterBlockOrdering & ordering, std::string *)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CoordinateDescentMinimizer
+Vị trí: internal/ceres/coordinate_descent_minimizer.cc, dòng 64–126
+
+Số điểm rẽ nhánh: 7
+
+START → 1
+1   parameter_blocks_.clear()
+    independent_set_offsets_.clear()
+    independent_set_offsets_.push_back(0)
+    ordering.group_to_elements()                                   → 2
+2   for (const auto &g_t_e : group_to_elements)                    đúng → 3   sai → 9
+3   const auto &g_t_e
+    const auto &elements = g_t_e.second                            → 4
+4   for (double *parameter_block : elements)                       đúng → 5   sai → 7
+5   double *parameter_block
+    parameter_blocks_.push_back(parameter_map.find(parameter_block)->second)
+    parameter_block_index[parameter_blocks_.back()] = parameter_blocks_.size() - 1   → 6
+6   ++ (bước tiếp của vòng for)                                    → 4
+7   independent_set_offsets_.push_back(independent_set_offsets_.back() + elements.size())   → 8
+8   ++ (bước tiếp của vòng for)                                    → 2
+9   const std::vector<ParameterBlock *> &parameter_blocks = program.parameter_blocks()   → 10
+10  for (auto *parameter_block : parameter_blocks)                 đúng → 11   sai → 15
+11  auto *parameter_block                                          → 12
+12  if (!ordering.IsMember(parameter_block->mutable_user_state()))   đúng → 13   sai → 14
+13  parameter_blocks_.push_back(parameter_block)
+    independent_set_offsets_.push_back(independent_set_offsets_.back())   → 14
+14  ++ (bước tiếp của vòng for)                                    → 10
+15  residual_blocks_.resize(parameter_block_index.size())
+    const std::vector<ResidualBlock *> &residual_blocks = program.residual_blocks()   → 16
+16  for (auto *residual_block : residual_blocks)                   đúng → 17   sai → 24
+17  auto *residual_block
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    int j = 0                                                      → 18
+18  vòng for, điều kiện: j < num_parameter_blocks                  đúng → 19   sai → 23
+19  ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]
+    parameter_block_index.find(parameter_block)                    → 20
+20  if (it != parameter_block_index.end())                         đúng → 21   sai → 22
+21  residual_blocks_[it->second].push_back(residual_block)         → 22
+22  ++j                                                            → 18
+23  ++ (bước tiếp của vòng for)                                    → 16
+24  evaluator_options_.linear_solver_type = DENSE_QR
+    evaluator_options_.num_eliminate_blocks = 0
+    evaluator_options_.num_threads = 1
+    evaluator_options_.context = context_
+    return true                                                    → END

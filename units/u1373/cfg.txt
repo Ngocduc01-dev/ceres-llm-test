@@ -1,0 +1,18 @@
+UNIT u1373
+Hàm: OrderingForSparseNormalCholeskyUsingEigenSparse(const LinearSolverOrderingType linear_solver_ordering_type, const TripletSparseMatrix & tsm_block_jacobian_transpose, int * ordering)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/reorder_program.cc, dòng 169–210
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   CreateBlockJacobian(tsm_block_jacobian_transpose)
+    block_jacobian.transpose() * block_jacobian                    → 2
+2   if (linear_solver_ordering_type == ceres::AMD)                 đúng → 3   sai → 8
+3   amd_ordering(block_hessian, perm)                              → 4
+4   int i = 0                                                      → 5
+5   vòng for, điều kiện: i < block_hessian.rows()                  đúng → 6   sai → END
+6   ordering[i] = perm.indices()[i]                                → 7
+7   ++i                                                            → 5
+8   perm.setIdentity(block_hessian.rows())                         → 4

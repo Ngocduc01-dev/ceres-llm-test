@@ -1,0 +1,41 @@
+UNIT u1215
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 304–358
+
+Số điểm rẽ nhánh: 9 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                                            đúng → 2   sai → DỪNG
+2   CHECK(y != nullptr)                                            đúng → 3   sai → DỪNG
+3   if (storage_type_ == StorageType::UNSYMMETRIC)                 đúng → 4   sai → 5
+4   RightMultiplyAndAccumulate(x, y, nullptr, 1)                   → END
+5   if (storage_type_ == StorageType::UPPER_TRIANGULAR)            đúng → 6   sai → 17
+6   int r = 0                                                      → 7
+7   vòng for, điều kiện: r < num_rows_                             đúng → 8   sai → END
+8   int idx = rows_[r]
+    const int idx_end = rows_[r + 1]                               → 9
+9   while (idx < idx_end && r > cols_[idx])                        đúng → 10   sai → 11
+10  ++idx                                                          → 9
+11  for (; idx < idx_end; ...)                                     đúng → 12   sai → 16
+12  const int c = cols_[idx]
+    const double v = values_[idx]
+    y[r] += v * x[c]                                               → 13
+13  if (r != c)                                                    đúng → 14   sai → 15
+14  y[c] += v * x[r]                                               → 15
+15  ++idx                                                          → 11
+16  ++r                                                            → 7
+17  LOG(FATAL)                                                     đúng → 18   sai → DỪNG
+18  int r = 0                                                      → 19
+19  vòng for, điều kiện: r < num_rows_                             đúng → 20   sai → END
+20  int idx = rows_[r]
+    const int idx_end = rows_[r + 1]                               → 21
+21  for (; idx < idx_end && r >= cols_[idx]; ...)                  đúng → 22   sai → 26
+22  const int c = cols_[idx]
+    const double v = values_[idx]
+    y[r] += v * x[c]                                               → 23
+23  if (r != c)                                                    đúng → 24   sai → 25
+24  y[c] += v * x[r]                                               → 25
+25  ++idx                                                          → 21
+26  ++r                                                            → 19

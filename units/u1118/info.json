@@ -6,7 +6,6 @@
   224,
   232
  ],
- "signature": "ceres::StringToLineSearchDirectionType",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1118
+ "order": 1118,
+ "short_name": "StringToLineSearchDirectionType",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::string value, LineSearchDirectionType * type)",
+ "return_type": "bool",
+ "is_const": false
 }

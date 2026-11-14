@@ -6,7 +6,6 @@
   197,
   204
  ],
- "signature": "ceres::MinimizerTypeToString",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 733
+ "order": 733,
+ "short_name": "MinimizerTypeToString",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(MinimizerType type)",
+ "return_type": "const char *",
+ "is_const": false
 }

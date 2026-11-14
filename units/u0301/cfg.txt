@@ -1,0 +1,10 @@
+UNIT u0301
+Hàm: gradient_error_detected() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientCheckingIterationCallback
+Vị trí: internal/ceres/gradient_checking_cost_function.h, dòng 64–64
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return gradient_error_detected_   → END

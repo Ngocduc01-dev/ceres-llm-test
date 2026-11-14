@@ -6,7 +6,6 @@
   900,
   903
  ],
- "signature": "ceres::BesselJ0",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 129
+ "order": 129,
+ "short_name": "BesselJ0",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& f)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

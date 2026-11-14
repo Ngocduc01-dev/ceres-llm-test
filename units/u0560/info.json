@@ -6,7 +6,6 @@
   131,
   131
  ],
- "signature": "ceres::CostFunction::set_num_residuals",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 14,
- "order": 560
+ "order": 560,
+ "short_name": "set_num_residuals",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::CostFunction",
+ "class_is_template": false,
+ "params": "(int num_residuals)",
+ "return_type": "void",
+ "is_const": false
 }

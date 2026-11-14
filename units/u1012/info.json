@@ -6,7 +6,6 @@
   94,
   99
  ],
- "signature": "ceres::internal::Hash64NumWithSeed",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1012
+ "order": 1012,
+ "short_name": "Hash64NumWithSeed",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(uint64_t num, uint64_t c)",
+ "return_type": "uint64_t",
+ "is_const": false
 }

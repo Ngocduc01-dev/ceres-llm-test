@@ -1,0 +1,18 @@
+UNIT u0337
+Hàm: LowRankInverseHessian(int num_parameters, int max_num_corrections, bool use_approximate_eigenvalue_scaling)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::LowRankInverseHessian
+Vị trí: internal/ceres/low_rank_inverse_hessian.cc, dòng 75–85
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LinearOperator() (Base initializer)
+    num_parameters_(num_parameters) (Member initializer)
+    max_num_corrections_(max_num_corrections) (Member initializer)
+    use_approximate_eigenvalue_scaling_(use_approximate_eigenvalue_scaling) (Member initializer)
+    approximate_eigenvalue_scale_(1.) (Member initializer)
+    delta_x_history_(num_parameters, max_num_corrections) (Member initializer)
+    delta_gradient_history_(num_parameters, max_num_corrections) (Member initializer)
+    delta_x_dot_delta_gradient_(max_num_corrections) (Member initializer)
+    indices_() (Member initializer)                                → END

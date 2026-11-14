@@ -1,0 +1,10 @@
+UNIT u0862
+Hàm: block_diagonal_EtE_inverse() const  → trả về const BlockSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.h, dòng 141–143
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return block_diagonal_EtE_inverse_.get()   → END

@@ -6,7 +6,6 @@
   309,
   312
  ],
- "signature": "ceres::RowMajorAdapter3x3",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 643
+ "order": 643,
+ "short_name": "RowMajorAdapter3x3",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(T* pointer)",
+ "return_type": "MatrixAdapter<T, 3, 1>",
+ "is_const": false
 }

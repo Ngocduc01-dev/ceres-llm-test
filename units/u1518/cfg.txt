@@ -1,0 +1,15 @@
+UNIT u1518
+Hàm: ComputeCovarianceValues()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.cc, dòng 500–533
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (options_.algorithm_type == DENSE_SVD)                      đúng → 2   sai → 3
+2   return ComputeCovarianceValuesUsingDenseSVD()                  → END
+3   if (options_.algorithm_type == SPARSE_QR)                      đúng → 4   sai → END
+4   if (options_.sparse_linear_algebra_library_type == EIGEN_SPARSE)   đúng → 5   sai → 6
+5   return ComputeCovarianceValuesUsingEigenSparseQR()             → END
+6   if (options_.sparse_linear_algebra_library_type == SUITE_SPARSE)   đúng → END   sai → END

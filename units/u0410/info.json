@@ -6,7 +6,6 @@
   52,
   55
  ],
- "signature": "ceres::internal::ScratchEvaluatePreparer::Init",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 410
+ "order": 410,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ScratchEvaluatePreparer",
+ "class_is_template": false,
+ "params": "(int max_derivatives_per_residual_block)",
+ "return_type": "void",
+ "is_const": false
 }

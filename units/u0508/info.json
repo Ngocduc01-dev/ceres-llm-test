@@ -6,7 +6,6 @@
   145,
   152
  ],
- "signature": "ceres::ComposedLoss::~ComposedLoss",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 508
+ "order": 508,
+ "short_name": "~ComposedLoss",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::ComposedLoss",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

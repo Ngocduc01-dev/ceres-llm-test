@@ -1,0 +1,12 @@
+UNIT u0638
+Hàm: operator*=(const Jet<T, N> & y)  → trả về Jet<T, N> &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Jet
+Vị trí: include/ceres/jet.h, dòng 254–257
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Jet<double, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   *this = *this * y
+    return *this                      → END

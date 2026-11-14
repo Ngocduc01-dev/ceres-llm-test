@@ -6,7 +6,6 @@
   112,
   167
  ],
- "signature": "ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingSuiteSparse",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 963
+ "order": 963,
+ "short_name": "OrderingForSparseNormalCholeskyUsingSuiteSparse",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const LinearSolverOrderingType linear_solver_ordering_type, const TripletSparseMatrix & tsm_block_jacobian_transpose, const std::vector<ParameterBlock *> & parameter_blocks, const ParameterBlockOrdering & parameter_block_ordering, int * ordering)",
+ "return_type": "void",
+ "is_const": false
 }

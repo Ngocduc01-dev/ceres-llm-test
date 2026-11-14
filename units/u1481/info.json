@@ -6,7 +6,6 @@
   305,
   411
  ],
- "signature": "ceres::internal::Program::RemoveFixedBlocks",
  "branches": 32,
  "cyclomatic": 17,
  "topo_level": 4,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1481
+ "order": 1481,
+ "short_name": "RemoveFixedBlocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

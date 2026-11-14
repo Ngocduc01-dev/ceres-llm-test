@@ -6,7 +6,6 @@
   265,
   268
  ],
- "signature": "ceres::Jet::operator+=",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "ceres::Jet<double, 4>"
  ],
  "called_by_tests": 0,
- "order": 72
+ "order": 72,
+ "short_name": "operator+=",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Jet",
+ "class_is_template": true,
+ "params": "(const T & s)",
+ "return_type": "Jet<T, N> &",
+ "is_const": false
 }

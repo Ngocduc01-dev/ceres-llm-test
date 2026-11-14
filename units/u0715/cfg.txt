@@ -1,0 +1,13 @@
+UNIT u0715
+Hàm: EdgeWeight(const Vertex & vertex1, const Vertex & vertex2) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::WeightedGraph
+Vị trí: internal/ceres/graph.h, dòng 178–186
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp WeightedGraph<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (vertex1 < vertex2)                                         đúng → 2   sai → 3
+2   return FindWithDefault(edge_weights_, std::make_pair(vertex1, vertex2), 0.)   → END
+3   return FindWithDefault(edge_weights_, std::make_pair(vertex2, vertex1), 0.)   → END

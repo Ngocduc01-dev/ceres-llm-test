@@ -6,7 +6,6 @@
   63,
   69
  ],
- "signature": "ceres::internal::LevenbergMarquardtStrategy::StepIsInvalid",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1004
+ "order": 1004,
+ "short_name": "StepIsInvalid",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LevenbergMarquardtStrategy",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

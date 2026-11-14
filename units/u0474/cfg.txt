@@ -1,0 +1,14 @@
+UNIT u0474
+Hàm: FindWithDefault(const Collection& collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)  → trả về const typename Collection::value_type::second_type
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: internal/ceres/map_util.h, dòng 70–80
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FindWithDefault<unordered_map<int, double>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   collection.find(key)          → 2
+2   if (it == collection.end())   đúng → 3   sai → 4
+3   return value                  → END
+4   return it->second             → END

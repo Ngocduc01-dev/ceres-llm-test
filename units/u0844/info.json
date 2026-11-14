@@ -6,7 +6,6 @@
   42,
   44
  ],
- "signature": "ceres::Covariance::Covariance",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 8,
- "order": 844
+ "order": 844,
+ "short_name": "Covariance",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Covariance",
+ "class_is_template": false,
+ "params": "(const Covariance::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

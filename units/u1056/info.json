@@ -6,7 +6,6 @@
   216,
   234
  ],
- "signature": "ceres::SubsetManifold::RightMultiplyByPlusJacobian",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1056
+ "order": 1056,
+ "short_name": "RightMultiplyByPlusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SubsetManifold",
+ "class_is_template": false,
+ "params": "(const double *, const int num_rows, const double * ambient_matrix, double * tangent_matrix)",
+ "return_type": "bool",
+ "is_const": true
 }

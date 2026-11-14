@@ -1,0 +1,29 @@
+UNIT u1214
+Hàm: AppendRows(const CompressedRowSparseMatrix & m)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 480–528
+
+Số điểm rẽ nhánh: 5 (và 4 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(storage_type_, StorageType::UNSYMMETRIC)              đúng → 2   sai → DỪNG
+2   CHECK_EQ(m.num_cols(), num_cols_)                              đúng → 3   sai → DỪNG
+3   (!row_blocks_.empty() && !m.row_blocks().empty()))             đúng → 4   sai → DỪNG
+4   if (m.num_rows() == 0)                                         đúng → 5   sai → 6
+5   return                                                         → END
+6   if (cols_.size() < num_nonzeros() + m.num_nonzeros())          đúng → 7   sai → 8
+7   cols_.resize(num_nonzeros() + m.num_nonzeros())
+    values_.resize(num_nonzeros() + m.num_nonzeros())              → 8
+8   DCHECK_LT(num_nonzeros(), cols_.size())                        đúng → 9   sai → DỪNG
+9   if (m.num_nonzeros() > 0)                                      đúng → 10   sai → 11
+10  std::copy(m.cols(), m.cols() + m.num_nonzeros(), &cols_[num_nonzeros()])
+    std::copy(m.values(), m.values() + m.num_nonzeros(), &values_[num_nonzeros()])   → 11
+11  rows_.resize(num_rows_ + m.num_rows() + 1)
+    int r = 0                                                      → 12
+12  vòng for, điều kiện: r < m.num_rows() + 1                      đúng → 13   sai → 15
+13  rows_[num_rows_ + r] += m.rows()[r]                            → 14
+14  ++r                                                            → 12
+15  num_rows_ += m.num_rows()                                      → 16
+16  if (row_blocks_.empty())                                       đúng → 17   sai → END
+17  return                                                         → END

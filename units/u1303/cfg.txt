@@ -1,0 +1,32 @@
+UNIT u1303
+Hàm: CreateHessianGraph(const Program & program)  → trả về std::unique_ptr<Graph<ParameterBlock *>>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parameter_block_ordering.cc, dòng 126–160
+
+Số điểm rẽ nhánh: 7 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(graph != nullptr)                                        đúng → 2   sai → DỪNG
+2   for (auto *parameter_block : parameter_blocks)                 đúng → 3   sai → 7
+3   auto *parameter_block                                          → 4
+4   if (!parameter_block->IsConstant())                            đúng → 5   sai → 6
+5   graph->AddVertex(parameter_block)                              → 6
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   const std::vector<ResidualBlock *> &residual_blocks = program.residual_blocks()   → 8
+8   for (auto *residual_block : residual_blocks)                   đúng → 9   sai → END
+9   auto *residual_block
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    ParameterBlock *const *parameter_blocks = residual_block->parameter_blocks()
+    int j = 0                                                      → 10
+10  vòng for, điều kiện: j < num_parameter_blocks                  đúng → 11   sai → 20
+11  if (parameter_blocks[j]->IsConstant())                         đúng → 12   sai → 14
+12  continue                                                       → 13
+13  ++j                                                            → 10
+14  int k = j + 1                                                  → 15
+15  vòng for, điều kiện: k < num_parameter_blocks                  đúng → 16   sai → 13
+16  if (parameter_blocks[k]->IsConstant())                         đúng → 17   sai → 19
+17  continue                                                       → 18
+18  ++k                                                            → 15
+19  graph->AddEdge(parameter_blocks[j], parameter_blocks[k])       → 18
+20  ++ (bước tiếp của vòng for)                                    → 8

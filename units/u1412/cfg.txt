@@ -1,0 +1,14 @@
+UNIT u1412
+Hàm: SummarizeReducedProgram(const internal::Program & program, Solver::Summary * summary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 519–528
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   summary->num_parameter_blocks_reduced = program.NumParameterBlocks()
+    summary->num_parameters_reduced = program.NumParameters()
+    summary->num_effective_parameters_reduced = program.NumEffectiveParameters()
+    summary->num_residual_blocks_reduced = program.NumResidualBlocks()
+    summary->num_residuals_reduced = program.NumResiduals()        → END

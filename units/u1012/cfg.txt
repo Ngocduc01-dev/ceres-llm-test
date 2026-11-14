@@ -1,0 +1,12 @@
+UNIT u1012
+Hàm: Hash64NumWithSeed(uint64_t num, uint64_t c)  → trả về uint64_t
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/pair_hash.h, dòng 94–99
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   uint64_t b = 16180339887498948482ULL
+    hash_mix(num, b, c)
+    return c                                                       → END

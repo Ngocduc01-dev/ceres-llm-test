@@ -1,0 +1,12 @@
+UNIT u0731
+Hàm: TrustRegionStrategyTypeToString(TrustRegionStrategyType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 164–171
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)                  nhánh → 2   nhánh → 3
+2   return "DOGLEG"                → END
+3   return "LEVENBERG_MARQUARDT"   → END

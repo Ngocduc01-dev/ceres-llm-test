@@ -1,0 +1,17 @@
+UNIT u0761
+Hàm: AddEdge(const Vertex & vertex1, const Vertex & vertex2, double weight)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::WeightedGraph
+Vị trí: internal/ceres/graph.h, dòng 148–161
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp WeightedGraph<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2 (và 2 lệnh CHECK)
+
+START → 1
+1   DCHECK(vertices_.find(vertex1) != vertices_.end())         đúng → 2   sai → DỪNG
+2   DCHECK(vertices_.find(vertex2) != vertices_.end())         đúng → 3   sai → DỪNG
+3   if (edges_[vertex1].insert(vertex2).second)                đúng → 4   sai → 5
+4   edges_[vertex2].insert(vertex1)                            → 5
+5   if (vertex1 < vertex2)                                     đúng → 6   sai → 7
+6   edge_weights_[std::make_pair(vertex1, vertex2)] = weight   → END
+7   edge_weights_[std::make_pair(vertex2, vertex1)] = weight   → END

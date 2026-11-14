@@ -6,7 +6,6 @@
   450,
   460
  ],
- "signature": "ceres::internal::BlockSparseMatrix::ToCompressedRowSparseMatrixTranspose",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1318
+ "order": 1318,
+ "short_name": "ToCompressedRowSparseMatrixTranspose",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": true
 }

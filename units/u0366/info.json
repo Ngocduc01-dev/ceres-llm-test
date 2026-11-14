@@ -6,7 +6,6 @@
   137,
   137
  ],
- "signature": "ceres::internal::ParameterBlock::set_index",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 366
+ "order": 366,
+ "short_name": "set_index",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "(int index)",
+ "return_type": "void",
+ "is_const": false
 }

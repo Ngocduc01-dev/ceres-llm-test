@@ -6,7 +6,6 @@
   87,
   95
  ],
- "signature": "ceres::internal::CgnrLinearOperator::CgnrLinearOperator",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 835
+ "order": 835,
+ "short_name": "CgnrLinearOperator",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::CgnrLinearOperator",
+ "class_is_template": false,
+ "params": "(const LinearOperator & A, const double * D, ContextImpl * context, int num_threads)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,17 @@
+UNIT u1097
+Hàm: StringToLineSearchType(std::string value, LineSearchType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 243–248
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)             → 2
+2   if (value == "ARMIJO")        đúng → 3   sai → 4
+3   *type = ARMIJO
+    return true                   → END
+4   if (value == "WOLFE")         đúng → 5   sai → 6
+5   *type = WOLFE
+    return true                   → END
+6   return false                  → END

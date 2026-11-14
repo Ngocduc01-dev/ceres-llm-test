@@ -1,0 +1,11 @@
+UNIT u0207
+Hàm: AngleAxisToRotationMatrix(const T* angle_axis, T* R)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/rotation.h, dòng 448–451
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AngleAxisToRotationMatrix<double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   AngleAxisToRotationMatrix(angle_axis, ColumnMajorAdapter3x3(R))   → END

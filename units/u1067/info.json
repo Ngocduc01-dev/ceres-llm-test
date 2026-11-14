@@ -6,7 +6,6 @@
   772,
   790
  ],
- "signature": "ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1067
+ "order": 1067,
+ "short_name": "ComputeCandidatePointAndEvaluateCost",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

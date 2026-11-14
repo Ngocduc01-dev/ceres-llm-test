@@ -6,7 +6,6 @@
   265,
   365
  ],
- "signature": "ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep",
  "branches": 20,
  "cyclomatic": 11,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1395
+ "order": 1395,
+ "short_name": "ComputeSubspaceDoglegStep",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(double * dogleg)",
+ "return_type": "void",
+ "is_const": false
 }

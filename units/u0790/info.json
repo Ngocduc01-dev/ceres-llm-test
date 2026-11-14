@@ -6,7 +6,6 @@
   56,
   86
  ],
- "signature": "ceres::(anonymous)::GradientProblemSolverOptionsToSolverOptions",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 790
+ "order": 790,
+ "short_name": "GradientProblemSolverOptionsToSolverOptions",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const GradientProblemSolver::Options & options)",
+ "return_type": "Solver::Options",
+ "is_const": false
 }

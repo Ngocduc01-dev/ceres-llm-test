@@ -6,7 +6,6 @@
   70,
   70
  ],
- "signature": "ceres::internal::BlockRandomAccessSparseMatrix::~BlockRandomAccessSparseMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 229
+ "order": 229,
+ "short_name": "~BlockRandomAccessSparseMatrix",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

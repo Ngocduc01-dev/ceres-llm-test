@@ -1,0 +1,14 @@
+UNIT u1501
+Hàm: CreateReducedProgram(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error) const  → trả về std::unique_ptr<Program>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 287–303
+
+Số điểm rẽ nhánh: 1 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(removed_parameter_blocks != nullptr)                     đúng → 2   sai → DỪNG
+2   CHECK(fixed_cost != nullptr)                                   đúng → 3   sai → DỪNG
+3   CHECK(error != nullptr)                                        đúng → 4   sai → DỪNG
+4   if (!reduced_program->RemoveFixedBlocks(removed_parameter_blocks, fixed_cost, error))   đúng → END   sai → 5
+5   reduced_program->SetParameterOffsetsAndIndex()                 → END

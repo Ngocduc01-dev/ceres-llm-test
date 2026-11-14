@@ -6,7 +6,6 @@
   198,
   215
  ],
- "signature": "ceres::internal::ResidualBlock::NumScratchDoublesForEvaluate",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 5,
- "order": 1266
+ "order": 1266,
+ "short_name": "NumScratchDoublesForEvaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

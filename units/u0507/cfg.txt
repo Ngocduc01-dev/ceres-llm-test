@@ -1,0 +1,15 @@
+UNIT u0507
+Hàm: TolerantLoss(double a, double b)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::TolerantLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 93–97
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   LossFunction() (Base initializer)
+    a_(a) (Member initializer)
+    b_(b) (Member initializer)
+    c_(b * log(1. + exp(-a / b))) (Member initializer)             → 2
+2   CHECK_GE(a, 0.0)                                               đúng → 3   sai → DỪNG
+3   CHECK_GT(b, 0.0)                                               đúng → END   sai → DỪNG

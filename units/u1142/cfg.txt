@@ -1,0 +1,108 @@
+UNIT u1142
+Hàm: LineSearchOptionsAreValid(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 438–485
+
+Số điểm rẽ nhánh: 14
+
+START → 1
+1   if (!(options.max_lbfgs_rank > 0))                             đúng → 2   sai → 3
+2   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_lbfgs_rank = ") << options.max_lbfgs_rank << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_lbfgs_rank > 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+3   if (!(options.min_line_search_step_size > 0.))                 đúng → 4   sai → 5
+4   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_line_search_step_size = ") << options.min_line_search_step_size << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_line_search_step_size > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+5   if (!(options.max_line_search_step_contraction > 0.))          đúng → 6   sai → 7
+6   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_line_search_step_contraction = ") << options.max_line_search_step_contraction << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_line_search_step_contraction > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+7   if (!(options.max_line_search_step_contraction < 1.))          đúng → 8   sai → 9
+8   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_line_search_step_contraction = ") << options.max_line_search_step_contraction << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_line_search_step_contraction < 1.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+9   if (!(options.max_line_search_step_contraction < options.min_line_search_step_contraction))   đúng → 10   sai → 11
+10  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_line_search_step_contraction = ") << options.max_line_search_step_contraction << ". "
+    ss << std::string("Solver::Options::min_line_search_step_contraction = ") << options.min_line_search_step_contraction << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_line_search_step_contraction")
+    ss << std::string("< Solver::Options::min_line_search_step_contraction.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+11  if (!(options.min_line_search_step_contraction <= 1.))         đúng → 12   sai → 13
+12  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_line_search_step_contraction = ") << options.min_line_search_step_contraction << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_line_search_step_contraction <= 1.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+13  options.minimizer_type == ceres::TRUST_REGION ? ... : ...      đúng → 14   sai → 14
+14  if (!(options.max_num_line_search_step_size_iterations >= (options.minimizer_type == ceres::TRUST_REGION ? 0 : 1)))   đúng → 15   sai → 16
+15  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_num_line_search_step_size_iterations = ") << options.max_num_line_search_step_size_iterations << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_num_line_search_step_size_iterations >= (options.minimizer_type == ceres::TRUST_REGION ? 0 : 1)")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+16  if (!(options.line_search_sufficient_function_decrease > 0.))   đúng → 17   sai → 18
+17  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::line_search_sufficient_function_decrease = ") << options.line_search_sufficient_function_decrease << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::line_search_sufficient_function_decrease > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+18  if (!(options.line_search_sufficient_function_decrease < options.line_search_sufficient_curvature_decrease))   đúng → 19   sai → 20
+19  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::line_search_sufficient_function_decrease = ") << options.line_search_sufficient_function_decrease << ". "
+    ss << std::string("Solver::Options::line_search_sufficient_curvature_decrease = ") << options.line_search_sufficient_curvature_decrease << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::line_search_sufficient_function_decrease")
+    ss << std::string("< Solver::Options::line_search_sufficient_curvature_decrease.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+20  if (!(options.line_search_sufficient_curvature_decrease < 1.))   đúng → 21   sai → 22
+21  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::line_search_sufficient_curvature_decrease = ") << options.line_search_sufficient_curvature_decrease << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::line_search_sufficient_curvature_decrease < 1.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+22  if (!(options.max_line_search_step_expansion > 1.))            đúng → 23   sai → 24
+23  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_line_search_step_expansion = ") << options.max_line_search_step_expansion << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_line_search_step_expansion > 1.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+24  if (options.line_search_direction_type == ceres::BFGS || options.line_search_direction_type == ceres::LBFGS) && options.line_search_type != ceres::WOLFE   đúng → 25   sai → 26
+25  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = std::string("Invalid configuration: Solver::Options::line_search_type = ") + std::string(LineSearchTypeToString(options.line_search_type)) + std::string(". When using (L)BFGS, Solver::Options::line_search_type must be set to WOLFE.")
+    return false                                                   → END
+26  if (options.line_search_interpolation_type == ceres::BISECTION && (options.max_line_search_step_contraction > 0.5 || options.min_line_search_step_contraction < 0.5))   đúng → 27   sai → 27
+27  return true                                                    → END

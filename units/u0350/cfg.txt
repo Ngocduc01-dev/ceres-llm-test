@@ -1,0 +1,12 @@
+UNIT u0350
+Hàm: InsertIfNotPresent(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: internal/ceres/map_util.h, dòng 86–94
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp InsertIfNotPresent<map<int, int>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   collection->insert(typename map<int, int>::value_type(key, value))
+    return ret.second                                              → END

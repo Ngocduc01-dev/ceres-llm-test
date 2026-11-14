@@ -1,0 +1,10 @@
+UNIT u1431
+Hàm: GetParameterBlocksForResidualBlock(const ResidualBlockId residual_block, std::vector<double *> * parameter_blocks) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 192–196
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   impl_->GetParameterBlocksForResidualBlock(residual_block, parameter_blocks)   → END

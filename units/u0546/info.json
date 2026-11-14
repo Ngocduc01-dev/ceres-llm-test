@@ -6,7 +6,6 @@
   789,
   805
  ],
- "signature": "ceres::fmax",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 546
+ "order": 546,
+ "short_name": "fmax",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Lhs& x, const Rhs& y)",
+ "return_type": "decltype(auto)",
+ "is_const": false
 }

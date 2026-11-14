@@ -1,0 +1,10 @@
+UNIT u1145
+Hàm: SetZero(ContextImpl * context, int num_threads)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 229–231
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelSetZero(context, num_threads, values_, num_nonzeros_)   → END

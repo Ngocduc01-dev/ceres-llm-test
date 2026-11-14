@@ -1,0 +1,11 @@
+UNIT u0575
+Hàm: Int64ToIntPair(int64_t index, int * row, int * col) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.h, dòng 103–106
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   *row = index / kRowShift
+    *col = index % kRowShift                             → END

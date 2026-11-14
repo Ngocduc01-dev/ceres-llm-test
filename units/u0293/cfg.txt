@@ -1,0 +1,9 @@
+UNIT u0293
+Hàm: Statistics() const  → trả về std::map<std::string, CallStatistics>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Evaluator
+Vị trí: internal/ceres/evaluator.h, dòng 164–166
+
+Số điểm rẽ nhánh: 0
+
+START → END

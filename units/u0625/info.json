@@ -6,7 +6,6 @@
   199,
   199
  ],
- "signature": "ceres::internal::Make1stOrderPerturbation::Apply",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 625
+ "order": 625,
+ "short_name": "Apply",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Make1stOrderPerturbation",
+ "class_is_template": true,
+ "params": "(const T *, JetT *)",
+ "return_type": "void",
+ "is_const": false
 }

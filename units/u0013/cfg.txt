@@ -1,0 +1,10 @@
+UNIT u0013
+Hàm: num_residuals() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::CostFunction
+Vị trí: include/ceres/cost_function.h, dòng 124–124
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_residuals_   → END

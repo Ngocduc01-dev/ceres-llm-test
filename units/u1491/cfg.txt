@@ -1,0 +1,69 @@
+UNIT u1491
+Hàm: Evaluate(const Problem::EvaluateOptions & evaluate_options, double * cost, std::vector<double> * residuals, std::vector<double> * gradient, CRSMatrix * jacobian)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 585–746
+
+Số điểm rẽ nhánh: 15 (và 1 lệnh CHECK)
+
+START → 1
+1   if (cost == nullptr && residuals == nullptr && gradient == nullptr && jacobian == nullptr)   đúng → 2   sai → 3
+2   return true                                                    → END
+3   (evaluate_options.residual_blocks.size() > 0) ? ... : ...      đúng → 4   sai → 40
+4   *program.mutable_residual_blocks() = ((evaluate_options.residual_blocks.size() > 0) ? evaluate_options.residual_blocks : program_->residual_blocks())
+    const std::vector<double *> &parameter_block_ptrs = evaluate_options.parameter_blocks
+    std::vector<ParameterBlock *> &parameter_blocks = *program.mutable_parameter_blocks()   → 5
+5   if (parameter_block_ptrs.size() == 0)                          đúng → 6   sai → 29
+6   parameter_blocks = program_->parameter_blocks()                → 7
+7   program.SetParameterOffsetsAndIndex()
+    evaluator_options.linear_solver_type = SPARSE_NORMAL_CHOLESKY
+    evaluator_options.num_threads = evaluate_options.num_threads
+    context_impl_->EnsureMinimumThreads(evaluator_options.num_threads - 1)
+    evaluator_options.context = context_impl_
+    evaluator_options.evaluation_callback = program_->mutable_evaluation_callback()
+    CFGNewAllocator(ProgramEvaluator<ScratchEvaluatePreparer, CompressedRowJacobianWriter> *)
+    new ProgramEvaluator<ScratchEvaluatePreparer, CompressedRowJacobianWriter>(evaluator_options, &program)   → 8
+8   if (residuals != nullptr)                                      đúng → 9   sai → 10
+9   residuals->resize(evaluator->NumResiduals())                   → 10
+10  if (gradient != nullptr)                                       đúng → 11   sai → 12
+11  gradient->resize(evaluator->NumEffectiveParameters())          → 12
+12  if (jacobian != nullptr)                                       đúng → 13   sai → 14
+13  tmp_jacobian.reset(down_cast<CompressedRowSparseMatrix *>(evaluator->CreateJacobian().release()))   → 14
+14  program.SetParameterBlockStatePtrsToUserStatePtrs()
+    program.NumParameters()
+    program.ParameterBlocksToStateVector(parameters.data())
+    double tmp_cost = 0
+    evaluator_evaluate_options.apply_loss_function = evaluate_options.apply_loss_function   → 15
+15  residuals != nullptr ? ... : ...                               đúng → 16   sai → 17
+16  operator[]                                                     → 17
+17  gradient != nullptr ? ... : ...                                đúng → 18   sai → 19
+18  operator[]                                                     → 19
+19  bool status = evaluator->Evaluate(evaluator_evaluate_options, parameters.data(), &tmp_cost, residuals != nullptr ? &(*residuals)[0] : nullptr, gradient != nullptr ? &(*gradient)[0] : nullptr, tmp_jacobian.get())   → 20
+20  for (auto *parameter_block : variable_parameter_blocks)        đúng → 21   sai → 23
+21  auto *parameter_block
+    parameter_block->SetVarying()                                  → 22
+22  ++ (bước tiếp của vòng for)                                    → 20
+23  if (status)                                                    đúng → 24   sai → 28
+24  if (cost != nullptr)                                           đúng → 25   sai → 26
+25  *cost = tmp_cost                                               → 26
+26  if (jacobian != nullptr)                                       đúng → 27   sai → 28
+27  tmp_jacobian->ToCRSMatrix(jacobian)                            → 28
+28  program_->SetParameterBlockStatePtrsToUserStatePtrs()
+    program_->SetParameterOffsetsAndIndex()
+    return status                                                  → END
+29  parameter_blocks.resize(parameter_block_ptrs.size())
+    int i = 0                                                      → 30
+30  vòng for, điều kiện: i < parameter_block_ptrs.size()           đúng → 31   sai → 34
+31  parameter_blocks[i] = FindWithDefault(parameter_block_map_, parameter_block_ptrs[i], nullptr)   → 32
+32  LOG(FATAL)                                                     đúng → 33   sai → DỪNG
+33  ++i                                                            → 30
+34  program_->parameter_blocks()
+    program.parameter_blocks()
+    variable_parameter_blocks.reserve(excluded_parameter_blocks.size())   → 35
+35  for (auto *parameter_block : excluded_parameter_blocks)        đúng → 36   sai → 7
+36  auto *parameter_block                                          → 37
+37  if (!parameter_block->IsConstant())                            đúng → 38   sai → 39
+38  variable_parameter_blocks.push_back(parameter_block)
+    parameter_block->SetConstant()                                 → 39
+39  ++ (bước tiếp của vòng for)                                    → 35
+40  operator->                                                     → 4

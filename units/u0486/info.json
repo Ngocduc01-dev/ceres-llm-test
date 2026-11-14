@@ -6,7 +6,6 @@
   51,
   60
  ],
- "signature": "ceres::internal::SetSummaryFinalCost",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 486
+ "order": 486,
+ "short_name": "SetSummaryFinalCost",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(SummaryType* summary)",
+ "return_type": "void",
+ "is_const": false
 }

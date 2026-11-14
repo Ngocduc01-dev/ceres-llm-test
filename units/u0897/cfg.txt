@@ -1,0 +1,12 @@
+UNIT u0897
+Hàm: ThreadPool()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 56–56
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   task_queue_() (Member initializer)
+    thread_pool_() (Member initializer)
+    thread_pool_mutex_() (Member initializer)                      → END

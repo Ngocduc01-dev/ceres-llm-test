@@ -1,0 +1,16 @@
+UNIT u1280
+Hàm: MinTrustRegionRadiusReached()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 698–714
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (iteration_summary_.trust_region_radius > options_.min_trust_region_radius)   đúng → 2   sai → 3
+2   return false                                                   → END
+3   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    solver_summary_->message = StringPrintf("Minimum trust region radius reached. Trust region radius: %e <= %e", iteration_summary_.trust_region_radius, options_.min_trust_region_radius)
+    solver_summary_->termination_type = CONVERGENCE                → 4
+4   if (is_not_silent_)                                            đúng → 5   sai → 5
+5   return true                                                    → END

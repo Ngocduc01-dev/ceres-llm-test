@@ -1,0 +1,25 @@
+UNIT u0549
+Hàm: CheckForDuplicates(std::vector<T> blocks)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/covariance_impl.cc, dòng 72–99
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CheckForDuplicates<pair<const double *, const double *>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   if (it != blocks.end())                                        đúng → 2   sai → END
+2   int i = 0                                                      → 3
+3   vòng for, điều kiện: i < blocks.size()                         đúng → 4   sai → 6
+4   blocks_map[blocks[i]].push_back(i)                             → 5
+5   ++i                                                            → 3
+6   LOG(FATAL)                                                     đúng → 7   sai → DỪNG
+7   duplicates << "("
+    int i = 0                                                      → 8
+8   vòng for, điều kiện: i < blocks_map[* it].size() - 1           đúng → 9   sai → 11
+9   duplicates << blocks_map[* it][i] << ", "                      → 10
+10  ++i                                                            → 8
+11  duplicates << blocks_map[* it].back() << ")"
+    it = std::adjacent_find(it + 1, blocks.end())                  → 12
+12  if (it < blocks.end())                                         đúng → 13   sai → 6
+13  duplicates << " and "                                          → 6

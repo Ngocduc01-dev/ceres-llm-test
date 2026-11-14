@@ -1,0 +1,11 @@
+UNIT u1291
+Hàm: EventLogger(const std::string & logger_name)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::EventLogger
+Vị trí: internal/ceres/wall_time.cc, dòng 60–70
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   events_() (Member initializer)   → 2
+2   return                           → END

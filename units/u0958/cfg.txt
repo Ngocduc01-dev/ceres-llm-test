@@ -1,0 +1,14 @@
+UNIT u0958
+Hàm: ComputeCauchyPoint(SparseMatrix * jacobian)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 184–193
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   jacobian->num_rows()
+    Jg.setZero()
+    (gradient_.array() / diagonal_.array()).matrix()
+    jacobian->RightMultiplyAndAccumulate(scaled_gradient.data(), Jg.data())
+    alpha_ = gradient_.squaredNorm() / Jg.squaredNorm()            → END

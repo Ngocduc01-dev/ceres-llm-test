@@ -1,0 +1,22 @@
+UNIT u0930
+Hàm: SquaredColumnNorm(double * x) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 350–365
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)                                            đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < block_structure_->rows.size()         đúng → 3   sai → END
+3   int row_block_size = block_structure_->rows[i].block.size
+    auto &cells = block_structure_->rows[i].cells                  → 4
+4   for (const auto &cell : cells)                                 đúng → 5   sai → 7
+5   const auto &cell
+    int col_block_id = cell.block_id
+    int col_block_size = block_structure_->cols[col_block_id].size
+    int col_block_pos = block_structure_->cols[col_block_id].position
+    values_ + cell.position, row_block_size, col_block_size
+    VectorRef(x + col_block_pos, col_block_size) += m.colwise().squaredNorm()   → 6
+6   ++ (bước tiếp của vòng for)                                    → 4
+7   ++i                                                            → 2

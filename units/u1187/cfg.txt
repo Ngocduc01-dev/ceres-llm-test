@@ -1,0 +1,87 @@
+UNIT u1187
+Hàm: LinearLeastSquaresProblem5()  → trả về std::unique_ptr<LinearLeastSquaresProblem>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/linear_least_squares_problems.cc, dòng 677–799
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   int num_rows = 6
+    int num_cols = 5
+    problem->b = std::make_unique<double[]>(num_rows)
+    problem->D = std::make_unique<double[]>(num_cols)
+    problem->num_eliminate_blocks = 2
+    problem->x = std::make_unique<double[]>(num_cols)
+    problem->x[0] = 0.20000000000000001
+    problem->x[1] = -1.4443999999999999
+    problem->x[2] = 0.97770000000000001
+    problem->x[3] = -0.38879999999999998
+    problem->x[4] = 0.10000000000000001
+    CFGNewAllocator(CompressedRowBlockStructure *)
+    auto *bs = new CompressedRowBlockStructure
+    int c = 0                                                      → 2
+2   vòng for, điều kiện: c < num_cols                              đúng → 3   sai → 5
+3   bs->cols.emplace_back()
+    bs->cols.back().size = 1
+    bs->cols.back().position = c                                   → 4
+4   ++c                                                            → 2
+5   int nnz = 0
+    values[nnz++] = -1
+    values[nnz++] = 2
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = 1
+    row.block.position = 0
+    row.cells.emplace_back(0, 0)
+    row.cells.emplace_back(4, 1)
+    values[nnz++] = 3
+    values[nnz++] = 4
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = 1
+    row.block.position = 1
+    row.cells.emplace_back(0, 2)
+    row.cells.emplace_back(4, 3)
+    values[nnz++] = -1
+    values[nnz++] = 1
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = 1
+    row.block.position = 2
+    row.cells.emplace_back(1, 4)
+    row.cells.emplace_back(3, 5)
+    values[nnz++] = -3
+    values[nnz++] = 1
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = 1
+    row.block.position = 3
+    row.cells.emplace_back(1, 6)
+    row.cells.emplace_back(3, 7)
+    values[nnz++] = -1
+    values[nnz++] = 3
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = 1
+    row.block.position = 4
+    row.cells.emplace_back(1, 8)
+    row.cells.emplace_back(2, 9)
+    values[nnz++] = -2
+    values[nnz++] = 1
+    bs->rows.emplace_back()
+    CompressedRow &row = bs->rows.back()
+    row.block.size = 1
+    row.block.position = 5
+    row.cells.emplace_back(1, 10)
+    row.cells.emplace_back(2, 11)
+    memcpy(A->mutable_values(), values.get(), nnz * sizeof (*A->values()))
+    int i = 0                                                      → 6
+6   vòng for, điều kiện: i < num_cols                              đúng → 7   sai → 9
+7   problem->D.get()[i] = 1                                        → 8
+8   ++i                                                            → 6
+9   int i = 0                                                      → 10
+10  vòng for, điều kiện: i < num_rows                              đúng → 11   sai → 13
+11  problem->b.get()[i] = i                                        → 12
+12  ++i                                                            → 10
+13  problem->A = std::move(A)                                      → END

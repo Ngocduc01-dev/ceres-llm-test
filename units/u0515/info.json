@@ -6,7 +6,6 @@
   385,
   401
  ],
- "signature": "ceres::Grid2D::Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 515
+ "order": 515,
+ "short_name": "Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Grid2D",
+ "class_is_template": true,
+ "params": "(const T * data, const int row_begin, const int row_end, const int col_begin, const int col_end)",
+ "return_type": null,
+ "is_const": false
 }

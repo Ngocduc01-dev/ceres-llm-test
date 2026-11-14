@@ -1,0 +1,15 @@
+UNIT u0625
+Hàm: Apply(const T *, JetT *)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Make1stOrderPerturbation
+Vị trí: include/ceres/internal/autodiff.h, dòng 199–199
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Make1stOrderPerturbation<0, 2, 0, double, Jet<double, 4>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   if 0 == 0                                                      → 2
+2   CHECK(src)                                                     đúng → 3   sai → DỪNG
+3   CHECK(dst)                                                     đúng → 4   sai → DỪNG
+4   dst[0] = ceres::Jet<double, 4>(src[0], 0 + 0)
+    Make1stOrderPerturbation<0 + 1, 2, 0, double, Jet<double, 4>>::Apply(src, dst)   → END

@@ -1,0 +1,17 @@
+UNIT u0469
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::HuberLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 50–64
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (s > b_)                                                    đúng → 2   sai → 3
+2   const double r = sqrt(s)
+    rho[0] = 2. * a_ * r - b_
+    rho[1] = std::max(std::numeric_limits<double>::min(), a_ / r)
+    rho[2] = -rho[1] / (2. * s)                                    → END
+3   rho[0] = s
+    rho[1] = 1.
+    rho[2] = 0.                                                    → END

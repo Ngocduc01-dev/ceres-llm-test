@@ -1,0 +1,21 @@
+UNIT u1418
+Hàm: ClusterCameras(const std::vector<std::set<int>> & visibility)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 170–198
+
+Số điểm rẽ nhánh: 1 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(schur_complement_graph != nullptr)                       đúng → 2   sai → DỪNG
+2   if (options_.visibility_clustering_type == CANONICAL_VIEWS)    đúng → 3   sai → 5
+3   clustering_options.size_penalty_weight = kCanonicalViewsSizePenaltyWeight
+    clustering_options.similarity_penalty_weight = kCanonicalViewsSimilarityPenaltyWeight
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    ComputeCanonicalViewsClustering(clustering_options, * schur_complement_graph, &centers, &membership)
+    num_clusters_ = centers.size()                                 → 4
+4   CHECK_GT(num_clusters_, 0)                                     đúng → END   sai → DỪNG
+5   LOG(FATAL)                                                     đúng → 6   sai → DỪNG
+6   clustering_options.min_similarity = kSingleLinkageMinSimilarity
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    num_clusters_ = ComputeSingleLinkageClustering(clustering_options, * schur_complement_graph, &membership)   → 4

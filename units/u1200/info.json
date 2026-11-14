@@ -6,7 +6,6 @@
   81,
   134
  ],
- "signature": "ceres::internal::DenseCholesky::Create",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1200
+ "order": 1200,
+ "short_name": "Create",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseCholesky",
+ "class_is_template": false,
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": "std::unique_ptr<DenseCholesky>",
+ "is_const": false
 }

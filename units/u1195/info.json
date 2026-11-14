@@ -6,7 +6,6 @@
   50,
   72
  ],
- "signature": "ceres::internal::LinearSolver::LinearSolverForZeroEBlocks",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1195
+ "order": 1195,
+ "short_name": "LinearSolverForZeroEBlocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LinearSolver",
+ "class_is_template": false,
+ "params": "(LinearSolverType linear_solver_type)",
+ "return_type": "LinearSolverType",
+ "is_const": false
 }

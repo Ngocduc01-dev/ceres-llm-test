@@ -6,7 +6,6 @@
   126,
   160
  ],
- "signature": "ceres::internal::CreateHessianGraph",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 1303
+ "order": 1303,
+ "short_name": "CreateHessianGraph",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Program & program)",
+ "return_type": "std::unique_ptr<Graph<ParameterBlock *>>",
+ "is_const": false
 }

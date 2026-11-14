@@ -1,0 +1,27 @@
+UNIT u1506
+Hàm: SetupInnerIterationMinimizer(PreprocessedProblem * pp)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/trust_region_preprocessor.cc, dòng 288–336
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   Solver::Options &options = pp->options                         → 2
+2   if (!options.use_inner_iterations)                             đúng → 3   sai → 4
+3   return true                                                    → END
+4   if (pp->reduced_program->mutable_evaluation_callback())        đúng → 5   sai → 6
+5   pp->error = "Inner iterations cannot be used with EvaluationCallbacks"
+    return false                                                   → END
+6   if (pp->reduced_program->NumParameterBlocks() == 1)            đúng → END   sai → 7
+7   if (options.inner_iteration_ordering != nullptr)               đúng → 8   sai → 14
+8   options.inner_iteration_ordering->Remove(pp->removed_parameter_blocks)   → 9
+9   if (options.inner_iteration_ordering->NumElements() == 0)      đúng → END   sai → 10
+10  operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))   → 11
+11  if (!CoordinateDescentMinimizer::IsOrderingValid(* pp->reduced_program, * options.inner_iteration_ordering, &pp->error))   đúng → 12   sai → 13
+12  return false                                                   → END
+13  pp->inner_iteration_minimizer = std::make_unique<CoordinateDescentMinimizer>(pp->problem->context())
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return pp->inner_iteration_minimizer->Init(* pp->reduced_program, pp->problem->parameter_map(), * options.inner_iteration_ordering, &pp->error)   → END
+14  operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    options.inner_iteration_ordering = CoordinateDescentMinimizer::CreateOrdering(* pp->reduced_program)   → 13

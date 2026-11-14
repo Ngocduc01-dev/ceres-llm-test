@@ -1,0 +1,21 @@
+UNIT u0948
+Hàm: CreateFromTextFile(FILE * file)  → trả về std::unique_ptr<TripletSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 287–310
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(file != nullptr)                                         đúng → 2   sai → DỪNG
+2   while true                                                     → 3
+3   int row
+    int col
+    double value                                                   → 4
+4   if (fscanf(file, "%d %d %lf", &row, &col, &value) != 3)        đúng → 5   sai → 6
+5   break                                                          → END
+6   rows.push_back(row)
+    cols.push_back(col)
+    values.push_back(value)
+    num_rows = std::max(num_rows, row + 1)
+    num_cols = std::max(num_cols, col + 1)                         → 2

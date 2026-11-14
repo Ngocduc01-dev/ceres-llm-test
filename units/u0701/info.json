@@ -6,7 +6,6 @@
   62,
   64
  ],
- "signature": "ceres::internal::operator==",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 701
+ "order": 701,
+ "short_name": "operator==",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Block & left, const Block & right)",
+ "return_type": "bool",
+ "is_const": false
 }

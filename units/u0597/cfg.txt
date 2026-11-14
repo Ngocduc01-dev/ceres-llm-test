@@ -1,0 +1,22 @@
+UNIT u0597
+Hàm: QuaternionMinusImpl(const double* y, const double* x, double* y_minus_x)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/manifold.cc, dòng 81–112
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionMinusImpl<(anonymous namespace)::CeresQuaternionOrder> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   double ambient_y_minus_x[4]
+    ambient_y_minus_x[CeresQuaternionOrder::kW] = y[CeresQuaternionOrder::kW] * x[CeresQuaternionOrder::kW] + y[CeresQuaternionOrder::kX] * x[CeresQuaternionOrder::kX] + y[CeresQuaternionOrder::kY] * x[CeresQuaternionOrder::kY] + y[CeresQuaternionOrder::kZ] * x[CeresQuaternionOrder::kZ]
+    ambient_y_minus_x[CeresQuaternionOrder::kX] = -y[CeresQuaternionOrder::kW] * x[CeresQuaternionOrder::kX] + y[CeresQuaternionOrder::kX] * x[CeresQuaternionOrder::kW] - y[CeresQuaternionOrder::kY] * x[CeresQuaternionOrder::kZ] + y[CeresQuaternionOrder::kZ] * x[CeresQuaternionOrder::kY]
+    ambient_y_minus_x[CeresQuaternionOrder::kY] = -y[CeresQuaternionOrder::kW] * x[CeresQuaternionOrder::kY] + y[CeresQuaternionOrder::kX] * x[CeresQuaternionOrder::kZ] + y[CeresQuaternionOrder::kY] * x[CeresQuaternionOrder::kW] - y[CeresQuaternionOrder::kZ] * x[CeresQuaternionOrder::kX]
+    ambient_y_minus_x[CeresQuaternionOrder::kZ] = -y[CeresQuaternionOrder::kW] * x[CeresQuaternionOrder::kZ] - y[CeresQuaternionOrder::kX] * x[CeresQuaternionOrder::kY] + y[CeresQuaternionOrder::kY] * x[CeresQuaternionOrder::kX] + y[CeresQuaternionOrder::kZ] * x[CeresQuaternionOrder::kW]
+    const double u_norm = std::hypot(ambient_y_minus_x[CeresQuaternionOrder::kX], ambient_y_minus_x[CeresQuaternionOrder::kY], ambient_y_minus_x[CeresQuaternionOrder::kZ])   → 2
+2   if (std::fpclassify(u_norm) != 2)                              đúng → 3   sai → 4
+3   const double theta = std::atan2(u_norm, ambient_y_minus_x[CeresQuaternionOrder::kW])
+    y_minus_x[0] = theta * ambient_y_minus_x[CeresQuaternionOrder::kX] / u_norm
+    y_minus_x[1] = theta * ambient_y_minus_x[CeresQuaternionOrder::kY] / u_norm
+    y_minus_x[2] = theta * ambient_y_minus_x[CeresQuaternionOrder::kZ] / u_norm   → END
+4   std::fill_n(y_minus_x, 3, 0.)                                  → END

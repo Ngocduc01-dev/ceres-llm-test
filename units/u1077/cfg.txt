@@ -1,0 +1,12 @@
+UNIT u1077
+Hàm: ScopedExecutionTimer(std::string name, ExecutionSummary * summary)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ScopedExecutionTimer
+Vị trí: internal/ceres/execution_summary.h, dòng 72–75
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   start_time_(WallTimeInSeconds()) (Member initializer)
+    name_(std::move(name)) (Member initializer)
+    summary_(summary) (Member initializer)                         → END

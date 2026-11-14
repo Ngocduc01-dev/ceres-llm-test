@@ -1,0 +1,14 @@
+UNIT u1043
+Hàm: ParameterBlocksToStateVector(double * state) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 87–92
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   for (auto *parameter_block : parameter_blocks_)                đúng → 2   sai → END
+2   auto *parameter_block
+    parameter_block->GetState(state)
+    state += parameter_block->Size()                               → 3
+3   ++ (bước tiếp của vòng for)                                    → 1

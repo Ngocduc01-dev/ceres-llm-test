@@ -1,0 +1,13 @@
+UNIT u0910
+Hàm: SparseMatrixPreconditionerWrapper(const SparseMatrix * matrix, const Preconditioner::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::SparseMatrixPreconditionerWrapper
+Vị trí: internal/ceres/preconditioner.cc, dòng 49–53
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   TypedPreconditioner() (Base initializer)
+    matrix_(matrix) (Member initializer)
+    options_(options) (Member initializer)                         → 2
+2   CHECK(matrix != nullptr)                                       đúng → END   sai → DỪNG

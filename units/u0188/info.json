@@ -6,7 +6,6 @@
   393,
   393
  ],
- "signature": "ceres::EigenQuaternionManifold::TangentSize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 188
+ "order": 188,
+ "short_name": "TangentSize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EigenQuaternionManifold",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

@@ -6,7 +6,6 @@
   190,
   192
  ],
- "signature": "ceres::internal::WeightedGraph::Neighbors",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 676
+ "order": 676,
+ "short_name": "Neighbors",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
+ "params": "(const Vertex & vertex)",
+ "return_type": "const std::unordered_set<Vertex> &",
+ "is_const": true
 }

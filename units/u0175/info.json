@@ -6,7 +6,6 @@
   231,
   231
  ],
- "signature": "ceres::ArctanLoss::ArctanLoss",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 175
+ "order": 175,
+ "short_name": "ArctanLoss",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::ArctanLoss",
+ "class_is_template": false,
+ "params": "(double a)",
+ "return_type": null,
+ "is_const": false
 }

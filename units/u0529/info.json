@@ -6,7 +6,6 @@
   35,
   86
  ],
- "signature": "ceres::internal::LinearIndexToUpperTriangularIndex",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 529
+ "order": 529,
+ "short_name": "LinearIndexToUpperTriangularIndex",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int k, int n, int * i, int * j)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   82,
   88
  ],
- "signature": "ceres::internal::VariadicEvaluateImpl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 819
+ "order": 819,
+ "short_name": "VariadicEvaluateImpl",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Functor& functor, T const* const* input, T* output, const CostFunction* /* NOT USED */)",
+ "return_type": "bool",
+ "is_const": false
 }

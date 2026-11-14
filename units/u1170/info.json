@@ -6,7 +6,6 @@
   112,
   137
  ],
- "signature": "ceres::internal::EigenSparseCholeskyTemplate::Factorize",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1170
+ "order": 1170,
+ "short_name": "Factorize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenSparseCholeskyTemplate",
+ "class_is_template": true,
+ "params": "(CompressedRowSparseMatrix * lhs, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

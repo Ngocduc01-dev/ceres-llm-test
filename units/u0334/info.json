@@ -6,7 +6,6 @@
   75,
   82
  ],
- "signature": "ceres::CauchyLoss::Evaluate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 334
+ "order": 334,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::CauchyLoss",
+ "class_is_template": false,
+ "params": "(double s, double[3] rho)",
+ "return_type": "void",
+ "is_const": true
 }

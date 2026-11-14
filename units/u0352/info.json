@@ -6,7 +6,6 @@
   61,
   71
  ],
- "signature": "ceres::internal::hash_mix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 352
+ "order": 352,
+ "short_name": "hash_mix",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(uint32_t & a, uint32_t & b, uint32_t & c)",
+ "return_type": "void",
+ "is_const": false
 }

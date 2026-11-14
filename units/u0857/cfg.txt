@@ -1,0 +1,9 @@
+UNIT u0857
+Hàm: ~Evaluator()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::Evaluator
+Vị trí: internal/ceres/evaluator.cc, dòng 51–51
+
+Số điểm rẽ nhánh: 0
+
+START → END

@@ -1,0 +1,10 @@
+UNIT u0928
+Hàm: Create(const Options & options)  → trả về std::unique_ptr<TrustRegionStrategy>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionStrategy
+Vị trí: internal/ceres/trust_region_strategy.cc, dòng 44–59
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   LOG(FATAL)   đúng → END   sai → DỪNG

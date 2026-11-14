@@ -1,0 +1,10 @@
+UNIT u1070
+Hàm: SetZero()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDenseMatrix
+Vị trí: internal/ceres/block_random_access_dense_matrix.cc, dòng 71–73
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelSetZero(context_, num_threads_, values_.get(), num_rows_ * num_rows_)   → END

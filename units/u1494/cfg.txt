@@ -1,0 +1,23 @@
+UNIT u1494
+Hàm: SolveImpl(CompressedRowSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicSparseNormalCholeskySolver
+Vị trí: internal/ceres/dynamic_sparse_normal_cholesky_solver.cc, dòng 60–103
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   const int num_cols = A->num_cols()
+    VectorRef(x, num_cols).setZero()
+    A->LeftMultiplyAndAccumulate(b, x)                             → 2
+2   if (per_solve_options.D != nullptr)                            đúng → 3   sai → 6
+3   if (!A->col_blocks().empty())                                  đúng → 4   sai → 10
+4   regularizer = CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(per_solve_options.D, A->col_blocks())   → 5
+5   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    A->AppendRows(* regularizer)                                   → 6
+6   LOG(FATAL)                                                     đúng → 7   sai → DỪNG
+7   summary = SolveImplUsingEigen(A, x)
+    break                                                          → 8
+8   if (per_solve_options.D != nullptr)                            đúng → 9   sai → END
+9   A->DeleteRows(num_cols)                                        → END
+10  regularizer = std::make_unique<CompressedRowSparseMatrix>(per_solve_options.D, num_cols)   → 5

@@ -1,0 +1,10 @@
+UNIT u0363
+Hàm: IsUpperBounded() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 132–132
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (upper_bounds_ == nullptr)   → END

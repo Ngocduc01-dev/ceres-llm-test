@@ -1,0 +1,11 @@
+UNIT u0565
+Hàm: GetUnpackedParameters(T* ptr, std::integer_sequence<int, Indices...>)  → trả về std::array<T *, kNumParameterBlocks>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::internal::ParameterDims
+Vị trí: include/ceres/internal/parameter_dims.h, dòng 82–86
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ParameterDims<false, 2, 2>::GetUnpackedParameters<Jet<double, 4>, <0, 2>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return std::array<Jet<double, 4> *, kNumParameterBlocks>{{ptr + 0, ptr + 2}}   → END

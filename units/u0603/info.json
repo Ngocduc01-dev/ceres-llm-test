@@ -6,7 +6,6 @@
   438,
   446
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::IsBlockPairInPreconditioner",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 603
+ "order": 603,
+ "short_name": "IsBlockPairInPreconditioner",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const int block1, const int block2)",
+ "return_type": "bool",
+ "is_const": true
 }

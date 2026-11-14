@@ -6,7 +6,6 @@
   959,
   962
  ],
- "signature": "ceres::isnormal",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 135
+ "order": 135,
+ "short_name": "isnormal",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& f)",
+ "return_type": "bool",
+ "is_const": false
 }

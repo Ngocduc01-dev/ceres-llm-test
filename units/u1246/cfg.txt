@@ -1,0 +1,10 @@
+UNIT u1246
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.h, dòng 121–123
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   RightMultiplyAndAccumulate(x, y)   → END

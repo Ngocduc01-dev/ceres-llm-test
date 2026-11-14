@@ -6,7 +6,6 @@
   158,
   164
  ],
- "signature": "ceres::CostFunctionToFunctor::GetParameterPointers",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 561
+ "order": 561,
+ "short_name": "GetParameterPointers",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::CostFunctionToFunctor",
+ "class_is_template": true,
+ "params": "(const Tuple& paramPointers, std::integer_sequence<int, Indices...>)",
+ "return_type": "std::array<const T *, ParameterDims::kNumParameterBlocks>",
+ "is_const": false
 }

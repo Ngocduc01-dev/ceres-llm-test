@@ -1,0 +1,39 @@
+UNIT u0557
+Hàm: IndependentSetOrdering(const Graph<Vertex>& graph, std::vector<Vertex>* ordering)  → trả về int
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/graph_algorithms.h, dòng 97–153
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp IndependentSetOrdering<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 6 (và 3 lệnh CHECK)
+
+START → 1
+1   const std::unordered_set<int> &vertices = graph.vertices()
+    const int num_vertices = vertices.size()                       → 2
+2   CHECK(ordering != nullptr)                                     đúng → 3   sai → DỪNG
+3   for (const int &vertex : vertices)                             đúng → 4   sai → 6
+4   const int &vertex
+    vertex_color[vertex] = kWhite
+    vertex_queue.push_back(vertex)                                 → 5
+5   ++ (bước tiếp của vòng for)                                    → 3
+6   for (const int &vertex : vertex_queue)                         đúng → 7   sai → 15
+7   const int &vertex                                              → 8
+8   if (vertex_color[vertex] != kWhite)                            đúng → 9   sai → 11
+9   continue                                                       → 10
+10  ++ (bước tiếp của vòng for)                                    → 6
+11  ordering->push_back(vertex)
+    vertex_color[vertex] = kBlack
+    const std::unordered_set<int> &neighbors = graph.Neighbors(vertex)   → 12
+12  for (const int &neighbor : neighbors)                          đúng → 13   sai → 10
+13  const int &neighbor
+    vertex_color[neighbor] = kGrey                                 → 14
+14  ++ (bước tiếp của vòng for)                                    → 12
+15  int independent_set_size = ordering->size()                    → 16
+16  for (const int &vertex : vertex_queue)                         đúng → 17   sai → 22
+17  const int &vertex                                              → 18
+18  DCHECK(vertex_color[vertex] != kWhite)                         đúng → 19   sai → DỪNG
+19  if (vertex_color[vertex] != kBlack)                            đúng → 20   sai → 21
+20  ordering->push_back(vertex)                                    → 21
+21  ++ (bước tiếp của vòng for)                                    → 16
+22  CHECK_EQ(ordering->size(), num_vertices)                       đúng → 23   sai → DỪNG
+23  return independent_set_size                                    → END

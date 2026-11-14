@@ -1,0 +1,13 @@
+UNIT u0406
+Hàm: Chunk(int start)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::SchurEliminator::Chunk
+Vị trí: internal/ceres/schur_eliminator.h, dòng 278–278
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   size(0) (Member initializer)
+    start(start) (Member initializer)
+    buffer_layout() (Member initializer)                           → END

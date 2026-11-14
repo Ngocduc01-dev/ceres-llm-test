@@ -1,0 +1,10 @@
+UNIT u1381
+Hàm: NumResiduals() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 796–796
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return program_->NumResiduals()   → END

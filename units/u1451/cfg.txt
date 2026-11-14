@@ -1,0 +1,12 @@
+UNIT u1451
+Hàm: InternalSetManifold(double *, ParameterBlock * parameter_block, Manifold * manifold)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 362–369
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (manifold != nullptr && options_.manifold_ownership == TAKE_OWNERSHIP)   đúng → 2   sai → 3
+2   manifolds_to_delete_.push_back(manifold)                       → 3
+3   parameter_block->SetManifold(manifold)                         → END

@@ -6,7 +6,6 @@
   182,
   251
  ],
- "signature": "ceres::internal::FindPolynomialRoots",
  "branches": 24,
  "cyclomatic": 13,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 1129
+ "order": 1129,
+ "short_name": "FindPolynomialRoots",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Vector & polynomial_in, Vector * real, Vector * imaginary)",
+ "return_type": "bool",
+ "is_const": false
 }

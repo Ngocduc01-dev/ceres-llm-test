@@ -1,0 +1,10 @@
+UNIT u0874
+Hàm: ParallelSetZero(ContextImpl * context, int num_threads, double * values, int num_values)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parallel_vector_ops.cc, dòng 38–52
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/parallel_vector_ops.cc:47:7) &&, int))(context, 0, num_values, num_threads, [values](std::tuple<int, int> range) {, kMinBlockSizeParallelVectorOps)   → END

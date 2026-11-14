@@ -6,7 +6,6 @@
   153,
   153
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::row_blocks",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 265
+ "order": 265,
+ "short_name": "row_blocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const std::vector<Block> &",
+ "is_const": true
 }

@@ -1,0 +1,58 @@
+UNIT u1504
+Hàm: ZoomPhase(const FunctionSample & initial_position, FunctionSample bracket_low, FunctionSample bracket_high, FunctionSample * solution, Summary * summary) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::WolfeLineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 698–881
+
+Số điểm rẽ nhánh: 13 (và 3 lệnh CHECK)
+
+START → 1
+1   LineSearchFunction *function = options().function              → 2
+2   CHECK(bracket_low.value_is_valid && bracket_low.gradient_is_valid)   đúng → 3   sai → DỪNG
+3   CHECK(bracket_high.value_is_valid)                             đúng → 4   sai → DỪNG
+4   if (bracket_low.gradient * (bracket_high.x - bracket_low.x) >= 0)   đúng → 5   sai → 8
+5   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: Wolfe zoom phase passed a bracket which does not satisfy: bracket_low.gradient * (bracket_high.x - bracket_low.x) < 0 [%.8e !< 0] with initial_position: %s, bracket_low: %s, bracket_high: %s, the most likely cause of which is the cost function returning inconsistent gradient & function values.", bracket_low.gradient * (bracket_high.x - bracket_low.x), initial_position.ToDebugString().c_str(), bracket_low.ToDebugString().c_str(), bracket_high.ToDebugString().c_str())   → 6
+6   if (!options().is_silent)                                      đúng → 7   sai → 7
+7   solution->value_is_valid = false
+    return false                                                   → END
+8   const int num_bracketing_iterations = summary->num_iterations
+    const double descent_direction_max_norm = function->DirectionInfinityNorm()   → 9
+9   while true                                                     → 10
+10  *solution = bracket_low                                        → 11
+11  if (summary->num_iterations >= options().max_num_iterations)   đúng → 12   sai → 15
+12  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: Wolfe zoom phase failed to find a point satisfying strong Wolfe conditions within specified max_num_iterations: %d, (num iterations taken for bracketing: %d).", options().max_num_iterations, num_bracketing_iterations)   → 13
+13  if (!options().is_silent)                                      đúng → 14   sai → 14
+14  return false                                                   → END
+15  if (fabs(bracket_high.x - bracket_low.x) * descent_direction_max_norm < options().min_step_size)   đúng → 16   sai → 19
+16  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: Wolfe zoom bracket width: %.5e too small with descent_direction_max_norm: %.5e.", fabs(bracket_high.x - bracket_low.x), descent_direction_max_norm)   → 17
+17  if (!options().is_silent)                                      đúng → 18   sai → 18
+18  return false                                                   → END
+19  ++summary->num_iterations                                      → 20
+20  bracket_low.x < bracket_high.x ? ... : ...                     đúng → 21   sai → 21
+21  const FunctionSample &lower_bound_step = bracket_low.x < bracket_high.x ? bracket_low : bracket_high   → 22
+22  bracket_low.x < bracket_high.x ? ... : ...                     đúng → 23   sai → 23
+23  const FunctionSample &upper_bound_step = bracket_low.x < bracket_high.x ? bracket_high : bracket_low   → 24
+24  DCHECK(!unused_previous.value_is_valid)                        đúng → 25   sai → DỪNG
+25  const double polynomial_minimization_start_time = WallTimeInSeconds()
+    const double step_size = InterpolatingPolynomialMinimizingStepSize(options().interpolation_type, lower_bound_step, unused_previous, upper_bound_step, lower_bound_step.x, upper_bound_step.x)
+    summary->polynomial_minimization_time_in_seconds += (WallTimeInSeconds() - polynomial_minimization_start_time)
+    ++summary->num_function_evaluations
+    ++summary->num_gradient_evaluations
+    const bool kEvaluateGradient = true
+    function->Evaluate(step_size, kEvaluateGradient, solution)     → 26
+26  if (!solution->value_is_valid || !solution->gradient_is_valid)   đúng → 27   sai → 30
+27  operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    summary->error = StringPrintf("Line search failed: Wolfe Zoom phase found step_size: %.5e, for which function is invalid, between low_step: %.5e and high_step: %.5e at which function is valid.", solution->x, bracket_low.x, bracket_high.x)   → 28
+28  if (!options().is_silent)                                      đúng → 29   sai → 29
+29  return false                                                   → END
+30  if (solution->value > (initial_position.value + options().sufficient_decrease * initial_position.gradient * solution->x)) || (solution->value >= bracket_low.value)   đúng → 31   sai → 32
+31  bracket_high = *solution
+    continue                                                       → 9
+32  if (fabs(solution->gradient) <= -options().sufficient_curvature_decrease * initial_position.gradient)   đúng → 33   sai → 34
+33  return true                                                    → END
+34  if (solution->gradient * (bracket_high.x - bracket_low.x) >= 0)   đúng → 35   sai → 36
+35  bracket_high = bracket_low                                     → 36
+36  bracket_low = *solution                                        → 9

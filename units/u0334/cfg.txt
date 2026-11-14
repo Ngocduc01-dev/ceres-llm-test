@@ -1,0 +1,14 @@
+UNIT u0334
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::CauchyLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 75–82
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double sum = 1. + s * c_
+    const double inv = 1. / sum
+    rho[0] = b_ * log(sum)
+    rho[1] = std::max(std::numeric_limits<double>::min(), inv)
+    rho[2] = -c_ * (inv * inv)                                     → END

@@ -1,0 +1,12 @@
+UNIT u0906
+Hàm: SetMaxNumNonZeros(int num_nonzeros)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 552–557
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_GE(num_nonzeros, 0)                                  đúng → 2   sai → DỪNG
+2   cols_.resize(num_nonzeros)
+    values_.resize(num_nonzeros)                               → END

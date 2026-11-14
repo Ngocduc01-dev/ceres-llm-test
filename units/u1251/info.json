@@ -6,7 +6,6 @@
   310,
   310
  ],
- "signature": "ceres::internal::ProgramEvaluator::NumParameters",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1251
+ "order": 1251,
+ "short_name": "NumParameters",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

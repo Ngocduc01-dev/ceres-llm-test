@@ -1,0 +1,24 @@
+UNIT u0806
+Hàm: ComputeClusteringQualityDifference(const int candidate, const std::vector<int> & centers) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CanonicalViewsClustering
+Vị trí: internal/ceres/canonical_views_clustering.cc, dòng 151–180
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   double difference = options_.view_score_weight * graph_->VertexWeight(candidate)
+    const IntSet &neighbors = graph_->Neighbors(candidate)         → 2
+2   for (const auto &neighbor : neighbors)                         đúng → 3   sai → 7
+3   const auto &neighbor
+    const double old_similarity = FindWithDefault(view_to_canonical_view_similarity_, neighbor, 0.)
+    const double new_similarity = graph_->EdgeWeight(neighbor, candidate)   → 4
+4   if (new_similarity > old_similarity)                           đúng → 5   sai → 6
+5   difference += new_similarity - old_similarity                  → 6
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   difference -= options_.size_penalty_weight                     → 8
+8   for (int center : centers)                                     đúng → 9   sai → 11
+9   int center
+    difference -= options_.similarity_penalty_weight * graph_->EdgeWeight(center, candidate)   → 10
+10  ++ (bước tiếp của vòng for)                                    → 8
+11  return difference                                              → END

@@ -1,0 +1,10 @@
+UNIT u1019
+Hàm: Statistics() const  → trả về std::map<std::string, CallStatistics>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProgramEvaluator
+Vị trí: internal/ceres/program_evaluator.h, dòng 317–319
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → END

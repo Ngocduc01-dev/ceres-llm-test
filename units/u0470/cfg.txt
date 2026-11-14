@@ -1,0 +1,20 @@
+UNIT u0470
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TolerantLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 99–118
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const double x = (s - a_) / b_                                 → 2
+2   static init kLog2Pow53                                         đúng → 3   sai → 6
+3   if (x > kLog2Pow53)                                            đúng → 4   sai → 5
+4   rho[0] = s - a_ - c_
+    rho[1] = 1.
+    rho[2] = 0.                                                    → END
+5   const double e_x = exp(x)
+    rho[0] = b_ * log(1. + e_x) - c_
+    rho[1] = std::max(std::numeric_limits<double>::min(), e_x / (1. + e_x))
+    rho[2] = 0.5 / (b_ * (1. + cosh(x)))                           → END
+6   static constexpr double kLog2Pow53 = 36.700000000000003        → 3

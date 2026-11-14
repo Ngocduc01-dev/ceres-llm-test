@@ -1,0 +1,14 @@
+UNIT u0015
+Hàm: CRSMatrix()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::CRSMatrix
+Vị trí: include/ceres/crs_matrix.h, dòng 44–44
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   num_rows(?) (Member initializer)
+    num_cols(?) (Member initializer)
+    cols() (Member initializer)
+    rows() (Member initializer)
+    values() (Member initializer)                                  → END

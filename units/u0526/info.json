@@ -6,7 +6,6 @@
   49,
   73
  ],
- "signature": "ceres::internal::InvertPSDMatrix",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 526
+ "order": 526,
+ "short_name": "InvertPSDMatrix",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const bool assume_full_rank, const typename EigenTypes<kSize, kSize>::Matrix& m)",
+ "return_type": "typename EigenTypes<kSize, kSize>::Matrix",
+ "is_const": false
 }

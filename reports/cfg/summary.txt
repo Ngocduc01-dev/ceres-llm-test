@@ -1,0 +1,52 @@
+Unit: 1540 | có CFG: 1491 | không tìm thấy: 44 | CFG bất thường (bỏ, để LLM tự dựng): 5 | thời gian: 20s
+
+Unit không có CFG:
+u0001 ceres::AutoDiffCostFunction::functor include/ceres/autodiff_cost_function.h
+u0003 ceres::AutoDiffFirstOrderFunction::functor include/ceres/autodiff_first_order_function.h
+u0009 ceres::AutoDiffManifold::functor include/ceres/autodiff_manifold.h
+u0017 ceres::CubicInterpolator::Evaluate include/ceres/cubic_interpolation.h
+u0018 ceres::BiCubicInterpolator::Evaluate include/ceres/cubic_interpolation.h
+u0019 ceres::DynamicAutoDiffCostFunction::functor include/ceres/dynamic_autodiff_cost_function.h
+u0029 ceres::internal::FixedArray::max_size include/ceres/internal/fixed_array.h
+u0038 ceres::internal::FixedArray::cbegin include/ceres/internal/fixed_array.h
+u0039 ceres::internal::FixedArray::cend include/ceres/internal/fixed_array.h
+u0144 ceres::IsFinite include/ceres/jet.h
+u0145 ceres::IsNaN include/ceres/jet.h
+u0146 ceres::IsNormal include/ceres/jet.h
+u0147 ceres::IsInfinite include/ceres/jet.h
+u0151 ?::std::numeric_limits::min include/ceres/jet.h
+u0152 ?::std::numeric_limits::lowest include/ceres/jet.h
+u0153 ?::std::numeric_limits::epsilon include/ceres/jet.h
+u0154 ?::std::numeric_limits::round_error include/ceres/jet.h
+u0155 ?::std::numeric_limits::infinity include/ceres/jet.h
+u0156 ?::std::numeric_limits::quiet_NaN include/ceres/jet.h
+u0157 ?::std::numeric_limits::signaling_NaN include/ceres/jet.h
+u0158 ?::std::numeric_limits::denorm_min include/ceres/jet.h
+u0159 ?::std::numeric_limits::max include/ceres/jet.h
+u0160 Eigen::NumTraits::dummy_precision include/ceres/jet.h
+u0161 Eigen::NumTraits::epsilon include/ceres/jet.h
+u0162 Eigen::NumTraits::digits10 include/ceres/jet.h
+u0163 Eigen::NumTraits::max_digits10 include/ceres/jet.h
+u0164 Eigen::NumTraits::highest include/ceres/jet.h
+u0165 Eigen::NumTraits::lowest include/ceres/jet.h
+u0189 ceres::NumericDiffCostFunction::functor include/ceres/numeric_diff_cost_function.h
+u0191 ceres::NumericDiffFirstOrderFunction::functor include/ceres/numeric_diff_first_order_function.h
+u0197 ceres::OrderedGroups::element_to_group include/ceres/ordered_groups.h
+u0213 ceres::DotProduct include/ceres/rotation.h
+u0475 ceres::FindOrNull internal/ceres/map_util.h
+u0500 ceres::CrossProduct include/ceres/rotation.h
+u0523 ceres::down_cast internal/ceres/casts.h
+u0615 ceres::AutoDiffCostFunction::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...> include/ceres/autodiff_cost_function.h
+u0621 ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride> include/ceres/dynamic_autodiff_cost_function.h
+u0623 ceres::DynamicNumericDiffCostFunction::DynamicNumericDiffCostFunction<CostFunctor, kMethod> include/ceres/dynamic_numeric_diff_cost_function.h
+u0640 ceres::NumericDiffCostFunction::NumericDiffCostFunction<CostFunctor, kMethod, kNumResiduals, Ns...> include/ceres/numeric_diff_cost_function.h
+u0674 ceres::internal::WeightedGraph::AddEdge internal/ceres/graph.h
+u0749 ceres::internal::WeightedGraph::RemoveVertex internal/ceres/graph.h
+u0963 ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingSuiteSparse internal/ceres/reorder_program.cc
+u1023 ceres::internal::StringPrintf internal/ceres/stringprintf.cc
+u1083 ceres::internal::SStringPrintf internal/ceres/stringprintf.cc
+u1084 ceres::internal::StringAppendF internal/ceres/stringprintf.cc
+u1128 ceres::TinySolver::Solve include/ceres/tiny_solver.h
+u1183 ceres::internal::DenseQR::Create internal/ceres/dense_qr.cc
+u1200 ceres::internal::DenseCholesky::Create internal/ceres/dense_cholesky.cc
+u1328 ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian internal/ceres/fake_bundle_adjustment_jacobian.h

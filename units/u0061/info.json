@@ -6,7 +6,6 @@
   74,
   79
  ],
- "signature": "ceres::internal::ParameterDims::GetUnpackedParameters",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 61
+ "order": 61,
+ "short_name": "GetUnpackedParameters",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::ParameterDims",
+ "class_is_template": true,
+ "params": "(T* ptr)",
+ "return_type": "std::array<T *, kNumParameterBlocks>",
+ "is_const": false
 }

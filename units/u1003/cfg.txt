@@ -1,0 +1,22 @@
+UNIT u1003
+Hàm: BackSubstitute(const double * x, double * y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.cc, dòng 208–243
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const int num_cols_e = A_->num_cols_e()
+    const int num_cols_f = A_->num_cols_f()
+    const int num_cols = A_->num_cols()
+    const int num_rows = A_->num_rows()
+    ParallelSetZero(options_.context, options_.num_threads, tmp_rows_)
+    A_->RightMultiplyAndAccumulateF(x, tmp_rows_.data())
+    ParallelAssign(options_.context, options_.num_threads, tmp_rows_, ConstVectorRef(b_, num_rows) - tmp_rows_)
+    ParallelSetZero(options_.context, options_.num_threads, tmp_e_cols_)
+    A_->LeftMultiplyAndAccumulateE(tmp_rows_.data(), tmp_e_cols_.data())
+    ParallelSetZero(options_.context, options_.num_threads, y, num_cols)
+    block_diagonal_EtE_inverse_->RightMultiplyAndAccumulate(tmp_e_cols_.data(), y, options_.context, options_.num_threads)
+    y + num_cols_e, num_cols_f
+    ParallelAssign(options_.context, options_.num_threads, y_cols_f, ConstVectorRef(x, num_cols_f))   → END

@@ -6,7 +6,6 @@
   139,
   159
  ],
- "signature": "ceres::internal::(anonymous)::AddSymmetricRandomBlock",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 606
+ "order": 606,
+ "short_name": "AddSymmetricRandomBlock",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int num_rows, const int row_block_begin, RandomNormalFunctor&& randn, std::vector<int>* rows, std::vector<int>* cols, std::vector<double>* values)",
+ "return_type": "void",
+ "is_const": false
 }

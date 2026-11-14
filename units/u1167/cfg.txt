@@ -1,0 +1,18 @@
+UNIT u1167
+Hàm: operator=(const TripletSparseMatrix & rhs)  → trả về TripletSparseMatrix &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 95–107
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (this == &rhs)                                              đúng → 2   sai → 3
+2   return *this                                                   → END
+3   num_rows_ = rhs.num_rows_
+    num_cols_ = rhs.num_cols_
+    num_nonzeros_ = rhs.num_nonzeros_
+    max_num_nonzeros_ = rhs.max_num_nonzeros_
+    AllocateMemory()
+    CopyData(rhs)
+    return *this                                                   → END

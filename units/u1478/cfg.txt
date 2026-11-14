@@ -1,0 +1,33 @@
+UNIT u1478
+Hàm: PostSolveSummarize(const internal::PreprocessedProblem & pp, Solver::Summary * summary)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 565–625
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   internal::OrderingToGroupSizes(pp.options.linear_solver_ordering.get(), &(summary->linear_solver_ordering_used))
+    internal::OrderingToGroupSizes(pp.options.inner_iteration_ordering.get(), &(summary->inner_iteration_ordering_used))
+    summary->inner_iterations_used = pp.inner_iteration_minimizer != nullptr
+    summary->linear_solver_type_used = pp.linear_solver_options.type
+    summary->mixed_precision_solves_used = pp.options.use_mixed_precision_solves
+    summary->num_threads_used = pp.options.num_threads
+    summary->preconditioner_type_used = pp.options.preconditioner_type
+    internal::SetSummaryFinalCost(summary)                         → 2
+2   if (pp.reduced_program != nullptr)                             đúng → 3   sai → 4
+3   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    SummarizeReducedProgram(* pp.reduced_program, summary)         → 4
+4   if (pp.evaluator != nullptr)                                   đúng → 5   sai → 6
+5   const std::map<std::string, CallStatistics> &evaluator_statistics = pp.evaluator->Statistics()
+    const CallStatistics &call_stats = FindWithDefault(evaluator_statistics, "Evaluator::Residual", CallStatistics())
+    summary->residual_evaluation_time_in_seconds = call_stats.time
+    summary->num_residual_evaluations = call_stats.calls
+    const CallStatistics &call_stats = FindWithDefault(evaluator_statistics, "Evaluator::Jacobian", CallStatistics())
+    summary->jacobian_evaluation_time_in_seconds = call_stats.time
+    summary->num_jacobian_evaluations = call_stats.calls           → 6
+6   if (pp.linear_solver != nullptr)                               đúng → 7   sai → END
+7   const std::map<std::string, CallStatistics> &linear_solver_statistics = pp.linear_solver->Statistics()
+    const CallStatistics &call_stats = FindWithDefault(linear_solver_statistics, "LinearSolver::Solve", CallStatistics())
+    summary->num_linear_solves = call_stats.calls
+    summary->linear_solver_time_in_seconds = call_stats.time       → END

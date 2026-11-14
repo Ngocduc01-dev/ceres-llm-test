@@ -6,7 +6,6 @@
   536,
   572
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 812
+ "order": 812,
+ "short_name": "FlattenMembershipMap",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const std::unordered_map<int, int> & membership_map, std::vector<int> * membership_vector)",
+ "return_type": "void",
+ "is_const": true
 }

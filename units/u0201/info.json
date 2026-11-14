@@ -6,7 +6,6 @@
   103,
   108
  ],
- "signature": "ceres::ProductManifold::Plus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 201
+ "order": 201,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const double * x, const double * delta, double * x_plus_delta)",
+ "return_type": "bool",
+ "is_const": true
 }

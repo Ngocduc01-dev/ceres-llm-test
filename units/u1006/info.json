@@ -6,7 +6,6 @@
   163,
   184
  ],
- "signature": "ceres::internal::LineSearchFunction::TimeStatistics",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1006
+ "order": 1006,
+ "short_name": "TimeStatistics",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearchFunction",
+ "class_is_template": false,
+ "params": "(double * cost_evaluation_time_in_seconds, double * gradient_evaluation_time_in_seconds)",
+ "return_type": "void",
+ "is_const": true
 }

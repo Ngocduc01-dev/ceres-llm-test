@@ -1,0 +1,16 @@
+UNIT u1283
+Hàm: GradientToleranceReached()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 679–695
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (!iteration_summary_.step_is_successful || iteration_summary_.gradient_max_norm > options_.gradient_tolerance)   đúng → 2   sai → 3
+2   return false                                                   → END
+3   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    solver_summary_->message = StringPrintf("Gradient tolerance reached. Gradient max norm: %e <= %e", iteration_summary_.gradient_max_norm, options_.gradient_tolerance)
+    solver_summary_->termination_type = CONVERGENCE                → 4
+4   if (is_not_silent_)                                            đúng → 5   sai → 5
+5   return true                                                    → END

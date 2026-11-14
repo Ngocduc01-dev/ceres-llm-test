@@ -1,0 +1,10 @@
+UNIT u0338
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LowRankInverseHessian
+Vị trí: internal/ceres/low_rank_inverse_hessian.h, dòng 90–90
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return num_parameters_   → END

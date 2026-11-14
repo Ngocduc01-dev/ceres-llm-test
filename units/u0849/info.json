@@ -6,7 +6,6 @@
   50,
   52
  ],
- "signature": "ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 849
+ "order": 849,
+ "short_name": "DynamicCompressedRowJacobianWriter",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DynamicCompressedRowJacobianWriter",
+ "class_is_template": false,
+ "params": "(Evaluator::Options, Program * program)",
+ "return_type": null,
+ "is_const": false
 }

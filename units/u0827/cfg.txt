@@ -1,0 +1,10 @@
+UNIT u0827
+Hàm: matrix() const  → trả về const BlockSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.h, dòng 95–95
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return bsm_.get()   → END

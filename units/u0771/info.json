@@ -6,7 +6,6 @@
   398,
   438
  ],
- "signature": "ceres::IsSparseLinearAlgebraLibraryTypeAvailable",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 13,
- "order": 771
+ "order": 771,
+ "short_name": "IsSparseLinearAlgebraLibraryTypeAvailable",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(SparseLinearAlgebraLibraryType type)",
+ "return_type": "bool",
+ "is_const": false
 }

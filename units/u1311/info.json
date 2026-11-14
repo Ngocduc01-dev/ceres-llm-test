@@ -6,7 +6,6 @@
   76,
   90
  ],
- "signature": "ceres::internal::(anonymous)::MinParameterBlock",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1311
+ "order": 1311,
+ "short_name": "MinParameterBlock",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const ResidualBlock * residual_block, int size_of_first_elimination_group)",
+ "return_type": "int",
+ "is_const": false
 }

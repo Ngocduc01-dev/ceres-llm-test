@@ -1,0 +1,24 @@
+UNIT u0773
+Hàm: CompressedColumnScalarMatrixToBlockMatrix(const int * scalar_rows, const int * scalar_cols, const std::vector<Block> & row_blocks, const std::vector<Block> & col_blocks, std::vector<int> * block_rows, std::vector<int> * block_cols)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/compressed_col_sparse_matrix_utils.cc, dòng 41–89
+
+Số điểm rẽ nhánh: 3 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(block_rows != nullptr)                                   đúng → 2   sai → DỪNG
+2   CHECK(block_cols != nullptr)                                   đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: col_block < num_col_blocks                đúng → 4   sai → END
+4   int column_size = 0
+    int idx = scalar_cols[c]                                       → 5
+5   vòng for, điều kiện: idx < scalar_cols[c + 1]                  đúng → 6   sai → 11
+6   operator->                                                     → 7
+7   if (it == row_blocks.end() || it->position != scalar_rows[idx])   đúng → 8   sai → 10
+8   continue                                                       → 9
+9   ++idx                                                          → 5
+10  block_rows->push_back(it - row_blocks.begin())
+    ++column_size                                                  → 9
+11  block_cols->push_back(block_cols->back() + column_size)
+    c += col_blocks[col_block].size                                → 12
+12  ++col_block                                                    → 3

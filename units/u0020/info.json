@@ -6,7 +6,6 @@
   113,
   115
  ],
- "signature": "ceres::DynamicCostFunctionToFunctor::operator()",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 20
+ "order": 20,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::DynamicCostFunctionToFunctor",
+ "class_is_template": false,
+ "params": "(const double *const * parameters, double * residuals)",
+ "return_type": "bool",
+ "is_const": true
 }

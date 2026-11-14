@@ -1,0 +1,16 @@
+UNIT u0503
+Hàm: ~CgnrSolver()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::CgnrSolver
+Vị trí: internal/ceres/cgnr_solver.cc, dòng 136–143
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < 4                                     đúng → 3   sai → END
+3   if (scratch_[i])                                               đúng → 4   sai → 5
+4   scratch_[i]->~Matrix() (Implicit destructor)
+    delete scratch_[i]
+    scratch_[i] = nullptr                                          → 5
+5   ++i                                                            → 2

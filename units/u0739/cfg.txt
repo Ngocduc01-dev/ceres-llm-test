@@ -1,0 +1,10 @@
+UNIT u0739
+Hàm: IsSchurType(LinearSolverType type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 390–396
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return ((type == SPARSE_SCHUR) || (type == DENSE_SCHUR) || (type == ITERATIVE_SCHUR))   → END

@@ -6,7 +6,6 @@
   134,
   301
  ],
- "signature": "ceres::internal::ProgramEvaluator::Evaluate",
  "branches": 50,
  "cyclomatic": 26,
  "topo_level": 4,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1492
+ "order": 1492,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "(const Evaluator::EvaluateOptions & evaluate_options, const double * state, double * cost, double * residuals, double * gradient, SparseMatrix * jacobian)",
+ "return_type": "bool",
+ "is_const": false
 }

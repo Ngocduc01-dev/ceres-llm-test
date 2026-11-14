@@ -1,0 +1,17 @@
+UNIT u0468
+Hàm: BFGS(const int num_parameters, const bool use_approximate_eigenvalue_scaling)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BFGS
+Vị trí: internal/ceres/line_search_direction.cc, dòng 146–162
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   LineSearchDirection() (Base initializer)
+    num_parameters_(num_parameters) (Member initializer)
+    use_approximate_eigenvalue_scaling_(use_approximate_eigenvalue_scaling) (Member initializer)
+    inverse_hessian_() (Member initializer)
+    initialized_(false) (Member initializer)
+    is_positive_definite_(true) (Member initializer)               → 2
+2   if (num_parameters_ >= 1000)                                   đúng → 3   sai → 3
+3   inverse_hessian_ = Matrix::Identity(num_parameters, num_parameters)   → END

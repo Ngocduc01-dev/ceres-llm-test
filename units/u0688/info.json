@@ -6,7 +6,6 @@
   52,
   55
  ],
- "signature": "ceres::internal::PowerSeriesExpansionPreconditioner::Update",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 688
+ "order": 688,
+ "short_name": "Update",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PowerSeriesExpansionPreconditioner",
+ "class_is_template": false,
+ "params": "(const LinearOperator &, const double *)",
+ "return_type": "bool",
+ "is_const": false
 }

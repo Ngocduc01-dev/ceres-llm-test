@@ -6,7 +6,6 @@
   279,
   281
  ],
- "signature": "ceres::internal::FixedArray::rbegin",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 41
+ "order": 41,
+ "short_name": "rbegin",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const_reverse_iterator",
+ "is_const": true
 }

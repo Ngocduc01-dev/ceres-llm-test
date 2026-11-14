@@ -1,0 +1,10 @@
+UNIT u0999
+Hàm: Plus(const double * state, const double * delta, double * state_plus_delta) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientProblemEvaluator
+Vị trí: internal/ceres/gradient_problem_evaluator.h, dòng 76–80
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return problem_.Plus(state, delta, state_plus_delta)   → END

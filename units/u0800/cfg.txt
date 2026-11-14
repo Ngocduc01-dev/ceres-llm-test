@@ -1,0 +1,10 @@
+UNIT u0800
+Hàm: BuildCompanionMatrix(const Vector & polynomial, Matrix * companion_matrix_ptr)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/polynomial.cc, dòng 102–113
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(companion_matrix_ptr != nullptr)   đúng → END   sai → DỪNG

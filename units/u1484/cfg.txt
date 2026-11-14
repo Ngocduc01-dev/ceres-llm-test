@@ -1,0 +1,10 @@
+UNIT u1484
+Hàm: EvaluateResidualBlockAssumingParametersUnchanged(ResidualBlockId residual_block_id, bool apply_loss_function, double * cost, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 149–161
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->EvaluateResidualBlock(residual_block_id, apply_loss_function, false, cost, residuals, jacobians)   → END

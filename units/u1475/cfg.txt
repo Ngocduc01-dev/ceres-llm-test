@@ -1,0 +1,10 @@
+UNIT u1475
+Hàm: IsProgramValid(const Program & program, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/trust_region_preprocessor.cc, dòng 71–73
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (program.ParameterBlocksAreFinite(error) && program.IsFeasible(error))   → END

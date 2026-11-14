@@ -1,0 +1,10 @@
+UNIT u1430
+Hàm: NumParameters() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 165–165
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->NumParameters()   → END

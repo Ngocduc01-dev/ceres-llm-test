@@ -1,0 +1,10 @@
+UNIT u0629
+Hàm: operator==(const FixedArray<T, N, A> & lhs, const FixedArray<T, N, A> & rhs)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: include/ceres/internal/fixed_array.h, dòng 311–313
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return std::equal(lhs.begin(), lhs.end(), rhs.begin(), rhs.end())   → END

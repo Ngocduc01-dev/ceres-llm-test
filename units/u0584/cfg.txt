@@ -1,0 +1,10 @@
+UNIT u0584
+Hàm: rhs() const  → trả về const Vector &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.h, dòng 134–134
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return rhs_   → END

@@ -1,0 +1,10 @@
+UNIT u0877
+Hàm: mutable_manifold()  → trả về Manifold *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 115–115
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return manifold_   → END

@@ -1,0 +1,22 @@
+UNIT u0940
+Hàm: Reserve(int new_max_num_nonzeros)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 121–145
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_LE(num_nonzeros_, new_max_num_nonzeros)                  đúng → 2   sai → DỪNG
+2   if (new_max_num_nonzeros <= max_num_nonzeros_)                 đúng → 3   sai → 4
+3   return                                                         → END
+4   int i = 0                                                      → 5
+5   vòng for, điều kiện: i < num_nonzeros_                         đúng → 6   sai → 8
+6   new_rows[i] = rows_[i]
+    new_cols[i] = cols_[i]
+    new_values[i] = values_[i]                                     → 7
+7   ++i                                                            → 5
+8   rows_ = std::move(new_rows)
+    cols_ = std::move(new_cols)
+    values_ = std::move(new_values)
+    max_num_nonzeros_ = new_max_num_nonzeros                       → END

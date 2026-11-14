@@ -1,0 +1,12 @@
+UNIT u0732
+Hàm: DoglegTypeToString(DoglegType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 181–188
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)                 nhánh → 2   nhánh → 3
+2   return "SUBSPACE_DOGLEG"      → END
+3   return "TRADITIONAL_DOGLEG"   → END

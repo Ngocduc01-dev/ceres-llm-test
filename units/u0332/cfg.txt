@@ -1,0 +1,12 @@
+UNIT u0332
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TrivialLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 44–48
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   rho[0] = s
+    rho[1] = 1.
+    rho[2] = 0.                            → END

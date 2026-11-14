@@ -6,7 +6,6 @@
   109,
   131
  ],
- "signature": "ceres::CostFunctionToFunctor::CostFunctionToFunctor<kNumResiduals, Ns...>",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1210
+ "order": 1210,
+ "short_name": "CostFunctionToFunctor<kNumResiduals, Ns...>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::CostFunctionToFunctor",
+ "class_is_template": true,
+ "params": "(CostFunction * cost_function)",
+ "return_type": null,
+ "is_const": false
 }

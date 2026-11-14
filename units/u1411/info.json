@@ -6,7 +6,6 @@
   508,
   517
  ],
- "signature": "ceres::(anonymous)::SummarizeGivenProgram",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1411
+ "order": 1411,
+ "short_name": "SummarizeGivenProgram",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const internal::Program & program, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false
 }

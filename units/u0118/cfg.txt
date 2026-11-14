@@ -1,0 +1,11 @@
+UNIT u0118
+Hàm: cbrt(const Jet<T, N>& f)  → trả về Jet<T, N>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 691–695
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp cbrt<double, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double derivative = double(1.) / (double(3.) * cbrt(f.a * f.a))   → END

@@ -6,7 +6,6 @@
   52,
   74
  ],
- "signature": "ceres::internal::ReadFileToStringOrDie",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 725
+ "order": 725,
+ "short_name": "ReadFileToStringOrDie",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::string & filename, std::string * data)",
+ "return_type": "void",
+ "is_const": false
 }

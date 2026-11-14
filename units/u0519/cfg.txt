@@ -1,0 +1,14 @@
+UNIT u0519
+Hàm: LineManifold(int size)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::LineManifold
+Vị trí: include/ceres/line_manifold.h, dòng 129–139
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<-1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   Manifold() (Base initializer)
+    size_({size}) (Member initializer)
+    if -1 != Eigen::Dynamic                                        → 2
+2   CHECK_GT(size_, 1)                                             đúng → END   sai → DỪNG

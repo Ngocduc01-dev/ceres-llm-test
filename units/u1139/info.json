@@ -6,7 +6,6 @@
   609,
   659
  ],
- "signature": "ceres::internal::SchurEliminator::NoEBlockRowOuterProduct",
  "branches": 14,
  "cyclomatic": 8,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1139
+ "order": 1139,
+ "short_name": "NoEBlockRowOuterProduct",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(const BlockSparseMatrixData & A, int row_block_index, BlockRandomAccessMatrix * lhs)",
+ "return_type": "void",
+ "is_const": false
 }

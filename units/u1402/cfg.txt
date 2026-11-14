@@ -1,0 +1,21 @@
+UNIT u1402
+Hàm: ComputeRecursiveIndependentSetOrdering(const Program & program, ParameterBlockOrdering * ordering)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parameter_block_ordering.cc, dòng 102–124
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(ordering != nullptr)                                     đúng → 2   sai → DỪNG
+2   while (num_covered < parameter_blocks.size())                  đúng → 3   sai → END
+3   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    const int independent_set_size = IndependentSetOrdering(* graph, &independent_set_ordering)
+    int i = 0                                                      → 4
+4   vòng for, điều kiện: i < independent_set_size                  đúng → 5   sai → 7
+5   ParameterBlock *parameter_block = independent_set_ordering[i]
+    ordering->AddElementToGroup(parameter_block->mutable_user_state(), round)
+    graph->RemoveVertex(parameter_block)                           → 6
+6   ++i                                                            → 4
+7   num_covered += independent_set_size
+    ++round                                                        → 2

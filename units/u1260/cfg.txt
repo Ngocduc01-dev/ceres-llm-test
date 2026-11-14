@@ -1,0 +1,15 @@
+UNIT u1260
+Hàm: NumResiduals() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 483–489
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int num_residuals = 0                                          → 2
+2   for (auto *residual_block : residual_blocks_)                  đúng → 3   sai → 5
+3   auto *residual_block
+    num_residuals += residual_block->NumResiduals()                → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   return num_residuals                                           → END

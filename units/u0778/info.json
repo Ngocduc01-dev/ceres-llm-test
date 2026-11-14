@@ -6,7 +6,6 @@
   326,
   367
  ],
- "signature": "ceres::internal::FindInterpolatingPolynomial",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 7,
- "order": 778
+ "order": 778,
+ "short_name": "FindInterpolatingPolynomial",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::vector<FunctionSample> & samples)",
+ "return_type": "Vector",
+ "is_const": false
 }

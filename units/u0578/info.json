@@ -6,7 +6,6 @@
   447,
   451
  ],
- "signature": "ceres::internal::DoglegStrategy::ComputeSubspaceStepFromRoot",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 578
+ "order": 578,
+ "short_name": "ComputeSubspaceStepFromRoot",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(double y)",
+ "return_type": "DoglegStrategy::Vector2d",
+ "is_const": true
 }

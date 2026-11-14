@@ -1,0 +1,11 @@
+UNIT u0994
+Hàm: ceres_create_softl1_loss_function_data(double a)  → trả về void *
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 114–116
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(ceres::SoftLOneLoss *)
+    return new ceres::SoftLOneLoss(a)                              → END

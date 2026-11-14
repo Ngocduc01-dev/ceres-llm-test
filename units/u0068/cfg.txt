@@ -1,0 +1,13 @@
+UNIT u0068
+Hàm: Jet()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::Jet
+Vị trí: include/ceres/jet.h, dòng 220–220
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Jet<double, 4> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   a(/*implicit*/(double)0) (Member initializer)
+    v() (Member initializer)
+    v.setConstant(Scalar())                                        → END

@@ -6,7 +6,6 @@
   122,
   123
  ],
- "signature": "ceres::internal::FirstOrderFunctorAdapter::FirstOrderFunctorAdapter<Functor>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 635
+ "order": 635,
+ "short_name": "FirstOrderFunctorAdapter<Functor>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::FirstOrderFunctorAdapter",
+ "class_is_template": true,
+ "params": "(const Functor & functor)",
+ "return_type": null,
+ "is_const": false
 }

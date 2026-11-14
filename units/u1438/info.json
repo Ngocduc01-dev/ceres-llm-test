@@ -6,7 +6,6 @@
   1023,
   1042
  ],
- "signature": "ceres::internal::DumpLinearLeastSquaresProblem",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1438
+ "order": 1438,
+ "short_name": "DumpLinearLeastSquaresProblem",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::string & filename_base, DumpFormatType dump_format_type, const SparseMatrix * A, const double * D, const double * b, const double * x, int num_eliminate_blocks)",
+ "return_type": "bool",
+ "is_const": false
 }

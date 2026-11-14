@@ -1,0 +1,11 @@
+UNIT u1264
+Hàm: SetState(const double * x)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 91–99
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(x != nullptr)    đúng → 2   sai → DỪNG
+2   CHECK(!IsConstant())   đúng → END   sai → DỪNG

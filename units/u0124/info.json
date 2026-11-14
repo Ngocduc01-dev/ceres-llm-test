@@ -6,7 +6,6 @@
   849,
   859
  ],
- "signature": "ceres::erf",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 124
+ "order": 124,
+ "short_name": "erf",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Jet<T, N>& x)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

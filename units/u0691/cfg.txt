@@ -1,0 +1,10 @@
+UNIT u0691
+Hàm: Update(const LinearOperator &, const double *)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::IdentityPreconditioner
+Vị trí: internal/ceres/preconditioner.h, dòng 164–166
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return true   → END

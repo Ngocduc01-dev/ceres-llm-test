@@ -1,0 +1,10 @@
+UNIT u0283
+Hàm: Radius() const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 645–645
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return radius_   → END

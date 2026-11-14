@@ -1,0 +1,10 @@
+UNIT u0261
+Hàm: mutable_cols()  → trả về int *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.h, dòng 143–143
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return cols_.data()   → END

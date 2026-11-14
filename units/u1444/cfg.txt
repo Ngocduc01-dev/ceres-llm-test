@@ -1,0 +1,39 @@
+UNIT u1444
+Hàm: BlockSparseMatrix(CompressedRowBlockStructure * block_structure, bool use_page_locked_memory)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 177–215
+
+Số điểm rẽ nhánh: 3 (và 5 lệnh CHECK)
+
+START → 1
+1   SparseMatrix() (Base initializer)
+    use_page_locked_memory_(use_page_locked_memory) (Member initializer)
+    num_rows_(0) (Member initializer)
+    num_cols_(0) (Member initializer)
+    num_nonzeros_(0) (Member initializer)
+    block_structure_(block_structure) (Member initializer)
+    transpose_block_structure_() (Member initializer)              → 2
+2   CHECK(block_structure_ != nullptr)                             đúng → 3   sai → DỪNG
+3   for (auto &col : block_structure_->cols)                       đúng → 4   sai → 6
+4   auto &col
+    num_cols_ += col.size                                          → 5
+5   ++ (bước tiếp của vòng for)                                    → 3
+6   int i = 0                                                      → 7
+7   vòng for, điều kiện: i < block_structure_->rows.size()         đúng → 8   sai → 13
+8   int row_block_size = block_structure_->rows[i].block.size
+    num_rows_ += row_block_size
+    const std::vector<Cell> &cells = block_structure_->rows[i].cells   → 9
+9   for (const auto &cell : cells)                                 đúng → 10   sai → 12
+10  const auto &cell
+    int col_block_id = cell.block_id
+    int col_block_size = block_structure_->cols[col_block_id].size
+    num_nonzeros_ += col_block_size * row_block_size               → 11
+11  ++ (bước tiếp của vòng for)                                    → 9
+12  ++i                                                            → 7
+13  CHECK_GE(num_rows_, 0)                                         đúng → 14   sai → DỪNG
+14  CHECK_GE(num_cols_, 0)                                         đúng → 15   sai → DỪNG
+15  CHECK_GE(num_nonzeros_, 0)                                     đúng → 16   sai → DỪNG
+16  values_ = AllocateValues(num_nonzeros_)
+    max_num_nonzeros_ = num_nonzeros_                              → 17
+17  CHECK(values_ != nullptr)                                      đúng → END   sai → DỪNG

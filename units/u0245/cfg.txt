@@ -1,0 +1,12 @@
+UNIT u0245
+Hàm: CallbackLossFunction(ceres_loss_function_t loss_function, void * user_data)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: CallbackLossFunction
+Vị trí: internal/ceres/c_api.cc, dòng 98–100
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LossFunction() (Base initializer)
+    loss_function_(loss_function) (Member initializer)
+    user_data_(user_data) (Member initializer)                     → END

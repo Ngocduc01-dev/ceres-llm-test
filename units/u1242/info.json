@@ -6,7 +6,6 @@
   66,
   66
  ],
- "signature": "ceres::internal::BlockSparseJacobiPreconditioner::num_cols",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1242
+ "order": 1242,
+ "short_name": "num_cols",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseJacobiPreconditioner",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

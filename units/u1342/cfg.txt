@@ -1,0 +1,10 @@
+UNIT u1342
+Hàm: GetLossFunctionForResidualBlock(const ResidualBlockId residual_block) const  → trả về const LossFunction *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 203–206
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->GetLossFunctionForResidualBlock(residual_block)   → END

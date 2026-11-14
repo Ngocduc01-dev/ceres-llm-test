@@ -1,0 +1,16 @@
+UNIT u0746
+Hàm: ToTextFile(FILE * file) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 107–114
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(file != nullptr)                                đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: r < m_.rows()                    đúng → 3   sai → END
+3   int c = 0                                             → 4
+4   vòng for, điều kiện: c < m_.cols()                    đúng → 5   sai → 7
+5   fprintf(file, "% 10d % 10d %17f\n", r, c, m_(r, c))   → 6
+6   ++c                                                   → 4
+7   ++r                                                   → 2

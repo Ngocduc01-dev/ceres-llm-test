@@ -14,7 +14,7 @@
 //   node scripts/generate.mjs --force --ids u0553  # gọi lại dù đã có response.md
 import { spawn } from "node:child_process";
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
-import { basename, dirname, join } from "node:path";
+import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 const REPO = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -83,9 +83,8 @@ function extractTest(text, uid) {
   const blocks = [...text.matchAll(/```(?:cpp|c\+\+)?\s*\n([\s\S]*?)```/g)].map((m) => m[1]);
   const block = blocks.find((b) => /^\s*\/\/\s*FILE:/m.test(b)) || blocks.at(-1);
   if (!block) return null;
-  const m = block.match(/^\s*\/\/\s*FILE:\s*(\S+)/m);
-  const name = m ? basename(m[1]) : `${uid}_test.cc`;
-  return { name: name.endsWith(".cc") ? name : `${uid}_test.cc`, code: block };
+  // luôn lưu tên <id>_test.cc (không theo tên LLM ghi, tránh ghi đè source.cc / file khác trong thư mục unit)
+  return { name: `${uid}_test.cc`, code: block };
 }
 
 // ---- chạy

@@ -6,7 +6,6 @@
   85,
   87
  ],
- "signature": "ceres::internal::BlockCRSJacobiPreconditioner::RightMultiplyAndAccumulate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1243
+ "order": 1243,
+ "short_name": "RightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockCRSJacobiPreconditioner",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

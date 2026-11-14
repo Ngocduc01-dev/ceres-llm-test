@@ -1,0 +1,20 @@
+UNIT u0743
+Hàm: Evaluate(const double *const parameters, double * cost, double * gradient) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::NumericDiffFirstOrderFunction
+Vị trí: include/ceres/numeric_diff_first_order_function.h, dòng 158–201
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))   → 2
+2   if (!(* functor_)(parameters, cost))                           đúng → 3   sai → 4
+3   return false                                                   → END
+4   if (gradient == nullptr)                                       đúng → 5   sai → 6
+5   return true                                                    → END
+6   std::copy_n(parameters, num_parameters_, parameters_copy.data())
+    double *parameters_ptr = parameters_copy.data()
+    constexpr int kNumResiduals = 1
+    if 4 == DYNAMIC                                                → 7
+7   return internal::EvaluateJacobianForParameterBlocks<internal::StaticParameterDims<4>>::template Apply<(ceres::NumericDiffMethodType)0U, 1>(functor_.get(), cost, options_, kNumResiduals, &parameters_ptr, &gradient)   → END

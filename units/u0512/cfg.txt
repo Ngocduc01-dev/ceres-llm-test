@@ -1,0 +1,11 @@
+UNIT u0512
+Hàm: IsSolutionUsable(const SummaryType& summary)  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/solver_utils.h, dòng 44–49
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp IsSolutionUsable<Summary> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return (summary.termination_type == CONVERGENCE || summary.termination_type == NO_CONVERGENCE || summary.termination_type == USER_SUCCESS)   → END

@@ -1,0 +1,9 @@
+UNIT u1320
+Hàm: FromTripletSparseMatrix(const TripletSparseMatrix & input)  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 181–185
+
+Số điểm rẽ nhánh: 0
+
+START → END

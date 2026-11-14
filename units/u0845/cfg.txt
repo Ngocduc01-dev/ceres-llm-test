@@ -1,0 +1,9 @@
+UNIT u0845
+Hàm: ~Covariance()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::Covariance
+Vị trí: internal/ceres/covariance.cc, dòng 46–46
+
+Số điểm rẽ nhánh: 0
+
+START → END

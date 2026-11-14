@@ -6,7 +6,6 @@
   72,
   75
  ],
- "signature": "ceres::internal::ScopedExecutionTimer::ScopedExecutionTimer",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1077
+ "order": 1077,
+ "short_name": "ScopedExecutionTimer",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ScopedExecutionTimer",
+ "class_is_template": false,
+ "params": "(std::string name, ExecutionSummary * summary)",
+ "return_type": null,
+ "is_const": false
 }

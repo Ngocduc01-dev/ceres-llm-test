@@ -1,0 +1,13 @@
+UNIT u1049
+Hàm: Evaluate(const double * parameters, double * cost, double * gradient) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: internal/ceres/gradient_problem.cc, dòng 68–78
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (gradient == nullptr)                                       đúng → 2   sai → 3
+2   return function_->Evaluate(parameters, cost, nullptr)          → END
+3   operator->                                                     → 4
+4   return (function_->Evaluate(parameters, cost, scratch_.get()) && manifold_->RightMultiplyByPlusJacobian(parameters, 1, scratch_.get(), gradient))   → END

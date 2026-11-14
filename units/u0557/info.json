@@ -6,7 +6,6 @@
   97,
   153
  ],
- "signature": "ceres::internal::IndependentSetOrdering",
  "branches": 18,
  "cyclomatic": 10,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 557
+ "order": 557,
+ "short_name": "IndependentSetOrdering",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Graph<Vertex>& graph, std::vector<Vertex>* ordering)",
+ "return_type": "int",
+ "is_const": false
 }

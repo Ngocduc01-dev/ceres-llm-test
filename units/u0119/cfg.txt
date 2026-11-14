@@ -1,0 +1,12 @@
+UNIT u0119
+Hàm: exp2(const Jet<T, N>& f)  → trả về Jet<T, N>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 698–703
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp exp2<double, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double tmp = exp2(f.a)
+    const double derivative = tmp * log(double(2))                 → END

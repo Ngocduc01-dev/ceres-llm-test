@@ -1,0 +1,18 @@
+UNIT u0762
+Hàm: NextDirection(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::NonlinearConjugateGradient
+Vị trí: internal/ceres/line_search_direction.cc, dòng 60–93
+
+Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
+
+START → 1
+1   double beta = 0.                                               → 2
+2   LOG(FATAL)                                                     đúng → 3   sai → DỪNG
+3   gradient_change = current.gradient - previous.gradient
+    beta = (current.gradient.dot(gradient_change) / previous.search_direction.dot(gradient_change))
+    break                                                          → 4
+4   *search_direction = - current.gradient + beta * previous.search_direction
+    const double directional_derivative = current.gradient.dot(*search_direction)   → 5
+5   if (directional_derivative > -function_tolerance_)             đúng → 6   sai → 6
+6   return true                                                    → END

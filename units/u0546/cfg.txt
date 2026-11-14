@@ -1,0 +1,14 @@
+UNIT u0546
+Hàm: fmax(const Lhs& x, const Rhs& y)  → trả về decltype(auto)
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 789–805
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp fmax<Jet<double, 2>, Jet<double, 2>, nullptr> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (isnan(x) || isnan(y) || islessgreater(x, y))   đúng → 2   sai → 4
+2   isnan(x) || isless(x, y) ? ... : ...               đúng → 3   sai → 3
+3   return isnan(x) || isless(x, y) ? J{y} : J{x}      → END
+4   operator+                                          → END

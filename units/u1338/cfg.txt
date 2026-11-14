@@ -1,0 +1,10 @@
+UNIT u1338
+Hàm: ParameterBlockSize(const double * values) const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 171–173
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->ParameterBlockSize(values)   → END

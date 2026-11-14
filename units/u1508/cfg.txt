@@ -1,0 +1,166 @@
+UNIT u1508
+Hàm: TrustRegionOptionsAreValid(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 389–436
+
+Số điểm rẽ nhánh: 22
+
+START → 1
+1   if (!(options.initial_trust_region_radius > 0.))               đúng → 2   sai → 3
+2   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::initial_trust_region_radius = ") << options.initial_trust_region_radius << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::initial_trust_region_radius > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+3   if (!(options.min_trust_region_radius > 0.))                   đúng → 4   sai → 5
+4   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_trust_region_radius = ") << options.min_trust_region_radius << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_trust_region_radius > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+5   if (!(options.max_trust_region_radius > 0.))                   đúng → 6   sai → 7
+6   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_trust_region_radius = ") << options.max_trust_region_radius << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_trust_region_radius > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+7   if (!(options.min_trust_region_radius <= options.max_trust_region_radius))   đúng → 8   sai → 9
+8   ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_trust_region_radius = ") << options.min_trust_region_radius << ". "
+    ss << std::string("Solver::Options::max_trust_region_radius = ") << options.max_trust_region_radius << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_trust_region_radius")
+    ss << std::string("<= Solver::Options::max_trust_region_radius.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+9   if (!(options.min_trust_region_radius <= options.initial_trust_region_radius))   đúng → 10   sai → 11
+10  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_trust_region_radius = ") << options.min_trust_region_radius << ". "
+    ss << std::string("Solver::Options::initial_trust_region_radius = ") << options.initial_trust_region_radius << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_trust_region_radius")
+    ss << std::string("<= Solver::Options::initial_trust_region_radius.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+11  if (!(options.initial_trust_region_radius <= options.max_trust_region_radius))   đúng → 12   sai → 13
+12  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::initial_trust_region_radius = ") << options.initial_trust_region_radius << ". "
+    ss << std::string("Solver::Options::max_trust_region_radius = ") << options.max_trust_region_radius << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::initial_trust_region_radius")
+    ss << std::string("<= Solver::Options::max_trust_region_radius.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+13  if (!(options.min_relative_decrease >= 0.))                    đúng → 14   sai → 15
+14  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_relative_decrease = ") << options.min_relative_decrease << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_relative_decrease >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+15  if (!(options.min_lm_diagonal >= 0.))                          đúng → 16   sai → 17
+16  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_lm_diagonal = ") << options.min_lm_diagonal << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_lm_diagonal >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+17  if (!(options.max_lm_diagonal >= 0.))                          đúng → 18   sai → 19
+18  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_lm_diagonal = ") << options.max_lm_diagonal << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_lm_diagonal >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+19  if (!(options.min_lm_diagonal <= options.max_lm_diagonal))     đúng → 20   sai → 21
+20  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_lm_diagonal = ") << options.min_lm_diagonal << ". "
+    ss << std::string("Solver::Options::max_lm_diagonal = ") << options.max_lm_diagonal << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_lm_diagonal")
+    ss << std::string("<= Solver::Options::max_lm_diagonal.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+21  if (!(options.max_num_consecutive_invalid_steps >= 0))         đúng → 22   sai → 23
+22  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_num_consecutive_invalid_steps = ") << options.max_num_consecutive_invalid_steps << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_num_consecutive_invalid_steps >= 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+23  if (!(options.eta > 0.))                                       đúng → 24   sai → 25
+24  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::eta = ") << options.eta << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::eta > 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+25  if (!(options.min_linear_solver_iterations >= 0))              đúng → 26   sai → 27
+26  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_linear_solver_iterations = ") << options.min_linear_solver_iterations << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_linear_solver_iterations >= 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+27  if (!(options.max_linear_solver_iterations >= 0))              đúng → 28   sai → 29
+28  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_linear_solver_iterations = ") << options.max_linear_solver_iterations << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_linear_solver_iterations >= 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+29  if (!(options.min_linear_solver_iterations <= options.max_linear_solver_iterations))   đúng → 30   sai → 31
+30  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::min_linear_solver_iterations = ") << options.min_linear_solver_iterations << ". "
+    ss << std::string("Solver::Options::max_linear_solver_iterations = ") << options.max_linear_solver_iterations << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::min_linear_solver_iterations")
+    ss << std::string("<= Solver::Options::max_linear_solver_iterations.")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+31  if (options.use_inner_iterations)                              đúng → 32   sai → 34
+32  if (!(options.inner_iteration_tolerance >= 0.))                đúng → 33   sai → 34
+33  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::inner_iteration_tolerance = ") << options.inner_iteration_tolerance << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::inner_iteration_tolerance >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+34  if (options.use_nonmonotonic_steps)                            đúng → 35   sai → 37
+35  if (!(options.max_consecutive_nonmonotonic_steps > 0))         đúng → 36   sai → 37
+36  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_consecutive_nonmonotonic_steps = ") << options.max_consecutive_nonmonotonic_steps << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_consecutive_nonmonotonic_steps > 0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+37  if (options.trust_region_strategy_type == DOGLEG) && IsIterativeSolver(options.linear_solver_type)   đúng → 38   sai → 39
+38  *error = "DOGLEG only supports exact factorization based linear solvers. If you want to use an iterative solver please use LEVENBERG_MARQUARDT as the trust_region_strategy_type"
+    return false                                                   → END
+39  if (!OptionsAreValidForLinearSolver(options, error))           đúng → 40   sai → 41
+40  return false                                                   → END
+41  if (!options.trust_region_minimizer_iterations_to_dump.empty() && options.trust_region_problem_dump_format_type != CONSOLE && options.trust_region_problem_dump_directory.empty())   đúng → 42   sai → 43
+42  *error = "Solver::Options::trust_region_problem_dump_directory is empty."
+    return false                                                   → END
+43  return true                                                    → END

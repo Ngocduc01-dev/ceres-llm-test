@@ -1,0 +1,22 @@
+UNIT u1354
+Hàm: Write(int residual_id, int residual_offset, double ** jacobians, SparseMatrix * jacobian)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseJacobianWriter
+Vị trí: internal/ceres/dense_jacobian_writer.h, dòng 71–100
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   DenseSparseMatrix *dense_jacobian = down_cast<DenseSparseMatrix *>(jacobian)
+    const ResidualBlock *residual_block = program_->residual_blocks()[residual_id]
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    const int num_residuals = residual_block->NumResiduals()
+    int j = 0                                                      → 2
+2   vòng for, điều kiện: j < num_parameter_blocks                  đúng → 3   sai → END
+3   ParameterBlock *parameter_block = residual_block->parameter_blocks()[j]   → 4
+4   if (parameter_block->IsConstant())                             đúng → 5   sai → 7
+5   continue                                                       → 6
+6   ++j                                                            → 2
+7   const int parameter_block_size = parameter_block->TangentSize()
+    jacobians[j], num_residuals, parameter_block_size
+    dense_jacobian->mutable_matrix()->block(residual_offset, parameter_block->delta_offset(), num_residuals, parameter_block_size) = parameter_jacobian   → 6

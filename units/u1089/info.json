@@ -6,7 +6,6 @@
   837,
   841
  ],
- "signature": "ceres::internal::ProblemImpl::GetResidualBlocks",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1089
+ "order": 1089,
+ "short_name": "GetResidualBlocks",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "(std::vector<ResidualBlockId> * residual_blocks)",
+ "return_type": "void",
+ "is_const": true
 }

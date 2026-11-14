@@ -1,0 +1,9 @@
+UNIT u0824
+Hàm: Write(int, int, double **, SparseMatrix *)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockJacobianWriter
+Vị trí: internal/ceres/block_jacobian_writer.h, dòng 78–85
+
+Số điểm rẽ nhánh: 0
+
+START → END

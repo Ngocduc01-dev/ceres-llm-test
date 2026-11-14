@@ -6,7 +6,6 @@
   108,
   118
  ],
- "signature": "ceres::internal::(anonymous)::InitializeContext",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1227
+ "order": 1227,
+ "short_name": "InitializeContext",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Context * context, ContextImpl ** context_impl, bool * context_impl_owned)",
+ "return_type": "void",
+ "is_const": false
 }

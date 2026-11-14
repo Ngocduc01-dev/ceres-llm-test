@@ -1,0 +1,12 @@
+UNIT u1072
+Hàm: Invert()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDiagonalMatrix
+Vị trí: internal/ceres/block_random_access_diagonal_matrix.cc, dòng 90–100
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   auto &blocks = m_->row_blocks()
+    const int num_blocks = blocks.size()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.cc:93:54) &&, int))(context_, 0, num_blocks, num_threads_, [this, blocks](int i) {)   → END

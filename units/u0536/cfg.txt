@@ -1,0 +1,16 @@
+UNIT u0536
+Hàm: IsArrayValid(const int64_t size, const double * x)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/array_utils.cc, dòng 44–53
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (x != nullptr)                                         đúng → 2   sai → 7
+2   int64_t i = 0                                             → 3
+3   vòng for, điều kiện: i < size                             đúng → 4   sai → 7
+4   if (!std::isfinite(x[i]) || (x[i] == kImpossibleValue))   đúng → 5   sai → 6
+5   return false                                              → END
+6   ++i                                                       → 3
+7   return true                                               → END

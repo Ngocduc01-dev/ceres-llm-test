@@ -6,7 +6,6 @@
   161,
   173
  ],
- "signature": "ceres::internal::(anonymous)::SetBlockStructureOfCompressedRowSparseMatrix",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1224
+ "order": 1224,
+ "short_name": "SetBlockStructureOfCompressedRowSparseMatrix",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(CompressedRowSparseMatrix * crs_matrix, CompressedRowBlockStructure * block_structure)",
+ "return_type": "void",
+ "is_const": false
 }

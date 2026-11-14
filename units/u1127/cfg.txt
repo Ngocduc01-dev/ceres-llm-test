@@ -1,0 +1,47 @@
+UNIT u1127
+Hàm: EvaluateRiddersJacobianColumn(const CostFunctor * functor, int parameter_index, double delta, const NumericDiffOptions & options, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::NumericDiff
+Vị trí: include/ceres/internal/numeric_diff.h, dòng 245–383
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 9
+
+START → 1
+1   x_ptr, parameter_block_size
+    x_plus_delta_ptr, parameter_block_size
+    temp_residuals_ptr, num_residuals
+    double current_step_size = delta * pow(options.ridders_step_shrink_factor, options.max_num_ridders_extrapolations / 2)
+    num_residuals, options.max_num_ridders_extrapolations
+    num_residuals, options.max_num_ridders_extrapolations
+    ResidualCandidateMatrix *current_candidates = &stepsize_candidates_a
+    ResidualCandidateMatrix *previous_candidates = &stepsize_candidates_b
+    double norm_error = (std::numeric_limits<double>::max)()
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < options.max_num_ridders_extrapolations   đúng → 3   sai → 16
+3   if (!EvaluateJacobianColumn(functor, parameter_index, current_step_size, num_residuals, parameter_block_size, x.data(), residuals_at_eval_point, parameters, x_plus_delta.data(), temp_residuals.data(), current_candidates->col(0).data()))   đúng → 4   sai → 5
+4   return false                                                   → END
+5   if (i == 0)                                                    đúng → 6   sai → 7
+6   residuals = current_candidates->col(0)                         → 7
+7   current_step_size /= options.ridders_step_shrink_factor
+    double richardson_factor = options.ridders_step_shrink_factor * options.ridders_step_shrink_factor
+    int k = 1                                                      → 8
+8   vòng for, điều kiện: k <= i                                    đúng → 9   sai → 14
+9   current_candidates->col(k) = (richardson_factor * current_candidates->col(k - 1) - previous_candidates->col(k - 1)) / (richardson_factor - 1.)
+    richardson_factor *= options.ridders_step_shrink_factor * options.ridders_step_shrink_factor
+    double candidate_error = (std::max)((current_candidates->col(k) - current_candidates->col(k - 1)).norm(), (current_candidates->col(k) - previous_candidates->col(k - 1)).norm())   → 10
+10  if (candidate_error <= norm_error)                             đúng → 11   sai → 23
+11  norm_error = candidate_error
+    residuals = current_candidates->col(k)                         → 12
+12  if (norm_error < options.ridders_epsilon)                      đúng → 13   sai → 23
+13  break                                                          → 14
+14  if (norm_error < options.ridders_epsilon)                      đúng → 15   sai → 17
+15  break                                                          → 16
+16  return true                                                    → END
+17  if (i > 0)                                                     đúng → 18   sai → 21
+18  double tableau_error = (current_candidates->col(i) - previous_candidates->col(i - 1)).norm()   → 19
+19  if (tableau_error >= 2 * norm_error)                           đúng → 20   sai → 21
+20  break                                                          → 16
+21  std::swap(current_candidates, previous_candidates)             → 22
+22  ++i                                                            → 2
+23  ++k                                                            → 8

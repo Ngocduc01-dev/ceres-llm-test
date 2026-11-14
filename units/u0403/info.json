@@ -6,7 +6,6 @@
   131,
   131
  ],
- "signature": "ceres::internal::ResidualBlock::set_index",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 403
+ "order": 403,
+ "short_name": "set_index",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
+ "params": "(int index)",
+ "return_type": "void",
+ "is_const": false
 }

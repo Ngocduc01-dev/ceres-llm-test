@@ -1,0 +1,9 @@
+UNIT u0843
+Hàm: ~CostFunction()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::CostFunction
+Vị trí: internal/ceres/cost_function.cc, dòng 37–37
+
+Số điểm rẽ nhánh: 0
+
+START → END

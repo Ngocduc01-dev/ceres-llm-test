@@ -1,0 +1,15 @@
+UNIT u0760
+Hàm: JoinPath(const std::string & dirname, const std::string & basename)  → trả về std::string
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/file.cc, dòng 76–90
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   static init separator                                          đúng → 2   sai → 6
+2   if (!basename.empty() && basename[0] == separator) || dirname.empty()   đúng → END   sai → 3
+3   if (dirname[dirname.size() - 1] == separator)                  đúng → 4   sai → 5
+4   operator+                                                      → END
+5   operator+                                                      → END
+6   static const char separator = '/'                              → 2

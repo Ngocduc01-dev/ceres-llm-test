@@ -1,0 +1,10 @@
+UNIT u0268
+Hàm: mutable_col_blocks()  → trả về std::vector<Block> *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.h, dòng 157–157
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return &col_blocks_   → END

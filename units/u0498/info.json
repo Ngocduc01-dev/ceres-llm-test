@@ -6,7 +6,6 @@
   344,
   388
  ],
- "signature": "ceres::QuaternionToAngleAxis",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 498
+ "order": 498,
+ "short_name": "QuaternionToAngleAxis",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T* quaternion, T* angle_axis)",
+ "return_type": "void",
+ "is_const": false
 }

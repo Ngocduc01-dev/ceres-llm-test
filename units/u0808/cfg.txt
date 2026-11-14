@@ -1,0 +1,24 @@
+UNIT u0808
+Hàm: ComputeClusterMembership(const std::vector<int> & centers, IntMap * membership) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CanonicalViewsClustering
+Vị trí: internal/ceres/canonical_views_clustering.cc, dòng 198–221
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(membership != nullptr)                                   đúng → 2   sai → DỪNG
+2   vòng for, điều kiện: i < centers.size()                        đúng → 3   sai → 5
+3   center_to_cluster_id[centers[i]] = i                           → 4
+4   ++i                                                            → 2
+5   static init kInvalidClusterId                                  đúng → 6   sai → 13
+6   const IntSet &views = graph_->vertices()                       → 7
+7   for (const auto &view : views)                                 đúng → 8   sai → END
+8   const auto &view
+    view_to_canonical_view_.find(view)
+    int cluster_id = kInvalidClusterId                             → 9
+9   if (it != view_to_canonical_view_.end())                       đúng → 10   sai → 11
+10  cluster_id = FindOrDie(center_to_cluster_id, it->second)       → 11
+11  InsertOrDie(membership, view, cluster_id)                      → 12
+12  ++ (bước tiếp của vòng for)                                    → 7
+13  static constexpr int kInvalidClusterId = -1                    → 6

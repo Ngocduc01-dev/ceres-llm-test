@@ -1,0 +1,12 @@
+UNIT u1131
+Hàm: DeleteBlock(ParameterBlock * parameter_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 223–226
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   parameter_block_map_.erase(parameter_block->mutable_user_state())
+    parameter_block->~ParameterBlock() (Implicit destructor)
+    delete parameter_block                                         → END

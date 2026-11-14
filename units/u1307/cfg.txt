@@ -1,0 +1,10 @@
+UNIT u1307
+Hàm: RightMultiplyAndAccumulate(const Vector & x, Vector & y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::(namespace không tên)::BlockRandomAccessSparseMatrixAdapter
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 66–68
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   m_.SymmetricRightMultiplyAndAccumulate(x.data(), y.data())   → END

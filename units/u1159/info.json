@@ -6,7 +6,6 @@
   860,
   863
  ],
- "signature": "ceres::internal::ProblemImpl::GetLossFunctionForResidualBlock",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1159
+ "order": 1159,
+ "short_name": "GetLossFunctionForResidualBlock",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "(const ResidualBlockId residual_block)",
+ "return_type": "const LossFunction *",
+ "is_const": true
 }

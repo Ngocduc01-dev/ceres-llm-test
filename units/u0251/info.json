@@ -6,7 +6,6 @@
   58,
   61
  ],
- "signature": "ceres::implicit_cast",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 251
+ "order": 251,
+ "short_name": "implicit_cast",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(typename identity_<To>::type to)",
+ "return_type": "To",
+ "is_const": false
 }

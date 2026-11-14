@@ -6,7 +6,6 @@
   198,
   201
  ],
- "signature": "ceres::internal::MinusWrapper::operator()",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 11
+ "order": 11,
+ "short_name": "operator()",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::MinusWrapper",
+ "class_is_template": true,
+ "params": "(const T* y, const T* x, T* y_minus_x)",
+ "return_type": "bool",
+ "is_const": true
 }

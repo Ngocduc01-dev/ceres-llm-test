@@ -1,0 +1,15 @@
+UNIT u0516
+Hàm: Take1stOrderPart(const int M, const JetT* src, T* dst)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: include/ceres/internal/autodiff.h, dòng 249–257
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Take1stOrderPart<0, 2, Jet<double, 4>, double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   DCHECK(src)                                                    đúng → 2   sai → DỪNG
+2   DCHECK(dst)                                                    đúng → 3   sai → DỪNG
+3   vòng for, điều kiện: i < M                                     đúng → 4   sai → END
+4   Eigen::Map<Eigen::Matrix<double, 2, 1>>(dst + 2 * i, 2) = src[i].v.template segment<2>(0)   → 5
+5   ++i                                                            → 3

@@ -6,7 +6,6 @@
   75,
   95
  ],
- "signature": "ceres::internal::Dot",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 854
+ "order": 854,
+ "short_name": "Dot",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const VectorLikeX& x, const VectorLikeY& y, ContextImpl* context, int num_threads)",
+ "return_type": "double",
+ "is_const": false
 }

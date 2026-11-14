@@ -1,0 +1,9 @@
+UNIT u0922
+Hàm: Create(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)  → trả về std::unique_ptr<PartitionedMatrixViewBase>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixViewBase
+Vị trí: internal/ceres/partitioned_matrix_view.cc, dòng 51–183
+
+Số điểm rẽ nhánh: 0
+
+START → END

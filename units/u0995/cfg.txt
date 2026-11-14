@@ -1,0 +1,11 @@
+UNIT u0995
+Hàm: ceres_create_cauchy_loss_function_data(double a)  → trả về void *
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 117–119
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(ceres::CauchyLoss *)
+    return new ceres::CauchyLoss(a)                                → END

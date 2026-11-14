@@ -6,7 +6,6 @@
   339,
   370
  ],
- "signature": "ceres::internal::(anonymous)::SetupMinimizerOptions",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1452
+ "order": 1452,
+ "short_name": "SetupMinimizerOptions",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(PreprocessedProblem * pp)",
+ "return_type": "bool",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u1421
+Hàm: EnsureMinimumThreads(int num_threads)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ContextImpl
+Vị trí: internal/ceres/context_impl.cc, dòng 192–194
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   thread_pool.Resize(num_threads)   → END

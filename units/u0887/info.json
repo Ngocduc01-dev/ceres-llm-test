@@ -6,7 +6,6 @@
   130,
   132
  ],
- "signature": "ceres::internal::ProgramEvaluator::CreateJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 887
+ "order": 887,
+ "short_name": "CreateJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "std::unique_ptr<SparseMatrix>",
+ "is_const": true
 }

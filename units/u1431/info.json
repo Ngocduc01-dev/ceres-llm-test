@@ -6,7 +6,6 @@
   192,
   196
  ],
- "signature": "ceres::Problem::GetParameterBlocksForResidualBlock",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1431
+ "order": 1431,
+ "short_name": "GetParameterBlocksForResidualBlock",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
+ "params": "(const ResidualBlockId residual_block, std::vector<double *> * parameter_blocks)",
+ "return_type": "void",
+ "is_const": true
 }

@@ -1,0 +1,15 @@
+UNIT u0700
+Hàm: SumSquaredSizes(const std::vector<Block> & blocks)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/block_structure.cc, dòng 62–68
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int sum = 0                             → 2
+2   for (const auto &b : blocks)            đúng → 3   sai → 5
+3   const auto &b
+    sum += b.size * b.size                  → 4
+4   ++ (bước tiếp của vòng for)             → 2
+5   return sum                              → END

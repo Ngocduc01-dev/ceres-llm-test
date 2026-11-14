@@ -6,7 +6,6 @@
   446,
   483
  ],
- "signature": "ceres::internal::EvaluateJacobianForParameterBlocks::Apply",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 496
+ "order": 496,
+ "short_name": "Apply",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::EvaluateJacobianForParameterBlocks",
+ "class_is_template": true,
+ "params": "(const CostFunctor* functor, const double* residuals_at_eval_point, const NumericDiffOptions& options, int num_residuals, double** parameters, double** jacobians)",
+ "return_type": "bool",
+ "is_const": false
 }

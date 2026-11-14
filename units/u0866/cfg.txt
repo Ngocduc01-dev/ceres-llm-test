@@ -1,0 +1,14 @@
+UNIT u0866
+Hàm: IterativeSchurComplementSolver(LinearSolver::Options options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::IterativeSchurComplementSolver
+Vị trí: internal/ceres/iterative_schur_complement_solver.cc, dòng 57–59
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   TypedLinearSolver() (Base initializer)
+    options_(std::move(options)) (Member initializer)
+    schur_complement_() (Member initializer)
+    preconditioner_() (Member initializer)
+    reduced_linear_system_solution_() (Member initializer)         → END

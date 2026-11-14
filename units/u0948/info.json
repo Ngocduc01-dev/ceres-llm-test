@@ -6,7 +6,6 @@
   287,
   310
  ],
- "signature": "ceres::internal::TripletSparseMatrix::CreateFromTextFile",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 948
+ "order": 948,
+ "short_name": "CreateFromTextFile",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "(FILE * file)",
+ "return_type": "std::unique_ptr<TripletSparseMatrix>",
+ "is_const": false
 }

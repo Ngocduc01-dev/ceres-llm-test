@@ -6,7 +6,6 @@
   382,
   418
  ],
- "signature": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalMatrixLayout",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1226
+ "order": 1226,
+ "short_name": "CreateBlockDiagonalMatrixLayout",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "(int start_col_block, int end_col_block)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": true
 }

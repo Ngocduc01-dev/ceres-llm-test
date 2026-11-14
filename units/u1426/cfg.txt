@@ -1,0 +1,11 @@
+UNIT u1426
+Hàm: Problem()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 42–42
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(internal::ProblemImpl *)
+    impl_(new internal::ProblemImpl) (Member initializer)          → END

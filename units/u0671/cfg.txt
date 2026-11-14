@@ -1,0 +1,12 @@
+UNIT u0671
+Hàm: GradientProblemEvaluator(const GradientProblem & problem)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::GradientProblemEvaluator
+Vị trí: internal/ceres/gradient_problem_evaluator.h, dòng 50–51
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Evaluator() (Base initializer)
+    problem_(problem) (Member initializer)
+    execution_summary_() (Member initializer)                      → END

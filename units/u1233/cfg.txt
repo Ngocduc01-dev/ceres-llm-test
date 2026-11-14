@@ -1,0 +1,35 @@
+UNIT u1233
+Hàm: UpdateCompressedRowSparseMatrixImpl(CompressedRowSparseMatrix* crs_matrix, const double* values, const CompressedRowBlockStructure* block_structure)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 120–159
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp UpdateCompressedRowSparseMatrixImpl<true> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   auto crs_values = crs_matrix->mutable_values()
+    auto crs_rows = crs_matrix->mutable_rows()
+    const int num_row_blocks = block_structure->rows.size()
+    const auto &cols = block_structure->cols
+    int row_block_id = 0                                           → 2
+2   vòng for, điều kiện: row_block_id < num_row_blocks             đúng → 3   sai → END
+3   const auto &row_block = block_structure->rows[row_block_id]
+    const int row_block_size = row_block.block.size
+    const int row_nnz = crs_rows[1] - crs_rows[0]
+    crs_rows += row_block_size                                     → 4
+4   if (row_nnz == 0)                                              đúng → 5   sai → 7
+5   continue                                                       → 6
+6   ++row_block_id                                                 → 2
+7   crs_values, row_block_size, row_nnz
+    int col_offset = 0                                             → 8
+8   for (auto &c : row_block.cells)                                đúng → 9   sai → 13
+9   auto &c
+    const int col_block_size = cols[c.block_id].size
+    crs_row_block.block(0, col_offset, row_block_size, col_block_size)
+    if true                                                        → 10
+10  values + c.position, col_block_size, row_block_size
+    crs_cell = cell.transpose()                                    → 11
+11  col_offset += col_block_size                                   → 12
+12  ++ (bước tiếp của vòng for)                                    → 8
+13  crs_values += row_nnz * row_block_size                         → 6

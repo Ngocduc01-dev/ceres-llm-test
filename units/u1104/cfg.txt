@@ -1,0 +1,29 @@
+UNIT u1104
+Hàm: CreateTranspose(const CompressedRowBlockStructure & bs)  → trả về std::unique_ptr<CompressedRowBlockStructure>
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 783–807
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   transpose->rows.resize(bs.cols.size())
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < bs.cols.size()                        đúng → 3   sai → 5
+3   transpose->rows[i].block = bs.cols[i]
+    transpose->rows[i].nnz = 0                                     → 4
+4   ++i                                                            → 2
+5   transpose->cols.resize(bs.rows.size())
+    int i = 0                                                      → 6
+6   vòng for, điều kiện: i < bs.rows.size()                        đúng → 7   sai → 12
+7   auto &row = bs.rows[i]
+    transpose->cols[i] = row.block
+    const int nrows = row.block.size                               → 8
+8   for (auto &cell : row.cells)                                   đúng → 9   sai → 11
+9   auto &cell
+    transpose->rows[cell.block_id].cells.emplace_back(i, cell.position)
+    const int ncols = transpose->rows[cell.block_id].block.size
+    transpose->rows[cell.block_id].nnz += nrows * ncols            → 10
+10  ++ (bước tiếp của vòng for)                                    → 8
+11  ++i                                                            → 6
+12  ComputeCumulativeNumberOfNonZeros(transpose->rows)             → END

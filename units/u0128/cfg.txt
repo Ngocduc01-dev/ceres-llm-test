@@ -1,0 +1,10 @@
+UNIT u0128
+Hàm: BesselJn(int n, double x)  → trả về double
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 886–890
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return jn(n, x)   → END

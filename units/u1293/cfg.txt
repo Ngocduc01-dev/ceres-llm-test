@@ -1,0 +1,17 @@
+UNIT u1293
+Hàm: AppendArrayToString(const int64_t size, const double * x, std::string * result)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/array_utils.cc, dòng 77–91
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   int64_t i = 0                             → 2
+2   vòng for, điều kiện: i < size             đúng → 3   sai → END
+3   if (x == nullptr)                         đúng → 4   sai → 6
+4   StringAppendF(result, "Not Computed  ")   → 5
+5   ++i                                       → 2
+6   if (x[i] == kImpossibleValue)             đúng → 7   sai → 8
+7   StringAppendF(result, "Uninitialized ")   → 5
+8   StringAppendF(result, "%12g ", x[i])      → 5

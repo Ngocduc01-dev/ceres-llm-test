@@ -6,7 +6,6 @@
   140,
   147
  ],
- "signature": "ceres::internal::CanonicalViewsClustering::FindValidViews",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 803
+ "order": 803,
+ "short_name": "FindValidViews",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CanonicalViewsClustering",
+ "class_is_template": false,
+ "params": "(IntSet * valid_views)",
+ "return_type": "void",
+ "is_const": true
 }

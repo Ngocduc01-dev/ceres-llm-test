@@ -1,0 +1,32 @@
+UNIT u0548
+Hàm: operator()(const T * parameters, T * residuals, T * jacobian) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TinySolverAutoDiffFunction
+Vị trí: include/ceres/tiny_solver_autodiff_function.h, dòng 129–164
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   if (jacobian == nullptr)                                       đúng → 2   sai → 3
+2   return cost_functor_(parameters, residuals)                    → END
+3   int i = 0                                                      → 4
+4   vòng for, điều kiện: i < 3                                     đúng → 5   sai → 7
+5   jet_parameters_[i].a = parameters[i]
+    jet_parameters_[i].v.setZero()
+    jet_parameters_[i].v[i] = double(1.)                           → 6
+6   ++i                                                            → 4
+7   int i = 0                                                      → 8
+8   vòng for, điều kiện: i < num_residuals_                        đúng → 9   sai → 11
+9   jet_residuals_[i].a = kImpossibleValue
+    jet_residuals_[i].v.setConstant(kImpossibleValue)              → 10
+10  ++i                                                            → 8
+11  if (!cost_functor_(jet_parameters_, jet_residuals_.data()))    đúng → 12   sai → 13
+12  return false                                                   → END
+13  jacobian, num_residuals_, 3
+    int r = 0                                                      → 14
+14  vòng for, điều kiện: r < num_residuals_                        đúng → 15   sai → 17
+15  residuals[r] = jet_residuals_[r].a
+    jacobian_matrix.row(r) = jet_residuals_[r].v                   → 16
+16  ++r                                                            → 14
+17  return true                                                    → END

@@ -1,0 +1,17 @@
+UNIT u1496
+Hàm: UpdateImpl(const BlockSparseMatrix & A, const double * D)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 318–361
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   const time_t start_time = time(nullptr)
+    const int num_rows = m_->num_rows()                            → 2
+2   CHECK_GT(num_rows, 0)                                          đúng → 3   sai → DỪNG
+3   eliminator_->Eliminate(BlockSparseMatrixData(A), nullptr, D, m_.get(), nullptr)
+    LinearSolverTerminationType status = Factorize()               → 4
+4   if (status == LinearSolverTerminationType::FATAL_ERROR)        đúng → 5   sai → 6
+5   return false                                                   → END
+6   if (status == LinearSolverTerminationType::FAILURE && options_.type == CLUSTER_TRIDIAGONAL)   đúng → END   sai → END

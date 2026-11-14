@@ -6,7 +6,6 @@
   84,
   88
  ],
- "signature": "ceres::internal::ConcurrentQueue::Push",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 269
+ "order": 269,
+ "short_name": "Push",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
+ "params": "(const T & value)",
+ "return_type": "void",
+ "is_const": false
 }

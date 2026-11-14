@@ -1,0 +1,21 @@
+UNIT u0946
+Hàm: ParallelFor(ContextImpl* context, int start, int end, int num_threads, F&& function, const CumulativeCostData* cumulative_cost_data, CumulativeCostFun&& cumulative_cost_fun)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/parallel_for.h, dòng 154–183
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ParallelFor<(lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7), CompressedList, (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:323:7)> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(num_threads, 0)                                       đúng → 2   sai → DỪNG
+2   if (start >= end)                                              đúng → 3   sai → 4
+3   return                                                         → END
+4   if (num_threads == 1 || end - start <= num_threads)            đúng → 5   sai → 6
+5   ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7) &&, int))(context, start, end, num_threads, std::forward<(lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7)> (ImplicitCastExpr, BuiltinFnToFnPtr, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7) &&(*)(typename std::remove_reference<class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7)>::type &) noexcept)(function))
+    return                                                         → END
+6   constexpr int kNumPartitionsPerThread = 4
+    const int kMaxPartitions = num_threads * kNumPartitionsPerThread
+    const auto &partitions = PartitionRangeForParallelFor(start, end, kMaxPartitions, cumulative_cost_data, std::forward<(lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:323:7)>(cumulative_cost_fun))   → 7
+7   CHECK_GT(partitions.size(), 1)                                 đúng → 8   sai → DỪNG
+8   ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7) &&, const std::vector<int> &))(context, start, end, num_threads, std::forward<(lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7)> (ImplicitCastExpr, BuiltinFnToFnPtr, class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7) &&(*)(typename std::remove_reference<class (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:305:7)>::type &) noexcept)(function), partitions)   → END

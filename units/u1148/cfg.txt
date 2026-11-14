@@ -1,0 +1,11 @@
+UNIT u1148
+Hàm: Create()  → trả về Context *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Context
+Vị trí: internal/ceres/context.cc, dòng 38–38
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(internal::ContextImpl *)
+    return new internal::ContextImpl()                             → END

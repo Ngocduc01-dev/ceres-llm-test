@@ -1,0 +1,11 @@
+UNIT u0879
+Hàm: Problem(Problem &&)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 46–46
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CFGNewAllocator(internal::ProblemImpl *)
+    impl_(new internal::ProblemImpl(options)) (Member initializer)   → END

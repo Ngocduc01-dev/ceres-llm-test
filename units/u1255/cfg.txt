@@ -1,0 +1,10 @@
+UNIT u1255
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurJacobiPreconditioner
+Vị trí: internal/ceres/schur_jacobi_preconditioner.cc, dòng 104–104
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return m_->num_rows()   → END

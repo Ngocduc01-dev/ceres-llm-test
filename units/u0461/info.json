@@ -6,7 +6,6 @@
   743,
   760
  ],
- "signature": "ceres::QuaternionRotatePoint",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 461
+ "order": 461,
+ "short_name": "QuaternionRotatePoint",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T q[4], const T pt[3], T result[3])",
+ "return_type": "void",
+ "is_const": false
 }

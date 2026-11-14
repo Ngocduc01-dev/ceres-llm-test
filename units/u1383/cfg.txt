@@ -1,0 +1,14 @@
+UNIT u1383
+Hàm: CreateEvaluatePreparers(unsigned int num_threads)  → trả về std::unique_ptr<BlockEvaluatePreparer[]>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockJacobianWriter
+Vị trí: internal/ceres/block_jacobian_writer.cc, dòng 183–194
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int max_derivatives_per_residual_block = program_->MaxDerivativesPerResidualBlock()
+    unsigned int i = 0                                             → 2
+2   vòng for, điều kiện: i < num_threads                           đúng → 3   sai → END
+3   preparers[i].Init(jacobian_layout_.data(), max_derivatives_per_residual_block)   → 4
+4   i++                                                            → 2

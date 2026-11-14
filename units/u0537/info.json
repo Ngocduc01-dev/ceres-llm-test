@@ -6,7 +6,6 @@
   55,
   67
  ],
- "signature": "ceres::internal::FindInvalidValue",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 537
+ "order": 537,
+ "short_name": "FindInvalidValue",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int64_t size, const double * x)",
+ "return_type": "int64_t",
+ "is_const": false
 }

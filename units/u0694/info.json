@@ -6,7 +6,6 @@
   126,
   131
  ],
- "signature": "ceres::CubicInterpolator::CubicInterpolator<Grid>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 694
+ "order": 694,
+ "short_name": "CubicInterpolator<Grid>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::CubicInterpolator",
+ "class_is_template": true,
+ "params": "(const Grid & grid)",
+ "return_type": null,
+ "is_const": false
 }

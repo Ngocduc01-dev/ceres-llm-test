@@ -1,0 +1,16 @@
+UNIT u0907
+Hàm: CoordinateDescentMinimizer(ContextImpl * context)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CoordinateDescentMinimizer
+Vị trí: internal/ceres/coordinate_descent_minimizer.cc, dòng 57–60
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   Minimizer() (Base initializer)
+    parameter_blocks_() (Member initializer)
+    residual_blocks_() (Member initializer)
+    independent_set_offsets_() (Member initializer)
+    evaluator_options_() (Member initializer)
+    context_(context) (Member initializer)                         → 2
+2   CHECK(context_ != nullptr)                                     đúng → END   sai → DỪNG

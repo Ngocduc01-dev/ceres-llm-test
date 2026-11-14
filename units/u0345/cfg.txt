@@ -1,0 +1,11 @@
+UNIT u0345
+Hàm: MinusJacobian(const double * x, double * jacobian) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::QuaternionManifold
+Vị trí: internal/ceres/manifold.cc, dòng 284–288
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   QuaternionMinusJacobianImpl<CeresQuaternionOrder>(x, jacobian)
+    return true                                                    → END

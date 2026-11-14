@@ -6,7 +6,6 @@
   44,
   97
  ],
- "signature": "ceres::internal::CreateFakeBundleAdjustmentJacobian",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1201
+ "order": 1201,
+ "short_name": "CreateFakeBundleAdjustmentJacobian",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(int num_cameras, int num_points, int camera_size, int point_size, double visibility, std::mt19937 & prng)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": false
 }

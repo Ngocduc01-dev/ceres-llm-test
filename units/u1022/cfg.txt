@@ -1,0 +1,10 @@
+UNIT u1022
+Hàm: ~ScopedThreadToken()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::ScopedThreadToken
+Vị trí: internal/ceres/scoped_thread_token.h, dòng 46–46
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   provider_->Release(token_)   → END

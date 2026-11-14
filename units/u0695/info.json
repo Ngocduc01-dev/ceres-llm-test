@@ -6,7 +6,6 @@
   254,
   259
  ],
- "signature": "ceres::BiCubicInterpolator::BiCubicInterpolator<Grid>",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 695
+ "order": 695,
+ "short_name": "BiCubicInterpolator<Grid>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::BiCubicInterpolator",
+ "class_is_template": true,
+ "params": "(const Grid & grid)",
+ "return_type": null,
+ "is_const": false
 }

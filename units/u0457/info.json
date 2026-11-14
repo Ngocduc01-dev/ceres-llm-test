@@ -6,7 +6,6 @@
   148,
   154
  ],
- "signature": "ceres::OrderedGroups::GroupId",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 457
+ "order": 457,
+ "short_name": "GroupId",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "(const T element)",
+ "return_type": "int",
+ "is_const": true
 }

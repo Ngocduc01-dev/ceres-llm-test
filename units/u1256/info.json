@@ -6,7 +6,6 @@
   839,
   850
  ],
- "signature": "ceres::Solver::Summary::BriefReport",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1256
+ "order": 1256,
+ "short_name": "BriefReport",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Solver::Summary",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true
 }

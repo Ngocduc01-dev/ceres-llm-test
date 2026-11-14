@@ -6,7 +6,6 @@
   53,
   59
  ],
- "signature": "ceres::internal::EvaluatePolynomial",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 717
+ "order": 717,
+ "short_name": "EvaluatePolynomial",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Vector & polynomial, double x)",
+ "return_type": "double",
+ "is_const": false
 }

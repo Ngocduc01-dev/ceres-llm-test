@@ -1,0 +1,21 @@
+UNIT u1054
+Hàm: PlusJacobian(const double *, double * plus_jacobian) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::SubsetManifold
+Vị trí: internal/ceres/manifold.cc, dòng 199–214
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (tangent_size_ == 0)                                        đúng → 2   sai → 3
+2   return true                                                    → END
+3   const int ambient_size = AmbientSize()
+    plus_jacobian, ambient_size, tangent_size_
+    m.setZero()
+    int r = 0
+    int c = 0                                                      → 4
+4   vòng for, điều kiện: r < ambient_size                          đúng → 5   sai → 8
+5   if (!constancy_mask_[r])                                       đúng → 6   sai → 7
+6   m(r, c++) = 1.                                                 → 7
+7   ++r                                                            → 4
+8   return true                                                    → END

@@ -6,7 +6,6 @@
   152,
   152
  ],
- "signature": "ceres::internal::ParameterBlock::PlusJacobian",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 371
+ "order": 371,
+ "short_name": "PlusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const double *",
+ "is_const": true
 }

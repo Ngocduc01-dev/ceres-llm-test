@@ -1,0 +1,13 @@
+UNIT u0755
+Hàm: LineSearchInterpolationTypeToString(LineSearchInterpolationType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 250–259
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)        nhánh → 2   nhánh → 3   nhánh → 4
+2   return "CUBIC"       → END
+3   return "QUADRATIC"   → END
+4   return "BISECTION"   → END

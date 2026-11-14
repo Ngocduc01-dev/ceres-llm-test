@@ -1,0 +1,9 @@
+UNIT u1002
+Hàm: Statistics() const  → trả về std::map<std::string, internal::CallStatistics>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::GradientProblemEvaluator
+Vị trí: internal/ceres/gradient_problem_evaluator.h, dòng 90–92
+
+Số điểm rẽ nhánh: 0
+
+START → END

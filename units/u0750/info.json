@@ -6,7 +6,6 @@
   113,
   128
  ],
- "signature": "ceres::internal::operator<<",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 1,
- "order": 750
+ "order": 750,
+ "short_name": "operator<<",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(std::ostream & s, OrderingType type)",
+ "return_type": "std::ostream &",
+ "is_const": false
 }

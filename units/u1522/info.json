@@ -6,7 +6,6 @@
   370,
   481
  ],
- "signature": "ceres::internal::WolfeLineSearch::DoSearch",
  "branches": 26,
  "cyclomatic": 14,
  "topo_level": 6,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1522
+ "order": 1522,
+ "short_name": "DoSearch",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WolfeLineSearch",
+ "class_is_template": false,
+ "params": "(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary)",
+ "return_type": "void",
+ "is_const": true
 }

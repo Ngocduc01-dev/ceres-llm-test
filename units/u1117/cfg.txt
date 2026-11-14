@@ -1,0 +1,13 @@
+UNIT u1117
+Hàm: BackSubstitute(const BlockSparseMatrixData & A, const double * b, const double * D, const double * z, double * y)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 306–373
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/schur_eliminator_impl.h:316:63) &&, int))(context_, 0, int(chunks_.size()), num_threads_, [&](int i) {)   → END

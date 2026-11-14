@@ -6,7 +6,6 @@
   69,
   76
  ],
- "signature": "ceres::ConditionedCostFunction::~ConditionedCostFunction",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 465
+ "order": 465,
+ "short_name": "~ConditionedCostFunction",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::ConditionedCostFunction",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

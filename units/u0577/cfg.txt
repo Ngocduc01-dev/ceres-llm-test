@@ -1,0 +1,18 @@
+UNIT u0577
+Hàm: MakePolynomialForBoundaryConstrainedProblem() const  → trả về Vector
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 418–437
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double detB = subspace_B_.determinant()
+    const double trB = subspace_B_.trace()
+    const double r2 = radius_ * radius_
+    B_adj << subspace_B_(1, 1) , -subspace_B_(0, 1) , -subspace_B_(1, 0) , subspace_B_(0, 0)
+    polynomial(0) = r2
+    polynomial(1) = 2. * r2 * trB
+    polynomial(2) = r2 * (trB * trB + 2. * detB) - subspace_g_.squaredNorm()
+    polynomial(3) = -2. * (subspace_g_.transpose() * B_adj * subspace_g_ - r2 * detB * trB)
+    polynomial(4) = r2 * detB * detB - (B_adj * subspace_g_).squaredNorm()   → END

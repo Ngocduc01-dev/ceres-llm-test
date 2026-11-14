@@ -6,7 +6,6 @@
   74,
   85
  ],
- "signature": "ceres::internal::(anonymous)::CheckForNoAliasing",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1065
+ "order": 1065,
+ "short_name": "CheckForNoAliasing",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(double * existing_block, int existing_block_size, double * new_block, int new_block_size)",
+ "return_type": "void",
+ "is_const": false
 }

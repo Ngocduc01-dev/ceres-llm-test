@@ -6,7 +6,6 @@
   117,
   177
  ],
- "signature": "ceres::internal::LowRankInverseHessian::RightMultiplyAndAccumulate",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 550
+ "order": 550,
+ "short_name": "RightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LowRankInverseHessian",
+ "class_is_template": false,
+ "params": "(const double * x_ptr, double * y_ptr)",
+ "return_type": "void",
+ "is_const": true
 }

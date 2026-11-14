@@ -1,0 +1,11 @@
+UNIT u1133
+Hàm: InitStorage(const CompressedRowBlockStructure & bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 157–162
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ComputeBlockPairsInPreconditioner(bs)
+    m_ = std::make_unique<BlockRandomAccessSparseMatrix>(blocks_, block_pairs_, options_.context, options_.num_threads)   → END

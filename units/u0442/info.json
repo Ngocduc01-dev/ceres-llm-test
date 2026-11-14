@@ -6,7 +6,6 @@
   334,
   344
  ],
- "signature": "ceres::BiCubicInterpolator::Evaluate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 442
+ "order": 442,
+ "short_name": "Evaluate",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::BiCubicInterpolator",
+ "class_is_template": true,
+ "params": "(const JetT& r, const JetT& c, JetT* f)",
+ "return_type": "void",
+ "is_const": true
 }

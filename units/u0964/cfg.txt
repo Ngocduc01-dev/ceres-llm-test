@@ -1,0 +1,10 @@
+UNIT u0964
+Hàm: options() const  → trả về const LinearSolver::Options &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.h, dòng 126–126
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return options_   → END

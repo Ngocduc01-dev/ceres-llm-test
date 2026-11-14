@@ -1,0 +1,10 @@
+UNIT u0847
+Hàm: covariance_matrix() const  → trả về const CompressedRowSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CovarianceImpl
+Vị trí: internal/ceres/covariance_impl.h, dòng 83–85
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return covariance_matrix_.get()   → END

@@ -6,7 +6,6 @@
   163,
   166
  ],
- "signature": "ceres::OrderedGroups::GroupSize",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 458
+ "order": 458,
+ "short_name": "GroupSize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "(const int group)",
+ "return_type": "int",
+ "is_const": true
 }

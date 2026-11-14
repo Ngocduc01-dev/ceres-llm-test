@@ -1,0 +1,11 @@
+UNIT u1081
+Hàm: ReorderResidualBlocksByPartition(const std::unordered_set<ResidualBlockId> & bottom_residual_blocks, Program * program)  → trả về int
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 597–607
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   auto residual_blocks = program->mutable_residual_blocks()
+    return it - residual_blocks->begin()                           → END

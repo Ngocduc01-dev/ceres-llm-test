@@ -6,7 +6,6 @@
   511,
   561
  ],
- "signature": "ceres::internal::SchurEliminator::ChunkOuterProduct",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1136
+ "order": 1136,
+ "short_name": "ChunkOuterProduct",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(int thread_id, const CompressedRowBlockStructure * bs, const Matrix & inverse_ete, const double * buffer, const BufferLayoutType & buffer_layout, BlockRandomAccessMatrix * lhs)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0796
+Hàm: mutable_lhs()  → trả về BlockRandomAccessMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.h, dòng 132–132
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return lhs_.get()   → END

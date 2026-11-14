@@ -1,0 +1,31 @@
+UNIT u1465
+Hàm: InternalAddParameterBlock(double * values, int size)  → trả về ParameterBlock *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 122–174
+
+Số điểm rẽ nhánh: 7 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(values != nullptr)                                       đúng → 2   sai → DỪNG
+2   parameter_block_map_.find(values)                              → 3
+3   if (it != parameter_block_map_.end())                          đúng → 4   sai → 8
+4   if (!options_.disable_all_safety_checks)                       đúng → 5   sai → 7
+5   int existing_size = it->second->Size()                         → 6
+6   CHECK(size == existing_size)                                   đúng → 7   sai → DỪNG
+7   return it->second                                              → END
+8   if (!options_.disable_all_safety_checks)                       đúng → 9   sai → 15
+9   if (!parameter_block_map_.empty())                             đúng → 10   sai → 15
+10  parameter_block_map_.lower_bound(values)                       → 11
+11  if (lb != parameter_block_map_.begin())                        đúng → 12   sai → 13
+12  -- previous
+    CheckForNoAliasing(previous->first, previous->second->Size(), values, size)   → 13
+13  if (lb != parameter_block_map_.end())                          đúng → 14   sai → 15
+14  CheckForNoAliasing(lb->first, lb->second->Size(), values, size)   → 15
+15  CFGNewAllocator(ParameterBlock *)
+    auto *new_parameter_block = new ParameterBlock(values, size, program_->parameter_blocks_.size())   → 16
+16  if (options_.enable_fast_removal)                              đúng → 17   sai → 18
+17  new_parameter_block->EnableResidualBlockDependencies()         → 18
+18  parameter_block_map_[values] = new_parameter_block
+    program_->parameter_blocks_.push_back(new_parameter_block)
+    return new_parameter_block                                     → END

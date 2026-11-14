@@ -6,7 +6,6 @@
   90,
   92
  ],
- "signature": "ceres::internal::GradientProblemEvaluator::Statistics",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1002
+ "order": 1002,
+ "short_name": "Statistics",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::GradientProblemEvaluator",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::map<std::string, internal::CallStatistics>",
+ "is_const": true
 }

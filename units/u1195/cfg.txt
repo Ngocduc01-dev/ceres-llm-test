@@ -1,0 +1,18 @@
+UNIT u1195
+Hàm: LinearSolverForZeroEBlocks(LinearSolverType linear_solver_type)  → trả về LinearSolverType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearSolver
+Vị trí: internal/ceres/linear_solver.cc, dòng 50–72
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (!IsSchurType(linear_solver_type))        đúng → 2   sai → 3
+2   return linear_solver_type                    → END
+3   if (linear_solver_type == SPARSE_SCHUR)      đúng → 4   sai → 5
+4   return SPARSE_NORMAL_CHOLESKY                → END
+5   if (linear_solver_type == DENSE_SCHUR)       đúng → 6   sai → 7
+6   return DENSE_QR                              → END
+7   if (linear_solver_type == ITERATIVE_SCHUR)   đúng → 8   sai → 9
+8   return CGNR                                  → END
+9   return linear_solver_type                    → END

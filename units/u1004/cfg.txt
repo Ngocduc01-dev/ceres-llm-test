@@ -1,0 +1,10 @@
+UNIT u1004
+Hàm: StepIsInvalid()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LevenbergMarquardtStrategy
+Vị trí: internal/ceres/levenberg_marquardt_strategy.h, dòng 63–69
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   StepRejected(0.)   → END

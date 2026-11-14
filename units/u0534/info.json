@@ -6,7 +6,6 @@
   403,
   421
  ],
- "signature": "ceres::Grid2D::GetValue",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 534
+ "order": 534,
+ "short_name": "GetValue",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Grid2D",
+ "class_is_template": true,
+ "params": "(const int r, const int c, double * f)",
+ "return_type": "void",
+ "is_const": true
 }

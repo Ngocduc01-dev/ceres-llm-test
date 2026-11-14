@@ -6,7 +6,6 @@
   186,
   188
  ],
- "signature": "ceres::internal::PartitionedMatrixView::e_cols_partition",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 377
+ "order": 377,
+ "short_name": "e_cols_partition",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "const std::vector<int> &",
+ "is_const": true
 }

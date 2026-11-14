@@ -6,7 +6,6 @@
   229,
   285
  ],
- "signature": "ceres::internal::Program::IsFeasible",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1409
+ "order": 1409,
+ "short_name": "IsFeasible",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "(std::string * message)",
+ "return_type": "bool",
+ "is_const": true
 }

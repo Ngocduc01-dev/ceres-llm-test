@@ -1,0 +1,45 @@
+UNIT u1441
+Hàm: SolveImpl(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CgnrSolver
+Vị trí: internal/ceres/cgnr_solver.cc, dòng 145–206
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   "CgnrSolver::Solve"                                            → 2
+2   if (!preconditioner_)                                          đúng → 3   sai → 6
+3   preconditioner_options.type = options_.preconditioner_type
+    preconditioner_options.subset_preconditioner_start_row_block = options_.subset_preconditioner_start_row_block
+    preconditioner_options.sparse_linear_algebra_library_type = options_.sparse_linear_algebra_library_type
+    preconditioner_options.ordering_type = options_.ordering_type
+    preconditioner_options.num_threads = options_.num_threads
+    preconditioner_options.context = options_.context              → 4
+4   if (options_.preconditioner_type == JACOBI)                    đúng → 5   sai → 12
+5   preconditioner_ = std::make_unique<BlockSparseJacobiPreconditioner>(preconditioner_options, *A)   → 6
+6   preconditioner_->Update(*A, per_solve_options.D)
+    cg_options.min_num_iterations = options_.min_num_iterations
+    cg_options.max_num_iterations = options_.max_num_iterations
+    cg_options.residual_reset_period = options_.residual_reset_period
+    cg_options.q_tolerance = per_solve_options.q_tolerance
+    cg_options.r_tolerance = per_solve_options.r_tolerance
+    cg_options.context = options_.context
+    cg_options.num_threads = options_.num_threads
+    *A, per_solve_options.D, options_.context, options_.num_threads
+    rhs.setZero()
+    A->LeftMultiplyAndAccumulate(b, rhs.data(), options_.context, options_.num_threads)
+    cg_solution_ = Vector::Zero(A->num_cols())
+    int i = 0                                                      → 7
+7   vòng for, điều kiện: i < 4                                     đúng → 8   sai → 11
+8   if (scratch_[i] == nullptr)                                    đúng → 9   sai → 10
+9   CFGNewAllocator(Vector *)
+    scratch_[i] = new Vector(A->num_cols())                        → 10
+10  ++i                                                            → 7
+11  event_logger.AddEvent("Setup")
+    operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    * preconditioner_
+    VectorRef(x, A->num_cols()) = cg_solution_
+    event_logger.AddEvent("Solve")                                 → END
+12  if (options_.preconditioner_type == SUBSET)                    đúng → 13   sai → 14
+13  preconditioner_ = std::make_unique<SubsetPreconditioner>(preconditioner_options, *A)   → 6
+14  preconditioner_ = std::make_unique<IdentityPreconditioner>(A->num_cols())   → 6

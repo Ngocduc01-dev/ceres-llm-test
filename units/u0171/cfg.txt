@@ -1,0 +1,18 @@
+UNIT u0171
+Hàm: MinusJacobian(const double * x_ptr, double * jacobian_ptr) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::LineManifold
+Vị trí: include/ceres/line_manifold.h, dòng 272–293
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   x_ptr + size_, size_
+    jacobian_ptr, 2 * (size_ - 1), 2 * size_
+    jacobian.setZero()
+    jacobian.template topLeftCorner<TangentSpaceDimension, 3>(size_ - 1, size_)
+    jacobian.template bottomRightCorner<TangentSpaceDimension, 3>(size_ - 1, size_)
+    internal::ComputeSphereManifoldMinusJacobian(d, &jacobian_d)
+    jacobian_o = jacobian_d
+    return true                                                    → END

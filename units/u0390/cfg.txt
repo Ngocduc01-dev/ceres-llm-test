@@ -1,0 +1,11 @@
+UNIT u0390
+Hàm: program() const  → trả về const Program &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.h, dòng 159–159
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return * program_                                              → END

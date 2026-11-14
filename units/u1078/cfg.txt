@@ -1,0 +1,18 @@
+UNIT u1078
+Hàm: Options(const Solver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::Minimizer::Options
+Vị trí: internal/ceres/minimizer.h, dòng 61–61
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   context(?) (Member initializer)
+    trust_region_minimizer_iterations_to_dump() (Member initializer)
+    trust_region_problem_dump_directory() (Member initializer)
+    callbacks() (Member initializer)
+    evaluator() (Member initializer)
+    trust_region_strategy() (Member initializer)
+    jacobian() (Member initializer)
+    inner_iteration_minimizer() (Member initializer)
+    Init(options)                                                  → END

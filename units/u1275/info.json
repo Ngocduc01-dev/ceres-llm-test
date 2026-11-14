@@ -6,7 +6,6 @@
   656,
   672
  ],
- "signature": "ceres::(anonymous)::SchurStructureToString",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1275
+ "order": 1275,
+ "short_name": "SchurStructureToString",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int row_block_size, const int e_block_size, const int f_block_size)",
+ "return_type": "std::string",
+ "is_const": false
 }

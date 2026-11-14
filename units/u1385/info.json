@@ -6,7 +6,6 @@
   510,
   519
  ],
- "signature": "ceres::internal::Program::MaxScratchDoublesNeededForEvaluate",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1385
+ "order": 1385,
+ "short_name": "MaxScratchDoublesNeededForEvaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

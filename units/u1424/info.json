@@ -6,7 +6,6 @@
   420,
   428
  ],
- "signature": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalEtE",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 3,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1424
+ "order": 1424,
+ "short_name": "CreateBlockDiagonalEtE",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": true
 }

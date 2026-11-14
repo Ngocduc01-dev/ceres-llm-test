@@ -1,0 +1,13 @@
+UNIT u1143
+Hàm: BlockSparseJacobiPreconditioner(Preconditioner::Options options, const BlockSparseMatrix & A)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockSparseJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.cc, dòng 49–54
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   TypedPreconditioner() (Base initializer)
+    options_(std::move(options)) (Member initializer)
+    m_() (Member initializer)
+    m_ = std::make_unique<BlockRandomAccessDiagonalMatrix>(A.block_structure()->cols, options_.context, options_.num_threads)   → END

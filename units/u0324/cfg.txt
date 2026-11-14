@@ -1,0 +1,10 @@
+UNIT u0324
+Hàm: DirectionInfinityNorm() const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.cc, dòng 145–147
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return direction_.lpNorm<Eigen::Infinity>()   → END

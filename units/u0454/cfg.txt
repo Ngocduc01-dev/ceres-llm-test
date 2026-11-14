@@ -1,0 +1,14 @@
+UNIT u0454
+Hàm: Evaluate(double sq_norm, double[3] out) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::LossFunctionWrapper
+Vị trí: include/ceres/loss_function.h, dòng 406–414
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (rho_.get() == nullptr)                   đúng → 2   sai → 3
+2   out[0] = sq_norm
+    out[1] = 1.
+    out[2] = 0.                                  → END
+3   rho_->Evaluate(sq_norm, out)                 → END

@@ -1,0 +1,16 @@
+UNIT u1169
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y, ContextImpl * context, int num_threads) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 283–302
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (storage_type_ != StorageType::UNSYMMETRIC)                 đúng → 2   sai → 3
+2   RightMultiplyAndAccumulate(x, y)
+    return                                                         → END
+3   auto values = values_.data()
+    auto rows = rows_.data()
+    auto cols = cols_.data()
+    ParallelFor (ImplicitCastExpr, FunctionToPointerDecay, void (*)(ContextImpl *, int, int, int, class (lambda at /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc:295:43) &&, int))(context, 0, num_rows_, num_threads, [values, rows, cols, x, y](int row) {)   → END

@@ -1,0 +1,12 @@
+UNIT u0023
+Hàm: Apply(T const* const* parameters, JetT* x)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::internal::Make1stOrderPerturbations
+Vị trí: include/ceres/internal/autodiff.h, dòng 218–225
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Make1stOrderPerturbations<integer_sequence<int, 2, 2>>::Apply<double, Jet<double, 4>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Make1stOrderPerturbation<0, 2, 0, double, Jet<double, 4>>::Apply(parameters[0], x + 0)
+    Make1stOrderPerturbations<std::integer_sequence<int, 2>, 0 + 1, 0 + 2>::Apply(parameters, x)   → END

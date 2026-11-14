@@ -6,7 +6,6 @@
   184,
   191
  ],
- "signature": "ceres::internal::NumScalarEntries",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 702
+ "order": 702,
+ "short_name": "NumScalarEntries",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::vector<Block> & blocks)",
+ "return_type": "int",
+ "is_const": false
 }

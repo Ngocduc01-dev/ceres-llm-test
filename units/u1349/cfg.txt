@@ -1,0 +1,12 @@
+UNIT u1349
+Hàm: AddTransposeBlockStructure()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 219–223
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (transpose_block_structure_ == nullptr)                     đúng → 2   sai → END
+2   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    transpose_block_structure_ = CreateTranspose(* block_structure_)   → END

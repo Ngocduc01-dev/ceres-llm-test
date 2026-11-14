@@ -1,0 +1,14 @@
+UNIT u0959
+Hàm: SolveImplUsingSuiteSparse(CompressedRowSparseMatrix * A, double * rhs_and_solution)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicSparseNormalCholeskySolver
+Vị trí: internal/ceres/dynamic_sparse_normal_cholesky_solver.cc, dòng 174–232
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   (void)A
+    (void)rhs_and_solution
+    summary.num_iterations = 0
+    summary.termination_type = LinearSolverTerminationType::FATAL_ERROR
+    summary.message = "SPARSE_NORMAL_CHOLESKY cannot be used with SUITE_SPARSE because Ceres was not built with support for SuiteSparse. This requires enabling building with -DSUITESPARSE=ON."   → END

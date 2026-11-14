@@ -1,0 +1,21 @@
+UNIT u0765
+Hàm: Update(const Vector & delta_x, const Vector & delta_gradient)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LowRankInverseHessian
+Vị trí: internal/ceres/low_rank_inverse_hessian.cc, dòng 87–115
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const double delta_x_dot_delta_gradient = delta_x.dot(delta_gradient)   → 2
+2   if (delta_x_dot_delta_gradient <= kLBFGSSecantConditionHessianUpdateTolerance)   đúng → END   sai → 3
+3   int next = indices_.size()                                     → 4
+4   if (next == max_num_corrections_)                              đúng → 5   sai → 6
+5   next = indices_.front()
+    indices_.pop_front()                                           → 6
+6   indices_.push_back(next)
+    delta_x_history_.col(next) = delta_x
+    delta_gradient_history_.col(next) = delta_gradient
+    delta_x_dot_delta_gradient_(next) = delta_x_dot_delta_gradient
+    approximate_eigenvalue_scale_ = delta_x_dot_delta_gradient / delta_gradient.squaredNorm()
+    return true                                                    → END

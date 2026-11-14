@@ -1,0 +1,9 @@
+UNIT u0923
+Hàm: Create(const LinearSolver::Options & options)  → trả về std::unique_ptr<SchurEliminatorBase>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminatorBase
+Vị trí: internal/ceres/schur_eliminator.cc, dòng 51–161
+
+Số điểm rẽ nhánh: 0
+
+START → END

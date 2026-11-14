@@ -1,0 +1,10 @@
+UNIT u0965
+Hàm: Stop()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 102–102
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   task_queue_.StopWaiters()   → END

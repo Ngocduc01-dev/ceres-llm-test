@@ -1,0 +1,29 @@
+UNIT u0950
+Hàm: Resize(int new_num_rows, int new_num_cols)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 237–264
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (new_num_rows >= num_rows_) && (new_num_cols >= num_cols_)   đúng → 2   sai → 3
+2   num_rows_ = new_num_rows
+    num_cols_ = new_num_cols
+    return                                                         → END
+3   num_rows_ = new_num_rows
+    num_cols_ = new_num_cols
+    int *r_ptr = rows_.get()
+    int *c_ptr = cols_.get()
+    double *v_ptr = values_.get()
+    int dropped_terms = 0
+    int i = 0                                                      → 4
+4   vòng for, điều kiện: i < num_nonzeros_                         đúng → 5   sai → 10
+5   if (r_ptr[i] < num_rows_) && (c_ptr[i] < num_cols_)            đúng → 6   sai → 9
+6   if (dropped_terms)                                             đúng → 7   sai → 8
+7   r_ptr[i - dropped_terms] = r_ptr[i]
+    c_ptr[i - dropped_terms] = c_ptr[i]
+    v_ptr[i - dropped_terms] = v_ptr[i]                            → 8
+8   ++i                                                            → 4
+9   ++dropped_terms                                                → 8
+10  num_nonzeros_ -= dropped_terms                                 → END

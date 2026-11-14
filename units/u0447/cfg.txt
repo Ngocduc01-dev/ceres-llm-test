@@ -1,0 +1,13 @@
+UNIT u0447
+Hàm: Apply(int num_outputs, JetT* output, T** jacobians)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::internal::Take1stOrderParts
+Vị trí: include/ceres/internal/autodiff.h, dòng 283–291
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Take1stOrderParts<integer_sequence<int, 2, 2>>::Apply<Jet<double, 4>, double> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (jacobians[0])                                              đúng → 2   sai → 3
+2   Take1stOrderPart<0, 2>(num_outputs, output, jacobians[0])      → 3
+3   Take1stOrderParts<std::integer_sequence<int, 2>, 0 + 1, 0 + 2>::Apply(num_outputs, output, jacobians)   → END

@@ -1,0 +1,27 @@
+UNIT u1314
+Hàm: FindMinimumOnTrustRegionBoundary(Vector2d * minimum) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 472–514
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(minimum != nullptr)                                      đúng → 2   sai → DỪNG
+2   minimum->setZero()
+    MakePolynomialForBoundaryConstrainedProblem()                  → 3
+3   if (!FindPolynomialRoots(polynomial, &roots_real, nullptr))    đúng → 4   sai → 5
+4   return false                                                   → END
+5   double minimum_value = std::numeric_limits<double>::max()
+    bool valid_root_found = false
+    int i = 0                                                      → 6
+6   vòng for, điều kiện: i < roots_real.size()                     đúng → 7   sai → 13
+7   ComputeSubspaceStepFromRoot(roots_real(i))                     → 8
+8   if (x_i.norm() > 0)                                            đúng → 9   sai → 12
+9   const double f_i = EvaluateSubspaceModel((radius_ / x_i.norm()) * x_i)
+    valid_root_found = true                                        → 10
+10  if (f_i < minimum_value)                                       đúng → 11   sai → 12
+11  minimum_value = f_i
+    *minimum = x_i                                                 → 12
+12  ++i                                                            → 6
+13  return valid_root_found                                        → END

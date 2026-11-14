@@ -1,0 +1,9 @@
+UNIT u0797
+Hàm: UpperCase(std::string * input)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 47–49
+
+Số điểm rẽ nhánh: 0
+
+START → END

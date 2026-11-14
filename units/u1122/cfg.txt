@@ -1,0 +1,34 @@
+UNIT u1122
+Hàm: Evaluate(const double x, const bool evaluate_gradient, FunctionSample * output)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearchFunction
+Vị trí: internal/ceres/line_search.cc, dòng 101–143
+
+Số điểm rẽ nhánh: 5
+
+START → 1
+1   output->x = x
+    output->vector_x_is_valid = false
+    output->value_is_valid = false
+    output->gradient_is_valid = false
+    output->vector_gradient_is_valid = false
+    scaled_direction_ = output->x * direction_
+    output->vector_x.resize(position_.rows(), 1)                   → 2
+2   if (!evaluator_->Plus(position_.data(), scaled_direction_.data(), output->vector_x.data()))   đúng → 3   sai → 4
+3   return                                                         → END
+4   output->vector_x_is_valid = true
+    double *gradient = nullptr                                     → 5
+5   if (evaluate_gradient)                                         đúng → 6   sai → 7
+6   output->vector_gradient.resize(direction_.rows(), 1)
+    gradient = output->vector_gradient.data()                      → 7
+7   const bool eval_status = evaluator_->Evaluate(output->vector_x.data(), &(output->value), nullptr, gradient, nullptr)   → 8
+8   if (!eval_status || !std::isfinite(output->value))             đúng → 9   sai → 10
+9   return                                                         → END
+10  output->value_is_valid = true                                  → 11
+11  if (!evaluate_gradient)                                        đúng → 12   sai → 13
+12  return                                                         → END
+13  output->gradient = direction_.dot(output->vector_gradient)     → 14
+14  if (!std::isfinite(output->gradient))                          đúng → 15   sai → 16
+15  return                                                         → END
+16  output->gradient_is_valid = true
+    output->vector_gradient_is_valid = true                        → END

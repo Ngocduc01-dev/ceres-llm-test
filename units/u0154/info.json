@@ -6,7 +6,6 @@
   1339,
   1341
  ],
- "signature": "?::std::numeric_limits::round_error",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 154
+ "order": 154,
+ "short_name": "round_error",
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false
 }

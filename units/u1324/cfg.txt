@@ -1,0 +1,12 @@
+UNIT u1324
+Hàm: DenseNormalCholeskySolver(LinearSolver::Options options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DenseNormalCholeskySolver
+Vị trí: internal/ceres/dense_normal_cholesky_solver.cc, dòng 44–47
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   TypedLinearSolver() (Base initializer)
+    options_(std::move(options)) (Member initializer)
+    cholesky_(DenseCholesky::Create(options_)) (Member initializer)   → END

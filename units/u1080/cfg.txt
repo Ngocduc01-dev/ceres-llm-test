@@ -1,0 +1,10 @@
+UNIT u1080
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseMatrixPreconditionerWrapper
+Vị trí: internal/ceres/preconditioner.cc, dòng 63–67
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   matrix_->RightMultiplyAndAccumulate(x, y, options_.context, options_.num_threads)   → END

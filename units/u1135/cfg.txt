@@ -1,0 +1,30 @@
+UNIT u1135
+Hàm: UpdateRhs(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, const double * inverse_ete_g, double * rhs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 378–420
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const CompressedRowBlockStructure *bs = A.block_structure()
+    const double *values = A.values()
+    const int e_block_id = bs->rows[chunk.start].cells.front().block_id
+    const int e_block_size = bs->cols[e_block_id].size
+    int b_pos = bs->rows[row_block_counter].block.position
+    int j = 0                                                      → 2
+2   vòng for, điều kiện: j < chunk.size                            đúng → 3   sai → END
+3   const CompressedRow &row = bs->rows[row_block_counter + j]
+    const Cell &e_cell = row.cells.front()
+    typename EigenTypes<-1>::ConstVectorRef(b + b_pos, row.block.size)
+    MatrixVectorMultiply<-1, -1, -1>(values + e_cell.position, row.block.size, e_block_size, inverse_ete_g, sj.data())
+    int c = 1                                                      → 4
+4   vòng for, điều kiện: c < row.cells.size()                      đúng → 5   sai → 7
+5   const int block_id = row.cells[c].block_id
+    const int block_size = bs->cols[block_id].size
+    const int block = block_id - num_eliminate_blocks_
+    MatrixTransposeVectorMultiply<-1, -1, 1>(values + row.cells[c].position, row.block.size, block_size, sj.data(), rhs + lhs_row_layout_[block])   → 6
+6   ++c                                                            → 4
+7   b_pos += row.block.size                                        → 8
+8   ++j                                                            → 2

@@ -1,0 +1,11 @@
+UNIT u0791
+Hàm: ReorderSchurComplementColumnsUsingSuiteSparse(const ParameterBlockOrdering & parameter_block_ordering, Program * program)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/reorder_program.cc, dòng 339–380
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   (void)parameter_block_ordering
+    (void)program                                   → END

@@ -1,0 +1,10 @@
+UNIT u1065
+Hàm: CheckForNoAliasing(double * existing_block, int existing_block_size, double * new_block, int new_block_size)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/problem_impl.cc, dòng 74–85
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   existing_block, existing_block_size, new_block, new_block_size))   đúng → END   sai → DỪNG

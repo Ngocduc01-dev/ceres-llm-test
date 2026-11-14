@@ -6,7 +6,6 @@
   64,
   82
  ],
- "signature": "ceres::internal::ComputeSphereManifoldPlus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 62
+ "order": 62,
+ "short_name": "ComputeSphereManifoldPlus",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const VT& v, double beta, const XT& x, const DeltaT& delta, const double norm_delta, XPlusDeltaT* x_plus_delta)",
+ "return_type": "void",
+ "is_const": false
 }

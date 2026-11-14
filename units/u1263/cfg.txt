@@ -1,0 +1,18 @@
+UNIT u1263
+Hàm: operator()(const double * parameters, double * residuals, double * jacobian) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::TinySolverCostFunctionAdapter
+Vị trí: include/ceres/tiny_solver_cost_function_adapter.h, dòng 107–127
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverCostFunctionAdapter<2, 3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (!jacobian)                                                 đúng → 2   sai → 3
+2   return cost_function_.Evaluate(&parameters, residuals, nullptr)   → END
+3   double *jacobians[1] = {row_major_jacobian_.data()}            → 4
+4   if (!cost_function_.Evaluate(&parameters, residuals, jacobians))   đúng → 5   sai → 6
+5   return false                                                   → END
+6   jacobian, NumResiduals(), NumParameters()
+    col_major_jacobian = row_major_jacobian_
+    return true                                                    → END

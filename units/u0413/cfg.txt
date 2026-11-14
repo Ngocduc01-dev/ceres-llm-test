@@ -1,0 +1,9 @@
+UNIT u0413
+Hàm: VersionString()  → trả về std::string_view
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/solver_utils.cc, dòng 91–91
+
+Số điểm rẽ nhánh: 0
+
+START → END

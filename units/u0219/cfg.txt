@@ -1,0 +1,9 @@
+UNIT u0219
+Hàm: ~BlockSparseJacobiPreconditioner()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::BlockSparseJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.cc, dòng 56–56
+
+Số điểm rẽ nhánh: 0
+
+START → END

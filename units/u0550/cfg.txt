@@ -1,0 +1,26 @@
+UNIT u0550
+Hàm: RightMultiplyAndAccumulate(const double * x_ptr, double * y_ptr) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LowRankInverseHessian
+Vị trí: internal/ceres/low_rank_inverse_hessian.cc, dòng 117–177
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   x_ptr, num_parameters_
+    y_ptr, num_parameters_
+    search_direction = gradient
+    const int num_corrections = indices_.size()
+    indices_.rbegin()                                              → 2
+2   vòng for, điều kiện: it != indices_.rend()                     đúng → 3   sai → 5
+3   const double alpha_i = delta_x_history_.col(* it).dot(search_direction) / delta_x_dot_delta_gradient_(* it)
+    search_direction -= alpha_i * delta_gradient_history_.col(* it)
+    alpha(* it) = alpha_i                                          → 4
+4   ++ it                                                          → 2
+5   if (use_approximate_eigenvalue_scaling_)                       đúng → 6   sai → 7
+6   search_direction *= approximate_eigenvalue_scale_              → 7
+7   for (const int i : indices_)                                   đúng → 8   sai → END
+8   const int i
+    const double beta = delta_gradient_history_.col(i).dot(search_direction) / delta_x_dot_delta_gradient_(i)
+    search_direction += delta_x_history_.col(i) * (alpha(i) - beta)   → 9
+9   ++ (bước tiếp của vòng for)                                    → 7

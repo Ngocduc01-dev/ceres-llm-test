@@ -1,0 +1,11 @@
+UNIT u1082
+Hàm: ScopedThreadToken(ThreadTokenProvider * provider)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ScopedThreadToken
+Vị trí: internal/ceres/scoped_thread_token.h, dòng 43–44
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   provider_(provider) (Member initializer)
+    token_(provider->Acquire()) (Member initializer)               → END

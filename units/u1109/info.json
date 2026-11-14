@@ -6,7 +6,6 @@
   571,
   612
  ],
- "signature": "ceres::internal::SchurEliminatorForOneFBlock::BackSubstitute",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1109
+ "order": 1109,
+ "short_name": "BackSubstitute",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminatorForOneFBlock",
+ "class_is_template": true,
+ "params": "(const BlockSparseMatrixData & A, const double * b, const double *, const double * z_ptr, double * y)",
+ "return_type": "void",
+ "is_const": false
 }

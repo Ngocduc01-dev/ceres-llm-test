@@ -1,0 +1,10 @@
+UNIT u0888
+Hàm: cost_function() const  → trả về const CostFunction *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.h, dòng 109–109
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return cost_function_   → END

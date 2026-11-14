@@ -1,0 +1,28 @@
+UNIT u0768
+Hàm: StringAppendV(std::string * dst, const char * format, va_list ap)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/stringprintf.cc, dòng 43–91
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   char space[1024]
+    __builtin_va_copy(backup_ap, ap)
+    int result = vsnprintf(space, sizeof (space), format, backup_ap)
+    __builtin_va_end(backup_ap)                                    → 2
+2   if (result < sizeof (space))                                   đúng → 3   sai → 7
+3   if (result >= 0)                                               đúng → 4   sai → 5
+4   dst->append(space, result)
+    return                                                         → END
+5   if (result < 0)                                                đúng → 6   sai → 7
+6   return                                                         → END
+7   int length = result + 1
+    CFGNewAllocator(char *)
+    char *buf = new char [length]
+    __builtin_va_copy(backup_ap, ap)
+    result = vsnprintf(buf, length, format, backup_ap)
+    __builtin_va_end(backup_ap)                                    → 8
+8   if (result >= 0 && result < length)                            đúng → 9   sai → 10
+9   dst->append(buf, result)                                       → 10
+10  delete [] buf                                                  → END

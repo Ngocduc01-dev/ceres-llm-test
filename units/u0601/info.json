@@ -6,7 +6,6 @@
   382,
   403
  ],
- "signature": "ceres::internal::ProblemImpl::DeleteBlockInVector",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 601
+ "order": 601,
+ "short_name": "DeleteBlockInVector",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
+ "params": "(std::vector<Block*>* mutable_blocks, Block* block_to_remove)",
+ "return_type": "void",
+ "is_const": false
 }

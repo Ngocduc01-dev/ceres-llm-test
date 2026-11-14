@@ -6,7 +6,6 @@
   58,
   65
  ],
- "signature": "ceres::FindOrDie",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 473
+ "order": 473,
+ "short_name": "FindOrDie",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Collection& collection, const typename Collection::value_type::first_type& key)",
+ "return_type": "const typename Collection::value_type::second_type &",
+ "is_const": false
 }

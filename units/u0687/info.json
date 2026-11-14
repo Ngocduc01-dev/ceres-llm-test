@@ -6,7 +6,6 @@
   39,
   47
  ],
- "signature": "ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 687
+ "order": 687,
+ "short_name": "PowerSeriesExpansionPreconditioner",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::PowerSeriesExpansionPreconditioner",
+ "class_is_template": false,
+ "params": "(const ImplicitSchurComplement * isc, const int max_num_spse_iterations, const double spse_tolerance, const Preconditioner::Options & options)",
+ "return_type": null,
+ "is_const": false
 }

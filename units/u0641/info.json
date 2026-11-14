@@ -6,7 +6,6 @@
   119,
   132
  ],
- "signature": "ceres::NumericDiffFirstOrderFunction::NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 641
+ "order": 641,
+ "short_name": "NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::NumericDiffFirstOrderFunction",
+ "class_is_template": true,
+ "params": "(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options)",
+ "return_type": null,
+ "is_const": false
 }

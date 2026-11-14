@@ -1,0 +1,50 @@
+UNIT u1537
+Hàm: Solve(const GradientProblemSolver::Options & options, const GradientProblem & problem, double * parameters_ptr, GradientProblemSolver::Summary * summary)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblemSolver
+Vị trí: internal/ceres/gradient_problem_solver.cc, dòng 98–201
+
+Số điểm rẽ nhánh: 4 (và 1 lệnh CHECK)
+
+START → 1
+1   double start_time = WallTimeInSeconds()                        → 2
+2   CHECK(summary != nullptr)                                      đúng → 3   sai → DỪNG
+3   *summary = Summary()
+    summary->num_parameters = problem.NumParameters()
+    summary->num_tangent_parameters = problem.NumTangentParameters()
+    summary->line_search_direction_type = options.line_search_direction_type
+    summary->line_search_interpolation_type = options.line_search_interpolation_type
+    summary->line_search_type = options.line_search_type
+    summary->max_lbfgs_rank = options.max_lbfgs_rank
+    summary->nonlinear_conjugate_gradient_type = options.nonlinear_conjugate_gradient_type   → 4
+4   if (!options.IsValid(&summary->message))                       đúng → END   sai → 5
+5   parameters_ptr, problem.NumParameters()
+    solution = parameters
+    Minimizer::Options(GradientProblemSolverOptionsToSolverOptions(options))
+    minimizer_options.evaluator = std::make_unique<GradientProblemEvaluator>(problem)   → 6
+6   if (options.logging_type != SILENT)                            đúng → 7   sai → 8
+7   logging_callback = std::make_unique<LoggingCallback>(LINE_SEARCH, options.minimizer_progress_to_stdout)   → 8
+8   if (options.update_state_every_iteration)                      đúng → 9   sai → 10
+9   state_updating_callback = std::make_unique<GradientProblemSolverStateUpdatingCallback>(problem.NumParameters(), solution.data(), parameters_ptr)   → 10
+10  solver_summary.fixed_cost = 0.
+    solver_summary.preprocessor_time_in_seconds = 0.
+    solver_summary.postprocessor_time_in_seconds = 0.
+    solver_summary.line_search_polynomial_minimization_time_in_seconds = 0.
+    minimizer->Minimize(minimizer_options, solution.data(), &solver_summary)
+    summary->termination_type = solver_summary.termination_type
+    summary->message = solver_summary.message
+    summary->initial_cost = solver_summary.initial_cost
+    summary->final_cost = solver_summary.final_cost
+    summary->iterations = solver_summary.iterations
+    summary->line_search_polynomial_minimization_time_in_seconds = solver_summary.line_search_polynomial_minimization_time_in_seconds   → 11
+11  if (summary->IsSolutionUsable())                               đúng → 12   sai → 13
+12  parameters = solution
+    SetSummaryFinalCost(summary)                                   → 13
+13  const std::map<std::string, CallStatistics> &evaluator_statistics = minimizer_options.evaluator->Statistics()
+    const CallStatistics &call_stats = FindWithDefault(evaluator_statistics, "Evaluator::Residual", CallStatistics())
+    summary->cost_evaluation_time_in_seconds = call_stats.time
+    summary->num_cost_evaluations = call_stats.calls
+    const CallStatistics &call_stats = FindWithDefault(evaluator_statistics, "Evaluator::Jacobian", CallStatistics())
+    summary->gradient_evaluation_time_in_seconds = call_stats.time
+    summary->num_gradient_evaluations = call_stats.calls
+    summary->total_time_in_seconds = WallTimeInSeconds() - start_time   → END

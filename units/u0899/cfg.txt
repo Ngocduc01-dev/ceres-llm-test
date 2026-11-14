@@ -1,0 +1,10 @@
+UNIT u0899
+Hàm: Size()  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 90–93
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return thread_pool_.size()   → END

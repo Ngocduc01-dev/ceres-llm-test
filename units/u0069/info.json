@@ -6,7 +6,6 @@
   223,
   226
  ],
- "signature": "ceres::Jet::Jet<T, N>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "ceres::Jet<double, 4>"
  ],
  "called_by_tests": 0,
- "order": 69
+ "order": 69,
+ "short_name": "Jet<T, N>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Jet",
+ "class_is_template": true,
+ "params": "(const T & value)",
+ "return_type": null,
+ "is_const": false
 }

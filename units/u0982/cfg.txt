@@ -1,0 +1,14 @@
+UNIT u0982
+Hàm: SizedCostFunction()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::SizedCostFunction
+Vị trí: include/ceres/sized_cost_function.h, dòng 59–62
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SizedCostFunction<1, 2, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   CostFunction() (Base initializer)
+    set_num_residuals(1)
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, vector<int> &(*)(vector<int> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *mutable_parameter_block_sizes() = std::vector<int32_t>{2, 2}   → END

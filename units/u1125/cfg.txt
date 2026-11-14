@@ -1,0 +1,32 @@
+UNIT u1125
+Hàm: StringToPreconditionerType(std::string value, PreconditionerType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 91–101
+
+Số điểm rẽ nhánh: 7
+
+START → 1
+1   UpperCase(&value)                                   → 2
+2   if (value == "IDENTITY")                            đúng → 3   sai → 4
+3   *type = IDENTITY
+    return true                                         → END
+4   if (value == "JACOBI")                              đúng → 5   sai → 6
+5   *type = JACOBI
+    return true                                         → END
+6   if (value == "SCHUR_JACOBI")                        đúng → 7   sai → 8
+7   *type = SCHUR_JACOBI
+    return true                                         → END
+8   if (value == "SCHUR_POWER_SERIES_EXPANSION")        đúng → 9   sai → 10
+9   *type = SCHUR_POWER_SERIES_EXPANSION
+    return true                                         → END
+10  if (value == "CLUSTER_JACOBI")                      đúng → 11   sai → 12
+11  *type = CLUSTER_JACOBI
+    return true                                         → END
+12  if (value == "CLUSTER_TRIDIAGONAL")                 đúng → 13   sai → 14
+13  *type = CLUSTER_TRIDIAGONAL
+    return true                                         → END
+14  if (value == "SUBSET")                              đúng → 15   sai → 16
+15  *type = SUBSET
+    return true                                         → END
+16  return false                                        → END

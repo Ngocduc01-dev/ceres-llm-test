@@ -6,7 +6,6 @@
   49,
   54
  ],
- "signature": "ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1143
+ "order": 1143,
+ "short_name": "BlockSparseJacobiPreconditioner",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockSparseJacobiPreconditioner",
+ "class_is_template": false,
+ "params": "(Preconditioner::Options options, const BlockSparseMatrix & A)",
+ "return_type": null,
+ "is_const": false
 }

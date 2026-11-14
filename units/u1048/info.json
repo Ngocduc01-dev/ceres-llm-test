@@ -6,7 +6,6 @@
   102,
   110
  ],
- "signature": "ceres::internal::ConcurrentQueue::Wait",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1048
+ "order": 1048,
+ "short_name": "Wait",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
+ "params": "(T * value)",
+ "return_type": "bool",
+ "is_const": false
 }

@@ -1,0 +1,15 @@
+UNIT u1227
+Hàm: InitializeContext(Context * context, ContextImpl ** context_impl, bool * context_impl_owned)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/problem_impl.cc, dòng 108–118
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (context == nullptr)                                        đúng → 2   sai → 3
+2   *context_impl_owned = true
+    CFGNewAllocator(ContextImpl *)
+    *context_impl = new ContextImpl                                → END
+3   *context_impl_owned = false
+    *context_impl = down_cast<ContextImpl *>(context)              → END

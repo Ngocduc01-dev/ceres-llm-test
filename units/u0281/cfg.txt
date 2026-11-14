@@ -1,0 +1,11 @@
+UNIT u0281
+Hàm: StepRejected(double)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DoglegStrategy
+Vị trí: internal/ceres/dogleg_strategy.cc, dòng 635–638
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   radius_ *= 0.5
+    reuse_ = true                   → END

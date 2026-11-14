@@ -1,0 +1,13 @@
+UNIT u0710
+Hàm: WriteStringToFileOrDie(const std::string & data, const std::string & filename)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/file.cc, dòng 42–50
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   FILE *file_descriptor = fopen(filename.c_str(), "wb")          → 2
+2   LOG(FATAL)                                                     đúng → 3   sai → DỪNG
+3   fwrite(data.c_str(), 1, data.size(), file_descriptor)
+    fclose(file_descriptor)                                        → END

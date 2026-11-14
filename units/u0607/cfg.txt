@@ -1,0 +1,81 @@
+UNIT u0607
+Hàm: MMM_mat1x4(const int col_a, const double * a, const double * b, const int col_stride_b, double * c, const int kOperation)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/small_blas_generic.h, dòng 87–122
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   double cvec4[4] = {0., 0., 0., 0.}
+    const double *pa = a
+    const double *pb = b
+    const int span = 4
+    int col_r = col_a & (span - 1)
+    int col_m = col_a - col_r
+    double av = 0.
+    int bi = 0
+    int k = 0                                                      → 2
+2   for (...; k < col_m; )                                         đúng → 3   sai → 4
+3   av = pa[k]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    bi += col_stride_b
+    k++
+    av = pa[k]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    bi += col_stride_b
+    k++
+    av = pa[k]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    bi += col_stride_b
+    k++
+    av = pa[k]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    bi += col_stride_b
+    k++                                                            → 2
+4   int k = col_m                                                  → 5
+5   for (...; k < col_a; )                                         đúng → 6   sai → 7
+6   av = pa[k]
+    pb = b + bi
+    cvec4[0] += av * pb[0]
+    cvec4[1] += av * pb[1]
+    cvec4[2] += av * pb[2]
+    cvec4[3] += av * pb[3]
+    pb += 4
+    bi += col_stride_b
+    k++                                                            → 5
+7   if (kOperation > 0)                                            đúng → 8   sai → 10
+8   c[0] += cvec4[0]
+    c[1] += cvec4[1]
+    c[2] += cvec4[2]
+    c[3] += cvec4[3]                                               → 9
+9   c += 4                                                         → END
+10  if (kOperation < 0)                                            đúng → 11   sai → 12
+11  c[0] -= cvec4[0]
+    c[1] -= cvec4[1]
+    c[2] -= cvec4[2]
+    c[3] -= cvec4[3]                                               → 9
+12  c[0] = cvec4[0]
+    c[1] = cvec4[1]
+    c[2] = cvec4[2]
+    c[3] = cvec4[3]                                                → 9

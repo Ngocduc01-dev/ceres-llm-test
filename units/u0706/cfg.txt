@@ -1,0 +1,15 @@
+UNIT u0706
+Hàm: Solve(const double * rhs, double * solution, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::EigenDenseCholesky
+Vị trí: internal/ceres/dense_cholesky.cc, dòng 163–175
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (llt_->info() != Eigen::Success)                            đúng → 2   sai → 3
+2   *message = "Eigen failure. Unable to perform dense Cholesky factorization."
+    return LinearSolverTerminationType::FAILURE                    → END
+3   VectorRef(solution, llt_->cols()) = llt_->solve(ConstVectorRef(rhs, llt_->cols()))
+    *message = "Success."
+    return LinearSolverTerminationType::SUCCESS                    → END

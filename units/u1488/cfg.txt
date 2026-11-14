@@ -1,0 +1,28 @@
+UNIT u1488
+Hàm: InterpolatingPolynomialMinimizingStepSize(const LineSearchInterpolationType & interpolation_type, const FunctionSample & lowerbound, const FunctionSample & previous, const FunctionSample & current, const double min_step_size, const double max_step_size) const  → trả về double
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 209–275
+
+Số điểm rẽ nhánh: 5 (và 3 lệnh CHECK)
+
+START → 1
+1   if (!current.value_is_valid || (interpolation_type == BISECTION && max_step_size <= current.x))   đúng → 2   sai → 3
+2   return std::min(std::max(current.x * 0.5, min_step_size), max_step_size)   → END
+3   if (interpolation_type == BISECTION)                           đúng → 4   sai → 6
+4   CHECK_GT(max_step_size, current.x)                             đúng → 5   sai → DỪNG
+5   return max_step_size                                           → END
+6   CHECK(lowerbound.value_is_valid)                               đúng → 7   sai → DỪNG
+7   samples.push_back(lowerbound)                                  → 8
+8   if (interpolation_type == QUADRATIC)                           đúng → 9   sai → 13
+9   samples.emplace_back(current.x, current.value)                 → 10
+10  if (previous.value_is_valid)                                   đúng → 11   sai → 12
+11  samples.emplace_back(previous.x, previous.value)               → 12
+12  double step_size = 0.
+    double unused_min_value = 0.
+    MinimizeInterpolatingPolynomial(samples, min_step_size, max_step_size, &step_size, &unused_min_value)
+    return step_size                                               → END
+13  LOG(FATAL)                                                     đúng → 14   sai → DỪNG
+14  samples.push_back(current)                                     → 15
+15  if (previous.value_is_valid)                                   đúng → 16   sai → 12
+16  samples.push_back(previous)                                    → 12

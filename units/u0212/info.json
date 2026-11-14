@@ -6,7 +6,6 @@
   701,
   704
  ],
- "signature": "ceres::QuaternionToRotation",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 212
+ "order": 212,
+ "short_name": "QuaternionToRotation",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T q[4], T R[3 * 3])",
+ "return_type": "void",
+ "is_const": false
 }

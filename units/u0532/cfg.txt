@@ -1,0 +1,24 @@
+UNIT u0532
+Hàm: StepAccepted(const double cost, const double model_cost_change)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionStepEvaluator
+Vị trí: internal/ceres/trust_region_step_evaluator.cc, dòng 69–111
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   current_cost_ = cost
+    accumulated_candidate_model_cost_change_ += model_cost_change
+    accumulated_reference_model_cost_change_ += model_cost_change   → 2
+2   if (current_cost_ < minimum_cost_)                             đúng → 3   sai → 6
+3   minimum_cost_ = current_cost_
+    num_consecutive_nonmonotonic_steps_ = 0
+    candidate_cost_ = current_cost_
+    accumulated_candidate_model_cost_change_ = 0.                  → 4
+4   if (num_consecutive_nonmonotonic_steps_ == max_consecutive_nonmonotonic_steps_)   đúng → 5   sai → END
+5   reference_cost_ = candidate_cost_
+    accumulated_reference_model_cost_change_ = accumulated_candidate_model_cost_change_   → END
+6   ++num_consecutive_nonmonotonic_steps_                          → 7
+7   if (current_cost_ > candidate_cost_)                           đúng → 8   sai → 4
+8   candidate_cost_ = current_cost_
+    accumulated_candidate_model_cost_change_ = 0.                  → 4

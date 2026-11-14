@@ -1,0 +1,16 @@
+UNIT u0514
+Hàm: GetValue(const int n, double * f) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Grid1D
+Vị trí: include/ceres/cubic_interpolation.h, dòng 193–204
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid1D<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int idx = (std::min)((std::max)(begin_, n), end_ - 1) - begin_
+    if true                                                        → 2
+2   int i = 0                                                      → 3
+3   vòng for, điều kiện: i < 1                                     đúng → 4   sai → END
+4   f[i] = static_cast<double>(data_[1 * idx + i])                 → 5
+5   ++i                                                            → 3

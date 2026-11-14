@@ -6,7 +6,6 @@
   371,
   375
  ],
- "signature": "ceres::TinySolver::Initialize",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 592
+ "order": 592,
+ "short_name": "Initialize",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::TinySolver",
+ "class_is_template": true,
+ "params": "(const Function& function)",
+ "return_type": "typename enable_if<(R != Eigen::Dynamic && P == Eigen::Dynamic), void>::type",
+ "is_const": false
 }

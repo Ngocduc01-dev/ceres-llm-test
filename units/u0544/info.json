@@ -6,7 +6,6 @@
   45,
   63
  ],
- "signature": "ceres::internal::ConstructRange",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 544
+ "order": 544,
+ "short_name": "ConstructRange",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Allocator& alloc, Iterator first, Iterator last, const Args&... args)",
+ "return_type": "void",
+ "is_const": false
 }

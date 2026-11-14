@@ -1,0 +1,14 @@
+UNIT u1192
+Hàm: UpdateCompressedRowSparseMatrixTranspose(CompressedRowSparseMatrix * crs_matrix) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 474–482
+
+Số điểm rẽ nhánh: 0 (và 4 lệnh CHECK)
+
+START → 1
+1   CHECK(crs_matrix != nullptr)                                   đúng → 2   sai → DỪNG
+2   CHECK_EQ(crs_matrix->num_rows(), num_cols_)                    đúng → 3   sai → DỪNG
+3   CHECK_EQ(crs_matrix->num_cols(), num_rows_)                    đúng → 4   sai → DỪNG
+4   CHECK_EQ(crs_matrix->num_nonzeros(), num_nonzeros_)            đúng → 5   sai → DỪNG
+5   UpdateCompressedRowSparseMatrixImpl<true>(crs_matrix, values(), transpose_block_structure_.get())   → END

@@ -1,0 +1,16 @@
+UNIT u0707
+Hàm: Factorize(int num_cols, double * lhs, std::string * message)  → trả về LinearSolverTerminationType
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::FloatEigenDenseCholesky
+Vị trí: internal/ceres/dense_cholesky.cc, dòng 177–189
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   lhs_ = Eigen::Map<Eigen::MatrixXd>(lhs, num_cols, num_cols).cast<float>()
+    llt_ = std::make_unique<LLTType>(lhs_)                         → 2
+2   if (llt_->info() != Eigen::Success)                            đúng → 3   sai → 4
+3   *message = "Eigen failure. Unable to perform dense Cholesky factorization."
+    return LinearSolverTerminationType::FAILURE                    → END
+4   *message = "Success."
+    return LinearSolverTerminationType::SUCCESS                    → END

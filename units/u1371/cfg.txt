@@ -1,0 +1,14 @@
+UNIT u1371
+Hàm: UpdateImpl(const BlockSparseMatrix & A, const double * D)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurJacobiPreconditioner
+Vị trí: internal/ceres/schur_jacobi_preconditioner.cc, dòng 87–97
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   const int num_rows = m_->num_rows()                            → 2
+2   CHECK_GT(num_rows, 0)                                          đúng → 3   sai → DỪNG
+3   eliminator_->Eliminate(BlockSparseMatrixData(A), nullptr, D, m_.get(), nullptr)
+    m_->Invert()
+    return true                                                    → END

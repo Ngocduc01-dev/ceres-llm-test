@@ -1,0 +1,10 @@
+UNIT u0428
+Hàm: max_num_nonzeros() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.h, dòng 105–105
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return max_num_nonzeros_   → END

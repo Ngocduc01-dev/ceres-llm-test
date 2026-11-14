@@ -6,7 +6,6 @@
   430,
   565
  ],
- "signature": "ceres::internal::SchurEliminatorForOneFBlock::Eliminate",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1123
+ "order": 1123,
+ "short_name": "Eliminate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminatorForOneFBlock",
+ "class_is_template": true,
+ "params": "(const BlockSparseMatrixData & A, const double * b, const double * D, BlockRandomAccessMatrix * lhs_bram, double * rhs_ptr)",
+ "return_type": "void",
+ "is_const": false
 }

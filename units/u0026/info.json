@@ -6,7 +6,6 @@
   140,
   145
  ],
- "signature": "ceres::internal::FixedArray::FixedArray<T, N, A>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 26
+ "order": 26,
+ "short_name": "FixedArray<T, N, A>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
+ "params": "(size_type n, const value_type & val, const allocator_type & a)",
+ "return_type": null,
+ "is_const": false
 }

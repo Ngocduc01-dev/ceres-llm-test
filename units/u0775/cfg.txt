@@ -1,0 +1,24 @@
+UNIT u0775
+Hàm: ComputeVisibility(const CompressedRowBlockStructure & block_structure, const int num_eliminate_blocks, std::vector<std::set<int>> * visibility)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/visibility.cc, dòng 49–74
+
+Số điểm rẽ nhánh: 3 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK(visibility != nullptr)                                   đúng → 2   sai → DỪNG
+2   for (const auto &row : block_structure.rows)                   đúng → 3   sai → END
+3   const auto &row
+    const std::vector<Cell> &cells = row.cells
+    int block_id = cells[0].block_id                               → 4
+4   if (block_id >= num_eliminate_blocks)                          đúng → 5   sai → 7
+5   continue                                                       → 6
+6   ++ (bước tiếp của vòng for)                                    → 2
+7   int j = 1                                                      → 8
+8   vòng for, điều kiện: j < cells.size()                          đúng → 9   sai → 6
+9   int camera_block_id = cells[j].block_id - num_eliminate_blocks   → 10
+10  DCHECK_GE(camera_block_id, 0)                                  đúng → 11   sai → DỪNG
+11  DCHECK_LT(camera_block_id, visibility->size())                 đúng → 12   sai → DỪNG
+12  (*visibility)[camera_block_id].insert(block_id)                → 13
+13  ++j                                                            → 8

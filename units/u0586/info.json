@@ -6,7 +6,6 @@
   155,
   168
  ],
- "signature": "ceres::ProductManifold::PlusImpl",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 586
+ "order": 586,
+ "short_name": "PlusImpl",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const double* x, const double* delta, double* x_plus_delta, std::index_sequence<Index0, Indices...>)",
+ "return_type": "bool",
+ "is_const": true
 }

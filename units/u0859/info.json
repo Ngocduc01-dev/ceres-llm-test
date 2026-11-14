@@ -6,7 +6,6 @@
   150,
   166
  ],
- "signature": "ceres::internal::CreateGradientCheckingCostFunction",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 859
+ "order": 859,
+ "short_name": "CreateGradientCheckingCostFunction",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const CostFunction * cost_function, const std::vector<const Manifold *> * manifolds, double relative_step_size, double relative_precision, const std::string & extra_info, GradientCheckingIterationCallback * callback)",
+ "return_type": "std::unique_ptr<CostFunction>",
+ "is_const": false
 }

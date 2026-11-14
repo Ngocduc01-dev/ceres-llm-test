@@ -1,0 +1,12 @@
+UNIT u1318
+Hàm: ToCompressedRowSparseMatrixTranspose() const  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockSparseMatrix
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 450–460
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   auto bs = transpose_block_structure_.get()
+    SetBlockStructureOfCompressedRowSparseMatrix(crs_matrix.get(), bs)
+    UpdateCompressedRowSparseMatrixTranspose(crs_matrix.get())     → END

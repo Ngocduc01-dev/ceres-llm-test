@@ -1,0 +1,12 @@
+UNIT u0318
+Hàm: DenseIterativeRefiner(const int max_num_iterations)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::DenseIterativeRefiner
+Vị trí: internal/ceres/iterative_refiner.cc, dòng 73–74
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   max_num_iterations_(max_num_iterations) (Member initializer)
+    residual_() (Member initializer)
+    correction_() (Member initializer)                             → END

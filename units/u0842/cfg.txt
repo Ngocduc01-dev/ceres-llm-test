@@ -1,0 +1,11 @@
+UNIT u0842
+Hàm: CostFunction()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::CostFunction
+Vị trí: internal/ceres/cost_function.cc, dòng 36–36
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   parameter_block_sizes_() (Member initializer)
+    num_residuals_(0) (Member initializer)                         → END

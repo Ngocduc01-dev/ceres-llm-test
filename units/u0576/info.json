@@ -6,7 +6,6 @@
   59,
   59
  ],
- "signature": "ceres::internal::(anonymous)::RowColLessThan::RowColLessThan",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 576
+ "order": 576,
+ "short_name": "RowColLessThan",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::(anonymous)::RowColLessThan",
+ "class_is_template": false,
+ "params": "(const int * rows, const int * cols)",
+ "return_type": null,
+ "is_const": false
 }

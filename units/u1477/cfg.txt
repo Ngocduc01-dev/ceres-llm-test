@@ -1,0 +1,18 @@
+UNIT u1477
+Hàm: InternalRemoveResidualBlock(ResidualBlock * residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 176–194
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK(residual_block != nullptr)                               đúng → 2   sai → DỪNG
+2   if (options_.enable_fast_removal)                              đúng → 3   sai → 8
+3   const int num_parameter_blocks_for_residual = residual_block->NumParameterBlocks()
+    int i = 0                                                      → 4
+4   vòng for, điều kiện: i < num_parameter_blocks_for_residual     đúng → 5   sai → 7
+5   residual_block->parameter_blocks()[i]->RemoveResidualBlock(residual_block)   → 6
+6   ++i                                                            → 4
+7   residual_block_set_.find(residual_block)                       → 8
+8   DeleteBlockInVector(program_->mutable_residual_blocks(), residual_block)   → END

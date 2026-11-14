@@ -6,7 +6,6 @@
   157,
   164
  ],
- "signature": "ceres::internal::LevenbergMarquardtStrategy::StepAccepted",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 467
+ "order": 467,
+ "short_name": "StepAccepted",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LevenbergMarquardtStrategy",
+ "class_is_template": false,
+ "params": "(double step_quality)",
+ "return_type": "void",
+ "is_const": false
 }

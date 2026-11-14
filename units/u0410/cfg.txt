@@ -1,0 +1,10 @@
+UNIT u0410
+Hàm: Init(int max_derivatives_per_residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ScratchEvaluatePreparer
+Vị trí: internal/ceres/scratch_evaluate_preparer.cc, dòng 52–55
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   jacobian_scratch_ = std::make_unique<double[]>(static_cast<std::size_t>(max_derivatives_per_residual_block))   → END

@@ -1,0 +1,22 @@
+UNIT u1088
+Hàm: LeftMultiplyAndAccumulateESingleThreaded(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 206–228
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const CompressedRowBlockStructure *bs = matrix_.block_structure()
+    const double *values = matrix_.values()
+    int r = 0                                                      → 2
+2   vòng for, điều kiện: r < num_row_blocks_e_                     đúng → 3   sai → END
+3   const Cell &cell = bs->rows[r].cells[0]
+    const int row_block_pos = bs->rows[r].block.position
+    const int row_block_size = bs->rows[r].block.size
+    const int col_block_id = cell.block_id
+    const int col_block_pos = bs->cols[col_block_id].position
+    const int col_block_size = bs->cols[col_block_id].size
+    MatrixTransposeVectorMultiply<-1, -1, 1>(values + cell.position, row_block_size, col_block_size, x + row_block_pos, y + col_block_pos)   → 4
+4   ++r                                                            → 2

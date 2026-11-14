@@ -1,0 +1,10 @@
+UNIT u0186
+Hàm: TangentSize() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::QuaternionManifold
+Vị trí: include/ceres/manifold.h, dòng 369–369
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return 3   → END

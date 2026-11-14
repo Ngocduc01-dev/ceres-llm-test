@@ -6,7 +6,6 @@
   472,
   514
  ],
- "signature": "ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1314
+ "order": 1314,
+ "short_name": "FindMinimumOnTrustRegionBoundary",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(Vector2d * minimum)",
+ "return_type": "bool",
+ "is_const": true
 }

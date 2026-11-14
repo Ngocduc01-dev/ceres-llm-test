@@ -1,0 +1,27 @@
+UNIT u0759
+Hàm: EvaluateJacobianColumn(const CostFunctor * functor, int parameter_index, double delta, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::NumericDiff
+Vị trí: include/ceres/internal/numeric_diff.h, dòng 172–232
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   x_ptr, parameter_block_size
+    x_plus_delta_ptr, parameter_block_size
+    temp_residuals_ptr, num_residuals
+    x_plus_delta(parameter_index) = x(parameter_index) + delta     → 2
+2   if (!VariadicEvaluate<ceres::internal::ParameterDims<true>>(*functor, parameters, residuals.data()))   đúng → 3   sai → 4
+3   return false                                                   → END
+4   double one_over_delta = 1. / delta
+    (ceres::NumericDiffMethodType)2U == CENTRAL || ...             → 5
+5   if (ceres::NumericDiffMethodType)2U == CENTRAL || (ceres::NumericDiffMethodType)2U == RIDDERS   → 6
+6   x_plus_delta(parameter_index) = x(parameter_index) - delta     → 7
+7   if (!VariadicEvaluate<ceres::internal::ParameterDims<true>>(*functor, parameters, temp_residuals.data()))   đúng → 8   sai → 9
+8   return false                                                   → END
+9   residuals -= temp_residuals
+    one_over_delta /= 2                                            → 10
+10  x_plus_delta(parameter_index) = x(parameter_index)
+    residuals *= one_over_delta
+    return true                                                    → END

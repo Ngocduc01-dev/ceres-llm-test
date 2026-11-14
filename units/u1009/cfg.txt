@@ -1,0 +1,10 @@
+UNIT u1009
+Hàm: LeftMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LowRankInverseHessian
+Vị trí: internal/ceres/low_rank_inverse_hessian.h, dòng 87–89
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   RightMultiplyAndAccumulate(x, y)   → END

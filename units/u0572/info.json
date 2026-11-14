@@ -6,7 +6,6 @@
   189,
   194
  ],
- "signature": "ceres::TinySolverAutoDiffFunction::Initialize",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 572
+ "order": 572,
+ "short_name": "Initialize",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::TinySolverAutoDiffFunction",
+ "class_is_template": true,
+ "params": "(const CostFunctor& function)",
+ "return_type": "typename std::enable_if<(R == Eigen::Dynamic), void>::type",
+ "is_const": false
 }

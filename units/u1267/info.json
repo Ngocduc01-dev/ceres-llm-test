@@ -6,7 +6,6 @@
   57,
   82
  ],
- "signature": "ceres::internal::PowerSeriesExpansionPreconditioner::RightMultiplyAndAccumulate",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 1267
+ "order": 1267,
+ "short_name": "RightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PowerSeriesExpansionPreconditioner",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

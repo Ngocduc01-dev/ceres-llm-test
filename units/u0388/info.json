@@ -6,7 +6,6 @@
   83,
   83
  ],
- "signature": "ceres::internal::PreprocessedProblem::PreprocessedProblem",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 22,
- "order": 388
+ "order": 388,
+ "short_name": "PreprocessedProblem",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::PreprocessedProblem",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

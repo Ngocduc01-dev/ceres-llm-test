@@ -6,7 +6,6 @@
   312,
   342
  ],
- "signature": "ceres::internal::TripletSparseMatrix::CreateRandomMatrix",
  "branches": 16,
  "cyclomatic": 9,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 953
+ "order": 953,
+ "short_name": "CreateRandomMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "(const TripletSparseMatrix::RandomMatrixOptions & options, std::mt19937 & prng)",
+ "return_type": "std::unique_ptr<TripletSparseMatrix>",
+ "is_const": false
 }

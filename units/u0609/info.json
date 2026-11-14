@@ -6,7 +6,6 @@
   211,
   245
  ],
- "signature": "ceres::internal::MVM_mat4x1",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 609
+ "order": 609,
+ "short_name": "MVM_mat4x1",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int col_a, const double * a, const int col_stride_a, const double * b, double * c, const int kOperation)",
+ "return_type": "void",
+ "is_const": false
 }

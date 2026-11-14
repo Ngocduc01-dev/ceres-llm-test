@@ -1,0 +1,93 @@
+UNIT u1130
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::DynamicAutoDiffCostFunction
+Vị trí: include/ceres/dynamic_autodiff_cost_function.h, dòng 101–265
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 19 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(num_residuals(), 0)                                   đúng → 2   sai → DỪNG
+2   if (jacobians == nullptr)                                      đúng → 3   sai → 4
+3   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return (* functor_)(parameters, residuals)                     → END
+4   const int num_parameter_blocks = static_cast<int>(parameter_block_sizes().size())
+    const int num_parameters = std::accumulate(parameter_block_sizes().begin(), parameter_block_sizes().end(), 0)
+    num_residuals()
+    num_parameter_blocks, nullptr
+    int num_active_parameters = 0
+    bool in_derivative_section = false
+    int parameter_cursor = 0
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 6   sai → 17
+6   jet_parameters[i] = &input_jets[parameter_cursor]
+    const int parameter_block_size = parameter_block_sizes()[i]    → 7
+7   if (jacobians[i] != nullptr)                                   đúng → 8   sai → 16
+8   if (!in_derivative_section)                                    đúng → 9   sai → 10
+9   start_derivative_section.push_back(parameter_cursor)
+    in_derivative_section = true                                   → 10
+10  num_active_parameters += parameter_block_size                  → 11
+11  int j = 0                                                      → 12
+12  vòng for, điều kiện: j < parameter_block_size                  đúng → 13   sai → 15
+13  input_jets[parameter_cursor].a = parameters[i][j]              → 14
+14  ++j                                                            → 12
+15  ++i                                                            → 5
+16  in_derivative_section = false                                  → 11
+17  if (num_active_parameters == 0)                                đúng → 18   sai → 19
+18  operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return (* functor_)(parameters, residuals)                     → END
+19  start_derivative_section.push_back(parameter_cursor)
+    int num_strides = static_cast<int>(ceil(num_active_parameters / static_cast<float>(4)))
+    int current_derivative_section = 0
+    int current_derivative_section_cursor = 0
+    int pass = 0                                                   → 20
+20  vòng for, điều kiện: pass < num_strides                        đúng → 21   sai → 55
+21  const int initial_derivative_section = current_derivative_section
+    const int initial_derivative_section_cursor = current_derivative_section_cursor
+    int active_parameter_count = 0
+    parameter_cursor = 0
+    int i = 0                                                      → 22
+22  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 23   sai → 32
+23  int j = 0                                                      → 24
+24  vòng for, điều kiện: j < parameter_block_sizes()[i]            đúng → 25   sai → 31
+25  input_jets[parameter_cursor].v.setZero()                       → 26
+26  if (active_parameter_count < 4 && parameter_cursor >= (start_derivative_section[current_derivative_section] + current_derivative_section_cursor))   đúng → 27   sai → 29
+27  if (jacobians[i] != nullptr)                                   đúng → 28   sai → 30
+28  input_jets[parameter_cursor].v[active_parameter_count] = 1.
+    ++active_parameter_count
+    ++current_derivative_section_cursor                            → 29
+29  ++j                                                            → 24
+30  ++current_derivative_section
+    current_derivative_section_cursor = 0                          → 29
+31  ++i                                                            → 22
+32  operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))   → 33
+33  if (!(* functor_)(&jet_parameters[0], &output_jets[0]))        đúng → 34   sai → 35
+34  return false                                                   → END
+35  active_parameter_count = 0
+    current_derivative_section = initial_derivative_section
+    current_derivative_section_cursor = initial_derivative_section_cursor
+    int i = 0
+    int parameter_cursor = 0                                       → 36
+36  vòng for, điều kiện: i < num_parameter_blocks                  đúng → 37   sai → 49
+37  int j = 0                                                      → 38
+38  vòng for, điều kiện: j < parameter_block_sizes()[i]            đúng → 39   sai → 48
+39  if (active_parameter_count < 4 && parameter_cursor >= (start_derivative_section[current_derivative_section] + current_derivative_section_cursor))   đúng → 40   sai → 46
+40  if (jacobians[i] != nullptr)                                   đúng → 41   sai → 47
+41  int k = 0                                                      → 42
+42  vòng for, điều kiện: k < num_residuals()                       đúng → 43   sai → 45
+43  jacobians[i][k * parameter_block_sizes()[i] + j] = output_jets[k].v[active_parameter_count]   → 44
+44  ++k                                                            → 42
+45  ++active_parameter_count
+    ++current_derivative_section_cursor                            → 46
+46  ++j                                                            → 38
+47  ++current_derivative_section
+    current_derivative_section_cursor = 0                          → 46
+48  ++i                                                            → 36
+49  if (pass == num_strides - 1)                                   đúng → 50   sai → 54
+50  int k = 0                                                      → 51
+51  vòng for, điều kiện: k < num_residuals()                       đúng → 52   sai → 54
+52  residuals[k] = output_jets[k].a                                → 53
+53  ++k                                                            → 51
+54  ++pass                                                         → 20
+55  return true                                                    → END

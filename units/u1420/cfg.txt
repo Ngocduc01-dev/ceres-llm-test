@@ -1,0 +1,49 @@
+UNIT u1420
+Hàm: OptionsAreValidForIterativeSchur(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 253–305
+
+Số điểm rẽ nhánh: 11 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(options.linear_solver_type, ITERATIVE_SCHUR)          đúng → 2   sai → DỪNG
+2   if (options.dynamic_sparsity)                                  đúng → 3   sai → 4
+3   *error = "Dynamic sparsity is only supported with SPARSE_NORMAL_CHOLESKY."
+    return false                                                   → END
+4   if (options.use_explicit_schur_complement)                     đúng → 5   sai → 9
+5   if (options.preconditioner_type != SCHUR_JACOBI)               đúng → 6   sai → 7
+6   *error = "use_explicit_schur_complement only supports SCHUR_JACOBI as the preconditioner."
+    return false                                                   → END
+7   if (options.use_spse_initialization)                           đúng → 8   sai → 9
+8   *error = "use_explicit_schur_complement does not support use_spse_initialization."
+    return false                                                   → END
+9   if (options.use_spse_initialization || options.preconditioner_type == SCHUR_POWER_SERIES_EXPANSION)   đúng → 10   sai → 14
+10  if (!(options.max_num_spse_iterations >= 1))                   đúng → 11   sai → 12
+11  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::max_num_spse_iterations = ") << options.max_num_spse_iterations << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::max_num_spse_iterations >= 1")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+12  if (!(options.spse_tolerance >= 0.))                           đúng → 13   sai → 14
+13  ss << "Invalid configuration. "
+    ss << std::string("Solver::Options::spse_tolerance = ") << options.spse_tolerance << ". "
+    ss << "Violated constraint: "
+    ss << std::string("Solver::Options::spse_tolerance >= 0.0")
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    *error = ss.str()
+    return false                                                   → END
+14  if (options.use_mixed_precision_solves)                        đúng → 15   sai → 16
+15  *error = "Can't use use_mixed_precision_solves with ITERATIVE_SCHUR"
+    return false                                                   → END
+16  if (options.dynamic_sparsity)                                  đúng → 17   sai → 18
+17  *error = "Dynamic sparsity is only supported with SPARSE_NORMAL_CHOLESKY."
+    return false                                                   → END
+18  if (options.preconditioner_type == SUBSET)                     đúng → 19   sai → 20
+19  *error = "Can't use SUBSET preconditioner with ITERATIVE_SCHUR"
+    return false                                                   → END
+20  if (options.preconditioner_type == CLUSTER_JACOBI || options.preconditioner_type == CLUSTER_TRIDIAGONAL)   đúng → 21   sai → 22
+21  return OptionsAreValidForSparseCholeskyBasedSolver(options, error)   → END
+22  return true                                                    → END

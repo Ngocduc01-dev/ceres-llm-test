@@ -6,7 +6,6 @@
   99,
   106
  ],
- "signature": "ceres::internal::(anonymous)::STLDeleteContainerPairFirstPointers",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 600
+ "order": 600,
+ "short_name": "STLDeleteContainerPairFirstPointers",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(ForwardIterator begin, ForwardIterator end)",
+ "return_type": "void",
+ "is_const": false
 }

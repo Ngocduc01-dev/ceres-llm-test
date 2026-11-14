@@ -1,0 +1,17 @@
+UNIT u1013
+Hàm: ParallelInvokeState(int start, int end, int num_work_blocks)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ParallelInvokeState
+Vị trí: internal/ceres/parallel_invoke.cc, dòng 65–75
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   start(start) (Member initializer)
+    end(end) (Member initializer)
+    num_work_blocks(num_work_blocks) (Member initializer)
+    base_block_size((end - start) / num_work_blocks) (Member initializer)
+    num_base_p1_sized_blocks((end - start) % num_work_blocks) (Member initializer)
+    block_id(0) (Member initializer)
+    thread_id(0) (Member initializer)
+    block_until_finished(num_work_blocks) (Member initializer)     → END

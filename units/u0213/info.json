@@ -6,7 +6,6 @@
   786,
   789
  ],
- "signature": "ceres::DotProduct",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 213
+ "order": 213,
+ "short_name": "DotProduct",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T x[3], const T y[3])",
+ "return_type": "T",
+ "is_const": false
 }

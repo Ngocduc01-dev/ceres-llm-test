@@ -1,0 +1,21 @@
+UNIT u1376
+Hàm: AlternateLinearSolverAndPreconditionerForSchurTypeLinearSolver(Solver::Options * options)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/trust_region_preprocessor.cc, dòng 75–107
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   if (!IsSchurType(options->linear_solver_type))                 đúng → 2   sai → 3
+2   return                                                         → END
+3   const LinearSolverType linear_solver_type_given = options->linear_solver_type
+    const PreconditionerType preconditioner_type_given = options->preconditioner_type
+    options->linear_solver_type = LinearSolver::LinearSolverForZeroEBlocks(linear_solver_type_given)   → 4
+4   if (linear_solver_type_given == ITERATIVE_SCHUR)               đúng → 5   sai → 7
+5   options->preconditioner_type = Preconditioner::PreconditionerForZeroEBlocks(preconditioner_type_given)
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    message = StringPrintf("No E blocks. Switching from %s(%s) to %s(%s).", LinearSolverTypeToString(linear_solver_type_given), PreconditionerTypeToString(preconditioner_type_given), LinearSolverTypeToString(options->linear_solver_type), PreconditionerTypeToString(options->preconditioner_type))   → 6
+6   if (options->logging_type != SILENT)                           đúng → END   sai → END
+7   operator= (ImplicitCastExpr, FunctionToPointerDecay, basic_string<char> &(*)(basic_string<char> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    message = StringPrintf("No E blocks. Switching from %s to %s.", LinearSolverTypeToString(linear_solver_type_given), LinearSolverTypeToString(options->linear_solver_type))   → 6

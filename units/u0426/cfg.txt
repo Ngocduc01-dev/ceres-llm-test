@@ -1,0 +1,10 @@
+UNIT u0426
+Hàm: values() const  → trả về const double *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.h, dòng 80–80
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return values_.get()   → END

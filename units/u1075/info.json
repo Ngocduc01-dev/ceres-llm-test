@@ -6,7 +6,6 @@
   67,
   71
  ],
- "signature": "ceres::internal::DenseSparseMatrix::LeftMultiplyAndAccumulate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1075
+ "order": 1075,
+ "short_name": "LeftMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true
 }

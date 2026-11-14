@@ -1,0 +1,15 @@
+UNIT u0437
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::AutoDiffCostFunction
+Vị trí: include/ceres/autodiff_cost_function.h, dòng 201–217
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (!jacobians)                                                đúng → 2   sai → 3
+2   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return internal::VariadicEvaluate<ParameterDims>(* functor_, parameters, residuals)   → END
+3   operator* (ImplicitCastExpr, FunctionToPointerDecay, typename add_lvalue_reference<element_type>::type (*)(void) const noexcept(noexcept(*std::declval<pointer>())))
+    return internal::AutoDifferentiate<1, ParameterDims>(* functor_, parameters, SizedCostFunction<1, 2, 2>::num_residuals(), residuals, jacobians)   → END

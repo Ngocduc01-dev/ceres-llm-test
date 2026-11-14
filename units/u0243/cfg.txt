@@ -1,0 +1,11 @@
+UNIT u0243
+Hàm: ceres_init()  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: (toàn cục)
+Vị trí: internal/ceres/c_api.cc, dòng 51–56
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   char message[] = "<unknown>"
+    google::InitGoogleLogging(message)                             → END

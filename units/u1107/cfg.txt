@@ -1,0 +1,17 @@
+UNIT u1107
+Hàm: NormalPrior(const Matrix & A, Vector b)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::NormalPrior
+Vị trí: internal/ceres/normal_prior.cc, dòng 43–49
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   CostFunction() (Base initializer)
+    A_(A) (Member initializer)
+    b_(std::move(b)) (Member initializer)                          → 2
+2   CHECK_GT(b_.rows(), 0)                                         đúng → 3   sai → DỪNG
+3   CHECK_GT(A_.rows(), 0)                                         đúng → 4   sai → DỪNG
+4   CHECK_EQ(b_.rows(), A.cols())                                  đúng → 5   sai → DỪNG
+5   set_num_residuals(A_.rows())
+    mutable_parameter_block_sizes()->push_back(b_.rows())          → END

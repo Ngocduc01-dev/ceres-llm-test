@@ -6,7 +6,6 @@
   120,
   159
  ],
- "signature": "ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1233
+ "order": 1233,
+ "short_name": "UpdateCompressedRowSparseMatrixImpl",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(CompressedRowSparseMatrix* crs_matrix, const double* values, const CompressedRowBlockStructure* block_structure)",
+ "return_type": "void",
+ "is_const": false
 }

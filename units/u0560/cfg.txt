@@ -1,0 +1,10 @@
+UNIT u0560
+Hàm: set_num_residuals(int num_residuals)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::CostFunction
+Vị trí: include/ceres/cost_function.h, dòng 131–131
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   num_residuals_ = num_residuals   → END

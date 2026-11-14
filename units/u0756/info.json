@@ -6,7 +6,6 @@
   270,
   279
  ],
- "signature": "ceres::NonlinearConjugateGradientTypeToString",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 756
+ "order": 756,
+ "short_name": "NonlinearConjugateGradientTypeToString",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(NonlinearConjugateGradientType type)",
+ "return_type": "const char *",
+ "is_const": false
 }

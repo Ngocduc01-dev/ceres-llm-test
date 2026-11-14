@@ -1,0 +1,18 @@
+UNIT u1351
+Hàm: SparseSchurComplementSolver(const LinearSolver::Options & options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::SparseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 204–210
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   SchurComplementSolver(options) (Base initializer)
+    blocks_() (Member initializer)
+    sparse_cholesky_() (Member initializer)
+    preconditioner_() (Member initializer)
+    crs_lhs_() (Member initializer)
+    cg_solution_() (Member initializer)
+    scratch_(?) (Member initializer)                               → 2
+2   if (options.type != ITERATIVE_SCHUR)                           đúng → 3   sai → END
+3   sparse_cholesky_ = SparseCholesky::Create(options)             → END

@@ -6,7 +6,6 @@
   631,
   636
  ],
- "signature": "ceres::EulerAnglesToRotationMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 210
+ "order": 210,
+ "short_name": "EulerAnglesToRotationMatrix",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T* euler, const int row_stride_parameter, T* R)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   93,
   95
  ],
- "signature": "ceres::internal::DenseSparseMatrix::ToDenseMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 663
+ "order": 663,
+ "short_name": "ToDenseMatrix",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
+ "params": "(Matrix * dense_matrix)",
+ "return_type": "void",
+ "is_const": true
 }

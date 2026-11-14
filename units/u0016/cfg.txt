@@ -1,0 +1,16 @@
+UNIT u0016
+Hàm: Evaluate(double x, double * f, double * dfdx) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::CubicInterpolator
+Vị trí: include/ceres/cubic_interpolation.h, dòng 133–141
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CubicInterpolator<Grid1D<double>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const int n = std::floor(x)
+    grid_.GetValue(n - 1, p0.data())
+    grid_.GetValue(n, p1.data())
+    grid_.GetValue(n + 1, p2.data())
+    grid_.GetValue(n + 2, p3.data())
+    CubicHermiteSpline<Grid1D<double>::DATA_DIMENSION>(p0, p1, p2, p3, x - n, f, dfdx)   → END

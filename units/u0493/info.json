@@ -6,7 +6,6 @@
   206,
   232
  ],
- "signature": "ceres::AutoDiffManifold::PlusJacobian",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 493
+ "order": 493,
+ "short_name": "PlusJacobian",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
+ "params": "(const double * x, double * jacobian)",
+ "return_type": "bool",
+ "is_const": true
 }

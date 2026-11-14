@@ -1,0 +1,20 @@
+UNIT u0878
+Hàm: Options(const LinearSolver::Options & linear_solver_options)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::Preconditioner::Options
+Vị trí: internal/ceres/preconditioner.h, dòng 55–66
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   type(linear_solver_options.preconditioner_type) (Member initializer)
+    visibility_clustering_type(linear_solver_options.visibility_clustering_type) (Member initializer)
+    sparse_linear_algebra_library_type(linear_solver_options.sparse_linear_algebra_library_type) (Member initializer)
+    ordering_type(?) (Member initializer)
+    subset_preconditioner_start_row_block(?) (Member initializer)
+    num_threads(linear_solver_options.num_threads) (Member initializer)
+    elimination_groups(linear_solver_options.elimination_groups) (Member initializer)
+    row_block_size(linear_solver_options.row_block_size) (Member initializer)
+    e_block_size(linear_solver_options.e_block_size) (Member initializer)
+    f_block_size(linear_solver_options.f_block_size) (Member initializer)
+    context(linear_solver_options.context) (Member initializer)    → END

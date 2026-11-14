@@ -6,7 +6,6 @@
   55,
   55
  ],
- "signature": "ceres::internal::Minimizer::~Minimizer",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 873
+ "order": 873,
+ "short_name": "~Minimizer",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::Minimizer",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

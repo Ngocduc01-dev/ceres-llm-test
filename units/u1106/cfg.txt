@@ -1,0 +1,17 @@
+UNIT u1106
+Hàm: ClearRows(int row_start, int num_rows)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DynamicCompressedRowSparseMatrix
+Vị trí: internal/ceres/dynamic_compressed_row_sparse_matrix.cc, dòng 55–63
+
+Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
+
+START → 1
+1   int r = 0                                                  → 2
+2   vòng for, điều kiện: r < num_rows                          đúng → 3   sai → END
+3   const int i = row_start + r                                → 4
+4   CHECK_GE(i, 0)                                             đúng → 5   sai → DỪNG
+5   CHECK_LT(i, this->num_rows())                              đúng → 6   sai → DỪNG
+6   dynamic_cols_[i].resize(0)
+    dynamic_values_[i].resize(0)                               → 7
+7   ++r                                                        → 2

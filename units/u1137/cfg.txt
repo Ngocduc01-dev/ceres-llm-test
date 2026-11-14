@@ -1,0 +1,25 @@
+UNIT u1137
+Hàm: ComputeNonzeros(const std::vector<InnerProductComputer::ProductTerm> & product_terms, std::vector<int> * row_nnz)  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::InnerProductComputer
+Vị trí: internal/ceres/inner_product_computer.cc, dòng 64–96
+
+Số điểm rẽ nhánh: 3
+
+START → 1
+1   const CompressedRowBlockStructure *bs = m_.block_structure()
+    const std::vector<Block> &blocks = bs->cols
+    row_nnz->resize(blocks.size())                                 → 2
+2   if (product_terms.empty())                                     đúng → 3   sai → 4
+3   return 0                                                       → END
+4   (*row_nnz)[product_terms[0].row] = blocks[product_terms[0].col].size
+    int num_nonzeros = blocks[product_terms[0].row].size * blocks[product_terms[0].col].size
+    int i = 1                                                      → 5
+5   vòng for, điều kiện: i < product_terms.size()                  đúng → 6   sai → 10
+6   const ProductTerm &previous = product_terms[i - 1]
+    const ProductTerm &current = product_terms[i]                  → 7
+7   if (current.row != previous.row || current.col != previous.col)   đúng → 8   sai → 9
+8   (*row_nnz)[current.row] += blocks[current.col].size
+    num_nonzeros += blocks[current.row].size * blocks[current.col].size   → 9
+9   ++i                                                            → 5
+10  return num_nonzeros                                            → END

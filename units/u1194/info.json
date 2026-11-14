@@ -6,7 +6,6 @@
   600,
   638
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::Transpose",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1194
+ "order": 1194,
+ "short_name": "Transpose",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": true
 }

@@ -1,0 +1,9 @@
+UNIT u0872
+Hàm: ~Manifold()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::Manifold
+Vị trí: internal/ceres/manifold.cc, dòng 135–135
+
+Số điểm rẽ nhánh: 0
+
+START → END

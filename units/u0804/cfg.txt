@@ -1,0 +1,12 @@
+UNIT u0804
+Hàm: RemoveLeadingZeros(const Vector & polynomial_in)  → trả về Vector
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/polynomial.cc, dòng 116–122
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int i = 0                                                      → 2
+2   while (i < (polynomial_in.size() - 1) && polynomial_in(i) == 0.)   đúng → 3   sai → END
+3   ++i                                                            → 2

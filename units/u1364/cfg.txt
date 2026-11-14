@@ -1,0 +1,40 @@
+UNIT u1364
+Hàm: CreateJacobianBlockSparsityTranspose(int start_residual_block) const  → trả về std::unique_ptr<TripletSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 434–477
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   const int num_rows = NumParameterBlocks()
+    const int num_cols = NumResidualBlocks() - start_residual_block
+    CFGNewAllocator(TripletSparseMatrix *)
+    new TripletSparseMatrix(num_rows, num_cols, 10 * num_cols)
+    int num_nonzeros = 0
+    int *rows = tsm->mutable_rows()
+    int *cols = tsm->mutable_cols()
+    double *values = tsm->mutable_values()
+    int c = start_residual_block                                   → 2
+2   vòng for, điều kiện: c < residual_blocks_.size()               đúng → 3   sai → 12
+3   const ResidualBlock *residual_block = residual_blocks_[c]
+    const int num_parameter_blocks = residual_block->NumParameterBlocks()
+    ParameterBlock *const *parameter_blocks = residual_block->parameter_blocks()
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < num_parameter_blocks                  đúng → 5   sai → 11
+5   if (parameter_blocks[j]->IsConstant())                         đúng → 6   sai → 8
+6   continue                                                       → 7
+7   ++j                                                            → 4
+8   if (num_nonzeros >= tsm->max_num_nonzeros())                   đúng → 9   sai → 10
+9   tsm->set_num_nonzeros(num_nonzeros)
+    tsm->Reserve(2 * num_nonzeros)
+    rows = tsm->mutable_rows()
+    cols = tsm->mutable_cols()
+    values = tsm->mutable_values()                                 → 10
+10  const int r = parameter_blocks[j]->index()
+    rows[num_nonzeros] = r
+    cols[num_nonzeros] = c - start_residual_block
+    values[num_nonzeros] = 1.
+    ++num_nonzeros                                                 → 7
+11  ++c                                                            → 2
+12  tsm->set_num_nonzeros(num_nonzeros)                            → END

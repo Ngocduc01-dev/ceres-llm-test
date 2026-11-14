@@ -6,7 +6,6 @@
   347,
   358
  ],
- "signature": "ceres::internal::ProgramEvaluator::BuildResidualLayout",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1309
+ "order": 1309,
+ "short_name": "BuildResidualLayout",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "(const Program & program, std::vector<int> * residual_layout)",
+ "return_type": "void",
+ "is_const": false
 }

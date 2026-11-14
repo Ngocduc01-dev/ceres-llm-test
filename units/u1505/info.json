@@ -6,7 +6,6 @@
   499,
   692
  ],
- "signature": "ceres::internal::WolfeLineSearch::BracketingPhase",
  "branches": 60,
  "cyclomatic": 31,
  "topo_level": 5,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1505
+ "order": 1505,
+ "short_name": "BracketingPhase",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WolfeLineSearch",
+ "class_is_template": false,
+ "params": "(const FunctionSample & initial_position, const double step_size_estimate, FunctionSample * bracket_low, FunctionSample * bracket_high, bool * do_zoom_search, Summary * summary)",
+ "return_type": "bool",
+ "is_const": true
 }

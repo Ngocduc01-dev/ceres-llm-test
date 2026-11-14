@@ -6,7 +6,6 @@
   114,
   114
  ],
- "signature": "ceres::internal::DenseQR::~DenseQR",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 278
+ "order": 278,
+ "short_name": "~DenseQR",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::DenseQR",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

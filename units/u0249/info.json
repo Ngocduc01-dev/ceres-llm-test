@@ -6,7 +6,6 @@
   65,
   66
  ],
- "signature": "ceres::internal::GradientProblemSolverStateUpdatingCallback::~GradientProblemSolverStateUpdatingCallback",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 249
+ "order": 249,
+ "short_name": "~GradientProblemSolverStateUpdatingCallback",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::GradientProblemSolverStateUpdatingCallback",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

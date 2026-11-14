@@ -6,7 +6,6 @@
   192,
   197
  ],
- "signature": "ceres::ProductManifold::MinusImpl",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 568
+ "order": 568,
+ "short_name": "MinusImpl",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
+ "params": "(const double *, const double *, double *, std::index_sequence<>)",
+ "return_type": "bool",
+ "is_const": false
 }

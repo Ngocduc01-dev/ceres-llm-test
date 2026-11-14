@@ -6,7 +6,6 @@
   587,
   632
  ],
- "signature": "ceres::internal::TrustRegionMinimizer::DoLineSearch",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1450
+ "order": 1450,
+ "short_name": "DoLineSearch",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
+ "params": "(const Vector & x, const Vector & gradient, const double cost, Vector * delta)",
+ "return_type": "void",
+ "is_const": false
 }

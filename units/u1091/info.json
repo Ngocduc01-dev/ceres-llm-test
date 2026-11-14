@@ -6,7 +6,6 @@
   110,
   137
  ],
- "signature": "ceres::internal::LBFGS::NextDirection",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1091
+ "order": 1091,
+ "short_name": "NextDirection",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LBFGS",
+ "class_is_template": false,
+ "params": "(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)",
+ "return_type": "bool",
+ "is_const": false
 }

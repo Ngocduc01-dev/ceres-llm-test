@@ -6,7 +6,6 @@
   37,
   37
  ],
- "signature": "ceres::Context::Context",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 272
+ "order": 272,
+ "short_name": "Context",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Context",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

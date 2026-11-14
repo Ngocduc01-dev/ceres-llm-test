@@ -6,7 +6,6 @@
   106,
   107
  ],
- "signature": "ceres::internal::InnerProductComputer::ProductTerm::ProductTerm",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 315
+ "order": 315,
+ "short_name": "ProductTerm",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::InnerProductComputer::ProductTerm",
+ "class_is_template": false,
+ "params": "(const int row, const int col, const int index)",
+ "return_type": null,
+ "is_const": false
 }

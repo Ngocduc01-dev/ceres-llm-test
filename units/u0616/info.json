@@ -6,7 +6,6 @@
   108,
   111
  ],
- "signature": "ceres::AutoDiffFirstOrderFunction::AutoDiffFirstOrderFunction<FirstOrderFunctor, kNumParameters>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 616
+ "order": 616,
+ "short_name": "AutoDiffFirstOrderFunction<FirstOrderFunctor, kNumParameters>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::AutoDiffFirstOrderFunction",
+ "class_is_template": true,
+ "params": "(FirstOrderFunctor * functor)",
+ "return_type": null,
+ "is_const": false
 }

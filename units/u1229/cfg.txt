@@ -1,0 +1,17 @@
+UNIT u1229
+Hàm: SolveReducedLinearSystem(const LinearSolver::PerSolveOptions &, double * solution)  → trả về LinearSolver::Summary
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSchurComplementSolver
+Vị trí: internal/ceres/schur_complement_solver.cc, dòng 181–202
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   summary.num_iterations = 0
+    summary.termination_type = LinearSolverTerminationType::SUCCESS
+    summary.message = "Success."
+    auto *m = down_cast<BlockRandomAccessDenseMatrix *>(mutable_lhs())
+    const int num_rows = m->num_rows()                             → 2
+2   if (num_rows == 0)                                             đúng → END   sai → 3
+3   summary.num_iterations = 1
+    summary.termination_type = cholesky_->FactorAndSolve(num_rows, m->mutable_values(), rhs().data(), solution, &summary.message)   → END

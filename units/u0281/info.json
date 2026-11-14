@@ -6,7 +6,6 @@
   635,
   638
  ],
- "signature": "ceres::internal::DoglegStrategy::StepRejected",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 281
+ "order": 281,
+ "short_name": "StepRejected",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
+ "params": "(double)",
+ "return_type": "void",
+ "is_const": false
 }

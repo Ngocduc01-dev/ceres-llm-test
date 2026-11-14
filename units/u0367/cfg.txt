@@ -1,0 +1,10 @@
+UNIT u0367
+Hàm: state_offset() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ParameterBlock
+Vị trí: internal/ceres/parameter_block.h, dòng 140–140
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return state_offset_   → END

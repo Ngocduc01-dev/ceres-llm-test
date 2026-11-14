@@ -1,0 +1,12 @@
+UNIT u0436
+Hàm: ~AutoDiffCostFunction()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::AutoDiffCostFunction
+Vị trí: include/ceres/autodiff_cost_function.h, dòng 185–194
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (ownership_ == DO_NOT_TAKE_OWNERSHIP)   đúng → 2   sai → END
+2   functor_.release()                         → END

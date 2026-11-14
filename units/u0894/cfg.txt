@@ -1,0 +1,12 @@
+UNIT u0894
+Hàm: SquaredColumnNorm(double * x, ContextImpl * context, int num_threads) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseMatrix
+Vị trí: internal/ceres/sparse_matrix.cc, dòng 37–43
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   (void)context
+    (void)num_threads
+    SquaredColumnNorm(x)                                     → END

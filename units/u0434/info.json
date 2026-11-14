@@ -6,7 +6,6 @@
   112,
   112
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::~VisibilityBasedPreconditioner",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 434
+ "order": 434,
+ "short_name": "~VisibilityBasedPreconditioner",
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": null,
+ "is_const": false
 }

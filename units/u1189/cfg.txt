@@ -1,0 +1,36 @@
+UNIT u1189
+Hàm: BlockCRSJacobiPreconditioner(Preconditioner::Options options, const CompressedRowSparseMatrix & A)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::BlockCRSJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.cc, dòng 116–154
+
+Số điểm rẽ nhánh: 3 (và 1 lệnh CHECK)
+
+START → 1
+1   TypedPreconditioner() (Base initializer)
+    options_(std::move(options)) (Member initializer)
+    locks_(A.col_blocks().size()) (Member initializer)
+    m_() (Member initializer)
+    auto &col_blocks = A.col_blocks()
+    const int m_nnz = SumSquaredSizes(col_blocks)
+    m_ = std::make_unique<CompressedRowSparseMatrix>(A.num_cols(), A.num_cols(), m_nnz)
+    const int num_col_blocks = col_blocks.size()
+    int *m_cols = m_->mutable_cols()
+    int *m_rows = m_->mutable_rows()
+    m_rows[0] = 0
+    int i = 0
+    int idx = 0                                                    → 2
+2   vòng for, điều kiện: i < num_col_blocks                        đúng → 3   sai → 12
+3   auto &block = col_blocks[i]
+    int j = 0                                                      → 4
+4   vòng for, điều kiện: j < block.size                            đúng → 5   sai → 11
+5   int k = 0                                                      → 6
+6   vòng for, điều kiện: k < block.size                            đúng → 7   sai → 9
+7   m_cols[idx] = block.position + k                               → 8
+8   ++k                                                            → 6
+9   m_rows[block.position + j + 1] = idx                           → 10
+10  ++j                                                            → 4
+11  ++i                                                            → 2
+12  A.num_cols()
+    locks_.swap(locks)                                             → 13
+13  CHECK_EQ(m_rows[A.num_cols()], m_nnz)                          đúng → END   sai → DỪNG

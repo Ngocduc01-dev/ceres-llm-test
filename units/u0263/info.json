@@ -6,7 +6,6 @@
   146,
   146
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::mutable_rows",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 263
+ "order": 263,
+ "short_name": "mutable_rows",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int *",
+ "is_const": false
 }

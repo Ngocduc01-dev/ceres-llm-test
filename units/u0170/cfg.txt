@@ -1,0 +1,23 @@
+UNIT u0170
+Hàm: Minus(const double * y_ptr, const double * x_ptr, double * y_minus_x) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::LineManifold
+Vị trí: include/ceres/line_manifold.h, dòng 240–270
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<3> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   y_ptr, size_
+    y_ptr + size_, size_
+    x_ptr, size_
+    x_ptr + size_, size_
+    y_minus_x, size_ - 1
+    y_minus_x + size_ - 1, size_ - 1
+    double beta
+    internal::ComputeHouseholderVector<Eigen::Map<const AmbientVector>, double, 3>(x_d, &v, &beta)
+    internal::ComputeSphereManifoldMinus(v, beta, x_d, y_d, &y_minus_x_d)
+    y_o - x_o
+    internal::ApplyHouseholderVector(delta_o, v, beta)
+    y_minus_x_o = h_delta_o.template head<TangentSpaceDimension>(size_ - 1)
+    return true                                                    → END

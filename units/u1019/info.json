@@ -6,7 +6,6 @@
   317,
   319
  ],
- "signature": "ceres::internal::ProgramEvaluator::Statistics",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1019
+ "order": 1019,
+ "short_name": "Statistics",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "std::map<std::string, CallStatistics>",
+ "is_const": true
 }

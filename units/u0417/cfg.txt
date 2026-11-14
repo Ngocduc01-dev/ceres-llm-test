@@ -1,0 +1,9 @@
+UNIT u0417
+Hàm: ~SubsetPreconditioner()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::SubsetPreconditioner
+Vị trí: internal/ceres/subset_preconditioner.cc, dòng 58–58
+
+Số điểm rẽ nhánh: 0
+
+START → END

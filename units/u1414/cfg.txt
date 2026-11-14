@@ -1,0 +1,11 @@
+UNIT u1414
+Hàm: OptionsAreValidForSparseNormalCholesky(const Solver::Options & options, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 221–225
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   CHECK_EQ(options.linear_solver_type, SPARSE_NORMAL_CHOLESKY)   đúng → 2   sai → DỪNG
+2   return OptionsAreValidForSparseCholeskyBasedSolver(options, error)   → END

@@ -1,0 +1,12 @@
+UNIT u0543
+Hàm: MatrixTransposeMatrixMultiply(xem mã nguồn – hàm được sinh ra từ macro)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: internal/ceres/small_blas.h, dòng 353–369
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixTransposeMatrixMultiply<-1, -1, -1, -1, 1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   -1 != Eigen::Dynamic && ...                                    → 2
+2   MatrixTransposeMatrixMultiplyNaive<-1, -1, -1, -1, 1>(A, num_row_a, num_col_a, B, num_row_b, num_col_b, C, start_row_c, start_col_c, row_stride_c, col_stride_c)   → END

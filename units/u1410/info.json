@@ -6,7 +6,6 @@
   254,
   335
  ],
- "signature": "ceres::internal::LexicographicallyOrderResidualBlocks",
  "branches": 22,
  "cyclomatic": 12,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1410
+ "order": 1410,
+ "short_name": "LexicographicallyOrderResidualBlocks",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const int size_of_first_elimination_group, Program * program, std::string *)",
+ "return_type": "bool",
+ "is_const": false
 }

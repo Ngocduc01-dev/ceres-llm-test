@@ -1,0 +1,11 @@
+UNIT u0904
+Hàm: DynamicCostFunctionToFunctor(CostFunction * cost_function)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::DynamicCostFunctionToFunctor
+Vị trí: include/ceres/dynamic_cost_function_to_functor.h, dòng 108–111
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   cost_function_(cost_function) (Member initializer)   → 2
+2   CHECK(cost_function != nullptr)                      đúng → END   sai → DỪNG

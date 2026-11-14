@@ -1,0 +1,10 @@
+UNIT u1540
+Hàm: Compute(const std::vector<const double *> & parameter_blocks, Problem * problem)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Covariance
+Vị trí: internal/ceres/covariance.cc, dòng 55–58
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->Compute(parameter_blocks, problem->mutable_impl())   → END

@@ -6,7 +6,6 @@
   142,
   142
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::cols",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 8,
- "order": 260
+ "order": 260,
+ "short_name": "cols",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "const int *",
+ "is_const": true
 }

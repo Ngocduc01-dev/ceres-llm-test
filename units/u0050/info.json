@@ -6,7 +6,6 @@
   396,
   396
  ],
- "signature": "ceres::internal::FixedArray::EmptyInlinedStorage::data",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 50
+ "order": 50,
+ "short_name": "data",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::EmptyInlinedStorage",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "StorageElement *",
+ "is_const": false
 }

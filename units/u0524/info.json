@@ -6,7 +6,6 @@
   121,
   142
  ],
- "signature": "ceres::internal::SolveRTRWithSparseRHS",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 524
+ "order": 524,
+ "short_name": "SolveRTRWithSparseRHS",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, const int rhs_nonzero_index, double* solution)",
+ "return_type": "void",
+ "is_const": false
 }

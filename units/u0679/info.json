@@ -6,7 +6,6 @@
   73,
   75
  ],
- "signature": "ceres::internal::VertexDegreeLessThan::operator()",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 679
+ "order": 679,
+ "short_name": "operator()",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VertexDegreeLessThan",
+ "class_is_template": true,
+ "params": "(const Vertex & lhs, const Vertex & rhs)",
+ "return_type": "bool",
+ "is_const": true
 }

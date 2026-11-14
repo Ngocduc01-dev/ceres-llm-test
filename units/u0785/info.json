@@ -6,7 +6,6 @@
   38,
   119
  ],
- "signature": "ceres::internal::DetectStructure",
  "branches": 52,
  "cyclomatic": 27,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 7,
- "order": 785
+ "order": 785,
+ "short_name": "DetectStructure",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const CompressedRowBlockStructure & bs, const int num_eliminate_blocks, int * row_block_size, int * e_block_size, int * f_block_size)",
+ "return_type": "void",
+ "is_const": false
 }

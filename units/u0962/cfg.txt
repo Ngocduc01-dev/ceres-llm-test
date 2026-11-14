@@ -1,0 +1,10 @@
+UNIT u0962
+Hàm: UpdateImpl(const SparseMatrix &, const double *)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SparseMatrixPreconditionerWrapper
+Vị trí: internal/ceres/preconditioner.cc, dòng 58–61
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return true   → END

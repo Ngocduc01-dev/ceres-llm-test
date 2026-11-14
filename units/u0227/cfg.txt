@@ -1,0 +1,11 @@
+UNIT u0227
+Hàm: CellInfo()
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::CellInfo
+Vị trí: internal/ceres/block_random_access_matrix.h, dòng 88–88
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   values(?) (Member initializer)
+    m() (Member initializer)                                   → END

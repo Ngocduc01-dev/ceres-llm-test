@@ -1,0 +1,13 @@
+UNIT u0905
+Hàm: Reset(LossFunction * rho, Ownership ownership)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::LossFunctionWrapper
+Vị trí: include/ceres/loss_function.h, dòng 416–422
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (ownership_ == DO_NOT_TAKE_OWNERSHIP)   đúng → 2   sai → 3
+2   rho_.release()                             → 3
+3   rho_.reset(rho)
+    ownership_ = ownership                     → END

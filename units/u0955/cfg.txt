@@ -1,0 +1,11 @@
+UNIT u0955
+Hàm: Create(const LinearSolver::Options & options)  → trả về std::unique_ptr<LinearSolver>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LinearSolver
+Vị trí: internal/ceres/linear_solver.cc, dòng 74–127
+
+Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK(options.context != nullptr)   đúng → 2   sai → DỪNG
+2   LOG(FATAL)                          đúng → END   sai → DỪNG

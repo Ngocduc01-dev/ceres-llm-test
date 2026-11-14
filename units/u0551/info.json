@@ -6,7 +6,6 @@
   1176,
   1200
  ],
- "signature": "ceres::pow",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 551
+ "order": 551,
+ "short_name": "pow",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(T f, const Jet<T, N>& g)",
+ "return_type": "Jet<T, N>",
+ "is_const": false
 }

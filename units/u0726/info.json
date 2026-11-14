@@ -6,7 +6,6 @@
   59,
   72
  ],
- "signature": "ceres::internal::Graph::RemoveVertex",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 726
+ "order": 726,
+ "short_name": "RemoveVertex",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Graph",
+ "class_is_template": true,
+ "params": "(const Vertex & vertex)",
+ "return_type": "bool",
+ "is_const": false
 }

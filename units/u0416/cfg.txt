@@ -1,0 +1,9 @@
+UNIT u0416
+Hàm: ~SparseNormalCholeskySolver()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::SparseNormalCholeskySolver
+Vị trí: internal/ceres/sparse_normal_cholesky_solver.cc, dòng 56–56
+
+Số điểm rẽ nhánh: 0
+
+START → END

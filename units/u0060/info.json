@@ -6,7 +6,6 @@
   70,
   70
  ],
- "signature": "ceres::internal::ParameterDims::GetDim",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 60
+ "order": 60,
+ "short_name": "GetDim",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterDims",
+ "class_is_template": true,
+ "params": "(int dim)",
+ "return_type": "int",
+ "is_const": false
 }

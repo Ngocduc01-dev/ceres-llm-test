@@ -6,7 +6,6 @@
   966,
   1020
  ],
- "signature": "ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1375
+ "order": 1375,
+ "short_name": "DumpLinearLeastSquaresProblemToTextFile",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const std::string & filename_base, const SparseMatrix * A, const double * D, const double * b, const double * x, int)",
+ "return_type": "bool",
+ "is_const": false
 }

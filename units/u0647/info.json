@@ -6,7 +6,6 @@
   116,
   119
  ],
- "signature": "ceres::TinySolverAutoDiffFunction::TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 647
+ "order": 647,
+ "short_name": "TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::TinySolverAutoDiffFunction",
+ "class_is_template": true,
+ "params": "(const CostFunctor & cost_functor)",
+ "return_type": null,
+ "is_const": false
 }

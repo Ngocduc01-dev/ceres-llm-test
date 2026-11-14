@@ -6,7 +6,6 @@
   122,
   125
  ],
- "signature": "ceres::internal::ConcurrentQueue::EnableWaiters",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 271
+ "order": 271,
+ "short_name": "EnableWaiters",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "void",
+ "is_const": false
 }

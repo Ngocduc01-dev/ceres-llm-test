@@ -6,7 +6,6 @@
   47,
   98
  ],
- "signature": "ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix",
  "branches": 18,
  "cyclomatic": 10,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1213
+ "order": 1213,
+ "short_name": "BlockRandomAccessSparseMatrix",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
+ "params": "(const std::vector<Block> & blocks, const std::set<std::pair<int, int>> & block_pairs, ContextImpl * context, int num_threads)",
+ "return_type": null,
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   177,
   215
  ],
- "signature": "ceres::internal::BlockSparseMatrix::BlockSparseMatrix",
  "branches": 20,
  "cyclomatic": 11,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 2,
- "order": 1444
+ "order": 1444,
+ "short_name": "BlockSparseMatrix",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "(CompressedRowBlockStructure * block_structure, bool use_page_locked_memory)",
+ "return_type": null,
+ "is_const": false
 }

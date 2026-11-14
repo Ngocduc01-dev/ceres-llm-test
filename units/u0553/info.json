@@ -6,7 +6,6 @@
   227,
   251
  ],
- "signature": "ceres::internal::ParameterBlock::Plus",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 553
+ "order": 553,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
+ "params": "(const double * x, const double * delta, double * x_plus_delta)",
+ "return_type": "bool",
+ "is_const": false
 }

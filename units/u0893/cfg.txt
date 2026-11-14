@@ -1,0 +1,9 @@
+UNIT u0893
+Hàm: ~SparseMatrix()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::SparseMatrix
+Vị trí: internal/ceres/sparse_matrix.cc, dòng 35–35
+
+Số điểm rẽ nhánh: 0
+
+START → END

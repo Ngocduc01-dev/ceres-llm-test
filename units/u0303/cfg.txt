@@ -1,0 +1,10 @@
+UNIT u0303
+Hàm: NumParameters() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: internal/ceres/gradient_problem.cc, dòng 60–62
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return function_->NumParameters()   → END

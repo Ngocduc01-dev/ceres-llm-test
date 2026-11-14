@@ -1,0 +1,11 @@
+UNIT u0573
+Hàm: Initialize(const CostFunctor& /* function */)  → trả về typename std::enable_if<(R != Eigen::Dynamic), void>::type
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::TinySolverAutoDiffFunction
+Vị trí: include/ceres/tiny_solver_autodiff_function.h, dòng 197–201
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3>::Initialize<2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   num_residuals_ = 2   → END

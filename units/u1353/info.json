@@ -6,7 +6,6 @@
   48,
   69
  ],
- "signature": "ceres::internal::CompressedRowJacobianWriter::PopulateJacobianRowAndColumnBlockVectors",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1353
+ "order": 1353,
+ "short_name": "PopulateJacobianRowAndColumnBlockVectors",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowJacobianWriter",
+ "class_is_template": false,
+ "params": "(const Program * program, CompressedRowSparseMatrix * jacobian)",
+ "return_type": "void",
+ "is_const": false
 }

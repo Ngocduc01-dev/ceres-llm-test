@@ -1,0 +1,10 @@
+UNIT u0667
+Hàm: matrix() const  → trả về const Matrix &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseSparseMatrix
+Vị trí: internal/ceres/dense_sparse_matrix.cc, dòng 103–103
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return m_   → END

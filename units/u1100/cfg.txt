@@ -1,0 +1,17 @@
+UNIT u1100
+Hàm: StringtoLoggingType(std::string value, LoggingType * type)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 364–369
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   UpperCase(&value)                              → 2
+2   if (value == "SILENT")                         đúng → 3   sai → 4
+3   *type = SILENT
+    return true                                    → END
+4   if (value == "PER_MINIMIZER_ITERATION")        đúng → 5   sai → 6
+5   *type = PER_MINIMIZER_ITERATION
+    return true                                    → END
+6   return false                                   → END

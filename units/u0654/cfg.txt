@@ -1,0 +1,10 @@
+UNIT u0654
+Hàm: set_storage_type(const StorageType storage_type)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.h, dòng 149–151
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   storage_type_ = storage_type   → END

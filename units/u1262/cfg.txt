@@ -1,0 +1,15 @@
+UNIT u1262
+Hàm: MaxResidualsPerResidualBlock() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Program
+Vị trí: internal/ceres/program.cc, dòng 544–550
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int max_residuals = 0                                          → 2
+2   for (auto *residual_block : residual_blocks_)                  đúng → 3   sai → 5
+3   auto *residual_block
+    max_residuals = std::max(max_residuals, residual_block->NumResiduals())   → 4
+4   ++ (bước tiếp của vòng for)                                    → 2
+5   return max_residuals                                           → END

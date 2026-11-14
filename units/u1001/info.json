@@ -6,7 +6,6 @@
   84,
   86
  ],
- "signature": "ceres::internal::GradientProblemEvaluator::NumEffectiveParameters",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1001
+ "order": 1001,
+ "short_name": "NumEffectiveParameters",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::GradientProblemEvaluator",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

@@ -1,0 +1,11 @@
+UNIT u0384
+Hàm: IdentityPreconditioner(int num_rows)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::IdentityPreconditioner
+Vị trí: internal/ceres/preconditioner.h, dòng 162–162
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   Preconditioner() (Base initializer)
+    num_rows_(num_rows) (Member initializer)                       → END

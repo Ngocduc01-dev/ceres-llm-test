@@ -1,0 +1,16 @@
+UNIT u1067
+Hàm: ComputeCandidatePointAndEvaluateCost()  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TrustRegionMinimizer
+Vị trí: internal/ceres/trust_region_minimizer.cc, dòng 772–790
+
+Số điểm rẽ nhánh: 4
+
+START → 1
+1   if (!evaluator_->Plus(x_.data(), delta_.data(), candidate_x_.data()))   đúng → 2   sai → 4
+2   if (is_not_silent_)                                            đúng → 3   sai → 3
+3   candidate_cost_ = std::numeric_limits<double>::max()
+    return                                                         → END
+4   if (!evaluator_->Evaluate(candidate_x_.data(), &candidate_cost_, nullptr, nullptr, nullptr))   đúng → 5   sai → END
+5   if (is_not_silent_)                                            đúng → 6   sai → 6
+6   candidate_cost_ = std::numeric_limits<double>::max()           → END

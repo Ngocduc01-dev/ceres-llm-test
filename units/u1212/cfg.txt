@@ -1,0 +1,41 @@
+UNIT u1212
+Hàm: PartitionedMatrixView(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 47–105
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 5 (và 2 lệnh CHECK)
+
+START → 1
+1   PartitionedMatrixViewBase() (Base initializer)
+    options_(options) (Member initializer)
+    matrix_(matrix) (Member initializer)
+    e_cols_partition_() (Member initializer)
+    f_cols_partition_() (Member initializer)
+    const CompressedRowBlockStructure *bs = matrix_.block_structure()   → 2
+2   CHECK(bs != nullptr)                                           đúng → 3   sai → DỪNG
+3   for (const auto &row : bs->rows)                               đúng → 4   sai → 8
+4   const auto &row
+    const std::vector<Cell> &cells = row.cells                     → 5
+5   if (cells[0].block_id < num_col_blocks_e_)                     đúng → 6   sai → 7
+6   ++num_row_blocks_e_                                            → 7
+7   ++ (bước tiếp của vòng for)                                    → 3
+8   num_cols_e_ = 0
+    num_cols_f_ = 0
+    int c = 0                                                      → 9
+9   vòng for, điều kiện: c < bs->cols.size()                       đúng → 10   sai → 15
+10  const Block &block = bs->cols[c]                               → 11
+11  if (c < num_col_blocks_e_)                                     đúng → 12   sai → 14
+12  num_cols_e_ += block.size                                      → 13
+13  ++c                                                            → 9
+14  num_cols_f_ += block.size                                      → 13
+15  CHECK_EQ(num_cols_e_ + num_cols_f_, matrix_.num_cols())        đúng → 16   sai → DỪNG
+16  auto transpose_bs = matrix_.transpose_block_structure()
+    const int num_threads = options_.num_threads                   → 17
+17  if (transpose_bs != nullptr && num_threads > 1)                đúng → 18   sai → END
+18  int kMaxPartitions = num_threads * 4
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, vector<int> &(*)(vector<int> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    e_cols_partition_ = PartitionRangeForParallelFor (ImplicitCastExpr, FunctionToPointerDecay, std::vector<int> (*)(int, int, int, const struct ceres::internal::CompressedList *, class (lambda at /work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:96:9) &&))(0, num_col_blocks_e_, kMaxPartitions, transpose_bs->rows.data(), [](const CompressedRow &row) {)
+    operator= (ImplicitCastExpr, FunctionToPointerDecay, vector<int> &(*)(vector<int> &&) noexcept(_Alloc_traits::_S_nothrow_move()))
+    f_cols_partition_ = PartitionRangeForParallelFor (ImplicitCastExpr, FunctionToPointerDecay, std::vector<int> (*)(int, int, int, const struct ceres::internal::CompressedList *, class (lambda at /work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:103:9) &&))(num_col_blocks_e_, num_col_blocks_e_ + num_col_blocks_f_, kMaxPartitions, transpose_bs->rows.data(), [](const CompressedRow &row) {)   → END

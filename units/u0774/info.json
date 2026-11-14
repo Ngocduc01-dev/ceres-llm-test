@@ -6,7 +6,6 @@
   386,
   428
  ],
- "signature": "ceres::internal::SchurEliminatorForOneFBlock::Init",
  "branches": 12,
  "cyclomatic": 7,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 774
+ "order": 774,
+ "short_name": "Init",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminatorForOneFBlock",
+ "class_is_template": true,
+ "params": "(int num_eliminate_blocks, bool, const CompressedRowBlockStructure * bs)",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,14 @@
+UNIT u0070
+Hàm: Jet(const T & value, int k)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::Jet
+Vị trí: include/ceres/jet.h, dòng 229–233
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Jet<double, 4> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   v() (Member initializer)
+    a = value
+    v.setConstant(Scalar())
+    v[k] = double(1.)                                              → END

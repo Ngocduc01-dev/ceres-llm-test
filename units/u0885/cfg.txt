@@ -1,0 +1,10 @@
+UNIT u0885
+Hàm: context()  → trả về ContextImpl *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.h, dòng 171–171
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return context_impl_   → END

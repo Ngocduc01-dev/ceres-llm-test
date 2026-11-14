@@ -1,0 +1,10 @@
+UNIT u0304
+Hàm: NumTangentParameters() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblem
+Vị trí: internal/ceres/gradient_problem.cc, dòng 64–66
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return manifold_->TangentSize()   → END

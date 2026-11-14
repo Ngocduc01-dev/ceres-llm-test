@@ -1,0 +1,16 @@
+UNIT u0336
+Hàm: Evaluate(double s, double[3] rho) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::ComposedLoss
+Vị trí: internal/ceres/loss_function.cc, dòng 154–163
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   double rho_f[3]
+    double rho_g[3]
+    g_->Evaluate(s, rho_g)
+    f_->Evaluate(rho_g[0], rho_f)
+    rho[0] = rho_f[0]
+    rho[1] = rho_f[1] * rho_g[1]
+    rho[2] = rho_f[2] * rho_g[1] * rho_g[1] + rho_f[1] * rho_g[2]   → END

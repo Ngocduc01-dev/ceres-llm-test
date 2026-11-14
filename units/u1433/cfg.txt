@@ -1,0 +1,13 @@
+UNIT u1433
+Hàm: ThreadPool(int num_threads)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ThreadPool
+Vị trí: internal/ceres/thread_pool.cc, dòng 58–58
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   task_queue_() (Member initializer)
+    thread_pool_() (Member initializer)
+    thread_pool_mutex_() (Member initializer)
+    Resize(num_threads)                                            → END

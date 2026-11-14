@@ -6,7 +6,6 @@
   97,
   100
  ],
- "signature": "ceres::SphereManifold::AmbientSize",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 462
+ "order": 462,
+ "short_name": "AmbientSize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SphereManifold",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

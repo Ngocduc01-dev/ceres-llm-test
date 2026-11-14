@@ -1,0 +1,12 @@
+UNIT u1116
+Hàm: LeftMultiplyAndAccumulateFMultiThreaded(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::PartitionedMatrixView
+Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 324–375
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   auto transpose_bs = matrix_.transpose_block_structure()   → 2
+2   CHECK(transpose_bs != nullptr)                            đúng → END   sai → DỪNG

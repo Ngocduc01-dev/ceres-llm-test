@@ -1,0 +1,18 @@
+UNIT u1224
+Hàm: SetBlockStructureOfCompressedRowSparseMatrix(CompressedRowSparseMatrix * crs_matrix, CompressedRowBlockStructure * block_structure)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 161–173
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   const int num_row_blocks = block_structure->rows.size()
+    auto &row_blocks = *crs_matrix->mutable_row_blocks()
+    row_blocks.resize(num_row_blocks)
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_row_blocks                        đúng → 3   sai → 5
+3   row_blocks[i] = block_structure->rows[i].block                 → 4
+4   ++i                                                            → 2
+5   auto &col_blocks = *crs_matrix->mutable_col_blocks()
+    col_blocks = block_structure->cols                             → END

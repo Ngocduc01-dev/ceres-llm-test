@@ -1,0 +1,22 @@
+UNIT u0949
+Hàm: DeleteRows(int delta_rows)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 454–478
+
+Số điểm rẽ nhánh: 2 (và 3 lệnh CHECK)
+
+START → 1
+1   CHECK_GE(delta_rows, 0)                                        đúng → 2   sai → DỪNG
+2   CHECK_LE(delta_rows, num_rows_)                                đúng → 3   sai → DỪNG
+3   CHECK_EQ(storage_type_, StorageType::UNSYMMETRIC)              đúng → 4   sai → DỪNG
+4   num_rows_ -= delta_rows
+    rows_.resize(num_rows_ + 1)                                    → 5
+5   if (row_blocks_.empty())                                       đúng → 6   sai → 7
+6   return                                                         → END
+7   int num_row_blocks = 0
+    int num_rows = 0                                               → 8
+8   while (num_row_blocks < row_blocks_.size() && num_rows < num_rows_)   đúng → 9   sai → 10
+9   num_rows += row_blocks_[num_row_blocks].size
+    ++num_row_blocks                                               → 8
+10  row_blocks_.resize(num_row_blocks)                             → END

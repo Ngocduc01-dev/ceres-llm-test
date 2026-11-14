@@ -1,0 +1,10 @@
+UNIT u0976
+Hàm: SetNumResiduals(int num_residuals)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::DynamicCostFunction
+Vị trí: include/ceres/dynamic_cost_function.h, dòng 48–50
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   set_num_residuals(num_residuals)   → END

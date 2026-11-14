@@ -6,7 +6,6 @@
   470,
   554
  ],
- "signature": "ceres::internal::MatrixTransposeVectorMultiply",
  "branches": 38,
  "cyclomatic": 20,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1060
+ "order": 1060,
+ "short_name": "MatrixTransposeVectorMultiply",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const double* A, const int num_row_a, const int num_col_a, const double* b, double* c)",
+ "return_type": "void",
+ "is_const": false
 }

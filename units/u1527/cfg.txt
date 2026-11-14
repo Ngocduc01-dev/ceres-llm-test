@@ -1,0 +1,10 @@
+UNIT u1527
+Hàm: RemoveResidualBlock(ResidualBlockId residual_block)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 76–78
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   impl_->RemoveResidualBlock(residual_block)   → END

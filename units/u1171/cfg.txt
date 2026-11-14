@@ -1,0 +1,10 @@
+UNIT u1171
+Hàm: Create(const LineSearchType line_search_type, const LineSearch::Options & options, std::string * error)  → trả về std::unique_ptr<LineSearch>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::LineSearch
+Vị trí: internal/ceres/line_search.cc, dòng 71–86
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (line_search_type)   nhánh → END   nhánh → END

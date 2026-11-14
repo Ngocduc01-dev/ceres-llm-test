@@ -1,0 +1,9 @@
+UNIT u0414
+Hàm: ~SparseCholesky()
+Loại: destructor (hàm huỷ)
+Thuộc class: ceres::internal::SparseCholesky
+Vị trí: internal/ceres/sparse_cholesky.cc, dòng 106–106
+
+Số điểm rẽ nhánh: 0
+
+START → END

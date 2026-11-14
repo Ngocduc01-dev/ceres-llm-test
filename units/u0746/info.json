@@ -6,7 +6,6 @@
   107,
   114
  ],
- "signature": "ceres::internal::DenseSparseMatrix::ToTextFile",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 746
+ "order": 746,
+ "short_name": "ToTextFile",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
+ "params": "(FILE * file)",
+ "return_type": "void",
+ "is_const": true
 }

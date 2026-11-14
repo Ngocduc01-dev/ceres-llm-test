@@ -1,0 +1,58 @@
+UNIT u0780
+Hàm: Init(int num_eliminate_blocks, bool assume_full_rank_ete, const CompressedRowBlockStructure * bs)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SchurEliminator
+Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 79–174
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 8 (và 2 lệnh CHECK)
+
+START → 1
+1   CHECK_GT(num_eliminate_blocks, 0)                              đúng → 2   sai → DỪNG
+2   num_eliminate_blocks_ = num_eliminate_blocks
+    assume_full_rank_ete_ = assume_full_rank_ete
+    const int num_col_blocks = bs->cols.size()
+    const int num_row_blocks = bs->rows.size()
+    buffer_size_ = 1
+    chunks_.clear()
+    lhs_row_layout_.clear()
+    int lhs_num_rows = 0
+    lhs_row_layout_.resize(num_col_blocks - num_eliminate_blocks_)
+    int i = num_eliminate_blocks_                                  → 3
+3   vòng for, điều kiện: i < num_col_blocks                        đúng → 4   sai → 6
+4   lhs_row_layout_[i - num_eliminate_blocks_] = lhs_num_rows
+    lhs_num_rows += bs->cols[i].size                               → 5
+5   ++i                                                            → 3
+6   int r = 0                                                      → 7
+7   while (r < num_row_blocks)                                     đúng → 8   sai → 11
+8   const int chunk_block_id = bs->rows[r].cells.front().block_id   → 9
+9   if (chunk_block_id >= num_eliminate_blocks_)                   đúng → 10   sai → 15
+10  break                                                          → 11
+11  const Chunk &chunk = chunks_.back()
+    uneliminated_row_begins_ = chunk.start + chunk.size
+    chunk_outer_product_buffer_ = std::make_unique<double[]>(buffer_size_ * num_threads_)
+    STLDeleteElements(&rhs_locks_)
+    rhs_locks_.resize(num_col_blocks - num_eliminate_blocks_)
+    int i = 0                                                      → 12
+12  vòng for, điều kiện: i < num_col_blocks - num_eliminate_blocks_   đúng → 13   sai → END
+13  CFGNewAllocator(std::mutex *)
+    rhs_locks_[i] = new std::mutex                                 → 14
+14  ++i                                                            → 12
+15  chunks_.push_back(Chunk(r))
+    Chunk &chunk = chunks_.back()
+    int buffer_size = 0
+    const int e_block_size = bs->cols[chunk_block_id].size         → 16
+16  while (r + chunk.size < num_row_blocks)                        đúng → 17   sai → 20
+17  const CompressedRow &row = bs->rows[r + chunk.size]            → 18
+18  if (row.cells.front().block_id != chunk_block_id)              đúng → 19   sai → 22
+19  break                                                          → 20
+20  CHECK_GT(chunk.size, 0); // This check will need to be resolved.   đúng → 21   sai → DỪNG
+21  r += chunk.size                                                → 7
+22  int c = 1                                                      → 23
+23  vòng for, điều kiện: c < row.cells.size()                      đúng → 24   sai → 28
+24  const Cell &cell = row.cells[c]                                → 25
+25  if (InsertIfNotPresent(&(chunk.buffer_layout), cell.block_id, buffer_size))   đúng → 26   sai → 27
+26  buffer_size += e_block_size * bs->cols[cell.block_id].size     → 27
+27  ++c                                                            → 23
+28  buffer_size_ = std::max(buffer_size, buffer_size_)
+    ++chunk.size                                                   → 16

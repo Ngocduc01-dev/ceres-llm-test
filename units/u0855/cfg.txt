@@ -1,0 +1,10 @@
+UNIT u0855
+Hàm: Copy(const Vector & from, Vector & to, ContextImpl * context, int num_threads)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/eigen_vector_ops.h, dòng 96–101
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParallelAssign(context, num_threads, to, from)   → END

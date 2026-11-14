@@ -1,0 +1,15 @@
+UNIT u1052
+Hàm: Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::NormalPrior
+Vị trí: internal/ceres/normal_prior.cc, dòng 51–64
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   parameters[0], parameter_block_sizes()[0]
+    residuals, num_residuals()
+    r = A_ * (p - b_).eval()                                       → 2
+2   if (jacobians != nullptr) && (jacobians[0] != nullptr)         đúng → 3   sai → 4
+3   MatrixRef(jacobians[0], num_residuals(), parameter_block_sizes()[0]) = A_   → 4
+4   return true                                                    → END

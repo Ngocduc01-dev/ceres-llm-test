@@ -1,0 +1,10 @@
+UNIT u0559
+Hàm: mutable_parameter_block_sizes()  → trả về std::vector<int32_t> *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::CostFunction
+Vị trí: include/ceres/cost_function.h, dòng 127–129
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return &parameter_block_sizes_   → END

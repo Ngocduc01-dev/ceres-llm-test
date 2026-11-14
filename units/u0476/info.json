@@ -6,7 +6,6 @@
   120,
   127
  ],
- "signature": "ceres::InsertOrDie",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 476
+ "order": 476,
+ "short_name": "InsertOrDie",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& data)",
+ "return_type": "void",
+ "is_const": false
 }

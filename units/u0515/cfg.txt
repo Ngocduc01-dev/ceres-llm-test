@@ -1,0 +1,21 @@
+UNIT u0515
+Hàm: Grid2D(const T * data, const int row_begin, const int row_end, const int col_begin, const int col_end)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::Grid2D
+Vị trí: include/ceres/cubic_interpolation.h, dòng 385–401
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid2D<int> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0 (và 3 lệnh CHECK)
+
+START → 1
+1   data_(data) (Member initializer)
+    row_begin_(row_begin) (Member initializer)
+    row_end_(row_end) (Member initializer)
+    col_begin_(col_begin) (Member initializer)
+    col_end_(col_end) (Member initializer)
+    num_rows_(row_end - row_begin) (Member initializer)
+    num_cols_(col_end - col_begin) (Member initializer)
+    num_values_(num_rows_ * num_cols_) (Member initializer)        → 2
+2   CHECK_GE(kDataDimension, 1)                                    đúng → 3   sai → DỪNG
+3   CHECK_LT(row_begin, row_end)                                   đúng → 4   sai → DỪNG
+4   CHECK_LT(col_begin, col_end)                                   đúng → END   sai → DỪNG

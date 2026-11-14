@@ -6,7 +6,6 @@
   168,
   176
  ],
- "signature": "ceres::internal::DenseSchurComplementSolver::InitStorage",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1132
+ "order": 1132,
+ "short_name": "InitStorage",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSchurComplementSolver",
+ "class_is_template": false,
+ "params": "(const CompressedRowBlockStructure * bs)",
+ "return_type": "void",
+ "is_const": false
 }

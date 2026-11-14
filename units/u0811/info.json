@@ -6,7 +6,6 @@
   455,
   474
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::ForestToClusterPairs",
  "branches": 10,
  "cyclomatic": 6,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 811
+ "order": 811,
+ "short_name": "ForestToClusterPairs",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const WeightedGraph<int> & forest, std::unordered_set<std::pair<int, int>, pair_hash> * cluster_pairs)",
+ "return_type": "void",
+ "is_const": true
 }

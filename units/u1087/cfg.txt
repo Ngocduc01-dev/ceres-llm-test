@@ -1,0 +1,19 @@
+UNIT u1087
+Hàm: Refine(const int num_cols, const double * lhs_ptr, const double * rhs_ptr, DenseCholesky * cholesky, double * solution_ptr)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::DenseIterativeRefiner
+Vị trí: internal/ceres/iterative_refiner.cc, dòng 83–99
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   Allocate(num_cols)
+    lhs_ptr, num_cols, num_cols
+    rhs_ptr, num_cols
+    solution_ptr, num_cols
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < max_num_iterations_                   đúng → 3   sai → END
+3   residual_ = rhs - lhs * solution
+    cholesky->Solve(residual_.data(), correction_.data(), &ignored_message)
+    solution += correction_                                        → 4
+4   ++i                                                            → 2

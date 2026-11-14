@@ -1,0 +1,12 @@
+UNIT u0652
+Hàm: StateUpdatingCallback(Program * program, double * parameters)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::StateUpdatingCallback
+Vị trí: internal/ceres/callbacks.cc, dòng 43–45
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   IterationCallback() (Base initializer)
+    program_(program) (Member initializer)
+    parameters_(parameters) (Member initializer)                   → END

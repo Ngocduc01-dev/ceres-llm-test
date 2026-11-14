@@ -6,7 +6,6 @@
   184,
   184
  ],
- "signature": "ceres::internal::PartitionedMatrixView::num_cols",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1015
+ "order": 1015,
+ "short_name": "num_cols",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

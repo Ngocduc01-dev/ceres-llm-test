@@ -1,0 +1,10 @@
+UNIT u1257
+Hàm: num_rows() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::VisibilityBasedPreconditioner
+Vị trí: internal/ceres/visibility_based_preconditioner.cc, dòng 433–433
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return m_->num_rows()   → END

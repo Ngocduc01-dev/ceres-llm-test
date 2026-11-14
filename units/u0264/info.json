@@ -6,7 +6,6 @@
   148,
   148
  ],
- "signature": "ceres::internal::CompressedRowSparseMatrix::storage_type",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 4,
- "order": 264
+ "order": 264,
+ "short_name": "storage_type",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "StorageType",
+ "is_const": true
 }

@@ -1,0 +1,10 @@
+UNIT u0020
+Hàm: operator()(const double *const * parameters, double * residuals) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::DynamicCostFunctionToFunctor
+Vị trí: include/ceres/dynamic_cost_function_to_functor.h, dòng 113–115
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return cost_function_->Evaluate(parameters, residuals, nullptr)   → END

@@ -6,7 +6,6 @@
   77,
   77
  ],
- "signature": "ceres::internal::TripletSparseMatrix::num_rows",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 14,
- "order": 423
+ "order": 423,
+ "short_name": "num_rows",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
+ "params": "()",
+ "return_type": "int",
+ "is_const": true
 }

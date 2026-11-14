@@ -1,0 +1,19 @@
+UNIT u1289
+Hàm: InvalidateEvaluation(const ResidualBlock & block, double * cost, double * residuals, double ** jacobians)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/residual_block_utils.cc, dòng 48–63
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const int num_parameter_blocks = block.NumParameterBlocks()
+    const int num_residuals = block.NumResiduals()
+    InvalidateArray(1, cost)
+    InvalidateArray(num_residuals, residuals)                      → 2
+2   if (jacobians != nullptr)                                      đúng → 3   sai → END
+3   int i = 0                                                      → 4
+4   vòng for, điều kiện: i < num_parameter_blocks                  đúng → 5   sai → END
+5   const int parameter_block_size = block.parameter_blocks()[i]->Size()
+    InvalidateArray(num_residuals * parameter_block_size, jacobians[i])   → 6
+6   ++i                                                            → 4

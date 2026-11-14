@@ -1,0 +1,10 @@
+UNIT u0308
+Hàm: IsSolutionUsable() const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::GradientProblemSolver::Summary
+Vị trí: internal/ceres/gradient_problem_solver.cc, dòng 203–205
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return internal::IsSolutionUsable(*this)   → END

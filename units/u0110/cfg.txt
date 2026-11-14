@@ -1,0 +1,11 @@
+UNIT u0110
+Hàm: asin(const Jet<T, N>& f)  → trả về Jet<T, N>
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 629–633
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp asin<double, 2> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   const double tmp = double(1.) / sqrt(double(1.) - f.a * f.a)   → END

@@ -1,0 +1,31 @@
+UNIT u1129
+Hàm: FindPolynomialRoots(const Vector & polynomial_in, Vector * real, Vector * imaginary)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal
+Vị trí: internal/ceres/polynomial.cc, dòng 182–251
+
+Số điểm rẽ nhánh: 8
+
+START → 1
+1   if (polynomial_in.size() == 0)                                 đúng → END   sai → 2
+2   const int degree = polynomial.size() - 1                       → 3
+3   if (polynomial.size() != polynomial_in.size())                 đúng → 4   sai → 4
+4   if (degree == 0)                                               đúng → END   sai → 5
+5   if (degree == 1)                                               đúng → 6   sai → 7
+6   FindLinearPolynomialRoots(polynomial, real, imaginary)
+    return true                                                    → END
+7   if (degree == 2)                                               đúng → 8   sai → 9
+8   FindQuadraticPolynomialRoots(polynomial, real, imaginary)
+    return true                                                    → END
+9   const double leading_term = polynomial(0)
+    polynomial /= leading_term
+    degree, degree
+    BuildCompanionMatrix(polynomial, &companion_matrix)
+    BalanceCompanionMatrix(&companion_matrix)
+    companion_matrix, false                                        → 10
+10  if (solver.info() != Eigen::Success)                           đúng → END   sai → 11
+11  if (real != nullptr)                                           đúng → 12   sai → 13
+12  *real = solver.eigenvalues().real()                            → 13
+13  if (imaginary != nullptr)                                      đúng → 14   sai → 15
+14  *imaginary = solver.eigenvalues().imag()                       → 15
+15  return true                                                    → END

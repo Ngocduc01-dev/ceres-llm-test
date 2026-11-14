@@ -6,7 +6,6 @@
   133,
   133
  ],
- "signature": "ceres::internal::SchurComplementSolver::ResizeRhs",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 583
+ "order": 583,
+ "short_name": "ResizeRhs",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurComplementSolver",
+ "class_is_template": false,
+ "params": "(int n)",
+ "return_type": "void",
+ "is_const": false
 }

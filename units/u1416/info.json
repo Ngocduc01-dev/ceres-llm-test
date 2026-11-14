@@ -6,7 +6,6 @@
   205,
   219
  ],
- "signature": "ceres::(anonymous)::OptionsAreValidForDenseQr",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 3,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1416
+ "order": 1416,
+ "short_name": "OptionsAreValidForDenseQr",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false
 }

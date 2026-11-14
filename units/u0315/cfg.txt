@@ -1,0 +1,12 @@
+UNIT u0315
+Hàm: ProductTerm(const int row, const int col, const int index)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::InnerProductComputer::ProductTerm
+Vị trí: internal/ceres/inner_product_computer.h, dòng 106–107
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   row(row) (Member initializer)
+    col(col) (Member initializer)
+    index(index) (Member initializer)                              → END

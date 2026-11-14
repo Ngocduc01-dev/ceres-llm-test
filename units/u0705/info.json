@@ -6,7 +6,6 @@
   150,
   161
  ],
- "signature": "ceres::internal::EigenDenseCholesky::Factorize",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 705
+ "order": 705,
+ "short_name": "Factorize",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenDenseCholesky",
+ "class_is_template": false,
+ "params": "(int num_cols, double * lhs, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false
 }

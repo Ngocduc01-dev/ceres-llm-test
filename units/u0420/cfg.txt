@@ -1,0 +1,10 @@
+UNIT u0420
+Hàm: IsNestedDissectionAvailable()  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::SuiteSparse
+Vị trí: internal/ceres/suitesparse.h, dòng 288–288
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return false   → END

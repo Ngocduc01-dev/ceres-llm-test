@@ -6,7 +6,6 @@
   441,
   505
  ],
- "signature": "ceres::internal::SchurEliminator::ChunkDiagonalBlockAndGradient",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 2,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1313
+ "order": 1313,
+ "short_name": "ChunkDiagonalBlockAndGradient",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
+ "params": "(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, typename EigenTypes<kEBlockSize, kEBlockSize>::Matrix * ete, double * g, double * buffer, BlockRandomAccessMatrix * lhs)",
+ "return_type": "void",
+ "is_const": false
 }

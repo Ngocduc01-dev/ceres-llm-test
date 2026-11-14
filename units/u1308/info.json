@@ -6,7 +6,6 @@
   82,
   84
  ],
- "signature": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::RightMultiplyAndAccumulate",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 2,
@@ -16,5 +15,12 @@
  "linkage": "internal",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1308
+ "order": 1308,
+ "short_name": "RightMultiplyAndAccumulate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter",
+ "class_is_template": false,
+ "params": "(const Vector & x, Vector & y)",
+ "return_type": "void",
+ "is_const": false
 }

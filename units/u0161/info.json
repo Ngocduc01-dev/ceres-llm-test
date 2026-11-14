@@ -6,7 +6,6 @@
   1378,
   1380
  ],
- "signature": "Eigen::NumTraits::epsilon",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 161
+ "order": 161,
+ "short_name": "epsilon",
+ "kind": "method (hàm thành viên của class)",
+ "class": "Eigen::NumTraits",
+ "class_is_template": true,
+ "params": "()",
+ "return_type": "Real",
+ "is_const": false
 }

@@ -6,7 +6,6 @@
   791,
   857
  ],
- "signature": "ceres::AngleAxisRotatePoint",
  "branches": 4,
  "cyclomatic": 3,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 501
+ "order": 501,
+ "short_name": "AngleAxisRotatePoint",
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(const T angle_axis[3], const T pt[3], T result[3])",
+ "return_type": "void",
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u1157
+Hàm: options() const  → trả về const Problem::Options &
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Problem
+Vị trí: internal/ceres/problem.cc, dòng 213–213
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->options()   → END

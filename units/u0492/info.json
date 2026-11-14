@@ -6,7 +6,6 @@
   51,
   67
  ],
- "signature": "ceres::internal::TrustRegionStepEvaluator::StepQuality",
  "branches": 2,
  "cyclomatic": 2,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 492
+ "order": 492,
+ "short_name": "StepQuality",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionStepEvaluator",
+ "class_is_template": false,
+ "params": "(const double cost, const double model_cost_change)",
+ "return_type": "double",
+ "is_const": true
 }

@@ -1,0 +1,22 @@
+UNIT u0517
+Hàm: ComputeSphereManifoldMinus(const VT& v, double beta, const XT& x, const YT& y, YMinusXT* y_minus_x)  → trả về void
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Namespace: ceres::internal
+Vị trí: include/ceres/internal/sphere_manifold_functions.h, dòng 109–131
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ComputeSphereManifoldMinus<Matrix<double, 2, 1>, Map<const Matrix<double, 2, 1>>, Matrix<double, 2, 1>, Map<Matrix<double, 1, 1>>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   constexpr int AmbientSpaceDim = Matrix<double, 2, 1>::RowsAtCompileTime
+    AmbientSpaceDim == Eigen::Dynamic ? ... : ...                  → 2
+2   constexpr int TangentSpaceDim = AmbientSpaceDim == Eigen::Dynamic ? Eigen::Dynamic : AmbientSpaceDim - 1
+    const int tangent_size = v.size() - 1
+    ApplyHouseholderVector(y, v, beta) / x.norm()
+    const double y_last = hy[tangent_size]
+    const double hy_norm = hy.template head<TangentSpaceDim>(tangent_size).norm()   → 3
+3   if (hy_norm == 0.)                                             đúng → 4   sai → 7
+4   y_minus_x->setZero()                                           → 5
+5   y_last >= 0 ? ... : ...                                        đúng → 6   sai → 6
+6   y_minus_x->data()[tangent_size - 1] = y_last >= 0 ? 0. : constants::pi   → END
+7   *y_minus_x = std::atan2(hy_norm, y_last) / hy_norm * hy.template head<TangentSpaceDim>(tangent_size)   → END

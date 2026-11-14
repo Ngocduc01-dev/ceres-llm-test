@@ -1,0 +1,33 @@
+UNIT u1305
+Hàm: EvaluateJacobianForParameterBlock(const CostFunctor * functor, const double * residuals_at_eval_point, const NumericDiffOptions & options, int num_residuals, int parameter_block_index, int parameter_block_size, double ** parameters, double * jacobian)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::NumericDiff
+Vị trí: include/ceres/internal/numeric_diff.h, dòng 63–170
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   DCHECK(jacobian)                                               đúng → 2   sai → DỪNG
+2   const int num_residuals_internal = (-1 != ceres::DYNAMIC ? -1 : num_residuals)
+    -1 != ceres::DYNAMIC ? ... : ...                               → 3
+3   const int parameter_block_index_internal = (-1 != ceres::DYNAMIC ? -1 : parameter_block_index)
+    -1 != ceres::DYNAMIC ? ... : ...                               → 4
+4   const int parameter_block_size_internal = (-1 != ceres::DYNAMIC ? -1 : parameter_block_size)
+    jacobian, num_residuals_internal, parameter_block_size_internal
+    parameters[parameter_block_index_internal], parameter_block_size_internal
+    ((ceres::NumericDiffMethodType)2U == RIDDERS) ? ... : ...      → 5
+5   x.array().abs() * (((ceres::NumericDiffMethodType)2U == RIDDERS) ? options.ridders_relative_initial_step_size : options.relative_step_size)
+    double min_step_size = std::sqrt(std::numeric_limits<double>::epsilon())
+    if (ceres::NumericDiffMethodType)2U == RIDDERS                 → 6
+6   min_step_size = (std::max)(min_step_size, options.ridders_relative_initial_step_size)   → 7
+7   residual_array.data(), num_residuals_internal
+    int j = 0                                                      → 8
+8   vòng for, điều kiện: j < parameter_block_size_internal         đúng → 9   sai → 14
+9   const double delta = (std::max)(min_step_size, step_size(j))
+    if (ceres::NumericDiffMethodType)2U == RIDDERS                 → 10
+10  if (!EvaluateRiddersJacobianColumn(functor, j, delta, options, num_residuals_internal, parameter_block_size_internal, x.data(), residuals_at_eval_point, parameters, x_plus_delta.data(), temp_residual_array.data(), residual_array.data()))   đúng → 11   sai → 12
+11  return false                                                   → END
+12  parameter_jacobian.col(j).matrix() = residuals                 → 13
+13  ++j                                                            → 8
+14  return true                                                    → END

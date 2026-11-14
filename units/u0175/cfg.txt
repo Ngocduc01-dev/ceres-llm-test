@@ -1,0 +1,12 @@
+UNIT u0175
+Hàm: ArctanLoss(double a)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::ArctanLoss
+Vị trí: include/ceres/loss_function.h, dòng 231–231
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   LossFunction() (Base initializer)
+    a_(a) (Member initializer)
+    b_(1 / (a * a)) (Member initializer)                           → END

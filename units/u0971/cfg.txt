@@ -1,0 +1,15 @@
+UNIT u0971
+Hàm: CopyData(const TripletSparseMatrix & orig)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::TripletSparseMatrix
+Vị trí: internal/ceres/triplet_sparse_matrix.cc, dòng 164–170
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_nonzeros_                         đúng → 3   sai → END
+3   rows_[i] = orig.rows_[i]
+    cols_[i] = orig.cols_[i]
+    values_[i] = orig.values_[i]                                   → 4
+4   ++i                                                            → 2

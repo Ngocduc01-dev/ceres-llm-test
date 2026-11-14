@@ -1,0 +1,15 @@
+UNIT u0400
+Hàm: Init(int max_parameters_per_residual_block, int max_scratch_doubles_needed_for_evaluate, int max_residuals_per_residual_block, int num_parameters)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProgramEvaluator::EvaluateScratch
+Vị trí: internal/ceres/program_evaluator.h, dòng 324–336
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   residual_block_evaluate_scratch = std::make_unique<double[]>(max_scratch_doubles_needed_for_evaluate)
+    gradient = std::make_unique<double[]>(num_parameters)
+    VectorRef(gradient.get(), num_parameters).setZero()
+    residual_block_residuals = std::make_unique<double[]>(max_residuals_per_residual_block)
+    jacobian_block_ptrs = std::make_unique<double *[]>(max_parameters_per_residual_block)   → END

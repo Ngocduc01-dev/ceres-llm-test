@@ -1,0 +1,15 @@
+UNIT u1165
+Hàm: ResidualBlock(const CostFunction * cost_function, const LossFunction * loss_function, const std::vector<ParameterBlock *> & parameter_blocks, int index)
+Loại: constructor (hàm khởi tạo)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.cc, dòng 52–66
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   cost_function_(cost_function) (Member initializer)
+    loss_function_(loss_function) (Member initializer)
+    CFGNewAllocator(ParameterBlock **)
+    parameter_blocks_(new ParameterBlock *[cost_function->parameter_block_sizes().size()]) (Member initializer)
+    index_(index) (Member initializer)                             → 2
+2   CHECK(cost_function_ != nullptr)                               đúng → END   sai → DỪNG

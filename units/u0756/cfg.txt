@@ -1,0 +1,13 @@
+UNIT u0756
+Hàm: NonlinearConjugateGradientTypeToString(NonlinearConjugateGradientType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 270–279
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)               nhánh → 2   nhánh → 3   nhánh → 4
+2   return "HESTENES_STIEFEL"   → END
+3   return "POLAK_RIBIERE"      → END
+4   return "FLETCHER_REEVES"    → END

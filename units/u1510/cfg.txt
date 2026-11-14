@@ -1,0 +1,10 @@
+UNIT u1510
+Hàm: GetCovarianceMatrixInTangentSpace(const std::vector<const double *> & parameter_blocks, double * covariance_matrix) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Covariance
+Vị trí: internal/ceres/covariance.cc, dòng 87–93
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return impl_->GetCovarianceMatrixInTangentOrAmbientSpace(parameter_blocks, false, covariance_matrix)   → END

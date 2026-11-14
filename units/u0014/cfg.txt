@@ -1,0 +1,14 @@
+UNIT u0014
+Hàm: operator()(const T* p1, Ts*... ps) const  → trả về bool
+Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
+Thuộc class: ceres::CostFunctionToFunctor
+Vị trí: include/ceres/cost_function_to_functor.h, dòng 133–153
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CostFunctionToFunctor<2, 2>::operator()<double, <double>> (lấy từ một chỗ Ceres dùng thật).
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   std::make_tuple(p1, ps)
+    constexpr int kResidualIndex = ParameterDims::kNumParameterBlocks
+    double *residuals = std::get<kResidualIndex>(params)
+    return cost_functor_(parameter_blocks.data(), residuals)       → END

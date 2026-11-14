@@ -6,7 +6,6 @@
   220,
   299
  ],
- "signature": "ceres::internal::VisibilityBasedPreconditioner::ComputeBlockPairsInPreconditioner",
  "branches": 36,
  "cyclomatic": 19,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 816
+ "order": 816,
+ "short_name": "ComputeBlockPairsInPreconditioner",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
+ "params": "(const CompressedRowBlockStructure & bs)",
+ "return_type": "void",
+ "is_const": false
 }

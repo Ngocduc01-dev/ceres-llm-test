@@ -1,0 +1,10 @@
+UNIT u0828
+Hàm: mutable_matrix()  → trả về BlockSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessSparseMatrix
+Vị trí: internal/ceres/block_random_access_sparse_matrix.h, dòng 96–96
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return bsm_.get()   → END

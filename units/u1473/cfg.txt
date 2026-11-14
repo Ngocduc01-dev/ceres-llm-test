@@ -1,0 +1,13 @@
+UNIT u1473
+Hàm: IsProgramValid(const Program & program, std::string * error)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::internal::(namespace không tên)
+Vị trí: internal/ceres/line_search_preprocessor.cc, dòng 47–53
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   if (program.IsBoundsConstrained())                             đúng → 2   sai → 3
+2   *error = "LINE_SEARCH Minimizer does not support bounds."
+    return false                                                   → END
+3   return program.ParameterBlocksAreFinite(error)                 → END

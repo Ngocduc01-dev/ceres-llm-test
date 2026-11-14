@@ -1,0 +1,11 @@
+UNIT u1513
+Hàm: AddParameterBlock(double * values, int size, Manifold * manifold)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 371–376
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   ParameterBlock *parameter_block = InternalAddParameterBlock(values, size)
+    InternalSetManifold(values, parameter_block, manifold)         → END

@@ -6,7 +6,6 @@
   37,
   42
  ],
- "signature": "ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 1149
+ "order": 1149,
+ "short_name": "DynamicCompressedRowSparseMatrix",
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
+ "class_is_template": false,
+ "params": "(int num_rows, int num_cols, int initial_max_num_nonzeros)",
+ "return_type": null,
+ "is_const": false
 }

@@ -1,0 +1,10 @@
+UNIT u0096
+Hàm: IsFinite(double x)  → trả về bool
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: include/ceres/jet.h, dòng 510–511
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return std::isfinite(x)   → END

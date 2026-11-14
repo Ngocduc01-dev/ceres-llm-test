@@ -1,0 +1,10 @@
+UNIT u1243
+Hàm: RightMultiplyAndAccumulate(const double * x, double * y) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockCRSJacobiPreconditioner
+Vị trí: internal/ceres/block_jacobi_preconditioner.h, dòng 85–87
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   m_->RightMultiplyAndAccumulate(x, y)   → END

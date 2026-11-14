@@ -1,0 +1,19 @@
+UNIT u1266
+Hàm: NumScratchDoublesForEvaluate() const  → trả về int
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ResidualBlock
+Vị trí: internal/ceres/residual_block.cc, dòng 198–215
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   int num_parameters = NumParameterBlocks()
+    int scratch_doubles = 1
+    int i = 0                                                      → 2
+2   vòng for, điều kiện: i < num_parameters                        đúng → 3   sai → 7
+3   const ParameterBlock *parameter_block = parameter_blocks_[i]   → 4
+4   if (parameter_block->PlusJacobian() != nullptr)                đúng → 5   sai → 6
+5   scratch_doubles += parameter_block->Size()                     → 6
+6   ++i                                                            → 2
+7   scratch_doubles *= NumResiduals()
+    return scratch_doubles                                         → END

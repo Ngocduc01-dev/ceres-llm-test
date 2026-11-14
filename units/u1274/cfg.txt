@@ -1,0 +1,17 @@
+UNIT u1274
+Hàm: StringifyOrdering(const std::vector<int> & ordering, std::string * report)  → trả về void
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres::(namespace không tên)
+Vị trí: internal/ceres/solver.cc, dòng 496–506
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   if (ordering.empty())                                    đúng → 2   sai → 3
+2   internal::StringAppendF(report, "AUTOMATIC")
+    return                                                   → END
+3   int i = 0                                                → 4
+4   vòng for, điều kiện: i < ordering.size() - 1             đúng → 5   sai → 7
+5   internal::StringAppendF(report, "%d,", ordering[i])      → 6
+6   ++i                                                      → 4
+7   internal::StringAppendF(report, "%d", ordering.back())   → END

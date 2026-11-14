@@ -6,7 +6,6 @@
   158,
   201
  ],
- "signature": "ceres::NumericDiffFirstOrderFunction::Evaluate",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 743
+ "order": 743,
+ "short_name": "Evaluate",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::NumericDiffFirstOrderFunction",
+ "class_is_template": true,
+ "params": "(const double *const parameters, double * cost, double * gradient)",
+ "return_type": "bool",
+ "is_const": true
 }

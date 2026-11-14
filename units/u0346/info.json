@@ -6,7 +6,6 @@
   290,
   295
  ],
- "signature": "ceres::EigenQuaternionManifold::Plus",
  "branches": 0,
  "cyclomatic": 1,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 0,
- "order": 346
+ "order": 346,
+ "short_name": "Plus",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EigenQuaternionManifold",
+ "class_is_template": false,
+ "params": "(const double * x, const double * delta, double * x_plus_delta)",
+ "return_type": "bool",
+ "is_const": true
 }

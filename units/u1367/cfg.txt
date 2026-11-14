@@ -1,0 +1,33 @@
+UNIT u1367
+Hàm: Init(const BlockSparseMatrix & A, const double * D, const double * b)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ImplicitSchurComplement
+Vị trí: internal/ceres/implicit_schur_complement.cc, dòng 49–97
+
+Số điểm rẽ nhánh: 6
+
+START → 1
+1   if (A_ == nullptr)                                             đúng → 2   sai → 3
+2   A_ = PartitionedMatrixViewBase::Create(options_, A)            → 3
+3   D_ = D
+    b_ = b                                                         → 4
+4   compute_ftf_inverse_ = options_.use_spse_initialization || options_.preconditioner_type == JACOBI || options_.preconditioner_type == SCHUR_POWER_SERIES_EXPANSION   → 5
+5   if (block_diagonal_EtE_inverse_ == nullptr)                    đúng → 6   sai → 16
+6   block_diagonal_EtE_inverse_ = A_->CreateBlockDiagonalEtE()     → 7
+7   if (compute_ftf_inverse_)                                      đúng → 8   sai → 9
+8   block_diagonal_FtF_inverse_ = A_->CreateBlockDiagonalFtF()     → 9
+9   rhs_.resize(A_->num_cols_f())
+    rhs_.setZero()
+    tmp_rows_.resize(A_->num_rows())
+    tmp_e_cols_.resize(A_->num_cols_e())
+    tmp_e_cols_2_.resize(A_->num_cols_e())
+    tmp_f_cols_.resize(A_->num_cols_f())                           → 10
+10  AddDiagonalAndInvert(D_, block_diagonal_EtE_inverse_.get())    → 11
+11  if (compute_ftf_inverse_)                                      đúng → 12   sai → 14
+12  (D_ == nullptr) ? ... : ...                                    đúng → 13   sai → 15
+13  AddDiagonalAndInvert((D_ == nullptr) ? nullptr : D_ + A_->num_cols_e(), block_diagonal_FtF_inverse_.get())   → 14
+14  UpdateRhs()                                                    → END
+15  operator->                                                     → 13
+16  A_->UpdateBlockDiagonalEtE(block_diagonal_EtE_inverse_.get())   → 17
+17  if (compute_ftf_inverse_)                                      đúng → 18   sai → 10
+18  A_->UpdateBlockDiagonalFtF(block_diagonal_FtF_inverse_.get())   → 10

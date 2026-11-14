@@ -1,0 +1,15 @@
+UNIT u0770
+Hàm: TerminationTypeToString(TerminationType type)  → trả về const char *
+Loại: hàm tự do (không thuộc class)
+Namespace: ceres
+Vị trí: internal/ceres/types.cc, dòng 343–353
+
+Số điểm rẽ nhánh: 1
+
+START → 1
+1   switch (type)             nhánh → 2   nhánh → 3   nhánh → 4   nhánh → 5   nhánh → 6
+2   return "USER_FAILURE"     → END
+3   return "USER_SUCCESS"     → END
+4   return "FAILURE"          → END
+5   return "NO_CONVERGENCE"   → END
+6   return "CONVERGENCE"      → END

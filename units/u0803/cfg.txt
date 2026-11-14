@@ -1,0 +1,15 @@
+UNIT u0803
+Hàm: FindValidViews(IntSet * valid_views) const  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CanonicalViewsClustering
+Vị trí: internal/ceres/canonical_views_clustering.cc, dòng 140–147
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const IntSet &views = graph_->vertices()                       → 2
+2   for (const auto &view : views)                                 đúng → 3   sai → END
+3   const auto &view                                               → 4
+4   if (graph_->VertexWeight(view) != WeightedGraph<int>::InvalidWeight())   đúng → 5   sai → 6
+5   valid_views->insert(view)                                      → 6
+6   ++ (bước tiếp của vòng for)                                    → 2

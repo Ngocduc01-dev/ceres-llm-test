@@ -6,7 +6,6 @@
   112,
   122
  ],
- "signature": "ceres::OrderedGroups::Remove",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 1,
@@ -18,5 +17,12 @@
   "double"
  ],
  "called_by_tests": 0,
- "order": 1102
+ "order": 1102,
+ "short_name": "Remove",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
+ "params": "(const std::vector<T> & elements)",
+ "return_type": "int",
+ "is_const": false
 }

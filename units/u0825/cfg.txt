@@ -1,0 +1,10 @@
+UNIT u0825
+Hàm: matrix() const  → trả về const CompressedRowSparseMatrix *
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::BlockRandomAccessDiagonalMatrix
+Vị trí: internal/ceres/block_random_access_diagonal_matrix.h, dòng 81–81
+
+Số điểm rẽ nhánh: 0
+
+START → 1
+1   return m_.get()   → END

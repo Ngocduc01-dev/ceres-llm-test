@@ -6,7 +6,6 @@
   144,
   153
  ],
- "signature": "ceres::DenseLinearAlgebraLibraryTypeToString",
  "branches": 6,
  "cyclomatic": 4,
  "topo_level": 0,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 3,
- "order": 754
+ "order": 754,
+ "short_name": "DenseLinearAlgebraLibraryTypeToString",
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
+ "params": "(DenseLinearAlgebraLibraryType type)",
+ "return_type": "const char *",
+ "is_const": false
 }

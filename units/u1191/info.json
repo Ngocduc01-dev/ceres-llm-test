@@ -6,7 +6,6 @@
   420,
   449
  ],
- "signature": "ceres::internal::BlockSparseMatrix::ScaleColumns",
  "branches": 8,
  "cyclomatic": 5,
  "topo_level": 1,
@@ -16,5 +15,12 @@
  "linkage": "external",
  "template_args": null,
  "called_by_tests": 1,
- "order": 1191
+ "order": 1191,
+ "short_name": "ScaleColumns",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
+ "params": "(const double * scale, ContextImpl * context, int num_threads)",
+ "return_type": "void",
+ "is_const": false
 }

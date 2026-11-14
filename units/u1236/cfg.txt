@@ -1,0 +1,39 @@
+UNIT u1236
+Hàm: FromTripletSparseMatrix(const TripletSparseMatrix & input, bool transpose)  → trả về std::unique_ptr<CompressedRowSparseMatrix>
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::CompressedRowSparseMatrix
+Vị trí: internal/ceres/compressed_row_sparse_matrix.cc, dòng 193–252
+
+Số điểm rẽ nhánh: 5 (và 1 lệnh CHECK)
+
+START → 1
+1   int num_rows = input.num_rows()
+    int num_cols = input.num_cols()
+    const int *rows = input.rows()
+    const int *cols = input.cols()
+    const double *values = input.values()                          → 2
+2   if (transpose)                                                 đúng → 3   sai → 4
+3   std::swap(num_rows, num_cols)
+    std::swap(rows, cols)                                          → 4
+4   input.num_nonzeros(), 0
+    int i = 0                                                      → 5
+5   vòng for, điều kiện: i < input.num_nonzeros()                  đúng → 6   sai → 8
+6   index[i] = i                                                   → 7
+7   ++i                                                            → 5
+8   if (num_rows == 0)                                             đúng → END   sai → 9
+9   int *output_rows = output->mutable_rows()
+    int *output_cols = output->mutable_cols()
+    double *output_values = output->mutable_values()
+    output_rows[0] = 0
+    int i = 0                                                      → 10
+10  vòng for, điều kiện: i < index.size()                          đúng → 11   sai → 13
+11  const int idx = index[i]
+    ++output_rows[rows[idx] + 1]
+    output_cols[i] = cols[idx]
+    output_values[i] = values[idx]                                 → 12
+12  ++i                                                            → 10
+13  int i = 1                                                      → 14
+14  vòng for, điều kiện: i < num_rows + 1                          đúng → 15   sai → 17
+15  output_rows[i] += output_rows[i - 1]                           → 16
+16  ++i                                                            → 14
+17  CHECK_EQ(output->num_nonzeros(), input.num_nonzeros())         đúng → END   sai → DỪNG

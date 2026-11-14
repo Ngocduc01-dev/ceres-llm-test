@@ -1,0 +1,12 @@
+UNIT u1036
+Hàm: SetParameterBlockVariable(double * values)  → trả về void
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::ProblemImpl
+Vị trí: internal/ceres/problem_impl.cc, dòng 494–504
+
+Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
+
+START → 1
+1   ParameterBlock *parameter_block = FindWithDefault(parameter_block_map_, values, nullptr)   → 2
+2   LOG(FATAL)                                                     đúng → 3   sai → DỪNG
+3   parameter_block->SetVarying()                                  → END

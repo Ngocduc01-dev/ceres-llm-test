@@ -1,0 +1,18 @@
+UNIT u0920
+Hàm: RightMultiplyByPlusJacobian(const double * x, const int num_rows, const double * ambient_matrix, double * tangent_matrix) const  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::Manifold
+Vị trí: internal/ceres/manifold.cc, dòng 137–155
+
+Số điểm rẽ nhánh: 2
+
+START → 1
+1   const int tangent_size = TangentSize()                         → 2
+2   if (tangent_size == 0)                                         đúng → 3   sai → 4
+3   return true                                                    → END
+4   const int ambient_size = AmbientSize()
+    ambient_size, tangent_size                                     → 5
+5   if (!PlusJacobian(x, plus_jacobian.data()))                    đúng → 6   sai → 7
+6   return false                                                   → END
+7   MatrixRef(tangent_matrix, num_rows, tangent_size) = ConstMatrixRef(ambient_matrix, num_rows, ambient_size) * plus_jacobian
+    return true                                                    → END

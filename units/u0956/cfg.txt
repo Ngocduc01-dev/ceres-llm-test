@@ -1,0 +1,20 @@
+UNIT u0956
+Hàm: RunCallbacks(const Minimizer::Options & options, const IterationSummary & iteration_summary, Solver::Summary * summary)  → trả về bool
+Loại: method (hàm thành viên của class)
+Thuộc class: ceres::internal::Minimizer
+Vị trí: internal/ceres/minimizer.cc, dòng 57–89
+
+Số điểm rẽ nhánh: 2 (và 1 lệnh CHECK)
+
+START → 1
+1   const bool is_not_silent = !options.is_silent
+    CallbackReturnType status = SOLVER_CONTINUE
+    int i = 0                                                      → 2
+2   while (status == SOLVER_CONTINUE && i < options.callbacks.size())   đúng → 3   sai → 4
+3   status = (*options.callbacks[i])(iteration_summary)
+    ++i                                                            → 2
+4   LOG(FATAL)                                                     đúng → 5   sai → DỪNG
+5   summary->termination_type = USER_FAILURE
+    summary->message = "User callback returned SOLVER_ABORT."      → 6
+6   if (is_not_silent)                                             đúng → 7   sai → 7
+7   return false                                                   → END
