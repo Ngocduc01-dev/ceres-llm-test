@@ -1,0 +1,20 @@
+u0539	ceres::internal::IsClose	internal/ceres/is_close.cc:37	branches=8	tests=5
+u0502	ceres::internal::InvalidateArray	internal/ceres/array_utils.cc:69	branches=4	tests=4
+u0464	ceres::internal::MapValuesToContiguousRange	internal/ceres/array_utils.cc:93	branches=2	tests=3
+u0536	ceres::internal::IsArrayValid	internal/ceres/array_utils.cc:44	branches=8	tests=3
+u0553	ceres::internal::ParameterBlock::Plus	internal/ceres/parameter_block.h:227	branches=12	tests=3
+u0469	ceres::HuberLoss::Evaluate	internal/ceres/loss_function.cc:50	branches=2	tests=2
+u0483	ceres::internal::ParameterBlock::LowerBoundForParameter	internal/ceres/parameter_block.h:295	branches=2	tests=2
+u0484	ceres::internal::ParameterBlock::UpperBoundForParameter	internal/ceres/parameter_block.h:303	branches=2	tests=2
+u0485	ceres::internal::ProblemImpl::residual_block_set	internal/ceres/problem_impl.h:163	branches=2	tests=2
+u0507	ceres::TolerantLoss::TolerantLoss	internal/ceres/loss_function.cc:93	branches=4	tests=2
+u0540	ceres::internal::ParameterBlock::SetUpperBound	internal/ceres/parameter_block.h:190	branches=8	tests=2
+u0541	ceres::internal::ParameterBlock::SetLowerBound	internal/ceres/parameter_block.h:207	branches=8	tests=2
+u0454	ceres::LossFunctionWrapper::Evaluate	include/ceres/loss_function.h:406	branches=2	tests=1
+u0467	ceres::internal::LevenbergMarquardtStrategy::StepAccepted	internal/ceres/levenberg_marquardt_strategy.cc:157	branches=2	tests=1
+u0470	ceres::TolerantLoss::Evaluate	internal/ceres/loss_function.cc:99	branches=2	tests=1
+u0471	ceres::TukeyLoss::Evaluate	internal/ceres/loss_function.cc:120	branches=2	tests=1
+u0482	ceres::internal::ParameterBlock::TangentSize	internal/ceres/parameter_block.h:154	branches=2	tests=1
+u0529	ceres::internal::LinearIndexToUpperTriangularIndex	internal/ceres/parallel_utils.cc:35	branches=6	tests=1
+u0537	ceres::internal::FindInvalidValue	internal/ceres/array_utils.cc:55	branches=8	tests=1
+u0436	ceres::AutoDiffCostFunction::~AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>	include/ceres/autodiff_cost_function.h:185	branches=2	tests=0

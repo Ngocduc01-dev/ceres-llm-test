@@ -13,3 +13,4 @@ data/graph.db
 
 # Báo cáo HTML nặng (~24 MB) – sinh lại bằng: SKIP_TESTS=1 scripts/coverage.sh
 reports/**/html/
+data/units.json

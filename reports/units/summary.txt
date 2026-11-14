@@ -1,0 +1,16 @@
+=== BÁO CÁO PHASE 2: LIỆT KÊ & PHÂN LOẠI UNIT ===
+Tổng số unit trong phạm vi: 1540
+
+1. Phân loại theo độ khó (level):
+   - Dễ (de)          : 774 (50.3%)
+   - Trung bình       : 370 (24.0%)
+   - Khó (kho)        : 396 (25.7%)
+
+2. Khả năng gọi trực tiếp (callable):
+   - Public           : 1320
+   - Internal         : 220 (static / anonymous namespace / private / protected)
+
+3. Đặc điểm bổ sung:
+   - Unit template    : 485
+   - Có test mẫu sẵn  : 372
+   - Tập smoke test   : 20 unit xuất ra data/smoke_test_units.txt
