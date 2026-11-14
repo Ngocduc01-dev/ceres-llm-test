@@ -1,0 +1,22 @@
+{
+ "id": "u0980",
+ "name": "ceres::internal::FixedArray::end",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  265,
+  265
+ ],
+ "signature": "ceres::internal::FixedArray::end",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 980
+}

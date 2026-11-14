@@ -1,0 +1,20 @@
+{
+ "id": "u0765",
+ "name": "ceres::internal::LowRankInverseHessian::Update",
+ "file": "internal/ceres/low_rank_inverse_hessian.cc",
+ "lines": [
+  87,
+  115
+ ],
+ "signature": "ceres::internal::LowRankInverseHessian::Update",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 765
+}

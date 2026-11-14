@@ -1,0 +1,20 @@
+{
+ "id": "u1353",
+ "name": "ceres::internal::CompressedRowJacobianWriter::PopulateJacobianRowAndColumnBlockVectors",
+ "file": "internal/ceres/compressed_row_jacobian_writer.cc",
+ "lines": [
+  48,
+  69
+ ],
+ "signature": "ceres::internal::CompressedRowJacobianWriter::PopulateJacobianRowAndColumnBlockVectors",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1353
+}

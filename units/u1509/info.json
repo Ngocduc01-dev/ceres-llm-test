@@ -1,0 +1,20 @@
+{
+ "id": "u1509",
+ "name": "ceres::Covariance::GetCovarianceMatrix",
+ "file": "internal/ceres/covariance.cc",
+ "lines": [
+  79,
+  85
+ ],
+ "signature": "ceres::Covariance::GetCovarianceMatrix",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 5,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1509
+}

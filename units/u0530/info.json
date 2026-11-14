@@ -1,0 +1,22 @@
+{
+ "id": "u0530",
+ "name": "ceres::internal::MaxPartitionCostIsFeasible",
+ "file": "internal/ceres/partition_range_for_parallel_for.h",
+ "lines": [
+  47,
+  87
+ ],
+ "signature": "ceres::internal::MaxPartitionCostIsFeasible",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 530
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0639",
+ "name": "ceres::Jet::operator/=",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  259,
+  262
+ ],
+ "signature": "ceres::Jet::operator/=",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "ceres::Jet<double, 4>"
+ ],
+ "called_by_tests": 0,
+ "order": 639
+}

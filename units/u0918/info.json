@@ -1,0 +1,20 @@
+{
+ "id": "u0918",
+ "name": "ceres::internal::CompressedRowSparseMatrix::ScaleColumns",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  434,
+  440
+ ],
+ "signature": "ceres::internal::CompressedRowSparseMatrix::ScaleColumns",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 918
+}

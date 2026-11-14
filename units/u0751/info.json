@@ -1,0 +1,20 @@
+{
+ "id": "u0751",
+ "name": "ceres::internal::OrderingToGroupSizes",
+ "file": "internal/ceres/parameter_block_ordering.cc",
+ "lines": [
+  162,
+  177
+ ],
+ "signature": "ceres::internal::OrderingToGroupSizes",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 751
+}

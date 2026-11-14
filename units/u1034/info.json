@@ -1,0 +1,20 @@
+{
+ "id": "u1034",
+ "name": "ceres::internal::ParameterBlock::IsConstant",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  120,
+  120
+ ],
+ "signature": "ceres::internal::ParameterBlock::IsConstant",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1034
+}

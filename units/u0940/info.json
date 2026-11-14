@@ -1,0 +1,20 @@
+{
+ "id": "u0940",
+ "name": "ceres::internal::TripletSparseMatrix::Reserve",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  121,
+  145
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::Reserve",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 940
+}

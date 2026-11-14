@@ -1,0 +1,20 @@
+{
+ "id": "u0989",
+ "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::num_rows",
+ "file": "internal/ceres/block_random_access_diagonal_matrix.h",
+ "lines": [
+  78,
+  78
+ ],
+ "signature": "ceres::internal::BlockRandomAccessDiagonalMatrix::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 989
+}

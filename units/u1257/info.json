@@ -1,0 +1,20 @@
+{
+ "id": "u1257",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::num_rows",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  433,
+  433
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1257
+}

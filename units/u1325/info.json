@@ -1,0 +1,20 @@
+{
+ "id": "u1325",
+ "name": "ceres::internal::DenseQRSolver::DenseQRSolver",
+ "file": "internal/ceres/dense_qr_solver.cc",
+ "lines": [
+  45,
+  46
+ ],
+ "signature": "ceres::internal::DenseQRSolver::DenseQRSolver",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 7,
+ "order": 1325
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0709",
+ "name": "ceres::internal::DenseQR::FactorAndSolve",
+ "file": "internal/ceres/dense_qr.cc",
+ "lines": [
+  148,
+  160
+ ],
+ "signature": "ceres::internal::DenseQR::FactorAndSolve",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 709
+}

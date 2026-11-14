@@ -1,0 +1,20 @@
+{
+ "id": "u0305",
+ "name": "ceres::GradientProblem::Plus",
+ "file": "internal/ceres/gradient_problem.cc",
+ "lines": [
+  80,
+  84
+ ],
+ "signature": "ceres::GradientProblem::Plus",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 305
+}

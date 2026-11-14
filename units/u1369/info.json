@@ -1,0 +1,22 @@
+{
+ "id": "u1369",
+ "name": "ceres::internal::ConjugateGradientsSolver",
+ "file": "internal/ceres/conjugate_gradients_solver.h",
+ "lines": [
+  108,
+  305
+ ],
+ "signature": "ceres::internal::ConjugateGradientsSolver",
+ "branches": 34,
+ "cyclomatic": 18,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1369
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1530",
+ "name": "ceres::GradientProblemSolver::Options::IsValid",
+ "file": "internal/ceres/gradient_problem_solver.cc",
+ "lines": [
+  90,
+  94
+ ],
+ "signature": "ceres::GradientProblemSolver::Options::IsValid",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 7,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1530
+}

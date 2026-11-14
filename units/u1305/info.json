@@ -1,0 +1,22 @@
+{
+ "id": "u1305",
+ "name": "ceres::internal::NumericDiff::EvaluateJacobianForParameterBlock",
+ "file": "include/ceres/internal/numeric_diff.h",
+ "lines": [
+  63,
+  170
+ ],
+ "signature": "ceres::internal::NumericDiff::EvaluateJacobianForParameterBlock",
+ "branches": 22,
+ "cyclomatic": 12,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1305
+}

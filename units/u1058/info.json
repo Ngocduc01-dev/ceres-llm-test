@@ -1,0 +1,22 @@
+{
+ "id": "u1058",
+ "name": "ceres::DynamicNumericDiffCostFunction::Evaluate",
+ "file": "include/ceres/dynamic_numeric_diff_cost_function.h",
+ "lines": [
+  97,
+  154
+ ],
+ "signature": "ceres::DynamicNumericDiffCostFunction::Evaluate",
+ "branches": 18,
+ "cyclomatic": 10,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1058
+}

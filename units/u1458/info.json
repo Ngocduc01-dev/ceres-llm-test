@@ -1,0 +1,20 @@
+{
+ "id": "u1458",
+ "name": "ceres::internal::SparseSchurComplementSolver::SolveReducedLinearSystem",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  290,
+  333
+ ],
+ "signature": "ceres::internal::SparseSchurComplementSolver::SolveReducedLinearSystem",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1458
+}

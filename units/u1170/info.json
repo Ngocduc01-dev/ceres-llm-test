@@ -1,0 +1,22 @@
+{
+ "id": "u1170",
+ "name": "ceres::internal::EigenSparseCholeskyTemplate::Factorize",
+ "file": "internal/ceres/eigensparse.cc",
+ "lines": [
+  112,
+  137
+ ],
+ "signature": "ceres::internal::EigenSparseCholeskyTemplate::Factorize",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1170
+}

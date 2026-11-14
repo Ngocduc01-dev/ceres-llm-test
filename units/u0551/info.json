@@ -1,0 +1,22 @@
+{
+ "id": "u0551",
+ "name": "ceres::pow",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  1176,
+  1200
+ ],
+ "signature": "ceres::pow",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 551
+}

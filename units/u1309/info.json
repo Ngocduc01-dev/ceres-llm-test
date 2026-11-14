@@ -1,0 +1,22 @@
+{
+ "id": "u1309",
+ "name": "ceres::internal::ProgramEvaluator::BuildResidualLayout",
+ "file": "internal/ceres/program_evaluator.h",
+ "lines": [
+  347,
+  358
+ ],
+ "signature": "ceres::internal::ProgramEvaluator::BuildResidualLayout",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1309
+}

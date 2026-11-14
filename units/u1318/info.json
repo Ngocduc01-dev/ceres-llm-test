@@ -1,0 +1,20 @@
+{
+ "id": "u1318",
+ "name": "ceres::internal::BlockSparseMatrix::ToCompressedRowSparseMatrixTranspose",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  450,
+  460
+ ],
+ "signature": "ceres::internal::BlockSparseMatrix::ToCompressedRowSparseMatrixTranspose",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1318
+}

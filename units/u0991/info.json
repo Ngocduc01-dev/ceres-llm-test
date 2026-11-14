@@ -1,0 +1,20 @@
+{
+ "id": "u0991",
+ "name": "ceres::internal::BlockRandomAccessSparseMatrix::num_rows",
+ "file": "internal/ceres/block_random_access_sparse_matrix.h",
+ "lines": [
+  91,
+  91
+ ],
+ "signature": "ceres::internal::BlockRandomAccessSparseMatrix::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 991
+}

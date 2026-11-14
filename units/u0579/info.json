@@ -1,0 +1,20 @@
+{
+ "id": "u0579",
+ "name": "ceres::internal::SparseIterativeRefiner::Allocate",
+ "file": "internal/ceres/iterative_refiner.cc",
+ "lines": [
+  47,
+  51
+ ],
+ "signature": "ceres::internal::SparseIterativeRefiner::Allocate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 579
+}

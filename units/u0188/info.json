@@ -1,0 +1,20 @@
+{
+ "id": "u0188",
+ "name": "ceres::EigenQuaternionManifold::TangentSize",
+ "file": "include/ceres/manifold.h",
+ "lines": [
+  393,
+  393
+ ],
+ "signature": "ceres::EigenQuaternionManifold::TangentSize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 188
+}

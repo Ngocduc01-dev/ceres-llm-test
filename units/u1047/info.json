@@ -1,0 +1,22 @@
+{
+ "id": "u1047",
+ "name": "ceres::OrderedGroups::Remove",
+ "file": "include/ceres/ordered_groups.h",
+ "lines": [
+  93,
+  108
+ ],
+ "signature": "ceres::OrderedGroups::Remove",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1047
+}

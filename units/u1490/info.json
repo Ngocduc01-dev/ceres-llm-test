@@ -1,0 +1,20 @@
+{
+ "id": "u1490",
+ "name": "ceres::internal::TrustRegionMinimizer::Minimize",
+ "file": "internal/ceres/trust_region_minimizer.cc",
+ "lines": [
+  66,
+  135
+ ],
+ "signature": "ceres::internal::TrustRegionMinimizer::Minimize",
+ "branches": 34,
+ "cyclomatic": 18,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1490
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0125",
+ "name": "ceres::erfc",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  863,
+  868
+ ],
+ "signature": "ceres::erfc",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 125
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1480",
+ "name": "ceres::(anonymous)::OptionsAreValidForLinearSolver",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  363,
+  387
+ ],
+ "signature": "ceres::(anonymous)::OptionsAreValidForLinearSolver",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1480
+}

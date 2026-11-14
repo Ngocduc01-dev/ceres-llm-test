@@ -1,0 +1,20 @@
+{
+ "id": "u0219",
+ "name": "ceres::internal::BlockSparseJacobiPreconditioner::~BlockSparseJacobiPreconditioner",
+ "file": "internal/ceres/block_jacobi_preconditioner.cc",
+ "lines": [
+  56,
+  56
+ ],
+ "signature": "ceres::internal::BlockSparseJacobiPreconditioner::~BlockSparseJacobiPreconditioner",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 219
+}

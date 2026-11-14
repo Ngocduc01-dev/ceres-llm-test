@@ -1,0 +1,20 @@
+{
+ "id": "u1055",
+ "name": "ceres::SubsetManifold::Minus",
+ "file": "internal/ceres/manifold.cc",
+ "lines": [
+  236,
+  250
+ ],
+ "signature": "ceres::SubsetManifold::Minus",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1055
+}

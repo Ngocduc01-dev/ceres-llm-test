@@ -1,0 +1,22 @@
+{
+ "id": "u0592",
+ "name": "ceres::TinySolver::Initialize",
+ "file": "include/ceres/tiny_solver.h",
+ "lines": [
+  371,
+  375
+ ],
+ "signature": "ceres::TinySolver::Initialize",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 592
+}

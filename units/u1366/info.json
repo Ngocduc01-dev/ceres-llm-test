@@ -1,0 +1,20 @@
+{
+ "id": "u1366",
+ "name": "ceres::internal::ParameterBlock::SetManifold",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  160,
+  188
+ ],
+ "signature": "ceres::internal::ParameterBlock::SetManifold",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 9,
+ "order": 1366
+}

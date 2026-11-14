@@ -1,0 +1,22 @@
+{
+ "id": "u1226",
+ "name": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalMatrixLayout",
+ "file": "internal/ceres/partitioned_matrix_view_impl.h",
+ "lines": [
+  382,
+  418
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalMatrixLayout",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1226
+}

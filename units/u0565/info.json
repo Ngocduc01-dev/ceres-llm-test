@@ -1,0 +1,22 @@
+{
+ "id": "u0565",
+ "name": "ceres::internal::ParameterDims::GetUnpackedParameters",
+ "file": "include/ceres/internal/parameter_dims.h",
+ "lines": [
+  82,
+  86
+ ],
+ "signature": "ceres::internal::ParameterDims::GetUnpackedParameters",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 565
+}

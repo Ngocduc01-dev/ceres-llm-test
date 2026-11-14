@@ -1,0 +1,22 @@
+{
+ "id": "u0450",
+ "name": "ceres::internal::ComputeSphereManifoldMinusJacobian",
+ "file": "include/ceres/internal/sphere_manifold_functions.h",
+ "lines": [
+  133,
+  159
+ ],
+ "signature": "ceres::internal::ComputeSphereManifoldMinusJacobian",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 450
+}

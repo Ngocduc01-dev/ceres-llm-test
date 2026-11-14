@@ -1,0 +1,22 @@
+{
+ "id": "u1197",
+ "name": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalFtFMultiThreaded",
+ "file": "internal/ceres/partitioned_matrix_view_impl.h",
+ "lines": [
+  582,
+  647
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalFtFMultiThreaded",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1197
+}

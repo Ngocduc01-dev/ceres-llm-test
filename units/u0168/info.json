@@ -1,0 +1,22 @@
+{
+ "id": "u0168",
+ "name": "ceres::LineManifold::LineManifold<AmbientSpaceDimension>",
+ "file": "include/ceres/line_manifold.h",
+ "lines": [
+  121,
+  127
+ ],
+ "signature": "ceres::LineManifold::LineManifold<AmbientSpaceDimension>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 168
+}

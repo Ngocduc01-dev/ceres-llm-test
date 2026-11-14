@@ -1,0 +1,20 @@
+{
+ "id": "u1521",
+ "name": "ceres::internal::TrustRegionPreprocessor::Preprocess",
+ "file": "internal/ceres/trust_region_preprocessor.cc",
+ "lines": [
+  374,
+  406
+ ],
+ "signature": "ceres::internal::TrustRegionPreprocessor::Preprocess",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 6,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 16,
+ "order": 1521
+}

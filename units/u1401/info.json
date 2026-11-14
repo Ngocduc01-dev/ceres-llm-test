@@ -1,0 +1,20 @@
+{
+ "id": "u1401",
+ "name": "ceres::internal::ComputeSchurOrdering",
+ "file": "internal/ceres/parameter_block_ordering.cc",
+ "lines": [
+  82,
+  100
+ ],
+ "signature": "ceres::internal::ComputeSchurOrdering",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1401
+}

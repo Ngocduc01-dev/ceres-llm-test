@@ -1,0 +1,22 @@
+{
+ "id": "u0501",
+ "name": "ceres::AngleAxisRotatePoint",
+ "file": "include/ceres/rotation.h",
+ "lines": [
+  791,
+  857
+ ],
+ "signature": "ceres::AngleAxisRotatePoint",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 501
+}

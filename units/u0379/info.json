@@ -1,0 +1,20 @@
+{
+ "id": "u0379",
+ "name": "ceres::internal::PowerSeriesExpansionPreconditioner::~PowerSeriesExpansionPreconditioner",
+ "file": "internal/ceres/power_series_expansion_preconditioner.cc",
+ "lines": [
+  49,
+  49
+ ],
+ "signature": "ceres::internal::PowerSeriesExpansionPreconditioner::~PowerSeriesExpansionPreconditioner",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 379
+}

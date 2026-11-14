@@ -1,0 +1,20 @@
+{
+ "id": "u1383",
+ "name": "ceres::internal::BlockJacobianWriter::CreateEvaluatePreparers",
+ "file": "internal/ceres/block_jacobian_writer.cc",
+ "lines": [
+  183,
+  194
+ ],
+ "signature": "ceres::internal::BlockJacobianWriter::CreateEvaluatePreparers",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1383
+}

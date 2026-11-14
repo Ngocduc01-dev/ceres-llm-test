@@ -1,0 +1,20 @@
+{
+ "id": "u1493",
+ "name": "ceres::internal::CoordinateDescentMinimizer::Solve",
+ "file": "internal/ceres/coordinate_descent_minimizer.cc",
+ "lines": [
+  211,
+  237
+ ],
+ "signature": "ceres::internal::CoordinateDescentMinimizer::Solve",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1493
+}

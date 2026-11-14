@@ -1,0 +1,20 @@
+{
+ "id": "u0329",
+ "name": "ceres::internal::LinearLeastSquaresProblem::LinearLeastSquaresProblem",
+ "file": "internal/ceres/linear_least_squares_problems.h",
+ "lines": [
+  47,
+  47
+ ],
+ "signature": "ceres::internal::LinearLeastSquaresProblem::LinearLeastSquaresProblem",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 329
+}

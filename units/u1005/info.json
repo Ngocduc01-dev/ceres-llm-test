@@ -1,0 +1,20 @@
+{
+ "id": "u1005",
+ "name": "ceres::internal::LineSearchFunction::ResetTimeStatistics",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  149,
+  161
+ ],
+ "signature": "ceres::internal::LineSearchFunction::ResetTimeStatistics",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1005
+}

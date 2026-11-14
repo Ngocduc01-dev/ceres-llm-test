@@ -1,0 +1,20 @@
+{
+ "id": "u0956",
+ "name": "ceres::internal::Minimizer::RunCallbacks",
+ "file": "internal/ceres/minimizer.cc",
+ "lines": [
+  57,
+  89
+ ],
+ "signature": "ceres::internal::Minimizer::RunCallbacks",
+ "branches": 22,
+ "cyclomatic": 12,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 956
+}

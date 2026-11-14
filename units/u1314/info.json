@@ -1,0 +1,20 @@
+{
+ "id": "u1314",
+ "name": "ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  472,
+  514
+ ],
+ "signature": "ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1314
+}

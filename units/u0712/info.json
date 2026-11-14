@@ -1,0 +1,20 @@
+{
+ "id": "u0712",
+ "name": "ceres::GradientProblem::GradientProblem",
+ "file": "internal/ceres/gradient_problem.cc",
+ "lines": [
+  39,
+  45
+ ],
+ "signature": "ceres::GradientProblem::GradientProblem",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 5,
+ "order": 712
+}

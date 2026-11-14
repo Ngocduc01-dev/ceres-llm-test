@@ -1,0 +1,20 @@
+{
+ "id": "u1505",
+ "name": "ceres::internal::WolfeLineSearch::BracketingPhase",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  499,
+  692
+ ],
+ "signature": "ceres::internal::WolfeLineSearch::BracketingPhase",
+ "branches": 60,
+ "cyclomatic": 31,
+ "topo_level": 5,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1505
+}

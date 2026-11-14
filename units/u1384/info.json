@@ -1,0 +1,20 @@
+{
+ "id": "u1384",
+ "name": "ceres::internal::ParameterBlock::EnableResidualBlockDependencies",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  268,
+  273
+ ],
+ "signature": "ceres::internal::ParameterBlock::EnableResidualBlockDependencies",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1384
+}

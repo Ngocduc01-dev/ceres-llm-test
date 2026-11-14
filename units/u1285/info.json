@@ -1,0 +1,20 @@
+{
+ "id": "u1285",
+ "name": "ceres::internal::CgnrLinearOperator::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/cgnr_solver.cc",
+ "lines": [
+  97,
+  113
+ ],
+ "signature": "ceres::internal::CgnrLinearOperator::RightMultiplyAndAccumulate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1285
+}

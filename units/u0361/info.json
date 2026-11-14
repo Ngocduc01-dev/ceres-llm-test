@@ -1,0 +1,20 @@
+{
+ "id": "u0361",
+ "name": "ceres::internal::ParameterBlock::SetConstant",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  118,
+  118
+ ],
+ "signature": "ceres::internal::ParameterBlock::SetConstant",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 361
+}

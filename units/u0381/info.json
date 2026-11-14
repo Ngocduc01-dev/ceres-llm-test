@@ -1,0 +1,20 @@
+{
+ "id": "u0381",
+ "name": "ceres::internal::Preconditioner::Options::Options",
+ "file": "internal/ceres/preconditioner.h",
+ "lines": [
+  54,
+  54
+ ],
+ "signature": "ceres::internal::Preconditioner::Options::Options",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 381
+}

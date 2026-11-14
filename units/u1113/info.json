@@ -1,0 +1,20 @@
+{
+ "id": "u1113",
+ "name": "ceres::StringToNumericDiffMethodType",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  317,
+  324
+ ],
+ "signature": "ceres::StringToNumericDiffMethodType",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1113
+}

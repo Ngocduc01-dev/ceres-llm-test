@@ -1,0 +1,20 @@
+{
+ "id": "u0976",
+ "name": "ceres::DynamicCostFunction::SetNumResiduals",
+ "file": "include/ceres/dynamic_cost_function.h",
+ "lines": [
+  48,
+  50
+ ],
+ "signature": "ceres::DynamicCostFunction::SetNumResiduals",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 14,
+ "order": 976
+}

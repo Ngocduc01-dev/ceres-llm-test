@@ -1,0 +1,20 @@
+{
+ "id": "u0806",
+ "name": "ceres::internal::CanonicalViewsClustering::ComputeClusteringQualityDifference",
+ "file": "internal/ceres/canonical_views_clustering.cc",
+ "lines": [
+  151,
+  180
+ ],
+ "signature": "ceres::internal::CanonicalViewsClustering::ComputeClusteringQualityDifference",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 806
+}

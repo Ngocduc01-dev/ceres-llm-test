@@ -1,0 +1,22 @@
+{
+ "id": "u0726",
+ "name": "ceres::internal::Graph::RemoveVertex",
+ "file": "internal/ceres/graph.h",
+ "lines": [
+  59,
+  72
+ ],
+ "signature": "ceres::internal::Graph::RemoveVertex",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 726
+}

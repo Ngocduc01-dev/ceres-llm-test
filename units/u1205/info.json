@@ -1,0 +1,20 @@
+{
+ "id": "u1205",
+ "name": "ceres::ConditionedCostFunction::ConditionedCostFunction",
+ "file": "internal/ceres/conditioned_cost_function.cc",
+ "lines": [
+  46,
+  67
+ ],
+ "signature": "ceres::ConditionedCostFunction::ConditionedCostFunction",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1205
+}

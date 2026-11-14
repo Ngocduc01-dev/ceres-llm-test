@@ -1,0 +1,22 @@
+{
+ "id": "u0561",
+ "name": "ceres::CostFunctionToFunctor::GetParameterPointers",
+ "file": "include/ceres/cost_function_to_functor.h",
+ "lines": [
+  158,
+  164
+ ],
+ "signature": "ceres::CostFunctionToFunctor::GetParameterPointers",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 561
+}

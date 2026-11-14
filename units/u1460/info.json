@@ -1,0 +1,20 @@
+{
+ "id": "u1460",
+ "name": "ceres::internal::(anonymous)::SetupLinearSolver",
+ "file": "internal/ceres/trust_region_preprocessor.cc",
+ "lines": [
+  157,
+  257
+ ],
+ "signature": "ceres::internal::(anonymous)::SetupLinearSolver",
+ "branches": 20,
+ "cyclomatic": 11,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1460
+}

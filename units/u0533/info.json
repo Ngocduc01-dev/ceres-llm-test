@@ -1,0 +1,20 @@
+{
+ "id": "u0533",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  424,
+  431
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::RightMultiplyAndAccumulate",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 533
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1432",
+ "name": "ceres::Problem::GetResidualBlocksForParameterBlock",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  208,
+  211
+ ],
+ "signature": "ceres::Problem::GetResidualBlocksForParameterBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1432
+}

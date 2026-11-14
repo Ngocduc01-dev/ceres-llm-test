@@ -1,0 +1,20 @@
+{
+ "id": "u0312",
+ "name": "ceres::internal::ImplicitSchurComplement::num_rows",
+ "file": "internal/ceres/implicit_schur_complement.h",
+ "lines": [
+  137,
+  137
+ ],
+ "signature": "ceres::internal::ImplicitSchurComplement::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 312
+}

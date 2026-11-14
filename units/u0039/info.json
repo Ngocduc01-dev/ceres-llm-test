@@ -1,0 +1,22 @@
+{
+ "id": "u0039",
+ "name": "ceres::internal::FixedArray::cend",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  270,
+  270
+ ],
+ "signature": "ceres::internal::FixedArray::cend",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 39
+}

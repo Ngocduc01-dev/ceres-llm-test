@@ -1,0 +1,22 @@
+{
+ "id": "u0945",
+ "name": "ceres::internal::ParallelFor",
+ "file": "internal/ceres/parallel_for.h",
+ "lines": [
+  69,
+  93
+ ],
+ "signature": "ceres::internal::ParallelFor",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 945
+}

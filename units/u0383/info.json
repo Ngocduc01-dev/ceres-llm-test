@@ -1,0 +1,20 @@
+{
+ "id": "u0383",
+ "name": "ceres::internal::Preconditioner::num_cols",
+ "file": "internal/ceres/preconditioner.h",
+ "lines": [
+  157,
+  157
+ ],
+ "signature": "ceres::internal::Preconditioner::num_cols",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 383
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0803",
+ "name": "ceres::internal::CanonicalViewsClustering::FindValidViews",
+ "file": "internal/ceres/canonical_views_clustering.cc",
+ "lines": [
+  140,
+  147
+ ],
+ "signature": "ceres::internal::CanonicalViewsClustering::FindValidViews",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 803
+}

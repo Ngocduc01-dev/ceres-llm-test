@@ -1,0 +1,20 @@
+{
+ "id": "u0680",
+ "name": "ceres::internal::LineSearchFunction::Init",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  96,
+  99
+ ],
+ "signature": "ceres::internal::LineSearchFunction::Init",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 680
+}

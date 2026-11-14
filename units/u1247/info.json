@@ -1,0 +1,20 @@
+{
+ "id": "u1247",
+ "name": "ceres::internal::ParameterBlock::ToString",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  253,
+  266
+ ],
+ "signature": "ceres::internal::ParameterBlock::ToString",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1247
+}

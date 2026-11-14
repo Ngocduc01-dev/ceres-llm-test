@@ -1,0 +1,20 @@
+{
+ "id": "u1105",
+ "name": "ceres::internal::BlockOrderingToScalarOrdering",
+ "file": "internal/ceres/compressed_col_sparse_matrix_utils.cc",
+ "lines": [
+  91,
+  106
+ ],
+ "signature": "ceres::internal::BlockOrderingToScalarOrdering",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1105
+}

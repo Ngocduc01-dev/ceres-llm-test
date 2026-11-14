@@ -1,0 +1,20 @@
+{
+ "id": "u1379",
+ "name": "ceres::internal::InnerProductComputer::ComputeOffsetsAndCreateResultMatrix",
+ "file": "internal/ceres/inner_product_computer.cc",
+ "lines": [
+  179,
+  280
+ ],
+ "signature": "ceres::internal::InnerProductComputer::ComputeOffsetsAndCreateResultMatrix",
+ "branches": 22,
+ "cyclomatic": 12,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1379
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0882",
+ "name": "ceres::Problem::mutable_impl",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  215,
+  215
+ ],
+ "signature": "ceres::Problem::mutable_impl",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 882
+}

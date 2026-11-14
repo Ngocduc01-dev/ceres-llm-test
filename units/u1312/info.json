@@ -1,0 +1,22 @@
+{
+ "id": "u1312",
+ "name": "ceres::internal::SchurEliminator::NoEBlockRowsUpdate",
+ "file": "internal/ceres/schur_eliminator_impl.h",
+ "lines": [
+  566,
+  593
+ ],
+ "signature": "ceres::internal::SchurEliminator::NoEBlockRowsUpdate",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1312
+}

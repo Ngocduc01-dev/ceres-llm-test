@@ -1,0 +1,22 @@
+{
+ "id": "u1252",
+ "name": "ceres::internal::ProgramEvaluator::NumEffectiveParameters",
+ "file": "internal/ceres/program_evaluator.h",
+ "lines": [
+  311,
+  313
+ ],
+ "signature": "ceres::internal::ProgramEvaluator::NumEffectiveParameters",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1252
+}

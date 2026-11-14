@@ -1,0 +1,22 @@
+{
+ "id": "u1294",
+ "name": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateF",
+ "file": "internal/ceres/partitioned_matrix_view_impl.h",
+ "lines": [
+  266,
+  276
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateF",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1294
+}

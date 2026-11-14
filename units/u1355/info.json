@@ -1,0 +1,20 @@
+{
+ "id": "u1355",
+ "name": "ceres::internal::GradientProblemEvaluator::Evaluate",
+ "file": "internal/ceres/gradient_problem_evaluator.h",
+ "lines": [
+  55,
+  74
+ ],
+ "signature": "ceres::internal::GradientProblemEvaluator::Evaluate",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1355
+}

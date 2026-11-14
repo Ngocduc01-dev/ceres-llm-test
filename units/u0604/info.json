@@ -1,0 +1,20 @@
+{
+ "id": "u0604",
+ "name": "ceres::internal::CanonicalViewsClustering::UpdateCanonicalViewAssignments",
+ "file": "internal/ceres/canonical_views_clustering.cc",
+ "lines": [
+  183,
+  195
+ ],
+ "signature": "ceres::internal::CanonicalViewsClustering::UpdateCanonicalViewAssignments",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 604
+}

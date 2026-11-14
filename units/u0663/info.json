@@ -1,0 +1,20 @@
+{
+ "id": "u0663",
+ "name": "ceres::internal::DenseSparseMatrix::ToDenseMatrix",
+ "file": "internal/ceres/dense_sparse_matrix.cc",
+ "lines": [
+  93,
+  95
+ ],
+ "signature": "ceres::internal::DenseSparseMatrix::ToDenseMatrix",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 663
+}

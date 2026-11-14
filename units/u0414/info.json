@@ -1,0 +1,20 @@
+{
+ "id": "u0414",
+ "name": "ceres::internal::SparseCholesky::~SparseCholesky",
+ "file": "internal/ceres/sparse_cholesky.cc",
+ "lines": [
+  106,
+  106
+ ],
+ "signature": "ceres::internal::SparseCholesky::~SparseCholesky",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 414
+}

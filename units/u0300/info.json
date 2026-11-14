@@ -1,0 +1,20 @@
+{
+ "id": "u0300",
+ "name": "ceres::internal::GradientCheckingIterationCallback::GradientCheckingIterationCallback",
+ "file": "internal/ceres/gradient_checking_cost_function.cc",
+ "lines": [
+  131,
+  132
+ ],
+ "signature": "ceres::internal::GradientCheckingIterationCallback::GradientCheckingIterationCallback",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 300
+}

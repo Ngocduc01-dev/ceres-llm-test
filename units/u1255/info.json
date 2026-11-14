@@ -1,0 +1,20 @@
+{
+ "id": "u1255",
+ "name": "ceres::internal::SchurJacobiPreconditioner::num_rows",
+ "file": "internal/ceres/schur_jacobi_preconditioner.cc",
+ "lines": [
+  104,
+  104
+ ],
+ "signature": "ceres::internal::SchurJacobiPreconditioner::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1255
+}

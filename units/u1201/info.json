@@ -1,0 +1,20 @@
+{
+ "id": "u1201",
+ "name": "ceres::internal::CreateFakeBundleAdjustmentJacobian",
+ "file": "internal/ceres/fake_bundle_adjustment_jacobian.cc",
+ "lines": [
+  44,
+  97
+ ],
+ "signature": "ceres::internal::CreateFakeBundleAdjustmentJacobian",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1201
+}

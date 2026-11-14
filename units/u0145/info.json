@@ -1,0 +1,22 @@
+{
+ "id": "u0145",
+ "name": "ceres::IsNaN",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  1056,
+  1062
+ ],
+ "signature": "ceres::IsNaN",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 145
+}

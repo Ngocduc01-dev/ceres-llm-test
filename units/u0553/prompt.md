@@ -1,0 +1,337 @@
+# 1. VAI TRÒ VÀ MỤC TIÊU
+
+Bạn là kỹ sư kiểm thử hộp trắng (white-box) cho mã nguồn C++.
+Nhiệm vụ: với **một unit** cho ở mục 3, áp dụng **kiểm thử luồng điều khiển (Control Flow Testing – CFT)** theo **độ đo C2 (phủ nhánh)** để thiết kế bộ test case, rồi viết **một file GoogleTest compile được** chứa toàn bộ test case đó.
+
+Bối cảnh:
+- Dự án: **Ceres Solver 2.2.0** (C++17), dùng Eigen, glog. Không có tài liệu đặc tả.
+- Unit = một hàm hoặc method có thân hàm. Chỉ làm **unit testing**: mỗi test gọi trực tiếp unit đang xét.
+- **Không có đặc tả nên không có kết quả mong đợi (Expected Output – EO).** Mục tiêu duy nhất là **đi qua được các nhánh**. Không viết assertion so sánh giá trị đúng/sai.
+
+---
+
+# 2. KHÁI NIỆM VÀ QUY ƯỚC (dùng thống nhất trong toàn bộ câu trả lời)
+
+**2.1. Đồ thị dòng điều khiển (Control Flow Graph – CFG)** của một unit là đồ thị có hướng G = (N, E):
+- **Node (đỉnh):** một khối lệnh tuần tự liên tiếp (gộp các lệnh không rẽ nhánh), hoặc một **điểm quyết định**. Có 1 node bắt đầu và 1 node kết thúc (các `return` cùng nối tới node kết thúc).
+- **Điểm quyết định:** điều kiện của `if`, `else if`, `while`, `for`, `do-while`, `switch/case`, toán tử `?:`.
+- **Cạnh (edge):** đường đi từ node này sang node khác. Mỗi điểm quyết định có **2 cạnh ra** gắn nhãn **T (True)** và **F (False)**; `switch` có 1 cạnh cho mỗi `case` và `default`.
+- Đặt tên node theo **số dòng** trong mã nguồn mục 3 (vd. `N12`, `D15` cho điểm quyết định ở dòng 15).
+
+**2.2. Độ đo C2 – phủ nhánh (Branch / Decision Coverage):** mọi cạnh ra của mọi điểm quyết định đều phải được thực thi **ít nhất một lần** bởi bộ test.
+
+  **Độ phủ C2 = (số nhánh đã được thực thi) / (tổng số nhánh) × 100%**
+
+- C2 mạnh hơn C1 (phủ câu lệnh – mọi câu lệnh chạy ít nhất 1 lần): đạt C2 thì đạt C1, ngược lại không đúng. Ví dụ `if (x > 0) y = 1;` không có `else`: chỉ cần x > 0 là đạt C1, nhưng C2 cần thêm 1 test với x ≤ 0.
+- Với **C2**, điều kiện ghép (`a && b`, `a || b`) giữ nguyên là **một** điểm quyết định, chỉ cần toàn bộ biểu thức nhận cả T và F. (Tách từng điều kiện con là C3 – không yêu cầu ở đây.)
+
+**2.3. Vòng lặp:**
+
+*Liên hệ với C2:* điều kiện lặp là một điểm quyết định. C2 chỉ cần nhánh T (vào thân vòng lặp) và nhánh F (thoát) đều được đi qua. Kiểm thử vòng lặp dưới đây chặt hơn C2, dùng để chọn **số lần lặp** cho các test case.
+
+Chia vòng lặp làm **2 loại**:
+
+| Loại | Ví dụ | Số lần lặp cần test |
+|---|---|---|
+| **Có cận trên n** (hằng số, kích thước input, tham số số lần lặp tối đa) | `for (i < 3)`, `for (i < size_)`, `iteration < max_num_iterations` | **0, 1, 2, m (ở giữa), n−1, n, n+1** |
+| **Không có cận** (thoát khi đạt điều kiện) | `while (!converged)`, `while (true) { ... break; }` | **0, 1, 2** và **mỗi lối thoát** (`break`, `return`, điều kiện sai) ít nhất 1 test |
+
+- **Cận là biến** (kích thước dữ liệu, tham số): chọn giá trị **ngẫu nhiên** trong miền phù hợp với số lần lặp cần đạt (input nhỏ, n ≤ 5 nếu tự chọn được).
+- Số lần lặp nào **không đạt được** (vd. n+1 khi vòng lặp chạy đúng bằng kích thước input, 0 khi điều kiện luôn đúng lần đầu): ghi "không áp dụng / bất khả thi" kèm lý do ở A5, **không bỏ qua im lặng**.
+- Vòng lặp không có cận: chọn input **hội tụ nhanh** để dừng sau vài vòng; nếu không chắc vòng lặp dừng, ghi "nguy cơ không dừng" ở A5.
+
+**2.4. Test path (đường kiểm thử):** dãy node từ node bắt đầu tới node kết thúc, ghi kèm nhãn nhánh, vd. `N10 → D12(T) → N13 → D15(F) → END`.
+
+**2.5. Điều kiện đường đi (path condition):** hội (AND) các điều kiện của các nhánh trên test path. Input của test phải làm điều kiện này đúng.
+
+**2.6. Nhánh bất khả thi (infeasible):** nhánh không có input nào đi tới được (vd. điều kiện mâu thuẫn, code chết). Phải chỉ rõ và giải thích; **không được xoá khỏi mẫu số** để báo đạt 100%.
+
+**2.7. Đặc thù C++ / Ceres:**
+- `CHECK(...)`, `CHECK_EQ(...)`, `DCHECK(...)` của glog: nhánh "điều kiện sai" làm **chương trình dừng** (abort). **Không** cố tình làm CHECK sai; ghi nhánh đó vào mục "Nhánh không thiết kế test" với lý do "nhánh CHECK sai – làm dừng chương trình".
+- Đánh giá ngắn mạch (short-circuit): trong `a && b`, nếu `a` sai thì `b` không được đánh giá.
+- Ngoại lệ (`throw`) do compiler sinh không tính là nhánh.
+- `if constexpr` được quyết định lúc compile → **không** phải điểm quyết định.
+- Nếu cần `#define private public`: đặt **sau** các `#include` của gtest, thư viện chuẩn, Eigen và **trước** `#include` header của Ceres (kèm `#define protected public`).
+
+---
+
+# 3. ĐẦU VÀO
+
+**3.0. Quy ước cho file test**
+
+`#include` được phép dùng:
+```cpp
+#include "gtest/gtest.h"
+#include "ceres/manifold.h"
+#include "ceres/parameter_block.h"
+```
+
+Cách gọi unit:
+- Hàm `public`, gọi trực tiếp.
+
+## Unit: `ceres::internal::ParameterBlock::Plus`  (internal/ceres/parameter_block.h:227–251)
+
+**Mã nguồn (có đánh số dòng):**
+```cpp
+227 |   bool Plus(const double* x, const double* delta, double* x_plus_delta) {
+228 |     if (manifold_ != nullptr) {
+229 |       if (!manifold_->Plus(x, delta, x_plus_delta)) {
+230 |         return false;
+231 |       }
+232 |     } else {
+233 |       VectorRef(x_plus_delta, size_) =
+234 |           ConstVectorRef(x, size_) + ConstVectorRef(delta, size_);
+235 |     }
+236 | 
+237 |     // Project onto the box constraints.
+238 |     if (lower_bounds_.get() != nullptr) {
+239 |       for (int i = 0; i < size_; ++i) {
+240 |         x_plus_delta[i] = std::max(x_plus_delta[i], lower_bounds_[i]);
+241 |       }
+242 |     }
+243 | 
+244 |     if (upper_bounds_.get() != nullptr) {
+245 |       for (int i = 0; i < size_; ++i) {
+246 |         x_plus_delta[i] = std::min(x_plus_delta[i], upper_bounds_[i]);
+247 |       }
+248 |     }
+249 | 
+250 |     return true;
+251 |   }
+```
+
+**CFG:** tool không dựng được cho unit này – hãy **tự dựng** theo mục 2.1 từ mã nguồn trên.
+
+**3.1. Ngữ cảnh tham khảo** (chỉ dùng để viết code đúng, không phải unit cần test):
+
+Khai báo class chứa unit:
+```cpp
+class CERES_NO_EXPORT ParameterBlock {
+ public:
+  using ResidualBlockSet = std::unordered_set<ResidualBlock*>;
+
+  // Create a parameter block with the user state, size, and index specified.
+  // The size is the size of the parameter block and the index is the position
+  // of the parameter block inside a Program (if any).
+  ParameterBlock(double* user_state, int size, int index)
+      : user_state_(user_state),
+        size_(size),
+        state_(user_state),
+        index_(index) {}
+
+  ParameterBlock(double* user_state, int size, int index, Manifold* manifold)
+      : user_state_(user_state),
+        size_(size),
+        state_(user_state),
+        index_(index) {
+    if (manifold != nullptr) {
+      SetManifold(manifold);
+    }
+  }
+
+  // The size of the parameter block.
+  int Size() const { return size_; }
+
+  // Manipulate the parameter state.
+  bool SetState(const double* x) {
+    CHECK(x != nullptr) << "Tried to set the state of constant parameter "
+                        << "with user location " << user_state_;
+    CHECK(!IsConstant()) << "Tried to set the state of constant parameter "
+                         << "with user location " << user_state_;
+
+    state_ = x;
+    return UpdatePlusJacobian();
+  }
+
+  // Copy the current parameter state out to x. This is "GetState()" rather than
+  // simply "state()" since it is actively copying the data into the passed
+  // pointer.
+  void GetState(double* x) const {
+    if (x != state_) {
+      std::copy(state_, state_ + size_, x);
+    }
+  }
+
+  // Direct pointers to the current state.
+  const double* state() const { return state_; }
+  const double* user_state() const { return user_state_; }
+  double* mutable_user_state() { return user_state_; }
+  const Manifold* manifold() const { return manifold_; }
+  Manifold* mutable_manifold() { return manifold_; }
+
+  // Set this parameter block to vary or not.
+  void SetConstant() { is_set_constant_ = true; }
+  void SetVarying() { is_set_constant_ = false; }
+  bool IsConstant() const { return (is_set_constant_ || TangentSize() == 0); }
+
+  double UpperBound(int index) const {
+    return (upper_bounds_ ? upper_bounds_[index]
+                          : std::numeric_limits<double>::max());
+  }
+
+  double LowerBound(int index) const {
+    return (lower_bounds_ ? lower_bounds_[index]
+                          : -std::numeric_limits<double>::max());
+  }
+
+  bool IsUpperBounded() const { return (upper_bounds_ == nullptr); }
+  bool IsLowerBounded() const { return (lower_bounds_ == nullptr); }
+
+  // This parameter block's index in an array.
+  int index() const { return index_; }
+  void set_index(int index) { index_ = index; }
+
+  // This parameter offset inside a larger state vector.
+  int state_offset() const { return state_offset_; }
+  void set_state_offset(int state_offset) { state_offset_ = state_offset; }
+
+  // This parameter offset inside a larger delta vector.
+  int delta_offset() const { return delta_offset_; }
+  void set_delta_offset(int delta_offset) { delta_offset_ = delta_offset; }
+
+  // Methods relating to the parameter block's manifold.
+
+  // The local to global jacobian. Returns nullptr if there is no manifold for
+  // this parameter block. The returned matrix is row-major and has Size() rows
+  // and TangentSize() columns.
+  const double* PlusJacobian() const { return plus_jacobian_.get(); }
+
+  int TangentSize() const {
+    return (manifold_ == nullptr) ? size_ : manifold_->TangentSize();
+  }
+
+  // Set the manifold. The parameter block does not take ownership of
+  // the manifold.
+  void SetManifold(Manifold* new_manifold) {
+    // Nothing to do if the new manifold is the same as the old
+    // manifold.
+    if (new_manifold == manifold_) {
+      return;
+    }
+
+    if (new_manifold == nullptr) {
+      manifold_ = nullptr;
+      plus_jacobian_ = nullptr;
+      return;
+    }
+
+    CHECK_EQ(new_manifold->AmbientSize(), size_)
+        << "The parameter block has size = " << size_
+        << " while the manifold has ambient size = "
+        << new_manifold->AmbientSize();
+
+    CHECK_GE(new_manifold->TangentSize(), 0)
+        << "Invalid Manifold. Manifolds must have a "
+        << "non-negative dimensional tangent space.";
+
+    manifold_ = new_manifold;
+    plus_jacobian_ = std::make_unique<double[]>(manifold_->AmbientSize() *
+```
+
+Các kiểu dữ liệu được dùng:
+```cpp
+// (không có)
+```
+
+Các hàm unit gọi tới (chỉ signature):
+```cpp
+bool ceres::Manifold::Plus(const double *, const double *, double *);
+```
+
+Hàm hỗ trợ tạo input (BẮT BUỘC dùng nếu có):
+```cpp
+// (không có)
+```
+
+Test có sẵn của Ceres để tham khảo cách khởi tạo object:
+```cpp
+}
+
+TEST(ParameterBlock, SetManifoldAndNormalOperation) {
+  double x[3] = {1.0, 2.0, 3.0};
+
+}
+
+TEST(ParameterBlock, PlusWithNoManifold) {
+  double x[2] = {1.0, 2.0};
+```
+
+---
+
+# 4. YÊU CẦU ĐỐI VỚI BỘ TEST (để đạt C2)
+
+Bộ test case của unit phải thoả mãn:
+1. **Mỗi nhánh T và F của mỗi điểm quyết định** được ít nhất một test case đi qua (mục 2.2).
+2. **Mỗi vòng lặp** được phân loại (có cận / không có cận) và có test cho các số lần lặp ở bảng mục 2.3.
+3. **Mỗi test case gắn với đúng một test path** và ghi rõ các nhánh nó phủ (vd. `D12-T, D15-F`).
+4. **Số test case tối thiểu:** một test path nên phủ nhiều nhánh nhất có thể; không tạo test trùng nhánh.
+5. **Input:**
+   - Giải điều kiện đường đi thành **miền giá trị** cho từng tham số / trạng thái object (vd. `n ∈ [1, 5]`, `x[0] < lower_bound`).
+   - **Chọn giá trị ngẫu nhiên trong miền đó**, dùng bộ sinh số ngẫu nhiên có **seed cố định** (`std::mt19937 rng(<số hiệu test>)`) để chạy lại cho cùng kết quả.
+   - Kích thước nhỏ (mảng, ma trận ≤ 5 phần tử), không dùng file, mạng, thread.
+6. **Nhánh bất khả thi** và **nhánh CHECK sai**: không viết test; liệt kê và giải thích (mục 2.6, 2.7).
+7. **Không có EO:** không viết `EXPECT_EQ/ASSERT_*` so sánh kết quả. Chỉ được kiểm tra điều kiện tiền đề để chắc chắn đã đi đúng nhánh (vd. `ASSERT_EQ(pb.Size(), n)` sau khi khởi tạo).
+
+---
+
+# 5. CÁC BƯỚC THỰC HIỆN
+
+1. **Đọc** mã nguồn unit và ngữ cảnh mục 3.1: tham số, trạng thái object (biến thành viên) ảnh hưởng tới điều kiện, các hàm được gọi.
+2. **Chuẩn hoá CFG:** đọc CFG dựng sẵn ở mục 3 theo "Cách đọc CFG", đối chiếu với mã nguồn, gộp chuỗi `&&`/`||` và khối `CHECK`, đổi tên node theo số dòng → bảng A1. (Nếu không có CFG dựng sẵn: tự dựng theo mục 2.1.)
+3. **Liệt kê nhánh cần phủ** (cặp T/F của từng điểm quyết định) → đây là **mẫu số** của độ phủ C2. Đánh dấu nhánh bất khả thi và nhánh CHECK sai.
+4. **Chọn tập test path** ít nhất phủ hết các nhánh khả thi.
+5. **Giải điều kiện đường đi** của từng test path → miền giá trị input → chọn input ngẫu nhiên trong miền (mục 4.5).
+6. **Viết code GoogleTest:** khởi tạo object/tham số cho từng test path, gọi unit **đúng một lần** cho mỗi test.
+7. **Tự kiểm tra** trước khi trả lời: mỗi nhánh khả thi đã có test chưa; mọi tên hàm/kiểu có trong mục 3 không; mọi `#include` có trong danh sách cho phép không; code có compile được không (đủ namespace, đủ dấu `;`).
+
+---
+
+# 6. KẾT QUẢ CẦN TRẢ VỀ (đúng thứ tự, định dạng Markdown)
+
+## Phần A – Phân tích unit
+
+**A1. CFG (đã chuẩn hoá)**
+- Bảng node: `| Node | Dòng | Khối Clang tương ứng | Nội dung | Loại (khối lệnh / quyết định / bắt đầu / kết thúc) |`
+- Bảng cạnh: `| Từ | Đến | Nhãn (T/F/case) |`
+- Sơ đồ Mermaid (`flowchart TD`).
+- Độ phức tạp cyclomatic: V(G) = E − N + 2 = (số điểm quyết định) + 1, ghi rõ phép tính.
+
+**A2. Danh sách nhánh (mẫu số C2)**
+`| Mã nhánh | Điểm quyết định | Điều kiện | Nhánh | Khả thi? | Ghi chú |`
+
+**A3. Test path**
+- Bảng vòng lặp (nếu có): `| Vòng lặp (dòng) | Có cận / không có cận | n | Số lần lặp cần test | Không áp dụng / bất khả thi (lý do) |`
+- `| Path | Dãy node | Số lần lặp (nếu đi qua vòng lặp) | Điều kiện đường đi | Nhánh phủ |`
+
+**A4. Bộ test case**
+`| Test ID | Path | Miền giá trị input | Input đã chọn (seed) | Nhánh phủ |`
+
+**A5. Độ phủ C2 dự kiến**
+- Ma trận `| Mã nhánh | Test phủ |`
+- `C2 dự kiến = <số nhánh có test> / <tổng số nhánh> = <x>%` – ghi rõ là **dự kiến**, chưa đo; độ phủ thật sẽ đo bằng gcov.
+- Danh sách nhánh không thiết kế test kèm lý do.
+
+## Phần B – File test
+
+Đúng **một** khối code, mở đầu bằng dòng `// FILE: u0553_test.cc`:
+```cpp
+// FILE: u0553_test.cc
+#include "gtest/gtest.h"
+// ... include trong danh sách cho phép
+namespace ceres::internal {   // hoặc namespace của unit
+// Mỗi test case ở A4 là một TEST, tên: TEST(Gen_<Class>_<Unit>, <TestID>_<mã nhánh>)
+// Comment ngay trên mỗi TEST: path và các nhánh phủ.
+}
+```
+Trạng thái: **Not Run** (chưa compile/chạy).
+
+---
+
+# 7. RÀNG BUỘC
+
+- Chỉ dùng hàm, kiểu, `#include` có trong mục 3. **Không bịa API.** Nếu thiếu thông tin để gọi được unit, ghi rõ thiếu gì trong A5, không đoán.
+- Không sửa mã nguồn Ceres, không mock chính unit đang test.
+- Không viết assertion về giá trị kết quả (không có EO).
+- Không tuyên bố đã đạt độ phủ đo được; chỉ ghi độ phủ **dự kiến**.
+- Không dùng `...` thay cho phần code cần thiết. Code phải đầy đủ, compile được.
+- Không giải thích lý thuyết ngoài các bảng ở mục 6.

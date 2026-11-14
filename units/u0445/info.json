@@ -1,0 +1,22 @@
+{
+ "id": "u0445",
+ "name": "ceres::internal::ArraySelector::ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, true>",
+ "file": "include/ceres/internal/array_selector.h",
+ "lines": [
+  82,
+  82
+ ],
+ "signature": "ceres::internal::ArraySelector::ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, true>",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 445
+}

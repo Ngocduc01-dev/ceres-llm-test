@@ -1,0 +1,22 @@
+{
+ "id": "u1053",
+ "name": "ceres::OrderedGroups::Reverse",
+ "file": "include/ceres/ordered_groups.h",
+ "lines": [
+  125,
+  144
+ ],
+ "signature": "ceres::OrderedGroups::Reverse",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1053
+}

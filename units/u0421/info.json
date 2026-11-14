@@ -1,0 +1,20 @@
+{
+ "id": "u0421",
+ "name": "ceres::internal::SuiteSparse::Free",
+ "file": "internal/ceres/suitesparse.h",
+ "lines": [
+  289,
+  289
+ ],
+ "signature": "ceres::internal::SuiteSparse::Free",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 421
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1071",
+ "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::SetZero",
+ "file": "internal/ceres/block_random_access_diagonal_matrix.cc",
+ "lines": [
+  85,
+  88
+ ],
+ "signature": "ceres::internal::BlockRandomAccessDiagonalMatrix::SetZero",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1071
+}

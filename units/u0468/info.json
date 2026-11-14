@@ -1,0 +1,20 @@
+{
+ "id": "u0468",
+ "name": "ceres::internal::BFGS::BFGS",
+ "file": "internal/ceres/line_search_direction.cc",
+ "lines": [
+  146,
+  162
+ ],
+ "signature": "ceres::internal::BFGS::BFGS",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 468
+}

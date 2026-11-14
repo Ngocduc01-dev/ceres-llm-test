@@ -1,0 +1,20 @@
+{
+ "id": "u0400",
+ "name": "ceres::internal::ProgramEvaluator::EvaluateScratch::Init",
+ "file": "internal/ceres/program_evaluator.h",
+ "lines": [
+  324,
+  336
+ ],
+ "signature": "ceres::internal::ProgramEvaluator::EvaluateScratch::Init",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 400
+}

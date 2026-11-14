@@ -1,0 +1,20 @@
+{
+ "id": "u1049",
+ "name": "ceres::GradientProblem::Evaluate",
+ "file": "internal/ceres/gradient_problem.cc",
+ "lines": [
+  68,
+  78
+ ],
+ "signature": "ceres::GradientProblem::Evaluate",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 1049
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1274",
+ "name": "ceres::(anonymous)::StringifyOrdering",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  496,
+  506
+ ],
+ "signature": "ceres::(anonymous)::StringifyOrdering",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1274
+}

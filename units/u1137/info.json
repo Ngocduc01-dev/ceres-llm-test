@@ -1,0 +1,20 @@
+{
+ "id": "u1137",
+ "name": "ceres::internal::InnerProductComputer::ComputeNonzeros",
+ "file": "internal/ceres/inner_product_computer.cc",
+ "lines": [
+  64,
+  96
+ ],
+ "signature": "ceres::internal::InnerProductComputer::ComputeNonzeros",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1137
+}

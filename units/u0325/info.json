@@ -1,0 +1,20 @@
+{
+ "id": "u0325",
+ "name": "ceres::internal::LineSearchFunction::position",
+ "file": "internal/ceres/line_search.h",
+ "lines": [
+  237,
+  237
+ ],
+ "signature": "ceres::internal::LineSearchFunction::position",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 325
+}

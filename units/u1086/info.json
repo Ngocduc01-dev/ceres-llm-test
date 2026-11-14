@@ -1,0 +1,20 @@
+{
+ "id": "u1086",
+ "name": "ceres::internal::BlockRandomAccessSparseMatrix::GetCell",
+ "file": "internal/ceres/block_random_access_sparse_matrix.cc",
+ "lines": [
+  100,
+  117
+ ],
+ "signature": "ceres::internal::BlockRandomAccessSparseMatrix::GetCell",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1086
+}

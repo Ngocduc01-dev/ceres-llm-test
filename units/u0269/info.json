@@ -1,0 +1,22 @@
+{
+ "id": "u0269",
+ "name": "ceres::internal::ConcurrentQueue::Push",
+ "file": "internal/ceres/concurrent_queue.h",
+ "lines": [
+  84,
+  88
+ ],
+ "signature": "ceres::internal::ConcurrentQueue::Push",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 269
+}

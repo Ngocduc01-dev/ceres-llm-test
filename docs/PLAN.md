@@ -15,6 +15,21 @@
 
 **Những phần bỏ so với khung tổng quát:** lọc bớt target (phải làm tất cả), oracle / assertion đúng (không có EO), mutation testing, giá trị biên theo đặc tả.
 
+**Các quyết định đã chốt:**
+
+| Vấn đề | Quyết định | Chi tiết |
+|---|---|---|
+| Phiên bản Ceres | Release **2.2.0** | `docs/baseline-comparison.md` |
+| Tiêu chí phủ | **C2** (phủ nhánh) | mục 1 |
+| Đơn vị prompt | **1 prompt = 1 unit** (1540 prompt, chạy bằng script) | Phase 5 |
+| CFG | **Tool dựng** – Clang Static Analyzer `debug.DumpCFG` + script lọc nhiễu, gắn số dòng; LLM đọc và chuẩn hoá | Phase 4 |
+| Prompt | 1 prompt chung 7 mục | `prompts/master_prompt.md`, `docs/prompt-design.md` |
+| EO | Không có – không viết assertion so sánh kết quả | mục 1 |
+| Input | Chọn ngẫu nhiên trong miền thoả điều kiện đường đi, seed cố định | Phase 5 |
+| Vòng lặp | 2 loại: **có cận** (0, 1, 2, m, n−1, n, n+1) / **không có cận** (0, 1, 2 + mỗi lối thoát); cận là biến → chọn ngẫu nhiên | `prompts/master_prompt.md` mục 2.3 |
+| Lưu kết quả | Mỗi unit 1 thư mục `units/<id>/`: `prompt.md`, `cfg.txt` (bản đã lọc), `response.md` (bảng nhánh, test path, test case), `<id>_test.cc` | Phase 5 |
+| Không làm | Fuzzing (OSS-Fuzz-gen) – quá công | `docs/survey-llm-testgen.md` |
+
 ---
 
 ## 2. Tổng quan pipeline
@@ -26,7 +41,7 @@ Phase 1  Code graph ──► Phase 2  Liệt kê & phân loại unit
                               │
               ┌───────────────┘
               ▼
-Phase 3  Gom context ─► Phase 4  Lập kế hoạch nhánh ─► Phase 5  Sinh test
+Phase 3  Gom context ─► Phase 4  CFG (Clang) ─► Phase 5  Sinh test (1 prompt/unit)
                                                           ▲        │
                                                           │        ▼
                                           nhánh chưa phủ  └── Phase 6  Compile / chạy / đo phủ
@@ -131,29 +146,38 @@ Phase 3  Gom context ─► Phase 4  Lập kế hoạch nhánh ─► Phase 5  S
 
 **Giới hạn token:** trần ~6–8k token. Vượt trần thì bỏ theo thứ tự: test mẫu → callee cách 2 bước → kiểu ít quan trọng.
 
-**Đầu ra:** `context/<id>.txt`, `build_context.py`.
+**Đầu ra:** `data/context/<id>.txt`, `scripts/build_context.py`.
+
+**Trạng thái: ✅ xong** (1540 context, trung bình ~2.2k token). Lỗi cần sửa trước Phase 5 (từ kiểm tra 1540 file):
+1. 80 unit `static`: `#include "internal/ceres/x.cc"` sai đường dẫn → phải là `#include "ceres/x.cc"`.
+2. 332 unit (25 class dài > 120 dòng): khai báo class bị cắt → thay bằng **bản tóm tắt class** (constructor, signature method, biến thành viên) lấy từ `graph.db`.
+3. Thư mục `helpers/` chưa có → 396 unit "khó" thiếu hàm tạo input.
+4. `#define private public` phải đặt sau include gtest/thư viện chuẩn/Eigen (đã ghi vào prompt chung).
 
 ---
 
 ### Phase 4 – Lập kế hoạch test theo C2
 **Phụ trách:** C
 
-**Mục tiêu:** biết unit có những nhánh nào và input nào đi vào từng nhánh.
+**Mục tiêu:** mỗi unit có **CFG dựng bằng tool** (bản đã lọc nhiễu) để đưa vào prompt.
 
-**Các bước:**
-1. **Lấy danh sách nhánh mục tiêu từ gcov** (`gcovr --json`, lọc theo dòng của unit), không tự dựng CFG để đo – vì độ phủ cuối cùng do gcov đo.
-2. Dùng AST **gắn mỗi nhánh gcov với điều kiện trong source**, vd. "dòng 134: `if (num_rows == 0)` – cần True và False" → đưa vào prompt.
-3. Vòng lặp: 0 lần, 1 lần, nhiều lần.
-4. Cho LLM viết **kế hoạch ngắn** trước khi viết code: mỗi nhánh cần input dạng gì.
-5. **Bộ sinh ngẫu nhiên** (seed cố định) theo kiểu tham số:
-   - `double`: 0, âm, dương, rất nhỏ, rất lớn, NaN, Inf, ngẫu nhiên
-   - `int`: 0, 1, -1, ngẫu nhiên trong khoảng hợp lý
-   - Eigen: kích thước ngẫu nhiên 0–5, giá trị ngẫu nhiên
-   - con trỏ: `nullptr` và con trỏ hợp lệ
+**Đã chốt:** CFG do **Clang Static Analyzer** dựng (`debug.DumpCFG`, có sẵn trong clang-18 của Docker), **không** để LLM tự dựng và **không** tự viết thuật toán dựng CFG.
+- Lý do: Clang hiểu đúng C++ (macro đã bung, `#if` theo đúng cờ build, `switch`/`break`/`continue`/`try`); LLM đọc source thô sẽ vẽ cả code trong `#if` bị tắt; mẫu số C2 cố định giữa các lần chạy.
+- CFG là **trong một hàm** (intra-procedural): mỗi unit 1 CFG, không phụ thuộc hàm khác → dựng song song, không cần thứ tự.
 
-   Random chạy trước để phủ nhánh dễ; LLM xử lý nhánh random không vào được.
+**Các bước (script `scripts/build_cfg.py`):**
 
-**Đầu ra:** `plan/<id>.json` (nhánh, điều kiện, input gợi ý), `random_gen.py`.
+| Mức | Việc | Trạng thái |
+|---|---|---|
+| 1. Chạy + lọc (bắt buộc) | Với mỗi unit: lấy cờ compile từ `compile_commands.json`, chạy `clang++ --analyze -Xclang -analyzer-checker=debug.DumpCFG` cho đúng hàm (`-analyze-function`), tắt khối ngầm bằng `-analyzer-config`, bỏ dòng `ImplicitCastExpr` → `data/cfg/<id>.txt` | cần làm |
+| 2. Gắn số dòng (nên có) | Gắn `@L<số dòng>` cho khối quyết định (`T: if/for/while/...`), đối chiếu với node `IF_STMT`/`FOR_STMT`… trong AST Phase 1 | cần làm |
+| 3. JSON + gom `&&`/`||` + Mermaid + V(G) | Chỉ làm nếu chạy thử thấy LLM đọc text CFG sai nhiều | dự phòng |
+
+- Unit nào Clang không dựng được CFG → để trống, prompt tự chuyển sang "LLM tự dựng CFG".
+- **Cần thử trước:** cách `-analyze-function` nhận tên method/overload/template (có thể phải ghi kèm kiểu tham số).
+- Chỉ lưu **bản đã lọc** (không lưu output thô của Clang).
+
+**Đầu ra:** `units/<id>/cfg.txt`.
 
 ---
 
@@ -177,14 +201,55 @@ Phase 3  Gom context ─► Phase 4  Lập kế hoạch nhánh ─► Phase 5  S
 | Template | Instantiate với kiểu đã chọn ở Phase 2 |
 | Dependency nặng | Class con giả lập / stub (vd. `CostFunction` đơn giản) |
 
-**Prompt gồm:** context (P3) + kế hoạch (P4) + quy ước file test + 1 test mẫu hoàn chỉnh + yêu cầu chỉ trả về 1 code block.
+**Đã chốt:**
+- **1 prompt = 1 unit** (1 hàm hoặc 1 method) → **1540 prompt**, chạy bằng script. Theo ý thầy ("không có unit nào lớn đến mức AI không xử lý hết", "chỉ làm unit testing"), theo cách Google/IBM/Huawei làm (khảo sát: `docs/survey-llm-testgen.md`), và vì CFT/C2 tính trên từng unit.
+- **Prompt chung:** [`prompts/master_prompt.md`](../prompts/master_prompt.md), giải thích bố cục: [`docs/prompt-design.md`](prompt-design.md). 7 mục: Vai trò → Khái niệm (CFG, **C2 + công thức**, vòng lặp có cận / không có cận, test path, path condition, nhánh bất khả thi, `CHECK`) → Đầu vào (code đánh số dòng, **CFG Clang + cách đọc**, context Phase 3) → Yêu cầu bộ test → Các bước → Kết quả (bảng CFG, nhánh, path, test case, C2 dự kiến + 1 file GoogleTest) → Ràng buộc.
+- **Không có EO:** không viết assertion so sánh kết quả; chỉ cần đi qua nhánh.
+- **Input:** giải điều kiện đường đi → miền giá trị → **chọn ngẫu nhiên trong miền** với `std::mt19937` seed cố định.
+- **Vòng lặp:** có cận → 0, 1, 2, m, n−1, n, n+1 lần; không có cận → 0, 1, 2 lần + mỗi lối thoát 1 test; cận là biến → chọn ngẫu nhiên.
+- **Model:** Claude Sonnet 5.5, effort low, **gọi qua Claude Code CLI** (dùng gói Claude sẵn có, không cần API key):
+  ```bash
+  claude -p --model claude-sonnet-5-5 --effort low --tools "" --output-format json --no-session-persistence < units/<id>/prompt.md
+  ```
+  - `--tools ""`: tắt mọi tool → model chỉ đọc prompt và trả lời (đúng là "1 lần gọi LLM").
+  - Chạy **tuần tự**, gặp giới hạn lượt dùng thì **dừng**; lần sau chạy lại sẽ **bỏ qua unit đã có `response.md`** → gọi được đến đâu thì lưu đến đó.
+  - Cần đăng nhập CLI một lần trong terminal (`claude` rồi `/login`).
+- **Thứ tự chạy:** 20 unit smoke test → toàn bộ theo `topo_level` từ 0 lên.
 
-**Đầu ra:** `generate.py` (vào: id unit → ra: file `.cc`).
+**Script:**
+**Script (đã viết):**
+
+| Script | Chạy bằng | Việc |
+|---|---|---|
+| `scripts/init_units.py` | Python 3 (WSL/Docker) | tạo `units/<id>/info.json` cho 1540 unit ✅ đã chạy |
+| `scripts/render_prompt.py` | Python 3 | `prompts/master_prompt.md` + `data/context/<id>.txt` + mã nguồn (đánh số dòng) + `units/<id>/cfg.txt` → `units/<id>/prompt.md`. Chưa có `cfg.txt` thì prompt tự chuyển sang "LLM tự dựng CFG" |
+| `scripts/generate.mjs` | Node (Windows, cùng máy có `claude`) | gọi Claude Code CLI cho từng prompt (thứ tự `topo_level`) → `response.md` + `<id>_test.cc`; bỏ qua unit đã có `response.md`; gặp lỗi đăng nhập / hết lượt thì dừng; log `logs/raw/generate.log` |
+
+```bash
+tar -xzf data_phase3.tar.gz data/context            # context Phase 3 (1 lần)
+python3 scripts/render_prompt.py --smoke            # ghép prompt 20 unit smoke test (sau Phase 4: chạy lại để có CFG)
+node scripts/generate.mjs --smoke                   # gọi Claude cho 20 unit
+node scripts/generate.mjs --limit 100               # các lần sau: 100 unit tiếp theo, chạy đến đâu lưu đến đó
+```
+
+**Đầu ra – mỗi unit 1 thư mục (tài liệu của từng prompt):**
+```
+units/u0553/
+├── info.json       # thông tin unit (tên, file, dòng, số nhánh, độ khó, cách gọi…)
+├── cfg.txt         # Phase 4 – CFG Clang đã lọc nhiễu, gắn số dòng
+├── prompt.md       # đúng prompt đã gửi
+├── response.md     # nguyên văn câu trả lời: bảng CFG, danh sách nhánh, test path, test case, C2 dự kiến
+└── u0553_test.cc   # file test tách từ response
+```
 
 ---
 
 ### Phase 6 – Compile, chạy và vòng lặp phủ nhánh
 **Phụ trách:** D (compile + sửa), A (đo phủ)
+
+**Chia 2 đợt:**
+- **Tuần này:** chạy **1 lượt** bước 1–4 (compile, chạy, đo phủ), **chưa sửa gì**; thống kê lỗi theo loại (thiếu include, sai kiểu, không gọi được private, crash, timeout…). Đây là đầu vào cho tuần 12–13.
+- **Tuần 12–13:** sửa lỗi – **lỗi prompt** (lặp lại nhiều unit → sửa khuôn/context, sinh lại cả nhóm) và **lỗi test** (riêng từng file → vòng sửa compile tối đa 3 lần, vòng phủ thêm nhánh tối đa 3–5 vòng). Cảnh báo từ nghiên cứu SAP HANA: sửa nhiều vòng → LLM có xu hướng viết test rỗng để compile được → kiểm tra test có thật sự gọi unit.
 
 **Các bước:**
 1. **Compile:** target `gen_tests` trong CMake, link `ceres` bản coverage, dùng `ccache`.
@@ -271,21 +336,23 @@ Nguyên tắc: **LLM → random → đánh dấu thất bại có lý do.** Unit
 
 ## 5. Phân công và lịch
 
-| Người | Phase | Tuần 1 | Tuần 2 | Tuần 3+ |
-|---|---|---|---|---|
-| A | 0 (build), 6 (đo phủ) | Docker, build, baseline | Script đo phủ theo unit, hook `__gcov_dump` | Hỗ trợ sửa lỗi build/đo |
-| B | 0 (parse), 1, 2 | Parse, code graph | `units.json`, phân loại, thứ tự | Sửa unit parse lỗi |
-| C | 3, 4 | Thử prompt tay trên ~10 unit dễ | `build_context.py`, kế hoạch nhánh, bộ sinh random | Tinh chỉnh context cho unit khó |
-| D | 5, 6 (compile/sửa) | Quy ước file test, CMake target | `generate.py`, vòng sửa lỗi + vòng phủ | Tăng tỉ lệ compile được |
-| E | 7, 8 | Helper tạo input Ceres (`Problem`, ma trận) | `run_all.py`, cache, log | Chạy toàn bộ, hậu xử lý, báo cáo |
+**Trạng thái:** Phase 0 ✅ · Phase 1 ✅ · Phase 2 ✅ · Phase 3 ✅ (còn 4 lỗi cần sửa) · Phase 4–8 ⏳
 
-**Chốt ngay buổi đầu:**
-1. Format `units.json` (B → C, D).
-2. Format `results/<id>.json` (D → E).
-3. Phạm vi unit: thư mục nào trong phạm vi, cái gì bị loại.
-4. Model LLM, API key dùng chung, trần chi phí.
+**Tuần này – mục tiêu: sinh được test cho toàn bộ 1540 unit và chạy 1 lượt**
 
-**Mốc hết tuần 2:** chạy trọn P3 → P6 trên ~20 unit. Chưa được thì dồn người vào chỗ kẹt trước khi chạy toàn bộ.
+| Người | Việc | Đầu ra |
+|---|---|---|
+| A | Phase 4: `build_cfg.py` mức 1–2 (Clang `DumpCFG` → lọc → gắn số dòng); thử `-analyze-function` trên 20 unit smoke test | `units/<id>/cfg.txt` |
+| B | Phase 3: sửa 4 lỗi context (include `.cc`, tóm tắt class, …) | `data/context/` |
+| C | Phase 5: `render_prompt.py` điền `prompts/master_prompt.md`; soát tay 10 prompt | `units/<id>/prompt.md` |
+| D | Phase 5: `generate.py` (Claude Code CLI, Sonnet 5.5 low, chạy tiếp được, tách code) | `units/<id>/response.md`, `<id>_test.cc` |
+| E | Thư viện `helpers/` tạo input cho unit "khó" (`Problem`, `ParameterBlock`, `BlockSparseMatrix`…); Phase 6 lượt 1: compile/chạy/đo phủ + thống kê lỗi | `helpers/`, `results/` |
+
+**Mốc:** chạy trọn P3 → P6 trên **20 unit smoke test** trước; ổn mới chạy cả 1540 unit.
+
+**Tuần 12–13:** sửa lỗi prompt + lỗi test (Phase 6 vòng lặp), hậu xử lý (Phase 7), báo cáo (Phase 8).
+
+**Cần làm:** đăng nhập Claude Code CLI trên máy chạy `generate.py`.
 
 ---
 
@@ -329,3 +396,44 @@ project/
 ├── logs/
 └── report/
 ```
+
+---
+
+## 8. Tài liệu tham khảo
+
+### 8.1. Sinh unit test bằng LLM
+
+Khảo sát cách các công ty (Meta, Google, IBM, Huawei, Tencent, SAP) làm và cách áp dụng cho bài tập: [`docs/survey-llm-testgen.md`](survey-llm-testgen.md).
+
+| Tài liệu | Nội dung chính | Dùng cho phase |
+|---|---|---|
+| Wang et al., *Software Testing with Large Language Models: Survey, Landscape, and Vision*, IEEE TSE 2024 – [arXiv:2307.07221](https://arxiv.org/abs/2307.07221) | Tổng quan 102 nghiên cứu dùng LLM cho kiểm thử; các thách thức: độ phủ, test oracle | Tổng quan, phần mở đầu báo cáo |
+| Schäfer et al., *An Empirical Evaluation of Using Large Language Models for Automated Unit Test Generation* (TestPilot), IEEE TSE 2024 – [arXiv:2302.06527](https://arxiv.org/abs/2302.06527) | Prompt gồm signature + thân hàm + ví dụ sử dụng; test lỗi thì gửi lại lỗi cho LLM sửa; đo statement/branch coverage | 3, 5, 6 |
+| Chen et al., *ChatUniTest: A Framework for LLM-Based Test Generation*, FSE 2024 demo – [arXiv:2305.04764](https://arxiv.org/abs/2305.04764) | "Adaptive focal context": chọn context đưa vào prompt theo giới hạn token; vòng sinh → kiểm tra → sửa | 3, 5, 6 |
+| Wang et al., *HITS: High-coverage LLM-based Unit Test Generation via Method Slicing*, 2024 – [arXiv:2408.11324](https://arxiv.org/abs/2408.11324) | Hàm phức tạp (cyclomatic cao) chia thành nhiều đoạn, sinh test từng đoạn → tăng phủ nhánh | 4, 5 (nhóm C, D) |
+| Pizzorno & Berger, *CoverUp: Coverage-Guided LLM-Based Test Generation* – [arXiv:2403.16218](https://arxiv.org/abs/2403.16218) | Dùng dữ liệu độ phủ chỉ cho LLM các dòng/nhánh chưa phủ, lặp hội thoại → tăng phủ | 4, 6 |
+| Alshahwan et al., *Automated Unit Test Improvement using Large Language Models at Meta* (TestGen-LLM), FSE 2024 – [arXiv:2402.09171](https://arxiv.org/abs/2402.09171) | Lọc test sinh ra: phải build được, chạy ổn định, tăng độ phủ mới giữ lại | 6, 7 |
+| Bhargava et al., *CPP-UT-Bench: Can LLMs Write Complex Unit Tests in C++?* – [arXiv:2412.02735](https://arxiv.org/abs/2412.02735) | Benchmark sinh unit test C++ (14 dự án mã nguồn mở) | Đối chiếu kết quả với C++ |
+| [qodo-ai/qodo-cover](https://github.com/qodo-ai/qodo-cover) (trước là Cover-Agent) | Mã nguồn mở cài đặt lại TestGen-LLM: vòng sinh → chạy → đo phủ → lọc | Tham khảo cài đặt Phase 5–7 |
+
+### 8.2. GCC, gcov, gcovr (Phase 0, đo độ phủ)
+
+| Tài liệu | Nội dung |
+|---|---|
+| [GCC – Gcov](https://gcc.gnu.org/onlinedocs/gcc/Gcov.html) | Giới thiệu gcov, cách đọc kết quả |
+| [GCC – Invoking Gcov](https://gcc.gnu.org/onlinedocs/gcc/Invoking-Gcov.html) | Tuỳ chọn `-b` (nhánh), `--conditions` (điều kiện con, cần `-fcondition-coverage`) |
+| [GCC – Instrumentation Options](https://gcc.gnu.org/onlinedocs/gcc/Instrumentation-Options.html) | Cờ `--coverage`, `-fprofile-update=atomic`, `-fcondition-coverage` |
+| [gcovr User Guide](https://gcovr.com/en/stable/) | Lọc file (`--filter`, `--exclude`), bỏ nhánh exception (`--exclude-throw-branches`), xuất HTML |
+| [gcovr – JSON Output](https://gcovr.com/en/stable/output/json.html) | Định dạng `coverage.json` (từng nhánh) và `--json-summary` – Phase 4/6 đọc file này |
+
+### 8.3. CMake, libclang (Phase 0–2)
+
+| Tài liệu | Nội dung |
+|---|---|
+| [Ceres Solver – Installation](http://ceres-solver.org/installation.html) | Dependency và option CMake của Ceres |
+| [CMake – CMAKE_EXPORT_COMPILE_COMMANDS](https://cmake.org/cmake/help/latest/variable/CMAKE_EXPORT_COMPILE_COMMANDS.html) | Sinh `compile_commands.json` |
+| [Clang – JSON Compilation Database](https://clang.llvm.org/docs/JSONCompilationDatabase.html) | Định dạng `compile_commands.json` |
+| [Clang – libclang](https://clang.llvm.org/docs/LibClang.html) và [C API (Doxygen)](https://clang.llvm.org/doxygen/group__CINDEX.html) | API chính thức: cursor, kind, type, token |
+| [`clang/bindings/python/clang/cindex.py`](https://github.com/llvm/llvm-project/blob/main/clang/bindings/python/clang/cindex.py) | Mã nguồn binding Python – tài liệu đầy đủ nhất cho `clang.cindex` |
+| Eli Bendersky, [Parsing C++ in Python with Clang](https://eli.thegreenplace.net/2011/07/03/parsing-c-in-python-with-clang) | Hướng dẫn nhập môn: tạo `Index`, parse, duyệt cây bằng `get_children()` |
+| [Clang – class `CFG` (Doxygen)](https://clang.llvm.org/doxygen/classclang_1_1CFG.html) | CFG của Clang – dùng cho Phase 4 (dựng CFG, test path) |

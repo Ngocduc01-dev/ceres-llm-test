@@ -1,0 +1,20 @@
+{
+ "id": "u0406",
+ "name": "ceres::internal::SchurEliminator::Chunk::Chunk",
+ "file": "internal/ceres/schur_eliminator.h",
+ "lines": [
+  278,
+  278
+ ],
+ "signature": "ceres::internal::SchurEliminator::Chunk::Chunk",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 406
+}

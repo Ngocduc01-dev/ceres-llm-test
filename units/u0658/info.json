@@ -1,0 +1,20 @@
+{
+ "id": "u0658",
+ "name": "ceres::internal::EigenDenseQR::Factorize",
+ "file": "internal/ceres/dense_qr.cc",
+ "lines": [
+  162,
+  170
+ ],
+ "signature": "ceres::internal::EigenDenseQR::Factorize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 658
+}

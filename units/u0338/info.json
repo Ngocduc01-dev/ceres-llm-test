@@ -1,0 +1,20 @@
+{
+ "id": "u0338",
+ "name": "ceres::internal::LowRankInverseHessian::num_rows",
+ "file": "internal/ceres/low_rank_inverse_hessian.h",
+ "lines": [
+  90,
+  90
+ ],
+ "signature": "ceres::internal::LowRankInverseHessian::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 338
+}

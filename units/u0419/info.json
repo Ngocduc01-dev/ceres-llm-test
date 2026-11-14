@@ -1,0 +1,20 @@
+{
+ "id": "u0419",
+ "name": "ceres::internal::SubsetPreconditioner::num_cols",
+ "file": "internal/ceres/subset_preconditioner.h",
+ "lines": [
+  80,
+  80
+ ],
+ "signature": "ceres::internal::SubsetPreconditioner::num_cols",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 419
+}

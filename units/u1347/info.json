@@ -1,0 +1,20 @@
+{
+ "id": "u1347",
+ "name": "ceres::internal::BlockRandomAccessDenseMatrix::BlockRandomAccessDenseMatrix",
+ "file": "internal/ceres/block_random_access_dense_matrix.cc",
+ "lines": [
+  42,
+  54
+ ],
+ "signature": "ceres::internal::BlockRandomAccessDenseMatrix::BlockRandomAccessDenseMatrix",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 5,
+ "order": 1347
+}

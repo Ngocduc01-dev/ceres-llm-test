@@ -1,0 +1,20 @@
+{
+ "id": "u0012",
+ "name": "ceres::CostFunction::parameter_block_sizes",
+ "file": "include/ceres/cost_function.h",
+ "lines": [
+  120,
+  122
+ ],
+ "signature": "ceres::CostFunction::parameter_block_sizes",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 7,
+ "order": 12
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1188",
+ "name": "ceres::internal::TripletSparseMatrix::TripletSparseMatrix",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  51,
+  63
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::TripletSparseMatrix",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 14,
+ "order": 1188
+}

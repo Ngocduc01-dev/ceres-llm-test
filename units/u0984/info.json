@@ -1,0 +1,22 @@
+{
+ "id": "u0984",
+ "name": "ceres::TinySolverCostFunctionAdapter::NumResiduals",
+ "file": "include/ceres/tiny_solver_cost_function_adapter.h",
+ "lines": [
+  129,
+  129
+ ],
+ "signature": "ceres::TinySolverCostFunctionAdapter::NumResiduals",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 984
+}

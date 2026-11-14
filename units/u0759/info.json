@@ -1,0 +1,22 @@
+{
+ "id": "u0759",
+ "name": "ceres::internal::NumericDiff::EvaluateJacobianColumn",
+ "file": "include/ceres/internal/numeric_diff.h",
+ "lines": [
+  172,
+  232
+ ],
+ "signature": "ceres::internal::NumericDiff::EvaluateJacobianColumn",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 759
+}

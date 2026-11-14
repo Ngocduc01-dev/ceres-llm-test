@@ -1,0 +1,22 @@
+{
+ "id": "u0676",
+ "name": "ceres::internal::WeightedGraph::Neighbors",
+ "file": "internal/ceres/graph.h",
+ "lines": [
+  190,
+  192
+ ],
+ "signature": "ceres::internal::WeightedGraph::Neighbors",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 676
+}

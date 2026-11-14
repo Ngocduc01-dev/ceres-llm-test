@@ -1,0 +1,20 @@
+{
+ "id": "u1392",
+ "name": "ceres::Solver::Summary::FullReport",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  852,
+  1134
+ ],
+ "signature": "ceres::Solver::Summary::FullReport",
+ "branches": 86,
+ "cyclomatic": 44,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1392
+}

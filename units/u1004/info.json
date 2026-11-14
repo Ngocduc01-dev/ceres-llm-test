@@ -1,0 +1,20 @@
+{
+ "id": "u1004",
+ "name": "ceres::internal::LevenbergMarquardtStrategy::StepIsInvalid",
+ "file": "internal/ceres/levenberg_marquardt_strategy.h",
+ "lines": [
+  63,
+  69
+ ],
+ "signature": "ceres::internal::LevenbergMarquardtStrategy::StepIsInvalid",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1004
+}

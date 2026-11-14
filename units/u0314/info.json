@@ -1,0 +1,20 @@
+{
+ "id": "u0314",
+ "name": "ceres::internal::ImplicitSchurComplement::rhs",
+ "file": "internal/ceres/implicit_schur_complement.h",
+ "lines": [
+  139,
+  139
+ ],
+ "signature": "ceres::internal::ImplicitSchurComplement::rhs",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 314
+}

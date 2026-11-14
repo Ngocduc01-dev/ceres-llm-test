@@ -1,0 +1,20 @@
+{
+ "id": "u1246",
+ "name": "ceres::internal::ImplicitSchurComplement::LeftMultiplyAndAccumulate",
+ "file": "internal/ceres/implicit_schur_complement.h",
+ "lines": [
+  121,
+  123
+ ],
+ "signature": "ceres::internal::ImplicitSchurComplement::LeftMultiplyAndAccumulate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1246
+}

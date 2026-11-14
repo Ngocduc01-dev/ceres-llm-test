@@ -1,0 +1,20 @@
+{
+ "id": "u0721",
+ "name": "ceres::internal::RefinedDenseCholesky::Solve",
+ "file": "internal/ceres/dense_cholesky.cc",
+ "lines": [
+  334,
+  346
+ ],
+ "signature": "ceres::internal::RefinedDenseCholesky::Solve",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 721
+}

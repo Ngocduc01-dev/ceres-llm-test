@@ -1,0 +1,20 @@
+{
+ "id": "u0816",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::ComputeBlockPairsInPreconditioner",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  220,
+  299
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::ComputeBlockPairsInPreconditioner",
+ "branches": 36,
+ "cyclomatic": 19,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 816
+}

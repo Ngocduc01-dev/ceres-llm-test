@@ -1,0 +1,22 @@
+{
+ "id": "u1258",
+ "name": "ceres::internal::pair_hash::operator()",
+ "file": "internal/ceres/pair_hash.h",
+ "lines": [
+  104,
+  111
+ ],
+ "signature": "ceres::internal::pair_hash::operator()",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1258
+}

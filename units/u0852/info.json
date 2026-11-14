@@ -1,0 +1,20 @@
+{
+ "id": "u0852",
+ "name": "ceres::internal::SetZero",
+ "file": "internal/ceres/eigen_vector_ops.h",
+ "lines": [
+  63,
+  65
+ ],
+ "signature": "ceres::internal::SetZero",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 852
+}

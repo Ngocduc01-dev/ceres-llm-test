@@ -1,0 +1,20 @@
+{
+ "id": "u1288",
+ "name": "ceres::internal::ProblemImpl::GetParameterBlocksForResidualBlock",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  843,
+  853
+ ],
+ "signature": "ceres::internal::ProblemImpl::GetParameterBlocksForResidualBlock",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1288
+}

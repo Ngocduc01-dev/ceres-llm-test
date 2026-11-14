@@ -1,0 +1,20 @@
+{
+ "id": "u1181",
+ "name": "ceres::internal::CgnrSolver::CgnrSolver",
+ "file": "internal/ceres/cgnr_solver.cc",
+ "lines": [
+  124,
+  134
+ ],
+ "signature": "ceres::internal::CgnrSolver::CgnrSolver",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1181
+}

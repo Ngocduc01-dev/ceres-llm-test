@@ -1,0 +1,22 @@
+{
+ "id": "u0587",
+ "name": "ceres::ProductManifold::MinusImpl",
+ "file": "include/ceres/product_manifold.h",
+ "lines": [
+  177,
+  190
+ ],
+ "signature": "ceres::ProductManifold::MinusImpl",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 587
+}

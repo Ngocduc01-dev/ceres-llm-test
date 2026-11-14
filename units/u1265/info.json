@@ -1,0 +1,20 @@
+{
+ "id": "u1265",
+ "name": "ceres::internal::Program::MaxDerivativesPerResidualBlock",
+ "file": "internal/ceres/program.cc",
+ "lines": [
+  521,
+  533
+ ],
+ "signature": "ceres::internal::Program::MaxDerivativesPerResidualBlock",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1265
+}

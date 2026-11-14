@@ -1,0 +1,20 @@
+{
+ "id": "u1476",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterJacobiSparsity",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  118,
+  128
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterJacobiSparsity",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1476
+}

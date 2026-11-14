@@ -1,0 +1,20 @@
+{
+ "id": "u1520",
+ "name": "ceres::internal::LineSearchPreprocessor::Preprocess",
+ "file": "internal/ceres/line_search_preprocessor.cc",
+ "lines": [
+  72,
+  102
+ ],
+ "signature": "ceres::internal::LineSearchPreprocessor::Preprocess",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 6,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 6,
+ "order": 1520
+}

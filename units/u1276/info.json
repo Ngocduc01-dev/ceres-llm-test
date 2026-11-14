@@ -1,0 +1,20 @@
+{
+ "id": "u1276",
+ "name": "ceres::internal::TrustRegionMinimizer::IterationZero",
+ "file": "internal/ceres/trust_region_minimizer.cc",
+ "lines": [
+  194,
+  230
+ ],
+ "signature": "ceres::internal::TrustRegionMinimizer::IterationZero",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1276
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0403",
+ "name": "ceres::internal::ResidualBlock::set_index",
+ "file": "internal/ceres/residual_block.h",
+ "lines": [
+  131,
+  131
+ ],
+ "signature": "ceres::internal::ResidualBlock::set_index",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 403
+}

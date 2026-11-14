@@ -1,0 +1,20 @@
+{
+ "id": "u1229",
+ "name": "ceres::internal::DenseSchurComplementSolver::SolveReducedLinearSystem",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  181,
+  202
+ ],
+ "signature": "ceres::internal::DenseSchurComplementSolver::SolveReducedLinearSystem",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1229
+}

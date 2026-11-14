@@ -1,0 +1,20 @@
+{
+ "id": "u1484",
+ "name": "ceres::Problem::EvaluateResidualBlockAssumingParametersUnchanged",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  149,
+  161
+ ],
+ "signature": "ceres::Problem::EvaluateResidualBlockAssumingParametersUnchanged",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1484
+}

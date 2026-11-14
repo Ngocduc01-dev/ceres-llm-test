@@ -1,0 +1,22 @@
+{
+ "id": "u0535",
+ "name": "ceres::OrderedGroups::AddElementToGroup",
+ "file": "include/ceres/ordered_groups.h",
+ "lines": [
+  63,
+  84
+ ],
+ "signature": "ceres::OrderedGroups::AddElementToGroup",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 535
+}

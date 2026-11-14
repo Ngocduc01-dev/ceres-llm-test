@@ -1,0 +1,20 @@
+{
+ "id": "u1056",
+ "name": "ceres::SubsetManifold::RightMultiplyByPlusJacobian",
+ "file": "internal/ceres/manifold.cc",
+ "lines": [
+  216,
+  234
+ ],
+ "signature": "ceres::SubsetManifold::RightMultiplyByPlusJacobian",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1056
+}

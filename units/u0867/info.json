@@ -1,0 +1,20 @@
+{
+ "id": "u0867",
+ "name": "ceres::internal::LineSearch::~LineSearch",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  66,
+  66
+ ],
+ "signature": "ceres::internal::LineSearch::~LineSearch",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 867
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0833",
+ "name": "ceres_free_stock_loss_function_data",
+ "file": "internal/ceres/c_api.cc",
+ "lines": [
+  127,
+  129
+ ],
+ "signature": "ceres_free_stock_loss_function_data",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 833
+}

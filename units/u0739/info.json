@@ -1,0 +1,20 @@
+{
+ "id": "u0739",
+ "name": "ceres::IsSchurType",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  390,
+  396
+ ],
+ "signature": "ceres::IsSchurType",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 739
+}

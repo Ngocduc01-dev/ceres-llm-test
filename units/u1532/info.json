@@ -1,0 +1,20 @@
+{
+ "id": "u1532",
+ "name": "ceres_problem_add_residual_block",
+ "file": "internal/ceres/c_api.cc",
+ "lines": [
+  138,
+  169
+ ],
+ "signature": "ceres_problem_add_residual_block",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 7,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1532
+}

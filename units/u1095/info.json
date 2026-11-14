@@ -1,0 +1,20 @@
+{
+ "id": "u1095",
+ "name": "ceres::StringToDoglegType",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  190,
+  195
+ ],
+ "signature": "ceres::StringToDoglegType",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1095
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1338",
+ "name": "ceres::Problem::ParameterBlockSize",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  171,
+  173
+ ],
+ "signature": "ceres::Problem::ParameterBlockSize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 1338
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0454",
+ "name": "ceres::LossFunctionWrapper::Evaluate",
+ "file": "include/ceres/loss_function.h",
+ "lines": [
+  406,
+  414
+ ],
+ "signature": "ceres::LossFunctionWrapper::Evaluate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 454
+}

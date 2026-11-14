@@ -1,0 +1,20 @@
+{
+ "id": "u1503",
+ "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingDenseSVD",
+ "file": "internal/ceres/covariance_impl.cc",
+ "lines": [
+  704,
+  793
+ ],
+ "signature": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingDenseSVD",
+ "branches": 16,
+ "cyclomatic": 9,
+ "topo_level": 5,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1503
+}

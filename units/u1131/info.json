@@ -1,0 +1,20 @@
+{
+ "id": "u1131",
+ "name": "ceres::internal::ProblemImpl::DeleteBlock",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  223,
+  226
+ ],
+ "signature": "ceres::internal::ProblemImpl::DeleteBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1131
+}

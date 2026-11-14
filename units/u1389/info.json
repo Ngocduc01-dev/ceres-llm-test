@@ -1,0 +1,20 @@
+{
+ "id": "u1389",
+ "name": "ceres::internal::EventLogger::~EventLogger",
+ "file": "internal/ceres/wall_time.cc",
+ "lines": [
+  72,
+  78
+ ],
+ "signature": "ceres::internal::EventLogger::~EventLogger",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1389
+}

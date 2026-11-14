@@ -1,0 +1,20 @@
+{
+ "id": "u1073",
+ "name": "ceres::internal::LinearOperatorAdapter::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/conjugate_gradients_solver.h",
+ "lines": [
+  69,
+  71
+ ],
+ "signature": "ceres::internal::LinearOperatorAdapter::RightMultiplyAndAccumulate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1073
+}

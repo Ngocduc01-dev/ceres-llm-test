@@ -1,0 +1,20 @@
+{
+ "id": "u0784",
+ "name": "ceres::internal::CreateSchurComplementGraph",
+ "file": "internal/ceres/visibility.cc",
+ "lines": [
+  76,
+  145
+ ],
+ "signature": "ceres::internal::CreateSchurComplementGraph",
+ "branches": 24,
+ "cyclomatic": 13,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 784
+}

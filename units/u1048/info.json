@@ -1,0 +1,22 @@
+{
+ "id": "u1048",
+ "name": "ceres::internal::ConcurrentQueue::Wait",
+ "file": "internal/ceres/concurrent_queue.h",
+ "lines": [
+  102,
+  110
+ ],
+ "signature": "ceres::internal::ConcurrentQueue::Wait",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1048
+}

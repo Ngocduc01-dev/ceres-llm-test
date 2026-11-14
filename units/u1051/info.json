@@ -1,0 +1,20 @@
+{
+ "id": "u1051",
+ "name": "ceres::SubsetManifold::MinusJacobian",
+ "file": "internal/ceres/manifold.cc",
+ "lines": [
+  252,
+  263
+ ],
+ "signature": "ceres::SubsetManifold::MinusJacobian",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1051
+}

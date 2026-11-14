@@ -1,0 +1,20 @@
+{
+ "id": "u1371",
+ "name": "ceres::internal::SchurJacobiPreconditioner::UpdateImpl",
+ "file": "internal/ceres/schur_jacobi_preconditioner.cc",
+ "lines": [
+  87,
+  97
+ ],
+ "signature": "ceres::internal::SchurJacobiPreconditioner::UpdateImpl",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1371
+}

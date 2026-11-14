@@ -1,0 +1,20 @@
+{
+ "id": "u0912",
+ "name": "ceres::internal::SparseCholesky::FactorAndSolve",
+ "file": "internal/ceres/sparse_cholesky.cc",
+ "lines": [
+  108,
+  118
+ ],
+ "signature": "ceres::internal::SparseCholesky::FactorAndSolve",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 912
+}

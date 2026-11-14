@@ -1,0 +1,22 @@
+{
+ "id": "u1209",
+ "name": "ceres::internal::ParallelInvoke",
+ "file": "internal/ceres/parallel_invoke.h",
+ "lines": [
+  164,
+  268
+ ],
+ "signature": "ceres::internal::ParallelInvoke",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1209
+}

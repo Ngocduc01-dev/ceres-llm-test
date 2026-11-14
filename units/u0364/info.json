@@ -1,0 +1,20 @@
+{
+ "id": "u0364",
+ "name": "ceres::internal::ParameterBlock::IsLowerBounded",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  133,
+  133
+ ],
+ "signature": "ceres::internal::ParameterBlock::IsLowerBounded",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 364
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0983",
+ "name": "ceres::SphereManifold::TangentSize",
+ "file": "include/ceres/sphere_manifold.h",
+ "lines": [
+  101,
+  101
+ ],
+ "signature": "ceres::SphereManifold::TangentSize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 983
+}

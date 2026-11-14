@@ -1,0 +1,20 @@
+{
+ "id": "u0367",
+ "name": "ceres::internal::ParameterBlock::state_offset",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  140,
+  140
+ ],
+ "signature": "ceres::internal::ParameterBlock::state_offset",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 367
+}

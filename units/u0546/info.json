@@ -1,0 +1,22 @@
+{
+ "id": "u0546",
+ "name": "ceres::fmax",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  789,
+  805
+ ],
+ "signature": "ceres::fmax",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 546
+}

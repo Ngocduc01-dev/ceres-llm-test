@@ -1,0 +1,22 @@
+{
+ "id": "u0647",
+ "name": "ceres::TinySolverAutoDiffFunction::TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
+ "file": "include/ceres/tiny_solver_autodiff_function.h",
+ "lines": [
+  116,
+  119
+ ],
+ "signature": "ceres::TinySolverAutoDiffFunction::TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 647
+}

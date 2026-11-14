@@ -1,0 +1,20 @@
+{
+ "id": "u0913",
+ "name": "ceres::internal::ThreadPool::MaxNumThreadsAvailable",
+ "file": "internal/ceres/thread_pool.cc",
+ "lines": [
+  48,
+  54
+ ],
+ "signature": "ceres::internal::ThreadPool::MaxNumThreadsAvailable",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 913
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0599",
+ "name": "ceres::internal::(anonymous)::DecrementValueOrDeleteKey",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  87,
+  97
+ ],
+ "signature": "ceres::internal::(anonymous)::DecrementValueOrDeleteKey",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 599
+}

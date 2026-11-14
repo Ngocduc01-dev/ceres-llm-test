@@ -1,0 +1,20 @@
+{
+ "id": "u0539",
+ "name": "ceres::internal::IsClose",
+ "file": "internal/ceres/is_close.cc",
+ "lines": [
+  37,
+  58
+ ],
+ "signature": "ceres::internal::IsClose",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 5,
+ "order": 539
+}

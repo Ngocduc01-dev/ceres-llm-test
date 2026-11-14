@@ -1,0 +1,20 @@
+{
+ "id": "u0862",
+ "name": "ceres::internal::ImplicitSchurComplement::block_diagonal_EtE_inverse",
+ "file": "internal/ceres/implicit_schur_complement.h",
+ "lines": [
+  141,
+  143
+ ],
+ "signature": "ceres::internal::ImplicitSchurComplement::block_diagonal_EtE_inverse",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 862
+}

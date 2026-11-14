@@ -1,0 +1,20 @@
+{
+ "id": "u1270",
+ "name": "ceres::GradientProblemSolver::Summary::FullReport",
+ "file": "internal/ceres/gradient_problem_solver.cc",
+ "lines": [
+  220,
+  288
+ ],
+ "signature": "ceres::GradientProblemSolver::Summary::FullReport",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1270
+}

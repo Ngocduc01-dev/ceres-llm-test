@@ -1,0 +1,20 @@
+{
+ "id": "u0648",
+ "name": "ceres::internal::BlockSparseJacobiPreconditioner::matrix",
+ "file": "internal/ceres/block_jacobi_preconditioner.h",
+ "lines": [
+  67,
+  67
+ ],
+ "signature": "ceres::internal::BlockSparseJacobiPreconditioner::matrix",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 648
+}

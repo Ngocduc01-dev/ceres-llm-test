@@ -1,0 +1,20 @@
+{
+ "id": "u1282",
+ "name": "ceres::internal::TrustRegionMinimizer::FunctionToleranceReached",
+ "file": "internal/ceres/trust_region_minimizer.cc",
+ "lines": [
+  742,
+  761
+ ],
+ "signature": "ceres::internal::TrustRegionMinimizer::FunctionToleranceReached",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1282
+}

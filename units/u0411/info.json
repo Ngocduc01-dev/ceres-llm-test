@@ -1,0 +1,20 @@
+{
+ "id": "u0411",
+ "name": "ceres::Solver::~Solver",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  708,
+  708
+ ],
+ "signature": "ceres::Solver::~Solver",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 411
+}

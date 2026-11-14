@@ -1,0 +1,20 @@
+{
+ "id": "u1173",
+ "name": "ceres::internal::LinearLeastSquaresProblem4",
+ "file": "internal/ceres/linear_least_squares_problems.cc",
+ "lines": [
+  547,
+  625
+ ],
+ "signature": "ceres::internal::LinearLeastSquaresProblem4",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1173
+}

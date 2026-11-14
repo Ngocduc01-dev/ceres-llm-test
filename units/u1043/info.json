@@ -1,0 +1,20 @@
+{
+ "id": "u1043",
+ "name": "ceres::internal::Program::ParameterBlocksToStateVector",
+ "file": "internal/ceres/program.cc",
+ "lines": [
+  87,
+  92
+ ],
+ "signature": "ceres::internal::Program::ParameterBlocksToStateVector",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1043
+}

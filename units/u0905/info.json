@@ -1,0 +1,20 @@
+{
+ "id": "u0905",
+ "name": "ceres::LossFunctionWrapper::Reset",
+ "file": "include/ceres/loss_function.h",
+ "lines": [
+  416,
+  422
+ ],
+ "signature": "ceres::LossFunctionWrapper::Reset",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 905
+}

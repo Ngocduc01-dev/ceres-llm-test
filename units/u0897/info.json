@@ -1,0 +1,20 @@
+{
+ "id": "u0897",
+ "name": "ceres::internal::ThreadPool::ThreadPool",
+ "file": "internal/ceres/thread_pool.cc",
+ "lines": [
+  56,
+  56
+ ],
+ "signature": "ceres::internal::ThreadPool::ThreadPool",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 897
+}

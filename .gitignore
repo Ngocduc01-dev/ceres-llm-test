@@ -6,6 +6,10 @@ __pycache__/
 # data/ (compile_commands.json, graph.db, units.json) ĐƯỢC commit để cả nhóm dùng chung,
 # không phải ai cũng chạy lại build + Phase 1 + Phase 2.
 
+# Context Phase 3: đã có trong data_phase3.tar.gz – giải nén bằng
+#   tar -xzf data_phase3.tar.gz data/context
+data/context/
+
 # Cấu hình cục bộ của editor/agent
 .claude/
 

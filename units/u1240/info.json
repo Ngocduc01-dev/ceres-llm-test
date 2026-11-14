@@ -1,0 +1,20 @@
+{
+ "id": "u1240",
+ "name": "ceres::internal::BlockSparseJacobiPreconditioner::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/block_jacobi_preconditioner.h",
+ "lines": [
+  62,
+  64
+ ],
+ "signature": "ceres::internal::BlockSparseJacobiPreconditioner::RightMultiplyAndAccumulate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1240
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0958",
+ "name": "ceres::internal::DoglegStrategy::ComputeCauchyPoint",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  184,
+  193
+ ],
+ "signature": "ceres::internal::DoglegStrategy::ComputeCauchyPoint",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 958
+}

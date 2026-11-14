@@ -1,0 +1,22 @@
+{
+ "id": "u0180",
+ "name": "ceres::EuclideanManifold::Plus",
+ "file": "include/ceres/manifold.h",
+ "lines": [
+  268,
+  276
+ ],
+ "signature": "ceres::EuclideanManifold::Plus",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 180
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0434",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::~VisibilityBasedPreconditioner",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  112,
+  112
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::~VisibilityBasedPreconditioner",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 434
+}

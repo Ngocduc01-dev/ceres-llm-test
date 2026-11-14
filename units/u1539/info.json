@@ -1,0 +1,20 @@
+{
+ "id": "u1539",
+ "name": "ceres_solve",
+ "file": "internal/ceres/c_api.cc",
+ "lines": [
+  171,
+  185
+ ],
+ "signature": "ceres_solve",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 9,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1539
+}

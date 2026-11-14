@@ -1,0 +1,20 @@
+{
+ "id": "u0771",
+ "name": "ceres::IsSparseLinearAlgebraLibraryTypeAvailable",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  398,
+  438
+ ],
+ "signature": "ceres::IsSparseLinearAlgebraLibraryTypeAvailable",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 13,
+ "order": 771
+}

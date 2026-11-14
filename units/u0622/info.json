@@ -1,0 +1,22 @@
+{
+ "id": "u0622",
+ "name": "ceres::DynamicNumericDiffCostFunction::DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
+ "file": "include/ceres/dynamic_numeric_diff_cost_function.h",
+ "lines": [
+  82,
+  86
+ ],
+ "signature": "ceres::DynamicNumericDiffCostFunction::DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 622
+}

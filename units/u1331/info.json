@@ -1,0 +1,20 @@
+{
+ "id": "u1331",
+ "name": "ceres::Problem::GetManifold",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  100,
+  102
+ ],
+ "signature": "ceres::Problem::GetManifold",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 1331
+}

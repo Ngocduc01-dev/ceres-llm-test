@@ -1,0 +1,22 @@
+{
+ "id": "u0010",
+ "name": "ceres::internal::PlusWrapper::operator()",
+ "file": "include/ceres/autodiff_manifold.h",
+ "lines": [
+  188,
+  191
+ ],
+ "signature": "ceres::internal::PlusWrapper::operator()",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 10
+}

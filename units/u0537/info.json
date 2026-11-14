@@ -1,0 +1,20 @@
+{
+ "id": "u0537",
+ "name": "ceres::internal::FindInvalidValue",
+ "file": "internal/ceres/array_utils.cc",
+ "lines": [
+  55,
+  67
+ ],
+ "signature": "ceres::internal::FindInvalidValue",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 537
+}

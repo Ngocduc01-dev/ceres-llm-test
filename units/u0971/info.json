@@ -1,0 +1,20 @@
+{
+ "id": "u0971",
+ "name": "ceres::internal::TripletSparseMatrix::CopyData",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  164,
+  170
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::CopyData",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 971
+}

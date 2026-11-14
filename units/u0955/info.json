@@ -1,0 +1,20 @@
+{
+ "id": "u0955",
+ "name": "ceres::internal::LinearSolver::Create",
+ "file": "internal/ceres/linear_solver.cc",
+ "lines": [
+  74,
+  127
+ ],
+ "signature": "ceres::internal::LinearSolver::Create",
+ "branches": 20,
+ "cyclomatic": 11,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 6,
+ "order": 955
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1272",
+ "name": "ceres::internal::TrustRegionMinimizer::HandleInvalidStep",
+ "file": "internal/ceres/trust_region_minimizer.cc",
+ "lines": [
+  464,
+  497
+ ],
+ "signature": "ceres::internal::TrustRegionMinimizer::HandleInvalidStep",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1272
+}

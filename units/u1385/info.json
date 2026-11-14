@@ -1,0 +1,20 @@
+{
+ "id": "u1385",
+ "name": "ceres::internal::Program::MaxScratchDoublesNeededForEvaluate",
+ "file": "internal/ceres/program.cc",
+ "lines": [
+  510,
+  519
+ ],
+ "signature": "ceres::internal::Program::MaxScratchDoublesNeededForEvaluate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1385
+}

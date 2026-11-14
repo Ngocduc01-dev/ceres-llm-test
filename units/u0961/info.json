@@ -1,0 +1,20 @@
+{
+ "id": "u0961",
+ "name": "ceres::internal::LineSearch::options",
+ "file": "internal/ceres/line_search.h",
+ "lines": [
+  194,
+  194
+ ],
+ "signature": "ceres::internal::LineSearch::options",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "internal",
+ "access": "protected",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 961
+}

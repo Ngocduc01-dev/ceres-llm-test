@@ -1,0 +1,20 @@
+{
+ "id": "u1491",
+ "name": "ceres::internal::ProblemImpl::Evaluate",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  585,
+  746
+ ],
+ "signature": "ceres::internal::ProblemImpl::Evaluate",
+ "branches": 38,
+ "cyclomatic": 20,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 1491
+}

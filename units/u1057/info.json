@@ -1,0 +1,20 @@
+{
+ "id": "u1057",
+ "name": "ceres::ConditionedCostFunction::Evaluate",
+ "file": "internal/ceres/conditioned_cost_function.cc",
+ "lines": [
+  78,
+  129
+ ],
+ "signature": "ceres::ConditionedCostFunction::Evaluate",
+ "branches": 16,
+ "cyclomatic": 9,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1057
+}

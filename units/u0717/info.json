@@ -1,0 +1,20 @@
+{
+ "id": "u0717",
+ "name": "ceres::internal::EvaluatePolynomial",
+ "file": "internal/ceres/polynomial.h",
+ "lines": [
+  53,
+  59
+ ],
+ "signature": "ceres::internal::EvaluatePolynomial",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 717
+}

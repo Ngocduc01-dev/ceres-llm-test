@@ -1,0 +1,22 @@
+{
+ "id": "u0216",
+ "name": "ceres::SphereManifold::Minus",
+ "file": "include/ceres/sphere_manifold.h",
+ "lines": [
+  198,
+  218
+ ],
+ "signature": "ceres::SphereManifold::Minus",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 216
+}

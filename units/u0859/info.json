@@ -1,0 +1,20 @@
+{
+ "id": "u0859",
+ "name": "ceres::internal::CreateGradientCheckingCostFunction",
+ "file": "internal/ceres/gradient_checking_cost_function.cc",
+ "lines": [
+  150,
+  166
+ ],
+ "signature": "ceres::internal::CreateGradientCheckingCostFunction",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 859
+}

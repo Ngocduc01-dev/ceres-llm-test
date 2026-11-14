@@ -1,0 +1,22 @@
+{
+ "id": "u0058",
+ "name": "ceres::internal::AsScalar",
+ "file": "include/ceres/internal/jet_traits.h",
+ "lines": [
+  111,
+  115
+ ],
+ "signature": "ceres::internal::AsScalar",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 58
+}

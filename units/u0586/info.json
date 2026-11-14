@@ -1,0 +1,22 @@
+{
+ "id": "u0586",
+ "name": "ceres::ProductManifold::PlusImpl",
+ "file": "include/ceres/product_manifold.h",
+ "lines": [
+  155,
+  168
+ ],
+ "signature": "ceres::ProductManifold::PlusImpl",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 586
+}

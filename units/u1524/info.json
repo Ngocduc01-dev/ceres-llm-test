@@ -1,0 +1,20 @@
+{
+ "id": "u1524",
+ "name": "ceres::Problem::AddResidualBlock",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  60,
+  66
+ ],
+ "signature": "ceres::Problem::AddResidualBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 6,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1524
+}

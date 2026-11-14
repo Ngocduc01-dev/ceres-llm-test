@@ -1,0 +1,22 @@
+{
+ "id": "u0120",
+ "name": "ceres::log2",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  706,
+  710
+ ],
+ "signature": "ceres::log2",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 120
+}

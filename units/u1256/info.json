@@ -1,0 +1,20 @@
+{
+ "id": "u1256",
+ "name": "ceres::Solver::Summary::BriefReport",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  839,
+  850
+ ],
+ "signature": "ceres::Solver::Summary::BriefReport",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1256
+}

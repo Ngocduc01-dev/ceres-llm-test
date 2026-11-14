@@ -1,0 +1,20 @@
+{
+ "id": "u1481",
+ "name": "ceres::internal::Program::RemoveFixedBlocks",
+ "file": "internal/ceres/program.cc",
+ "lines": [
+  305,
+  411
+ ],
+ "signature": "ceres::internal::Program::RemoveFixedBlocks",
+ "branches": 32,
+ "cyclomatic": 17,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1481
+}

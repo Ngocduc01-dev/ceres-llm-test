@@ -1,0 +1,20 @@
+{
+ "id": "u0723",
+ "name": "ceres::internal::EigenSparseCholesky::Create",
+ "file": "internal/ceres/eigensparse.cc",
+ "lines": [
+  146,
+  172
+ ],
+ "signature": "ceres::internal::EigenSparseCholesky::Create",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 723
+}

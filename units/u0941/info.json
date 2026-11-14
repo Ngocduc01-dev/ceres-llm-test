@@ -1,0 +1,20 @@
+{
+ "id": "u0941",
+ "name": "ceres::internal::BlockSparseMatrix::LeftMultiplyAndAccumulate",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  326,
+  348
+ ],
+ "signature": "ceres::internal::BlockSparseMatrix::LeftMultiplyAndAccumulate",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 6,
+ "order": 941
+}

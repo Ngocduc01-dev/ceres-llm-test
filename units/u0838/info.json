@@ -1,0 +1,20 @@
+{
+ "id": "u0838",
+ "name": "ceres::internal::CompressedRowSparseMatrix::SetZero",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  277,
+  279
+ ],
+ "signature": "ceres::internal::CompressedRowSparseMatrix::SetZero",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 838
+}

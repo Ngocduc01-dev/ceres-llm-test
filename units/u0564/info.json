@@ -1,0 +1,20 @@
+{
+ "id": "u0564",
+ "name": "ceres::internal::FixedArray::Storage::UsingInlinedStorage",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  433,
+  435
+ ],
+ "signature": "ceres::internal::FixedArray::Storage::UsingInlinedStorage",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 564
+}

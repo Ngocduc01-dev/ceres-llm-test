@@ -1,0 +1,20 @@
+{
+ "id": "u1046",
+ "name": "ceres::internal::Program::NumEffectiveParameters",
+ "file": "internal/ceres/program.cc",
+ "lines": [
+  499,
+  505
+ ],
+ "signature": "ceres::internal::Program::NumEffectiveParameters",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1046
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u1130",
+ "name": "ceres::DynamicAutoDiffCostFunction::Evaluate",
+ "file": "include/ceres/dynamic_autodiff_cost_function.h",
+ "lines": [
+  101,
+  265
+ ],
+ "signature": "ceres::DynamicAutoDiffCostFunction::Evaluate",
+ "branches": 44,
+ "cyclomatic": 23,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1130
+}

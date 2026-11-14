@@ -1,0 +1,22 @@
+{
+ "id": "u0439",
+ "name": "ceres::CubicInterpolator::Evaluate",
+ "file": "include/ceres/cubic_interpolation.h",
+ "lines": [
+  148,
+  156
+ ],
+ "signature": "ceres::CubicInterpolator::Evaluate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 439
+}

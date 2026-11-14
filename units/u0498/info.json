@@ -1,0 +1,22 @@
+{
+ "id": "u0498",
+ "name": "ceres::QuaternionToAngleAxis",
+ "file": "include/ceres/rotation.h",
+ "lines": [
+  344,
+  388
+ ],
+ "signature": "ceres::QuaternionToAngleAxis",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 498
+}

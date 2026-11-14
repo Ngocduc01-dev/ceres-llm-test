@@ -1,0 +1,20 @@
+{
+ "id": "u1298",
+ "name": "ceres::internal::IsEvaluationValid",
+ "file": "internal/ceres/residual_block_utils.cc",
+ "lines": [
+  121,
+  142
+ ],
+ "signature": "ceres::internal::IsEvaluationValid",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1298
+}

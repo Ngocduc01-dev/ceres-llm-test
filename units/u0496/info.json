@@ -1,0 +1,22 @@
+{
+ "id": "u0496",
+ "name": "ceres::internal::EvaluateJacobianForParameterBlocks::Apply",
+ "file": "include/ceres/internal/numeric_diff.h",
+ "lines": [
+  446,
+  483
+ ],
+ "signature": "ceres::internal::EvaluateJacobianForParameterBlocks::Apply",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 496
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0518",
+ "name": "ceres::fdim",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  835,
+  844
+ ],
+ "signature": "ceres::fdim",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 518
+}

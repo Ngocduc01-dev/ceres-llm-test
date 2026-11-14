@@ -1,0 +1,22 @@
+{
+ "id": "u0600",
+ "name": "ceres::internal::(anonymous)::STLDeleteContainerPairFirstPointers",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  99,
+  106
+ ],
+ "signature": "ceres::internal::(anonymous)::STLDeleteContainerPairFirstPointers",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 600
+}

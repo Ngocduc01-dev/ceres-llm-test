@@ -1,0 +1,20 @@
+{
+ "id": "u1368",
+ "name": "ceres::internal::BlockJacobianWriter::CreateJacobian",
+ "file": "internal/ceres/block_jacobian_writer.cc",
+ "lines": [
+  196,
+  261
+ ],
+ "signature": "ceres::internal::BlockJacobianWriter::CreateJacobian",
+ "branches": 18,
+ "cyclomatic": 10,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1368
+}

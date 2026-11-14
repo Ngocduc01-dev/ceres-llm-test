@@ -1,0 +1,20 @@
+{
+ "id": "u0285",
+ "name": "ceres::internal::DoglegStrategy::gauss_newton_step",
+ "file": "internal/ceres/dogleg_strategy.h",
+ "lines": [
+  72,
+  72
+ ],
+ "signature": "ceres::internal::DoglegStrategy::gauss_newton_step",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 285
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0048",
+ "name": "ceres::internal::FixedArray::NonEmptyInlinedStorage::AnnotateConstruct",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  380,
+  380
+ ],
+ "signature": "ceres::internal::FixedArray::NonEmptyInlinedStorage::AnnotateConstruct",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 48
+}

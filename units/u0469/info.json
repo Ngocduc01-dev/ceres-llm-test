@@ -1,0 +1,20 @@
+{
+ "id": "u0469",
+ "name": "ceres::HuberLoss::Evaluate",
+ "file": "internal/ceres/loss_function.cc",
+ "lines": [
+  50,
+  64
+ ],
+ "signature": "ceres::HuberLoss::Evaluate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 469
+}

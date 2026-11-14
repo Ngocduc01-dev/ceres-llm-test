@@ -1,0 +1,20 @@
+{
+ "id": "u0857",
+ "name": "ceres::internal::Evaluator::~Evaluator",
+ "file": "internal/ceres/evaluator.cc",
+ "lines": [
+  51,
+  51
+ ],
+ "signature": "ceres::internal::Evaluator::~Evaluator",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 857
+}

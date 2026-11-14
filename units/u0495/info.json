@@ -1,0 +1,22 @@
+{
+ "id": "u0495",
+ "name": "ceres::internal::Take0thOrderPart",
+ "file": "include/ceres/internal/autodiff.h",
+ "lines": [
+  239,
+  245
+ ],
+ "signature": "ceres::internal::Take0thOrderPart",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 495
+}

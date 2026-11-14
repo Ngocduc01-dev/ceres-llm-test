@@ -1,0 +1,20 @@
+{
+ "id": "u1284",
+ "name": "ceres::internal::BlockRandomAccessSparseMatrix::SetZero",
+ "file": "internal/ceres/block_random_access_sparse_matrix.cc",
+ "lines": [
+  121,
+  123
+ ],
+ "signature": "ceres::internal::BlockRandomAccessSparseMatrix::SetZero",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1284
+}

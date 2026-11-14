@@ -1,0 +1,20 @@
+{
+ "id": "u1528",
+ "name": "ceres::Problem::RemoveParameterBlock",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  80,
+  82
+ ],
+ "signature": "ceres::Problem::RemoveParameterBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 6,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 1528
+}

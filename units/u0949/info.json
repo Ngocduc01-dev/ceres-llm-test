@@ -1,0 +1,20 @@
+{
+ "id": "u0949",
+ "name": "ceres::internal::CompressedRowSparseMatrix::DeleteRows",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  454,
+  478
+ ],
+ "signature": "ceres::internal::CompressedRowSparseMatrix::DeleteRows",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 949
+}

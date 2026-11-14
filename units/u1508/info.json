@@ -1,0 +1,20 @@
+{
+ "id": "u1508",
+ "name": "ceres::(anonymous)::TrustRegionOptionsAreValid",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  389,
+  436
+ ],
+ "signature": "ceres::(anonymous)::TrustRegionOptionsAreValid",
+ "branches": 50,
+ "cyclomatic": 26,
+ "topo_level": 5,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1508
+}

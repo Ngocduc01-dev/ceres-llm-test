@@ -1,0 +1,20 @@
+{
+ "id": "u1427",
+ "name": "ceres::Problem::Problem",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  43,
+  44
+ ],
+ "signature": "ceres::Problem::Problem",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 7,
+ "order": 1427
+}

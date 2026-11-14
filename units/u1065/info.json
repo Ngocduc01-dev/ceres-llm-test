@@ -1,0 +1,20 @@
+{
+ "id": "u1065",
+ "name": "ceres::internal::(anonymous)::CheckForNoAliasing",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  74,
+  85
+ ],
+ "signature": "ceres::internal::(anonymous)::CheckForNoAliasing",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1065
+}

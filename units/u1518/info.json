@@ -1,0 +1,20 @@
+{
+ "id": "u1518",
+ "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValues",
+ "file": "internal/ceres/covariance_impl.cc",
+ "lines": [
+  500,
+  533
+ ],
+ "signature": "ceres::internal::CovarianceImpl::ComputeCovarianceValues",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 6,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1518
+}

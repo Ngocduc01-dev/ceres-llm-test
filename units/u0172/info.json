@@ -1,0 +1,20 @@
+{
+ "id": "u0172",
+ "name": "ceres::HuberLoss::HuberLoss",
+ "file": "include/ceres/loss_function.h",
+ "lines": [
+  177,
+  177
+ ],
+ "signature": "ceres::HuberLoss::HuberLoss",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 172
+}

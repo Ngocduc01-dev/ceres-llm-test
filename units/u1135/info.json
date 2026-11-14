@@ -1,0 +1,22 @@
+{
+ "id": "u1135",
+ "name": "ceres::internal::SchurEliminator::UpdateRhs",
+ "file": "internal/ceres/schur_eliminator_impl.h",
+ "lines": [
+  378,
+  420
+ ],
+ "signature": "ceres::internal::SchurEliminator::UpdateRhs",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1135
+}

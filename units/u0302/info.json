@@ -1,0 +1,20 @@
+{
+ "id": "u0302",
+ "name": "ceres::internal::GradientCheckingIterationCallback::error_log",
+ "file": "internal/ceres/gradient_checking_cost_function.h",
+ "lines": [
+  65,
+  65
+ ],
+ "signature": "ceres::internal::GradientCheckingIterationCallback::error_log",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 302
+}

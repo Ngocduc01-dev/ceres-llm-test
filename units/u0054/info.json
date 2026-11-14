@@ -1,0 +1,20 @@
+{
+ "id": "u0054",
+ "name": "ceres::internal::FixedArray::Storage::begin",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  428,
+  428
+ ],
+ "signature": "ceres::internal::FixedArray::Storage::begin",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 54
+}

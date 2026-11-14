@@ -1,0 +1,20 @@
+{
+ "id": "u0366",
+ "name": "ceres::internal::ParameterBlock::set_index",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  137,
+  137
+ ],
+ "signature": "ceres::internal::ParameterBlock::set_index",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 366
+}

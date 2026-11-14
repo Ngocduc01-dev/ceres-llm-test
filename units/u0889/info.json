@@ -1,0 +1,20 @@
+{
+ "id": "u0889",
+ "name": "ceres::internal::ResidualBlock::loss_function",
+ "file": "internal/ceres/residual_block.h",
+ "lines": [
+  110,
+  110
+ ],
+ "signature": "ceres::internal::ResidualBlock::loss_function",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 889
+}

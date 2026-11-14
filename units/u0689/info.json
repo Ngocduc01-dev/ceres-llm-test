@@ -1,0 +1,20 @@
+{
+ "id": "u0689",
+ "name": "ceres::internal::SparseMatrixPreconditionerWrapper::~SparseMatrixPreconditionerWrapper",
+ "file": "internal/ceres/preconditioner.cc",
+ "lines": [
+  55,
+  55
+ ],
+ "signature": "ceres::internal::SparseMatrixPreconditionerWrapper::~SparseMatrixPreconditionerWrapper",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 689
+}

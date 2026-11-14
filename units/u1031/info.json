@@ -1,0 +1,22 @@
+{
+ "id": "u1031",
+ "name": "ceres::internal::ConcurrentQueue::Pop",
+ "file": "internal/ceres/concurrent_queue.h",
+ "lines": [
+  92,
+  97
+ ],
+ "signature": "ceres::internal::ConcurrentQueue::Pop",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1031
+}

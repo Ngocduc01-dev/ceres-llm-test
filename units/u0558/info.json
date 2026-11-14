@@ -1,0 +1,22 @@
+{
+ "id": "u0558",
+ "name": "ceres::internal::StableIndependentSetOrdering",
+ "file": "internal/ceres/graph_algorithms.h",
+ "lines": [
+  165,
+  222
+ ],
+ "signature": "ceres::internal::StableIndependentSetOrdering",
+ "branches": 20,
+ "cyclomatic": 11,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 558
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0834",
+ "name": "ceres_stock_loss_function",
+ "file": "internal/ceres/c_api.cc",
+ "lines": [
+  131,
+  136
+ ],
+ "signature": "ceres_stock_loss_function",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 834
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1422",
+ "name": "ceres::internal::DenseJacobianWriter::CreateJacobian",
+ "file": "internal/ceres/dense_jacobian_writer.h",
+ "lines": [
+  66,
+  69
+ ],
+ "signature": "ceres::internal::DenseJacobianWriter::CreateJacobian",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1422
+}

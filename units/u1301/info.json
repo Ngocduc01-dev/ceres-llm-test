@@ -1,0 +1,20 @@
+{
+ "id": "u1301",
+ "name": "ceres::internal::CoordinateDescentMinimizer::Init",
+ "file": "internal/ceres/coordinate_descent_minimizer.cc",
+ "lines": [
+  64,
+  126
+ ],
+ "signature": "ceres::internal::CoordinateDescentMinimizer::Init",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1301
+}

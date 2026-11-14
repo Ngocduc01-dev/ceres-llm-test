@@ -1,0 +1,20 @@
+{
+ "id": "u1289",
+ "name": "ceres::internal::InvalidateEvaluation",
+ "file": "internal/ceres/residual_block_utils.cc",
+ "lines": [
+  48,
+  63
+ ],
+ "signature": "ceres::internal::InvalidateEvaluation",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1289
+}

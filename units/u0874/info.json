@@ -1,0 +1,20 @@
+{
+ "id": "u0874",
+ "name": "ceres::internal::ParallelSetZero",
+ "file": "internal/ceres/parallel_vector_ops.cc",
+ "lines": [
+  38,
+  52
+ ],
+ "signature": "ceres::internal::ParallelSetZero",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 874
+}

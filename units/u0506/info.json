@@ -1,0 +1,22 @@
+{
+ "id": "u0506",
+ "name": "ceres::internal::FindConnectedComponent",
+ "file": "internal/ceres/graph_algorithms.h",
+ "lines": [
+  230,
+  240
+ ],
+ "signature": "ceres::internal::FindConnectedComponent",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 506
+}

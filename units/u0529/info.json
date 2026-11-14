@@ -1,0 +1,20 @@
+{
+ "id": "u0529",
+ "name": "ceres::internal::LinearIndexToUpperTriangularIndex",
+ "file": "internal/ceres/parallel_utils.cc",
+ "lines": [
+  35,
+  86
+ ],
+ "signature": "ceres::internal::LinearIndexToUpperTriangularIndex",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 529
+}

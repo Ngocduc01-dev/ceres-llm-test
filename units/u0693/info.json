@@ -1,0 +1,20 @@
+{
+ "id": "u0693",
+ "name": "ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky",
+ "file": "internal/ceres/sparse_cholesky.cc",
+ "lines": [
+  120,
+  124
+ ],
+ "signature": "ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 693
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0297",
+ "name": "ceres::internal::FunctionSample::FunctionSample",
+ "file": "internal/ceres/function_sample.cc",
+ "lines": [
+  37,
+  44
+ ],
+ "signature": "ceres::internal::FunctionSample::FunctionSample",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 7,
+ "order": 297
+}

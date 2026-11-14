@@ -1,0 +1,22 @@
+{
+ "id": "u0619",
+ "name": "ceres::internal::MinusWrapper::MinusWrapper<Functor>",
+ "file": "include/ceres/autodiff_manifold.h",
+ "lines": [
+  197,
+  197
+ ],
+ "signature": "ceres::internal::MinusWrapper::MinusWrapper<Functor>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 619
+}

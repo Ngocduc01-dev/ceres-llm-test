@@ -1,0 +1,20 @@
+{
+ "id": "u1485",
+ "name": "ceres::Problem::NumResiduals",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  169,
+  169
+ ],
+ "signature": "ceres::Problem::NumResiduals",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1485
+}

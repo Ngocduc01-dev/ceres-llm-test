@@ -1,0 +1,20 @@
+{
+ "id": "u1089",
+ "name": "ceres::internal::ProblemImpl::GetResidualBlocks",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  837,
+  841
+ ],
+ "signature": "ceres::internal::ProblemImpl::GetResidualBlocks",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1089
+}

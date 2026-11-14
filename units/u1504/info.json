@@ -1,0 +1,20 @@
+{
+ "id": "u1504",
+ "name": "ceres::internal::WolfeLineSearch::ZoomPhase",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  698,
+  881
+ ],
+ "signature": "ceres::internal::WolfeLineSearch::ZoomPhase",
+ "branches": 48,
+ "cyclomatic": 25,
+ "topo_level": 5,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1504
+}

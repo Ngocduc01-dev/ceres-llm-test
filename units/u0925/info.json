@@ -1,0 +1,20 @@
+{
+ "id": "u0925",
+ "name": "ceres::internal::TripletSparseMatrix::SquaredColumnNorm",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  186,
+  192
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::SquaredColumnNorm",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 925
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0392",
+ "name": "ceres::internal::ProblemImpl::parameter_map",
+ "file": "internal/ceres/problem_impl.h",
+ "lines": [
+  162,
+  162
+ ],
+ "signature": "ceres::internal::ProblemImpl::parameter_map",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 392
+}

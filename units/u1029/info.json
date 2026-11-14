@@ -1,0 +1,22 @@
+{
+ "id": "u1029",
+ "name": "ceres::OrderedGroups::MinNonZeroGroup",
+ "file": "include/ceres/ordered_groups.h",
+ "lines": [
+  176,
+  179
+ ],
+ "signature": "ceres::OrderedGroups::MinNonZeroGroup",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1029
+}

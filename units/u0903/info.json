@@ -1,0 +1,20 @@
+{
+ "id": "u0903",
+ "name": "ceres::internal::TrustRegionStrategy::~TrustRegionStrategy",
+ "file": "internal/ceres/trust_region_strategy.cc",
+ "lines": [
+  42,
+  42
+ ],
+ "signature": "ceres::internal::TrustRegionStrategy::~TrustRegionStrategy",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 903
+}

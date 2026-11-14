@@ -1,0 +1,22 @@
+{
+ "id": "u0526",
+ "name": "ceres::internal::InvertPSDMatrix",
+ "file": "internal/ceres/invert_psd_matrix.h",
+ "lines": [
+  49,
+  73
+ ],
+ "signature": "ceres::internal::InvertPSDMatrix",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 526
+}

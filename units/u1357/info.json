@@ -1,0 +1,22 @@
+{
+ "id": "u1357",
+ "name": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalFtF",
+ "file": "internal/ceres/partitioned_matrix_view_impl.h",
+ "lines": [
+  649,
+  658
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalFtF",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1357
+}

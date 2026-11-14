@@ -1,0 +1,22 @@
+{
+ "id": "u0192",
+ "name": "ceres::OrderedGroups::Clear",
+ "file": "include/ceres/ordered_groups.h",
+ "lines": [
+  86,
+  89
+ ],
+ "signature": "ceres::OrderedGroups::Clear",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 192
+}

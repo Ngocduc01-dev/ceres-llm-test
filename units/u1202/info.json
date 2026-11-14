@@ -1,0 +1,20 @@
+{
+ "id": "u1202",
+ "name": "ceres::internal::InnerProductComputer::Compute",
+ "file": "internal/ceres/inner_product_computer.cc",
+ "lines": [
+  286,
+  334
+ ],
+ "signature": "ceres::internal::InnerProductComputer::Compute",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 1202
+}

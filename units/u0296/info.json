@@ -1,0 +1,20 @@
+{
+ "id": "u0296",
+ "name": "ceres::FirstOrderFunction::~FirstOrderFunction",
+ "file": "internal/ceres/first_order_function.cc",
+ "lines": [
+  35,
+  35
+ ],
+ "signature": "ceres::FirstOrderFunction::~FirstOrderFunction",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 296
+}

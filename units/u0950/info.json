@@ -1,0 +1,20 @@
+{
+ "id": "u0950",
+ "name": "ceres::internal::TripletSparseMatrix::Resize",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  237,
+  264
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::Resize",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 950
+}

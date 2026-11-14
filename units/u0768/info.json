@@ -1,0 +1,20 @@
+{
+ "id": "u0768",
+ "name": "ceres::internal::StringAppendV",
+ "file": "internal/ceres/stringprintf.cc",
+ "lines": [
+  43,
+  91
+ ],
+ "signature": "ceres::internal::StringAppendV",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 768
+}

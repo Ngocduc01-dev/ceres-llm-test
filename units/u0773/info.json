@@ -1,0 +1,20 @@
+{
+ "id": "u0773",
+ "name": "ceres::internal::CompressedColumnScalarMatrixToBlockMatrix",
+ "file": "internal/ceres/compressed_col_sparse_matrix_utils.cc",
+ "lines": [
+  41,
+  89
+ ],
+ "signature": "ceres::internal::CompressedColumnScalarMatrixToBlockMatrix",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 773
+}

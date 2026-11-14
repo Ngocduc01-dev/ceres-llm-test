@@ -1,0 +1,20 @@
+{
+ "id": "u1380",
+ "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingSuiteSparseQR",
+ "file": "internal/ceres/covariance_impl.cc",
+ "lines": [
+  535,
+  702
+ ],
+ "signature": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingSuiteSparseQR",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1380
+}

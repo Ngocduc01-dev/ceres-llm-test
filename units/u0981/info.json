@@ -1,0 +1,20 @@
+{
+ "id": "u0981",
+ "name": "ceres::internal::FixedArray::Storage::end",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  429,
+  429
+ ],
+ "signature": "ceres::internal::FixedArray::Storage::end",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 981
+}

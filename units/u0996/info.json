@@ -1,0 +1,20 @@
+{
+ "id": "u0996",
+ "name": "ceres_create_arctan_loss_function_data",
+ "file": "internal/ceres/c_api.cc",
+ "lines": [
+  120,
+  122
+ ],
+ "signature": "ceres_create_arctan_loss_function_data",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 996
+}

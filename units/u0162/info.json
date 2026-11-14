@@ -1,0 +1,22 @@
+{
+ "id": "u0162",
+ "name": "Eigen::NumTraits::digits10",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  1382,
+  1382
+ ],
+ "signature": "Eigen::NumTraits::digits10",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 162
+}

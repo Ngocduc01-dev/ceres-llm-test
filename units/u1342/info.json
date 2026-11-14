@@ -1,0 +1,20 @@
+{
+ "id": "u1342",
+ "name": "ceres::Problem::GetLossFunctionForResidualBlock",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  203,
+  206
+ ],
+ "signature": "ceres::Problem::GetLossFunctionForResidualBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1342
+}

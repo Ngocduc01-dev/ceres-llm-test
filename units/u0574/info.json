@@ -1,0 +1,20 @@
+{
+ "id": "u0574",
+ "name": "ceres::internal::BlockRandomAccessSparseMatrix::IntPairToInt64",
+ "file": "internal/ceres/block_random_access_sparse_matrix.h",
+ "lines": [
+  99,
+  101
+ ],
+ "signature": "ceres::internal::BlockRandomAccessSparseMatrix::IntPairToInt64",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 574
+}

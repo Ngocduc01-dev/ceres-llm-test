@@ -1,0 +1,22 @@
+{
+ "id": "u0698",
+ "name": "ceres::AngleAxisToRotationMatrix",
+ "file": "include/ceres/rotation.h",
+ "lines": [
+  453,
+  494
+ ],
+ "signature": "ceres::AngleAxisToRotationMatrix",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 698
+}

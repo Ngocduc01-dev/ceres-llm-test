@@ -1,0 +1,20 @@
+{
+ "id": "u1330",
+ "name": "ceres::Problem::SetParameterBlockVariable",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  88,
+  90
+ ],
+ "signature": "ceres::Problem::SetParameterBlockVariable",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1330
+}

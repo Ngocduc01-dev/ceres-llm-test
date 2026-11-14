@@ -1,0 +1,20 @@
+{
+ "id": "u1442",
+ "name": "ceres::internal::ReorderProgramForSparseCholesky",
+ "file": "internal/ceres/reorder_program.cc",
+ "lines": [
+  540,
+  595
+ ],
+ "signature": "ceres::internal::ReorderProgramForSparseCholesky",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1442
+}

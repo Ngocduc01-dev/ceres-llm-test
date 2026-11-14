@@ -1,0 +1,22 @@
+{
+ "id": "u0142",
+ "name": "ceres::fpclassify",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  1036,
+  1039
+ ],
+ "signature": "ceres::fpclassify",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 142
+}

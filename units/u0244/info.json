@@ -1,0 +1,20 @@
+{
+ "id": "u0244",
+ "name": "CallbackCostFunction::Evaluate",
+ "file": "internal/ceres/c_api.cc",
+ "lines": [
+  82,
+  87
+ ],
+ "signature": "CallbackCostFunction::Evaluate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 244
+}

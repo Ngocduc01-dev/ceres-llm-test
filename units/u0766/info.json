@@ -1,0 +1,20 @@
+{
+ "id": "u0766",
+ "name": "ceres::LineSearchDirectionTypeToString",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  213,
+  222
+ ],
+ "signature": "ceres::LineSearchDirectionTypeToString",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 766
+}

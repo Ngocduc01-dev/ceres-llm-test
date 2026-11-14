@@ -1,0 +1,20 @@
+{
+ "id": "u1018",
+ "name": "ceres::internal::ProblemImpl::NumResidualBlocks",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  792,
+  794
+ ],
+ "signature": "ceres::internal::ProblemImpl::NumResidualBlocks",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 1018
+}

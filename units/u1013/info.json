@@ -1,0 +1,20 @@
+{
+ "id": "u1013",
+ "name": "ceres::internal::ParallelInvokeState::ParallelInvokeState",
+ "file": "internal/ceres/parallel_invoke.cc",
+ "lines": [
+  65,
+  75
+ ],
+ "signature": "ceres::internal::ParallelInvokeState::ParallelInvokeState",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1013
+}

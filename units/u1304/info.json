@@ -1,0 +1,20 @@
+{
+ "id": "u1304",
+ "name": "ceres::internal::MinimizePolynomial",
+ "file": "internal/ceres/polynomial.cc",
+ "lines": [
+  272,
+  324
+ ],
+ "signature": "ceres::internal::MinimizePolynomial",
+ "branches": 16,
+ "cyclomatic": 9,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1304
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0915",
+ "name": "ceres::internal::TripletSparseMatrix::LeftMultiplyAndAccumulate",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  179,
+  184
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::LeftMultiplyAndAccumulate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 915
+}

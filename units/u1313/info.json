@@ -1,0 +1,22 @@
+{
+ "id": "u1313",
+ "name": "ceres::internal::SchurEliminator::ChunkDiagonalBlockAndGradient",
+ "file": "internal/ceres/schur_eliminator_impl.h",
+ "lines": [
+  441,
+  505
+ ],
+ "signature": "ceres::internal::SchurEliminator::ChunkDiagonalBlockAndGradient",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1313
+}

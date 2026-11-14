@@ -1,0 +1,22 @@
+{
+ "id": "u0460",
+ "name": "ceres::UnitQuaternionRotatePoint",
+ "file": "include/ceres/rotation.h",
+ "lines": [
+  721,
+  741
+ ],
+ "signature": "ceres::UnitQuaternionRotatePoint",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 460
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0167",
+ "name": "ceres::LineManifold::TangentSize",
+ "file": "include/ceres/line_manifold.h",
+ "lines": [
+  87,
+  87
+ ],
+ "signature": "ceres::LineManifold::TangentSize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 167
+}

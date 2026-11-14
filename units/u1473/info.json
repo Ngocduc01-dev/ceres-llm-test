@@ -1,0 +1,20 @@
+{
+ "id": "u1473",
+ "name": "ceres::internal::(anonymous)::IsProgramValid",
+ "file": "internal/ceres/line_search_preprocessor.cc",
+ "lines": [
+  47,
+  53
+ ],
+ "signature": "ceres::internal::(anonymous)::IsProgramValid",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1473
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u1008",
+ "name": "ceres::internal::TypedLinearSolver::Statistics",
+ "file": "internal/ceres/linear_solver.h",
+ "lines": [
+  378,
+  380
+ ],
+ "signature": "ceres::internal::TypedLinearSolver::Statistics",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1008
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0221",
+ "name": "ceres::internal::BlockRandomAccessDenseMatrix::~BlockRandomAccessDenseMatrix",
+ "file": "internal/ceres/block_random_access_dense_matrix.h",
+ "lines": [
+  64,
+  64
+ ],
+ "signature": "ceres::internal::BlockRandomAccessDenseMatrix::~BlockRandomAccessDenseMatrix",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 221
+}

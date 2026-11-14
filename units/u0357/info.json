@@ -1,0 +1,20 @@
+{
+ "id": "u0357",
+ "name": "ceres::internal::ParameterBlock::Size",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  88,
+  88
+ ],
+ "signature": "ceres::internal::ParameterBlock::Size",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 357
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0671",
+ "name": "ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator",
+ "file": "internal/ceres/gradient_problem_evaluator.h",
+ "lines": [
+  50,
+  51
+ ],
+ "signature": "ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 671
+}

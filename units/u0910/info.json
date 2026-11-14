@@ -1,0 +1,20 @@
+{
+ "id": "u0910",
+ "name": "ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper",
+ "file": "internal/ceres/preconditioner.cc",
+ "lines": [
+  49,
+  53
+ ],
+ "signature": "ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 910
+}

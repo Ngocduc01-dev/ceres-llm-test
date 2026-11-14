@@ -1,0 +1,20 @@
+{
+ "id": "u0394",
+ "name": "ceres::internal::Program::residual_blocks",
+ "file": "internal/ceres/program.cc",
+ "lines": [
+  61,
+  63
+ ],
+ "signature": "ceres::internal::Program::residual_blocks",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 6,
+ "order": 394
+}

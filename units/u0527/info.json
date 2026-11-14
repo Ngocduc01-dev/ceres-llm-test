@@ -1,0 +1,20 @@
+{
+ "id": "u0527",
+ "name": "ceres::internal::BlockUntilFinished::Finished",
+ "file": "internal/ceres/parallel_invoke.cc",
+ "lines": [
+  49,
+  57
+ ],
+ "signature": "ceres::internal::BlockUntilFinished::Finished",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 527
+}

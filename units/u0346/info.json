@@ -1,0 +1,20 @@
+{
+ "id": "u0346",
+ "name": "ceres::EigenQuaternionManifold::Plus",
+ "file": "internal/ceres/manifold.cc",
+ "lines": [
+  290,
+  295
+ ],
+ "signature": "ceres::EigenQuaternionManifold::Plus",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 346
+}

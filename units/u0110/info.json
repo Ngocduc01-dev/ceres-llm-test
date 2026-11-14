@@ -1,0 +1,22 @@
+{
+ "id": "u0110",
+ "name": "ceres::asin",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  629,
+  633
+ ],
+ "signature": "ceres::asin",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 110
+}

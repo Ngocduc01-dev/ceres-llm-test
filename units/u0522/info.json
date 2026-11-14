@@ -1,0 +1,22 @@
+{
+ "id": "u0522",
+ "name": "ceres::SphereManifold::SphereManifold<AmbientSpaceDimension>",
+ "file": "include/ceres/sphere_manifold.h",
+ "lines": [
+  144,
+  154
+ ],
+ "signature": "ceres::SphereManifold::SphereManifold<AmbientSpaceDimension>",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 522
+}

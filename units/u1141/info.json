@@ -1,0 +1,20 @@
+{
+ "id": "u1141",
+ "name": "ceres::internal::SparseSchurComplementSolver::InitStorage",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  223,
+  288
+ ],
+ "signature": "ceres::internal::SparseSchurComplementSolver::InitStorage",
+ "branches": 26,
+ "cyclomatic": 14,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1141
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0515",
+ "name": "ceres::Grid2D::Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
+ "file": "include/ceres/cubic_interpolation.h",
+ "lines": [
+  385,
+  401
+ ],
+ "signature": "ceres::Grid2D::Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 515
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1502",
+ "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingEigenSparseQR",
+ "file": "internal/ceres/covariance_impl.cc",
+ "lines": [
+  795,
+  887
+ ],
+ "signature": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingEigenSparseQR",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 5,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1502
+}

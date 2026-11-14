@@ -1,0 +1,20 @@
+{
+ "id": "u1267",
+ "name": "ceres::internal::PowerSeriesExpansionPreconditioner::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/power_series_expansion_preconditioner.cc",
+ "lines": [
+  57,
+  82
+ ],
+ "signature": "ceres::internal::PowerSeriesExpansionPreconditioner::RightMultiplyAndAccumulate",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 1267
+}

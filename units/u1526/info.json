@@ -1,0 +1,20 @@
+{
+ "id": "u1526",
+ "name": "ceres::Problem::AddParameterBlock",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  72,
+  74
+ ],
+ "signature": "ceres::Problem::AddParameterBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 6,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1526
+}

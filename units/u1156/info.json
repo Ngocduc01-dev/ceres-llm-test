@@ -1,0 +1,20 @@
+{
+ "id": "u1156",
+ "name": "ceres::Problem::GetParameterBlocks",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  183,
+  185
+ ],
+ "signature": "ceres::Problem::GetParameterBlocks",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 1156
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1101",
+ "name": "ceres::StringtoDumpFormatType",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  380,
+  385
+ ],
+ "signature": "ceres::StringtoDumpFormatType",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1101
+}

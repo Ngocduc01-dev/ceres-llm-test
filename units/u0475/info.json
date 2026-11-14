@@ -1,0 +1,22 @@
+{
+ "id": "u0475",
+ "name": "ceres::FindOrNull",
+ "file": "internal/ceres/map_util.h",
+ "lines": [
+  99,
+  108
+ ],
+ "signature": "ceres::FindOrNull",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 475
+}

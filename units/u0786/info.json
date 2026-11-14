@@ -1,0 +1,22 @@
+{
+ "id": "u0786",
+ "name": "ceres::internal::FixedArray::AsValueType",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  370,
+  372
+ ],
+ "signature": "ceres::internal::FixedArray::AsValueType",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 786
+}

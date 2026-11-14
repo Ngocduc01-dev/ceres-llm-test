@@ -1,0 +1,22 @@
+{
+ "id": "u0516",
+ "name": "ceres::internal::Take1stOrderPart",
+ "file": "include/ceres/internal/autodiff.h",
+ "lines": [
+  249,
+  257
+ ],
+ "signature": "ceres::internal::Take1stOrderPart",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 516
+}

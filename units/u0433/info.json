@@ -1,0 +1,20 @@
+{
+ "id": "u0433",
+ "name": "ceres::internal::TrustRegionStepEvaluator::TrustRegionStepEvaluator",
+ "file": "internal/ceres/trust_region_step_evaluator.cc",
+ "lines": [
+  40,
+  49
+ ],
+ "signature": "ceres::internal::TrustRegionStepEvaluator::TrustRegionStepEvaluator",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 433
+}

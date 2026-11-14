@@ -1,0 +1,20 @@
+{
+ "id": "u1469",
+ "name": "ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace",
+ "file": "internal/ceres/covariance_impl.cc",
+ "lines": [
+  276,
+  356
+ ],
+ "signature": "ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1469
+}

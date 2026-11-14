@@ -1,0 +1,20 @@
+{
+ "id": "u0778",
+ "name": "ceres::internal::FindInterpolatingPolynomial",
+ "file": "internal/ceres/polynomial.cc",
+ "lines": [
+  326,
+  367
+ ],
+ "signature": "ceres::internal::FindInterpolatingPolynomial",
+ "branches": 16,
+ "cyclomatic": 9,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 7,
+ "order": 778
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0401",
+ "name": "ceres::internal::ResidualBlock::parameter_blocks",
+ "file": "internal/ceres/residual_block.h",
+ "lines": [
+  114,
+  116
+ ],
+ "signature": "ceres::internal::ResidualBlock::parameter_blocks",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 401
+}

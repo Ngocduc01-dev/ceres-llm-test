@@ -1,0 +1,20 @@
+{
+ "id": "u0541",
+ "name": "ceres::internal::ParameterBlock::SetLowerBound",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  207,
+  222
+ ],
+ "signature": "ceres::internal::ParameterBlock::SetLowerBound",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 541
+}

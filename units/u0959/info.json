@@ -1,0 +1,20 @@
+{
+ "id": "u0959",
+ "name": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingSuiteSparse",
+ "file": "internal/ceres/dynamic_sparse_normal_cholesky_solver.cc",
+ "lines": [
+  174,
+  232
+ ],
+ "signature": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingSuiteSparse",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 959
+}

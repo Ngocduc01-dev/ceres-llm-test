@@ -1,0 +1,20 @@
+{
+ "id": "u0939",
+ "name": "ceres::internal::SchurComplementSolver::SchurComplementSolver",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  92,
+  98
+ ],
+ "signature": "ceres::internal::SchurComplementSolver::SchurComplementSolver",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 939
+}

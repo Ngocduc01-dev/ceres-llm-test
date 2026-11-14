@@ -1,0 +1,22 @@
+{
+ "id": "u1060",
+ "name": "ceres::internal::MatrixTransposeVectorMultiply",
+ "file": "internal/ceres/small_blas.h",
+ "lines": [
+  470,
+  554
+ ],
+ "signature": "ceres::internal::MatrixTransposeVectorMultiply",
+ "branches": 38,
+ "cyclomatic": 20,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1060
+}

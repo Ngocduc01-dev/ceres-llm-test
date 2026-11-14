@@ -1,0 +1,20 @@
+{
+ "id": "u1239",
+ "name": "ceres::internal::FixedArray::Storage::Storage",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  416,
+  417
+ ],
+ "signature": "ceres::internal::FixedArray::Storage::Storage",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1239
+}

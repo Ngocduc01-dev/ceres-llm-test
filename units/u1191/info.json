@@ -1,0 +1,20 @@
+{
+ "id": "u1191",
+ "name": "ceres::internal::BlockSparseMatrix::ScaleColumns",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  420,
+  449
+ ],
+ "signature": "ceres::internal::BlockSparseMatrix::ScaleColumns",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1191
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1340",
+ "name": "ceres::Problem::GetResidualBlocks",
+ "file": "internal/ceres/problem.cc",
+ "lines": [
+  187,
+  190
+ ],
+ "signature": "ceres::Problem::GetResidualBlocks",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1340
+}

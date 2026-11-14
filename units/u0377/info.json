@@ -1,0 +1,22 @@
+{
+ "id": "u0377",
+ "name": "ceres::internal::PartitionedMatrixView::e_cols_partition",
+ "file": "internal/ceres/partitioned_matrix_view.h",
+ "lines": [
+  186,
+  188
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::e_cols_partition",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 377
+}

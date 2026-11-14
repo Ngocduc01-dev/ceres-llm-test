@@ -1,0 +1,20 @@
+{
+ "id": "u0507",
+ "name": "ceres::TolerantLoss::TolerantLoss",
+ "file": "internal/ceres/loss_function.cc",
+ "lines": [
+  93,
+  97
+ ],
+ "signature": "ceres::TolerantLoss::TolerantLoss",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 507
+}

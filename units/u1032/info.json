@@ -1,0 +1,20 @@
+{
+ "id": "u1032",
+ "name": "ceres::internal::ImplicitSchurComplement::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/implicit_schur_complement.cc",
+ "lines": [
+  106,
+  144
+ ],
+ "signature": "ceres::internal::ImplicitSchurComplement::RightMultiplyAndAccumulate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1032
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0829",
+ "name": "ceres::internal::BlockSparseMatrix::SetZero",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  225,
+  227
+ ],
+ "signature": "ceres::internal::BlockSparseMatrix::SetZero",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 829
+}

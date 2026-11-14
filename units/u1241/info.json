@@ -1,0 +1,20 @@
+{
+ "id": "u1241",
+ "name": "ceres::internal::BlockSparseJacobiPreconditioner::num_rows",
+ "file": "internal/ceres/block_jacobi_preconditioner.h",
+ "lines": [
+  65,
+  65
+ ],
+ "signature": "ceres::internal::BlockSparseJacobiPreconditioner::num_rows",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1241
+}

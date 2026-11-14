@@ -1,0 +1,20 @@
+{
+ "id": "u1326",
+ "name": "ceres::internal::DynamicCompressedRowJacobianFinalizer::operator()",
+ "file": "internal/ceres/dynamic_compressed_row_finalizer.h",
+ "lines": [
+  41,
+  45
+ ],
+ "signature": "ceres::internal::DynamicCompressedRowJacobianFinalizer::operator()",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1326
+}

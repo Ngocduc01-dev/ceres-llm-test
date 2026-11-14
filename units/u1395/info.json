@@ -1,0 +1,20 @@
+{
+ "id": "u1395",
+ "name": "ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  265,
+  365
+ ],
+ "signature": "ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep",
+ "branches": 20,
+ "cyclomatic": 11,
+ "topo_level": 3,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1395
+}

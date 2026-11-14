@@ -1,0 +1,20 @@
+{
+ "id": "u0942",
+ "name": "ceres::internal::DoglegStrategy::DoglegStrategy",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  53,
+  72
+ ],
+ "signature": "ceres::internal::DoglegStrategy::DoglegStrategy",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 6,
+ "order": 942
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0617",
+ "name": "ceres::AutoDiffManifold::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+ "file": "include/ceres/autodiff_manifold.h",
+ "lines": [
+  153,
+  153
+ ],
+ "signature": "ceres::AutoDiffManifold::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 617
+}

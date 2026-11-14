@@ -1,0 +1,20 @@
+{
+ "id": "u1416",
+ "name": "ceres::(anonymous)::OptionsAreValidForDenseQr",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  205,
+  219
+ ],
+ "signature": "ceres::(anonymous)::OptionsAreValidForDenseQr",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1416
+}

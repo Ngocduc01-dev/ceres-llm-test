@@ -1,0 +1,20 @@
+{
+ "id": "u0922",
+ "name": "ceres::internal::PartitionedMatrixViewBase::Create",
+ "file": "internal/ceres/partitioned_matrix_view.cc",
+ "lines": [
+  51,
+  183
+ ],
+ "signature": "ceres::internal::PartitionedMatrixViewBase::Create",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 922
+}

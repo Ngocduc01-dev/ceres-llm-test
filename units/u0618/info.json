@@ -1,0 +1,22 @@
+{
+ "id": "u0618",
+ "name": "ceres::internal::PlusWrapper::PlusWrapper<Functor>",
+ "file": "include/ceres/autodiff_manifold.h",
+ "lines": [
+  187,
+  187
+ ],
+ "signature": "ceres::internal::PlusWrapper::PlusWrapper<Functor>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 618
+}

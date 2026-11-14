@@ -1,0 +1,20 @@
+{
+ "id": "u0540",
+ "name": "ceres::internal::ParameterBlock::SetUpperBound",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  190,
+  205
+ ],
+ "signature": "ceres::internal::ParameterBlock::SetUpperBound",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 540
+}

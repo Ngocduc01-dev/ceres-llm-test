@@ -1,0 +1,20 @@
+{
+ "id": "u0348",
+ "name": "ceres::EigenQuaternionManifold::Minus",
+ "file": "internal/ceres/manifold.cc",
+ "lines": [
+  303,
+  308
+ ],
+ "signature": "ceres::EigenQuaternionManifold::Minus",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 348
+}

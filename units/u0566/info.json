@@ -1,0 +1,22 @@
+{
+ "id": "u0566",
+ "name": "ceres::ProductManifold::ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+ "file": "include/ceres/product_manifold.h",
+ "lines": [
+  138,
+  153
+ ],
+ "signature": "ceres::ProductManifold::ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 566
+}

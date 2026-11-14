@@ -1,0 +1,20 @@
+{
+ "id": "u0843",
+ "name": "ceres::CostFunction::~CostFunction",
+ "file": "internal/ceres/cost_function.cc",
+ "lines": [
+  37,
+  37
+ ],
+ "signature": "ceres::CostFunction::~CostFunction",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 843
+}

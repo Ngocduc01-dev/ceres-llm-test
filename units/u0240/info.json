@@ -1,0 +1,20 @@
+{
+ "id": "u0240",
+ "name": "ceres::internal::Cell::Cell",
+ "file": "internal/ceres/block_structure.h",
+ "lines": [
+  68,
+  69
+ ],
+ "signature": "ceres::internal::Cell::Cell",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 240
+}

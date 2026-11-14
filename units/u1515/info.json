@@ -1,0 +1,20 @@
+{
+ "id": "u1515",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  67,
+  110
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner",
+ "branches": 20,
+ "cyclomatic": 11,
+ "topo_level": 5,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1515
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0776",
+ "name": "ceres::LinearSolverTypeToString",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  51,
+  63
+ ],
+ "signature": "ceres::LinearSolverTypeToString",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 776
+}

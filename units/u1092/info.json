@@ -1,0 +1,22 @@
+{
+ "id": "u1092",
+ "name": "ceres::internal::PartitionedMatrixView::RightMultiplyAndAccumulateF",
+ "file": "internal/ceres/partitioned_matrix_view_impl.h",
+ "lines": [
+  139,
+  191
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::RightMultiplyAndAccumulateF",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1092
+}

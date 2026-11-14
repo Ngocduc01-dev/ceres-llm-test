@@ -1,0 +1,20 @@
+{
+ "id": "u1486",
+ "name": "ceres::internal::ProblemImpl::SetManifold",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  506,
+  516
+ ],
+ "signature": "ceres::internal::ProblemImpl::SetManifold",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 1486
+}

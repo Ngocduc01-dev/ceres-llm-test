@@ -1,0 +1,20 @@
+{
+ "id": "u0580",
+ "name": "ceres::internal::DenseIterativeRefiner::Allocate",
+ "file": "internal/ceres/iterative_refiner.cc",
+ "lines": [
+  78,
+  81
+ ],
+ "signature": "ceres::internal::DenseIterativeRefiner::Allocate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 580
+}

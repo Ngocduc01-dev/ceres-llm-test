@@ -1,0 +1,22 @@
+{
+ "id": "u0195",
+ "name": "ceres::OrderedGroups::NumGroups",
+ "file": "include/ceres/ordered_groups.h",
+ "lines": [
+  171,
+  171
+ ],
+ "signature": "ceres::OrderedGroups::NumGroups",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 195
+}

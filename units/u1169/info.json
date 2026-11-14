@@ -1,0 +1,20 @@
+{
+ "id": "u1169",
+ "name": "ceres::internal::CompressedRowSparseMatrix::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  283,
+  302
+ ],
+ "signature": "ceres::internal::CompressedRowSparseMatrix::RightMultiplyAndAccumulate",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1169
+}

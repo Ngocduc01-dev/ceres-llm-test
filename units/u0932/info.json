@@ -1,0 +1,20 @@
+{
+ "id": "u0932",
+ "name": "ceres::internal::BlockSparseMatrix::ToDenseMatrix",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  493,
+  513
+ ],
+ "signature": "ceres::internal::BlockSparseMatrix::ToDenseMatrix",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 11,
+ "order": 932
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1129",
+ "name": "ceres::internal::FindPolynomialRoots",
+ "file": "internal/ceres/polynomial.cc",
+ "lines": [
+  182,
+  251
+ ],
+ "signature": "ceres::internal::FindPolynomialRoots",
+ "branches": 24,
+ "cyclomatic": 13,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 1129
+}

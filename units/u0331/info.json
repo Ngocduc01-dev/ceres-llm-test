@@ -1,0 +1,20 @@
+{
+ "id": "u0331",
+ "name": "ceres::internal::LinearSolver::Statistics",
+ "file": "internal/ceres/linear_solver.h",
+ "lines": [
+  348,
+  350
+ ],
+ "signature": "ceres::internal::LinearSolver::Statistics",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 331
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0799",
+ "name": "ceres::ProductManifold::MinusJacobianImpl",
+ "file": "include/ceres/product_manifold.h",
+ "lines": [
+  228,
+  247
+ ],
+ "signature": "ceres::ProductManifold::MinusJacobianImpl",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 799
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u1406",
+ "name": "ceres::internal::SchurEliminator::Eliminate",
+ "file": "internal/ceres/schur_eliminator_impl.h",
+ "lines": [
+  176,
+  304
+ ],
+ "signature": "ceres::internal::SchurEliminator::Eliminate",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1406
+}

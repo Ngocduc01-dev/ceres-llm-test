@@ -1,0 +1,20 @@
+{
+ "id": "u1064",
+ "name": "ceres::internal::FixedArray::Storage::InitializeData",
+ "file": "include/ceres/internal/fixed_array.h",
+ "lines": [
+  437,
+  445
+ ],
+ "signature": "ceres::internal::FixedArray::Storage::InitializeData",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1064
+}

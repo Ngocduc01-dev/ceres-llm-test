@@ -1,0 +1,20 @@
+{
+ "id": "u1213",
+ "name": "ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix",
+ "file": "internal/ceres/block_random_access_sparse_matrix.cc",
+ "lines": [
+  47,
+  98
+ ],
+ "signature": "ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix",
+ "branches": 18,
+ "cyclomatic": 10,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1213
+}

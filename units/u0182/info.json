@@ -1,0 +1,22 @@
+{
+ "id": "u0182",
+ "name": "ceres::EuclideanManifold::RightMultiplyByPlusJacobian",
+ "file": "include/ceres/manifold.h",
+ "lines": [
+  284,
+  290
+ ],
+ "signature": "ceres::EuclideanManifold::RightMultiplyByPlusJacobian",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 182
+}

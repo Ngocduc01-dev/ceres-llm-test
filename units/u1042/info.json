@@ -1,0 +1,20 @@
+{
+ "id": "u1042",
+ "name": "ceres::internal::ProblemImpl::ParameterBlockTangentSize",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  810,
+  820
+ ],
+ "signature": "ceres::internal::ProblemImpl::ParameterBlockTangentSize",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1042
+}

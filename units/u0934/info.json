@@ -1,0 +1,20 @@
+{
+ "id": "u0934",
+ "name": "ceres::internal::CompressedRowSparseMatrix::ToTextFile",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  530,
+  537
+ ],
+ "signature": "ceres::internal::CompressedRowSparseMatrix::ToTextFile",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 934
+}

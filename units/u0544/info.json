@@ -1,0 +1,22 @@
+{
+ "id": "u0544",
+ "name": "ceres::internal::ConstructRange",
+ "file": "include/ceres/internal/memory.h",
+ "lines": [
+  45,
+  63
+ ],
+ "signature": "ceres::internal::ConstructRange",
+ "branches": 10,
+ "cyclomatic": 6,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 544
+}

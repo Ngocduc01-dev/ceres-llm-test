@@ -1,0 +1,20 @@
+{
+ "id": "u1074",
+ "name": "ceres::internal::DenseSparseMatrix::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/dense_sparse_matrix.cc",
+ "lines": [
+  62,
+  65
+ ],
+ "signature": "ceres::internal::DenseSparseMatrix::RightMultiplyAndAccumulate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1074
+}

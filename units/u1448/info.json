@@ -1,0 +1,20 @@
+{
+ "id": "u1448",
+ "name": "ceres::internal::DenseNormalCholeskySolver::SolveImpl",
+ "file": "internal/ceres/dense_normal_cholesky_solver.cc",
+ "lines": [
+  49,
+  87
+ ],
+ "signature": "ceres::internal::DenseNormalCholeskySolver::SolveImpl",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1448
+}

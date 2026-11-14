@@ -1,0 +1,20 @@
+{
+ "id": "u1286",
+ "name": "ceres::internal::ComputeCanonicalViewsClustering",
+ "file": "internal/ceres/canonical_views_clustering.cc",
+ "lines": [
+  80,
+  90
+ ],
+ "signature": "ceres::internal::ComputeCanonicalViewsClustering",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1286
+}

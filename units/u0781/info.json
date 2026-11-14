@@ -1,0 +1,20 @@
+{
+ "id": "u0781",
+ "name": "ceres::internal::ComputeSingleLinkageClustering",
+ "file": "internal/ceres/single_linkage_clustering.cc",
+ "lines": [
+  41,
+  91
+ ],
+ "signature": "ceres::internal::ComputeSingleLinkageClustering",
+ "branches": 20,
+ "cyclomatic": 11,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 781
+}

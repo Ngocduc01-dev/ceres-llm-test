@@ -1,0 +1,20 @@
+{
+ "id": "u0793",
+ "name": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::BlockRandomAccessDiagonalMatrixAdapter",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  77,
+  79
+ ],
+ "signature": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::BlockRandomAccessDiagonalMatrixAdapter",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 793
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0605",
+ "name": "ceres::internal::(anonymous)::AddRandomBlock",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  121,
+  137
+ ],
+ "signature": "ceres::internal::(anonymous)::AddRandomBlock",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 605
+}

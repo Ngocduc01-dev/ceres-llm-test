@@ -1,0 +1,20 @@
+{
+ "id": "u0578",
+ "name": "ceres::internal::DoglegStrategy::ComputeSubspaceStepFromRoot",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  447,
+  451
+ ],
+ "signature": "ceres::internal::DoglegStrategy::ComputeSubspaceStepFromRoot",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 578
+}

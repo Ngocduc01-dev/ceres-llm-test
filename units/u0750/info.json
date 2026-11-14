@@ -1,0 +1,22 @@
+{
+ "id": "u0750",
+ "name": "ceres::internal::operator<<",
+ "file": "internal/ceres/linear_solver.h",
+ "lines": [
+  113,
+  128
+ ],
+ "signature": "ceres::internal::operator<<",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 1,
+ "order": 750
+}

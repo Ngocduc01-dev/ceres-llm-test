@@ -1,0 +1,20 @@
+{
+ "id": "u0763",
+ "name": "ceres::internal::LineSearchDirection::Create",
+ "file": "internal/ceres/line_search_direction.cc",
+ "lines": [
+  341,
+  367
+ ],
+ "signature": "ceres::internal::LineSearchDirection::Create",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 763
+}

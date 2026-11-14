@@ -1,0 +1,22 @@
+{
+ "id": "u0572",
+ "name": "ceres::TinySolverAutoDiffFunction::Initialize",
+ "file": "include/ceres/tiny_solver_autodiff_function.h",
+ "lines": [
+  189,
+  194
+ ],
+ "signature": "ceres::TinySolverAutoDiffFunction::Initialize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 572
+}

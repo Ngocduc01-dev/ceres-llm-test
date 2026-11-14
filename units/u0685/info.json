@@ -1,0 +1,20 @@
+{
+ "id": "u0685",
+ "name": "ceres::internal::Minimizer::Options::Init",
+ "file": "internal/ceres/minimizer.h",
+ "lines": [
+  63,
+  112
+ ],
+ "signature": "ceres::internal::Minimizer::Options::Init",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 685
+}

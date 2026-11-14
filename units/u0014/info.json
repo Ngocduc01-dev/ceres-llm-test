@@ -1,0 +1,22 @@
+{
+ "id": "u0014",
+ "name": "ceres::CostFunctionToFunctor::operator()",
+ "file": "include/ceres/cost_function_to_functor.h",
+ "lines": [
+  133,
+  153
+ ],
+ "signature": "ceres::CostFunctionToFunctor::operator()",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 14
+}

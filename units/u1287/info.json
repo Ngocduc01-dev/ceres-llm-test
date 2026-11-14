@@ -1,0 +1,20 @@
+{
+ "id": "u1287",
+ "name": "ceres::internal::CompressedRowJacobianWriter::GetOrderedParameterBlocks",
+ "file": "internal/ceres/compressed_row_jacobian_writer.cc",
+ "lines": [
+  71,
+  87
+ ],
+ "signature": "ceres::internal::CompressedRowJacobianWriter::GetOrderedParameterBlocks",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1287
+}

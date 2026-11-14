@@ -1,0 +1,20 @@
+{
+ "id": "u1254",
+ "name": "ceres::internal::SchurJacobiPreconditioner::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/schur_jacobi_preconditioner.cc",
+ "lines": [
+  99,
+  102
+ ],
+ "signature": "ceres::internal::SchurJacobiPreconditioner::RightMultiplyAndAccumulate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1254
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0718",
+ "name": "ceres::QuaternionToRotation",
+ "file": "include/ceres/rotation.h",
+ "lines": [
+  706,
+  719
+ ],
+ "signature": "ceres::QuaternionToRotation",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 718
+}

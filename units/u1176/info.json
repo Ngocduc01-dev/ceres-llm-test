@@ -1,0 +1,20 @@
+{
+ "id": "u1176",
+ "name": "ceres::internal::ChangeNumThreadsIfNeeded",
+ "file": "internal/ceres/preprocessor.cc",
+ "lines": [
+  61,
+  73
+ ],
+ "signature": "ceres::internal::ChangeNumThreadsIfNeeded",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1176
+}

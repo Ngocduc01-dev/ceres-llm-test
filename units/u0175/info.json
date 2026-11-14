@@ -1,0 +1,20 @@
+{
+ "id": "u0175",
+ "name": "ceres::ArctanLoss::ArctanLoss",
+ "file": "include/ceres/loss_function.h",
+ "lines": [
+  231,
+  231
+ ],
+ "signature": "ceres::ArctanLoss::ArctanLoss",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 2,
+ "order": 175
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0740",
+ "name": "ceres::AutoDiffFirstOrderFunction::Evaluate",
+ "file": "include/ceres/autodiff_first_order_function.h",
+ "lines": [
+  113,
+  139
+ ],
+ "signature": "ceres::AutoDiffFirstOrderFunction::Evaluate",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 740
+}

@@ -1,0 +1,22 @@
+{
+ "id": "u0554",
+ "name": "ceres::internal::ComputeHouseholderVector",
+ "file": "include/ceres/internal/householder_vector.h",
+ "lines": [
+  47,
+  82
+ ],
+ "signature": "ceres::internal::ComputeHouseholderVector",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 554
+}

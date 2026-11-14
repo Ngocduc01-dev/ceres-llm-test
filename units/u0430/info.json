@@ -1,0 +1,20 @@
+{
+ "id": "u0430",
+ "name": "ceres::internal::TripletSparseMatrix::cols",
+ "file": "internal/ceres/triplet_sparse_matrix.h",
+ "lines": [
+  107,
+  107
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::cols",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 10,
+ "order": 430
+}

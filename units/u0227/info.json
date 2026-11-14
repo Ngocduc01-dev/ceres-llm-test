@@ -1,0 +1,20 @@
+{
+ "id": "u0227",
+ "name": "ceres::internal::CellInfo::CellInfo",
+ "file": "internal/ceres/block_random_access_matrix.h",
+ "lines": [
+  88,
+  88
+ ],
+ "signature": "ceres::internal::CellInfo::CellInfo",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 227
+}

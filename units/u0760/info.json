@@ -1,0 +1,20 @@
+{
+ "id": "u0760",
+ "name": "ceres::internal::JoinPath",
+ "file": "internal/ceres/file.cc",
+ "lines": [
+  76,
+  90
+ ],
+ "signature": "ceres::internal::JoinPath",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 760
+}

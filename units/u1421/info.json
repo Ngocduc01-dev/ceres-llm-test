@@ -1,0 +1,20 @@
+{
+ "id": "u1421",
+ "name": "ceres::internal::ContextImpl::EnsureMinimumThreads",
+ "file": "internal/ceres/context_impl.cc",
+ "lines": [
+  192,
+  194
+ ],
+ "signature": "ceres::internal::ContextImpl::EnsureMinimumThreads",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 12,
+ "order": 1421
+}

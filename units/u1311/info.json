@@ -1,0 +1,20 @@
+{
+ "id": "u1311",
+ "name": "ceres::internal::(anonymous)::MinParameterBlock",
+ "file": "internal/ceres/reorder_program.cc",
+ "lines": [
+  76,
+  90
+ ],
+ "signature": "ceres::internal::(anonymous)::MinParameterBlock",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1311
+}

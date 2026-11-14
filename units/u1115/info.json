@@ -1,0 +1,22 @@
+{
+ "id": "u1115",
+ "name": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateFSingleThreaded",
+ "file": "internal/ceres/partitioned_matrix_view_impl.h",
+ "lines": [
+  278,
+  322
+ ],
+ "signature": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateFSingleThreaded",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1115
+}

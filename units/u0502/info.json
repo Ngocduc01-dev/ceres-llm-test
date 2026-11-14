@@ -1,0 +1,20 @@
+{
+ "id": "u0502",
+ "name": "ceres::internal::InvalidateArray",
+ "file": "internal/ceres/array_utils.cc",
+ "lines": [
+  69,
+  75
+ ],
+ "signature": "ceres::internal::InvalidateArray",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 502
+}

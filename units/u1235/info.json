@@ -1,0 +1,22 @@
+{
+ "id": "u1235",
+ "name": "ceres::internal::(anonymous)::CreateStructureOfCompressedRowSparseMatrix",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  67,
+  118
+ ],
+ "signature": "ceres::internal::(anonymous)::CreateStructureOfCompressedRowSparseMatrix",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1235
+}

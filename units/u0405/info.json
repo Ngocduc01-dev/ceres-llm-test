@@ -1,0 +1,20 @@
+{
+ "id": "u0405",
+ "name": "ceres::internal::SchurEliminatorBase::~SchurEliminatorBase",
+ "file": "internal/ceres/schur_eliminator.cc",
+ "lines": [
+  49,
+  49
+ ],
+ "signature": "ceres::internal::SchurEliminatorBase::~SchurEliminatorBase",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 405
+}

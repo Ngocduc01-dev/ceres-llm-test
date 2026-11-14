@@ -1,0 +1,20 @@
+{
+ "id": "u0809",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  495,
+  526
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 809
+}

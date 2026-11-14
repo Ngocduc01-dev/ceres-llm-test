@@ -1,0 +1,20 @@
+{
+ "id": "u1316",
+ "name": "ceres::(anonymous)::OptionsAreValidForSparseCholeskyBasedSolver",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  141,
+  197
+ ],
+ "signature": "ceres::(anonymous)::OptionsAreValidForSparseCholeskyBasedSolver",
+ "branches": 18,
+ "cyclomatic": 10,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1316
+}

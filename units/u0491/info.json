@@ -1,0 +1,20 @@
+{
+ "id": "u0491",
+ "name": "ceres::internal::ThreadTokenProvider::Acquire",
+ "file": "internal/ceres/thread_token_provider.cc",
+ "lines": [
+  41,
+  45
+ ],
+ "signature": "ceres::internal::ThreadTokenProvider::Acquire",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 491
+}

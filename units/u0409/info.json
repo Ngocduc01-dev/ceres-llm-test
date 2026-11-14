@@ -1,0 +1,20 @@
+{
+ "id": "u0409",
+ "name": "ceres::internal::ScopedThreadToken::token",
+ "file": "internal/ceres/scoped_thread_token.h",
+ "lines": [
+  50,
+  50
+ ],
+ "signature": "ceres::internal::ScopedThreadToken::token",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 409
+}

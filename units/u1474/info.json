@@ -1,0 +1,22 @@
+{
+ "id": "u1474",
+ "name": "ceres::internal::ProgramEvaluator::CreateEvaluatorScratch",
+ "file": "internal/ceres/program_evaluator.h",
+ "lines": [
+  361,
+  379
+ ],
+ "signature": "ceres::internal::ProgramEvaluator::CreateEvaluatorScratch",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1474
+}

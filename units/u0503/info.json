@@ -1,0 +1,20 @@
+{
+ "id": "u0503",
+ "name": "ceres::internal::CgnrSolver::~CgnrSolver",
+ "file": "internal/ceres/cgnr_solver.cc",
+ "lines": [
+  136,
+  143
+ ],
+ "signature": "ceres::internal::CgnrSolver::~CgnrSolver",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 503
+}

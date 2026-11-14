@@ -1,0 +1,20 @@
+{
+ "id": "u0608",
+ "name": "ceres::internal::MTM_mat1x4",
+ "file": "internal/ceres/small_blas_generic.h",
+ "lines": [
+  153,
+  190
+ ],
+ "signature": "ceres::internal::MTM_mat1x4",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 608
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0360",
+ "name": "ceres::internal::ParameterBlock::mutable_user_state",
+ "file": "internal/ceres/parameter_block.h",
+ "lines": [
+  113,
+  113
+ ],
+ "signature": "ceres::internal::ParameterBlock::mutable_user_state",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 360
+}

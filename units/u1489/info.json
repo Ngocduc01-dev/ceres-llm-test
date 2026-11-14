@@ -1,0 +1,20 @@
+{
+ "id": "u1489",
+ "name": "ceres::internal::LevenbergMarquardtStrategy::ComputeStep",
+ "file": "internal/ceres/levenberg_marquardt_strategy.cc",
+ "lines": [
+  68,
+  155
+ ],
+ "signature": "ceres::internal::LevenbergMarquardtStrategy::ComputeStep",
+ "branches": 26,
+ "cyclomatic": 14,
+ "topo_level": 4,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1489
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1317",
+ "name": "ceres::internal::(anonymous)::BuildJacobianLayout",
+ "file": "internal/ceres/block_jacobian_writer.cc",
+ "lines": [
+  66,
+  165
+ ],
+ "signature": "ceres::internal::(anonymous)::BuildJacobianLayout",
+ "branches": 22,
+ "cyclomatic": 12,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1317
+}

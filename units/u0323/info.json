@@ -1,0 +1,20 @@
+{
+ "id": "u0323",
+ "name": "ceres::internal::LevenbergMarquardtStrategy::Radius",
+ "file": "internal/ceres/levenberg_marquardt_strategy.cc",
+ "lines": [
+  172,
+  172
+ ],
+ "signature": "ceres::internal::LevenbergMarquardtStrategy::Radius",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 323
+}

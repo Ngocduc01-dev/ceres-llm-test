@@ -1,0 +1,22 @@
+{
+ "id": "u1396",
+ "name": "ceres::internal::operator<<",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  61,
+  64
+ ],
+ "signature": "ceres::internal::operator<<",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1396
+}

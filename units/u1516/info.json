@@ -1,0 +1,20 @@
+{
+ "id": "u1516",
+ "name": "ceres::internal::DoglegStrategy::ComputeStep",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  78,
+  166
+ ],
+ "signature": "ceres::internal::DoglegStrategy::ComputeStep",
+ "branches": 26,
+ "cyclomatic": 14,
+ "topo_level": 5,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 6,
+ "order": 1516
+}

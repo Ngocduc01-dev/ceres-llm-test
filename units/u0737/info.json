@@ -1,0 +1,20 @@
+{
+ "id": "u0737",
+ "name": "ceres::LoggingTypeToString",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  355,
+  362
+ ],
+ "signature": "ceres::LoggingTypeToString",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 737
+}

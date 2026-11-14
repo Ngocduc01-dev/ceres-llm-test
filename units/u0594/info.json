@@ -1,0 +1,20 @@
+{
+ "id": "u0594",
+ "name": "ceres::internal::(anonymous)::RowColLessThan::operator()",
+ "file": "internal/ceres/compressed_row_sparse_matrix.cc",
+ "lines": [
+  61,
+  66
+ ],
+ "signature": "ceres::internal::(anonymous)::RowColLessThan::operator()",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 594
+}

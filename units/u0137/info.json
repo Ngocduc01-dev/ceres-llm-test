@@ -1,0 +1,22 @@
+{
+ "id": "u0137",
+ "name": "ceres::isgreater",
+ "file": "include/ceres/jet.h",
+ "lines": [
+  980,
+  986
+ ],
+ "signature": "ceres::isgreater",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 137
+}

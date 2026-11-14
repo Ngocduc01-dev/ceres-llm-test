@@ -1,0 +1,20 @@
+{
+ "id": "u1472",
+ "name": "ceres::(anonymous)::PreSolveSummarize",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  530,
+  563
+ ],
+ "signature": "ceres::(anonymous)::PreSolveSummarize",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1472
+}

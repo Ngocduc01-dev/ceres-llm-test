@@ -1,0 +1,22 @@
+{
+ "id": "u0883",
+ "name": "ceres::internal::ProblemImpl::AddResidualBlock",
+ "file": "internal/ceres/problem_impl.h",
+ "lines": [
+  89,
+  99
+ ],
+ "signature": "ceres::internal::ProblemImpl::AddResidualBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 883
+}

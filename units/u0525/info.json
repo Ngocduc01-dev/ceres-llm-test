@@ -1,0 +1,20 @@
+{
+ "id": "u0525",
+ "name": "ceres::internal::DoglegStrategy::StepAccepted",
+ "file": "internal/ceres/dogleg_strategy.cc",
+ "lines": [
+  617,
+  633
+ ],
+ "signature": "ceres::internal::DoglegStrategy::StepAccepted",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 525
+}

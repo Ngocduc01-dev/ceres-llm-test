@@ -1,0 +1,20 @@
+{
+ "id": "u0702",
+ "name": "ceres::internal::NumScalarEntries",
+ "file": "internal/ceres/block_structure.h",
+ "lines": [
+  184,
+  191
+ ],
+ "signature": "ceres::internal::NumScalarEntries",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 702
+}

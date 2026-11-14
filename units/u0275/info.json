@@ -1,0 +1,20 @@
+{
+ "id": "u0275",
+ "name": "ceres::internal::CovarianceImpl::~CovarianceImpl",
+ "file": "internal/ceres/covariance_impl.cc",
+ "lines": [
+  70,
+  70
+ ],
+ "signature": "ceres::internal::CovarianceImpl::~CovarianceImpl",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 275
+}

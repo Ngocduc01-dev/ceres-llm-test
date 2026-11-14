@@ -1,0 +1,20 @@
+{
+ "id": "u1133",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::InitStorage",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  157,
+  162
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::InitStorage",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1133
+}

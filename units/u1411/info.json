@@ -1,0 +1,20 @@
+{
+ "id": "u1411",
+ "name": "ceres::(anonymous)::SummarizeGivenProgram",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  508,
+  517
+ ],
+ "signature": "ceres::(anonymous)::SummarizeGivenProgram",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1411
+}

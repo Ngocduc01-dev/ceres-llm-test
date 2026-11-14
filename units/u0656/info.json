@@ -1,0 +1,20 @@
+{
+ "id": "u0656",
+ "name": "ceres::internal::RefinedDenseCholesky::RefinedDenseCholesky",
+ "file": "internal/ceres/dense_cholesky.cc",
+ "lines": [
+  319,
+  323
+ ],
+ "signature": "ceres::internal::RefinedDenseCholesky::RefinedDenseCholesky",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 656
+}

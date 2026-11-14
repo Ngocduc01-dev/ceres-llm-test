@@ -1,0 +1,20 @@
+{
+ "id": "u0762",
+ "name": "ceres::internal::NonlinearConjugateGradient::NextDirection",
+ "file": "internal/ceres/line_search_direction.cc",
+ "lines": [
+  60,
+  93
+ ],
+ "signature": "ceres::internal::NonlinearConjugateGradient::NextDirection",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 762
+}

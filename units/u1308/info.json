@@ -1,0 +1,20 @@
+{
+ "id": "u1308",
+ "name": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::RightMultiplyAndAccumulate",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  82,
+  84
+ ],
+ "signature": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::RightMultiplyAndAccumulate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 2,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1308
+}

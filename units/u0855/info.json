@@ -1,0 +1,20 @@
+{
+ "id": "u0855",
+ "name": "ceres::internal::Copy",
+ "file": "internal/ceres/eigen_vector_ops.h",
+ "lines": [
+  96,
+  101
+ ],
+ "signature": "ceres::internal::Copy",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 855
+}

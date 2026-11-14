@@ -1,0 +1,20 @@
+{
+ "id": "u0334",
+ "name": "ceres::CauchyLoss::Evaluate",
+ "file": "internal/ceres/loss_function.cc",
+ "lines": [
+  75,
+  82
+ ],
+ "signature": "ceres::CauchyLoss::Evaluate",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 334
+}

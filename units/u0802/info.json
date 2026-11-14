@@ -1,0 +1,20 @@
+{
+ "id": "u0802",
+ "name": "ceres::internal::(anonymous)::ComputeCumulativeNumberOfNonZeros",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  56,
+  65
+ ],
+ "signature": "ceres::internal::(anonymous)::ComputeCumulativeNumberOfNonZeros",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 802
+}

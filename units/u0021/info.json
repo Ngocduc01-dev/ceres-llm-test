@@ -1,0 +1,20 @@
+{
+ "id": "u0021",
+ "name": "ceres::GradientProblem::function",
+ "file": "include/ceres/gradient_problem.h",
+ "lines": [
+  109,
+  109
+ ],
+ "signature": "ceres::GradientProblem::function",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 21
+}

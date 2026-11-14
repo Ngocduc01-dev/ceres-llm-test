@@ -1,0 +1,22 @@
+{
+ "id": "u1121",
+ "name": "ceres::DynamicCostFunctionToFunctor::operator()",
+ "file": "include/ceres/dynamic_cost_function_to_functor.h",
+ "lines": [
+  117,
+  184
+ ],
+ "signature": "ceres::DynamicCostFunctionToFunctor::operator()",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1121
+}

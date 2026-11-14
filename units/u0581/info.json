@@ -1,0 +1,22 @@
+{
+ "id": "u0581",
+ "name": "ceres::(anonymous)::QuaternionPlusJacobianImpl",
+ "file": "internal/ceres/manifold.cc",
+ "lines": [
+  62,
+  79
+ ],
+ "signature": "ceres::(anonymous)::QuaternionPlusJacobianImpl",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 581
+}

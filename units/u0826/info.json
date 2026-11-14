@@ -1,0 +1,20 @@
+{
+ "id": "u0826",
+ "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::mutable_matrix",
+ "file": "internal/ceres/block_random_access_diagonal_matrix.h",
+ "lines": [
+  82,
+  82
+ ],
+ "signature": "ceres::internal::BlockRandomAccessDiagonalMatrix::mutable_matrix",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 826
+}

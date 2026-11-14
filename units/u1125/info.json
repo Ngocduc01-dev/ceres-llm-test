@@ -1,0 +1,20 @@
+{
+ "id": "u1125",
+ "name": "ceres::StringToPreconditionerType",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  91,
+  101
+ ],
+ "signature": "ceres::StringToPreconditionerType",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1125
+}

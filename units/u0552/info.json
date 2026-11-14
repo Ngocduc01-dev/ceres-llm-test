@@ -1,0 +1,20 @@
+{
+ "id": "u0552",
+ "name": "ceres::internal::Corrector::CorrectJacobian",
+ "file": "internal/ceres/corrector.cc",
+ "lines": [
+  118,
+  155
+ ],
+ "signature": "ceres::internal::Corrector::CorrectJacobian",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 552
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u1219",
+ "name": "ceres::internal::InnerProductComputer::CreateResultMatrix",
+ "file": "internal/ceres/inner_product_computer.cc",
+ "lines": [
+  47,
+  58
+ ],
+ "signature": "ceres::internal::InnerProductComputer::CreateResultMatrix",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1219
+}

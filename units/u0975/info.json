@@ -1,0 +1,20 @@
+{
+ "id": "u0975",
+ "name": "ceres::DynamicCostFunction::AddParameterBlock",
+ "file": "include/ceres/dynamic_cost_function.h",
+ "lines": [
+  44,
+  46
+ ],
+ "signature": "ceres::DynamicCostFunction::AddParameterBlock",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 14,
+ "order": 975
+}

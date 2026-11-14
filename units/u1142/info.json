@@ -1,0 +1,20 @@
+{
+ "id": "u1142",
+ "name": "ceres::(anonymous)::LineSearchOptionsAreValid",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  438,
+  485
+ ],
+ "signature": "ceres::(anonymous)::LineSearchOptionsAreValid",
+ "branches": 36,
+ "cyclomatic": 19,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1142
+}

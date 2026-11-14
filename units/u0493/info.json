@@ -1,0 +1,22 @@
+{
+ "id": "u0493",
+ "name": "ceres::AutoDiffManifold::PlusJacobian",
+ "file": "include/ceres/autodiff_manifold.h",
+ "lines": [
+  206,
+  232
+ ],
+ "signature": "ceres::AutoDiffManifold::PlusJacobian",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 493
+}

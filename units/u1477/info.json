@@ -1,0 +1,20 @@
+{
+ "id": "u1477",
+ "name": "ceres::internal::ProblemImpl::InternalRemoveResidualBlock",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  176,
+  194
+ ],
+ "signature": "ceres::internal::ProblemImpl::InternalRemoveResidualBlock",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1477
+}

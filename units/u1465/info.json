@@ -1,0 +1,20 @@
+{
+ "id": "u1465",
+ "name": "ceres::internal::ProblemImpl::InternalAddParameterBlock",
+ "file": "internal/ceres/problem_impl.cc",
+ "lines": [
+  122,
+  174
+ ],
+ "signature": "ceres::internal::ProblemImpl::InternalAddParameterBlock",
+ "branches": 18,
+ "cyclomatic": 10,
+ "topo_level": 4,
+ "level": "de",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1465
+}

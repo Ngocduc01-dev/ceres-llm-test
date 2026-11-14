@@ -1,0 +1,20 @@
+{
+ "id": "u1218",
+ "name": "ceres::internal::BlockSparseMatrix::CreateRandomMatrix",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  711,
+  781
+ ],
+ "signature": "ceres::internal::BlockSparseMatrix::CreateRandomMatrix",
+ "branches": 36,
+ "cyclomatic": 19,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 7,
+ "order": 1218
+}

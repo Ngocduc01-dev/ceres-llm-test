@@ -1,0 +1,22 @@
+{
+ "id": "u1514",
+ "name": "ceres::internal::ProgramEvaluator::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
+ "file": "internal/ceres/program_evaluator.h",
+ "lines": [
+  117,
+  127
+ ],
+ "signature": "ceres::internal::ProgramEvaluator::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 5,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1514
+}

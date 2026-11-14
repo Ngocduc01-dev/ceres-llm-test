@@ -1,0 +1,20 @@
+{
+ "id": "u1402",
+ "name": "ceres::internal::ComputeRecursiveIndependentSetOrdering",
+ "file": "internal/ceres/parameter_block_ordering.cc",
+ "lines": [
+  102,
+  124
+ ],
+ "signature": "ceres::internal::ComputeRecursiveIndependentSetOrdering",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1402
+}

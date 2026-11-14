@@ -1,0 +1,20 @@
+{
+ "id": "u0733",
+ "name": "ceres::MinimizerTypeToString",
+ "file": "internal/ceres/types.cc",
+ "lines": [
+  197,
+  204
+ ],
+ "signature": "ceres::MinimizerTypeToString",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 733
+}

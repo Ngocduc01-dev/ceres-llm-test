@@ -1,0 +1,20 @@
+{
+ "id": "u1479",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterTridiagonalSparsity",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  136,
+  154
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterTridiagonalSparsity",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 4,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1479
+}

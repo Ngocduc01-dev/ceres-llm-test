@@ -1,0 +1,22 @@
+{
+ "id": "u0620",
+ "name": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "file": "include/ceres/dynamic_autodiff_cost_function.h",
+ "lines": [
+  83,
+  85
+ ],
+ "signature": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 620
+}

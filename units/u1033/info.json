@@ -1,0 +1,20 @@
+{
+ "id": "u1033",
+ "name": "ceres::internal::ImplicitSchurComplement::InversePowerSeriesOperatorRightMultiplyAccumulate",
+ "file": "internal/ceres/implicit_schur_complement.cc",
+ "lines": [
+  146,
+  174
+ ],
+ "signature": "ceres::internal::ImplicitSchurComplement::InversePowerSeriesOperatorRightMultiplyAccumulate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 1033
+}

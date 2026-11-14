@@ -1,0 +1,22 @@
+{
+ "id": "u0510",
+ "name": "ceres::internal::MatrixMatrixMultiplyEigen",
+ "file": "internal/ceres/small_blas.h",
+ "lines": [
+  163,
+  175
+ ],
+ "signature": "ceres::internal::MatrixMatrixMultiplyEigen",
+ "branches": 4,
+ "cyclomatic": 3,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 510
+}

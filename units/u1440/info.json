@@ -1,0 +1,20 @@
+{
+ "id": "u1440",
+ "name": "ceres::internal::DynamicCompressedRowJacobianWriter::Write",
+ "file": "internal/ceres/dynamic_compressed_row_jacobian_writer.cc",
+ "lines": [
+  59,
+  99
+ ],
+ "signature": "ceres::internal::DynamicCompressedRowJacobianWriter::Write",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1440
+}

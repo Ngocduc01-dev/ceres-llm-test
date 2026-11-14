@@ -1,0 +1,22 @@
+{
+ "id": "u0215",
+ "name": "ceres::SphereManifold::PlusJacobian",
+ "file": "include/ceres/sphere_manifold.h",
+ "lines": [
+  188,
+  196
+ ],
+ "signature": "ceres::SphereManifold::PlusJacobian",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 215
+}

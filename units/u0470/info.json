@@ -1,0 +1,20 @@
+{
+ "id": "u0470",
+ "name": "ceres::TolerantLoss::Evaluate",
+ "file": "internal/ceres/loss_function.cc",
+ "lines": [
+  99,
+  118
+ ],
+ "signature": "ceres::TolerantLoss::Evaluate",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 1,
+ "order": 470
+}

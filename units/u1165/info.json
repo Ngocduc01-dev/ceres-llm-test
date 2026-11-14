@@ -1,0 +1,20 @@
+{
+ "id": "u1165",
+ "name": "ceres::internal::ResidualBlock::ResidualBlock",
+ "file": "internal/ceres/residual_block.cc",
+ "lines": [
+  52,
+  66
+ ],
+ "signature": "ceres::internal::ResidualBlock::ResidualBlock",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 3,
+ "order": 1165
+}

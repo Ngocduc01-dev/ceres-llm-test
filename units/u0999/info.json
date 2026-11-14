@@ -1,0 +1,20 @@
+{
+ "id": "u0999",
+ "name": "ceres::internal::GradientProblemEvaluator::Plus",
+ "file": "internal/ceres/gradient_problem_evaluator.h",
+ "lines": [
+  76,
+  80
+ ],
+ "signature": "ceres::internal::GradientProblemEvaluator::Plus",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 1,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 999
+}

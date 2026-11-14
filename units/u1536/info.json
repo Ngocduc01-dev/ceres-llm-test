@@ -1,0 +1,20 @@
+{
+ "id": "u1536",
+ "name": "ceres::Solve",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  832,
+  837
+ ],
+ "signature": "ceres::Solve",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 8,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 19,
+ "order": 1536
+}

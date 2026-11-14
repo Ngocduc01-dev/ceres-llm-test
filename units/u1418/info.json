@@ -1,0 +1,20 @@
+{
+ "id": "u1418",
+ "name": "ceres::internal::VisibilityBasedPreconditioner::ClusterCameras",
+ "file": "internal/ceres/visibility_based_preconditioner.cc",
+ "lines": [
+  170,
+  198
+ ],
+ "signature": "ceres::internal::VisibilityBasedPreconditioner::ClusterCameras",
+ "branches": 12,
+ "cyclomatic": 7,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1418
+}

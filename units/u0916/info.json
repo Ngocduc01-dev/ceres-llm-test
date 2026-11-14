@@ -1,0 +1,20 @@
+{
+ "id": "u0916",
+ "name": "ceres::internal::TripletSparseMatrix::ToDenseMatrix",
+ "file": "internal/ceres/triplet_sparse_matrix.cc",
+ "lines": [
+  206,
+  213
+ ],
+ "signature": "ceres::internal::TripletSparseMatrix::ToDenseMatrix",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 8,
+ "order": 916
+}

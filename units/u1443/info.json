@@ -1,0 +1,20 @@
+{
+ "id": "u1443",
+ "name": "ceres::internal::SchurComplementSolver::SolveImpl",
+ "file": "internal/ceres/schur_complement_solver.cc",
+ "lines": [
+  100,
+  158
+ ],
+ "signature": "ceres::internal::SchurComplementSolver::SolveImpl",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1443
+}

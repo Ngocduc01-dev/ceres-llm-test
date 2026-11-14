@@ -1,0 +1,22 @@
+{
+ "id": "u1136",
+ "name": "ceres::internal::SchurEliminator::ChunkOuterProduct",
+ "file": "internal/ceres/schur_eliminator_impl.h",
+ "lines": [
+  511,
+  561
+ ],
+ "signature": "ceres::internal::SchurEliminator::ChunkOuterProduct",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1136
+}

@@ -1,0 +1,20 @@
+{
+ "id": "u0973",
+ "name": "ceres::internal::TrustRegionMinimizer::Init",
+ "file": "internal/ceres/trust_region_minimizer.cc",
+ "lines": [
+  139,
+  188
+ ],
+ "signature": "ceres::internal::TrustRegionMinimizer::Init",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "internal",
+ "access": "private",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 973
+}

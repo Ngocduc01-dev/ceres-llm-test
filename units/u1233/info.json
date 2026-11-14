@@ -1,0 +1,22 @@
+{
+ "id": "u1233",
+ "name": "ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl",
+ "file": "internal/ceres/block_sparse_matrix.cc",
+ "lines": [
+  120,
+  159
+ ],
+ "signature": "ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl",
+ "branches": 8,
+ "cyclomatic": 5,
+ "topo_level": 1,
+ "level": "kho",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": [
+  "double"
+ ],
+ "called_by_tests": 0,
+ "order": 1233
+}

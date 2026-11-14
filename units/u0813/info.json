@@ -1,0 +1,20 @@
+{
+ "id": "u0813",
+ "name": "ceres::internal::(anonymous)::BalanceCompanionMatrix",
+ "file": "internal/ceres/polynomial.cc",
+ "lines": [
+  51,
+  100
+ ],
+ "signature": "ceres::internal::(anonymous)::BalanceCompanionMatrix",
+ "branches": 14,
+ "cyclomatic": 8,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 813
+}

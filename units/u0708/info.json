@@ -1,0 +1,20 @@
+{
+ "id": "u0708",
+ "name": "ceres::internal::FloatEigenDenseCholesky::Solve",
+ "file": "internal/ceres/dense_cholesky.cc",
+ "lines": [
+  191,
+  203
+ ],
+ "signature": "ceres::internal::FloatEigenDenseCholesky::Solve",
+ "branches": 2,
+ "cyclomatic": 2,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 708
+}

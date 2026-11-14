@@ -1,0 +1,20 @@
+{
+ "id": "u0814",
+ "name": "ceres::internal::(anonymous)::FindQuadraticPolynomialRoots",
+ "file": "internal/ceres/polynomial.cc",
+ "lines": [
+  138,
+  179
+ ],
+ "signature": "ceres::internal::(anonymous)::FindQuadraticPolynomialRoots",
+ "branches": 16,
+ "cyclomatic": 9,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 814
+}

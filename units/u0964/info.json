@@ -1,0 +1,20 @@
+{
+ "id": "u0964",
+ "name": "ceres::internal::SchurComplementSolver::options",
+ "file": "internal/ceres/schur_complement_solver.h",
+ "lines": [
+  126,
+  126
+ ],
+ "signature": "ceres::internal::SchurComplementSolver::options",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "kho",
+ "callable": "internal",
+ "access": "protected",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 964
+}

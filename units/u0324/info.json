@@ -1,0 +1,20 @@
+{
+ "id": "u0324",
+ "name": "ceres::internal::LineSearchFunction::DirectionInfinityNorm",
+ "file": "internal/ceres/line_search.cc",
+ "lines": [
+  145,
+  147
+ ],
+ "signature": "ceres::internal::LineSearchFunction::DirectionInfinityNorm",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "de",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 324
+}

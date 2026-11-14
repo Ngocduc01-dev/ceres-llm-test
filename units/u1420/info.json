@@ -1,0 +1,20 @@
+{
+ "id": "u1420",
+ "name": "ceres::(anonymous)::OptionsAreValidForIterativeSchur",
+ "file": "internal/ceres/solver.cc",
+ "lines": [
+  253,
+  305
+ ],
+ "signature": "ceres::(anonymous)::OptionsAreValidForIterativeSchur",
+ "branches": 28,
+ "cyclomatic": 15,
+ "topo_level": 3,
+ "level": "trung_binh",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1420
+}

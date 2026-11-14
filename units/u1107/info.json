@@ -1,0 +1,20 @@
+{
+ "id": "u1107",
+ "name": "ceres::NormalPrior::NormalPrior",
+ "file": "internal/ceres/normal_prior.cc",
+ "lines": [
+  43,
+  49
+ ],
+ "signature": "ceres::NormalPrior::NormalPrior",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 1,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 4,
+ "order": 1107
+}

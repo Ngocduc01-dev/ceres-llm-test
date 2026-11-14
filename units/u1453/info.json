@@ -1,0 +1,20 @@
+{
+ "id": "u1453",
+ "name": "ceres::internal::ReorderSchurComplementColumnsUsingEigen",
+ "file": "internal/ceres/reorder_program.cc",
+ "lines": [
+  382,
+  442
+ ],
+ "signature": "ceres::internal::ReorderSchurComplementColumnsUsingEigen",
+ "branches": 6,
+ "cyclomatic": 4,
+ "topo_level": 3,
+ "level": "kho",
+ "callable": "internal",
+ "access": "public",
+ "linkage": "internal",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 1453
+}

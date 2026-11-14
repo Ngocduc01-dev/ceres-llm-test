@@ -1,0 +1,20 @@
+{
+ "id": "u0649",
+ "name": "ceres::internal::BlockRandomAccessDenseMatrix::GetCell",
+ "file": "internal/ceres/block_random_access_dense_matrix.cc",
+ "lines": [
+  56,
+  67
+ ],
+ "signature": "ceres::internal::BlockRandomAccessDenseMatrix::GetCell",
+ "branches": 0,
+ "cyclomatic": 1,
+ "topo_level": 0,
+ "level": "trung_binh",
+ "callable": "public",
+ "access": "public",
+ "linkage": "external",
+ "template_args": null,
+ "called_by_tests": 0,
+ "order": 649
+}
