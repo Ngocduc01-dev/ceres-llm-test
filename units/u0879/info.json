@@ -1,26 +1,33 @@
 {
  "id": "u0879",
  "name": "ceres::Problem::Problem",
+ "short_name": "Problem",
+ "signature": "Problem(Problem &&)",
+ "params": "(Problem &&)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
  "file": "internal/ceres/problem.cc",
  "lines": [
   46,
   46
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 879,
- "short_name": "Problem",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::Problem",
- "class_is_template": false,
- "params": "(Problem &&)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 879
 }

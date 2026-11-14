@@ -3,7 +3,7 @@ Hàm: QuaternionProduct(const T z[4], const T w[4], T zw[4])  → trả về voi
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/rotation.h, dòng 762–773
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionProduct<double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionProduct<double>.
 
 Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
 

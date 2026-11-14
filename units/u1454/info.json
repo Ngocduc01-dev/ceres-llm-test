@@ -1,26 +1,33 @@
 {
  "id": "u1454",
  "name": "ceres::internal::SparseNormalCholeskySolver::SolveImpl",
+ "short_name": "SolveImpl",
+ "signature": "LinearSolver::Summary SolveImpl(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "params": "(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseNormalCholeskySolver",
+ "class_is_template": false,
  "file": "internal/ceres/sparse_normal_cholesky_solver.cc",
  "lines": [
   58,
   110
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 53,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1454,
- "short_name": "SolveImpl",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SparseNormalCholeskySolver",
- "class_is_template": false,
- "params": "(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1454
 }

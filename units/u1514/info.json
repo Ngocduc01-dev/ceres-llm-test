@@ -1,28 +1,33 @@
 {
  "id": "u1514",
  "name": "ceres::internal::ProgramEvaluator::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
+ "short_name": "ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
+ "signature": "ProgramEvaluator(const Evaluator::Options & options, Program * program)",
+ "params": "(const Evaluator::Options & options, Program * program)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   117,
   127
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 5,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1514,
- "short_name": "ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::ProgramEvaluator",
- "class_is_template": true,
- "params": "(const Evaluator::Options & options, Program * program)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 5,
+ "existing_tests": 0,
+ "order": 1514
 }

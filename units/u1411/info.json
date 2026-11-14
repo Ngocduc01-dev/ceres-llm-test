@@ -1,26 +1,33 @@
 {
  "id": "u1411",
  "name": "ceres::(anonymous)::SummarizeGivenProgram",
+ "short_name": "SummarizeGivenProgram",
+ "signature": "void SummarizeGivenProgram(const internal::Program & program, Solver::Summary * summary)",
+ "params": "(const internal::Program & program, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   508,
   517
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 10,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1411,
- "short_name": "SummarizeGivenProgram",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const internal::Program & program, Solver::Summary * summary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1411
 }

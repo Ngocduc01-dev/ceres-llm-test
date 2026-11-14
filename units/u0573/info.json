@@ -1,28 +1,33 @@
 {
  "id": "u0573",
  "name": "ceres::TinySolverAutoDiffFunction::Initialize",
+ "short_name": "Initialize",
+ "signature": "typename std::enable_if<(R != Eigen::Dynamic), void>::type Initialize(const CostFunctor& /* function */)",
+ "params": "(const CostFunctor& /* function */)",
+ "return_type": "typename std::enable_if<(R != Eigen::Dynamic), void>::type",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::TinySolverAutoDiffFunction",
+ "class_is_template": true,
  "file": "include/ceres/tiny_solver_autodiff_function.h",
  "lines": [
   197,
   201
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 5,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 573,
- "short_name": "Initialize",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::TinySolverAutoDiffFunction",
- "class_is_template": true,
- "params": "(const CostFunctor& /* function */)",
- "return_type": "typename std::enable_if<(R != Eigen::Dynamic), void>::type",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3>::Initialize<2>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 573
 }

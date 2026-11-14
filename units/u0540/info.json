@@ -1,26 +1,33 @@
 {
  "id": "u0540",
  "name": "ceres::internal::ParameterBlock::SetUpperBound",
+ "short_name": "SetUpperBound",
+ "signature": "void SetUpperBound(int index, double upper_bound)",
+ "params": "(int index, double upper_bound)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block.h",
  "lines": [
   190,
   205
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 540,
- "short_name": "SetUpperBound",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ParameterBlock",
- "class_is_template": false,
- "params": "(int index, double upper_bound)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 540
 }

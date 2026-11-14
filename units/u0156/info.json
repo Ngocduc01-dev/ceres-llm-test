@@ -1,28 +1,30 @@
 {
  "id": "u0156",
  "name": "?::std::numeric_limits::quiet_NaN",
+ "short_name": "quiet_NaN",
+ "signature": "ceres::Jet<T, N> quiet_NaN()",
+ "params": "()",
+ "return_type": "ceres::Jet<T, N>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "?::std::numeric_limits",
+ "class_is_template": true,
  "file": "include/ceres/jet.h",
  "lines": [
   1345,
   1347
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 156,
- "short_name": "quiet_NaN",
- "kind": "method (hàm thành viên của class)",
- "class": "?::std::numeric_limits",
- "class_is_template": true,
- "params": "()",
- "return_type": "ceres::Jet<T, N>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: template không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 156
 }

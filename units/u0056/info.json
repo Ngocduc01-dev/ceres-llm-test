@@ -1,28 +1,33 @@
 {
  "id": "u0056",
  "name": "ceres::internal::ApplyHouseholderVector",
+ "short_name": "ApplyHouseholderVector",
+ "signature": "typename Derived::PlainObject ApplyHouseholderVector(const XVectorType& y, const Eigen::MatrixBase<Derived>& v, const typename Derived::Scalar& beta)",
+ "params": "(const XVectorType& y, const Eigen::MatrixBase<Derived>& v, const typename Derived::Scalar& beta)",
+ "return_type": "typename Derived::PlainObject",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/householder_vector.h",
  "lines": [
   84,
   90
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 56,
- "short_name": "ApplyHouseholderVector",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const XVectorType& y, const Eigen::MatrixBase<Derived>& v, const typename Derived::Scalar& beta)",
- "return_type": "typename Derived::PlainObject",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ApplyHouseholderVector<Matrix<double, 4, 1>, Matrix<double, 4, 1>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 56
 }

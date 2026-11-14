@@ -1,26 +1,33 @@
 {
  "id": "u0915",
  "name": "ceres::internal::TripletSparseMatrix::LeftMultiplyAndAccumulate",
+ "short_name": "LeftMultiplyAndAccumulate",
+ "signature": "void LeftMultiplyAndAccumulate(const double * x, double * y) const",
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   179,
   184
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 915,
- "short_name": "LeftMultiplyAndAccumulate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "(const double * x, double * y)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 915
 }

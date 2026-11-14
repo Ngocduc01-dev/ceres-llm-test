@@ -1,26 +1,33 @@
 {
  "id": "u1450",
  "name": "ceres::internal::TrustRegionMinimizer::DoLineSearch",
+ "short_name": "DoLineSearch",
+ "signature": "void DoLineSearch(const Vector & x, const Vector & gradient, const double cost, Vector * delta)",
+ "params": "(const Vector & x, const Vector & gradient, const double cost, Vector * delta)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_minimizer.cc",
  "lines": [
   587,
   632
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 46,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1450,
- "short_name": "DoLineSearch",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionMinimizer",
- "class_is_template": false,
- "params": "(const Vector & x, const Vector & gradient, const double cost, Vector * delta)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1450
 }

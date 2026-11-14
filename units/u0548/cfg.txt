@@ -3,7 +3,7 @@ Hàm: operator()(const T * parameters, T * residuals, T * jacobian) const  → t
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::TinySolverAutoDiffFunction
 Vị trí: include/ceres/tiny_solver_autodiff_function.h, dòng 129–164
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3>.
 
 Số điểm rẽ nhánh: 5
 

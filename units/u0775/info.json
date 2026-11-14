@@ -1,26 +1,33 @@
 {
  "id": "u0775",
  "name": "ceres::internal::ComputeVisibility",
+ "short_name": "ComputeVisibility",
+ "signature": "void ComputeVisibility(const CompressedRowBlockStructure & block_structure, const int num_eliminate_blocks, std::vector<std::set<int>> * visibility)",
+ "params": "(const CompressedRowBlockStructure & block_structure, const int num_eliminate_blocks, std::vector<std::set<int>> * visibility)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/visibility.cc",
  "lines": [
   49,
   74
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 26,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 775,
- "short_name": "ComputeVisibility",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const CompressedRowBlockStructure & block_structure, const int num_eliminate_blocks, std::vector<std::set<int>> * visibility)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 775
 }

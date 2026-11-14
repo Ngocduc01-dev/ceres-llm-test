@@ -1,28 +1,33 @@
 {
  "id": "u0198",
  "name": "ceres::ProductManifold::ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+ "short_name": "ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+ "signature": "void ProductManifold(Args&&... manifolds)",
+ "params": "(Args&&... manifolds)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
  "file": "include/ceres/product_manifold.h",
  "lines": [
   92,
   98
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 198,
- "short_name": "ProductManifold<Manifold0, Manifold1, ManifoldN...>",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::ProductManifold",
- "class_is_template": true,
- "params": "(Args&&... manifolds)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProductManifold<EuclideanManifold<3>, SphereManifold<4>>::ProductManifold<<0UL, 1UL>, <>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 198
 }

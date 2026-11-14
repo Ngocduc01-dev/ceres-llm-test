@@ -1,26 +1,33 @@
 {
  "id": "u1087",
  "name": "ceres::internal::DenseIterativeRefiner::Refine",
+ "short_name": "Refine",
+ "signature": "void Refine(const int num_cols, const double * lhs_ptr, const double * rhs_ptr, DenseCholesky * cholesky, double * solution_ptr)",
+ "params": "(const int num_cols, const double * lhs_ptr, const double * rhs_ptr, DenseCholesky * cholesky, double * solution_ptr)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseIterativeRefiner",
+ "class_is_template": false,
  "file": "internal/ceres/iterative_refiner.cc",
  "lines": [
   83,
   99
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1087,
- "short_name": "Refine",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DenseIterativeRefiner",
- "class_is_template": false,
- "params": "(const int num_cols, const double * lhs_ptr, const double * rhs_ptr, DenseCholesky * cholesky, double * solution_ptr)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1087
 }

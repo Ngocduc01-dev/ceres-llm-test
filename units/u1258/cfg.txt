@@ -3,7 +3,7 @@ Hàm: operator()(const std::pair<T, T>& p) const  → trả về std::size_t
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Thuộc class: ceres::internal::pair_hash
 Vị trí: internal/ceres/pair_hash.h, dòng 104–111
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator()<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator()<int>.
 
 Số điểm rẽ nhánh: 0
 

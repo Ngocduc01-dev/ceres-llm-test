@@ -1,26 +1,33 @@
 {
  "id": "u1222",
  "name": "ceres::internal::(anonymous)::GetNumAllowedThreads",
+ "short_name": "GetNumAllowedThreads",
+ "signature": "int GetNumAllowedThreads(int requested_num_threads)",
+ "params": "(int requested_num_threads)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/thread_pool.cc",
  "lines": [
   42,
   44
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 3,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1222,
- "short_name": "GetNumAllowedThreads",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(int requested_num_threads)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1222
 }

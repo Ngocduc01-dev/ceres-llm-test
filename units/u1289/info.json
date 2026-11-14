@@ -1,26 +1,33 @@
 {
  "id": "u1289",
  "name": "ceres::internal::InvalidateEvaluation",
+ "short_name": "InvalidateEvaluation",
+ "signature": "void InvalidateEvaluation(const ResidualBlock & block, double * cost, double * residuals, double ** jacobians)",
+ "params": "(const ResidualBlock & block, double * cost, double * residuals, double ** jacobians)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/residual_block_utils.cc",
  "lines": [
   48,
   63
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1289,
- "short_name": "InvalidateEvaluation",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const ResidualBlock & block, double * cost, double * residuals, double ** jacobians)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1289
 }

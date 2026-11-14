@@ -1,26 +1,33 @@
 {
  "id": "u1489",
  "name": "ceres::internal::LevenbergMarquardtStrategy::ComputeStep",
+ "short_name": "ComputeStep",
+ "signature": "TrustRegionStrategy::Summary ComputeStep(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)",
+ "params": "(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)",
+ "return_type": "TrustRegionStrategy::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LevenbergMarquardtStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/levenberg_marquardt_strategy.cc",
  "lines": [
   68,
   155
  ],
- "branches": 26,
- "cyclomatic": 14,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 88,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1489,
- "short_name": "ComputeStep",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LevenbergMarquardtStrategy",
- "class_is_template": false,
- "params": "(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)",
- "return_type": "TrustRegionStrategy::Summary",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 8,
+  "branches": 16,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 1,
+ "order": 1489
 }

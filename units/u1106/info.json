@@ -1,26 +1,33 @@
 {
  "id": "u1106",
  "name": "ceres::internal::DynamicCompressedRowSparseMatrix::ClearRows",
+ "short_name": "ClearRows",
+ "signature": "void ClearRows(int row_start, int num_rows)",
+ "params": "(int row_start, int num_rows)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/dynamic_compressed_row_sparse_matrix.cc",
  "lines": [
   55,
   63
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1106,
- "short_name": "ClearRows",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "(int row_start, int num_rows)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1106
 }

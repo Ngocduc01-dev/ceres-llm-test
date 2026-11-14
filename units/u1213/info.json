@@ -1,26 +1,33 @@
 {
  "id": "u1213",
  "name": "ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix",
+ "short_name": "BlockRandomAccessSparseMatrix",
+ "signature": "BlockRandomAccessSparseMatrix(const std::vector<Block> & blocks, const std::set<std::pair<int, int>> & block_pairs, ContextImpl * context, int num_threads)",
+ "params": "(const std::vector<Block> & blocks, const std::set<std::pair<int, int>> & block_pairs, ContextImpl * context, int num_threads)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_sparse_matrix.cc",
  "lines": [
   47,
   98
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 52,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1213,
- "short_name": "BlockRandomAccessSparseMatrix",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::BlockRandomAccessSparseMatrix",
- "class_is_template": false,
- "params": "(const std::vector<Block> & blocks, const std::set<std::pair<int, int>> & block_pairs, ContextImpl * context, int num_threads)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 5,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1213
 }

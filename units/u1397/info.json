@@ -1,26 +1,33 @@
 {
  "id": "u1397",
  "name": "ceres::internal::ParameterBlock::AddResidualBlock",
+ "short_name": "AddResidualBlock",
+ "signature": "void AddResidualBlock(ResidualBlock * residual_block)",
+ "params": "(ResidualBlock * residual_block)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block.h",
  "lines": [
   275,
   280
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1397,
- "short_name": "AddResidualBlock",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ParameterBlock",
- "class_is_template": false,
- "params": "(ResidualBlock * residual_block)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1397
 }

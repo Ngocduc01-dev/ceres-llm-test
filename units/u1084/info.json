@@ -1,26 +1,30 @@
 {
  "id": "u1084",
  "name": "ceres::internal::StringAppendF",
+ "short_name": "StringAppendF",
+ "signature": "void StringAppendF(std::string * dst, const char * format)",
+ "params": "(std::string * dst, const char * format)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/stringprintf.cc",
  "lines": [
   111,
   116
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1084,
- "short_name": "StringAppendF",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::string * dst, const char * format)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: bản overload này không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 2,
+ "order": 1084
 }

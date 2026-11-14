@@ -1,28 +1,33 @@
 {
  "id": "u0772",
  "name": "ceres::internal::AutoDifferentiate",
+ "short_name": "AutoDifferentiate",
+ "signature": "bool AutoDifferentiate(const Functor& functor, T const* const* parameters, int dynamic_num_outputs, T* function_value, T** jacobians)",
+ "params": "(const Functor& functor, T const* const* parameters, int dynamic_num_outputs, T* function_value, T** jacobians)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/autodiff.h",
  "lines": [
   303,
   359
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 57,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 772,
- "short_name": "AutoDifferentiate",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Functor& functor, T const* const* parameters, int dynamic_num_outputs, T* function_value, T** jacobians)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 2
+ },
+ "template_example": "AutoDifferentiate<1, ParameterDims<false, 2, 2>, BinaryScalarCost, double>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 772
 }

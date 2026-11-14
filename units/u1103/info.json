@@ -1,26 +1,33 @@
 {
  "id": "u1103",
  "name": "ceres::internal::BlockRandomAccessSparseMatrix::SymmetricRightMultiplyAndAccumulate",
+ "short_name": "SymmetricRightMultiplyAndAccumulate",
+ "signature": "void SymmetricRightMultiplyAndAccumulate(const double * x, double * y) const",
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_sparse_matrix.cc",
  "lines": [
   125,
   163
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 39,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1103,
- "short_name": "SymmetricRightMultiplyAndAccumulate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockRandomAccessSparseMatrix",
- "class_is_template": false,
- "params": "(const double * x, double * y)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1103
 }

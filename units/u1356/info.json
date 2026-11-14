@@ -1,28 +1,33 @@
 {
  "id": "u1356",
  "name": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalEtE",
+ "short_name": "UpdateBlockDiagonalEtE",
+ "signature": "void UpdateBlockDiagonalEtE(BlockSparseMatrix * block_diagonal) const",
+ "params": "(BlockSparseMatrix * block_diagonal)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
  "file": "internal/ceres/partitioned_matrix_view_impl.h",
  "lines": [
   514,
   523
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1356,
- "short_name": "UpdateBlockDiagonalEtE",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::PartitionedMatrixView",
- "class_is_template": true,
- "params": "(BlockSparseMatrix * block_diagonal)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "PartitionedMatrixView<>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1356
 }

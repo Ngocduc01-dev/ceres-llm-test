@@ -1,26 +1,33 @@
 {
  "id": "u0923",
  "name": "ceres::internal::SchurEliminatorBase::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<SchurEliminatorBase> Create(const LinearSolver::Options & options)",
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": "std::unique_ptr<SchurEliminatorBase>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminatorBase",
+ "class_is_template": false,
  "file": "internal/ceres/schur_eliminator.cc",
  "lines": [
   51,
   161
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 111,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 923,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurEliminatorBase",
- "class_is_template": false,
- "params": "(const LinearSolver::Options & options)",
- "return_type": "std::unique_ptr<SchurEliminatorBase>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 3,
+ "order": 923
 }

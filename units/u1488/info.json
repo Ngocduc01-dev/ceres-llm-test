@@ -1,26 +1,33 @@
 {
  "id": "u1488",
  "name": "ceres::internal::LineSearch::InterpolatingPolynomialMinimizingStepSize",
+ "short_name": "InterpolatingPolynomialMinimizingStepSize",
+ "signature": "double InterpolatingPolynomialMinimizingStepSize(const LineSearchInterpolationType & interpolation_type, const FunctionSample & lowerbound, const FunctionSample & previous, const FunctionSample & current, const double min_step_size, const double max_step_size) const",
+ "params": "(const LineSearchInterpolationType & interpolation_type, const FunctionSample & lowerbound, const FunctionSample & previous, const FunctionSample & current, const double min_step_size, const double max_step_size)",
+ "return_type": "double",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   209,
   275
  ],
- "branches": 20,
- "cyclomatic": 11,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 67,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1488,
- "short_name": "InterpolatingPolynomialMinimizingStepSize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LineSearch",
- "class_is_template": false,
- "params": "(const LineSearchInterpolationType & interpolation_type, const FunctionSample & lowerbound, const FunctionSample & previous, const FunctionSample & current, const double min_step_size, const double max_step_size)",
- "return_type": "double",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1488
 }

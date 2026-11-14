@@ -1,28 +1,33 @@
 {
  "id": "u0057",
  "name": "ceres::internal::AsScalar",
+ "short_name": "AsScalar",
+ "signature": "decltype(auto) AsScalar(T&& value)",
+ "params": "(T&& value)",
+ "return_type": "decltype(auto)",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/jet_traits.h",
  "lines": [
   104,
   107
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 57,
- "short_name": "AsScalar",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(T&& value)",
- "return_type": "decltype(auto)",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "AsScalar<const double &>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 57
 }

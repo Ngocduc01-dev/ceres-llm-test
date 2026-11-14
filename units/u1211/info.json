@@ -1,26 +1,33 @@
 {
  "id": "u1211",
  "name": "ceres::internal::BlockSparseMatrix::AppendRows",
+ "short_name": "AppendRows",
+ "signature": "void AppendRows(const BlockSparseMatrix & m)",
+ "params": "(const BlockSparseMatrix & m)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   616,
   667
  ],
- "branches": 16,
- "cyclomatic": 9,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 52,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 6,
- "order": 1211,
- "short_name": "AppendRows",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(const BlockSparseMatrix & m)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 2,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 6,
+ "order": 1211
 }

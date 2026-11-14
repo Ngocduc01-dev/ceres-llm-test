@@ -1,26 +1,33 @@
 {
  "id": "u1180",
  "name": "ceres::internal::BlockSparseMatrix::CreateDiagonalMatrix",
+ "short_name": "CreateDiagonalMatrix",
+ "signature": "std::unique_ptr<BlockSparseMatrix> CreateDiagonalMatrix(const double * diagonal, const std::vector<Block> & column_blocks)",
+ "params": "(const double * diagonal, const std::vector<Block> & column_blocks)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   581,
   614
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 34,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 1180,
- "short_name": "CreateDiagonalMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(const double * diagonal, const std::vector<Block> & column_blocks)",
- "return_type": "std::unique_ptr<BlockSparseMatrix>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 3,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 4,
+ "order": 1180
 }

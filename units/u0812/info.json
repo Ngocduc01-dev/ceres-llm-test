@@ -1,26 +1,33 @@
 {
  "id": "u0812",
  "name": "ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap",
+ "short_name": "FlattenMembershipMap",
+ "signature": "void FlattenMembershipMap(const std::unordered_map<int, int> & membership_map, std::vector<int> * membership_vector) const",
+ "params": "(const std::unordered_map<int, int> & membership_map, std::vector<int> * membership_vector)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/visibility_based_preconditioner.cc",
  "lines": [
   536,
   572
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 37,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 812,
- "short_name": "FlattenMembershipMap",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::VisibilityBasedPreconditioner",
- "class_is_template": false,
- "params": "(const std::unordered_map<int, int> & membership_map, std::vector<int> * membership_vector)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 812
 }

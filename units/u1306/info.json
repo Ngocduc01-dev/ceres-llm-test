@@ -1,26 +1,33 @@
 {
  "id": "u1306",
  "name": "ceres::GradientChecker::Probe",
+ "short_name": "Probe",
+ "signature": "bool Probe(const double *const * parameters, double relative_precision, ProbeResults * results_param) const",
+ "params": "(const double *const * parameters, double relative_precision, ProbeResults * results_param)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientChecker",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_checker.cc",
  "lines": [
   141,
   283
  ],
- "branches": 22,
- "cyclomatic": 12,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 143,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1306,
- "short_name": "Probe",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::GradientChecker",
- "class_is_template": false,
- "params": "(const double *const * parameters, double relative_precision, ProbeResults * results_param)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 11,
+  "branches": 22,
+  "loops": 4,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 2,
+ "order": 1306
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0723",
  "name": "ceres::internal::EigenSparseCholesky::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<SparseCholesky> Create(const OrderingType ordering_type)",
+ "params": "(const OrderingType ordering_type)",
+ "return_type": "std::unique_ptr<SparseCholesky>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenSparseCholesky",
+ "class_is_template": false,
  "file": "internal/ceres/eigensparse.cc",
  "lines": [
   146,
   172
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 27,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 723,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::EigenSparseCholesky",
- "class_is_template": false,
- "params": "(const OrderingType ordering_type)",
- "return_type": "std::unique_ptr<SparseCholesky>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 723
 }

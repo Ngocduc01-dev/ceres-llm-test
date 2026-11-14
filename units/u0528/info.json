@@ -1,28 +1,33 @@
 {
  "id": "u0528",
  "name": "ceres::internal::InvokeOnSegment",
+ "short_name": "InvokeOnSegment",
+ "signature": "void InvokeOnSegment(int thread_id, std::tuple<int, int> range, F&& function)",
+ "params": "(int thread_id, std::tuple<int, int> range, F&& function)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parallel_invoke.h",
  "lines": [
   58,
   71
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 14,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 528,
- "short_name": "InvokeOnSegment",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(int thread_id, std::tuple<int, int> range, F&& function)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "InvokeOnSegment<(lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:68:15)>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 528
 }

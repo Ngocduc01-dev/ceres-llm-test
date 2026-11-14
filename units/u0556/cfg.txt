@@ -3,7 +3,7 @@ Hàm: Degree2MaximumSpanningForest(const WeightedGraph<Vertex>& graph)  → tr�
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::internal
 Vị trí: internal/ceres/graph_algorithms.h, dòng 260–340
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Degree2MaximumSpanningForest<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Degree2MaximumSpanningForest<int>.
 
 Số điểm rẽ nhánh: 7
 

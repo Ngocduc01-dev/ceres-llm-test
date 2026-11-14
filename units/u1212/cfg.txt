@@ -3,7 +3,7 @@ Hàm: PartitionedMatrixView(const LinearSolver::Options & options, const BlockSp
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::internal::PartitionedMatrixView
 Vị trí: internal/ceres/partitioned_matrix_view_impl.h, dòng 47–105
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<>.
 
 Số điểm rẽ nhánh: 5 (và 2 lệnh CHECK)
 

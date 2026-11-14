@@ -1,26 +1,33 @@
 {
  "id": "u0855",
  "name": "ceres::internal::Copy",
+ "short_name": "Copy",
+ "signature": "void Copy(const Vector & from, Vector & to, ContextImpl * context, int num_threads)",
+ "params": "(const Vector & from, Vector & to, ContextImpl * context, int num_threads)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/eigen_vector_ops.h",
  "lines": [
   96,
   101
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 855,
- "short_name": "Copy",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vector & from, Vector & to, ContextImpl * context, int num_threads)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 855
 }

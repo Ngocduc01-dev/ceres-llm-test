@@ -1,28 +1,30 @@
 {
  "id": "u0615",
  "name": "ceres::AutoDiffCostFunction::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
+ "short_name": "AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
+ "signature": "AutoDiffCostFunction(AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...> && other)",
+ "params": "(AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...> && other)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::AutoDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/autodiff_cost_function.h",
  "lines": [
   182,
   183
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 615,
- "short_name": "AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::AutoDiffCostFunction",
- "class_is_template": true,
- "params": "(AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...> && other)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: bản overload này không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 615
 }

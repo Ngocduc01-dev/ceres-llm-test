@@ -1,26 +1,33 @@
 {
  "id": "u1129",
  "name": "ceres::internal::FindPolynomialRoots",
+ "short_name": "FindPolynomialRoots",
+ "signature": "bool FindPolynomialRoots(const Vector & polynomial_in, Vector * real, Vector * imaginary)",
+ "params": "(const Vector & polynomial_in, Vector * real, Vector * imaginary)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/polynomial.cc",
  "lines": [
   182,
   251
  ],
- "branches": 24,
- "cyclomatic": 13,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 70,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 1129,
- "short_name": "FindPolynomialRoots",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vector & polynomial_in, Vector * real, Vector * imaginary)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 8,
+  "branches": 16,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 4,
+ "order": 1129
 }

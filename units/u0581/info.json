@@ -1,28 +1,33 @@
 {
  "id": "u0581",
  "name": "ceres::(anonymous)::QuaternionPlusJacobianImpl",
+ "short_name": "QuaternionPlusJacobianImpl",
+ "signature": "void QuaternionPlusJacobianImpl(const double* x, double* jacobian_ptr)",
+ "params": "(const double* x, double* jacobian_ptr)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/manifold.cc",
  "lines": [
   62,
   79
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 18,
  "access": "public",
  "linkage": "internal",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 581,
- "short_name": "QuaternionPlusJacobianImpl",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const double* x, double* jacobian_ptr)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "QuaternionPlusJacobianImpl<(anonymous namespace)::CeresQuaternionOrder>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 581
 }

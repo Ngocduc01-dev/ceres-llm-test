@@ -1,26 +1,33 @@
 {
  "id": "u1380",
  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingSuiteSparseQR",
+ "short_name": "ComputeCovarianceValuesUsingSuiteSparseQR",
+ "signature": "bool ComputeCovarianceValuesUsingSuiteSparseQR()",
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
  "file": "internal/ceres/covariance_impl.cc",
  "lines": [
   535,
   702
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 3,
- "level": "de",
- "callable": "public",
+ "loc": 168,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1380,
- "short_name": "ComputeCovarianceValuesUsingSuiteSparseQR",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CovarianceImpl",
- "class_is_template": false,
- "params": "()",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1380
 }

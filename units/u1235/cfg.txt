@@ -3,7 +3,7 @@ Hàm: CreateStructureOfCompressedRowSparseMatrix(const double* values, int num_r
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::internal::(namespace không tên)
 Vị trí: internal/ceres/block_sparse_matrix.cc, dòng 67–118
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CreateStructureOfCompressedRowSparseMatrix<true> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CreateStructureOfCompressedRowSparseMatrix<true>.
 
 Số điểm rẽ nhánh: 4
 

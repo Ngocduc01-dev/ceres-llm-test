@@ -1,26 +1,33 @@
 {
  "id": "u0022",
  "name": "ceres::GradientProblem::mutable_function",
+ "short_name": "mutable_function",
+ "signature": "FirstOrderFunction * mutable_function()",
+ "params": "()",
+ "return_type": "FirstOrderFunction *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblem",
+ "class_is_template": false,
  "file": "include/ceres/gradient_problem.h",
  "lines": [
   110,
   110
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 22,
- "short_name": "mutable_function",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::GradientProblem",
- "class_is_template": false,
- "params": "()",
- "return_type": "FirstOrderFunction *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 22
 }

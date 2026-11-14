@@ -3,7 +3,7 @@ Hàm: Update(const Function & function, const Parameters & x)  → trả về bo
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::TinySolver
 Vị trí: include/ceres/tiny_solver.h, dòng 190–218
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>>.
 
 Số điểm rẽ nhánh: 2
 

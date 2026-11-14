@@ -1,26 +1,33 @@
 {
  "id": "u0961",
  "name": "ceres::internal::LineSearch::options",
+ "short_name": "options",
+ "signature": "const LineSearch::Options & options() const",
+ "params": "()",
+ "return_type": "const LineSearch::Options &",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.h",
  "lines": [
   194,
   194
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "internal",
+ "loc": 1,
  "access": "protected",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 961,
- "short_name": "options",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LineSearch",
- "class_is_template": false,
- "params": "()",
- "return_type": "const LineSearch::Options &",
- "is_const": true
+ "how_to_call": "protected: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 961
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1238",
  "name": "ceres::(anonymous)::EvaluateCostFunction",
+ "short_name": "EvaluateCostFunction",
+ "signature": "bool EvaluateCostFunction(const CostFunction * function, const double *const * parameters, const std::vector<const Manifold *> & manifolds, Vector * residuals, std::vector<Matrix> * jacobians, std::vector<Matrix> * local_jacobians)",
+ "params": "(const CostFunction * function, const double *const * parameters, const std::vector<const Manifold *> & manifolds, Vector * residuals, std::vector<Matrix> * jacobians, std::vector<Matrix> * local_jacobians)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/gradient_checker.cc",
  "lines": [
   55,
   113
  ],
- "branches": 22,
- "cyclomatic": 12,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 59,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1238,
- "short_name": "EvaluateCostFunction",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const CostFunction * function, const double *const * parameters, const std::vector<const Manifold *> & manifolds, Vector * residuals, std::vector<Matrix> * jacobians, std::vector<Matrix> * local_jacobians)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 3,
+  "checks": 5
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1238
 }

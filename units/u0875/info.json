@@ -1,28 +1,33 @@
 {
  "id": "u0875",
  "name": "ceres::internal::ParallelSetZero",
+ "short_name": "ParallelSetZero",
+ "signature": "void ParallelSetZero(ContextImpl* context, int num_threads, VectorType& vector)",
+ "params": "(ContextImpl* context, int num_threads, VectorType& vector)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parallel_vector_ops.h",
  "lines": [
   77,
   82
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 875,
- "short_name": "ParallelSetZero",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(ContextImpl* context, int num_threads, VectorType& vector)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ParallelSetZero<Matrix<double, -1, 1>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 875
 }

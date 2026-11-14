@@ -1,28 +1,33 @@
 {
  "id": "u1258",
  "name": "ceres::internal::pair_hash::operator()",
+ "short_name": "operator()",
+ "signature": "std::size_t operator()(const std::pair<T, T>& p) const",
+ "params": "(const std::pair<T, T>& p)",
+ "return_type": "std::size_t",
+ "is_const": true,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::pair_hash",
+ "class_is_template": false,
  "file": "internal/ceres/pair_hash.h",
  "lines": [
   104,
   111
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 2,
- "level": "de",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1258,
- "short_name": "operator()",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::internal::pair_hash",
- "class_is_template": false,
- "params": "(const std::pair<T, T>& p)",
- "return_type": "std::size_t",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "operator()<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1258
 }

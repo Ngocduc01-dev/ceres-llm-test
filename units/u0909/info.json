@@ -1,28 +1,33 @@
 {
  "id": "u0909",
  "name": "ceres::internal::ParallelAssign",
+ "short_name": "ParallelAssign",
+ "signature": "void ParallelAssign(ContextImpl* context, int num_threads, LhsExpression& lhs, const RhsExpression& rhs)",
+ "params": "(ContextImpl* context, int num_threads, LhsExpression& lhs, const RhsExpression& rhs)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parallel_vector_ops.h",
  "lines": [
   55,
   74
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 20,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 909,
- "short_name": "ParallelAssign",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(ContextImpl* context, int num_threads, LhsExpression& lhs, const RhsExpression& rhs)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "ParallelAssign<Matrix<double, -1, 1>, CwiseBinaryOp<scalar_sum_op<double>, const CwiseBinaryOp<scalar_product_op<double>, const CwiseNullaryOp<scalar_constant_op<double>, const Matrix<double, -1, 1>>, const Matrix<double, -1, 1>>, const CwiseBinaryOp<scalar_product_op<double>, const CwiseNullaryOp<scalar_constant_op<double>, const Matrix<double, -1, 1>>, const Matrix<double, -1, 1>>>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 909
 }

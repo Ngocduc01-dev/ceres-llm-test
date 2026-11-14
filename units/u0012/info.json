@@ -1,26 +1,33 @@
 {
  "id": "u0012",
  "name": "ceres::CostFunction::parameter_block_sizes",
+ "short_name": "parameter_block_sizes",
+ "signature": "const std::vector<int32_t> & parameter_block_sizes() const",
+ "params": "()",
+ "return_type": "const std::vector<int32_t> &",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::CostFunction",
+ "class_is_template": false,
  "file": "include/ceres/cost_function.h",
  "lines": [
   120,
   122
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 7,
- "order": 12,
- "short_name": "parameter_block_sizes",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::CostFunction",
- "class_is_template": false,
- "params": "()",
- "return_type": "const std::vector<int32_t> &",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 7,
+ "order": 12
 }

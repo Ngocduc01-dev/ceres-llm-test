@@ -70,3 +70,41 @@ START → 1
 Những gì script đã làm gọn sẵn (người đọc không cần biết): gộp điều kiện ghép `a && b` / `a || b` (Clang tách thành 2 khối) thành 1 node; bỏ nhánh in log của macro `VLOG` (không phải logic của hàm); bỏ khối rỗng và khối không bao giờ tới được; đổi `for (...; i < n; ...)` thành `vòng for, điều kiện: i < n`.
 
 Cách đọc cho LLM nằm trong `prompts/master_prompt.md` mục 3.2.
+
+## `info.json` – thông tin unit
+
+`scripts/init_units.py` viết phần thông tin hàm, `scripts/build_cfg.py` ghi thêm phần `cfg` và `template_example`. Ví dụ `units/u0553/info.json` (rút gọn):
+
+```json
+{
+ "id": "u0553",
+ "signature": "bool Plus(const double * x, const double * delta, double * x_plus_delta) const",
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "loc": 28,
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {"has_cfg": true, "decisions": 6, "branches": 12, "loops": 2, "checks": 0},
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 3
+}
+```
+
+| Trường | Ý nghĩa |
+|---|---|
+| `signature`, `params`, `return_type`, `is_const` | Khai báo hàm. Không có tham số thì `()`. Hàm template: tham số đọc từ mã nguồn |
+| `kind`, `class`, `class_is_template` | Loại hàm (method, constructor, hàm tự do, hàm template…) và class chứa nó |
+| `file`, `lines`, `loc` | Vị trí trong Ceres và số dòng code |
+| `access`, `linkage`, `how_to_call` | public/private/protected; hàm `static`/namespace không tên (`internal`); cách gọi từ file test viết bằng lời |
+| `cfg.decisions` | **Số điểm rẽ nhánh** đếm như người: mỗi `if`, `for`, `while`, `switch`, `?:` là 1; `a && b` vẫn là 1 |
+| `cfg.branches` | **Số nhánh** = mẫu số của C2: mỗi điểm rẽ nhánh 2 nhánh (đúng/sai), `switch` mỗi `case` 1 nhánh |
+| `cfg.loops` | Số vòng lặp (`for`, `while`, `do`) trong các điểm rẽ nhánh |
+| `cfg.checks` | Số lệnh `CHECK`/`assert` – đếm riêng, nhánh "sai" (chương trình dừng) không thiết kế test |
+| `cfg.has_cfg = false` + `reason` | Không có CFG dựng sẵn và lý do (template / overload không được dùng, CFG bất thường) |
+| `template_example` | Template: kiểu cụ thể mà CFG được dựng (vd. `LineManifold<3>`), dùng làm gợi ý khi viết test |
+| `input_difficulty` | Độ khó tạo dữ liệu đầu vào theo kiểu tham số (Phase 2) |
+| `call_level` | Tầng trên đồ thị gọi hàm: `0` = không gọi hàm Ceres nào khác. Sinh test theo thứ tự tầng thấp trước |
+| `existing_tests` | Số test có sẵn của Ceres gọi trực tiếp hàm này |
+
+Đã bỏ các trường thô của Phase 2: `branches`/`cyclomatic` (libclang đếm cả `&&`, `||`, `CHECK` – tổng 5754 nhánh, so với 3430 nhánh theo CFG), `callable` (trùng `access` + `linkage`), `template_args` (đoán `double` cho mọi template), `level` (đổi thành `input_difficulty` viết bằng lời). `data/units.json` của Phase 2 giữ nguyên.

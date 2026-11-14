@@ -3,7 +3,7 @@ Hàm: NumericDiffFirstOrderFunction(FirstOrderFunctor * functor, Ownership owner
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::NumericDiffFirstOrderFunction
 Vị trí: include/ceres/numeric_diff_first_order_function.h, dòng 119–132
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4>.
 
 Số điểm rẽ nhánh: 0
 

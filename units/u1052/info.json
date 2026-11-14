@@ -1,26 +1,33 @@
 {
  "id": "u1052",
  "name": "ceres::NormalPrior::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const",
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::NormalPrior",
+ "class_is_template": false,
  "file": "internal/ceres/normal_prior.cc",
  "lines": [
   51,
   64
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 14,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1052,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::NormalPrior",
- "class_is_template": false,
- "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 2,
+ "order": 1052
 }

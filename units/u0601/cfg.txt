@@ -3,7 +3,7 @@ Hàm: DeleteBlockInVector(std::vector<Block*>* mutable_blocks, Block* block_to_r
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Thuộc class: ceres::internal::ProblemImpl
 Vị trí: internal/ceres/problem_impl.cc, dòng 382–403
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DeleteBlockInVector<ResidualBlock> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DeleteBlockInVector<ResidualBlock>.
 
 Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
 

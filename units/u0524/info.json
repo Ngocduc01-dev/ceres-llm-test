@@ -1,28 +1,33 @@
 {
  "id": "u0524",
  "name": "ceres::internal::SolveRTRWithSparseRHS",
+ "short_name": "SolveRTRWithSparseRHS",
+ "signature": "void SolveRTRWithSparseRHS(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, const int rhs_nonzero_index, double* solution)",
+ "params": "(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, const int rhs_nonzero_index, double* solution)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/compressed_col_sparse_matrix_utils.h",
  "lines": [
   121,
   142
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 22,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 524,
- "short_name": "SolveRTRWithSparseRHS",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, const int rhs_nonzero_index, double* solution)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "SolveRTRWithSparseRHS<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 524
 }

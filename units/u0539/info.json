@@ -1,26 +1,33 @@
 {
  "id": "u0539",
  "name": "ceres::internal::IsClose",
+ "short_name": "IsClose",
+ "signature": "bool IsClose(double x, double y, double relative_precision, double * relative_error, double * absolute_error)",
+ "params": "(double x, double y, double relative_precision, double * relative_error, double * absolute_error)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/is_close.cc",
  "lines": [
   37,
   58
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 22,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 5,
- "order": 539,
- "short_name": "IsClose",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(double x, double y, double relative_precision, double * relative_error, double * absolute_error)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 5,
+ "order": 539
 }

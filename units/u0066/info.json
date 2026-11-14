@@ -1,28 +1,33 @@
 {
  "id": "u0066",
  "name": "ceres::internal::VariadicEvaluate",
+ "short_name": "VariadicEvaluate",
+ "signature": "bool VariadicEvaluate(const Functor& functor, T const* const* input, T* output)",
+ "params": "(const Functor& functor, T const* const* input, T* output)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/variadic_evaluate.h",
  "lines": [
   102,
   107
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 66,
- "short_name": "VariadicEvaluate",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Functor& functor, T const* const* input, T* output)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "VariadicEvaluate<ParameterDims<false, 2, 2>, BinaryScalarCost, double>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 66
 }

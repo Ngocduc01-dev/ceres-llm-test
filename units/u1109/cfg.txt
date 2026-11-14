@@ -3,7 +3,7 @@ Hàm: BackSubstitute(const BlockSparseMatrixData & A, const double * b, const do
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::SchurEliminatorForOneFBlock
 Vị trí: internal/ceres/schur_eliminator.h, dòng 571–612
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminatorForOneFBlock<2, 3, 6> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminatorForOneFBlock<2, 3, 6>.
 
 Số điểm rẽ nhánh: 3
 

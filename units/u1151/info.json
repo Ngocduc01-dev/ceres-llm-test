@@ -1,26 +1,33 @@
 {
  "id": "u1151",
  "name": "ceres::internal::ArmijoLineSearch::ArmijoLineSearch",
+ "short_name": "ArmijoLineSearch",
+ "signature": "ArmijoLineSearch(const LineSearch::Options & options)",
+ "params": "(const LineSearch::Options & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ArmijoLineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   277,
   278
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1151,
- "short_name": "ArmijoLineSearch",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::ArmijoLineSearch",
- "class_is_template": false,
- "params": "(const LineSearch::Options & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1151
 }

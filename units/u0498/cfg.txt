@@ -3,7 +3,7 @@ Hàm: QuaternionToAngleAxis(const T* quaternion, T* angle_axis)  → trả về 
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/rotation.h, dòng 344–388
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionToAngleAxis<double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionToAngleAxis<double>.
 
 Số điểm rẽ nhánh: 2
 

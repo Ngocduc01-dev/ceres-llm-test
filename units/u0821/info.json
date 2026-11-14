@@ -1,26 +1,33 @@
 {
  "id": "u0821",
  "name": "ceres::LossFunctionWrapper::LossFunctionWrapper",
+ "short_name": "LossFunctionWrapper",
+ "signature": "LossFunctionWrapper(LossFunction * rho, Ownership ownership)",
+ "params": "(LossFunction * rho, Ownership ownership)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::LossFunctionWrapper",
+ "class_is_template": false,
  "file": "include/ceres/loss_function.h",
  "lines": [
   394,
   395
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 821,
- "short_name": "LossFunctionWrapper",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::LossFunctionWrapper",
- "class_is_template": false,
- "params": "(LossFunction * rho, Ownership ownership)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 821
 }

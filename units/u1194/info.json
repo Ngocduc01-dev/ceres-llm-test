@@ -1,26 +1,33 @@
 {
  "id": "u1194",
  "name": "ceres::internal::CompressedRowSparseMatrix::Transpose",
+ "short_name": "Transpose",
+ "signature": "std::unique_ptr<CompressedRowSparseMatrix> Transpose() const",
+ "params": "()",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_sparse_matrix.cc",
  "lines": [
   600,
   638
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 39,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1194,
- "short_name": "Transpose",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "()",
- "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1194
 }

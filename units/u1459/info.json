@@ -1,26 +1,33 @@
 {
  "id": "u1459",
  "name": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen",
+ "short_name": "SolveImplUsingEigen",
+ "signature": "LinearSolver::Summary SolveImplUsingEigen(CompressedRowSparseMatrix * A, double * rhs_and_solution)",
+ "params": "(CompressedRowSparseMatrix * A, double * rhs_and_solution)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicSparseNormalCholeskySolver",
+ "class_is_template": false,
  "file": "internal/ceres/dynamic_sparse_normal_cholesky_solver.cc",
  "lines": [
   105,
   172
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 68,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1459,
- "short_name": "SolveImplUsingEigen",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DynamicSparseNormalCholeskySolver",
- "class_is_template": false,
- "params": "(CompressedRowSparseMatrix * A, double * rhs_and_solution)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1459
 }

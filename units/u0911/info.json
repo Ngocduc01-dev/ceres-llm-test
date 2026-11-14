@@ -1,28 +1,33 @@
 {
  "id": "u0911",
  "name": "ceres::internal::SchurEliminator::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>",
+ "short_name": "SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>",
+ "signature": "SchurEliminator(const LinearSolver::Options & options)",
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
  "file": "internal/ceres/schur_eliminator.h",
  "lines": [
   229,
   232
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 911,
- "short_name": "SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::SchurEliminator",
- "class_is_template": true,
- "params": "(const LinearSolver::Options & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "SchurEliminator<>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 911
 }

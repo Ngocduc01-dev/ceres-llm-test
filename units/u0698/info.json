@@ -1,28 +1,33 @@
 {
  "id": "u0698",
  "name": "ceres::AngleAxisToRotationMatrix",
+ "short_name": "AngleAxisToRotationMatrix",
+ "signature": "void AngleAxisToRotationMatrix(const T* angle_axis, const MatrixAdapter<T, row_stride, col_stride>& R)",
+ "params": "(const T* angle_axis, const MatrixAdapter<T, row_stride, col_stride>& R)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/rotation.h",
  "lines": [
   453,
   494
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 42,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 698,
- "short_name": "AngleAxisToRotationMatrix",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const T* angle_axis, const MatrixAdapter<T, row_stride, col_stride>& R)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "AngleAxisToRotationMatrix<double>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 698
 }

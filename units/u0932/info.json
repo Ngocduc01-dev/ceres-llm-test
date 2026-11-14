@@ -1,26 +1,33 @@
 {
  "id": "u0932",
  "name": "ceres::internal::BlockSparseMatrix::ToDenseMatrix",
+ "short_name": "ToDenseMatrix",
+ "signature": "void ToDenseMatrix(Matrix * dense_matrix) const",
+ "params": "(Matrix * dense_matrix)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   493,
   513
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 21,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 11,
- "order": 932,
- "short_name": "ToDenseMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(Matrix * dense_matrix)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 11,
+ "order": 932
 }

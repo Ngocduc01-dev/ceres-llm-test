@@ -3,7 +3,7 @@ Hàm: DecrementValueOrDeleteKey(const KeyType key, std::map<KeyType, int>* conta
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::internal::(namespace không tên)
 Vị trí: internal/ceres/problem_impl.cc, dòng 87–97
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DecrementValueOrDeleteKey<CostFunction *> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DecrementValueOrDeleteKey<CostFunction *>.
 
 Số điểm rẽ nhánh: 1
 

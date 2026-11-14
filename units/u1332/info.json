@@ -1,26 +1,33 @@
 {
  "id": "u1332",
  "name": "ceres::Problem::SetParameterLowerBound",
+ "short_name": "SetParameterLowerBound",
+ "signature": "void SetParameterLowerBound(double * values, int index, double lower_bound)",
+ "params": "(double * values, int index, double lower_bound)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
  "file": "internal/ceres/problem.cc",
  "lines": [
   108,
   112
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1332,
- "short_name": "SetParameterLowerBound",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Problem",
- "class_is_template": false,
- "params": "(double * values, int index, double lower_bound)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 2,
+ "order": 1332
 }

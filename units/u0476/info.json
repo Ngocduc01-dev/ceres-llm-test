@@ -1,28 +1,33 @@
 {
  "id": "u0476",
  "name": "ceres::InsertOrDie",
+ "short_name": "InsertOrDie",
+ "signature": "void InsertOrDie(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& data)",
+ "params": "(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& data)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/map_util.h",
  "lines": [
   120,
   127
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 476,
- "short_name": "InsertOrDie",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& data)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "InsertOrDie<unordered_map<int, int>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 476
 }

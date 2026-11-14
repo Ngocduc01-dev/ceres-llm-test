@@ -1,26 +1,33 @@
 {
  "id": "u0773",
  "name": "ceres::internal::CompressedColumnScalarMatrixToBlockMatrix",
+ "short_name": "CompressedColumnScalarMatrixToBlockMatrix",
+ "signature": "void CompressedColumnScalarMatrixToBlockMatrix(const int * scalar_rows, const int * scalar_cols, const std::vector<Block> & row_blocks, const std::vector<Block> & col_blocks, std::vector<int> * block_rows, std::vector<int> * block_cols)",
+ "params": "(const int * scalar_rows, const int * scalar_cols, const std::vector<Block> & row_blocks, const std::vector<Block> & col_blocks, std::vector<int> * block_rows, std::vector<int> * block_cols)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/compressed_col_sparse_matrix_utils.cc",
  "lines": [
   41,
   89
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 49,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 773,
- "short_name": "CompressedColumnScalarMatrixToBlockMatrix",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const int * scalar_rows, const int * scalar_cols, const std::vector<Block> & row_blocks, const std::vector<Block> & col_blocks, std::vector<int> * block_rows, std::vector<int> * block_cols)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 773
 }

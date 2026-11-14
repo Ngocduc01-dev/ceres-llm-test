@@ -3,7 +3,7 @@ Hàm: Evaluate(const double *const * parameters, double * residuals, double ** j
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::NumericDiffCostFunction
 Vị trí: include/ceres/numeric_diff_cost_function.h, dòng 205–248
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffCostFunction<EasyFunctor, FORWARD, 3, 5, 5> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp NumericDiffCostFunction<EasyFunctor, FORWARD, 3, 5, 5>.
 
 Số điểm rẽ nhánh: 3
 

@@ -1,26 +1,33 @@
 {
  "id": "u1316",
  "name": "ceres::(anonymous)::OptionsAreValidForSparseCholeskyBasedSolver",
+ "short_name": "OptionsAreValidForSparseCholeskyBasedSolver",
+ "signature": "bool OptionsAreValidForSparseCholeskyBasedSolver(const Solver::Options & options, std::string * error)",
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   141,
   197
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 57,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1316,
- "short_name": "OptionsAreValidForSparseCholeskyBasedSolver",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Solver::Options & options, std::string * error)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1316
 }

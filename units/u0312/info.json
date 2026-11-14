@@ -1,26 +1,33 @@
 {
  "id": "u0312",
  "name": "ceres::internal::ImplicitSchurComplement::num_rows",
+ "short_name": "num_rows",
+ "signature": "int num_rows() const",
+ "params": "()",
+ "return_type": "int",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ImplicitSchurComplement",
+ "class_is_template": false,
  "file": "internal/ceres/implicit_schur_complement.h",
  "lines": [
   137,
   137
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 312,
- "short_name": "num_rows",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ImplicitSchurComplement",
- "class_is_template": false,
- "params": "()",
- "return_type": "int",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 312
 }

@@ -3,7 +3,7 @@ Hàm: num_col_blocks_e() const  → trả về int
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::PartitionedMatrixView
 Vị trí: internal/ceres/partitioned_matrix_view.h, dòng 179–179
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<2> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp PartitionedMatrixView<2>.
 
 Số điểm rẽ nhánh: 0
 

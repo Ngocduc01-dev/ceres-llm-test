@@ -1,26 +1,33 @@
 {
  "id": "u0564",
  "name": "ceres::internal::FixedArray::Storage::UsingInlinedStorage",
+ "short_name": "UsingInlinedStorage",
+ "signature": "bool UsingInlinedStorage(size_type n)",
+ "params": "(size_type n)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::Storage",
+ "class_is_template": false,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   433,
   435
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 3,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 564,
- "short_name": "UsingInlinedStorage",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray::Storage",
- "class_is_template": false,
- "params": "(size_type n)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 564
 }

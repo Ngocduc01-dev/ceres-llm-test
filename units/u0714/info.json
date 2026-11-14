@@ -1,28 +1,33 @@
 {
  "id": "u0714",
  "name": "ceres::internal::WeightedGraph::AddVertex",
+ "short_name": "AddVertex",
+ "signature": "void AddVertex(const Vertex & vertex, double weight)",
+ "params": "(const Vertex & vertex, double weight)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
  "file": "internal/ceres/graph.h",
  "lines": [
   109,
   115
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 714,
- "short_name": "AddVertex",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WeightedGraph",
- "class_is_template": true,
- "params": "(const Vertex & vertex, double weight)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "WeightedGraph<int>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 714
 }

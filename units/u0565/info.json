@@ -1,28 +1,33 @@
 {
  "id": "u0565",
  "name": "ceres::internal::ParameterDims::GetUnpackedParameters",
+ "short_name": "GetUnpackedParameters",
+ "signature": "std::array<T *, kNumParameterBlocks> GetUnpackedParameters(T* ptr, std::integer_sequence<int, Indices...>)",
+ "params": "(T* ptr, std::integer_sequence<int, Indices...>)",
+ "return_type": "std::array<T *, kNumParameterBlocks>",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::ParameterDims",
+ "class_is_template": true,
  "file": "include/ceres/internal/parameter_dims.h",
  "lines": [
   82,
   86
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 5,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 565,
- "short_name": "GetUnpackedParameters",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::internal::ParameterDims",
- "class_is_template": true,
- "params": "(T* ptr, std::integer_sequence<int, Indices...>)",
- "return_type": "std::array<T *, kNumParameterBlocks>",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ParameterDims<false, 2, 2>::GetUnpackedParameters<Jet<double, 4>, <0, 2>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 565
 }

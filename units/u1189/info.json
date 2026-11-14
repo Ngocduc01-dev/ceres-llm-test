@@ -1,26 +1,33 @@
 {
  "id": "u1189",
  "name": "ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner",
+ "short_name": "BlockCRSJacobiPreconditioner",
+ "signature": "BlockCRSJacobiPreconditioner(Preconditioner::Options options, const CompressedRowSparseMatrix & A)",
+ "params": "(Preconditioner::Options options, const CompressedRowSparseMatrix & A)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockCRSJacobiPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/block_jacobi_preconditioner.cc",
  "lines": [
   116,
   154
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 39,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1189,
- "short_name": "BlockCRSJacobiPreconditioner",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::BlockCRSJacobiPreconditioner",
- "class_is_template": false,
- "params": "(Preconditioner::Options options, const CompressedRowSparseMatrix & A)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 3,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1189
 }

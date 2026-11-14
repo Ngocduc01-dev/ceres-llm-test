@@ -3,7 +3,7 @@ Hàm: AddEdge(const Vertex & vertex1, const Vertex & vertex2, double weight)  �
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::WeightedGraph
 Vị trí: internal/ceres/graph.h, dòng 148–161
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp WeightedGraph<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp WeightedGraph<int>.
 
 Số điểm rẽ nhánh: 2 (và 2 lệnh CHECK)
 

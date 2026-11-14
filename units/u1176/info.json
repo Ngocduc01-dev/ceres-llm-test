@@ -1,26 +1,33 @@
 {
  "id": "u1176",
  "name": "ceres::internal::ChangeNumThreadsIfNeeded",
+ "short_name": "ChangeNumThreadsIfNeeded",
+ "signature": "void ChangeNumThreadsIfNeeded(Solver::Options * options)",
+ "params": "(Solver::Options * options)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/preprocessor.cc",
  "lines": [
   61,
   73
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 13,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1176,
- "short_name": "ChangeNumThreadsIfNeeded",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(Solver::Options * options)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1176
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0617",
  "name": "ceres::AutoDiffManifold::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+ "short_name": "AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+ "signature": "AutoDiffManifold(Functor * functor)",
+ "params": "(Functor * functor)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
  "file": "include/ceres/autodiff_manifold.h",
  "lines": [
   153,
   153
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 617,
- "short_name": "AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::AutoDiffManifold",
- "class_is_template": true,
- "params": "(Functor * functor)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "AutoDiffManifold<ScaledFunctor, 3, 3>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 617
 }

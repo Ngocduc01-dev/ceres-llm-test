@@ -3,7 +3,7 @@ Hàm: isunordered(const Lhs& f, const Rhs& g)  → trả về bool
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/jet.h, dòng 1026–1032
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp isunordered<Jet<double, 1>, Jet<double, 1>, nullptr> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp isunordered<Jet<double, 1>, Jet<double, 1>, nullptr>.
 
 Số điểm rẽ nhánh: 0
 

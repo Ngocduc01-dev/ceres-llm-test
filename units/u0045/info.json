@@ -1,28 +1,33 @@
 {
  "id": "u0045",
  "name": "ceres::internal::FixedArray::crend",
+ "short_name": "crend",
+ "signature": "const_reverse_iterator crend() const",
+ "params": "()",
+ "return_type": "const_reverse_iterator",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   302,
   302
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 45,
- "short_name": "crend",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray",
- "class_is_template": true,
- "params": "()",
- "return_type": "const_reverse_iterator",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 45
 }

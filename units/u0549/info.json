@@ -1,28 +1,33 @@
 {
  "id": "u0549",
  "name": "ceres::internal::CheckForDuplicates",
+ "short_name": "CheckForDuplicates",
+ "signature": "void CheckForDuplicates(std::vector<T> blocks)",
+ "params": "(std::vector<T> blocks)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/covariance_impl.cc",
  "lines": [
   72,
   99
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 28,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 549,
- "short_name": "CheckForDuplicates",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(std::vector<T> blocks)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 2,
+  "checks": 1
+ },
+ "template_example": "CheckForDuplicates<pair<const double *, const double *>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 549
 }

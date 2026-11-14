@@ -1,26 +1,33 @@
 {
  "id": "u1142",
  "name": "ceres::(anonymous)::LineSearchOptionsAreValid",
+ "short_name": "LineSearchOptionsAreValid",
+ "signature": "bool LineSearchOptionsAreValid(const Solver::Options & options, std::string * error)",
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   438,
   485
  ],
- "branches": 36,
- "cyclomatic": 19,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 48,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1142,
- "short_name": "LineSearchOptionsAreValid",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Solver::Options & options, std::string * error)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 14,
+  "branches": 28,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1142
 }

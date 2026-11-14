@@ -1,26 +1,33 @@
 {
  "id": "u0922",
  "name": "ceres::internal::PartitionedMatrixViewBase::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<PartitionedMatrixViewBase> Create(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
+ "params": "(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
+ "return_type": "std::unique_ptr<PartitionedMatrixViewBase>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixViewBase",
+ "class_is_template": false,
  "file": "internal/ceres/partitioned_matrix_view.cc",
  "lines": [
   51,
   183
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 133,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 922,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::PartitionedMatrixViewBase",
- "class_is_template": false,
- "params": "(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
- "return_type": "std::unique_ptr<PartitionedMatrixViewBase>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 922
 }

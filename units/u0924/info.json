@@ -1,26 +1,33 @@
 {
  "id": "u0924",
  "name": "ceres::internal::TripletSparseMatrix::set_num_nonzeros",
+ "short_name": "set_num_nonzeros",
+ "signature": "void set_num_nonzeros(int num_nonzeros)",
+ "params": "(int num_nonzeros)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   152,
   156
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 11,
- "order": 924,
- "short_name": "set_num_nonzeros",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "(int num_nonzeros)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 11,
+ "order": 924
 }

@@ -1,28 +1,33 @@
 {
  "id": "u1109",
  "name": "ceres::internal::SchurEliminatorForOneFBlock::BackSubstitute",
+ "short_name": "BackSubstitute",
+ "signature": "void BackSubstitute(const BlockSparseMatrixData & A, const double * b, const double *, const double * z_ptr, double * y)",
+ "params": "(const BlockSparseMatrixData & A, const double * b, const double *, const double * z_ptr, double * y)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminatorForOneFBlock",
+ "class_is_template": true,
  "file": "internal/ceres/schur_eliminator.h",
  "lines": [
   571,
   612
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 42,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1109,
- "short_name": "BackSubstitute",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurEliminatorForOneFBlock",
- "class_is_template": true,
- "params": "(const BlockSparseMatrixData & A, const double * b, const double *, const double * z_ptr, double * y)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "SchurEliminatorForOneFBlock<2, 3, 6>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1109
 }

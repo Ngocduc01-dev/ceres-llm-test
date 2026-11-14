@@ -1,26 +1,33 @@
 {
  "id": "u0840",
  "name": "ceres::internal::ContextImpl::ContextImpl",
+ "short_name": "ContextImpl",
+ "signature": "ContextImpl()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ContextImpl",
+ "class_is_template": false,
  "file": "internal/ceres/context_impl.cc",
  "lines": [
   47,
   47
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 27,
- "order": 840,
- "short_name": "ContextImpl",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::ContextImpl",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 27,
+ "order": 840
 }

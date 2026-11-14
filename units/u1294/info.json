@@ -1,28 +1,33 @@
 {
  "id": "u1294",
  "name": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateF",
+ "short_name": "LeftMultiplyAndAccumulateF",
+ "signature": "void LeftMultiplyAndAccumulateF(const double * x, double * y) const",
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
  "file": "internal/ceres/partitioned_matrix_view_impl.h",
  "lines": [
   266,
   276
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1294,
- "short_name": "LeftMultiplyAndAccumulateF",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::PartitionedMatrixView",
- "class_is_template": true,
- "params": "(const double * x, double * y)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "PartitionedMatrixView<>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1294
 }

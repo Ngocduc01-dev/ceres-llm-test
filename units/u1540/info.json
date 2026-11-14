@@ -1,26 +1,33 @@
 {
  "id": "u1540",
  "name": "ceres::Covariance::Compute",
+ "short_name": "Compute",
+ "signature": "bool Compute(const std::vector<const double *> & parameter_blocks, Problem * problem)",
+ "params": "(const std::vector<const double *> & parameter_blocks, Problem * problem)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Covariance",
+ "class_is_template": false,
  "file": "internal/ceres/covariance.cc",
  "lines": [
   55,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 9,
- "level": "kho",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 1540,
- "short_name": "Compute",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Covariance",
- "class_is_template": false,
- "params": "(const std::vector<const double *> & parameter_blocks, Problem * problem)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 9,
+ "existing_tests": 4,
+ "order": 1540
 }

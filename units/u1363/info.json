@@ -1,28 +1,33 @@
 {
  "id": "u1363",
  "name": "ceres::internal::TypedLinearSolver::Solve",
+ "short_name": "Solve",
+ "signature": "LinearSolver::Summary Solve(LinearOperator * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "params": "(LinearOperator * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TypedLinearSolver",
+ "class_is_template": true,
  "file": "internal/ceres/linear_solver.h",
  "lines": [
   366,
   376
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1363,
- "short_name": "Solve",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TypedLinearSolver",
- "class_is_template": true,
- "params": "(LinearOperator * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": "TypedLinearSolver<BlockSparseMatrix>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1363
 }

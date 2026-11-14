@@ -1,26 +1,33 @@
 {
  "id": "u1221",
  "name": "ceres::internal::SchurJacobiPreconditioner::InitEliminator",
+ "short_name": "InitEliminator",
+ "signature": "void InitEliminator(const CompressedRowBlockStructure & bs)",
+ "params": "(const CompressedRowBlockStructure & bs)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurJacobiPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/schur_jacobi_preconditioner.cc",
  "lines": [
   71,
   84
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 14,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1221,
- "short_name": "InitEliminator",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurJacobiPreconditioner",
- "class_is_template": false,
- "params": "(const CompressedRowBlockStructure & bs)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1221
 }

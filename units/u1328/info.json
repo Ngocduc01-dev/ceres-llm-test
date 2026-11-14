@@ -1,28 +1,30 @@
 {
  "id": "u1328",
  "name": "ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian",
+ "short_name": "CreateFakeBundleAdjustmentPartitionedJacobian",
+ "signature": "std::pair<std::unique_ptr<PartitionedMatrixView<2, kEBlockSize, kFBlockSize>>, std::unique_ptr<BlockSparseMatrix>> CreateFakeBundleAdjustmentPartitionedJacobian(int num_cameras, int num_points, double visibility, std::mt19937& rng)",
+ "params": "(int num_cameras, int num_points, double visibility, std::mt19937& rng)",
+ "return_type": "std::pair<std::unique_ptr<PartitionedMatrixView<2, kEBlockSize, kFBlockSize>>, std::unique_ptr<BlockSparseMatrix>>",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/fake_bundle_adjustment_jacobian.h",
  "lines": [
   50,
   64
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1328,
- "short_name": "CreateFakeBundleAdjustmentPartitionedJacobian",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(int num_cameras, int num_points, double visibility, std::mt19937& rng)",
- "return_type": "std::pair<std::unique_ptr<PartitionedMatrixView<2, kEBlockSize, kFBlockSize>>, std::unique_ptr<BlockSparseMatrix>>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: template không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1328
 }

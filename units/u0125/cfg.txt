@@ -3,7 +3,7 @@ Hàm: erfc(const Jet<T, N>& x)  → trả về Jet<T, N>
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/jet.h, dòng 863–868
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp erfc<double, 2> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp erfc<double, 2>.
 
 Số điểm rẽ nhánh: 0
 

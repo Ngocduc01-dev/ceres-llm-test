@@ -3,7 +3,7 @@ Hàm: operator()(const T* p1, Ts*... ps) const  → trả về bool
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Thuộc class: ceres::CostFunctionToFunctor
 Vị trí: include/ceres/cost_function_to_functor.h, dòng 133–153
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CostFunctionToFunctor<2, 2>::operator()<double, <double>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp CostFunctionToFunctor<2, 2>::operator()<double, <double>>.
 
 Số điểm rẽ nhánh: 0
 

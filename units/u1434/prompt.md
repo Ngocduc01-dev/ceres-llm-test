@@ -7,7 +7,7 @@ Bạn là kỹ sư kiểm thử phần mềm. Hãy thiết kế bộ test cho **
 
 ---
 
-# 2. KHÁI NIỆM CẦN DÙNG
+# 2. KHÁI NIỆM
 
 - **CFG (đồ thị luồng điều khiển):** sơ đồ các bước của hàm. Mỗi **node** là một đoạn lệnh chạy liền nhau hoặc một chỗ rẽ nhánh; mũi tên nối các node theo thứ tự chạy.
 - **Điểm rẽ nhánh:** chỗ chương trình chọn đường đi theo một điều kiện: `if`, `else if`, vòng `for` / `while`, `switch`, `?:`. Mỗi điểm rẽ nhánh có **2 nhánh**: điều kiện **đúng** và điều kiện **sai** (`switch` có 1 nhánh cho mỗi `case`).
@@ -78,7 +78,6 @@ Các constructor:
   TripletSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros)
   TripletSparseMatrix(int num_rows, int num_cols, const std::vector<int> & rows, const std::vector<int> & cols, const std::vector<double> & values)
   TripletSparseMatrix(const int num_rows, const int num_cols, const std::vector<int> & rows, const std::vector<int> & cols, const std::vector<double> & values)
-  TripletSparseMatrix(const TripletSparseMatrix & orig)
 ```
 
 ---

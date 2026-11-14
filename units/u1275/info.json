@@ -1,26 +1,33 @@
 {
  "id": "u1275",
  "name": "ceres::(anonymous)::SchurStructureToString",
+ "short_name": "SchurStructureToString",
+ "signature": "std::string SchurStructureToString(const int row_block_size, const int e_block_size, const int f_block_size)",
+ "params": "(const int row_block_size, const int e_block_size, const int f_block_size)",
+ "return_type": "std::string",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   656,
   672
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 2,
- "level": "de",
- "callable": "internal",
+ "loc": 17,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1275,
- "short_name": "SchurStructureToString",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const int row_block_size, const int e_block_size, const int f_block_size)",
- "return_type": "std::string",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1275
 }

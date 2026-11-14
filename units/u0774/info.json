@@ -1,28 +1,33 @@
 {
  "id": "u0774",
  "name": "ceres::internal::SchurEliminatorForOneFBlock::Init",
+ "short_name": "Init",
+ "signature": "void Init(int num_eliminate_blocks, bool, const CompressedRowBlockStructure * bs)",
+ "params": "(int num_eliminate_blocks, bool, const CompressedRowBlockStructure * bs)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminatorForOneFBlock",
+ "class_is_template": true,
  "file": "internal/ceres/schur_eliminator.h",
  "lines": [
   386,
   428
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 43,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 774,
- "short_name": "Init",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurEliminatorForOneFBlock",
- "class_is_template": true,
- "params": "(int num_eliminate_blocks, bool, const CompressedRowBlockStructure * bs)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 2,
+  "checks": 2
+ },
+ "template_example": "SchurEliminatorForOneFBlock<2, 3, 6>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 774
 }

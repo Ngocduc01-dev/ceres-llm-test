@@ -1,26 +1,33 @@
 {
  "id": "u0926",
  "name": "ceres::internal::TripletSparseMatrix::ScaleColumns",
+ "short_name": "ScaleColumns",
+ "signature": "void ScaleColumns(const double * scale)",
+ "params": "(const double * scale)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   194,
   199
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 926,
- "short_name": "ScaleColumns",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "(const double * scale)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 926
 }

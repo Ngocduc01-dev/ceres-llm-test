@@ -1,26 +1,33 @@
 {
  "id": "u1299",
  "name": "ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner",
+ "short_name": "SchurJacobiPreconditioner",
+ "signature": "SchurJacobiPreconditioner(const CompressedRowBlockStructure & bs, Preconditioner::Options options)",
+ "params": "(const CompressedRowBlockStructure & bs, Preconditioner::Options options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SchurJacobiPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/schur_jacobi_preconditioner.cc",
  "lines": [
   45,
   66
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 22,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1299,
- "short_name": "SchurJacobiPreconditioner",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::SchurJacobiPreconditioner",
- "class_is_template": false,
- "params": "(const CompressedRowBlockStructure & bs, Preconditioner::Options options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 4
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1299
 }

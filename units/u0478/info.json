@@ -1,28 +1,33 @@
 {
  "id": "u0478",
  "name": "ceres::internal::InvokeWithThreadId",
+ "short_name": "InvokeWithThreadId",
+ "signature": "void InvokeWithThreadId(int thread_id, F&& function, Args&&... args)",
+ "params": "(int thread_id, F&& function, Args&&... args)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parallel_invoke.h",
  "lines": [
   45,
   54
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 478,
- "short_name": "InvokeWithThreadId",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(int thread_id, F&& function, Args&&... args)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "InvokeWithThreadId<(lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:68:15), <int &>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 478
 }

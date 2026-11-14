@@ -1,26 +1,33 @@
 {
  "id": "u1350",
  "name": "ceres::internal::LineSearch::Search",
+ "short_name": "Search",
+ "signature": "void Search(double step_size_estimate, double initial_cost, double initial_gradient, Summary * summary) const",
+ "params": "(double step_size_estimate, double initial_cost, double initial_gradient, Summary * summary)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   186,
   204
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 19,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1350,
- "short_name": "Search",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LineSearch",
- "class_is_template": false,
- "params": "(double step_size_estimate, double initial_cost, double initial_gradient, Summary * summary)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1350
 }

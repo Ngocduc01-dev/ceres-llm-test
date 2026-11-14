@@ -1,28 +1,33 @@
 {
  "id": "u0759",
  "name": "ceres::internal::NumericDiff::EvaluateJacobianColumn",
+ "short_name": "EvaluateJacobianColumn",
+ "signature": "bool EvaluateJacobianColumn(const CostFunctor * functor, int parameter_index, double delta, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
+ "params": "(const CostFunctor * functor, int parameter_index, double delta, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NumericDiff",
+ "class_is_template": true,
  "file": "include/ceres/internal/numeric_diff.h",
  "lines": [
   172,
   232
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 61,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 759,
- "short_name": "EvaluateJacobianColumn",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::NumericDiff",
- "class_is_template": true,
- "params": "(const CostFunctor * functor, int parameter_index, double delta, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 759
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0465",
  "name": "ceres::ConditionedCostFunction::~ConditionedCostFunction",
+ "short_name": "~ConditionedCostFunction",
+ "signature": "~ConditionedCostFunction()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::ConditionedCostFunction",
+ "class_is_template": false,
  "file": "internal/ceres/conditioned_cost_function.cc",
  "lines": [
   69,
   76
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 465,
- "short_name": "~ConditionedCostFunction",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::ConditionedCostFunction",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 465
 }

@@ -1,28 +1,33 @@
 {
  "id": "u1382",
  "name": "ceres::internal::ProgramEvaluator::NumResiduals",
+ "short_name": "NumResiduals",
+ "signature": "int NumResiduals() const",
+ "params": "()",
+ "return_type": "int",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   315,
   315
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 3,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1382,
- "short_name": "NumResiduals",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProgramEvaluator",
- "class_is_template": true,
- "params": "()",
- "return_type": "int",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1382
 }

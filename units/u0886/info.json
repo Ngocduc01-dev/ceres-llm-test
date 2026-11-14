@@ -1,26 +1,33 @@
 {
  "id": "u0886",
  "name": "ceres::internal::NullJacobianFinalizer::operator()",
+ "short_name": "operator()",
+ "signature": "void operator()(SparseMatrix *, int)",
+ "params": "(SparseMatrix *, int)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NullJacobianFinalizer",
+ "class_is_template": false,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   109,
   109
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 886,
- "short_name": "operator()",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::NullJacobianFinalizer",
- "class_is_template": false,
- "params": "(SparseMatrix *, int)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 886
 }

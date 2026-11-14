@@ -1,26 +1,33 @@
 {
  "id": "u1404",
  "name": "ceres::internal::MinimizeInterpolatingPolynomial",
+ "short_name": "MinimizeInterpolatingPolynomial",
+ "signature": "void MinimizeInterpolatingPolynomial(const std::vector<FunctionSample> & samples, double x_min, double x_max, double * optimal_x, double * optimal_value)",
+ "params": "(const std::vector<FunctionSample> & samples, double x_min, double x_max, double * optimal_x, double * optimal_value)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/polynomial.cc",
  "lines": [
   369,
   387
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 19,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1404,
- "short_name": "MinimizeInterpolatingPolynomial",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::vector<FunctionSample> & samples, double x_min, double x_max, double * optimal_x, double * optimal_value)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1404
 }

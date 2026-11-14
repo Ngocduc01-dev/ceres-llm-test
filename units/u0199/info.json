@@ -1,28 +1,33 @@
 {
  "id": "u0199",
  "name": "ceres::ProductManifold::AmbientSize",
+ "short_name": "AmbientSize",
+ "signature": "int AmbientSize() const",
+ "params": "()",
+ "return_type": "int",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
  "file": "include/ceres/product_manifold.h",
  "lines": [
   100,
   100
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 199,
- "short_name": "AmbientSize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::ProductManifold",
- "class_is_template": true,
- "params": "()",
- "return_type": "int",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProductManifold<SubsetManifold, SubsetManifold>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 199
 }

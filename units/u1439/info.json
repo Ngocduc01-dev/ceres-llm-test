@@ -1,26 +1,33 @@
 {
  "id": "u1439",
  "name": "ceres::internal::BlockEvaluatePreparer::Prepare",
+ "short_name": "Prepare",
+ "signature": "void Prepare(const ResidualBlock * residual_block, int residual_block_index, SparseMatrix * jacobian, double ** jacobians)",
+ "params": "(const ResidualBlock * residual_block, int residual_block_index, SparseMatrix * jacobian, double ** jacobians)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockEvaluatePreparer",
+ "class_is_template": false,
  "file": "internal/ceres/block_evaluate_preparer.cc",
  "lines": [
   50,
   78
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 29,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1439,
- "short_name": "Prepare",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockEvaluatePreparer",
- "class_is_template": false,
- "params": "(const ResidualBlock * residual_block, int residual_block_index, SparseMatrix * jacobian, double ** jacobians)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1439
 }

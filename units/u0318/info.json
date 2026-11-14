@@ -1,26 +1,33 @@
 {
  "id": "u0318",
  "name": "ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner",
+ "short_name": "DenseIterativeRefiner",
+ "signature": "DenseIterativeRefiner(const int max_num_iterations)",
+ "params": "(const int max_num_iterations)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DenseIterativeRefiner",
+ "class_is_template": false,
  "file": "internal/ceres/iterative_refiner.cc",
  "lines": [
   73,
   74
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 318,
- "short_name": "DenseIterativeRefiner",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::DenseIterativeRefiner",
- "class_is_template": false,
- "params": "(const int max_num_iterations)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 318
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0877",
  "name": "ceres::internal::ParameterBlock::mutable_manifold",
+ "short_name": "mutable_manifold",
+ "signature": "Manifold * mutable_manifold()",
+ "params": "()",
+ "return_type": "Manifold *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block.h",
  "lines": [
   115,
   115
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 877,
- "short_name": "mutable_manifold",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ParameterBlock",
- "class_is_template": false,
- "params": "()",
- "return_type": "Manifold *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 877
 }

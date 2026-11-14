@@ -1,26 +1,33 @@
 {
  "id": "u0781",
  "name": "ceres::internal::ComputeSingleLinkageClustering",
+ "short_name": "ComputeSingleLinkageClustering",
+ "signature": "int ComputeSingleLinkageClustering(const SingleLinkageClusteringOptions & options, const WeightedGraph<int> & graph, std::unordered_map<int, int> * membership)",
+ "params": "(const SingleLinkageClusteringOptions & options, const WeightedGraph<int> & graph, std::unordered_map<int, int> * membership)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/single_linkage_clustering.cc",
  "lines": [
   41,
   91
  ],
- "branches": 20,
- "cyclomatic": 11,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 51,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 781,
- "short_name": "ComputeSingleLinkageClustering",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const SingleLinkageClusteringOptions & options, const WeightedGraph<int> & graph, std::unordered_map<int, int> * membership)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 8,
+  "branches": 16,
+  "loops": 4,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 3,
+ "order": 781
 }

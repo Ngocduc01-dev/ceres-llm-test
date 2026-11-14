@@ -1,26 +1,33 @@
 {
  "id": "u0796",
  "name": "ceres::internal::SchurComplementSolver::mutable_lhs",
+ "short_name": "mutable_lhs",
+ "signature": "BlockRandomAccessMatrix * mutable_lhs()",
+ "params": "()",
+ "return_type": "BlockRandomAccessMatrix *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.h",
  "lines": [
   132,
   132
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 1,
  "access": "protected",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 796,
- "short_name": "mutable_lhs",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurComplementSolver",
- "class_is_template": false,
- "params": "()",
- "return_type": "BlockRandomAccessMatrix *",
- "is_const": false
+ "how_to_call": "protected: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 796
 }

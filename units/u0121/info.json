@@ -1,28 +1,33 @@
 {
  "id": "u0121",
  "name": "ceres::hypot",
+ "short_name": "hypot",
+ "signature": "Jet<T, N> hypot(const Jet<T, N>& x, const Jet<T, N>& y)",
+ "params": "(const Jet<T, N>& x, const Jet<T, N>& y)",
+ "return_type": "Jet<T, N>",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/jet.h",
  "lines": [
   716,
   725
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 121,
- "short_name": "hypot",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Jet<T, N>& x, const Jet<T, N>& y)",
- "return_type": "Jet<T, N>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "hypot<double, 2>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 121
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1413",
  "name": "ceres::(anonymous)::OptionsAreValidForDenseNormalCholesky",
+ "short_name": "OptionsAreValidForDenseNormalCholesky",
+ "signature": "bool OptionsAreValidForDenseNormalCholesky(const Solver::Options & options, std::string * error)",
+ "params": "(const Solver::Options & options, std::string * error)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   199,
   203
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 5,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1413,
- "short_name": "OptionsAreValidForDenseNormalCholesky",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Solver::Options & options, std::string * error)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1413
 }

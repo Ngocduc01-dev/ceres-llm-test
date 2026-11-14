@@ -1,28 +1,33 @@
 {
  "id": "u0493",
  "name": "ceres::AutoDiffManifold::PlusJacobian",
+ "short_name": "PlusJacobian",
+ "signature": "bool PlusJacobian(const double * x, double * jacobian) const",
+ "params": "(const double * x, double * jacobian)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffManifold",
+ "class_is_template": true,
  "file": "include/ceres/autodiff_manifold.h",
  "lines": [
   206,
   232
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 27,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 493,
- "short_name": "PlusJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::AutoDiffManifold",
- "class_is_template": true,
- "params": "(const double * x, double * jacobian)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "AutoDiffManifold<EuclideanFunctor, 3, 3>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 493
 }

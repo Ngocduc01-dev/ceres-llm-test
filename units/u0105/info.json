@@ -1,28 +1,33 @@
 {
  "id": "u0105",
  "name": "ceres::expm1",
+ "short_name": "expm1",
+ "signature": "Jet<T, N> expm1(const Jet<T, N>& f)",
+ "params": "(const Jet<T, N>& f)",
+ "return_type": "Jet<T, N>",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/jet.h",
  "lines": [
   594,
   599
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 105,
- "short_name": "expm1",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Jet<T, N>& f)",
- "return_type": "Jet<T, N>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "expm1<double, 2>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 105
 }

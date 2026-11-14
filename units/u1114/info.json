@@ -1,26 +1,33 @@
 {
  "id": "u1114",
  "name": "ceres::internal::DynamicCompressedRowSparseMatrix::InsertEntry",
+ "short_name": "InsertEntry",
+ "signature": "void InsertEntry(int row, int col, const double & value)",
+ "params": "(int row, int col, const double & value)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/dynamic_compressed_row_sparse_matrix.cc",
  "lines": [
   44,
   53
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1114,
- "short_name": "InsertEntry",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "(int row, int col, const double & value)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 4
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1114
 }

@@ -3,7 +3,7 @@ Hàm: AngleAxisRotatePoint(const T angle_axis[3], const T pt[3], T result[3])  �
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/rotation.h, dòng 791–857
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AngleAxisRotatePoint<double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AngleAxisRotatePoint<double>.
 
 Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
 

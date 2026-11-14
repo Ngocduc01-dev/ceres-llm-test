@@ -1,26 +1,33 @@
 {
  "id": "u1201",
  "name": "ceres::internal::CreateFakeBundleAdjustmentJacobian",
+ "short_name": "CreateFakeBundleAdjustmentJacobian",
+ "signature": "std::unique_ptr<BlockSparseMatrix> CreateFakeBundleAdjustmentJacobian(int num_cameras, int num_points, int camera_size, int point_size, double visibility, std::mt19937 & prng)",
+ "params": "(int num_cameras, int num_points, int camera_size, int point_size, double visibility, std::mt19937 & prng)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/fake_bundle_adjustment_jacobian.cc",
  "lines": [
   44,
   97
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 54,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1201,
- "short_name": "CreateFakeBundleAdjustmentJacobian",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(int num_cameras, int num_points, int camera_size, int point_size, double visibility, std::mt19937 & prng)",
- "return_type": "std::unique_ptr<BlockSparseMatrix>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 4,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1201
 }

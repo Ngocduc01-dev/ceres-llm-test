@@ -1,28 +1,33 @@
 {
  "id": "u0747",
  "name": "ceres::internal::EigenSparseCholeskyTemplate::Solve",
+ "short_name": "Solve",
+ "signature": "LinearSolverTerminationType Solve(const double * rhs_ptr, double * solution_ptr, std::string * message)",
+ "params": "(const double * rhs_ptr, double * solution_ptr, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenSparseCholeskyTemplate",
+ "class_is_template": true,
  "file": "internal/ceres/eigensparse.cc",
  "lines": [
   88,
   110
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 23,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 747,
- "short_name": "Solve",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::EigenSparseCholeskyTemplate",
- "class_is_template": true,
- "params": "(const double * rhs_ptr, double * solution_ptr, std::string * message)",
- "return_type": "LinearSolverTerminationType",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 747
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0595",
  "name": "ceres::internal::ConcurrentQueue::PopUnlocked",
+ "short_name": "PopUnlocked",
+ "signature": "bool PopUnlocked(T * value)",
+ "params": "(T * value)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
  "file": "internal/ceres/concurrent_queue.h",
  "lines": [
   131,
   140
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 10,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 595,
- "short_name": "PopUnlocked",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ConcurrentQueue",
- "class_is_template": true,
- "params": "(T * value)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ConcurrentQueue<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 595
 }

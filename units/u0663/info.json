@@ -1,26 +1,33 @@
 {
  "id": "u0663",
  "name": "ceres::internal::DenseSparseMatrix::ToDenseMatrix",
+ "short_name": "ToDenseMatrix",
+ "signature": "void ToDenseMatrix(Matrix * dense_matrix) const",
+ "params": "(Matrix * dense_matrix)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/dense_sparse_matrix.cc",
  "lines": [
   93,
   95
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 663,
- "short_name": "ToDenseMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DenseSparseMatrix",
- "class_is_template": false,
- "params": "(Matrix * dense_matrix)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 663
 }

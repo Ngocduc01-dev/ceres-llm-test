@@ -1,26 +1,33 @@
 {
  "id": "u0671",
  "name": "ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator",
+ "short_name": "GradientProblemEvaluator",
+ "signature": "GradientProblemEvaluator(const GradientProblem & problem)",
+ "params": "(const GradientProblem & problem)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::GradientProblemEvaluator",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_problem_evaluator.h",
  "lines": [
   50,
   51
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 671,
- "short_name": "GradientProblemEvaluator",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::GradientProblemEvaluator",
- "class_is_template": false,
- "params": "(const GradientProblem & problem)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 671
 }

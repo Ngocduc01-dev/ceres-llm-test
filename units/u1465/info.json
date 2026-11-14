@@ -1,26 +1,33 @@
 {
  "id": "u1465",
  "name": "ceres::internal::ProblemImpl::InternalAddParameterBlock",
+ "short_name": "InternalAddParameterBlock",
+ "signature": "ParameterBlock * InternalAddParameterBlock(double * values, int size)",
+ "params": "(double * values, int size)",
+ "return_type": "ParameterBlock *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   122,
   174
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 4,
- "level": "de",
- "callable": "internal",
+ "loc": 53,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1465,
- "short_name": "InternalAddParameterBlock",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProblemImpl",
- "class_is_template": false,
- "params": "(double * values, int size)",
- "return_type": "ParameterBlock *",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 7,
+  "branches": 14,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1465
 }

@@ -1,28 +1,33 @@
 {
  "id": "u1135",
  "name": "ceres::internal::SchurEliminator::UpdateRhs",
+ "short_name": "UpdateRhs",
+ "signature": "void UpdateRhs(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, const double * inverse_ete_g, double * rhs)",
+ "params": "(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, const double * inverse_ete_g, double * rhs)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
  "file": "internal/ceres/schur_eliminator_impl.h",
  "lines": [
   378,
   420
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 43,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1135,
- "short_name": "UpdateRhs",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurEliminator",
- "class_is_template": true,
- "params": "(const Chunk & chunk, const BlockSparseMatrixData & A, const double * b, int row_block_counter, const double * inverse_ete_g, double * rhs)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "SchurEliminator<>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1135
 }

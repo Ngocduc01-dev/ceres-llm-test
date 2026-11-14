@@ -1,26 +1,33 @@
 {
  "id": "u0652",
  "name": "ceres::internal::StateUpdatingCallback::StateUpdatingCallback",
+ "short_name": "StateUpdatingCallback",
+ "signature": "StateUpdatingCallback(Program * program, double * parameters)",
+ "params": "(Program * program, double * parameters)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::StateUpdatingCallback",
+ "class_is_template": false,
  "file": "internal/ceres/callbacks.cc",
  "lines": [
   43,
   45
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 652,
- "short_name": "StateUpdatingCallback",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::StateUpdatingCallback",
- "class_is_template": false,
- "params": "(Program * program, double * parameters)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 652
 }

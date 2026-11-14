@@ -1,26 +1,33 @@
 {
  "id": "u0917",
  "name": "ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix",
+ "short_name": "CompressedRowSparseMatrix",
+ "signature": "CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros)",
+ "params": "(int num_rows, int num_cols, int max_num_nonzeros)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_sparse_matrix.cc",
  "lines": [
   164,
   179
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 917,
- "short_name": "CompressedRowSparseMatrix",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::CompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "(int num_rows, int num_cols, int max_num_nonzeros)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 4,
+ "order": 917
 }

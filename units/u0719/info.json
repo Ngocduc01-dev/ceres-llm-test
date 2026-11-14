@@ -1,28 +1,33 @@
 {
  "id": "u0719",
  "name": "ceres::TinySolver::Update",
+ "short_name": "Update",
+ "signature": "bool Update(const Function & function, const Parameters & x)",
+ "params": "(const Function & function, const Parameters & x)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolver",
+ "class_is_template": true,
  "file": "include/ceres/tiny_solver.h",
  "lines": [
   190,
   218
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 29,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 719,
- "short_name": "Update",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::TinySolver",
- "class_is_template": true,
- "params": "(const Function & function, const Parameters & x)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 719
 }

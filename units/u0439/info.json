@@ -1,28 +1,33 @@
 {
  "id": "u0439",
  "name": "ceres::CubicInterpolator::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "void Evaluate(const JetT& x, JetT* f) const",
+ "params": "(const JetT& x, JetT* f)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::CubicInterpolator",
+ "class_is_template": true,
  "file": "include/ceres/cubic_interpolation.h",
  "lines": [
   148,
   156
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 439,
- "short_name": "Evaluate",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::CubicInterpolator",
- "class_is_template": true,
- "params": "(const JetT& x, JetT* f)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "CubicInterpolator<Grid1D<double, 2>>::Evaluate<Jet<double, 4>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 439
 }

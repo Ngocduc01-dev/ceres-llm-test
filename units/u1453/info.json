@@ -1,26 +1,33 @@
 {
  "id": "u1453",
  "name": "ceres::internal::ReorderSchurComplementColumnsUsingEigen",
+ "short_name": "ReorderSchurComplementColumnsUsingEigen",
+ "signature": "void ReorderSchurComplementColumnsUsingEigen(LinearSolverOrderingType ordering_type, const int size_of_first_elimination_group, const ProblemImpl::ParameterMap &, Program * program)",
+ "params": "(LinearSolverOrderingType ordering_type, const int size_of_first_elimination_group, const ProblemImpl::ParameterMap &, Program * program)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   382,
   442
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 61,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1453,
- "short_name": "ReorderSchurComplementColumnsUsingEigen",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(LinearSolverOrderingType ordering_type, const int size_of_first_elimination_group, const ProblemImpl::ParameterMap &, Program * program)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1453
 }

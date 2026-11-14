@@ -1,28 +1,33 @@
 {
  "id": "u1060",
  "name": "ceres::internal::MatrixTransposeVectorMultiply",
+ "short_name": "MatrixTransposeVectorMultiply",
+ "signature": "void MatrixTransposeVectorMultiply(const double* A, const int num_row_a, const int num_col_a, const double* b, double* c)",
+ "params": "(const double* A, const int num_row_a, const int num_col_a, const double* b, double* c)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/small_blas.h",
  "lines": [
   470,
   554
  ],
- "branches": 38,
- "cyclomatic": 20,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 85,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1060,
- "short_name": "MatrixTransposeVectorMultiply",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const double* A, const int num_row_a, const int num_col_a, const double* b, double* c)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 7,
+  "branches": 14,
+  "loops": 3,
+  "checks": 2
+ },
+ "template_example": "MatrixTransposeVectorMultiply<-1, -1, 1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1060
 }

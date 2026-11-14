@@ -1,26 +1,33 @@
 {
  "id": "u1529",
  "name": "ceres::internal::CreateGradientCheckingProblemImpl",
+ "short_name": "CreateGradientCheckingProblemImpl",
+ "signature": "std::unique_ptr<ProblemImpl> CreateGradientCheckingProblemImpl(ProblemImpl * problem_impl, double relative_step_size, double relative_precision, GradientCheckingIterationCallback * callback)",
+ "params": "(ProblemImpl * problem_impl, double relative_step_size, double relative_precision, GradientCheckingIterationCallback * callback)",
+ "return_type": "std::unique_ptr<ProblemImpl>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/gradient_checking_cost_function.cc",
  "lines": [
   168,
   278
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 6,
- "level": "kho",
- "callable": "public",
+ "loc": 111,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1529,
- "short_name": "CreateGradientCheckingProblemImpl",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(ProblemImpl * problem_impl, double relative_step_size, double relative_precision, GradientCheckingIterationCallback * callback)",
- "return_type": "std::unique_ptr<ProblemImpl>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 4,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 6,
+ "existing_tests": 2,
+ "order": 1529
 }

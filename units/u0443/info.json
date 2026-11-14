@@ -1,28 +1,33 @@
 {
  "id": "u0443",
  "name": "ceres::DynamicAutoDiffCostFunction::~DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "short_name": "~DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "signature": "~DynamicAutoDiffCostFunction()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::DynamicAutoDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/dynamic_autodiff_cost_function.h",
  "lines": [
   90,
   99
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 443,
- "short_name": "~DynamicAutoDiffCostFunction<CostFunctor, Stride>",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::DynamicAutoDiffCostFunction",
- "class_is_template": true,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 443
 }

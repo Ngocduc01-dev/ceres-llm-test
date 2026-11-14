@@ -1,26 +1,33 @@
 {
  "id": "u0784",
  "name": "ceres::internal::CreateSchurComplementGraph",
+ "short_name": "CreateSchurComplementGraph",
+ "signature": "std::unique_ptr<WeightedGraph<int>> CreateSchurComplementGraph(const std::vector<std::set<int>> & visibility)",
+ "params": "(const std::vector<std::set<int>> & visibility)",
+ "return_type": "std::unique_ptr<WeightedGraph<int>>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/visibility.cc",
  "lines": [
   76,
   145
  ],
- "branches": 24,
- "cyclomatic": 13,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 70,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 784,
- "short_name": "CreateSchurComplementGraph",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::vector<std::set<int>> & visibility)",
- "return_type": "std::unique_ptr<WeightedGraph<int>>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 10,
+  "branches": 20,
+  "loops": 8,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 784
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1227",
  "name": "ceres::internal::(anonymous)::InitializeContext",
+ "short_name": "InitializeContext",
+ "signature": "void InitializeContext(Context * context, ContextImpl ** context_impl, bool * context_impl_owned)",
+ "params": "(Context * context, ContextImpl ** context_impl, bool * context_impl_owned)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   108,
   118
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 11,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1227,
- "short_name": "InitializeContext",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(Context * context, ContextImpl ** context_impl, bool * context_impl_owned)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1227
 }

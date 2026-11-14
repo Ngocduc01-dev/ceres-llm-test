@@ -1,26 +1,33 @@
 {
  "id": "u1119",
  "name": "ceres::internal::DynamicCompressedRowSparseMatrix::Finalize",
+ "short_name": "Finalize",
+ "signature": "void Finalize(int num_additional_elements)",
+ "params": "(int num_additional_elements)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/dynamic_compressed_row_sparse_matrix.cc",
  "lines": [
   65,
   99
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 35,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1119,
- "short_name": "Finalize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DynamicCompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "(int num_additional_elements)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1119
 }

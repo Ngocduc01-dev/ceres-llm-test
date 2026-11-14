@@ -1,28 +1,33 @@
 {
  "id": "u0517",
  "name": "ceres::internal::ComputeSphereManifoldMinus",
+ "short_name": "ComputeSphereManifoldMinus",
+ "signature": "void ComputeSphereManifoldMinus(const VT& v, double beta, const XT& x, const YT& y, YMinusXT* y_minus_x)",
+ "params": "(const VT& v, double beta, const XT& x, const YT& y, YMinusXT* y_minus_x)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/sphere_manifold_functions.h",
  "lines": [
   109,
   131
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 23,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 517,
- "short_name": "ComputeSphereManifoldMinus",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const VT& v, double beta, const XT& x, const YT& y, YMinusXT* y_minus_x)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ComputeSphereManifoldMinus<Matrix<double, 2, 1>, Map<const Matrix<double, 2, 1>>, Matrix<double, 2, 1>, Map<Matrix<double, 1, 1>>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 517
 }

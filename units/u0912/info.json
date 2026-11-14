@@ -1,26 +1,33 @@
 {
  "id": "u0912",
  "name": "ceres::internal::SparseCholesky::FactorAndSolve",
+ "short_name": "FactorAndSolve",
+ "signature": "LinearSolverTerminationType FactorAndSolve(CompressedRowSparseMatrix * lhs, const double * rhs, double * solution, std::string * message)",
+ "params": "(CompressedRowSparseMatrix * lhs, const double * rhs, double * solution, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseCholesky",
+ "class_is_template": false,
  "file": "internal/ceres/sparse_cholesky.cc",
  "lines": [
   108,
   118
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 912,
- "short_name": "FactorAndSolve",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SparseCholesky",
- "class_is_template": false,
- "params": "(CompressedRowSparseMatrix * lhs, const double * rhs, double * solution, std::string * message)",
- "return_type": "LinearSolverTerminationType",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 3,
+ "order": 912
 }

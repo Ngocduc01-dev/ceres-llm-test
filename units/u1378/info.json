@@ -1,26 +1,33 @@
 {
  "id": "u1378",
  "name": "ceres::internal::SparseSchurComplementSolver::SolveReducedLinearSystemUsingConjugateGradients",
+ "short_name": "SolveReducedLinearSystemUsingConjugateGradients",
+ "signature": "LinearSolver::Summary SolveReducedLinearSystemUsingConjugateGradients(const LinearSolver::PerSolveOptions & per_solve_options, double * solution)",
+ "params": "(const LinearSolver::PerSolveOptions & per_solve_options, double * solution)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseSchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   335,
   406
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 2,
- "level": "kho",
- "callable": "internal",
+ "loc": 72,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1378,
- "short_name": "SolveReducedLinearSystemUsingConjugateGradients",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SparseSchurComplementSolver",
- "class_is_template": false,
- "params": "(const LinearSolver::PerSolveOptions & per_solve_options, double * solution)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 2,
+  "checks": 4
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1378
 }

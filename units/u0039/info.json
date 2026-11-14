@@ -1,28 +1,30 @@
 {
  "id": "u0039",
  "name": "ceres::internal::FixedArray::cend",
+ "short_name": "cend",
+ "signature": "const_iterator cend() const",
+ "params": "()",
+ "return_type": "const_iterator",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   270,
   270
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 39,
- "short_name": "cend",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray",
- "class_is_template": true,
- "params": "()",
- "return_type": "const_iterator",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: template không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 39
 }

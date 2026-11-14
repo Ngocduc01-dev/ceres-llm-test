@@ -1,28 +1,33 @@
 {
  "id": "u0043",
  "name": "ceres::internal::FixedArray::rend",
+ "short_name": "rend",
+ "signature": "reverse_iterator rend()",
+ "params": "()",
+ "return_type": "reverse_iterator",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   291,
   291
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 43,
- "short_name": "rend",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray",
- "class_is_template": true,
- "params": "()",
- "return_type": "reverse_iterator",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 43
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1515",
  "name": "ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner",
+ "short_name": "VisibilityBasedPreconditioner",
+ "signature": "VisibilityBasedPreconditioner(const CompressedRowBlockStructure & bs, Preconditioner::Options options)",
+ "params": "(const CompressedRowBlockStructure & bs, Preconditioner::Options options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/visibility_based_preconditioner.cc",
  "lines": [
   67,
   110
  ],
- "branches": 20,
- "cyclomatic": 11,
- "topo_level": 5,
- "level": "kho",
- "callable": "public",
+ "loc": 44,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1515,
- "short_name": "VisibilityBasedPreconditioner",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::VisibilityBasedPreconditioner",
- "class_is_template": false,
- "params": "(const CompressedRowBlockStructure & bs, Preconditioner::Options options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 6
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 5,
+ "existing_tests": 0,
+ "order": 1515
 }

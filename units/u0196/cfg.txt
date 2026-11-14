@@ -3,7 +3,7 @@ Hàm: group_to_elements() const  → trả về const std::map<int, std::set<T>>
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::OrderedGroups
 Vị trí: include/ceres/ordered_groups.h, dòng 181–183
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *>.
 
 Số điểm rẽ nhánh: 0
 

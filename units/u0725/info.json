@@ -1,26 +1,33 @@
 {
  "id": "u0725",
  "name": "ceres::internal::ReadFileToStringOrDie",
+ "short_name": "ReadFileToStringOrDie",
+ "signature": "void ReadFileToStringOrDie(const std::string & filename, std::string * data)",
+ "params": "(const std::string & filename, std::string * data)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/file.cc",
  "lines": [
   52,
   74
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 23,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 725,
- "short_name": "ReadFileToStringOrDie",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::string & filename, std::string * data)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 725
 }

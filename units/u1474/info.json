@@ -1,28 +1,33 @@
 {
  "id": "u1474",
  "name": "ceres::internal::ProgramEvaluator::CreateEvaluatorScratch",
+ "short_name": "CreateEvaluatorScratch",
+ "signature": "std::unique_ptr<EvaluateScratch[]> CreateEvaluatorScratch(const Program & program, unsigned int num_threads)",
+ "params": "(const Program & program, unsigned int num_threads)",
+ "return_type": "std::unique_ptr<EvaluateScratch[]>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   361,
   379
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 4,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 19,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1474,
- "short_name": "CreateEvaluatorScratch",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProgramEvaluator",
- "class_is_template": true,
- "params": "(const Program & program, unsigned int num_threads)",
- "return_type": "std::unique_ptr<EvaluateScratch[]>",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1474
 }

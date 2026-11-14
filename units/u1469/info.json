@@ -1,26 +1,33 @@
 {
  "id": "u1469",
  "name": "ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace",
+ "short_name": "GetCovarianceMatrixInTangentOrAmbientSpace",
+ "signature": "bool GetCovarianceMatrixInTangentOrAmbientSpace(const std::vector<const double *> & parameters, bool lift_covariance_to_ambient_space, double * covariance_matrix) const",
+ "params": "(const std::vector<const double *> & parameters, bool lift_covariance_to_ambient_space, double * covariance_matrix)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
  "file": "internal/ceres/covariance_impl.cc",
  "lines": [
   276,
   356
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 4,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 81,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1469,
- "short_name": "GetCovarianceMatrixInTangentOrAmbientSpace",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CovarianceImpl",
- "class_is_template": false,
- "params": "(const std::vector<const double *> & parameters, bool lift_covariance_to_ambient_space, double * covariance_matrix)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1469
 }

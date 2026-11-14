@@ -1,26 +1,33 @@
 {
  "id": "u1028",
  "name": "ceres::internal::FixedArray::Storage::~Storage",
+ "short_name": "~Storage",
+ "signature": "~Storage()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::FixedArray::Storage",
+ "class_is_template": false,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   419,
   425
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1028,
- "short_name": "~Storage",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::FixedArray::Storage",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1028
 }

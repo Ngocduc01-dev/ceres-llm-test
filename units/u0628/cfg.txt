@@ -3,7 +3,7 @@ Hàm: FixedArray(std::initializer_list<value_type> init_list, const allocator_ty
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::internal::FixedArray
 Vị trí: include/ceres/internal/fixed_array.h, dòng 148–150
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int>.
 
 Số điểm rẽ nhánh: 0
 

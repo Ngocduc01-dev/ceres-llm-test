@@ -1,28 +1,33 @@
 {
  "id": "u0024",
  "name": "ceres::internal::Make1stOrderPerturbations::Apply",
+ "short_name": "Apply",
+ "signature": "void Apply(T const* const* /* NOT USED */, JetT* /* NOT USED */)",
+ "params": "(T const* const* /* NOT USED */, JetT* /* NOT USED */)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::Make1stOrderPerturbations",
+ "class_is_template": true,
  "file": "include/ceres/internal/autodiff.h",
  "lines": [
   233,
   234
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 24,
- "short_name": "Apply",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::internal::Make1stOrderPerturbations",
- "class_is_template": true,
- "params": "(T const* const* /* NOT USED */, JetT* /* NOT USED */)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "Make1stOrderPerturbations<integer_sequence<int, 2, 2>>::Apply<double, Jet<double, 4>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 24
 }

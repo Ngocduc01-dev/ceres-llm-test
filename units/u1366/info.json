@@ -1,26 +1,33 @@
 {
  "id": "u1366",
  "name": "ceres::internal::ParameterBlock::SetManifold",
+ "short_name": "SetManifold",
+ "signature": "void SetManifold(Manifold * new_manifold)",
+ "params": "(Manifold * new_manifold)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block.h",
  "lines": [
   160,
   188
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 29,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 9,
- "order": 1366,
- "short_name": "SetManifold",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ParameterBlock",
- "class_is_template": false,
- "params": "(Manifold * new_manifold)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 9,
+ "order": 1366
 }

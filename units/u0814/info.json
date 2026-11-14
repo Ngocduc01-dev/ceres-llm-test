@@ -1,26 +1,33 @@
 {
  "id": "u0814",
  "name": "ceres::internal::(anonymous)::FindQuadraticPolynomialRoots",
+ "short_name": "FindQuadraticPolynomialRoots",
+ "signature": "void FindQuadraticPolynomialRoots(const Vector & polynomial, Vector * real, Vector * imaginary)",
+ "params": "(const Vector & polynomial, Vector * real, Vector * imaginary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/polynomial.cc",
  "lines": [
   138,
   179
  ],
- "branches": 16,
- "cyclomatic": 9,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 42,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 814,
- "short_name": "FindQuadraticPolynomialRoots",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vector & polynomial, Vector * real, Vector * imaginary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 7,
+  "branches": 14,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 814
 }

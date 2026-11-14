@@ -1,28 +1,33 @@
 {
  "id": "u0530",
  "name": "ceres::internal::MaxPartitionCostIsFeasible",
+ "short_name": "MaxPartitionCostIsFeasible",
+ "signature": "bool MaxPartitionCostIsFeasible(int start, int end, int max_num_partitions, int max_partition_cost, int cumulative_cost_offset, const CumulativeCostData* cumulative_cost_data, CumulativeCostFun&& cumulative_cost_fun, std::vector<int>* partition)",
+ "params": "(int start, int end, int max_num_partitions, int max_partition_cost, int cumulative_cost_offset, const CumulativeCostData* cumulative_cost_data, CumulativeCostFun&& cumulative_cost_fun, std::vector<int>* partition)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/partition_range_for_parallel_for.h",
  "lines": [
   47,
   87
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 41,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 530,
- "short_name": "MaxPartitionCostIsFeasible",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(int start, int end, int max_num_partitions, int max_partition_cost, int cumulative_cost_offset, const CumulativeCostData* cumulative_cost_data, CumulativeCostFun&& cumulative_cost_fun, std::vector<int>* partition)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "MaxPartitionCostIsFeasible<CompressedList, (lambda at /work/ceres-solver/internal/ceres/block_sparse_matrix.cc:323:7)>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 530
 }

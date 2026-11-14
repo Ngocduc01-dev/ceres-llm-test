@@ -1,28 +1,33 @@
 {
  "id": "u0742",
  "name": "ceres::NumericDiffCostFunction::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const",
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::NumericDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/numeric_diff_cost_function.h",
  "lines": [
   205,
   248
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 44,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 742,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::NumericDiffCostFunction",
- "class_is_template": true,
- "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "NumericDiffCostFunction<EasyFunctor, FORWARD, 3, 5, 5>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 742
 }

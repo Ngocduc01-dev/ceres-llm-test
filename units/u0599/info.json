@@ -1,28 +1,33 @@
 {
  "id": "u0599",
  "name": "ceres::internal::(anonymous)::DecrementValueOrDeleteKey",
+ "short_name": "DecrementValueOrDeleteKey",
+ "signature": "void DecrementValueOrDeleteKey(const KeyType key, std::map<KeyType, int>* container)",
+ "params": "(const KeyType key, std::map<KeyType, int>* container)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   87,
   97
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 11,
  "access": "public",
  "linkage": "internal",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 599,
- "short_name": "DecrementValueOrDeleteKey",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const KeyType key, std::map<KeyType, int>* container)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "DecrementValueOrDeleteKey<CostFunction *>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 599
 }

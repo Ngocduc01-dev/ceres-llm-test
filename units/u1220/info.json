@@ -1,26 +1,33 @@
 {
  "id": "u1220",
  "name": "ceres::internal::(anonymous)::SetupEvaluator",
+ "short_name": "SetupEvaluator",
+ "signature": "bool SetupEvaluator(PreprocessedProblem * pp)",
+ "params": "(PreprocessedProblem * pp)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/line_search_preprocessor.cc",
  "lines": [
   55,
   68
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 14,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1220,
- "short_name": "SetupEvaluator",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(PreprocessedProblem * pp)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1220
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1531",
  "name": "ceres::internal::CovarianceImpl::Compute",
+ "short_name": "Compute",
+ "signature": "bool Compute(const CovarianceBlocks & covariance_blocks, ProblemImpl * problem)",
+ "params": "(const CovarianceBlocks & covariance_blocks, ProblemImpl * problem)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
  "file": "internal/ceres/covariance_impl.cc",
  "lines": [
   101,
   112
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 7,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 12,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1531,
- "short_name": "Compute",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CovarianceImpl",
- "class_is_template": false,
- "params": "(const CovarianceBlocks & covariance_blocks, ProblemImpl * problem)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 7,
+ "existing_tests": 0,
+ "order": 1531
 }

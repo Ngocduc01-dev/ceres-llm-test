@@ -1,26 +1,33 @@
 {
  "id": "u1368",
  "name": "ceres::internal::BlockJacobianWriter::CreateJacobian",
+ "short_name": "CreateJacobian",
+ "signature": "std::unique_ptr<SparseMatrix> CreateJacobian() const",
+ "params": "()",
+ "return_type": "std::unique_ptr<SparseMatrix>",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockJacobianWriter",
+ "class_is_template": false,
  "file": "internal/ceres/block_jacobian_writer.cc",
  "lines": [
   196,
   261
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 66,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1368,
- "short_name": "CreateJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockJacobianWriter",
- "class_is_template": false,
- "params": "()",
- "return_type": "std::unique_ptr<SparseMatrix>",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 7,
+  "branches": 14,
+  "loops": 4,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1368
 }

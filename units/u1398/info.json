@@ -1,26 +1,33 @@
 {
  "id": "u1398",
  "name": "ceres::internal::ScratchEvaluatePreparer::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<ScratchEvaluatePreparer[]> Create(const Program & program, unsigned int num_threads)",
+ "params": "(const Program & program, unsigned int num_threads)",
+ "return_type": "std::unique_ptr<ScratchEvaluatePreparer[]>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ScratchEvaluatePreparer",
+ "class_is_template": false,
  "file": "internal/ceres/scratch_evaluate_preparer.cc",
  "lines": [
   41,
   50
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1398,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ScratchEvaluatePreparer",
- "class_is_template": false,
- "params": "(const Program & program, unsigned int num_threads)",
- "return_type": "std::unique_ptr<ScratchEvaluatePreparer[]>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1398
 }

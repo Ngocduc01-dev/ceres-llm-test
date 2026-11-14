@@ -1,26 +1,33 @@
 {
  "id": "u0047",
  "name": "ceres::internal::FixedArray::NonEmptyInlinedStorage::data",
+ "short_name": "data",
+ "signature": "StorageElement * data()",
+ "params": "()",
+ "return_type": "StorageElement *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::NonEmptyInlinedStorage",
+ "class_is_template": false,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   379,
   379
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 47,
- "short_name": "data",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray::NonEmptyInlinedStorage",
- "class_is_template": false,
- "params": "()",
- "return_type": "StorageElement *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 47
 }

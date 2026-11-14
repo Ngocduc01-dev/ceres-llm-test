@@ -1,28 +1,33 @@
 {
  "id": "u1069",
  "name": "ceres::ProductManifold::MinusJacobian",
+ "short_name": "MinusJacobian",
+ "signature": "bool MinusJacobian(const double * x, double * jacobian_ptr) const",
+ "params": "(const double * x, double * jacobian_ptr)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
  "file": "include/ceres/product_manifold.h",
  "lines": [
   126,
   133
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1069,
- "short_name": "MinusJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::ProductManifold",
- "class_is_template": true,
- "params": "(const double * x, double * jacobian_ptr)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProductManifold<SubsetManifold, SubsetManifold>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1069
 }

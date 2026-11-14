@@ -1,26 +1,33 @@
 {
  "id": "u1063",
  "name": "ceres::internal::ImplicitSchurComplement::UpdateRhs",
+ "short_name": "UpdateRhs",
+ "signature": "void UpdateRhs()",
+ "params": "()",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ImplicitSchurComplement",
+ "class_is_template": false,
  "file": "internal/ceres/implicit_schur_complement.cc",
  "lines": [
   251,
   276
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "de",
- "callable": "internal",
+ "loc": 26,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1063,
- "short_name": "UpdateRhs",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ImplicitSchurComplement",
- "class_is_template": false,
- "params": "()",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1063
 }

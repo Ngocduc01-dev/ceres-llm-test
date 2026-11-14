@@ -1,26 +1,33 @@
 {
  "id": "u1432",
  "name": "ceres::Problem::GetResidualBlocksForParameterBlock",
+ "short_name": "GetResidualBlocksForParameterBlock",
+ "signature": "void GetResidualBlocksForParameterBlock(const double * values, std::vector<ResidualBlockId> * residual_blocks) const",
+ "params": "(const double * values, std::vector<ResidualBlockId> * residual_blocks)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
  "file": "internal/ceres/problem.cc",
  "lines": [
   208,
   211
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1432,
- "short_name": "GetResidualBlocksForParameterBlock",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Problem",
- "class_is_template": false,
- "params": "(const double * values, std::vector<ResidualBlockId> * residual_blocks)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1432
 }

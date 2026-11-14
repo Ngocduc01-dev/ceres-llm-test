@@ -1,26 +1,33 @@
 {
  "id": "u0880",
  "name": "ceres::Problem::operator=",
+ "short_name": "operator=",
+ "signature": "Problem & operator=(Problem &&)",
+ "params": "(Problem &&)",
+ "return_type": "Problem &",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
  "file": "internal/ceres/problem.cc",
  "lines": [
   47,
   47
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 880,
- "short_name": "operator=",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Problem",
- "class_is_template": false,
- "params": "(Problem &&)",
- "return_type": "Problem &",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 880
 }

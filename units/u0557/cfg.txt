@@ -3,7 +3,7 @@ Hàm: IndependentSetOrdering(const Graph<Vertex>& graph, std::vector<Vertex>* or
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::internal
 Vị trí: internal/ceres/graph_algorithms.h, dòng 97–153
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp IndependentSetOrdering<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp IndependentSetOrdering<int>.
 
 Số điểm rẽ nhánh: 6 (và 3 lệnh CHECK)
 

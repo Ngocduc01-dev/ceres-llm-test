@@ -1,28 +1,33 @@
 {
  "id": "u0887",
  "name": "ceres::internal::ProgramEvaluator::CreateJacobian",
+ "short_name": "CreateJacobian",
+ "signature": "std::unique_ptr<SparseMatrix> CreateJacobian() const",
+ "params": "()",
+ "return_type": "std::unique_ptr<SparseMatrix>",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   130,
   132
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 887,
- "short_name": "CreateJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProgramEvaluator",
- "class_is_template": true,
- "params": "()",
- "return_type": "std::unique_ptr<SparseMatrix>",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 887
 }

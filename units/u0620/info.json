@@ -1,28 +1,33 @@
 {
  "id": "u0620",
  "name": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "short_name": "DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "signature": "DynamicAutoDiffCostFunction(CostFunctor * functor, Ownership ownership)",
+ "params": "(CostFunctor * functor, Ownership ownership)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::DynamicAutoDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/dynamic_autodiff_cost_function.h",
  "lines": [
   83,
   85
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 620,
- "short_name": "DynamicAutoDiffCostFunction<CostFunctor, Stride>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::DynamicAutoDiffCostFunction",
- "class_is_template": true,
- "params": "(CostFunctor * functor, Ownership ownership)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 620
 }

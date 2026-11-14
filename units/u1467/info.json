@@ -1,26 +1,33 @@
 {
  "id": "u1467",
  "name": "ceres::internal::StateUpdatingCallback::operator()",
+ "short_name": "operator()",
+ "signature": "CallbackReturnType operator()(const IterationSummary &)",
+ "params": "(const IterationSummary &)",
+ "return_type": "CallbackReturnType",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::StateUpdatingCallback",
+ "class_is_template": false,
  "file": "internal/ceres/callbacks.cc",
  "lines": [
   49,
   54
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 4,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1467,
- "short_name": "operator()",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::StateUpdatingCallback",
- "class_is_template": false,
- "params": "(const IterationSummary &)",
- "return_type": "CallbackReturnType",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1467
 }

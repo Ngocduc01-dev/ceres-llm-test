@@ -1,26 +1,33 @@
 {
  "id": "u0385",
  "name": "ceres::internal::IdentityPreconditioner::RightMultiplyAndAccumulate",
+ "short_name": "RightMultiplyAndAccumulate",
+ "signature": "void RightMultiplyAndAccumulate(const double * x, double * y) const",
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::IdentityPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/preconditioner.h",
  "lines": [
   168,
   170
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 385,
- "short_name": "RightMultiplyAndAccumulate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::IdentityPreconditioner",
- "class_is_template": false,
- "params": "(const double * x, double * y)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 385
 }

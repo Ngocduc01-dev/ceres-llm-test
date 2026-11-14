@@ -1,28 +1,33 @@
 {
  "id": "u1369",
  "name": "ceres::internal::ConjugateGradientsSolver",
+ "short_name": "ConjugateGradientsSolver",
+ "signature": "LinearSolver::Summary ConjugateGradientsSolver(const ConjugateGradientsSolverOptions options, ConjugateGradientsLinearOperator<DenseVectorType>& lhs, const DenseVectorType& rhs, ConjugateGradientsLinearOperator<DenseVectorType>& preconditioner, DenseVectorType* scratch[4], DenseVectorType& solution)",
+ "params": "(const ConjugateGradientsSolverOptions options, ConjugateGradientsLinearOperator<DenseVectorType>& lhs, const DenseVectorType& rhs, ConjugateGradientsLinearOperator<DenseVectorType>& preconditioner, DenseVectorType* scratch[4], DenseVectorType& solution)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/conjugate_gradients_solver.h",
  "lines": [
   108,
   305
  ],
- "branches": 34,
- "cyclomatic": 18,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 198,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1369,
- "short_name": "ConjugateGradientsSolver",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const ConjugateGradientsSolverOptions options, ConjugateGradientsLinearOperator<DenseVectorType>& lhs, const DenseVectorType& rhs, ConjugateGradientsLinearOperator<DenseVectorType>& preconditioner, DenseVectorType* scratch[4], DenseVectorType& solution)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 11,
+  "branches": 22,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ConjugateGradientsSolver<Matrix<double, -1, 1>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1369
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0416",
  "name": "ceres::internal::SparseNormalCholeskySolver::~SparseNormalCholeskySolver",
+ "short_name": "~SparseNormalCholeskySolver",
+ "signature": "~SparseNormalCholeskySolver()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::SparseNormalCholeskySolver",
+ "class_is_template": false,
  "file": "internal/ceres/sparse_normal_cholesky_solver.cc",
  "lines": [
   56,
   56
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 416,
- "short_name": "~SparseNormalCholeskySolver",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::SparseNormalCholeskySolver",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 416
 }

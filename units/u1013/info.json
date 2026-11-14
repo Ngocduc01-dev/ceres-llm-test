@@ -1,26 +1,33 @@
 {
  "id": "u1013",
  "name": "ceres::internal::ParallelInvokeState::ParallelInvokeState",
+ "short_name": "ParallelInvokeState",
+ "signature": "ParallelInvokeState(int start, int end, int num_work_blocks)",
+ "params": "(int start, int end, int num_work_blocks)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ParallelInvokeState",
+ "class_is_template": false,
  "file": "internal/ceres/parallel_invoke.cc",
  "lines": [
   65,
   75
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1013,
- "short_name": "ParallelInvokeState",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::ParallelInvokeState",
- "class_is_template": false,
- "params": "(int start, int end, int num_work_blocks)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1013
 }

@@ -3,7 +3,7 @@ Hàm: FirstOrderFunctorAdapter(const Functor & functor)
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::internal::FirstOrderFunctorAdapter
 Vị trí: include/ceres/internal/variadic_evaluate.h, dòng 122–123
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FirstOrderFunctorAdapter<QuadraticCostFunctor> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FirstOrderFunctorAdapter<QuadraticCostFunctor>.
 
 Số điểm rẽ nhánh: 0
 

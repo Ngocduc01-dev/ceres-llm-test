@@ -1,26 +1,33 @@
 {
  "id": "u1320",
  "name": "ceres::internal::CompressedRowSparseMatrix::FromTripletSparseMatrix",
+ "short_name": "FromTripletSparseMatrix",
+ "signature": "std::unique_ptr<CompressedRowSparseMatrix> FromTripletSparseMatrix(const TripletSparseMatrix & input)",
+ "params": "(const TripletSparseMatrix & input)",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_sparse_matrix.cc",
  "lines": [
   181,
   185
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 5,
- "order": 1320,
- "short_name": "FromTripletSparseMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "(const TripletSparseMatrix & input)",
- "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 5,
+ "order": 1320
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1457",
  "name": "ceres::internal::InnerProductComputer::Init",
+ "short_name": "Init",
+ "signature": "void Init(const CompressedRowSparseMatrix::StorageType product_storage_type)",
+ "params": "(const CompressedRowSparseMatrix::StorageType product_storage_type)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
  "file": "internal/ceres/inner_product_computer.cc",
  "lines": [
   141,
   177
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 37,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1457,
- "short_name": "Init",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::InnerProductComputer",
- "class_is_template": false,
- "params": "(const CompressedRowSparseMatrix::StorageType product_storage_type)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 3,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1457
 }

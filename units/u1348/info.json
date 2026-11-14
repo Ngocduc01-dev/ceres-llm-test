@@ -1,26 +1,33 @@
 {
  "id": "u1348",
  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix",
+ "short_name": "BlockRandomAccessDiagonalMatrix",
+ "signature": "BlockRandomAccessDiagonalMatrix(const std::vector<Block> & blocks, ContextImpl * context, int num_threads)",
+ "params": "(const std::vector<Block> & blocks, ContextImpl * context, int num_threads)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_diagonal_matrix.cc",
  "lines": [
   50,
   60
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1348,
- "short_name": "BlockRandomAccessDiagonalMatrix",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
- "class_is_template": false,
- "params": "(const std::vector<Block> & blocks, ContextImpl * context, int num_threads)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1348
 }

@@ -3,7 +3,7 @@ Hàm: MinusWrapper(const Functor & functor)
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::internal::MinusWrapper
 Vị trí: include/ceres/autodiff_manifold.h, dòng 197–197
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MinusWrapper<EuclideanFunctor> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MinusWrapper<EuclideanFunctor>.
 
 Số điểm rẽ nhánh: 0
 

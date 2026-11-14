@@ -1,26 +1,33 @@
 {
  "id": "u1491",
  "name": "ceres::internal::ProblemImpl::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const Problem::EvaluateOptions & evaluate_options, double * cost, std::vector<double> * residuals, std::vector<double> * gradient, CRSMatrix * jacobian)",
+ "params": "(const Problem::EvaluateOptions & evaluate_options, double * cost, std::vector<double> * residuals, std::vector<double> * gradient, CRSMatrix * jacobian)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   585,
   746
  ],
- "branches": 38,
- "cyclomatic": 20,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 162,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 1491,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProblemImpl",
- "class_is_template": false,
- "params": "(const Problem::EvaluateOptions & evaluate_options, double * cost, std::vector<double> * residuals, std::vector<double> * gradient, CRSMatrix * jacobian)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 15,
+  "branches": 30,
+  "loops": 3,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 3,
+ "order": 1491
 }

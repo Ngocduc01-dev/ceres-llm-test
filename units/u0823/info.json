@@ -1,26 +1,33 @@
 {
  "id": "u0823",
  "name": "ceres::internal::BlockCRSJacobiPreconditioner::matrix",
+ "short_name": "matrix",
+ "signature": "const CompressedRowSparseMatrix & matrix() const",
+ "params": "()",
+ "return_type": "const CompressedRowSparseMatrix &",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockCRSJacobiPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/block_jacobi_preconditioner.h",
  "lines": [
   90,
   90
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 823,
- "short_name": "matrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockCRSJacobiPreconditioner",
- "class_is_template": false,
- "params": "()",
- "return_type": "const CompressedRowSparseMatrix &",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 823
 }

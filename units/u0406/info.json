@@ -1,26 +1,33 @@
 {
  "id": "u0406",
  "name": "ceres::internal::SchurEliminator::Chunk::Chunk",
+ "short_name": "Chunk",
+ "signature": "Chunk(int start)",
+ "params": "(int start)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SchurEliminator::Chunk",
+ "class_is_template": false,
  "file": "internal/ceres/schur_eliminator.h",
  "lines": [
   278,
   278
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 406,
- "short_name": "Chunk",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::SchurEliminator::Chunk",
- "class_is_template": false,
- "params": "(int start)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "SchurEliminator<>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 406
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0525",
  "name": "ceres::internal::DoglegStrategy::StepAccepted",
+ "short_name": "StepAccepted",
+ "signature": "void StepAccepted(double step_quality)",
+ "params": "(double step_quality)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/dogleg_strategy.cc",
  "lines": [
   617,
   633
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 525,
- "short_name": "StepAccepted",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DoglegStrategy",
- "class_is_template": false,
- "params": "(double step_quality)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 525
 }

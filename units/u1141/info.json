@@ -1,26 +1,33 @@
 {
  "id": "u1141",
  "name": "ceres::internal::SparseSchurComplementSolver::InitStorage",
+ "short_name": "InitStorage",
+ "signature": "void InitStorage(const CompressedRowBlockStructure * bs)",
+ "params": "(const CompressedRowBlockStructure * bs)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseSchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   223,
   288
  ],
- "branches": 26,
- "cyclomatic": 14,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 66,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1141,
- "short_name": "InitStorage",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SparseSchurComplementSolver",
- "class_is_template": false,
- "params": "(const CompressedRowBlockStructure * bs)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 12,
+  "branches": 24,
+  "loops": 9,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1141
 }

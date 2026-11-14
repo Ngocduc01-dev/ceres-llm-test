@@ -3,7 +3,7 @@ Hàm: DynamicNumericDiffCostFunction(const CostFunctor * functor, Ownership owne
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::DynamicNumericDiffCostFunction
 Vị trí: include/ceres/dynamic_numeric_diff_cost_function.h, dòng 82–86
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DynamicNumericDiffCostFunction<PlusFunctor, RIDDERS> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DynamicNumericDiffCostFunction<PlusFunctor, RIDDERS>.
 
 Số điểm rẽ nhánh: 0
 

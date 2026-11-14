@@ -3,7 +3,7 @@ Hàm: InsertOrDie(Collection* const collection, const typename Collection::value
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: internal/ceres/map_util.h, dòng 120–127
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp InsertOrDie<unordered_map<int, int>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp InsertOrDie<unordered_map<int, int>>.
 
 Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
 

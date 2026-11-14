@@ -1,26 +1,33 @@
 {
  "id": "u1393",
  "name": "ceres::internal::(anonymous)::GradientCheckingCostFunction::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const",
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::(anonymous)::GradientCheckingCostFunction",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_checking_cost_function.cc",
  "lines": [
   79,
   119
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 3,
- "level": "de",
- "callable": "internal",
+ "loc": 41,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1393,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::(anonymous)::GradientCheckingCostFunction",
- "class_is_template": false,
- "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1393
 }

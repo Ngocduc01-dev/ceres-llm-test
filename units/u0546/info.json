@@ -1,28 +1,33 @@
 {
  "id": "u0546",
  "name": "ceres::fmax",
+ "short_name": "fmax",
+ "signature": "decltype(auto) fmax(const Lhs& x, const Rhs& y)",
+ "params": "(const Lhs& x, const Rhs& y)",
+ "return_type": "decltype(auto)",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/jet.h",
  "lines": [
   789,
   805
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 546,
- "short_name": "fmax",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Lhs& x, const Rhs& y)",
- "return_type": "decltype(auto)",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "fmax<Jet<double, 2>, Jet<double, 2>, nullptr>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 546
 }

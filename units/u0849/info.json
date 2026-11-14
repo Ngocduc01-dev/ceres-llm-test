@@ -1,26 +1,33 @@
 {
  "id": "u0849",
  "name": "ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter",
+ "short_name": "DynamicCompressedRowJacobianWriter",
+ "signature": "DynamicCompressedRowJacobianWriter(Evaluator::Options, Program * program)",
+ "params": "(Evaluator::Options, Program * program)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DynamicCompressedRowJacobianWriter",
+ "class_is_template": false,
  "file": "internal/ceres/dynamic_compressed_row_jacobian_writer.h",
  "lines": [
   50,
   52
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 849,
- "short_name": "DynamicCompressedRowJacobianWriter",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::DynamicCompressedRowJacobianWriter",
- "class_is_template": false,
- "params": "(Evaluator::Options, Program * program)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 849
 }

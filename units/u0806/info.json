@@ -1,26 +1,33 @@
 {
  "id": "u0806",
  "name": "ceres::internal::CanonicalViewsClustering::ComputeClusteringQualityDifference",
+ "short_name": "ComputeClusteringQualityDifference",
+ "signature": "double ComputeClusteringQualityDifference(const int candidate, const std::vector<int> & centers) const",
+ "params": "(const int candidate, const std::vector<int> & centers)",
+ "return_type": "double",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CanonicalViewsClustering",
+ "class_is_template": false,
  "file": "internal/ceres/canonical_views_clustering.cc",
  "lines": [
   151,
   180
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 30,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 806,
- "short_name": "ComputeClusteringQualityDifference",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CanonicalViewsClustering",
- "class_is_template": false,
- "params": "(const int candidate, const std::vector<int> & centers)",
- "return_type": "double",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 806
 }

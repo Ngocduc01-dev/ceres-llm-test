@@ -1,26 +1,33 @@
 {
  "id": "u1485",
  "name": "ceres::Problem::NumResiduals",
+ "short_name": "NumResiduals",
+ "signature": "int NumResiduals() const",
+ "params": "()",
+ "return_type": "int",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
  "file": "internal/ceres/problem.cc",
  "lines": [
   169,
   169
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1485,
- "short_name": "NumResiduals",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Problem",
- "class_is_template": false,
- "params": "()",
- "return_type": "int",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1485
 }

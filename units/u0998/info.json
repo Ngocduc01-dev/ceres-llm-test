@@ -1,26 +1,33 @@
 {
  "id": "u0998",
  "name": "ceres::internal::ScopedExecutionTimer::~ScopedExecutionTimer",
+ "short_name": "~ScopedExecutionTimer",
+ "signature": "~ScopedExecutionTimer()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::ScopedExecutionTimer",
+ "class_is_template": false,
  "file": "internal/ceres/execution_summary.h",
  "lines": [
   77,
   79
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 998,
- "short_name": "~ScopedExecutionTimer",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::ScopedExecutionTimer",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 998
 }

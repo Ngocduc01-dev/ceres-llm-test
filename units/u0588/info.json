@@ -1,28 +1,33 @@
 {
  "id": "u0588",
  "name": "ceres::ProductManifold::ExclusiveScan",
+ "short_name": "ExclusiveScan",
+ "signature": "std::array<T, N> ExclusiveScan(const std::array<T, N>& values)",
+ "params": "(const std::array<T, N>& values)",
+ "return_type": "std::array<T, N>",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
  "file": "include/ceres/product_manifold.h",
  "lines": [
   257,
   268
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 12,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 588,
- "short_name": "ExclusiveScan",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::ProductManifold",
- "class_is_template": true,
- "params": "(const std::array<T, N>& values)",
- "return_type": "std::array<T, N>",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "ProductManifold<SubsetManifold, SubsetManifold>::ExclusiveScan<int, 2UL>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 588
 }

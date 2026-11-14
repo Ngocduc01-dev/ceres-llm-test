@@ -1,26 +1,33 @@
 {
  "id": "u1266",
  "name": "ceres::internal::ResidualBlock::NumScratchDoublesForEvaluate",
+ "short_name": "NumScratchDoublesForEvaluate",
+ "signature": "int NumScratchDoublesForEvaluate() const",
+ "params": "()",
+ "return_type": "int",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
  "file": "internal/ceres/residual_block.cc",
  "lines": [
   198,
   215
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "de",
- "callable": "public",
+ "loc": 18,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 5,
- "order": 1266,
- "short_name": "NumScratchDoublesForEvaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ResidualBlock",
- "class_is_template": false,
- "params": "()",
- "return_type": "int",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 5,
+ "order": 1266
 }

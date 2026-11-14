@@ -1,26 +1,33 @@
 {
  "id": "u1519",
  "name": "ceres::Solver::Options::IsValid",
+ "short_name": "IsValid",
+ "signature": "bool IsValid(std::string * error) const",
+ "params": "(std::string * error)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Solver::Options",
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   690,
   706
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 6,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 21,
- "order": 1519,
- "short_name": "IsValid",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Solver::Options",
- "class_is_template": false,
- "params": "(std::string * error)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 6,
+ "existing_tests": 21,
+ "order": 1519
 }

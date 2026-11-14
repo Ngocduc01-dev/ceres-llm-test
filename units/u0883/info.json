@@ -1,28 +1,33 @@
 {
  "id": "u0883",
  "name": "ceres::internal::ProblemImpl::AddResidualBlock",
+ "short_name": "AddResidualBlock",
+ "signature": "ResidualBlockId AddResidualBlock(CostFunction* cost_function, LossFunction* loss_function, double* x0, Ts*... xs)",
+ "params": "(CostFunction* cost_function, LossFunction* loss_function, double* x0, Ts*... xs)",
+ "return_type": "ResidualBlockId",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.h",
  "lines": [
   89,
   99
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 883,
- "short_name": "AddResidualBlock",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::internal::ProblemImpl",
- "class_is_template": false,
- "params": "(CostFunction* cost_function, LossFunction* loss_function, double* x0, Ts*... xs)",
- "return_type": "ResidualBlockId",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "AddResidualBlock<<double>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 883
 }

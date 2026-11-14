@@ -1,26 +1,33 @@
 {
  "id": "u0400",
  "name": "ceres::internal::ProgramEvaluator::EvaluateScratch::Init",
+ "short_name": "Init",
+ "signature": "void Init(int max_parameters_per_residual_block, int max_scratch_doubles_needed_for_evaluate, int max_residuals_per_residual_block, int num_parameters)",
+ "params": "(int max_parameters_per_residual_block, int max_scratch_doubles_needed_for_evaluate, int max_residuals_per_residual_block, int num_parameters)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator::EvaluateScratch",
+ "class_is_template": false,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   324,
   336
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 13,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 400,
- "short_name": "Init",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProgramEvaluator::EvaluateScratch",
- "class_is_template": false,
- "params": "(int max_parameters_per_residual_block, int max_scratch_doubles_needed_for_evaluate, int max_residuals_per_residual_block, int num_parameters)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 400
 }

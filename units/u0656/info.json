@@ -1,26 +1,33 @@
 {
  "id": "u0656",
  "name": "ceres::internal::RefinedDenseCholesky::RefinedDenseCholesky",
+ "short_name": "RefinedDenseCholesky",
+ "signature": "RefinedDenseCholesky(std::unique_ptr<DenseCholesky> dense_cholesky, std::unique_ptr<DenseIterativeRefiner> iterative_refiner)",
+ "params": "(std::unique_ptr<DenseCholesky> dense_cholesky, std::unique_ptr<DenseIterativeRefiner> iterative_refiner)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::RefinedDenseCholesky",
+ "class_is_template": false,
  "file": "internal/ceres/dense_cholesky.cc",
  "lines": [
   319,
   323
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 656,
- "short_name": "RefinedDenseCholesky",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::RefinedDenseCholesky",
- "class_is_template": false,
- "params": "(std::unique_ptr<DenseCholesky> dense_cholesky, std::unique_ptr<DenseIterativeRefiner> iterative_refiner)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 3,
+ "order": 656
 }

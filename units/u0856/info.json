@@ -1,28 +1,33 @@
 {
  "id": "u0856",
  "name": "ceres::internal::EigenSparseCholeskyTemplate::StorageType",
+ "short_name": "StorageType",
+ "signature": "CompressedRowSparseMatrix::StorageType StorageType() const",
+ "params": "()",
+ "return_type": "CompressedRowSparseMatrix::StorageType",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenSparseCholeskyTemplate",
+ "class_is_template": true,
  "file": "internal/ceres/eigensparse.cc",
  "lines": [
   56,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 856,
- "short_name": "StorageType",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::EigenSparseCholeskyTemplate",
- "class_is_template": true,
- "params": "()",
- "return_type": "CompressedRowSparseMatrix::StorageType",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 856
 }

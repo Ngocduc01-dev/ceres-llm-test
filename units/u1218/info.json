@@ -1,26 +1,33 @@
 {
  "id": "u1218",
  "name": "ceres::internal::BlockSparseMatrix::CreateRandomMatrix",
+ "short_name": "CreateRandomMatrix",
+ "signature": "std::unique_ptr<BlockSparseMatrix> CreateRandomMatrix(const BlockSparseMatrix::RandomMatrixOptions & options, std::mt19937 & prng, bool use_page_locked_memory)",
+ "params": "(const BlockSparseMatrix::RandomMatrixOptions & options, std::mt19937 & prng, bool use_page_locked_memory)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   711,
   781
  ],
- "branches": 36,
- "cyclomatic": 19,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 71,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 7,
- "order": 1218,
- "short_name": "CreateRandomMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(const BlockSparseMatrix::RandomMatrixOptions & options, std::mt19937 & prng, bool use_page_locked_memory)",
- "return_type": "std::unique_ptr<BlockSparseMatrix>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 4,
+  "checks": 10
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 7,
+ "order": 1218
 }

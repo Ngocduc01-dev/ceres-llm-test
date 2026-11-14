@@ -1,28 +1,33 @@
 {
  "id": "u0436",
  "name": "ceres::AutoDiffCostFunction::~AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
+ "short_name": "~AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
+ "signature": "~AutoDiffCostFunction()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::AutoDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/autodiff_cost_function.h",
  "lines": [
   185,
   194
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 436,
- "short_name": "~AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::AutoDiffCostFunction",
- "class_is_template": true,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 436
 }

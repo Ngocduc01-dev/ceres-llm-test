@@ -1,26 +1,33 @@
 {
  "id": "u1490",
  "name": "ceres::internal::TrustRegionMinimizer::Minimize",
+ "short_name": "Minimize",
+ "signature": "void Minimize(const Minimizer::Options & options, double * parameters, Solver::Summary * solver_summary)",
+ "params": "(const Minimizer::Options & options, double * parameters, Solver::Summary * solver_summary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_minimizer.cc",
  "lines": [
   66,
   135
  ],
- "branches": 34,
- "cyclomatic": 18,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 70,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1490,
- "short_name": "Minimize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionMinimizer",
- "class_is_template": false,
- "params": "(const Minimizer::Options & options, double * parameters, Solver::Summary * solver_summary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 11,
+  "branches": 22,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 1,
+ "order": 1490
 }

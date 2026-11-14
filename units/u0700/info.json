@@ -1,26 +1,33 @@
 {
  "id": "u0700",
  "name": "ceres::internal::SumSquaredSizes",
+ "short_name": "SumSquaredSizes",
+ "signature": "int SumSquaredSizes(const std::vector<Block> & blocks)",
+ "params": "(const std::vector<Block> & blocks)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/block_structure.cc",
  "lines": [
   62,
   68
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 700,
- "short_name": "SumSquaredSizes",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::vector<Block> & blocks)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 700
 }

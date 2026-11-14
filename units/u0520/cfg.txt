@@ -3,7 +3,7 @@ Hàm: Plus(const double * x_ptr, const double * delta_ptr, double * x_plus_delta
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::LineManifold
 Vị trí: include/ceres/line_manifold.h, dòng 141–216
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<3> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp LineManifold<3>.
 
 Số điểm rẽ nhánh: 3
 

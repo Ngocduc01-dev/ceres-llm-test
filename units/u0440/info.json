@@ -1,28 +1,33 @@
 {
  "id": "u0440",
  "name": "ceres::Grid1D::Grid1D<T, kDataDimension, kInterleaved>",
+ "short_name": "Grid1D<T, kDataDimension, kInterleaved>",
+ "signature": "Grid1D(const T * data, const int begin, const int end)",
+ "params": "(const T * data, const int begin, const int end)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Grid1D",
+ "class_is_template": true,
  "file": "include/ceres/cubic_interpolation.h",
  "lines": [
   188,
   191
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 440,
- "short_name": "Grid1D<T, kDataDimension, kInterleaved>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::Grid1D",
- "class_is_template": true,
- "params": "(const T * data, const int begin, const int end)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "Grid1D<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 440
 }

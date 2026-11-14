@@ -1,28 +1,33 @@
 {
  "id": "u1206",
  "name": "ceres::TinySolverCostFunctionAdapter::TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>",
+ "short_name": "TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>",
+ "signature": "TinySolverCostFunctionAdapter(const CostFunction & cost_function)",
+ "params": "(const CostFunction & cost_function)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::TinySolverCostFunctionAdapter",
+ "class_is_template": true,
  "file": "include/ceres/tiny_solver_cost_function_adapter.h",
  "lines": [
   88,
   105
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 18,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1206,
- "short_name": "TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::TinySolverCostFunctionAdapter",
- "class_is_template": true,
- "params": "(const CostFunction & cost_function)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "TinySolverCostFunctionAdapter<2, 3>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1206
 }

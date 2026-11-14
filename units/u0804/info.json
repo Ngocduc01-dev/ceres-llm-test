@@ -1,26 +1,33 @@
 {
  "id": "u0804",
  "name": "ceres::internal::(anonymous)::RemoveLeadingZeros",
+ "short_name": "RemoveLeadingZeros",
+ "signature": "Vector RemoveLeadingZeros(const Vector & polynomial_in)",
+ "params": "(const Vector & polynomial_in)",
+ "return_type": "Vector",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/polynomial.cc",
  "lines": [
   116,
   122
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 7,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 804,
- "short_name": "RemoveLeadingZeros",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vector & polynomial_in)",
- "return_type": "Vector",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 804
 }

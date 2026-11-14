@@ -1,28 +1,30 @@
 {
  "id": "u0197",
  "name": "ceres::OrderedGroups::element_to_group",
+ "short_name": "element_to_group",
+ "signature": "const std::map<T, int> & element_to_group() const",
+ "params": "()",
+ "return_type": "const std::map<T, int> &",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
  "file": "include/ceres/ordered_groups.h",
  "lines": [
   185,
   185
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 197,
- "short_name": "element_to_group",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::OrderedGroups",
- "class_is_template": true,
- "params": "()",
- "return_type": "const std::map<T, int> &",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: template không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 197
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0171",
  "name": "ceres::LineManifold::MinusJacobian",
+ "short_name": "MinusJacobian",
+ "signature": "bool MinusJacobian(const double * x_ptr, double * jacobian_ptr) const",
+ "params": "(const double * x_ptr, double * jacobian_ptr)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::LineManifold",
+ "class_is_template": true,
  "file": "include/ceres/line_manifold.h",
  "lines": [
   272,
   293
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 22,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 171,
- "short_name": "MinusJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::LineManifold",
- "class_is_template": true,
- "params": "(const double * x_ptr, double * jacobian_ptr)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "LineManifold<3>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 171
 }

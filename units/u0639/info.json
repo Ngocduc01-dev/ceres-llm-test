@@ -1,28 +1,33 @@
 {
  "id": "u0639",
  "name": "ceres::Jet::operator/=",
+ "short_name": "operator/=",
+ "signature": "Jet<T, N> & operator/=(const Jet<T, N> & y)",
+ "params": "(const Jet<T, N> & y)",
+ "return_type": "Jet<T, N> &",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Jet",
+ "class_is_template": true,
  "file": "include/ceres/jet.h",
  "lines": [
   259,
   262
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "ceres::Jet<double, 4>"
- ],
- "called_by_tests": 0,
- "order": 639,
- "short_name": "operator/=",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Jet",
- "class_is_template": true,
- "params": "(const Jet<T, N> & y)",
- "return_type": "Jet<T, N> &",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "Jet<double, 2>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 639
 }

@@ -3,7 +3,7 @@ Hàm: Init(int num_eliminate_blocks, bool assume_full_rank_ete, const Compressed
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::SchurEliminator
 Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 79–174
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<>.
 
 Số điểm rẽ nhánh: 8 (và 2 lệnh CHECK)
 

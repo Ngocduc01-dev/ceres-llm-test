@@ -1,28 +1,33 @@
 {
  "id": "u0506",
  "name": "ceres::internal::FindConnectedComponent",
+ "short_name": "FindConnectedComponent",
+ "signature": "Vertex FindConnectedComponent(const Vertex& vertex, std::unordered_map<Vertex, Vertex>* union_find)",
+ "params": "(const Vertex& vertex, std::unordered_map<Vertex, Vertex>* union_find)",
+ "return_type": "Vertex",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/graph_algorithms.h",
  "lines": [
   230,
   240
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 506,
- "short_name": "FindConnectedComponent",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vertex& vertex, std::unordered_map<Vertex, Vertex>* union_find)",
- "return_type": "Vertex",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "FindConnectedComponent<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 506
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1234",
  "name": "ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian",
+ "short_name": "EvaluateGradientAndJacobian",
+ "signature": "bool EvaluateGradientAndJacobian(bool new_evaluation_point)",
+ "params": "(bool new_evaluation_point)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_minimizer.cc",
  "lines": [
   244,
   302
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 59,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1234,
- "short_name": "EvaluateGradientAndJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionMinimizer",
- "class_is_template": false,
- "params": "(bool new_evaluation_point)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1234
 }

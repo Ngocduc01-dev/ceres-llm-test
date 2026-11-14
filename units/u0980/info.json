@@ -1,28 +1,33 @@
 {
  "id": "u0980",
  "name": "ceres::internal::FixedArray::end",
+ "short_name": "end",
+ "signature": "const_iterator end() const",
+ "params": "()",
+ "return_type": "const_iterator",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   265,
   265
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 980,
- "short_name": "end",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray",
- "class_is_template": true,
- "params": "()",
- "return_type": "const_iterator",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<double>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 980
 }

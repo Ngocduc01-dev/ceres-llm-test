@@ -1,28 +1,33 @@
 {
  "id": "u0193",
  "name": "ceres::OrderedGroups::IsMember",
+ "short_name": "IsMember",
+ "signature": "bool IsMember(const T element) const",
+ "params": "(const T element)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
  "file": "include/ceres/ordered_groups.h",
  "lines": [
   156,
   159
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 193,
- "short_name": "IsMember",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::OrderedGroups",
- "class_is_template": true,
- "params": "(const T element)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "OrderedGroups<double *>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 193
 }

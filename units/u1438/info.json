@@ -1,26 +1,33 @@
 {
  "id": "u1438",
  "name": "ceres::internal::DumpLinearLeastSquaresProblem",
+ "short_name": "DumpLinearLeastSquaresProblem",
+ "signature": "bool DumpLinearLeastSquaresProblem(const std::string & filename_base, DumpFormatType dump_format_type, const SparseMatrix * A, const double * D, const double * b, const double * x, int num_eliminate_blocks)",
+ "params": "(const std::string & filename_base, DumpFormatType dump_format_type, const SparseMatrix * A, const double * D, const double * b, const double * x, int num_eliminate_blocks)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/linear_least_squares_problems.cc",
  "lines": [
   1023,
   1042
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 20,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1438,
- "short_name": "DumpLinearLeastSquaresProblem",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::string & filename_base, DumpFormatType dump_format_type, const SparseMatrix * A, const double * D, const double * b, const double * x, int num_eliminate_blocks)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1438
 }

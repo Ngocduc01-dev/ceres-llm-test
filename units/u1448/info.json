@@ -1,26 +1,33 @@
 {
  "id": "u1448",
  "name": "ceres::internal::DenseNormalCholeskySolver::SolveImpl",
+ "short_name": "SolveImpl",
+ "signature": "LinearSolver::Summary SolveImpl(DenseSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "params": "(DenseSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseNormalCholeskySolver",
+ "class_is_template": false,
  "file": "internal/ceres/dense_normal_cholesky_solver.cc",
  "lines": [
   49,
   87
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 39,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1448,
- "short_name": "SolveImpl",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DenseNormalCholeskySolver",
- "class_is_template": false,
- "params": "(DenseSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1448
 }

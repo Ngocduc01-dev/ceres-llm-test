@@ -1,26 +1,33 @@
 {
  "id": "u1538",
  "name": "ceres::Solve",
+ "short_name": "Solve",
+ "signature": "void Solve(const GradientProblemSolver::Options & options, const GradientProblem & problem, double * parameters, GradientProblemSolver::Summary * summary)",
+ "params": "(const GradientProblemSolver::Options & options, const GradientProblem & problem, double * parameters, GradientProblemSolver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/gradient_problem_solver.cc",
  "lines": [
   290,
   296
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 9,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 1538,
- "short_name": "Solve",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const GradientProblemSolver::Options & options, const GradientProblem & problem, double * parameters, GradientProblemSolver::Summary * summary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 9,
+ "existing_tests": 3,
+ "order": 1538
 }

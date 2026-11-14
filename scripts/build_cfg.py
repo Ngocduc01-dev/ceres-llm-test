@@ -402,6 +402,14 @@ def clean_cfg(sig, lines, src_lines, line_start, line_end):
     if any(all(name(target(tok)) == "DỪNG" for _, tok in info[t]["edges"]) for t in decs):
         return None
     n_check = sum(1 for t in decs if info[t]["sub"] == "check")
+    normal = [t for t in decs if info[t]["sub"] != "check"]
+    # số liệu đếm như người đọc CFG: điểm rẽ nhánh, số nhánh (switch: mỗi case 1 nhánh), vòng lặp, CHECK
+    clean_cfg.stats = {
+        "decisions": len(normal),
+        "branches": sum(len(info[t]["edges"]) for t in normal),
+        "loops": sum(1 for t in normal if re.match(r"(for|while|do)\b", info[t]["text"])),
+        "checks": n_check,
+    }
     first = target(info[start]["edges"][0][1]) if start is not None and info[start]["edges"] else end
     if first is None:  # hàm luôn dừng ngay (không có đường tới END)
         return None
@@ -439,6 +447,33 @@ def clean_cfg(sig, lines, src_lines, line_start, line_end):
     return "\n".join(out) + "\n"
 
 
+def template_used(u, sig, decl=""):
+    """Template: tên đã điền kiểu mà CFG được dựng (vd. 'LineManifold<3>'); không phải template -> None."""
+    # hàm template: Clang ghi kiểu đã điền trong khai báo, vd. "template<> void Apply<double, Jet<double, 4>>(...)"
+    fn_args = ""
+    short = re.sub(r"<.*>$", "", u["name"].split("::")[-1])
+    if decl.lstrip().startswith("template<>"):
+        k = decl.find(short + "<")
+        if k >= 0:
+            depth, j = 0, k + len(short)
+            for j in range(k + len(short), len(decl)):
+                depth += decl[j] == "<"
+                depth -= decl[j] == ">"
+                if depth == 0:
+                    break
+            fn_args = decl[k + len(short):j + 1]
+    if not (re.search(r"<.*>", name_of(sig)) or fn_args):
+        return None
+    used = re.sub(r"\b\w+::", "", name_of(sig).replace("(anonymous namespace)::", ""))
+    fn = re.sub(r"\b\w+::", "", short + fn_args) if fn_args else ""
+    if "::" in used and "<" not in used.rsplit("::", 1)[1]:
+        # template nằm ở class -> ghi tên class đã điền kiểu (+ hàm, nếu hàm cũng là template)
+        used = used.rsplit("::", 1)[0] + (f"::{fn}" if fn else "")
+    elif fn and "<" not in used:
+        used = fn
+    return used
+
+
 def unit_header(u, info, sig, decl=""):
     """Phần đầu cfg.txt: thông tin unit viết dễ đọc."""
     name = f"{info.get('short_name') or u['name'].split('::')[-1]}{info.get('params') or '()'}"
@@ -455,30 +490,10 @@ def unit_header(u, info, sig, decl=""):
         ns = "::".join(u["name"].split("::")[:-1]).replace("(anonymous)", "(namespace không tên)")
         lines.append(f"Namespace: {ns or '(toàn cục)'}")
     lines.append(f"Vị trí: {u['file']}, dòng {u['lines'][0]}–{u['lines'][1]}")
-    # hàm template: Clang ghi kiểu đã điền trong khai báo, vd. "template<> void Apply<double, Jet<double, 4>>(...)"
-    fn_args = ""
-    short = re.sub(r"<.*>$", "", u["name"].split("::")[-1])
-    if decl.lstrip().startswith("template<>"):
-        k = decl.find(short + "<")
-        if k >= 0:
-            depth, j = 0, k + len(short)
-            for j in range(k + len(short), len(decl)):
-                depth += decl[j] == "<"
-                depth -= decl[j] == ">"
-                if depth == 0:
-                    break
-            fn_args = decl[k + len(short):j + 1]
-    m = re.search(r"<.*>", name_of(sig)) or fn_args
-    if m:  # template: CFG lấy từ 1 bản dùng cụ thể
-        used = re.sub(r"\b\w+::", "", name_of(sig).replace("(anonymous namespace)::", ""))
-        fn = re.sub(r"\b\w+::", "", short + fn_args) if fn_args else ""
-        if "::" in used and "<" not in used.rsplit("::", 1)[1]:
-            # template nằm ở class -> ghi tên class đã điền kiểu (+ hàm, nếu hàm cũng là template)
-            used = used.rsplit("::", 1)[0] + (f"::{fn}" if fn else "")
-        elif fn and "<" not in used:
-            used = fn
+    used = template_used(u, sig, decl)
+    if used:
         lines.append("Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. "
-                     f"CFG dưới đây dựng cho trường hợp {used} (lấy từ một chỗ Ceres dùng thật).")
+                     f"CFG dưới đây dựng cho trường hợp {used}.")
     return "\n".join(lines) + "\n\n"
 
 
@@ -525,6 +540,15 @@ def unit_decl(u, src):
     return count_args(text, m.end() - 1), is_tmpl
 
 
+def set_cfg_info(d, cfg, example=None):
+    """Cập nhật phần CFG trong units/<id>/info.json (các phần khác do init_units.py viết)."""
+    p = d / "info.json"
+    info = json.loads(p.read_text(encoding="utf-8")) if p.exists() else {}
+    info["cfg"] = cfg
+    info["template_example"] = example
+    p.write_text(json.dumps(info, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
+
+
 def strip_tmpl(s):
     """Chuẩn hoá tên để so: bỏ tham số template, '(anonymous namespace)' (Clang) = '(anonymous)' (libclang)."""
     s = s.replace("(anonymous namespace)", "(anonymous)")
@@ -532,6 +556,11 @@ def strip_tmpl(s):
     while prev != s:
         prev, s = s, re.sub(r"<[^<>]*>", "", s)
     return s.replace(" ", "")
+
+
+NO_CFG_UNUSED = "Clang không dựng được CFG: template không được dùng ở đâu trong Ceres – LLM tự dựng"
+NO_CFG_OVERLOAD = "Clang không dựng được CFG: bản overload này không được dùng ở đâu trong Ceres – LLM tự dựng"
+NO_CFG_ABNORMAL = "CFG bất thường (hàm luôn dừng / assert) nên không dùng – LLM tự dựng"
 
 
 def main():
@@ -609,17 +638,20 @@ def main():
                                   "cands": [[c[0], n_params(c[0]), c[1]["decl"][:150]] for c in by_name[key]]})
             stats["không tìm thấy CFG"] += 1
             (d / "cfg.txt").unlink(missing_ok=True)
+            set_cfg_info(d, {"has_cfg": False, "reason": NO_CFG_OVERLOAD if by_name.get(key) else NO_CFG_UNUSED})
             continue
         sig, v = cands[0]
         text = clean_cfg(sig, v["lines"], src_cache[u["file"]], u["lines"][0], u["lines"][1])
         if not text:  # CFG bất thường (assert / LOG(FATAL) / luôn dừng) -> để LLM tự dựng
             stats["CFG bất thường (bỏ)"] += 1
             (d / "cfg.txt").unlink(missing_ok=True)
+            set_cfg_info(d, {"has_cfg": False, "reason": NO_CFG_ABNORMAL})
             continue
         info_p = d / "info.json"
         uinfo = json.loads(info_p.read_text(encoding="utf-8")) if info_p.exists() else {}
         (d / "cfg.txt").write_text(unit_header(u, uinfo, sig, v.get("decl", "")) + text, encoding="utf-8")
         stats["có CFG"] += 1
+        set_cfg_info(d, {"has_cfg": True, **clean_cfg.stats}, template_used(u, sig, v.get("decl", "")))
 
     summary = (f"Unit: {len(units)} | có CFG: {stats['có CFG']} | không tìm thấy: {stats['không tìm thấy CFG']} | "
                f"CFG bất thường (bỏ, để LLM tự dựng): {stats['CFG bất thường (bỏ)']} | thời gian: {time.time() - t0:.0f}s")

@@ -1,28 +1,33 @@
 {
  "id": "u1406",
  "name": "ceres::internal::SchurEliminator::Eliminate",
+ "short_name": "Eliminate",
+ "signature": "void Eliminate(const BlockSparseMatrixData & A, const double * b, const double * D, BlockRandomAccessMatrix * lhs, double * rhs)",
+ "params": "(const BlockSparseMatrixData & A, const double * b, const double * D, BlockRandomAccessMatrix * lhs, double * rhs)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurEliminator",
+ "class_is_template": true,
  "file": "internal/ceres/schur_eliminator_impl.h",
  "lines": [
   176,
   304
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 129,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1406,
- "short_name": "Eliminate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurEliminator",
- "class_is_template": true,
- "params": "(const BlockSparseMatrixData & A, const double * b, const double * D, BlockRandomAccessMatrix * lhs, double * rhs)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "SchurEliminator<>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1406
 }

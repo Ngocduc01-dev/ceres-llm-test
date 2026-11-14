@@ -1,28 +1,33 @@
 {
  "id": "u1019",
  "name": "ceres::internal::ProgramEvaluator::Statistics",
+ "short_name": "Statistics",
+ "signature": "std::map<std::string, CallStatistics> Statistics() const",
+ "params": "()",
+ "return_type": "std::map<std::string, CallStatistics>",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   317,
   319
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1019,
- "short_name": "Statistics",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProgramEvaluator",
- "class_is_template": true,
- "params": "()",
- "return_type": "std::map<std::string, CallStatistics>",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1019
 }

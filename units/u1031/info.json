@@ -1,28 +1,33 @@
 {
  "id": "u1031",
  "name": "ceres::internal::ConcurrentQueue::Pop",
+ "short_name": "Pop",
+ "signature": "bool Pop(T * value)",
+ "params": "(T * value)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
  "file": "internal/ceres/concurrent_queue.h",
  "lines": [
   92,
   97
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1031,
- "short_name": "Pop",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ConcurrentQueue",
- "class_is_template": true,
- "params": "(T * value)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "ConcurrentQueue<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1031
 }

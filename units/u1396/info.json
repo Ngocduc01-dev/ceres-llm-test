@@ -1,28 +1,33 @@
 {
  "id": "u1396",
  "name": "ceres::internal::operator<<",
+ "short_name": "operator<<",
+ "signature": "std::ostream & operator<<(std::ostream & os, const FunctionSample & sample)",
+ "params": "(std::ostream & os, const FunctionSample & sample)",
+ "return_type": "std::ostream &",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   61,
   64
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1396,
- "short_name": "operator<<",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::ostream & os, const FunctionSample & sample)",
- "return_type": "std::ostream &",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1396
 }

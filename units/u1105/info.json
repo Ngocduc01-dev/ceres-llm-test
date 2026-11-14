@@ -1,26 +1,33 @@
 {
  "id": "u1105",
  "name": "ceres::internal::BlockOrderingToScalarOrdering",
+ "short_name": "BlockOrderingToScalarOrdering",
+ "signature": "void BlockOrderingToScalarOrdering(const std::vector<Block> & blocks, const std::vector<int> & block_ordering, std::vector<int> * scalar_ordering)",
+ "params": "(const std::vector<Block> & blocks, const std::vector<int> & block_ordering, std::vector<int> * scalar_ordering)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/compressed_col_sparse_matrix_utils.cc",
  "lines": [
   91,
   106
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1105,
- "short_name": "BlockOrderingToScalarOrdering",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::vector<Block> & blocks, const std::vector<int> & block_ordering, std::vector<int> * scalar_ordering)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1105
 }

@@ -3,7 +3,7 @@ Hàm: Dereference(T* p)  → trả về decltype(auto)
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Thuộc class: ceres::ProductManifold
 Vị trí: include/ceres/product_manifold.h, dòng 291–295
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>::Dereference<SubsetManifold, nullptr> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>::Dereference<SubsetManifold, nullptr>.
 
 Số điểm rẽ nhánh: 0
 

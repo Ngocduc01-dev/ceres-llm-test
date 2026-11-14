@@ -3,7 +3,7 @@ Hàm: FixedArray(FixedArray<T, N, A> && other, const allocator_type & a)
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::internal::FixedArray
 Vị trí: include/ceres/internal/fixed_array.h, dòng 125–128
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 10> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 10>.
 
 Số điểm rẽ nhánh: 0
 

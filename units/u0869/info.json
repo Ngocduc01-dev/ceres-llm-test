@@ -1,26 +1,33 @@
 {
  "id": "u0869",
  "name": "ceres::internal::LineSearchFunction::LineSearchFunction",
+ "short_name": "LineSearchFunction",
+ "signature": "LineSearchFunction(Evaluator * evaluator)",
+ "params": "(Evaluator * evaluator)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::LineSearchFunction",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   88,
   94
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 869,
- "short_name": "LineSearchFunction",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::LineSearchFunction",
- "class_is_template": false,
- "params": "(Evaluator * evaluator)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 869
 }

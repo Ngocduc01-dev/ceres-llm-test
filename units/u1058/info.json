@@ -1,28 +1,33 @@
 {
  "id": "u1058",
  "name": "ceres::DynamicNumericDiffCostFunction::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const double *const * parameters, double * residuals, double ** jacobians) const",
+ "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::DynamicNumericDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/dynamic_numeric_diff_cost_function.h",
  "lines": [
   97,
   154
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 58,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1058,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::DynamicNumericDiffCostFunction",
- "class_is_template": true,
- "params": "(const double *const * parameters, double * residuals, double ** jacobians)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 3,
+  "checks": 2
+ },
+ "template_example": "DynamicNumericDiffCostFunction<PlusFunctor, RIDDERS>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1058
 }

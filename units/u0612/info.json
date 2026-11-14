@@ -1,26 +1,33 @@
 {
  "id": "u0612",
  "name": "ceres::internal::DoglegStrategy::ComputeTraditionalDoglegStep",
+ "short_name": "ComputeTraditionalDoglegStep",
+ "signature": "void ComputeTraditionalDoglegStep(double * dogleg)",
+ "params": "(double * dogleg)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/dogleg_strategy.cc",
  "lines": [
   200,
   254
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 55,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 612,
- "short_name": "ComputeTraditionalDoglegStep",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DoglegStrategy",
- "class_is_template": false,
- "params": "(double * dogleg)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 612
 }

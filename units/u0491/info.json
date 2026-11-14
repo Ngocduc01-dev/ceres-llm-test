@@ -1,26 +1,33 @@
 {
  "id": "u0491",
  "name": "ceres::internal::ThreadTokenProvider::Acquire",
+ "short_name": "Acquire",
+ "signature": "int Acquire()",
+ "params": "()",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadTokenProvider",
+ "class_is_template": false,
  "file": "internal/ceres/thread_token_provider.cc",
  "lines": [
   41,
   45
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 491,
- "short_name": "Acquire",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ThreadTokenProvider",
- "class_is_template": false,
- "params": "()",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 491
 }

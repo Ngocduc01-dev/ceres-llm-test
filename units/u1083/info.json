@@ -1,26 +1,30 @@
 {
  "id": "u1083",
  "name": "ceres::internal::SStringPrintf",
+ "short_name": "SStringPrintf",
+ "signature": "const std::string & SStringPrintf(std::string * dst, const char * format)",
+ "params": "(std::string * dst, const char * format)",
+ "return_type": "const std::string &",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/stringprintf.cc",
  "lines": [
   102,
   109
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1083,
- "short_name": "SStringPrintf",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::string * dst, const char * format)",
- "return_type": "const std::string &",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: bản overload này không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1083
 }

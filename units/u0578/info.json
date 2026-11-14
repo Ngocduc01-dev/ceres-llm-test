@@ -1,26 +1,33 @@
 {
  "id": "u0578",
  "name": "ceres::internal::DoglegStrategy::ComputeSubspaceStepFromRoot",
+ "short_name": "ComputeSubspaceStepFromRoot",
+ "signature": "DoglegStrategy::Vector2d ComputeSubspaceStepFromRoot(double y) const",
+ "params": "(double y)",
+ "return_type": "DoglegStrategy::Vector2d",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/dogleg_strategy.cc",
  "lines": [
   447,
   451
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 5,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 578,
- "short_name": "ComputeSubspaceStepFromRoot",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DoglegStrategy",
- "class_is_template": false,
- "params": "(double y)",
- "return_type": "DoglegStrategy::Vector2d",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 578
 }

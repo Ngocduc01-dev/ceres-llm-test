@@ -1,26 +1,33 @@
 {
  "id": "u0760",
  "name": "ceres::internal::JoinPath",
+ "short_name": "JoinPath",
+ "signature": "std::string JoinPath(const std::string & dirname, const std::string & basename)",
+ "params": "(const std::string & dirname, const std::string & basename)",
+ "return_type": "std::string",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/file.cc",
  "lines": [
   76,
   90
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 760,
- "short_name": "JoinPath",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::string & dirname, const std::string & basename)",
- "return_type": "std::string",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 760
 }

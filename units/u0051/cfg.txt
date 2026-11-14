@@ -3,7 +3,7 @@ Hàm: AnnotateConstruct(size_type)  → trả về void
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::FixedArray::EmptyInlinedStorage
 Vị trí: include/ceres/internal/fixed_array.h, dòng 397–397
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 0> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 0>.
 
 Số điểm rẽ nhánh: 0
 

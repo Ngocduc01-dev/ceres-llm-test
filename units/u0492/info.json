@@ -1,26 +1,33 @@
 {
  "id": "u0492",
  "name": "ceres::internal::TrustRegionStepEvaluator::StepQuality",
+ "short_name": "StepQuality",
+ "signature": "double StepQuality(const double cost, const double model_cost_change) const",
+ "params": "(const double cost, const double model_cost_change)",
+ "return_type": "double",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionStepEvaluator",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_step_evaluator.cc",
  "lines": [
   51,
   67
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 492,
- "short_name": "StepQuality",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionStepEvaluator",
- "class_is_template": false,
- "params": "(const double cost, const double model_cost_change)",
- "return_type": "double",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 492
 }

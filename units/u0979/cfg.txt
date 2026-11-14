@@ -3,7 +3,7 @@ Hàm: end()  → trả về iterator
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::FixedArray
 Vị trí: include/ceres/internal/fixed_array.h, dòng 261–261
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<double>.
 
 Số điểm rẽ nhánh: 0
 

@@ -3,7 +3,7 @@ Hàm: Evaluate(const double *const * parameters, double * residuals, double ** j
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::DynamicAutoDiffCostFunction
 Vị trí: include/ceres/dynamic_autodiff_cost_function.h, dòng 101–265
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor>.
 
 Số điểm rẽ nhánh: 19 (và 1 lệnh CHECK)
 

@@ -1,26 +1,33 @@
 {
  "id": "u1283",
  "name": "ceres::internal::TrustRegionMinimizer::GradientToleranceReached",
+ "short_name": "GradientToleranceReached",
+ "signature": "bool GradientToleranceReached()",
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_minimizer.cc",
  "lines": [
   679,
   695
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 2,
- "level": "de",
- "callable": "internal",
+ "loc": 17,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1283,
- "short_name": "GradientToleranceReached",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionMinimizer",
- "class_is_template": false,
- "params": "()",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1283
 }

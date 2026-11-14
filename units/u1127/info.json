@@ -1,28 +1,33 @@
 {
  "id": "u1127",
  "name": "ceres::internal::NumericDiff::EvaluateRiddersJacobianColumn",
+ "short_name": "EvaluateRiddersJacobianColumn",
+ "signature": "bool EvaluateRiddersJacobianColumn(const CostFunctor * functor, int parameter_index, double delta, const NumericDiffOptions & options, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
+ "params": "(const CostFunctor * functor, int parameter_index, double delta, const NumericDiffOptions & options, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NumericDiff",
+ "class_is_template": true,
  "file": "include/ceres/internal/numeric_diff.h",
  "lines": [
   245,
   383
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 139,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1127,
- "short_name": "EvaluateRiddersJacobianColumn",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::NumericDiff",
- "class_is_template": true,
- "params": "(const CostFunctor * functor, int parameter_index, double delta, const NumericDiffOptions & options, int num_residuals, int parameter_block_size, const double * x_ptr, const double * residuals_at_eval_point, double ** parameters, double * x_plus_delta_ptr, double * temp_residuals_ptr, double * residuals_ptr)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 9,
+  "branches": 18,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1127
 }

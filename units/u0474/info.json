@@ -1,28 +1,33 @@
 {
  "id": "u0474",
  "name": "ceres::FindWithDefault",
+ "short_name": "FindWithDefault",
+ "signature": "const typename Collection::value_type::second_type FindWithDefault(const Collection& collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
+ "params": "(const Collection& collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
+ "return_type": "const typename Collection::value_type::second_type",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/map_util.h",
  "lines": [
   70,
   80
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 474,
- "short_name": "FindWithDefault",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Collection& collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
- "return_type": "const typename Collection::value_type::second_type",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FindWithDefault<unordered_map<int, double>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 474
 }

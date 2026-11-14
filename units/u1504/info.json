@@ -1,26 +1,33 @@
 {
  "id": "u1504",
  "name": "ceres::internal::WolfeLineSearch::ZoomPhase",
+ "short_name": "ZoomPhase",
+ "signature": "bool ZoomPhase(const FunctionSample & initial_position, FunctionSample bracket_low, FunctionSample bracket_high, FunctionSample * solution, Summary * summary) const",
+ "params": "(const FunctionSample & initial_position, FunctionSample bracket_low, FunctionSample bracket_high, FunctionSample * solution, Summary * summary)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WolfeLineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   698,
   881
  ],
- "branches": 48,
- "cyclomatic": 25,
- "topo_level": 5,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 184,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1504,
- "short_name": "ZoomPhase",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WolfeLineSearch",
- "class_is_template": false,
- "params": "(const FunctionSample & initial_position, FunctionSample bracket_low, FunctionSample bracket_high, FunctionSample * solution, Summary * summary)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 13,
+  "branches": 26,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 5,
+ "existing_tests": 0,
+ "order": 1504
 }

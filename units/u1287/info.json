@@ -1,26 +1,33 @@
 {
  "id": "u1287",
  "name": "ceres::internal::CompressedRowJacobianWriter::GetOrderedParameterBlocks",
+ "short_name": "GetOrderedParameterBlocks",
+ "signature": "void GetOrderedParameterBlocks(const Program * program, int residual_id, std::vector<std::pair<int, int>> * evaluated_jacobian_blocks)",
+ "params": "(const Program * program, int residual_id, std::vector<std::pair<int, int>> * evaluated_jacobian_blocks)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowJacobianWriter",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_jacobian_writer.cc",
  "lines": [
   71,
   87
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1287,
- "short_name": "GetOrderedParameterBlocks",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CompressedRowJacobianWriter",
- "class_is_template": false,
- "params": "(const Program * program, int residual_id, std::vector<std::pair<int, int>> * evaluated_jacobian_blocks)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1287
 }

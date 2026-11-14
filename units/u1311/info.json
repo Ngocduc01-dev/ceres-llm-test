@@ -1,26 +1,33 @@
 {
  "id": "u1311",
  "name": "ceres::internal::(anonymous)::MinParameterBlock",
+ "short_name": "MinParameterBlock",
+ "signature": "int MinParameterBlock(const ResidualBlock * residual_block, int size_of_first_elimination_group)",
+ "params": "(const ResidualBlock * residual_block, int size_of_first_elimination_group)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   76,
   90
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 15,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1311,
- "short_name": "MinParameterBlock",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const ResidualBlock * residual_block, int size_of_first_elimination_group)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1311
 }

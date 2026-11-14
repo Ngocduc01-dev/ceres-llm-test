@@ -1,28 +1,33 @@
 {
  "id": "u0606",
  "name": "ceres::internal::(anonymous)::AddSymmetricRandomBlock",
+ "short_name": "AddSymmetricRandomBlock",
+ "signature": "void AddSymmetricRandomBlock(const int num_rows, const int row_block_begin, RandomNormalFunctor&& randn, std::vector<int>* rows, std::vector<int>* cols, std::vector<double>* values)",
+ "params": "(const int num_rows, const int row_block_begin, RandomNormalFunctor&& randn, std::vector<int>* rows, std::vector<int>* cols, std::vector<double>* values)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_sparse_matrix.cc",
  "lines": [
   139,
   159
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 21,
  "access": "public",
  "linkage": "internal",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 606,
- "short_name": "AddSymmetricRandomBlock",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const int num_rows, const int row_block_begin, RandomNormalFunctor&& randn, std::vector<int>* rows, std::vector<int>* cols, std::vector<double>* values)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "AddSymmetricRandomBlock<(lambda at /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.cc:728:24) &>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 606
 }

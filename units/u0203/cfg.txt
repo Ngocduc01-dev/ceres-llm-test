@@ -3,7 +3,7 @@ Hàm: MatrixAdapter(T * pointer)
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::MatrixAdapter
 Vị trí: include/ceres/rotation.h, dòng 297–297
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixAdapter<const double, 1, 3> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixAdapter<const double, 1, 3>.
 
 Số điểm rẽ nhánh: 0
 

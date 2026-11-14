@@ -1,28 +1,33 @@
 {
  "id": "u1226",
  "name": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalMatrixLayout",
+ "short_name": "CreateBlockDiagonalMatrixLayout",
+ "signature": "std::unique_ptr<BlockSparseMatrix> CreateBlockDiagonalMatrixLayout(int start_col_block, int end_col_block) const",
+ "params": "(int start_col_block, int end_col_block)",
+ "return_type": "std::unique_ptr<BlockSparseMatrix>",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
  "file": "internal/ceres/partitioned_matrix_view_impl.h",
  "lines": [
   382,
   418
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 37,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1226,
- "short_name": "CreateBlockDiagonalMatrixLayout",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::PartitionedMatrixView",
- "class_is_template": true,
- "params": "(int start_col_block, int end_col_block)",
- "return_type": "std::unique_ptr<BlockSparseMatrix>",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "PartitionedMatrixView<>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1226
 }

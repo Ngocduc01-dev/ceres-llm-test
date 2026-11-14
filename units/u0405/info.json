@@ -1,26 +1,33 @@
 {
  "id": "u0405",
  "name": "ceres::internal::SchurEliminatorBase::~SchurEliminatorBase",
+ "short_name": "~SchurEliminatorBase",
+ "signature": "~SchurEliminatorBase()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::SchurEliminatorBase",
+ "class_is_template": false,
  "file": "internal/ceres/schur_eliminator.cc",
  "lines": [
   49,
   49
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 405,
- "short_name": "~SchurEliminatorBase",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::SchurEliminatorBase",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 405
 }

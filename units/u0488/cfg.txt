@@ -3,7 +3,7 @@ Hàm: STLDeleteUniqueContainerPointers(ForwardIterator begin, ForwardIterator en
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: internal/ceres/stl_util.h, dòng 59–69
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp STLDeleteUniqueContainerPointers<__normal_iterator<CostFunction **, vector<CostFunction *>>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp STLDeleteUniqueContainerPointers<__normal_iterator<CostFunction **, vector<CostFunction *>>>.
 
 Số điểm rẽ nhánh: 1
 

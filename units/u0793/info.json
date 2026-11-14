@@ -1,26 +1,33 @@
 {
  "id": "u0793",
  "name": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::BlockRandomAccessDiagonalMatrixAdapter",
+ "short_name": "BlockRandomAccessDiagonalMatrixAdapter",
+ "signature": "BlockRandomAccessDiagonalMatrixAdapter(const BlockRandomAccessDiagonalMatrix & m)",
+ "params": "(const BlockRandomAccessDiagonalMatrix & m)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   77,
   79
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 3,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 793,
- "short_name": "BlockRandomAccessDiagonalMatrixAdapter",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter",
- "class_is_template": false,
- "params": "(const BlockRandomAccessDiagonalMatrix & m)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 793
 }

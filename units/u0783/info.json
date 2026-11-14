@@ -1,26 +1,33 @@
 {
  "id": "u0783",
  "name": "ceres::internal::AreJacobianColumnsOrdered",
+ "short_name": "AreJacobianColumnsOrdered",
+ "signature": "bool AreJacobianColumnsOrdered(const LinearSolverType linear_solver_type, const PreconditionerType preconditioner_type, const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type)",
+ "params": "(const LinearSolverType linear_solver_type, const PreconditionerType preconditioner_type, const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   609,
   642
  ],
- "branches": 24,
- "cyclomatic": 13,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 34,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 783,
- "short_name": "AreJacobianColumnsOrdered",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const LinearSolverType linear_solver_type, const PreconditionerType preconditioner_type, const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 783
 }

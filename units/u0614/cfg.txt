@@ -3,7 +3,7 @@ Hàm: AutoDiffCostFunction(CostFunctor * functor, int num_residuals, Ownership o
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::AutoDiffCostFunction
 Vị trí: include/ceres/autodiff_cost_function.h, dòng 172–180
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffCostFunction<CostFunctionToFunctor<-1, 2, 2>, -1, 2, 2> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffCostFunction<CostFunctionToFunctor<-1, 2, 2>, -1, 2, 2>.
 
 Số điểm rẽ nhánh: 0
 

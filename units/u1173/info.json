@@ -1,26 +1,33 @@
 {
  "id": "u1173",
  "name": "ceres::internal::LinearLeastSquaresProblem4",
+ "short_name": "LinearLeastSquaresProblem4",
+ "signature": "std::unique_ptr<LinearLeastSquaresProblem> LinearLeastSquaresProblem4()",
+ "params": "()",
+ "return_type": "std::unique_ptr<LinearLeastSquaresProblem>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/linear_least_squares_problems.cc",
  "lines": [
   547,
   625
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 79,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1173,
- "short_name": "LinearLeastSquaresProblem4",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "()",
- "return_type": "std::unique_ptr<LinearLeastSquaresProblem>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1173
 }

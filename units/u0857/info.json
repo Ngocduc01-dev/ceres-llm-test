@@ -1,26 +1,33 @@
 {
  "id": "u0857",
  "name": "ceres::internal::Evaluator::~Evaluator",
+ "short_name": "~Evaluator",
+ "signature": "~Evaluator()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::Evaluator",
+ "class_is_template": false,
  "file": "internal/ceres/evaluator.cc",
  "lines": [
   51,
   51
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 857,
- "short_name": "~Evaluator",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::Evaluator",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 857
 }

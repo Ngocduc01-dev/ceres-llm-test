@@ -1,26 +1,33 @@
 {
  "id": "u0802",
  "name": "ceres::internal::(anonymous)::ComputeCumulativeNumberOfNonZeros",
+ "short_name": "ComputeCumulativeNumberOfNonZeros",
+ "signature": "void ComputeCumulativeNumberOfNonZeros(std::vector<CompressedList> & rows)",
+ "params": "(std::vector<CompressedList> & rows)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   56,
   65
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 10,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 802,
- "short_name": "ComputeCumulativeNumberOfNonZeros",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::vector<CompressedList> & rows)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 802
 }

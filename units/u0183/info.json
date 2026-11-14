@@ -1,28 +1,33 @@
 {
  "id": "u0183",
  "name": "ceres::EuclideanManifold::Minus",
+ "short_name": "Minus",
+ "signature": "bool Minus(const double * y_ptr, const double * x_ptr, double * y_minus_x_ptr) const",
+ "params": "(const double * y_ptr, const double * x_ptr, double * y_minus_x_ptr)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::EuclideanManifold",
+ "class_is_template": true,
  "file": "include/ceres/manifold.h",
  "lines": [
   292,
   300
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 183,
- "short_name": "Minus",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::EuclideanManifold",
- "class_is_template": true,
- "params": "(const double * y_ptr, const double * x_ptr, double * y_minus_x_ptr)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "EuclideanManifold<-1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 183
 }

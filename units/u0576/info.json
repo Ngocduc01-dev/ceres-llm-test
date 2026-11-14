@@ -1,26 +1,33 @@
 {
  "id": "u0576",
  "name": "ceres::internal::(anonymous)::RowColLessThan::RowColLessThan",
+ "short_name": "RowColLessThan",
+ "signature": "RowColLessThan(const int * rows, const int * cols)",
+ "params": "(const int * rows, const int * cols)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::(anonymous)::RowColLessThan",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_sparse_matrix.cc",
  "lines": [
   59,
   59
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 1,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 576,
- "short_name": "RowColLessThan",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::(anonymous)::RowColLessThan",
- "class_is_template": false,
- "params": "(const int * rows, const int * cols)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 576
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1392",
  "name": "ceres::Solver::Summary::FullReport",
+ "short_name": "FullReport",
+ "signature": "std::string FullReport() const",
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Solver::Summary",
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   852,
   1134
  ],
- "branches": 86,
- "cyclomatic": 44,
- "topo_level": 3,
- "level": "de",
- "callable": "public",
+ "loc": 283,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1392,
- "short_name": "FullReport",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Solver::Summary",
- "class_is_template": false,
- "params": "()",
- "return_type": "std::string",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 27,
+  "branches": 54,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 3,
+ "existing_tests": 2,
+ "order": 1392
 }

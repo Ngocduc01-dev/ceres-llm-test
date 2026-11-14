@@ -1,28 +1,33 @@
 {
  "id": "u0488",
  "name": "ceres::STLDeleteUniqueContainerPointers",
+ "short_name": "STLDeleteUniqueContainerPointers",
+ "signature": "void STLDeleteUniqueContainerPointers(ForwardIterator begin, ForwardIterator end)",
+ "params": "(ForwardIterator begin, ForwardIterator end)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/stl_util.h",
  "lines": [
   59,
   69
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 488,
- "short_name": "STLDeleteUniqueContainerPointers",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(ForwardIterator begin, ForwardIterator end)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "STLDeleteUniqueContainerPointers<__normal_iterator<CostFunction **, vector<CostFunction *>>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 488
 }

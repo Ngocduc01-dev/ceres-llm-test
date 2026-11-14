@@ -3,7 +3,7 @@ Hàm: PlusJacobian(const double * x, double * jacobian_ptr) const  → trả v�
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::ProductManifold
 Vị trí: include/ceres/product_manifold.h, dòng 117–124
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>.
 
 Số điểm rẽ nhánh: 0
 

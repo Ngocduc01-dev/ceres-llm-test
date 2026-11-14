@@ -1,28 +1,33 @@
 {
  "id": "u0625",
  "name": "ceres::internal::Make1stOrderPerturbation::Apply",
+ "short_name": "Apply",
+ "signature": "void Apply(const T *, JetT *)",
+ "params": "(const T *, JetT *)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Make1stOrderPerturbation",
+ "class_is_template": true,
  "file": "include/ceres/internal/autodiff.h",
  "lines": [
   199,
   199
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 625,
- "short_name": "Apply",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Make1stOrderPerturbation",
- "class_is_template": true,
- "params": "(const T *, JetT *)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": "Make1stOrderPerturbation<0, 2, 0, double, Jet<double, 4>>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 625
 }

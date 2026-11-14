@@ -1,26 +1,33 @@
 {
  "id": "u0901",
  "name": "ceres::internal::TripletSparseMatrix::~TripletSparseMatrix",
+ "short_name": "~TripletSparseMatrix",
+ "signature": "~TripletSparseMatrix()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   49,
   49
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 901,
- "short_name": "~TripletSparseMatrix",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 901
 }

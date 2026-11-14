@@ -3,7 +3,7 @@ Hàm: AngleAxisToRotationMatrix(const T* angle_axis, const MatrixAdapter<T, row_
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/rotation.h, dòng 453–494
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AngleAxisToRotationMatrix<double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AngleAxisToRotationMatrix<double>.
 
 Số điểm rẽ nhánh: 0
 

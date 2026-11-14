@@ -1,26 +1,33 @@
 {
  "id": "u0452",
  "name": "ceres::ScaledLoss::~ScaledLoss",
+ "short_name": "~ScaledLoss",
+ "signature": "~ScaledLoss()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::ScaledLoss",
+ "class_is_template": false,
  "file": "include/ceres/loss_function.h",
  "lines": [
   340,
   344
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 452,
- "short_name": "~ScaledLoss",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::ScaledLoss",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 452
 }

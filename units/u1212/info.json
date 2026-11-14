@@ -1,28 +1,33 @@
 {
  "id": "u1212",
  "name": "ceres::internal::PartitionedMatrixView::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>",
+ "short_name": "PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>",
+ "signature": "PartitionedMatrixView(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
+ "params": "(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
  "file": "internal/ceres/partitioned_matrix_view_impl.h",
  "lines": [
   47,
   105
  ],
- "branches": 16,
- "cyclomatic": 9,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 59,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1212,
- "short_name": "PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::PartitionedMatrixView",
- "class_is_template": true,
- "params": "(const LinearSolver::Options & options, const BlockSparseMatrix & matrix)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 2,
+  "checks": 2
+ },
+ "template_example": "PartitionedMatrixView<>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1212
 }

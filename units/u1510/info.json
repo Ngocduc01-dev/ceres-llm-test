@@ -1,26 +1,33 @@
 {
  "id": "u1510",
  "name": "ceres::Covariance::GetCovarianceMatrixInTangentSpace",
+ "short_name": "GetCovarianceMatrixInTangentSpace",
+ "signature": "bool GetCovarianceMatrixInTangentSpace(const std::vector<const double *> & parameter_blocks, double * covariance_matrix) const",
+ "params": "(const std::vector<const double *> & parameter_blocks, double * covariance_matrix)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Covariance",
+ "class_is_template": false,
  "file": "internal/ceres/covariance.cc",
  "lines": [
   87,
   93
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 5,
- "level": "kho",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1510,
- "short_name": "GetCovarianceMatrixInTangentSpace",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Covariance",
- "class_is_template": false,
- "params": "(const std::vector<const double *> & parameter_blocks, double * covariance_matrix)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 5,
+ "existing_tests": 1,
+ "order": 1510
 }

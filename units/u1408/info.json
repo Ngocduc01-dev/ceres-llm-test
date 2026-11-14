@@ -1,26 +1,33 @@
 {
  "id": "u1408",
  "name": "ceres::internal::EvaluationToString",
+ "short_name": "EvaluationToString",
+ "signature": "std::string EvaluationToString(const ResidualBlock & block, const double *const * parameters, double * cost, double * residuals, double ** jacobians)",
+ "params": "(const ResidualBlock & block, const double *const * parameters, double * cost, double * residuals, double ** jacobians)",
+ "return_type": "std::string",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/residual_block_utils.cc",
  "lines": [
   65,
   116
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 52,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1408,
- "short_name": "EvaluationToString",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const ResidualBlock & block, const double *const * parameters, double * cost, double * residuals, double ** jacobians)",
- "return_type": "std::string",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 3,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1408
 }

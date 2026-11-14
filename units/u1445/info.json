@@ -1,26 +1,33 @@
 {
  "id": "u1445",
  "name": "ceres::internal::CompressedRowJacobianWriter::CreateJacobian",
+ "short_name": "CreateJacobian",
+ "signature": "std::unique_ptr<SparseMatrix> CreateJacobian() const",
+ "params": "()",
+ "return_type": "std::unique_ptr<SparseMatrix>",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowJacobianWriter",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_jacobian_writer.cc",
  "lines": [
   89,
   199
  ],
- "branches": 28,
- "cyclomatic": 15,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 111,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1445,
- "short_name": "CreateJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CompressedRowJacobianWriter",
- "class_is_template": false,
- "params": "()",
- "return_type": "std::unique_ptr<SparseMatrix>",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 12,
+  "branches": 24,
+  "loops": 8,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1445
 }

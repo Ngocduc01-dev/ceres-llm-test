@@ -1,26 +1,33 @@
 {
  "id": "u1237",
  "name": "ceres::internal::IterativeSchurComplementSolver::CreatePreconditioner",
+ "short_name": "CreatePreconditioner",
+ "signature": "void CreatePreconditioner(BlockSparseMatrix * A)",
+ "params": "(BlockSparseMatrix * A)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::IterativeSchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/iterative_schur_complement_solver.cc",
  "lines": [
   158,
   198
  ],
- "branches": 16,
- "cyclomatic": 9,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 41,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1237,
- "short_name": "CreatePreconditioner",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::IterativeSchurComplementSolver",
- "class_is_template": false,
- "params": "(BlockSparseMatrix * A)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1237
 }

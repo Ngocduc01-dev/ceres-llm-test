@@ -3,7 +3,7 @@ Hàm: operator()(const Vertex & lhs, const Vertex & rhs) const  → trả về b
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::VertexTotalOrdering
 Vị trí: internal/ceres/graph_algorithms.h, dòng 57–62
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VertexTotalOrdering<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VertexTotalOrdering<int>.
 
 Số điểm rẽ nhánh: 1
 

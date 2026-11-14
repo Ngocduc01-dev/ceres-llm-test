@@ -1,26 +1,33 @@
 {
  "id": "u0020",
  "name": "ceres::DynamicCostFunctionToFunctor::operator()",
+ "short_name": "operator()",
+ "signature": "bool operator()(const double *const * parameters, double * residuals) const",
+ "params": "(const double *const * parameters, double * residuals)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::DynamicCostFunctionToFunctor",
+ "class_is_template": false,
  "file": "include/ceres/dynamic_cost_function_to_functor.h",
  "lines": [
   113,
   115
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 20,
- "short_name": "operator()",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::DynamicCostFunctionToFunctor",
- "class_is_template": false,
- "params": "(const double *const * parameters, double * residuals)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 20
 }

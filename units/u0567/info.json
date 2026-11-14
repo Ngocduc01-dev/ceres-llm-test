@@ -1,28 +1,33 @@
 {
  "id": "u0567",
  "name": "ceres::ProductManifold::PlusImpl",
+ "short_name": "PlusImpl",
+ "signature": "bool PlusImpl(const double *, const double *, double *, std::index_sequence<>)",
+ "params": "(const double *, const double *, double *, std::index_sequence<>)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
  "file": "include/ceres/product_manifold.h",
  "lines": [
   170,
   175
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 6,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 567,
- "short_name": "PlusImpl",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::ProductManifold",
- "class_is_template": true,
- "params": "(const double *, const double *, double *, std::index_sequence<>)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProductManifold<SubsetManifold, SubsetManifold, SubsetManifold, SubsetManifold>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 567
 }

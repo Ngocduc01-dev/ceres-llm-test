@@ -1,28 +1,33 @@
 {
  "id": "u0744",
  "name": "ceres::RotationMatrixToQuaternion",
+ "short_name": "RotationMatrixToQuaternion",
+ "signature": "void RotationMatrixToQuaternion(const MatrixAdapter<const T, row_stride, col_stride>& R, T* quaternion)",
+ "params": "(const MatrixAdapter<const T, row_stride, col_stride>& R, T* quaternion)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/rotation.h",
  "lines": [
   397,
   427
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 31,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 744,
- "short_name": "RotationMatrixToQuaternion",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const MatrixAdapter<const T, row_stride, col_stride>& R, T* quaternion)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "RotationMatrixToQuaternion<double, 1, 3>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 744
 }

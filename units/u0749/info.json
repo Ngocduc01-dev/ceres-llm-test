@@ -1,28 +1,30 @@
 {
  "id": "u0749",
  "name": "ceres::internal::WeightedGraph::RemoveVertex",
+ "short_name": "RemoveVertex",
+ "signature": "bool RemoveVertex(const Vertex & vertex)",
+ "params": "(const Vertex & vertex)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
  "file": "internal/ceres/graph.h",
  "lines": [
   121,
   140
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 20,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 749,
- "short_name": "RemoveVertex",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WeightedGraph",
- "class_is_template": true,
- "params": "(const Vertex & vertex)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: template không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 749
 }

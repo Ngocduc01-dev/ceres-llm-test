@@ -1,28 +1,33 @@
 {
  "id": "u1492",
  "name": "ceres::internal::ProgramEvaluator::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const Evaluator::EvaluateOptions & evaluate_options, const double * state, double * cost, double * residuals, double * gradient, SparseMatrix * jacobian)",
+ "params": "(const Evaluator::EvaluateOptions & evaluate_options, const double * state, double * cost, double * residuals, double * gradient, SparseMatrix * jacobian)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProgramEvaluator",
+ "class_is_template": true,
  "file": "internal/ceres/program_evaluator.h",
  "lines": [
   134,
   301
  ],
- "branches": 50,
- "cyclomatic": 26,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 168,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1492,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProgramEvaluator",
- "class_is_template": true,
- "params": "(const Evaluator::EvaluateOptions & evaluate_options, const double * state, double * cost, double * residuals, double * gradient, SparseMatrix * jacobian)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 13,
+  "branches": 26,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": "ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1492
 }

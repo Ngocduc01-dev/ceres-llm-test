@@ -1,26 +1,33 @@
 {
  "id": "u0053",
  "name": "ceres::internal::FixedArray::Storage::size",
+ "short_name": "size",
+ "signature": "size_type size() const",
+ "params": "()",
+ "return_type": "size_type",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray::Storage",
+ "class_is_template": false,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   427,
   427
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 53,
- "short_name": "size",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray::Storage",
- "class_is_template": false,
- "params": "()",
- "return_type": "size_type",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 53
 }

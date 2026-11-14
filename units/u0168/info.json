@@ -1,28 +1,33 @@
 {
  "id": "u0168",
  "name": "ceres::LineManifold::LineManifold<AmbientSpaceDimension>",
+ "short_name": "LineManifold<AmbientSpaceDimension>",
+ "signature": "LineManifold()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::LineManifold",
+ "class_is_template": true,
  "file": "include/ceres/line_manifold.h",
  "lines": [
   121,
   127
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 168,
- "short_name": "LineManifold<AmbientSpaceDimension>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::LineManifold",
- "class_is_template": true,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "LineManifold<3>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 168
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1272",
  "name": "ceres::internal::TrustRegionMinimizer::HandleInvalidStep",
+ "short_name": "HandleInvalidStep",
+ "signature": "bool HandleInvalidStep()",
+ "params": "()",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_minimizer.cc",
  "lines": [
   464,
   497
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 2,
- "level": "de",
- "callable": "internal",
+ "loc": 34,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1272,
- "short_name": "HandleInvalidStep",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionMinimizer",
- "class_is_template": false,
- "params": "()",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1272
 }

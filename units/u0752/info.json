@@ -1,26 +1,33 @@
 {
  "id": "u0752",
  "name": "ceres::internal::DifferentiatePolynomial",
+ "short_name": "DifferentiatePolynomial",
+ "signature": "Vector DifferentiatePolynomial(const Vector & polynomial)",
+ "params": "(const Vector & polynomial)",
+ "return_type": "Vector",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/polynomial.cc",
  "lines": [
   253,
   270
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 18,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 752,
- "short_name": "DifferentiatePolynomial",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vector & polynomial)",
- "return_type": "Vector",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 4,
+ "order": 752
 }

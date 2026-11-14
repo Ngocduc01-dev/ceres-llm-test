@@ -1,26 +1,33 @@
 {
  "id": "u1229",
  "name": "ceres::internal::DenseSchurComplementSolver::SolveReducedLinearSystem",
+ "short_name": "SolveReducedLinearSystem",
+ "signature": "LinearSolver::Summary SolveReducedLinearSystem(const LinearSolver::PerSolveOptions &, double * solution)",
+ "params": "(const LinearSolver::PerSolveOptions &, double * solution)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   181,
   202
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 22,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1229,
- "short_name": "SolveReducedLinearSystem",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DenseSchurComplementSolver",
- "class_is_template": false,
- "params": "(const LinearSolver::PerSolveOptions &, double * solution)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1229
 }

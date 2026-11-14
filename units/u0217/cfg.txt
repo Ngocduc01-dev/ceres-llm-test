@@ -3,7 +3,7 @@ Hàm: MinusJacobian(const double * x_ptr, double * jacobian_ptr) const  → tr�
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::SphereManifold
 Vị trí: include/ceres/sphere_manifold.h, dòng 220–228
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SphereManifold<4> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SphereManifold<4>.
 
 Số điểm rẽ nhánh: 0
 

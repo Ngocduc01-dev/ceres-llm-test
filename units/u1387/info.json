@@ -1,26 +1,33 @@
 {
  "id": "u1387",
  "name": "ceres::internal::Program::StateVectorToParameterBlocks",
+ "short_name": "StateVectorToParameterBlocks",
+ "signature": "bool StateVectorToParameterBlocks(const double * state)",
+ "params": "(const double * state)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
  "file": "internal/ceres/program.cc",
  "lines": [
   77,
   85
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 3,
- "level": "de",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1387,
- "short_name": "StateVectorToParameterBlocks",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Program",
- "class_is_template": false,
- "params": "(const double * state)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1387
 }

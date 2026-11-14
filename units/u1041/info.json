@@ -1,26 +1,33 @@
 {
  "id": "u1041",
  "name": "ceres::internal::ProblemImpl::ParameterBlockSize",
+ "short_name": "ParameterBlockSize",
+ "signature": "int ParameterBlockSize(const double * values) const",
+ "params": "(const double * values)",
+ "return_type": "int",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   798,
   808
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1041,
- "short_name": "ParameterBlockSize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProblemImpl",
- "class_is_template": false,
- "params": "(const double * values)",
- "return_type": "int",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1041
 }

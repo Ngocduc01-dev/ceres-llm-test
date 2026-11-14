@@ -3,7 +3,7 @@ Hàm: QuaternionToScaledRotation(const T q[4], const MatrixAdapter<T, row_stride
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/rotation.h, dòng 673–699
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionToScaledRotation<double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionToScaledRotation<double>.
 
 Số điểm rẽ nhánh: 0
 

@@ -1,28 +1,33 @@
 {
  "id": "u0854",
  "name": "ceres::internal::Dot",
+ "short_name": "Dot",
+ "signature": "double Dot(const VectorLikeX& x, const VectorLikeY& y, ContextImpl* context, int num_threads)",
+ "params": "(const VectorLikeX& x, const VectorLikeY& y, ContextImpl* context, int num_threads)",
+ "return_type": "double",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/eigen_vector_ops.h",
  "lines": [
   75,
   95
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 21,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 854,
- "short_name": "Dot",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const VectorLikeX& x, const VectorLikeY& y, ContextImpl* context, int num_threads)",
- "return_type": "double",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "Dot<Matrix<double, -1, 1>, Matrix<double, -1, 1>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 854
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0350",
  "name": "ceres::InsertIfNotPresent",
+ "short_name": "InsertIfNotPresent",
+ "signature": "bool InsertIfNotPresent(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
+ "params": "(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/map_util.h",
  "lines": [
   86,
   94
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 350,
- "short_name": "InsertIfNotPresent",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "InsertIfNotPresent<map<int, int>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 350
 }

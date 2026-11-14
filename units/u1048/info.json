@@ -1,28 +1,33 @@
 {
  "id": "u1048",
  "name": "ceres::internal::ConcurrentQueue::Wait",
+ "short_name": "Wait",
+ "signature": "bool Wait(T * value)",
+ "params": "(T * value)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
  "file": "internal/ceres/concurrent_queue.h",
  "lines": [
   102,
   110
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1048,
- "short_name": "Wait",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ConcurrentQueue",
- "class_is_template": true,
- "params": "(T * value)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "ConcurrentQueue<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1048
 }

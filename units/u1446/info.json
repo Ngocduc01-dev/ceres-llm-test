@@ -1,26 +1,33 @@
 {
  "id": "u1446",
  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceSparsity",
+ "short_name": "ComputeCovarianceSparsity",
+ "signature": "bool ComputeCovarianceSparsity(const CovarianceBlocks & original_covariance_blocks, ProblemImpl * problem)",
+ "params": "(const CovarianceBlocks & original_covariance_blocks, ProblemImpl * problem)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
  "file": "internal/ceres/covariance_impl.cc",
  "lines": [
   360,
   498
  ],
- "branches": 36,
- "cyclomatic": 19,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 139,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 1446,
- "short_name": "ComputeCovarianceSparsity",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CovarianceImpl",
- "class_is_template": false,
- "params": "(const CovarianceBlocks & original_covariance_blocks, ProblemImpl * problem)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 14,
+  "branches": 28,
+  "loops": 9,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 3,
+ "order": 1446
 }

@@ -3,7 +3,7 @@ Hàm: Grid1D(const T * data, const int begin, const int end)
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::Grid1D
 Vị trí: include/ceres/cubic_interpolation.h, dòng 188–191
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid1D<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid1D<int>.
 
 Số điểm rẽ nhánh: 0 (và 1 lệnh CHECK)
 

@@ -3,7 +3,7 @@ Hàm: VariadicEvaluateImpl(const Functor& functor, T const* const* input, T* out
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::internal
 Vị trí: include/ceres/internal/variadic_evaluate.h, dòng 82–88
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VariadicEvaluateImpl<ParameterDims<false, 2, 2>, BinaryScalarCost, double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp VariadicEvaluateImpl<ParameterDims<false, 2, 2>, BinaryScalarCost, double>.
 
 Số điểm rẽ nhánh: 0
 

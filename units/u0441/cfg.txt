@@ -3,7 +3,7 @@ Hàm: Evaluate(double r, double c, double * f, double * dfdr, double * dfdc) con
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::BiCubicInterpolator
 Vị trí: include/ceres/cubic_interpolation.h, dòng 264–325
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp BiCubicInterpolator<Grid2D<double>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp BiCubicInterpolator<Grid2D<double>>.
 
 Số điểm rẽ nhánh: 1
 

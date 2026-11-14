@@ -1,26 +1,33 @@
 {
  "id": "u1472",
  "name": "ceres::(anonymous)::PreSolveSummarize",
+ "short_name": "PreSolveSummarize",
+ "signature": "void PreSolveSummarize(const Solver::Options & options, const internal::ProblemImpl * problem, Solver::Summary * summary)",
+ "params": "(const Solver::Options & options, const internal::ProblemImpl * problem, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   530,
   563
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 4,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 34,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1472,
- "short_name": "PreSolveSummarize",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Solver::Options & options, const internal::ProblemImpl * problem, Solver::Summary * summary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1472
 }

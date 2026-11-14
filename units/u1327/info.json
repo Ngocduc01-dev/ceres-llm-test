@@ -1,26 +1,33 @@
 {
  "id": "u1327",
  "name": "ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian",
+ "short_name": "CreateFakeBundleAdjustmentPartitionedJacobian",
+ "signature": "std::pair<std::unique_ptr<PartitionedMatrixView<2, Eigen::Dynamic, Eigen::Dynamic>>, std::unique_ptr<BlockSparseMatrix>> CreateFakeBundleAdjustmentPartitionedJacobian(int num_cameras, int num_points, int camera_size, int landmark_size, double visibility, std::mt19937 & rng)",
+ "params": "(int num_cameras, int num_points, int camera_size, int landmark_size, double visibility, std::mt19937 & rng)",
+ "return_type": "std::pair<std::unique_ptr<PartitionedMatrixView<2, Eigen::Dynamic, Eigen::Dynamic>>, std::unique_ptr<BlockSparseMatrix>>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/fake_bundle_adjustment_jacobian.cc",
  "lines": [
   99,
   118
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 20,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1327,
- "short_name": "CreateFakeBundleAdjustmentPartitionedJacobian",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(int num_cameras, int num_points, int camera_size, int landmark_size, double visibility, std::mt19937 & rng)",
- "return_type": "std::pair<std::unique_ptr<PartitionedMatrixView<2, Eigen::Dynamic, Eigen::Dynamic>>, std::unique_ptr<BlockSparseMatrix>>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1327
 }

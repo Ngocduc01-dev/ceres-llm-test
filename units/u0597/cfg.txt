@@ -3,7 +3,7 @@ Hàm: QuaternionMinusImpl(const double* y, const double* x, double* y_minus_x)  
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::(namespace không tên)
 Vị trí: internal/ceres/manifold.cc, dòng 81–112
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionMinusImpl<(anonymous namespace)::CeresQuaternionOrder> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp QuaternionMinusImpl<(anonymous namespace)::CeresQuaternionOrder>.
 
 Số điểm rẽ nhánh: 1
 

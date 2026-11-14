@@ -1,26 +1,33 @@
 {
  "id": "u0974",
  "name": "ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole",
+ "short_name": "DumpLinearLeastSquaresProblemToConsole",
+ "signature": "bool DumpLinearLeastSquaresProblemToConsole(const SparseMatrix * A, const double * D, const double * b, const double * x, int)",
+ "params": "(const SparseMatrix * A, const double * D, const double * b, const double * x, int)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/linear_least_squares_problems.cc",
  "lines": [
   929,
   951
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "kho",
- "callable": "internal",
+ "loc": 23,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 974,
- "short_name": "DumpLinearLeastSquaresProblemToConsole",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const SparseMatrix * A, const double * D, const double * b, const double * x, int)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 974
 }

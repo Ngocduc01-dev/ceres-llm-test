@@ -1,26 +1,33 @@
 {
  "id": "u0687",
  "name": "ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner",
+ "short_name": "PowerSeriesExpansionPreconditioner",
+ "signature": "PowerSeriesExpansionPreconditioner(const ImplicitSchurComplement * isc, const int max_num_spse_iterations, const double spse_tolerance, const Preconditioner::Options & options)",
+ "params": "(const ImplicitSchurComplement * isc, const int max_num_spse_iterations, const double spse_tolerance, const Preconditioner::Options & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::PowerSeriesExpansionPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/power_series_expansion_preconditioner.cc",
  "lines": [
   39,
   47
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 687,
- "short_name": "PowerSeriesExpansionPreconditioner",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::PowerSeriesExpansionPreconditioner",
- "class_is_template": false,
- "params": "(const ImplicitSchurComplement * isc, const int max_num_spse_iterations, const double spse_tolerance, const Preconditioner::Options & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 4,
+ "order": 687
 }

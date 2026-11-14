@@ -1,26 +1,33 @@
 {
  "id": "u1379",
  "name": "ceres::internal::InnerProductComputer::ComputeOffsetsAndCreateResultMatrix",
+ "short_name": "ComputeOffsetsAndCreateResultMatrix",
+ "signature": "void ComputeOffsetsAndCreateResultMatrix(const CompressedRowSparseMatrix::StorageType product_storage_type, const std::vector<InnerProductComputer::ProductTerm> & product_terms)",
+ "params": "(const CompressedRowSparseMatrix::StorageType product_storage_type, const std::vector<InnerProductComputer::ProductTerm> & product_terms)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
  "file": "internal/ceres/inner_product_computer.cc",
  "lines": [
   179,
   280
  ],
- "branches": 22,
- "cyclomatic": 12,
- "topo_level": 2,
- "level": "kho",
- "callable": "internal",
+ "loc": 102,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1379,
- "short_name": "ComputeOffsetsAndCreateResultMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::InnerProductComputer",
- "class_is_template": false,
- "params": "(const CompressedRowSparseMatrix::StorageType product_storage_type, const std::vector<InnerProductComputer::ProductTerm> & product_terms)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 10,
+  "branches": 20,
+  "loops": 7,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1379
 }

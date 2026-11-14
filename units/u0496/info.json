@@ -1,28 +1,33 @@
 {
  "id": "u0496",
  "name": "ceres::internal::EvaluateJacobianForParameterBlocks::Apply",
+ "short_name": "Apply",
+ "signature": "bool Apply(const CostFunctor* functor, const double* residuals_at_eval_point, const NumericDiffOptions& options, int num_residuals, double** parameters, double** jacobians)",
+ "params": "(const CostFunctor* functor, const double* residuals_at_eval_point, const NumericDiffOptions& options, int num_residuals, double** parameters, double** jacobians)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::internal::EvaluateJacobianForParameterBlocks",
+ "class_is_template": true,
  "file": "include/ceres/internal/numeric_diff.h",
  "lines": [
   446,
   483
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 38,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 496,
- "short_name": "Apply",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::internal::EvaluateJacobianForParameterBlocks",
- "class_is_template": true,
- "params": "(const CostFunctor* functor, const double* residuals_at_eval_point, const NumericDiffOptions& options, int num_residuals, double** parameters, double** jacobians)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "EvaluateJacobianForParameterBlocks<ParameterDims<false, 4>>::Apply<CENTRAL, 1, QuadraticCostFunctor>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 496
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0910",
  "name": "ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper",
+ "short_name": "SparseMatrixPreconditionerWrapper",
+ "signature": "SparseMatrixPreconditionerWrapper(const SparseMatrix * matrix, const Preconditioner::Options & options)",
+ "params": "(const SparseMatrix * matrix, const Preconditioner::Options & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::SparseMatrixPreconditionerWrapper",
+ "class_is_template": false,
  "file": "internal/ceres/preconditioner.cc",
  "lines": [
   49,
   53
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 910,
- "short_name": "SparseMatrixPreconditionerWrapper",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::SparseMatrixPreconditionerWrapper",
- "class_is_template": false,
- "params": "(const SparseMatrix * matrix, const Preconditioner::Options & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 910
 }

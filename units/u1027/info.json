@@ -1,28 +1,33 @@
 {
  "id": "u1027",
  "name": "ceres::internal::FixedArray::operator[]",
+ "short_name": "operator[]",
+ "signature": "const_reference operator[](size_type i) const",
+ "params": "(size_type i)",
+ "return_type": "const_reference",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   221,
   224
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1027,
- "short_name": "operator[]",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FixedArray",
- "class_is_template": true,
- "params": "(size_type i)",
- "return_type": "const_reference",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "FixedArray<Jet<double, 4>, 37>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1027
 }

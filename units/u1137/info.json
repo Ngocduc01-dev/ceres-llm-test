@@ -1,26 +1,33 @@
 {
  "id": "u1137",
  "name": "ceres::internal::InnerProductComputer::ComputeNonzeros",
+ "short_name": "ComputeNonzeros",
+ "signature": "int ComputeNonzeros(const std::vector<InnerProductComputer::ProductTerm> & product_terms, std::vector<int> * row_nnz)",
+ "params": "(const std::vector<InnerProductComputer::ProductTerm> & product_terms, std::vector<int> * row_nnz)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
  "file": "internal/ceres/inner_product_computer.cc",
  "lines": [
   64,
   96
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 33,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1137,
- "short_name": "ComputeNonzeros",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::InnerProductComputer",
- "class_is_template": false,
- "params": "(const std::vector<InnerProductComputer::ProductTerm> & product_terms, std::vector<int> * row_nnz)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1137
 }

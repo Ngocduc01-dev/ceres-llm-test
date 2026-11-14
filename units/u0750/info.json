@@ -1,28 +1,33 @@
 {
  "id": "u0750",
  "name": "ceres::internal::operator<<",
+ "short_name": "operator<<",
+ "signature": "std::ostream & operator<<(std::ostream & s, OrderingType type)",
+ "params": "(std::ostream & s, OrderingType type)",
+ "return_type": "std::ostream &",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/linear_solver.h",
  "lines": [
   113,
   128
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 1,
- "order": 750,
- "short_name": "operator<<",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::ostream & s, OrderingType type)",
- "return_type": "std::ostream &",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 750
 }

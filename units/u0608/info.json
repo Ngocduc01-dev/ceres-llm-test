@@ -1,26 +1,33 @@
 {
  "id": "u0608",
  "name": "ceres::internal::MTM_mat1x4",
+ "short_name": "MTM_mat1x4",
+ "signature": "void MTM_mat1x4(const int col_a, const double * a, const int col_stride_a, const double * b, const int col_stride_b, double * c, const int kOperation)",
+ "params": "(const int col_a, const double * a, const int col_stride_a, const double * b, const int col_stride_b, double * c, const int kOperation)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/small_blas_generic.h",
  "lines": [
   153,
   190
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 38,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 608,
- "short_name": "MTM_mat1x4",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const int col_a, const double * a, const int col_stride_a, const double * b, const int col_stride_b, double * c, const int kOperation)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 608
 }

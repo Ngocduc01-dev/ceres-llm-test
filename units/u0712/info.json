@@ -1,26 +1,33 @@
 {
  "id": "u0712",
  "name": "ceres::GradientProblem::GradientProblem",
+ "short_name": "GradientProblem",
+ "signature": "GradientProblem(FirstOrderFunction * function)",
+ "params": "(FirstOrderFunction * function)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::GradientProblem",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_problem.cc",
  "lines": [
   39,
   45
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 5,
- "order": 712,
- "short_name": "GradientProblem",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::GradientProblem",
- "class_is_template": false,
- "params": "(FirstOrderFunction * function)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 5,
+ "order": 712
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0931",
  "name": "ceres::internal::BlockSparseMatrix::ScaleColumns",
+ "short_name": "ScaleColumns",
+ "signature": "void ScaleColumns(const double * scale)",
+ "params": "(const double * scale)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   402,
   416
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 931,
- "short_name": "ScaleColumns",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(const double * scale)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 931
 }

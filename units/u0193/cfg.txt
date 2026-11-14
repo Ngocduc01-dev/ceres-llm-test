@@ -3,7 +3,7 @@ Hàm: IsMember(const T element) const  → trả về bool
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::OrderedGroups
 Vị trí: include/ceres/ordered_groups.h, dòng 156–159
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *>.
 
 Số điểm rẽ nhánh: 0
 

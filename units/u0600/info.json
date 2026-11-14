@@ -1,28 +1,33 @@
 {
  "id": "u0600",
  "name": "ceres::internal::(anonymous)::STLDeleteContainerPairFirstPointers",
+ "short_name": "STLDeleteContainerPairFirstPointers",
+ "signature": "void STLDeleteContainerPairFirstPointers(ForwardIterator begin, ForwardIterator end)",
+ "params": "(ForwardIterator begin, ForwardIterator end)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   99,
   106
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 8,
  "access": "public",
  "linkage": "internal",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 600,
- "short_name": "STLDeleteContainerPairFirstPointers",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(ForwardIterator begin, ForwardIterator end)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "STLDeleteContainerPairFirstPointers<_Rb_tree_iterator<pair<CostFunction *const, int>>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 600
 }

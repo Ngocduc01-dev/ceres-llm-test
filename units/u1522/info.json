@@ -1,26 +1,33 @@
 {
  "id": "u1522",
  "name": "ceres::internal::WolfeLineSearch::DoSearch",
+ "short_name": "DoSearch",
+ "signature": "void DoSearch(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary) const",
+ "params": "(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WolfeLineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   370,
   481
  ],
- "branches": 26,
- "cyclomatic": 14,
- "topo_level": 6,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 112,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1522,
- "short_name": "DoSearch",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WolfeLineSearch",
- "class_is_template": false,
- "params": "(const double step_size_estimate, const double initial_cost, const double initial_gradient, Summary * summary)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 0,
+  "checks": 5
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 6,
+ "existing_tests": 0,
+ "order": 1522
 }

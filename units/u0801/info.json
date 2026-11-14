@@ -1,26 +1,33 @@
 {
  "id": "u0801",
  "name": "ceres::(anonymous)::IsIterativeSolver",
+ "short_name": "IsIterativeSolver",
+ "signature": "bool IsIterativeSolver(LinearSolverType type)",
+ "params": "(LinearSolverType type)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   119,
   121
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 3,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 801,
- "short_name": "IsIterativeSolver",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(LinearSolverType type)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 801
 }

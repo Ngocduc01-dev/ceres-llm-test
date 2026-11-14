@@ -1,28 +1,33 @@
 {
  "id": "u0511",
  "name": "ceres::internal::MatrixTransposeMatrixMultiplyEigen",
+ "short_name": "MatrixTransposeMatrixMultiplyEigen",
+ "signature": "void MatrixTransposeMatrixMultiplyEigen(xem mã nguồn – hàm được sinh ra từ macro)",
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/small_blas.h",
  "lines": [
   264,
   278
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 511,
- "short_name": "MatrixTransposeMatrixMultiplyEigen",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "MatrixTransposeMatrixMultiplyEigen<-1, -1, -1, -1, 1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 511
 }

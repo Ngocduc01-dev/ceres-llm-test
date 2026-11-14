@@ -1,26 +1,33 @@
 {
  "id": "u1104",
  "name": "ceres::internal::CreateTranspose",
+ "short_name": "CreateTranspose",
+ "signature": "std::unique_ptr<CompressedRowBlockStructure> CreateTranspose(const CompressedRowBlockStructure & bs)",
+ "params": "(const CompressedRowBlockStructure & bs)",
+ "return_type": "std::unique_ptr<CompressedRowBlockStructure>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   783,
   807
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 25,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1104,
- "short_name": "CreateTranspose",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const CompressedRowBlockStructure & bs)",
- "return_type": "std::unique_ptr<CompressedRowBlockStructure>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 3,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1104
 }

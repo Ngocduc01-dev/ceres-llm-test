@@ -1,26 +1,33 @@
 {
  "id": "u1497",
  "name": "ceres::internal::DoglegStrategy::ComputeGaussNewtonStep",
+ "short_name": "ComputeGaussNewtonStep",
+ "signature": "LinearSolver::Summary ComputeGaussNewtonStep(const PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals)",
+ "params": "(const PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/dogleg_strategy.cc",
  "lines": [
   516,
   615
  ],
- "branches": 22,
- "cyclomatic": 12,
- "topo_level": 4,
- "level": "kho",
- "callable": "internal",
+ "loc": 100,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1497,
- "short_name": "ComputeGaussNewtonStep",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DoglegStrategy",
- "class_is_template": false,
- "params": "(const PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1497
 }

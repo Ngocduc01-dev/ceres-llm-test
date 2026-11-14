@@ -1,26 +1,33 @@
 {
  "id": "u0560",
  "name": "ceres::CostFunction::set_num_residuals",
+ "short_name": "set_num_residuals",
+ "signature": "void set_num_residuals(int num_residuals)",
+ "params": "(int num_residuals)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::CostFunction",
+ "class_is_template": false,
  "file": "include/ceres/cost_function.h",
  "lines": [
   131,
   131
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 1,
  "access": "protected",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 14,
- "order": 560,
- "short_name": "set_num_residuals",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::CostFunction",
- "class_is_template": false,
- "params": "(int num_residuals)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "protected: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 14,
+ "order": 560
 }

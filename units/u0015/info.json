@@ -1,26 +1,33 @@
 {
  "id": "u0015",
  "name": "ceres::CRSMatrix::CRSMatrix",
+ "short_name": "CRSMatrix",
+ "signature": "CRSMatrix()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::CRSMatrix",
+ "class_is_template": false,
  "file": "include/ceres/crs_matrix.h",
  "lines": [
   44,
   44
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 15,
- "short_name": "CRSMatrix",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::CRSMatrix",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 4,
+ "order": 15
 }

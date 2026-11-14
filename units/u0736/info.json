@@ -1,26 +1,33 @@
 {
  "id": "u0736",
  "name": "ceres::VisibilityClusteringTypeToString",
+ "short_name": "VisibilityClusteringTypeToString",
+ "signature": "const char * VisibilityClusteringTypeToString(VisibilityClusteringType type)",
+ "params": "(VisibilityClusteringType type)",
+ "return_type": "const char *",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/types.cc",
  "lines": [
   326,
   333
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 736,
- "short_name": "VisibilityClusteringTypeToString",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(VisibilityClusteringType type)",
- "return_type": "const char *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 736
 }

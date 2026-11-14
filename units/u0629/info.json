@@ -1,26 +1,33 @@
 {
  "id": "u0629",
  "name": "ceres::internal::operator==",
+ "short_name": "operator==",
+ "signature": "bool operator==(const FixedArray<T, N, A> & lhs, const FixedArray<T, N, A> & rhs)",
+ "params": "(const FixedArray<T, N, A> & lhs, const FixedArray<T, N, A> & rhs)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   311,
   313
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 629,
- "short_name": "operator==",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const FixedArray<T, N, A> & lhs, const FixedArray<T, N, A> & rhs)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 629
 }

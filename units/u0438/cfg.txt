@@ -3,7 +3,7 @@ Hàm: MinusJacobian(const double * x, double * jacobian) const  → trả về b
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::AutoDiffManifold
 Vị trí: include/ceres/autodiff_manifold.h, dòng 234–255
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffManifold<EuclideanFunctor, 3, 3> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp AutoDiffManifold<EuclideanFunctor, 3, 3>.
 
 Số điểm rẽ nhánh: 1
 

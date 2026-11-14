@@ -3,7 +3,7 @@ Hàm: isfinite(const Jet<T, N>& f)  → trả về bool
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: include/ceres/jet.h, dòng 940–943
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp isfinite<double, 1> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp isfinite<double, 1>.
 
 Số điểm rẽ nhánh: 0
 

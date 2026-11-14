@@ -1,26 +1,33 @@
 {
  "id": "u1402",
  "name": "ceres::internal::ComputeRecursiveIndependentSetOrdering",
+ "short_name": "ComputeRecursiveIndependentSetOrdering",
+ "signature": "void ComputeRecursiveIndependentSetOrdering(const Program & program, ParameterBlockOrdering * ordering)",
+ "params": "(const Program & program, ParameterBlockOrdering * ordering)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block_ordering.cc",
  "lines": [
   102,
   124
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 23,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1402,
- "short_name": "ComputeRecursiveIndependentSetOrdering",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Program & program, ParameterBlockOrdering * ordering)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1402
 }

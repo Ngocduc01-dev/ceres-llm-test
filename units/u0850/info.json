@@ -1,26 +1,33 @@
 {
  "id": "u0850",
  "name": "ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver",
+ "short_name": "DynamicSparseNormalCholeskySolver",
+ "signature": "DynamicSparseNormalCholeskySolver(LinearSolver::Options options)",
+ "params": "(LinearSolver::Options options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DynamicSparseNormalCholeskySolver",
+ "class_is_template": false,
  "file": "internal/ceres/dynamic_sparse_normal_cholesky_solver.cc",
  "lines": [
   56,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 850,
- "short_name": "DynamicSparseNormalCholeskySolver",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::DynamicSparseNormalCholeskySolver",
- "class_is_template": false,
- "params": "(LinearSolver::Options options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 850
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0584",
  "name": "ceres::internal::SchurComplementSolver::rhs",
+ "short_name": "rhs",
+ "signature": "const Vector & rhs() const",
+ "params": "()",
+ "return_type": "const Vector &",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.h",
  "lines": [
   134,
   134
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 1,
  "access": "protected",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 584,
- "short_name": "rhs",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurComplementSolver",
- "class_is_template": false,
- "params": "()",
- "return_type": "const Vector &",
- "is_const": true
+ "how_to_call": "protected: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 584
 }

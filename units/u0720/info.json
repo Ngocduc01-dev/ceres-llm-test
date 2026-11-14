@@ -1,26 +1,33 @@
 {
  "id": "u0720",
  "name": "ceres::internal::Tail",
+ "short_name": "Tail",
+ "signature": "std::vector<Block> Tail(const std::vector<Block> & blocks, int n)",
+ "params": "(const std::vector<Block> & blocks, int n)",
+ "return_type": "std::vector<Block>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/block_structure.cc",
  "lines": [
   46,
   60
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 720,
- "short_name": "Tail",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::vector<Block> & blocks, int n)",
- "return_type": "std::vector<Block>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 720
 }

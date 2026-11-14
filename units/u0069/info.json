@@ -1,28 +1,33 @@
 {
  "id": "u0069",
  "name": "ceres::Jet::Jet<T, N>",
+ "short_name": "Jet<T, N>",
+ "signature": "Jet(const T & value)",
+ "params": "(const T & value)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Jet",
+ "class_is_template": true,
  "file": "include/ceres/jet.h",
  "lines": [
   223,
   226
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "ceres::Jet<double, 4>"
- ],
- "called_by_tests": 0,
- "order": 69,
- "short_name": "Jet<T, N>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::Jet",
- "class_is_template": true,
- "params": "(const T & value)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "Jet<double, 4>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 69
 }

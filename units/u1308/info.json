@@ -1,26 +1,33 @@
 {
  "id": "u1308",
  "name": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::RightMultiplyAndAccumulate",
+ "short_name": "RightMultiplyAndAccumulate",
+ "signature": "void RightMultiplyAndAccumulate(const Vector & x, Vector & y)",
+ "params": "(const Vector & x, Vector & y)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   82,
   84
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 3,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1308,
- "short_name": "RightMultiplyAndAccumulate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter",
- "class_is_template": false,
- "params": "(const Vector & x, Vector & y)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1308
 }

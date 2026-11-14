@@ -1,26 +1,33 @@
 {
  "id": "u1401",
  "name": "ceres::internal::ComputeSchurOrdering",
+ "short_name": "ComputeSchurOrdering",
+ "signature": "int ComputeSchurOrdering(const Program & program, std::vector<ParameterBlock *> * ordering)",
+ "params": "(const Program & program, std::vector<ParameterBlock *> * ordering)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block_ordering.cc",
  "lines": [
   82,
   100
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 19,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1401,
- "short_name": "ComputeSchurOrdering",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Program & program, std::vector<ParameterBlock *> * ordering)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 1,
+ "order": 1401
 }

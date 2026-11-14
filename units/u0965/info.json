@@ -1,26 +1,33 @@
 {
  "id": "u0965",
  "name": "ceres::internal::ThreadPool::Stop",
+ "short_name": "Stop",
+ "signature": "void Stop()",
+ "params": "()",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
  "file": "internal/ceres/thread_pool.cc",
  "lines": [
   102,
   102
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "internal",
+ "loc": 1,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 965,
- "short_name": "Stop",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ThreadPool",
- "class_is_template": false,
- "params": "()",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 965
 }

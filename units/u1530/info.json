@@ -1,26 +1,33 @@
 {
  "id": "u1530",
  "name": "ceres::GradientProblemSolver::Options::IsValid",
+ "short_name": "IsValid",
+ "signature": "bool IsValid(std::string * error) const",
+ "params": "(std::string * error)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblemSolver::Options",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_problem_solver.cc",
  "lines": [
   90,
   94
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 7,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1530,
- "short_name": "IsValid",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::GradientProblemSolver::Options",
- "class_is_template": false,
- "params": "(std::string * error)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 7,
+ "existing_tests": 0,
+ "order": 1530
 }

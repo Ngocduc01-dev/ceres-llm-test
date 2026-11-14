@@ -3,7 +3,7 @@ Hàm: SizedCostFunction()
 Loại: constructor (hàm khởi tạo)
 Thuộc class: ceres::SizedCostFunction
 Vị trí: include/ceres/sized_cost_function.h, dòng 59–62
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SizedCostFunction<1, 2, 2> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SizedCostFunction<1, 2, 2>.
 
 Số điểm rẽ nhánh: 0
 

@@ -1,28 +1,33 @@
 {
  "id": "u0554",
  "name": "ceres::internal::ComputeHouseholderVector",
+ "short_name": "ComputeHouseholderVector",
+ "signature": "void ComputeHouseholderVector(const XVectorType& x, Eigen::Matrix<Scalar, N, 1>* v, Scalar* beta)",
+ "params": "(const XVectorType& x, Eigen::Matrix<Scalar, N, 1>* v, Scalar* beta)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/householder_vector.h",
  "lines": [
   47,
   82
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 36,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 554,
- "short_name": "ComputeHouseholderVector",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const XVectorType& x, Eigen::Matrix<Scalar, N, 1>* v, Scalar* beta)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 4
+ },
+ "template_example": "ComputeHouseholderVector<Matrix<double, -1, 1>, double, -1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 554
 }

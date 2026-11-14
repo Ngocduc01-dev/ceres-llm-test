@@ -1,28 +1,33 @@
 {
  "id": "u0571",
  "name": "ceres::TinySolver::Initialize",
+ "short_name": "Initialize",
+ "signature": "void Initialize(int num_residuals, int num_parameters)",
+ "params": "(int num_residuals, int num_parameters)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolver",
+ "class_is_template": true,
  "file": "include/ceres/tiny_solver.h",
  "lines": [
   382,
   393
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 12,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 571,
- "short_name": "Initialize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::TinySolver",
- "class_is_template": true,
- "params": "(int num_residuals, int num_parameters)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "TinySolver<TinySolverAutoDiffFunction<DynamicResidualsFunctor, -1, 3>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 571
 }

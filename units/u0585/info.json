@@ -1,26 +1,33 @@
 {
  "id": "u0585",
  "name": "ceres::internal::VisibilityBasedPreconditioner::IsBlockPairOffDiagonal",
+ "short_name": "IsBlockPairOffDiagonal",
+ "signature": "bool IsBlockPairOffDiagonal(const int block1, const int block2) const",
+ "params": "(const int block1, const int block2)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::VisibilityBasedPreconditioner",
+ "class_is_template": false,
  "file": "internal/ceres/visibility_based_preconditioner.cc",
  "lines": [
   448,
   451
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 4,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 585,
- "short_name": "IsBlockPairOffDiagonal",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::VisibilityBasedPreconditioner",
- "class_is_template": false,
- "params": "(const int block1, const int block2)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 585
 }

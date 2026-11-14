@@ -1,26 +1,33 @@
 {
  "id": "u1409",
  "name": "ceres::internal::Program::IsFeasible",
+ "short_name": "IsFeasible",
+ "signature": "bool IsFeasible(std::string * message) const",
+ "params": "(std::string * message)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
  "file": "internal/ceres/program.cc",
  "lines": [
   229,
   285
  ],
- "branches": 16,
- "cyclomatic": 9,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 57,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1409,
- "short_name": "IsFeasible",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Program",
- "class_is_template": false,
- "params": "(std::string * message)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 3,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 2,
+ "order": 1409
 }

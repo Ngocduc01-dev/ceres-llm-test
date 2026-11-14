@@ -1,28 +1,33 @@
 {
  "id": "u0675",
  "name": "ceres::internal::WeightedGraph::VertexWeight",
+ "short_name": "VertexWeight",
+ "signature": "double VertexWeight(const Vertex & vertex) const",
+ "params": "(const Vertex & vertex)",
+ "return_type": "double",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
  "file": "internal/ceres/graph.h",
  "lines": [
   170,
   172
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 675,
- "short_name": "VertexWeight",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WeightedGraph",
- "class_is_template": true,
- "params": "(const Vertex & vertex)",
- "return_type": "double",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "WeightedGraph<int>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 675
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1314",
  "name": "ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary",
+ "short_name": "FindMinimumOnTrustRegionBoundary",
+ "signature": "bool FindMinimumOnTrustRegionBoundary(Vector2d * minimum) const",
+ "params": "(Vector2d * minimum)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/dogleg_strategy.cc",
  "lines": [
   472,
   514
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 43,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1314,
- "short_name": "FindMinimumOnTrustRegionBoundary",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DoglegStrategy",
- "class_is_template": false,
- "params": "(Vector2d * minimum)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1314
 }

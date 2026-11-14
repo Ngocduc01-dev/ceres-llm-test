@@ -1,26 +1,33 @@
 {
  "id": "u1444",
  "name": "ceres::internal::BlockSparseMatrix::BlockSparseMatrix",
+ "short_name": "BlockSparseMatrix",
+ "signature": "BlockSparseMatrix(CompressedRowBlockStructure * block_structure, bool use_page_locked_memory)",
+ "params": "(CompressedRowBlockStructure * block_structure, bool use_page_locked_memory)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   177,
   215
  ],
- "branches": 20,
- "cyclomatic": 11,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 39,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1444,
- "short_name": "BlockSparseMatrix",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(CompressedRowBlockStructure * block_structure, bool use_page_locked_memory)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 3,
+  "checks": 5
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 2,
+ "order": 1444
 }

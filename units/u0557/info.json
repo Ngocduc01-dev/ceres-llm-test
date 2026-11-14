@@ -1,28 +1,33 @@
 {
  "id": "u0557",
  "name": "ceres::internal::IndependentSetOrdering",
+ "short_name": "IndependentSetOrdering",
+ "signature": "int IndependentSetOrdering(const Graph<Vertex>& graph, std::vector<Vertex>* ordering)",
+ "params": "(const Graph<Vertex>& graph, std::vector<Vertex>* ordering)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/graph_algorithms.h",
  "lines": [
   97,
   153
  ],
- "branches": 18,
- "cyclomatic": 10,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 57,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 557,
- "short_name": "IndependentSetOrdering",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Graph<Vertex>& graph, std::vector<Vertex>* ordering)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 4,
+  "checks": 3
+ },
+ "template_example": "IndependentSetOrdering<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 557
 }

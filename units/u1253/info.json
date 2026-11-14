@@ -1,26 +1,33 @@
 {
  "id": "u1253",
  "name": "ceres::internal::ResidualBlock::ToString",
+ "short_name": "ToString",
+ "signature": "std::string ToString() const",
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
  "file": "internal/ceres/residual_block.h",
  "lines": [
   133,
   135
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "de",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1253,
- "short_name": "ToString",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ResidualBlock",
- "class_is_template": false,
- "params": "()",
- "return_type": "std::string",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1253
 }

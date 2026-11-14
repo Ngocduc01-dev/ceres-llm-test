@@ -1,26 +1,33 @@
 {
  "id": "u1523",
  "name": "ceres::Problem::AddResidualBlock",
+ "short_name": "AddResidualBlock",
+ "signature": "ResidualBlockId AddResidualBlock(CostFunction * cost_function, LossFunction * loss_function, const std::vector<double *> & parameter_blocks)",
+ "params": "(CostFunction * cost_function, LossFunction * loss_function, const std::vector<double *> & parameter_blocks)",
+ "return_type": "ResidualBlockId",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::Problem",
+ "class_is_template": false,
  "file": "internal/ceres/problem.cc",
  "lines": [
   50,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 6,
- "level": "kho",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1523,
- "short_name": "AddResidualBlock",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::Problem",
- "class_is_template": false,
- "params": "(CostFunction * cost_function, LossFunction * loss_function, const std::vector<double *> & parameter_blocks)",
- "return_type": "ResidualBlockId",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 6,
+ "existing_tests": 2,
+ "order": 1523
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1495",
  "name": "ceres::(anonymous)::Minimize",
+ "short_name": "Minimize",
+ "signature": "void Minimize(internal::PreprocessedProblem * pp, Solver::Summary * summary)",
+ "params": "(internal::PreprocessedProblem * pp, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   627,
   654
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 4,
- "level": "kho",
- "callable": "internal",
+ "loc": 28,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1495,
- "short_name": "Minimize",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(internal::PreprocessedProblem * pp, Solver::Summary * summary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1495
 }

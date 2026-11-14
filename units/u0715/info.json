@@ -1,28 +1,33 @@
 {
  "id": "u0715",
  "name": "ceres::internal::WeightedGraph::EdgeWeight",
+ "short_name": "EdgeWeight",
+ "signature": "double EdgeWeight(const Vertex & vertex1, const Vertex & vertex2) const",
+ "params": "(const Vertex & vertex1, const Vertex & vertex2)",
+ "return_type": "double",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
  "file": "internal/ceres/graph.h",
  "lines": [
   178,
   186
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 715,
- "short_name": "EdgeWeight",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WeightedGraph",
- "class_is_template": true,
- "params": "(const Vertex & vertex1, const Vertex & vertex2)",
- "return_type": "double",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "WeightedGraph<int>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 715
 }

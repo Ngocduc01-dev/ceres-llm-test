@@ -1,26 +1,30 @@
 {
  "id": "u0963",
  "name": "ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingSuiteSparse",
+ "short_name": "OrderingForSparseNormalCholeskyUsingSuiteSparse",
+ "signature": "void OrderingForSparseNormalCholeskyUsingSuiteSparse(const LinearSolverOrderingType linear_solver_ordering_type, const TripletSparseMatrix & tsm_block_jacobian_transpose, const std::vector<ParameterBlock *> & parameter_blocks, const ParameterBlockOrdering & parameter_block_ordering, int * ordering)",
+ "params": "(const LinearSolverOrderingType linear_solver_ordering_type, const TripletSparseMatrix & tsm_block_jacobian_transpose, const std::vector<ParameterBlock *> & parameter_blocks, const ParameterBlockOrdering & parameter_block_ordering, int * ordering)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   112,
   167
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "internal",
+ "loc": 56,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 963,
- "short_name": "OrderingForSparseNormalCholeskyUsingSuiteSparse",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const LinearSolverOrderingType linear_solver_ordering_type, const TripletSparseMatrix & tsm_block_jacobian_transpose, const std::vector<ParameterBlock *> & parameter_blocks, const ParameterBlockOrdering & parameter_block_ordering, int * ordering)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "CFG bất thường (hàm luôn dừng / assert) nên không dùng – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 963
 }

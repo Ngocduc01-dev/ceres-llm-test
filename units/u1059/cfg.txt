@@ -3,7 +3,7 @@ Hàm: MatrixVectorMultiply(const double* A, const int num_row_a, const int num_c
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres::internal
 Vị trí: internal/ceres/small_blas.h, dòng 384–465
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixVectorMultiply<-1, -1, 1> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp MatrixVectorMultiply<-1, -1, 1>.
 
 Số điểm rẽ nhánh: 7 (và 2 lệnh CHECK)
 

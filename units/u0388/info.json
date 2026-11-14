@@ -1,26 +1,33 @@
 {
  "id": "u0388",
  "name": "ceres::internal::PreprocessedProblem::PreprocessedProblem",
+ "short_name": "PreprocessedProblem",
+ "signature": "PreprocessedProblem()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::PreprocessedProblem",
+ "class_is_template": false,
  "file": "internal/ceres/preprocessor.h",
  "lines": [
   83,
   83
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 22,
- "order": 388,
- "short_name": "PreprocessedProblem",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::PreprocessedProblem",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 22,
+ "order": 388
 }

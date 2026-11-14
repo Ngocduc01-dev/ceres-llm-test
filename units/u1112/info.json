@@ -1,26 +1,33 @@
 {
  "id": "u1112",
  "name": "ceres::StringToNonlinearConjugateGradientType",
+ "short_name": "StringToNonlinearConjugateGradientType",
+ "signature": "bool StringToNonlinearConjugateGradientType(std::string value, NonlinearConjugateGradientType * type)",
+ "params": "(std::string value, NonlinearConjugateGradientType * type)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/types.cc",
  "lines": [
   281,
   288
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1112,
- "short_name": "StringToNonlinearConjugateGradientType",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::string value, NonlinearConjugateGradientType * type)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1112
 }

@@ -1,28 +1,30 @@
 {
  "id": "u0621",
  "name": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "short_name": "DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+ "signature": "DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction<CostFunctor, Stride> && other)",
+ "params": "(DynamicAutoDiffCostFunction<CostFunctor, Stride> && other)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::DynamicAutoDiffCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/dynamic_autodiff_cost_function.h",
  "lines": [
   87,
   88
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 621,
- "short_name": "DynamicAutoDiffCostFunction<CostFunctor, Stride>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::DynamicAutoDiffCostFunction",
- "class_is_template": true,
- "params": "(DynamicAutoDiffCostFunction<CostFunctor, Stride> && other)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "Clang không dựng được CFG: bản overload này không được dùng ở đâu trong Ceres – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 621
 }

@@ -1,28 +1,33 @@
 {
  "id": "u1025",
  "name": "ceres::internal::FixedArray::FixedArray<T, N, A>",
+ "short_name": "FixedArray<T, N, A>",
+ "signature": "FixedArray(size_type n, const allocator_type & a)",
+ "params": "(size_type n, const allocator_type & a)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::FixedArray",
+ "class_is_template": true,
  "file": "include/ceres/internal/fixed_array.h",
  "lines": [
   132,
   137
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1025,
- "short_name": "FixedArray<T, N, A>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::FixedArray",
- "class_is_template": true,
- "params": "(size_type n, const allocator_type & a)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FixedArray<int, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1025
 }

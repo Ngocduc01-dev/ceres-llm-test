@@ -1,26 +1,33 @@
 {
  "id": "u1383",
  "name": "ceres::internal::BlockJacobianWriter::CreateEvaluatePreparers",
+ "short_name": "CreateEvaluatePreparers",
+ "signature": "std::unique_ptr<BlockEvaluatePreparer[]> CreateEvaluatePreparers(unsigned int num_threads)",
+ "params": "(unsigned int num_threads)",
+ "return_type": "std::unique_ptr<BlockEvaluatePreparer[]>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockJacobianWriter",
+ "class_is_template": false,
  "file": "internal/ceres/block_jacobian_writer.cc",
  "lines": [
   183,
   194
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 3,
- "level": "de",
- "callable": "public",
+ "loc": 12,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1383,
- "short_name": "CreateEvaluatePreparers",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockJacobianWriter",
- "class_is_template": false,
- "params": "(unsigned int num_threads)",
- "return_type": "std::unique_ptr<BlockEvaluatePreparer[]>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1383
 }

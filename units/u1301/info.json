@@ -1,26 +1,33 @@
 {
  "id": "u1301",
  "name": "ceres::internal::CoordinateDescentMinimizer::Init",
+ "short_name": "Init",
+ "signature": "bool Init(const Program & program, const ProblemImpl::ParameterMap & parameter_map, const ParameterBlockOrdering & ordering, std::string *)",
+ "params": "(const Program & program, const ProblemImpl::ParameterMap & parameter_map, const ParameterBlockOrdering & ordering, std::string *)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CoordinateDescentMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/coordinate_descent_minimizer.cc",
  "lines": [
   64,
   126
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 63,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1301,
- "short_name": "Init",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CoordinateDescentMinimizer",
- "class_is_template": false,
- "params": "(const Program & program, const ProblemImpl::ParameterMap & parameter_map, const ParameterBlockOrdering & ordering, std::string *)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 7,
+  "branches": 14,
+  "loops": 5,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1301
 }

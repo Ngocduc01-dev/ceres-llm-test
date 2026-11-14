@@ -3,7 +3,7 @@ Hàm: GetDim(int dim)  → trả về int
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::ParameterDims
 Vị trí: include/ceres/internal/parameter_dims.h, dòng 70–70
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ParameterDims<false, 2> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ParameterDims<false, 2>.
 
 Số điểm rẽ nhánh: 0
 

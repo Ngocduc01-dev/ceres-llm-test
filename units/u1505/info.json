@@ -1,26 +1,33 @@
 {
  "id": "u1505",
  "name": "ceres::internal::WolfeLineSearch::BracketingPhase",
+ "short_name": "BracketingPhase",
+ "signature": "bool BracketingPhase(const FunctionSample & initial_position, const double step_size_estimate, FunctionSample * bracket_low, FunctionSample * bracket_high, bool * do_zoom_search, Summary * summary) const",
+ "params": "(const FunctionSample & initial_position, const double step_size_estimate, FunctionSample * bracket_low, FunctionSample * bracket_high, bool * do_zoom_search, Summary * summary)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WolfeLineSearch",
+ "class_is_template": false,
  "file": "internal/ceres/line_search.cc",
  "lines": [
   499,
   692
  ],
- "branches": 60,
- "cyclomatic": 31,
- "topo_level": 5,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 194,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1505,
- "short_name": "BracketingPhase",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WolfeLineSearch",
- "class_is_template": false,
- "params": "(const FunctionSample & initial_position, const double step_size_estimate, FunctionSample * bracket_low, FunctionSample * bracket_high, bool * do_zoom_search, Summary * summary)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 14,
+  "branches": 28,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 5,
+ "existing_tests": 0,
+ "order": 1505
 }

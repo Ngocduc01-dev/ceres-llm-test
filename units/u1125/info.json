@@ -1,26 +1,33 @@
 {
  "id": "u1125",
  "name": "ceres::StringToPreconditionerType",
+ "short_name": "StringToPreconditionerType",
+ "signature": "bool StringToPreconditionerType(std::string value, PreconditionerType * type)",
+ "params": "(std::string value, PreconditionerType * type)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/types.cc",
  "lines": [
   91,
   101
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1125,
- "short_name": "StringToPreconditionerType",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::string value, PreconditionerType * type)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 7,
+  "branches": 14,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1125
 }

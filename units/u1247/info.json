@@ -1,26 +1,33 @@
 {
  "id": "u1247",
  "name": "ceres::internal::ParameterBlock::ToString",
+ "short_name": "ToString",
+ "signature": "std::string ToString() const",
+ "params": "()",
+ "return_type": "std::string",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ParameterBlock",
+ "class_is_template": false,
  "file": "internal/ceres/parameter_block.h",
  "lines": [
   253,
   266
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "de",
- "callable": "public",
+ "loc": 14,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1247,
- "short_name": "ToString",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ParameterBlock",
- "class_is_template": false,
- "params": "()",
- "return_type": "std::string",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1247
 }

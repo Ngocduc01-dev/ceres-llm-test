@@ -1,26 +1,33 @@
 {
  "id": "u1049",
  "name": "ceres::GradientProblem::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const double * parameters, double * cost, double * gradient) const",
+ "params": "(const double * parameters, double * cost, double * gradient)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::GradientProblem",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_problem.cc",
  "lines": [
   68,
   78
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 1049,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::GradientProblem",
- "class_is_template": false,
- "params": "(const double * parameters, double * cost, double * gradient)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 3,
+ "order": 1049
 }

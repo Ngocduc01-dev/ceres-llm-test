@@ -1,28 +1,33 @@
 {
  "id": "u0740",
  "name": "ceres::AutoDiffFirstOrderFunction::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "bool Evaluate(const double *const parameters, double * cost, double * gradient) const",
+ "params": "(const double *const parameters, double * cost, double * gradient)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::AutoDiffFirstOrderFunction",
+ "class_is_template": true,
  "file": "include/ceres/autodiff_first_order_function.h",
  "lines": [
   113,
   139
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 27,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 740,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::AutoDiffFirstOrderFunction",
- "class_is_template": true,
- "params": "(const double *const parameters, double * cost, double * gradient)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "AutoDiffFirstOrderFunction<QuadraticCostFunctor, 4>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 740
 }

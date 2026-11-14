@@ -1,4 +1,4 @@
-Unit: 1540 | có CFG: 1491 | không tìm thấy: 44 | CFG bất thường (bỏ, để LLM tự dựng): 5 | thời gian: 20s
+Unit: 1540 | có CFG: 1491 | không tìm thấy: 44 | CFG bất thường (bỏ, để LLM tự dựng): 5 | thời gian: 26s
 
 Unit không có CFG:
 u0001 ceres::AutoDiffCostFunction::functor include/ceres/autodiff_cost_function.h

@@ -1,26 +1,33 @@
 {
  "id": "u1274",
  "name": "ceres::(anonymous)::StringifyOrdering",
+ "short_name": "StringifyOrdering",
+ "signature": "void StringifyOrdering(const std::vector<int> & ordering, std::string * report)",
+ "params": "(const std::vector<int> & ordering, std::string * report)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   496,
   506
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "de",
- "callable": "internal",
+ "loc": 11,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1274,
- "short_name": "StringifyOrdering",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::vector<int> & ordering, std::string * report)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1274
 }

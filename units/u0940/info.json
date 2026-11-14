@@ -1,26 +1,33 @@
 {
  "id": "u0940",
  "name": "ceres::internal::TripletSparseMatrix::Reserve",
+ "short_name": "Reserve",
+ "signature": "void Reserve(int new_max_num_nonzeros)",
+ "params": "(int new_max_num_nonzeros)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   121,
   145
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 25,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 940,
- "short_name": "Reserve",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "(int new_max_num_nonzeros)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 940
 }

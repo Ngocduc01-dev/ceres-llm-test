@@ -3,7 +3,7 @@ Hàm: Solve(const double * rhs_ptr, double * solution_ptr, std::string * message
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::EigenSparseCholeskyTemplate
 Vị trí: internal/ceres/eigensparse.cc, dòng 88–110
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>>.
 
 Số điểm rẽ nhánh: 1 (và 1 lệnh CHECK)
 

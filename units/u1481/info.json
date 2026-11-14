@@ -1,26 +1,33 @@
 {
  "id": "u1481",
  "name": "ceres::internal::Program::RemoveFixedBlocks",
+ "short_name": "RemoveFixedBlocks",
+ "signature": "bool RemoveFixedBlocks(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error)",
+ "params": "(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
  "file": "internal/ceres/program.cc",
  "lines": [
   305,
   411
  ],
- "branches": 32,
- "cyclomatic": 17,
- "topo_level": 4,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 107,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1481,
- "short_name": "RemoveFixedBlocks",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Program",
- "class_is_template": false,
- "params": "(std::vector<double *> * removed_parameter_blocks, double * fixed_cost, std::string * error)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 10,
+  "branches": 20,
+  "loops": 4,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 4,
+ "existing_tests": 0,
+ "order": 1481
 }

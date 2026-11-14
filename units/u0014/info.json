@@ -1,28 +1,33 @@
 {
  "id": "u0014",
  "name": "ceres::CostFunctionToFunctor::operator()",
+ "short_name": "operator()",
+ "signature": "bool operator()(const T* p1, Ts*... ps) const",
+ "params": "(const T* p1, Ts*... ps)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::CostFunctionToFunctor",
+ "class_is_template": true,
  "file": "include/ceres/cost_function_to_functor.h",
  "lines": [
   133,
   153
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 21,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 14,
- "short_name": "operator()",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::CostFunctionToFunctor",
- "class_is_template": true,
- "params": "(const T* p1, Ts*... ps)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "CostFunctionToFunctor<2, 2>::operator()<double, <double>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 14
 }

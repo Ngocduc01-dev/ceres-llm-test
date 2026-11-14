@@ -1,28 +1,33 @@
 {
  "id": "u0641",
  "name": "ceres::NumericDiffFirstOrderFunction::NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+ "short_name": "NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+ "signature": "NumericDiffFirstOrderFunction(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options)",
+ "params": "(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::NumericDiffFirstOrderFunction",
+ "class_is_template": true,
  "file": "include/ceres/numeric_diff_first_order_function.h",
  "lines": [
   119,
   132
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 14,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 641,
- "short_name": "NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::NumericDiffFirstOrderFunction",
- "class_is_template": true,
- "params": "(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 641
 }

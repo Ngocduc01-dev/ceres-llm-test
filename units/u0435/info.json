@@ -1,26 +1,33 @@
 {
  "id": "u0435",
  "name": "ceres::internal::WallTimeInSeconds",
+ "short_name": "WallTimeInSeconds",
+ "signature": "double WallTimeInSeconds()",
+ "params": "()",
+ "return_type": "double",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/wall_time.cc",
  "lines": [
   45,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 14,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 435,
- "short_name": "WallTimeInSeconds",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "()",
- "return_type": "double",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 435
 }

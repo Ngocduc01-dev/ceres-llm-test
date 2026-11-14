@@ -1,26 +1,33 @@
 {
  "id": "u1162",
  "name": "ceres::internal::SparseIterativeRefiner::Refine",
+ "short_name": "Refine",
+ "signature": "void Refine(const SparseMatrix & lhs, const double * rhs_ptr, SparseCholesky * cholesky, double * solution_ptr)",
+ "params": "(const SparseMatrix & lhs, const double * rhs_ptr, SparseCholesky * cholesky, double * solution_ptr)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SparseIterativeRefiner",
+ "class_is_template": false,
  "file": "internal/ceres/iterative_refiner.cc",
  "lines": [
   53,
   71
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 19,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1162,
- "short_name": "Refine",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SparseIterativeRefiner",
- "class_is_template": false,
- "params": "(const SparseMatrix & lhs, const double * rhs_ptr, SparseCholesky * cholesky, double * solution_ptr)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 2,
+ "order": 1162
 }

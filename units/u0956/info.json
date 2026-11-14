@@ -1,26 +1,33 @@
 {
  "id": "u0956",
  "name": "ceres::internal::Minimizer::RunCallbacks",
+ "short_name": "RunCallbacks",
+ "signature": "bool RunCallbacks(const Minimizer::Options & options, const IterationSummary & iteration_summary, Solver::Summary * summary)",
+ "params": "(const Minimizer::Options & options, const IterationSummary & iteration_summary, Solver::Summary * summary)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Minimizer",
+ "class_is_template": false,
  "file": "internal/ceres/minimizer.cc",
  "lines": [
   57,
   89
  ],
- "branches": 22,
- "cyclomatic": 12,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 33,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 956,
- "short_name": "RunCallbacks",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Minimizer",
- "class_is_template": false,
- "params": "(const Minimizer::Options & options, const IterationSummary & iteration_summary, Solver::Summary * summary)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 956
 }

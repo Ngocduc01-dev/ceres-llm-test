@@ -1,26 +1,33 @@
 {
  "id": "u1145",
  "name": "ceres::internal::BlockSparseMatrix::SetZero",
+ "short_name": "SetZero",
+ "signature": "void SetZero(ContextImpl * context, int num_threads)",
+ "params": "(ContextImpl * context, int num_threads)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   229,
   231
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1145,
- "short_name": "SetZero",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(ContextImpl * context, int num_threads)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1145
 }

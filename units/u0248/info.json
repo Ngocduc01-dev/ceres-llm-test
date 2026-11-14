@@ -1,26 +1,33 @@
 {
  "id": "u0248",
  "name": "ceres::internal::GradientProblemSolverStateUpdatingCallback::GradientProblemSolverStateUpdatingCallback",
+ "short_name": "GradientProblemSolverStateUpdatingCallback",
+ "signature": "GradientProblemSolverStateUpdatingCallback(int num_parameters, const double * internal_parameters, double * user_parameters)",
+ "params": "(int num_parameters, const double * internal_parameters, double * user_parameters)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::GradientProblemSolverStateUpdatingCallback",
+ "class_is_template": false,
  "file": "internal/ceres/callbacks.cc",
  "lines": [
   56,
   63
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 8,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 248,
- "short_name": "GradientProblemSolverStateUpdatingCallback",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::GradientProblemSolverStateUpdatingCallback",
- "class_is_template": false,
- "params": "(int num_parameters, const double * internal_parameters, double * user_parameters)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 248
 }

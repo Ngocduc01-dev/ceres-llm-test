@@ -1,28 +1,30 @@
 {
  "id": "u0523",
  "name": "ceres::down_cast",
+ "short_name": "down_cast",
+ "signature": "To down_cast(foo)",
+ "params": "(foo)",
+ "return_type": "To",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/casts.h",
  "lines": [
   89,
   104
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 523,
- "short_name": "down_cast",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(foo)",
- "return_type": "To",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "CFG bất thường (hàm luôn dừng / assert) nên không dùng – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 523
 }

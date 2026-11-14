@@ -1,26 +1,33 @@
 {
  "id": "u1219",
  "name": "ceres::internal::InnerProductComputer::CreateResultMatrix",
+ "short_name": "CreateResultMatrix",
+ "signature": "std::unique_ptr<CompressedRowSparseMatrix> CreateResultMatrix(const CompressedRowSparseMatrix::StorageType storage_type, const int num_nonzeros)",
+ "params": "(const CompressedRowSparseMatrix::StorageType storage_type, const int num_nonzeros)",
+ "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::InnerProductComputer",
+ "class_is_template": false,
  "file": "internal/ceres/inner_product_computer.cc",
  "lines": [
   47,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 12,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1219,
- "short_name": "CreateResultMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::InnerProductComputer",
- "class_is_template": false,
- "params": "(const CompressedRowSparseMatrix::StorageType storage_type, const int num_nonzeros)",
- "return_type": "std::unique_ptr<CompressedRowSparseMatrix>",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1219
 }

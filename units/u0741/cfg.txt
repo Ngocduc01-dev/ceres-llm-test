@@ -3,7 +3,7 @@ Hàm: Apply(const T * src, JetT * dst)  → trả về void
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::Make1stOrderPerturbation
 Vị trí: include/ceres/internal/autodiff.h, dòng 186–193
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Make1stOrderPerturbation<0, 2, 0, double, Jet<double, 4>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Make1stOrderPerturbation<0, 2, 0, double, Jet<double, 4>>.
 
 Số điểm rẽ nhánh: 0 (và 2 lệnh CHECK)
 

@@ -1,28 +1,33 @@
 {
  "id": "u0952",
  "name": "ceres::internal::ParallelFor",
+ "short_name": "ParallelFor",
+ "signature": "void ParallelFor(ContextImpl* context, int start, int end, int num_threads, F&& function, const std::vector<int>& partitions)",
+ "params": "(ContextImpl* context, int start, int end, int num_threads, F&& function, const std::vector<int>& partitions)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parallel_for.h",
  "lines": [
   100,
   136
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 37,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 952,
- "short_name": "ParallelFor",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(ContextImpl* context, int start, int end, int num_threads, F&& function, const std::vector<int>& partitions)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": "ParallelFor<(lambda at /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.cc:68:15)>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 952
 }

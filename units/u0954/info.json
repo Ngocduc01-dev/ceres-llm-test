@@ -1,26 +1,33 @@
 {
  "id": "u0954",
  "name": "ceres::internal::Evaluator::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<Evaluator> Create(const Evaluator::Options & options, Program * program, std::string * error)",
+ "params": "(const Evaluator::Options & options, Program * program, std::string * error)",
+ "return_type": "std::unique_ptr<Evaluator>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Evaluator",
+ "class_is_template": false,
  "file": "internal/ceres/evaluator.cc",
  "lines": [
   53,
   95
  ],
- "branches": 20,
- "cyclomatic": 11,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 43,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 4,
- "order": 954,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Evaluator",
- "class_is_template": false,
- "params": "(const Evaluator::Options & options, Program * program, std::string * error)",
- "return_type": "std::unique_ptr<Evaluator>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 11,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 4,
+ "order": 954
 }

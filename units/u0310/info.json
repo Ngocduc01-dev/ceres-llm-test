@@ -1,28 +1,33 @@
 {
  "id": "u0310",
  "name": "ceres::internal::WeightedGraph::vertices",
+ "short_name": "vertices",
+ "signature": "const std::unordered_set<Vertex> & vertices() const",
+ "params": "()",
+ "return_type": "const std::unordered_set<Vertex> &",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::WeightedGraph",
+ "class_is_template": true,
  "file": "internal/ceres/graph.h",
  "lines": [
   194,
   194
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 310,
- "short_name": "vertices",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::WeightedGraph",
- "class_is_template": true,
- "params": "()",
- "return_type": "const std::unordered_set<Vertex> &",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "WeightedGraph<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 310
 }

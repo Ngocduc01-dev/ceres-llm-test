@@ -1,28 +1,33 @@
 {
  "id": "u0635",
  "name": "ceres::internal::FirstOrderFunctorAdapter::FirstOrderFunctorAdapter<Functor>",
+ "short_name": "FirstOrderFunctorAdapter<Functor>",
+ "signature": "FirstOrderFunctorAdapter(const Functor & functor)",
+ "params": "(const Functor & functor)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::FirstOrderFunctorAdapter",
+ "class_is_template": true,
  "file": "include/ceres/internal/variadic_evaluate.h",
  "lines": [
   122,
   123
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 635,
- "short_name": "FirstOrderFunctorAdapter<Functor>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::FirstOrderFunctorAdapter",
- "class_is_template": true,
- "params": "(const Functor & functor)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "FirstOrderFunctorAdapter<QuadraticCostFunctor>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 635
 }

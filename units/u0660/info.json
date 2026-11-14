@@ -1,26 +1,33 @@
 {
  "id": "u0660",
  "name": "ceres::internal::DenseSparseMatrix::DenseSparseMatrix",
+ "short_name": "DenseSparseMatrix",
+ "signature": "DenseSparseMatrix(int num_rows, int num_cols)",
+ "params": "(int num_rows, int num_cols)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/dense_sparse_matrix.cc",
  "lines": [
   43,
   44
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 2,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 660,
- "short_name": "DenseSparseMatrix",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::DenseSparseMatrix",
- "class_is_template": false,
- "params": "(int num_rows, int num_cols)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 660
 }

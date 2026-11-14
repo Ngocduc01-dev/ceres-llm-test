@@ -1,28 +1,33 @@
 {
  "id": "u0445",
  "name": "ceres::internal::ArraySelector::ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, true>",
+ "short_name": "ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, true>",
+ "signature": "ArraySelector(int s)",
+ "params": "(int s)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::ArraySelector",
+ "class_is_template": true,
  "file": "include/ceres/internal/array_selector.h",
  "lines": [
   82,
   82
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 445,
- "short_name": "ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, true>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::ArraySelector",
- "class_is_template": true,
- "params": "(int s)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ArraySelector<int, -1, 20>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 445
 }

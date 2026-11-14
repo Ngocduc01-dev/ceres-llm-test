@@ -1,26 +1,33 @@
 {
  "id": "u1486",
  "name": "ceres::internal::ProblemImpl::SetManifold",
+ "short_name": "SetManifold",
+ "signature": "void SetManifold(double * values, Manifold * manifold)",
+ "params": "(double * values, Manifold * manifold)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   506,
   516
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 4,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 1486,
- "short_name": "SetManifold",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProblemImpl",
- "class_is_template": false,
- "params": "(double * values, Manifold * manifold)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 4,
+ "existing_tests": 3,
+ "order": 1486
 }

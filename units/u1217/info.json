@@ -1,26 +1,33 @@
 {
  "id": "u1217",
  "name": "ceres::internal::CovarianceImpl::GetCovarianceBlockInTangentOrAmbientSpace",
+ "short_name": "GetCovarianceBlockInTangentOrAmbientSpace",
+ "signature": "bool GetCovarianceBlockInTangentOrAmbientSpace(const double * original_parameter_block1, const double * original_parameter_block2, bool lift_covariance_to_ambient_space, double * covariance_block) const",
+ "params": "(const double * original_parameter_block1, const double * original_parameter_block2, bool lift_covariance_to_ambient_space, double * covariance_block)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CovarianceImpl",
+ "class_is_template": false,
  "file": "internal/ceres/covariance_impl.cc",
  "lines": [
   128,
   274
  ],
- "branches": 34,
- "cyclomatic": 18,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 147,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1217,
- "short_name": "GetCovarianceBlockInTangentOrAmbientSpace",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CovarianceImpl",
- "class_is_template": false,
- "params": "(const double * original_parameter_block1, const double * original_parameter_block2, bool lift_covariance_to_ambient_space, double * covariance_block)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 11,
+  "branches": 22,
+  "loops": 1,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1217
 }

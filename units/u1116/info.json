@@ -1,28 +1,33 @@
 {
  "id": "u1116",
  "name": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateFMultiThreaded",
+ "short_name": "LeftMultiplyAndAccumulateFMultiThreaded",
+ "signature": "void LeftMultiplyAndAccumulateFMultiThreaded(const double * x, double * y) const",
+ "params": "(const double * x, double * y)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
  "file": "internal/ceres/partitioned_matrix_view_impl.h",
  "lines": [
   324,
   375
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 52,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1116,
- "short_name": "LeftMultiplyAndAccumulateFMultiThreaded",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::PartitionedMatrixView",
- "class_is_template": true,
- "params": "(const double * x, double * y)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "PartitionedMatrixView<>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1116
 }

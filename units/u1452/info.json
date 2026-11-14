@@ -1,26 +1,33 @@
 {
  "id": "u1452",
  "name": "ceres::internal::(anonymous)::SetupMinimizerOptions",
+ "short_name": "SetupMinimizerOptions",
+ "signature": "bool SetupMinimizerOptions(PreprocessedProblem * pp)",
+ "params": "(PreprocessedProblem * pp)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_preprocessor.cc",
  "lines": [
   339,
   370
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 3,
- "level": "kho",
- "callable": "internal",
+ "loc": 32,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1452,
- "short_name": "SetupMinimizerOptions",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(PreprocessedProblem * pp)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1452
 }

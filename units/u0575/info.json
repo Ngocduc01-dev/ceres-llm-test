@@ -1,26 +1,33 @@
 {
  "id": "u0575",
  "name": "ceres::internal::BlockRandomAccessSparseMatrix::Int64ToIntPair",
+ "short_name": "Int64ToIntPair",
+ "signature": "void Int64ToIntPair(int64_t index, int * row, int * col) const",
+ "params": "(int64_t index, int * row, int * col)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_sparse_matrix.h",
  "lines": [
   103,
   106
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 4,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 575,
- "short_name": "Int64ToIntPair",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockRandomAccessSparseMatrix",
- "class_is_template": false,
- "params": "(int64_t index, int * row, int * col)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 575
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1361",
  "name": "ceres::GradientChecker::GradientChecker",
+ "short_name": "GradientChecker",
+ "signature": "GradientChecker(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options)",
+ "params": "(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::GradientChecker",
+ "class_is_template": false,
  "file": "internal/ceres/gradient_checker.cc",
  "lines": [
   116,
   139
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 24,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1361,
- "short_name": "GradientChecker",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::GradientChecker",
- "class_is_template": false,
- "params": "(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 2,
+ "order": 1361
 }

@@ -95,6 +95,13 @@ Kèm theo: tìm dòng cho vế trái của `&&`/`||` (bỏ phần `|| ...` trư�
 - Dòng **Ghi chú** của template viết lại: nói rõ CFG dựng với kiểu nào, gồm cả kiểu của hàm template (vd. `Make1stOrderPerturbations<integer_sequence<int, 2, 2>>::Apply<double, Jet<double, 4>>`).
 - Thêm `--reuse`: dùng lại kết quả Clang (`data/.cfg_cache.pkl`, không commit) để chạy lại phần ghép trong ~20 s.
 
+## Bước 7 – `info.json` dễ đọc, số nhánh đếm theo CFG
+
+- Thay `branches`/`cyclomatic` của libclang (đếm cả `&&`, `||`, `CHECK`) bằng số liệu đếm trên CFG như người đếm: `cfg.decisions` (điểm rẽ nhánh), `cfg.branches` (số nhánh – mẫu số C2), `cfg.loops`, `cfg.checks`. Ví dụ u0540: libclang 8 nhánh → CFG 2 điểm rẽ nhánh, 4 nhánh, 1 CHECK.
+- Thêm `signature`, `loc`, `how_to_call`, `template_example`; đổi `level` → `input_difficulty`, `topo_level` → `call_level`, `called_by_tests` → `existing_tests`; bỏ `callable`, `template_args`.
+- Tổng (1491 unit có CFG): 1698 điểm rẽ nhánh, **3430 nhánh**, 562 vòng lặp, 498 CHECK (libclang: 5754 nhánh).
+- Giải thích từng trường: `docs/phase4-guide.md` mục `info.json`.
+
 ## Kết quả
 
 | Chỉ số | Giá trị |

@@ -3,7 +3,7 @@ Hàm: implicit_cast(typename identity_<From>::type const& f)  → trả về To
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Namespace: ceres
 Vị trí: internal/ceres/casts.h, dòng 65–68
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp implicit_cast<SparseMatrix *, BlockSparseMatrix *> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp implicit_cast<SparseMatrix *, BlockSparseMatrix *>.
 
 Số điểm rẽ nhánh: 0
 

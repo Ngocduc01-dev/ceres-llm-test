@@ -1,26 +1,33 @@
 {
  "id": "u1292",
  "name": "ceres::internal::EventLogger::AddEvent",
+ "short_name": "AddEvent",
+ "signature": "void AddEvent(const std::string & event_name)",
+ "params": "(const std::string & event_name)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EventLogger",
+ "class_is_template": false,
  "file": "internal/ceres/wall_time.cc",
  "lines": [
   80,
   95
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1292,
- "short_name": "AddEvent",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::EventLogger",
- "class_is_template": false,
- "params": "(const std::string & event_name)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1292
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0776",
  "name": "ceres::LinearSolverTypeToString",
+ "short_name": "LinearSolverTypeToString",
+ "signature": "const char * LinearSolverTypeToString(LinearSolverType type)",
+ "params": "(LinearSolverType type)",
+ "return_type": "const char *",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/types.cc",
  "lines": [
   51,
   63
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 13,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 776,
- "short_name": "LinearSolverTypeToString",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(LinearSolverType type)",
- "return_type": "const char *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 7,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 776
 }

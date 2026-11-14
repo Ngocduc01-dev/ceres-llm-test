@@ -1,26 +1,33 @@
 {
  "id": "u0538",
  "name": "ceres::internal::Corrector::Corrector",
+ "short_name": "Corrector",
+ "signature": "Corrector(const double sq_norm, const double[3] rho)",
+ "params": "(const double sq_norm, const double[3] rho)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::Corrector",
+ "class_is_template": false,
  "file": "internal/ceres/corrector.cc",
  "lines": [
   41,
   110
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 70,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 538,
- "short_name": "Corrector",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::Corrector",
- "class_is_template": false,
- "params": "(const double sq_norm, const double[3] rho)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 538
 }

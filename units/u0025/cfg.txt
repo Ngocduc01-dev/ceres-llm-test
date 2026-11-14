@@ -3,7 +3,7 @@ Hàm: Apply(int /* NOT USED*/, JetT* /* NOT USED*/, T** /* NOT USED */)  → tr�
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Thuộc class: ceres::internal::Take1stOrderParts
 Vị trí: include/ceres/internal/autodiff.h, dòng 297–300
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Take1stOrderParts<integer_sequence<int, 2, 2>>::Apply<Jet<double, 4>, double> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Take1stOrderParts<integer_sequence<int, 2, 2>>::Apply<Jet<double, 4>, double>.
 
 Số điểm rẽ nhánh: 1
 

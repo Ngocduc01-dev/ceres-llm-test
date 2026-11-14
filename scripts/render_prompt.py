@@ -141,8 +141,7 @@ def call_rules(u, info):
     if info.get("class"):
         rules.append(f"- Đây là method của class `{info['class']}`: tạo một object của class rồi gọi method trên object đó.")
     if u.get("template_args") or info.get("class_is_template"):
-        rules.append("- Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp "
-                     "(xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).")
+        rules.append("- Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp.")
     if not rules:
         rules.append("- Hàm gọi trực tiếp được.")
     return "\n".join(rules).replace("(anonymous)", "(namespace không tên)")

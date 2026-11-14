@@ -1,26 +1,33 @@
 {
  "id": "u0682",
  "name": "ceres::internal::NonlinearConjugateGradient::NonlinearConjugateGradient",
+ "short_name": "NonlinearConjugateGradient",
+ "signature": "NonlinearConjugateGradient(const NonlinearConjugateGradientType type, const double function_tolerance)",
+ "params": "(const NonlinearConjugateGradientType type, const double function_tolerance)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::NonlinearConjugateGradient",
+ "class_is_template": false,
  "file": "internal/ceres/line_search_direction.cc",
  "lines": [
   56,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 3,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 682,
- "short_name": "NonlinearConjugateGradient",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::NonlinearConjugateGradient",
- "class_is_template": false,
- "params": "(const NonlinearConjugateGradientType type, const double function_tolerance)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 682
 }

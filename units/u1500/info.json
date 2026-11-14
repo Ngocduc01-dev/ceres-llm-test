@@ -1,26 +1,33 @@
 {
  "id": "u1500",
  "name": "ceres::internal::ProblemImpl::RemoveResidualBlock",
+ "short_name": "RemoveResidualBlock",
+ "signature": "void RemoveResidualBlock(ResidualBlock * residual_block)",
+ "params": "(ResidualBlock * residual_block)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ProblemImpl",
+ "class_is_template": false,
  "file": "internal/ceres/problem_impl.cc",
  "lines": [
   405,
   433
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 5,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 29,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1500,
- "short_name": "RemoveResidualBlock",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ProblemImpl",
- "class_is_template": false,
- "params": "(ResidualBlock * residual_block)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 5,
+ "existing_tests": 2,
+ "order": 1500
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0710",
  "name": "ceres::internal::WriteStringToFileOrDie",
+ "short_name": "WriteStringToFileOrDie",
+ "signature": "void WriteStringToFileOrDie(const std::string & data, const std::string & filename)",
+ "params": "(const std::string & data, const std::string & filename)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/file.cc",
  "lines": [
   42,
   50
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 9,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 710,
- "short_name": "WriteStringToFileOrDie",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const std::string & data, const std::string & filename)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 710
 }

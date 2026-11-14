@@ -1,26 +1,33 @@
 {
  "id": "u1443",
  "name": "ceres::internal::SchurComplementSolver::SolveImpl",
+ "short_name": "SolveImpl",
+ "signature": "LinearSolver::Summary SolveImpl(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "params": "(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
+ "return_type": "LinearSolver::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::SchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   100,
   158
  ],
- "branches": 14,
- "cyclomatic": 8,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 59,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1443,
- "short_name": "SolveImpl",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::SchurComplementSolver",
- "class_is_template": false,
- "params": "(BlockSparseMatrix * A, const double * b, const LinearSolver::PerSolveOptions & per_solve_options, double * x)",
- "return_type": "LinearSolver::Summary",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1443
 }

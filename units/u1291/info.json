@@ -1,26 +1,33 @@
 {
  "id": "u1291",
  "name": "ceres::internal::EventLogger::EventLogger",
+ "short_name": "EventLogger",
+ "signature": "EventLogger(const std::string & logger_name)",
+ "params": "(const std::string & logger_name)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::EventLogger",
+ "class_is_template": false,
  "file": "internal/ceres/wall_time.cc",
  "lines": [
   60,
   70
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1291,
- "short_name": "EventLogger",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::EventLogger",
- "class_is_template": false,
- "params": "(const std::string & logger_name)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1291
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0708",
  "name": "ceres::internal::FloatEigenDenseCholesky::Solve",
+ "short_name": "Solve",
+ "signature": "LinearSolverTerminationType Solve(const double * rhs, double * solution, std::string * message)",
+ "params": "(const double * rhs, double * solution, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::FloatEigenDenseCholesky",
+ "class_is_template": false,
  "file": "internal/ceres/dense_cholesky.cc",
  "lines": [
   191,
   203
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 13,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 708,
- "short_name": "Solve",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::FloatEigenDenseCholesky",
- "class_is_template": false,
- "params": "(const double * rhs, double * solution, std::string * message)",
- "return_type": "LinearSolverTerminationType",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 708
 }

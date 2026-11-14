@@ -1,26 +1,33 @@
 {
  "id": "u0722",
  "name": "ceres::internal::DenseSparseMatrix::SquaredColumnNorm",
+ "short_name": "SquaredColumnNorm",
+ "signature": "void SquaredColumnNorm(double * x) const",
+ "params": "(double * x)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/dense_sparse_matrix.cc",
  "lines": [
   73,
   87
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 722,
- "short_name": "SquaredColumnNorm",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DenseSparseMatrix",
- "class_is_template": false,
- "params": "(double * x)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 722
 }

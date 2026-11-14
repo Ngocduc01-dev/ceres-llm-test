@@ -1,26 +1,33 @@
 {
  "id": "u0955",
  "name": "ceres::internal::LinearSolver::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<LinearSolver> Create(const LinearSolver::Options & options)",
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": "std::unique_ptr<LinearSolver>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LinearSolver",
+ "class_is_template": false,
  "file": "internal/ceres/linear_solver.cc",
  "lines": [
   74,
   127
  ],
- "branches": 20,
- "cyclomatic": 11,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 54,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 6,
- "order": 955,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LinearSolver",
- "class_is_template": false,
- "params": "(const LinearSolver::Options & options)",
- "return_type": "std::unique_ptr<LinearSolver>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 2
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 6,
+ "order": 955
 }

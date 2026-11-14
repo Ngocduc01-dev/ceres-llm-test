@@ -1,28 +1,33 @@
 {
  "id": "u0677",
  "name": "ceres::internal::VertexTotalOrdering::VertexTotalOrdering<Vertex>",
+ "short_name": "VertexTotalOrdering<Vertex>",
+ "signature": "VertexTotalOrdering(const Graph<Vertex> & graph)",
+ "params": "(const Graph<Vertex> & graph)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::VertexTotalOrdering",
+ "class_is_template": true,
  "file": "internal/ceres/graph_algorithms.h",
  "lines": [
   55,
   55
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 677,
- "short_name": "VertexTotalOrdering<Vertex>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::VertexTotalOrdering",
- "class_is_template": true,
- "params": "(const Graph<Vertex> & graph)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "VertexTotalOrdering<int>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 677
 }

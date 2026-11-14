@@ -1,28 +1,33 @@
 {
  "id": "u0456",
  "name": "ceres::NumericDiffFirstOrderFunction::~NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+ "short_name": "~NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+ "signature": "~NumericDiffFirstOrderFunction()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::NumericDiffFirstOrderFunction",
+ "class_is_template": true,
  "file": "include/ceres/numeric_diff_first_order_function.h",
  "lines": [
   152,
   156
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 456,
- "short_name": "~NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::NumericDiffFirstOrderFunction",
- "class_is_template": true,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 456
 }

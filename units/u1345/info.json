@@ -1,26 +1,33 @@
 {
  "id": "u1345",
  "name": "ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver",
+ "short_name": "DenseSchurComplementSolver",
+ "signature": "DenseSchurComplementSolver(const LinearSolver::Options & options)",
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::DenseSchurComplementSolver",
+ "class_is_template": false,
  "file": "internal/ceres/schur_complement_solver.cc",
  "lines": [
   159,
   162
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1345,
- "short_name": "DenseSchurComplementSolver",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::DenseSchurComplementSolver",
- "class_is_template": false,
- "params": "(const LinearSolver::Options & options)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1345
 }

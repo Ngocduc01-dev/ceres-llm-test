@@ -1,26 +1,33 @@
 {
  "id": "u0604",
  "name": "ceres::internal::CanonicalViewsClustering::UpdateCanonicalViewAssignments",
+ "short_name": "UpdateCanonicalViewAssignments",
+ "signature": "void UpdateCanonicalViewAssignments(const int canonical_view)",
+ "params": "(const int canonical_view)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CanonicalViewsClustering",
+ "class_is_template": false,
  "file": "internal/ceres/canonical_views_clustering.cc",
  "lines": [
   183,
   195
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 13,
  "access": "private",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 604,
- "short_name": "UpdateCanonicalViewAssignments",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CanonicalViewsClustering",
- "class_is_template": false,
- "params": "(const int canonical_view)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 604
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0596",
  "name": "ceres::(anonymous)::QuaternionPlusImpl",
+ "short_name": "QuaternionPlusImpl",
+ "signature": "void QuaternionPlusImpl(const double* x, const double* delta, double* x_plus_delta)",
+ "params": "(const double* x, const double* delta, double* x_plus_delta)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/manifold.cc",
  "lines": [
   27,
   60
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "internal",
+ "loc": 34,
  "access": "public",
  "linkage": "internal",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 596,
- "short_name": "QuaternionPlusImpl",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const double* x, const double* delta, double* x_plus_delta)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "QuaternionPlusImpl<(anonymous namespace)::CeresQuaternionOrder>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 596
 }

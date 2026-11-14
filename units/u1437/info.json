@@ -1,26 +1,33 @@
 {
  "id": "u1437",
  "name": "ceres::internal::CompressedRowJacobianWriter::Write",
+ "short_name": "Write",
+ "signature": "void Write(int residual_id, int residual_offset, double ** jacobians, SparseMatrix * base_jacobian)",
+ "params": "(int residual_id, int residual_offset, double ** jacobians, SparseMatrix * base_jacobian)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowJacobianWriter",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_jacobian_writer.cc",
  "lines": [
   201,
   244
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 44,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1437,
- "short_name": "Write",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CompressedRowJacobianWriter",
- "class_is_template": false,
- "params": "(int residual_id, int residual_offset, double ** jacobians, SparseMatrix * base_jacobian)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1437
 }

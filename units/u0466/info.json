@@ -1,26 +1,33 @@
 {
  "id": "u0466",
  "name": "ceres::internal::Corrector::CorrectResiduals",
+ "short_name": "CorrectResiduals",
+ "signature": "void CorrectResiduals(const int num_rows, double * residuals)",
+ "params": "(const int num_rows, double * residuals)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Corrector",
+ "class_is_template": false,
  "file": "internal/ceres/corrector.cc",
  "lines": [
   112,
   116
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 466,
- "short_name": "CorrectResiduals",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Corrector",
- "class_is_template": false,
- "params": "(const int num_rows, double * residuals)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 466
 }

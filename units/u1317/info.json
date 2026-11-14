@@ -1,26 +1,33 @@
 {
  "id": "u1317",
  "name": "ceres::internal::(anonymous)::BuildJacobianLayout",
+ "short_name": "BuildJacobianLayout",
+ "signature": "bool BuildJacobianLayout(const Program & program, int num_eliminate_blocks, std::vector<int *> * jacobian_layout, std::vector<int> * jacobian_layout_storage)",
+ "params": "(const Program & program, int num_eliminate_blocks, std::vector<int *> * jacobian_layout, std::vector<int> * jacobian_layout_storage)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/block_jacobian_writer.cc",
  "lines": [
   66,
   165
  ],
- "branches": 22,
- "cyclomatic": 12,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 100,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1317,
- "short_name": "BuildJacobianLayout",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Program & program, int num_eliminate_blocks, std::vector<int *> * jacobian_layout, std::vector<int> * jacobian_layout_storage)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 11,
+  "branches": 22,
+  "loops": 5,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1317
 }

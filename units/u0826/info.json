@@ -1,26 +1,33 @@
 {
  "id": "u0826",
  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::mutable_matrix",
+ "short_name": "mutable_matrix",
+ "signature": "CompressedRowSparseMatrix * mutable_matrix()",
+ "params": "()",
+ "return_type": "CompressedRowSparseMatrix *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_diagonal_matrix.h",
  "lines": [
   82,
   82
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 826,
- "short_name": "mutable_matrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
- "class_is_template": false,
- "params": "()",
- "return_type": "CompressedRowSparseMatrix *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 826
 }

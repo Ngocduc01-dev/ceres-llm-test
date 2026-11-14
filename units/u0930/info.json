@@ -1,26 +1,33 @@
 {
  "id": "u0930",
  "name": "ceres::internal::BlockSparseMatrix::SquaredColumnNorm",
+ "short_name": "SquaredColumnNorm",
+ "signature": "void SquaredColumnNorm(double * x) const",
+ "params": "(double * x)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_sparse_matrix.cc",
  "lines": [
   350,
   365
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 16,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 930,
- "short_name": "SquaredColumnNorm",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockSparseMatrix",
- "class_is_template": false,
- "params": "(double * x)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 2,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 930
 }

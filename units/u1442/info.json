@@ -1,26 +1,33 @@
 {
  "id": "u1442",
  "name": "ceres::internal::ReorderProgramForSparseCholesky",
+ "short_name": "ReorderProgramForSparseCholesky",
+ "signature": "bool ReorderProgramForSparseCholesky(const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type, const ParameterBlockOrdering & parameter_block_ordering, int start_row_block, Program * program, std::string * error)",
+ "params": "(const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type, const ParameterBlockOrdering & parameter_block_ordering, int start_row_block, Program * program, std::string * error)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   540,
   595
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 56,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1442,
- "short_name": "ReorderProgramForSparseCholesky",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type, const LinearSolverOrderingType linear_solver_ordering_type, const ParameterBlockOrdering & parameter_block_ordering, int start_row_block, Program * program, std::string * error)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1442
 }

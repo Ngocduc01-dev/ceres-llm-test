@@ -1,26 +1,33 @@
 {
  "id": "u0763",
  "name": "ceres::internal::LineSearchDirection::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<LineSearchDirection> Create(const LineSearchDirection::Options & options)",
+ "params": "(const LineSearchDirection::Options & options)",
+ "return_type": "std::unique_ptr<LineSearchDirection>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LineSearchDirection",
+ "class_is_template": false,
  "file": "internal/ceres/line_search_direction.cc",
  "lines": [
   341,
   367
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 27,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 763,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LineSearchDirection",
- "class_is_template": false,
- "params": "(const LineSearchDirection::Options & options)",
- "return_type": "std::unique_ptr<LineSearchDirection>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 4,
+  "branches": 8,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 763
 }

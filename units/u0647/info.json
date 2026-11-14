@@ -1,28 +1,33 @@
 {
  "id": "u0647",
  "name": "ceres::TinySolverAutoDiffFunction::TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
+ "short_name": "TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
+ "signature": "TinySolverAutoDiffFunction(const CostFunctor & cost_functor)",
+ "params": "(const CostFunctor & cost_functor)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::TinySolverAutoDiffFunction",
+ "class_is_template": true,
  "file": "include/ceres/tiny_solver_autodiff_function.h",
  "lines": [
   116,
   119
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 647,
- "short_name": "TinySolverAutoDiffFunction<CostFunctor, kNumResiduals, kNumParameters, T>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::TinySolverAutoDiffFunction",
- "class_is_template": true,
- "params": "(const CostFunctor & cost_functor)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "TinySolverAutoDiffFunction<AutoDiffTestFunctor, 2, 3>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 647
 }

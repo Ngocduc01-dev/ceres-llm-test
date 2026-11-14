@@ -1,26 +1,30 @@
 {
  "id": "u1183",
  "name": "ceres::internal::DenseQR::Create",
+ "short_name": "Create",
+ "signature": "std::unique_ptr<DenseQR> Create(const LinearSolver::Options & options)",
+ "params": "(const LinearSolver::Options & options)",
+ "return_type": "std::unique_ptr<DenseQR>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DenseQR",
+ "class_is_template": false,
  "file": "internal/ceres/dense_qr.cc",
  "lines": [
   116,
   146
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 31,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1183,
- "short_name": "Create",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DenseQR",
- "class_is_template": false,
- "params": "(const LinearSolver::Options & options)",
- "return_type": "std::unique_ptr<DenseQR>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": false,
+  "reason": "CFG bất thường (hàm luôn dừng / assert) nên không dùng – LLM tự dựng"
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 1,
+ "order": 1183
 }

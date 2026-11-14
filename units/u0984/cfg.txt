@@ -3,7 +3,7 @@ Hàm: NumResiduals() const  → trả về int
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::TinySolverCostFunctionAdapter
 Vị trí: include/ceres/tiny_solver_cost_function_adapter.h, dòng 129–129
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverCostFunctionAdapter<2, 3> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp TinySolverCostFunctionAdapter<2, 3>.
 
 Số điểm rẽ nhánh: 0
 

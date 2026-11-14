@@ -1,28 +1,33 @@
 {
  "id": "u0203",
  "name": "ceres::MatrixAdapter::MatrixAdapter<T, row_stride, col_stride>",
+ "short_name": "MatrixAdapter<T, row_stride, col_stride>",
+ "signature": "MatrixAdapter(T * pointer)",
+ "params": "(T * pointer)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::MatrixAdapter",
+ "class_is_template": true,
  "file": "include/ceres/rotation.h",
  "lines": [
   297,
   297
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 203,
- "short_name": "MatrixAdapter<T, row_stride, col_stride>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::MatrixAdapter",
- "class_is_template": true,
- "params": "(T * pointer)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "MatrixAdapter<const double, 1, 3>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 203
 }

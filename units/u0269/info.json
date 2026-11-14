@@ -1,28 +1,33 @@
 {
  "id": "u0269",
  "name": "ceres::internal::ConcurrentQueue::Push",
+ "short_name": "Push",
+ "signature": "void Push(const T & value)",
+ "params": "(const T & value)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ConcurrentQueue",
+ "class_is_template": true,
  "file": "internal/ceres/concurrent_queue.h",
  "lines": [
   84,
   88
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 269,
- "short_name": "Push",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ConcurrentQueue",
- "class_is_template": true,
- "params": "(const T & value)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ConcurrentQueue<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 269
 }

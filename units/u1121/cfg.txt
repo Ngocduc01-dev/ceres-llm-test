@@ -3,7 +3,7 @@ Hàm: operator()(JetT const* const* inputs, JetT* output) const  → trả về 
 Loại: hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)
 Thuộc class: ceres::DynamicCostFunctionToFunctor
 Vị trí: include/ceres/dynamic_cost_function_to_functor.h, dòng 117–184
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator()<Jet<double, 2>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp operator()<Jet<double, 2>>.
 
 Số điểm rẽ nhánh: 6
 

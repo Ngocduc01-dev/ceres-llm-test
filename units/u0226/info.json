@@ -1,26 +1,33 @@
 {
  "id": "u0226",
  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::~BlockRandomAccessDiagonalMatrix",
+ "short_name": "~BlockRandomAccessDiagonalMatrix",
+ "signature": "~BlockRandomAccessDiagonalMatrix()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "destructor (hàm huỷ)",
+ "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_diagonal_matrix.h",
  "lines": [
   58,
   58
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 226,
- "short_name": "~BlockRandomAccessDiagonalMatrix",
- "kind": "destructor (hàm huỷ)",
- "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
- "class_is_template": false,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 226
 }

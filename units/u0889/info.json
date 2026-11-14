@@ -1,26 +1,33 @@
 {
  "id": "u0889",
  "name": "ceres::internal::ResidualBlock::loss_function",
+ "short_name": "loss_function",
+ "signature": "const LossFunction * loss_function() const",
+ "params": "()",
+ "return_type": "const LossFunction *",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ResidualBlock",
+ "class_is_template": false,
  "file": "internal/ceres/residual_block.h",
  "lines": [
   110,
   110
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 889,
- "short_name": "loss_function",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ResidualBlock",
- "class_is_template": false,
- "params": "()",
- "return_type": "const LossFunction *",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 2,
+ "order": 889
 }

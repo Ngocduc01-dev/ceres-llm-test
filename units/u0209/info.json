@@ -1,28 +1,33 @@
 {
  "id": "u0209",
  "name": "ceres::RotationMatrixToEulerAngles",
+ "short_name": "RotationMatrixToEulerAngles",
+ "signature": "void RotationMatrixToEulerAngles(const T* R, T* euler)",
+ "params": "(const T* R, T* euler)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/rotation.h",
  "lines": [
   557,
   560
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 209,
- "short_name": "RotationMatrixToEulerAngles",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const T* R, T* euler)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "RotationMatrixToEulerAngles<EulerSystem<Z, Odd, ProperEuler, Intrinsic>, double>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 209
 }

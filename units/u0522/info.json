@@ -1,28 +1,33 @@
 {
  "id": "u0522",
  "name": "ceres::SphereManifold::SphereManifold<AmbientSpaceDimension>",
+ "short_name": "SphereManifold<AmbientSpaceDimension>",
+ "signature": "SphereManifold(int size)",
+ "params": "(int size)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::SphereManifold",
+ "class_is_template": true,
  "file": "include/ceres/sphere_manifold.h",
  "lines": [
   144,
   154
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 522,
- "short_name": "SphereManifold<AmbientSpaceDimension>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::SphereManifold",
- "class_is_template": true,
- "params": "(int size)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "SphereManifold<-1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 522
 }

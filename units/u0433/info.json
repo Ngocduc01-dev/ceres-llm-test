@@ -1,26 +1,33 @@
 {
  "id": "u0433",
  "name": "ceres::internal::TrustRegionStepEvaluator::TrustRegionStepEvaluator",
+ "short_name": "TrustRegionStepEvaluator",
+ "signature": "TrustRegionStepEvaluator(const double initial_cost, const int max_consecutive_nonmonotonic_steps)",
+ "params": "(const double initial_cost, const int max_consecutive_nonmonotonic_steps)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::internal::TrustRegionStepEvaluator",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_step_evaluator.cc",
  "lines": [
   40,
   49
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 433,
- "short_name": "TrustRegionStepEvaluator",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::internal::TrustRegionStepEvaluator",
- "class_is_template": false,
- "params": "(const double initial_cost, const int max_consecutive_nonmonotonic_steps)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 433
 }

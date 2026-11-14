@@ -1,26 +1,33 @@
 {
  "id": "u1228",
  "name": "ceres::internal::(anonymous)::CreateBlockJacobian",
+ "short_name": "CreateBlockJacobian",
+ "signature": "Eigen::SparseMatrix<int> CreateBlockJacobian(const TripletSparseMatrix & block_jacobian_transpose)",
+ "params": "(const TripletSparseMatrix & block_jacobian_transpose)",
+ "return_type": "Eigen::SparseMatrix<int>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   92,
   110
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "internal",
+ "loc": 19,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1228,
- "short_name": "CreateBlockJacobian",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const TripletSparseMatrix & block_jacobian_transpose)",
- "return_type": "Eigen::SparseMatrix<int>",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1228
 }

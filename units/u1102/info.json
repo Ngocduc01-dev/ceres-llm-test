@@ -1,28 +1,33 @@
 {
  "id": "u1102",
  "name": "ceres::OrderedGroups::Remove",
+ "short_name": "Remove",
+ "signature": "int Remove(const std::vector<T> & elements)",
+ "params": "(const std::vector<T> & elements)",
+ "return_type": "int",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::OrderedGroups",
+ "class_is_template": true,
  "file": "include/ceres/ordered_groups.h",
  "lines": [
   112,
   122
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1102,
- "short_name": "Remove",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::OrderedGroups",
- "class_is_template": true,
- "params": "(const std::vector<T> & elements)",
- "return_type": "int",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "OrderedGroups<double *>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1102
 }

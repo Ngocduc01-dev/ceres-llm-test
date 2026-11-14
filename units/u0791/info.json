@@ -1,26 +1,33 @@
 {
  "id": "u0791",
  "name": "ceres::internal::ReorderSchurComplementColumnsUsingSuiteSparse",
+ "short_name": "ReorderSchurComplementColumnsUsingSuiteSparse",
+ "signature": "void ReorderSchurComplementColumnsUsingSuiteSparse(const ParameterBlockOrdering & parameter_block_ordering, Program * program)",
+ "params": "(const ParameterBlockOrdering & parameter_block_ordering, Program * program)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/reorder_program.cc",
  "lines": [
   339,
   380
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 42,
  "access": "public",
  "linkage": "internal",
- "template_args": null,
- "called_by_tests": 0,
- "order": 791,
- "short_name": "ReorderSchurComplementColumnsUsingSuiteSparse",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const ParameterBlockOrdering & parameter_block_ordering, Program * program)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "hàm static / trong namespace không tên: file test phải #include file .cc",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 791
 }

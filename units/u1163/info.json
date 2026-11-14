@@ -1,28 +1,33 @@
 {
  "id": "u1163",
  "name": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalEtESingleThreaded",
+ "short_name": "UpdateBlockDiagonalEtESingleThreaded",
+ "signature": "void UpdateBlockDiagonalEtESingleThreaded(BlockSparseMatrix * block_diagonal) const",
+ "params": "(BlockSparseMatrix * block_diagonal)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::PartitionedMatrixView",
+ "class_is_template": true,
  "file": "internal/ceres/partitioned_matrix_view_impl.h",
  "lines": [
   446,
   472
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 27,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1163,
- "short_name": "UpdateBlockDiagonalEtESingleThreaded",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::PartitionedMatrixView",
- "class_is_template": true,
- "params": "(BlockSparseMatrix * block_diagonal)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "PartitionedMatrixView<>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1163
 }

@@ -1,26 +1,33 @@
 {
  "id": "u0477",
  "name": "ceres::internal::MakeConditionalLock",
+ "short_name": "MakeConditionalLock",
+ "signature": "std::unique_lock<std::mutex> MakeConditionalLock(const int num_threads, std::mutex & m)",
+ "params": "(const int num_threads, std::mutex & m)",
+ "return_type": "std::unique_lock<std::mutex>",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/parallel_for.h",
  "lines": [
   48,
   52
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 5,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 477,
- "short_name": "MakeConditionalLock",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const int num_threads, std::mutex & m)",
- "return_type": "std::unique_lock<std::mutex>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 477
 }

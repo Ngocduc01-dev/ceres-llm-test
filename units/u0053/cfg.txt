@@ -3,7 +3,7 @@ Hàm: size() const  → trả về size_type
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::FixedArray::Storage
 Vị trí: include/ceres/internal/fixed_array.h, dòng 427–427
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 20> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp FixedArray<int, 20>.
 
 Số điểm rẽ nhánh: 0
 

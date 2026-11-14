@@ -1,26 +1,33 @@
 {
  "id": "u1516",
  "name": "ceres::internal::DoglegStrategy::ComputeStep",
+ "short_name": "ComputeStep",
+ "signature": "TrustRegionStrategy::Summary ComputeStep(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)",
+ "params": "(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)",
+ "return_type": "TrustRegionStrategy::Summary",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::DoglegStrategy",
+ "class_is_template": false,
  "file": "internal/ceres/dogleg_strategy.cc",
  "lines": [
   78,
   166
  ],
- "branches": 26,
- "cyclomatic": 14,
- "topo_level": 5,
- "level": "kho",
- "callable": "public",
+ "loc": 89,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 6,
- "order": 1516,
- "short_name": "ComputeStep",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::DoglegStrategy",
- "class_is_template": false,
- "params": "(const TrustRegionStrategy::PerSolveOptions & per_solve_options, SparseMatrix * jacobian, const double * residuals, double * step)",
- "return_type": "TrustRegionStrategy::Summary",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 8,
+  "branches": 16,
+  "loops": 1,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 5,
+ "existing_tests": 6,
+ "order": 1516
 }

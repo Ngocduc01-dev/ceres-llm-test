@@ -1,28 +1,33 @@
 {
  "id": "u1170",
  "name": "ceres::internal::EigenSparseCholeskyTemplate::Factorize",
+ "short_name": "Factorize",
+ "signature": "LinearSolverTerminationType Factorize(CompressedRowSparseMatrix * lhs, std::string * message)",
+ "params": "(CompressedRowSparseMatrix * lhs, std::string * message)",
+ "return_type": "LinearSolverTerminationType",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::EigenSparseCholeskyTemplate",
+ "class_is_template": true,
  "file": "internal/ceres/eigensparse.cc",
  "lines": [
   112,
   137
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 26,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1170,
- "short_name": "Factorize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::EigenSparseCholeskyTemplate",
- "class_is_template": true,
- "params": "(CompressedRowSparseMatrix * lhs, std::string * message)",
- "return_type": "LinearSolverTerminationType",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": "EigenSparseCholeskyTemplate<SimplicialLDLT<SparseMatrix<double>, 2, AMDOrdering<int>>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1170
 }

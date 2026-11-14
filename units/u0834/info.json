@@ -1,26 +1,33 @@
 {
  "id": "u0834",
  "name": "ceres_stock_loss_function",
+ "short_name": "ceres_stock_loss_function",
+ "signature": "void ceres_stock_loss_function(void * user_data, double squared_norm, double[3] out)",
+ "params": "(void * user_data, double squared_norm, double[3] out)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/c_api.cc",
  "lines": [
   131,
   136
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 834,
- "short_name": "ceres_stock_loss_function",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(void * user_data, double squared_norm, double[3] out)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 834
 }

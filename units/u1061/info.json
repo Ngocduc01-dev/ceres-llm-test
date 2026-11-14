@@ -1,28 +1,33 @@
 {
  "id": "u1061",
  "name": "ceres::internal::MatrixMatrixMultiplyNaive",
+ "short_name": "MatrixMatrixMultiplyNaive",
+ "signature": "void MatrixMatrixMultiplyNaive(xem mã nguồn – hàm được sinh ra từ macro)",
+ "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/small_blas.h",
  "lines": [
   177,
   244
  ],
- "branches": 74,
- "cyclomatic": 38,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 68,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1061,
- "short_name": "MatrixMatrixMultiplyNaive",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(xem mã nguồn – hàm được sinh ra từ macro)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 10,
+  "branches": 20,
+  "loops": 6,
+  "checks": 11
+ },
+ "template_example": "MatrixMatrixMultiplyNaive<-1, -1, -1, -1, -1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1061
 }

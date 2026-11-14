@@ -3,7 +3,7 @@ Hàm: AddEdge(const Vertex & vertex1, const Vertex & vertex2)  → trả về vo
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::Graph
 Vị trí: internal/ceres/graph.h, dòng 80–87
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Graph<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Graph<int>.
 
 Số điểm rẽ nhánh: 1 (và 2 lệnh CHECK)
 

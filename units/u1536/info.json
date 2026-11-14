@@ -1,26 +1,33 @@
 {
  "id": "u1536",
  "name": "ceres::Solve",
+ "short_name": "Solve",
+ "signature": "void Solve(const Solver::Options & options, Problem * problem, Solver::Summary * summary)",
+ "params": "(const Solver::Options & options, Problem * problem, Solver::Summary * summary)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/solver.cc",
  "lines": [
   832,
   837
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 8,
- "level": "kho",
- "callable": "public",
+ "loc": 6,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 19,
- "order": 1536,
- "short_name": "Solve",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Solver::Options & options, Problem * problem, Solver::Summary * summary)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 8,
+ "existing_tests": 19,
+ "order": 1536
 }

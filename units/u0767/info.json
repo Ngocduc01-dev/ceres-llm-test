@@ -1,26 +1,33 @@
 {
  "id": "u0767",
  "name": "ceres::SubsetManifold::SubsetManifold",
+ "short_name": "SubsetManifold",
+ "signature": "SubsetManifold(const int size, const std::vector<int> & constant_parameters)",
+ "params": "(const int size, const std::vector<int> & constant_parameters)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::SubsetManifold",
+ "class_is_template": false,
  "file": "internal/ceres/manifold.cc",
  "lines": [
   157,
   179
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 23,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 767,
- "short_name": "SubsetManifold",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::SubsetManifold",
- "class_is_template": false,
- "params": "(const int size, const std::vector<int> & constant_parameters)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 3
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 767
 }

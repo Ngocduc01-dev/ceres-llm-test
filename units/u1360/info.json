@@ -1,26 +1,33 @@
 {
  "id": "u1360",
  "name": "ceres::internal::ThreadPool::Resize",
+ "short_name": "Resize",
+ "signature": "void Resize(int num_threads)",
+ "params": "(int num_threads)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::ThreadPool",
+ "class_is_template": false,
  "file": "internal/ceres/thread_pool.cc",
  "lines": [
   70,
   84
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "kho",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1360,
- "short_name": "Resize",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::ThreadPool",
- "class_is_template": false,
- "params": "(int num_threads)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 2,
+ "existing_tests": 2,
+ "order": 1360
 }

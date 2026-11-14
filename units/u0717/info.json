@@ -1,26 +1,33 @@
 {
  "id": "u0717",
  "name": "ceres::internal::EvaluatePolynomial",
+ "short_name": "EvaluatePolynomial",
+ "signature": "double EvaluatePolynomial(const Vector & polynomial, double x)",
+ "params": "(const Vector & polynomial, double x)",
+ "return_type": "double",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/polynomial.h",
  "lines": [
   53,
   59
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 717,
- "short_name": "EvaluatePolynomial",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const Vector & polynomial, double x)",
- "return_type": "double",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 3,
+ "order": 717
 }

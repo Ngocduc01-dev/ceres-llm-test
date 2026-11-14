@@ -1,26 +1,33 @@
 {
  "id": "u0762",
  "name": "ceres::internal::NonlinearConjugateGradient::NextDirection",
+ "short_name": "NextDirection",
+ "signature": "bool NextDirection(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)",
+ "params": "(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::NonlinearConjugateGradient",
+ "class_is_template": false,
  "file": "internal/ceres/line_search_direction.cc",
  "lines": [
   60,
   93
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 34,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 762,
- "short_name": "NextDirection",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::NonlinearConjugateGradient",
- "class_is_template": false,
- "params": "(const LineSearchMinimizer::State & previous, const LineSearchMinimizer::State & current, Vector * search_direction)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 762
 }

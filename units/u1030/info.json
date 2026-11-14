@@ -1,26 +1,33 @@
 {
  "id": "u1030",
  "name": "CallbackCostFunction::CallbackCostFunction",
+ "short_name": "CallbackCostFunction",
+ "signature": "CallbackCostFunction(ceres_cost_function_t cost_function, void * user_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes)",
+ "params": "(ceres_cost_function_t cost_function, void * user_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "CallbackCostFunction",
+ "class_is_template": false,
  "file": "internal/ceres/c_api.cc",
  "lines": [
   70,
   80
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1030,
- "short_name": "CallbackCostFunction",
- "kind": "constructor (hàm khởi tạo)",
- "class": "CallbackCostFunction",
- "class_is_template": false,
- "params": "(ceres_cost_function_t cost_function, void * user_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1030
 }

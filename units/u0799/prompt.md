@@ -7,7 +7,7 @@ Bạn là kỹ sư kiểm thử phần mềm. Hãy thiết kế bộ test cho **
 
 ---
 
-# 2. KHÁI NIỆM CẦN DÙNG
+# 2. KHÁI NIỆM
 
 - **CFG (đồ thị luồng điều khiển):** sơ đồ các bước của hàm. Mỗi **node** là một đoạn lệnh chạy liền nhau hoặc một chỗ rẽ nhánh; mũi tên nối các node theo thứ tự chạy.
 - **Điểm rẽ nhánh:** chỗ chương trình chọn đường đi theo một điều kiện: `if`, `else if`, vòng `for` / `while`, `switch`, `?:`. Mỗi điểm rẽ nhánh có **2 nhánh**: điều kiện **đúng** và điều kiện **sai** (`switch` có 1 nhánh cho mỗi `case`).
@@ -63,7 +63,7 @@ Mã nguồn (số ở đầu dòng là số dòng trong file):
 
 CFG đã được dựng sẵn bằng công cụ phân tích mã nguồn:
 ```
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>::MinusJacobianImpl<0UL, <1UL>> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp ProductManifold<SubsetManifold, SubsetManifold>::MinusJacobianImpl<0UL, <1UL>>.
 
 Số điểm rẽ nhánh: 1
 
@@ -91,7 +91,7 @@ Các dòng `#include` được dùng:
 
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::ProductManifold`: tạo một object của class rồi gọi method trên object đó.
-- Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp (xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).
+- Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp.
 
 Cách tạo object của class `ProductManifold`:
 Các constructor:

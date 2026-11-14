@@ -1,28 +1,33 @@
 {
  "id": "u0851",
  "name": "ceres::internal::Norm",
+ "short_name": "Norm",
+ "signature": "double Norm(const Eigen::DenseBase<Derived>& x, ContextImpl* context, int num_threads)",
+ "params": "(const Eigen::DenseBase<Derived>& x, ContextImpl* context, int num_threads)",
+ "return_type": "double",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/eigen_vector_ops.h",
  "lines": [
   46,
   62
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 851,
- "short_name": "Norm",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const Eigen::DenseBase<Derived>& x, ContextImpl* context, int num_threads)",
- "return_type": "double",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "Norm<Matrix<double, -1, 1>>",
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 851
 }

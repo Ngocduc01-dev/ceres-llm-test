@@ -3,7 +3,7 @@ Hàm: GetValue(const int n, double * f) const  → trả về void
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::Grid1D
 Vị trí: include/ceres/cubic_interpolation.h, dòng 193–204
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid1D<int> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp Grid1D<int>.
 
 Số điểm rẽ nhánh: 1
 

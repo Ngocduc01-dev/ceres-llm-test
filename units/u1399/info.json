@@ -1,26 +1,33 @@
 {
  "id": "u1399",
  "name": "ceres::internal::CoordinateDescentMinimizer::IsOrderingValid",
+ "short_name": "IsOrderingValid",
+ "signature": "bool IsOrderingValid(const Program & program, const ParameterBlockOrdering & ordering, std::string * message)",
+ "params": "(const Program & program, const ParameterBlockOrdering & ordering, std::string * message)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CoordinateDescentMinimizer",
+ "class_is_template": false,
  "file": "internal/ceres/coordinate_descent_minimizer.cc",
  "lines": [
   239,
   259
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 3,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 21,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1399,
- "short_name": "IsOrderingValid",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CoordinateDescentMinimizer",
- "class_is_template": false,
- "params": "(const Program & program, const ParameterBlockOrdering & ordering, std::string * message)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 3,
+ "existing_tests": 0,
+ "order": 1399
 }

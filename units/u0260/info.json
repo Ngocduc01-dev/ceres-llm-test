@@ -1,26 +1,33 @@
 {
  "id": "u0260",
  "name": "ceres::internal::CompressedRowSparseMatrix::cols",
+ "short_name": "cols",
+ "signature": "const int * cols() const",
+ "params": "()",
+ "return_type": "const int *",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::CompressedRowSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/compressed_row_sparse_matrix.h",
  "lines": [
   142,
   142
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 1,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 8,
- "order": 260,
- "short_name": "cols",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::CompressedRowSparseMatrix",
- "class_is_template": false,
- "params": "()",
- "return_type": "const int *",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 8,
+ "order": 260
 }

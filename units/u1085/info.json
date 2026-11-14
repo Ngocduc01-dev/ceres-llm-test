@@ -1,26 +1,33 @@
 {
  "id": "u1085",
  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::GetCell",
+ "short_name": "GetCell",
+ "signature": "CellInfo * GetCell(int row_block_id, int col_block_id, int * row, int * col, int * row_stride, int * col_stride)",
+ "params": "(int row_block_id, int col_block_id, int * row, int * col, int * row_stride, int * col_stride)",
+ "return_type": "CellInfo *",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/block_random_access_diagonal_matrix.cc",
  "lines": [
   62,
   81
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 20,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1085,
- "short_name": "GetCell",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::BlockRandomAccessDiagonalMatrix",
- "class_is_template": false,
- "params": "(int row_block_id, int col_block_id, int * row, int * col, int * row_stride, int * col_stride)",
- "return_type": "CellInfo *",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 2,
+ "order": 1085
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1434",
  "name": "ceres::internal::TripletSparseMatrix::ToCRSMatrix",
+ "short_name": "ToCRSMatrix",
+ "signature": "void ToCRSMatrix(CRSMatrix * crs_matrix) const",
+ "params": "(CRSMatrix * crs_matrix)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   201,
   204
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 3,
- "level": "kho",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 1434,
- "short_name": "ToCRSMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "(CRSMatrix * crs_matrix)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 3,
+ "existing_tests": 1,
+ "order": 1434
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0982",
  "name": "ceres::SizedCostFunction::SizedCostFunction<kNumResiduals, Ns...>",
+ "short_name": "SizedCostFunction<kNumResiduals, Ns...>",
+ "signature": "SizedCostFunction()",
+ "params": "()",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::SizedCostFunction",
+ "class_is_template": true,
  "file": "include/ceres/sized_cost_function.h",
  "lines": [
   59,
   62
  ],
- "branches": 0,
- "cyclomatic": 1,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 4,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 982,
- "short_name": "SizedCostFunction<kNumResiduals, Ns...>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::SizedCostFunction",
- "class_is_template": true,
- "params": "()",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "SizedCostFunction<1, 2, 2>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 982
 }

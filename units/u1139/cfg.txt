@@ -3,7 +3,7 @@ Hàm: NoEBlockRowOuterProduct(const BlockSparseMatrixData & A, int row_block_ind
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::internal::SchurEliminator
 Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 609–659
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<>.
 
 Số điểm rẽ nhánh: 4 (và 3 lệnh CHECK)
 

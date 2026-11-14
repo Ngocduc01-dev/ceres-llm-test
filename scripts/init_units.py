@@ -21,8 +21,10 @@ from pathlib import Path
 
 REPO = Path(os.environ.get("REPO_DIR", Path(__file__).resolve().parents[1]))
 SRC = Path(os.environ.get("SRC_DIR", REPO / "ceres-solver"))
-KEEP = ("id", "name", "file", "lines", "branches", "cyclomatic", "topo_level",
-        "level", "callable", "access", "linkage", "template_args", "called_by_tests", "order")
+# độ khó tạo dữ liệu đầu vào (Phase 2, theo kiểu tham số)
+INPUT = {"de": "dễ – tham số là số, bool, mảng",
+         "trung_binh": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+         "kho": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)"}
 KIND = {"CXX_METHOD": "method (hàm thành viên của class)", "CONSTRUCTOR": "constructor (hàm khởi tạo)",
         "DESTRUCTOR": "destructor (hàm huỷ)", "FUNCTION_DECL": "hàm tự do (không thuộc class)",
         "FUNCTION_TEMPLATE": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
@@ -61,19 +63,44 @@ def main():
         params = json.loads(r["params"] or "[]") if r else []
         parent = con.execute("SELECT qualname, is_template FROM nodes WHERE usr=?", (r["parent_usr"],)).fetchone() \
             if r and r["parent_usr"] else None
-        info = {k: u.get(k) for k in KEEP}
-        info.update({
-            "short_name": r["name"] if r else u["name"].split("::")[-1],
+        short = r["name"] if r else u["name"].split("::")[-1]
+        ps = (("(" + ", ".join(f"{p['type']} {p['name']}".strip() for p in params) + ")") if params
+              else (params_from_source(u, short) or "(xem mã nguồn – hàm được sinh ra từ macro)"))
+        ret = (r["return_type"] or None) if r else None
+        is_const = bool(r["is_const"]) if r else False
+        bare = re.sub(r"<.*>$", "", short) if not short.startswith("operator") else short
+        call = []
+        if u.get("linkage") == "internal":
+            call.append("hàm static / trong namespace không tên: file test phải #include file .cc")
+        if u.get("access") in ("private", "protected"):
+            call.append(f"{u['access']}: file test thêm #define private public / #define protected public")
+        d = out / u["id"]
+        old = json.loads((d / "info.json").read_text(encoding="utf-8")) if (d / "info.json").exists() else {}
+        info = {
+            "id": u["id"],
+            "name": u["name"],
+            "short_name": short,
+            "signature": f"{ret + ' ' if ret else ''}{bare}{ps}{' const' if is_const else ''}",
+            "params": ps,
+            "return_type": ret,
+            "is_const": is_const,
             "kind": KIND.get(r["ckind"], r["ckind"]) if r else None,
             "class": parent["qualname"] if parent else None,
             "class_is_template": bool(parent["is_template"]) if parent else False,
-            "params": ("(" + ", ".join(f"{p['type']} {p['name']}".strip() for p in params) + ")") if params
-                      else (params_from_source(u, r["name"] if r else u["name"].split("::")[-1])
-                           or "(xem mã nguồn – hàm được sinh ra từ macro)"),
-            "return_type": (r["return_type"] or None) if r else None,
-            "is_const": bool(r["is_const"]) if r else False,
-        })
-        d = out / u["id"]
+            "file": u["file"],
+            "lines": u["lines"],
+            "loc": u["lines"][1] - u["lines"][0] + 1,
+            "access": u.get("access"),
+            "linkage": u.get("linkage"),
+            "how_to_call": "; ".join(call) or "gọi trực tiếp",
+            # số liệu theo CFG (đếm như người): do build_cfg.py ghi vào, giữ nguyên khi chạy lại script này
+            "cfg": old.get("cfg"),
+            "template_example": old.get("template_example"),
+            "input_difficulty": INPUT.get(u.get("level"), u.get("level")),
+            "call_level": u.get("topo_level"),
+            "existing_tests": u.get("called_by_tests"),
+            "order": u.get("order"),
+        }
         d.mkdir(parents=True, exist_ok=True)
         (d / "info.json").write_text(json.dumps(info, ensure_ascii=False, indent=1) + "\n", encoding="utf-8")
     print(f"Đã tạo/cập nhật {len(units)} thư mục trong {out}")

@@ -1,26 +1,33 @@
 {
  "id": "u0471",
  "name": "ceres::TukeyLoss::Evaluate",
+ "short_name": "Evaluate",
+ "signature": "void Evaluate(double s, double * rho) const",
+ "params": "(double s, double * rho)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TukeyLoss",
+ "class_is_template": false,
  "file": "internal/ceres/loss_function.cc",
  "lines": [
   120,
   134
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 15,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 471,
- "short_name": "Evaluate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::TukeyLoss",
- "class_is_template": false,
- "params": "(double s, double * rho)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 471
 }

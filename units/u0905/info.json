@@ -1,26 +1,33 @@
 {
  "id": "u0905",
  "name": "ceres::LossFunctionWrapper::Reset",
+ "short_name": "Reset",
+ "signature": "void Reset(LossFunction * rho, Ownership ownership)",
+ "params": "(LossFunction * rho, Ownership ownership)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::LossFunctionWrapper",
+ "class_is_template": false,
  "file": "include/ceres/loss_function.h",
  "lines": [
   416,
   422
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 7,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 1,
- "order": 905,
- "short_name": "Reset",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::LossFunctionWrapper",
- "class_is_template": false,
- "params": "(LossFunction * rho, Ownership ownership)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 1,
+ "order": 905
 }

@@ -1,28 +1,33 @@
 {
  "id": "u0515",
  "name": "ceres::Grid2D::Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
+ "short_name": "Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
+ "signature": "Grid2D(const T * data, const int row_begin, const int row_end, const int col_begin, const int col_end)",
+ "params": "(const T * data, const int row_begin, const int row_end, const int col_begin, const int col_end)",
+ "return_type": null,
+ "is_const": false,
+ "kind": "constructor (hàm khởi tạo)",
+ "class": "ceres::Grid2D",
+ "class_is_template": true,
  "file": "include/ceres/cubic_interpolation.h",
  "lines": [
   385,
   401
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 17,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 515,
- "short_name": "Grid2D<T, kDataDimension, kRowMajor, kInterleaved>",
- "kind": "constructor (hàm khởi tạo)",
- "class": "ceres::Grid2D",
- "class_is_template": true,
- "params": "(const T * data, const int row_begin, const int row_end, const int col_begin, const int col_end)",
- "return_type": null,
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 3
+ },
+ "template_example": "Grid2D<int>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 515
 }

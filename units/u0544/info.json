@@ -1,28 +1,33 @@
 {
  "id": "u0544",
  "name": "ceres::internal::ConstructRange",
+ "short_name": "ConstructRange",
+ "signature": "void ConstructRange(Allocator& alloc, Iterator first, Iterator last, const Args&... args)",
+ "params": "(Allocator& alloc, Iterator first, Iterator last, const Args&... args)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "include/ceres/internal/memory.h",
  "lines": [
   45,
   63
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 19,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 544,
- "short_name": "ConstructRange",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(Allocator& alloc, Iterator first, Iterator last, const Args&... args)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": "ConstructRange<allocator<double>, double *, <double>>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 544
 }

@@ -1,26 +1,33 @@
 {
  "id": "u1300",
  "name": "ceres::internal::LoggingCallback::operator()",
+ "short_name": "operator()",
+ "signature": "CallbackReturnType operator()(const IterationSummary & summary)",
+ "params": "(const IterationSummary & summary)",
+ "return_type": "CallbackReturnType",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LoggingCallback",
+ "class_is_template": false,
  "file": "internal/ceres/callbacks.cc",
  "lines": [
   82,
   126
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 2,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 45,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1300,
- "short_name": "operator()",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LoggingCallback",
- "class_is_template": false,
- "params": "(const IterationSummary & summary)",
- "return_type": "CallbackReturnType",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 1
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1300
 }

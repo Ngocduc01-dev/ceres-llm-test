@@ -1,26 +1,33 @@
 {
  "id": "u1120",
  "name": "ceres::StringToSparseLinearAlgebraLibraryType",
+ "short_name": "StringToSparseLinearAlgebraLibraryType",
+ "signature": "bool StringToSparseLinearAlgebraLibraryType(std::string value, SparseLinearAlgebraLibraryType * type)",
+ "params": "(std::string value, SparseLinearAlgebraLibraryType * type)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/types.cc",
  "lines": [
   116,
   125
  ],
- "branches": 10,
- "cyclomatic": 6,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1120,
- "short_name": "StringToSparseLinearAlgebraLibraryType",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(std::string value, SparseLinearAlgebraLibraryType * type)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 5,
+  "branches": 10,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1120
 }

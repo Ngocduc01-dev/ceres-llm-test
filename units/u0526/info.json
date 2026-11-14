@@ -1,28 +1,33 @@
 {
  "id": "u0526",
  "name": "ceres::internal::InvertPSDMatrix",
+ "short_name": "InvertPSDMatrix",
+ "signature": "typename EigenTypes<kSize, kSize>::Matrix InvertPSDMatrix(const bool assume_full_rank, const typename EigenTypes<kSize, kSize>::Matrix& m)",
+ "params": "(const bool assume_full_rank, const typename EigenTypes<kSize, kSize>::Matrix& m)",
+ "return_type": "typename EigenTypes<kSize, kSize>::Matrix",
+ "is_const": false,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/invert_psd_matrix.h",
  "lines": [
   49,
   73
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 25,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 526,
- "short_name": "InvertPSDMatrix",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": null,
- "class_is_template": false,
- "params": "(const bool assume_full_rank, const typename EigenTypes<kSize, kSize>::Matrix& m)",
- "return_type": "typename EigenTypes<kSize, kSize>::Matrix",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "InvertPSDMatrix<-1>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 526
 }

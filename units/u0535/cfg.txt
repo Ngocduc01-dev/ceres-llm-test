@@ -3,7 +3,7 @@ Hàm: AddElementToGroup(const T element, const int group)  → trả về bool
 Loại: method (hàm thành viên của class)
 Thuộc class: ceres::OrderedGroups
 Vị trí: include/ceres/ordered_groups.h, dòng 63–84
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp OrderedGroups<double *>.
 
 Số điểm rẽ nhánh: 4
 

@@ -1,28 +1,33 @@
 {
  "id": "u1263",
  "name": "ceres::TinySolverCostFunctionAdapter::operator()",
+ "short_name": "operator()",
+ "signature": "bool operator()(const double * parameters, double * residuals, double * jacobian) const",
+ "params": "(const double * parameters, double * residuals, double * jacobian)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::TinySolverCostFunctionAdapter",
+ "class_is_template": true,
  "file": "include/ceres/tiny_solver_cost_function_adapter.h",
  "lines": [
   107,
   127
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 2,
- "level": "de",
- "callable": "public",
+ "loc": 21,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1263,
- "short_name": "operator()",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::TinySolverCostFunctionAdapter",
- "class_is_template": true,
- "params": "(const double * parameters, double * residuals, double * jacobian)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "TinySolverCostFunctionAdapter<2, 3>",
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 2,
+ "existing_tests": 0,
+ "order": 1263
 }

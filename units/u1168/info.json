@@ -1,26 +1,33 @@
 {
  "id": "u1168",
  "name": "ceres::internal::TripletSparseMatrix::CreateSparseDiagonalMatrix",
+ "short_name": "CreateSparseDiagonalMatrix",
+ "signature": "std::unique_ptr<TripletSparseMatrix> CreateSparseDiagonalMatrix(const double * values, int num_rows)",
+ "params": "(const double * values, int num_rows)",
+ "return_type": "std::unique_ptr<TripletSparseMatrix>",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TripletSparseMatrix",
+ "class_is_template": false,
  "file": "internal/ceres/triplet_sparse_matrix.cc",
  "lines": [
   266,
   278
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 13,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 2,
- "order": 1168,
- "short_name": "CreateSparseDiagonalMatrix",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TripletSparseMatrix",
- "class_is_template": false,
- "params": "(const double * values, int num_rows)",
- "return_type": "std::unique_ptr<TripletSparseMatrix>",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 2,
+ "order": 1168
 }

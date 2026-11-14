@@ -1,26 +1,33 @@
 {
  "id": "u0938",
  "name": "ceres::internal::LinearOperator::LeftMultiplyAndAccumulate",
+ "short_name": "LeftMultiplyAndAccumulate",
+ "signature": "void LeftMultiplyAndAccumulate(const double * x, double * y, ContextImpl * context, int num_threads) const",
+ "params": "(const double * x, double * y, ContextImpl * context, int num_threads)",
+ "return_type": "void",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::LinearOperator",
+ "class_is_template": false,
  "file": "internal/ceres/linear_operator.cc",
  "lines": [
   49,
   59
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "kho",
- "callable": "public",
+ "loc": 11,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 938,
- "short_name": "LeftMultiplyAndAccumulate",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::LinearOperator",
- "class_is_template": false,
- "params": "(const double * x, double * y, ContextImpl * context, int num_threads)",
- "return_type": "void",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 938
 }

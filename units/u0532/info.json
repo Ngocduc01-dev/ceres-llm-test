@@ -1,26 +1,33 @@
 {
  "id": "u0532",
  "name": "ceres::internal::TrustRegionStepEvaluator::StepAccepted",
+ "short_name": "StepAccepted",
+ "signature": "void StepAccepted(const double cost, const double model_cost_change)",
+ "params": "(const double cost, const double model_cost_change)",
+ "return_type": "void",
+ "is_const": false,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::TrustRegionStepEvaluator",
+ "class_is_template": false,
  "file": "internal/ceres/trust_region_step_evaluator.cc",
  "lines": [
   69,
   111
  ],
- "branches": 6,
- "cyclomatic": 4,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 43,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 532,
- "short_name": "StepAccepted",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::TrustRegionStepEvaluator",
- "class_is_template": false,
- "params": "(const double cost, const double model_cost_change)",
- "return_type": "void",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 532
 }

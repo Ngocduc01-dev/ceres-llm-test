@@ -1,26 +1,33 @@
 {
  "id": "u1177",
  "name": "ceres::internal::Program::Plus",
+ "short_name": "Plus",
+ "signature": "bool Plus(const double * state, const double * delta, double * state_plus_delta, ContextImpl * context, int num_threads) const",
+ "params": "(const double * state, const double * delta, double * state_plus_delta, ContextImpl * context, int num_threads)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::internal::Program",
+ "class_is_template": false,
  "file": "internal/ceres/program.cc",
  "lines": [
   110,
   138
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "kho",
- "callable": "public",
+ "loc": 29,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1177,
- "short_name": "Plus",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::internal::Program",
- "class_is_template": false,
- "params": "(const double * state, const double * delta, double * state_plus_delta, ContextImpl * context, int num_threads)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 0,
+  "branches": 0,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "khó – cần object lớn của Ceres (Problem, CostFunction, LinearSolver…)",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1177
 }

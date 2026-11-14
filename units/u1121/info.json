@@ -1,28 +1,33 @@
 {
  "id": "u1121",
  "name": "ceres::DynamicCostFunctionToFunctor::operator()",
+ "short_name": "operator()",
+ "signature": "bool operator()(JetT const* const* inputs, JetT* output) const",
+ "params": "(JetT const* const* inputs, JetT* output)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::DynamicCostFunctionToFunctor",
+ "class_is_template": false,
  "file": "include/ceres/dynamic_cost_function_to_functor.h",
  "lines": [
   117,
   184
  ],
- "branches": 12,
- "cyclomatic": 7,
- "topo_level": 1,
- "level": "trung_binh",
- "callable": "public",
+ "loc": 68,
  "access": "public",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 1121,
- "short_name": "operator()",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::DynamicCostFunctionToFunctor",
- "class_is_template": false,
- "params": "(JetT const* const* inputs, JetT* output)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 6,
+  "branches": 12,
+  "loops": 5,
+  "checks": 0
+ },
+ "template_example": "operator()<Jet<double, 2>>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1121
 }

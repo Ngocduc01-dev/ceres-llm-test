@@ -1,26 +1,33 @@
 {
  "id": "u1051",
  "name": "ceres::SubsetManifold::MinusJacobian",
+ "short_name": "MinusJacobian",
+ "signature": "bool MinusJacobian(const double *, double * minus_jacobian) const",
+ "params": "(const double *, double * minus_jacobian)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "method (hàm thành viên của class)",
+ "class": "ceres::SubsetManifold",
+ "class_is_template": false,
  "file": "internal/ceres/manifold.cc",
  "lines": [
   252,
   263
  ],
- "branches": 4,
- "cyclomatic": 3,
- "topo_level": 1,
- "level": "de",
- "callable": "public",
+ "loc": 12,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 0,
- "order": 1051,
- "short_name": "MinusJacobian",
- "kind": "method (hàm thành viên của class)",
- "class": "ceres::SubsetManifold",
- "class_is_template": false,
- "params": "(const double *, double * minus_jacobian)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 2,
+  "branches": 4,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 1,
+ "existing_tests": 0,
+ "order": 1051
 }

@@ -3,7 +3,7 @@ Hàm: ~SchurEliminator()
 Loại: destructor (hàm huỷ)
 Thuộc class: ceres::internal::SchurEliminator
 Vị trí: internal/ceres/schur_eliminator_impl.h, dòng 74–77
-Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<> (lấy từ một chỗ Ceres dùng thật).
+Ghi chú: đây là template – một số kiểu dữ liệu còn để trống, chỉ được điền khi dùng. CFG dưới đây dựng cho trường hợp SchurEliminator<>.
 
 Số điểm rẽ nhánh: 0
 

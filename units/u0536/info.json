@@ -1,26 +1,33 @@
 {
  "id": "u0536",
  "name": "ceres::internal::IsArrayValid",
+ "short_name": "IsArrayValid",
+ "signature": "bool IsArrayValid(const int64_t size, const double * x)",
+ "params": "(const int64_t size, const double * x)",
+ "return_type": "bool",
+ "is_const": false,
+ "kind": "hàm tự do (không thuộc class)",
+ "class": null,
+ "class_is_template": false,
  "file": "internal/ceres/array_utils.cc",
  "lines": [
   44,
   53
  ],
- "branches": 8,
- "cyclomatic": 5,
- "topo_level": 0,
- "level": "de",
- "callable": "public",
+ "loc": 10,
  "access": "public",
  "linkage": "external",
- "template_args": null,
- "called_by_tests": 3,
- "order": 536,
- "short_name": "IsArrayValid",
- "kind": "hàm tự do (không thuộc class)",
- "class": null,
- "class_is_template": false,
- "params": "(const int64_t size, const double * x)",
- "return_type": "bool",
- "is_const": false
+ "how_to_call": "gọi trực tiếp",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 3,
+  "branches": 6,
+  "loops": 1,
+  "checks": 0
+ },
+ "template_example": null,
+ "input_difficulty": "dễ – tham số là số, bool, mảng",
+ "call_level": 0,
+ "existing_tests": 3,
+ "order": 536
 }

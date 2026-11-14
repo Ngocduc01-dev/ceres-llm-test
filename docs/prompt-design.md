@@ -7,7 +7,7 @@ Prompt: [`prompts/master_prompt.md`](../prompts/master_prompt.md). Tài liệu n
 | # | Mục | Nội dung | Ứng với yêu cầu của nhóm |
 |---|---|---|---|
 | 1 | Nhiệm vụ | LLM làm gì, cho dự án nào; không có kết quả đúng để so (không có EO) | "Trình bày prompt" |
-| 2 | Khái niệm cần dùng | Giải thích ngắn: CFG, điểm rẽ nhánh, **C2 + công thức**, test path, điều kiện đường đi, nhánh không thể đi tới, vòng lặp (có giới hạn / không), `CHECK` | "Giải thích khái niệm", "độ đo là gì" |
+| 2 | Khái niệm | Giải thích ngắn: CFG, điểm rẽ nhánh, **C2 + công thức**, test path, điều kiện đường đi, nhánh không thể đi tới, vòng lặp (có giới hạn / không), `CHECK` | "Giải thích khái niệm", "độ đo là gì" |
 | 3 | Đầu vào | 3.1 thông tin + mã nguồn của unit · 3.2 **CFG dựng sẵn** (hoặc yêu cầu tự dựng) + cách đọc · 3.3 cách gọi unit (`#include`, lưu ý private/static/template, **các constructor của class**) | "Đưa CFG hoặc yêu cầu tạo CFG" |
 | 4 | Yêu cầu đối với bộ test | Mỗi test phải thoả gì để đạt C2; chọn đầu vào ngẫu nhiên trong khoảng hợp lệ | "Tiêu chí cho mỗi test case để đạt C2" |
 | 5 | Các bước thực hiện | Đọc → liệt kê nhánh → chọn test path → khoảng giá trị → viết code → kiểm tra | "Từng bước thực hiện" |

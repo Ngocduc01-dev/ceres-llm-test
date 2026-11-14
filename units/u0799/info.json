@@ -1,28 +1,33 @@
 {
  "id": "u0799",
  "name": "ceres::ProductManifold::MinusJacobianImpl",
+ "short_name": "MinusJacobianImpl",
+ "signature": "bool MinusJacobianImpl(const double* x, MatrixRef& jacobian, internal::FixedArray<double>& buffer, std::index_sequence<Index0, Indices...>) const",
+ "params": "(const double* x, MatrixRef& jacobian, internal::FixedArray<double>& buffer, std::index_sequence<Index0, Indices...>)",
+ "return_type": "bool",
+ "is_const": true,
+ "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
+ "class": "ceres::ProductManifold",
+ "class_is_template": true,
  "file": "include/ceres/product_manifold.h",
  "lines": [
   228,
   247
  ],
- "branches": 2,
- "cyclomatic": 2,
- "topo_level": 0,
- "level": "trung_binh",
- "callable": "internal",
+ "loc": 20,
  "access": "private",
  "linkage": "external",
- "template_args": [
-  "double"
- ],
- "called_by_tests": 0,
- "order": 799,
- "short_name": "MinusJacobianImpl",
- "kind": "hàm template (hàm mẫu, kiểu dữ liệu được điền khi dùng)",
- "class": "ceres::ProductManifold",
- "class_is_template": true,
- "params": "(const double* x, MatrixRef& jacobian, internal::FixedArray<double>& buffer, std::index_sequence<Index0, Indices...>)",
- "return_type": "bool",
- "is_const": true
+ "how_to_call": "private: file test thêm #define private public / #define protected public",
+ "cfg": {
+  "has_cfg": true,
+  "decisions": 1,
+  "branches": 2,
+  "loops": 0,
+  "checks": 0
+ },
+ "template_example": "ProductManifold<SubsetManifold, SubsetManifold>::MinusJacobianImpl<0UL, <1UL>>",
+ "input_difficulty": "trung bình – có kiểu Eigen, STL hoặc struct nhỏ",
+ "call_level": 0,
+ "existing_tests": 0,
+ "order": 799
 }
