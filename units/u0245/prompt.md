@@ -69,6 +69,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `CallbackLossFunction`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CallbackLossFunction`:
+Các constructor:
+```cpp
+  CallbackLossFunction(ceres_loss_function_t loss_function, void * user_data)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

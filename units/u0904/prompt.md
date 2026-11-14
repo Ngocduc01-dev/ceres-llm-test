@@ -71,6 +71,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::DynamicCostFunctionToFunctor`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `DynamicCostFunctionToFunctor`:
+Các constructor:
+```cpp
+  DynamicCostFunctionToFunctor(CostFunction * cost_function)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

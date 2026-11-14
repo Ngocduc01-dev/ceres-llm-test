@@ -135,6 +135,12 @@ Các dòng `#include` được dùng:
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::internal::BlockSparseJacobiPreconditioner`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BlockSparseJacobiPreconditioner`:
+Các constructor:
+```cpp
+  BlockSparseJacobiPreconditioner(Preconditioner::Options options, const BlockSparseMatrix & A)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

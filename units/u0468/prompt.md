@@ -89,6 +89,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::BFGS`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BFGS`:
+Các constructor:
+```cpp
+  BFGS(const int num_parameters, const bool use_approximate_eigenvalue_scaling)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

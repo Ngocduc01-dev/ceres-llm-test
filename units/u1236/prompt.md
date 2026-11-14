@@ -156,6 +156,13 @@ Các dòng `#include` được dùng:
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::internal::CompressedRowSparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CompressedRowSparseMatrix`:
+Các constructor:
+```cpp
+  CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros)
+  CompressedRowSparseMatrix(const double * diagonal, int num_rows)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

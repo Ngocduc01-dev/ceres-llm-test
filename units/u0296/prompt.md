@@ -65,6 +65,10 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::FirstOrderFunction`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `FirstOrderFunction`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `FirstOrderFunction obj;`
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `Evaluate(const double *const, double *, double *)`, `NumParameters()`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -69,6 +69,12 @@ Các dòng `#include` được dùng:
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::internal::BlockRandomAccessSparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BlockRandomAccessSparseMatrix`:
+Các constructor:
+```cpp
+  BlockRandomAccessSparseMatrix(const std::vector<Block> & blocks, const std::set<std::pair<int, int>> & block_pairs, ContextImpl * context, int num_threads)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -69,6 +69,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::CompressedRowJacobianWriter`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CompressedRowJacobianWriter`:
+Các constructor:
+```cpp
+  CompressedRowJacobianWriter(Evaluator::Options, Program * program)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -175,6 +175,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::BlockJacobianWriter`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BlockJacobianWriter`:
+Các constructor:
+```cpp
+  BlockJacobianWriter(const Evaluator::Options & options, Program * program)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

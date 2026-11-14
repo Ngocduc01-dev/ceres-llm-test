@@ -68,6 +68,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::CompressedList`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CompressedList`:
+Các constructor:
+```cpp
+  CompressedList()
+  CompressedList(int num_cells)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -72,6 +72,10 @@ Các dòng `#include` được dùng:
 - Đây là method của class `ceres::internal::TypedPreconditioner`: tạo một object của class rồi gọi method trên object đó.
 - Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp (xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).
 
+Cách tạo object của class `TypedPreconditioner`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `TypedPreconditioner obj;`
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `UpdateImpl(const MatrixType &, const double *)`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

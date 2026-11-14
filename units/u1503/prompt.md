@@ -206,6 +206,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::CovarianceImpl`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CovarianceImpl`:
+Các constructor:
+```cpp
+  CovarianceImpl(const Covariance::Options & options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

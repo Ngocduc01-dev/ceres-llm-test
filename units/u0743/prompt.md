@@ -124,6 +124,13 @@ Các dòng `#include` được dùng:
 - Đây là method của class `ceres::NumericDiffFirstOrderFunction`: tạo một object của class rồi gọi method trên object đó.
 - Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp (xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).
 
+Cách tạo object của class `NumericDiffFirstOrderFunction`:
+Các constructor:
+```cpp
+  NumericDiffFirstOrderFunction(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options)
+  NumericDiffFirstOrderFunction(FirstOrderFunctor * functor, int num_parameters, Ownership ownership, const NumericDiffOptions & options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

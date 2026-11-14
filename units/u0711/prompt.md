@@ -75,6 +75,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::GradientCheckingIterationCallback`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `GradientCheckingIterationCallback`:
+Các constructor:
+```cpp
+  GradientCheckingIterationCallback()
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

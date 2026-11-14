@@ -100,6 +100,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::SubsetManifold`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `SubsetManifold`:
+Các constructor:
+```cpp
+  SubsetManifold(const int size, const std::vector<int> & constant_parameters)
+  SubsetManifold(int size, const std::vector<int> & constant_parameters)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

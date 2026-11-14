@@ -86,6 +86,14 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::DenseSparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `DenseSparseMatrix`:
+Các constructor:
+```cpp
+  DenseSparseMatrix(int num_rows, int num_cols)
+  DenseSparseMatrix(const TripletSparseMatrix & m)
+  DenseSparseMatrix(Matrix m)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -116,6 +116,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::TrustRegionPreprocessor`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `TrustRegionPreprocessor`:
+Các constructor:
+```cpp
+  TrustRegionPreprocessor()
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

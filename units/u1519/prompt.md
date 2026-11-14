@@ -86,6 +86,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::Solver::Options`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Options`:
+Các constructor:
+```cpp
+  Options()
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

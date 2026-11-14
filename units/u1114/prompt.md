@@ -81,6 +81,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::DynamicCompressedRowSparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `DynamicCompressedRowSparseMatrix`:
+Các constructor:
+```cpp
+  DynamicCompressedRowSparseMatrix(int num_rows, int num_cols, int initial_max_num_nonzeros)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

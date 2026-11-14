@@ -88,6 +88,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::Preconditioner::Options`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Options`:
+Các constructor:
+```cpp
+  Options()
+  Options(const LinearSolver::Options & linear_solver_options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

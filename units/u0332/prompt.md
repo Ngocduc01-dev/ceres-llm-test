@@ -72,6 +72,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::TrivialLoss`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `TrivialLoss`:
+Các constructor:
+```cpp
+  TrivialLoss()
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

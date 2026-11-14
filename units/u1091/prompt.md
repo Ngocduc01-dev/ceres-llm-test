@@ -100,6 +100,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LBFGS`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LBFGS`:
+Các constructor:
+```cpp
+  LBFGS(const int num_parameters, const int max_lbfgs_rank, const bool use_approximate_eigenvalue_bfgs_scaling)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

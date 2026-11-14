@@ -115,6 +115,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LineSearchPreprocessor`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LineSearchPreprocessor`:
+Các constructor:
+```cpp
+  LineSearchPreprocessor()
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

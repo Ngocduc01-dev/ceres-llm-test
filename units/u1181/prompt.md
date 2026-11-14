@@ -82,6 +82,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::CgnrSolver`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CgnrSolver`:
+Các constructor:
+```cpp
+  CgnrSolver(LinearSolver::Options options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -83,6 +83,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `CallbackCostFunction`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CallbackCostFunction`:
+Các constructor:
+```cpp
+  CallbackCostFunction(ceres_cost_function_t cost_function, void * user_data, int num_residuals, int num_parameter_blocks, int * parameter_block_sizes)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

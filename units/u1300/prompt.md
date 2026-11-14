@@ -121,6 +121,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LoggingCallback`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LoggingCallback`:
+Các constructor:
+```cpp
+  LoggingCallback(const MinimizerType minimizer_type, const bool log_to_stdout)
+  LoggingCallback(MinimizerType minimizer_type, bool log_to_stdout)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

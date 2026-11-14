@@ -73,6 +73,16 @@ Các dòng `#include` được dùng:
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::internal::TripletSparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `TripletSparseMatrix`:
+Các constructor:
+```cpp
+  TripletSparseMatrix()
+  TripletSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros)
+  TripletSparseMatrix(int num_rows, int num_cols, const std::vector<int> & rows, const std::vector<int> & cols, const std::vector<double> & values)
+  TripletSparseMatrix(const int num_rows, const int num_cols, const std::vector<int> & rows, const std::vector<int> & cols, const std::vector<double> & values)
+  TripletSparseMatrix(const TripletSparseMatrix & orig)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

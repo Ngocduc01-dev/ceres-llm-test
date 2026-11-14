@@ -199,6 +199,10 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::PartitionedMatrixViewBase`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `PartitionedMatrixViewBase`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `PartitionedMatrixViewBase obj;`
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `LeftMultiplyAndAccumulateE(const double *, double *)`, `LeftMultiplyAndAccumulateESingleThreaded(const double *, double *)`, `LeftMultiplyAndAccumulateEMultiThreaded(const double *, double *)`, `LeftMultiplyAndAccumulateF(const double *, double *)`, `LeftMultiplyAndAccumulateFSingleThreaded(const double *, double *)`, `LeftMultiplyAndAccumulateFMultiThreaded(const double *, double *)`, `RightMultiplyAndAccumulateE(const double *, double *)`, `RightMultiplyAndAccumulateF(const double *, double *)`, `CreateBlockDiagonalEtE()`, `CreateBlockDiagonalFtF()`, `UpdateBlockDiagonalEtE(BlockSparseMatrix *)`, `UpdateBlockDiagonalFtF(BlockSparseMatrix *)`, `num_col_blocks_e()`, `num_col_blocks_f()`, `num_cols_e()`, `num_cols_f()`, `num_rows()`, `num_cols()`, `e_cols_partition()`, `f_cols_partition()`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

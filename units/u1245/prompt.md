@@ -76,6 +76,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::GradientProblemSolver::Summary`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Summary`:
+Các constructor:
+```cpp
+  Summary()
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

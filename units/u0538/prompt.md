@@ -145,6 +145,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::Corrector`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Corrector`:
+Các constructor:
+```cpp
+  Corrector(const double sq_norm, const double[3] rho)
+  Corrector(double sq_norm, const double[3] rho)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

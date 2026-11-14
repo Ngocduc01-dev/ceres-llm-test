@@ -72,6 +72,12 @@ Các dòng `#include` được dùng:
 - Hàm này chỉ dùng được bên trong file `internal/ceres/schur_complement_solver.cc` (khai báo `static` hoặc trong namespace không tên). Để gọi được, thêm `#include "ceres/schur_complement_solver.cc"` vào file test.
 - Đây là method của class `ceres::internal::(namespace không tên)::BlockRandomAccessDiagonalMatrixAdapter`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BlockRandomAccessDiagonalMatrixAdapter`:
+Các constructor:
+```cpp
+  BlockRandomAccessDiagonalMatrixAdapter(const BlockRandomAccessDiagonalMatrix & m)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

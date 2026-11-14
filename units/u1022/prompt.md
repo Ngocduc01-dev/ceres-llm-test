@@ -66,6 +66,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::ScopedThreadToken`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `ScopedThreadToken`:
+Các constructor:
+```cpp
+  ScopedThreadToken(ThreadTokenProvider * provider)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

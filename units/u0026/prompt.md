@@ -75,6 +75,17 @@ Các dòng `#include` được dùng:
 - Đây là method của class `ceres::internal::FixedArray`: tạo một object của class rồi gọi method trên object đó.
 - Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp (xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).
 
+Cách tạo object của class `FixedArray`:
+Các constructor:
+```cpp
+  FixedArray(const FixedArray<T, N, A> & other, const allocator_type & a)
+  FixedArray(FixedArray<T, N, A> && other, const allocator_type & a)
+  FixedArray(size_type n, const allocator_type & a)
+  FixedArray(size_type n, const value_type & val, const allocator_type & a)
+  FixedArray(std::initializer_list<value_type> init_list, const allocator_type & a)
+  FixedArray(Iterator, Iterator, const allocator_type &)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -65,6 +65,10 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::EigenSparseCholesky`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `EigenSparseCholesky`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `EigenSparseCholesky obj;`
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `Factorize(CompressedRowSparseMatrix *, std::string *)`, `StorageType()`, `Solve(const double *, double *, std::string *)`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

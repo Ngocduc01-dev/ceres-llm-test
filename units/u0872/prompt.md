@@ -65,6 +65,10 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::Manifold`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Manifold`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `Manifold obj;`
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `AmbientSize()`, `TangentSize()`, `Plus(const double *, const double *, double *)`, `PlusJacobian(const double *, double *)`, `Minus(const double *, const double *, double *)`, `MinusJacobian(const double *, double *)`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

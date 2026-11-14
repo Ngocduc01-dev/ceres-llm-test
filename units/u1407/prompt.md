@@ -121,6 +121,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::ProblemImpl`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `ProblemImpl`:
+Các constructor:
+```cpp
+  ProblemImpl()
+  ProblemImpl(const Problem::Options & options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

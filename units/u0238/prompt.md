@@ -67,6 +67,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::Block`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Block`:
+Các constructor:
+```cpp
+  Block()
+  Block(int size_, int position_)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

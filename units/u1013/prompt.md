@@ -83,6 +83,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::ParallelInvokeState`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `ParallelInvokeState`:
+Các constructor:
+```cpp
+  ParallelInvokeState(int start, int end, int num_work_blocks)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

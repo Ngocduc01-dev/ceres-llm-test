@@ -65,6 +65,10 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LineSearchDirection`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LineSearchDirection`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `LineSearchDirection obj;`
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `NextDirection(const LineSearchMinimizer::State &, const LineSearchMinimizer::State &, Vector *)`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

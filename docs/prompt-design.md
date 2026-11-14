@@ -8,7 +8,7 @@ Prompt: [`prompts/master_prompt.md`](../prompts/master_prompt.md). Tài liệu n
 |---|---|---|---|
 | 1 | Nhiệm vụ | LLM làm gì, cho dự án nào; không có kết quả đúng để so (không có EO) | "Trình bày prompt" |
 | 2 | Khái niệm cần dùng | Giải thích ngắn: CFG, điểm rẽ nhánh, **C2 + công thức**, test path, điều kiện đường đi, nhánh không thể đi tới, vòng lặp (có giới hạn / không), `CHECK` | "Giải thích khái niệm", "độ đo là gì" |
-| 3 | Đầu vào | 3.1 thông tin + mã nguồn của unit · 3.2 **CFG dựng sẵn** (hoặc yêu cầu tự dựng) + cách đọc · 3.3 cách gọi unit (`#include`, lưu ý private/static/template) | "Đưa CFG hoặc yêu cầu tạo CFG" |
+| 3 | Đầu vào | 3.1 thông tin + mã nguồn của unit · 3.2 **CFG dựng sẵn** (hoặc yêu cầu tự dựng) + cách đọc · 3.3 cách gọi unit (`#include`, lưu ý private/static/template, **các constructor của class**) | "Đưa CFG hoặc yêu cầu tạo CFG" |
 | 4 | Yêu cầu đối với bộ test | Mỗi test phải thoả gì để đạt C2; chọn đầu vào ngẫu nhiên trong khoảng hợp lệ | "Tiêu chí cho mỗi test case để đạt C2" |
 | 5 | Các bước thực hiện | Đọc → liệt kê nhánh → chọn test path → khoảng giá trị → viết code → kiểm tra | "Từng bước thực hiện" |
 | 6 | Kết quả cần trả về | A. test paths · B. test case · C. nhánh không test + C2 dự kiến · D. 1 file GoogleTest | "Kết quả cần có" |
@@ -20,8 +20,9 @@ Prompt: [`prompts/master_prompt.md`](../prompts/master_prompt.md). Tài liệu n
 
 **Vì sao kết quả không có bảng CFG:** CFG đã dựng sẵn ở mục 3.2 (bằng Clang) và lưu ở `units/<id>/cfg.txt` – không cần LLM chép lại. LLM chỉ trả về phần cần cho CFT: **test paths**, **test case**, nhánh không test, và **file code**. Câu trả lời ngắn hơn, ít chỗ sai hơn.
 
-**Vì sao chỉ đưa ngữ cảnh của chính unit:** mã nguồn, CFG và cách gọi unit là đủ để thiết kế test path. Bỏ phần ngữ cảnh tham khảo (khai báo class, các hàm được gọi, test mẫu…) giúp prompt ngắn còn ~1/3 (trung vị ~7.9 KB thay vì ~19 KB).
-> Rủi ro cần theo dõi khi chạy thử: thiếu khai báo class, LLM có thể không biết cách tạo object (constructor nào, tham số gì) → lỗi compile. Nếu tỉ lệ lỗi cao, cân nhắc thêm lại riêng phần constructor của class.
+**Vì sao chỉ đưa ngữ cảnh của chính unit:** mã nguồn, CFG và cách gọi unit là đủ để thiết kế test path. Bỏ phần ngữ cảnh tham khảo của Phase 3 (khai báo class đầy đủ, định nghĩa kiểu, các hàm được gọi, test mẫu) giúp prompt ngắn còn ~1/3 (trung vị ~8.1 KB thay vì ~19 KB). Từ context Phase 3 chỉ giữ: các dòng `#include` và cách gọi (public/private/static).
+
+**Ngoại lệ – constructor của class:** muốn test một method thì phải tạo được object, nên mục 3.3 liệt kê **chữ ký các constructor** của class (lấy từ `graph.db`, bỏ copy/move constructor). Đây chỉ là thông tin để viết đoạn tạo object; constructor là unit riêng, được test ở prompt riêng. Class không tự khai báo constructor → ghi "dùng constructor mặc định"; class có hàm thuần ảo → ghi phải viết class con và các hàm cần viết. Số unit: 1009 có danh sách constructor, 151 dùng constructor mặc định, 79 có hàm thuần ảo.
 
 **Viết đơn giản:** tránh từ chuyên ngành hẹp; mỗi khái niệm giải thích 1–2 câu; không đưa ví dụ code khó hiểu vào phần yêu cầu.
 

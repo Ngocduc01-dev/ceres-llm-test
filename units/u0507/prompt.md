@@ -75,6 +75,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::TolerantLoss`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `TolerantLoss`:
+Các constructor:
+```cpp
+  TolerantLoss(double a, double b)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

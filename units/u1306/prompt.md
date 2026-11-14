@@ -267,6 +267,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::GradientChecker`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `GradientChecker`:
+Các constructor:
+```cpp
+  GradientChecker(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options)
+  GradientChecker()   // private
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -93,6 +93,12 @@ Các dòng `#include` được dùng:
 - Hàm này chỉ dùng được bên trong file `internal/ceres/gradient_checking_cost_function.cc` (khai báo `static` hoặc trong namespace không tên). Để gọi được, thêm `#include "ceres/gradient_checking_cost_function.cc"` vào file test.
 - Đây là method của class `ceres::internal::(namespace không tên)::GradientCheckingCostFunction`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `GradientCheckingCostFunction`:
+Các constructor:
+```cpp
+  GradientCheckingCostFunction(const CostFunction * function, const std::vector<const Manifold *> * manifolds, const NumericDiffOptions & options, double relative_precision, std::string extra_info, GradientCheckingIterationCallback * callback)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

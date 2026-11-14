@@ -156,6 +156,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::BlockSparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BlockSparseMatrix`:
+Các constructor:
+```cpp
+  BlockSparseMatrix(CompressedRowBlockStructure * block_structure, bool use_page_locked_memory)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

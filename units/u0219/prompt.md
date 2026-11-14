@@ -65,6 +65,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::BlockSparseJacobiPreconditioner`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `BlockSparseJacobiPreconditioner`:
+Các constructor:
+```cpp
+  BlockSparseJacobiPreconditioner(Preconditioner::Options options, const BlockSparseMatrix & A)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

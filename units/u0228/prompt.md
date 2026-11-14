@@ -67,6 +67,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::CellInfo`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `CellInfo`:
+Các constructor:
+```cpp
+  CellInfo()
+  CellInfo(double * values)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

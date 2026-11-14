@@ -71,6 +71,12 @@ Các dòng `#include` được dùng:
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::internal::FixedArray::Storage`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `Storage`:
+Các constructor:
+```cpp
+  Storage(size_type n, const allocator_type & a)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

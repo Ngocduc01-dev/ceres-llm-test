@@ -74,6 +74,16 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::FunctionSample`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `FunctionSample`:
+Các constructor:
+```cpp
+  FunctionSample()
+  FunctionSample(const double x, const double value)
+  FunctionSample(double x, double value)
+  FunctionSample(double x, double value, double gradient)
+  FunctionSample(const double x, const double value, const double gradient)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

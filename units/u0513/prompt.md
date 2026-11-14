@@ -74,6 +74,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::SubsetPreconditioner`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `SubsetPreconditioner`:
+Các constructor:
+```cpp
+  SubsetPreconditioner(Preconditioner::Options options, const BlockSparseMatrix & A)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

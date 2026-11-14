@@ -4,6 +4,7 @@
 Nguồn dữ liệu:
   data/units.json            – danh sách unit (Phase 2)
   data/context/<id>.txt      – context (Phase 3; giải nén từ data_phase3.tar.gz)
+  data/graph.db              – constructor của class (để LLM biết cách tạo object)
   units/<id>/cfg.txt         – CFG Clang đã lọc (Phase 4). Chưa có -> prompt yêu cầu LLM tự dựng CFG
   ceres-solver/              – mã nguồn để đánh số dòng
 
@@ -16,12 +17,14 @@ import argparse
 import json
 import os
 import re
+import sqlite3
 from pathlib import Path
 
 REPO = Path(os.environ.get("REPO_DIR", Path(__file__).resolve().parents[1]))
 SRC = Path(os.environ.get("SRC_DIR", REPO / "ceres-solver"))
 TEMPLATE = REPO / "prompts" / "master_prompt.md"
 NONE = "// (không có)"
+GRAPH = None  # graph.db (Phase 2), đọc 1 lần trong main()
 
 SEC = re.compile(r"^=== \[(\d+[AB]?)\. [^\]]*\] ===$", re.M)
 
@@ -79,6 +82,52 @@ def unit_info_block(u, info):
     return "\n".join(lines).replace("(anonymous)", "(namespace không tên)")
 
 
+def load_graph():
+    """Đọc graph.db 1 lần: id -> parent_usr, parent_usr -> các hàm con (constructor, hàm thuần ảo)."""
+    con = sqlite3.connect(REPO / "data" / "graph.db")
+    parent, children = {}, {}
+    for nid, pusr, ckind, name, disp, params, access, pure in con.execute(
+            "SELECT id, parent_usr, ckind, name, displayname, params, access, is_pure_virtual FROM nodes "
+            "WHERE parent_usr IS NOT NULL ORDER BY line"):
+        parent[nid] = pusr
+        children.setdefault(pusr, []).append((ckind, name, disp, params, access, pure))
+    return parent, children
+
+
+def class_ctors(graph, u, info):
+    """Cách tạo object của class chứa unit: danh sách constructor (bỏ copy/move), ghi chú class trừu tượng."""
+    parent, children = graph
+    pusr = parent.get(u["graph_id"])
+    if not info.get("class") or not pusr:
+        return ""
+    cls = re.sub(r"<.*>$", "", info["class"].split("::")[-1])
+    kids = children.get(pusr, [])
+    seen, ctors = set(), []
+    for ckind, name, disp, params, access, _ in kids:
+        if not (ckind == "CONSTRUCTOR" or (ckind == "FUNCTION_TEMPLATE" and re.sub(r"<.*>$", "", name) == cls)):
+            continue
+        ps = json.loads(params or "[]")
+        types = [q["type"] for q in ps] if ps else [t.strip() for t in disp[disp.find("(") + 1:disp.rfind(")")].split(",") if t.strip()]
+        if len(types) == 1 and re.fullmatch(rf"(const\s+)?{re.escape(cls)}(<[^()]*>)?\s*&{{1,2}}", types[0].strip()):
+            continue  # copy / move constructor
+        args = ", ".join(f"{q['type']} {q['name']}".strip() for q in ps) if ps else ", ".join(types)
+        sig = f"{cls}({args})"
+        if sig in seen:
+            continue
+        seen.add(sig)
+        ctors.append(f"  {sig}" + ("" if access in (None, "", "public") else f"   // {access}"))
+    pure = [k[2] for k in kids if k[5]]
+    lines = [f"Cách tạo object của class `{cls}`:"]
+    if ctors:
+        lines += ["Các constructor:", "```cpp", *ctors, "```"]
+    else:
+        lines.append(f"- Class không tự khai báo constructor → tạo bằng constructor mặc định: `{cls} obj;`")
+    if pure:
+        lines.append("- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp "
+                     "được: viết một class con kế thừa và viết các hàm: " + ", ".join(f"`{p}`" for p in pure) + ".")
+    return "\n".join(lines).replace("(anonymous)", "(namespace không tên)")
+
+
 def call_rules(u, info):
     """Cách gọi unit trong file test, viết bằng lời đơn giản."""
     rules = []
@@ -122,7 +171,7 @@ def build(u, template):
         "unit_info": unit_info_block(u, info),
         "cfg_text": cfg,
         "includes": "\n".join(includes) or '#include "gtest/gtest.h"',
-        "call_rules": call_rules(u, info),
+        "call_rules": "\n\n".join(x for x in (call_rules(u, info), class_ctors(GRAPH, u, info)) if x),
         "test_file_name": f"{uid}_test.cc",
     }
     d.mkdir(parents=True, exist_ok=True)
@@ -147,6 +196,8 @@ def main():
         units = [u for u in units if u["id"] in ids]
     elif a.ids:
         units = [u for u in units if u["id"] in set(a.ids)]
+    global GRAPH
+    GRAPH = load_graph()
     template = TEMPLATE.read_text(encoding="utf-8")
     with_cfg = sum(build(u, template) for u in units)
     print(f"Đã ghép {len(units)} prompt ({with_cfg} có CFG dựng sẵn, {len(units) - with_cfg} để LLM tự dựng CFG)")

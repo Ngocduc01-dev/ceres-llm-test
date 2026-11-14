@@ -72,6 +72,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::DenseSchurComplementSolver`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `DenseSchurComplementSolver`:
+Các constructor:
+```cpp
+  DenseSchurComplementSolver(const LinearSolver::Options & options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

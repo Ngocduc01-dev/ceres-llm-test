@@ -77,6 +77,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::EventLogger`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `EventLogger`:
+Các constructor:
+```cpp
+  EventLogger(const std::string & logger_name)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

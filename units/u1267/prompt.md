@@ -107,6 +107,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::PowerSeriesExpansionPreconditioner`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `PowerSeriesExpansionPreconditioner`:
+Các constructor:
+```cpp
+  PowerSeriesExpansionPreconditioner(const ImplicitSchurComplement * isc, const int max_num_spse_iterations, const double spse_tolerance, const Preconditioner::Options & options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

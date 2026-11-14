@@ -640,6 +640,9 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LineSearchMinimizer`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LineSearchMinimizer`:
+- Class không tự khai báo constructor → tạo bằng constructor mặc định: `LineSearchMinimizer obj;`
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

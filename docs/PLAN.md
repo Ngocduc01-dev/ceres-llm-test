@@ -187,10 +187,10 @@ Phase 3  Gom context ─► Phase 4  CFG (Clang) ─► Phase 5  Sinh test (1 pr
 **Mục tiêu:** mỗi unit có một file GoogleTest.
 
 **Quy ước:**
-- Mỗi unit một file `gen_tests/<id>_test.cc`.
-- Tên test: `TEST(Gen_u0421, Branch_134_True)`.
+- Mỗi unit một file `units/<id>/<id>_test.cc`.
+- Mỗi test case là một `TEST(...)`, ngay trên có 1 dòng comment ghi test path.
 - **Không assert theo EO** – chỉ gọi hàm, có thể in kết quả thực tế.
-- Seed cố định.
+- Giá trị ngẫu nhiên dùng seed cố định (chạy lại ra đúng giá trị cũ).
 
 **Cách gọi unit khó:**
 
@@ -198,14 +198,14 @@ Phase 3  Gom context ─► Phase 4  CFG (Clang) ─► Phase 5  Sinh test (1 pr
 |---|---|
 | `static` / anonymous namespace | `#include "foo.cc"` thẳng vào file test |
 | Method `private` | Gọi qua method public, hoặc `#define private public` trước include (hack – ghi rõ trong báo cáo) |
-| Template | Instantiate với kiểu đã chọn ở Phase 2 |
+| Template | Chọn kiểu cụ thể – gợi ý ở dòng "Ghi chú" của CFG (kiểu Ceres đã dùng thật) |
 | Dependency nặng | Class con giả lập / stub (vd. `CostFunction` đơn giản) |
 
 **Đã chốt:**
 - **1 prompt = 1 unit** (1 hàm hoặc 1 method) → **1540 prompt**, chạy bằng script. Theo ý thầy ("không có unit nào lớn đến mức AI không xử lý hết", "chỉ làm unit testing"), theo cách Google/IBM/Huawei làm (khảo sát: `docs/survey-llm-testgen.md`), và vì CFT/C2 tính trên từng unit.
-- **Prompt chung:** [`prompts/master_prompt.md`](../prompts/master_prompt.md), giải thích bố cục: [`docs/prompt-design.md`](prompt-design.md). 7 mục: Vai trò → Khái niệm (CFG, **C2 + công thức**, vòng lặp có cận / không có cận, test path, path condition, nhánh bất khả thi, `CHECK`) → Đầu vào (code đánh số dòng, **CFG Clang + cách đọc**, context Phase 3) → Yêu cầu bộ test → Các bước → Kết quả (bảng CFG, nhánh, path, test case, C2 dự kiến + 1 file GoogleTest) → Ràng buộc.
+- **Prompt chung:** [`prompts/master_prompt.md`](../prompts/master_prompt.md), giải thích bố cục: [`docs/prompt-design.md`](prompt-design.md). 7 mục: Vai trò → Khái niệm (CFG, **C2 + công thức**, vòng lặp có cận / không có cận, test path, path condition, nhánh bất khả thi, `CHECK`) → Đầu vào (thông tin + mã nguồn của unit, **CFG Clang + cách đọc**, cách gọi unit) → Yêu cầu bộ test → Các bước → Kết quả (test paths, test case, nhánh không test + C2 dự kiến, 1 file GoogleTest) → Lưu ý.
 - **Không có EO:** không viết assertion so sánh kết quả; chỉ cần đi qua nhánh.
-- **Input:** giải điều kiện đường đi → miền giá trị → **chọn ngẫu nhiên trong miền** với `std::mt19937` seed cố định.
+- **Input:** giải điều kiện đường đi → miền giá trị → **chọn ngẫu nhiên trong miền**, seed cố định.
 - **Vòng lặp:** có cận → 0, 1, 2, m, n−1, n, n+1 lần; không có cận → 0, 1, 2 lần + mỗi lối thoát 1 test; cận là biến → chọn ngẫu nhiên.
 - **Model:** Claude Sonnet 5.5, effort low, **gọi qua Claude Code CLI** (dùng gói Claude sẵn có, không cần API key):
   ```bash
@@ -216,7 +216,6 @@ Phase 3  Gom context ─► Phase 4  CFG (Clang) ─► Phase 5  Sinh test (1 pr
   - Cần đăng nhập CLI một lần trong terminal (`claude` rồi `/login`).
 - **Thứ tự chạy:** 20 unit smoke test → toàn bộ theo `topo_level` từ 0 lên.
 
-**Script:**
 **Script (đã viết):**
 
 | Script | Chạy bằng | Việc |

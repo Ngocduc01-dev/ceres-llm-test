@@ -86,6 +86,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::TrustRegionStepEvaluator`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `TrustRegionStepEvaluator`:
+Các constructor:
+```cpp
+  TrustRegionStepEvaluator(const double initial_cost, const int max_consecutive_nonmonotonic_steps)
+  TrustRegionStepEvaluator(double initial_cost, int max_consecutive_nonmonotonic_steps)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

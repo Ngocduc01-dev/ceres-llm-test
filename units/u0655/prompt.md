@@ -69,6 +69,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LinearOperatorAdapter`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LinearOperatorAdapter`:
+Các constructor:
+```cpp
+  LinearOperatorAdapter(LinearOperator & linear_operator)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

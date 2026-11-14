@@ -188,6 +188,12 @@ Các dòng `#include` được dùng:
 - Method này là `private` (bên ngoài class không gọi được). Thêm 2 dòng `#define private public` và `#define protected public` **sau** `#include "gtest/gtest.h"` và **trước** các `#include` của Ceres.
 - Đây là method của class `ceres::internal::ArmijoLineSearch`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `ArmijoLineSearch`:
+Các constructor:
+```cpp
+  ArmijoLineSearch(const LineSearch::Options & options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -80,6 +80,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::GradientProblem`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `GradientProblem`:
+Các constructor:
+```cpp
+  GradientProblem(FirstOrderFunction * function)
+  GradientProblem(FirstOrderFunction * function, Manifold * manifold)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

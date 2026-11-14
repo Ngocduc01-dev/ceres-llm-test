@@ -69,6 +69,13 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::SparseMatrix`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `SparseMatrix`:
+Các constructor:
+```cpp
+  SparseMatrix()
+```
+- Class có hàm **thuần ảo** (chưa có code, phải viết ở class con) nên không tạo object trực tiếp được: viết một class con kế thừa và viết các hàm: `RightMultiplyAndAccumulate(const double *, double *)`, `LeftMultiplyAndAccumulate(const double *, double *)`, `SquaredColumnNorm(double *)`, `ScaleColumns(const double *)`, `SetZero()`, `ToDenseMatrix(Matrix *)`, `ToTextFile(FILE *)`, `mutable_values()`, `values()`, `num_rows()`, `num_cols()`, `num_nonzeros()`.
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

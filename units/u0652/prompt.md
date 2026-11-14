@@ -71,6 +71,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::StateUpdatingCallback`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `StateUpdatingCallback`:
+Các constructor:
+```cpp
+  StateUpdatingCallback(Program * program, double * parameters)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

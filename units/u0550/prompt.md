@@ -142,6 +142,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LowRankInverseHessian`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `LowRankInverseHessian`:
+Các constructor:
+```cpp
+  LowRankInverseHessian(int num_parameters, int max_num_corrections, bool use_approximate_eigenvalue_scaling)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

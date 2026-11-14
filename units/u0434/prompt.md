@@ -65,6 +65,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::VisibilityBasedPreconditioner`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `VisibilityBasedPreconditioner`:
+Các constructor:
+```cpp
+  VisibilityBasedPreconditioner(const CompressedRowBlockStructure & bs, Preconditioner::Options options)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

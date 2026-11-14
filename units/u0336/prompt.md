@@ -81,6 +81,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::ComposedLoss`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `ComposedLoss`:
+Các constructor:
+```cpp
+  ComposedLoss(const LossFunction * f, Ownership ownership_f, const LossFunction * g, Ownership ownership_g)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

@@ -65,6 +65,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::RefinedSparseCholesky`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `RefinedSparseCholesky`:
+Các constructor:
+```cpp
+  RefinedSparseCholesky(std::unique_ptr<SparseCholesky> sparse_cholesky, std::unique_ptr<SparseIterativeRefiner> iterative_refiner)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

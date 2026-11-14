@@ -69,6 +69,13 @@ Các dòng `#include` được dùng:
 - Đây là method của class `ceres::LineManifold`: tạo một object của class rồi gọi method trên object đó.
 - Đây là template (khuôn mẫu): khi tạo object hoặc gọi hàm phải chọn kiểu cụ thể phù hợp (xem ví dụ chỗ dùng trong Ceres ở ghi chú của CFG, nếu có).
 
+Cách tạo object của class `LineManifold`:
+Các constructor:
+```cpp
+  LineManifold()
+  LineManifold(int size)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST

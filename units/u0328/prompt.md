@@ -77,6 +77,12 @@ Các dòng `#include` được dùng:
 
 - Đây là method của class `ceres::internal::LineSearchMinimizer::State`: tạo một object của class rồi gọi method trên object đó.
 
+Cách tạo object của class `State`:
+Các constructor:
+```cpp
+  State(int, int num_effective_parameters)
+```
+
 ---
 
 # 4. YÊU CẦU ĐỐI VỚI BỘ TEST
