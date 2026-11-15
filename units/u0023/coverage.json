@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "include/ceres/internal/autodiff.h", "lines": [{"line_number": 219, "count": 4, "branches": []}, {"line_number": 220, "count": 4, "branches": []}, {"line_number": 221, "count": 2, "branches": []}, {"line_number": 224, "count": 4, "branches": []}, {"line_number": 225, "count": 4, "branches": []}], "functions": []}]}

@@ -1,0 +1,9 @@
+{
+  "id": "u0054",
+  "name": "ceres::internal::FixedArray::Storage::begin",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "/usr/include/c++/14/sstream:457:7: error: ‘struct std::__cxx11::basic_stringbuf<_CharT, _Traits, _Alloc>::__xfer_bufptrs’ redeclared with different access"
+  ]
+}

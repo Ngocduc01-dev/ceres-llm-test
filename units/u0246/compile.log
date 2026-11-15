@@ -1,0 +1,7 @@
+/work/repo/units/u0246/u0246_test.cc: In member function ‘virtual void CallbackLossFunctionEvaluateTest_P1_CallsLossCallback_Test::TestBody()’:
+/work/repo/units/u0246/u0246_test.cc:22:3: error: ‘CallbackLossFunction’ was not declared in this scope
+   22 |   CallbackLossFunction loss_function(TestLossCallback, &user_value);
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0246/u0246_test.cc:27:3: error: ‘loss_function’ was not declared in this scope
+   27 |   loss_function.Evaluate(sq_norm, rho);
+      |   ^~~~~~~~~~~~~

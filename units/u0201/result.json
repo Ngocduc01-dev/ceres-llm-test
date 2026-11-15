@@ -1,0 +1,12 @@
+{
+  "id": "u0201",
+  "name": "ceres::ProductManifold::Plus",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0201/u0201_test.cc:16:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’",
+    "units/u0201/u0201_test.cc:17:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’",
+    "units/u0201/u0201_test.cc:18:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’",
+    "units/u0201/u0201_test.cc:19:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’"
+  ]
+}

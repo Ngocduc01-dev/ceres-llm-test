@@ -1,0 +1,13 @@
+/work/repo/units/u0065/u0065_test.cc: In member function ‘virtual void ceres::internal::VariadicEvaluateImplTest_TC1_StaticTwoBlocks_Test::TestBody()’:
+/work/repo/units/u0065/u0065_test.cc:29:51: error: call of overloaded ‘VariadicEvaluateImpl<ceres::internal::ParameterDims<false, 2, 2> >(ceres::internal::{anonymous}::BinaryScalarCost&, const double* const [2], double [1], std::nullptr_t)’ is ambiguous
+   29 |   VariadicEvaluateImpl<ParameterDims<false, 2, 2>>(
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+   30 |       functor, input, output, nullptr);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~             
+In file included from /work/repo/units/u0065/u0065_test.cc:3:
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:70:13: note: candidate: ‘bool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ParameterDims<false, 2, 2>; Functor = {anonymous}::BinaryScalarCost; T = double]’
+   70 | inline bool VariadicEvaluateImpl(const Functor& functor,
+      |             ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:83:13: note: candidate: ‘bool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const ceres::CostFunction*) [with ParameterDims = ParameterDims<false, 2, 2>; Functor = {anonymous}::BinaryScalarCost; T = double]’
+   83 | inline bool VariadicEvaluateImpl(const Functor& functor,
+      |             ^~~~~~~~~~~~~~~~~~~~

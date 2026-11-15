@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "include/ceres/sphere_manifold.h", "lines": [{"line_number": 137, "count": 1, "branches": []}, {"line_number": 138, "count": 1, "branches": []}, {"line_number": 142, "count": 1, "branches": []}], "functions": []}]}

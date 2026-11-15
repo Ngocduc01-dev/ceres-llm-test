@@ -1,0 +1,27 @@
+{
+  "id": "u0119",
+  "name": "ceres::exp2",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "JetExp2.P1_NoBranch": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 4
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

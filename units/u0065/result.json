@@ -1,0 +1,9 @@
+{
+  "id": "u0065",
+  "name": "ceres::internal::VariadicEvaluateImpl",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0065/u0065_test.cc:29:51: error: call of overloaded ‘VariadicEvaluateImpl<ceres::internal::ParameterDims<false, 2, 2> >(ceres::internal::{anonymous}::BinaryScalarCost&, const double* const [2], double [1], std::nullptr_t)’ is ambiguous"
+  ]
+}

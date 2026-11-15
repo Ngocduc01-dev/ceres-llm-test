@@ -1,0 +1,8 @@
+In file included from /work/repo/units/u0163/u0163_test.cc:3:
+/work/ceres-solver/include/ceres/jet.h: In instantiation of ‘static int Eigen::NumTraits<ceres::Jet<T, N> >::max_digits10() [with T = double; int N = 2]’:
+/work/repo/units/u0163/u0163_test.cc:8:32:   required from here
+    8 |   int result = obj.max_digits10();
+      |                ~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/include/ceres/jet.h:1383:71: error: ‘max_digits10’ is not a member of ‘Eigen::NumTraits<double>’
+ 1383 |   static inline int max_digits10() { return NumTraits<T>::max_digits10(); }
+      |                                             ~~~~~~~~~~~~~~~~~~~~~~~~~~^~

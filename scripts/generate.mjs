@@ -12,6 +12,7 @@
 //   node scripts/generate.mjs --ids u0553 u0502
 //   node scripts/generate.mjs --smoke --dry-run    # chỉ in ra sẽ gọi unit nào
 //   node scripts/generate.mjs --force --ids u0553  # gọi lại dù đã có response.md
+//   node scripts/generate.mjs --limit 250 --jobs 3  # 3 lời gọi song song
 import { spawn } from "node:child_process";
 import { appendFileSync, existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
@@ -96,8 +97,9 @@ const logFile = join(REPO, "logs", "raw", "generate.log");
 mkdirSync(dirname(logFile), { recursive: true });
 const log = (s) => { console.log(s); appendFileSync(logFile, `${new Date().toISOString()} ${s}\n`); };
 
-let ok = 0, fail = 0;
-for (const [i, u] of todo.entries()) {
+let ok = 0, fail = 0, stop = false;
+const JOBS = Number((listAfter("--jobs") || [])[0] || 1);  // số lời gọi song song
+async function one(i, u) {
   const d = join(REPO, "units", u.id);
   const prompt = readFileSync(join(d, "prompt.md"), "utf8");
   const t0 = Date.now();
@@ -107,11 +109,11 @@ for (const [i, u] of todo.entries()) {
   if (!r.json || r.json.is_error || r.json.type !== "result") {
     fail++;
     log(`[${i + 1}/${todo.length}] ${u.id} LỖI (${secs}s): ${String(msg).slice(0, 200)}`);
-    if (STOP_PATTERNS.test(String(msg)) || STOP_PATTERNS.test(r.err)) {
+    if (!stop && (STOP_PATTERNS.test(String(msg)) || STOP_PATTERNS.test(r.err))) {
+      stop = true;
       log("Dừng: lỗi đăng nhập hoặc hết lượt dùng. Chạy lại lệnh này sau để tiếp tục.");
-      break;
     }
-    continue;
+    return;
   }
   writeFileSync(join(d, "response.md"), r.json.result, "utf8");
   const test = extractTest(r.json.result, u.id);
@@ -120,4 +122,8 @@ for (const [i, u] of todo.entries()) {
   const tok = r.json.usage ? ` ${r.json.usage.input_tokens + (r.json.usage.cache_read_input_tokens || 0) + (r.json.usage.cache_creation_input_tokens || 0)}→${r.json.usage.output_tokens} tok` : "";
   log(`[${i + 1}/${todo.length}] ${u.id} OK (${secs}s${tok})${test ? "" : " – KHÔNG tìm thấy khối code"}`);
 }
+let next = 0;
+await Promise.all(Array.from({ length: JOBS }, async () => {
+  while (!stop && next < todo.length) { const i = next++; await one(i, todo[i]); }
+}));
 console.log(`Xong: ${ok} thành công, ${fail} lỗi. Log: logs/raw/generate.log`);

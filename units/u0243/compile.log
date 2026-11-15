@@ -1,0 +1,4 @@
+/work/repo/units/u0243/u0243_test.cc: In member function ‘virtual void CeresInitTest_P1_StraightLine_Test::TestBody()’:
+/work/repo/units/u0243/u0243_test.cc:6:3: error: ‘ceres_init’ was not declared in this scope
+    6 |   ceres_init();
+      |   ^~~~~~~~~~

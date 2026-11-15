@@ -1,0 +1,27 @@
+{
+  "id": "u0467",
+  "name": "ceres::internal::LevenbergMarquardtStrategy::StepAccepted",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "LevenbergMarquardtStrategyStepAcceptedTest.P1_PositiveStepQuality": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 1,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 0,
+    "total": 8
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

@@ -1,0 +1,48 @@
+In file included from /work/repo/units/u0004/u0004_test.cc:3:
+/work/ceres-solver/include/ceres/autodiff_manifold.h: In instantiation of ‘bool ceres::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>::Plus(const double*, const double*, double*) const [with Functor = ceres::{anonymous}::TestEuclideanFunctor; int kAmbientSize = 3; int kTangentSize = 3]’:
+/work/ceres-solver/include/ceres/autodiff_manifold.h:158:8:   required from here
+  158 |   bool Plus(const double* x,
+      |        ^~~~
+/work/ceres-solver/include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::TestEuclideanFunctor’ has no member named ‘Plus’
+  161 |     return functor_->Plus(x, delta, x_plus_delta);
+      |            ~~~~~~~~~~^~~~
+/work/ceres-solver/include/ceres/autodiff_manifold.h: In instantiation of ‘bool ceres::internal::PlusWrapper<Functor>::operator()(const T*, const T*, T*) const [with T = ceres::Jet<double, 6>; Functor = ceres::{anonymous}::TestEuclideanFunctor]’:
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:55:17:   required from ‘bool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::false_type, std::integer_sequence<int, Indices ...>) [with Functor = PlusWrapper<ceres::{anonymous}::TestEuclideanFunctor>; T = ceres::Jet<double, 6>; int ...Indices = {0, 1}; std::false_type = std::false_type]’
+   55 |   return functor(input[Indices]..., output);
+      |          ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:77:30:   required from ‘bool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ParameterDims<false, 3, 3>; Functor = PlusWrapper<ceres::{anonymous}::TestEuclideanFunctor>; T = ceres::Jet<double, 6>]’
+   77 |   return VariadicEvaluateImpl(
+      |          ~~~~~~~~~~~~~~~~~~~~^
+   78 |       functor, input, output, IsDynamic(), ParameterBlockIndices());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:106:45:   required from ‘bool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ParameterDims<false, 3, 3>; Functor = PlusWrapper<ceres::{anonymous}::TestEuclideanFunctor>; T = ceres::Jet<double, 6>]’
+  106 |   return VariadicEvaluateImpl<ParameterDims>(functor, input, output, &functor);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/autodiff.h:349:39:   required from ‘bool ceres::internal::AutoDifferentiate(const Functor&, const T* const*, int, T*, T**) [with int kNumResiduals = 3; ParameterDims = ParameterDims<false, 3, 3>; Functor = PlusWrapper<ceres::{anonymous}::TestEuclideanFunctor>; T = double]’
+  349 |   if (!VariadicEvaluate<ParameterDims>(
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  350 |           functor, unpacked_parameters.data(), residuals_as_jets.data())) {
+      |           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/autodiff_manifold.h:226:65:   required from ‘bool ceres::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>::PlusJacobian(const double*, double*) const [with Functor = ceres::{anonymous}::TestEuclideanFunctor; int kAmbientSize = 3; int kTangentSize = 3]’
+  224 |   return internal::AutoDifferentiate<
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~                            
+  225 |       kAmbientSize,
+      |       ~~~~~~~~~~~~~                                              
+  226 |       internal::StaticParameterDims<kAmbientSize, kTangentSize>>(
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  227 |       internal::PlusWrapper<Functor>(*functor_),
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                 
+  228 |       parameter_ptrs,
+      |       ~~~~~~~~~~~~~~~                                            
+  229 |       kAmbientSize,
+      |       ~~~~~~~~~~~~~                                              
+  230 |       x_plus_delta,
+      |       ~~~~~~~~~~~~~                                              
+  231 |       jacobian_ptrs);
+      |       ~~~~~~~~~~~~~~                                             
+/work/ceres-solver/include/ceres/autodiff_manifold.h:207:6:   required from here
+  207 | bool AutoDiffManifold<Functor, kAmbientSize, kTangentSize>::PlusJacobian(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestEuclideanFunctor’ has no member named ‘Plus’
+  190 |     return functor.Plus(x, delta, x_plus_delta);
+      |            ~~~~~~~~^~~~

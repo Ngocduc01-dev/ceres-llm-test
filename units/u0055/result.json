@@ -1,0 +1,11 @@
+{
+  "id": "u0055",
+  "name": "ceres::internal::FixedArray::Storage::alloc",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "/usr/include/c++/14/any:371:7: error: ‘struct std::any::_Manager_internal<_Tp>’ redeclared with different access",
+    "/usr/include/c++/14/any:403:7: error: ‘struct std::any::_Manager_external<_Tp>’ redeclared with different access",
+    "/usr/include/c++/14/sstream:457:7: error: ‘struct std::__cxx11::basic_stringbuf<_CharT, _Traits, _Alloc>::__xfer_bufptrs’ redeclared with different access"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "u0246",
+  "name": "CallbackLossFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0246/u0246_test.cc:22:3: error: ‘CallbackLossFunction’ was not declared in this scope",
+    "units/u0246/u0246_test.cc:27:3: error: ‘loss_function’ was not declared in this scope"
+  ]
+}

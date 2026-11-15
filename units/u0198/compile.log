@@ -1,0 +1,14 @@
+/work/repo/units/u0198/u0198_test.cc: In member function ‘virtual void ceres::ProductManifoldConstructorTest_TC1_EuclideanAndSphere_Test::TestBody()’:
+/work/repo/units/u0198/u0198_test.cc:9:41: error: ‘SphereManifold’ was not declared in this scope
+    9 |   ProductManifold<EuclideanManifold<3>, SphereManifold<4>> manifold(
+      |                                         ^~~~~~~~~~~~~~
+/work/repo/units/u0198/u0198_test.cc:9:56: error: template argument 2 is invalid
+    9 |   ProductManifold<EuclideanManifold<3>, SphereManifold<4>> manifold(
+      |                                                        ^
+/work/repo/units/u0198/u0198_test.cc:9:57: error: expected unqualified-id before ‘>’ token
+    9 |   ProductManifold<EuclideanManifold<3>, SphereManifold<4>> manifold(
+      |                                                         ^~
+/work/repo/units/u0198/u0198_test.cc:11:9: error: ‘manifold’ was not declared in this scope; did you mean ‘Manifold’?
+   11 |   (void)manifold;
+      |         ^~~~~~~~
+      |         Manifold

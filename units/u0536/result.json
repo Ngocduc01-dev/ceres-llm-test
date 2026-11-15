@@ -1,0 +1,9 @@
+{
+  "id": "u0536",
+  "name": "ceres::internal::IsArrayValid",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0536/u0536_test.cc:70:36: error: ‘kImpossibleValue’ was not declared in this scope"
+  ]
+}

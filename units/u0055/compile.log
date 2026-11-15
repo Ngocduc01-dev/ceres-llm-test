@@ -1,0 +1,14 @@
+In file included from /work/ceres-solver/internal/ceres/gtest/gtest.h:2539,
+                 from /work/repo/units/u0055/u0055_test.cc:15:
+/usr/include/c++/14/any:371:7: error: ‘struct std::any::_Manager_internal<_Tp>’ redeclared with different access
+  371 |       struct _Manager_internal
+      |       ^~~~~~
+/usr/include/c++/14/any:403:7: error: ‘struct std::any::_Manager_external<_Tp>’ redeclared with different access
+  403 |       struct _Manager_external
+      |       ^~~~~~
+In file included from /usr/include/c++/14/bits/quoted_string.h:38,
+                 from /usr/include/c++/14/iomanip:50,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:2655:
+/usr/include/c++/14/sstream:457:7: error: ‘struct std::__cxx11::basic_stringbuf<_CharT, _Traits, _Alloc>::__xfer_bufptrs’ redeclared with different access
+  457 |       struct __xfer_bufptrs
+      |       ^~~~~~

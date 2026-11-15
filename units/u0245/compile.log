@@ -1,0 +1,8 @@
+/work/repo/units/u0245/u0245_test.cc: In member function ‘virtual void CallbackLossFunctionConstructorTest_P1_ConstructWithNullCallbackAndUserData_Test::TestBody()’:
+/work/repo/units/u0245/u0245_test.cc:7:3: error: ‘ceres_loss_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+    7 |   ceres_loss_function_t loss_function = nullptr;
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u0245/u0245_test.cc:10:3: error: ‘CallbackLossFunction’ was not declared in this scope
+   10 |   CallbackLossFunction loss(loss_function, user_data);
+      |   ^~~~~~~~~~~~~~~~~~~~

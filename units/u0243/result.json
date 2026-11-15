@@ -1,0 +1,9 @@
+{
+  "id": "u0243",
+  "name": "ceres_init",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0243/u0243_test.cc:6:3: error: ‘ceres_init’ was not declared in this scope"
+  ]
+}

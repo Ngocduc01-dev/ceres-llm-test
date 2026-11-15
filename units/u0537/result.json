@@ -1,0 +1,36 @@
+{
+  "id": "u0537",
+  "name": "ceres::internal::FindInvalidValue",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "FindInvalidValueTest.TC1_NullPointer": "pass",
+    "FindInvalidValueTest.TC2_ZeroIterations": "pass",
+    "FindInvalidValueTest.TC3_OneIteration": "pass",
+    "FindInvalidValueTest.TC4_TwoIterations": "pass",
+    "FindInvalidValueTest.TC5_MiddleIterations": "pass",
+    "FindInvalidValueTest.TC6_NMinusOneIterations": "pass",
+    "FindInvalidValueTest.TC7_NIterations": "pass",
+    "FindInvalidValueTest.TC8_NaNAtFirstElement": "pass",
+    "FindInvalidValueTest.TC9_InfinityAtThirdElement": "pass",
+    "FindInvalidValueTest.TC10_ImpossibleValueAtLastElement": "pass"
+  },
+  "run": {
+    "pass": 10,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 7,
+    "total": 7
+  },
+  "c2": {
+    "covered": 6,
+    "total": 6,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

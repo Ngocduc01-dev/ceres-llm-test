@@ -1,0 +1,10 @@
+{
+  "id": "u0244",
+  "name": "CallbackCostFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0244/u0244_test.cc:23:3: error: ‘ceres’ has not been declared",
+    "units/u0244/u0244_test.cc:30:3: error: ‘cost_function’ was not declared in this scope"
+  ]
+}

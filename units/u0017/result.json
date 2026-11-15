@@ -1,0 +1,27 @@
+{
+  "id": "u0017",
+  "name": "ceres::CubicInterpolator::Evaluate",
+  "status": "ok",
+  "cfg_branches": null,
+  "tests": {
+    "CubicInterpolatorEvaluate.TC1_P1_SingleNode": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 1,
+    "total": 1
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

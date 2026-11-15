@@ -1,0 +1,27 @@
+{
+  "id": "u0151",
+  "name": "?::std::numeric_limits::min",
+  "status": "ok",
+  "cfg_branches": null,
+  "tests": {
+    "NumericLimitsJetMin.P1_ReturnJetFromMin": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 2
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

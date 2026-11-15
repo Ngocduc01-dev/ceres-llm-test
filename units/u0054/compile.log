@@ -1,0 +1,7 @@
+In file included from /usr/include/c++/14/complex:45,
+                 from /usr/include/eigen3/Eigen/Core:50,
+                 from /work/ceres-solver/include/ceres/internal/fixed_array.h:33,
+                 from /work/repo/units/u0054/u0054_test.cc:12:
+/usr/include/c++/14/sstream:457:7: error: ‘struct std::__cxx11::basic_stringbuf<_CharT, _Traits, _Alloc>::__xfer_bufptrs’ redeclared with different access
+  457 |       struct __xfer_bufptrs
+      |       ^~~~~~

@@ -1,0 +1,10 @@
+{
+  "id": "u0004",
+  "name": "ceres::AutoDiffManifold::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::TestEuclideanFunctor’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestEuclideanFunctor’ has no member named ‘Plus’"
+  ]
+}

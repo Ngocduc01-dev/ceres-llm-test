@@ -1,0 +1,12 @@
+{
+  "id": "u0198",
+  "name": "ceres::ProductManifold::ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0198/u0198_test.cc:9:41: error: ‘SphereManifold’ was not declared in this scope",
+    "units/u0198/u0198_test.cc:9:56: error: template argument 2 is invalid",
+    "units/u0198/u0198_test.cc:9:57: error: expected unqualified-id before ‘>’ token",
+    "units/u0198/u0198_test.cc:11:9: error: ‘manifold’ was not declared in this scope; did you mean ‘Manifold’?"
+  ]
+}

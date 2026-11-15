@@ -1,0 +1,10 @@
+{
+  "id": "u0245",
+  "name": "CallbackLossFunction::CallbackLossFunction",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0245/u0245_test.cc:7:3: error: ‘ceres_loss_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?",
+    "units/u0245/u0245_test.cc:10:3: error: ‘CallbackLossFunction’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "id": "u0541",
+  "name": "ceres::internal::ParameterBlock::SetLowerBound",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "ParameterBlockSetLowerBoundTest.P1_EarlyReturnWhenNoBoundsAndLowest": "pass",
+    "ParameterBlockSetLowerBoundTest.P2_AllocateBoundsThenAssign": "pass",
+    "ParameterBlockSetLowerBoundTest.P3_AssignWhenBoundsAlreadyAllocated": "pass"
+  },
+  "run": {
+    "pass": 3,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 10,
+    "total": 10
+  },
+  "c2": {
+    "covered": 4,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

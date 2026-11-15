@@ -1,0 +1,10 @@
+{
+  "id": "u0005",
+  "name": "ceres::AutoDiffManifold::AmbientSize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctor’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::EuclideanFunctor’ has no member named ‘Plus’"
+  ]
+}

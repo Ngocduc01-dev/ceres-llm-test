@@ -338,7 +338,7 @@ Nguyên tắc: **LLM → random → đánh dấu thất bại có lý do.** Unit
 
 ## 5. Phân công và lịch
 
-**Trạng thái:** Phase 0 ✅ · Phase 1 ✅ · Phase 2 ✅ · Phase 3 ✅ (còn 4 lỗi cần sửa) · **Phase 4 ✅** (1491/1540 unit có CFG – `logs/phase4-log.md`) · Phase 5: đã có prompt cho 1540 unit, chưa gọi Claude · Phase 6–8 ⏳
+**Trạng thái:** Phase 0 ✅ · Phase 1 ✅ · Phase 2 ✅ · Phase 3 ✅ (còn 4 lỗi cần sửa) · **Phase 4 ✅** (1491/1540 unit có CFG – `logs/phase4-log.md`) · Phase 5: đã sinh test 270/1540 unit (20 smoke + 250 đầu) · Phase 6 lượt 1: 253/270 compile được (`logs/phase6-log.md`) · Phase 7–8 ⏳
 
 **Tuần này – mục tiêu: sinh được test cho toàn bộ 1540 unit và chạy 1 lượt**
 

@@ -1,0 +1,4 @@
+/work/repo/units/u0536/u0536_test.cc: In member function ‘virtual void ceres::internal::IsArrayValidTest_ImpossibleValueAtThirdElement_Test::TestBody()’:
+/work/repo/units/u0536/u0536_test.cc:70:36: error: ‘kImpossibleValue’ was not declared in this scope
+   70 |   const double x[3] = {1.5, -2.25, kImpossibleValue};
+      |                                    ^~~~~~~~~~~~~~~~

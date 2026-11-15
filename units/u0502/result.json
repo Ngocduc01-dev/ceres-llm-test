@@ -1,0 +1,33 @@
+{
+  "id": "u0502",
+  "name": "ceres::internal::InvalidateArray",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "InvalidateArrayTest.TC1_NullPointer": "pass",
+    "InvalidateArrayTest.TC2_ZeroIterations": "pass",
+    "InvalidateArrayTest.TC3_OneIteration": "pass",
+    "InvalidateArrayTest.TC4_TwoIterations": "pass",
+    "InvalidateArrayTest.TC5_MiddleIterations": "pass",
+    "InvalidateArrayTest.TC6_NMinusOneIterations": "pass",
+    "InvalidateArrayTest.TC7_NIterations": "pass"
+  },
+  "run": {
+    "pass": 7,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 5
+  },
+  "c2": {
+    "covered": 4,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "include/ceres/rotation.h", "lines": [{"line_number": 632, "count": 1, "branches": []}, {"line_number": 635, "count": 1, "branches": []}, {"line_number": 636, "count": 1, "branches": []}], "functions": []}]}

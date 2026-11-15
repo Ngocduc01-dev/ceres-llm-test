@@ -1,0 +1,30 @@
+{
+  "id": "u0529",
+  "name": "ceres::internal::LinearIndexToUpperTriangularIndex",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "LinearIndexToUpperTriangularIndexTest.OddNJ0GreaterOrEqualI0": "pass",
+    "LinearIndexToUpperTriangularIndexTest.OddNJ0LessThanI0": "pass",
+    "LinearIndexToUpperTriangularIndexTest.EvenNJ0GreaterThanI0": "pass",
+    "LinearIndexToUpperTriangularIndexTest.EvenNJ0LessOrEqualI0": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 19,
+    "total": 19
+  },
+  "c2": {
+    "covered": 6,
+    "total": 6,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

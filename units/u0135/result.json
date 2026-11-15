@@ -1,0 +1,27 @@
+{
+  "id": "u0135",
+  "name": "ceres::isnormal",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "JetIsNormalTest.SinglePathNoBranch": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 2
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

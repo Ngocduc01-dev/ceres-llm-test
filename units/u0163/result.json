@@ -1,0 +1,9 @@
+{
+  "id": "u0163",
+  "name": "Eigen::NumTraits::max_digits10",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "include/ceres/jet.h:1383:71: error: ‘max_digits10’ is not a member of ‘Eigen::NumTraits<double>’"
+  ]
+}

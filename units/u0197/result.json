@@ -1,0 +1,9 @@
+{
+  "id": "u0197",
+  "name": "ceres::OrderedGroups::element_to_group",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "include/ceres/ordered_groups.h:185:61: error: invalid initialization of reference of type ‘const std::map<int, int, std::less<int>, std::allocator<std::pair<const int, int> > >&’ from expression of type ‘const std::unordered_map<int, int>’"
+  ]
+}

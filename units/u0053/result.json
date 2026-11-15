@@ -1,0 +1,27 @@
+{
+  "id": "u0053",
+  "name": "ceres::internal::FixedArray::Storage::size",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "FixedArrayStorageSizeTest.TC1_P1_Node1_Return": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 1,
+    "total": 1
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

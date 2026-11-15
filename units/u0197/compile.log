@@ -1,0 +1,8 @@
+In file included from /work/repo/units/u0197/u0197_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h: In instantiation of ‘const std::map<T, int>& ceres::OrderedGroups<T>::element_to_group() const [with T = int]’:
+/work/repo/units/u0197/u0197_test.cc:10:58:   required from here
+   10 |   const std::map<int, int>& result = obj.element_to_group();
+      |                                      ~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/include/ceres/ordered_groups.h:185:61: error: invalid initialization of reference of type ‘const std::map<int, int, std::less<int>, std::allocator<std::pair<const int, int> > >&’ from expression of type ‘const std::unordered_map<int, int>’
+  185 |   const std::map<T, int>& element_to_group() const { return element_to_group_; }
+      |                                                             ^~~~~~~~~~~~~~~~~

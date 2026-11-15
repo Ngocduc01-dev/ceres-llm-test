@@ -1,0 +1,63 @@
+/work/repo/units/u0201/u0201_test.cc: In member function ‘virtual void ceres::{anonymous}::ProductManifoldPlusTest_TC1_SinglePath_Test::TestBody()’:
+/work/repo/units/u0201/u0201_test.cc:16:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’
+   16 |       manifold(SubsetManifold(1, std::vector<bool>{false}),
+      |                                                          ^
+In file included from /work/ceres-solver/include/ceres/product_manifold.h:48,
+                 from /work/repo/units/u0201/u0201_test.cc:3:
+/work/ceres-solver/include/ceres/manifold.h:319:3: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(int, const std::vector<int>&)’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:319:52: note:   no known conversion for argument 2 from ‘std::vector<bool>’ to ‘const std::vector<int>&’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(const ceres::SubsetManifold&)’
+  317 | class CERES_EXPORT SubsetManifold final : public Manifold {
+      |                    ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(ceres::SubsetManifold&&)’
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/repo/units/u0201/u0201_test.cc:17:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’
+   17 |                SubsetManifold(1, std::vector<bool>{false}),
+      |                                                          ^
+/work/ceres-solver/include/ceres/manifold.h:319:3: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(int, const std::vector<int>&)’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:319:52: note:   no known conversion for argument 2 from ‘std::vector<bool>’ to ‘const std::vector<int>&’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(const ceres::SubsetManifold&)’
+  317 | class CERES_EXPORT SubsetManifold final : public Manifold {
+      |                    ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(ceres::SubsetManifold&&)’
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/repo/units/u0201/u0201_test.cc:18:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’
+   18 |                SubsetManifold(1, std::vector<bool>{false}),
+      |                                                          ^
+/work/ceres-solver/include/ceres/manifold.h:319:3: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(int, const std::vector<int>&)’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:319:52: note:   no known conversion for argument 2 from ‘std::vector<bool>’ to ‘const std::vector<int>&’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(const ceres::SubsetManifold&)’
+  317 | class CERES_EXPORT SubsetManifold final : public Manifold {
+      |                    ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(ceres::SubsetManifold&&)’
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/repo/units/u0201/u0201_test.cc:19:58: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(int, std::vector<bool>)’
+   19 |                SubsetManifold(1, std::vector<bool>{false}));
+      |                                                          ^
+/work/ceres-solver/include/ceres/manifold.h:319:3: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(int, const std::vector<int>&)’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:319:52: note:   no known conversion for argument 2 from ‘std::vector<bool>’ to ‘const std::vector<int>&’
+  319 |   SubsetManifold(int size, const std::vector<int>& constant_parameters);
+      |                            ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(const ceres::SubsetManifold&)’
+  317 | class CERES_EXPORT SubsetManifold final : public Manifold {
+      |                    ^~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided
+/work/ceres-solver/include/ceres/manifold.h:317:20: note: candidate: ‘ceres::SubsetManifold::SubsetManifold(ceres::SubsetManifold&&)’
+/work/ceres-solver/include/ceres/manifold.h:317:20: note:   candidate expects 1 argument, 2 provided

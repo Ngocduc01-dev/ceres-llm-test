@@ -1,0 +1,7 @@
+/work/repo/units/u0244/u0244_test.cc: In member function ‘virtual void CallbackCostFunctionEvaluate_TC1_SingleStatement_Test::TestBody()’:
+/work/repo/units/u0244/u0244_test.cc:23:3: error: ‘ceres’ has not been declared
+   23 |   ceres::CallbackCostFunction cost_function(
+      |   ^~~~~
+/work/repo/units/u0244/u0244_test.cc:30:3: error: ‘cost_function’ was not declared in this scope
+   30 |   cost_function.Evaluate(parameters, residuals, nullptr);
+      |   ^~~~~~~~~~~~~
