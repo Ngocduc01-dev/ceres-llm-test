@@ -1,0 +1,48 @@
+# A. Test paths
+
+| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+|---|---|---|
+| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
+| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
+
+# B. B? test case
+
+| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+|---|---|---|---|
+| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+
+# C. Nh?nh kh?ng test
+
+Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+
+C2 d? ki?n = 2 / 2
+
+# D. File test
+
+```cpp
+// FILE: u0798_test.cc
+#include "gtest/gtest.h"
+#include "ceres/internal/fixed_array.h"
+#include "ceres/product_manifold.h"
+
+// P1: START -> 1 -> END
+TEST(PlusJacobianImplTest, TC1_CallsTarget) {
+  ProductManifold object{};
+  double a0[5] = {};
+  MatrixRef& jacobian a1{};
+  double a2 = 0.0;
+  std::index_sequence<Index0, Indices1> a3{};
+  object.PlusJacobianImpl(a0, a1, a2, a3);
+}
+
+// P2: START -> 1 -> END
+TEST(PlusJacobianImplTest, TC2_CallsTarget) {
+  ProductManifold object{};
+  double a0[5] = {};
+  MatrixRef& jacobian a1{};
+  double a2 = 0.0;
+  std::index_sequence<Index0, Indices1> a3{};
+  object.PlusJacobianImpl(a0, a1, a2, a3);
+}
+```
