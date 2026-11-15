@@ -1,20 +1,19 @@
 # Unit u0353
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
 |---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
 |---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC1 | P1 | Theo ch? k? `void hash_mix(uint64_t & a, uint64_t & b, uint64_t & c)` | Gi? tr? h?p l? trong file test |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
 
 ## D. File test
 
@@ -22,12 +21,6 @@ C2 dự kiến = 0 / 0.
 // FILE: u0353_test.cc
 #include "gtest/gtest.h"
 #include "ceres/pair_hash.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0353, PathP1) {
-  uint64_t & arg_0{}
-  uint64_t & arg_1{}
-  uint64_t & arg_2{}
-  ceres::internal::hash_mix(arg_0, arg_1, arg_2);
-}
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0353, PathP1) { uint64_t a=1,b=2,c=3; ceres::internal::hash_mix(a,b,c); }
 ```

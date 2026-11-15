@@ -1,32 +1,25 @@
-# Unit u0478
+# Unit u0478: `ceres::internal::InvokeWithThreadId`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0478_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parallel_invoke.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0478, PathP1) {
-  int observed = 0;
-  auto function = [&observed](int thread_id, int value) { observed = thread_id + value; };
-  ceres::internal::InvokeWithThreadId(3, function, 4);
-}
+TEST(Unit_u0478, Invoke) { int observed=0; auto fn=[&](int id,int value){observed=id+value;}; ceres::internal::InvokeWithThreadId(3,fn,4); }
 ```

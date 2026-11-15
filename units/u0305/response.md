@@ -1,35 +1,33 @@
 # Unit u0305
-## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+## Test path
 
-## B. Bộ test case
+The unit has a single straight-line path (no control-flow branches). The test invokes the API with a valid construction, including concrete adapters where the production type is abstract, and exercises the target declaration.
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
-
-## D. File test
+## Test source
 
 ```cpp
-// FILE: u0305_test.cc
 #include "gtest/gtest.h"
+#include "ceres/first_order_function.h"
 #include "ceres/gradient_problem.h"
-#include "ceres/manifold.h"
 
-// Path P1: START -> CFG nodes -> END.
+class Unit0305Function final : public ceres::FirstOrderFunction {
+ public:
+  int NumParameters() const override { return 2; }
+  bool Evaluate(const double*, double* cost, double* gradient) const override {
+    *cost = 0.0;
+    if (gradient != nullptr) { gradient[0] = 0.0; gradient[1] = 0.0; }
+    return true;
+  }
+};
+
 TEST(Unit_u0305, PathP1) {
-  const double * arg_0 = nullptr;
-  const double * arg_1 = nullptr;
-  double * arg_2 = nullptr;
-  ceres::GradientProblem target(arg_0, arg_1, arg_2);
-  target.Plus(nullptr, nullptr, nullptr);
+  ceres::GradientProblem target(new Unit0305Function);
+  const double x[2] = {1.0, 2.0};
+  const double delta[2] = {0.5, -1.0};
+  double result[2] = {};
+  EXPECT_TRUE(target.Plus(x, delta, result));
+  EXPECT_DOUBLE_EQ(result[0], 1.5);
+  EXPECT_DOUBLE_EQ(result[1], 1.0);
 }
 ```

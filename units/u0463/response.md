@@ -1,44 +1,25 @@
-# Unit u0463
+# Unit u0463: `ceres::SphereManifold::Plus`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → 4 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → 3 → 4 → END | Theo CFG của prompt.md. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0463_test.cc
 #include "gtest/gtest.h"
 #include "ceres/sphere_manifold.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0463, PathP1) {
-  const double * arg_0 = nullptr;
-  const double * arg_1 = nullptr;
-  double * arg_2 = nullptr;
-  ceres::SphereManifold<4> target(arg_0, arg_1, arg_2);
-  target.Plus(nullptr, nullptr, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0463, PathP2) {
-  const double * arg_0 = nullptr;
-  const double * arg_1 = nullptr;
-  double * arg_2 = nullptr;
-  ceres::SphereManifold<4> target(arg_0, arg_1, arg_2);
-  target.Plus(nullptr, nullptr, nullptr);
-}
+TEST(Unit_u0463, Plus) { ceres::SphereManifold<4> target; double x[4]={1,0,0,0}, d[3]={}, out[4]={}; target.Plus(x,d,out); }
 ```

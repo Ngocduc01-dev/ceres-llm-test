@@ -2,13 +2,14 @@
 #include "gtest/gtest.h"
 #include "ceres/jet.h"
 
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0451, PathP1) {
-  const Jet<T, N>& arg_0{}
-  ceres::copysign<double>(arg_0, 0);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0451, PathP2) {
-  const Jet<T, N>& arg_0{}
-  ceres::copysign<double>(arg_0, 0);
+TEST(Unit_u0451, CopiesSignAndDerivative) {
+  ceres::Jet<double, 1> f(-2.0);
+  ceres::Jet<double, 1> g(-3.0);
+  f.v[0] = 1.0;
+  g.v[0] = 1.0;
+
+  const ceres::Jet<double, 1> result = ceres::copysign(f, g);
+
+  EXPECT_DOUBLE_EQ(result.a, -2.0);
+  EXPECT_DOUBLE_EQ(result.v[0], 1.0);
 }

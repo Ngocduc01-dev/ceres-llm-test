@@ -1,36 +1,28 @@
-# Unit u0495
+# Unit u0495: `ceres::internal::Take0thOrderPart`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → 4 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → 3 → 4 → END | Theo CFG của prompt.md. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0495_test.cc
 #include "gtest/gtest.h"
-#include "ceres/internal/autodiff.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0495, PathP1) {
-  ceres::internal::Take0thOrderPart<double>(1, nullptr, 0);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0495, PathP2) {
-  ceres::internal::Take0thOrderPart<double>(1, nullptr, 0);
+TEST(Unit_u0495, Take0thOrderPart) {
+  ceres::Jet<double, 2> source[1] = {ceres::Jet<double, 2>(1.0)};
+  double destination = 0.0;
+  ceres::internal::Take0thOrderPart(1, source, destination);
 }
 ```

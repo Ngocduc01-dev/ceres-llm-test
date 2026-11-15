@@ -1,28 +1,9 @@
 // FILE: u0497_test.cc
+#include <sstream>
 #include "gtest/gtest.h"
 #include "ceres/jet.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0497, PathP1) {
-  std::ostream& arg_0{}
-  const Jet<T, N>& arg_1{}
-  ceres::operator<<<double>(arg_0, arg_1);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0497, PathP2) {
-  std::ostream& arg_0{}
-  const Jet<T, N>& arg_1{}
-  ceres::operator<<<double>(arg_0, arg_1);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0497, PathP3) {
-  std::ostream& arg_0{}
-  const Jet<T, N>& arg_1{}
-  ceres::operator<<<double>(arg_0, arg_1);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0497, PathP4) {
-  std::ostream& arg_0{}
-  const Jet<T, N>& arg_1{}
-  ceres::operator<<<double>(arg_0, arg_1);
+TEST(Unit_u0497, StreamInsertion) {
+  std::ostringstream stream;
+  ceres::Jet<double, 2> value(1.0);
+  stream << value;
 }

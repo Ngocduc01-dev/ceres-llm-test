@@ -1,32 +1,25 @@
-# Unit u0410
+# Unit u0410: `ceres::internal::ScratchEvaluatePreparer::Init`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0410_test.cc
 #include "gtest/gtest.h"
 #include "ceres/scratch_evaluate_preparer.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0410, PathP1) {
-  int arg_0 = 1;
-  ceres::internal::ScratchEvaluatePreparer target(arg_0);
-  target.Init(1);
-}
+TEST(Unit_u0410, Init) { ceres::internal::ScratchEvaluatePreparer target; target.Init(1); }
 ```

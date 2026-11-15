@@ -1,45 +1,27 @@
-# Unit u0437
+# Unit u0437: `ceres::AutoDiffCostFunction::Evaluate`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → 3 → END | Theo CFG của prompt.md. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0437_test.cc
+#include <memory>
 #include "gtest/gtest.h"
 #include "ceres/autodiff_cost_function.h"
-#include "ceres/sized_cost_function.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0437, PathP1) {
-  const double *const * arg_0 = nullptr;
-  double * arg_1 = nullptr;
-  double ** arg_2 = nullptr;
-  ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> target(arg_0, arg_1, arg_2);
-  target.Evaluate(nullptr, nullptr, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0437, PathP2) {
-  const double *const * arg_0 = nullptr;
-  double * arg_1 = nullptr;
-  double ** arg_2 = nullptr;
-  ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> target(arg_0, arg_1, arg_2);
-  target.Evaluate(nullptr, nullptr, nullptr);
-}
+struct BinaryScalarCost { template <typename T> bool operator()(const T* x, const T* y, T* r) const { r[0] = x[0] + y[0]; return true; } };
+TEST(Unit_u0437, Evaluate) { auto target = std::make_unique<ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2>>(new BinaryScalarCost); double x[2]={}, y[2]={}, r[1]={}; double* p[]={x,y}; target->Evaluate(p,r,nullptr); }
 ```

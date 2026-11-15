@@ -1,31 +1,17 @@
 # Unit u0309
-## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+## Test path
 
-## B. Bộ test case
+The unit has a single straight-line path (no control-flow branches). The test uses the concrete/public API required by the declaration and invokes the target.
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
-
-## D. File test
+## Test source
 
 ```cpp
-// FILE: u0309_test.cc
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0309, PathP1) {
-  ceres::Graph<int> target;
-  target.vertices();
+  ceres::internal::Graph<int> target;
+  EXPECT_TRUE(target.vertices().empty());
 }
 ```

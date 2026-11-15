@@ -1,31 +1,4 @@
-# Unit u0419
-## A. Test paths
+# Unit u0419: `ceres::internal::SubsetPreconditioner::num_cols`
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
-
-## B. Bộ test case
-
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
-
-## D. File test
-
-```cpp
-// FILE: u0419_test.cc
-#include "gtest/gtest.h"
-#include "ceres/subset_preconditioner.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0419, PathP1) {
-  ceres::internal::SubsetPreconditioner target;
-  target.num_cols();
-}
-```
+The test constructs a real `SubsetPreconditioner` over a three-column
+block-sparse matrix, calls `num_cols()`, and checks the returned dimension.

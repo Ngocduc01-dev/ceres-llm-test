@@ -1,12 +1,8 @@
 // FILE: u0487_test.cc
+#include <vector>
 #include "gtest/gtest.h"
 #include "ceres/stl_util.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0487, PathP1) {
-  ceres::STLDeleteContainerPointers<double>(0, 0);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0487, PathP2) {
-  ceres::STLDeleteContainerPointers<double>(0, 0);
+TEST(Unit_u0487, DeletePointers) {
+  std::vector<int*> values;
+  ceres::STLDeleteContainerPointers(values.begin(), values.end());
 }

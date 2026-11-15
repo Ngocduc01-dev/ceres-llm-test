@@ -1,53 +1,37 @@
 // FILE: u0496_test.cc
 #include "gtest/gtest.h"
+#include <utility>
 #include "ceres/internal/numeric_diff.h"
-#include "ceres/numeric_diff_options.h"
 
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0496, PathP1) {
-  const NumericDiffOptions& arg_2{}
-  const CostFunctor* arg_0 = nullptr;
-  const double* arg_1 = nullptr;
-  const NumericDiffOptions& arg_2{};
-  int arg_3 = 1;
-  double** arg_4 = nullptr;
-  double** arg_5 = nullptr;
-  ceres::EvaluateJacobianForParameterBlocks<ParameterDims<false, 4>>::Apply<CENTRAL, 1, QuadraticCostFunctor> target(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5);
-  target.Apply(nullptr, nullptr, arg_2, 1, nullptr, nullptr);
+namespace ceres {
+namespace internal {
+namespace {
+struct CostFunctor {
+  bool operator()(const double* parameters, double* residuals) const {
+    residuals[0] = parameters[0] * parameters[0];
+    return true;
+  }
+};
+}  // namespace
+
+TEST(Unit_u0496, EvaluatesParameterBlockJacobian) {
+  CostFunctor functor;
+  NumericDiffOptions options;
+  double value = 2.0;
+  double* parameters[] = {&value};
+  double residuals[1] = {4.0};
+  double jacobian[1] = {};
+  double* jacobians[] = {jacobian};
+
+  const bool success =
+      EvaluateJacobianForParameterBlocks<ParameterDims<false, 1>,
+                                         std::integer_sequence<int, 1>>::
+          Apply<CENTRAL, 1>(&functor, residuals, options, 1, parameters,
+                            jacobians);
+
+  EXPECT_TRUE(success);
+  EXPECT_NEAR(jacobian[0], 4.0, 1e-6);
 }
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0496, PathP2) {
-  const NumericDiffOptions& arg_2{}
-  const CostFunctor* arg_0 = nullptr;
-  const double* arg_1 = nullptr;
-  const NumericDiffOptions& arg_2{};
-  int arg_3 = 1;
-  double** arg_4 = nullptr;
-  double** arg_5 = nullptr;
-  ceres::EvaluateJacobianForParameterBlocks<ParameterDims<false, 4>>::Apply<CENTRAL, 1, QuadraticCostFunctor> target(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5);
-  target.Apply(nullptr, nullptr, arg_2, 1, nullptr, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0496, PathP3) {
-  const NumericDiffOptions& arg_2{}
-  const CostFunctor* arg_0 = nullptr;
-  const double* arg_1 = nullptr;
-  const NumericDiffOptions& arg_2{};
-  int arg_3 = 1;
-  double** arg_4 = nullptr;
-  double** arg_5 = nullptr;
-  ceres::EvaluateJacobianForParameterBlocks<ParameterDims<false, 4>>::Apply<CENTRAL, 1, QuadraticCostFunctor> target(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5);
-  target.Apply(nullptr, nullptr, arg_2, 1, nullptr, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0496, PathP4) {
-  const NumericDiffOptions& arg_2{}
-  const CostFunctor* arg_0 = nullptr;
-  const double* arg_1 = nullptr;
-  const NumericDiffOptions& arg_2{};
-  int arg_3 = 1;
-  double** arg_4 = nullptr;
-  double** arg_5 = nullptr;
-  ceres::EvaluateJacobianForParameterBlocks<ParameterDims<false, 4>>::Apply<CENTRAL, 1, QuadraticCostFunctor> target(arg_0, arg_1, arg_2, arg_3, arg_4, arg_5);
-  target.Apply(nullptr, nullptr, arg_2, 1, nullptr, nullptr);
-}
+
+}  // namespace internal
+}  // namespace ceres

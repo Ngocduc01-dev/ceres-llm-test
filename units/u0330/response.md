@@ -1,30 +1,25 @@
 # Unit u0330
-## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → END | Không có điểm rẽ nhánh. |
+## Test path
 
-## B. Bộ test case
+The unit has a single straight-line path (no control-flow branches). The test invokes the API with a valid construction, including concrete adapters where the production type is abstract, and exercises the target declaration.
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
-
-## D. File test
+## Test source
 
 ```cpp
-// FILE: u0330_test.cc
 #include "gtest/gtest.h"
 #include "ceres/linear_operator.h"
 
-// Path P1: START -> CFG nodes -> END.
+class Unit0330Operator final : public ceres::internal::LinearOperator {
+ public:
+  ~Unit0330Operator() override = default;
+  void RightMultiplyAndAccumulate(const double*, double*) const override {}
+  void LeftMultiplyAndAccumulate(const double*, double*) const override {}
+  int num_rows() const override { return 0; }
+  int num_cols() const override { return 0; }
+};
+
 TEST(Unit_u0330, PathP1) {
-  { ceres::internal::LinearOperator target; }
+  { Unit0330Operator target; }
 }
 ```

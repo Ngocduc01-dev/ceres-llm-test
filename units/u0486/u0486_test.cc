@@ -2,12 +2,4 @@
 #include "gtest/gtest.h"
 #include "ceres/iteration_callback.h"
 #include "ceres/solver_utils.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0486, PathP1) {
-  ceres::internal::SetSummaryFinalCost<double>(nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0486, PathP2) {
-  ceres::internal::SetSummaryFinalCost<double>(nullptr);
-}
+TEST(Unit_u0486, SetSummaryFinalCost) { ceres::Solver::Summary summary; ceres::internal::SetSummaryFinalCost(&summary); }

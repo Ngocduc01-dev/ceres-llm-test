@@ -1,20 +1,19 @@
 # Unit u0344
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
 |---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
 |---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC1 | P1 | Theo ch? k? `bool Minus(const double * y, const double * x, double * y_minus_x) const` | Gi? tr? h?p l? trong file test |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
 
 ## D. File test
 
@@ -22,13 +21,6 @@ C2 dự kiến = 0 / 0.
 // FILE: u0344_test.cc
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0344, PathP1) {
-  const double * arg_0 = nullptr;
-  const double * arg_1 = nullptr;
-  double * arg_2 = nullptr;
-  ceres::QuaternionManifold target(arg_0, arg_1, arg_2);
-  target.Minus(nullptr, nullptr, nullptr);
-}
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0344, PathP1) { double x[4] = {1,0,0,0}; double d[3] = {0,0,0}; double out[4] = {}; ceres::QuaternionManifold target; target.Minus(x, d, out); }
 ```

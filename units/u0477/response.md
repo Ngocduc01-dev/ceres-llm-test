@@ -1,38 +1,26 @@
-# Unit u0477
+# Unit u0477: `ceres::internal::MakeConditionalLock`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → END | Theo CFG của prompt.md. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0477_test.cc
+#include <mutex>
 #include "gtest/gtest.h"
 #include "ceres/parallel_for.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0477, PathP1) {
-  std::mutex & arg_1{}
-  ceres::internal::MakeConditionalLock(1, arg_1);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0477, PathP2) {
-  std::mutex & arg_1{}
-  ceres::internal::MakeConditionalLock(1, arg_1);
-}
+TEST(Unit_u0477, Lock) { std::mutex mutex; auto lock=ceres::internal::MakeConditionalLock(1,mutex); }
 ```

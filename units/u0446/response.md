@@ -1,32 +1,26 @@
-# Unit u0446
+# Unit u0446: `ceres::internal::ArraySelector::ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, false>`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0446_test.cc
 #include "gtest/gtest.h"
-#include "ceres/internal/array_selector.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0446, PathP1) {
-  int arg_0 = 1;
-  ceres::ArraySelector<int, -1, 20> target(arg_0);
-  target.ArraySelector<type-parameter-0-0, num_elements, max_num_elements_on_stack, false, false>(1);
+TEST(Unit_u0446, Constructor) {
+  ceres::internal::ArraySelector<int, 21, 20> target(21);
 }
 ```

@@ -2,19 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0439, PathP1) {
-  const JetT& arg_0{}
-  const JetT& arg_0{};
-  JetT* arg_1 = nullptr;
-  ceres::CubicInterpolator<Grid1D<double, 2>>::Evaluate<Jet<double, 4>> target(arg_0, arg_1);
-  target.Evaluate(arg_0, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0439, PathP2) {
-  const JetT& arg_0{}
-  const JetT& arg_0{};
-  JetT* arg_1 = nullptr;
-  ceres::CubicInterpolator<Grid1D<double, 2>>::Evaluate<Jet<double, 4>> target(arg_0, arg_1);
-  target.Evaluate(arg_0, nullptr);
+TEST(Unit_u0439, EvaluatesJet) {
+  const double data[5] = {0.0, 1.0, 2.0, 3.0, 4.0};
+  ceres::Grid1D<double, 1> grid(data, 0, 5);
+  ceres::CubicInterpolator<ceres::Grid1D<double, 1>> interpolator(grid);
+
+  ceres::Jet<double, 1> x(1.7);
+  x.v[0] = 1.0;
+  ceres::Jet<double, 1> f[1];
+  interpolator.Evaluate(x, f);
+
+  EXPECT_NEAR(f[0].a, 1.7, 1e-12);
+  EXPECT_NEAR(f[0].v[0], 1.0, 1e-12);
 }

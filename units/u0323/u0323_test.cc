@@ -2,8 +2,11 @@
 #include "gtest/gtest.h"
 #include "ceres/levenberg_marquardt_strategy.h"
 
-// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0323, PathP1) {
-  ceres::internal::LevenbergMarquardtStrategy target;
-  target.Radius();
+  ceres::internal::TrustRegionStrategy::Options options;
+  ceres::internal::LinearSolver::Options solver_options;
+  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
+  options.linear_solver = linear_solver.get();
+  ceres::internal::LevenbergMarquardtStrategy target(options);
+  EXPECT_DOUBLE_EQ(target.Radius(), options.initial_radius);
 }

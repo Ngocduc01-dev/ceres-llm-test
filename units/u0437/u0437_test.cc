@@ -1,21 +1,6 @@
 // FILE: u0437_test.cc
+#include <memory>
 #include "gtest/gtest.h"
 #include "ceres/autodiff_cost_function.h"
-#include "ceres/sized_cost_function.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0437, PathP1) {
-  const double *const * arg_0 = nullptr;
-  double * arg_1 = nullptr;
-  double ** arg_2 = nullptr;
-  ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> target(arg_0, arg_1, arg_2);
-  target.Evaluate(nullptr, nullptr, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0437, PathP2) {
-  const double *const * arg_0 = nullptr;
-  double * arg_1 = nullptr;
-  double ** arg_2 = nullptr;
-  ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2> target(arg_0, arg_1, arg_2);
-  target.Evaluate(nullptr, nullptr, nullptr);
-}
+struct BinaryScalarCost { template <typename T> bool operator()(const T* x, const T* y, T* r) const { r[0] = x[0] + y[0]; return true; } };
+TEST(Unit_u0437, Evaluate) { auto target = std::make_unique<ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2>>(new BinaryScalarCost); double x[2]={}, y[2]={}, r[1]={}; double* p[]={x,y}; target->Evaluate(p,r,nullptr); }

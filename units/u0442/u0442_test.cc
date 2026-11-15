@@ -2,23 +2,19 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0442, PathP1) {
-  const JetT& arg_0{}
-  const JetT& arg_1{}
-  const JetT& arg_0{};
-  const JetT& arg_1{};
-  JetT* arg_2 = nullptr;
-  ceres::BiCubicInterpolator<Grid2D<double, 2>>::Evaluate<Jet<double, 4>> target(arg_0, arg_1, arg_2);
-  target.Evaluate(arg_0, arg_1, nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0442, PathP2) {
-  const JetT& arg_0{}
-  const JetT& arg_1{}
-  const JetT& arg_0{};
-  const JetT& arg_1{};
-  JetT* arg_2 = nullptr;
-  ceres::BiCubicInterpolator<Grid2D<double, 2>>::Evaluate<Jet<double, 4>> target(arg_0, arg_1, arg_2);
-  target.Evaluate(arg_0, arg_1, nullptr);
+TEST(Unit_u0442, EvaluatesJet) {
+  const double data[16] = {0.0, 1.0, 2.0, 3.0, 1.0, 2.0, 3.0, 4.0,
+                           2.0, 3.0, 4.0, 5.0, 3.0, 4.0, 5.0, 6.0};
+  ceres::Grid2D<double, 1> grid(data, 0, 4, 0, 4);
+  ceres::BiCubicInterpolator<ceres::Grid2D<double, 1>> interpolator(grid);
+
+  ceres::Jet<double, 1> r(1.4);
+  ceres::Jet<double, 1> c(1.6);
+  r.v[0] = 1.0;
+  c.v[0] = 2.0;
+  ceres::Jet<double, 1> f[1];
+  interpolator.Evaluate(r, c, f);
+
+  EXPECT_NEAR(f[0].a, 3.0, 1e-12);
+  EXPECT_NEAR(f[0].v[0], 3.0, 1e-12);
 }

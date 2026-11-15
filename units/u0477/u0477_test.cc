@@ -1,14 +1,5 @@
 // FILE: u0477_test.cc
+#include <mutex>
 #include "gtest/gtest.h"
 #include "ceres/parallel_for.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0477, PathP1) {
-  std::mutex & arg_1{}
-  ceres::internal::MakeConditionalLock(1, arg_1);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0477, PathP2) {
-  std::mutex & arg_1{}
-  ceres::internal::MakeConditionalLock(1, arg_1);
-}
+TEST(Unit_u0477, Lock) { std::mutex mutex; auto lock=ceres::internal::MakeConditionalLock(1,mutex); }

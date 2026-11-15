@@ -1,33 +1,25 @@
-# Unit u0433
+# Unit u0433: `ceres::internal::TrustRegionStepEvaluator::TrustRegionStepEvaluator`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0433_test.cc
 #include "gtest/gtest.h"
 #include "ceres/trust_region_step_evaluator.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0433, PathP1) {
-  const double arg_0 = 1.0;
-  const int arg_1 = 1;
-  ceres::internal::TrustRegionStepEvaluator target(arg_0, arg_1);
-  target.TrustRegionStepEvaluator(1.0, 1);
-}
+TEST(Unit_u0433, Constructor) { ceres::internal::TrustRegionStepEvaluator target(1.0, 1); }
 ```

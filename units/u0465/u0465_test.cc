@@ -1,13 +1,28 @@
 // FILE: u0465_test.cc
 #include "gtest/gtest.h"
 #include "ceres/conditioned_cost_function.h"
-#include "ceres/stl_util.h"
 
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0465, PathP1) {
-  { ceres::ConditionedCostFunction target; }
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0465, PathP2) {
-  { ceres::ConditionedCostFunction target; }
+namespace {
+class IdentityCostFunction final : public ceres::SizedCostFunction<1, 1> {
+ public:
+  bool Evaluate(double const* const* parameters,
+                double* residuals,
+                double** /*jacobians*/) const override {
+    residuals[0] = parameters[0][0];
+    return true;
+  }
+};
+}  // namespace
+
+TEST(Unit_u0465, DeletesOwnedWrappedFunctions) {
+  std::vector<ceres::CostFunction*> conditioners;
+  conditioners.push_back(new IdentityCostFunction);
+  ceres::ConditionedCostFunction target(new IdentityCostFunction,
+                                         conditioners,
+                                         ceres::TAKE_OWNERSHIP);
+  double value = 2.0;
+  double* parameters[] = {&value};
+  double residuals[1] = {};
+  EXPECT_TRUE(target.Evaluate(parameters, residuals, nullptr));
+  EXPECT_DOUBLE_EQ(residuals[0], 2.0);
 }

@@ -1,30 +1,26 @@
-# Unit u0416
+# Unit u0416: `ceres::internal::SparseNormalCholeskySolver::~SparseNormalCholeskySolver`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → END | Không có điểm rẽ nhánh. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0416_test.cc
+#include <memory>
 #include "gtest/gtest.h"
 #include "ceres/sparse_normal_cholesky_solver.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0416, PathP1) {
-  { ceres::internal::SparseNormalCholeskySolver target; }
-}
+TEST(Unit_u0416, Destruction) { std::unique_ptr<ceres::internal::SparseNormalCholeskySolver> target; }
 ```

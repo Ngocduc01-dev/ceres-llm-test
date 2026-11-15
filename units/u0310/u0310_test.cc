@@ -2,8 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0310, PathP1) {
-  ceres::WeightedGraph<int> target;
-  target.vertices();
+  ceres::internal::WeightedGraph<int> target;
+  EXPECT_TRUE(target.vertices().empty());
 }

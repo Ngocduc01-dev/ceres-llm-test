@@ -2,8 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/line_search.h"
 
-// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0326, PathP1) {
-  ceres::internal::LineSearchFunction target;
-  target.direction();
+  ceres::internal::LineSearchFunction target(nullptr);
+  EXPECT_TRUE(target.direction().size() == 0);
 }

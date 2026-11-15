@@ -1,31 +1,30 @@
 # Unit u0306
-## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
+## Test path
 
-## B. Bộ test case
+The unit has a single straight-line path (no control-flow branches). The test invokes the API with a valid construction, including concrete adapters where the production type is abstract, and exercises the target declaration.
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
-
-## D. File test
+## Test source
 
 ```cpp
-// FILE: u0306_test.cc
 #include "gtest/gtest.h"
+#include "ceres/first_order_function.h"
+#include "ceres/gradient_problem.h"
 #include "ceres/gradient_problem_evaluator.h"
 
-// Path P1: START -> CFG nodes -> END.
+class Unit0306Function final : public ceres::FirstOrderFunction {
+ public:
+  int NumParameters() const override { return 1; }
+  bool Evaluate(const double*, double* cost, double* gradient) const override {
+    *cost = 0.0;
+    if (gradient != nullptr) { gradient[0] = 0.0; }
+    return true;
+  }
+};
+
 TEST(Unit_u0306, PathP1) {
-  ceres::internal::GradientProblemEvaluator target;
-  target.NumResiduals();
+  ceres::GradientProblem problem(new Unit0306Function);
+  ceres::internal::GradientProblemEvaluator target(problem);
+  EXPECT_EQ(target.NumResiduals(), 1);
 }
 ```

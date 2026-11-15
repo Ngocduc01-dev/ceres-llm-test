@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/iterative_schur_complement_solver.h"
 
-// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0320, PathP1) {
-  { ceres::internal::IterativeSchurComplementSolver target; }
+  ceres::internal::LinearSolver::Options options;
+  { ceres::internal::IterativeSchurComplementSolver target(options); }
 }

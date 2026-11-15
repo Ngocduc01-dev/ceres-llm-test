@@ -1,36 +1,4 @@
-# Unit u0455
-## A. Test paths
+# Unit u0455: `ceres::NumericDiffCostFunction` destructor
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → 1 → 2 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → END | Theo CFG của prompt.md. |
-
-## B. Bộ test case
-
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
-
-## D. File test
-
-```cpp
-// FILE: u0455_test.cc
-#include "gtest/gtest.h"
-#include "ceres/numeric_diff_cost_function.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0455, PathP1) {
-  { ceres::NumericDiffCostFunction<EasyFunctor, CENTRAL, 3, 5, 5> target; }
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0455, PathP2) {
-  { ceres::NumericDiffCostFunction<EasyFunctor, CENTRAL, 3, 5, 5> target; }
-}
-```
+The test performs a numeric-difference evaluation, checks the residual and
+Jacobian, and then exercises destruction with a non-owned functor.

@@ -1,12 +1,7 @@
 // FILE: u0495_test.cc
 #include "gtest/gtest.h"
-#include "ceres/internal/autodiff.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0495, PathP1) {
-  ceres::internal::Take0thOrderPart<double>(1, nullptr, 0);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0495, PathP2) {
-  ceres::internal::Take0thOrderPart<double>(1, nullptr, 0);
+TEST(Unit_u0495, Take0thOrderPart) {
+  ceres::Jet<double, 2> source[1] = {ceres::Jet<double, 2>(1.0)};
+  double destination = 0.0;
+  ceres::internal::Take0thOrderPart(1, source, destination);
 }

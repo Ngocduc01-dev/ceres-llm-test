@@ -1,35 +1,25 @@
-# Unit u0501
+# Unit u0501: `ceres::AngleAxisRotatePoint`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → 4 → 5 → END | Theo CFG của prompt.md. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0501_test.cc
 #include "gtest/gtest.h"
 #include "ceres/rotation.h"
-
-namespace ceres {
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0501, CallsTarget) {
-  double angle_axis_data = {1.0, 2.0, 3.0, 4.0, 5.0};
-  double pt_data = {1.0, 2.0, 3.0, 4.0, 5.0};
-  double result_data = {1.0, 2.0, 3.0, 4.0, 5.0};
-  AngleAxisRotatePoint(angle_axis_data, pt_data, result_data);
-}
-}  // namespace ceres
+TEST(Unit_u0501, Rotate) { double angle_axis[3]={1,2,3}, point[3]={1,2,3}, result[3]={}; ceres::AngleAxisRotatePoint(angle_axis,point,result); }
 ```

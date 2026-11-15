@@ -1,30 +1,16 @@
 # Unit u0317
-## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
-|---|---|---|
-| P1 | START → END | Không có điểm rẽ nhánh. |
+## Test path
 
-## B. Bộ test case
+The unit has a single straight-line path (no control-flow branches). The test invokes the API with a valid construction, including concrete adapters where the production type is abstract, and exercises the target declaration.
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-
-## C. Nhánh không test
-
-Không có nhánh điều khiển trong CFG.
-C2 dự kiến = 0 / 0.
-
-## D. File test
+## Test source
 
 ```cpp
-// FILE: u0317_test.cc
 #include "gtest/gtest.h"
 #include "ceres/iterative_refiner.h"
 
-// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0317, PathP1) {
-  { ceres::internal::SparseIterativeRefiner target; }
+  { ceres::internal::SparseIterativeRefiner target(1); }
 }
 ```

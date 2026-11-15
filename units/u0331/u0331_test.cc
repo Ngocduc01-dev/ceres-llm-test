@@ -1,10 +1,15 @@
 // FILE: u0331_test.cc
 #include "gtest/gtest.h"
-#include "ceres/execution_summary.h"
 #include "ceres/linear_solver.h"
 
-// Path P1: START -> CFG nodes -> END.
+class Unit0331Solver final : public ceres::internal::LinearSolver {
+ public:
+  Summary Solve(LinearOperator*, const double*, const PerSolveOptions&, double*) override {
+    return {};
+  }
+};
+
 TEST(Unit_u0331, PathP1) {
-  ceres::internal::LinearSolver target;
-  target.Statistics();
+  Unit0331Solver target;
+  EXPECT_TRUE(target.Statistics().empty());
 }

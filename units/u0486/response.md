@@ -1,37 +1,26 @@
-# Unit u0486
+# Unit u0486: `ceres::internal::SetSummaryFinalCost`
+
 ## A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | ???ng ?i | Nh?nh |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → 4 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → 3 → 4 → END | Theo CFG của prompt.md. |
+| P1 | START ? 1 ? END | Theo CFG trong prompt. |
 
-## B. Bộ test case
+## B. B? test case
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| Test | Path | D? li?u |
+|---|---|---|
+| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
 
-## C. Nhánh không test
+## C. Nh?nh kh?ng test
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 2 / 2.
+Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
 
 ## D. File test
-
 ```cpp
 // FILE: u0486_test.cc
 #include "gtest/gtest.h"
 #include "ceres/iteration_callback.h"
 #include "ceres/solver_utils.h"
-
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0486, PathP1) {
-  ceres::internal::SetSummaryFinalCost<double>(nullptr);
-}
-// Path P1: START -> CFG nodes -> END.
-TEST(Unit_u0486, PathP2) {
-  ceres::internal::SetSummaryFinalCost<double>(nullptr);
-}
+TEST(Unit_u0486, SetSummaryFinalCost) { ceres::Solver::Summary summary; ceres::internal::SetSummaryFinalCost(&summary); }
 ```
