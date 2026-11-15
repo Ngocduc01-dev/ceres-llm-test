@@ -1,0 +1,13 @@
+{
+  "id": "u1073",
+  "name": "ceres::internal::LinearOperatorAdapter::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1073/u1073_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1073/u1073_test.cc:9:9: error: expected ‘;’ before ‘y’",
+    "units/u1073/u1073_test.cc:10:49: error: no matching function for call to ‘ceres::internal::LinearOperatorAdapter::LinearOperatorAdapter(<brace-enclosed initializer list>)’",
+    "units/u1073/u1073_test.cc:11:37: error: ‘x’ was not declared in this scope",
+    "units/u1073/u1073_test.cc:11:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?"
+  ]
+}

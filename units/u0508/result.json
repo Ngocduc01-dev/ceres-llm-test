@@ -1,0 +1,16 @@
+{
+  "id": "u0508",
+  "name": "ceres::ComposedLoss::~ComposedLoss",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0508/u0508_test.cc:7:3: error: ‘ComposedLoss’ was not declared in this scope; did you mean ‘ceres::ComposedLoss’?",
+    "units/u0508/u0508_test.cc:7:33: error: expected primary-expression before ‘,’ token",
+    "units/u0508/u0508_test.cc:7:35: error: ‘g_data’ was not declared in this scope",
+    "units/u0508/u0508_test.cc:7:43: error: expected primary-expression before ‘{’ token",
+    "units/u0508/u0508_test.cc:7:45: error: expected primary-expression before ‘)’ token",
+    "units/u0508/u0508_test.cc:11:3: error: ‘ComposedLoss’ was not declared in this scope; did you mean ‘ceres::ComposedLoss’?",
+    "units/u0508/u0508_test.cc:11:33: error: expected primary-expression before ‘,’ token",
+    "units/u0508/u0508_test.cc:11:35: error: ‘g_data’ was not declared in this scope"
+  ]
+}

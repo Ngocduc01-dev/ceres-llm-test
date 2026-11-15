@@ -1,0 +1,10 @@
+{
+  "id": "u0617",
+  "name": "ceres::AutoDiffManifold::AutoDiffManifold<Functor, kAmbientSize, kTangentSize>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0617/u0617_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer",
+    "units/u0617/u0617_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

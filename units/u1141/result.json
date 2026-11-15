@@ -1,0 +1,16 @@
+{
+  "id": "u1141",
+  "name": "ceres::internal::SparseSchurComplementSolver::InitStorage",
+  "status": "compile_fail",
+  "cfg_branches": 24,
+  "errors": [
+    "units/u1141/u1141_test.cc:10:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1141/u1141_test.cc:11:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context",
+    "units/u1141/u1141_test.cc:16:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1141/u1141_test.cc:17:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context",
+    "units/u1141/u1141_test.cc:22:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1141/u1141_test.cc:23:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context",
+    "units/u1141/u1141_test.cc:28:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1141/u1141_test.cc:29:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context"
+  ]
+}

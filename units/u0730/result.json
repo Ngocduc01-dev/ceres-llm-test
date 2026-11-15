@@ -1,0 +1,9 @@
+{
+  "id": "u0730",
+  "name": "ceres::LinearSolverOrderingTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0730/u0730_test.cc:7:3: error: ‘LinearSolverOrderingTypeToString’ was not declared in this scope"
+  ]
+}

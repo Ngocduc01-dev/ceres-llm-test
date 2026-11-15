@@ -1,0 +1,57 @@
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:10:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   10 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+In file included from /work/repo/units/u1465/u1465_test.cc:4:
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:17:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   17 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:24:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   24 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:31:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   31 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:38:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   38 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:45:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   45 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:52:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   52 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1465/u1465_test.cc: In member function ‘virtual void Unit_u1465_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1465/u1465_test.cc:59:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context
+   59 |   object.InternalAddParameterBlock(nullptr, size);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:174:19: note: declared private here
+  174 |   ParameterBlock* InternalAddParameterBlock(double* values, int size);
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~

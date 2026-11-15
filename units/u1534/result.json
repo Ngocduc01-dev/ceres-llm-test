@@ -1,0 +1,14 @@
+{
+  "id": "u1534",
+  "name": "ceres::internal::CovarianceImpl::Compute",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1534/u1534_test.cc:8:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1534/u1534_test.cc:9:17: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Compute(std::nullptr_t, std::nullptr_t)’",
+    "units/u1534/u1534_test.cc:14:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1534/u1534_test.cc:15:17: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Compute(std::nullptr_t, std::nullptr_t)’",
+    "units/u1534/u1534_test.cc:20:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1534/u1534_test.cc:21:17: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Compute(std::nullptr_t, std::nullptr_t)’"
+  ]
+}

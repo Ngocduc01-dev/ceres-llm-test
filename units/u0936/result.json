@@ -1,0 +1,10 @@
+{
+  "id": "u0936",
+  "name": "ceres::GradientProblem::GradientProblem",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0936/u0936_test.cc:9:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProblem(<brace-enclosed initializer list>)’",
+    "units/u0936/u0936_test.cc:15:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProblem(<brace-enclosed initializer list>)’"
+  ]
+}

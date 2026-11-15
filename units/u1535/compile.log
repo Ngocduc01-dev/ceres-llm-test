@@ -1,0 +1,26 @@
+/work/repo/units/u1535/u1535_test.cc: In member function ‘virtual void Unit_u1535_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1535/u1535_test.cc:8:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-enclosed initializer list>)’
+    8 |   ceres::Covariance object{};
+      |                            ^
+In file included from /work/repo/units/u1535/u1535_test.cc:3:
+/work/ceres-solver/include/ceres/covariance.h:342:12: note: candidate: ‘ceres::Covariance::Covariance(const Options&)’
+  342 |   explicit Covariance(const Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/include/ceres/covariance.h:342:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1535/u1535_test.cc:9:17: error: no matching function for call to ‘ceres::Covariance::Compute(std::nullptr_t, std::nullptr_t)’
+    9 |   object.Compute(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/covariance.h:368:8: note: candidate: ‘bool ceres::Covariance::Compute(const std::vector<std::pair<const double*, const double*> >&, ceres::Problem*)’
+  368 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |        ^~~~~~~
+/work/ceres-solver/include/ceres/covariance.h:369:20: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<std::pair<const double*, const double*> >&’
+  368 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  369 |                    covariance_blocks,
+      |                    ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/covariance.h:391:8: note: candidate: ‘bool ceres::Covariance::Compute(const std::vector<const double*>&, ceres::Problem*)’
+  391 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |        ^~~~~~~
+/work/ceres-solver/include/ceres/covariance.h:391:50: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+  391 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~

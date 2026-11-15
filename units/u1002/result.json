@@ -1,0 +1,9 @@
+{
+  "id": "u1002",
+  "name": "ceres::internal::GradientProblemEvaluator::Statistics",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1002/u1002_test.cc:8:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(<brace-enclosed initializer list>)’"
+  ]
+}

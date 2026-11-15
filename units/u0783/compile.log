@@ -1,0 +1,175 @@
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:7:9: error: ‘LinearSolverType’ does not name a type
+    7 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:8:9: error: ‘PreconditionerType’ does not name a type
+    8 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:9:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+    9 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:10:9: error: ‘LinearSolverOrderingType’ does not name a type
+   10 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:11:46: error: ‘linear_solver_type’ was not declared in this scope
+   11 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:11:66: error: ‘preconditioner_type’ was not declared in this scope
+   11 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:11:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   11 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:11:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   11 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:16:9: error: ‘LinearSolverType’ does not name a type
+   16 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:17:9: error: ‘PreconditionerType’ does not name a type
+   17 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:18:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   18 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:19:9: error: ‘LinearSolverOrderingType’ does not name a type
+   19 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:20:46: error: ‘linear_solver_type’ was not declared in this scope
+   20 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:20:66: error: ‘preconditioner_type’ was not declared in this scope
+   20 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:20:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   20 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:20:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   20 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:25:9: error: ‘LinearSolverType’ does not name a type
+   25 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:26:9: error: ‘PreconditionerType’ does not name a type
+   26 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:27:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   27 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:28:9: error: ‘LinearSolverOrderingType’ does not name a type
+   28 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:29:46: error: ‘linear_solver_type’ was not declared in this scope
+   29 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:29:66: error: ‘preconditioner_type’ was not declared in this scope
+   29 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:29:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   29 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:29:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   29 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:34:9: error: ‘LinearSolverType’ does not name a type
+   34 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:35:9: error: ‘PreconditionerType’ does not name a type
+   35 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:36:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   36 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:37:9: error: ‘LinearSolverOrderingType’ does not name a type
+   37 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:38:46: error: ‘linear_solver_type’ was not declared in this scope
+   38 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:38:66: error: ‘preconditioner_type’ was not declared in this scope
+   38 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:38:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   38 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:38:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   38 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:43:9: error: ‘LinearSolverType’ does not name a type
+   43 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:44:9: error: ‘PreconditionerType’ does not name a type
+   44 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:45:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   45 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:46:9: error: ‘LinearSolverOrderingType’ does not name a type
+   46 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:47:46: error: ‘linear_solver_type’ was not declared in this scope
+   47 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:47:66: error: ‘preconditioner_type’ was not declared in this scope
+   47 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:47:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   47 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:47:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   47 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:52:9: error: ‘LinearSolverType’ does not name a type
+   52 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:53:9: error: ‘PreconditionerType’ does not name a type
+   53 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:54:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   54 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:55:9: error: ‘LinearSolverOrderingType’ does not name a type
+   55 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:56:46: error: ‘linear_solver_type’ was not declared in this scope
+   56 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:56:66: error: ‘preconditioner_type’ was not declared in this scope
+   56 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:56:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   56 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:56:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   56 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc: In member function ‘virtual void Unit_u0783_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0783/u0783_test.cc:61:9: error: ‘LinearSolverType’ does not name a type
+   61 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:62:9: error: ‘PreconditionerType’ does not name a type
+   62 |   const PreconditionerType preconditioner_type{};
+      |         ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:63:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   63 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:64:9: error: ‘LinearSolverOrderingType’ does not name a type
+   64 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:65:46: error: ‘linear_solver_type’ was not declared in this scope
+   65 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                              ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:65:66: error: ‘preconditioner_type’ was not declared in this scope
+   65 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:65:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   65 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0783/u0783_test.cc:65:123: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   65 |   ceres::internal::AreJacobianColumnsOrdered(linear_solver_type, preconditioner_type, sparse_linear_algebra_library_type, linear_solver_ordering_type);
+      |                                                                                                                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~

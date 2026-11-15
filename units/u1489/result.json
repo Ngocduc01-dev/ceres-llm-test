@@ -1,0 +1,16 @@
+{
+  "id": "u1489",
+  "name": "ceres::internal::LevenbergMarquardtStrategy::ComputeStep",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u1489/u1489_test.cc:11:3: error: ‘TrustRegionStrategy’ has not been declared",
+    "units/u1489/u1489_test.cc:12:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’",
+    "units/u1489/u1489_test.cc:13:22: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1489/u1489_test.cc:18:3: error: ‘TrustRegionStrategy’ has not been declared",
+    "units/u1489/u1489_test.cc:19:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’",
+    "units/u1489/u1489_test.cc:20:22: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1489/u1489_test.cc:25:3: error: ‘TrustRegionStrategy’ has not been declared",
+    "units/u1489/u1489_test.cc:26:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’"
+  ]
+}

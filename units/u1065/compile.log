@@ -1,0 +1,7 @@
+/work/repo/units/u1065/u1065_test.cc: In member function ‘virtual void Unit_u1065_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1065/u1065_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::CheckForNoAliasing(nullptr, existing_block_size, nullptr, new_block_size);
+      |                    ^
+/work/repo/units/u1065/u1065_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::CheckForNoAliasing(nullptr, existing_block_size, nullptr, new_block_size);
+      |                     ^~~~~~~~~

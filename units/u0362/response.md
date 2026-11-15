@@ -1,26 +1,34 @@
-# Unit u0362
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+Hàm không có điểm rẽ nhánh (0 điểm rẽ nhánh, 0 nhánh). CFG khớp với mã nguồn.
+
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh; node 1: `is_set_constant_ = false` |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `void SetVarying()` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `size` ∈ [1, 5], `index` ∈ [0, 5], `user_state` là mảng double có `size` phần tử | `size = 3`, `index = 2`, `user_state = {1.0, 2.0, 3.0}` |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có nhánh nào bị bỏ (hàm không có điểm rẽ nhánh, không có `CHECK`).
 
-## D. File test
+`C2 dự kiến = 0 / 0` (không có nhánh nào; toàn bộ node 1 được chạy qua bởi TC1, nên C1 = 100%).
+
+**D. File test**
 
 ```cpp
 // FILE: u0362_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0362, PathP1) { double value[1] = {0}; ceres::internal::ParameterBlock target(value, 1, 0); target.SetVarying(); }
+
+// Path P1: START -> 1 -> END
+TEST(ParameterBlockSetVarying, SetVaryingPathP1) {
+  double user_state[3] = {1.0, 2.0, 3.0};
+  ceres::internal::ParameterBlock parameter_block(user_state, 3, 2);
+  parameter_block.SetVarying();
+}
 ```

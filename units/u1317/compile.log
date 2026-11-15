@@ -1,0 +1,169 @@
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   11 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1317/u1317_test.cc:5:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+   13 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:13:21: error: ‘anonymous’ was not declared in this scope
+   13 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:18:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   18 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:20:20: error: expected unqualified-id before ‘(’ token
+   20 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:20:21: error: ‘anonymous’ was not declared in this scope
+   20 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:25:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   25 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:27:20: error: expected unqualified-id before ‘(’ token
+   27 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:27:21: error: ‘anonymous’ was not declared in this scope
+   27 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:32:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   32 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:34:20: error: expected unqualified-id before ‘(’ token
+   34 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:34:21: error: ‘anonymous’ was not declared in this scope
+   34 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:39:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   39 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:41:20: error: expected unqualified-id before ‘(’ token
+   41 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:41:21: error: ‘anonymous’ was not declared in this scope
+   41 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:46:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   46 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:48:20: error: expected unqualified-id before ‘(’ token
+   48 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:48:21: error: ‘anonymous’ was not declared in this scope
+   48 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:53:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   53 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:55:20: error: expected unqualified-id before ‘(’ token
+   55 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:55:21: error: ‘anonymous’ was not declared in this scope
+   55 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:60:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   60 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:62:20: error: expected unqualified-id before ‘(’ token
+   62 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:62:21: error: ‘anonymous’ was not declared in this scope
+   62 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:67:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   67 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:69:20: error: expected unqualified-id before ‘(’ token
+   69 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:69:21: error: ‘anonymous’ was not declared in this scope
+   69 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:74:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   74 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:76:20: error: expected unqualified-id before ‘(’ token
+   76 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:76:21: error: ‘anonymous’ was not declared in this scope
+   76 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:81:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   81 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:83:20: error: expected unqualified-id before ‘(’ token
+   83 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:83:21: error: ‘anonymous’ was not declared in this scope
+   83 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1317/u1317_test.cc: In member function ‘virtual void Unit_u1317_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1317/u1317_test.cc:88:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   88 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1317/u1317_test.cc:90:20: error: expected unqualified-id before ‘(’ token
+   90 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1317/u1317_test.cc:90:21: error: ‘anonymous’ was not declared in this scope
+   90 |   ceres::internal::(anonymous)::BuildJacobianLayout(program, num_eliminate_blocks, nullptr, nullptr);
+      |                     ^~~~~~~~~

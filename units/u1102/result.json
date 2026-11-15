@@ -1,0 +1,16 @@
+{
+  "id": "u1102",
+  "name": "ceres::OrderedGroups::Remove",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1102/u1102_test.cc:7:15: error: ‘T’ was not declared in this scope",
+    "units/u1102/u1102_test.cc:7:16: error: template argument 1 is invalid",
+    "units/u1102/u1102_test.cc:7:16: error: template argument 2 is invalid",
+    "units/u1102/u1102_test.cc:8:31: error: class template argument deduction failed:",
+    "units/u1102/u1102_test.cc:8:31: error: no matching function for call to ‘OrderedGroups()’",
+    "units/u1102/u1102_test.cc:14:15: error: ‘T’ was not declared in this scope",
+    "units/u1102/u1102_test.cc:14:16: error: template argument 1 is invalid",
+    "units/u1102/u1102_test.cc:14:16: error: template argument 2 is invalid"
+  ]
+}

@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<title>Báo cáo tuần 11</title>
+</head>
+<body>
+
+<h1>BÁO CÁO TUẦN 11: SINH UNIT TEST BẰNG LLM CHO MỘT PROJECT C++ LỚN</h1>
+
+<h2>1. Mục tiêu</h2>
+<p>Mục tiêu của nhóm trong đợt này là dùng mô hình ngôn ngữ lớn (LLM) để sinh unit test cho một project C++ thực tế có quy mô lớn, theo đúng kỹ thuật kiểm thử dòng điều khiển đã học: dựng đồ thị dòng điều khiển (CFG), chọn đường đi kiểm thử (test path), giải điều kiện đường đi để chọn dữ liệu, rồi viết test. Tiêu chí phủ nhóm chọn là C2 (phủ nhánh). Vì project không có đặc tả nên không có kết quả mong đợi; dữ liệu đầu vào được chọn ngẫu nhiên trong miền thoả điều kiện đường đi, và chất lượng bộ test được đánh giá bằng độ phủ đo thật trên máy chứ không dựa vào con số LLM tự báo. Toàn bộ prompt, script và dữ liệu thực hiện của nhóm được lưu trên GitHub tại https://github.com/Ngocduc01-dev/ceres-llm-test (xem Phụ lục B).</p>
+
+<h2>2. Project: Ceres Solver</h2>
+<p>Ceres Solver là thư viện tối ưu hoá phi tuyến mã nguồn mở của Google, viết bằng C++17. Nhóm dùng bản phát hành 2.2.0 để số liệu không bị thay đổi theo các commit mới. Project có 292 file mã nguồn được biên dịch (trong đó 175 file là test có sẵn của Ceres). Sau khi loại file test, code sinh tự động và thư viện bên thứ ba, phần cần kiểm thử gồm 1.540 hàm và phương thức có thân (gọi chung là unit). Đây là code khó kiểm thử: 485 unit là template, 220 unit không gọi trực tiếp được từ bên ngoài (hàm <code>static</code>, nằm trong namespace không tên, hoặc là method <code>private</code>/<code>protected</code>), và code dùng rất nhiều macro <code>CHECK</code> của thư viện glog, khi điều kiện sai thì chương trình dừng ngay.</p>
+
+<h2>3. Quá trình thực hiện</h2>
+
+<h3>3.1. Chọn dự án và chọn trọng tâm</h3>
+<p>Nhóm chúng em sau khi tham khảo rất nhiều dự án ở trên GitHub và cân nhắc kĩ rất nhiều chúng em quyết định chọn dự án Ceres Solver với ngôn ngữ chính là C/C++.</p>
+<p>Trong dự án có rất nhiều file test hoặc các file third-party, các tài liệu không liên quan nên nhóm quyết định chỉ thiết kế để AI sinh test cho các file có các hàm, phương thức có thể sinh Unit test.</p>
+<p>Ban đầu việc đưa 1 file vào để cho AI đọc và sinh test với prompt mẫu diễn ra khá thuận lợi với những file không quá dài và các Unit đơn giản. Prompt mẫu ban đầu được tham khảo từ nhóm khác và đã có sửa đổi (xem Phụ lục A).</p>
+
+<h3>3.2. Xác định các unit cần sinh test</h3>
+<p>Trước khi sinh test, nhóm cần biết chính xác project có những unit nào. Nhóm coi mỗi hàm hoặc phương thức có thân nằm trong hai thư mục mã nguồn chính của Ceres (<code>internal/ceres</code> và <code>include/ceres</code>) là một unit. Các file test có sẵn, code sinh tự động, thư viện googletest đi kèm, các hàm chỉ có khai báo và các hàm thuần ảo (chưa có thân) được loại ra. Để liệt kê cho chính xác, nhóm biên dịch Ceres bằng CMake để có lệnh biên dịch của từng file, rồi dùng libclang (bộ phân tích C++ của trình biên dịch Clang) đọc lại toàn bộ 292 file với đúng các cờ biên dịch đó. Cách này hiểu đúng template, overload và macro, điều mà việc tìm kiếm theo mẫu chữ không làm được. Cả 292 file đều đọc được không lỗi, và nhóm thu được 1.540 unit gồm 871 method, 205 hàm thường, 212 hàm template, 177 constructor và 75 destructor.</p>
+<p>Với mỗi unit, nhóm ghi lại vị trí trong mã nguồn, chữ ký, class chứa nó, có phải template hay không, và có gọi trực tiếp được từ bên ngoài hay không; 220 unit không gọi trực tiếp được vì là hàm <code>static</code>, nằm trong namespace không tên, hoặc là method <code>private</code>/<code>protected</code>. Nhóm cũng xếp các unit thành ba mức theo kiểu tham số: dễ là tham số số, bool hoặc mảng (774 unit), trung bình là dùng ma trận Eigen, container STL hoặc struct nhỏ (370 unit), khó là cần dựng các object lớn như <code>Problem</code>, <code>CostFunction</code>, <code>LinearSolver</code> (396 unit).</p>
+<p>Để quyết định thứ tự sinh test, nhóm trích từ cây cú pháp các quan hệ giữa các thành phần của project: hàm gọi hàm, hàm dùng kiểu, class kế thừa class, method thuộc class, file include file, rồi lưu thành một đồ thị trong cơ sở dữ liệu SQLite. Đồ thị có 9.065 hàm, 1.363 class, 6.696 quan hệ gọi hàm và 4.751 quan hệ dùng kiểu. Dựa vào quan hệ gọi hàm, nhóm sắp các unit từ hàm lá (không gọi hàm nào khác của Ceres, có 974 unit) lên dần các hàm gọi chúng, để khi tới hàm cấp cao thì các hàm nó gọi đã được kiểm thử trước. Cuối cùng nhóm chọn 20 unit dễ, gọi trực tiếp được và phần lớn đã có test sẵn trong Ceres để chạy thử toàn bộ quy trình trước khi chạy hàng loạt.</p>
+
+<h3>3.3. Thu thập ngữ cảnh cho từng unit</h3>
+<p>Vấn đề bắt đầu nảy sinh khi nhóm gặp phải các hàm có tham chiếu từ 1 hàm khác, từ 1 file khác hoặc thậm chí là nhiều file khác. Khi này nếu chỉ cung cấp file có chứa Unit đó thì không đủ ngữ cảnh để AI có thể hiểu được ý nghĩa của các biến, còn nếu cung cấp toàn bộ dự án thì AI không có khả năng đọc hết được toàn bộ dự án.</p>
+<p>Nhóm tham khảo cách các nghiên cứu xử lý việc này. ChatUniTest [5] chỉ đưa vào prompt phần ngữ cảnh liên quan tới hàm cần test và cắt bớt theo giới hạn token. RepoGraph [8] và CITYWALK [7] dựng một đồ thị quan hệ của cả project rồi chỉ lấy phần đồ thị quanh hàm đang xét. Nghiên cứu trên SAP HANA [4], một hệ quản trị cơ sở dữ liệu viết bằng C++, cho thấy đưa thêm các header mà hàm phụ thuộc giúp test sinh ra tốt hơn rõ rệt.</p>
+<p>Theo hướng đó, nhóm dùng lại đồ thị quan hệ đã dựng ở bước trước. Với mỗi unit, nhóm đi theo đồ thị 1–2 bước để gom đúng phần cần thiết: các dòng <code>#include</code>, khai báo class chứa hàm, chữ ký các hàm được gọi, và một test mẫu có sẵn của Ceres nếu có. Cả 1.540 unit đều có gói ngữ cảnh riêng, trung bình khoảng 2.200 token, lớn nhất khoảng 7.500 token, đủ nhỏ để đưa vào một lần gọi LLM. Khi chạy thử, nhóm thấy LLM chỉ thực sự cần mã nguồn của hàm, CFG và cách gọi hàm, nên rút gọn tiếp: chỉ giữ các dòng <code>#include</code>, quy tắc gọi hàm (hàm <code>static</code> thì include thẳng file <code>.cc</code> vào test, method <code>private</code> thì mở quyền truy cập) và chữ ký các constructor của class để LLM biết cách tạo object. Prompt nhờ đó giảm còn khoảng một phần ba, trung vị khoảng 8 KB thay vì 19 KB.</p>
+
+<h3>3.4. Dựng CFG cho từng unit</h3>
+<p>Với prompt mẫu ban đầu, AI tự vẽ CFG từ mã nguồn theo chuẩn C3. Với code C++ như Ceres, cách này hay sai: AI vẽ cả phần code nằm trong <code>#if</code> đã bị tắt khi biên dịch, không biết bên trong macro có rẽ nhánh, và mỗi lần chạy lại có thể ra số nhánh khác nhau, nên không có mẫu số cố định để so sánh. Prompt mẫu cũng yêu cầu tính kết quả mong đợi, trong khi Ceres không có đặc tả và phần lớn điều kiện là so sánh số thực. Vì vậy nhóm chuyển tiêu chí sang C2 và bỏ kết quả mong đợi.</p>
+<p>Nhóm tham khảo tài liệu của Clang [11]: trình biên dịch này có sẵn chức năng dựng CFG cho từng hàm sau khi đã xử lý macro và <code>#if</code>. CATGen [6] cũng chỉ ra rằng dùng công cụ phân tích tĩnh cho phần có thể tính chính xác, thay vì để LLM tự làm, giúp kết quả ổn định hơn. Nhóm để Clang dựng CFG cho từng unit, rồi viết script lọc bớt chi tiết thừa, đánh số node 1, 2, 3… theo thứ tự chạy, gộp điều kiện dạng <code>a &amp;&amp; b</code> thành một điểm rẽ nhánh như cách đếm C2 trong giáo trình, và ghi ở dòng đầu số điểm rẽ nhánh. Với hàm template, CFG được dựng cho một kiểu cụ thể mà Ceres thực sự dùng. Có 1.491/1.540 unit có CFG do Clang dựng; với 49 unit còn lại (chủ yếu là template không được dùng ở đâu), prompt yêu cầu LLM tự dựng CFG.</p>
+
+<h3>3.5. Thiết kế prompt và sinh test</h3>
+<p>Cách đưa cả file vào một prompt chỉ làm được với file ngắn. Với 1.540 unit, nhóm cần một cách chia việc vừa đủ nhỏ để AI xử lý trọn vẹn, vừa chạy được tự động. Nhóm tham khảo cách các công ty đang làm: Google OSS-Fuzz-gen [1] sinh chương trình kiểm thử cho từng hàm C/C++ một và đánh giá bằng độ phủ vì cũng không có kết quả mong đợi; IBM ASTER [2] và Huawei TestART [3] cũng xử lý mỗi lần một hàm. Thầy cũng nhận xét trên diễn đàn môn học rằng không có unit nào lớn đến mức AI không xử lý hết. Vì vậy nhóm chọn một prompt cho một unit.</p>
+<p>Nhóm viết một prompt chung gồm 7 phần: nhiệm vụ, khái niệm (CFG, điểm rẽ nhánh, C2, test path, điều kiện đường đi, vòng lặp, <code>CHECK</code>), đầu vào (mã nguồn, CFG, cách gọi unit), yêu cầu đối với bộ test, các bước thực hiện, kết quả cần trả về (test path, test case kèm khoảng giá trị và giá trị đã chọn, nhánh không test được, C2 dự kiến, file GoogleTest) và các lưu ý. Script tự điền mã nguồn, CFG và ngữ cảnh của từng unit vào prompt chung, gọi mô hình Claude Sonnet 5.5 qua công cụ dòng lệnh Claude Code, lưu nguyên văn câu trả lời và tách khối code thành file test. Gọi được đến đâu lưu đến đó, nên nếu bị gián đoạn thì chạy lại sẽ tiếp tục từ unit chưa có kết quả. Prompt chung, prompt đầy đủ và câu trả lời của từng unit đều có trên GitHub của nhóm (xem Phụ lục B).</p>
+<p>Khi chạy thử 20 unit, nhóm phát hiện mỗi lần gọi tốn khoảng 65.600 token đầu vào dù prompt chỉ khoảng 4.000 token, do công cụ dòng lệnh tự gửi kèm phần hướng dẫn hệ thống, cấu hình và danh sách công cụ của máy. Sau khi thêm các tuỳ chọn để chỉ gửi đúng prompt, mỗi lần gọi còn khoảng 4.700 token, giảm khoảng 14 lần. Cũng trong lần chạy thử đầu, LLM tính nhầm tổng số nhánh ở một unit vì đếm cả nhánh của <code>CHECK</code>; nhóm ghi rõ cách đếm vào prompt, và khi chạy lại thì cả 20/20 unit đều ghi đúng tổng số nhánh. Sau đó nhóm chạy tiếp 250 unit đầu tiên theo thứ tự đã sắp.</p>
+
+<h3>3.6. Biên dịch, chạy test và đo độ phủ</h3>
+<p>Mỗi file test do LLM sinh được biên dịch cùng thư viện Ceres đã bật chế độ đo độ phủ của GCC, rồi chạy và đo. Ở bước này có hai khó khăn. Thứ nhất, khi một <code>CHECK</code> sai, chương trình dừng ngay và công cụ đo độ phủ gcov không kịp ghi số liệu, nên mất toàn bộ số liệu của lần chạy đó. Thứ hai, gcov đếm nhánh ở mức mã máy: một điều kiện <code>a &amp;&amp; b</code> bị tính thành 4–6 nhánh, nên số nhánh gcov báo không khớp với CFG và với cách đếm C2 trong giáo trình. Ví dụ hàm <code>SetUpperBound</code> có 2 điểm rẽ nhánh (4 nhánh) nhưng gcov đếm 10 nhánh.</p>
+<p>Nhóm tham khảo tài liệu của GCC [9], trong đó có hàm <code>__gcov_dump()</code> để ghi số liệu ngay lập tức, và tài liệu của gcovr [10], công cụ có chế độ đo phủ theo điểm rẽ nhánh trong mã nguồn (decision coverage), đúng với cách đếm C2. Nhóm viết hàm <code>main</code> riêng cho các file test: khi <code>CHECK</code> sai, khi chương trình bị lỗi bộ nhớ hoặc bị dừng vì quá thời gian, đều gọi <code>__gcov_dump()</code> trước khi thoát. Mỗi test case chạy trong một tiến trình riêng, tối đa 10 giây, để một test hỏng không kéo theo các test khác. Độ phủ chỉ tính trên các dòng của chính unit đang test. C2 được đo bằng gcovr theo điểm rẽ nhánh; hai trường hợp gcovr không tự nhận ra (điều kiện <code>if</code> bị gcov gắn nhánh sang dòng <code>}</code>, và toán tử <code>?:</code>) được script tự suy ra từ số lần chạy của từng dòng. Toàn bộ việc biên dịch và đo được đóng gói trong Docker để máy của mọi thành viên cho cùng một kết quả.</p>
+<p>Với cách làm này, một test làm <code>CHECK</code> sai vẫn ghi đủ số liệu phủ, và tổng số nhánh đo được khớp với số nhánh trong CFG ở 15/16 unit có rẽ nhánh. Unit còn lại lệch do chính CFG bị lấy nhầm (xem mục 6).</p>
+
+<h2>4. Kết quả</h2>
+
+<h3>4.1. Những gì nhóm đã làm được</h3>
+<ul>
+<li>Nhóm đã khám phá được project: biết Ceres gồm những gì, đâu là phần cần kiểm thử, và liệt kê được đủ 1.540 unit cùng đặc điểm của từng unit (template, cách gọi, mức độ phụ thuộc).</li>
+<li>Nhóm đã khám phá được cách xử lý tĩnh mã nguồn C++: dùng libclang để dựng đồ thị quan hệ của cả project, và dùng Clang để dựng CFG cho từng hàm.</li>
+<li>Nhóm đã giải quyết được bài toán ngữ cảnh: mỗi unit có gói ngữ cảnh riêng, đủ để AI viết test nhưng không vượt giới hạn token.</li>
+<li>Nhóm đã xây dựng được quy trình tự động từ mã nguồn đến số liệu độ phủ: ghép prompt, gọi LLM, tách file test, biên dịch, chạy và đo phủ cho từng unit. Mỗi unit có thư mục riêng chứa prompt, câu trả lời, file test và kết quả.</li>
+<li>Nhóm đã sinh, chạy và đo được độ phủ thật cho 270 unit đầu tiên.</li>
+</ul>
+
+<h3>4.2. Số liệu trên 270 unit đã sinh test</h3>
+<p>Nhóm chạy thử trên 20 unit trước, sau đó chạy 250 unit đầu theo thứ tự từ hàm lá. Tất cả 270 lần gọi LLM đều thành công, trung bình 12 giây và khoảng 4.600 token đầu vào, 1.100 token đầu ra mỗi lần. Kết quả biên dịch, chạy và đo phủ như sau:</p>
+<table border="1">
+<tr><th>Chỉ số</th><th>Kết quả</th></tr>
+<tr><td>File test biên dịch được</td><td>253/270 (93,7%)</td></tr>
+<tr><td>Test case đã chạy</td><td>296, trong đó 294 chạy hết, 2 dừng giữa chừng vì <code>CHECK</code> sai</td></tr>
+<tr><td>C1 (dòng code của unit đã chạy)</td><td>648/661 dòng = 98,0%</td></tr>
+<tr><td>C2 (nhánh, đếm theo điểm rẽ nhánh)</td><td>59/60 nhánh = 98,3%</td></tr>
+</table>
+<p>Cần lưu ý cả 270 unit này đều thuộc nhóm dễ, phần lớn là hàm ngắn như getter, destructor, hàm 1–3 dòng; chỉ 16 unit có điểm rẽ nhánh. 17 unit không biên dịch được có các nguyên nhân: AI viết sai cách dùng thư viện như gọi sai constructor hoặc quên namespace (7 unit), tự viết class phụ thiếu hàm bắt buộc (3 unit), ngữ cảnh thiếu header của phần giao diện C (4 unit), mẹo <code>#define private public</code> làm hỏng header của thư viện chuẩn (2 unit), và một hàm không biên dịch được với phiên bản Eigen trong môi trường (1 unit).</p>
+
+<h3>4.3. Các chỉ số trong báo cáo độ phủ</h3>
+<p>Báo cáo độ phủ do gcovr xuất ra (trang <code>reports/phase6/gen_coverage.html</code> trong repo) có các cột sau. <b>Line coverage</b> là tỉ lệ dòng có code đã được chạy ít nhất một lần; nhóm dùng nó làm C1, nhưng đây chỉ là xấp xỉ vì một dòng có thể chứa nhiều câu lệnh. <b>Function coverage</b> là tỉ lệ hàm đã được gọi ít nhất một lần; chỉ số này không phải tiêu chí của kiểm thử dòng điều khiển, và vì nhóm đo riêng từng unit nên cột này để trống. <b>Branch coverage</b> mặc định của gcov đếm nhánh ở mức mã máy nên không khớp với CFG; trong báo cáo của nhóm, cột Branches là số nhánh tính theo điểm rẽ nhánh trong mã nguồn (mỗi <code>if</code>, <code>for</code>, <code>while</code>, <code>?:</code> có 2 nhánh đúng/sai, mỗi <code>case</code> là 1 nhánh, không tính <code>CHECK</code>), tức là đúng C2. Ví dụ ở hàm <code>SetUpperBound</code>, cùng một bộ test: gcov mặc định báo 9/10 nhánh, còn cách đếm theo điểm rẽ nhánh báo 4/4. Nhánh mà gcov báo thiếu chỉ là một tổ hợp điều kiện con của <code>a &amp;&amp; b</code>.</p>
+
+<h3>4.4. So sánh với bộ test có sẵn của Ceres</h3>
+<p>Ceres có sẵn 175 file test do người viết. Sau khi có bộ test do LLM sinh, nhóm đo bộ test có sẵn trên cùng 270 unit, bằng cùng cách đếm, để so sánh. Bộ có sẵn đạt C1 634/647 dòng (98,0%) và C2 64/66 nhánh (97,0%), tức là ngang với bộ do LLM sinh. Khác biệt nằm ở phạm vi: có 39 unit chỉ test của LLM chạy tới (bộ có sẵn không hề gọi), ngược lại có 18 unit chỉ bộ có sẵn chạy tới, chủ yếu là các unit mà test LLM không biên dịch được hoặc dừng sớm.</p>
+
+<h3>4.5. Đối chiếu với các tiêu chí C1, C2, C3</h3>
+<p><b>C1 (phủ câu lệnh)</b> đo được trên 253 unit chạy được: 98,0%. Đây là số đo theo dòng nên chỉ xấp xỉ C1. 13 dòng chưa chạy nằm ở các unit có test dừng sớm hoặc hàm rỗng không được gọi tới.</p>
+<p><b>C2 (phủ nhánh)</b> đo được trên 253 unit, cùng cách đếm với CFG: 59/60 nhánh. Nhánh duy nhất còn thiếu là nhánh hàm <code>Plus()</code> của đối tượng manifold trả về <code>false</code> trong <code>ParameterBlock::Plus</code>. Con số này mới chứng minh được cho 270 unit dễ đã chạy, chưa phải cho cả 1.540 unit.</p>
+<p><b>C3 (phủ điều kiện con)</b> nhóm chưa đo, nên chưa có kết luận gì về C3. Số nhánh mức mã máy của gcov chỉ gần với C3, không phải C3.</p>
+<p>Ngoài ra, việc phủ vòng lặp (chạy 0, 1, 2, …, n lần) có trong thiết kế test của LLM nhưng không đo được bằng gcov, vì gcov chỉ đếm số lần chạy chứ không ghi lại đường đi của từng test.</p>
+
+<h2>5. Phân tích 9 hàm</h2>
+<p>Nhóm chọn 3 hàm phủ cao nhất (trong các hàm phủ đủ, lấy hàm có nhiều nhánh nhất), 3 hàm phủ thấp nhất, và 3 hàm chọn ngẫu nhiên với seed cố định, rồi so sánh với bộ test có sẵn trên cùng hàm.</p>
+<table border="1">
+<tr><th>Nhóm</th><th>Hàm</th><th>Test LLM (C1 · C2)</th><th>Test có sẵn (C1 · C2)</th></tr>
+<tr><td>Cao nhất</td><td><code>LinearIndexToUpperTriangularIndex</code></td><td>19/19 · 6/6</td><td>19/19 · 6/6</td></tr>
+<tr><td>Cao nhất</td><td><code>FindInvalidValue</code></td><td>7/7 · 6/6</td><td>7/7 · 6/6</td></tr>
+<tr><td>Cao nhất</td><td><code>IsClose</code></td><td>10/10 · 6/6</td><td>10/10 · 6/6</td></tr>
+<tr><td>Thấp nhất</td><td><code>LevenbergMarquardtStrategy::StepAccepted</code></td><td>0/7 · không có nhánh</td><td>8/8 · không có nhánh</td></tr>
+<tr><td>Thấp nhất</td><td><code>IsArrayValid</code></td><td>không biên dịch được</td><td>6/6 · 6/6</td></tr>
+<tr><td>Thấp nhất</td><td><code>ParameterBlock::Plus</code></td><td>12/13 · 11/12</td><td>12/13 · 11/12</td></tr>
+<tr><td>Ngẫu nhiên</td><td><code>Make1stOrderPerturbations::Apply</code></td><td>1/1 · không có nhánh</td><td>1/1 · không có nhánh</td></tr>
+<tr><td>Ngẫu nhiên</td><td><code>IsInfinite</code></td><td>1/1 · không có nhánh</td><td>không được gọi</td></tr>
+<tr><td>Ngẫu nhiên</td><td><code>FixedArray::EmptyInlinedStorage::AnnotateConstruct</code></td><td>0/1 · không có nhánh</td><td>0/1 · không có nhánh</td></tr>
+</table>
+<p><b>Ba hàm phủ cao nhất</b> đều là hàm tính toán thuần, tham số là số hoặc mảng, không cần dựng object phức tạp. Với <code>LinearIndexToUpperTriangularIndex</code>, LLM viết đúng 4 test cho 4 test path, đủ đi qua 6 nhánh, mỗi test ghi chú path theo số node của CFG. Với <code>FindInvalidValue</code>, LLM viết 10 test theo đúng quy tắc vòng lặp trong prompt (con trỏ rỗng, lặp 0, 1, 2, giữa, n−1, n lần và các lối thoát), nhiều hơn mức cần cho C2. Với <code>IsClose</code>, LLM chỉ dùng 2 test: một path cho cả 3 điểm rẽ nhánh cùng đúng, một path cho cả 3 cùng sai, là cách phủ C2 tiết kiệm nhất. Bộ test có sẵn của Ceres cũng phủ đủ các hàm này nhưng theo cách khác: test của <code>LinearIndexToUpperTriangularIndex</code> duyệt mọi kích thước từ 0 đến 99 và kiểm tra kết quả hợp lệ, test của <code>IsClose</code> gọi hàng chục lần và kiểm tra giá trị sai số trả về. Tức là người viết kiểm tra tính đúng, còn LLM bám theo cấu trúc CFG.</p>
+<p><b>Ba hàm phủ thấp nhất</b> cho thấy điểm yếu của LLM. Hàm <code>StepAccepted</code> rất đơn giản, nhưng muốn gọi nó phải tạo một <code>LevenbergMarquardtStrategy</code>, mà object này cần một bộ giải tuyến tính. LLM tạo bộ giải mà không đặt trường <code>context</code> bắt buộc, nên một <code>CHECK</code> làm chương trình dừng trước khi tới hàm cần test; bộ test có sẵn khởi tạo đúng nên phủ đủ 8/8 dòng. Hàm <code>IsArrayValid</code> được thiết kế test đúng nhưng code dùng một hằng số mà quên ghi namespace, nên không biên dịch được. Hàm <code>ParameterBlock::Plus</code> đáng chú ý nhất: LLM có nghĩ tới nhánh khó là "manifold trả về thất bại" và tự viết một class giả để tạo tình huống đó, rồi báo "C2 dự kiến 12/12". Nhưng class giả không điền ma trận Jacobian, nên constructor của <code>ParameterBlock</code> dừng ở một <code>CHECK</code> và nhánh đó không bao giờ được chạy; đo thật chỉ được 11/12. Bộ test có sẵn của Ceres cũng thiếu đúng nhánh này.</p>
+<p><b>Ba hàm ngẫu nhiên</b> đều là hàm rỗng hoặc một dòng, phản ánh đúng phần lớn 270 unit đầu. Với <code>Make1stOrderPerturbations::Apply</code>, LLM phải tự chọn đúng tham số template để gọi được bản rỗng của hàm, và đã làm đúng. Hàm <code>IsInfinite</code> đã bị đánh dấu ngừng hỗ trợ và không được test có sẵn nào gọi, nhưng LLM vẫn gọi được (còn tự tắt cảnh báo ngừng hỗ trợ), đây là ví dụ cho 39 unit chỉ test LLM chạy tới. Với <code>AnnotateConstruct</code>, LLM giải thích rất chắc chắn rằng constructor của <code>FixedArray&lt;int, 0&gt;</code> sẽ gọi hàm này một lần, nhưng đo thật thì dòng đó không được chạy; bộ test có sẵn cũng không chạy tới. Đây là ví dụ LLM suy luận sai về hành vi của code mà vẫn trình bày tự tin, và chỉ đo thật mới phát hiện được.</p>
+<p>Tóm lại, test do LLM sinh phủ đều mọi hàm theo thứ tự, kể cả hàm nhỏ hay ít dùng mà người viết bỏ qua, và mỗi test truy vết được về test path và nhánh. Ngược lại, test do người viết kiểm tra được kết quả đúng sai, biết khởi tạo các object phức tạp và hiểu các ràng buộc ngầm của thư viện, những điều mà LLM chưa làm tốt.</p>
+
+<h2>6. Giới hạn</h2>
+<p>Số liệu trong báo cáo mới tính trên 270/1.540 unit, toàn bộ là unit dễ, nên chưa đại diện cho cả project. Vì không có kết quả mong đợi, bộ test chỉ chứng minh được code đã được chạy qua, không chứng minh được code đúng. C1 đo theo dòng nên chỉ là xấp xỉ, và C3 chưa được đo. Chế độ đo theo điểm rẽ nhánh của gcovr còn là tính năng thử nghiệm, nhóm phải tự suy ra 2 điểm rẽ nhánh mà công cụ không nhận ra. Nhóm cũng phát hiện 4 CFG bị sai: 3 hàm bị lấy nhầm CFG của một hàm cùng tên, cùng số tham số nhưng khác kiểu tham số, và 1 hàm bị đếm thêm một điểm rẽ nhánh do cách Clang xử lý biến <code>static</code>.</p>
+
+<h2>7. Kết luận</h2>
+<p>Qua tuần này, nhóm thấy việc dùng LLM để sinh test cho một project lớn khác nhiều so với tự viết test. Phần lớn công sức không nằm ở bước gọi LLM mà ở việc chuẩn bị: hiểu project, phân tích tĩnh mã nguồn, chọn ngữ cảnh, dựng CFG bằng công cụ, thiết kế prompt và xây dựng cách đo. Khi đã có quy trình, việc sinh test rất nhanh: 250 unit xong trong khoảng 25 phút.</p>
+<p>Điểm đặc biệt khi áp dụng LLM cho kiểm thử dòng điều khiển là phải chia việc đúng chỗ. Phần có thể tính chính xác (CFG, đếm nhánh, đo phủ) nên giao cho công cụ; phần cần hiểu ý nghĩa (giải điều kiện đường đi, chọn dữ liệu, tạo object, viết code) mới giao cho LLM. Khi LLM tự vẽ CFG thì kết quả không ổn định; khi được đưa CFG dựng sẵn, LLM ghi đúng tổng số nhánh ở cả 20/20 unit chạy thử. Ngoài ra, cùng một chữ "nhánh" nhưng giáo trình, CFG và gcov đếm khác nhau, nên phải thống nhất một cách đếm thì mới so được "C2 dự kiến" của LLM với C2 đo thật.</p>
+<p><b>Ưu điểm</b> của cách làm này là nhanh và rẻ (khoảng 12 giây và 5.700 token mỗi unit), chạy tự động được cho cả project, phủ đều cả những hàm nhỏ mà người viết test bỏ qua, và đầu ra có cấu trúc rõ ràng từ test path tới dữ liệu tới code, đúng tinh thần của kiểm thử dòng điều khiển. Với các hàm tính toán có tham số đơn giản, LLM đạt C2 đầy đủ, đôi khi còn nghĩ ra nhánh khó mà bộ test có sẵn bỏ sót.</p>
+<p><b>Nhược điểm</b> là không có kết quả mong đợi thì test không phát hiện được lỗi tính sai; LLM yếu ở việc khởi tạo object phức tạp và các ràng buộc ngầm của thư viện; vẫn còn lỗi biên dịch vặt (6,3% số unit); và LLM có thể giải thích sai hành vi của code một cách rất tự tin. Vì vậy mọi con số mà LLM tự báo đều phải kiểm chứng bằng đo thật.</p>
+<p>Nhìn chung, LLM phù hợp để mở rộng độ phủ một cách có hệ thống trên project lớn khi đi kèm công cụ dựng CFG, ngữ cảnh được chọn lọc và đo phủ thật, nhưng chưa thay thế được test do người viết ở phần kiểm tra tính đúng. Hai loại test bổ sung cho nhau: trên 270 unit, gộp cả hai thì có thêm 39 unit được chạy tới so với chỉ dùng bộ test có sẵn.</p>
+
+<h2>Tài liệu tham khảo</h2>
+<ol>
+<li>Google OSS-Fuzz, <i>Fuzz target generation using LLMs</i>, google.github.io/oss-fuzz/research/llms/target_generation/; Google Security Blog, <i>AI-Powered Fuzzing: Breaking the Bug Hunting Barrier</i>, 08/2023.</li>
+<li>IBM Research, <i>ASTER: LLM unit testing</i>, research.ibm.com/blog/aster-llm-unit-testing.</li>
+<li><i>TestART: Improving LLM-based Unit Testing via Co-evolution of Automated Generation and Repair Iteration</i>, arXiv:2408.03095.</li>
+<li>V. Bekmyradov, N. C. Pütz, T. Bartz-Beielstein, <i>LLMs taking shortcuts in test generation: A study with SAP HANA and LevelDB</i>, arXiv:2604.14437, 2026.</li>
+<li>Y. Chen et al., <i>ChatUniTest: A Framework for LLM-Based Test Generation</i>, FSE 2024, arXiv:2305.04764.</li>
+<li>J. Chen et al., <i>Context Matters: Improving the Practical Reliability of LLM-Based Unit Test Generation</i>, arXiv:2607.19682.</li>
+<li>Zhang et al., <i>CITYWALK</i>, arXiv:2501.16155.</li>
+<li>S. Ouyang et al., <i>RepoGraph: Enhancing AI Software Engineering with Repository-level Code Graph</i>, ICLR 2025, arXiv:2410.14684.</li>
+<li>GCC, <i>Gcov</i> và <i>Instrumentation Options</i>, gcc.gnu.org/onlinedocs/gcc/Gcov.html.</li>
+<li>gcovr, <i>User Guide</i> và <i>Command Line Reference</i> (tuỳ chọn <code>--decisions</code>), gcovr.com/en/stable/.</li>
+<li>Clang, <i>class CFG</i>, clang.llvm.org/doxygen/classclang_1_1CFG.html; <i>libclang</i>, clang.llvm.org/docs/LibClang.html.</li>
+<li>N. Alshahwan et al., <i>Automated Unit Test Improvement using Large Language Models at Meta</i>, FSE 2024, arXiv:2402.09171.</li>
+<li>J. Wang et al., <i>Software Testing with Large Language Models: Survey, Landscape, and Vision</i>, IEEE TSE 2024, arXiv:2307.07221.</li>
+</ol>
+<p><b>Nguồn số liệu:</b> toàn bộ số liệu lấy từ repo github.com/Ngocduc01-dev/ceres-llm-test. Số unit, đồ thị quan hệ và ngữ cảnh lấy từ <code>reports/graph/summary.txt</code>, <code>reports/units/summary.txt</code>, <code>reports/context/summary.txt</code>; số CFG từ <code>reports/cfg/summary.txt</code>; thời gian và token từ <code>logs/raw/generate.log</code>; kết quả biên dịch, chạy và độ phủ của test LLM từ <code>reports/phase6/summary.md</code> và <code>gen_coverage.html</code>; độ phủ của bộ test có sẵn trên từng unit từ <code>reports/phase6/baseline_units.csv</code>; test path và test case của từng unit trong <code>units/&lt;id&gt;/response.md</code>.</p>
+
+<h2>Phụ lục A. Prompt mẫu ban đầu</h2>
+<p>Prompt mẫu được tham khảo từ nhóm khác và đã có sửa đổi. Trong prompt này, AI đóng vai chuyên gia kiểm thử hộp trắng, tự dựng CFG theo chuẩn C3, lập bảng phủ điều kiện con, tìm các đường đi độc lập và tính kết quả mong đợi cho từng test case. Đây là prompt nhóm dùng lúc đầu; prompt nhóm dùng để sinh test cho 270 unit theo C2 nằm trên GitHub (xem Phụ lục B).</p>
+<pre>[VAI TRÒ]
+Bạn là Chuyên gia Phân tích Mã nguồn và Kiểm thử Hộp trắng cao cấp. Hãy thực hiện thiết kế kiểm thử bằng kỹ thuật KIỂM THỬ LUỒNG ĐIỀU KHIỂN (Control Flow Testing - CFT) theo TIÊU CHÍ ĐỘ ĐO C3 (Condition Coverage - Bao phủ điều kiện con) cho đoạn mã nguồn dưới đây.
+[MÃ NGUỒN CẦN KIỂM THỬ]
+bool OptionsAreValidForCgnr(const Solver::Options&amp; options,
+                            std::string* error) {
+  CHECK_EQ(options.linear_solver_type, CGNR);
+
+  if (options.preconditioner_type != IDENTITY &amp;&amp;
+      options.preconditioner_type != JACOBI &amp;&amp;
+      options.preconditioner_type != SUBSET) {
+    *error = absl::StrFormat(
+        "Can't use CGNR with preconditioner_type = %s.",
+        PreconditionerTypeToString(options.preconditioner_type));
+    return false;
+  }
+
+  if (options.use_mixed_precision_solves) {
+    *error = "use_mixed_precision_solves cannot be used with CGNR";
+    return false;
+  }
+
+  if (options.dynamic_sparsity) {
+    *error = "Dynamic sparsity is only supported with SPARSE_NORMAL_CHOLESKY.";
+    return false;
+  }
+
+  if (options.preconditioner_type == SUBSET) {
+    if (options.sparse_linear_algebra_library_type == CUDA_SPARSE) {
+      *error =
+          "Can't use CGNR with preconditioner_type = SUBSET when "
+          "sparse_linear_algebra_library_type = CUDA_SPARSE.";
+      return false;
+    }
+
+    if (options.residual_blocks_for_subset_preconditioner.empty()) {
+      *error =
+          "When using SUBSET preconditioner, "
+          "residual_blocks_for_subset_preconditioner cannot be empty";
+      return false;
+    }
+
+    // SUBSET preconditioner requires sparse Cholesky factorization.
+    if (!OptionsAreValidForSparseCholeskyBasedSolver(options, error)) {
+      return false;
+    }
+  }
+
+  // Check options for CGNR with CUDA_SPARSE.
+  if (options.sparse_linear_algebra_library_type == CUDA_SPARSE) {
+    if (!IsSparseLinearAlgebraLibraryTypeAvailable(CUDA_SPARSE)) {
+      *error =
+          "Can't use CGNR with sparse_linear_algebra_library_type = "
+          "CUDA_SPARSE because support was not enabled when Ceres was built.";
+      return false;
+    }
+  }
+  return true;
+}
+
+[YÊU CẦU KỸ THUẬT CHI TIẾT (CHUẨN ĐỘ ĐO C3)]
+1. Xây dựng ĐỒ THỊ DÒNG ĐIỀU KHIỂN G = &lt;N, E&gt; THEO CHUẨN C3 (CFG for C3):
+ - Đối với các câu lệnh điều kiện phức tạp (chứa các toán tử logic &amp;&amp;, ||), BẮT BUỘC phải tách thành các đỉnh quyết định con đơn nguyên (atomic predicate nodes, ký hiệu như 5c1, 5c2...).
+ - Liệt kê chi tiết tập Đỉnh (Nodes N): Gộp các câu lệnh tuần tự liên tiếp thành 1 đỉnh khối cơ bản; chỉ rõ đỉnh bắt đầu, các đỉnh quyết định đơn nguyên (P_nodes), đỉnh nối (junction), và đỉnh kết thúc.
+ - Liệt kê chi tiết tập Cạnh có hướng (Edges E): Ghi rõ nhánh Đúng (True - T) và Sai (False - F) xuất phát từ mỗi đỉnh quyết định con.
+ - Vẽ sơ đồ CFG trực quan bằng khối mã Mermaid (`graph TD`).
+
+2. Thiết lập BẢNG ĐỘ PHỦ ĐIỀU KIỆN CON C3 (C3 Condition Coverage Table):
+ - Liệt kê toàn bộ các đỉnh quyết định đơn nguyên (P_nodes) và biểu thức điều kiện con tương ứng.
+ - Đảm bảo đạt 100% độ phủ C3: Mỗi biểu thức điều kiện con cơ bản phải nhận cả hai giá trị True (T) và False (F) ít nhất một lần trong bộ kiểm thử.
+3. Xác định TẬP CÁC ĐƯỜNG ĐI ĐỘC LẬP TUYẾN TÍNH (Independent Test Paths) để bao phủ toàn bộ lệnh, nhánh và đạt 100% tiêu chí C3.
+4. Với mỗi đường đi kiểm thử, giải điều kiện đường đi (Path Sensitization) để tìm một bộ dữ liệu đầu vào cụ thể và tính toán chính xác Kết quả mong đợi (Expected Output).
+[ĐỊNH DẠNG ĐẦU RA BẮT BUỘC]
+- Phần 1: Mô hình CFG G = &lt;N, E&gt; chuẩn C3 (Bảng danh sách Đỉnh N, Bảng danh sách Cạnh E, Sơ đồ Mermaid, và Phép tính độ phức tạp McCabe V(G) = E - N + 2P = P_nodes + 1).
+- Phần 2: Bảng theo dõi độ phủ điều kiện con C3:
+| Đỉnh quyết định (P_node) | Biểu thức điều kiện con | Test Case phủ nhánh True (T) | Test Case phủ nhánh False (F) |
+- Phần 3: Danh sách các đường đi kiểm thử (Test Paths) và điều kiện kích hoạt tương ứng.
+- Phần 4: Bảng kết quả Test Cases hoàn chỉnh gồm đúng 4 cột định dạng Markdown:
+| Test Case ID | Dữ liệu đầu vào (Inputs) | Kết quả mong đợi (Expected Output) | Result |
+*(Ghi chú: Cột Result để trống để điền kết quả thực tế khi chạy test).*</pre>
+
+<h2>Phụ lục B. Prompt và dữ liệu thực hiện trên GitHub</h2>
+<p>Toàn bộ prompt, script và dữ liệu thực hiện của nhóm được lưu tại <a href="https://github.com/Ngocduc01-dev/ceres-llm-test">https://github.com/Ngocduc01-dev/ceres-llm-test</a>. Prompt chung theo C2 nằm ở <code>prompts/master_prompt.md</code>. Mỗi unit có một thư mục riêng <code>units/&lt;id&gt;/</code> gồm mã nguồn của unit (<code>source.cc</code>), CFG do Clang dựng (<code>cfg.txt</code>), prompt đã gửi (<code>prompt.md</code>), câu trả lời nguyên văn của LLM (<code>response.md</code>), file test (<code>&lt;id&gt;_test.cc</code>) và kết quả chạy, đo phủ (<code>result.json</code>). Trang tổng quan độ phủ của bộ test do LLM sinh nằm ở <code>reports/phase6/gen_coverage.html</code>; các script thực hiện nằm trong thư mục <code>scripts/</code>.</p>
+
+</body>
+</html>

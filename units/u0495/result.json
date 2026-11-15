@@ -1,0 +1,32 @@
+{
+  "id": "u0495",
+  "name": "ceres::internal::Take0thOrderPart",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Take0thOrderPartTest.ZeroIterations": "pass",
+    "Take0thOrderPartTest.OneIteration": "pass",
+    "Take0thOrderPartTest.TwoIterations": "pass",
+    "Take0thOrderPartTest.ThreeIterations": "pass",
+    "Take0thOrderPartTest.FourIterations": "pass",
+    "Take0thOrderPartTest.FiveIterations": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 5
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

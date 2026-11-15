@@ -1,0 +1,14 @@
+{
+  "id": "u0921",
+  "name": "ceres::internal::Minimizer::Create",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0921/u0921_test.cc:9:3: error: ‘MinimizerType’ was not declared in this scope; did you mean ‘ceres::MinimizerType’?",
+    "units/u0921/u0921_test.cc:10:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’",
+    "units/u0921/u0921_test.cc:11:17: error: ‘minimizer_type’ was not declared in this scope",
+    "units/u0921/u0921_test.cc:16:3: error: ‘MinimizerType’ was not declared in this scope; did you mean ‘ceres::MinimizerType’?",
+    "units/u0921/u0921_test.cc:17:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’",
+    "units/u0921/u0921_test.cc:18:17: error: ‘minimizer_type’ was not declared in this scope"
+  ]
+}

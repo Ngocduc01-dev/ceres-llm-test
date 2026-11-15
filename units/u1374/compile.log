@@ -1,0 +1,92 @@
+/work/repo/units/u1374/u1374_test.cc: In member function ‘virtual void Unit_u1374_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1374/u1374_test.cc:11:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   11 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u1374/u1374_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1374/u1374_test.cc:12:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’
+   12 |   ceres::internal::SubsetPreconditioner object{};
+      |                                                ^
+In file included from /work/repo/units/u1374/u1374_test.cc:7:
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note: candidate: ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   73 |   SubsetPreconditioner(Preconditioner::Options options,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1374/u1374_test.cc:13:21: error: ‘A’ was not declared in this scope
+   13 |   object.UpdateImpl(A, nullptr);
+      |                     ^
+/work/repo/units/u1374/u1374_test.cc: In member function ‘virtual void Unit_u1374_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1374/u1374_test.cc:18:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   18 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1374/u1374_test.cc:19:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::SubsetPreconditioner object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note: candidate: ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   73 |   SubsetPreconditioner(Preconditioner::Options options,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1374/u1374_test.cc:20:21: error: ‘A’ was not declared in this scope
+   20 |   object.UpdateImpl(A, nullptr);
+      |                     ^
+/work/repo/units/u1374/u1374_test.cc: In member function ‘virtual void Unit_u1374_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1374/u1374_test.cc:25:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   25 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1374/u1374_test.cc:26:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’
+   26 |   ceres::internal::SubsetPreconditioner object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note: candidate: ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   73 |   SubsetPreconditioner(Preconditioner::Options options,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1374/u1374_test.cc:27:21: error: ‘A’ was not declared in this scope
+   27 |   object.UpdateImpl(A, nullptr);
+      |                     ^
+/work/repo/units/u1374/u1374_test.cc: In member function ‘virtual void Unit_u1374_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1374/u1374_test.cc:32:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   32 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1374/u1374_test.cc:33:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’
+   33 |   ceres::internal::SubsetPreconditioner object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note: candidate: ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   73 |   SubsetPreconditioner(Preconditioner::Options options,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1374/u1374_test.cc:34:21: error: ‘A’ was not declared in this scope
+   34 |   object.UpdateImpl(A, nullptr);
+      |                     ^
+/work/repo/units/u1374/u1374_test.cc: In member function ‘virtual void Unit_u1374_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1374/u1374_test.cc:39:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   39 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1374/u1374_test.cc:40:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’
+   40 |   ceres::internal::SubsetPreconditioner object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note: candidate: ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   73 |   SubsetPreconditioner(Preconditioner::Options options,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/subset_preconditioner.h:73:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1374/u1374_test.cc:41:21: error: ‘A’ was not declared in this scope
+   41 |   object.UpdateImpl(A, nullptr);
+      |                     ^

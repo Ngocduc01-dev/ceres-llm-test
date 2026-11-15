@@ -1,0 +1,77 @@
+{
+  "id": "u1391",
+  "name": "ceres::internal::CreateLinearLeastSquaresProblemFromId",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u1391.TC1_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 18
+  },
+  "c2": {
+    "covered": 1,
+    "total": 8,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 54,
+      "missing": [
+        "case"
+      ],
+      "code": "case 1:"
+    },
+    {
+      "line": 56,
+      "missing": [
+        "case"
+      ],
+      "code": "case 2:"
+    },
+    {
+      "line": 58,
+      "missing": [
+        "case"
+      ],
+      "code": "case 3:"
+    },
+    {
+      "line": 60,
+      "missing": [
+        "case"
+      ],
+      "code": "case 4:"
+    },
+    {
+      "line": 62,
+      "missing": [
+        "case"
+      ],
+      "code": "case 5:"
+    },
+    {
+      "line": 64,
+      "missing": [
+        "case"
+      ],
+      "code": "case 6:"
+    },
+    {
+      "line": 66,
+      "missing": [
+        "case"
+      ],
+      "code": "default:"
+    }
+  ]
+}

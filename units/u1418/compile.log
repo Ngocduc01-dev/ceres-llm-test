@@ -1,0 +1,29 @@
+/work/repo/units/u1418/u1418_test.cc: In member function ‘virtual void Unit_u1418_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1418/u1418_test.cc:10:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u1418/u1418_test.cc:5:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1418/u1418_test.cc:11:24: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ClusterCameras(const std::vector<std::set<int> >&)’ is private within this context
+   11 |   object.ClusterCameras(visibility);
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:158:8: note: declared private here
+  158 |   void ClusterCameras(const std::vector<std::set<int>>& visibility);
+      |        ^~~~~~~~~~~~~~
+/work/repo/units/u1418/u1418_test.cc: In member function ‘virtual void Unit_u1418_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1418/u1418_test.cc:17:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1418/u1418_test.cc:18:24: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ClusterCameras(const std::vector<std::set<int> >&)’ is private within this context
+   18 |   object.ClusterCameras(visibility);
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:158:8: note: declared private here
+  158 |   void ClusterCameras(const std::vector<std::set<int>>& visibility);
+      |        ^~~~~~~~~~~~~~

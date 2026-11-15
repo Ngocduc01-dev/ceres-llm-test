@@ -1,0 +1,13 @@
+{
+  "id": "u1202",
+  "name": "ceres::internal::InnerProductComputer::Compute",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1202/u1202_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1202/u1202_test.cc:17:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1202/u1202_test.cc:23:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1202/u1202_test.cc:29:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1202/u1202_test.cc:35:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’"
+  ]
+}

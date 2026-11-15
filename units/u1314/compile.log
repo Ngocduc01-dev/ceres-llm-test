@@ -1,0 +1,101 @@
+/work/repo/units/u1314/u1314_test.cc: In member function ‘virtual void Unit_u1314_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1314/u1314_test.cc:7:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+In file included from /work/repo/units/u1314/u1314_test.cc:3:
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1314/u1314_test.cc:8:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context
+    8 |   object.FindMinimumOnTrustRegionBoundary(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:91:8: note: declared private here
+   91 |   bool FindMinimumOnTrustRegionBoundary(Vector2d* minimum) const;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1314/u1314_test.cc: In member function ‘virtual void Unit_u1314_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1314/u1314_test.cc:13:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   13 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1314/u1314_test.cc:14:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context
+   14 |   object.FindMinimumOnTrustRegionBoundary(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:91:8: note: declared private here
+   91 |   bool FindMinimumOnTrustRegionBoundary(Vector2d* minimum) const;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1314/u1314_test.cc: In member function ‘virtual void Unit_u1314_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1314/u1314_test.cc:19:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1314/u1314_test.cc:20:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context
+   20 |   object.FindMinimumOnTrustRegionBoundary(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:91:8: note: declared private here
+   91 |   bool FindMinimumOnTrustRegionBoundary(Vector2d* minimum) const;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1314/u1314_test.cc: In member function ‘virtual void Unit_u1314_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1314/u1314_test.cc:25:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   25 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1314/u1314_test.cc:26:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context
+   26 |   object.FindMinimumOnTrustRegionBoundary(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:91:8: note: declared private here
+   91 |   bool FindMinimumOnTrustRegionBoundary(Vector2d* minimum) const;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1314/u1314_test.cc: In member function ‘virtual void Unit_u1314_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1314/u1314_test.cc:31:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   31 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1314/u1314_test.cc:32:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context
+   32 |   object.FindMinimumOnTrustRegionBoundary(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:91:8: note: declared private here
+   91 |   bool FindMinimumOnTrustRegionBoundary(Vector2d* minimum) const;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

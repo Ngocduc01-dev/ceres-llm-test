@@ -1,0 +1,10 @@
+{
+  "id": "u1436",
+  "name": "ceres::internal::ParameterBlock::ParameterBlock",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1436/u1436_test.cc:10:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1436/u1436_test.cc:18:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’"
+  ]
+}

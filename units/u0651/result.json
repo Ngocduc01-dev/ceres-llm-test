@@ -1,0 +1,11 @@
+{
+  "id": "u0651",
+  "name": "ceres::internal::BlockSparseMatrixData::BlockSparseMatrixData",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0651/u0651_test.cc:8:10: error: scalar object ‘block_structure_data’ requires one element in initializer",
+    "units/u0651/u0651_test.cc:9:10: error: scalar object ‘values_data’ requires one element in initializer",
+    "units/u0651/u0651_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

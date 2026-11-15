@@ -1,0 +1,19 @@
+/work/repo/units/u1138/u1138_test.cc: In member function ‘virtual void Unit_u1138_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1138/u1138_test.cc:9:3: error: ‘SparseLinearAlgebraLibraryType’ was not declared in this scope; did you mean ‘ceres::SparseLinearAlgebraLibraryType’?
+    9 |   SparseLinearAlgebraLibraryType type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::SparseLinearAlgebraLibraryType
+In file included from /work/ceres-solver/internal/ceres/linear_operator.h:38,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:40,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/linear_solver.h:43,
+                 from /work/ceres-solver/internal/ceres/eigensparse.h:46,
+                 from /work/repo/units/u1138/u1138_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:166:6: note: ‘ceres::SparseLinearAlgebraLibraryType’ declared here
+  166 | enum SparseLinearAlgebraLibraryType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1138/u1138_test.cc:10:38: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?
+   10 |   ceres::IsNestedDissectionAvailable(type);
+      |                                      ^~~~
+      |                                      wctype

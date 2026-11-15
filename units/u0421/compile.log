@@ -1,0 +1,25 @@
+In file included from /work/repo/units/u0421/u0421_test.cc:3:
+/work/ceres-solver/internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteSparse’ has initializer but incomplete type
+  284 | class CERES_NO_EXPORT SuiteSparse {
+      |                       ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/suitesparse.h:285:2: error: expected primary-expression before ‘public’
+  285 |  public:
+      |  ^~~~~~
+/work/ceres-solver/internal/ceres/suitesparse.h:285:2: error: expected ‘}’ before ‘public’
+/work/ceres-solver/internal/ceres/suitesparse.h:284:35: note: to match this ‘{’
+  284 | class CERES_NO_EXPORT SuiteSparse {
+      |                                   ^
+/work/ceres-solver/internal/ceres/suitesparse.h:285:2: error: expected ‘,’ or ‘;’ before ‘public’
+  285 |  public:
+      |  ^~~~~~
+/work/ceres-solver/internal/ceres/suitesparse.h:293:1: error: expected declaration before ‘}’ token
+  293 | }  // namespace ceres
+      | ^
+/work/repo/units/u0421/u0421_test.cc: In member function ‘virtual void ceres::internal::SuiteSparseFreeTest_P1_NoBranch_Test::TestBody()’:
+/work/repo/units/u0421/u0421_test.cc:10:14: error: expected ‘;’ before ‘obj’
+   10 |   SuiteSparse obj;
+      |              ^~~~
+      |              ;
+/work/repo/units/u0421/u0421_test.cc:11:3: error: ‘obj’ was not declared in this scope
+   11 |   obj.Free(nullptr);
+      |   ^~~

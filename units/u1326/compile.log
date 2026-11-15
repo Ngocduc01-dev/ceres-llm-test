@@ -1,0 +1,9 @@
+/work/repo/units/u1326/u1326_test.cc: In member function ‘virtual void Unit_u1326_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1326/u1326_test.cc:11:9: error: no match for call to ‘(ceres::internal::DynamicCompressedRowJacobianFinalizer) (std::nullptr_t)’
+   11 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+In file included from /work/repo/units/u1326/u1326_test.cc:4:
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_finalizer.h:41:8: note: candidate: ‘void ceres::internal::DynamicCompressedRowJacobianFinalizer::operator()(ceres::internal::SparseMatrix*, int)’
+   41 |   void operator()(SparseMatrix* base_jacobian, int num_parameters) {
+      |        ^~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_finalizer.h:41:8: note:   candidate expects 2 arguments, 1 provided

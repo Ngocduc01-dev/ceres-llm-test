@@ -1,0 +1,10 @@
+{
+  "id": "u1424",
+  "name": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalEtE",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1424/u1424_test.cc:9:49: error: class template argument deduction failed:",
+    "units/u1424/u1424_test.cc:9:49: error: no matching function for call to ‘PartitionedMatrixView()’"
+  ]
+}

@@ -1,0 +1,9 @@
+/work/repo/units/u1322/u1322_test.cc: In member function ‘virtual void Unit_u1322_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1322/u1322_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-enclosed initializer list>)’
+    7 |   ceres::Covariance object{};
+      |                            ^
+In file included from /work/repo/units/u1322/u1322_test.cc:3:
+/work/ceres-solver/include/ceres/covariance.h:342:12: note: candidate: ‘ceres::Covariance::Covariance(const Options&)’
+  342 |   explicit Covariance(const Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/include/ceres/covariance.h:342:12: note:   candidate expects 1 argument, 0 provided

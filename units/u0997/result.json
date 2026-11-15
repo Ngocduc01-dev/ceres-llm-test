@@ -1,0 +1,9 @@
+{
+  "id": "u0997",
+  "name": "ceres_create_tolerant_loss_function_data",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0997/u0997_test.cc:9:3: error: ‘ceres_create_tolerant_loss_function_data’ was not declared in this scope"
+  ]
+}

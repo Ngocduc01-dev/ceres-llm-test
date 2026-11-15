@@ -1,0 +1,10 @@
+{
+  "id": "u0549",
+  "name": "ceres::internal::CheckForDuplicates",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0549/u0549_test.cc:9:3: error: ‘CheckForDuplicates’ was not declared in this scope",
+    "units/u0549/u0549_test.cc:13:3: error: ‘CheckForDuplicates’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,28 @@
+/work/repo/units/u1233/u1233_test.cc: In member function ‘virtual void Unit_u1233_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1233/u1233_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1233/u1233_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1233/u1233_test.cc: In member function ‘virtual void Unit_u1233_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1233/u1233_test.cc:15:20: error: expected unqualified-id before ‘(’ token
+   15 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1233/u1233_test.cc:15:21: error: ‘anonymous’ was not declared in this scope
+   15 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1233/u1233_test.cc: In member function ‘virtual void Unit_u1233_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1233/u1233_test.cc:20:20: error: expected unqualified-id before ‘(’ token
+   20 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1233/u1233_test.cc:20:21: error: ‘anonymous’ was not declared in this scope
+   20 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1233/u1233_test.cc: In member function ‘virtual void Unit_u1233_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1233/u1233_test.cc:25:20: error: expected unqualified-id before ‘(’ token
+   25 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1233/u1233_test.cc:25:21: error: ‘anonymous’ was not declared in this scope
+   25 |   ceres::internal::(anonymous)::UpdateCompressedRowSparseMatrixImpl(nullptr, nullptr, nullptr);
+      |                     ^~~~~~~~~

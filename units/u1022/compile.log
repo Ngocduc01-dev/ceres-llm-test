@@ -1,0 +1,9 @@
+/work/repo/units/u1022/u1022_test.cc: In member function ‘virtual void Unit_u1022_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1022/u1022_test.cc:7:45: error: no matching function for call to ‘ceres::internal::ScopedThreadToken::ScopedThreadToken(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::ScopedThreadToken object{};
+      |                                             ^
+In file included from /work/repo/units/u1022/u1022_test.cc:3:
+/work/ceres-solver/internal/ceres/scoped_thread_token.h:43:12: note: candidate: ‘ceres::internal::ScopedThreadToken::ScopedThreadToken(ceres::internal::ThreadTokenProvider*)’
+   43 |   explicit ScopedThreadToken(ThreadTokenProvider* provider)
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/scoped_thread_token.h:43:12: note:   candidate expects 1 argument, 0 provided

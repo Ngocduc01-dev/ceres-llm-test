@@ -1,0 +1,12 @@
+{
+  "id": "u0524",
+  "name": "ceres::internal::SolveRTRWithSparseRHS",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0524/u0524_test.cc:9:10: error: scalar object ‘rows_data’ requires one element in initializer",
+    "units/u0524/u0524_test.cc:10:10: error: scalar object ‘cols_data’ requires one element in initializer",
+    "units/u0524/u0524_test.cc:11:10: error: scalar object ‘values_data’ requires one element in initializer",
+    "units/u0524/u0524_test.cc:12:10: error: scalar object ‘solution_data’ requires one element in initializer"
+  ]
+}

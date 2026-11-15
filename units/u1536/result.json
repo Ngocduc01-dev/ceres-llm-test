@@ -1,0 +1,10 @@
+{
+  "id": "u1536",
+  "name": "ceres::Solve",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1536/u1536_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1536/u1536_test.cc:9:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "u1484",
+  "name": "ceres::Problem::EvaluateResidualBlockAssumingParametersUnchanged",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1484/u1484_test.cc:7:3: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::ResidualBlockId’?",
+    "units/u1484/u1484_test.cc:10:59: error: ‘residual_block_id’ was not declared in this scope"
+  ]
+}

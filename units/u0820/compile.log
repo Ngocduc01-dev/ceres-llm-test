@@ -1,0 +1,17 @@
+/work/repo/units/u0820/u0820_test.cc: In member function ‘virtual void Unit_u0820_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0820/u0820_test.cc:8:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+    8 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+In file included from /work/ceres-solver/include/ceres/loss_function.h:82,
+                 from /work/repo/units/u0820/u0820_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u0820/u0820_test.cc:9:28: error: no matching function for call to ‘ceres::ScaledLoss::ScaledLoss(<brace-enclosed initializer list>)’
+    9 |   ceres::ScaledLoss object{};
+      |                            ^
+/work/ceres-solver/include/ceres/loss_function.h:335:3: note: candidate: ‘ceres::ScaledLoss::ScaledLoss(const ceres::LossFunction*, double, ceres::Ownership)’
+  335 |   ScaledLoss(const LossFunction* rho, double a, Ownership ownership)
+      |   ^~~~~~~~~~
+/work/ceres-solver/include/ceres/loss_function.h:335:3: note:   candidate expects 3 arguments, 0 provided

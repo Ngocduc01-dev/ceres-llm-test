@@ -1,0 +1,18 @@
+/work/repo/units/u0852/u0852_test.cc: In member function ‘virtual void Unit_u0852_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0852/u0852_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+    9 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u0852/u0852_test.cc:9:3: note: suggested alternatives:
+In file included from /work/ceres-solver/internal/ceres/eigen_vector_ops.h:36,
+                 from /work/repo/units/u0852/u0852_test.cc:4:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u0852/u0852_test.cc:11:28: error: ‘x’ was not declared in this scope
+   11 |   ceres::internal::SetZero(x, nullptr, num_threads);
+      |                            ^

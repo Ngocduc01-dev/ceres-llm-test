@@ -1,0 +1,10 @@
+{
+  "id": "u1527",
+  "name": "ceres::Problem::RemoveResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1527/u1527_test.cc:7:3: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::ResidualBlockId’?",
+    "units/u1527/u1527_test.cc:9:30: error: ‘residual_block’ was not declared in this scope"
+  ]
+}

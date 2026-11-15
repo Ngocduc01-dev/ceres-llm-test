@@ -1,0 +1,16 @@
+{
+  "id": "u1129",
+  "name": "ceres::internal::FindPolynomialRoots",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u1129/u1129_test.cc:7:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:8:40: error: ‘polynomial_in’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:13:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:14:40: error: ‘polynomial_in’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:19:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:20:40: error: ‘polynomial_in’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:25:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1129/u1129_test.cc:26:40: error: ‘polynomial_in’ was not declared in this scope"
+  ]
+}

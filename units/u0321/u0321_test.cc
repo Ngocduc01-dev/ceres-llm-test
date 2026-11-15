@@ -2,10 +2,24 @@
 #include "gtest/gtest.h"
 #include "ceres/levenberg_marquardt_strategy.h"
 
-TEST(Unit_u0321, PathP1) {
-  ceres::internal::TrustRegionStrategy::Options options;
-  ceres::internal::LinearSolver::Options solver_options;
-  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
+namespace ceres {
+namespace internal {
+
+// TC1 - Path P1: START -> END (destructor mặc định, không có nhánh)
+TEST(LevenbergMarquardtStrategyDestructorTest, P1_StartToEnd) {
+  LinearSolver::Options linear_solver_options;
+  linear_solver_options.type = DENSE_QR;
+  std::unique_ptr<LinearSolver> linear_solver(
+      LinearSolver::Create(linear_solver_options));
+
+  TrustRegionStrategy::Options options;
   options.linear_solver = linear_solver.get();
-  { ceres::internal::LevenbergMarquardtStrategy target(options); }
+
+  std::unique_ptr<LevenbergMarquardtStrategy> strategy(
+      new LevenbergMarquardtStrategy(options));
+  // Gọi destructor đúng một lần.
+  strategy.reset();
 }
+
+}  // namespace internal
+}  // namespace ceres

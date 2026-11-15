@@ -1,0 +1,9 @@
+{
+  "id": "u1255",
+  "name": "ceres::internal::SchurJacobiPreconditioner::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1255/u1255_test.cc:8:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

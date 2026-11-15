@@ -1,0 +1,9 @@
+{
+  "id": "u1241",
+  "name": "ceres::internal::BlockSparseJacobiPreconditioner::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1241/u1241_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

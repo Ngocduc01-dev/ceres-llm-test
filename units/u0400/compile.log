@@ -1,0 +1,88 @@
+In file included from /work/repo/units/u0400/u0400_test.cc:5:
+/work/ceres-solver/internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  109 |   void operator()(SparseMatrix* /*jacobian*/, int /*num_parameters*/) {}
+      |                   ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:49: error: expected class-name before ‘{’ token
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                                                 ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:26: error: ‘Evaluator’ does not name a type
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                          ^~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: expected unqualified-id before ‘&’ token
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                                            ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: expected ‘)’ before ‘&’ token
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                   ~                        ^
+      |                                            )
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: constructors may not be ref-qualified
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: expected ‘;’ at end of member declaration
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                                            ^
+      |                                             ;
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:46: error: ‘options’ does not name a type
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                                              ^~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:19: error: ‘SparseMatrix’ was not declared in this scope
+  130 |   std::unique_ptr<SparseMatrix> CreateJacobian() const final {
+      |                   ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:31: error: template argument 1 is invalid
+  130 |   std::unique_ptr<SparseMatrix> CreateJacobian() const final {
+      |                               ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:31: error: template argument 2 is invalid
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:23: error: ‘Evaluator’ does not name a type
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:49: error: expected unqualified-id before ‘&’ token
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                                                 ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:49: error: expected ‘)’ before ‘&’ token
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                ~                                ^
+      |                                                 )
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:49: error: expected ‘;’ at end of member declaration
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                                                 ^
+      |                                                  ;
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:51: error: ‘evaluate_options’ does not name a type
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                                                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:381:3: error: ‘Evaluator’ does not name a type
+  381 |   Evaluator::Options options_;
+      |   ^~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h: In member function ‘bool ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::Plus(const double*, const double*, double*) const’:
+/work/ceres-solver/internal/ceres/program_evaluator.h:307:41: error: ‘options_’ was not declared in this scope; did you mean ‘optind’?
+  307 |         state, delta, state_plus_delta, options_.context, options_.num_threads);
+      |                                         ^~~~~~~~
+      |                                         optind
+In file included from /work/repo/units/u0400/u0400_test.cc:7:
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h: At global scope:
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+   53 |   DenseJacobianWriter(Evaluator::Options /* ignored */, Program* program)
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h:53:41: error: expected ‘)’ before ‘,’ token
+   53 |   DenseJacobianWriter(Evaluator::Options /* ignored */, Program* program)
+      |                      ~                  ^             ~
+      |                                         )
+/work/ceres-solver/internal/ceres/program_evaluator.h: In instantiation of ‘class ceres::internal::ProgramEvaluator<ceres::internal::ScratchEvaluatePreparer, ceres::internal::DenseJacobianWriter>’:
+/work/repo/units/u0400/u0400_test.cc:15:45:   required from here
+   15 | using EvaluateScratch = TestProgramEvaluator::EvaluateScratch;
+      |                                             ^~
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:33: error: ‘int ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::CreateJacobian() const [with EvaluatePreparer = ceres::internal::ScratchEvaluatePreparer; JacobianWriter = ceres::internal::DenseJacobianWriter; JacobianFinalizer = ceres::internal::NullJacobianFinalizer]’ marked ‘final’, but is not virtual
+  130 |   std::unique_ptr<SparseMatrix> CreateJacobian() const final {
+      |                                 ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:303:8: error: ‘bool ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::Plus(const double*, const double*, double*) const [with EvaluatePreparer = ceres::internal::ScratchEvaluatePreparer; JacobianWriter = ceres::internal::DenseJacobianWriter; JacobianFinalizer = ceres::internal::NullJacobianFinalizer]’ marked ‘final’, but is not virtual
+  303 |   bool Plus(const double* state,
+      |        ^~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:310:7: error: ‘int ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::NumParameters() const [with EvaluatePreparer = ceres::internal::ScratchEvaluatePreparer; JacobianWriter = ceres::internal::DenseJacobianWriter; JacobianFinalizer = ceres::internal::NullJacobianFinalizer]’ marked ‘final’, but is not virtual
+  310 |   int NumParameters() const final { return program_->NumParameters(); }
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:311:7: error: ‘int ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::NumEffectiveParameters() const [with EvaluatePreparer = ceres::internal::ScratchEvaluatePreparer; JacobianWriter = ceres::internal::DenseJacobianWriter; JacobianFinalizer = ceres::internal::NullJacobianFinalizer]’ marked ‘final’, but is not virtual
+  311 |   int NumEffectiveParameters() const final {
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:315:7: error: ‘int ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::NumResiduals() const [with EvaluatePreparer = ceres::internal::ScratchEvaluatePreparer; JacobianWriter = ceres::internal::DenseJacobianWriter; JacobianFinalizer = ceres::internal::NullJacobianFinalizer]’ marked ‘final’, but is not virtual
+  315 |   int NumResiduals() const final { return program_->NumResiduals(); }
+      |       ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:317:41: error: ‘std::map<std::__cxx11::basic_string<char>, ceres::internal::CallStatistics> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::Statistics() const [with EvaluatePreparer = ceres::internal::ScratchEvaluatePreparer; JacobianWriter = ceres::internal::DenseJacobianWriter; JacobianFinalizer = ceres::internal::NullJacobianFinalizer]’ marked ‘final’, but is not virtual
+  317 |   std::map<std::string, CallStatistics> Statistics() const final {
+      |                                         ^~~~~~~~~~

@@ -1,0 +1,18 @@
+/work/repo/units/u0835/u0835_test.cc: In member function ‘virtual void Unit_u0835_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0835/u0835_test.cc:9:3: error: ‘LinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::LinearOperator’?
+    9 |   LinearOperator A{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::LinearOperator
+In file included from /work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:45,
+                 from /work/ceres-solver/internal/ceres/cgnr_solver.h:36,
+                 from /work/repo/units/u0835/u0835_test.cc:3:
+/work/ceres-solver/internal/ceres/linear_operator.h:46:23: note: ‘ceres::internal::LinearOperator’ declared here
+   46 | class CERES_NO_EXPORT LinearOperator {
+      |                       ^~~~~~~~~~~~~~
+/work/repo/units/u0835/u0835_test.cc:11:20: error: ‘CgnrLinearOperator’ is not a member of ‘ceres::internal’; did you mean ‘LinearOperator’?
+   11 |   ceres::internal::CgnrLinearOperator object{};
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    LinearOperator
+/work/repo/units/u0835/u0835_test.cc:12:9: error: ‘object’ was not declared in this scope
+   12 |   (void)object;
+      |         ^~~~~~

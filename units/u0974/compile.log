@@ -1,0 +1,28 @@
+/work/repo/units/u0974/u0974_test.cc: In member function ‘virtual void Unit_u0974_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0974/u0974_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u0974/u0974_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~
+/work/repo/units/u0974/u0974_test.cc: In member function ‘virtual void Unit_u0974_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0974/u0974_test.cc:16:20: error: expected unqualified-id before ‘(’ token
+   16 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u0974/u0974_test.cc:16:21: error: ‘anonymous’ was not declared in this scope
+   16 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~
+/work/repo/units/u0974/u0974_test.cc: In member function ‘virtual void Unit_u0974_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0974/u0974_test.cc:22:20: error: expected unqualified-id before ‘(’ token
+   22 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u0974/u0974_test.cc:22:21: error: ‘anonymous’ was not declared in this scope
+   22 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~
+/work/repo/units/u0974/u0974_test.cc: In member function ‘virtual void Unit_u0974_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0974/u0974_test.cc:28:20: error: expected unqualified-id before ‘(’ token
+   28 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u0974/u0974_test.cc:28:21: error: ‘anonymous’ was not declared in this scope
+   28 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole(nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~

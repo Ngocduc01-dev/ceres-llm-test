@@ -1,0 +1,9 @@
+{
+  "id": "u1246",
+  "name": "ceres::internal::ImplicitSchurComplement::LeftMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1246/u1246_test.cc:7:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’"
+  ]
+}

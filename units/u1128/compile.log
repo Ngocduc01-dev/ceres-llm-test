@@ -1,0 +1,31 @@
+/work/repo/units/u1128/u1128_test.cc: In member function ‘virtual void Unit_u1128_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1128/u1128_test.cc:7:3: error: ‘Function’ was not declared in this scope; did you mean ‘union’?
+    7 |   Function function{};
+      |   ^~~~~~~~
+      |   union
+/work/repo/units/u1128/u1128_test.cc:8:28: error: class template argument deduction failed:
+    8 |   ceres::TinySolver object{};
+      |                            ^
+/work/repo/units/u1128/u1128_test.cc:8:28: error: no matching function for call to ‘TinySolver()’
+In file included from /work/repo/units/u1128/u1128_test.cc:3:
+/work/ceres-solver/include/ceres/tiny_solver.h:133:7: note: candidate: ‘template<class Function, class LinearSolver> TinySolver()-> ceres::TinySolver<Function, LinearSolver>’
+  133 | class TinySolver {
+      |       ^~~~~~~~~~
+/work/ceres-solver/include/ceres/tiny_solver.h:133:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1128/u1128_test.cc:8:28: note:   couldn’t deduce template parameter ‘Function’
+    8 |   ceres::TinySolver object{};
+      |                            ^
+/work/ceres-solver/include/ceres/tiny_solver.h:133:7: note: candidate: ‘template<class Function, class LinearSolver> TinySolver(ceres::TinySolver<Function, LinearSolver>)-> ceres::TinySolver<Function, LinearSolver>’
+  133 | class TinySolver {
+      |       ^~~~~~~~~~
+/work/ceres-solver/include/ceres/tiny_solver.h:133:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1128/u1128_test.cc:9:16: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?
+    9 |   object.Solve(function, nullptr);
+      |                ^~~~~~~~
+      |                std::function
+In file included from /usr/include/c++/14/functional:59,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:5162,
+                 from /work/repo/units/u1128/u1128_test.cc:2:
+/usr/include/c++/14/bits/std_function.h:111:11: note: ‘std::function’ declared here
+  111 |     class function;
+      |           ^~~~~~~~

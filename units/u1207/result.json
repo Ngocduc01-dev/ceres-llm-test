@@ -1,0 +1,15 @@
+{
+  "id": "u1207",
+  "name": "ceres::internal::BlockSparseMatrix::DeleteRowBlocks",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1207/u1207_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1207/u1207_test.cc:16:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1207/u1207_test.cc:23:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1207/u1207_test.cc:30:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1207/u1207_test.cc:37:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1207/u1207_test.cc:44:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1207/u1207_test.cc:51:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

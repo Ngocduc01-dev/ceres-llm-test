@@ -1,0 +1,33 @@
+{
+  "id": "u0490",
+  "name": "ceres::internal::ThreadTokenProvider::ThreadTokenProvider",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "ThreadTokenProviderCtorTest.TC1_ZeroThreads": "pass",
+    "ThreadTokenProviderCtorTest.TC2_OneThread": "pass",
+    "ThreadTokenProviderCtorTest.TC3_TwoThreads": "pass",
+    "ThreadTokenProviderCtorTest.TC4_ThreeThreads": "pass",
+    "ThreadTokenProviderCtorTest.TC5_FourThreads": "pass",
+    "ThreadTokenProviderCtorTest.TC6_FiveThreads": "pass",
+    "ThreadTokenProviderCtorTest.TC7_SixThreads": "pass"
+  },
+  "run": {
+    "pass": 7,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 4
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

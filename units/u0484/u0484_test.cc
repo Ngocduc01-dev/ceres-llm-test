@@ -4,14 +4,16 @@
 
 namespace ceres {
 namespace internal {
-// Path P1: START -> CFG nodes -> END.
+
+// Path P1: START -> 1 -> 2 -> END (node 1: đúng)
 TEST(ParameterBlockUpperBoundForParameterTest, TC1_NoUpperBounds) {
   double values[4] = {0.1, 0.2, 0.3, 0.4};
   ParameterBlock block(values, 4, 0);
   double result = block.UpperBoundForParameter(2);
   (void)result;  // Không kiểm tra kết quả trả về
 }
-// Path P1: START -> CFG nodes -> END.
+
+// Path P2: START -> 1 -> 3 -> END (node 1: sai)
 TEST(ParameterBlockUpperBoundForParameterTest, TC2_HasUpperBounds) {
   double values[3] = {1.0, 2.0, 3.0};
   ParameterBlock block(values, 3, 0);

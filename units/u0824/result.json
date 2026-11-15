@@ -1,0 +1,11 @@
+{
+  "id": "u0824",
+  "name": "ceres::internal::BlockJacobianWriter::Write",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0824/u0824_test.cc:10:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u0824/u0824_test.cc:11:16: error: expected primary-expression before ‘int’",
+    "units/u0824/u0824_test.cc:11:21: error: expected primary-expression before ‘int’"
+  ]
+}

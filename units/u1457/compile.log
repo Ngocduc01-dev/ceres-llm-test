@@ -1,0 +1,91 @@
+/work/repo/units/u1457/u1457_test.cc: In member function ‘virtual void Unit_u1457_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1457/u1457_test.cc:9:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+    9 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc:10:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+In file included from /work/repo/units/u1457/u1457_test.cc:5:
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1457/u1457_test.cc:11:15: error: ‘product_storage_type’ was not declared in this scope
+   11 |   object.Init(product_storage_type);
+      |               ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc: In member function ‘virtual void Unit_u1457_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1457/u1457_test.cc:16:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   16 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc:17:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1457/u1457_test.cc:18:15: error: ‘product_storage_type’ was not declared in this scope
+   18 |   object.Init(product_storage_type);
+      |               ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc: In member function ‘virtual void Unit_u1457_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1457/u1457_test.cc:23:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   23 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc:24:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   24 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1457/u1457_test.cc:25:15: error: ‘product_storage_type’ was not declared in this scope
+   25 |   object.Init(product_storage_type);
+      |               ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc: In member function ‘virtual void Unit_u1457_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1457/u1457_test.cc:30:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   30 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc:31:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   31 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1457/u1457_test.cc:32:15: error: ‘product_storage_type’ was not declared in this scope
+   32 |   object.Init(product_storage_type);
+      |               ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc: In member function ‘virtual void Unit_u1457_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1457/u1457_test.cc:37:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   37 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1457/u1457_test.cc:38:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   38 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1457/u1457_test.cc:39:15: error: ‘product_storage_type’ was not declared in this scope
+   39 |   object.Init(product_storage_type);
+      |               ^~~~~~~~~~~~~~~~~~~~

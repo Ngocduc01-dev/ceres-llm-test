@@ -1,0 +1,129 @@
+In file included from /work/repo/units/u1139/u1139_test.cc:8:
+/work/ceres-solver/internal/ceres/schur_eliminator_impl.h:46:9: warning: "EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD" redefined
+   46 | #define EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD 10
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:205,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:38,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/repo/units/u1139/u1139_test.cc:4:
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:18:9: note: this is the location of the previous definition
+   18 | #define EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD 8
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1139/u1139_test.cc: In member function ‘virtual void Unit_u1139_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1139/u1139_test.cc:13:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   13 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1139/u1139_test.cc:15:43: error: class template argument deduction failed:
+   15 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1139/u1139_test.cc:15:43: error: no matching function for call to ‘SchurEliminator()’
+In file included from /work/repo/units/u1139/u1139_test.cc:7:
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1139/u1139_test.cc:16:34: error: ‘A’ was not declared in this scope
+   16 |   object.NoEBlockRowOuterProduct(A, row_block_index, nullptr);
+      |                                  ^
+/work/repo/units/u1139/u1139_test.cc: In member function ‘virtual void Unit_u1139_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1139/u1139_test.cc:21:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   21 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1139/u1139_test.cc:23:43: error: class template argument deduction failed:
+   23 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1139/u1139_test.cc:23:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1139/u1139_test.cc:24:34: error: ‘A’ was not declared in this scope
+   24 |   object.NoEBlockRowOuterProduct(A, row_block_index, nullptr);
+      |                                  ^
+/work/repo/units/u1139/u1139_test.cc: In member function ‘virtual void Unit_u1139_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1139/u1139_test.cc:29:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   29 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1139/u1139_test.cc:31:43: error: class template argument deduction failed:
+   31 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1139/u1139_test.cc:31:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1139/u1139_test.cc:32:34: error: ‘A’ was not declared in this scope
+   32 |   object.NoEBlockRowOuterProduct(A, row_block_index, nullptr);
+      |                                  ^
+/work/repo/units/u1139/u1139_test.cc: In member function ‘virtual void Unit_u1139_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1139/u1139_test.cc:37:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   37 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1139/u1139_test.cc:39:43: error: class template argument deduction failed:
+   39 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1139/u1139_test.cc:39:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1139/u1139_test.cc:40:34: error: ‘A’ was not declared in this scope
+   40 |   object.NoEBlockRowOuterProduct(A, row_block_index, nullptr);
+      |                                  ^
+/work/repo/units/u1139/u1139_test.cc: In member function ‘virtual void Unit_u1139_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1139/u1139_test.cc:45:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   45 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1139/u1139_test.cc:47:43: error: class template argument deduction failed:
+   47 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1139/u1139_test.cc:47:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1139/u1139_test.cc:48:34: error: ‘A’ was not declared in this scope
+   48 |   object.NoEBlockRowOuterProduct(A, row_block_index, nullptr);
+      |                                  ^

@@ -1,27 +1,37 @@
-# Unit u0341
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+Hàm không có điểm rẽ nhánh nào (tổng số nhánh = 0). CFG khớp với mã nguồn. Chỉ có một đường đi duy nhất.
+
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh (node 1: `return tangent_size_`) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `int TangentSize() const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `size` từ 1 đến 5; `constant_parameters` là tập con có phần tử khác nhau trong [0, size−1], tối đa `size − 1` phần tử (để CHECK trong constructor không dừng chương trình) | `size = 4`, `constant_parameters = {1, 3}` |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có nhánh nào bị bỏ (hàm không có điểm rẽ nhánh, không có vòng lặp, không có `CHECK`).
 
-## D. File test
+C2 dự kiến = 0 / 0 (không có nhánh nào; node 1 được chạy qua nên đạt phủ câu lệnh 100%).
+
+**D. File test**
 
 ```cpp
 // FILE: u0341_test.cc
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
+
 #include <vector>
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0341, PathP1) { ceres::SubsetManifold target(2, std::vector<int>{0}); target.TangentSize(); }
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(SubsetManifoldTangentSize, P1_ReturnTangentSize) {
+  const int size = 4;
+  const std::vector<int> constant_parameters = {1, 3};
+  ceres::SubsetManifold manifold(size, constant_parameters);
+  manifold.TangentSize();
+}
 ```

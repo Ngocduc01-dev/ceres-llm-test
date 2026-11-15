@@ -1,0 +1,9 @@
+/work/repo/units/u1242/u1242_test.cc: In member function ‘virtual void Unit_u1242_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1242/u1242_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::BlockSparseJacobiPreconditioner object{};
+      |                                                           ^
+In file included from /work/repo/units/u1242/u1242_test.cc:3:
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:59:12: note: candidate: ‘ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   59 |   explicit BlockSparseJacobiPreconditioner(Preconditioner::Options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:59:12: note:   candidate expects 2 arguments, 0 provided

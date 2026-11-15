@@ -1,0 +1,11 @@
+{
+  "id": "u1280",
+  "name": "ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1280/u1280_test.cc:8:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached()’ is private within this context",
+    "units/u1280/u1280_test.cc:14:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached()’ is private within this context",
+    "units/u1280/u1280_test.cc:20:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached()’ is private within this context"
+  ]
+}

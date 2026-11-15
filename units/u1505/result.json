@@ -1,0 +1,16 @@
+{
+  "id": "u1505",
+  "name": "ceres::internal::WolfeLineSearch::BracketingPhase",
+  "status": "compile_fail",
+  "cfg_branches": 28,
+  "errors": [
+    "units/u1505/u1505_test.cc:8:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1505/u1505_test.cc:10:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1505/u1505_test.cc:11:26: error: ‘initial_position’ was not declared in this scope",
+    "units/u1505/u1505_test.cc:16:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1505/u1505_test.cc:18:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1505/u1505_test.cc:19:26: error: ‘initial_position’ was not declared in this scope",
+    "units/u1505/u1505_test.cc:24:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1505/u1505_test.cc:26:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "u1418",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::ClusterCameras",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1418/u1418_test.cc:10:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1418/u1418_test.cc:11:24: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ClusterCameras(const std::vector<std::set<int> >&)’ is private within this context",
+    "units/u1418/u1418_test.cc:17:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1418/u1418_test.cc:18:24: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ClusterCameras(const std::vector<std::set<int> >&)’ is private within this context"
+  ]
+}

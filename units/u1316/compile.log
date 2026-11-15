@@ -1,0 +1,56 @@
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:9:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:14:3: error: ‘Solver’ has not been declared
+   14 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:15:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:20:3: error: ‘Solver’ has not been declared
+   20 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:21:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   21 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:26:3: error: ‘Solver’ has not been declared
+   26 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:27:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   27 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:32:3: error: ‘Solver’ has not been declared
+   32 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:33:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   33 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:38:3: error: ‘Solver’ has not been declared
+   38 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:39:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   39 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind
+/work/repo/units/u1316/u1316_test.cc: In member function ‘virtual void Unit_u1316_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1316/u1316_test.cc:44:3: error: ‘Solver’ has not been declared
+   44 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1316/u1316_test.cc:45:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   45 |   ceres::OptionsAreValidForSparseCholeskyBasedSolver(options, nullptr);
+      |                                                      ^~~~~~~
+      |                                                      optind

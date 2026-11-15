@@ -1,0 +1,22 @@
+/work/repo/units/u1030/u1030_test.cc: In member function ‘virtual void Unit_u1030_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1030/u1030_test.cc:7:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+    7 |   ceres_cost_function_t cost_function{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u1030/u1030_test.cc:10:3: error: ‘CallbackCostFunction’ was not declared in this scope
+   10 |   CallbackCostFunction object{};
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1030/u1030_test.cc:11:9: error: ‘object’ was not declared in this scope
+   11 |   (void)object;
+      |         ^~~~~~
+/work/repo/units/u1030/u1030_test.cc: In member function ‘virtual void Unit_u1030_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1030/u1030_test.cc:16:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+   16 |   ceres_cost_function_t cost_function{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u1030/u1030_test.cc:19:3: error: ‘CallbackCostFunction’ was not declared in this scope
+   19 |   CallbackCostFunction object{};
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1030/u1030_test.cc:20:9: error: ‘object’ was not declared in this scope
+   20 |   (void)object;
+      |         ^~~~~~

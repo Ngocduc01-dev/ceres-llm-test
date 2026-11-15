@@ -1,0 +1,11 @@
+{
+  "id": "u1100",
+  "name": "ceres::StringtoLoggingType",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1100/u1100_test.cc:7:3: error: ‘ceres’ has not been declared",
+    "units/u1100/u1100_test.cc:13:3: error: ‘ceres’ has not been declared",
+    "units/u1100/u1100_test.cc:19:3: error: ‘ceres’ has not been declared"
+  ]
+}

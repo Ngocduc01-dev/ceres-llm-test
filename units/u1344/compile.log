@@ -1,0 +1,4 @@
+/work/repo/units/u1344/u1344_test.cc: In member function ‘virtual void Unit_u1344_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1344/u1344_test.cc:9:3: error: ‘Problem’ has not been declared
+    9 |   Problem::Options options{};
+      |   ^~~~~~~

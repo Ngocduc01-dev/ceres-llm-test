@@ -1,0 +1,9 @@
+/work/repo/units/u1160/u1160_test.cc: In member function ‘virtual void Unit_u1160_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1160/u1160_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+    8 |   TripletSparseMatrix orig{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+In file included from /work/repo/units/u1160/u1160_test.cc:4:
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~

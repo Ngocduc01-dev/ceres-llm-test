@@ -1,0 +1,9 @@
+{
+  "id": "u0907",
+  "name": "ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0907/u0907_test.cc:8:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’"
+  ]
+}

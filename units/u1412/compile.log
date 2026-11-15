@@ -1,0 +1,7 @@
+/work/repo/units/u1412/u1412_test.cc: In member function ‘virtual void Unit_u1412_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1412/u1412_test.cc:9:3: error: ‘internal’ has not been declared
+    9 |   internal::Program program{};
+      |   ^~~~~~~~
+/work/repo/units/u1412/u1412_test.cc:10:34: error: ‘program’ was not declared in this scope
+   10 |   ceres::SummarizeReducedProgram(program, nullptr);
+      |                                  ^~~~~~~

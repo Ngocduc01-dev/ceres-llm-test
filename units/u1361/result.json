@@ -1,0 +1,14 @@
+{
+  "id": "u1361",
+  "name": "ceres::GradientChecker::GradientChecker",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1361/u1361_test.cc:12:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1361/u1361_test.cc:13:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1361/u1361_test.cc:19:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1361/u1361_test.cc:20:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1361/u1361_test.cc:26:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1361/u1361_test.cc:27:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’"
+  ]
+}

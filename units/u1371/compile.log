@@ -1,0 +1,20 @@
+/work/repo/units/u1371/u1371_test.cc: In member function ‘virtual void Unit_u1371_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1371/u1371_test.cc:10:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   10 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u1371/u1371_test.cc:4:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1371/u1371_test.cc:11:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::SchurJacobiPreconditioner object{};
+      |                                                     ^
+In file included from /work/repo/units/u1371/u1371_test.cc:6:
+/work/ceres-solver/internal/ceres/schur_jacobi_preconditioner.h:87:3: note: candidate: ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+   87 |   SchurJacobiPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_jacobi_preconditioner.h:87:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1371/u1371_test.cc:12:21: error: ‘A’ was not declared in this scope
+   12 |   object.UpdateImpl(A, nullptr);
+      |                     ^

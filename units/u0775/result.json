@@ -1,0 +1,16 @@
+{
+  "id": "u0775",
+  "name": "ceres::internal::ComputeVisibility",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0775/u0775_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0775/u0775_test.cc:10:38: error: ‘block_structure’ was not declared in this scope",
+    "units/u0775/u0775_test.cc:15:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0775/u0775_test.cc:17:38: error: ‘block_structure’ was not declared in this scope",
+    "units/u0775/u0775_test.cc:22:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0775/u0775_test.cc:24:38: error: ‘block_structure’ was not declared in this scope",
+    "units/u0775/u0775_test.cc:29:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0775/u0775_test.cc:31:38: error: ‘block_structure’ was not declared in this scope"
+  ]
+}

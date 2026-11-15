@@ -1,0 +1,16 @@
+{
+  "id": "u1053",
+  "name": "ceres::OrderedGroups::Reverse",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1053/u1053_test.cc:7:31: error: class template argument deduction failed:",
+    "units/u1053/u1053_test.cc:7:31: error: no matching function for call to ‘OrderedGroups()’",
+    "units/u1053/u1053_test.cc:13:31: error: class template argument deduction failed:",
+    "units/u1053/u1053_test.cc:13:31: error: no matching function for call to ‘OrderedGroups()’",
+    "units/u1053/u1053_test.cc:19:31: error: class template argument deduction failed:",
+    "units/u1053/u1053_test.cc:19:31: error: no matching function for call to ‘OrderedGroups()’",
+    "units/u1053/u1053_test.cc:25:31: error: class template argument deduction failed:",
+    "units/u1053/u1053_test.cc:25:31: error: no matching function for call to ‘OrderedGroups()’"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "u1440",
+  "name": "ceres::internal::DynamicCompressedRowJacobianWriter::Write",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1440/u1440_test.cc:15:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1440/u1440_test.cc:23:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1440/u1440_test.cc:31:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1440/u1440_test.cc:39:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1440/u1440_test.cc:47:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’"
+  ]
+}

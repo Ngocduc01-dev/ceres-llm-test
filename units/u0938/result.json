@@ -1,0 +1,10 @@
+{
+  "id": "u0938",
+  "name": "ceres::internal::LinearOperator::LeftMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0938/u0938_test.cc:9:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’",
+    "units/u0938/u0938_test.cc:16:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’"
+  ]
+}

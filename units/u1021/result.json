@@ -1,0 +1,9 @@
+{
+  "id": "u1021",
+  "name": "ceres::internal::ResidualBlock::NumResiduals",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1021/u1021_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’"
+  ]
+}

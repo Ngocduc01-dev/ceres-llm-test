@@ -1,0 +1,16 @@
+{
+  "id": "u1453",
+  "name": "ceres::internal::ReorderSchurComplementColumnsUsingEigen",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1453/u1453_test.cc:12:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean ‘ceres::LinearSolverOrderingType’?",
+    "units/u1453/u1453_test.cc:14:3: error: ‘ProblemImpl’ has not been declared",
+    "units/u1453/u1453_test.cc:15:60: error: ‘ordering_type’ was not declared in this scope",
+    "units/u1453/u1453_test.cc:15:108: error: ‘arg2’ was not declared in this scope",
+    "units/u1453/u1453_test.cc:20:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean ‘ceres::LinearSolverOrderingType’?",
+    "units/u1453/u1453_test.cc:22:3: error: ‘ProblemImpl’ has not been declared",
+    "units/u1453/u1453_test.cc:23:60: error: ‘ordering_type’ was not declared in this scope",
+    "units/u1453/u1453_test.cc:23:108: error: ‘arg2’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "u0601",
+  "name": "ceres::internal::ProblemImpl::DeleteBlockInVector",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0601/u0601_test.cc:7:10: error: scalar object ‘mutable_blocks_data’ requires one element in initializer",
+    "units/u0601/u0601_test.cc:8:10: error: scalar object ‘block_to_remove_data’ requires one element in initializer",
+    "units/u0601/u0601_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

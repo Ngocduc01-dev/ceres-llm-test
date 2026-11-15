@@ -1,0 +1,9 @@
+{
+  "id": "u0733",
+  "name": "ceres::MinimizerTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0733/u0733_test.cc:7:3: error: ‘MinimizerTypeToString’ was not declared in this scope"
+  ]
+}

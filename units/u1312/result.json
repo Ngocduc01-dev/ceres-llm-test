@@ -1,0 +1,16 @@
+{
+  "id": "u1312",
+  "name": "ceres::internal::SchurEliminator::NoEBlockRowsUpdate",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1312/u1312_test.cc:12:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?",
+    "units/u1312/u1312_test.cc:14:43: error: class template argument deduction failed:",
+    "units/u1312/u1312_test.cc:14:43: error: no matching function for call to ‘SchurEliminator()’",
+    "units/u1312/u1312_test.cc:15:29: error: ‘A’ was not declared in this scope",
+    "units/u1312/u1312_test.cc:20:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?",
+    "units/u1312/u1312_test.cc:22:43: error: class template argument deduction failed:",
+    "units/u1312/u1312_test.cc:22:43: error: no matching function for call to ‘SchurEliminator()’",
+    "units/u1312/u1312_test.cc:23:29: error: ‘A’ was not declared in this scope"
+  ]
+}

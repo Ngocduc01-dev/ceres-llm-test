@@ -1,0 +1,9 @@
+{
+  "id": "u0325",
+  "name": "ceres::internal::LineSearchFunction::position",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "/usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal::SparseMatrix’"
+  ]
+}

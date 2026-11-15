@@ -1,0 +1,21 @@
+/work/repo/units/u1200/u1200_test.cc: In member function ‘virtual void Unit_u1200_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1200/u1200_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1200/u1200_test.cc:10:34: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::DenseCholesky’
+   10 |   ceres::internal::DenseCholesky object{};
+      |                                  ^~~~~~
+In file included from /work/repo/units/u1200/u1200_test.cc:3:
+/work/ceres-solver/internal/ceres/dense_cholesky.h:58:23: note:   because the following virtual functions are pure within ‘ceres::internal::DenseCholesky’:
+   58 | class CERES_NO_EXPORT DenseCholesky {
+      |                       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_cholesky.h:75:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::DenseCholesky::Factorize(int, double*, std::string*)’
+   75 |   virtual LinearSolverTerminationType Factorize(int num_cols,
+      |                                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_cholesky.h:86:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::DenseCholesky::Solve(const double*, double*, std::string*)’
+   86 |   virtual LinearSolverTerminationType Solve(const double* rhs,
+      |                                       ^~~~~
+/work/repo/units/u1200/u1200_test.cc:11:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   11 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

@@ -1,0 +1,13 @@
+/work/repo/units/u1077/u1077_test.cc: In member function ‘virtual void Unit_u1077_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1077/u1077_test.cc:8:48: error: no matching function for call to ‘ceres::internal::ScopedExecutionTimer::ScopedExecutionTimer(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::ScopedExecutionTimer object{};
+      |                                                ^
+In file included from /work/repo/units/u1077/u1077_test.cc:3:
+/work/ceres-solver/internal/ceres/execution_summary.h:72:3: note: candidate: ‘ceres::internal::ScopedExecutionTimer::ScopedExecutionTimer(std::string, ceres::internal::ExecutionSummary*)’
+   72 |   ScopedExecutionTimer(std::string name, ExecutionSummary* summary)
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/execution_summary.h:72:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/execution_summary.h:70:7: note: candidate: ‘ceres::internal::ScopedExecutionTimer::ScopedExecutionTimer(const ceres::internal::ScopedExecutionTimer&)’
+   70 | class ScopedExecutionTimer {
+      |       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/execution_summary.h:70:7: note:   candidate expects 1 argument, 0 provided

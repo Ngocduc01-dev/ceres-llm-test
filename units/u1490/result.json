@@ -1,0 +1,16 @@
+{
+  "id": "u1490",
+  "name": "ceres::internal::TrustRegionMinimizer::Minimize",
+  "status": "compile_fail",
+  "cfg_branches": 22,
+  "errors": [
+    "units/u1490/u1490_test.cc:12:3: error: ‘Minimizer’ has not been declared",
+    "units/u1490/u1490_test.cc:14:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1490/u1490_test.cc:19:3: error: ‘Minimizer’ has not been declared",
+    "units/u1490/u1490_test.cc:21:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1490/u1490_test.cc:26:3: error: ‘Minimizer’ has not been declared",
+    "units/u1490/u1490_test.cc:28:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1490/u1490_test.cc:33:3: error: ‘Minimizer’ has not been declared",
+    "units/u1490/u1490_test.cc:35:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

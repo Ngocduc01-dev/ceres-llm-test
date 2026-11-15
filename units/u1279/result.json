@@ -1,0 +1,11 @@
+{
+  "id": "u1279",
+  "name": "ceres::internal::TrustRegionMinimizer::MaxSolverIterationsReached",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1279/u1279_test.cc:8:36: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverIterationsReached()’ is private within this context",
+    "units/u1279/u1279_test.cc:14:36: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverIterationsReached()’ is private within this context",
+    "units/u1279/u1279_test.cc:20:36: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverIterationsReached()’ is private within this context"
+  ]
+}

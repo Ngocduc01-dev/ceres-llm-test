@@ -1,0 +1,12 @@
+{
+  "id": "u1295",
+  "name": "ceres::internal::Program::IsParameterBlockSetIndependent",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1295/u1295_test.cc:10:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’",
+    "units/u1295/u1295_test.cc:16:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’",
+    "units/u1295/u1295_test.cc:22:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’",
+    "units/u1295/u1295_test.cc:28:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’"
+  ]
+}

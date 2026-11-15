@@ -1,0 +1,115 @@
+/work/repo/units/u1487/u1487_test.cc: In member function ‘virtual void Unit_u1487_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1487/u1487_test.cc:13:3: error: ‘Minimizer’ has not been declared
+   13 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1487/u1487_test.cc:14:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+In file included from /work/repo/units/u1487/u1487_test.cc:4:
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1487/u1487_test.cc:15:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1487/u1487_test.cc: In member function ‘virtual void Unit_u1487_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1487/u1487_test.cc:20:3: error: ‘Minimizer’ has not been declared
+   20 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1487/u1487_test.cc:21:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   21 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1487/u1487_test.cc:22:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   22 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1487/u1487_test.cc: In member function ‘virtual void Unit_u1487_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1487/u1487_test.cc:27:3: error: ‘Minimizer’ has not been declared
+   27 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1487/u1487_test.cc:28:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   28 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1487/u1487_test.cc:29:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   29 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1487/u1487_test.cc: In member function ‘virtual void Unit_u1487_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1487/u1487_test.cc:34:3: error: ‘Minimizer’ has not been declared
+   34 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1487/u1487_test.cc:35:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1487/u1487_test.cc:36:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   36 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1487/u1487_test.cc: In member function ‘virtual void Unit_u1487_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1487/u1487_test.cc:41:3: error: ‘Minimizer’ has not been declared
+   41 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1487/u1487_test.cc:42:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   42 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1487/u1487_test.cc:43:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   43 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1487/u1487_test.cc: In member function ‘virtual void Unit_u1487_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1487/u1487_test.cc:48:3: error: ‘Minimizer’ has not been declared
+   48 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1487/u1487_test.cc:49:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   49 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1487/u1487_test.cc:50:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   50 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind

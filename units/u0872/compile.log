@@ -1,0 +1,26 @@
+/work/repo/units/u0872/u0872_test.cc: In member function ‘virtual void Unit_u0872_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0872/u0872_test.cc:7:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifold’
+    7 |   ceres::Manifold object{};
+      |                   ^~~~~~
+In file included from /work/repo/units/u0872/u0872_test.cc:3:
+/work/ceres-solver/include/ceres/manifold.h:148:20: note:   because the following virtual functions are pure within ‘ceres::Manifold’:
+  148 | class CERES_EXPORT Manifold {
+      |                    ^~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:153:15: note:     ‘virtual int ceres::Manifold::AmbientSize() const’
+  153 |   virtual int AmbientSize() const = 0;
+      |               ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:156:15: note:     ‘virtual int ceres::Manifold::TangentSize() const’
+  156 |   virtual int TangentSize() const = 0;
+      |               ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:168:16: note:     ‘virtual bool ceres::Manifold::Plus(const double*, const double*, double*) const’
+  168 |   virtual bool Plus(const double* x,
+      |                ^~~~
+/work/ceres-solver/include/ceres/manifold.h:179:16: note:     ‘virtual bool ceres::Manifold::PlusJacobian(const double*, double*) const’
+  179 |   virtual bool PlusJacobian(const double* x, double* jacobian) const = 0;
+      |                ^~~~~~~~~~~~
+/work/ceres-solver/include/ceres/manifold.h:210:16: note:     ‘virtual bool ceres::Manifold::Minus(const double*, const double*, double*) const’
+  210 |   virtual bool Minus(const double* y,
+      |                ^~~~~
+/work/ceres-solver/include/ceres/manifold.h:221:16: note:     ‘virtual bool ceres::Manifold::MinusJacobian(const double*, double*) const’
+  221 |   virtual bool MinusJacobian(const double* x, double* jacobian) const = 0;
+      |                ^~~~~~~~~~~~~

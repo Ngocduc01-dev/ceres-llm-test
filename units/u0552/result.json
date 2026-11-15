@@ -1,0 +1,11 @@
+{
+  "id": "u0552",
+  "name": "ceres::internal::Corrector::CorrectJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0552/u0552_test.cc:7:10: error: scalar object ‘residuals_data’ requires one element in initializer",
+    "units/u0552/u0552_test.cc:8:10: error: scalar object ‘jacobian_data’ requires one element in initializer",
+    "units/u0552/u0552_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

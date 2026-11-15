@@ -1,8 +1,15 @@
 // FILE: u0311_test.cc
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
-#include <cmath>
 
-TEST(Unit_u0311, PathP1) {
-  EXPECT_TRUE(std::isnan(ceres::internal::WeightedGraph<int>::InvalidWeight()));
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(WeightedGraphInvalidWeightTest, TC1_StraightPath) {
+  WeightedGraph<int> obj;
+  obj.InvalidWeight();
 }
+
+}  // namespace internal
+}  // namespace ceres

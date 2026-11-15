@@ -1,0 +1,14 @@
+{
+  "id": "u1162",
+  "name": "ceres::internal::SparseIterativeRefiner::Refine",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1162/u1162_test.cc:9:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrix’?",
+    "units/u1162/u1162_test.cc:10:50: error: no matching function for call to ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(<brace-enclosed initializer list>)’",
+    "units/u1162/u1162_test.cc:11:17: error: ‘lhs’ was not declared in this scope",
+    "units/u1162/u1162_test.cc:16:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrix’?",
+    "units/u1162/u1162_test.cc:17:50: error: no matching function for call to ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(<brace-enclosed initializer list>)’",
+    "units/u1162/u1162_test.cc:18:17: error: ‘lhs’ was not declared in this scope"
+  ]
+}

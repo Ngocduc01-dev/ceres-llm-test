@@ -1,0 +1,12 @@
+{
+  "id": "u1178",
+  "name": "ceres::internal::TripletSparseMatrix::AppendRows",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1178/u1178_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1178/u1178_test.cc:9:21: error: ‘B’ was not declared in this scope",
+    "units/u1178/u1178_test.cc:14:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1178/u1178_test.cc:16:21: error: ‘B’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,4 @@
+/work/repo/units/u0997/u0997_test.cc: In member function ‘virtual void Unit_u0997_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0997/u0997_test.cc:9:3: error: ‘ceres_create_tolerant_loss_function_data’ was not declared in this scope
+    9 |   ceres_create_tolerant_loss_function_data(a, b);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

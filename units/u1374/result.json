@@ -1,0 +1,16 @@
+{
+  "id": "u1374",
+  "name": "ceres::internal::SubsetPreconditioner::UpdateImpl",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1374/u1374_test.cc:11:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1374/u1374_test.cc:12:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1374/u1374_test.cc:13:21: error: ‘A’ was not declared in this scope",
+    "units/u1374/u1374_test.cc:18:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1374/u1374_test.cc:19:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1374/u1374_test.cc:20:21: error: ‘A’ was not declared in this scope",
+    "units/u1374/u1374_test.cc:25:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1374/u1374_test.cc:26:48: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner::SubsetPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

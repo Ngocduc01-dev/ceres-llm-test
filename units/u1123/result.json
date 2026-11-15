@@ -1,0 +1,16 @@
+{
+  "id": "u1123",
+  "name": "ceres::internal::SchurEliminatorForOneFBlock::Eliminate",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1123/u1123_test.cc:11:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?",
+    "units/u1123/u1123_test.cc:13:20: error: ‘A’ was not declared in this scope",
+    "units/u1123/u1123_test.cc:18:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?",
+    "units/u1123/u1123_test.cc:20:20: error: ‘A’ was not declared in this scope",
+    "units/u1123/u1123_test.cc:25:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?",
+    "units/u1123/u1123_test.cc:27:20: error: ‘A’ was not declared in this scope",
+    "units/u1123/u1123_test.cc:32:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?",
+    "units/u1123/u1123_test.cc:34:20: error: ‘A’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "u1399",
+  "name": "ceres::internal::CoordinateDescentMinimizer::IsOrderingValid",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1399/u1399_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1399/u1399_test.cc:10:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?",
+    "units/u1399/u1399_test.cc:11:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’",
+    "units/u1399/u1399_test.cc:12:26: error: ‘program’ was not declared in this scope",
+    "units/u1399/u1399_test.cc:12:35: error: ‘ordering’ was not declared in this scope",
+    "units/u1399/u1399_test.cc:17:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1399/u1399_test.cc:18:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?",
+    "units/u1399/u1399_test.cc:19:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’"
+  ]
+}

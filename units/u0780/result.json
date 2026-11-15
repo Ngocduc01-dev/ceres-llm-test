@@ -1,0 +1,16 @@
+{
+  "id": "u0780",
+  "name": "ceres::internal::SchurEliminator::Init",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u0780/u0780_test.cc:12:43: error: class template argument deduction failed:",
+    "units/u0780/u0780_test.cc:12:43: error: no matching function for call to ‘SchurEliminator()’",
+    "units/u0780/u0780_test.cc:20:43: error: class template argument deduction failed:",
+    "units/u0780/u0780_test.cc:20:43: error: no matching function for call to ‘SchurEliminator()’",
+    "units/u0780/u0780_test.cc:28:43: error: class template argument deduction failed:",
+    "units/u0780/u0780_test.cc:28:43: error: no matching function for call to ‘SchurEliminator()’",
+    "units/u0780/u0780_test.cc:36:43: error: class template argument deduction failed:",
+    "units/u0780/u0780_test.cc:36:43: error: no matching function for call to ‘SchurEliminator()’"
+  ]
+}

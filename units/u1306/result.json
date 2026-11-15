@@ -1,0 +1,16 @@
+{
+  "id": "u1306",
+  "name": "ceres::GradientChecker::Probe",
+  "status": "compile_fail",
+  "cfg_branches": 22,
+  "errors": [
+    "units/u1306/u1306_test.cc:9:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:16:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:23:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:30:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:37:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:44:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:51:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’",
+    "units/u1306/u1306_test.cc:58:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’"
+  ]
+}

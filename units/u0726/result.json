@@ -1,0 +1,9 @@
+{
+  "id": "u0726",
+  "name": "ceres::internal::Graph::RemoveVertex",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0726/u0726_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

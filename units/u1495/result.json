@@ -1,0 +1,47 @@
+{
+  "id": "u1495",
+  "name": "ceres::(anonymous)::Minimize",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u1495.TC1_CallsTarget": "crash",
+    "Unit_u1495.TC2_CallsTarget": "crash",
+    "Unit_u1495.TC3_CallsTarget": "crash",
+    "Unit_u1495.TC4_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 4,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 19
+  },
+  "c2": {
+    "covered": 0,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 632,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (pp->reduced_program->NumParameterBlocks() == 0) {"
+    },
+    {
+      "line": 637,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (pp->options.logging_type != SILENT) {"
+    }
+  ]
+}

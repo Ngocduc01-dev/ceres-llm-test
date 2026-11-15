@@ -1,0 +1,10 @@
+{
+  "id": "u0534",
+  "name": "ceres::Grid2D::GetValue",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0534/u0534_test.cc:7:10: error: scalar object ‘f_data’ requires one element in initializer",
+    "units/u0534/u0534_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

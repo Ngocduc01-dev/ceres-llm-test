@@ -1,0 +1,16 @@
+{
+  "id": "u1104",
+  "name": "ceres::internal::CreateTranspose",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1104/u1104_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1104/u1104_test.cc:9:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u1104/u1104_test.cc:14:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1104/u1104_test.cc:15:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u1104/u1104_test.cc:20:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1104/u1104_test.cc:21:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u1104/u1104_test.cc:26:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1104/u1104_test.cc:27:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?"
+  ]
+}

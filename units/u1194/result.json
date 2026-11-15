@@ -1,0 +1,10 @@
+{
+  "id": "u1194",
+  "name": "ceres::internal::CompressedRowSparseMatrix::Transpose",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1194/u1194_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1194/u1194_test.cc:13:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

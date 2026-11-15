@@ -2,16 +2,15 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-TEST(Unit_u0439, EvaluatesJet) {
-  const double data[5] = {0.0, 1.0, 2.0, 3.0, 4.0};
-  ceres::Grid1D<double, 1> grid(data, 0, 5);
-  ceres::CubicInterpolator<ceres::Grid1D<double, 1>> interpolator(grid);
+// P1: START -> 1 -> 2(đúng) -> 3 -> 4 -> 2(đúng) -> 3 -> 4 -> 2(sai) -> END
+// Phủ: node 2: đúng, node 2: sai (vòng lặp chạy đúng 2 lần, DATA_DIMENSION = 2)
+TEST(CubicInterpolatorEvaluateJet, TC1_LoopTwoIterations) {
+  const double data[4] = {1.0, 2.0, 3.0, 4.0};
+  ceres::Grid1D<double, 2> grid(data, 0, 2);
+  ceres::CubicInterpolator<ceres::Grid1D<double, 2>> interpolator(grid);
 
-  ceres::Jet<double, 1> x(1.7);
-  x.v[0] = 1.0;
-  ceres::Jet<double, 1> f[1];
+  ceres::Jet<double, 4> x(0.5, 0);
+  ceres::Jet<double, 4> f[2];
+
   interpolator.Evaluate(x, f);
-
-  EXPECT_NEAR(f[0].a, 1.7, 1e-12);
-  EXPECT_NEAR(f[0].v[0], 1.0, 1e-12);
 }

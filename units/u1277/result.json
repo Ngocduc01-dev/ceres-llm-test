@@ -1,0 +1,14 @@
+{
+  "id": "u1277",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1277/u1277_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1277/u1277_test.cc:9:31: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells()’ is private within this context",
+    "units/u1277/u1277_test.cc:14:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1277/u1277_test.cc:15:31: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells()’ is private within this context",
+    "units/u1277/u1277_test.cc:20:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1277/u1277_test.cc:21:31: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells()’ is private within this context"
+  ]
+}

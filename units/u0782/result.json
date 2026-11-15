@@ -1,0 +1,11 @@
+{
+  "id": "u0782",
+  "name": "ceres::RotationMatrixToEulerAngles",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0782/u0782_test.cc:7:3: error: ‘MatrixAdapter’ was not declared in this scope; did you mean ‘ceres::MatrixAdapter’?",
+    "units/u0782/u0782_test.cc:7:17: error: expected primary-expression before ‘const’",
+    "units/u0782/u0782_test.cc:8:38: error: ‘R’ was not declared in this scope"
+  ]
+}

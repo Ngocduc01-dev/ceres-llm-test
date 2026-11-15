@@ -1,0 +1,10 @@
+{
+  "id": "u0875",
+  "name": "ceres::internal::ParallelSetZero",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0875/u0875_test.cc:9:3: error: ‘VectorType’ was not declared in this scope",
+    "units/u0875/u0875_test.cc:10:58: error: ‘vector’ was not declared in this scope"
+  ]
+}

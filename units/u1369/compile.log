@@ -1,0 +1,300 @@
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:8:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+    8 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:9:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+    9 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+In file included from /work/repo/units/u1369/u1369_test.cc:3:
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:9:36: error: ‘DenseVectorType’ was not declared in this scope
+    9 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:9:53: error: ‘lhs’ was not declared in this scope
+    9 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:10:18: error: expected ‘;’ before ‘rhs’
+   10 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:11:53: error: ‘preconditioner’ was not declared in this scope
+   11 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:12:18: error: expected ‘;’ before ‘solution’
+   12 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:13:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   13 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:13:59: error: ‘rhs’ was not declared in this scope
+   13 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:13:89: error: ‘solution’ was not declared in this scope
+   13 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:18:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   18 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:19:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   19 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:19:36: error: ‘DenseVectorType’ was not declared in this scope
+   19 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:19:53: error: ‘lhs’ was not declared in this scope
+   19 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:20:18: error: expected ‘;’ before ‘rhs’
+   20 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:21:53: error: ‘preconditioner’ was not declared in this scope
+   21 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:22:18: error: expected ‘;’ before ‘solution’
+   22 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:23:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   23 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:23:59: error: ‘rhs’ was not declared in this scope
+   23 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:23:89: error: ‘solution’ was not declared in this scope
+   23 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:28:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   28 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:29:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   29 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:29:36: error: ‘DenseVectorType’ was not declared in this scope
+   29 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:29:53: error: ‘lhs’ was not declared in this scope
+   29 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:30:18: error: expected ‘;’ before ‘rhs’
+   30 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:31:53: error: ‘preconditioner’ was not declared in this scope
+   31 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:32:18: error: expected ‘;’ before ‘solution’
+   32 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:33:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   33 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:33:59: error: ‘rhs’ was not declared in this scope
+   33 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:33:89: error: ‘solution’ was not declared in this scope
+   33 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:38:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   38 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:39:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   39 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:39:36: error: ‘DenseVectorType’ was not declared in this scope
+   39 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:39:53: error: ‘lhs’ was not declared in this scope
+   39 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:40:18: error: expected ‘;’ before ‘rhs’
+   40 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:41:53: error: ‘preconditioner’ was not declared in this scope
+   41 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:42:18: error: expected ‘;’ before ‘solution’
+   42 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:43:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   43 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:43:59: error: ‘rhs’ was not declared in this scope
+   43 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:43:89: error: ‘solution’ was not declared in this scope
+   43 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:48:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   48 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:49:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   49 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:49:36: error: ‘DenseVectorType’ was not declared in this scope
+   49 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:49:53: error: ‘lhs’ was not declared in this scope
+   49 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:50:18: error: expected ‘;’ before ‘rhs’
+   50 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:51:53: error: ‘preconditioner’ was not declared in this scope
+   51 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:52:18: error: expected ‘;’ before ‘solution’
+   52 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:53:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   53 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:53:59: error: ‘rhs’ was not declared in this scope
+   53 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:53:89: error: ‘solution’ was not declared in this scope
+   53 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:58:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   58 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:59:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   59 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:59:36: error: ‘DenseVectorType’ was not declared in this scope
+   59 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:59:53: error: ‘lhs’ was not declared in this scope
+   59 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:60:18: error: expected ‘;’ before ‘rhs’
+   60 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:61:53: error: ‘preconditioner’ was not declared in this scope
+   61 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:62:18: error: expected ‘;’ before ‘solution’
+   62 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:63:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   63 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:63:59: error: ‘rhs’ was not declared in this scope
+   63 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:63:89: error: ‘solution’ was not declared in this scope
+   63 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:68:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   68 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:69:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   69 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:69:36: error: ‘DenseVectorType’ was not declared in this scope
+   69 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:69:53: error: ‘lhs’ was not declared in this scope
+   69 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:70:18: error: expected ‘;’ before ‘rhs’
+   70 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:71:53: error: ‘preconditioner’ was not declared in this scope
+   71 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:72:18: error: expected ‘;’ before ‘solution’
+   72 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:73:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   73 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:73:59: error: ‘rhs’ was not declared in this scope
+   73 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                           ^~~
+/work/repo/units/u1369/u1369_test.cc:73:89: error: ‘solution’ was not declared in this scope
+   73 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                                                                         ^~~~~~~~
+/work/repo/units/u1369/u1369_test.cc: In member function ‘virtual void Unit_u1369_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1369/u1369_test.cc:78:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+   78 |   const ConjugateGradientsSolverOptions options{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:79:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?
+   79 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::ConjugateGradientsLinearOperator
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:55:7: note: ‘ceres::internal::ConjugateGradientsLinearOperator’ declared here
+   55 | class ConjugateGradientsLinearOperator {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:79:36: error: ‘DenseVectorType’ was not declared in this scope
+   79 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:79:53: error: ‘lhs’ was not declared in this scope
+   79 |   ConjugateGradientsLinearOperator<DenseVectorType> lhs{};
+      |                                                     ^~~
+/work/repo/units/u1369/u1369_test.cc:80:18: error: expected ‘;’ before ‘rhs’
+   80 |   DenseVectorType rhs{};
+      |                  ^~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:81:53: error: ‘preconditioner’ was not declared in this scope
+   81 |   ConjugateGradientsLinearOperator<DenseVectorType> preconditioner{};
+      |                                                     ^~~~~~~~~~~~~~
+/work/repo/units/u1369/u1369_test.cc:82:18: error: expected ‘;’ before ‘solution’
+   82 |   DenseVectorType solution{};
+      |                  ^~~~~~~~~
+      |                  ;
+/work/repo/units/u1369/u1369_test.cc:83:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   83 |   ceres::internal::ConjugateGradientsSolver(options, lhs, rhs, preconditioner, nullptr, solution);
+      |                                             ^~~~~~~
+      |                                             optind
+/work/repo/units/u1369/u1369_test.cc:83:59: error: ‘rhs’ was not declared in this scope

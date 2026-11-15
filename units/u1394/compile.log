@@ -1,0 +1,57 @@
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:9:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+    9 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1394/u1394_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:15:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   15 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:21:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   21 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:27:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   27 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:33:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   33 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:39:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   39 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:45:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   45 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1394/u1394_test.cc: In member function ‘virtual void Unit_u1394_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1394/u1394_test.cc:51:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context
+   51 |   object.FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:63:8: note: declared private here
+   63 |   bool FinalizeIterationAndCheckIfMinimizerCanContinue();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,16 @@
+{
+  "id": "u0807",
+  "name": "ceres::internal::(anonymous)::FindLinearPolynomialRoots",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0807/u0807_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0807/u0807_test.cc:9:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0807/u0807_test.cc:9:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0807/u0807_test.cc:14:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0807/u0807_test.cc:15:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0807/u0807_test.cc:15:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0807/u0807_test.cc:20:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0807/u0807_test.cc:21:20: error: expected unqualified-id before ‘(’ token"
+  ]
+}

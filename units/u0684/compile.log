@@ -1,0 +1,32 @@
+/work/repo/units/u0684/u0684_test.cc: In member function ‘virtual void Unit_u0684_PathP1_Test::TestBody()’:
+/work/repo/units/u0684/u0684_test.cc:15:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+   15 |   ceres::internal::Vector x = ceres::internal::Vector::Ones(1);
+      |                    ^~~~~~
+/work/repo/units/u0684/u0684_test.cc:15:20: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/linear_operator.h:36,
+                 from /work/repo/units/u0684/u0684_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0684/u0684_test.cc:16:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+   16 |   ceres::internal::Vector y = ceres::internal::Vector::Zero(1);
+      |                    ^~~~~~
+/work/repo/units/u0684/u0684_test.cc:16:20: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0684/u0684_test.cc:17:36: error: ‘x’ was not declared in this scope
+   17 |   target.LeftMultiplyAndAccumulate(x, y);
+      |                                    ^
+/work/repo/units/u0684/u0684_test.cc:17:39: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   17 |   target.LeftMultiplyAndAccumulate(x, y);
+      |                                       ^
+      |                                       yn

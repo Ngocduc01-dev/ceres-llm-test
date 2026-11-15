@@ -1,0 +1,16 @@
+{
+  "id": "u1066",
+  "name": "ceres::internal::ParameterBlock::UpdatePlusJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1066/u1066_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1066/u1066_test.cc:9:28: error: ‘bool ceres::internal::ParameterBlock::UpdatePlusJacobian()’ is private within this context",
+    "units/u1066/u1066_test.cc:14:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1066/u1066_test.cc:15:28: error: ‘bool ceres::internal::ParameterBlock::UpdatePlusJacobian()’ is private within this context",
+    "units/u1066/u1066_test.cc:20:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1066/u1066_test.cc:21:28: error: ‘bool ceres::internal::ParameterBlock::UpdatePlusJacobian()’ is private within this context",
+    "units/u1066/u1066_test.cc:26:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1066/u1066_test.cc:27:28: error: ‘bool ceres::internal::ParameterBlock::UpdatePlusJacobian()’ is private within this context"
+  ]
+}

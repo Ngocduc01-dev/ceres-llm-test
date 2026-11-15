@@ -1,0 +1,38 @@
+/work/repo/units/u0762/u0762_test.cc: In member function ‘virtual void Unit_u0762_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0762/u0762_test.cc:8:3: error: ‘LineSearchMinimizer’ has not been declared
+    8 |   LineSearchMinimizer::State previous{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:9:3: error: ‘LineSearchMinimizer’ has not been declared
+    9 |   LineSearchMinimizer::State current{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:10:20: error: ‘NonlinearConjugateGradient’ is not a member of ‘ceres::internal’
+   10 |   ceres::internal::NonlinearConjugateGradient object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:11:3: error: ‘object’ was not declared in this scope
+   11 |   object.NextDirection(previous, current, nullptr);
+      |   ^~~~~~
+/work/repo/units/u0762/u0762_test.cc:11:24: error: ‘previous’ was not declared in this scope
+   11 |   object.NextDirection(previous, current, nullptr);
+      |                        ^~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:11:34: error: ‘current’ was not declared in this scope
+   11 |   object.NextDirection(previous, current, nullptr);
+      |                                  ^~~~~~~
+/work/repo/units/u0762/u0762_test.cc: In member function ‘virtual void Unit_u0762_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0762/u0762_test.cc:16:3: error: ‘LineSearchMinimizer’ has not been declared
+   16 |   LineSearchMinimizer::State previous{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:17:3: error: ‘LineSearchMinimizer’ has not been declared
+   17 |   LineSearchMinimizer::State current{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:18:20: error: ‘NonlinearConjugateGradient’ is not a member of ‘ceres::internal’
+   18 |   ceres::internal::NonlinearConjugateGradient object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:19:3: error: ‘object’ was not declared in this scope
+   19 |   object.NextDirection(previous, current, nullptr);
+      |   ^~~~~~
+/work/repo/units/u0762/u0762_test.cc:19:24: error: ‘previous’ was not declared in this scope
+   19 |   object.NextDirection(previous, current, nullptr);
+      |                        ^~~~~~~~
+/work/repo/units/u0762/u0762_test.cc:19:34: error: ‘current’ was not declared in this scope
+   19 |   object.NextDirection(previous, current, nullptr);
+      |                                  ^~~~~~~

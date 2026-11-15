@@ -1,0 +1,164 @@
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:8:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+    8 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+In file included from /work/repo/units/u0778/u0778_test.cc:4:
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:8:29: error: template argument 1 is invalid
+    8 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:8:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:9:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+    9 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+In file included from /work/repo/units/u0778/u0778_test.cc:3:
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:14:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   14 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:14:29: error: template argument 1 is invalid
+   14 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:14:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:15:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   15 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:20:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   20 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:20:29: error: template argument 1 is invalid
+   20 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:20:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:21:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   21 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:26:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   26 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:26:29: error: template argument 1 is invalid
+   26 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:26:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:27:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   27 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:32:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   32 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:32:29: error: template argument 1 is invalid
+   32 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:32:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:33:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   33 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:38:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   38 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:38:29: error: template argument 1 is invalid
+   38 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:38:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:39:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   39 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:44:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   44 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:44:29: error: template argument 1 is invalid
+   44 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:44:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:45:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   45 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:50:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   50 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:50:29: error: template argument 1 is invalid
+   50 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:50:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:51:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   51 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u0778/u0778_test.cc: In member function ‘virtual void Unit_u0778_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0778/u0778_test.cc:56:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   56 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u0778/u0778_test.cc:56:29: error: template argument 1 is invalid
+   56 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u0778/u0778_test.cc:56:29: error: template argument 2 is invalid
+/work/repo/units/u0778/u0778_test.cc:57:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   57 |   ceres::internal::FindInterpolatingPolynomial(samples);
+      |                                                ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:103:64: note: in passing argument 1 of ‘ceres::Vector ceres::internal::FindInterpolatingPolynomial(const std::vector<FunctionSample>&)’
+  103 | FindInterpolatingPolynomial(const std::vector<FunctionSample>& samples);
+      |                             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~

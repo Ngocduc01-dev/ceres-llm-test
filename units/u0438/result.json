@@ -1,0 +1,16 @@
+{
+  "id": "u0438",
+  "name": "ceres::AutoDiffManifold::MinusJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<5>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<4>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<3>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<2>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<1>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::EuclideanFunctorN<5>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::EuclideanFunctorN<4>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::EuclideanFunctorN<3>’ has no member named ‘Plus’"
+  ]
+}

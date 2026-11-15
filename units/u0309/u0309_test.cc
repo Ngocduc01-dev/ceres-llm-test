@@ -2,7 +2,15 @@
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-TEST(Unit_u0309, PathP1) {
-  ceres::internal::Graph<int> target;
-  EXPECT_TRUE(target.vertices().empty());
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(GraphVerticesTest, P1_ReturnVertices) {
+  Graph<int> graph;
+  const auto& vertices = graph.vertices();
+  (void)vertices;
 }
+
+}  // namespace internal
+}  // namespace ceres

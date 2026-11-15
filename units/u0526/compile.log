@@ -1,0 +1,12 @@
+/work/repo/units/u0526/u0526_test.cc: In member function ‘virtual void ceres::internal::Unit_u0526_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0526/u0526_test.cc:10:18: error: no matching function for call to ‘InvertPSDMatrix(bool, <brace-enclosed initializer list>)’
+   10 |   InvertPSDMatrix(true, {});
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~
+In file included from /work/repo/units/u0526/u0526_test.cc:4:
+/work/ceres-solver/internal/ceres/invert_psd_matrix.h:50:43: note: candidate: ‘template<int kSize> typename ceres::EigenTypes<kSize, kSize>::Matrix ceres::internal::InvertPSDMatrix(bool, const typename ceres::EigenTypes<kSize, kSize>::Matrix&)’
+   50 | typename EigenTypes<kSize, kSize>::Matrix InvertPSDMatrix(
+      |                                           ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/invert_psd_matrix.h:50:43: note:   template argument deduction/substitution failed:
+/work/repo/units/u0526/u0526_test.cc:10:18: note:   couldn’t deduce template parameter ‘kSize’
+   10 |   InvertPSDMatrix(true, {});
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~

@@ -1,0 +1,9 @@
+{
+  "id": "u0891",
+  "name": "ceres::internal::RefinedSparseCholesky::StorageType",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0891/u0891_test.cc:8:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky(<brace-enclosed initializer list>)’"
+  ]
+}

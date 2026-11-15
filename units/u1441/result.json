@@ -1,0 +1,16 @@
+{
+  "id": "u1441",
+  "name": "ceres::internal::CgnrSolver::SolveImpl",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1441/u1441_test.cc:14:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1441/u1441_test.cc:15:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’",
+    "units/u1441/u1441_test.cc:16:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1441/u1441_test.cc:21:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1441/u1441_test.cc:22:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’",
+    "units/u1441/u1441_test.cc:23:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1441/u1441_test.cc:28:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1441/u1441_test.cc:29:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’"
+  ]
+}

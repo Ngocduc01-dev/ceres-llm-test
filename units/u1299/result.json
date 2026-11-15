@@ -1,0 +1,14 @@
+{
+  "id": "u1299",
+  "name": "ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1299/u1299_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1299/u1299_test.cc:11:3: error: ‘Preconditioner’ has not been declared",
+    "units/u1299/u1299_test.cc:12:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1299/u1299_test.cc:18:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1299/u1299_test.cc:19:3: error: ‘Preconditioner’ has not been declared",
+    "units/u1299/u1299_test.cc:20:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "u1192",
+  "name": "ceres::internal::BlockSparseMatrix::UpdateCompressedRowSparseMatrixTranspose",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1192/u1192_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

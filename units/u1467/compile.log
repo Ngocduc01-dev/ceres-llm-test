@@ -1,0 +1,19 @@
+/work/repo/units/u1467/u1467_test.cc: In member function ‘virtual void Unit_u1467_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1467/u1467_test.cc:8:3: error: expected primary-expression before ‘)’ token
+    8 |   )(const IterationSummary arg0{};
+      |   ^
+/work/repo/units/u1467/u1467_test.cc:9:49: error: no matching function for call to ‘ceres::internal::StateUpdatingCallback::StateUpdatingCallback(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::StateUpdatingCallback object{};
+      |                                                 ^
+In file included from /work/repo/units/u1467/u1467_test.cc:4:
+/work/ceres-solver/internal/ceres/callbacks.h:47:3: note: candidate: ‘ceres::internal::StateUpdatingCallback::StateUpdatingCallback(ceres::internal::Program*, double*)’
+   47 |   StateUpdatingCallback(Program* program, double* parameters);
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:47:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/callbacks.h:45:23: note: candidate: ‘constexpr ceres::internal::StateUpdatingCallback::StateUpdatingCallback(const ceres::internal::StateUpdatingCallback&)’
+   45 | class CERES_NO_EXPORT StateUpdatingCallback final : public IterationCallback {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:45:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1467/u1467_test.cc:10:10: error: ‘arg0’ was not declared in this scope
+   10 |   object(arg0);
+      |          ^~~~

@@ -1,0 +1,73 @@
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:8:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+    8 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+In file included from /work/repo/units/u1057/u1057_test.cc:3:
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:14:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   14 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:20:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   20 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:26:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   26 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:32:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   32 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:38:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   38 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:44:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   44 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:50:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   50 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1057/u1057_test.cc: In member function ‘virtual void Unit_u1057_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1057/u1057_test.cc:56:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   56 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided

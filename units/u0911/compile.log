@@ -1,0 +1,18 @@
+/work/repo/units/u0911/u0911_test.cc: In member function ‘virtual void Unit_u0911_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0911/u0911_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+    8 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u0911/u0911_test.cc:9:3: error: ‘SchurEliminator’ was not declared in this scope; did you mean ‘ceres::internal::SchurEliminator’?
+    9 |   SchurEliminator<> object{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::internal::SchurEliminator
+In file included from /work/repo/units/u0911/u0911_test.cc:4:
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: ‘ceres::internal::SchurEliminator’ declared here
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/repo/units/u0911/u0911_test.cc:9:19: error: expected primary-expression before ‘>’ token
+    9 |   SchurEliminator<> object{};
+      |                   ^
+/work/repo/units/u0911/u0911_test.cc:9:21: error: ‘object’ was not declared in this scope
+    9 |   SchurEliminator<> object{};
+      |                     ^~~~~~

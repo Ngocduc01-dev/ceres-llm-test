@@ -1,0 +1,16 @@
+{
+  "id": "u1446",
+  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceSparsity",
+  "status": "compile_fail",
+  "cfg_branches": 28,
+  "errors": [
+    "units/u1446/u1446_test.cc:13:3: error: ‘CovarianceBlocks’ was not declared in this scope",
+    "units/u1446/u1446_test.cc:14:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1446/u1446_test.cc:15:36: error: ‘original_covariance_blocks’ was not declared in this scope",
+    "units/u1446/u1446_test.cc:20:3: error: ‘CovarianceBlocks’ was not declared in this scope",
+    "units/u1446/u1446_test.cc:21:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1446/u1446_test.cc:22:36: error: ‘original_covariance_blocks’ was not declared in this scope",
+    "units/u1446/u1446_test.cc:27:3: error: ‘CovarianceBlocks’ was not declared in this scope",
+    "units/u1446/u1446_test.cc:28:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’"
+  ]
+}

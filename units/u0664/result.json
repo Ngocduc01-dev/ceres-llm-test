@@ -1,0 +1,9 @@
+{
+  "id": "u0664",
+  "name": "ceres::internal::DenseSparseMatrix::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0664/u0664_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

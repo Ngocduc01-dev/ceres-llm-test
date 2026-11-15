@@ -1,0 +1,16 @@
+{
+  "id": "u1488",
+  "name": "ceres::internal::LineSearch::InterpolatingPolynomialMinimizingStepSize",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1488/u1488_test.cc:8:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?",
+    "units/u1488/u1488_test.cc:9:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1488/u1488_test.cc:10:17: error: expected ‘;’ before ‘previous’",
+    "units/u1488/u1488_test.cc:11:17: error: expected ‘;’ before ‘current’",
+    "units/u1488/u1488_test.cc:14:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’",
+    "units/u1488/u1488_test.cc:14:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’",
+    "units/u1488/u1488_test.cc:15:52: error: ‘interpolation_type’ was not declared in this scope",
+    "units/u1488/u1488_test.cc:15:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?"
+  ]
+}

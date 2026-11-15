@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "include/ceres/ordered_groups.h", "lines": [{"line_number": 163, "count": 2, "branches": []}, {"line_number": 164, "count": 2, "branches": []}, {"line_number": 165, "count": 2, "branches": [], "gcovr/decision": {"type": "conditional", "count_true": 1, "count_false": 1}}], "functions": []}]}

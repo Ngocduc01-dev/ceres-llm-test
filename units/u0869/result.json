@@ -1,0 +1,9 @@
+{
+  "id": "u0869",
+  "name": "ceres::internal::LineSearchFunction::LineSearchFunction",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0869/u0869_test.cc:8:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’"
+  ]
+}

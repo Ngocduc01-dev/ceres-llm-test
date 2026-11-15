@@ -1,0 +1,12 @@
+{
+  "id": "u0568",
+  "name": "ceres::ProductManifold::MinusImpl",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0568/u0568_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer",
+    "units/u0568/u0568_test.cc:8:10: error: scalar object ‘arg1_data’ requires one element in initializer",
+    "units/u0568/u0568_test.cc:9:10: error: scalar object ‘arg2_data’ requires one element in initializer",
+    "units/u0568/u0568_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

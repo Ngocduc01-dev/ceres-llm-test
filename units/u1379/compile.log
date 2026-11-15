@@ -1,0 +1,300 @@
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:9:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+    9 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:10:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   10 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+In file included from /work/repo/units/u1379/u1379_test.cc:5:
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:10:48: error: template argument 1 is invalid
+   10 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:10:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:12:46: error: ‘product_storage_type’ was not declared in this scope
+   12 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:17:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   17 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:18:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   18 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:18:48: error: template argument 1 is invalid
+   18 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:18:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:19:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:20:46: error: ‘product_storage_type’ was not declared in this scope
+   20 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:25:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   25 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:26:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   26 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:26:48: error: template argument 1 is invalid
+   26 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:26:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:27:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   27 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:28:46: error: ‘product_storage_type’ was not declared in this scope
+   28 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:33:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   33 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:34:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   34 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:34:48: error: template argument 1 is invalid
+   34 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:34:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:35:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:36:46: error: ‘product_storage_type’ was not declared in this scope
+   36 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:41:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   41 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:42:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   42 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:42:48: error: template argument 1 is invalid
+   42 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:42:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:43:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   43 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:44:46: error: ‘product_storage_type’ was not declared in this scope
+   44 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:49:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   49 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:50:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   50 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:50:48: error: template argument 1 is invalid
+   50 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:50:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:51:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   51 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:52:46: error: ‘product_storage_type’ was not declared in this scope
+   52 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:57:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   57 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:58:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   58 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:58:48: error: template argument 1 is invalid
+   58 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:58:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:59:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   59 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:60:46: error: ‘product_storage_type’ was not declared in this scope
+   60 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:65:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   65 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:66:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   66 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:66:48: error: template argument 1 is invalid
+   66 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:66:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:67:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   67 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:68:46: error: ‘product_storage_type’ was not declared in this scope
+   68 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:73:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   73 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:74:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   74 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:74:48: error: template argument 1 is invalid
+   74 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:74:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:75:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   75 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:76:46: error: ‘product_storage_type’ was not declared in this scope
+   76 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:81:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   81 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:82:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   82 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:82:48: error: template argument 1 is invalid
+   82 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1379/u1379_test.cc:82:48: error: template argument 2 is invalid
+/work/repo/units/u1379/u1379_test.cc:83:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   83 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1379/u1379_test.cc:84:46: error: ‘product_storage_type’ was not declared in this scope
+   84 |   object.ComputeOffsetsAndCreateResultMatrix(product_storage_type, product_terms);
+      |                                              ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc: In member function ‘virtual void Unit_u1379_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1379/u1379_test.cc:89:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   89 |   const CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1379/u1379_test.cc:90:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   90 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here

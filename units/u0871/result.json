@@ -1,0 +1,9 @@
+{
+  "id": "u0871",
+  "name": "ceres::LossFunction::~LossFunction",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0871/u0871_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::LossFunction’"
+  ]
+}

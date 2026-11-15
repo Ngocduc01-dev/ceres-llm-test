@@ -1,0 +1,31 @@
+/work/repo/units/u0928/u0928_test.cc: In member function ‘virtual void Unit_u0928_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0928/u0928_test.cc:9:3: error: ‘Options’ was not declared in this scope
+    9 |   Options options{};
+      |   ^~~~~~~
+/work/repo/units/u0928/u0928_test.cc:10:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::TrustRegionStrategy’
+   10 |   ceres::internal::TrustRegionStrategy object{};
+      |                                        ^~~~~~
+In file included from /work/ceres-solver/internal/ceres/dogleg_strategy.h:37,
+                 from /work/repo/units/u0928/u0928_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_strategy.h:58:23: note:   because the following virtual functions are pure within ‘ceres::internal::TrustRegionStrategy’:
+   58 | class CERES_NO_EXPORT TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_strategy.h:122:19: note:     ‘virtual ceres::internal::TrustRegionStrategy::Summary ceres::internal::TrustRegionStrategy::ComputeStep(const PerSolveOptions&, ceres::internal::SparseMatrix*, const double*, double*)’
+  122 |   virtual Summary ComputeStep(const PerSolveOptions& per_solve_options,
+      |                   ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_strategy.h:130:16: note:     ‘virtual void ceres::internal::TrustRegionStrategy::StepAccepted(double)’
+  130 |   virtual void StepAccepted(double step_quality) = 0;
+      |                ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_strategy.h:135:16: note:     ‘virtual void ceres::internal::TrustRegionStrategy::StepRejected(double)’
+  135 |   virtual void StepRejected(double step_quality) = 0;
+      |                ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_strategy.h:141:16: note:     ‘virtual void ceres::internal::TrustRegionStrategy::StepIsInvalid()’
+  141 |   virtual void StepIsInvalid() = 0;
+      |                ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_strategy.h:144:18: note:     ‘virtual double ceres::internal::TrustRegionStrategy::Radius() const’
+  144 |   virtual double Radius() const = 0;
+      |                  ^~~~~~
+/work/repo/units/u0928/u0928_test.cc:11:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   11 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

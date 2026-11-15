@@ -1,0 +1,20 @@
+/work/repo/units/u1206/u1206_test.cc: In member function ‘virtual void Unit_u1206_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1206/u1206_test.cc:8:3: error: ‘CostFunction’ was not declared in this scope; did you mean ‘ceres::CostFunction’?
+    8 |   CostFunction cost_function{};
+      |   ^~~~~~~~~~~~
+      |   ceres::CostFunction
+In file included from /work/repo/units/u1206/u1206_test.cc:3:
+/work/ceres-solver/include/ceres/cost_function.h:64:20: note: ‘ceres::CostFunction’ declared here
+   64 | class CERES_EXPORT CostFunction {
+      |                    ^~~~~~~~~~~~
+/work/repo/units/u1206/u1206_test.cc:9:3: error: ‘TinySolverCostFunctionAdapter’ was not declared in this scope; did you mean ‘ceres::TinySolverCostFunctionAdapter’?
+    9 |   TinySolverCostFunctionAdapter<2, 3> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::TinySolverCostFunctionAdapter
+In file included from /work/repo/units/u1206/u1206_test.cc:4:
+/work/ceres-solver/include/ceres/tiny_solver_cost_function_adapter.h:76:7: note: ‘ceres::TinySolverCostFunctionAdapter’ declared here
+   76 | class TinySolverCostFunctionAdapter {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1206/u1206_test.cc:9:39: error: ‘object’ was not declared in this scope
+    9 |   TinySolverCostFunctionAdapter<2, 3> object{};
+      |                                       ^~~~~~

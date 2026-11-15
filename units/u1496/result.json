@@ -1,0 +1,16 @@
+{
+  "id": "u1496",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::UpdateImpl",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1496/u1496_test.cc:10:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1496/u1496_test.cc:11:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1496/u1496_test.cc:12:21: error: ‘A’ was not declared in this scope",
+    "units/u1496/u1496_test.cc:17:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1496/u1496_test.cc:18:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1496/u1496_test.cc:19:21: error: ‘A’ was not declared in this scope",
+    "units/u1496/u1496_test.cc:24:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1496/u1496_test.cc:25:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

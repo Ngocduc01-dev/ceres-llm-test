@@ -1,0 +1,23 @@
+/work/repo/units/u0556/u0556_test.cc: In member function ‘virtual void ceres::internal::Unit_u0556_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0556/u0556_test.cc:10:31: error: no matching function for call to ‘Degree2MaximumSpanningForest(<brace-enclosed initializer list>)’
+   10 |   Degree2MaximumSpanningForest({});
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /work/repo/units/u0556/u0556_test.cc:4:
+/work/ceres-solver/internal/ceres/graph_algorithms.h:261:40: note: candidate: ‘template<class Vertex> std::unique_ptr<ceres::internal::WeightedGraph<Vertex> > ceres::internal::Degree2MaximumSpanningForest(const WeightedGraph<Vertex>&)’
+  261 | std::unique_ptr<WeightedGraph<Vertex>> Degree2MaximumSpanningForest(
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph_algorithms.h:261:40: note:   template argument deduction/substitution failed:
+/work/repo/units/u0556/u0556_test.cc:10:31: note:   couldn’t deduce template parameter ‘Vertex’
+   10 |   Degree2MaximumSpanningForest({});
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/work/repo/units/u0556/u0556_test.cc: In member function ‘virtual void ceres::internal::Unit_u0556_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0556/u0556_test.cc:14:31: error: no matching function for call to ‘Degree2MaximumSpanningForest(<brace-enclosed initializer list>)’
+   14 |   Degree2MaximumSpanningForest({});
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+/work/ceres-solver/internal/ceres/graph_algorithms.h:261:40: note: candidate: ‘template<class Vertex> std::unique_ptr<ceres::internal::WeightedGraph<Vertex> > ceres::internal::Degree2MaximumSpanningForest(const WeightedGraph<Vertex>&)’
+  261 | std::unique_ptr<WeightedGraph<Vertex>> Degree2MaximumSpanningForest(
+      |                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph_algorithms.h:261:40: note:   template argument deduction/substitution failed:
+/work/repo/units/u0556/u0556_test.cc:14:31: note:   couldn’t deduce template parameter ‘Vertex’
+   14 |   Degree2MaximumSpanningForest({});
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~

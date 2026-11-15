@@ -1,0 +1,31 @@
+/work/repo/units/u1150/u1150_test.cc: In member function ‘virtual void Unit_u1150_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1150/u1150_test.cc:9:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+    9 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u1150/u1150_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1150/u1150_test.cc:10:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   10 |   CompressedRowSparseMatrix::StorageType product_storage_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1150/u1150_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+In file included from /work/repo/units/u1150/u1150_test.cc:5:
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1150/u1150_test.cc:12:17: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   12 |   object.Create(m, product_storage_type);
+      |                 ^
+      |                 tm
+/work/repo/units/u1150/u1150_test.cc:12:20: error: ‘product_storage_type’ was not declared in this scope
+   12 |   object.Create(m, product_storage_type);
+      |                    ^~~~~~~~~~~~~~~~~~~~

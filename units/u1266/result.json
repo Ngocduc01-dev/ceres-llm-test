@@ -1,0 +1,11 @@
+{
+  "id": "u1266",
+  "name": "ceres::internal::ResidualBlock::NumScratchDoublesForEvaluate",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1266/u1266_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1266/u1266_test.cc:14:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1266/u1266_test.cc:20:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’"
+  ]
+}

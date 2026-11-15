@@ -1,0 +1,10 @@
+{
+  "id": "u0509",
+  "name": "ceres::internal::SparseSchurComplementSolver::~SparseSchurComplementSolver",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0509/u0509_test.cc:7:3: error: ‘SparseSchurComplementSolver’ was not declared in this scope; did you mean ‘ceres::internal::SparseSchurComplementSolver’?",
+    "units/u0509/u0509_test.cc:7:40: error: expected primary-expression before ‘)’ token"
+  ]
+}

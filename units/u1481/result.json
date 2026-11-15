@@ -1,0 +1,16 @@
+{
+  "id": "u1481",
+  "name": "ceres::internal::Program::RemoveFixedBlocks",
+  "status": "compile_fail",
+  "cfg_branches": 20,
+  "errors": [
+    "units/u1481/u1481_test.cc:11:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:17:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:23:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:29:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:35:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:41:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:47:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context",
+    "units/u1481/u1481_test.cc:53:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context"
+  ]
+}

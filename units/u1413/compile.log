@@ -1,0 +1,8 @@
+/work/repo/units/u1413/u1413_test.cc: In member function ‘virtual void Unit_u1413_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1413/u1413_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1413/u1413_test.cc:9:48: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   ceres::OptionsAreValidForDenseNormalCholesky(options, nullptr);
+      |                                                ^~~~~~~
+      |                                                optind

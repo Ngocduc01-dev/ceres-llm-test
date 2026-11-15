@@ -1,0 +1,10 @@
+{
+  "id": "u1068",
+  "name": "ceres::ProductManifold::PlusJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1068/u1068_test.cc:8:33: error: class template argument deduction failed:",
+    "units/u1068/u1068_test.cc:8:33: error: no matching function for call to ‘ProductManifold()’"
+  ]
+}

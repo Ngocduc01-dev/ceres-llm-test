@@ -1,0 +1,16 @@
+{
+  "id": "u1373",
+  "name": "ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1373/u1373_test.cc:9:9: error: ‘LinearSolverOrderingType’ does not name a type",
+    "units/u1373/u1373_test.cc:10:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1373/u1373_test.cc:11:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1373/u1373_test.cc:11:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1373/u1373_test.cc:16:9: error: ‘LinearSolverOrderingType’ does not name a type",
+    "units/u1373/u1373_test.cc:17:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1373/u1373_test.cc:18:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1373/u1373_test.cc:18:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

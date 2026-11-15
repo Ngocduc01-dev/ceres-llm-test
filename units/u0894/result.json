@@ -1,0 +1,9 @@
+{
+  "id": "u0894",
+  "name": "ceres::internal::SparseMatrix::SquaredColumnNorm",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0894/u0894_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseMatrix’"
+  ]
+}

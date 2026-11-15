@@ -1,0 +1,30 @@
+{
+  "id": "u1275",
+  "name": "ceres::(anonymous)::SchurStructureToString",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u1275.TC1_CallsTarget": "pass",
+    "Unit_u1275.TC2_CallsTarget": "pass",
+    "Unit_u1275.TC3_CallsTarget": "pass",
+    "Unit_u1275.TC4_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 9,
+    "total": 9
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

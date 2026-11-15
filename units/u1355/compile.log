@@ -1,0 +1,29 @@
+/work/repo/units/u1355/u1355_test.cc: In member function ‘virtual void Unit_u1355_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1355/u1355_test.cc:10:3: error: ‘EvaluateOptions’ was not declared in this scope
+   10 |   EvaluateOptions arg0{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1355/u1355_test.cc:11:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::GradientProblemEvaluator object{};
+      |                                                    ^
+In file included from /work/repo/units/u1355/u1355_test.cc:5:
+/work/ceres-solver/internal/ceres/gradient_problem_evaluator.h:50:12: note: candidate: ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(const ceres::GradientProblem&)’
+   50 |   explicit GradientProblemEvaluator(const GradientProblem& problem)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/gradient_problem_evaluator.h:50:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1355/u1355_test.cc:12:19: error: ‘arg0’ was not declared in this scope
+   12 |   object.Evaluate(arg0, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~
+/work/repo/units/u1355/u1355_test.cc: In member function ‘virtual void Unit_u1355_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1355/u1355_test.cc:17:3: error: ‘EvaluateOptions’ was not declared in this scope
+   17 |   EvaluateOptions arg0{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1355/u1355_test.cc:18:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(<brace-enclosed initializer list>)’
+   18 |   ceres::internal::GradientProblemEvaluator object{};
+      |                                                    ^
+/work/ceres-solver/internal/ceres/gradient_problem_evaluator.h:50:12: note: candidate: ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(const ceres::GradientProblem&)’
+   50 |   explicit GradientProblemEvaluator(const GradientProblem& problem)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/gradient_problem_evaluator.h:50:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1355/u1355_test.cc:19:19: error: ‘arg0’ was not declared in this scope
+   19 |   object.Evaluate(arg0, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~

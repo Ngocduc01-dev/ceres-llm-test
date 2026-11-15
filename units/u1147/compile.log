@@ -1,0 +1,26 @@
+/work/repo/units/u1147/u1147_test.cc: In member function ‘virtual void Unit_u1147_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1147/u1147_test.cc:7:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+    7 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u1147/u1147_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1147/u1147_test.cc:8:49: error: no matching function for call to ‘ceres::internal::BlockSparseMatrixData::BlockSparseMatrixData(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::BlockSparseMatrixData object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:189:3: note: candidate: ‘ceres::internal::BlockSparseMatrixData::BlockSparseMatrixData(const ceres::internal::CompressedRowBlockStructure*, const double*)’
+  189 |   BlockSparseMatrixData(const CompressedRowBlockStructure* block_structure,
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:189:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:186:12: note: candidate: ‘ceres::internal::BlockSparseMatrixData::BlockSparseMatrixData(const ceres::internal::BlockSparseMatrix&)’
+  186 |   explicit BlockSparseMatrixData(const BlockSparseMatrix& m)
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:186:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: candidate: ‘constexpr ceres::internal::BlockSparseMatrixData::BlockSparseMatrixData(const ceres::internal::BlockSparseMatrixData&)’
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: candidate: ‘constexpr ceres::internal::BlockSparseMatrixData::BlockSparseMatrixData(ceres::internal::BlockSparseMatrixData&&)’
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note:   candidate expects 1 argument, 0 provided

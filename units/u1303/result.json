@@ -1,0 +1,16 @@
+{
+  "id": "u1303",
+  "name": "ceres::internal::CreateHessianGraph",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1303/u1303_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1303/u1303_test.cc:12:39: error: ‘program’ was not declared in this scope",
+    "units/u1303/u1303_test.cc:17:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1303/u1303_test.cc:18:39: error: ‘program’ was not declared in this scope",
+    "units/u1303/u1303_test.cc:23:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1303/u1303_test.cc:24:39: error: ‘program’ was not declared in this scope",
+    "units/u1303/u1303_test.cc:29:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1303/u1303_test.cc:30:39: error: ‘program’ was not declared in this scope"
+  ]
+}

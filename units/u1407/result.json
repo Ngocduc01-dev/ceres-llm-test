@@ -1,0 +1,32 @@
+{
+  "id": "u1407",
+  "name": "ceres::internal::ProblemImpl::EvaluateResidualBlock",
+  "status": "ok",
+  "cfg_branches": 10,
+  "tests": {
+    "Unit_u1407.TC1_CallsTarget": "crash",
+    "Unit_u1407.TC2_CallsTarget": "crash",
+    "Unit_u1407.TC3_CallsTarget": "crash",
+    "Unit_u1407.TC4_CallsTarget": "crash",
+    "Unit_u1407.TC5_CallsTarget": "crash",
+    "Unit_u1407.TC6_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 6,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 20
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

@@ -1,0 +1,11 @@
+{
+  "id": "u0961",
+  "name": "ceres::internal::LineSearch::options",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0961/u0961_test.cc:7:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’",
+    "units/u0961/u0961_test.cc:7:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’",
+    "units/u0961/u0961_test.cc:8:17: error: ‘const ceres::internal::LineSearch::Options& ceres::internal::LineSearch::options() const’ is protected within this context"
+  ]
+}

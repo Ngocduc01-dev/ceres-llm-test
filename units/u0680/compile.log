@@ -1,0 +1,33 @@
+/work/repo/units/u0680/u0680_test.cc: In member function ‘virtual void Unit_u0680_PathP1_Test::TestBody()’:
+/work/repo/units/u0680/u0680_test.cc:8:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+    8 |   ceres::internal::Vector position(1);
+      |                    ^~~~~~
+/work/repo/units/u0680/u0680_test.cc:8:20: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/function_sample.h:37,
+                 from /work/ceres-solver/internal/ceres/line_search.h:40,
+                 from /work/repo/units/u0680/u0680_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0680/u0680_test.cc:9:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+    9 |   ceres::internal::Vector direction(1);
+      |                    ^~~~~~
+/work/repo/units/u0680/u0680_test.cc:9:20: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0680/u0680_test.cc:10:15: error: ‘position’ was not declared in this scope
+   10 |   target.Init(position, direction);
+      |               ^~~~~~~~
+/work/repo/units/u0680/u0680_test.cc:10:25: error: ‘direction’ was not declared in this scope; did you mean ‘sigaction’?
+   10 |   target.Init(position, direction);
+      |                         ^~~~~~~~~
+      |                         sigaction

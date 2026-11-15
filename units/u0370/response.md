@@ -1,26 +1,40 @@
-# Unit u0370
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh; chỉ một đường đi duy nhất qua node 1 (`delta_offset_ = delta_offset`) |
 
-## B. B? test case
+CFG khớp với mã nguồn (hàm một dòng, không có rẽ nhánh, không có vòng lặp, không có `CHECK`).
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `void set_delta_offset(int delta_offset)` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `delta_offset`: mọi giá trị `int` (không có điều kiện ràng buộc); `user_state`: mảng 3 double; `size` = 3; `index` = 0 | `delta_offset` = 7 (chọn ngẫu nhiên, cố định); `size` = 3; `index` = 0 |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. Hàm không có điểm rẽ nhánh nào, không có vòng lặp, không có `CHECK`.
 
-## D. File test
+`C2 dự kiến = 0 / 0` (không có nhánh; test chạy hết đường đi duy nhất START → 1 → END, tức phủ 100% câu lệnh).
+
+**D. File test**
 
 ```cpp
 // FILE: u0370_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0370, PathP1) { double value[1] = {0}; ceres::internal::ParameterBlock target(value, 1, 0); target.set_delta_offset(1); }
+
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ParameterBlockSetDeltaOffsetTest, TC1_AssignsDeltaOffset) {
+  double values[3] = {1.0, 2.0, 3.0};
+  ParameterBlock block(values, 3, 0);
+  block.set_delta_offset(7);
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

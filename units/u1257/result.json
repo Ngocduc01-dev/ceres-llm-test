@@ -1,0 +1,9 @@
+{
+  "id": "u1257",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1257/u1257_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

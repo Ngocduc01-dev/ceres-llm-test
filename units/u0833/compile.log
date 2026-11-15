@@ -1,0 +1,4 @@
+/work/repo/units/u0833/u0833_test.cc: In member function ‘virtual void Unit_u0833_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0833/u0833_test.cc:7:3: error: ‘ceres_free_stock_loss_function_data’ was not declared in this scope
+    7 |   ceres_free_stock_loss_function_data(nullptr);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

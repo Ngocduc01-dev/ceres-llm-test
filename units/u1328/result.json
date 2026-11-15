@@ -1,0 +1,9 @@
+{
+  "id": "u1328",
+  "name": "ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "/usr/include/c++/14/bits/unique_ptr.h:1076:30: error: no matching function for call to ‘ceres::internal::PartitionedMatrixView<2, 3, 6>::PartitionedMatrixView(ceres::internal::BlockSparseMatrix&, int&)’"
+  ]
+}

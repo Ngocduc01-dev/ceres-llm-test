@@ -1,0 +1,16 @@
+{
+  "id": "u1105",
+  "name": "ceres::internal::BlockOrderingToScalarOrdering",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1105/u1105_test.cc:8:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?",
+    "units/u1105/u1105_test.cc:8:20: error: template argument 1 is invalid",
+    "units/u1105/u1105_test.cc:8:20: error: template argument 2 is invalid",
+    "units/u1105/u1105_test.cc:10:50: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’",
+    "units/u1105/u1105_test.cc:15:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?",
+    "units/u1105/u1105_test.cc:15:20: error: template argument 1 is invalid",
+    "units/u1105/u1105_test.cc:15:20: error: template argument 2 is invalid",
+    "units/u1105/u1105_test.cc:17:50: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’"
+  ]
+}

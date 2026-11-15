@@ -1,0 +1,4 @@
+/work/repo/units/u0578/u0578_test.cc: In member function ‘virtual void Unit_u0578_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0578/u0578_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.ComputeSubspaceStepFromRoot(1.0);
+      |   ^~~~~~

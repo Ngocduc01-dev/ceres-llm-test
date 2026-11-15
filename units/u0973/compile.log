@@ -1,0 +1,8 @@
+/work/repo/units/u0973/u0973_test.cc: In member function ‘virtual void Unit_u0973_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0973/u0973_test.cc:10:3: error: ‘Minimizer’ has not been declared
+   10 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u0973/u0973_test.cc:12:15: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   12 |   object.Init(options, nullptr, nullptr);
+      |               ^~~~~~~
+      |               optind

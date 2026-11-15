@@ -1,0 +1,9 @@
+{
+  "id": "u1090",
+  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1090/u1090_test.cc:9:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

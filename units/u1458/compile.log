@@ -1,0 +1,85 @@
+/work/repo/units/u1458/u1458_test.cc: In member function ‘virtual void Unit_u1458_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1458/u1458_test.cc:13:3: error: ‘LinearSolver’ has not been declared
+   13 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc:14:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+In file included from /work/repo/units/u1458/u1458_test.cc:8:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1458/u1458_test.cc:15:35: error: ‘per_solve_options’ was not declared in this scope
+   15 |   object.SolveReducedLinearSystem(per_solve_options, nullptr);
+      |                                   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc: In member function ‘virtual void Unit_u1458_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1458/u1458_test.cc:20:3: error: ‘LinearSolver’ has not been declared
+   20 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc:21:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   21 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1458/u1458_test.cc:22:35: error: ‘per_solve_options’ was not declared in this scope
+   22 |   object.SolveReducedLinearSystem(per_solve_options, nullptr);
+      |                                   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc: In member function ‘virtual void Unit_u1458_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1458/u1458_test.cc:27:3: error: ‘LinearSolver’ has not been declared
+   27 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc:28:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   28 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1458/u1458_test.cc:29:35: error: ‘per_solve_options’ was not declared in this scope
+   29 |   object.SolveReducedLinearSystem(per_solve_options, nullptr);
+      |                                   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc: In member function ‘virtual void Unit_u1458_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1458/u1458_test.cc:34:3: error: ‘LinearSolver’ has not been declared
+   34 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc:35:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1458/u1458_test.cc:36:35: error: ‘per_solve_options’ was not declared in this scope
+   36 |   object.SolveReducedLinearSystem(per_solve_options, nullptr);
+      |                                   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc: In member function ‘virtual void Unit_u1458_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1458/u1458_test.cc:41:3: error: ‘LinearSolver’ has not been declared
+   41 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc:42:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   42 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1458/u1458_test.cc:43:35: error: ‘per_solve_options’ was not declared in this scope
+   43 |   object.SolveReducedLinearSystem(per_solve_options, nullptr);
+      |                                   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc: In member function ‘virtual void Unit_u1458_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1458/u1458_test.cc:48:3: error: ‘LinearSolver’ has not been declared
+   48 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1458/u1458_test.cc:49:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   49 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1458/u1458_test.cc:50:35: error: ‘per_solve_options’ was not declared in this scope
+   50 |   object.SolveReducedLinearSystem(per_solve_options, nullptr);
+      |                                   ^~~~~~~~~~~~~~~~~

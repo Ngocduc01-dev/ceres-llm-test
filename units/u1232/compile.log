@@ -1,0 +1,31 @@
+/work/repo/units/u1232/u1232_test.cc: In member function ‘virtual void Unit_u1232_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1232/u1232_test.cc:11:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous
+   11 |   object.DeleteBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /work/repo/units/u1232/u1232_test.cc:5:
+/work/ceres-solver/internal/ceres/problem_impl.h:187:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ResidualBlock*)’
+  187 |   void DeleteBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:188:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ParameterBlock*)’
+  188 |   void DeleteBlock(ParameterBlock* parameter_block);
+      |        ^~~~~~~~~~~
+/work/repo/units/u1232/u1232_test.cc: In member function ‘virtual void Unit_u1232_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1232/u1232_test.cc:17:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous
+   17 |   object.DeleteBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:187:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ResidualBlock*)’
+  187 |   void DeleteBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:188:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ParameterBlock*)’
+  188 |   void DeleteBlock(ParameterBlock* parameter_block);
+      |        ^~~~~~~~~~~
+/work/repo/units/u1232/u1232_test.cc: In member function ‘virtual void Unit_u1232_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1232/u1232_test.cc:23:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous
+   23 |   object.DeleteBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:187:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ResidualBlock*)’
+  187 |   void DeleteBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:188:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ParameterBlock*)’
+  188 |   void DeleteBlock(ParameterBlock* parameter_block);
+      |        ^~~~~~~~~~~

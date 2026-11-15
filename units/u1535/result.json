@@ -1,0 +1,10 @@
+{
+  "id": "u1535",
+  "name": "ceres::Covariance::Compute",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1535/u1535_test.cc:8:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-enclosed initializer list>)’",
+    "units/u1535/u1535_test.cc:9:17: error: no matching function for call to ‘ceres::Covariance::Compute(std::nullptr_t, std::nullptr_t)’"
+  ]
+}

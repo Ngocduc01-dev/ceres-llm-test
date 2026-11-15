@@ -1,0 +1,14 @@
+{
+  "id": "u0609",
+  "name": "ceres::internal::MVM_mat4x1",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0609/u0609_test.cc:9:10: error: scalar object ‘a_data’ requires one element in initializer",
+    "units/u0609/u0609_test.cc:10:10: error: scalar object ‘b_data’ requires one element in initializer",
+    "units/u0609/u0609_test.cc:11:10: error: scalar object ‘c_data’ requires one element in initializer",
+    "units/u0609/u0609_test.cc:16:10: error: scalar object ‘a_data’ requires one element in initializer",
+    "units/u0609/u0609_test.cc:17:10: error: scalar object ‘b_data’ requires one element in initializer",
+    "units/u0609/u0609_test.cc:18:10: error: scalar object ‘c_data’ requires one element in initializer"
+  ]
+}

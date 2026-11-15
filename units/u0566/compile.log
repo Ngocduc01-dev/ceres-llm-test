@@ -1,0 +1,8 @@
+/work/repo/units/u0566/u0566_test.cc: In member function ‘virtual void Unit_u0566_PathP1_Test::TestBody()’:
+/work/repo/units/u0566/u0566_test.cc:11:49: error: ‘ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>::ProductManifold(std::index_sequence<_Ind ...>, Args&& ...) [with long unsigned int ...Indices = {0, 1}; Args = {ceres::SubsetManifold&, ceres::SubsetManifold&}; Manifold0 = ceres::SubsetManifold; Manifold1 = ceres::SubsetManifold; ManifoldN = {}; std::index_sequence<_Ind ...> = std::integer_sequence<long unsigned int, 0, 1>]’ is private within this context
+   11 |       std::index_sequence<0, 1>{}, first, second);
+      |                                                 ^
+In file included from /work/repo/units/u0566/u0566_test.cc:3:
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note: declared private here
+  139 |   explicit ProductManifold(std::index_sequence<Indices...>, Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~

@@ -1,0 +1,10 @@
+{
+  "id": "u0849",
+  "name": "ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0849/u0849_test.cc:9:3: error: ‘Evaluator’ has not been declared",
+    "units/u0849/u0849_test.cc:10:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’"
+  ]
+}

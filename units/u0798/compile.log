@@ -1,0 +1,90 @@
+/work/repo/units/u0798/u0798_test.cc: In member function ‘virtual void Unit_u0798_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0798/u0798_test.cc:8:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixRef’?
+    8 |   MatrixRef jacobian{};
+      |   ^~~~~~~~~
+      |   ceres::MatrixRef
+In file included from /work/ceres-solver/include/ceres/product_manifold.h:45,
+                 from /work/repo/units/u0798/u0798_test.cc:4:
+/work/ceres-solver/include/ceres/internal/eigen.h:42:7: note: ‘ceres::MatrixRef’ declared here
+   42 | using MatrixRef = Eigen::Map<Matrix>;
+      |       ^~~~~~~~~
+/work/repo/units/u0798/u0798_test.cc:9:3: error: ‘internal’ has not been declared
+    9 |   internal::FixedArray<double> buffer{};
+      |   ^~~~~~~~
+/work/repo/units/u0798/u0798_test.cc:9:24: error: expected primary-expression before ‘double’
+    9 |   internal::FixedArray<double> buffer{};
+      |                        ^~~~~~
+/work/repo/units/u0798/u0798_test.cc:11:33: error: class template argument deduction failed:
+   11 |   ceres::ProductManifold object{};
+      |                                 ^
+/work/repo/units/u0798/u0798_test.cc:11:33: error: no matching function for call to ‘ProductManifold()’
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN, long unsigned int ...Indices, class ... Args> ProductManifold(std::index_sequence<__indices ...>, Args&& ...)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+  139 |   explicit ProductManifold(std::index_sequence<Indices...>, Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note:   candidate expects at least 1 argument, 0 provided
+/work/ceres-solver/include/ceres/product_manifold.h:96:12: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN, class ... Args, std::enable_if_t<((bool)std::is_constructible<std::tuple<Manifold0, Manifold1, ManifoldN ...>, Args ...>::value), void>* <anonymous> > ProductManifold(Args&& ...)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+   96 |   explicit ProductManifold(Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:96:12: note:   template argument deduction/substitution failed:
+/work/repo/units/u0798/u0798_test.cc:11:33: note:   couldn’t deduce template parameter ‘Manifold0’
+   11 |   ceres::ProductManifold object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/product_manifold.h:85:23: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN> ProductManifold(ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+   85 | class ProductManifold final : public Manifold {
+      |                       ^~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:85:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/product_manifold.h:314:1: note: candidate: ‘template<class Manifold0, class Manifold1, class ... Manifolds> ceres::ProductManifold(Manifold0&&, Manifold1&&, Manifolds&& ...)-> ProductManifold<Manifold0, Manifold1, Manifolds ...>’
+  314 | ProductManifold(Manifold0&&, Manifold1&&, Manifolds&&...)
+      | ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:314:1: note:   candidate expects at least 2 arguments, 0 provided
+/work/repo/units/u0798/u0798_test.cc:12:36: error: ‘jacobian’ was not declared in this scope
+   12 |   object.PlusJacobianImpl(nullptr, jacobian, buffer, arg3);
+      |                                    ^~~~~~~~
+/work/repo/units/u0798/u0798_test.cc:12:46: error: ‘buffer’ was not declared in this scope; did you mean ‘setbuffer’?
+   12 |   object.PlusJacobianImpl(nullptr, jacobian, buffer, arg3);
+      |                                              ^~~~~~
+      |                                              setbuffer
+/work/repo/units/u0798/u0798_test.cc: In member function ‘virtual void Unit_u0798_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0798/u0798_test.cc:17:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixRef’?
+   17 |   MatrixRef jacobian{};
+      |   ^~~~~~~~~
+      |   ceres::MatrixRef
+/work/ceres-solver/include/ceres/internal/eigen.h:42:7: note: ‘ceres::MatrixRef’ declared here
+   42 | using MatrixRef = Eigen::Map<Matrix>;
+      |       ^~~~~~~~~
+/work/repo/units/u0798/u0798_test.cc:18:3: error: ‘internal’ has not been declared
+   18 |   internal::FixedArray<double> buffer{};
+      |   ^~~~~~~~
+/work/repo/units/u0798/u0798_test.cc:18:24: error: expected primary-expression before ‘double’
+   18 |   internal::FixedArray<double> buffer{};
+      |                        ^~~~~~
+/work/repo/units/u0798/u0798_test.cc:20:33: error: class template argument deduction failed:
+   20 |   ceres::ProductManifold object{};
+      |                                 ^
+/work/repo/units/u0798/u0798_test.cc:20:33: error: no matching function for call to ‘ProductManifold()’
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN, long unsigned int ...Indices, class ... Args> ProductManifold(std::index_sequence<__indices ...>, Args&& ...)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+  139 |   explicit ProductManifold(std::index_sequence<Indices...>, Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note:   candidate expects at least 1 argument, 0 provided
+/work/ceres-solver/include/ceres/product_manifold.h:96:12: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN, class ... Args, std::enable_if_t<((bool)std::is_constructible<std::tuple<Manifold0, Manifold1, ManifoldN ...>, Args ...>::value), void>* <anonymous> > ProductManifold(Args&& ...)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+   96 |   explicit ProductManifold(Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:96:12: note:   template argument deduction/substitution failed:
+/work/repo/units/u0798/u0798_test.cc:20:33: note:   couldn’t deduce template parameter ‘Manifold0’
+   20 |   ceres::ProductManifold object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/product_manifold.h:85:23: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN> ProductManifold(ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+   85 | class ProductManifold final : public Manifold {
+      |                       ^~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:85:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/product_manifold.h:314:1: note: candidate: ‘template<class Manifold0, class Manifold1, class ... Manifolds> ceres::ProductManifold(Manifold0&&, Manifold1&&, Manifolds&& ...)-> ProductManifold<Manifold0, Manifold1, Manifolds ...>’
+  314 | ProductManifold(Manifold0&&, Manifold1&&, Manifolds&&...)
+      | ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:314:1: note:   candidate expects at least 2 arguments, 0 provided
+/work/repo/units/u0798/u0798_test.cc:21:36: error: ‘jacobian’ was not declared in this scope
+   21 |   object.PlusJacobianImpl(nullptr, jacobian, buffer, arg3);
+      |                                    ^~~~~~~~
+/work/repo/units/u0798/u0798_test.cc:21:46: error: ‘buffer’ was not declared in this scope; did you mean ‘setbuffer’?
+   21 |   object.PlusJacobianImpl(nullptr, jacobian, buffer, arg3);
+      |                                              ^~~~~~
+      |                                              setbuffer

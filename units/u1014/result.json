@@ -1,0 +1,10 @@
+{
+  "id": "u1014",
+  "name": "ceres::internal::PartitionedMatrixView::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1014/u1014_test.cc:8:49: error: class template argument deduction failed:",
+    "units/u1014/u1014_test.cc:8:49: error: no matching function for call to ‘PartitionedMatrixView()’"
+  ]
+}

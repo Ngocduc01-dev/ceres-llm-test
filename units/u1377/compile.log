@@ -1,0 +1,43 @@
+/work/repo/units/u1377/u1377_test.cc: In member function ‘virtual void Unit_u1377_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1377/u1377_test.cc:11:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context
+   11 |   object.ComputeTrustRegionStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1377/u1377_test.cc:5:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:64:8: note: declared private here
+   64 |   bool ComputeTrustRegionStep();
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1377/u1377_test.cc: In member function ‘virtual void Unit_u1377_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1377/u1377_test.cc:17:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context
+   17 |   object.ComputeTrustRegionStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:64:8: note: declared private here
+   64 |   bool ComputeTrustRegionStep();
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1377/u1377_test.cc: In member function ‘virtual void Unit_u1377_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1377/u1377_test.cc:23:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context
+   23 |   object.ComputeTrustRegionStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:64:8: note: declared private here
+   64 |   bool ComputeTrustRegionStep();
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1377/u1377_test.cc: In member function ‘virtual void Unit_u1377_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1377/u1377_test.cc:29:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context
+   29 |   object.ComputeTrustRegionStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:64:8: note: declared private here
+   64 |   bool ComputeTrustRegionStep();
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1377/u1377_test.cc: In member function ‘virtual void Unit_u1377_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1377/u1377_test.cc:35:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context
+   35 |   object.ComputeTrustRegionStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:64:8: note: declared private here
+   64 |   bool ComputeTrustRegionStep();
+      |        ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1377/u1377_test.cc: In member function ‘virtual void Unit_u1377_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1377/u1377_test.cc:41:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context
+   41 |   object.ComputeTrustRegionStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:64:8: note: declared private here
+   64 |   bool ComputeTrustRegionStep();
+      |        ^~~~~~~~~~~~~~~~~~~~~~

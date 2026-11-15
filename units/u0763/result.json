@@ -1,0 +1,16 @@
+{
+  "id": "u0763",
+  "name": "ceres::internal::LineSearchDirection::Create",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0763/u0763_test.cc:7:3: error: ‘LineSearchDirection’ has not been declared",
+    "units/u0763/u0763_test.cc:8:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’",
+    "units/u0763/u0763_test.cc:9:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0763/u0763_test.cc:14:3: error: ‘LineSearchDirection’ has not been declared",
+    "units/u0763/u0763_test.cc:15:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’",
+    "units/u0763/u0763_test.cc:16:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0763/u0763_test.cc:21:3: error: ‘LineSearchDirection’ has not been declared",
+    "units/u0763/u0763_test.cc:22:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’"
+  ]
+}

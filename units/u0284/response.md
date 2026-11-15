@@ -1,21 +1,39 @@
-# Unit u0284
+**A. Test paths**
 
-## Test path
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
+|---|---|---|
+| P1 | START → END | Không có điểm rẽ nhánh nào |
 
-The unit has a single straight-line path (no control-flow branches). The test supplies the required concrete linear solver through `TrustRegionStrategy::Options`, constructs the strategy, and invokes the target API.
+**B. Bộ test case**
 
-## Test source
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | Hàm không có tham số. Object được tạo bằng `TrustRegionStrategy::Options` mặc định, nên không có ràng buộc nào từ điều kiện đường đi. | Options mặc định, không đổi trường nào |
+
+**C. Nhánh không test**
+
+Không có. Hàm có 0 điểm rẽ nhánh nên không có nhánh nào bị bỏ sót. Không cần test vòng lặp vì hàm không có vòng lặp.
+
+`C2 dự kiến = 0 / 0` (không có nhánh nào; đường START → END được phủ bởi TC1, tức 100% theo quy ước).
+
+**D. File test**
 
 ```cpp
+// FILE: u0284_test.cc
 #include "gtest/gtest.h"
 #include "ceres/dogleg_strategy.h"
 
-TEST(Unit_u0284, PathP1) {
-  ceres::internal::TrustRegionStrategy::Options options;
-  ceres::internal::LinearSolver::Options solver_options;
-  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
-  options.linear_solver = linear_solver.get();
-  ceres::internal::DoglegStrategy target(options);
-  EXPECT_EQ(target.gradient().size(), 0);
+namespace ceres {
+namespace internal {
+
+// P1: START -> END (không có điểm rẽ nhánh)
+TEST(DoglegStrategyGradientTest, P1_StartToEnd) {
+  TrustRegionStrategy::Options options;
+  DoglegStrategy strategy(options);
+  Vector g = strategy.gradient();
+  (void)g;
 }
+
+}  // namespace internal
+}  // namespace ceres
 ```

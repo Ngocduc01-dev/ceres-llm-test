@@ -1,0 +1,40 @@
+/work/repo/units/u1520/u1520_test.cc: In member function ‘virtual void Unit_u1520_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1520/u1520_test.cc:11:3: error: ‘Solver’ has not been declared
+   11 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1520/u1520_test.cc:13:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   13 |   object.Preprocess(options, nullptr, nullptr);
+      |                     ^~~~~~~
+      |                     optind
+/work/repo/units/u1520/u1520_test.cc: In member function ‘virtual void Unit_u1520_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1520/u1520_test.cc:18:3: error: ‘Solver’ has not been declared
+   18 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1520/u1520_test.cc:20:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   20 |   object.Preprocess(options, nullptr, nullptr);
+      |                     ^~~~~~~
+      |                     optind
+/work/repo/units/u1520/u1520_test.cc: In member function ‘virtual void Unit_u1520_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1520/u1520_test.cc:25:3: error: ‘Solver’ has not been declared
+   25 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1520/u1520_test.cc:27:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   27 |   object.Preprocess(options, nullptr, nullptr);
+      |                     ^~~~~~~
+      |                     optind
+/work/repo/units/u1520/u1520_test.cc: In member function ‘virtual void Unit_u1520_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1520/u1520_test.cc:32:3: error: ‘Solver’ has not been declared
+   32 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1520/u1520_test.cc:34:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   34 |   object.Preprocess(options, nullptr, nullptr);
+      |                     ^~~~~~~
+      |                     optind
+/work/repo/units/u1520/u1520_test.cc: In member function ‘virtual void Unit_u1520_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1520/u1520_test.cc:39:3: error: ‘Solver’ has not been declared
+   39 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1520/u1520_test.cc:41:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   41 |   object.Preprocess(options, nullptr, nullptr);
+      |                     ^~~~~~~
+      |                     optind

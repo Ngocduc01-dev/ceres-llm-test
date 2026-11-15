@@ -1,0 +1,12 @@
+/work/repo/units/u1097/u1097_test.cc: In member function ‘virtual void Unit_u1097_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1097/u1097_test.cc:7:3: error: ‘ceres’ has not been declared
+    7 |   ceres::StringToLineSearchType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1097/u1097_test.cc: In member function ‘virtual void Unit_u1097_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1097/u1097_test.cc:13:3: error: ‘ceres’ has not been declared
+   13 |   ceres::StringToLineSearchType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1097/u1097_test.cc: In member function ‘virtual void Unit_u1097_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1097/u1097_test.cc:19:3: error: ‘ceres’ has not been declared
+   19 |   ceres::StringToLineSearchType(value, nullptr);
+      |   ^~~~~

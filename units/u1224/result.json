@@ -1,0 +1,12 @@
+{
+  "id": "u1224",
+  "name": "ceres::internal::(anonymous)::SetBlockStructureOfCompressedRowSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1224/u1224_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1224/u1224_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1224/u1224_test.cc:15:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1224/u1224_test.cc:15:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

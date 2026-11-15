@@ -1,0 +1,13 @@
+{
+  "id": "u1199",
+  "name": "ceres::internal::BlockSparseMatrix::ToTripletSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1199/u1199_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1199/u1199_test.cc:14:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1199/u1199_test.cc:20:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1199/u1199_test.cc:26:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1199/u1199_test.cc:32:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

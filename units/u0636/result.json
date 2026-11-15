@@ -1,0 +1,9 @@
+{
+  "id": "u0636",
+  "name": "ceres::Jet::operator+=",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0636/u0636_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

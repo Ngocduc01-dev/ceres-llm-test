@@ -1,0 +1,9 @@
+{
+  "id": "u0522",
+  "name": "ceres::SphereManifold::SphereManifold<AmbientSpaceDimension>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0522/u0522_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

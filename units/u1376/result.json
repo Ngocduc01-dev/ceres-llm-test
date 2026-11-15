@@ -1,0 +1,16 @@
+{
+  "id": "u1376",
+  "name": "ceres::internal::(anonymous)::AlternateLinearSolverAndPreconditionerForSchurTypeLinearSolver",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1376/u1376_test.cc:11:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1376/u1376_test.cc:11:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1376/u1376_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1376/u1376_test.cc:16:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1376/u1376_test.cc:21:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1376/u1376_test.cc:21:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1376/u1376_test.cc:26:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1376/u1376_test.cc:26:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

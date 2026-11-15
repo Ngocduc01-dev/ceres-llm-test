@@ -1,0 +1,23 @@
+/work/repo/units/u0971/u0971_test.cc: In member function ‘virtual void Unit_u0971_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0971/u0971_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+    7 |   TripletSparseMatrix orig{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+In file included from /work/repo/units/u0971/u0971_test.cc:3:
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0971/u0971_test.cc:9:19: error: ‘orig’ was not declared in this scope
+    9 |   object.CopyData(orig);
+      |                   ^~~~
+/work/repo/units/u0971/u0971_test.cc: In member function ‘virtual void Unit_u0971_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0971/u0971_test.cc:14:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+   14 |   TripletSparseMatrix orig{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0971/u0971_test.cc:16:19: error: ‘orig’ was not declared in this scope
+   16 |   object.CopyData(orig);
+      |                   ^~~~

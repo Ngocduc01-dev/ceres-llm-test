@@ -1,0 +1,71 @@
+/work/repo/units/u1440/u1440_test.cc: In member function ‘virtual void Unit_u1440_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1440/u1440_test.cc:15:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’
+   15 |   ceres::internal::DynamicCompressedRowJacobianWriter object{};
+      |                                                              ^
+In file included from /work/repo/units/u1440/u1440_test.cc:5:
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note: candidate: ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::Evaluator::Options, ceres::internal::Program*)’
+   50 |   DynamicCompressedRowJacobianWriter(Evaluator::Options /* ignored */,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(const ceres::internal::DynamicCompressedRowJacobianWriter&)’
+   48 | class CERES_NO_EXPORT DynamicCompressedRowJacobianWriter {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::DynamicCompressedRowJacobianWriter&&)’
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1440/u1440_test.cc: In member function ‘virtual void Unit_u1440_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1440/u1440_test.cc:23:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::DynamicCompressedRowJacobianWriter object{};
+      |                                                              ^
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note: candidate: ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::Evaluator::Options, ceres::internal::Program*)’
+   50 |   DynamicCompressedRowJacobianWriter(Evaluator::Options /* ignored */,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(const ceres::internal::DynamicCompressedRowJacobianWriter&)’
+   48 | class CERES_NO_EXPORT DynamicCompressedRowJacobianWriter {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::DynamicCompressedRowJacobianWriter&&)’
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1440/u1440_test.cc: In member function ‘virtual void Unit_u1440_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1440/u1440_test.cc:31:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’
+   31 |   ceres::internal::DynamicCompressedRowJacobianWriter object{};
+      |                                                              ^
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note: candidate: ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::Evaluator::Options, ceres::internal::Program*)’
+   50 |   DynamicCompressedRowJacobianWriter(Evaluator::Options /* ignored */,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(const ceres::internal::DynamicCompressedRowJacobianWriter&)’
+   48 | class CERES_NO_EXPORT DynamicCompressedRowJacobianWriter {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::DynamicCompressedRowJacobianWriter&&)’
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1440/u1440_test.cc: In member function ‘virtual void Unit_u1440_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1440/u1440_test.cc:39:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’
+   39 |   ceres::internal::DynamicCompressedRowJacobianWriter object{};
+      |                                                              ^
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note: candidate: ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::Evaluator::Options, ceres::internal::Program*)’
+   50 |   DynamicCompressedRowJacobianWriter(Evaluator::Options /* ignored */,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(const ceres::internal::DynamicCompressedRowJacobianWriter&)’
+   48 | class CERES_NO_EXPORT DynamicCompressedRowJacobianWriter {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::DynamicCompressedRowJacobianWriter&&)’
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1440/u1440_test.cc: In member function ‘virtual void Unit_u1440_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1440/u1440_test.cc:47:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’
+   47 |   ceres::internal::DynamicCompressedRowJacobianWriter object{};
+      |                                                              ^
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note: candidate: ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::Evaluator::Options, ceres::internal::Program*)’
+   50 |   DynamicCompressedRowJacobianWriter(Evaluator::Options /* ignored */,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:50:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(const ceres::internal::DynamicCompressedRowJacobianWriter&)’
+   48 | class CERES_NO_EXPORT DynamicCompressedRowJacobianWriter {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note: candidate: ‘constexpr ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(ceres::internal::DynamicCompressedRowJacobianWriter&&)’
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_jacobian_writer.h:48:23: note:   candidate expects 1 argument, 0 provided

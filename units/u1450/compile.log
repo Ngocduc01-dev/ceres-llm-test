@@ -1,0 +1,47 @@
+/work/repo/units/u1450/u1450_test.cc: In member function ‘virtual void Unit_u1450_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1450/u1450_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+    8 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1450/u1450_test.cc:8:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/function_sample.h:37,
+                 from /work/ceres-solver/internal/ceres/line_search.h:40,
+                 from /work/repo/units/u1450/u1450_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1450/u1450_test.cc:9:9: error: expected ‘;’ before ‘gradient’
+    9 |   Vector gradient{};
+      |         ^~~~~~~~~
+      |         ;
+/work/repo/units/u1450/u1450_test.cc:12:23: error: ‘x’ was not declared in this scope
+   12 |   object.DoLineSearch(x, gradient, cost, nullptr);
+      |                       ^
+/work/repo/units/u1450/u1450_test.cc:12:26: error: ‘gradient’ was not declared in this scope
+   12 |   object.DoLineSearch(x, gradient, cost, nullptr);
+      |                          ^~~~~~~~
+/work/repo/units/u1450/u1450_test.cc: In member function ‘virtual void Unit_u1450_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1450/u1450_test.cc:17:3: error: ‘Vector’ was not declared in this scope
+   17 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1450/u1450_test.cc:17:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1450/u1450_test.cc:18:9: error: expected ‘;’ before ‘gradient’
+   18 |   Vector gradient{};
+      |         ^~~~~~~~~
+      |         ;
+/work/repo/units/u1450/u1450_test.cc:21:23: error: ‘x’ was not declared in this scope
+   21 |   object.DoLineSearch(x, gradient, cost, nullptr);
+      |                       ^
+/work/repo/units/u1450/u1450_test.cc:21:26: error: ‘gradient’ was not declared in this scope
+   21 |   object.DoLineSearch(x, gradient, cost, nullptr);
+      |                          ^~~~~~~~

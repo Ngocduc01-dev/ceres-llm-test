@@ -1,0 +1,14 @@
+{
+  "id": "u1228",
+  "name": "ceres::internal::(anonymous)::CreateBlockJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1228/u1228_test.cc:9:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1228/u1228_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1228/u1228_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1228/u1228_test.cc:15:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1228/u1228_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1228/u1228_test.cc:16:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

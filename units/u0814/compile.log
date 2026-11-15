@@ -1,0 +1,140 @@
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+    8 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:8:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/polynomial.h:38,
+                 from /work/repo/units/u0814/u0814_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:9:20: error: expected unqualified-id before ‘(’ token
+    9 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:9:21: error: ‘anonymous’ was not declared in this scope
+    9 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:14:3: error: ‘Vector’ was not declared in this scope
+   14 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:14:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:15:20: error: expected unqualified-id before ‘(’ token
+   15 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:15:21: error: ‘anonymous’ was not declared in this scope
+   15 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:20:3: error: ‘Vector’ was not declared in this scope
+   20 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:20:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:21:20: error: expected unqualified-id before ‘(’ token
+   21 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:21:21: error: ‘anonymous’ was not declared in this scope
+   21 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:26:3: error: ‘Vector’ was not declared in this scope
+   26 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:26:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:27:20: error: expected unqualified-id before ‘(’ token
+   27 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:27:21: error: ‘anonymous’ was not declared in this scope
+   27 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:32:3: error: ‘Vector’ was not declared in this scope
+   32 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:32:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:33:20: error: expected unqualified-id before ‘(’ token
+   33 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:33:21: error: ‘anonymous’ was not declared in this scope
+   33 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:38:3: error: ‘Vector’ was not declared in this scope
+   38 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:38:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:39:20: error: expected unqualified-id before ‘(’ token
+   39 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:39:21: error: ‘anonymous’ was not declared in this scope
+   39 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:44:3: error: ‘Vector’ was not declared in this scope
+   44 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:44:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:45:20: error: expected unqualified-id before ‘(’ token
+   45 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:45:21: error: ‘anonymous’ was not declared in this scope
+   45 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0814/u0814_test.cc: In member function ‘virtual void Unit_u0814_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0814/u0814_test.cc:50:3: error: ‘Vector’ was not declared in this scope
+   50 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:50:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0814/u0814_test.cc:51:20: error: expected unqualified-id before ‘(’ token
+   51 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0814/u0814_test.cc:51:21: error: ‘anonymous’ was not declared in this scope
+   51 |   ceres::internal::(anonymous)::FindQuadraticPolynomialRoots(polynomial, nullptr, nullptr);
+      |                     ^~~~~~~~~

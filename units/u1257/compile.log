@@ -1,0 +1,9 @@
+/work/repo/units/u1257/u1257_test.cc: In member function ‘virtual void Unit_u1257_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1257/u1257_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u1257/u1257_test.cc:4:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided

@@ -1,0 +1,46 @@
+/work/repo/units/u0752/u0752_test.cc: In member function ‘virtual void Unit_u0752_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0752/u0752_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+    7 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0752/u0752_test.cc:7:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/polynomial.h:38,
+                 from /work/repo/units/u0752/u0752_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0752/u0752_test.cc:8:44: error: ‘polynomial’ was not declared in this scope
+    8 |   ceres::internal::DifferentiatePolynomial(polynomial);
+      |                                            ^~~~~~~~~~
+/work/repo/units/u0752/u0752_test.cc: In member function ‘virtual void Unit_u0752_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0752/u0752_test.cc:13:3: error: ‘Vector’ was not declared in this scope
+   13 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0752/u0752_test.cc:13:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0752/u0752_test.cc:14:44: error: ‘polynomial’ was not declared in this scope
+   14 |   ceres::internal::DifferentiatePolynomial(polynomial);
+      |                                            ^~~~~~~~~~
+/work/repo/units/u0752/u0752_test.cc: In member function ‘virtual void Unit_u0752_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0752/u0752_test.cc:19:3: error: ‘Vector’ was not declared in this scope
+   19 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0752/u0752_test.cc:19:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0752/u0752_test.cc:20:44: error: ‘polynomial’ was not declared in this scope
+   20 |   ceres::internal::DifferentiatePolynomial(polynomial);
+      |                                            ^~~~~~~~~~

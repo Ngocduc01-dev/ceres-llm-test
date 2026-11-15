@@ -1,26 +1,40 @@
-# Unit u0365
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+Hàm không có điểm rẽ nhánh nào (0 điểm rẽ nhánh, 0 nhánh). CFG khớp với mã nguồn. Chỉ có một đường đi duy nhất.
+
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh (node 1: `return index_`) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `int index() const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `size` từ 1 đến 5; `index` từ 0 đến 5 (không có điều kiện ràng buộc từ đường đi) | `size = 3`, `index = 2`, `user_state` là mảng 3 phần tử double |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. Hàm không có nhánh nào cần bỏ qua và không có `CHECK`.
 
-## D. File test
+`C2 dự kiến = 0 / 0` (hàm không có điểm rẽ nhánh nên không có nhánh; node 1 được phủ bởi TC1, tức độ phủ C2 coi như đạt 100%).
+
+**D. File test**
 
 ```cpp
 // FILE: u0365_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0365, PathP1) { double value[1] = {0}; ceres::internal::ParameterBlock target(value, 1, 0); target.index(); }
+
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ParameterBlockIndexTest, P1_ReturnIndex) {
+  double values[3] = {1.0, 2.0, 3.0};
+  ParameterBlock block(values, 3, 2);
+  block.index();
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

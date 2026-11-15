@@ -1,0 +1,11 @@
+{
+  "id": "u0606",
+  "name": "ceres::internal::(anonymous)::AddSymmetricRandomBlock",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0606/u0606_test.cc:10:10: error: scalar object ‘rows_data’ requires one element in initializer",
+    "units/u0606/u0606_test.cc:11:10: error: scalar object ‘cols_data’ requires one element in initializer",
+    "units/u0606/u0606_test.cc:12:10: error: scalar object ‘values_data’ requires one element in initializer"
+  ]
+}

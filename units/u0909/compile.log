@@ -1,0 +1,13 @@
+/work/repo/units/u0909/u0909_test.cc: In member function ‘virtual void Unit_u0909_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0909/u0909_test.cc:9:3: error: ‘LhsExpression’ was not declared in this scope
+    9 |   LhsExpression lhs{};
+      |   ^~~~~~~~~~~~~
+/work/repo/units/u0909/u0909_test.cc:10:3: error: ‘RhsExpression’ was not declared in this scope
+   10 |   RhsExpression rhs{};
+      |   ^~~~~~~~~~~~~
+/work/repo/units/u0909/u0909_test.cc:11:57: error: ‘lhs’ was not declared in this scope
+   11 |   ceres::internal::ParallelAssign(nullptr, num_threads, lhs, rhs);
+      |                                                         ^~~
+/work/repo/units/u0909/u0909_test.cc:11:62: error: ‘rhs’ was not declared in this scope
+   11 |   ceres::internal::ParallelAssign(nullptr, num_threads, lhs, rhs);
+      |                                                              ^~~

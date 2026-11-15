@@ -1,0 +1,4 @@
+/work/repo/units/u0572/u0572_test.cc: In member function ‘virtual void Unit_u0572_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0572/u0572_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.Initialize({});
+      |   ^~~~~~

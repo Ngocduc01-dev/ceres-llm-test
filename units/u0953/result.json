@@ -1,0 +1,16 @@
+{
+  "id": "u0953",
+  "name": "ceres::internal::TripletSparseMatrix::CreateRandomMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0953/u0953_test.cc:7:3: error: ‘TripletSparseMatrix’ has not been declared",
+    "units/u0953/u0953_test.cc:10:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0953/u0953_test.cc:15:3: error: ‘TripletSparseMatrix’ has not been declared",
+    "units/u0953/u0953_test.cc:18:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0953/u0953_test.cc:23:3: error: ‘TripletSparseMatrix’ has not been declared",
+    "units/u0953/u0953_test.cc:26:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0953/u0953_test.cc:31:3: error: ‘TripletSparseMatrix’ has not been declared",
+    "units/u0953/u0953_test.cc:34:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

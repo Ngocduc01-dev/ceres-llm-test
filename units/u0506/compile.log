@@ -1,0 +1,4 @@
+/work/repo/units/u0506/u0506_test.cc: In member function ‘virtual void ceres::internal::Unit_u0506_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0506/u0506_test.cc:9:10: error: scalar object ‘union_find_data’ requires one element in initializer
+    9 |   double union_find_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~

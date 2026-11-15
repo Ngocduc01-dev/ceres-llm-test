@@ -1,0 +1,9 @@
+{
+  "id": "u1380",
+  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingSuiteSparseQR",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1380/u1380_test.cc:8:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’"
+  ]
+}

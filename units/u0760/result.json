@@ -1,0 +1,46 @@
+{
+  "id": "u0760",
+  "name": "ceres::internal::JoinPath",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u0760.TC1_CallsTarget": "pass",
+    "Unit_u0760.TC2_CallsTarget": "pass",
+    "Unit_u0760.TC3_CallsTarget": "pass",
+    "Unit_u0760.TC4_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 6
+  },
+  "c2": {
+    "covered": 1,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 83,
+      "missing": [
+        "sai"
+      ],
+      "code": "if ((!basename.empty() && basename[0] == separator) || dirname.empty()) {"
+    },
+    {
+      "line": 85,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "} else if (dirname[dirname.size() - 1] == separator) {"
+    }
+  ]
+}

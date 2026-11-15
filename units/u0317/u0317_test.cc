@@ -2,6 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/iterative_refiner.h"
 
-TEST(Unit_u0317, PathP1) {
-  { ceres::internal::SparseIterativeRefiner target(1); }
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> END (destructor mặc định, không có nhánh)
+TEST(SparseIterativeRefinerDestructorTest, DestroyObject) {
+  {
+    SparseIterativeRefiner refiner(3);
+  }  // destructor ~SparseIterativeRefiner() được gọi ở đây
+  SUCCEED();
 }
+
+}  // namespace internal
+}  // namespace ceres

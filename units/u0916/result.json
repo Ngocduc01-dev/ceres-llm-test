@@ -1,0 +1,37 @@
+{
+  "id": "u0916",
+  "name": "ceres::internal::TripletSparseMatrix::ToDenseMatrix",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0916.TC1_CallsTarget": "crash",
+    "Unit_u0916.TC2_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 2,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 7
+  },
+  "c2": {
+    "covered": 0,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 210,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < num_nonzeros_; ++i) {"
+    }
+  ]
+}

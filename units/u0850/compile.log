@@ -1,0 +1,12 @@
+/work/repo/units/u0850/u0850_test.cc: In member function ‘virtual void Unit_u0850_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0850/u0850_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+    8 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u0850/u0850_test.cc:9:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::DynamicSparseNormalCholeskySolver object{};
+      |                                                             ^
+In file included from /work/repo/units/u0850/u0850_test.cc:3:
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   59 |   explicit DynamicSparseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided

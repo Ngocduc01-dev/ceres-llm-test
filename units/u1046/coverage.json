@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "internal/ceres/program.cc", "lines": [{"line_number": 499, "count": 2, "branches": []}, {"line_number": 500, "count": 2, "branches": []}, {"line_number": 501, "count": 2, "branches": []}, {"line_number": 502, "count": 0, "branches": []}, {"line_number": 504, "count": 2, "branches": []}], "functions": []}]}

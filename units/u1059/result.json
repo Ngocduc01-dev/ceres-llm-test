@@ -1,0 +1,16 @@
+{
+  "id": "u1059",
+  "name": "ceres::internal::MatrixVectorMultiply",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1059/u1059_test.cc:10:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:17:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:24:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:31:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:38:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:45:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:52:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1059/u1059_test.cc:59:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’"
+  ]
+}

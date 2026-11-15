@@ -1,0 +1,16 @@
+{
+  "id": "u0765",
+  "name": "ceres::internal::LowRankInverseHessian::Update",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0765/u0765_test.cc:7:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0765/u0765_test.cc:8:9: error: expected ‘;’ before ‘delta_gradient’",
+    "units/u0765/u0765_test.cc:9:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(<brace-enclosed initializer list>)’",
+    "units/u0765/u0765_test.cc:10:17: error: ‘delta_x’ was not declared in this scope",
+    "units/u0765/u0765_test.cc:10:26: error: ‘delta_gradient’ was not declared in this scope",
+    "units/u0765/u0765_test.cc:15:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0765/u0765_test.cc:16:9: error: expected ‘;’ before ‘delta_gradient’",
+    "units/u0765/u0765_test.cc:17:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(<brace-enclosed initializer list>)’"
+  ]
+}

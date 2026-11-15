@@ -1,5 +1,17 @@
 // FILE: u0359_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0359, PathP1) { double value[1] = {0}; ceres::internal::ParameterBlock target(value, 1, 0); target.user_state(); }
+
+namespace ceres {
+namespace internal {
+
+// TC1 - Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ParameterBlockUserStateTest, ReturnsUserState) {
+  double values[3] = {1.5, 2.5, 3.5};
+  ParameterBlock block(values, 3, 2);
+  const double* state = block.user_state();
+  (void)state;  // Không kiểm tra kết quả trả về theo yêu cầu.
+}
+
+}  // namespace internal
+}  // namespace ceres

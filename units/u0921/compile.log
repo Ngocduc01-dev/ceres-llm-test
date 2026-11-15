@@ -1,0 +1,38 @@
+/work/repo/units/u0921/u0921_test.cc: In member function ‘virtual void Unit_u0921_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0921/u0921_test.cc:9:3: error: ‘MinimizerType’ was not declared in this scope; did you mean ‘ceres::MinimizerType’?
+    9 |   MinimizerType minimizer_type{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::MinimizerType
+In file included from /work/ceres-solver/include/ceres/iteration_callback.h:40,
+                 from /work/ceres-solver/internal/ceres/minimizer.h:40,
+                 from /work/ceres-solver/internal/ceres/line_search_minimizer.h:36,
+                 from /work/repo/units/u0921/u0921_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:224:6: note: ‘ceres::MinimizerType’ declared here
+  224 | enum MinimizerType {
+      |      ^~~~~~~~~~~~~
+/work/repo/units/u0921/u0921_test.cc:10:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’
+   10 |   ceres::internal::Minimizer object{};
+      |                              ^~~~~~
+/work/ceres-solver/internal/ceres/minimizer.h:53:23: note:   because the following virtual functions are pure within ‘ceres::internal::Minimizer’:
+   53 | class CERES_NO_EXPORT Minimizer {
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/minimizer.h:192:16: note:     ‘virtual void ceres::internal::Minimizer::Minimize(const Options&, double*, ceres::Solver::Summary*)’
+  192 |   virtual void Minimize(const Options& options,
+      |                ^~~~~~~~
+/work/repo/units/u0921/u0921_test.cc:11:17: error: ‘minimizer_type’ was not declared in this scope
+   11 |   object.Create(minimizer_type);
+      |                 ^~~~~~~~~~~~~~
+/work/repo/units/u0921/u0921_test.cc: In member function ‘virtual void Unit_u0921_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0921/u0921_test.cc:16:3: error: ‘MinimizerType’ was not declared in this scope; did you mean ‘ceres::MinimizerType’?
+   16 |   MinimizerType minimizer_type{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::MinimizerType
+/work/ceres-solver/include/ceres/types.h:224:6: note: ‘ceres::MinimizerType’ declared here
+  224 | enum MinimizerType {
+      |      ^~~~~~~~~~~~~
+/work/repo/units/u0921/u0921_test.cc:17:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’
+   17 |   ceres::internal::Minimizer object{};
+      |                              ^~~~~~
+/work/repo/units/u0921/u0921_test.cc:18:17: error: ‘minimizer_type’ was not declared in this scope
+   18 |   object.Create(minimizer_type);
+      |                 ^~~~~~~~~~~~~~

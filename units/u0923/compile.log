@@ -1,0 +1,24 @@
+/work/repo/units/u0923/u0923_test.cc: In member function ‘virtual void Unit_u0923_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0923/u0923_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+    8 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u0923/u0923_test.cc:9:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurEliminatorBase’
+    9 |   ceres::internal::SchurEliminatorBase object{};
+      |                                        ^~~~~~
+In file included from /work/repo/units/u0923/u0923_test.cc:4:
+/work/ceres-solver/internal/ceres/schur_eliminator.h:167:23: note:   because the following virtual functions are pure within ‘ceres::internal::SchurEliminatorBase’:
+  167 | class CERES_NO_EXPORT SchurEliminatorBase {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:183:16: note:     ‘virtual void ceres::internal::SchurEliminatorBase::Init(int, bool, const ceres::internal::CompressedRowBlockStructure*)’
+  183 |   virtual void Init(int num_eliminate_blocks,
+      |                ^~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:198:16: note:     ‘virtual void ceres::internal::SchurEliminatorBase::Eliminate(const ceres::internal::BlockSparseMatrixData&, const double*, const double*, ceres::internal::BlockRandomAccessMatrix*, double*)’
+  198 |   virtual void Eliminate(const BlockSparseMatrixData& A,
+      |                ^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:207:16: note:     ‘virtual void ceres::internal::SchurEliminatorBase::BackSubstitute(const ceres::internal::BlockSparseMatrixData&, const double*, const double*, const double*, double*)’
+  207 |   virtual void BackSubstitute(const BlockSparseMatrixData& A,
+      |                ^~~~~~~~~~~~~~
+/work/repo/units/u0923/u0923_test.cc:10:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

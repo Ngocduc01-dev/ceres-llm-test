@@ -1,0 +1,10 @@
+{
+  "id": "u1132",
+  "name": "ceres::internal::DenseSchurComplementSolver::InitStorage",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1132/u1132_test.cc:10:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1132/u1132_test.cc:11:21: error: ‘virtual void ceres::internal::DenseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context"
+  ]
+}

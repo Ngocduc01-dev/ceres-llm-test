@@ -1,0 +1,9 @@
+/work/repo/units/u0686/u0686_test.cc: In member function ‘virtual void Unit_u0686_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0686/u0686_test.cc:7:3: error: ‘PartitionedMatrixViewBase’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixViewBase’?
+    7 |   PartitionedMatrixViewBase object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixViewBase
+In file included from /work/repo/units/u0686/u0686_test.cc:3:
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:67:23: note: ‘ceres::internal::PartitionedMatrixViewBase’ declared here
+   67 | class CERES_NO_EXPORT PartitionedMatrixViewBase {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~

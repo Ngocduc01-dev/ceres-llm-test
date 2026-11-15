@@ -1,0 +1,250 @@
+{
+  "id": "u1392",
+  "name": "ceres::Solver::Summary::FullReport",
+  "status": "ok",
+  "cfg_branches": 54,
+  "tests": {
+    "Unit_u1392.TC1_CallsTarget": "pass",
+    "Unit_u1392.TC2_CallsTarget": "pass",
+    "Unit_u1392.TC3_CallsTarget": "pass",
+    "Unit_u1392.TC4_CallsTarget": "pass",
+    "Unit_u1392.TC5_CallsTarget": "pass",
+    "Unit_u1392.TC6_CallsTarget": "pass",
+    "Unit_u1392.TC7_CallsTarget": "pass",
+    "Unit_u1392.TC8_CallsTarget": "pass",
+    "Unit_u1392.TC9_CallsTarget": "pass",
+    "Unit_u1392.TC10_CallsTarget": "pass",
+    "Unit_u1392.TC11_CallsTarget": "pass",
+    "Unit_u1392.TC12_CallsTarget": "pass",
+    "Unit_u1392.TC13_CallsTarget": "pass",
+    "Unit_u1392.TC14_CallsTarget": "pass",
+    "Unit_u1392.TC15_CallsTarget": "pass",
+    "Unit_u1392.TC16_CallsTarget": "pass",
+    "Unit_u1392.TC17_CallsTarget": "pass",
+    "Unit_u1392.TC18_CallsTarget": "pass",
+    "Unit_u1392.TC19_CallsTarget": "pass",
+    "Unit_u1392.TC20_CallsTarget": "pass",
+    "Unit_u1392.TC21_CallsTarget": "pass",
+    "Unit_u1392.TC22_CallsTarget": "pass",
+    "Unit_u1392.TC23_CallsTarget": "pass",
+    "Unit_u1392.TC24_CallsTarget": "pass",
+    "Unit_u1392.TC25_CallsTarget": "pass",
+    "Unit_u1392.TC26_CallsTarget": "pass",
+    "Unit_u1392.TC27_CallsTarget": "pass",
+    "Unit_u1392.TC28_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 28,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 99,
+    "total": 165
+  },
+  "c2": {
+    "covered": 21,
+    "total": 54,
+    "uncheckable": 0,
+    "inferred": 4
+  },
+  "uncovered": [
+    {
+      "line": 868,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (num_effective_parameters_reduced != num_parameters_reduced) {"
+    },
+    {
+      "line": 883,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (minimizer_type == TRUST_REGION) {"
+    },
+    {
+      "line": 888,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (linear_solver_type_used == DENSE_NORMAL_CHOLESKY ||"
+    },
+    {
+      "line": 892,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "(mixed_precision_solves_used ? \"(Mixed Precision)\" : \"\");"
+    },
+    {
+      "line": 903,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (trust_region_strategy_type == DOGLEG) {"
+    },
+    {
+      "line": 904,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (dogleg_type == TRADITIONAL_DOGLEG) {"
+    },
+    {
+      "line": 926,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (used_sparse_linear_algebra_library) {"
+    },
+    {
+      "line": 928,
+      "missing": [
+        "đúng"
+      ],
+      "code": "(mixed_precision_solves_used ? \"(Mixed Precision)\" : \"\");"
+    },
+    {
+      "line": 929,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (linear_solver_ordering_required) {"
+    },
+    {
+      "line": 953,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (IsIterativeSolver(linear_solver_type_given)) {"
+    },
+    {
+      "line": 960,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (preconditioner_type_used == CLUSTER_JACOBI ||"
+    },
+    {
+      "line": 981,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (IsSchurType(linear_solver_type_used)) {"
+    },
+    {
+      "line": 988,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (inner_iterations_given) {"
+    },
+    {
+      "line": 991,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "inner_iterations_given ? \"True\" : \"False\","
+    },
+    {
+      "line": 992,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "inner_iterations_used ? \"True\" : \"False\");"
+    },
+    {
+      "line": 995,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (inner_iterations_used) {"
+    },
+    {
+      "line": 1010,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (line_search_direction_type == LBFGS) {"
+    },
+    {
+      "line": 1012,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "} else if (line_search_direction_type == NONLINEAR_CONJUGATE_GRADIENT) {"
+    },
+    {
+      "line": 1042,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (termination_type != FAILURE && termination_type != USER_FAILURE) {"
+    },
+    {
+      "line": 1054,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (minimizer_type == TRUST_REGION) {"
+    },
+    {
+      "line": 1062,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (inner_iterations_used) {"
+    },
+    {
+      "line": 1072,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (line_search_used) {"
+    },
+    {
+      "line": 1086,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (line_search_used) {"
+    },
+    {
+      "line": 1095,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (line_search_used) {"
+    },
+    {
+      "line": 1101,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (minimizer_type == TRUST_REGION) {"
+    },
+    {
+      "line": 1108,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (inner_iterations_used) {"
+    },
+    {
+      "line": 1114,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (line_search_used) {"
+    }
+  ]
+}

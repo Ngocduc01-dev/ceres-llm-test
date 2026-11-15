@@ -1,0 +1,16 @@
+{
+  "id": "u1115",
+  "name": "ceres::internal::PartitionedMatrixView::LeftMultiplyAndAccumulateFSingleThreaded",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1115/u1115_test.cc:11:49: error: class template argument deduction failed:",
+    "units/u1115/u1115_test.cc:11:49: error: no matching function for call to ‘PartitionedMatrixView()’",
+    "units/u1115/u1115_test.cc:17:49: error: class template argument deduction failed:",
+    "units/u1115/u1115_test.cc:17:49: error: no matching function for call to ‘PartitionedMatrixView()’",
+    "units/u1115/u1115_test.cc:23:49: error: class template argument deduction failed:",
+    "units/u1115/u1115_test.cc:23:49: error: no matching function for call to ‘PartitionedMatrixView()’",
+    "units/u1115/u1115_test.cc:29:49: error: class template argument deduction failed:",
+    "units/u1115/u1115_test.cc:29:49: error: no matching function for call to ‘PartitionedMatrixView()’"
+  ]
+}

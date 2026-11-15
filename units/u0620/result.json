@@ -1,0 +1,10 @@
+{
+  "id": "u0620",
+  "name": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0620/u0620_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer",
+    "units/u0620/u0620_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

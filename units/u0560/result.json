@@ -1,0 +1,9 @@
+{
+  "id": "u0560",
+  "name": "ceres::CostFunction::set_num_residuals",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0560/u0560_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

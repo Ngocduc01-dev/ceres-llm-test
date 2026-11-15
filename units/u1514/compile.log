@@ -1,0 +1,29 @@
+In file included from /work/repo/units/u1514/u1514_test.cc:5:
+/work/ceres-solver/internal/ceres/program_evaluator.h: In member function ‘bool ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::Evaluate(const ceres::internal::Evaluator::EvaluateOptions&, const double*, double*, double*, double*, ceres::internal::SparseMatrix*)’:
+/work/ceres-solver/internal/ceres/program_evaluator.h:167:15: warning: invalid use of incomplete type ‘class ceres::internal::SparseMatrix’
+  167 |       jacobian->SetZero(options_.context, options_.num_threads);
+      |               ^~
+In file included from /work/repo/units/u1514/u1514_test.cc:3:
+/work/ceres-solver/internal/ceres/evaluator.h:54:7: note: forward declaration of ‘class ceres::internal::SparseMatrix’
+   54 | class SparseMatrix;
+      |       ^~~~~~~~~~~~
+/work/repo/units/u1514/u1514_test.cc: In member function ‘virtual void Unit_u1514_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1514/u1514_test.cc:9:3: error: ‘Evaluator’ has not been declared
+    9 |   Evaluator::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1514/u1514_test.cc:10:3: error: ‘ProgramEvaluator’ was not declared in this scope; did you mean ‘ceres::internal::ProgramEvaluator’?
+   10 |   ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> object{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::internal::ProgramEvaluator
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: ‘ceres::internal::ProgramEvaluator’ declared here
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/repo/units/u1514/u1514_test.cc:10:20: error: ‘ScratchEvaluatePreparer’ was not declared in this scope
+   10 |   ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1514/u1514_test.cc:10:45: error: ‘DenseJacobianWriter’ was not declared in this scope
+   10 |   ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> object{};
+      |                                             ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1514/u1514_test.cc:10:66: error: ‘object’ was not declared in this scope
+   10 |   ProgramEvaluator<ScratchEvaluatePreparer, DenseJacobianWriter> object{};
+      |                                                                  ^~~~~~

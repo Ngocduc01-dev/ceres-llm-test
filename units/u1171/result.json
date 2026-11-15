@@ -1,0 +1,16 @@
+{
+  "id": "u1171",
+  "name": "ceres::internal::LineSearch::Create",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1171/u1171_test.cc:7:9: error: ‘LineSearchType’ does not name a type",
+    "units/u1171/u1171_test.cc:8:3: error: ‘LineSearch’ has not been declared",
+    "units/u1171/u1171_test.cc:9:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’",
+    "units/u1171/u1171_test.cc:9:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’",
+    "units/u1171/u1171_test.cc:10:17: error: ‘line_search_type’ was not declared in this scope",
+    "units/u1171/u1171_test.cc:10:35: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1171/u1171_test.cc:15:9: error: ‘LineSearchType’ does not name a type",
+    "units/u1171/u1171_test.cc:16:3: error: ‘LineSearch’ has not been declared"
+  ]
+}

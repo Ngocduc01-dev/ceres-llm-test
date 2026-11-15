@@ -1,0 +1,234 @@
+/work/repo/units/u1208/u1208_test.cc: In member function ‘virtual void Unit_u1208_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1208/u1208_test.cc:8:15: error: ‘Block’ was not declared in this scope
+    8 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1208/u1208_test.cc:8:15: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:163,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:38,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/repo/units/u1208/u1208_test.cc:4:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+In file included from /work/repo/units/u1208/u1208_test.cc:3:
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1208/u1208_test.cc:8:20: error: template argument 1 is invalid
+    8 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1208/u1208_test.cc:8:20: error: template argument 2 is invalid
+/work/repo/units/u1208/u1208_test.cc:9:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1208/u1208_test.cc:10:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   10 |   object.CreateBlockDiagonalMatrix(nullptr, blocks);
+      |                                             ^~~~~~
+      |                                             |
+      |                                             int
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:163:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::CompressedRowSparseMatrix> ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  163 |       const double* diagonal, const std::vector<Block>& blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1208/u1208_test.cc: In member function ‘virtual void Unit_u1208_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1208/u1208_test.cc:15:15: error: ‘Block’ was not declared in this scope
+   15 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1208/u1208_test.cc:15:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1208/u1208_test.cc:15:20: error: template argument 1 is invalid
+   15 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1208/u1208_test.cc:15:20: error: template argument 2 is invalid
+/work/repo/units/u1208/u1208_test.cc:16:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1208/u1208_test.cc:17:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   17 |   object.CreateBlockDiagonalMatrix(nullptr, blocks);
+      |                                             ^~~~~~
+      |                                             |
+      |                                             int
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:163:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::CompressedRowSparseMatrix> ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  163 |       const double* diagonal, const std::vector<Block>& blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1208/u1208_test.cc: In member function ‘virtual void Unit_u1208_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1208/u1208_test.cc:22:15: error: ‘Block’ was not declared in this scope
+   22 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1208/u1208_test.cc:22:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1208/u1208_test.cc:22:20: error: template argument 1 is invalid
+   22 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1208/u1208_test.cc:22:20: error: template argument 2 is invalid
+/work/repo/units/u1208/u1208_test.cc:23:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1208/u1208_test.cc:24:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   24 |   object.CreateBlockDiagonalMatrix(nullptr, blocks);
+      |                                             ^~~~~~
+      |                                             |
+      |                                             int
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:163:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::CompressedRowSparseMatrix> ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  163 |       const double* diagonal, const std::vector<Block>& blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1208/u1208_test.cc: In member function ‘virtual void Unit_u1208_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1208/u1208_test.cc:29:15: error: ‘Block’ was not declared in this scope
+   29 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1208/u1208_test.cc:29:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1208/u1208_test.cc:29:20: error: template argument 1 is invalid
+   29 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1208/u1208_test.cc:29:20: error: template argument 2 is invalid
+/work/repo/units/u1208/u1208_test.cc:30:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1208/u1208_test.cc:31:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   31 |   object.CreateBlockDiagonalMatrix(nullptr, blocks);
+      |                                             ^~~~~~
+      |                                             |
+      |                                             int
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:163:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::CompressedRowSparseMatrix> ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  163 |       const double* diagonal, const std::vector<Block>& blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1208/u1208_test.cc: In member function ‘virtual void Unit_u1208_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1208/u1208_test.cc:36:15: error: ‘Block’ was not declared in this scope
+   36 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1208/u1208_test.cc:36:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1208/u1208_test.cc:36:20: error: template argument 1 is invalid
+   36 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1208/u1208_test.cc:36:20: error: template argument 2 is invalid
+/work/repo/units/u1208/u1208_test.cc:37:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   37 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1208/u1208_test.cc:38:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   38 |   object.CreateBlockDiagonalMatrix(nullptr, blocks);
+      |                                             ^~~~~~
+      |                                             |
+      |                                             int
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:163:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::CompressedRowSparseMatrix> ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  163 |       const double* diagonal, const std::vector<Block>& blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1208/u1208_test.cc: In member function ‘virtual void Unit_u1208_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1208/u1208_test.cc:43:15: error: ‘Block’ was not declared in this scope
+   43 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1208/u1208_test.cc:43:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1208/u1208_test.cc:43:20: error: template argument 1 is invalid
+   43 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1208/u1208_test.cc:43:20: error: template argument 2 is invalid
+/work/repo/units/u1208/u1208_test.cc:44:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   44 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1208/u1208_test.cc:45:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   45 |   object.CreateBlockDiagonalMatrix(nullptr, blocks);
+      |                                             ^~~~~~
+      |                                             |
+      |                                             int
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:163:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::CompressedRowSparseMatrix> ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  163 |       const double* diagonal, const std::vector<Block>& blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~

@@ -1,0 +1,31 @@
+/work/repo/units/u1134/u1134_test.cc: In member function ‘virtual void Unit_u1134_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1134/u1134_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   11 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/ceres-solver/internal/ceres/preprocessor.h:47,
+                 from /work/ceres-solver/internal/ceres/trust_region_preprocessor.h:36,
+                 from /work/repo/units/u1134/u1134_test.cc:3:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1134/u1134_test.cc:12:20: error: expected unqualified-id before ‘(’ token
+   12 |   ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering(program);
+      |                    ^
+/work/repo/units/u1134/u1134_test.cc:12:21: error: ‘anonymous’ was not declared in this scope
+   12 |   ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering(program);
+      |                     ^~~~~~~~~
+/work/repo/units/u1134/u1134_test.cc: In member function ‘virtual void Unit_u1134_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1134/u1134_test.cc:17:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   17 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1134/u1134_test.cc:18:20: error: expected unqualified-id before ‘(’ token
+   18 |   ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering(program);
+      |                    ^
+/work/repo/units/u1134/u1134_test.cc:18:21: error: ‘anonymous’ was not declared in this scope
+   18 |   ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering(program);
+      |                     ^~~~~~~~~

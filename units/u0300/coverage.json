@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "internal/ceres/gradient_checking_cost_function.cc", "lines": [{"line_number": 131, "count": 1, "branches": []}, {"line_number": 132, "count": 1, "branches": []}], "functions": []}]}

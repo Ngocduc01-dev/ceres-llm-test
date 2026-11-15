@@ -1,0 +1,4 @@
+/work/repo/units/u0878/u0878_test.cc: In member function ‘virtual void Unit_u0878_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0878/u0878_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+    8 |   LinearSolver::Options linear_solver_options{};
+      |   ^~~~~~~~~~~~

@@ -1,0 +1,10 @@
+{
+  "id": "u1412",
+  "name": "ceres::(anonymous)::SummarizeReducedProgram",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1412/u1412_test.cc:9:3: error: ‘internal’ has not been declared",
+    "units/u1412/u1412_test.cc:10:34: error: ‘program’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,11 @@
+/work/repo/units/u0843/u0843_test.cc: In member function ‘virtual void Unit_u0843_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0843/u0843_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::CostFunction’
+    7 |   ceres::CostFunction object{};
+      |                       ^~~~~~
+In file included from /work/repo/units/u0843/u0843_test.cc:3:
+/work/ceres-solver/include/ceres/cost_function.h:64:20: note:   because the following virtual functions are pure within ‘ceres::CostFunction’:
+   64 | class CERES_EXPORT CostFunction {
+      |                    ^~~~~~~~~~~~
+/work/ceres-solver/include/ceres/cost_function.h:116:16: note:     ‘virtual bool ceres::CostFunction::Evaluate(const double* const*, double*, double**) const’
+  116 |   virtual bool Evaluate(double const* const* parameters,
+      |                ^~~~~~~~

@@ -1,0 +1,21 @@
+/work/repo/units/u1311/u1311_test.cc: In member function ‘virtual void Unit_u1311_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1311/u1311_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+   11 |   ceres::internal::(anonymous)::MinParameterBlock(nullptr, size_of_first_elimination_group);
+      |                    ^
+/work/repo/units/u1311/u1311_test.cc:11:21: error: ‘anonymous’ was not declared in this scope
+   11 |   ceres::internal::(anonymous)::MinParameterBlock(nullptr, size_of_first_elimination_group);
+      |                     ^~~~~~~~~
+/work/repo/units/u1311/u1311_test.cc: In member function ‘virtual void Unit_u1311_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1311/u1311_test.cc:17:20: error: expected unqualified-id before ‘(’ token
+   17 |   ceres::internal::(anonymous)::MinParameterBlock(nullptr, size_of_first_elimination_group);
+      |                    ^
+/work/repo/units/u1311/u1311_test.cc:17:21: error: ‘anonymous’ was not declared in this scope
+   17 |   ceres::internal::(anonymous)::MinParameterBlock(nullptr, size_of_first_elimination_group);
+      |                     ^~~~~~~~~
+/work/repo/units/u1311/u1311_test.cc: In member function ‘virtual void Unit_u1311_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1311/u1311_test.cc:23:20: error: expected unqualified-id before ‘(’ token
+   23 |   ceres::internal::(anonymous)::MinParameterBlock(nullptr, size_of_first_elimination_group);
+      |                    ^
+/work/repo/units/u1311/u1311_test.cc:23:21: error: ‘anonymous’ was not declared in this scope
+   23 |   ceres::internal::(anonymous)::MinParameterBlock(nullptr, size_of_first_elimination_group);
+      |                     ^~~~~~~~~

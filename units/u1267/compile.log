@@ -1,0 +1,17 @@
+/work/repo/units/u1267/u1267_test.cc: In member function ‘virtual void Unit_u1267_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1267/u1267_test.cc:10:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::PowerSeriesExpansionPreconditioner object{};
+      |                                                              ^
+In file included from /work/repo/units/u1267/u1267_test.cc:6:
+/work/ceres-solver/internal/ceres/power_series_expansion_preconditioner.h:49:3: note: candidate: ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(const ceres::internal::ImplicitSchurComplement*, int, double, const ceres::internal::Preconditioner::Options&)’
+   49 |   PowerSeriesExpansionPreconditioner(const ImplicitSchurComplement* isc,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/power_series_expansion_preconditioner.h:49:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1267/u1267_test.cc: In member function ‘virtual void Unit_u1267_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1267/u1267_test.cc:16:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::PowerSeriesExpansionPreconditioner object{};
+      |                                                              ^
+/work/ceres-solver/internal/ceres/power_series_expansion_preconditioner.h:49:3: note: candidate: ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(const ceres::internal::ImplicitSchurComplement*, int, double, const ceres::internal::Preconditioner::Options&)’
+   49 |   PowerSeriesExpansionPreconditioner(const ImplicitSchurComplement* isc,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/power_series_expansion_preconditioner.h:49:3: note:   candidate expects 4 arguments, 0 provided

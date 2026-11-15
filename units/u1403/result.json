@@ -1,0 +1,29 @@
+{
+  "id": "u1403",
+  "name": "ceres::internal::Program::ParameterBlocksAreFinite",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u1403.TC1_CallsTarget": "check_fail",
+    "Unit_u1403.TC2_CallsTarget": "check_fail",
+    "Unit_u1403.TC3_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 3,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 12
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

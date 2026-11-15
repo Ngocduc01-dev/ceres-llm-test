@@ -1,0 +1,14 @@
+{
+  "id": "u1234",
+  "name": "ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1234/u1234_test.cc:11:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context",
+    "units/u1234/u1234_test.cc:18:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context",
+    "units/u1234/u1234_test.cc:25:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context",
+    "units/u1234/u1234_test.cc:32:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context",
+    "units/u1234/u1234_test.cc:39:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context",
+    "units/u1234/u1234_test.cc:46:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context"
+  ]
+}

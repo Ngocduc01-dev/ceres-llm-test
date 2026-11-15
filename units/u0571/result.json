@@ -1,0 +1,9 @@
+{
+  "id": "u0571",
+  "name": "ceres::TinySolver::Initialize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0571/u0571_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

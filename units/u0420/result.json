@@ -1,0 +1,15 @@
+{
+  "id": "u0420",
+  "name": "ceres::internal::SuiteSparse::IsNestedDissectionAvailable",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteSparse’ has initializer but incomplete type",
+    "internal/ceres/suitesparse.h:285:2: error: expected primary-expression before ‘public’",
+    "internal/ceres/suitesparse.h:285:2: error: expected ‘}’ before ‘public’",
+    "internal/ceres/suitesparse.h:285:2: error: expected ‘,’ or ‘;’ before ‘public’",
+    "internal/ceres/suitesparse.h:293:1: error: expected declaration before ‘}’ token",
+    "units/u0420/u0420_test.cc:10:14: error: expected ‘;’ before ‘obj’",
+    "units/u0420/u0420_test.cc:11:3: error: ‘obj’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "u1397",
+  "name": "ceres::internal::ParameterBlock::AddResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1397/u1397_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’"
+  ]
+}

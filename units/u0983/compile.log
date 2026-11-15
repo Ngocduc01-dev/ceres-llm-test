@@ -1,0 +1,21 @@
+/work/repo/units/u0983/u0983_test.cc: In member function ‘virtual void Unit_u0983_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0983/u0983_test.cc:7:32: error: class template argument deduction failed:
+    7 |   ceres::SphereManifold object{};
+      |                                ^
+/work/repo/units/u0983/u0983_test.cc:7:32: error: no matching function for call to ‘SphereManifold()’
+In file included from /work/repo/units/u0983/u0983_test.cc:3:
+/work/ceres-solver/include/ceres/sphere_manifold.h:145:1: note: candidate: ‘template<int AmbientSpaceDimension> SphereManifold(int)-> ceres::SphereManifold<AmbientSpaceDimension>’
+  145 | SphereManifold<AmbientSpaceDimension>::SphereManifold(int size) : size_{size} {
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/sphere_manifold.h:145:1: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/sphere_manifold.h:137:1: note: candidate: ‘template<int AmbientSpaceDimension> SphereManifold()-> ceres::SphereManifold<AmbientSpaceDimension>’
+  137 | SphereManifold<AmbientSpaceDimension>::SphereManifold()
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/sphere_manifold.h:137:1: note:   template argument deduction/substitution failed:
+/work/repo/units/u0983/u0983_test.cc:7:32: note:   couldn’t deduce template parameter ‘AmbientSpaceDimension’
+    7 |   ceres::SphereManifold object{};
+      |                                ^
+/work/ceres-solver/include/ceres/sphere_manifold.h:86:22: note: candidate: ‘template<int AmbientSpaceDimension> SphereManifold(ceres::SphereManifold<AmbientSpaceDimension>)-> ceres::SphereManifold<AmbientSpaceDimension>’
+   86 | class SphereManifold final : public Manifold {
+      |                      ^~~~~
+/work/ceres-solver/include/ceres/sphere_manifold.h:86:22: note:   candidate expects 1 argument, 0 provided

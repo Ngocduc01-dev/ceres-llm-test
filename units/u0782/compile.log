@@ -1,0 +1,15 @@
+/work/repo/units/u0782/u0782_test.cc: In member function ‘virtual void Unit_u0782_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0782/u0782_test.cc:7:3: error: ‘MatrixAdapter’ was not declared in this scope; did you mean ‘ceres::MatrixAdapter’?
+    7 |   MatrixAdapter<const T, row_stride, col_stride> R{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::MatrixAdapter
+In file included from /work/repo/units/u0782/u0782_test.cc:3:
+/work/ceres-solver/include/ceres/rotation.h:71:8: note: ‘ceres::MatrixAdapter’ declared here
+   71 | struct MatrixAdapter;
+      |        ^~~~~~~~~~~~~
+/work/repo/units/u0782/u0782_test.cc:7:17: error: expected primary-expression before ‘const’
+    7 |   MatrixAdapter<const T, row_stride, col_stride> R{};
+      |                 ^~~~~
+/work/repo/units/u0782/u0782_test.cc:8:38: error: ‘R’ was not declared in this scope
+    8 |   ceres::RotationMatrixToEulerAngles(R, nullptr);
+      |                                      ^

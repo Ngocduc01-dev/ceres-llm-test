@@ -1,0 +1,31 @@
+{
+  "id": "u1302",
+  "name": "ceres::internal::ProblemImpl::GetResidualBlocksForParameterBlock",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u1302.TC1_CallsTarget": "check_fail",
+    "Unit_u1302.TC2_CallsTarget": "check_fail",
+    "Unit_u1302.TC3_CallsTarget": "check_fail",
+    "Unit_u1302.TC4_CallsTarget": "check_fail",
+    "Unit_u1302.TC5_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 5,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 21
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

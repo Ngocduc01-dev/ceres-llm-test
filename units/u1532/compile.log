@@ -1,0 +1,36 @@
+/work/repo/units/u1532/u1532_test.cc: In member function ‘virtual void Unit_u1532_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1532/u1532_test.cc:8:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+    8 |   ceres_cost_function_t cost_function{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u1532/u1532_test.cc:9:3: error: ‘ceres_loss_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+    9 |   ceres_loss_function_t loss_function{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u1532/u1532_test.cc:12:45: error: ‘cost_function’ was not declared in this scope
+   12 |   ceres_problem_add_residual_block(nullptr, cost_function, nullptr, loss_function, nullptr, num_residuals, num_parameter_blocks, nullptr, nullptr);
+      |                                             ^~~~~~~~~~~~~
+/work/repo/units/u1532/u1532_test.cc:12:69: error: ‘loss_function’ was not declared in this scope
+   12 |   ceres_problem_add_residual_block(nullptr, cost_function, nullptr, loss_function, nullptr, num_residuals, num_parameter_blocks, nullptr, nullptr);
+      |                                                                     ^~~~~~~~~~~~~
+/work/repo/units/u1532/u1532_test.cc:12:3: error: ‘ceres_problem_add_residual_block’ was not declared in this scope
+   12 |   ceres_problem_add_residual_block(nullptr, cost_function, nullptr, loss_function, nullptr, num_residuals, num_parameter_blocks, nullptr, nullptr);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1532/u1532_test.cc: In member function ‘virtual void Unit_u1532_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1532/u1532_test.cc:17:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+   17 |   ceres_cost_function_t cost_function{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u1532/u1532_test.cc:18:3: error: ‘ceres_loss_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?
+   18 |   ceres_loss_function_t loss_function{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   cookie_close_function_t
+/work/repo/units/u1532/u1532_test.cc:21:45: error: ‘cost_function’ was not declared in this scope
+   21 |   ceres_problem_add_residual_block(nullptr, cost_function, nullptr, loss_function, nullptr, num_residuals, num_parameter_blocks, nullptr, nullptr);
+      |                                             ^~~~~~~~~~~~~
+/work/repo/units/u1532/u1532_test.cc:21:69: error: ‘loss_function’ was not declared in this scope
+   21 |   ceres_problem_add_residual_block(nullptr, cost_function, nullptr, loss_function, nullptr, num_residuals, num_parameter_blocks, nullptr, nullptr);
+      |                                                                     ^~~~~~~~~~~~~
+/work/repo/units/u1532/u1532_test.cc:21:3: error: ‘ceres_problem_add_residual_block’ was not declared in this scope
+   21 |   ceres_problem_add_residual_block(nullptr, cost_function, nullptr, loss_function, nullptr, num_residuals, num_parameter_blocks, nullptr, nullptr);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

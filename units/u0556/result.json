@@ -1,0 +1,10 @@
+{
+  "id": "u0556",
+  "name": "ceres::internal::Degree2MaximumSpanningForest",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u0556/u0556_test.cc:10:31: error: no matching function for call to ‘Degree2MaximumSpanningForest(<brace-enclosed initializer list>)’",
+    "units/u0556/u0556_test.cc:14:31: error: no matching function for call to ‘Degree2MaximumSpanningForest(<brace-enclosed initializer list>)’"
+  ]
+}

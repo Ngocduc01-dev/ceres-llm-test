@@ -1,0 +1,32 @@
+/work/repo/units/u0806/u0806_test.cc: In member function ‘virtual void Unit_u0806_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0806/u0806_test.cc:11:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   11 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0806/u0806_test.cc:12:3: error: ‘object’ was not declared in this scope
+   12 |   object.ComputeClusteringQualityDifference(candidate, centers);
+      |   ^~~~~~
+/work/repo/units/u0806/u0806_test.cc: In member function ‘virtual void Unit_u0806_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0806/u0806_test.cc:19:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   19 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0806/u0806_test.cc:20:3: error: ‘object’ was not declared in this scope
+   20 |   object.ComputeClusteringQualityDifference(candidate, centers);
+      |   ^~~~~~
+/work/repo/units/u0806/u0806_test.cc: In member function ‘virtual void Unit_u0806_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0806/u0806_test.cc:27:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   27 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0806/u0806_test.cc:28:3: error: ‘object’ was not declared in this scope
+   28 |   object.ComputeClusteringQualityDifference(candidate, centers);
+      |   ^~~~~~
+/work/repo/units/u0806/u0806_test.cc: In member function ‘virtual void Unit_u0806_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0806/u0806_test.cc:35:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   35 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0806/u0806_test.cc:36:3: error: ‘object’ was not declared in this scope
+   36 |   object.ComputeClusteringQualityDifference(candidate, centers);
+      |   ^~~~~~

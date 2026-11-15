@@ -1,0 +1,254 @@
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:9:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+    9 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:11:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+In file included from /work/repo/units/u1370/u1370_test.cc:4:
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:12:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   12 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:17:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   17 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:19:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:20:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   20 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:25:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   25 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:27:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   27 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:28:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   28 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:33:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   33 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:35:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:36:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   36 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:41:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   41 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:43:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   43 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:44:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   44 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:49:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   49 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:51:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   51 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:52:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   52 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:57:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   57 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:59:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   59 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:60:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   60 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:65:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   65 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:67:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   67 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:68:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   68 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:73:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   73 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:75:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   75 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:76:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   76 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:81:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   81 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:83:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   83 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:84:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   84 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1370/u1370_test.cc: In member function ‘virtual void Unit_u1370_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1370/u1370_test.cc:89:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   89 |   CompressedRowSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1370/u1370_test.cc:91:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   91 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1370/u1370_test.cc:92:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   92 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind

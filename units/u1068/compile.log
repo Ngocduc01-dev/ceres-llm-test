@@ -1,0 +1,25 @@
+/work/repo/units/u1068/u1068_test.cc: In member function ‘virtual void Unit_u1068_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1068/u1068_test.cc:8:33: error: class template argument deduction failed:
+    8 |   ceres::ProductManifold object{};
+      |                                 ^
+/work/repo/units/u1068/u1068_test.cc:8:33: error: no matching function for call to ‘ProductManifold()’
+In file included from /work/repo/units/u1068/u1068_test.cc:4:
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN, long unsigned int ...Indices, class ... Args> ProductManifold(std::index_sequence<__indices ...>, Args&& ...)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+  139 |   explicit ProductManifold(std::index_sequence<Indices...>, Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:139:12: note:   candidate expects at least 1 argument, 0 provided
+/work/ceres-solver/include/ceres/product_manifold.h:96:12: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN, class ... Args, std::enable_if_t<((bool)std::is_constructible<std::tuple<Manifold0, Manifold1, ManifoldN ...>, Args ...>::value), void>* <anonymous> > ProductManifold(Args&& ...)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+   96 |   explicit ProductManifold(Args&&... manifolds)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:96:12: note:   template argument deduction/substitution failed:
+/work/repo/units/u1068/u1068_test.cc:8:33: note:   couldn’t deduce template parameter ‘Manifold0’
+    8 |   ceres::ProductManifold object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/product_manifold.h:85:23: note: candidate: ‘template<class Manifold0, class Manifold1, class ... ManifoldN> ProductManifold(ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>)-> ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>’
+   85 | class ProductManifold final : public Manifold {
+      |                       ^~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:85:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/product_manifold.h:314:1: note: candidate: ‘template<class Manifold0, class Manifold1, class ... Manifolds> ceres::ProductManifold(Manifold0&&, Manifold1&&, Manifolds&& ...)-> ProductManifold<Manifold0, Manifold1, Manifolds ...>’
+  314 | ProductManifold(Manifold0&&, Manifold1&&, Manifolds&&...)
+      | ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/product_manifold.h:314:1: note:   candidate expects at least 2 arguments, 0 provided

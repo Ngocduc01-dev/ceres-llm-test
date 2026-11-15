@@ -1,0 +1,13 @@
+/work/repo/units/u0907/u0907_test.cc: In member function ‘virtual void Unit_u0907_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0907/u0907_test.cc:8:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+In file included from /work/repo/units/u0907/u0907_test.cc:4:
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided

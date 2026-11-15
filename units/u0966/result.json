@@ -1,0 +1,9 @@
+{
+  "id": "u0966",
+  "name": "ceres::internal::TripletSparseMatrix::AllocateMemory",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0966/u0966_test.cc:8:24: error: ‘void ceres::internal::TripletSparseMatrix::AllocateMemory()’ is private within this context"
+  ]
+}

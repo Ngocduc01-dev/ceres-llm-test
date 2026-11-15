@@ -1,0 +1,12 @@
+{
+  "id": "u1103",
+  "name": "ceres::internal::BlockRandomAccessSparseMatrix::SymmetricRightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1103/u1103_test.cc:9:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1103/u1103_test.cc:15:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1103/u1103_test.cc:21:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1103/u1103_test.cc:27:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

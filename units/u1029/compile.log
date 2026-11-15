@@ -1,0 +1,17 @@
+/work/repo/units/u1029/u1029_test.cc: In member function ‘virtual void Unit_u1029_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1029/u1029_test.cc:7:31: error: class template argument deduction failed:
+    7 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1029/u1029_test.cc:7:31: error: no matching function for call to ‘OrderedGroups()’
+In file included from /work/repo/units/u1029/u1029_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1029/u1029_test.cc:7:31: note:   couldn’t deduce template parameter ‘T’
+    7 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided

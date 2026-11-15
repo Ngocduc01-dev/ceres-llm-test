@@ -1,0 +1,16 @@
+{
+  "id": "u0783",
+  "name": "ceres::internal::AreJacobianColumnsOrdered",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u0783/u0783_test.cc:7:9: error: ‘LinearSolverType’ does not name a type",
+    "units/u0783/u0783_test.cc:8:9: error: ‘PreconditionerType’ does not name a type",
+    "units/u0783/u0783_test.cc:9:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type",
+    "units/u0783/u0783_test.cc:10:9: error: ‘LinearSolverOrderingType’ does not name a type",
+    "units/u0783/u0783_test.cc:11:46: error: ‘linear_solver_type’ was not declared in this scope",
+    "units/u0783/u0783_test.cc:11:66: error: ‘preconditioner_type’ was not declared in this scope",
+    "units/u0783/u0783_test.cc:11:87: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope",
+    "units/u0783/u0783_test.cc:11:123: error: ‘linear_solver_ordering_type’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,29 @@
+/work/repo/units/u1276/u1276_test.cc: In member function ‘virtual void Unit_u1276_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1276/u1276_test.cc:10:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context
+   10 |   object.IterationZero();
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1276/u1276_test.cc:5:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:62:8: note: declared private here
+   62 |   bool IterationZero();
+      |        ^~~~~~~~~~~~~
+/work/repo/units/u1276/u1276_test.cc: In member function ‘virtual void Unit_u1276_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1276/u1276_test.cc:16:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context
+   16 |   object.IterationZero();
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:62:8: note: declared private here
+   62 |   bool IterationZero();
+      |        ^~~~~~~~~~~~~
+/work/repo/units/u1276/u1276_test.cc: In member function ‘virtual void Unit_u1276_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1276/u1276_test.cc:22:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context
+   22 |   object.IterationZero();
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:62:8: note: declared private here
+   62 |   bool IterationZero();
+      |        ^~~~~~~~~~~~~
+/work/repo/units/u1276/u1276_test.cc: In member function ‘virtual void Unit_u1276_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1276/u1276_test.cc:28:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context
+   28 |   object.IterationZero();
+      |   ~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:62:8: note: declared private here
+   62 |   bool IterationZero();
+      |        ^~~~~~~~~~~~~

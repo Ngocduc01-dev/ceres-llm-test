@@ -1,0 +1,4 @@
+/work/repo/units/u0996/u0996_test.cc: In member function ‘virtual void Unit_u0996_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0996/u0996_test.cc:8:3: error: ‘ceres_create_arctan_loss_function_data’ was not declared in this scope
+    8 |   ceres_create_arctan_loss_function_data(a);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

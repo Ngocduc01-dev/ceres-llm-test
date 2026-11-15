@@ -1,0 +1,11 @@
+{
+  "id": "u0968",
+  "name": "ceres::internal::BlockSparseMatrix::FreeValues",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0968/u0968_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0968/u0968_test.cc:8:20: error: ‘void ceres::internal::BlockSparseMatrix::FreeValues(double*&)’ is private within this context",
+    "units/u0968/u0968_test.cc:8:21: error: cannot bind non-const lvalue reference of type ‘double*&’ to a value of type ‘std::nullptr_t’"
+  ]
+}

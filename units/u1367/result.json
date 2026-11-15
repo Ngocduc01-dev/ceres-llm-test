@@ -1,0 +1,16 @@
+{
+  "id": "u1367",
+  "name": "ceres::internal::ImplicitSchurComplement::Init",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1367/u1367_test.cc:9:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1367/u1367_test.cc:10:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’",
+    "units/u1367/u1367_test.cc:11:15: error: ‘A’ was not declared in this scope",
+    "units/u1367/u1367_test.cc:16:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1367/u1367_test.cc:17:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’",
+    "units/u1367/u1367_test.cc:18:15: error: ‘A’ was not declared in this scope",
+    "units/u1367/u1367_test.cc:23:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1367/u1367_test.cc:24:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’"
+  ]
+}

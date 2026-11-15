@@ -1,0 +1,11 @@
+{
+  "id": "u0933",
+  "name": "ceres::internal::CompressedRowSparseMatrix::ToDenseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0933/u0933_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0933/u0933_test.cc:13:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0933/u0933_test.cc:19:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

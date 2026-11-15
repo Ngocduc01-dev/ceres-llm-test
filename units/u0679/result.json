@@ -1,0 +1,10 @@
+{
+  "id": "u0679",
+  "name": "ceres::internal::VertexDegreeLessThan::operator()",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0679/u0679_test.cc:7:3: error: ‘object’ was not declared in this scope",
+    "units/u0679/u0679_test.cc:7:18: error: expected type-specifier before ‘(’ token"
+  ]
+}

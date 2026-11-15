@@ -1,0 +1,36 @@
+/work/repo/units/u1067/u1067_test.cc: In member function ‘virtual void Unit_u1067_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1067/u1067_test.cc:9:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context
+    9 |   object.ComputeCandidatePointAndEvaluateCost();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1067/u1067_test.cc:4:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:67:8: note: declared private here
+   67 |   void ComputeCandidatePointAndEvaluateCost();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1067/u1067_test.cc: In member function ‘virtual void Unit_u1067_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1067/u1067_test.cc:15:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context
+   15 |   object.ComputeCandidatePointAndEvaluateCost();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:67:8: note: declared private here
+   67 |   void ComputeCandidatePointAndEvaluateCost();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1067/u1067_test.cc: In member function ‘virtual void Unit_u1067_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1067/u1067_test.cc:21:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context
+   21 |   object.ComputeCandidatePointAndEvaluateCost();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:67:8: note: declared private here
+   67 |   void ComputeCandidatePointAndEvaluateCost();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1067/u1067_test.cc: In member function ‘virtual void Unit_u1067_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1067/u1067_test.cc:27:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context
+   27 |   object.ComputeCandidatePointAndEvaluateCost();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:67:8: note: declared private here
+   67 |   void ComputeCandidatePointAndEvaluateCost();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1067/u1067_test.cc: In member function ‘virtual void Unit_u1067_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1067/u1067_test.cc:33:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context
+   33 |   object.ComputeCandidatePointAndEvaluateCost();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:67:8: note: declared private here
+   67 |   void ComputeCandidatePointAndEvaluateCost();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,26 +1,34 @@
-# Unit u0343
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh (hàm chỉ có 1 đường đi duy nhất) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `bool PlusJacobian(const double * x, double * jacobian) const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `x`: mảng 4 double (quaternion), mỗi phần tử trong [-1, 1], không có điều kiện đường đi nào ràng buộc thêm. `jacobian`: mảng 12 double (ma trận 4×3), giá trị ban đầu tùy ý. | `x = {0.5, 0.5, 0.5, 0.5}`, `jacobian` = 12 phần tử khởi tạo bằng 0 |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. Hàm không có điểm rẽ nhánh và không có `CHECK`.
 
-## D. File test
+C2 dự kiến = 0 / 0. Hàm không có nhánh nào, nên mẫu số bằng 0. Test TC1 chạy qua toàn bộ node 1 và `return true`.
+
+**D. File test**
 
 ```cpp
 // FILE: u0343_test.cc
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0343, PathP1) { double x[4] = {1,0,0,0}; double d[3] = {0,0,0}; double out[4] = {}; ceres::QuaternionManifold target; target.PlusJacobian(x, out); }
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(QuaternionManifoldPlusJacobianTest, TC1_SinglePath) {
+  ceres::QuaternionManifold manifold;
+  const double x[4] = {0.5, 0.5, 0.5, 0.5};
+  double jacobian[12] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                         0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+  manifold.PlusJacobian(x, jacobian);
+}
 ```

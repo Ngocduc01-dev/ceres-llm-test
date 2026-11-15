@@ -1,0 +1,10 @@
+{
+  "id": "u1345",
+  "name": "ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1345/u1345_test.cc:9:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1345/u1345_test.cc:10:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’"
+  ]
+}

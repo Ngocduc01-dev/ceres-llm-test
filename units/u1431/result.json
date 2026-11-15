@@ -1,0 +1,10 @@
+{
+  "id": "u1431",
+  "name": "ceres::Problem::GetParameterBlocksForResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1431/u1431_test.cc:7:9: error: ‘ResidualBlockId’ does not name a type",
+    "units/u1431/u1431_test.cc:9:45: error: ‘residual_block’ was not declared in this scope"
+  ]
+}

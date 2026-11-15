@@ -1,0 +1,141 @@
+In file included from /work/repo/units/u1136/u1136_test.cc:7:
+/work/ceres-solver/internal/ceres/schur_eliminator_impl.h:46:9: warning: "EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD" redefined
+   46 | #define EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD 10
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:205,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/parallel_for.h:39,
+                 from /work/repo/units/u1136/u1136_test.cc:5:
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:18:9: note: this is the location of the previous definition
+   18 | #define EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD 8
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc: In member function ‘virtual void Unit_u1136_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1136/u1136_test.cc:12:3: error: ‘Matrix’ was not declared in this scope
+   12 |   Matrix inverse_ete{};
+      |   ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:12:3: note: suggested alternatives:
+/work/ceres-solver/include/ceres/internal/eigen.h:39:7: note:   ‘ceres::Matrix’
+   39 | using Matrix =
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:163:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:70:9: note:   ‘Eigen::Matrix’
+   70 | > class Matrix;
+      |         ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:13:3: error: ‘BufferLayoutType’ was not declared in this scope
+   13 |   BufferLayoutType buffer_layout{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:14:43: error: class template argument deduction failed:
+   14 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1136/u1136_test.cc:14:43: error: no matching function for call to ‘SchurEliminator()’
+In file included from /work/repo/units/u1136/u1136_test.cc:6:
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1136/u1136_test.cc:15:48: error: ‘inverse_ete’ was not declared in this scope
+   15 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                ^~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:15:70: error: ‘buffer_layout’ was not declared in this scope
+   15 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                                      ^~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc: In member function ‘virtual void Unit_u1136_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1136/u1136_test.cc:21:3: error: ‘Matrix’ was not declared in this scope
+   21 |   Matrix inverse_ete{};
+      |   ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:21:3: note: suggested alternatives:
+/work/ceres-solver/include/ceres/internal/eigen.h:39:7: note:   ‘ceres::Matrix’
+   39 | using Matrix =
+      |       ^~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:70:9: note:   ‘Eigen::Matrix’
+   70 | > class Matrix;
+      |         ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:22:3: error: ‘BufferLayoutType’ was not declared in this scope
+   22 |   BufferLayoutType buffer_layout{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:23:43: error: class template argument deduction failed:
+   23 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1136/u1136_test.cc:23:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1136/u1136_test.cc:24:48: error: ‘inverse_ete’ was not declared in this scope
+   24 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                ^~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:24:70: error: ‘buffer_layout’ was not declared in this scope
+   24 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                                      ^~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc: In member function ‘virtual void Unit_u1136_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1136/u1136_test.cc:30:3: error: ‘Matrix’ was not declared in this scope
+   30 |   Matrix inverse_ete{};
+      |   ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:30:3: note: suggested alternatives:
+/work/ceres-solver/include/ceres/internal/eigen.h:39:7: note:   ‘ceres::Matrix’
+   39 | using Matrix =
+      |       ^~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:70:9: note:   ‘Eigen::Matrix’
+   70 | > class Matrix;
+      |         ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:31:3: error: ‘BufferLayoutType’ was not declared in this scope
+   31 |   BufferLayoutType buffer_layout{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:32:43: error: class template argument deduction failed:
+   32 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1136/u1136_test.cc:32:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1136/u1136_test.cc:33:48: error: ‘inverse_ete’ was not declared in this scope
+   33 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                ^~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:33:70: error: ‘buffer_layout’ was not declared in this scope
+   33 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                                      ^~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc: In member function ‘virtual void Unit_u1136_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1136/u1136_test.cc:39:3: error: ‘Matrix’ was not declared in this scope
+   39 |   Matrix inverse_ete{};
+      |   ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:39:3: note: suggested alternatives:
+/work/ceres-solver/include/ceres/internal/eigen.h:39:7: note:   ‘ceres::Matrix’
+   39 | using Matrix =
+      |       ^~~~~~
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:70:9: note:   ‘Eigen::Matrix’
+   70 | > class Matrix;
+      |         ^~~~~~
+/work/repo/units/u1136/u1136_test.cc:40:3: error: ‘BufferLayoutType’ was not declared in this scope
+   40 |   BufferLayoutType buffer_layout{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:41:43: error: class template argument deduction failed:
+   41 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1136/u1136_test.cc:41:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1136/u1136_test.cc:42:48: error: ‘inverse_ete’ was not declared in this scope
+   42 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                ^~~~~~~~~~~
+/work/repo/units/u1136/u1136_test.cc:42:70: error: ‘buffer_layout’ was not declared in this scope
+   42 |   object.ChunkOuterProduct(thread_id, nullptr, inverse_ete, nullptr, buffer_layout, nullptr);
+      |                                                                      ^~~~~~~~~~~~~

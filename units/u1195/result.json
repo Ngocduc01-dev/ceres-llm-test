@@ -1,0 +1,16 @@
+{
+  "id": "u1195",
+  "name": "ceres::internal::LinearSolver::LinearSolverForZeroEBlocks",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1195/u1195_test.cc:7:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?",
+    "units/u1195/u1195_test.cc:8:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’",
+    "units/u1195/u1195_test.cc:9:37: error: ‘linear_solver_type’ was not declared in this scope",
+    "units/u1195/u1195_test.cc:14:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?",
+    "units/u1195/u1195_test.cc:15:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’",
+    "units/u1195/u1195_test.cc:16:37: error: ‘linear_solver_type’ was not declared in this scope",
+    "units/u1195/u1195_test.cc:21:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?",
+    "units/u1195/u1195_test.cc:22:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’"
+  ]
+}

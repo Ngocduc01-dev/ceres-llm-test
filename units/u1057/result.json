@@ -1,0 +1,16 @@
+{
+  "id": "u1057",
+  "name": "ceres::ConditionedCostFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u1057/u1057_test.cc:8:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:14:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:20:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:26:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:32:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:38:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:44:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1057/u1057_test.cc:50:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’"
+  ]
+}

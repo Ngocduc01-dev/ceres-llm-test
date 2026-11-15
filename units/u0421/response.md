@@ -1,25 +1,37 @@
-# Unit u0421: `ceres::internal::SuiteSparse::Free`
+**A. Test paths**
 
-## A. Test paths
-
-| Path | ???ng ?i | Nh?nh |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Theo CFG trong prompt. |
+| P1 | START → END | Không có điểm rẽ nhánh nào |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | D? li?u |
-|---|---|---|
-| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | Tham số `void*` không được dùng (bị comment tên), không ràng buộc | `nullptr` |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
+Không có nhánh nào (hàm không có điểm rẽ nhánh, không có `CHECK`).
 
-## D. File test
+`C2 dự kiến = 0 / 0` (tổng số nhánh = 0, nên C2 coi như đạt 100% khi hàm được gọi 1 lần).
+
+**D. File test**
+
 ```cpp
 // FILE: u0421_test.cc
 #include "gtest/gtest.h"
 #include "ceres/suitesparse.h"
-TEST(Unit_u0421, Free) { ceres::internal::SuiteSparse target; target.Free(nullptr); }
+
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> END (hàm không có điểm rẽ nhánh)
+TEST(SuiteSparseFreeTest, P1_NoBranch) {
+  SuiteSparse obj;
+  obj.Free(nullptr);
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

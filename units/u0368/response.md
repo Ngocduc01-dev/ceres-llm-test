@@ -1,26 +1,31 @@
-# Unit u0368
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh (đường đi duy nhất) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `void set_state_offset(int state_offset)` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `state_offset` là `int` bất kỳ (không có điều kiện ràng buộc) → chọn trong [0, 100]; `user_state` trỏ mảng 1–5 phần tử, `size` = 3, `index` = 0 | `state_offset` = 42 (chọn ngẫu nhiên trong khoảng, cố định); `size` = 3; `index` = 0 |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. Hàm không có điểm rẽ nhánh và không có vòng lặp, nên không cần xét số lần lặp.
+`C2 dự kiến = 0 / 0` (không có nhánh nào; đường đi P1 phủ 100% câu lệnh, node 1).
 
-## D. File test
+**D. File test**
 
 ```cpp
 // FILE: u0368_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0368, PathP1) { double value[1] = {0}; ceres::internal::ParameterBlock target(value, 1, 0); target.set_state_offset(1); }
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ParameterBlockSetStateOffset, P1_AssignStateOffset) {
+  double values[3] = {1.0, 2.0, 3.0};
+  ceres::internal::ParameterBlock block(values, 3, 0);
+  block.set_state_offset(42);
+}
 ```

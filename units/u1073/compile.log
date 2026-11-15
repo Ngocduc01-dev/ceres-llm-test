@@ -1,0 +1,40 @@
+/work/repo/units/u1073/u1073_test.cc: In member function ‘virtual void Unit_u1073_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1073/u1073_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+    8 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1073/u1073_test.cc:8:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/eigen_vector_ops.h:36,
+                 from /work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:41,
+                 from /work/repo/units/u1073/u1073_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1073/u1073_test.cc:9:9: error: expected ‘;’ before ‘y’
+    9 |   Vector y{};
+      |         ^~
+      |         ;
+/work/repo/units/u1073/u1073_test.cc:10:49: error: no matching function for call to ‘ceres::internal::LinearOperatorAdapter::LinearOperatorAdapter(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::LinearOperatorAdapter object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:66:3: note: candidate: ‘ceres::internal::LinearOperatorAdapter::LinearOperatorAdapter(ceres::internal::LinearOperator&)’
+   66 |   LinearOperatorAdapter(LinearOperator& linear_operator)
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:66:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:64:7: note: candidate: ‘constexpr ceres::internal::LinearOperatorAdapter::LinearOperatorAdapter(const ceres::internal::LinearOperatorAdapter&)’
+   64 | class LinearOperatorAdapter : public ConjugateGradientsLinearOperator<Vector> {
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:64:7: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:64:7: note: candidate: ‘constexpr ceres::internal::LinearOperatorAdapter::LinearOperatorAdapter(ceres::internal::LinearOperatorAdapter&&)’
+/work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:64:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1073/u1073_test.cc:11:37: error: ‘x’ was not declared in this scope
+   11 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                     ^
+/work/repo/units/u1073/u1073_test.cc:11:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   11 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                        ^
+      |                                        yn

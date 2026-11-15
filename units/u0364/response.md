@@ -1,26 +1,32 @@
-# Unit u0364
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh. Node 1 chỉ chạy `return (lower_bounds_ == nullptr)`. |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `bool IsLowerBounded() const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `size` từ 1 đến 5, `index` từ 0 đến 5, `user_state` là mảng double có 5 phần tử. Không có điều kiện đường đi nào ràng buộc thêm. | `size = 3`, `index = 0`, `user_state = {1.0, 2.0, 3.0, 4.0, 5.0}` (cố định, không dùng số ngẫu nhiên) |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+- Không có. Hàm không có điểm rẽ nhánh, và biểu thức `lower_bounds_ == nullptr` không phải là một điểm rẽ nhánh.
+- CFG khớp với mã nguồn.
+- `C2 dự kiến = 0 / 0` (không có nhánh nào cần phủ, coi như đạt 100%; dự kiến, chưa chạy thật).
 
-## D. File test
+**D. File test**
 
 ```cpp
 // FILE: u0364_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0364, PathP1) { double value[1] = {0}; ceres::internal::ParameterBlock target(value, 1, 0); target.IsLowerBounded(); }
+
+// TC1 - P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ParameterBlockIsLowerBounded, TC1_P1_NoBranch) {
+  double user_state[5] = {1.0, 2.0, 3.0, 4.0, 5.0};
+  ceres::internal::ParameterBlock parameter_block(user_state, 3, 0);
+  static_cast<void>(parameter_block.IsLowerBounded());
+}
 ```

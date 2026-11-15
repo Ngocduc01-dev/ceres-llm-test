@@ -2,8 +2,13 @@
 #include "gtest/gtest.h"
 #include "ceres/line_search_minimizer.h"
 
-TEST(Unit_u0328, PathP1) {
-  ceres::internal::LineSearchMinimizer::State target(1, 1);
-  EXPECT_EQ(target.gradient.size(), 1);
-  EXPECT_EQ(target.search_direction.size(), 1);
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(LineSearchMinimizerStateTest, ConstructorTC1) {
+  LineSearchMinimizer::State state(4, 3);
 }
+
+}  // namespace internal
+}  // namespace ceres

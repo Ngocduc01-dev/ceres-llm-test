@@ -1,0 +1,63 @@
+/work/repo/units/u1171/u1171_test.cc: In member function ‘virtual void Unit_u1171_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1171/u1171_test.cc:7:9: error: ‘LineSearchType’ does not name a type
+    7 |   const LineSearchType line_search_type{};
+      |         ^~~~~~~~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:8:3: error: ‘LineSearch’ has not been declared
+    8 |   LineSearch::Options options{};
+      |   ^~~~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:9:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::LineSearch object{};
+      |                                      ^
+In file included from /work/repo/units/u1171/u1171_test.cc:3:
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1171/u1171_test.cc:9:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+    9 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   because the following virtual functions are pure within ‘ceres::internal::LineSearch’:
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:197:16: note:     ‘virtual void ceres::internal::LineSearch::DoSearch(double, double, double, Summary*) const’
+  197 |   virtual void DoSearch(double step_size_estimate,
+      |                ^~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:10:17: error: ‘line_search_type’ was not declared in this scope
+   10 |   object.Create(line_search_type, options, nullptr);
+      |                 ^~~~~~~~~~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:10:35: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   object.Create(line_search_type, options, nullptr);
+      |                                   ^~~~~~~
+      |                                   optind
+/work/repo/units/u1171/u1171_test.cc: In member function ‘virtual void Unit_u1171_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1171/u1171_test.cc:15:9: error: ‘LineSearchType’ does not name a type
+   15 |   const LineSearchType line_search_type{};
+      |         ^~~~~~~~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:16:3: error: ‘LineSearch’ has not been declared
+   16 |   LineSearch::Options options{};
+      |   ^~~~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:17:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1171/u1171_test.cc:17:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   17 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/repo/units/u1171/u1171_test.cc:18:17: error: ‘line_search_type’ was not declared in this scope
+   18 |   object.Create(line_search_type, options, nullptr);
+      |                 ^~~~~~~~~~~~~~~~
+/work/repo/units/u1171/u1171_test.cc:18:35: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   18 |   object.Create(line_search_type, options, nullptr);
+      |                                   ^~~~~~~
+      |                                   optind

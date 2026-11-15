@@ -1,0 +1,19 @@
+/work/repo/units/u0611/u0611_test.cc: In member function ‘virtual void ceres::internal::Unit_u0611_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0611/u0611_test.cc:10:10: error: scalar object ‘rows_data’ requires one element in initializer
+   10 |   double rows_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0611/u0611_test.cc:11:10: error: scalar object ‘cols_data’ requires one element in initializer
+   11 |   double cols_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0611/u0611_test.cc:12:10: error: scalar object ‘values_data’ requires one element in initializer
+   12 |   double values_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~
+/work/repo/units/u0611/u0611_test.cc:13:10: error: scalar object ‘transpose_rows_data’ requires one element in initializer
+   13 |   double transpose_rows_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0611/u0611_test.cc:14:10: error: scalar object ‘transpose_cols_data’ requires one element in initializer
+   14 |   double transpose_cols_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0611/u0611_test.cc:15:10: error: scalar object ‘transpose_values_data’ requires one element in initializer
+   15 |   double transpose_values_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~~~~~

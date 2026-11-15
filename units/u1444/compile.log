@@ -1,0 +1,33 @@
+/work/repo/units/u1444/u1444_test.cc: In member function ‘virtual void Unit_u1444_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1444/u1444_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+In file included from /work/repo/units/u1444/u1444_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1444/u1444_test.cc: In member function ‘virtual void Unit_u1444_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1444/u1444_test.cc:16:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1444/u1444_test.cc: In member function ‘virtual void Unit_u1444_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1444/u1444_test.cc:23:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1444/u1444_test.cc: In member function ‘virtual void Unit_u1444_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1444/u1444_test.cc:30:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided

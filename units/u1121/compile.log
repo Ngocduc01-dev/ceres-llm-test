@@ -1,0 +1,162 @@
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:9:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+    9 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+In file included from /work/repo/units/u1121/u1121_test.cc:4:
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:10:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   10 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:15:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+   15 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:16:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   16 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:21:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+   21 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:22:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   22 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:27:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+   27 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:28:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   28 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:33:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+   33 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:34:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   34 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:39:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+   39 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:40:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   40 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided
+/work/repo/units/u1121/u1121_test.cc: In member function ‘virtual void Unit_u1121_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1121/u1121_test.cc:45:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+   45 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1121/u1121_test.cc:46:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’
+   46 |   object(nullptr);
+      |   ~~~~~~^~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note: candidate: ‘template<class JetT> bool ceres::DynamicCostFunctionToFunctor::operator()(const JetT* const*, JetT*) const’
+  118 |   bool operator()(JetT const* const* inputs, JetT* output) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:118:8: note:   candidate expects 2 arguments, 1 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note: candidate: ‘bool ceres::DynamicCostFunctionToFunctor::operator()(const double* const*, double*) const’
+  113 |   bool operator()(double const* const* parameters, double* residuals) const {
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:113:8: note:   candidate expects 2 arguments, 1 provided

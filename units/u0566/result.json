@@ -1,0 +1,9 @@
+{
+  "id": "u0566",
+  "name": "ceres::ProductManifold::ProductManifold<Manifold0, Manifold1, ManifoldN...>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0566/u0566_test.cc:11:49: error: ‘ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>::ProductManifold(std::index_sequence<_Ind ...>, Args&& ...) [with long unsigned int ...Indices = {0, 1}; Args = {ceres::SubsetManifold&, ceres::SubsetManifold&}; Manifold0 = ceres::SubsetManifold; Manifo"
+  ]
+}

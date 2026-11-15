@@ -1,0 +1,995 @@
+Phase 6: 993 unit, 3 song song
+  u0277 ok            C1 100%  C2    –
+  u0282 ok            C1   0%  C2    –
+  u0281 ok            C1   0%  C2    –
+  u0283 ok            C1   0%  C2    –
+  u0284 ok            C1   0%  C2    –
+  u0285 ok            C1   0%  C2    –
+  u0286 ok            C1   0%  C2    –
+  u0303 ok            C1 100%  C2    –
+  u0287 ok            C1   0%  C2    –
+  u0288 ok            C1   0%  C2    –
+  u0304 ok            C1 100%  C2    –
+  u0305 ok            C1 100%  C2    –
+  u0309 ok            C1 100%  C2    –
+  u0306 ok            C1 100%  C2    –
+  u0310 ok            C1 100%  C2    –
+  u0311 ok            C1 100%  C2    –
+  u0312 ok            C1 100%  C2    –
+  u0313 ok            C1 100%  C2    –
+  u0314 ok            C1 100%  C2    –
+  u0316 ok            C1 100%  C2    –
+  u0315 ok            C1 100%  C2    –
+  u0317 ok            C1 100%  C2    –
+  u0318 ok            C1 100%  C2    –
+  u0319 ok            C1 100%  C2    –
+  u0320 ok            C1 100%  C2    –
+  u0321 ok            C1   0%  C2    –
+  u0322 ok            C1   0%  C2    –
+  u0324 ok            C1   0%  C2    –
+  u0325 ok            C1   0%  C2    –
+  u0327 compile_fail  C1    –  C2    –  units/u0327/u0327_test.cc:9:22: error: ‘ceres::internal::Vector’ has not been declared
+  u0326 ok            C1   0%  C2    –
+  u0323 ok            C1   0%  C2    –
+  u0328 ok            C1 100%  C2    –
+  u0329 ok            C1    –  C2    –
+  u0330 ok            C1 100%  C2    –
+  u0331 compile_fail  C1    –  C2    –  units/u0331/u0331_test.cc:7:17: error: ‘LinearOperator’ has not been declared
+  u0337 ok            C1 100%  C2    –
+  u0338 ok            C1 100%  C2    –
+  u0339 ok            C1 100%  C2    –
+  u0340 ok            C1 100%  C2    –
+  u0341 ok            C1 100%  C2    –
+  u0342 ok            C1 100%  C2    –
+  u0343 ok            C1 100%  C2    –
+  u0344 ok            C1 100%  C2    –
+  u0345 ok            C1 100%  C2    –
+  u0346 ok            C1 100%  C2    –
+  u0347 ok            C1 100%  C2    –
+  u0348 ok            C1 100%  C2    –
+  u0349 ok            C1 100%  C2    –
+  u0352 ok            C1 100%  C2    –
+  u0353 ok            C1 100%  C2    –
+  u0354 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0355 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0356 ok            C1 100%  C2    –
+  u0357 ok            C1 100%  C2    –
+  u0358 ok            C1 100%  C2    –
+  u0359 ok            C1 100%  C2    –
+  u0360 ok            C1 100%  C2    –
+  u0361 ok            C1 100%  C2    –
+  u0362 ok            C1 100%  C2    –
+  u0363 ok            C1 100%  C2    –
+  u0364 ok            C1 100%  C2    –
+  u0365 ok            C1 100%  C2    –
+  u0366 ok            C1 100%  C2    –
+  u0367 ok            C1 100%  C2    –
+  u0368 ok            C1 100%  C2    –
+  u0369 ok            C1 100%  C2    –
+  u0370 ok            C1 100%  C2    –
+  u0371 ok            C1 100%  C2    –
+  u0372 ok            C1 100%  C2    –
+  u0373 compile_fail  C1    –  C2    –  units/u0373/u0373_test.cc:6:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0374 compile_fail  C1    –  C2    –  units/u0374/u0374_test.cc:6:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0375 compile_fail  C1    –  C2    –  units/u0375/u0375_test.cc:6:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0376 compile_fail  C1    –  C2    –  units/u0376/u0376_test.cc:6:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0377 compile_fail  C1    –  C2    –  units/u0377/u0377_test.cc:6:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0378 compile_fail  C1    –  C2    –  units/u0378/u0378_test.cc:6:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0380 ok            C1 100%  C2    –
+  u0379 ok            C1 100%  C2    –
+  u0381 ok            C1 100%  C2    –
+  u0382 ok            C1 100%  C2    –
+  u0383 ok            C1 100%  C2    –
+  u0384 ok            C1 100%  C2    –
+  u0385 ok            C1 100%  C2    –
+  u0387 compile_fail  C1    –  C2    –  units/u0387/u0387_test.cc:5:58: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0386 ok            C1 100%  C2    –
+  u0400 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u0401 compile_fail  C1    –  C2    –  units/u0401/u0401_test.cc:6:55: error: expected template-name before ‘<’ token
+  u0389 ok            C1 100%  C2    –
+  u0388 ok            C1 100%  C2    –
+  u0402 compile_fail  C1    –  C2    –  units/u0402/u0402_test.cc:6:55: error: expected template-name before ‘<’ token
+  u0403 compile_fail  C1    –  C2    –  units/u0403/u0403_test.cc:6:55: error: expected template-name before ‘<’ token
+  u0404 compile_fail  C1    –  C2    –  units/u0404/u0404_test.cc:5:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0405 compile_fail  C1    –  C2    –  units/u0405/u0405_test.cc:5:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0406 compile_fail  C1    –  C2    –  units/u0406/u0406_test.cc:5:69: error: ‘struct ceres::internal::SchurEliminator<1, 1, 1>::Chunk’ is private wi
+  u0407 compile_fail  C1    –  C2    –  units/u0407/u0407_test.cc:5:35: error: ‘ceres::LinearSolver’ has not been declared
+  u0409 ok            C1 100%  C2    –
+  u0408 ok            C1   0%  C2    –
+  u0410 ok            C1 100%  C2    –
+  u0414 ok            C1    –  C2    –
+  u0416 ok            C1    –  C2    –
+  u0415 ok            C1   0%  C2    –
+  u0417 ok            C1    –  C2    –
+  u0419 compile_fail  C1    –  C2    –  units/u0419/u0419_test.cc:14:10: error: ‘ceres::Preconditioner’ has not been declared
+  u0418 compile_fail  C1    –  C2    –  units/u0418/u0418_test.cc:14:10: error: ‘ceres::Preconditioner’ has not been declared
+  u0420 compile_fail  C1    –  C2    –  internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteS
+  u0421 compile_fail  C1    –  C2    –  internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteS
+  u0433 ok            C1 100%  C2    –
+  u0434 ok            C1    –  C2    –
+  u0436 ok            C1 100%  C2 100%
+  u0437 ok            C1  57%  C2  50%
+  u0439 compile_fail  C1    –  C2    –  units/u0439/u0439_test.cc:10:10: error: ‘Jet’ is not a member of ‘ceres’
+  u0440 compile_fail  C1    –  C2    –  units/u0440/u0440_test.cc:5:3: error: ‘ceres’ has not been declared
+  u0438 ok            C1 100%  C2 100%
+  u0442 compile_fail  C1    –  C2    –  units/u0442/u0442_test.cc:11:10: error: ‘Jet’ is not a member of ‘ceres’
+  u0441 ok            C1 100%  C2  50%
+  u0443 ok            C1 100%  C2  50%
+  u0445 compile_fail  C1    –  C2    –  units/u0445/u0445_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0446 compile_fail  C1    –  C2    –  units/u0446/u0446_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0444 ok            C1 100%  C2  50%
+  u0448 compile_fail  C1    –  C2    –  units/u0448/u0448_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0447 ok            C1 100%  C2  50%
+  u0452 ok            C1 100%  C2  50%
+  u0451 ok            C1 100%  C2  50%
+  u0453 ok            C1 100%  C2  50%
+  u0454 ok            C1 100%  C2 100%
+  u0457 compile_fail  C1    –  C2    –  units/u0457/u0457_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0455 ok            C1 100%  C2  50%
+  u0456 ok            C1 100%  C2  50%
+  u0458 compile_fail  C1    –  C2    –  units/u0458/u0458_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0465 compile_fail  C1    –  C2    –  units/u0465/u0465_test.cc:6:67: error: expected template-name before ‘<’ token
+  u0464 ok            C1 100%  C2 100%
+  u0468 compile_fail  C1    –  C2    –  units/u0468/u0468_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0463 ok            C1  67%  C2  50%
+  u0469 ok            C1 100%  C2 100%
+  u0470 ok            C1 100%  C2 100%
+  u0471 ok            C1 100%  C2 100%
+  u0477 ok            C1 100%  C2  50%
+  u0478 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0467 ok            C1   0%  C2    –
+  u0479 ok            C1 100%  C2  50%
+  u0480 ok            C1 100%  C2    –
+  u0481 ok            C1 100%  C2    –
+  u0482 ok            C1 100%  C2 100%
+  u0483 ok            C1 100%  C2 100%
+  u0486 compile_fail  C1    –  C2    –  units/u0486/u0486_test.cc:5:48: error: ‘ceres::Solver’ has not been declared
+  u0484 ok            C1 100%  C2 100%
+  u0487 ok            C1  50%  C2  50%
+  u0488 ok            C1  62%  C2  50%
+  u0485 ok            C1  75%  C2    –
+  u0489 ok            C1 100%  C2  50%
+  u0490 ok            C1 100%  C2 100%
+  u0491 ok            C1 100%  C2    –
+  u0495 compile_fail  C1    –  C2    –  units/u0495/u0495_test.cc:4:3: error: ‘ceres’ has not been declared
+  u0493 ok            C1 100%  C2 100%
+  u0494 ok            C1 100%  C2  50%
+  u0497 ok            C1 100%  C2 100%
+  u0496 ok            C1  86%  C2    –
+  u0501 ok            C1  76%  C2  50%
+  u0502 ok            C1 100%  C2 100%
+  u0507 ok            C1 100%  C2    –
+  u0529 ok            C1 100%  C2 100%
+  u0536 compile_fail  C1    –  C2    –  units/u0536/u0536_test.cc:57:36: error: ‘kImpossibleValue’ was not declared in this scope
+  u0537 ok            C1 100%  C2 100%
+  u0539 ok            C1 100%  C2 100%
+  u0540 ok            C1 100%  C2 100%
+  u0541 ok            C1 100%  C2 100%
+  u0553 compile_fail  C1    –  C2    –  units/u0553/u0553_test.cc:49:8: error: ‘mt19937’ is not a member of ‘std’
+  u0716 compile_fail  C1    –  C2    –  units/u0716/u0716_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0715 ok            C1  67%  C2  50%
+  u0717 ok            C1  80%  C2  50%
+  u0718 compile_fail  C1    –  C2    –  units/u0718/u0718_test.cc:8:10: error: scalar object ‘q_data’ requires one element in initializer
+  u0720 ok            C1  17%  C2   0%
+  u0719 ok            C1  92%  C2  50%
+  u0721 compile_fail  C1    –  C2    –  units/u0721/u0721_test.cc:8:10: error: scalar object ‘rhs_data’ requires one element in initializer
+  u0722 compile_fail  C1    –  C2    –  units/u0722/u0722_test.cc:7:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0723 compile_fail  C1    –  C2    –  units/u0723/u0723_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0725 compile_fail  C1    –  C2    –  units/u0725/u0725_test.cc:9:10: error: scalar object ‘data_data’ requires one element in initializer
+  u0724 compile_fail  C1    –  C2    –  units/u0724/u0724_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0726 compile_fail  C1    –  C2    –  units/u0726/u0726_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0727 compile_fail  C1    –  C2    –  units/u0727/u0727_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0728 compile_fail  C1    –  C2    –  units/u0728/u0728_test.cc:9:3: error: ‘object’ was not declared in this scope
+  u0729 compile_fail  C1    –  C2    –  units/u0729/u0729_test.cc:7:10: error: scalar object ‘parameter_blocks_data’ requires one element in initializ
+  u0730 compile_fail  C1    –  C2    –  units/u0730/u0730_test.cc:7:3: error: ‘LinearSolverOrderingTypeToString’ was not declared in this scope
+  u0731 compile_fail  C1    –  C2    –  units/u0731/u0731_test.cc:7:3: error: ‘TrustRegionStrategyTypeToString’ was not declared in this scope
+  u0732 compile_fail  C1    –  C2    –  units/u0732/u0732_test.cc:7:3: error: ‘DoglegTypeToString’ was not declared in this scope
+  u0733 compile_fail  C1    –  C2    –  units/u0733/u0733_test.cc:7:3: error: ‘MinimizerTypeToString’ was not declared in this scope
+  u0734 compile_fail  C1    –  C2    –  units/u0734/u0734_test.cc:7:3: error: ‘LineSearchTypeToString’ was not declared in this scope
+  u0735 compile_fail  C1    –  C2    –  units/u0735/u0735_test.cc:7:3: error: ‘CovarianceAlgorithmTypeToString’ was not declared in this scope
+  u0736 compile_fail  C1    –  C2    –  units/u0736/u0736_test.cc:7:3: error: ‘VisibilityClusteringTypeToString’ was not declared in this scope
+  u0737 compile_fail  C1    –  C2    –  units/u0737/u0737_test.cc:7:3: error: ‘LoggingTypeToString’ was not declared in this scope
+  u0738 compile_fail  C1    –  C2    –  units/u0738/u0738_test.cc:7:3: error: ‘DumpFormatTypeToString’ was not declared in this scope
+  u0739 compile_fail  C1    –  C2    –  units/u0739/u0739_test.cc:7:3: error: ‘IsSchurType’ was not declared in this scope
+  u0740 compile_fail  C1    –  C2    –  units/u0740/u0740_test.cc:9:10: error: scalar object ‘parameters_data’ requires one element in initializer
+  u0741 compile_fail  C1    –  C2    –  units/u0741/u0741_test.cc:7:10: error: scalar object ‘src_data’ requires one element in initializer
+  u0742 compile_fail  C1    –  C2    –  units/u0742/u0742_test.cc:10:10: error: scalar object ‘parameters_data’ requires one element in initializer
+  u0743 compile_fail  C1    –  C2    –  units/u0743/u0743_test.cc:10:10: error: scalar object ‘parameters_data’ requires one element in initializer
+  u0744 compile_fail  C1    –  C2    –  units/u0744/u0744_test.cc:8:10: error: scalar object ‘quaternion_data’ requires one element in initializer
+  u0745 compile_fail  C1    –  C2    –  units/u0745/u0745_test.cc:8:10: error: scalar object ‘euler_data’ requires one element in initializer
+  u0746 compile_fail  C1    –  C2    –  units/u0746/u0746_test.cc:7:10: error: scalar object ‘file_data’ requires one element in initializer
+  u0747 compile_fail  C1    –  C2    –  units/u0747/u0747_test.cc:7:10: error: scalar object ‘rhs_ptr_data’ requires one element in initializer
+  u0748 ok            C1 100%  C2  50%
+  u0749 compile_fail  C1    –  C2    –  units/u0749/u0749_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0752 compile_fail  C1    –  C2    –  units/u0752/u0752_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+  u0750 ok            C1  43%  C2  40%
+  u0751 ok            C1  62%  C2  25%
+  u0754 compile_fail  C1    –  C2    –  units/u0754/u0754_test.cc:6:3: error: ‘DenseLinearAlgebraLibraryType’ was not declared in this scope
+  u0755 compile_fail  C1    –  C2    –  units/u0755/u0755_test.cc:6:3: error: ‘LineSearchInterpolationType’ was not declared in this scope
+  u0753 compile_fail  C1    –  C2    –  units/u0753/u0753_test.cc:7:3: error: ‘PreconditionerType’ was not declared in this scope; did you mean ‘ceres
+  u0756 compile_fail  C1    –  C2    –  units/u0756/u0756_test.cc:6:3: error: ‘NonlinearConjugateGradientType’ was not declared in this scope
+  u0757 compile_fail  C1    –  C2    –  units/u0757/u0757_test.cc:6:3: error: ‘NumericDiffMethodType’ was not declared in this scope
+  u0758 compile_fail  C1    –  C2    –  units/u0758/u0758_test.cc:6:3: error: ‘DenseLinearAlgebraLibraryType’ was not declared in this scope
+  u0759 compile_fail  C1    –  C2    –  units/u0759/u0759_test.cc:11:39: error: class template argument deduction failed:
+  u0761 compile_fail  C1    –  C2    –  units/u0761/u0761_test.cc:7:3: error: ‘Vertex’ was not declared in this scope
+  u0760 ok            C1  50%  C2  25%
+  u0762 compile_fail  C1    –  C2    –  units/u0762/u0762_test.cc:8:3: error: ‘LineSearchMinimizer’ has not been declared
+  u0763 compile_fail  C1    –  C2    –  units/u0763/u0763_test.cc:7:3: error: ‘LineSearchDirection’ has not been declared
+  u0764 compile_fail  C1    –  C2    –  units/u0764/u0764_test.cc:7:18: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = ch
+  u0766 compile_fail  C1    –  C2    –  units/u0766/u0766_test.cc:6:3: error: ‘LineSearchDirectionType’ was not declared in this scope
+  u0765 compile_fail  C1    –  C2    –  units/u0765/u0765_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+  u0767 compile_fail  C1    –  C2    –  units/u0767/u0767_test.cc:9:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u0769 compile_fail  C1    –  C2    –  units/u0769/u0769_test.cc:6:3: error: ‘SparseLinearAlgebraLibraryType’ was not declared in this scope
+  u0768 ok            C1  39%  C2  12%
+  u0770 compile_fail  C1    –  C2    –  units/u0770/u0770_test.cc:6:3: error: ‘TerminationType’ was not declared in this scope
+  u0771 compile_fail  C1    –  C2    –  units/u0771/u0771_test.cc:6:3: error: ‘SparseLinearAlgebraLibraryType’ was not declared in this scope
+  u0772 compile_fail  C1    –  C2    –  units/u0772/u0772_test.cc:9:3: error: ‘Functor’ was not declared in this scope
+  u0773 compile_fail  C1    –  C2    –  units/u0773/u0773_test.cc:8:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::
+  u0775 compile_fail  C1    –  C2    –  units/u0775/u0775_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you me
+  u0776 compile_fail  C1    –  C2    –  units/u0776/u0776_test.cc:6:3: error: ‘LinearSolverType’ was not declared in this scope
+  u0777 compile_fail  C1    –  C2    –  units/u0777/u0777_test.cc:6:3: error: ‘PreconditionerType’ was not declared in this scope
+  u0778 compile_fail  C1    –  C2    –  units/u0778/u0778_test.cc:8:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::i
+  u0774 compile_fail  C1    –  C2    –  units/u0774/u0774_test.cc:11:37: error: expected primary-expression before ‘bool’
+  u0779 compile_fail  C1    –  C2    –  units/u0779/u0779_test.cc:8:3: error: ‘LineSearchMinimizer’ has not been declared
+  u0781 compile_fail  C1    –  C2    –  units/u0781/u0781_test.cc:9:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you
+  u0782 compile_fail  C1    –  C2    –  units/u0782/u0782_test.cc:7:3: error: ‘MatrixAdapter’ was not declared in this scope; did you mean ‘ceres::Mat
+  u0780 compile_fail  C1    –  C2    –  units/u0780/u0780_test.cc:12:43: error: class template argument deduction failed:
+  u0785 compile_fail  C1    –  C2    –  units/u0785/u0785_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you me
+  u0783 compile_fail  C1    –  C2    –  units/u0783/u0783_test.cc:7:9: error: ‘LinearSolverType’ does not name a type
+  u0784 ok            C1  40%  C2  31%
+  u0786 compile_fail  C1    –  C2    –  units/u0786/u0786_test.cc:7:38: error: class template argument deduction failed:
+  u0787 compile_fail  C1    –  C2    –  units/u0787/u0787_test.cc:8:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixR
+  u0788 compile_fail  C1    –  C2    –  units/u0788/u0788_test.cc:8:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixR
+  u0789 compile_fail  C1    –  C2    –  units/u0789/u0789_test.cc:7:3: error: ‘Vector2d’ was not declared in this scope; did you mean ‘Eigen::Vector2d
+  u0790 compile_fail  C1    –  C2    –  units/u0790/u0790_test.cc:9:3: error: ‘GradientProblemSolver’ has not been declared
+  u0791 compile_fail  C1    –  C2    –  units/u0791/u0791_test.cc:9:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘c
+  u0794 compile_fail  C1    –  C2    –  units/u0794/u0794_test.cc:8:19: error: ‘BlockRandomAccessMatrix’ was not declared in this scope; did you mean 
+  u0792 compile_fail  C1    –  C2    –  units/u0792/u0792_test.cc:9:3: error: ‘BlockRandomAccessSparseMatrix’ was not declared in this scope; did you 
+  u0793 compile_fail  C1    –  C2    –  units/u0793/u0793_test.cc:9:3: error: ‘BlockRandomAccessDiagonalMatrix’ was not declared in this scope; did yo
+  u0795 compile_fail  C1    –  C2    –  units/u0795/u0795_test.cc:8:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolve
+  u0796 compile_fail  C1    –  C2    –  units/u0796/u0796_test.cc:8:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolve
+  u0797 ok            C1  67%  C2 100%
+  u0798 compile_fail  C1    –  C2    –  units/u0798/u0798_test.cc:8:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixR
+  u0799 compile_fail  C1    –  C2    –  units/u0799/u0799_test.cc:8:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixR
+  u0801 compile_fail  C1    –  C2    –  units/u0801/u0801_test.cc:7:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::
+  u0802 compile_fail  C1    –  C2    –  units/u0802/u0802_test.cc:9:15: error: ‘CompressedList’ was not declared in this scope; did you mean ‘ceres::i
+  u0803 compile_fail  C1    –  C2    –  units/u0803/u0803_test.cc:8:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did yo
+  u0800 compile_fail  C1    –  C2    –  units/u0800/u0800_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u0806 compile_fail  C1    –  C2    –  units/u0806/u0806_test.cc:11:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did y
+  u0805 compile_fail  C1    –  C2    –  units/u0805/u0805_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreco
+  u0808 compile_fail  C1    –  C2    –  units/u0808/u0808_test.cc:10:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did y
+  u0804 compile_fail  C1    –  C2    –  units/u0804/u0804_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u0809 compile_fail  C1    –  C2    –  units/u0809/u0809_test.cc:9:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreco
+  u0810 compile_fail  C1    –  C2    –  units/u0810/u0810_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+  u0807 compile_fail  C1    –  C2    –  units/u0807/u0807_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u0811 compile_fail  C1    –  C2    –  units/u0811/u0811_test.cc:9:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::int
+  u0812 compile_fail  C1    –  C2    –  units/u0812/u0812_test.cc:9:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreco
+  u0815 compile_fail  C1    –  C2    –  units/u0815/u0815_test.cc:8:3: error: ‘Solver’ has not been declared
+  u0813 compile_fail  C1    –  C2    –  units/u0813/u0813_test.cc:8:20: error: expected unqualified-id before ‘(’ token
+  u0814 compile_fail  C1    –  C2    –  units/u0814/u0814_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u0816 compile_fail  C1    –  C2    –  units/u0816/u0816_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you me
+  u0817 compile_fail  C1    –  C2    –  units/u0817/u0817_test.cc:8:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProbl
+  u0818 compile_fail  C1    –  C2    –  units/u0818/u0818_test.cc:8:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProbl
+  u0819 compile_fail  C1    –  C2    –  units/u0819/u0819_test.cc:8:3: error: ‘Functor’ was not declared in this scope
+  u0820 compile_fail  C1    –  C2    –  units/u0820/u0820_test.cc:8:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownersh
+  u0821 compile_fail  C1    –  C2    –  units/u0821/u0821_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownersh
+  u0822 compile_fail  C1    –  C2    –  units/u0822/u0822_test.cc:10:26: error: no matching function for call to ‘ceres::Problem::AddResidualBlock(std
+  u0823 compile_fail  C1    –  C2    –  units/u0823/u0823_test.cc:8:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPrecon
+  u0824 compile_fail  C1    –  C2    –  units/u0824/u0824_test.cc:10:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter
+  u0825 compile_fail  C1    –  C2    –  units/u0825/u0825_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u0826 compile_fail  C1    –  C2    –  units/u0826/u0826_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u0827 compile_fail  C1    –  C2    –  units/u0827/u0827_test.cc:8:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSpa
+  u0828 compile_fail  C1    –  C2    –  units/u0828/u0828_test.cc:8:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSpa
+  u0829 compile_fail  C1    –  C2    –  units/u0829/u0829_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0830 compile_fail  C1    –  C2    –  units/u0830/u0830_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0831 compile_fail  C1    –  C2    –  units/u0831/u0831_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0833 compile_fail  C1    –  C2    –  units/u0833/u0833_test.cc:7:3: error: ‘ceres_free_stock_loss_function_data’ was not declared in this scope
+  u0832 compile_fail  C1    –  C2    –  units/u0832/u0832_test.cc:7:3: error: ‘ceres_free_problem’ was not declared in this scope
+  u0834 compile_fail  C1    –  C2    –  units/u0834/u0834_test.cc:8:10: error: expected identifier before numeric constant
+  u0836 compile_fail  C1    –  C2    –  units/u0836/u0836_test.cc:9:3: error: ‘Evaluator’ has not been declared
+  u0835 compile_fail  C1    –  C2    –  units/u0835/u0835_test.cc:9:3: error: ‘LinearOperator’ was not declared in this scope; did you mean ‘ceres::in
+  u0837 compile_fail  C1    –  C2    –  units/u0837/u0837_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0838 compile_fail  C1    –  C2    –  units/u0838/u0838_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0839 compile_fail  C1    –  C2    –  units/u0839/u0839_test.cc:8:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0840 ok            C1 100%  C2    –
+  u0841 ok            C1 100%  C2    –
+  u0842 compile_fail  C1    –  C2    –  units/u0842/u0842_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::CostFun
+  u0843 compile_fail  C1    –  C2    –  units/u0843/u0843_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::CostFun
+  u0845 compile_fail  C1    –  C2    –  units/u0845/u0845_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+  u0844 compile_fail  C1    –  C2    –  units/u0844/u0844_test.cc:8:3: error: ‘Covariance’ has not been declared
+  u0846 compile_fail  C1    –  C2    –  units/u0846/u0846_test.cc:8:3: error: ‘Covariance’ has not been declared
+  u0847 compile_fail  C1    –  C2    –  units/u0847/u0847_test.cc:8:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cova
+  u0848 compile_fail  C1    –  C2    –  internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+  u0849 compile_fail  C1    –  C2    –  units/u0849/u0849_test.cc:9:3: error: ‘Evaluator’ has not been declared
+  u0850 compile_fail  C1    –  C2    –  units/u0850/u0850_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0851 compile_fail  C1    –  C2    –  units/u0851/u0851_test.cc:9:20: error: ‘Derived’ was not declared in this scope
+  u0852 compile_fail  C1    –  C2    –  units/u0852/u0852_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+  u0853 compile_fail  C1    –  C2    –  units/u0853/u0853_test.cc:10:3: error: ‘Vector’ was not declared in this scope
+  u0854 compile_fail  C1    –  C2    –  units/u0854/u0854_test.cc:9:3: error: ‘VectorLikeX’ was not declared in this scope
+  u0855 compile_fail  C1    –  C2    –  units/u0855/u0855_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+  u0857 compile_fail  C1    –  C2    –  units/u0857/u0857_test.cc:7:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0856 compile_fail  C1    –  C2    –  units/u0856/u0856_test.cc:8:20: error: ‘EigenSparseCholeskyTemplate’ is not a member of ‘ceres::internal’; did
+  u0858 compile_fail  C1    –  C2    –  units/u0858/u0858_test.cc:8:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0860 compile_fail  C1    –  C2    –  units/u0860/u0860_test.cc:8:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvalu
+  u0861 compile_fail  C1    –  C2    –  units/u0861/u0861_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0862 compile_fail  C1    –  C2    –  units/u0862/u0862_test.cc:8:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u0859 ok            C1  80%  C2    –
+  u0863 compile_fail  C1    –  C2    –  units/u0863/u0863_test.cc:8:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer
+  u0865 compile_fail  C1    –  C2    –  units/u0865/u0865_test.cc:7:28: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Iterati
+  u0864 compile_fail  C1    –  C2    –  units/u0864/u0864_test.cc:8:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer
+  u0866 compile_fail  C1    –  C2    –  units/u0866/u0866_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0867 compile_fail  C1    –  C2    –  units/u0867/u0867_test.cc:7:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSear
+  u0868 compile_fail  C1    –  C2    –  units/u0868/u0868_test.cc:7:3: error: ‘LineSearch’ has not been declared
+  u0869 compile_fail  C1    –  C2    –  units/u0869/u0869_test.cc:8:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::
+  u0870 compile_fail  C1    –  C2    –  units/u0870/u0870_test.cc:7:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0871 compile_fail  C1    –  C2    –  units/u0871/u0871_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::LossFun
+  u0872 compile_fail  C1    –  C2    –  units/u0872/u0872_test.cc:7:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifol
+  u0873 compile_fail  C1    –  C2    –  units/u0873/u0873_test.cc:7:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0874 ok            C1  43%  C2    –
+  u0875 compile_fail  C1    –  C2    –  units/u0875/u0875_test.cc:9:3: error: ‘VectorType’ was not declared in this scope
+  u0876 compile_fail  C1    –  C2    –  units/u0876/u0876_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0877 compile_fail  C1    –  C2    –  units/u0877/u0877_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0879 compile_fail  C1    –  C2    –  units/u0879/u0879_test.cc:7:3: error: ‘Problem’ was not declared in this scope; did you mean ‘ceres::Problem’?
+  u0878 compile_fail  C1    –  C2    –  units/u0878/u0878_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0880 compile_fail  C1    –  C2    –  units/u0880/u0880_test.cc:7:3: error: ‘Problem’ was not declared in this scope; did you mean ‘ceres::Problem’?
+  u0883 compile_fail  C1    –  C2    –  units/u0883/u0883_test.cc:10:26: error: no matching function for call to ‘ceres::internal::ProblemImpl::AddRes
+  u0881 ok            C1 100%  C2    –
+  u0882 ok            C1 100%  C2    –
+  u0886 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u0884 ok            C1 100%  C2    –
+  u0885 ok            C1 100%  C2    –
+  u0888 compile_fail  C1    –  C2    –  units/u0888/u0888_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u0889 compile_fail  C1    –  C2    –  units/u0889/u0889_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u0887 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u0891 compile_fail  C1    –  C2    –  units/u0891/u0891_test.cc:8:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesk
+  u0892 compile_fail  C1    –  C2    –  units/u0892/u0892_test.cc:8:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesk
+  u0890 ok            C1 100%  C2    –
+  u0893 compile_fail  C1    –  C2    –  units/u0893/u0893_test.cc:7:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0895 compile_fail  C1    –  C2    –  units/u0895/u0895_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0894 compile_fail  C1    –  C2    –  units/u0894/u0894_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0896 compile_fail  C1    –  C2    –  units/u0896/u0896_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0898 ok            C1 100%  C2    –
+  u0897 ok            C1 100%  C2    –
+  u0899 ok            C1 100%  C2    –
+  u0900 ok            C1 100%  C2    –
+  u0901 ok            C1 100%  C2    –
+  u0902 ok            C1 100%  C2    –
+  u0904 compile_fail  C1    –  C2    –  units/u0904/u0904_test.cc:8:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::
+  u0903 compile_fail  C1    –  C2    –  units/u0903/u0903_test.cc:7:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0905 compile_fail  C1    –  C2    –  units/u0905/u0905_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownersh
+  u0906 compile_fail  C1    –  C2    –  units/u0906/u0906_test.cc:8:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0907 compile_fail  C1    –  C2    –  units/u0907/u0907_test.cc:8:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMin
+  u0908 compile_fail  C1    –  C2    –  units/u0908/u0908_test.cc:8:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u0909 compile_fail  C1    –  C2    –  units/u0909/u0909_test.cc:9:3: error: ‘LhsExpression’ was not declared in this scope
+  u0910 compile_fail  C1    –  C2    –  units/u0910/u0910_test.cc:8:3: error: ‘Preconditioner’ has not been declared
+  u0911 compile_fail  C1    –  C2    –  units/u0911/u0911_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0912 compile_fail  C1    –  C2    –  units/u0912/u0912_test.cc:8:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0913 ok            C1 100%  C2  50%
+  u0914 ok            C1  75%  C2  50%
+  u0915 ok            C1  75%  C2  50%
+  u0916 ok            C1  29%  C2   0%
+  u0917 compile_fail  C1    –  C2    –  units/u0917/u0917_test.cc:10:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparse
+  u0918 compile_fail  C1    –  C2    –  units/u0918/u0918_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0919 compile_fail  C1    –  C2    –  units/u0919/u0919_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownersh
+  u0920 compile_fail  C1    –  C2    –  units/u0920/u0920_test.cc:8:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifol
+  u0921 compile_fail  C1    –  C2    –  units/u0921/u0921_test.cc:9:3: error: ‘MinimizerType’ was not declared in this scope; did you mean ‘ceres::Min
+  u0922 compile_fail  C1    –  C2    –  units/u0922/u0922_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u0923 compile_fail  C1    –  C2    –  units/u0923/u0923_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0924 ok            C1 100%  C2    –
+  u0925 ok            C1  33%  C2   0%
+  u0926 ok            C1  40%  C2   0%
+  u0927 ok            C1  40%  C2   0%
+  u0928 compile_fail  C1    –  C2    –  units/u0928/u0928_test.cc:9:3: error: ‘Options’ was not declared in this scope
+  u0929 compile_fail  C1    –  C2    –  units/u0929/u0929_test.cc:11:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::
+  u0931 compile_fail  C1    –  C2    –  units/u0931/u0931_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0930 compile_fail  C1    –  C2    –  units/u0930/u0930_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0932 compile_fail  C1    –  C2    –  units/u0932/u0932_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0934 compile_fail  C1    –  C2    –  units/u0934/u0934_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0933 compile_fail  C1    –  C2    –  units/u0933/u0933_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0935 compile_fail  C1    –  C2    –  units/u0935/u0935_test.cc:7:18: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = ch
+  u0936 compile_fail  C1    –  C2    –  units/u0936/u0936_test.cc:9:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProbl
+  u0937 compile_fail  C1    –  C2    –  units/u0937/u0937_test.cc:9:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0938 compile_fail  C1    –  C2    –  units/u0938/u0938_test.cc:9:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::interna
+  u0939 compile_fail  C1    –  C2    –  units/u0939/u0939_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u0940 ok            C1  19%  C2  25%
+  u0941 compile_fail  C1    –  C2    –  units/u0941/u0941_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0942 compile_fail  C1    –  C2    –  units/u0942/u0942_test.cc:8:3: error: ‘TrustRegionStrategy’ has not been declared
+  u0943 compile_fail  C1    –  C2    –  units/u0943/u0943_test.cc:8:3: error: ‘TrustRegionStrategy’ has not been declared
+  u0944 compile_fail  C1    –  C2    –  units/u0944/u0944_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0945 compile_fail  C1    –  C2    –  units/u0945/u0945_test.cc:11:3: error: ‘F’ was not declared in this scope
+  u0946 compile_fail  C1    –  C2    –  units/u0946/u0946_test.cc:11:3: error: ‘F’ was not declared in this scope
+  u0949 compile_fail  C1    –  C2    –  units/u0949/u0949_test.cc:8:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u0947 ok            C1  50%  C2  25%
+  u0948 ok            C1  11%  C2   0%
+  u0951 compile_fail  C1    –  C2    –  units/u0951/u0951_test.cc:7:46: error: template argument 1 is invalid
+  u0952 compile_fail  C1    –  C2    –  units/u0952/u0952_test.cc:11:3: error: ‘F’ was not declared in this scope
+  u0950 ok            C1  26%  C2  12%
+  u0953 compile_fail  C1    –  C2    –  units/u0953/u0953_test.cc:7:3: error: ‘TripletSparseMatrix’ has not been declared
+  u0954 compile_fail  C1    –  C2    –  units/u0954/u0954_test.cc:16:3: error: ‘Evaluator’ has not been declared
+  u0955 compile_fail  C1    –  C2    –  units/u0955/u0955_test.cc:14:3: error: ‘LinearSolver’ has not been declared
+  u0956 compile_fail  C1    –  C2    –  units/u0956/u0956_test.cc:9:3: error: ‘Minimizer’ has not been declared
+  u0957 compile_fail  C1    –  C2    –  units/u0957/u0957_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::Dogl
+  u0958 compile_fail  C1    –  C2    –  units/u0958/u0958_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::Dogl
+  u0959 compile_fail  C1    –  C2    –  units/u0959/u0959_test.cc:9:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalC
+  u0960 compile_fail  C1    –  C2    –  units/u0960/u0960_test.cc:8:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres:
+  u0961 compile_fail  C1    –  C2    –  units/u0961/u0961_test.cc:7:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSear
+  u0962 compile_fail  C1    –  C2    –  units/u0962/u0962_test.cc:8:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::inte
+  u0963 compile_fail  C1    –  C2    –  units/u0963/u0963_test.cc:10:9: error: ‘LinearSolverOrderingType’ does not name a type
+  u0965 compile_fail  C1    –  C2    –  units/u0965/u0965_test.cc:9:14: error: ‘void ceres::internal::ThreadPool::Stop()’ is private within this conte
+  u0964 compile_fail  C1    –  C2    –  units/u0964/u0964_test.cc:8:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolve
+  u0966 compile_fail  C1    –  C2    –  units/u0966/u0966_test.cc:8:24: error: ‘void ceres::internal::TripletSparseMatrix::AllocateMemory()’ is privat
+  u0967 compile_fail  C1    –  C2    –  units/u0967/u0967_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0968 compile_fail  C1    –  C2    –  units/u0968/u0968_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u0970 compile_fail  C1    –  C2    –  units/u0970/u0970_test.cc:9:24: error: ‘void ceres::internal::ThreadPool::ThreadMainLoop()’ is private within 
+  u0969 compile_fail  C1    –  C2    –  units/u0969/u0969_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+  u0971 compile_fail  C1    –  C2    –  units/u0971/u0971_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u0972 compile_fail  C1    –  C2    –  units/u0972/u0972_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::Dogl
+  u0973 compile_fail  C1    –  C2    –  units/u0973/u0973_test.cc:10:3: error: ‘Minimizer’ has not been declared
+  u0974 compile_fail  C1    –  C2    –  units/u0974/u0974_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+  u0975 compile_fail  C1    –  C2    –  units/u0975/u0975_test.cc:9:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Dynamic
+  u0976 compile_fail  C1    –  C2    –  units/u0976/u0976_test.cc:9:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Dynamic
+  u0977 compile_fail  C1    –  C2    –  units/u0977/u0977_test.cc:7:38: error: class template argument deduction failed:
+  u0978 compile_fail  C1    –  C2    –  units/u0978/u0978_test.cc:7:38: error: class template argument deduction failed:
+  u0979 compile_fail  C1    –  C2    –  units/u0979/u0979_test.cc:7:38: error: class template argument deduction failed:
+  u0980 compile_fail  C1    –  C2    –  units/u0980/u0980_test.cc:7:38: error: class template argument deduction failed:
+  u0981 compile_fail  C1    –  C2    –  units/u0981/u0981_test.cc:7:40: error: qualified-id in declaration before ‘object’
+  u0982 compile_fail  C1    –  C2    –  units/u0982/u0982_test.cc:8:3: error: ‘SizedCostFunction’ was not declared in this scope; did you mean ‘ceres:
+  u0983 compile_fail  C1    –  C2    –  units/u0983/u0983_test.cc:7:32: error: class template argument deduction failed:
+  u0984 compile_fail  C1    –  C2    –  units/u0984/u0984_test.cc:8:47: error: class template argument deduction failed:
+  u0985 compile_fail  C1    –  C2    –  units/u0985/u0985_test.cc:8:47: error: class template argument deduction failed:
+  u0987 compile_fail  C1    –  C2    –  units/u0987/u0987_test.cc:8:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPrecon
+  u0986 ok            C1 100%  C2    –
+  u0988 compile_fail  C1    –  C2    –  units/u0988/u0988_test.cc:8:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPrecon
+  u0989 compile_fail  C1    –  C2    –  units/u0989/u0989_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u0990 compile_fail  C1    –  C2    –  units/u0990/u0990_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u0991 compile_fail  C1    –  C2    –  units/u0991/u0991_test.cc:8:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSpa
+  u0993 compile_fail  C1    –  C2    –  units/u0993/u0993_test.cc:8:3: error: ‘ceres_create_huber_loss_function_data’ was not declared in this scope
+  u0992 compile_fail  C1    –  C2    –  units/u0992/u0992_test.cc:8:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSpa
+  u0994 compile_fail  C1    –  C2    –  units/u0994/u0994_test.cc:8:3: error: ‘ceres_create_softl1_loss_function_data’ was not declared in this scope
+  u0995 compile_fail  C1    –  C2    –  units/u0995/u0995_test.cc:8:3: error: ‘ceres_create_cauchy_loss_function_data’ was not declared in this scope
+  u0996 compile_fail  C1    –  C2    –  units/u0996/u0996_test.cc:8:3: error: ‘ceres_create_arctan_loss_function_data’ was not declared in this scope
+  u0997 compile_fail  C1    –  C2    –  units/u0997/u0997_test.cc:9:3: error: ‘ceres_create_tolerant_loss_function_data’ was not declared in this scop
+  u0998 compile_fail  C1    –  C2    –  units/u0998/u0998_test.cc:7:48: error: no matching function for call to ‘ceres::internal::ScopedExecutionTimer
+  u0999 compile_fail  C1    –  C2    –  units/u0999/u0999_test.cc:7:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvalu
+  u1000 compile_fail  C1    –  C2    –  units/u1000/u1000_test.cc:7:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvalu
+  u1001 compile_fail  C1    –  C2    –  units/u1001/u1001_test.cc:7:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvalu
+  u1002 compile_fail  C1    –  C2    –  units/u1002/u1002_test.cc:8:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvalu
+  u1003 compile_fail  C1    –  C2    –  units/u1003/u1003_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u1004 compile_fail  C1    –  C2    –  units/u1004/u1004_test.cc:7:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtSt
+  u1005 compile_fail  C1    –  C2    –  units/u1005/u1005_test.cc:10:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction:
+  u1006 compile_fail  C1    –  C2    –  units/u1006/u1006_test.cc:10:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction:
+  u1007 compile_fail  C1    –  C2    –  units/u1007/u1007_test.cc:10:20: error: ‘LBFGS’ is not a member of ‘ceres::internal’; did you mean ‘ceres::LBF
+  u1008 compile_fail  C1    –  C2    –  units/u1008/u1008_test.cc:8:45: error: class template argument deduction failed:
+  u1009 compile_fail  C1    –  C2    –  units/u1009/u1009_test.cc:7:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessia
+  u1010 ok            C1 100%  C2    –
+  u1011 ok            C1 100%  C2    –
+  u1012 ok            C1 100%  C2    –
+  u1013 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u1014 compile_fail  C1    –  C2    –  units/u1014/u1014_test.cc:8:49: error: class template argument deduction failed:
+  u1015 compile_fail  C1    –  C2    –  units/u1015/u1015_test.cc:8:49: error: class template argument deduction failed:
+  u1016 compile_fail  C1    –  C2    –  units/u1016/u1016_test.cc:8:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansion
+  u1019 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1017 ok            C1 100%  C2    –
+  u1020 compile_fail  C1    –  C2    –  units/u1020/u1020_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u1018 ok            C1 100%  C2    –
+  u1021 compile_fail  C1    –  C2    –  units/u1021/u1021_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u1022 compile_fail  C1    –  C2    –  units/u1022/u1022_test.cc:7:45: error: no matching function for call to ‘ceres::internal::ScopedThreadToken::S
+  u1023 ok            C1  57%  C2    –
+  u1025 compile_fail  C1    –  C2    –  units/u1025/u1025_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?
+  u1024 ok            C1 100%  C2    –
+  u1026 compile_fail  C1    –  C2    –  units/u1026/u1026_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?
+  u1027 compile_fail  C1    –  C2    –  units/u1027/u1027_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?
+  u1029 compile_fail  C1    –  C2    –  units/u1029/u1029_test.cc:7:31: error: class template argument deduction failed:
+  u1028 compile_fail  C1    –  C2    –  units/u1028/u1028_test.cc:7:40: error: qualified-id in declaration before ‘object’
+  u1030 compile_fail  C1    –  C2    –  units/u1030/u1030_test.cc:7:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘co
+  u1031 compile_fail  C1    –  C2    –  units/u1031/u1031_test.cc:7:43: error: class template argument deduction failed:
+  u1032 compile_fail  C1    –  C2    –  units/u1032/u1032_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u1033 compile_fail  C1    –  C2    –  units/u1033/u1033_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u1034 compile_fail  C1    –  C2    –  units/u1034/u1034_test.cc:7:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1035 ok            C1  62%  C2    –
+  u1036 ok            C1  71%  C2    –
+  u1037 ok            C1  71%  C2    –
+  u1038 ok            C1  71%  C2    –
+  u1039 ok            C1  71%  C2    –
+  u1040 ok            C1  71%  C2    –
+  u1041 ok            C1  71%  C2    –
+  u1043 ok            C1  60%  C2  50%
+  u1042 ok            C1  71%  C2    –
+  u1044 ok            C1  75%  C2  50%
+  u1045 ok            C1  80%  C2    –
+  u1046 ok            C1  80%  C2    –
+  u1047 compile_fail  C1    –  C2    –  units/u1047/u1047_test.cc:7:9: error: ‘T’ does not name a type
+  u1048 compile_fail  C1    –  C2    –  units/u1048/u1048_test.cc:7:43: error: class template argument deduction failed:
+  u1049 compile_fail  C1    –  C2    –  units/u1049/u1049_test.cc:8:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProbl
+  u1050 compile_fail  C1    –  C2    –  units/u1050/u1050_test.cc:7:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u1051 compile_fail  C1    –  C2    –  units/u1051/u1051_test.cc:7:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u1052 compile_fail  C1    –  C2    –  units/u1052/u1052_test.cc:8:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brac
+  u1053 compile_fail  C1    –  C2    –  units/u1053/u1053_test.cc:7:31: error: class template argument deduction failed:
+  u1054 compile_fail  C1    –  C2    –  units/u1054/u1054_test.cc:7:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u1055 compile_fail  C1    –  C2    –  units/u1055/u1055_test.cc:7:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u1056 compile_fail  C1    –  C2    –  units/u1056/u1056_test.cc:8:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u1057 compile_fail  C1    –  C2    –  units/u1057/u1057_test.cc:8:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::Condi
+  u1059 compile_fail  C1    –  C2    –  units/u1059/u1059_test.cc:10:40: error: no matching function for call to ‘MatrixVectorMultiply(std::nullptr_t,
+  u1058 compile_fail  C1    –  C2    –  units/u1058/u1058_test.cc:9:48: error: class template argument deduction failed:
+  u1060 compile_fail  C1    –  C2    –  units/u1060/u1060_test.cc:10:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::n
+  u1061 compile_fail  C1    –  C2    –  units/u1061/u1061_test.cc:8:16: error: extended character – is not valid in an identifier
+  u1062 compile_fail  C1    –  C2    –  units/u1062/u1062_test.cc:8:16: error: extended character – is not valid in an identifier
+  u1063 compile_fail  C1    –  C2    –  units/u1063/u1063_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u1064 compile_fail  C1    –  C2    –  units/u1064/u1064_test.cc:7:40: error: qualified-id in declaration before ‘object’
+  u1065 compile_fail  C1    –  C2    –  units/u1065/u1065_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+  u1066 compile_fail  C1    –  C2    –  units/u1066/u1066_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1067 compile_fail  C1    –  C2    –  units/u1067/u1067_test.cc:9:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEv
+  u1068 compile_fail  C1    –  C2    –  units/u1068/u1068_test.cc:8:33: error: class template argument deduction failed:
+  u1069 compile_fail  C1    –  C2    –  units/u1069/u1069_test.cc:8:33: error: class template argument deduction failed:
+  u1070 compile_fail  C1    –  C2    –  units/u1070/u1070_test.cc:7:56: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDen
+  u1071 compile_fail  C1    –  C2    –  units/u1071/u1071_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u1072 compile_fail  C1    –  C2    –  units/u1072/u1072_test.cc:9:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u1073 compile_fail  C1    –  C2    –  units/u1073/u1073_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u1074 compile_fail  C1    –  C2    –  units/u1074/u1074_test.cc:7:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::D
+  u1075 compile_fail  C1    –  C2    –  units/u1075/u1075_test.cc:7:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::D
+  u1077 compile_fail  C1    –  C2    –  units/u1077/u1077_test.cc:8:48: error: no matching function for call to ‘ceres::internal::ScopedExecutionTimer
+  u1076 compile_fail  C1    –  C2    –  units/u1076/u1076_test.cc:7:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::D
+  u1078 compile_fail  C1    –  C2    –  units/u1078/u1078_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1080 compile_fail  C1    –  C2    –  units/u1080/u1080_test.cc:7:61: error: no matching function for call to ‘ceres::internal::SparseMatrixPrecondi
+  u1079 compile_fail  C1    –  C2    –  units/u1079/u1079_test.cc:10:49: error: class template argument deduction failed:
+  u1081 compile_fail  C1    –  C2    –  units/u1081/u1081_test.cc:9:22: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::
+  u1082 compile_fail  C1    –  C2    –  units/u1082/u1082_test.cc:8:45: error: no matching function for call to ‘ceres::internal::ScopedThreadToken::S
+  u1083 ok            C1  50%  C2    –
+  u1084 ok            C1  60%  C2    –
+  u1085 compile_fail  C1    –  C2    –  units/u1085/u1085_test.cc:11:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDi
+  u1086 compile_fail  C1    –  C2    –  units/u1086/u1086_test.cc:10:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSp
+  u1087 compile_fail  C1    –  C2    –  units/u1087/u1087_test.cc:9:49: error: no matching function for call to ‘ceres::internal::DenseIterativeRefine
+  u1088 compile_fail  C1    –  C2    –  units/u1088/u1088_test.cc:10:49: error: class template argument deduction failed:
+  u1090 compile_fail  C1    –  C2    –  units/u1090/u1090_test.cc:9:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDia
+  u1091 compile_fail  C1    –  C2    –  units/u1091/u1091_test.cc:8:3: error: ‘LineSearchMinimizer’ has not been declared
+  u1093 compile_fail  C1    –  C2    –  units/u1093/u1093_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1089 ok            C1  50%  C2    –
+  u1092 compile_fail  C1    –  C2    –  units/u1092/u1092_test.cc:11:49: error: class template argument deduction failed:
+  u1094 compile_fail  C1    –  C2    –  units/u1094/u1094_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1095 compile_fail  C1    –  C2    –  units/u1095/u1095_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1096 compile_fail  C1    –  C2    –  units/u1096/u1096_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1097 compile_fail  C1    –  C2    –  units/u1097/u1097_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1098 compile_fail  C1    –  C2    –  units/u1098/u1098_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1099 compile_fail  C1    –  C2    –  units/u1099/u1099_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1100 compile_fail  C1    –  C2    –  units/u1100/u1100_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1101 compile_fail  C1    –  C2    –  units/u1101/u1101_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1102 compile_fail  C1    –  C2    –  units/u1102/u1102_test.cc:7:15: error: ‘T’ was not declared in this scope
+  u1103 compile_fail  C1    –  C2    –  units/u1103/u1103_test.cc:9:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSpa
+  u1105 compile_fail  C1    –  C2    –  units/u1105/u1105_test.cc:8:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::
+  u1104 compile_fail  C1    –  C2    –  units/u1104/u1104_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you me
+  u1106 compile_fail  C1    –  C2    –  units/u1106/u1106_test.cc:10:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRo
+  u1107 compile_fail  C1    –  C2    –  units/u1107/u1107_test.cc:8:3: error: ‘Matrix’ was not declared in this scope
+  u1108 compile_fail  C1    –  C2    –  units/u1108/u1108_test.cc:9:49: error: class template argument deduction failed:
+  u1110 compile_fail  C1    –  C2    –  units/u1110/u1110_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1111 compile_fail  C1    –  C2    –  units/u1111/u1111_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1112 compile_fail  C1    –  C2    –  units/u1112/u1112_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1113 compile_fail  C1    –  C2    –  units/u1113/u1113_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1114 compile_fail  C1    –  C2    –  units/u1114/u1114_test.cc:11:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRo
+  u1109 compile_fail  C1    –  C2    –  units/u1109/u1109_test.cc:10:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1115 compile_fail  C1    –  C2    –  units/u1115/u1115_test.cc:11:49: error: class template argument deduction failed:
+  u1118 compile_fail  C1    –  C2    –  units/u1118/u1118_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1116 compile_fail  C1    –  C2    –  units/u1116/u1116_test.cc:10:49: error: class template argument deduction failed:
+  u1117 compile_fail  C1    –  C2    –  units/u1117/u1117_test.cc:12:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1120 compile_fail  C1    –  C2    –  units/u1120/u1120_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1119 compile_fail  C1    –  C2    –  units/u1119/u1119_test.cc:9:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRow
+  u1121 compile_fail  C1    –  C2    –  units/u1121/u1121_test.cc:9:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::
+  u1122 compile_fail  C1    –  C2    –  units/u1122/u1122_test.cc:11:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction:
+  u1124 compile_fail  C1    –  C2    –  units/u1124/u1124_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1125 compile_fail  C1    –  C2    –  units/u1125/u1125_test.cc:7:3: error: ‘ceres’ has not been declared
+  u1126 compile_fail  C1    –  C2    –  units/u1126/u1126_test.cc:8:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did yo
+  u1127 compile_fail  C1    –  C2    –  units/u1127/u1127_test.cc:10:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘cere
+  u1128 compile_fail  C1    –  C2    –  units/u1128/u1128_test.cc:7:3: error: ‘Function’ was not declared in this scope; did you mean ‘union’?
+  u1123 compile_fail  C1    –  C2    –  units/u1123/u1123_test.cc:11:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1129 compile_fail  C1    –  C2    –  units/u1129/u1129_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+  u1130 compile_fail  C1    –  C2    –  units/u1130/u1130_test.cc:10:45: error: class template argument deduction failed:
+  u1131 compile_fail  C1    –  C2    –  units/u1131/u1131_test.cc:9:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous
+  u1132 compile_fail  C1    –  C2    –  units/u1132/u1132_test.cc:10:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplemen
+  u1133 compile_fail  C1    –  C2    –  units/u1133/u1133_test.cc:9:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you me
+  u1134 compile_fail  C1    –  C2    –  units/u1134/u1134_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1135 compile_fail  C1    –  C2    –  units/u1135/u1135_test.cc:12:3: error: ‘Chunk’ was not declared in this scope
+  u1136 compile_fail  C1    –  C2    –  units/u1136/u1136_test.cc:12:3: error: ‘Matrix’ was not declared in this scope
+  u1137 compile_fail  C1    –  C2    –  units/u1137/u1137_test.cc:8:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ce
+  u1138 compile_fail  C1    –  C2    –  units/u1138/u1138_test.cc:9:3: error: ‘SparseLinearAlgebraLibraryType’ was not declared in this scope; did you
+  u1139 compile_fail  C1    –  C2    –  units/u1139/u1139_test.cc:13:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1140 compile_fail  C1    –  C2    –  units/u1140/u1140_test.cc:12:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1141 compile_fail  C1    –  C2    –  units/u1141/u1141_test.cc:10:55: error: no matching function for call to ‘ceres::internal::SparseSchurCompleme
+  u1143 compile_fail  C1    –  C2    –  units/u1143/u1143_test.cc:10:3: error: ‘Preconditioner’ has not been declared
+  u1142 compile_fail  C1    –  C2    –  units/u1142/u1142_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1144 compile_fail  C1    –  C2    –  units/u1144/u1144_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1145 compile_fail  C1    –  C2    –  units/u1145/u1145_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1146 compile_fail  C1    –  C2    –  units/u1146/u1146_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1147 compile_fail  C1    –  C2    –  units/u1147/u1147_test.cc:7:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres:
+  u1149 compile_fail  C1    –  C2    –  units/u1149/u1149_test.cc:11:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRo
+  u1148 ok            C1 100%  C2    –
+  u1150 compile_fail  C1    –  C2    –  units/u1150/u1150_test.cc:9:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres:
+  u1152 compile_fail  C1    –  C2    –  units/u1152/u1152_test.cc:7:3: error: ‘LineSearch’ has not been declared
+  u1151 compile_fail  C1    –  C2    –  units/u1151/u1151_test.cc:7:3: error: ‘LineSearch’ has not been declared
+  u1153 compile_fail  C1    –  C2    –  units/u1153/u1153_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u1154 compile_fail  C1    –  C2    –  units/u1154/u1154_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u1155 ok            C1 100%  C2    –
+  u1156 ok            C1  67%  C2    –
+  u1158 compile_fail  C1    –  C2    –  units/u1158/u1158_test.cc:9:9: error: ‘ResidualBlockId’ does not name a type
+  u1157 ok            C1 100%  C2    –
+  u1159 compile_fail  C1    –  C2    –  units/u1159/u1159_test.cc:9:9: error: ‘ResidualBlockId’ does not name a type
+  u1160 compile_fail  C1    –  C2    –  units/u1160/u1160_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1161 compile_fail  C1    –  C2    –  units/u1161/u1161_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1162 compile_fail  C1    –  C2    –  units/u1162/u1162_test.cc:9:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::inte
+  u1163 compile_fail  C1    –  C2    –  units/u1163/u1163_test.cc:10:49: error: class template argument deduction failed:
+  u1165 compile_fail  C1    –  C2    –  units/u1165/u1165_test.cc:11:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resi
+  u1166 ok            C1  83%  C2  50%
+  u1167 compile_fail  C1    –  C2    –  units/u1167/u1167_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1164 ok            C1  71%  C2    –
+  u1168 ok            C1  56%  C2  50%
+  u1169 compile_fail  C1    –  C2    –  units/u1169/u1169_test.cc:10:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparse
+  u1170 compile_fail  C1    –  C2    –  units/u1170/u1170_test.cc:8:20: error: ‘EigenSparseCholeskyTemplate’ is not a member of ‘ceres::internal’; did
+  u1171 compile_fail  C1    –  C2    –  units/u1171/u1171_test.cc:7:9: error: ‘LineSearchType’ does not name a type
+  u1172 ok            C1 100%  C2 100%
+  u1173 ok            C1 100%  C2 100%
+  u1174 ok            C1 100%  C2 100%
+  u1175 compile_fail  C1    –  C2    –  units/u1175/u1175_test.cc:9:49: error: class template argument deduction failed:
+  u1178 compile_fail  C1    –  C2    –  units/u1178/u1178_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1177 ok            C1  40%  C2   0%
+  u1179 compile_fail  C1    –  C2    –  units/u1179/u1179_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1180 compile_fail  C1    –  C2    –  units/u1180/u1180_test.cc:8:15: error: ‘Block’ was not declared in this scope
+  u1181 compile_fail  C1    –  C2    –  units/u1181/u1181_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u1182 compile_fail  C1    –  C2    –  units/u1182/u1182_test.cc:8:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u1183 compile_fail  C1    –  C2    –  units/u1183/u1183_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+  u1184 compile_fail  C1    –  C2    –  units/u1184/u1184_test.cc:9:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres:
+  u1176 ok            C1  33%  C2  25%
+  u1185 ok            C1 100%  C2 100%
+  u1186 ok            C1 100%  C2 100%
+  u1187 ok            C1 100%  C2 100%
+  u1189 compile_fail  C1    –  C2    –  units/u1189/u1189_test.cc:9:3: error: ‘Preconditioner’ has not been declared
+  u1188 ok            C1   0%  C2    –
+  u1190 compile_fail  C1    –  C2    –  units/u1190/u1190_test.cc:10:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::
+  u1191 compile_fail  C1    –  C2    –  units/u1191/u1191_test.cc:10:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::
+  u1192 compile_fail  C1    –  C2    –  units/u1192/u1192_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1193 compile_fail  C1    –  C2    –  units/u1193/u1193_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1194 compile_fail  C1    –  C2    –  units/u1194/u1194_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u1195 compile_fail  C1    –  C2    –  units/u1195/u1195_test.cc:7:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::
+  u1196 compile_fail  C1    –  C2    –  units/u1196/u1196_test.cc:11:49: error: class template argument deduction failed:
+  u1197 compile_fail  C1    –  C2    –  units/u1197/u1197_test.cc:10:49: error: class template argument deduction failed:
+  u1198 ok            C1   0%  C2    –
+  u1199 compile_fail  C1    –  C2    –  units/u1199/u1199_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1200 compile_fail  C1    –  C2    –  units/u1200/u1200_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1202 compile_fail  C1    –  C2    –  units/u1202/u1202_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductCompute
+  u1201 link_fail     C1    –  C2    –  /usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o): in function `std::__d
+  u1203 compile_fail  C1    –  C2    –  units/u1203/u1203_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+  u1205 compile_fail  C1    –  C2    –  units/u1205/u1205_test.cc:8:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownersh
+  u1204 compile_fail  C1    –  C2    –  units/u1204/u1204_test.cc:11:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::
+  u1206 compile_fail  C1    –  C2    –  units/u1206/u1206_test.cc:8:3: error: ‘CostFunction’ was not declared in this scope; did you mean ‘ceres::Cost
+  u1207 compile_fail  C1    –  C2    –  units/u1207/u1207_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1208 compile_fail  C1    –  C2    –  units/u1208/u1208_test.cc:8:15: error: ‘Block’ was not declared in this scope
+  u1209 compile_fail  C1    –  C2    –  units/u1209/u1209_test.cc:11:3: error: ‘F’ was not declared in this scope
+  u1210 compile_fail  C1    –  C2    –  units/u1210/u1210_test.cc:9:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ce
+  u1211 compile_fail  C1    –  C2    –  units/u1211/u1211_test.cc:8:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres:
+  u1212 compile_fail  C1    –  C2    –  units/u1212/u1212_test.cc:11:3: error: ‘LinearSolver’ has not been declared
+  u1213 compile_fail  C1    –  C2    –  units/u1213/u1213_test.cc:11:15: error: ‘Block’ was not declared in this scope
+  u1214 compile_fail  C1    –  C2    –  units/u1214/u1214_test.cc:7:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean
+  u1215 compile_fail  C1    –  C2    –  units/u1215/u1215_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u1216 compile_fail  C1    –  C2    –  units/u1216/u1216_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u1217 compile_fail  C1    –  C2    –  units/u1217/u1217_test.cc:13:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cov
+  u1218 compile_fail  C1    –  C2    –  units/u1218/u1218_test.cc:8:3: error: ‘BlockSparseMatrix’ has not been declared
+  u1219 compile_fail  C1    –  C2    –  units/u1219/u1219_test.cc:10:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+  u1220 compile_fail  C1    –  C2    –  units/u1220/u1220_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+  u1221 compile_fail  C1    –  C2    –  units/u1221/u1221_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you m
+  u1222 compile_fail  C1    –  C2    –  units/u1222/u1222_test.cc:9:20: error: expected unqualified-id before ‘(’ token
+  u1223 compile_fail  C1    –  C2    –  units/u1223/u1223_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you m
+  u1224 compile_fail  C1    –  C2    –  units/u1224/u1224_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+  u1225 compile_fail  C1    –  C2    –  units/u1225/u1225_test.cc:10:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComple
+  u1226 compile_fail  C1    –  C2    –  units/u1226/u1226_test.cc:12:49: error: class template argument deduction failed:
+  u1227 compile_fail  C1    –  C2    –  units/u1227/u1227_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+  u1228 compile_fail  C1    –  C2    –  units/u1228/u1228_test.cc:9:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1229 compile_fail  C1    –  C2    –  units/u1229/u1229_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+  u1230 compile_fail  C1    –  C2    –  units/u1230/u1230_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+  u1231 compile_fail  C1    –  C2    –  units/u1231/u1231_test.cc:9:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean
+  u1232 compile_fail  C1    –  C2    –  units/u1232/u1232_test.cc:11:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous
+  u1233 compile_fail  C1    –  C2    –  units/u1233/u1233_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+  u1234 compile_fail  C1    –  C2    –  units/u1234/u1234_test.cc:11:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobi
+  u1235 compile_fail  C1    –  C2    –  units/u1235/u1235_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+  u1236 compile_fail  C1    –  C2    –  units/u1236/u1236_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1237 compile_fail  C1    –  C2    –  units/u1237/u1237_test.cc:13:58: error: no matching function for call to ‘ceres::internal::IterativeSchurCompl
+  u1239 compile_fail  C1    –  C2    –  units/u1239/u1239_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?
+  u1238 compile_fail  C1    –  C2    –  units/u1238/u1238_test.cc:9:49: error: invalid initialization of reference of type ‘const std::vector<const ce
+  u1240 compile_fail  C1    –  C2    –  units/u1240/u1240_test.cc:7:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPre
+  u1241 compile_fail  C1    –  C2    –  units/u1241/u1241_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPre
+  u1242 compile_fail  C1    –  C2    –  units/u1242/u1242_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPre
+  u1243 compile_fail  C1    –  C2    –  units/u1243/u1243_test.cc:7:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPrecon
+  u1244 ok            C1 100%  C2    –
+  u1246 compile_fail  C1    –  C2    –  units/u1246/u1246_test.cc:7:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u1247 compile_fail  C1    –  C2    –  units/u1247/u1247_test.cc:7:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1248 ok            C1 100%  C2    –
+  u1249 ok            C1 100%  C2    –
+  u1250 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1251 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1245 ok            C1 100%  C2    –
+  u1252 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1253 compile_fail  C1    –  C2    –  units/u1253/u1253_test.cc:7:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u1254 compile_fail  C1    –  C2    –  units/u1254/u1254_test.cc:7:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPrecondit
+  u1255 compile_fail  C1    –  C2    –  units/u1255/u1255_test.cc:8:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPrecondit
+  u1258 compile_fail  C1    –  C2    –  units/u1258/u1258_test.cc:7:3: error: expected primary-expression before ‘)’ token
+  u1257 compile_fail  C1    –  C2    –  units/u1257/u1257_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreco
+  u1260 ok            C1  80%  C2    –
+  u1259 ok            C1  71%  C2    –
+  u1261 ok            C1  67%  C2    –
+  u1262 ok            C1  80%  C2    –
+  u1263 compile_fail  C1    –  C2    –  units/u1263/u1263_test.cc:8:47: error: class template argument deduction failed:
+  u1256 ok            C1 100%  C2    –
+  u1264 compile_fail  C1    –  C2    –  units/u1264/u1264_test.cc:7:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1266 compile_fail  C1    –  C2    –  units/u1266/u1266_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u1265 ok            C1  40%  C2    –
+  u1267 compile_fail  C1    –  C2    –  units/u1267/u1267_test.cc:10:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansio
+  u1268 ok            C1  46%  C2    –
+  u1269 ok            C1  92%  C2    –
+  u1271 ok            C1  25%  C2    –
+  u1272 compile_fail  C1    –  C2    –  units/u1272/u1272_test.cc:9:27: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleInvalidStep()’ is pr
+  u1273 compile_fail  C1    –  C2    –  units/u1273/u1273_test.cc:10:30: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleSuccessfulStep()’ i
+  u1270 ok            C1  82%  C2  38%
+  u1276 compile_fail  C1    –  C2    –  units/u1276/u1276_test.cc:10:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is priva
+  u1277 compile_fail  C1    –  C2    –  units/u1277/u1277_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreco
+  u1278 compile_fail  C1    –  C2    –  units/u1278/u1278_test.cc:8:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is
+  u1274 ok            C1  43%  C2  25%
+  u1275 ok            C1 100%  C2    –
+  u1279 compile_fail  C1    –  C2    –  units/u1279/u1279_test.cc:8:36: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverIterationsReached
+  u1280 compile_fail  C1    –  C2    –  units/u1280/u1280_test.cc:8:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReache
+  u1281 compile_fail  C1    –  C2    –  units/u1281/u1281_test.cc:8:35: error: ‘bool ceres::internal::TrustRegionMinimizer::ParameterToleranceReached(
+  u1282 compile_fail  C1    –  C2    –  units/u1282/u1282_test.cc:8:34: error: ‘bool ceres::internal::TrustRegionMinimizer::FunctionToleranceReached()
+  u1283 compile_fail  C1    –  C2    –  units/u1283/u1283_test.cc:8:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()
+  u1284 compile_fail  C1    –  C2    –  units/u1284/u1284_test.cc:7:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSpa
+  u1286 compile_fail  C1    –  C2    –  units/u1286/u1286_test.cc:8:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did yo
+  u1285 compile_fail  C1    –  C2    –  units/u1285/u1285_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+  u1287 compile_fail  C1    –  C2    –  units/u1287/u1287_test.cc:11:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobi
+  u1288 compile_fail  C1    –  C2    –  units/u1288/u1288_test.cc:9:9: error: ‘ResidualBlockId’ does not name a type
+  u1289 compile_fail  C1    –  C2    –  units/u1289/u1289_test.cc:9:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::int
+  u1291 compile_fail  C1    –  C2    –  units/u1291/u1291_test.cc:8:39: error: no matching function for call to ‘ceres::internal::EventLogger::EventLo
+  u1290 compile_fail  C1    –  C2    –  units/u1290/u1290_test.cc:7:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesk
+  u1292 compile_fail  C1    –  C2    –  units/u1292/u1292_test.cc:8:39: error: no matching function for call to ‘ceres::internal::EventLogger::EventLo
+  u1293 ok            C1  38%  C2  17%
+  u1294 compile_fail  C1    –  C2    –  units/u1294/u1294_test.cc:8:49: error: class template argument deduction failed:
+  u1295 compile_fail  C1    –  C2    –  units/u1295/u1295_test.cc:10:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’
+  u1296 compile_fail  C1    –  C2    –  units/u1296/u1296_test.cc:8:49: error: class template argument deduction failed:
+  u1298 compile_fail  C1    –  C2    –  units/u1298/u1298_test.cc:9:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::int
+  u1297 compile_fail  C1    –  C2    –  units/u1297/u1297_test.cc:11:3: error: ‘ProblemImpl’ has not been declared
+  u1300 compile_fail  C1    –  C2    –  units/u1300/u1300_test.cc:8:3: error: expected primary-expression before ‘)’ token
+  u1299 compile_fail  C1    –  C2    –  units/u1299/u1299_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you m
+  u1301 compile_fail  C1    –  C2    –  units/u1301/u1301_test.cc:12:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1303 compile_fail  C1    –  C2    –  units/u1303/u1303_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1304 compile_fail  C1    –  C2    –  units/u1304/u1304_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+  u1305 compile_fail  C1    –  C2    –  units/u1305/u1305_test.cc:9:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres
+  u1302 ok            C1  24%  C2    –
+  u1306 compile_fail  C1    –  C2    –  units/u1306/u1306_test.cc:9:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+  u1309 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1307 compile_fail  C1    –  C2    –  units/u1307/u1307_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u1308 compile_fail  C1    –  C2    –  units/u1308/u1308_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u1310 compile_fail  C1    –  C2    –  units/u1310/u1310_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1312 compile_fail  C1    –  C2    –  units/u1312/u1312_test.cc:12:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1311 compile_fail  C1    –  C2    –  units/u1311/u1311_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+  u1313 compile_fail  C1    –  C2    –  units/u1313/u1313_test.cc:12:3: error: ‘Chunk’ was not declared in this scope
+  u1314 compile_fail  C1    –  C2    –  units/u1314/u1314_test.cc:7:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::Dogl
+  u1315 compile_fail  C1    –  C2    –  units/u1315/u1315_test.cc:12:20: error: expected unqualified-id before ‘(’ token
+  u1316 compile_fail  C1    –  C2    –  units/u1316/u1316_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1317 compile_fail  C1    –  C2    –  units/u1317/u1317_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1318 compile_fail  C1    –  C2    –  units/u1318/u1318_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1319 compile_fail  C1    –  C2    –  units/u1319/u1319_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1322 compile_fail  C1    –  C2    –  units/u1322/u1322_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+  u1320 compile_fail  C1    –  C2    –  units/u1320/u1320_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1321 compile_fail  C1    –  C2    –  units/u1321/u1321_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘cere
+  u1323 compile_fail  C1    –  C2    –  units/u1323/u1323_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+  u1324 compile_fail  C1    –  C2    –  units/u1324/u1324_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1325 compile_fail  C1    –  C2    –  units/u1325/u1325_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1326 compile_fail  C1    –  C2    –  units/u1326/u1326_test.cc:11:9: error: no match for call to ‘(ceres::internal::DynamicCompressedRowJacobianFin
+  u1327 link_fail     C1    –  C2    –  /usr/bin/ld: /work/build-cov/gen/u1327/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi
+  u1328 compile_fail  C1    –  C2    –  /usr/include/c++/14/bits/unique_ptr.h:1076:30: error: no matching function for call to ‘ceres::internal::Parti
+  u1329 ok            C1  67%  C2    –
+  u1330 ok            C1  67%  C2    –
+  u1331 ok            C1 100%  C2    –
+  u1332 ok            C1  67%  C2    –
+  u1333 ok            C1  67%  C2    –
+  u1334 ok            C1 100%  C2    –
+  u1335 ok            C1 100%  C2    –
+  u1336 ok            C1 100%  C2    –
+  u1337 ok            C1 100%  C2    –
+  u1338 ok            C1 100%  C2    –
+  u1341 compile_fail  C1    –  C2    –  units/u1341/u1341_test.cc:8:9: error: ‘ResidualBlockId’ does not name a type
+  u1339 ok            C1 100%  C2    –
+  u1340 ok            C1  67%  C2    –
+  u1342 compile_fail  C1    –  C2    –  units/u1342/u1342_test.cc:8:9: error: ‘ResidualBlockId’ does not name a type
+  u1344 compile_fail  C1    –  C2    –  units/u1344/u1344_test.cc:9:3: error: ‘Problem’ has not been declared
+  u1345 compile_fail  C1    –  C2    –  units/u1345/u1345_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1343 ok            C1 100%  C2    –
+  u1346 compile_fail  C1    –  C2    –  units/u1346/u1346_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1347 compile_fail  C1    –  C2    –  units/u1347/u1347_test.cc:10:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal:
+  u1348 compile_fail  C1    –  C2    –  units/u1348/u1348_test.cc:11:15: error: ‘Block’ was not declared in this scope
+  u1350 compile_fail  C1    –  C2    –  units/u1350/u1350_test.cc:10:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSea
+  u1349 compile_fail  C1    –  C2    –  units/u1349/u1349_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1351 compile_fail  C1    –  C2    –  units/u1351/u1351_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1352 compile_fail  C1    –  C2    –  units/u1352/u1352_test.cc:11:3: error: ‘Preconditioner’ has not been declared
+  u1353 compile_fail  C1    –  C2    –  units/u1353/u1353_test.cc:11:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobi
+  u1355 compile_fail  C1    –  C2    –  units/u1355/u1355_test.cc:10:3: error: ‘EvaluateOptions’ was not declared in this scope
+  u1354 compile_fail  C1    –  C2    –  internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+  u1356 compile_fail  C1    –  C2    –  units/u1356/u1356_test.cc:9:49: error: class template argument deduction failed:
+  u1357 compile_fail  C1    –  C2    –  units/u1357/u1357_test.cc:9:49: error: class template argument deduction failed:
+  u1359 compile_fail  C1    –  C2    –  units/u1359/u1359_test.cc:12:27: error: expected primary-expression before ‘int’
+  u1360 ok            C1  67%  C2  25%
+  u1361 compile_fail  C1    –  C2    –  units/u1361/u1361_test.cc:12:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘cere
+  u1363 compile_fail  C1    –  C2    –  units/u1363/u1363_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1362 ok            C1 100%  C2 100%
+  u1365 compile_fail  C1    –  C2    –  units/u1365/u1365_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseM
+  u1358 ok            C1  14%  C2   0%
+  u1364 ok            C1  38%  C2    –
+  u1366 compile_fail  C1    –  C2    –  units/u1366/u1366_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1367 compile_fail  C1    –  C2    –  units/u1367/u1367_test.cc:9:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres:
+  u1368 compile_fail  C1    –  C2    –  units/u1368/u1368_test.cc:12:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter
+  u1369 compile_fail  C1    –  C2    –  units/u1369/u1369_test.cc:8:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type
+  u1370 compile_fail  C1    –  C2    –  units/u1370/u1370_test.cc:9:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+  u1371 compile_fail  C1    –  C2    –  units/u1371/u1371_test.cc:10:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres
+  u1372 compile_fail  C1    –  C2    –  units/u1372/u1372_test.cc:12:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres
+  u1374 compile_fail  C1    –  C2    –  units/u1374/u1374_test.cc:11:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres
+  u1373 compile_fail  C1    –  C2    –  units/u1373/u1373_test.cc:9:9: error: ‘LinearSolverOrderingType’ does not name a type
+  u1375 compile_fail  C1    –  C2    –  units/u1375/u1375_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+  u1377 compile_fail  C1    –  C2    –  units/u1377/u1377_test.cc:11:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’
+  u1376 compile_fail  C1    –  C2    –  units/u1376/u1376_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+  u1378 compile_fail  C1    –  C2    –  units/u1378/u1378_test.cc:13:3: error: ‘LinearSolver’ has not been declared
+  u1379 compile_fail  C1    –  C2    –  units/u1379/u1379_test.cc:9:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+  u1380 compile_fail  C1    –  C2    –  units/u1380/u1380_test.cc:8:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cova
+  u1383 compile_fail  C1    –  C2    –  units/u1383/u1383_test.cc:9:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter:
+  u1382 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1384 compile_fail  C1    –  C2    –  units/u1384/u1384_test.cc:7:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1381 ok            C1 100%  C2    –
+  u1385 ok            C1  57%  C2    –
+  u1386 ok            C1  78%  C2    –
+  u1387 ok            C1  50%  C2  25%
+  u1389 compile_fail  C1    –  C2    –  units/u1389/u1389_test.cc:7:39: error: no matching function for call to ‘ceres::internal::EventLogger::EventLo
+  u1388 ok            C1  50%  C2  25%
+  u1390 ok            C1  30%  C2    –
+  u1391 ok            C1  22%  C2  12%
+  u1393 compile_fail  C1    –  C2    –  units/u1393/u1393_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+  u1394 compile_fail  C1    –  C2    –  units/u1394/u1394_test.cc:9:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckI
+  u1395 compile_fail  C1    –  C2    –  units/u1395/u1395_test.cc:7:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::Dogl
+  u1396 compile_fail  C1    –  C2    –  units/u1396/u1396_test.cc:8:19: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = ch
+  u1398 compile_fail  C1    –  C2    –  units/u1398/u1398_test.cc:8:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal:
+  u1397 compile_fail  C1    –  C2    –  units/u1397/u1397_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1399 compile_fail  C1    –  C2    –  units/u1399/u1399_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal:
+  u1400 compile_fail  C1    –  C2    –  units/u1400/u1400_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u1392 ok            C1  60%  C2  39%
+  u1401 compile_fail  C1    –  C2    –  units/u1401/u1401_test.cc:10:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1402 compile_fail  C1    –  C2    –  units/u1402/u1402_test.cc:12:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1404 compile_fail  C1    –  C2    –  units/u1404/u1404_test.cc:8:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::i
+  u1403 ok            C1  17%  C2    –
+  u1405 compile_fail  C1    –  C2    –  units/u1405/u1405_test.cc:12:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal
+  u1406 compile_fail  C1    –  C2    –  units/u1406/u1406_test.cc:13:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘c
+  u1408 compile_fail  C1    –  C2    –  units/u1408/u1408_test.cc:9:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::int
+  u1407 ok            C1  20%  C2    –
+  u1409 ok            C1   8%  C2    –
+  u1410 ok            C1   9%  C2   0%
+  u1411 compile_fail  C1    –  C2    –  units/u1411/u1411_test.cc:9:3: error: ‘internal’ has not been declared
+  u1412 compile_fail  C1    –  C2    –  units/u1412/u1412_test.cc:9:3: error: ‘internal’ has not been declared
+  u1413 compile_fail  C1    –  C2    –  units/u1413/u1413_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1414 compile_fail  C1    –  C2    –  units/u1414/u1414_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1415 compile_fail  C1    –  C2    –  units/u1415/u1415_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1416 compile_fail  C1    –  C2    –  units/u1416/u1416_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1418 compile_fail  C1    –  C2    –  units/u1418/u1418_test.cc:10:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPrec
+  u1417 compile_fail  C1    –  C2    –  units/u1417/u1417_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1421 ok            C1 100%  C2    –
+  u1419 compile_fail  C1    –  C2    –  units/u1419/u1419_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1420 compile_fail  C1    –  C2    –  units/u1420/u1420_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1422 compile_fail  C1    –  C2    –  internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+  u1423 compile_fail  C1    –  C2    –  units/u1423/u1423_test.cc:9:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRow
+  u1424 compile_fail  C1    –  C2    –  units/u1424/u1424_test.cc:9:49: error: class template argument deduction failed:
+  u1425 compile_fail  C1    –  C2    –  units/u1425/u1425_test.cc:9:49: error: class template argument deduction failed:
+  u1427 compile_fail  C1    –  C2    –  units/u1427/u1427_test.cc:8:3: error: ‘Problem’ has not been declared
+  u1426 ok            C1 100%  C2    –
+  u1428 ok            C1 100%  C2    –
+  u1429 ok            C1 100%  C2    –
+  u1431 compile_fail  C1    –  C2    –  units/u1431/u1431_test.cc:7:9: error: ‘ResidualBlockId’ does not name a type
+  u1430 ok            C1 100%  C2    –
+  u1433 ok            C1   0%  C2    –
+  u1432 ok            C1  67%  C2    –
+  u1435 compile_fail  C1    –  C2    –  units/u1435/u1435_test.cc:9:3: error: ‘Evaluator’ has not been declared
+  u1434 ok            C1  67%  C2    –
+  u1436 compile_fail  C1    –  C2    –  units/u1436/u1436_test.cc:10:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::Par
+  u1437 compile_fail  C1    –  C2    –  units/u1437/u1437_test.cc:14:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobi
+  u1438 compile_fail  C1    –  C2    –  units/u1438/u1438_test.cc:9:3: error: ‘DumpFormatType’ was not declared in this scope; did you mean ‘ceres::Du
+  u1440 compile_fail  C1    –  C2    –  units/u1440/u1440_test.cc:15:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRo
+  u1441 compile_fail  C1    –  C2    –  units/u1441/u1441_test.cc:14:3: error: ‘LinearSolver’ has not been declared
+  u1439 ok            C1  25%  C2  17%
+  u1442 compile_fail  C1    –  C2    –  units/u1442/u1442_test.cc:11:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+  u1443 compile_fail  C1    –  C2    –  units/u1443/u1443_test.cc:13:3: error: ‘LinearSolver’ has not been declared
+  u1444 compile_fail  C1    –  C2    –  units/u1444/u1444_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::B
+  u1445 compile_fail  C1    –  C2    –  units/u1445/u1445_test.cc:11:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobi
+  u1446 compile_fail  C1    –  C2    –  units/u1446/u1446_test.cc:13:3: error: ‘CovarianceBlocks’ was not declared in this scope
+  u1447 compile_fail  C1    –  C2    –  units/u1447/u1447_test.cc:14:3: error: ‘Minimizer’ has not been declared
+  u1448 compile_fail  C1    –  C2    –  units/u1448/u1448_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+  u1449 compile_fail  C1    –  C2    –  units/u1449/u1449_test.cc:11:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘cere
+  u1450 compile_fail  C1    –  C2    –  units/u1450/u1450_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+  u1451 compile_fail  C1    –  C2    –  units/u1451/u1451_test.cc:10:29: error: ‘void ceres::internal::ProblemImpl::InternalSetManifold(double*, ceres
+  u1452 compile_fail  C1    –  C2    –  units/u1452/u1452_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+  u1453 compile_fail  C1    –  C2    –  units/u1453/u1453_test.cc:12:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean
+  u1454 compile_fail  C1    –  C2    –  units/u1454/u1454_test.cc:12:3: error: ‘LinearSolver’ has not been declared
+  u1455 compile_fail  C1    –  C2    –  units/u1455/u1455_test.cc:12:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPrec
+  u1456 compile_fail  C1    –  C2    –  units/u1456/u1456_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+  u1457 compile_fail  C1    –  C2    –  units/u1457/u1457_test.cc:9:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+  u1459 compile_fail  C1    –  C2    –  units/u1459/u1459_test.cc:10:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormal
+  u1458 compile_fail  C1    –  C2    –  units/u1458/u1458_test.cc:13:3: error: ‘LinearSolver’ has not been declared
+  u1462 compile_fail  C1    –  C2    –  units/u1462/u1462_test.cc:9:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobia
+  u1460 compile_fail  C1    –  C2    –  units/u1460/u1460_test.cc:14:20: error: expected unqualified-id before ‘(’ token
+  u1461 compile_fail  C1    –  C2    –  units/u1461/u1461_test.cc:14:3: error: ‘LinearSolver’ has not been declared
+  u1464 compile_fail  C1    –  C2    –  units/u1464/u1464_test.cc:9:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRow
+  u1463 compile_fail  C1    –  C2    –  internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+  u1465 compile_fail  C1    –  C2    –  units/u1465/u1465_test.cc:10:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::Intern
+  u1467 compile_fail  C1    –  C2    –  units/u1467/u1467_test.cc:8:3: error: expected primary-expression before ‘)’ token
+  u1466 compile_fail  C1    –  C2    –  units/u1466/u1466_test.cc:10:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded
+  u1468 compile_fail  C1    –  C2    –  units/u1468/u1468_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal:
+  u1469 compile_fail  C1    –  C2    –  units/u1469/u1469_test.cc:12:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cov
+  u1470 compile_fail  C1    –  C2    –  units/u1470/u1470_test.cc:11:9: error: ‘LinearSolverType’ does not name a type
+  u1471 compile_fail  C1    –  C2    –  units/u1471/u1471_test.cc:14:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resi
+  u1472 compile_fail  C1    –  C2    –  units/u1472/u1472_test.cc:9:3: error: ‘Solver’ has not been declared
+  u1473 compile_fail  C1    –  C2    –  units/u1473/u1473_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal:
+  u1474 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u1476 compile_fail  C1    –  C2    –  units/u1476/u1476_test.cc:9:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you me
+  u1475 compile_fail  C1    –  C2    –  units/u1475/u1475_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal:
+  u1477 compile_fail  C1    –  C2    –  units/u1477/u1477_test.cc:10:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres:
+  u1479 compile_fail  C1    –  C2    –  units/u1479/u1479_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you m
+  u1478 compile_fail  C1    –  C2    –  units/u1478/u1478_test.cc:14:3: error: ‘internal’ has not been declared
+  u1480 compile_fail  C1    –  C2    –  units/u1480/u1480_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1482 compile_fail  C1    –  C2    –  units/u1482/u1482_test.cc:7:3: error: ‘ceres_create_problem’ was not declared in this scope
+  u1481 compile_fail  C1    –  C2    –  units/u1481/u1481_test.cc:11:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>
+  u1483 compile_fail  C1    –  C2    –  units/u1483/u1483_test.cc:7:3: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::R
+  u1484 compile_fail  C1    –  C2    –  units/u1484/u1484_test.cc:7:3: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::R
+  u1487 compile_fail  C1    –  C2    –  units/u1487/u1487_test.cc:13:3: error: ‘Minimizer’ has not been declared
+  u1485 ok            C1 100%  C2    –
+  u1488 compile_fail  C1    –  C2    –  units/u1488/u1488_test.cc:8:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you me
+  u1486 ok            C1  71%  C2    –
+  u1489 compile_fail  C1    –  C2    –  units/u1489/u1489_test.cc:11:3: error: ‘TrustRegionStrategy’ has not been declared
+  u1490 compile_fail  C1    –  C2    –  units/u1490/u1490_test.cc:12:3: error: ‘Minimizer’ has not been declared
+  u1491 compile_fail  C1    –  C2    –  units/u1491/u1491_test.cc:18:3: error: ‘Problem’ has not been declared
+  u1492 compile_fail  C1    –  C2    –  units/u1492/u1492_test.cc:14:3: error: ‘Evaluator’ has not been declared
+  u1493 compile_fail  C1    –  C2    –  units/u1493/u1493_test.cc:14:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMi
+  u1494 compile_fail  C1    –  C2    –  units/u1494/u1494_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+  u1496 compile_fail  C1    –  C2    –  units/u1496/u1496_test.cc:10:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres
+  u1497 compile_fail  C1    –  C2    –  units/u1497/u1497_test.cc:10:3: error: ‘PerSolveOptions’ was not declared in this scope
+  u1498 ok            C1  67%  C2    –
+  u1499 ok            C1  24%  C2    –
+  u1501 ok            C1  20%  C2    –
+  u1500 ok            C1  20%  C2    –
+  u1502 compile_fail  C1    –  C2    –  units/u1502/u1502_test.cc:13:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cov
+  u1495 ok            C1  11%  C2   0%
+  u1503 compile_fail  C1    –  C2    –  units/u1503/u1503_test.cc:10:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cov
+  u1504 compile_fail  C1    –  C2    –  units/u1504/u1504_test.cc:8:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::in
+  u1505 compile_fail  C1    –  C2    –  units/u1505/u1505_test.cc:8:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::in
+  u1507 compile_fail  C1    –  C2    –  units/u1507/u1507_test.cc:11:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::A
+  u1506 compile_fail  C1    –  C2    –  units/u1506/u1506_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+  u1508 compile_fail  C1    –  C2    –  units/u1508/u1508_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1509 compile_fail  C1    –  C2    –  units/u1509/u1509_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+  u1510 compile_fail  C1    –  C2    –  units/u1510/u1510_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+  u1512 compile_fail  C1    –  C2    –  units/u1512/u1512_test.cc:8:3: error: ‘EvaluateOptions’ was not declared in this scope
+  u1514 compile_fail  C1    –  C2    –  units/u1514/u1514_test.cc:9:3: error: ‘Evaluator’ has not been declared
+  u1511 ok            C1  67%  C2    –
+  u1513 ok            C1  50%  C2    –
+  u1515 compile_fail  C1    –  C2    –  units/u1515/u1515_test.cc:11:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you m
+  u1516 compile_fail  C1    –  C2    –  units/u1516/u1516_test.cc:10:3: error: ‘TrustRegionStrategy’ has not been declared
+  u1518 compile_fail  C1    –  C2    –  units/u1518/u1518_test.cc:7:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cova
+  u1520 compile_fail  C1    –  C2    –  units/u1520/u1520_test.cc:11:3: error: ‘Solver’ has not been declared
+  u1517 ok            C1   4%  C2    –
+  u1522 compile_fail  C1    –  C2    –  units/u1522/u1522_test.cc:11:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::Wo
+  u1521 compile_fail  C1    –  C2    –  units/u1521/u1521_test.cc:11:3: error: ‘Solver’ has not been declared
+  u1523 ok            C1   0%  C2    –
+  u1524 ok            C1  67%  C2    –
+  u1519 ok            C1  71%  C2  50%
+  u1527 compile_fail  C1    –  C2    –  units/u1527/u1527_test.cc:7:3: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::R
+  u1525 ok            C1  67%  C2    –
+  u1526 ok            C1  67%  C2    –
+  u1528 ok            C1  67%  C2    –
+  u1529 ok            C1   5%  C2   0%
+  u1531 compile_fail  C1    –  C2    –  units/u1531/u1531_test.cc:8:3: error: ‘CovarianceBlocks’ was not declared in this scope
+  u1532 compile_fail  C1    –  C2    –  units/u1532/u1532_test.cc:8:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘co
+  u1533 compile_fail  C1    –  C2    –  units/u1533/u1533_test.cc:13:3: error: ‘Solver’ has not been declared
+  u1534 compile_fail  C1    –  C2    –  units/u1534/u1534_test.cc:8:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Cova
+  u1535 compile_fail  C1    –  C2    –  units/u1535/u1535_test.cc:8:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+  u1536 compile_fail  C1    –  C2    –  units/u1536/u1536_test.cc:8:3: error: ‘Solver’ has not been declared
+  u1537 compile_fail  C1    –  C2    –  units/u1537/u1537_test.cc:17:3: error: ‘GradientProblemSolver’ has not been declared
+  u1538 compile_fail  C1    –  C2    –  units/u1538/u1538_test.cc:8:3: error: ‘GradientProblemSolver’ has not been declared
+  u1530 ok            C1 100%  C2    –
+  u1539 compile_fail  C1    –  C2    –  units/u1539/u1539_test.cc:8:3: error: ‘ceres_solve’ was not declared in this scope
+  u1540 compile_fail  C1    –  C2    –  units/u1540/u1540_test.cc:8:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-
+Báo cáo: /work/repo/reports/phase6/summary.md, /work/repo/reports/phase6/gen_coverage.html (chi tiết: /work/repo/reports/phase6/html)

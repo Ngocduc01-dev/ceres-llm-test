@@ -1,0 +1,9 @@
+{
+  "id": "u0895",
+  "name": "ceres::internal::SparseMatrix::ScaleColumns",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0895/u0895_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseMatrix’"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "u1165",
+  "name": "ceres::internal::ResidualBlock::ResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1165/u1165_test.cc:11:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’"
+  ]
+}

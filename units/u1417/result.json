@@ -1,0 +1,14 @@
+{
+  "id": "u1417",
+  "name": "ceres::(anonymous)::OptionsAreValidForDenseSchur",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1417/u1417_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1417/u1417_test.cc:9:39: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1417/u1417_test.cc:14:3: error: ‘Solver’ has not been declared",
+    "units/u1417/u1417_test.cc:15:39: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1417/u1417_test.cc:20:3: error: ‘Solver’ has not been declared",
+    "units/u1417/u1417_test.cc:21:39: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

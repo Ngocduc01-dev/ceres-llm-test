@@ -1,0 +1,16 @@
+{
+  "id": "u1458",
+  "name": "ceres::internal::SparseSchurComplementSolver::SolveReducedLinearSystem",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1458/u1458_test.cc:13:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1458/u1458_test.cc:14:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1458/u1458_test.cc:15:35: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1458/u1458_test.cc:20:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1458/u1458_test.cc:21:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1458/u1458_test.cc:22:35: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1458/u1458_test.cc:27:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1458/u1458_test.cc:28:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’"
+  ]
+}

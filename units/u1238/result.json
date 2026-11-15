@@ -1,0 +1,15 @@
+{
+  "id": "u1238",
+  "name": "ceres::(anonymous)::EvaluateCostFunction",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1238/u1238_test.cc:9:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’",
+    "units/u1238/u1238_test.cc:14:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’",
+    "units/u1238/u1238_test.cc:19:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’",
+    "units/u1238/u1238_test.cc:24:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’",
+    "units/u1238/u1238_test.cc:29:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’",
+    "units/u1238/u1238_test.cc:34:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’",
+    "units/u1238/u1238_test.cc:39:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’"
+  ]
+}

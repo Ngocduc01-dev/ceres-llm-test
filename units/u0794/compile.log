@@ -1,0 +1,41 @@
+/work/repo/units/u0794/u0794_test.cc: In member function ‘virtual void Unit_u0794_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0794/u0794_test.cc:8:19: error: ‘BlockRandomAccessMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessMatrix’?
+    8 |   std::unique_ptr<BlockRandomAccessMatrix> lhs{};
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+      |                   ceres::internal::BlockRandomAccessMatrix
+In file included from /work/repo/units/u0794/u0794_test.cc:3:
+/work/ceres-solver/internal/ceres/block_random_access_matrix.h:95:23: note: ‘ceres::internal::BlockRandomAccessMatrix’ declared here
+   95 | class CERES_NO_EXPORT BlockRandomAccessMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0794/u0794_test.cc:8:42: error: template argument 1 is invalid
+    8 |   std::unique_ptr<BlockRandomAccessMatrix> lhs{};
+      |                                          ^
+/work/repo/units/u0794/u0794_test.cc:8:42: error: template argument 2 is invalid
+/work/repo/units/u0794/u0794_test.cc:9:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::SchurComplementSolver object{};
+      |                                                 ^
+In file included from /work/repo/units/u0794/u0794_test.cc:4:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note: candidate: ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  115 |   explicit SchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0794/u0794_test.cc:9:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’
+    9 |   ceres::internal::SchurComplementSolver object{};
+      |                                          ^~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:113:23: note:   because the following virtual functions are pure within ‘ceres::internal::SchurComplementSolver’:
+  113 | class CERES_NO_EXPORT SchurComplementSolver : public BlockSparseMatrixSolver {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:137:16: note:     ‘virtual void ceres::internal::SchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’
+  137 |   virtual void InitStorage(const CompressedRowBlockStructure* bs) = 0;
+      |                ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:138:33: note:     ‘virtual ceres::internal::LinearSolver::Summary ceres::internal::SchurComplementSolver::SolveReducedLinearSystem(const ceres::internal::LinearSolver::PerSolveOptions&, double*)’
+  138 |   virtual LinearSolver::Summary SolveReducedLinearSystem(
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0794/u0794_test.cc:10:18: error: cannot convert ‘int’ to ‘std::unique_ptr<ceres::internal::BlockRandomAccessMatrix>’
+   10 |   object.set_lhs(lhs);
+      |                  ^~~
+      |                  |
+      |                  int
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:128:57: note:   initializing argument 1 of ‘void ceres::internal::SchurComplementSolver::set_lhs(std::unique_ptr<ceres::internal::BlockRandomAccessMatrix>)’
+  128 |   void set_lhs(std::unique_ptr<BlockRandomAccessMatrix> lhs) {
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~

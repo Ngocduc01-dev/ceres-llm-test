@@ -1,0 +1,4 @@
+/work/repo/units/u0660/u0660_test.cc: In member function ‘virtual void Unit_u0660_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0660/u0660_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.DenseSparseMatrix(1, 1);
+      |   ^~~~~~

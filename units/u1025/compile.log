@@ -1,0 +1,22 @@
+/work/repo/units/u1025/u1025_test.cc: In member function ‘virtual void Unit_u1025_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1025/u1025_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?
+    7 |   size_type n{};
+      |   ^~~~~~~~~
+      |   size_t
+/work/repo/units/u1025/u1025_test.cc:8:3: error: ‘allocator_type’ was not declared in this scope
+    8 |   allocator_type a{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u1025/u1025_test.cc:9:3: error: ‘FixedArray’ was not declared in this scope; did you mean ‘ceres::internal::FixedArray’?
+    9 |   FixedArray<int, 20> object{};
+      |   ^~~~~~~~~~
+      |   ceres::internal::FixedArray
+In file included from /work/repo/units/u1025/u1025_test.cc:3:
+/work/ceres-solver/include/ceres/internal/fixed_array.h:86:7: note: ‘ceres::internal::FixedArray’ declared here
+   86 | class FixedArray {
+      |       ^~~~~~~~~~
+/work/repo/units/u1025/u1025_test.cc:9:14: error: expected primary-expression before ‘int’
+    9 |   FixedArray<int, 20> object{};
+      |              ^~~
+/work/repo/units/u1025/u1025_test.cc:10:9: error: ‘object’ was not declared in this scope
+   10 |   (void)object;
+      |         ^~~~~~

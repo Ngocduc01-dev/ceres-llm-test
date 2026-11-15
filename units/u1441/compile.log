@@ -1,0 +1,85 @@
+/work/repo/units/u1441/u1441_test.cc: In member function ‘virtual void Unit_u1441_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1441/u1441_test.cc:14:3: error: ‘LinearSolver’ has not been declared
+   14 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc:15:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+   15 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+In file included from /work/repo/units/u1441/u1441_test.cc:5:
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1441/u1441_test.cc:16:38: error: ‘per_solve_options’ was not declared in this scope
+   16 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc: In member function ‘virtual void Unit_u1441_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1441/u1441_test.cc:21:3: error: ‘LinearSolver’ has not been declared
+   21 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc:22:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+   22 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1441/u1441_test.cc:23:38: error: ‘per_solve_options’ was not declared in this scope
+   23 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc: In member function ‘virtual void Unit_u1441_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1441/u1441_test.cc:28:3: error: ‘LinearSolver’ has not been declared
+   28 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc:29:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+   29 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1441/u1441_test.cc:30:38: error: ‘per_solve_options’ was not declared in this scope
+   30 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc: In member function ‘virtual void Unit_u1441_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1441/u1441_test.cc:35:3: error: ‘LinearSolver’ has not been declared
+   35 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc:36:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+   36 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1441/u1441_test.cc:37:38: error: ‘per_solve_options’ was not declared in this scope
+   37 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc: In member function ‘virtual void Unit_u1441_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1441/u1441_test.cc:42:3: error: ‘LinearSolver’ has not been declared
+   42 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc:43:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+   43 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1441/u1441_test.cc:44:38: error: ‘per_solve_options’ was not declared in this scope
+   44 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc: In member function ‘virtual void Unit_u1441_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1441/u1441_test.cc:49:3: error: ‘LinearSolver’ has not been declared
+   49 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1441/u1441_test.cc:50:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+   50 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1441/u1441_test.cc:51:38: error: ‘per_solve_options’ was not declared in this scope
+   51 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~

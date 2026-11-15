@@ -1,0 +1,22 @@
+/work/repo/units/u1477/u1477_test.cc: In member function ‘virtual void Unit_u1477_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1477/u1477_test.cc:10:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres::internal::ResidualBlock*)’ is private within this context
+   10 |   object.InternalRemoveResidualBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /work/repo/units/u1477/u1477_test.cc:4:
+/work/ceres-solver/internal/ceres/problem_impl.h:179:8: note: declared private here
+  179 |   void InternalRemoveResidualBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1477/u1477_test.cc: In member function ‘virtual void Unit_u1477_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1477/u1477_test.cc:16:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres::internal::ResidualBlock*)’ is private within this context
+   16 |   object.InternalRemoveResidualBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:179:8: note: declared private here
+  179 |   void InternalRemoveResidualBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1477/u1477_test.cc: In member function ‘virtual void Unit_u1477_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1477/u1477_test.cc:22:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres::internal::ResidualBlock*)’ is private within this context
+   22 |   object.InternalRemoveResidualBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:179:8: note: declared private here
+  179 |   void InternalRemoveResidualBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~

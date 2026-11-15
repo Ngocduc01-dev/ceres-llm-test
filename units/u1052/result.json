@@ -1,0 +1,10 @@
+{
+  "id": "u1052",
+  "name": "ceres::NormalPrior::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1052/u1052_test.cc:8:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brace-enclosed initializer list>)’",
+    "units/u1052/u1052_test.cc:14:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brace-enclosed initializer list>)’"
+  ]
+}

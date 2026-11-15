@@ -1,0 +1,96 @@
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:9:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:14:3: error: ‘Solver’ has not been declared
+   14 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:15:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:20:3: error: ‘Solver’ has not been declared
+   20 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:21:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   21 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:26:3: error: ‘Solver’ has not been declared
+   26 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:27:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   27 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:32:3: error: ‘Solver’ has not been declared
+   32 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:33:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   33 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:38:3: error: ‘Solver’ has not been declared
+   38 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:39:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   39 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:44:3: error: ‘Solver’ has not been declared
+   44 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:45:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   45 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:50:3: error: ‘Solver’ has not been declared
+   50 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:51:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   51 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:56:3: error: ‘Solver’ has not been declared
+   56 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:57:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   57 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:62:3: error: ‘Solver’ has not been declared
+   62 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:63:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   63 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:68:3: error: ‘Solver’ has not been declared
+   68 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:69:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   69 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind
+/work/repo/units/u1420/u1420_test.cc: In member function ‘virtual void Unit_u1420_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1420/u1420_test.cc:74:3: error: ‘Solver’ has not been declared
+   74 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1420/u1420_test.cc:75:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   75 |   ceres::OptionsAreValidForIterativeSchur(options, nullptr);
+      |                                           ^~~~~~~
+      |                                           optind

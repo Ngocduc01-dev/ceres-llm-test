@@ -1,0 +1,9 @@
+{
+  "id": "u0865",
+  "name": "ceres::IterationCallback::~IterationCallback",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0865/u0865_test.cc:7:28: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::IterationCallback’"
+  ]
+}

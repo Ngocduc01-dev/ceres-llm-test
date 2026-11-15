@@ -1,0 +1,12 @@
+{
+  "id": "u1161",
+  "name": "ceres::internal::DenseSparseMatrix::DenseSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1161/u1161_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1161/u1161_test.cc:9:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1161/u1161_test.cc:15:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1161/u1161_test.cc:16:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

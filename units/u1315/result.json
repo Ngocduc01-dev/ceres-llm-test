@@ -1,0 +1,16 @@
+{
+  "id": "u1315",
+  "name": "ceres::internal::(anonymous)::ReorderProgram",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1315/u1315_test.cc:12:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1315/u1315_test.cc:12:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1315/u1315_test.cc:17:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1315/u1315_test.cc:17:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1315/u1315_test.cc:22:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1315/u1315_test.cc:22:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1315/u1315_test.cc:27:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1315/u1315_test.cc:27:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

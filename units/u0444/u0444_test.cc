@@ -3,25 +3,34 @@
 #include "ceres/dynamic_numeric_diff_cost_function.h"
 
 namespace {
-struct CostFunctor {
+
+struct PlusFunctor {
   bool operator()(double const* const* parameters, double* residuals) const {
-    residuals[0] = parameters[0][0] * parameters[0][0];
+    residuals[0] = parameters[0][0] + parameters[0][1];
     return true;
   }
 };
+
 }  // namespace
 
-TEST(Unit_u0444, ReleasesNonOwnedFunctor) {
-  CostFunctor functor;
+// Path P1: node 1: đúng -> node 2 -> END
+TEST(DynamicNumericDiffCostFunctionDtorTest, DoNotTakeOwnership) {
+  PlusFunctor functor;  // sống trên stack, object không được xoá nó
   {
-    ceres::DynamicNumericDiffCostFunction<CostFunctor> target(
-        &functor, ceres::DO_NOT_TAKE_OWNERSHIP);
-    target.AddParameterBlock(1);
-    target.SetNumResiduals(1);
-    double value = 2.0;
-    double* parameters[] = {&value};
-    double residuals[1] = {};
-    EXPECT_TRUE(target.Evaluate(parameters, residuals, nullptr));
-    EXPECT_DOUBLE_EQ(residuals[0], 4.0);
-  }
+    ceres::DynamicNumericDiffCostFunction<PlusFunctor, ceres::RIDDERS>
+        cost_function(&functor,
+                      ceres::DO_NOT_TAKE_OWNERSHIP,
+                      ceres::NumericDiffOptions());
+  }  // destructor chạy tại đây
+}
+
+// Path P2: node 1: sai -> END
+TEST(DynamicNumericDiffCostFunctionDtorTest, TakeOwnership) {
+  PlusFunctor* functor = new PlusFunctor();  // object sở hữu và tự xoá
+  {
+    ceres::DynamicNumericDiffCostFunction<PlusFunctor, ceres::RIDDERS>
+        cost_function(functor,
+                      ceres::TAKE_OWNERSHIP,
+                      ceres::NumericDiffOptions());
+  }  // destructor chạy tại đây
 }

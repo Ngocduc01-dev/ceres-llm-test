@@ -1,0 +1,9 @@
+{
+  "id": "u0833",
+  "name": "ceres_free_stock_loss_function_data",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0833/u0833_test.cc:7:3: error: ‘ceres_free_stock_loss_function_data’ was not declared in this scope"
+  ]
+}

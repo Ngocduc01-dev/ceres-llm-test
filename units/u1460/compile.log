@@ -1,0 +1,56 @@
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:14:20: error: expected unqualified-id before ‘(’ token
+   14 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:14:21: error: ‘anonymous’ was not declared in this scope
+   14 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:19:20: error: expected unqualified-id before ‘(’ token
+   19 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:19:21: error: ‘anonymous’ was not declared in this scope
+   19 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:24:20: error: expected unqualified-id before ‘(’ token
+   24 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:24:21: error: ‘anonymous’ was not declared in this scope
+   24 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:29:20: error: expected unqualified-id before ‘(’ token
+   29 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:29:21: error: ‘anonymous’ was not declared in this scope
+   29 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:34:20: error: expected unqualified-id before ‘(’ token
+   34 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:34:21: error: ‘anonymous’ was not declared in this scope
+   34 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:39:20: error: expected unqualified-id before ‘(’ token
+   39 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:39:21: error: ‘anonymous’ was not declared in this scope
+   39 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:44:20: error: expected unqualified-id before ‘(’ token
+   44 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:44:21: error: ‘anonymous’ was not declared in this scope
+   44 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1460/u1460_test.cc: In member function ‘virtual void Unit_u1460_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1460/u1460_test.cc:49:20: error: expected unqualified-id before ‘(’ token
+   49 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                    ^
+/work/repo/units/u1460/u1460_test.cc:49:21: error: ‘anonymous’ was not declared in this scope
+   49 |   ceres::internal::(anonymous)::SetupLinearSolver(nullptr);
+      |                     ^~~~~~~~~

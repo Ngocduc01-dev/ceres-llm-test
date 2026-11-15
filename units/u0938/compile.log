@@ -1,0 +1,24 @@
+/work/repo/units/u0938/u0938_test.cc: In member function ‘virtual void Unit_u0938_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0938/u0938_test.cc:9:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’
+    9 |   ceres::internal::LinearOperator object{};
+      |                                   ^~~~~~
+In file included from /work/repo/units/u0938/u0938_test.cc:4:
+/work/ceres-solver/internal/ceres/linear_operator.h:46:23: note:   because the following virtual functions are pure within ‘ceres::internal::LinearOperator’:
+   46 | class CERES_NO_EXPORT LinearOperator {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:51:16: note:     ‘virtual void ceres::internal::LinearOperator::RightMultiplyAndAccumulate(const double*, double*) const’
+   51 |   virtual void RightMultiplyAndAccumulate(const double* x, double* y) const = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:57:16: note:     ‘virtual void ceres::internal::LinearOperator::LeftMultiplyAndAccumulate(const double*, double*) const’
+   57 |   virtual void LeftMultiplyAndAccumulate(const double* x, double* y) const = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:85:15: note:     ‘virtual int ceres::internal::LinearOperator::num_rows() const’
+   85 |   virtual int num_rows() const = 0;
+      |               ^~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:86:15: note:     ‘virtual int ceres::internal::LinearOperator::num_cols() const’
+   86 |   virtual int num_cols() const = 0;
+      |               ^~~~~~~~
+/work/repo/units/u0938/u0938_test.cc: In member function ‘virtual void Unit_u0938_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0938/u0938_test.cc:16:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’
+   16 |   ceres::internal::LinearOperator object{};
+      |                                   ^~~~~~

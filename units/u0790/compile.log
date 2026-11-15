@@ -1,0 +1,8 @@
+/work/repo/units/u0790/u0790_test.cc: In member function ‘virtual void Unit_u0790_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0790/u0790_test.cc:9:3: error: ‘GradientProblemSolver’ has not been declared
+    9 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0790/u0790_test.cc:10:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   ceres::GradientProblemSolverOptionsToSolverOptions(options);
+      |                                                      ^~~~~~~
+      |                                                      optind

@@ -1,0 +1,12 @@
+{
+  "id": "u1227",
+  "name": "ceres::internal::(anonymous)::InitializeContext",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1227/u1227_test.cc:11:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1227/u1227_test.cc:11:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1227/u1227_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1227/u1227_test.cc:16:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

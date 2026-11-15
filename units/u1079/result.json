@@ -1,0 +1,10 @@
+{
+  "id": "u1079",
+  "name": "ceres::internal::PartitionedMatrixView::RightMultiplyAndAccumulateE",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1079/u1079_test.cc:10:49: error: class template argument deduction failed:",
+    "units/u1079/u1079_test.cc:10:49: error: no matching function for call to ‘PartitionedMatrixView()’"
+  ]
+}

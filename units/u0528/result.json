@@ -1,0 +1,16 @@
+{
+  "id": "u0528",
+  "name": "ceres::internal::InvokeOnSegment",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void",
+    "internal/ceres/parallel_invoke.h:165:21: error: ‘ContextImpl’ was not declared in this scope",
+    "internal/ceres/parallel_invoke.h:165:34: error: ‘context’ was not declared in this scope; did you mean ‘ucontext_t’?",
+    "internal/ceres/parallel_invoke.h:166:21: error: expected primary-expression before ‘int’",
+    "internal/ceres/parallel_invoke.h:167:21: error: expected primary-expression before ‘int’",
+    "internal/ceres/parallel_invoke.h:168:21: error: expected primary-expression before ‘int’",
+    "internal/ceres/parallel_invoke.h:169:22: error: expected primary-expression before ‘&&’ token",
+    "internal/ceres/parallel_invoke.h:169:25: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?"
+  ]
+}

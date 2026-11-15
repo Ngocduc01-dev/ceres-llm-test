@@ -1,0 +1,24 @@
+/work/repo/units/u1120/u1120_test.cc: In member function ‘virtual void Unit_u1120_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1120/u1120_test.cc:7:3: error: ‘ceres’ has not been declared
+    7 |   ceres::StringToSparseLinearAlgebraLibraryType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1120/u1120_test.cc: In member function ‘virtual void Unit_u1120_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1120/u1120_test.cc:13:3: error: ‘ceres’ has not been declared
+   13 |   ceres::StringToSparseLinearAlgebraLibraryType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1120/u1120_test.cc: In member function ‘virtual void Unit_u1120_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1120/u1120_test.cc:19:3: error: ‘ceres’ has not been declared
+   19 |   ceres::StringToSparseLinearAlgebraLibraryType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1120/u1120_test.cc: In member function ‘virtual void Unit_u1120_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1120/u1120_test.cc:25:3: error: ‘ceres’ has not been declared
+   25 |   ceres::StringToSparseLinearAlgebraLibraryType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1120/u1120_test.cc: In member function ‘virtual void Unit_u1120_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1120/u1120_test.cc:31:3: error: ‘ceres’ has not been declared
+   31 |   ceres::StringToSparseLinearAlgebraLibraryType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1120/u1120_test.cc: In member function ‘virtual void Unit_u1120_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1120/u1120_test.cc:37:3: error: ‘ceres’ has not been declared
+   37 |   ceres::StringToSparseLinearAlgebraLibraryType(value, nullptr);
+      |   ^~~~~

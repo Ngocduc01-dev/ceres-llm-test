@@ -1,0 +1,14 @@
+{
+  "id": "u0772",
+  "name": "ceres::internal::AutoDifferentiate",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0772/u0772_test.cc:9:3: error: ‘Functor’ was not declared in this scope",
+    "units/u0772/u0772_test.cc:11:38: error: ‘functor’ was not declared in this scope",
+    "units/u0772/u0772_test.cc:16:3: error: ‘Functor’ was not declared in this scope",
+    "units/u0772/u0772_test.cc:18:38: error: ‘functor’ was not declared in this scope",
+    "units/u0772/u0772_test.cc:23:3: error: ‘Functor’ was not declared in this scope",
+    "units/u0772/u0772_test.cc:25:38: error: ‘functor’ was not declared in this scope"
+  ]
+}

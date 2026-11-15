@@ -1,0 +1,12 @@
+{
+  "id": "u0530",
+  "name": "ceres::internal::MaxPartitionCostIsFeasible",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0530/u0530_test.cc:9:10: error: scalar object ‘cumulative_cost_data_data’ requires one element in initializer",
+    "units/u0530/u0530_test.cc:10:10: error: scalar object ‘partition_data’ requires one element in initializer",
+    "units/u0530/u0530_test.cc:15:10: error: scalar object ‘cumulative_cost_data_data’ requires one element in initializer",
+    "units/u0530/u0530_test.cc:16:10: error: scalar object ‘partition_data’ requires one element in initializer"
+  ]
+}

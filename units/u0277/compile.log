@@ -1,0 +1,20 @@
+/work/repo/units/u0277/u0277_test.cc: In member function ‘virtual void ceres::internal::RefinedDenseCholeskyDestructorTest_DestroyObject_P1_Test::TestBody()’:
+/work/repo/units/u0277/u0277_test.cc:14:77: error: invalid use of incomplete type ‘class ceres::internal::DenseIterativeRefiner’
+   14 |   std::unique_ptr<DenseIterativeRefiner> refiner(new DenseIterativeRefiner(3));
+      |                                                                             ^
+In file included from /work/repo/units/u0277/u0277_test.cc:6:
+/work/ceres-solver/internal/ceres/dense_cholesky.h:170:7: note: forward declaration of ‘class ceres::internal::DenseIterativeRefiner’
+  170 | class DenseIterativeRefiner;
+      |       ^~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/c++/14/memory:78,
+                 from /work/repo/units/u0277/u0277_test.cc:2:
+/usr/include/c++/14/bits/unique_ptr.h: In instantiation of ‘void std::default_delete<_Tp>::operator()(_Tp*) const [with _Tp = ceres::internal::DenseIterativeRefiner]’:
+/usr/include/c++/14/bits/unique_ptr.h:398:17:   required from ‘std::unique_ptr<_Tp, _Dp>::~unique_ptr() [with _Tp = ceres::internal::DenseIterativeRefiner; _Dp = std::default_delete<ceres::internal::DenseIterativeRefiner>]’
+  398 |           get_deleter()(std::move(__ptr));
+      |           ~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0277/u0277_test.cc:14:78:   required from here
+   14 |   std::unique_ptr<DenseIterativeRefiner> refiner(new DenseIterativeRefiner(3));
+      |                                                                              ^
+/usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal::DenseIterativeRefiner’
+   91 |         static_assert(sizeof(_Tp)>0,
+      |                       ^~~~~~~~~~~

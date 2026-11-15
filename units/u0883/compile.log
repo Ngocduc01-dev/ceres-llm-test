@@ -1,0 +1,18 @@
+/work/repo/units/u0883/u0883_test.cc: In member function ‘virtual void Unit_u0883_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0883/u0883_test.cc:10:26: error: no matching function for call to ‘ceres::internal::ProblemImpl::AddResidualBlock(std::nullptr_t, std::nullptr_t, std::nullptr_t, std::nullptr_t)’
+   10 |   object.AddResidualBlock(nullptr, nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u0883/u0883_test.cc:5:
+/work/ceres-solver/internal/ceres/problem_impl.h:90:19: note: candidate: ‘template<class ... Ts> ceres::internal::ResidualBlock* ceres::internal::ProblemImpl::AddResidualBlock(ceres::CostFunction*, ceres::LossFunction*, double*, Ts* ...)’
+   90 |   ResidualBlockId AddResidualBlock(CostFunction* cost_function,
+      |                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:90:19: note:   template argument deduction/substitution failed:
+/work/repo/units/u0883/u0883_test.cc:10:26: note:   mismatched types ‘Ts*’ and ‘std::nullptr_t’
+   10 |   object.AddResidualBlock(nullptr, nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:84:19: note: candidate: ‘ceres::internal::ResidualBlock* ceres::internal::ProblemImpl::AddResidualBlock(ceres::CostFunction*, ceres::LossFunction*, double* const*, int)’
+   84 |   ResidualBlockId AddResidualBlock(CostFunction* cost_function,
+      |                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:87:40: note:   no known conversion for argument 4 from ‘std::nullptr_t’ to ‘int’
+   87 |                                    int num_parameter_blocks);
+      |                                    ~~~~^~~~~~~~~~~~~~~~~~~~

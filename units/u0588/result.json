@@ -1,0 +1,9 @@
+{
+  "id": "u0588",
+  "name": "ceres::ProductManifold::ExclusiveScan",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0588/u0588_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

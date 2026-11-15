@@ -1,0 +1,10 @@
+{
+  "id": "u1414",
+  "name": "ceres::(anonymous)::OptionsAreValidForSparseNormalCholesky",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1414/u1414_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1414/u1414_test.cc:9:49: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

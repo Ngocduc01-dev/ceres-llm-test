@@ -1,0 +1,9 @@
+{
+  "id": "u0735",
+  "name": "ceres::CovarianceAlgorithmTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0735/u0735_test.cc:7:3: error: ‘CovarianceAlgorithmTypeToString’ was not declared in this scope"
+  ]
+}

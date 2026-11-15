@@ -1,0 +1,11 @@
+{
+  "id": "u1200",
+  "name": "ceres::internal::DenseCholesky::Create",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u1200/u1200_test.cc:9:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1200/u1200_test.cc:10:34: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::DenseCholesky’",
+    "units/u1200/u1200_test.cc:11:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

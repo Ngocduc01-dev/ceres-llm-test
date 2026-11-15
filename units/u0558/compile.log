@@ -1,0 +1,8 @@
+/work/repo/units/u0558/u0558_test.cc: In member function ‘virtual void ceres::internal::Unit_u0558_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0558/u0558_test.cc:10:10: error: scalar object ‘ordering_data’ requires one element in initializer
+   10 |   double ordering_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~
+/work/repo/units/u0558/u0558_test.cc: In member function ‘virtual void ceres::internal::Unit_u0558_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0558/u0558_test.cc:15:10: error: scalar object ‘ordering_data’ requires one element in initializer
+   15 |   double ordering_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~

@@ -1,0 +1,9 @@
+{
+  "id": "u1070",
+  "name": "ceres::internal::BlockRandomAccessDenseMatrix::SetZero",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1070/u1070_test.cc:7:56: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDenseMatrix::BlockRandomAccessDenseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

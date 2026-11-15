@@ -1,0 +1,12 @@
+{
+  "id": "u1310",
+  "name": "ceres::(anonymous)::OptionsAreValidForDenseSolver",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1310/u1310_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1310/u1310_test.cc:9:40: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1310/u1310_test.cc:14:3: error: ‘Solver’ has not been declared",
+    "units/u1310/u1310_test.cc:15:40: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

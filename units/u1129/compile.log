@@ -1,0 +1,130 @@
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+    7 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:7:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/polynomial.h:38,
+                 from /work/repo/units/u1129/u1129_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:8:40: error: ‘polynomial_in’ was not declared in this scope
+    8 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:13:3: error: ‘Vector’ was not declared in this scope
+   13 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:13:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:14:40: error: ‘polynomial_in’ was not declared in this scope
+   14 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:19:3: error: ‘Vector’ was not declared in this scope
+   19 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:19:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:20:40: error: ‘polynomial_in’ was not declared in this scope
+   20 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:25:3: error: ‘Vector’ was not declared in this scope
+   25 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:25:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:26:40: error: ‘polynomial_in’ was not declared in this scope
+   26 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:31:3: error: ‘Vector’ was not declared in this scope
+   31 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:31:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:32:40: error: ‘polynomial_in’ was not declared in this scope
+   32 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:37:3: error: ‘Vector’ was not declared in this scope
+   37 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:37:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:38:40: error: ‘polynomial_in’ was not declared in this scope
+   38 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:43:3: error: ‘Vector’ was not declared in this scope
+   43 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:43:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:44:40: error: ‘polynomial_in’ was not declared in this scope
+   44 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:49:3: error: ‘Vector’ was not declared in this scope
+   49 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:49:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:50:40: error: ‘polynomial_in’ was not declared in this scope
+   50 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~
+/work/repo/units/u1129/u1129_test.cc: In member function ‘virtual void Unit_u1129_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1129/u1129_test.cc:55:3: error: ‘Vector’ was not declared in this scope
+   55 |   Vector polynomial_in{};
+      |   ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:55:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1129/u1129_test.cc:56:40: error: ‘polynomial_in’ was not declared in this scope
+   56 |   ceres::internal::FindPolynomialRoots(polynomial_in, nullptr, nullptr);
+      |                                        ^~~~~~~~~~~~~

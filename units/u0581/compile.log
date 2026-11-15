@@ -1,0 +1,7 @@
+/work/repo/units/u0581/u0581_test.cc: In member function ‘virtual void ceres::Unit_u0581_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0581/u0581_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer
+    8 |   double x_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~
+/work/repo/units/u0581/u0581_test.cc:9:10: error: scalar object ‘jacobian_ptr_data’ requires one element in initializer
+    9 |   double jacobian_ptr_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~

@@ -1,0 +1,10 @@
+{
+  "id": "u0958",
+  "name": "ceres::internal::DoglegStrategy::ComputeCauchyPoint",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0958/u0958_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u0958/u0958_test.cc:9:28: error: ‘void ceres::internal::DoglegStrategy::ComputeCauchyPoint(ceres::internal::SparseMatrix*)’ is private within this context"
+  ]
+}

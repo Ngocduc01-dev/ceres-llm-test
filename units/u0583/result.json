@@ -1,0 +1,9 @@
+{
+  "id": "u0583",
+  "name": "ceres::internal::SchurComplementSolver::ResizeRhs",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0583/u0583_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

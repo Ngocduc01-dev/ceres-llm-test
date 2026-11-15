@@ -2,11 +2,15 @@
 #include "gtest/gtest.h"
 #include "ceres/dogleg_strategy.h"
 
-TEST(Unit_u0282, PathP1) {
-  ceres::internal::TrustRegionStrategy::Options options;
-  ceres::internal::LinearSolver::Options solver_options;
-  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
-  options.linear_solver = linear_solver.get();
-  ceres::internal::DoglegStrategy target(options);
-  target.StepIsInvalid();
+namespace ceres {
+namespace internal {
+
+// TC1 - P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(DoglegStrategyStepIsInvalidTest, P1_TC1_StraightLine) {
+  TrustRegionStrategy::Options options;
+  DoglegStrategy strategy(options);
+  strategy.StepIsInvalid();
 }
+
+}  // namespace internal
+}  // namespace ceres

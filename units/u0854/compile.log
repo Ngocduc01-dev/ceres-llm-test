@@ -1,0 +1,14 @@
+/work/repo/units/u0854/u0854_test.cc: In member function ‘virtual void Unit_u0854_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0854/u0854_test.cc:9:3: error: ‘VectorLikeX’ was not declared in this scope
+    9 |   VectorLikeX x{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u0854/u0854_test.cc:10:3: error: ‘VectorLikeY’ was not declared in this scope
+   10 |   VectorLikeY y{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u0854/u0854_test.cc:12:24: error: ‘x’ was not declared in this scope
+   12 |   ceres::internal::Dot(x, y, nullptr, num_threads);
+      |                        ^
+/work/repo/units/u0854/u0854_test.cc:12:27: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   12 |   ceres::internal::Dot(x, y, nullptr, num_threads);
+      |                           ^
+      |                           yn

@@ -1,4 +1,6 @@
 // FILE: u0553_test.cc
+#include <random>
+
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
 #include "ceres/parameter_block.h"
@@ -44,7 +46,6 @@ class FailingManifold final : public Manifold {
 }  // namespace
 
 // P1: node 1: đúng, node 2: đúng -> return false
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC1_ManifoldPlusFails) {
   std::mt19937 gen(1);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -58,7 +59,6 @@ TEST(ParameterBlockPlusTest, TC1_ManifoldPlusFails) {
 }
 
 // P2: node 1: sai, node 4: sai, node 9: sai -> return true
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC2_NoManifoldNoBounds) {
   std::mt19937 gen(2);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -72,7 +72,6 @@ TEST(ParameterBlockPlusTest, TC2_NoManifoldNoBounds) {
 
 // P3: node 1: đúng, node 2: sai, node 4: đúng, node 6: đúng x1 rồi sai,
 //     node 9: đúng, node 11: đúng x1 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC3_ManifoldBoundsSize1) {
   std::mt19937 gen(3);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -91,7 +90,6 @@ TEST(ParameterBlockPlusTest, TC3_ManifoldBoundsSize1) {
 
 // P4: node 1: sai, node 4: đúng, node 6: đúng x2 rồi sai,
 //     node 9: đúng, node 11: đúng x2 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC4_NoManifoldBoundsSize2) {
   std::mt19937 gen(4);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -111,7 +109,6 @@ TEST(ParameterBlockPlusTest, TC4_NoManifoldBoundsSize2) {
 
 // P5: node 1: đúng, node 2: sai, node 4: đúng, node 6: đúng x3 rồi sai,
 //     node 9: đúng, node 11: đúng x3 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC5_ManifoldBoundsSize3) {
   std::mt19937 gen(5);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -132,7 +129,6 @@ TEST(ParameterBlockPlusTest, TC5_ManifoldBoundsSize3) {
 
 // P6: node 1: sai, node 4: đúng, node 6: đúng x5 rồi sai,
 //     node 9: đúng, node 11: đúng x5 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC6_NoManifoldBoundsSize5) {
   std::mt19937 gen(6);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);

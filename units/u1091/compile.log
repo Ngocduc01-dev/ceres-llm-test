@@ -1,0 +1,49 @@
+/work/repo/units/u1091/u1091_test.cc: In member function ‘virtual void Unit_u1091_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1091/u1091_test.cc:8:3: error: ‘LineSearchMinimizer’ has not been declared
+    8 |   LineSearchMinimizer::State previous{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1091/u1091_test.cc:9:3: error: ‘LineSearchMinimizer’ has not been declared
+    9 |   LineSearchMinimizer::State current{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1091/u1091_test.cc:10:20: error: ‘LBFGS’ is not a member of ‘ceres::internal’; did you mean ‘ceres::LBFGS’?
+   10 |   ceres::internal::LBFGS object{};
+      |                    ^~~~~
+In file included from /work/ceres-solver/include/ceres/iteration_callback.h:40,
+                 from /work/ceres-solver/internal/ceres/minimizer.h:40,
+                 from /work/ceres-solver/internal/ceres/line_search_minimizer.h:36,
+                 from /work/ceres-solver/internal/ceres/line_search_direction.h:38,
+                 from /work/repo/units/u1091/u1091_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:293:3: note: ‘ceres::LBFGS’ declared here
+  293 |   LBFGS,
+      |   ^~~~~
+/work/repo/units/u1091/u1091_test.cc:11:3: error: ‘object’ was not declared in this scope
+   11 |   object.NextDirection(previous, current, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1091/u1091_test.cc:11:24: error: ‘previous’ was not declared in this scope
+   11 |   object.NextDirection(previous, current, nullptr);
+      |                        ^~~~~~~~
+/work/repo/units/u1091/u1091_test.cc:11:34: error: ‘current’ was not declared in this scope
+   11 |   object.NextDirection(previous, current, nullptr);
+      |                                  ^~~~~~~
+/work/repo/units/u1091/u1091_test.cc: In member function ‘virtual void Unit_u1091_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1091/u1091_test.cc:16:3: error: ‘LineSearchMinimizer’ has not been declared
+   16 |   LineSearchMinimizer::State previous{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1091/u1091_test.cc:17:3: error: ‘LineSearchMinimizer’ has not been declared
+   17 |   LineSearchMinimizer::State current{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1091/u1091_test.cc:18:20: error: ‘LBFGS’ is not a member of ‘ceres::internal’; did you mean ‘ceres::LBFGS’?
+   18 |   ceres::internal::LBFGS object{};
+      |                    ^~~~~
+/work/ceres-solver/include/ceres/types.h:293:3: note: ‘ceres::LBFGS’ declared here
+  293 |   LBFGS,
+      |   ^~~~~
+/work/repo/units/u1091/u1091_test.cc:19:3: error: ‘object’ was not declared in this scope
+   19 |   object.NextDirection(previous, current, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1091/u1091_test.cc:19:24: error: ‘previous’ was not declared in this scope
+   19 |   object.NextDirection(previous, current, nullptr);
+      |                        ^~~~~~~~
+/work/repo/units/u1091/u1091_test.cc:19:34: error: ‘current’ was not declared in this scope
+   19 |   object.NextDirection(previous, current, nullptr);
+      |                                  ^~~~~~~

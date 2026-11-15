@@ -1,0 +1,9 @@
+{
+  "id": "u0559",
+  "name": "ceres::CostFunction::mutable_parameter_block_sizes",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0559/u0559_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

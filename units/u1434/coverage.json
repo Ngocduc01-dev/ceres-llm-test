@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "internal/ceres/triplet_sparse_matrix.cc", "lines": [{"line_number": 201, "count": 1, "branches": []}, {"line_number": 202, "count": 1, "branches": []}, {"line_number": 204, "count": 0, "branches": []}], "functions": []}]}

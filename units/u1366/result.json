@@ -1,0 +1,11 @@
+{
+  "id": "u1366",
+  "name": "ceres::internal::ParameterBlock::SetManifold",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1366/u1366_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1366/u1366_test.cc:14:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’",
+    "units/u1366/u1366_test.cc:20:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’"
+  ]
+}

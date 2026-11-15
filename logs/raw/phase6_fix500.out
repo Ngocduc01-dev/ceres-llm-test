@@ -1,0 +1,168 @@
+Phase 6: 166 unit, 3 song song
+  u0277 compile_fail  C1    –  C2    –  units/u0277/u0277_test.cc:14:77: error: invalid use of incomplete type ‘class ceres::internal::DenseIterativeR
+  u0281 ok            C1   0%  C2    –
+  u0282 ok            C1   0%  C2    –
+  u0283 ok            C1   0%  C2    –
+  u0284 ok            C1   0%  C2    –
+  u0286 ok            C1   0%  C2    –
+  u0285 ok            C1 100%  C2    –
+  u0288 ok            C1   0%  C2    –
+  u0303 ok            C1 100%  C2    –
+  u0287 ok            C1 100%  C2    –
+  u0304 ok            C1 100%  C2    –
+  u0305 ok            C1 100%  C2    –
+  u0309 ok            C1 100%  C2    –
+  u0310 ok            C1 100%  C2    –
+  u0306 ok            C1 100%  C2    –
+  u0311 ok            C1 100%  C2    –
+  u0312 ok            C1 100%  C2    –
+  u0314 ok            C1 100%  C2    –
+  u0313 ok            C1 100%  C2    –
+  u0315 compile_fail  C1    –  C2    –  units/u0315/u0315_test.cc:10:25: error: ‘struct ceres::internal::InnerProductComputer::ProductTerm’ is private
+  u0316 ok            C1 100%  C2    –
+  u0317 ok            C1 100%  C2    –
+  u0318 ok            C1 100%  C2    –
+  u0319 ok            C1 100%  C2    –
+  u0320 ok            C1 100%  C2    –
+  u0321 ok            C1   0%  C2    –
+  u0322 ok            C1 100%  C2    –
+  u0324 compile_fail  C1    –  C2    –  /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres:
+  u0323 ok            C1   0%  C2    –
+  u0325 compile_fail  C1    –  C2    –  /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres:
+  u0326 compile_fail  C1    –  C2    –  /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres:
+  u0327 ok            C1 100%  C2    –
+  u0328 ok            C1 100%  C2    –
+  u0329 ok            C1    –  C2    –
+  u0330 ok            C1 100%  C2    –
+  u0337 ok            C1 100%  C2    –
+  u0338 ok            C1 100%  C2    –
+  u0339 ok            C1 100%  C2    –
+  u0340 ok            C1 100%  C2    –
+  u0331 ok            C1 100%  C2 100%
+  u0341 ok            C1 100%  C2    –
+  u0342 ok            C1 100%  C2    –
+  u0343 ok            C1 100%  C2    –
+  u0344 ok            C1 100%  C2    –
+  u0345 ok            C1 100%  C2    –
+  u0346 ok            C1 100%  C2    –
+  u0347 ok            C1 100%  C2    –
+  u0348 ok            C1 100%  C2    –
+  u0352 ok            C1 100%  C2    –
+  u0349 ok            C1 100%  C2    –
+  u0354 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0355 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0353 ok            C1 100%  C2    –
+  u0356 ok            C1 100%  C2    –
+  u0358 ok            C1 100%  C2    –
+  u0357 ok            C1 100%  C2    –
+  u0359 ok            C1 100%  C2    –
+  u0360 ok            C1 100%  C2    –
+  u0361 ok            C1 100%  C2    –
+  u0362 ok            C1 100%  C2    –
+  u0363 ok            C1 100%  C2    –
+  u0364 ok            C1 100%  C2    –
+  u0365 ok            C1 100%  C2    –
+  u0366 ok            C1 100%  C2    –
+  u0367 ok            C1 100%  C2    –
+  u0368 ok            C1 100%  C2    –
+  u0369 ok            C1 100%  C2    –
+  u0370 ok            C1 100%  C2    –
+  u0371 ok            C1 100%  C2    –
+  u0372 ok            C1 100%  C2    –
+  u0373 link_fail     C1    –  C2    –  /usr/bin/ld: /work/build-cov/gen/u0373/test.o: in function `ceres::internal::PartitionedMatrixViewNumColBlocks
+  u0376 link_fail     C1    –  C2    –  /usr/bin/ld: /work/build-cov/gen/u0376/test.o: in function `ceres::internal::PartitionedMatrixViewNumColsF_TC1
+  u0374 ok            C1 100%  C2    –
+  u0375 ok            C1 100%  C2    –
+  u0377 link_fail     C1    –  C2    –  /usr/bin/ld: /work/build-cov/gen/u0377/test.o: in function `ceres::internal::PartitionedMatrixViewETest_ECCols
+  u0378 link_fail     C1    –  C2    –  /usr/bin/ld: /work/build-cov/gen/u0378/test.o: in function `ceres::internal::PartitionedMatrixViewFColsPartiti
+  u0379 ok            C1 100%  C2    –
+  u0381 ok            C1 100%  C2    –
+  u0380 ok            C1 100%  C2    –
+  u0382 ok            C1 100%  C2    –
+  u0383 ok            C1 100%  C2    –
+  u0384 ok            C1 100%  C2    –
+  u0385 ok            C1 100%  C2    –
+  u0386 ok            C1 100%  C2    –
+  u0388 ok            C1 100%  C2    –
+  u0389 ok            C1 100%  C2    –
+  u0400 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u0401 ok            C1 100%  C2    –
+  u0387 ok            C1 100%  C2    –
+  u0402 ok            C1 100%  C2    –
+  u0403 ok            C1 100%  C2    –
+  u0405 ok            C1 100%  C2    –
+  u0406 ok            C1 100%  C2    –
+  u0404 ok            C1   0%  C2    –
+  u0408 ok            C1   0%  C2    –
+  u0409 ok            C1 100%  C2    –
+  u0410 ok            C1 100%  C2    –
+  u0414 ok            C1 100%  C2    –
+  u0415 compile_fail  C1    –  C2    –  /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres:
+  u0417 ok            C1 100%  C2    –
+  u0416 ok            C1   0%  C2    –
+  u0418 ok            C1 100%  C2    –
+  u0420 compile_fail  C1    –  C2    –  internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteS
+  u0421 compile_fail  C1    –  C2    –  internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteS
+  u0419 ok            C1   0%  C2    –
+  u0433 ok            C1 100%  C2    –
+  u0407 ok            C1 100%  C2    –
+  u0436 ok            C1 100%  C2 100%
+  u0434 ok            C1   0%  C2    –
+  u0437 ok            C1 100%  C2 100%
+  u0438 compile_fail  C1    –  C2    –  include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<5>’ has no memb
+  u0439 compile_fail  C1    –  C2    –  units/u0439/u0439_test.cc:12:10: error: ‘Jet’ is not a member of ‘ceres’
+  u0440 ok            C1 100%  C2    –
+  u0441 ok            C1 100%  C2 100%
+  u0442 ok            C1 100%  C2 100%
+  u0443 ok            C1 100%  C2 100%
+  u0445 ok            C1 100%  C2    –
+  u0444 ok            C1 100%  C2 100%
+  u0446 ok            C1 100%  C2    –
+  u0447 ok            C1 100%  C2 100%
+  u0448 ok            C1 100%  C2 100%
+  u0451 ok            C1 100%  C2 100%
+  u0452 ok            C1 100%  C2 100%
+  u0453 ok            C1 100%  C2 100%
+  u0454 ok            C1 100%  C2 100%
+  u0457 ok            C1 100%  C2 100%
+  u0455 ok            C1 100%  C2 100%
+  u0456 ok            C1 100%  C2 100%
+  u0458 ok            C1 100%  C2 100%
+  u0464 ok            C1 100%  C2 100%
+  u0465 ok            C1 100%  C2 100%
+  u0463 ok            C1 100%  C2 100%
+  u0468 compile_fail  C1    –  C2    –  units/u0468/u0468_test.cc:12:7: error: expected ‘;’ before ‘bfgs’
+  u0469 ok            C1 100%  C2 100%
+  u0470 ok            C1 100%  C2 100%
+  u0471 ok            C1 100%  C2 100%
+  u0478 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0477 ok            C1 100%  C2 100%
+  u0467 ok            C1   0%  C2    –
+  u0479 ok            C1 100%  C2 100%
+  u0480 ok            C1 100%  C2    –
+  u0481 ok            C1 100%  C2    –
+  u0482 ok            C1 100%  C2 100%
+  u0483 ok            C1 100%  C2 100%
+  u0484 ok            C1 100%  C2 100%
+  u0486 ok            C1 100%  C2 100%
+  u0487 ok            C1 100%  C2 100%
+  u0488 ok            C1 100%  C2 100%
+  u0485 ok            C1  75%  C2    –
+  u0489 ok            C1 100%  C2 100%
+  u0491 ok            C1 100%  C2    –
+  u0490 ok            C1 100%  C2 100%
+  u0493 compile_fail  C1    –  C2    –  include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<1>’ has no 
+  u0495 ok            C1 100%  C2 100%
+  u0494 ok            C1 100%  C2 100%
+  u0496 ok            C1 100%  C2    –
+  u0502 ok            C1 100%  C2 100%
+  u0497 ok            C1 100%  C2 100%
+  u0507 ok            C1 100%  C2    –
+  u0536 compile_fail  C1    –  C2    –  units/u0536/u0536_test.cc:70:36: error: ‘kImpossibleValue’ was not declared in this scope
+  u0529 ok            C1 100%  C2 100%
+  u0539 ok            C1 100%  C2 100%
+  u0537 ok            C1 100%  C2 100%
+  u0540 ok            C1 100%  C2 100%
+  u0541 ok            C1 100%  C2 100%
+  u0553 ok            C1  92%  C2  92%
+Báo cáo: /work/repo/reports/phase6/summary.md, /work/repo/reports/phase6/gen_coverage.html (chi tiết: /work/repo/reports/phase6/html)

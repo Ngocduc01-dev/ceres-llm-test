@@ -1,0 +1,9 @@
+{
+  "id": "u0550",
+  "name": "ceres::internal::LowRankInverseHessian::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0550/u0550_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

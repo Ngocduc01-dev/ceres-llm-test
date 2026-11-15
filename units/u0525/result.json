@@ -1,0 +1,10 @@
+{
+  "id": "u0525",
+  "name": "ceres::internal::DoglegStrategy::StepAccepted",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0525/u0525_test.cc:7:3: error: ‘object’ was not declared in this scope",
+    "units/u0525/u0525_test.cc:11:3: error: ‘object’ was not declared in this scope"
+  ]
+}

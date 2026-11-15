@@ -1,0 +1,28 @@
+/work/repo/units/u1286/u1286_test.cc: In member function ‘virtual void Unit_u1286_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1286/u1286_test.cc:8:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?
+    8 |   CanonicalViewsClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CanonicalViewsClusteringOptions
+In file included from /work/repo/units/u1286/u1286_test.cc:3:
+/work/ceres-solver/internal/ceres/canonical_views_clustering.h:104:24: note: ‘ceres::internal::CanonicalViewsClusteringOptions’ declared here
+  104 | struct CERES_NO_EXPORT CanonicalViewsClusteringOptions {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1286/u1286_test.cc:9:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+    9 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+In file included from /work/ceres-solver/internal/ceres/canonical_views_clustering.h:47:
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1286/u1286_test.cc:9:17: error: expected primary-expression before ‘int’
+    9 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u1286/u1286_test.cc:10:52: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   ceres::internal::ComputeCanonicalViewsClustering(options, graph, nullptr, nullptr);
+      |                                                    ^~~~~~~
+      |                                                    optind
+/work/repo/units/u1286/u1286_test.cc:10:61: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   10 |   ceres::internal::ComputeCanonicalViewsClustering(options, graph, nullptr, nullptr);
+      |                                                             ^~~~~
+      |                                                             isgraph

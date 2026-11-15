@@ -1,0 +1,10 @@
+{
+  "id": "u0960",
+  "name": "ceres::internal::InnerProductComputer::InnerProductComputer",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0960/u0960_test.cc:8:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u0960/u0960_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’"
+  ]
+}

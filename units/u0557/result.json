@@ -1,0 +1,10 @@
+{
+  "id": "u0557",
+  "name": "ceres::internal::IndependentSetOrdering",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u0557/u0557_test.cc:10:10: error: scalar object ‘ordering_data’ requires one element in initializer",
+    "units/u0557/u0557_test.cc:15:10: error: scalar object ‘ordering_data’ requires one element in initializer"
+  ]
+}

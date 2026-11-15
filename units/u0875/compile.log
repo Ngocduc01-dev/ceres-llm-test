@@ -1,0 +1,17 @@
+/work/repo/units/u0875/u0875_test.cc: In member function ‘virtual void Unit_u0875_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0875/u0875_test.cc:9:3: error: ‘VectorType’ was not declared in this scope
+    9 |   VectorType vector{};
+      |   ^~~~~~~~~~
+/work/repo/units/u0875/u0875_test.cc:10:58: error: ‘vector’ was not declared in this scope
+   10 |   ceres::internal::ParallelSetZero(nullptr, num_threads, vector);
+      |                                                          ^~~~~~
+/work/repo/units/u0875/u0875_test.cc:10:58: note: suggested alternatives:
+In file included from /usr/include/c++/14/vector:66,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:60,
+                 from /work/repo/units/u0875/u0875_test.cc:2:
+/usr/include/c++/14/bits/stl_vector.h:428:11: note:   ‘std::vector’
+  428 |     class vector : protected _Vector_base<_Tp, _Alloc>
+      |           ^~~~~~
+/usr/include/c++/14/vector:93:13: note:   ‘std::pmr::vector’
+   93 |       using vector = std::vector<_Tp, polymorphic_allocator<_Tp>>;
+      |             ^~~~~~

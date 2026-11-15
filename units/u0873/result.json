@@ -1,0 +1,9 @@
+{
+  "id": "u0873",
+  "name": "ceres::internal::Minimizer::~Minimizer",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0873/u0873_test.cc:7:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’"
+  ]
+}

@@ -1,0 +1,8 @@
+/work/repo/units/u0315/u0315_test.cc: In member function ‘virtual void ceres::internal::ProductTermTest_ConstructorTC1_Test::TestBody()’:
+/work/repo/units/u0315/u0315_test.cc:10:25: error: ‘struct ceres::internal::InnerProductComputer::ProductTerm’ is private within this context
+   10 |   InnerProductComputer::ProductTerm term(3, 1, 4);
+      |                         ^~~~~~~~~~~
+In file included from /work/repo/units/u0315/u0315_test.cc:3:
+/work/ceres-solver/internal/ceres/inner_product_computer.h:105:10: note: declared private here
+  105 |   struct ProductTerm {
+      |          ^~~~~~~~~~~

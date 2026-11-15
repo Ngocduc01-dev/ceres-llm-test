@@ -1,0 +1,12 @@
+{
+  "id": "u1538",
+  "name": "ceres::Solve",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1538/u1538_test.cc:8:3: error: ‘GradientProblemSolver’ has not been declared",
+    "units/u1538/u1538_test.cc:9:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?",
+    "units/u1538/u1538_test.cc:10:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1538/u1538_test.cc:10:25: error: ‘problem’ was not declared in this scope"
+  ]
+}

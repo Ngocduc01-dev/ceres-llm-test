@@ -1,0 +1,14 @@
+/work/repo/units/u0791/u0791_test.cc: In member function ‘virtual void Unit_u0791_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0791/u0791_test.cc:9:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+    9 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+In file included from /work/ceres-solver/internal/ceres/parameter_block_ordering.h:40,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:39,
+                 from /work/repo/units/u0791/u0791_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0791/u0791_test.cc:10:66: error: ‘parameter_block_ordering’ was not declared in this scope
+   10 |   ceres::internal::ReorderSchurComplementColumnsUsingSuiteSparse(parameter_block_ordering, nullptr);
+      |                                                                  ^~~~~~~~~~~~~~~~~~~~~~~~

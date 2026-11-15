@@ -1,0 +1,9 @@
+{
+  "id": "u0994",
+  "name": "ceres_create_softl1_loss_function_data",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0994/u0994_test.cc:8:3: error: ‘ceres_create_softl1_loss_function_data’ was not declared in this scope"
+  ]
+}

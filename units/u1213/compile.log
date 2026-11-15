@@ -1,0 +1,140 @@
+/work/repo/units/u1213/u1213_test.cc: In member function ‘virtual void Unit_u1213_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1213/u1213_test.cc:11:15: error: ‘Block’ was not declared in this scope
+   11 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1213/u1213_test.cc:11:15: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:163,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:38,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:42,
+                 from /work/repo/units/u1213/u1213_test.cc:4:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+In file included from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:40:
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1213/u1213_test.cc:11:20: error: template argument 1 is invalid
+   11 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1213/u1213_test.cc:11:20: error: template argument 2 is invalid
+/work/repo/units/u1213/u1213_test.cc:14:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1213/u1213_test.cc: In member function ‘virtual void Unit_u1213_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1213/u1213_test.cc:20:15: error: ‘Block’ was not declared in this scope
+   20 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1213/u1213_test.cc:20:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1213/u1213_test.cc:20:20: error: template argument 1 is invalid
+   20 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1213/u1213_test.cc:20:20: error: template argument 2 is invalid
+/work/repo/units/u1213/u1213_test.cc:23:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1213/u1213_test.cc: In member function ‘virtual void Unit_u1213_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1213/u1213_test.cc:29:15: error: ‘Block’ was not declared in this scope
+   29 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1213/u1213_test.cc:29:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1213/u1213_test.cc:29:20: error: template argument 1 is invalid
+   29 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1213/u1213_test.cc:29:20: error: template argument 2 is invalid
+/work/repo/units/u1213/u1213_test.cc:32:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   32 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1213/u1213_test.cc: In member function ‘virtual void Unit_u1213_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1213/u1213_test.cc:38:15: error: ‘Block’ was not declared in this scope
+   38 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1213/u1213_test.cc:38:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1213/u1213_test.cc:38:20: error: template argument 1 is invalid
+   38 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1213/u1213_test.cc:38:20: error: template argument 2 is invalid
+/work/repo/units/u1213/u1213_test.cc:41:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   41 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1213/u1213_test.cc: In member function ‘virtual void Unit_u1213_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1213/u1213_test.cc:47:15: error: ‘Block’ was not declared in this scope
+   47 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1213/u1213_test.cc:47:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1213/u1213_test.cc:47:20: error: template argument 1 is invalid
+   47 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1213/u1213_test.cc:47:20: error: template argument 2 is invalid
+/work/repo/units/u1213/u1213_test.cc:50:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   50 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1213/u1213_test.cc: In member function ‘virtual void Unit_u1213_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1213/u1213_test.cc:56:15: error: ‘Block’ was not declared in this scope
+   56 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1213/u1213_test.cc:56:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1213/u1213_test.cc:56:20: error: template argument 1 is invalid
+   56 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1213/u1213_test.cc:56:20: error: template argument 2 is invalid
+/work/repo/units/u1213/u1213_test.cc:59:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   59 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided

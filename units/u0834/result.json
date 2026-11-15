@@ -1,0 +1,15 @@
+{
+  "id": "u0834",
+  "name": "ceres_stock_loss_function",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0834/u0834_test.cc:8:10: error: expected identifier before numeric constant",
+    "units/u0834/u0834_test.cc:8:10: error: expected ‘]’ before numeric constant",
+    "units/u0834/u0834_test.cc:8:9: error: structured binding declaration cannot have type ‘double’",
+    "units/u0834/u0834_test.cc:8:9: error: empty structured binding declaration",
+    "units/u0834/u0834_test.cc:8:13: error: expected initializer before ‘out’",
+    "units/u0834/u0834_test.cc:9:52: error: ‘out’ was not declared in this scope",
+    "units/u0834/u0834_test.cc:9:3: error: ‘ceres_stock_loss_function’ was not declared in this scope"
+  ]
+}

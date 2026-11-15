@@ -1,0 +1,11 @@
+{
+  "id": "u0919",
+  "name": "ceres::ComposedLoss::ComposedLoss",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0919/u0919_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u0919/u0919_test.cc:8:12: error: expected ‘;’ before ‘ownership_g’",
+    "units/u0919/u0919_test.cc:9:30: error: no matching function for call to ‘ceres::ComposedLoss::ComposedLoss(<brace-enclosed initializer list>)’"
+  ]
+}

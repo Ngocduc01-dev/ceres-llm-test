@@ -1,0 +1,9 @@
+{
+  "id": "u0829",
+  "name": "ceres::internal::BlockSparseMatrix::SetZero",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0829/u0829_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

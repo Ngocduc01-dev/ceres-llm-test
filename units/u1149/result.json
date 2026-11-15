@@ -1,0 +1,9 @@
+{
+  "id": "u1149",
+  "name": "ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1149/u1149_test.cc:11:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

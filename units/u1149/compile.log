@@ -1,0 +1,15 @@
+/work/repo/units/u1149/u1149_test.cc: In member function ‘virtual void Unit_u1149_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1149/u1149_test.cc:11:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::DynamicCompressedRowSparseMatrix object{};
+      |                                                            ^
+In file included from /work/repo/units/u1149/u1149_test.cc:4:
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:70:3: note: candidate: ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(int, int, int)’
+   70 |   DynamicCompressedRowSparseMatrix(int num_rows,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:70:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:52:23: note: candidate: ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(const ceres::internal::DynamicCompressedRowSparseMatrix&)’
+   52 | class CERES_NO_EXPORT DynamicCompressedRowSparseMatrix final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:52:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:52:23: note: candidate: ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(ceres::internal::DynamicCompressedRowSparseMatrix&&)’
+/work/ceres-solver/internal/ceres/dynamic_compressed_row_sparse_matrix.h:52:23: note:   candidate expects 1 argument, 0 provided

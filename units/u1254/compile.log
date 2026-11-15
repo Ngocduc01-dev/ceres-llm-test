@@ -1,0 +1,9 @@
+/work/repo/units/u1254/u1254_test.cc: In member function ‘virtual void Unit_u1254_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1254/u1254_test.cc:7:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::SchurJacobiPreconditioner object{};
+      |                                                     ^
+In file included from /work/repo/units/u1254/u1254_test.cc:3:
+/work/ceres-solver/internal/ceres/schur_jacobi_preconditioner.h:87:3: note: candidate: ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+   87 |   SchurJacobiPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_jacobi_preconditioner.h:87:3: note:   candidate expects 2 arguments, 0 provided

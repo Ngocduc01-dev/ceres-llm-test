@@ -1,0 +1,10 @@
+{
+  "id": "u0967",
+  "name": "ceres::internal::BlockSparseMatrix::AllocateValues",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0967/u0967_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0967/u0967_test.cc:9:24: error: ‘double* ceres::internal::BlockSparseMatrix::AllocateValues(int)’ is private within this context"
+  ]
+}

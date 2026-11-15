@@ -1,0 +1,10 @@
+{
+  "id": "u1512",
+  "name": "ceres::Problem::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1512/u1512_test.cc:8:3: error: ‘EvaluateOptions’ was not declared in this scope",
+    "units/u1512/u1512_test.cc:10:19: error: ‘evaluate_options’ was not declared in this scope"
+  ]
+}

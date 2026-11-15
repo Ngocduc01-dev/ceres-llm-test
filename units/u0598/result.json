@@ -1,0 +1,10 @@
+{
+  "id": "u0598",
+  "name": "ceres::internal::(anonymous)::RegionsAlias",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0598/u0598_test.cc:10:10: error: scalar object ‘a_data’ requires one element in initializer",
+    "units/u0598/u0598_test.cc:11:10: error: scalar object ‘b_data’ requires one element in initializer"
+  ]
+}

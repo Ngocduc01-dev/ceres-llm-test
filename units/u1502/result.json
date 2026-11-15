@@ -1,0 +1,13 @@
+{
+  "id": "u1502",
+  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingEigenSparseQR",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1502/u1502_test.cc:13:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1502/u1502_test.cc:19:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1502/u1502_test.cc:25:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1502/u1502_test.cc:31:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1502/u1502_test.cc:37:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’"
+  ]
+}

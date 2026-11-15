@@ -1,0 +1,16 @@
+{
+  "id": "u1236",
+  "name": "ceres::internal::CompressedRowSparseMatrix::FromTripletSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1236/u1236_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1236/u1236_test.cc:10:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1236/u1236_test.cc:11:34: error: ‘input’ was not declared in this scope; did you mean ‘int’?",
+    "units/u1236/u1236_test.cc:16:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1236/u1236_test.cc:18:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1236/u1236_test.cc:19:34: error: ‘input’ was not declared in this scope; did you mean ‘int’?",
+    "units/u1236/u1236_test.cc:24:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u1236/u1236_test.cc:26:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

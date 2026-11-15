@@ -1,0 +1,28 @@
+/work/repo/units/u1478/u1478_test.cc: In member function ‘virtual void Unit_u1478_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1478/u1478_test.cc:14:3: error: ‘internal’ has not been declared
+   14 |   internal::PreprocessedProblem pp{};
+      |   ^~~~~~~~
+/work/repo/units/u1478/u1478_test.cc:15:29: error: ‘pp’ was not declared in this scope
+   15 |   ceres::PostSolveSummarize(pp, nullptr);
+      |                             ^~
+/work/repo/units/u1478/u1478_test.cc: In member function ‘virtual void Unit_u1478_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1478/u1478_test.cc:20:3: error: ‘internal’ has not been declared
+   20 |   internal::PreprocessedProblem pp{};
+      |   ^~~~~~~~
+/work/repo/units/u1478/u1478_test.cc:21:29: error: ‘pp’ was not declared in this scope
+   21 |   ceres::PostSolveSummarize(pp, nullptr);
+      |                             ^~
+/work/repo/units/u1478/u1478_test.cc: In member function ‘virtual void Unit_u1478_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1478/u1478_test.cc:26:3: error: ‘internal’ has not been declared
+   26 |   internal::PreprocessedProblem pp{};
+      |   ^~~~~~~~
+/work/repo/units/u1478/u1478_test.cc:27:29: error: ‘pp’ was not declared in this scope
+   27 |   ceres::PostSolveSummarize(pp, nullptr);
+      |                             ^~
+/work/repo/units/u1478/u1478_test.cc: In member function ‘virtual void Unit_u1478_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1478/u1478_test.cc:32:3: error: ‘internal’ has not been declared
+   32 |   internal::PreprocessedProblem pp{};
+      |   ^~~~~~~~
+/work/repo/units/u1478/u1478_test.cc:33:29: error: ‘pp’ was not declared in this scope
+   33 |   ceres::PostSolveSummarize(pp, nullptr);
+      |                             ^~

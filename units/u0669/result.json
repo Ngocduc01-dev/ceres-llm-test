@@ -1,0 +1,9 @@
+{
+  "id": "u0669",
+  "name": "ceres::internal::ExecutionSummary::IncrementTimeBy",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0669/u0669_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

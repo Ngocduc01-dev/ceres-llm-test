@@ -1,0 +1,12 @@
+In file included from /work/repo/units/u0848/u0848_test.cc:3:
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+   53 |   DenseJacobianWriter(Evaluator::Options /* ignored */, Program* program)
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h:53:41: error: expected ‘)’ before ‘,’ token
+   53 |   DenseJacobianWriter(Evaluator::Options /* ignored */, Program* program)
+      |                      ~                  ^             ~
+      |                                         )
+/work/repo/units/u0848/u0848_test.cc: In member function ‘virtual void Unit_u0848_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0848/u0848_test.cc:9:3: error: ‘Evaluator’ has not been declared
+    9 |   Evaluator::Options arg0{};
+      |   ^~~~~~~~~

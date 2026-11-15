@@ -1,0 +1,15 @@
+/work/repo/units/u0967/u0967_test.cc: In member function ‘virtual void Unit_u0967_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0967/u0967_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+In file included from /work/repo/units/u0967/u0967_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0967/u0967_test.cc:9:24: error: ‘double* ceres::internal::BlockSparseMatrix::AllocateValues(int)’ is private within this context
+    9 |   object.AllocateValues(size);
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:165:11: note: declared private here
+  165 |   double* AllocateValues(int size);
+      |           ^~~~~~~~~~~~~~

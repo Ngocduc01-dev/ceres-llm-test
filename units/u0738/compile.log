@@ -1,0 +1,4 @@
+/work/repo/units/u0738/u0738_test.cc: In member function ‘virtual void ceres::Unit_u0738_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0738/u0738_test.cc:7:3: error: ‘DumpFormatTypeToString’ was not declared in this scope
+    7 |   DumpFormatTypeToString({});
+      |   ^~~~~~~~~~~~~~~~~~~~~~

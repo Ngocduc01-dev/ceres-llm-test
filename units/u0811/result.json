@@ -1,0 +1,16 @@
+{
+  "id": "u0811",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::ForestToClusterPairs",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0811/u0811_test.cc:9:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?",
+    "units/u0811/u0811_test.cc:9:17: error: expected primary-expression before ‘int’",
+    "units/u0811/u0811_test.cc:10:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0811/u0811_test.cc:11:31: error: ‘forest’ was not declared in this scope",
+    "units/u0811/u0811_test.cc:16:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?",
+    "units/u0811/u0811_test.cc:16:17: error: expected primary-expression before ‘int’",
+    "units/u0811/u0811_test.cc:17:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0811/u0811_test.cc:18:31: error: ‘forest’ was not declared in this scope"
+  ]
+}

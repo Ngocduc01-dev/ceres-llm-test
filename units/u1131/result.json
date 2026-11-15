@@ -1,0 +1,9 @@
+{
+  "id": "u1131",
+  "name": "ceres::internal::ProblemImpl::DeleteBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1131/u1131_test.cc:9:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous"
+  ]
+}

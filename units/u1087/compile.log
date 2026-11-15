@@ -1,0 +1,25 @@
+/work/repo/units/u1087/u1087_test.cc: In member function ‘virtual void Unit_u1087_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1087/u1087_test.cc:9:49: error: no matching function for call to ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::DenseIterativeRefiner object{};
+      |                                                 ^
+In file included from /work/repo/units/u1087/u1087_test.cc:4:
+/work/ceres-solver/internal/ceres/iterative_refiner.h:98:12: note: candidate: ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(int)’
+   98 |   explicit DenseIterativeRefiner(int max_num_iterations);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:98:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/iterative_refiner.h:94:23: note: candidate: ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(const ceres::internal::DenseIterativeRefiner&)’
+   94 | class CERES_NO_EXPORT DenseIterativeRefiner {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:94:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1087/u1087_test.cc: In member function ‘virtual void Unit_u1087_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1087/u1087_test.cc:16:49: error: no matching function for call to ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::DenseIterativeRefiner object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/iterative_refiner.h:98:12: note: candidate: ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(int)’
+   98 |   explicit DenseIterativeRefiner(int max_num_iterations);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:98:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/iterative_refiner.h:94:23: note: candidate: ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(const ceres::internal::DenseIterativeRefiner&)’
+   94 | class CERES_NO_EXPORT DenseIterativeRefiner {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:94:23: note:   candidate expects 1 argument, 0 provided

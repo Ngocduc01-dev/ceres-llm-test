@@ -1,0 +1,27 @@
+{
+  "id": "u0545",
+  "name": "ceres::internal::CopyRange",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0545.PathP1": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 5
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

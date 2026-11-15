@@ -1,0 +1,10 @@
+{
+  "id": "u1493",
+  "name": "ceres::internal::CoordinateDescentMinimizer::Solve",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1493/u1493_test.cc:14:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’",
+    "units/u1493/u1493_test.cc:15:15: error: ‘void ceres::internal::CoordinateDescentMinimizer::Solve(ceres::internal::Program*, ceres::internal::LinearSolver*, double*, ceres::Solver::Summary*)’ is private within this context"
+  ]
+}

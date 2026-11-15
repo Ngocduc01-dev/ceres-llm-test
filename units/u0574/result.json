@@ -1,0 +1,9 @@
+{
+  "id": "u0574",
+  "name": "ceres::internal::BlockRandomAccessSparseMatrix::IntPairToInt64",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0574/u0574_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

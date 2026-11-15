@@ -1,0 +1,16 @@
+{
+  "id": "u1369",
+  "name": "ceres::internal::ConjugateGradientsSolver",
+  "status": "compile_fail",
+  "cfg_branches": 22,
+  "errors": [
+    "units/u1369/u1369_test.cc:8:9: error: ‘ConjugateGradientsSolverOptions’ does not name a type",
+    "units/u1369/u1369_test.cc:9:3: error: ‘ConjugateGradientsLinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::ConjugateGradientsLinearOperator’?",
+    "units/u1369/u1369_test.cc:9:36: error: ‘DenseVectorType’ was not declared in this scope",
+    "units/u1369/u1369_test.cc:9:53: error: ‘lhs’ was not declared in this scope",
+    "units/u1369/u1369_test.cc:10:18: error: expected ‘;’ before ‘rhs’",
+    "units/u1369/u1369_test.cc:11:53: error: ‘preconditioner’ was not declared in this scope",
+    "units/u1369/u1369_test.cc:12:18: error: expected ‘;’ before ‘solution’",
+    "units/u1369/u1369_test.cc:13:45: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

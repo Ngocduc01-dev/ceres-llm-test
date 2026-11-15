@@ -1,0 +1,10 @@
+{
+  "id": "u0614",
+  "name": "ceres::AutoDiffCostFunction::AutoDiffCostFunction<CostFunctor, kNumResiduals, Ns...>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0614/u0614_test.cc:8:10: error: scalar object ‘functor_data’ requires one element in initializer",
+    "units/u0614/u0614_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

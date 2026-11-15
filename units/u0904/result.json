@@ -1,0 +1,9 @@
+{
+  "id": "u0904",
+  "name": "ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0904/u0904_test.cc:8:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’"
+  ]
+}

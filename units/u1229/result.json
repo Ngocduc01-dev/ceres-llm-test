@@ -1,0 +1,14 @@
+{
+  "id": "u1229",
+  "name": "ceres::internal::DenseSchurComplementSolver::SolveReducedLinearSystem",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1229/u1229_test.cc:10:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1229/u1229_test.cc:11:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1229/u1229_test.cc:12:35: error: ‘arg0’ was not declared in this scope",
+    "units/u1229/u1229_test.cc:17:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1229/u1229_test.cc:18:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1229/u1229_test.cc:19:35: error: ‘arg0’ was not declared in this scope"
+  ]
+}

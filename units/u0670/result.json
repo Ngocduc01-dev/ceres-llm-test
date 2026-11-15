@@ -1,0 +1,9 @@
+{
+  "id": "u0670",
+  "name": "ceres::internal::GradientCheckingIterationCallback::SetGradientErrorDetected",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0670/u0670_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

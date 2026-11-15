@@ -1,0 +1,9 @@
+{
+  "id": "u0644",
+  "name": "ceres::RotationMatrixToAngleAxis",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0644/u0644_test.cc:8:10: error: scalar object ‘angle_axis_data’ requires one element in initializer"
+  ]
+}

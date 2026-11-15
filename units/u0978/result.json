@@ -1,0 +1,10 @@
+{
+  "id": "u0978",
+  "name": "ceres::internal::FixedArray::memsize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0978/u0978_test.cc:7:38: error: class template argument deduction failed:",
+    "units/u0978/u0978_test.cc:7:38: error: no matching function for call to ‘FixedArray()’"
+  ]
+}

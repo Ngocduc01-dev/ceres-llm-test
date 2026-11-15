@@ -3,7 +3,6 @@
 #include "ceres/loss_function.h"
 
 // P1: node 1: đúng -> node 2 -> END
-// Path P1: START -> CFG nodes -> END.
 TEST(LossFunctionWrapperEvaluateTest, NullRhoUsesDefaultValues) {
   ceres::LossFunctionWrapper wrapper(nullptr, ceres::TAKE_OWNERSHIP);
   double sq_norm = 2.5;
@@ -12,7 +11,6 @@ TEST(LossFunctionWrapperEvaluateTest, NullRhoUsesDefaultValues) {
 }
 
 // P2: node 1: sai -> node 3 -> END
-// Path P1: START -> CFG nodes -> END.
 TEST(LossFunctionWrapperEvaluateTest, NonNullRhoDelegatesToLossFunction) {
   ceres::LossFunctionWrapper wrapper(new ceres::TrivialLoss(),
                                      ceres::TAKE_OWNERSHIP);

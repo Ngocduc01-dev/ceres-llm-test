@@ -1,0 +1,16 @@
+{
+  "id": "u1492",
+  "name": "ceres::internal::ProgramEvaluator::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 26,
+  "errors": [
+    "units/u1492/u1492_test.cc:14:3: error: ‘Evaluator’ has not been declared",
+    "units/u1492/u1492_test.cc:15:44: error: class template argument deduction failed:",
+    "units/u1492/u1492_test.cc:15:44: error: no matching function for call to ‘ProgramEvaluator()’",
+    "units/u1492/u1492_test.cc:16:19: error: ‘evaluate_options’ was not declared in this scope",
+    "units/u1492/u1492_test.cc:21:3: error: ‘Evaluator’ has not been declared",
+    "units/u1492/u1492_test.cc:22:44: error: class template argument deduction failed:",
+    "units/u1492/u1492_test.cc:22:44: error: no matching function for call to ‘ProgramEvaluator()’",
+    "units/u1492/u1492_test.cc:23:19: error: ‘evaluate_options’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "u0512",
+  "name": "ceres::internal::IsSolutionUsable",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0512/u0512_test.cc:9:19: error: no matching function for call to ‘IsSolutionUsable(<brace-enclosed initializer list>)’"
+  ]
+}

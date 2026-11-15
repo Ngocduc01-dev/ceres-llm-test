@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "internal/ceres/map_util.h", "lines": [{"line_number": 121, "count": 1, "branches": []}, {"line_number": 125, "count": 2, "branches": []}, {"line_number": 126, "count": 1, "branches": []}, {"line_number": 127, "count": 0, "branches": []}], "functions": []}]}

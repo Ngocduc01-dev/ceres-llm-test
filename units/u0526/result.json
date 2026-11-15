@@ -1,0 +1,9 @@
+{
+  "id": "u0526",
+  "name": "ceres::internal::InvertPSDMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0526/u0526_test.cc:10:18: error: no matching function for call to ‘InvertPSDMatrix(bool, <brace-enclosed initializer list>)’"
+  ]
+}

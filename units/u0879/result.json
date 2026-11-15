@@ -1,0 +1,9 @@
+{
+  "id": "u0879",
+  "name": "ceres::Problem::Problem",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0879/u0879_test.cc:7:3: error: ‘Problem’ was not declared in this scope; did you mean ‘ceres::Problem’?"
+  ]
+}

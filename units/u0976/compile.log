@@ -1,0 +1,12 @@
+/work/repo/units/u0976/u0976_test.cc: In member function ‘virtual void Unit_u0976_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0976/u0976_test.cc:9:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::DynamicCostFunction’
+    9 |   ceres::DynamicCostFunction object{};
+      |                              ^~~~~~
+In file included from /work/repo/units/u0976/u0976_test.cc:4:
+/work/ceres-solver/include/ceres/dynamic_cost_function.h:42:20: note:   because the following virtual functions are pure within ‘ceres::DynamicCostFunction’:
+   42 | class CERES_EXPORT DynamicCostFunction : public CostFunction {
+      |                    ^~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u0976/u0976_test.cc:3:
+/work/ceres-solver/include/ceres/cost_function.h:116:16: note:     ‘virtual bool ceres::CostFunction::Evaluate(const double* const*, double*, double**) const’
+  116 |   virtual bool Evaluate(double const* const* parameters,
+      |                ^~~~~~~~

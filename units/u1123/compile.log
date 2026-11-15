@@ -1,0 +1,78 @@
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:11:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   11 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+In file included from /work/repo/units/u1123/u1123_test.cc:5:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:13:20: error: ‘A’ was not declared in this scope
+   13 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:18:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   18 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:20:20: error: ‘A’ was not declared in this scope
+   20 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:25:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   25 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:27:20: error: ‘A’ was not declared in this scope
+   27 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:32:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   32 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:34:20: error: ‘A’ was not declared in this scope
+   34 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:39:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   39 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:41:20: error: ‘A’ was not declared in this scope
+   41 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:46:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   46 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:48:20: error: ‘A’ was not declared in this scope
+   48 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1123/u1123_test.cc: In member function ‘virtual void Unit_u1123_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1123/u1123_test.cc:53:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   53 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1123/u1123_test.cc:55:20: error: ‘A’ was not declared in this scope
+   55 |   object.Eliminate(A, nullptr, nullptr, nullptr, nullptr);
+      |                    ^

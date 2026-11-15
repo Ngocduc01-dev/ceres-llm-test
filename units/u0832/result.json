@@ -1,0 +1,9 @@
+{
+  "id": "u0832",
+  "name": "ceres_free_problem",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0832/u0832_test.cc:7:3: error: ‘ceres_free_problem’ was not declared in this scope"
+  ]
+}

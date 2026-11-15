@@ -1,26 +1,31 @@
-# Unit u0339
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh nào |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `int num_cols() const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `num_parameters` từ 1 đến 5; `max_num_corrections` từ 1 đến 5; `use_approximate_eigenvalue_scaling` ∈ {true, false} | `num_parameters` = 3; `max_num_corrections` = 4; `use_approximate_eigenvalue_scaling` = true |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. Hàm không có điểm rẽ nhánh và không có `CHECK`.
 
-## D. File test
+C2 dự kiến = 0 / 0 (tổng số nhánh là 0, nên mọi nhánh đều được phủ; một test đi qua node 1 là đủ).
+
+**D. File test**
 
 ```cpp
 // FILE: u0339_test.cc
 #include "gtest/gtest.h"
 #include "ceres/low_rank_inverse_hessian.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0339, PathP1) { ceres::internal::LowRankInverseHessian target(1, 1, true); target.num_cols(); }
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(LowRankInverseHessianNumCols, P1_ReturnsNumParameters) {
+  ceres::internal::LowRankInverseHessian hessian(3, 4, true);
+  hessian.num_cols();
+}
 ```

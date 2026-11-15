@@ -1,0 +1,10 @@
+{
+  "id": "u1222",
+  "name": "ceres::internal::(anonymous)::GetNumAllowedThreads",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1222/u1222_test.cc:9:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1222/u1222_test.cc:9:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

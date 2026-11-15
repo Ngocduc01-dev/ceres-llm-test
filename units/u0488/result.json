@@ -1,0 +1,32 @@
+{
+  "id": "u0488",
+  "name": "ceres::STLDeleteUniqueContainerPointers",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "STLDeleteUniqueContainerPointersTest.ZeroElements": "pass",
+    "STLDeleteUniqueContainerPointersTest.OneElement": "pass",
+    "STLDeleteUniqueContainerPointersTest.TwoElements": "pass",
+    "STLDeleteUniqueContainerPointersTest.ThreeElements": "pass",
+    "STLDeleteUniqueContainerPointersTest.FourElements": "pass",
+    "STLDeleteUniqueContainerPointersTest.FiveElements": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 8,
+    "total": 8
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

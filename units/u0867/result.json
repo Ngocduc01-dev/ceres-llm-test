@@ -1,0 +1,10 @@
+{
+  "id": "u0867",
+  "name": "ceres::internal::LineSearch::~LineSearch",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0867/u0867_test.cc:7:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’",
+    "units/u0867/u0867_test.cc:7:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "u1509",
+  "name": "ceres::Covariance::GetCovarianceMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1509/u1509_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-enclosed initializer list>)’",
+    "units/u1509/u1509_test.cc:8:30: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’"
+  ]
+}

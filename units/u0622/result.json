@@ -1,0 +1,9 @@
+{
+  "id": "u0622",
+  "name": "ceres::DynamicNumericDiffCostFunction::DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "include/ceres/internal/variadic_evaluate.h:65:17: error: no match for call to ‘(const LocalCostFunctor) (const double* const*&, double*&)’"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": "u1262",
+  "name": "ceres::internal::Program::MaxResidualsPerResidualBlock",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u1262.TC1_CallsTarget": "pass",
+    "Unit_u1262.TC2_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 2,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 5
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

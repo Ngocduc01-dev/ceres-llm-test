@@ -1,0 +1,9 @@
+{
+  "id": "u0579",
+  "name": "ceres::internal::SparseIterativeRefiner::Allocate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0579/u0579_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

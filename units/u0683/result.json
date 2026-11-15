@@ -1,0 +1,12 @@
+{
+  "id": "u0683",
+  "name": "ceres::internal::LinearOperator::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0683/u0683_test.cc:15:20: error: ‘Vector’ is not a member of ‘ceres::internal’",
+    "units/u0683/u0683_test.cc:16:20: error: ‘Vector’ is not a member of ‘ceres::internal’",
+    "units/u0683/u0683_test.cc:17:37: error: ‘x’ was not declared in this scope",
+    "units/u0683/u0683_test.cc:17:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?"
+  ]
+}

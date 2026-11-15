@@ -1,0 +1,16 @@
+{
+  "id": "u1212",
+  "name": "ceres::internal::PartitionedMatrixView::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1212/u1212_test.cc:11:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1212/u1212_test.cc:12:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1212/u1212_test.cc:13:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?",
+    "units/u1212/u1212_test.cc:13:25: error: expected primary-expression before ‘>’ token",
+    "units/u1212/u1212_test.cc:13:27: error: ‘object’ was not declared in this scope",
+    "units/u1212/u1212_test.cc:19:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1212/u1212_test.cc:20:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1212/u1212_test.cc:21:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?"
+  ]
+}

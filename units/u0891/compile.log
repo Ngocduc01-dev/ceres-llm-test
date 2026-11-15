@@ -1,0 +1,9 @@
+/work/repo/units/u0891/u0891_test.cc: In member function ‘virtual void Unit_u0891_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0891/u0891_test.cc:8:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::RefinedSparseCholesky object{};
+      |                                                 ^
+In file included from /work/repo/units/u0891/u0891_test.cc:4:
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:121:3: note: candidate: ‘ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky(std::unique_ptr<ceres::internal::SparseCholesky>, std::unique_ptr<ceres::internal::SparseIterativeRefiner>)’
+  121 |   RefinedSparseCholesky(
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:121:3: note:   candidate expects 2 arguments, 0 provided

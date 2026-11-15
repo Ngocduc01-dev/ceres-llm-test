@@ -1,0 +1,10 @@
+{
+  "id": "u1008",
+  "name": "ceres::internal::TypedLinearSolver::Statistics",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1008/u1008_test.cc:8:45: error: class template argument deduction failed:",
+    "units/u1008/u1008_test.cc:8:45: error: no matching function for call to ‘TypedLinearSolver()’"
+  ]
+}

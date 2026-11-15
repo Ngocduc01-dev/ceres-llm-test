@@ -1,0 +1,14 @@
+{
+  "id": "u0611",
+  "name": "ceres::internal::(anonymous)::TransposeForCompressedRowSparseStructure",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u0611/u0611_test.cc:10:10: error: scalar object ‘rows_data’ requires one element in initializer",
+    "units/u0611/u0611_test.cc:11:10: error: scalar object ‘cols_data’ requires one element in initializer",
+    "units/u0611/u0611_test.cc:12:10: error: scalar object ‘values_data’ requires one element in initializer",
+    "units/u0611/u0611_test.cc:13:10: error: scalar object ‘transpose_rows_data’ requires one element in initializer",
+    "units/u0611/u0611_test.cc:14:10: error: scalar object ‘transpose_cols_data’ requires one element in initializer",
+    "units/u0611/u0611_test.cc:15:10: error: scalar object ‘transpose_values_data’ requires one element in initializer"
+  ]
+}

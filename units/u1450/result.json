@@ -1,0 +1,16 @@
+{
+  "id": "u1450",
+  "name": "ceres::internal::TrustRegionMinimizer::DoLineSearch",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1450/u1450_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1450/u1450_test.cc:9:9: error: expected ‘;’ before ‘gradient’",
+    "units/u1450/u1450_test.cc:12:23: error: ‘x’ was not declared in this scope",
+    "units/u1450/u1450_test.cc:12:26: error: ‘gradient’ was not declared in this scope",
+    "units/u1450/u1450_test.cc:17:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1450/u1450_test.cc:18:9: error: expected ‘;’ before ‘gradient’",
+    "units/u1450/u1450_test.cc:21:23: error: ‘x’ was not declared in this scope",
+    "units/u1450/u1450_test.cc:21:26: error: ‘gradient’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "u1270",
+  "name": "ceres::GradientProblemSolver::Summary::FullReport",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u1270.TC1_CallsTarget": "pass",
+    "Unit_u1270.TC2_CallsTarget": "pass",
+    "Unit_u1270.TC3_CallsTarget": "pass",
+    "Unit_u1270.TC4_CallsTarget": "pass",
+    "Unit_u1270.TC5_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 5,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 32,
+    "total": 39
+  },
+  "c2": {
+    "covered": 3,
+    "total": 8,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 228,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (num_tangent_parameters != num_parameters) {"
+    },
+    {
+      "line": 234,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (line_search_direction_type == LBFGS) {"
+    },
+    {
+      "line": 236,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "} else if (line_search_direction_type == NONLINEAR_CONJUGATE_GRADIENT) {"
+    },
+    {
+      "line": 259,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (termination_type != FAILURE && termination_type != USER_FAILURE) {"
+    }
+  ]
+}

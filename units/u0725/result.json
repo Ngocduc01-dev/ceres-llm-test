@@ -1,0 +1,9 @@
+{
+  "id": "u0725",
+  "name": "ceres::internal::ReadFileToStringOrDie",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0725/u0725_test.cc:9:10: error: scalar object ‘data_data’ requires one element in initializer"
+  ]
+}

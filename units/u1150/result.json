@@ -1,0 +1,13 @@
+{
+  "id": "u1150",
+  "name": "ceres::internal::InnerProductComputer::Create",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1150/u1150_test.cc:9:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1150/u1150_test.cc:10:3: error: ‘CompressedRowSparseMatrix’ has not been declared",
+    "units/u1150/u1150_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1150/u1150_test.cc:12:17: error: ‘m’ was not declared in this scope; did you mean ‘tm’?",
+    "units/u1150/u1150_test.cc:12:20: error: ‘product_storage_type’ was not declared in this scope"
+  ]
+}

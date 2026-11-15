@@ -1,0 +1,10 @@
+{
+  "id": "u1106",
+  "name": "ceres::internal::DynamicCompressedRowSparseMatrix::ClearRows",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1106/u1106_test.cc:10:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1106/u1106_test.cc:18:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

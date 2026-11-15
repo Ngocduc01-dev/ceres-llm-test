@@ -1,0 +1,10 @@
+{
+  "id": "u0593",
+  "name": "ceres::TinySolver::Initialize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0593/u0593_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer",
+    "units/u0593/u0593_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

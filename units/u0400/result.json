@@ -1,0 +1,16 @@
+{
+  "id": "u0400",
+  "name": "ceres::internal::ProgramEvaluator::EvaluateScratch::Init",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared",
+    "internal/ceres/program_evaluator.h:115:49: error: expected class-name before ‘{’ token",
+    "internal/ceres/program_evaluator.h:117:26: error: ‘Evaluator’ does not name a type",
+    "internal/ceres/program_evaluator.h:117:44: error: expected unqualified-id before ‘&’ token",
+    "internal/ceres/program_evaluator.h:117:44: error: expected ‘)’ before ‘&’ token",
+    "internal/ceres/program_evaluator.h:117:44: error: constructors may not be ref-qualified",
+    "internal/ceres/program_evaluator.h:117:44: error: expected ‘;’ at end of member declaration",
+    "internal/ceres/program_evaluator.h:117:46: error: ‘options’ does not name a type"
+  ]
+}

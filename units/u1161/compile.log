@@ -1,0 +1,60 @@
+/work/repo/units/u1161/u1161_test.cc: In member function ‘virtual void Unit_u1161_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1161/u1161_test.cc:8:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+    8 |   TripletSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+In file included from /work/repo/units/u1161/u1161_test.cc:4:
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1161/u1161_test.cc:9:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::DenseSparseMatrix object{};
+      |                                             ^
+In file included from /work/repo/units/u1161/u1161_test.cc:3:
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:52:3: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(int, int)’
+   52 |   DenseSparseMatrix(int num_rows, int num_cols);
+      |   ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:52:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:51:12: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(ceres::Matrix)’
+   51 |   explicit DenseSparseMatrix(Matrix m);
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:50:12: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(const ceres::internal::TripletSparseMatrix&)’
+   50 |   explicit DenseSparseMatrix(const TripletSparseMatrix& m);
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:50:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(const ceres::internal::DenseSparseMatrix&)’
+   46 | class CERES_NO_EXPORT DenseSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(ceres::internal::DenseSparseMatrix&&)’
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1161/u1161_test.cc: In member function ‘virtual void Unit_u1161_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1161/u1161_test.cc:15:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+   15 |   TripletSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1161/u1161_test.cc:16:45: error: no matching function for call to ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::DenseSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:52:3: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(int, int)’
+   52 |   DenseSparseMatrix(int num_rows, int num_cols);
+      |   ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:52:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:51:12: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(ceres::Matrix)’
+   51 |   explicit DenseSparseMatrix(Matrix m);
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:50:12: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(const ceres::internal::TripletSparseMatrix&)’
+   50 |   explicit DenseSparseMatrix(const TripletSparseMatrix& m);
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:50:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(const ceres::internal::DenseSparseMatrix&)’
+   46 | class CERES_NO_EXPORT DenseSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note: candidate: ‘ceres::internal::DenseSparseMatrix::DenseSparseMatrix(ceres::internal::DenseSparseMatrix&&)’
+/work/ceres-solver/internal/ceres/dense_sparse_matrix.h:46:23: note:   candidate expects 1 argument, 0 provided

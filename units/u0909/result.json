@@ -1,0 +1,12 @@
+{
+  "id": "u0909",
+  "name": "ceres::internal::ParallelAssign",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0909/u0909_test.cc:9:3: error: ‘LhsExpression’ was not declared in this scope",
+    "units/u0909/u0909_test.cc:10:3: error: ‘RhsExpression’ was not declared in this scope",
+    "units/u0909/u0909_test.cc:11:57: error: ‘lhs’ was not declared in this scope",
+    "units/u0909/u0909_test.cc:11:62: error: ‘rhs’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,15 @@
+/work/repo/units/u1005/u1005_test.cc: In member function ‘virtual void Unit_u1005_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1005/u1005_test.cc:10:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::LineSearchFunction object{};
+      |                                              ^
+In file included from /work/repo/units/u1005/u1005_test.cc:5:
+/work/ceres-solver/internal/ceres/line_search.h:214:12: note: candidate: ‘ceres::internal::LineSearchFunction::LineSearchFunction(ceres::internal::Evaluator*)’
+  214 |   explicit LineSearchFunction(Evaluator* evaluator);
+      |            ^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:214:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:212:23: note: candidate: ‘ceres::internal::LineSearchFunction::LineSearchFunction(const ceres::internal::LineSearchFunction&)’
+  212 | class CERES_NO_EXPORT LineSearchFunction {
+      |                       ^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:212:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:212:23: note: candidate: ‘ceres::internal::LineSearchFunction::LineSearchFunction(ceres::internal::LineSearchFunction&&)’
+/work/ceres-solver/internal/ceres/line_search.h:212:23: note:   candidate expects 1 argument, 0 provided

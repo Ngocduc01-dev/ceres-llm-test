@@ -1,0 +1,62 @@
+/work/repo/units/u0763/u0763_test.cc: In member function ‘virtual void Unit_u0763_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0763/u0763_test.cc:7:3: error: ‘LineSearchDirection’ has not been declared
+    7 |   LineSearchDirection::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0763/u0763_test.cc:8:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’
+    8 |   ceres::internal::LineSearchDirection object{};
+      |                                        ^~~~~~
+In file included from /work/repo/units/u0763/u0763_test.cc:3:
+/work/ceres-solver/internal/ceres/line_search_direction.h:43:23: note:   because the following virtual functions are pure within ‘ceres::internal::LineSearchDirection’:
+   43 | class CERES_NO_EXPORT LineSearchDirection {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search_direction.h:58:16: note:     ‘virtual bool ceres::internal::LineSearchDirection::NextDirection(const ceres::internal::LineSearchMinimizer::State&, const ceres::internal::LineSearchMinimizer::State&, ceres::Vector*)’
+   58 |   virtual bool NextDirection(const LineSearchMinimizer::State& previous,
+      |                ^~~~~~~~~~~~~
+/work/repo/units/u0763/u0763_test.cc:9:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u0763/u0763_test.cc: In member function ‘virtual void Unit_u0763_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0763/u0763_test.cc:14:3: error: ‘LineSearchDirection’ has not been declared
+   14 |   LineSearchDirection::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0763/u0763_test.cc:15:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’
+   15 |   ceres::internal::LineSearchDirection object{};
+      |                                        ^~~~~~
+/work/repo/units/u0763/u0763_test.cc:16:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   16 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u0763/u0763_test.cc: In member function ‘virtual void Unit_u0763_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0763/u0763_test.cc:21:3: error: ‘LineSearchDirection’ has not been declared
+   21 |   LineSearchDirection::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0763/u0763_test.cc:22:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’
+   22 |   ceres::internal::LineSearchDirection object{};
+      |                                        ^~~~~~
+/work/repo/units/u0763/u0763_test.cc:23:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   23 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u0763/u0763_test.cc: In member function ‘virtual void Unit_u0763_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0763/u0763_test.cc:28:3: error: ‘LineSearchDirection’ has not been declared
+   28 |   LineSearchDirection::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0763/u0763_test.cc:29:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’
+   29 |   ceres::internal::LineSearchDirection object{};
+      |                                        ^~~~~~
+/work/repo/units/u0763/u0763_test.cc:30:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   30 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u0763/u0763_test.cc: In member function ‘virtual void Unit_u0763_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0763/u0763_test.cc:35:3: error: ‘LineSearchDirection’ has not been declared
+   35 |   LineSearchDirection::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0763/u0763_test.cc:36:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearchDirection’
+   36 |   ceres::internal::LineSearchDirection object{};
+      |                                        ^~~~~~
+/work/repo/units/u0763/u0763_test.cc:37:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   37 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

@@ -1,0 +1,23 @@
+/work/repo/units/u1351/u1351_test.cc: In member function ‘virtual void Unit_u1351_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1351/u1351_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1351/u1351_test.cc:10:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+In file included from /work/repo/units/u1351/u1351_test.cc:4:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1351/u1351_test.cc: In member function ‘virtual void Unit_u1351_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1351/u1351_test.cc:16:3: error: ‘LinearSolver’ has not been declared
+   16 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1351/u1351_test.cc:17:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided

@@ -1,0 +1,14 @@
+{
+  "id": "u0520",
+  "name": "ceres::LineManifold::Plus",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0520/u0520_test.cc:8:10: error: scalar object ‘delta_ptr_data’ requires one element in initializer",
+    "units/u0520/u0520_test.cc:9:10: error: scalar object ‘x_plus_delta_ptr_data’ requires one element in initializer",
+    "units/u0520/u0520_test.cc:10:3: error: ‘object’ was not declared in this scope",
+    "units/u0520/u0520_test.cc:15:10: error: scalar object ‘delta_ptr_data’ requires one element in initializer",
+    "units/u0520/u0520_test.cc:16:10: error: scalar object ‘x_plus_delta_ptr_data’ requires one element in initializer",
+    "units/u0520/u0520_test.cc:17:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "u0564",
+  "name": "ceres::internal::FixedArray::Storage::UsingInlinedStorage",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0564/u0564_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

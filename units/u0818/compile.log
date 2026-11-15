@@ -1,0 +1,17 @@
+/work/repo/units/u0818/u0818_test.cc: In member function ‘virtual void Unit_u0818_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0818/u0818_test.cc:8:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProblem(<brace-enclosed initializer list>)’
+    8 |   ceres::GradientProblem object{};
+      |                                 ^
+In file included from /work/repo/units/u0818/u0818_test.cc:3:
+/work/ceres-solver/include/ceres/gradient_problem.h:98:3: note: candidate: ‘ceres::GradientProblem::GradientProblem(ceres::FirstOrderFunction*, ceres::Manifold*)’
+   98 |   GradientProblem(FirstOrderFunction* function, Manifold* manifold);
+      |   ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/gradient_problem.h:98:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/include/ceres/gradient_problem.h:95:12: note: candidate: ‘ceres::GradientProblem::GradientProblem(ceres::FirstOrderFunction*)’
+   95 |   explicit GradientProblem(FirstOrderFunction* function);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/gradient_problem.h:95:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: candidate: ‘ceres::GradientProblem::GradientProblem(ceres::GradientProblem&&)’
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note:   candidate expects 1 argument, 0 provided

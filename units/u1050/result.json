@@ -1,0 +1,11 @@
+{
+  "id": "u1050",
+  "name": "ceres::SubsetManifold::Plus",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1050/u1050_test.cc:7:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u1050/u1050_test.cc:13:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u1050/u1050_test.cc:19:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’"
+  ]
+}

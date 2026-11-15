@@ -1,0 +1,43 @@
+/work/repo/units/u1234/u1234_test.cc: In member function ‘virtual void Unit_u1234_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1234/u1234_test.cc:11:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context
+   11 |   object.EvaluateGradientAndJacobian(new_evaluation_point);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u1234/u1234_test.cc:5:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:66:8: note: declared private here
+   66 |   bool EvaluateGradientAndJacobian(bool new_evaluation_point);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1234/u1234_test.cc: In member function ‘virtual void Unit_u1234_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1234/u1234_test.cc:18:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context
+   18 |   object.EvaluateGradientAndJacobian(new_evaluation_point);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:66:8: note: declared private here
+   66 |   bool EvaluateGradientAndJacobian(bool new_evaluation_point);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1234/u1234_test.cc: In member function ‘virtual void Unit_u1234_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1234/u1234_test.cc:25:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context
+   25 |   object.EvaluateGradientAndJacobian(new_evaluation_point);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:66:8: note: declared private here
+   66 |   bool EvaluateGradientAndJacobian(bool new_evaluation_point);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1234/u1234_test.cc: In member function ‘virtual void Unit_u1234_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1234/u1234_test.cc:32:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context
+   32 |   object.EvaluateGradientAndJacobian(new_evaluation_point);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:66:8: note: declared private here
+   66 |   bool EvaluateGradientAndJacobian(bool new_evaluation_point);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1234/u1234_test.cc: In member function ‘virtual void Unit_u1234_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1234/u1234_test.cc:39:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context
+   39 |   object.EvaluateGradientAndJacobian(new_evaluation_point);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:66:8: note: declared private here
+   66 |   bool EvaluateGradientAndJacobian(bool new_evaluation_point);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1234/u1234_test.cc: In member function ‘virtual void Unit_u1234_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1234/u1234_test.cc:46:37: error: ‘bool ceres::internal::TrustRegionMinimizer::EvaluateGradientAndJacobian(bool)’ is private within this context
+   46 |   object.EvaluateGradientAndJacobian(new_evaluation_point);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:66:8: note: declared private here
+   66 |   bool EvaluateGradientAndJacobian(bool new_evaluation_point);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,112 @@
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:18:3: error: ‘Problem’ has not been declared
+   18 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:20:19: error: ‘evaluate_options’ was not declared in this scope
+   20 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:25:3: error: ‘Problem’ has not been declared
+   25 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:27:19: error: ‘evaluate_options’ was not declared in this scope
+   27 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:32:3: error: ‘Problem’ has not been declared
+   32 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:34:19: error: ‘evaluate_options’ was not declared in this scope
+   34 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:39:3: error: ‘Problem’ has not been declared
+   39 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:41:19: error: ‘evaluate_options’ was not declared in this scope
+   41 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:46:3: error: ‘Problem’ has not been declared
+   46 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:48:19: error: ‘evaluate_options’ was not declared in this scope
+   48 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:53:3: error: ‘Problem’ has not been declared
+   53 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:55:19: error: ‘evaluate_options’ was not declared in this scope
+   55 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:60:3: error: ‘Problem’ has not been declared
+   60 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:62:19: error: ‘evaluate_options’ was not declared in this scope
+   62 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:67:3: error: ‘Problem’ has not been declared
+   67 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:69:19: error: ‘evaluate_options’ was not declared in this scope
+   69 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:74:3: error: ‘Problem’ has not been declared
+   74 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:76:19: error: ‘evaluate_options’ was not declared in this scope
+   76 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:81:3: error: ‘Problem’ has not been declared
+   81 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:83:19: error: ‘evaluate_options’ was not declared in this scope
+   83 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:88:3: error: ‘Problem’ has not been declared
+   88 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:90:19: error: ‘evaluate_options’ was not declared in this scope
+   90 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:95:3: error: ‘Problem’ has not been declared
+   95 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:97:19: error: ‘evaluate_options’ was not declared in this scope
+   97 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:102:3: error: ‘Problem’ has not been declared
+  102 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:104:19: error: ‘evaluate_options’ was not declared in this scope
+  104 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC14_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:109:3: error: ‘Problem’ has not been declared
+  109 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:111:19: error: ‘evaluate_options’ was not declared in this scope
+  111 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC15_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:116:3: error: ‘Problem’ has not been declared
+  116 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:118:19: error: ‘evaluate_options’ was not declared in this scope
+  118 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1491/u1491_test.cc: In member function ‘virtual void Unit_u1491_TC16_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1491/u1491_test.cc:123:3: error: ‘Problem’ has not been declared
+  123 |   Problem::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~
+/work/repo/units/u1491/u1491_test.cc:125:19: error: ‘evaluate_options’ was not declared in this scope
+  125 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~

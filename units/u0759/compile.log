@@ -1,0 +1,49 @@
+/work/repo/units/u0759/u0759_test.cc: In member function ‘virtual void Unit_u0759_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0759/u0759_test.cc:11:39: error: class template argument deduction failed:
+   11 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/repo/units/u0759/u0759_test.cc:11:39: error: no matching function for call to ‘NumericDiff()’
+In file included from /work/repo/units/u0759/u0759_test.cc:3:
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff()-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   template argument deduction/substitution failed:
+/work/repo/units/u0759/u0759_test.cc:11:39: note:   couldn’t deduce template parameter ‘CostFunctor’
+   11 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff(ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>)-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0759/u0759_test.cc: In member function ‘virtual void Unit_u0759_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0759/u0759_test.cc:21:39: error: class template argument deduction failed:
+   21 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/repo/units/u0759/u0759_test.cc:21:39: error: no matching function for call to ‘NumericDiff()’
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff()-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   template argument deduction/substitution failed:
+/work/repo/units/u0759/u0759_test.cc:21:39: note:   couldn’t deduce template parameter ‘CostFunctor’
+   21 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff(ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>)-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0759/u0759_test.cc: In member function ‘virtual void Unit_u0759_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0759/u0759_test.cc:31:39: error: class template argument deduction failed:
+   31 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/repo/units/u0759/u0759_test.cc:31:39: error: no matching function for call to ‘NumericDiff()’
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff()-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   template argument deduction/substitution failed:
+/work/repo/units/u0759/u0759_test.cc:31:39: note:   couldn’t deduce template parameter ‘CostFunctor’
+   31 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff(ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>)-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   candidate expects 1 argument, 0 provided

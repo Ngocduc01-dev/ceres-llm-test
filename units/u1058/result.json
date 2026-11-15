@@ -1,0 +1,16 @@
+{
+  "id": "u1058",
+  "name": "ceres::DynamicNumericDiffCostFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1058/u1058_test.cc:9:48: error: class template argument deduction failed:",
+    "units/u1058/u1058_test.cc:9:48: error: no matching function for call to ‘DynamicNumericDiffCostFunction()’",
+    "units/u1058/u1058_test.cc:15:48: error: class template argument deduction failed:",
+    "units/u1058/u1058_test.cc:15:48: error: no matching function for call to ‘DynamicNumericDiffCostFunction()’",
+    "units/u1058/u1058_test.cc:21:48: error: class template argument deduction failed:",
+    "units/u1058/u1058_test.cc:21:48: error: no matching function for call to ‘DynamicNumericDiffCostFunction()’",
+    "units/u1058/u1058_test.cc:27:48: error: class template argument deduction failed:",
+    "units/u1058/u1058_test.cc:27:48: error: no matching function for call to ‘DynamicNumericDiffCostFunction()’"
+  ]
+}

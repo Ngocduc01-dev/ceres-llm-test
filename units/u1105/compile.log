@@ -1,0 +1,56 @@
+/work/repo/units/u1105/u1105_test.cc: In member function ‘virtual void Unit_u1105_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1105/u1105_test.cc:8:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+    8 |   std::vector<Block> blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+In file included from /work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:37,
+                 from /work/repo/units/u1105/u1105_test.cc:3:
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1105/u1105_test.cc:8:20: error: template argument 1 is invalid
+    8 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1105/u1105_test.cc:8:20: error: template argument 2 is invalid
+/work/repo/units/u1105/u1105_test.cc:10:50: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   10 |   ceres::internal::BlockOrderingToScalarOrdering(blocks, block_ordering, nullptr);
+      |                                                  ^~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:65:31: note: in passing argument 1 of ‘void ceres::internal::BlockOrderingToScalarOrdering(const std::vector<Block>&, const std::vector<int>&, std::vector<int>*)’
+   65 |     const std::vector<Block>& blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1105/u1105_test.cc: In member function ‘virtual void Unit_u1105_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1105/u1105_test.cc:15:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+   15 |   std::vector<Block> blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1105/u1105_test.cc:15:20: error: template argument 1 is invalid
+   15 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1105/u1105_test.cc:15:20: error: template argument 2 is invalid
+/work/repo/units/u1105/u1105_test.cc:17:50: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   17 |   ceres::internal::BlockOrderingToScalarOrdering(blocks, block_ordering, nullptr);
+      |                                                  ^~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:65:31: note: in passing argument 1 of ‘void ceres::internal::BlockOrderingToScalarOrdering(const std::vector<Block>&, const std::vector<int>&, std::vector<int>*)’
+   65 |     const std::vector<Block>& blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~
+/work/repo/units/u1105/u1105_test.cc: In member function ‘virtual void Unit_u1105_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1105/u1105_test.cc:22:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+   22 |   std::vector<Block> blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1105/u1105_test.cc:22:20: error: template argument 1 is invalid
+   22 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1105/u1105_test.cc:22:20: error: template argument 2 is invalid
+/work/repo/units/u1105/u1105_test.cc:24:50: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   24 |   ceres::internal::BlockOrderingToScalarOrdering(blocks, block_ordering, nullptr);
+      |                                                  ^~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:65:31: note: in passing argument 1 of ‘void ceres::internal::BlockOrderingToScalarOrdering(const std::vector<Block>&, const std::vector<int>&, std::vector<int>*)’
+   65 |     const std::vector<Block>& blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~

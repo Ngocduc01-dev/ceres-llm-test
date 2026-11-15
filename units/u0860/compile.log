@@ -1,0 +1,9 @@
+/work/repo/units/u0860/u0860_test.cc: In member function ‘virtual void Unit_u0860_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0860/u0860_test.cc:8:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::GradientProblemEvaluator object{};
+      |                                                    ^
+In file included from /work/repo/units/u0860/u0860_test.cc:3:
+/work/ceres-solver/internal/ceres/gradient_problem_evaluator.h:50:12: note: candidate: ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(const ceres::GradientProblem&)’
+   50 |   explicit GradientProblemEvaluator(const GradientProblem& problem)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/gradient_problem_evaluator.h:50:12: note:   candidate expects 1 argument, 0 provided

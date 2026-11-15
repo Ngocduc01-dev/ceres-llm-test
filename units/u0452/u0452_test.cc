@@ -2,12 +2,17 @@
 #include "gtest/gtest.h"
 #include "ceres/loss_function.h"
 
-TEST(Unit_u0452, ReleasesNonOwnedLoss) {
-  ceres::TrivialLoss loss;
-  {
-    ceres::ScaledLoss target(&loss, 2.0, ceres::DO_NOT_TAKE_OWNERSHIP);
-    double rho[3] = {};
-    target.Evaluate(3.0, rho);
-    EXPECT_DOUBLE_EQ(rho[0], 6.0);
-  }
+// P1: node 1: đúng (DO_NOT_TAKE_OWNERSHIP) -> node 2 -> END
+TEST(ScaledLossDestructorTest, DoNotTakeOwnershipReleasesPointer) {
+  ceres::TrivialLoss rho;
+  ceres::ScaledLoss* loss =
+      new ceres::ScaledLoss(&rho, 1.7, ceres::DO_NOT_TAKE_OWNERSHIP);
+  delete loss;
+}
+
+// P2: node 1: sai (TAKE_OWNERSHIP) -> END
+TEST(ScaledLossDestructorTest, TakeOwnershipDeletesLoss) {
+  ceres::ScaledLoss* loss =
+      new ceres::ScaledLoss(new ceres::TrivialLoss(), 3.2, ceres::TAKE_OWNERSHIP);
+  delete loss;
 }

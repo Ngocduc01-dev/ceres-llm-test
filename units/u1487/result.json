@@ -1,0 +1,16 @@
+{
+  "id": "u1487",
+  "name": "ceres::internal::CoordinateDescentMinimizer::Minimize",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1487/u1487_test.cc:13:3: error: ‘Minimizer’ has not been declared",
+    "units/u1487/u1487_test.cc:14:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’",
+    "units/u1487/u1487_test.cc:15:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1487/u1487_test.cc:20:3: error: ‘Minimizer’ has not been declared",
+    "units/u1487/u1487_test.cc:21:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’",
+    "units/u1487/u1487_test.cc:22:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1487/u1487_test.cc:27:3: error: ‘Minimizer’ has not been declared",
+    "units/u1487/u1487_test.cc:28:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’"
+  ]
+}

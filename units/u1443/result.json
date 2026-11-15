@@ -1,0 +1,16 @@
+{
+  "id": "u1443",
+  "name": "ceres::internal::SchurComplementSolver::SolveImpl",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1443/u1443_test.cc:13:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1443/u1443_test.cc:14:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1443/u1443_test.cc:14:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’",
+    "units/u1443/u1443_test.cc:15:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1443/u1443_test.cc:20:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1443/u1443_test.cc:21:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1443/u1443_test.cc:21:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’",
+    "units/u1443/u1443_test.cc:22:38: error: ‘per_solve_options’ was not declared in this scope"
+  ]
+}

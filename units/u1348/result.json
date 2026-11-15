@@ -1,0 +1,16 @@
+{
+  "id": "u1348",
+  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1348/u1348_test.cc:11:15: error: ‘Block’ was not declared in this scope",
+    "units/u1348/u1348_test.cc:11:20: error: template argument 1 is invalid",
+    "units/u1348/u1348_test.cc:11:20: error: template argument 2 is invalid",
+    "units/u1348/u1348_test.cc:13:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’",
+    "units/u1348/u1348_test.cc:19:15: error: ‘Block’ was not declared in this scope",
+    "units/u1348/u1348_test.cc:19:20: error: template argument 1 is invalid",
+    "units/u1348/u1348_test.cc:19:20: error: template argument 2 is invalid",
+    "units/u1348/u1348_test.cc:21:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

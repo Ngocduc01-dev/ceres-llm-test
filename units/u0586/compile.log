@@ -1,0 +1,13 @@
+/work/repo/units/u0586/u0586_test.cc: In member function ‘virtual void Unit_u0586_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0586/u0586_test.cc:7:10: error: scalar object ‘x_data’ requires one element in initializer
+    7 |   double x_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~
+/work/repo/units/u0586/u0586_test.cc:8:10: error: scalar object ‘delta_data’ requires one element in initializer
+    8 |   double delta_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~
+/work/repo/units/u0586/u0586_test.cc:9:10: error: scalar object ‘x_plus_delta_data’ requires one element in initializer
+    9 |   double x_plus_delta_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~
+/work/repo/units/u0586/u0586_test.cc:10:3: error: ‘object’ was not declared in this scope
+   10 |   object.PlusImpl(x_data, delta_data, x_plus_delta_data, {});
+      |   ^~~~~~

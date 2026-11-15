@@ -1,0 +1,16 @@
+{
+  "id": "u1047",
+  "name": "ceres::OrderedGroups::Remove",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1047/u1047_test.cc:7:9: error: ‘T’ does not name a type",
+    "units/u1047/u1047_test.cc:8:31: error: class template argument deduction failed:",
+    "units/u1047/u1047_test.cc:8:31: error: no matching function for call to ‘OrderedGroups()’",
+    "units/u1047/u1047_test.cc:9:17: error: ‘element’ was not declared in this scope",
+    "units/u1047/u1047_test.cc:14:9: error: ‘T’ does not name a type",
+    "units/u1047/u1047_test.cc:15:31: error: class template argument deduction failed:",
+    "units/u1047/u1047_test.cc:15:31: error: no matching function for call to ‘OrderedGroups()’",
+    "units/u1047/u1047_test.cc:16:17: error: ‘element’ was not declared in this scope"
+  ]
+}

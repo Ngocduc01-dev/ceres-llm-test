@@ -1,0 +1,43 @@
+/work/repo/units/u1277/u1277_test.cc: In member function ‘virtual void Unit_u1277_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1277/u1277_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u1277/u1277_test.cc:4:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1277/u1277_test.cc:9:31: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells()’ is private within this context
+    9 |   object.ScaleOffDiagonalCells();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:156:8: note: declared private here
+  156 |   void ScaleOffDiagonalCells();
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1277/u1277_test.cc: In member function ‘virtual void Unit_u1277_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1277/u1277_test.cc:14:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1277/u1277_test.cc:15:31: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells()’ is private within this context
+   15 |   object.ScaleOffDiagonalCells();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:156:8: note: declared private here
+  156 |   void ScaleOffDiagonalCells();
+      |        ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1277/u1277_test.cc: In member function ‘virtual void Unit_u1277_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1277/u1277_test.cc:20:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1277/u1277_test.cc:21:31: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ScaleOffDiagonalCells()’ is private within this context
+   21 |   object.ScaleOffDiagonalCells();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:156:8: note: declared private here
+  156 |   void ScaleOffDiagonalCells();
+      |        ^~~~~~~~~~~~~~~~~~~~~

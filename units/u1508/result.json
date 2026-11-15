@@ -1,0 +1,16 @@
+{
+  "id": "u1508",
+  "name": "ceres::(anonymous)::TrustRegionOptionsAreValid",
+  "status": "compile_fail",
+  "cfg_branches": 44,
+  "errors": [
+    "units/u1508/u1508_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1508/u1508_test.cc:9:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1508/u1508_test.cc:14:3: error: ‘Solver’ has not been declared",
+    "units/u1508/u1508_test.cc:15:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1508/u1508_test.cc:20:3: error: ‘Solver’ has not been declared",
+    "units/u1508/u1508_test.cc:21:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1508/u1508_test.cc:26:3: error: ‘Solver’ has not been declared",
+    "units/u1508/u1508_test.cc:27:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

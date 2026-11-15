@@ -1,0 +1,10 @@
+/work/repo/units/u0652/u0652_test.cc: In member function ‘virtual void Unit_u0652_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0652/u0652_test.cc:8:10: error: scalar object ‘program_data’ requires one element in initializer
+    8 |   double program_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~
+/work/repo/units/u0652/u0652_test.cc:9:10: error: scalar object ‘parameters_data’ requires one element in initializer
+    9 |   double parameters_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~
+/work/repo/units/u0652/u0652_test.cc:10:3: error: ‘object’ was not declared in this scope
+   10 |   object.StateUpdatingCallback(program_data, parameters_data);
+      |   ^~~~~~

@@ -1,0 +1,21 @@
+/work/repo/units/u1183/u1183_test.cc: In member function ‘virtual void Unit_u1183_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1183/u1183_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+    8 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1183/u1183_test.cc:9:28: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::DenseQR’
+    9 |   ceres::internal::DenseQR object{};
+      |                            ^~~~~~
+In file included from /work/repo/units/u1183/u1183_test.cc:3:
+/work/ceres-solver/internal/ceres/dense_qr.h:63:23: note:   because the following virtual functions are pure within ‘ceres::internal::DenseQR’:
+   63 | class CERES_NO_EXPORT DenseQR {
+      |                       ^~~~~~~
+/work/ceres-solver/internal/ceres/dense_qr.h:78:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::DenseQR::Factorize(int, int, double*, std::string*)’
+   78 |   virtual LinearSolverTerminationType Factorize(int num_rows,
+      |                                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_qr.h:90:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::DenseQR::Solve(const double*, double*, std::string*)’
+   90 |   virtual LinearSolverTerminationType Solve(const double* rhs,
+      |                                       ^~~~~
+/work/repo/units/u1183/u1183_test.cc:10:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

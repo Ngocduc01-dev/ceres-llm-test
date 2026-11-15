@@ -1,0 +1,275 @@
+In file included from /work/repo/units/u1492/u1492_test.cc:8:
+/work/ceres-solver/internal/ceres/program_evaluator.h: In member function ‘bool ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::Evaluate(const ceres::internal::Evaluator::EvaluateOptions&, const double*, double*, double*, double*, ceres::internal::SparseMatrix*)’:
+/work/ceres-solver/internal/ceres/program_evaluator.h:167:15: warning: invalid use of incomplete type ‘class ceres::internal::SparseMatrix’
+  167 |       jacobian->SetZero(options_.context, options_.num_threads);
+      |               ^~
+In file included from /work/repo/units/u1492/u1492_test.cc:4:
+/work/ceres-solver/internal/ceres/evaluator.h:54:7: note: forward declaration of ‘class ceres::internal::SparseMatrix’
+   54 | class SparseMatrix;
+      |       ^~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:14:3: error: ‘Evaluator’ has not been declared
+   14 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:15:44: error: class template argument deduction failed:
+   15 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:15:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:16:19: error: ‘evaluate_options’ was not declared in this scope
+   16 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:21:3: error: ‘Evaluator’ has not been declared
+   21 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:22:44: error: class template argument deduction failed:
+   22 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:22:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:23:19: error: ‘evaluate_options’ was not declared in this scope
+   23 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:28:3: error: ‘Evaluator’ has not been declared
+   28 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:29:44: error: class template argument deduction failed:
+   29 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:29:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:30:19: error: ‘evaluate_options’ was not declared in this scope
+   30 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:35:3: error: ‘Evaluator’ has not been declared
+   35 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:36:44: error: class template argument deduction failed:
+   36 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:36:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:37:19: error: ‘evaluate_options’ was not declared in this scope
+   37 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:42:3: error: ‘Evaluator’ has not been declared
+   42 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:43:44: error: class template argument deduction failed:
+   43 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:43:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:44:19: error: ‘evaluate_options’ was not declared in this scope
+   44 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:49:3: error: ‘Evaluator’ has not been declared
+   49 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:50:44: error: class template argument deduction failed:
+   50 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:50:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:51:19: error: ‘evaluate_options’ was not declared in this scope
+   51 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:56:3: error: ‘Evaluator’ has not been declared
+   56 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:57:44: error: class template argument deduction failed:
+   57 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:57:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:58:19: error: ‘evaluate_options’ was not declared in this scope
+   58 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:63:3: error: ‘Evaluator’ has not been declared
+   63 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:64:44: error: class template argument deduction failed:
+   64 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:64:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:65:19: error: ‘evaluate_options’ was not declared in this scope
+   65 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:70:3: error: ‘Evaluator’ has not been declared
+   70 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:71:44: error: class template argument deduction failed:
+   71 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:71:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:72:19: error: ‘evaluate_options’ was not declared in this scope
+   72 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:77:3: error: ‘Evaluator’ has not been declared
+   77 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:78:44: error: class template argument deduction failed:
+   78 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:78:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:79:19: error: ‘evaluate_options’ was not declared in this scope
+   79 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:84:3: error: ‘Evaluator’ has not been declared
+   84 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:85:44: error: class template argument deduction failed:
+   85 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:85:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:86:19: error: ‘evaluate_options’ was not declared in this scope
+   86 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:91:3: error: ‘Evaluator’ has not been declared
+   91 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:92:44: error: class template argument deduction failed:
+   92 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:92:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:93:19: error: ‘evaluate_options’ was not declared in this scope
+   93 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:98:3: error: ‘Evaluator’ has not been declared
+   98 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:99:44: error: class template argument deduction failed:
+   99 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:99:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:100:19: error: ‘evaluate_options’ was not declared in this scope
+  100 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc: In member function ‘virtual void Unit_u1492_TC14_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1492/u1492_test.cc:105:3: error: ‘Evaluator’ has not been declared
+  105 |   Evaluator::EvaluateOptions evaluate_options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1492/u1492_test.cc:106:44: error: class template argument deduction failed:
+  106 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1492/u1492_test.cc:106:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1492/u1492_test.cc:107:19: error: ‘evaluate_options’ was not declared in this scope
+  107 |   object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                   ^~~~~~~~~~~~~~~~

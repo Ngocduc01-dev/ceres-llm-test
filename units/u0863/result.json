@@ -1,0 +1,9 @@
+{
+  "id": "u0863",
+  "name": "ceres::internal::InnerProductComputer::result",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0863/u0863_test.cc:8:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’"
+  ]
+}

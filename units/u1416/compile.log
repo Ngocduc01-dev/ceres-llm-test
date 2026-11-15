@@ -1,0 +1,24 @@
+/work/repo/units/u1416/u1416_test.cc: In member function ‘virtual void Unit_u1416_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1416/u1416_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1416/u1416_test.cc:9:36: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   ceres::OptionsAreValidForDenseQr(options, nullptr);
+      |                                    ^~~~~~~
+      |                                    optind
+/work/repo/units/u1416/u1416_test.cc: In member function ‘virtual void Unit_u1416_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1416/u1416_test.cc:14:3: error: ‘Solver’ has not been declared
+   14 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1416/u1416_test.cc:15:36: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   ceres::OptionsAreValidForDenseQr(options, nullptr);
+      |                                    ^~~~~~~
+      |                                    optind
+/work/repo/units/u1416/u1416_test.cc: In member function ‘virtual void Unit_u1416_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1416/u1416_test.cc:20:3: error: ‘Solver’ has not been declared
+   20 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1416/u1416_test.cc:21:36: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   21 |   ceres::OptionsAreValidForDenseQr(options, nullptr);
+      |                                    ^~~~~~~
+      |                                    optind

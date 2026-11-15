@@ -1,0 +1,27 @@
+{
+  "id": "u0322",
+  "name": "ceres::internal::LevenbergMarquardtStrategy::StepRejected",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "LevenbergMarquardtStrategyStepRejectedTest.TC1_P1_StraightLine": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 5
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

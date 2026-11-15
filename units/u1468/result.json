@@ -1,0 +1,11 @@
+{
+  "id": "u1468",
+  "name": "ceres::internal::CoordinateDescentMinimizer::CreateOrdering",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1468/u1468_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1468/u1468_test.cc:10:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’",
+    "units/u1468/u1468_test.cc:11:25: error: ‘program’ was not declared in this scope"
+  ]
+}

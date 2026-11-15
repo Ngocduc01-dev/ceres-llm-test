@@ -1,0 +1,13 @@
+{
+  "id": "u1025",
+  "name": "ceres::internal::FixedArray::FixedArray<T, N, A>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1025/u1025_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?",
+    "units/u1025/u1025_test.cc:8:3: error: ‘allocator_type’ was not declared in this scope",
+    "units/u1025/u1025_test.cc:9:3: error: ‘FixedArray’ was not declared in this scope; did you mean ‘ceres::internal::FixedArray’?",
+    "units/u1025/u1025_test.cc:9:14: error: expected primary-expression before ‘int’",
+    "units/u1025/u1025_test.cc:10:9: error: ‘object’ was not declared in this scope"
+  ]
+}

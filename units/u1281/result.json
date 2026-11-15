@@ -1,0 +1,11 @@
+{
+  "id": "u1281",
+  "name": "ceres::internal::TrustRegionMinimizer::ParameterToleranceReached",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1281/u1281_test.cc:8:35: error: ‘bool ceres::internal::TrustRegionMinimizer::ParameterToleranceReached()’ is private within this context",
+    "units/u1281/u1281_test.cc:14:35: error: ‘bool ceres::internal::TrustRegionMinimizer::ParameterToleranceReached()’ is private within this context",
+    "units/u1281/u1281_test.cc:20:35: error: ‘bool ceres::internal::TrustRegionMinimizer::ParameterToleranceReached()’ is private within this context"
+  ]
+}

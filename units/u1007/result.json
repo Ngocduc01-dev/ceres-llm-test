@@ -1,0 +1,10 @@
+{
+  "id": "u1007",
+  "name": "ceres::internal::LBFGS::LBFGS",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1007/u1007_test.cc:10:20: error: ‘LBFGS’ is not a member of ‘ceres::internal’; did you mean ‘ceres::LBFGS’?",
+    "units/u1007/u1007_test.cc:11:9: error: ‘object’ was not declared in this scope"
+  ]
+}

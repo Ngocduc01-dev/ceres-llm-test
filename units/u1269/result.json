@@ -1,0 +1,31 @@
+{
+  "id": "u1269",
+  "name": "ceres::internal::ProblemImpl::~ProblemImpl",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u1269.TC1_CallsTarget": "crash",
+    "Unit_u1269.TC2_CallsTarget": "crash",
+    "Unit_u1269.TC3_CallsTarget": "crash",
+    "Unit_u1269.TC4_CallsTarget": "crash",
+    "Unit_u1269.TC5_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 5,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 12,
+    "total": 13
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

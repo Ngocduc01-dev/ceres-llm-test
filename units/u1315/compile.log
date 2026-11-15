@@ -1,0 +1,28 @@
+/work/repo/units/u1315/u1315_test.cc: In member function ‘virtual void Unit_u1315_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1315/u1315_test.cc:12:20: error: expected unqualified-id before ‘(’ token
+   12 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                    ^
+/work/repo/units/u1315/u1315_test.cc:12:21: error: ‘anonymous’ was not declared in this scope
+   12 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1315/u1315_test.cc: In member function ‘virtual void Unit_u1315_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1315/u1315_test.cc:17:20: error: expected unqualified-id before ‘(’ token
+   17 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                    ^
+/work/repo/units/u1315/u1315_test.cc:17:21: error: ‘anonymous’ was not declared in this scope
+   17 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1315/u1315_test.cc: In member function ‘virtual void Unit_u1315_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1315/u1315_test.cc:22:20: error: expected unqualified-id before ‘(’ token
+   22 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                    ^
+/work/repo/units/u1315/u1315_test.cc:22:21: error: ‘anonymous’ was not declared in this scope
+   22 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1315/u1315_test.cc: In member function ‘virtual void Unit_u1315_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1315/u1315_test.cc:27:20: error: expected unqualified-id before ‘(’ token
+   27 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                    ^
+/work/repo/units/u1315/u1315_test.cc:27:21: error: ‘anonymous’ was not declared in this scope
+   27 |   ceres::internal::(anonymous)::ReorderProgram(nullptr);
+      |                     ^~~~~~~~~

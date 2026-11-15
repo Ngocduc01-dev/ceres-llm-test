@@ -1,0 +1,11 @@
+{
+  "id": "u1143",
+  "name": "ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1143/u1143_test.cc:10:3: error: ‘Preconditioner’ has not been declared",
+    "units/u1143/u1143_test.cc:11:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1143/u1143_test.cc:12:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

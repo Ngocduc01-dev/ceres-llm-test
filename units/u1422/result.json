@@ -1,0 +1,10 @@
+{
+  "id": "u1422",
+  "name": "ceres::internal::DenseJacobianWriter::CreateJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared",
+    "internal/ceres/dense_jacobian_writer.h:53:41: error: expected ‘)’ before ‘,’ token"
+  ]
+}

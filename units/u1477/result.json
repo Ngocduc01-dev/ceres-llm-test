@@ -1,0 +1,11 @@
+{
+  "id": "u1477",
+  "name": "ceres::internal::ProblemImpl::InternalRemoveResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1477/u1477_test.cc:10:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres::internal::ResidualBlock*)’ is private within this context",
+    "units/u1477/u1477_test.cc:16:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres::internal::ResidualBlock*)’ is private within this context",
+    "units/u1477/u1477_test.cc:22:37: error: ‘void ceres::internal::ProblemImpl::InternalRemoveResidualBlock(ceres::internal::ResidualBlock*)’ is private within this context"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "id": "u0604",
+  "name": "ceres::internal::CanonicalViewsClustering::UpdateCanonicalViewAssignments",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0604/u0604_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

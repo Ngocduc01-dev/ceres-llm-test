@@ -1,0 +1,36 @@
+/work/repo/units/u0945/u0945_test.cc: In member function ‘virtual void Unit_u0945_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0945/u0945_test.cc:11:3: error: ‘F’ was not declared in this scope
+   11 |   F function{};
+      |   ^
+/work/repo/units/u0945/u0945_test.cc:13:66: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?
+   13 |   ceres::internal::ParallelFor(nullptr, start, end, num_threads, function, min_block_size);
+      |                                                                  ^~~~~~~~
+      |                                                                  std::function
+In file included from /usr/include/c++/14/functional:59,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:5162,
+                 from /work/repo/units/u0945/u0945_test.cc:2:
+/usr/include/c++/14/bits/std_function.h:111:11: note: ‘std::function’ declared here
+  111 |     class function;
+      |           ^~~~~~~~
+/work/repo/units/u0945/u0945_test.cc: In member function ‘virtual void Unit_u0945_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0945/u0945_test.cc:21:3: error: ‘F’ was not declared in this scope
+   21 |   F function{};
+      |   ^
+/work/repo/units/u0945/u0945_test.cc:23:66: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?
+   23 |   ceres::internal::ParallelFor(nullptr, start, end, num_threads, function, min_block_size);
+      |                                                                  ^~~~~~~~
+      |                                                                  std::function
+/usr/include/c++/14/bits/std_function.h:111:11: note: ‘std::function’ declared here
+  111 |     class function;
+      |           ^~~~~~~~
+/work/repo/units/u0945/u0945_test.cc: In member function ‘virtual void Unit_u0945_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0945/u0945_test.cc:31:3: error: ‘F’ was not declared in this scope
+   31 |   F function{};
+      |   ^
+/work/repo/units/u0945/u0945_test.cc:33:66: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?
+   33 |   ceres::internal::ParallelFor(nullptr, start, end, num_threads, function, min_block_size);
+      |                                                                  ^~~~~~~~
+      |                                                                  std::function
+/usr/include/c++/14/bits/std_function.h:111:11: note: ‘std::function’ declared here
+  111 |     class function;
+      |           ^~~~~~~~

@@ -1,0 +1,9 @@
+{
+  "id": "u0826",
+  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::mutable_matrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0826/u0826_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

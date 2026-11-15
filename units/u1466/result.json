@@ -1,0 +1,14 @@
+{
+  "id": "u1466",
+  "name": "ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1466/u1466_test.cc:10:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context",
+    "units/u1466/u1466_test.cc:16:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context",
+    "units/u1466/u1466_test.cc:22:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context",
+    "units/u1466/u1466_test.cc:28:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context",
+    "units/u1466/u1466_test.cc:34:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context",
+    "units/u1466/u1466_test.cc:40:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context"
+  ]
+}

@@ -1,0 +1,121 @@
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:9:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+    9 |   ceres::GradientChecker object{};
+      |                                 ^
+In file included from /work/repo/units/u1306/u1306_test.cc:4:
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:9:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+    9 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:16:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   16 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:16:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   16 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:23:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   23 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:23:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   23 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:30:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   30 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:30:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   30 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:37:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   37 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:37:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   37 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:44:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   44 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:44:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   44 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:51:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   51 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:51:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   51 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:58:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   58 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:58:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   58 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:65:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   65 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:65:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   65 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:72:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   72 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:72:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   72 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:79:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   79 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:79:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   79 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1306/u1306_test.cc: In member function ‘virtual void Unit_u1306_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1306/u1306_test.cc:86:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   86 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1306/u1306_test.cc:86:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   86 |   ceres::GradientChecker object{};
+      |                                 ^

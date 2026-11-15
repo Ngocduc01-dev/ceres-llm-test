@@ -1,0 +1,16 @@
+{
+  "id": "u1208",
+  "name": "ceres::internal::CompressedRowSparseMatrix::CreateBlockDiagonalMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1208/u1208_test.cc:8:15: error: ‘Block’ was not declared in this scope",
+    "units/u1208/u1208_test.cc:8:20: error: template argument 1 is invalid",
+    "units/u1208/u1208_test.cc:8:20: error: template argument 2 is invalid",
+    "units/u1208/u1208_test.cc:9:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1208/u1208_test.cc:10:45: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’",
+    "units/u1208/u1208_test.cc:15:15: error: ‘Block’ was not declared in this scope",
+    "units/u1208/u1208_test.cc:15:20: error: template argument 1 is invalid",
+    "units/u1208/u1208_test.cc:15:20: error: template argument 2 is invalid"
+  ]
+}

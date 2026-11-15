@@ -1,0 +1,10 @@
+{
+  "id": "u1158",
+  "name": "ceres::internal::ProblemImpl::GetCostFunctionForResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1158/u1158_test.cc:9:9: error: ‘ResidualBlockId’ does not name a type",
+    "units/u1158/u1158_test.cc:11:42: error: ‘residual_block’ was not declared in this scope"
+  ]
+}

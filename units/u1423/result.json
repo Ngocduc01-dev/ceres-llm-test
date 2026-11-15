@@ -1,0 +1,9 @@
+{
+  "id": "u1423",
+  "name": "ceres::internal::DynamicCompressedRowJacobianWriter::CreateJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1423/u1423_test.cc:9:62: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowJacobianWriter::DynamicCompressedRowJacobianWriter(<brace-enclosed initializer list>)’"
+  ]
+}

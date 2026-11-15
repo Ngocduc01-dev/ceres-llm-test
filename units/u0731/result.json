@@ -1,0 +1,9 @@
+{
+  "id": "u0731",
+  "name": "ceres::TrustRegionStrategyTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0731/u0731_test.cc:7:3: error: ‘TrustRegionStrategyTypeToString’ was not declared in this scope"
+  ]
+}

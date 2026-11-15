@@ -1,0 +1,21 @@
+/work/repo/units/u1479/u1479_test.cc: In member function ‘virtual void Unit_u1479_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1479/u1479_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   10 |   CompressedRowBlockStructure bs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+In file included from /work/repo/units/u1479/u1479_test.cc:3:
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1479/u1479_test.cc:11:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u1479/u1479_test.cc:6:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1479/u1479_test.cc:12:44: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?
+   12 |   object.ComputeClusterTridiagonalSparsity(bs);
+      |                                            ^~
+      |                                            abs

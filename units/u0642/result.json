@@ -1,0 +1,9 @@
+{
+  "id": "u0642",
+  "name": "ceres::ColumnMajorAdapter3x3",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0642/u0642_test.cc:8:10: error: scalar object ‘pointer_data’ requires one element in initializer"
+  ]
+}

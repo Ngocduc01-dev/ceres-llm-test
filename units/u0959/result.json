@@ -1,0 +1,10 @@
+{
+  "id": "u0959",
+  "name": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingSuiteSparse",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0959/u0959_test.cc:9:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u0959/u0959_test.cc:10:35: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingSuiteSparse(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context"
+  ]
+}

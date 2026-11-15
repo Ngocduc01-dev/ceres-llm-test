@@ -1,0 +1,9 @@
+{
+  "id": "u0315",
+  "name": "ceres::internal::InnerProductComputer::ProductTerm::ProductTerm",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0315/u0315_test.cc:10:25: error: ‘struct ceres::internal::InnerProductComputer::ProductTerm’ is private within this context"
+  ]
+}

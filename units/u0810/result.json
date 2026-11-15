@@ -1,0 +1,12 @@
+{
+  "id": "u0810",
+  "name": "ceres::internal::(anonymous)::WriteArrayToFileOrDie",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0810/u0810_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0810/u0810_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0810/u0810_test.cc:17:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0810/u0810_test.cc:17:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

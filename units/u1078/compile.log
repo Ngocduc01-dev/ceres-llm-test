@@ -1,0 +1,4 @@
+/work/repo/units/u1078/u1078_test.cc: In member function ‘virtual void Unit_u1078_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1078/u1078_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~

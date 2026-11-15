@@ -1,0 +1,16 @@
+{
+  "id": "u1408",
+  "name": "ceres::internal::EvaluationToString",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1408/u1408_test.cc:9:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?",
+    "units/u1408/u1408_test.cc:10:39: error: ‘block’ was not declared in this scope; did you mean ‘clock’?",
+    "units/u1408/u1408_test.cc:15:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?",
+    "units/u1408/u1408_test.cc:16:39: error: ‘block’ was not declared in this scope; did you mean ‘clock’?",
+    "units/u1408/u1408_test.cc:21:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?",
+    "units/u1408/u1408_test.cc:22:39: error: ‘block’ was not declared in this scope; did you mean ‘clock’?",
+    "units/u1408/u1408_test.cc:27:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?",
+    "units/u1408/u1408_test.cc:28:39: error: ‘block’ was not declared in this scope; did you mean ‘clock’?"
+  ]
+}

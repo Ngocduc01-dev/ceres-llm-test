@@ -1,0 +1,10 @@
+{
+  "id": "u0716",
+  "name": "ceres::internal::VertexTotalOrdering::operator()",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0716/u0716_test.cc:7:3: error: ‘object’ was not declared in this scope",
+    "units/u0716/u0716_test.cc:7:18: error: expected type-specifier before ‘(’ token"
+  ]
+}

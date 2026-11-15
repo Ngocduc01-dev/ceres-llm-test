@@ -1,0 +1,63 @@
+{
+  "id": "u0768",
+  "name": "ceres::internal::StringAppendV",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u0768.TC1_CallsTarget": "crash",
+    "Unit_u0768.TC2_CallsTarget": "crash",
+    "Unit_u0768.TC3_CallsTarget": "crash",
+    "Unit_u0768.TC4_CallsTarget": "crash",
+    "Unit_u0768.TC5_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 5,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 7,
+    "total": 18
+  },
+  "c2": {
+    "covered": 1,
+    "total": 8,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 55,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (result < sizeof(space)) {"
+    },
+    {
+      "line": 56,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (result >= 0) {"
+    },
+    {
+      "line": 70,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (result < 0) {"
+    },
+    {
+      "line": 86,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (result >= 0 && result < length) {"
+    }
+  ]
+}

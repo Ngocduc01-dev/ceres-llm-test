@@ -1,0 +1,26 @@
+/work/repo/units/u0858/u0858_test.cc: In member function ‘virtual void Unit_u0858_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0858/u0858_test.cc:8:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Evaluator’
+    8 |   ceres::internal::Evaluator object{};
+      |                              ^~~~~~
+In file included from /work/repo/units/u0858/u0858_test.cc:3:
+/work/ceres-solver/internal/ceres/evaluator.h:60:23: note:   because the following virtual functions are pure within ‘ceres::internal::Evaluator’:
+   60 | class CERES_NO_EXPORT Evaluator {
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/evaluator.h:95:41: note:     ‘virtual std::unique_ptr<ceres::internal::SparseMatrix> ceres::internal::Evaluator::CreateJacobian() const’
+   95 |   virtual std::unique_ptr<SparseMatrix> CreateJacobian() const = 0;
+      |                                         ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/evaluator.h:116:16: note:     ‘virtual bool ceres::internal::Evaluator::Evaluate(const EvaluateOptions&, const double*, double*, double*, double*, ceres::internal::SparseMatrix*)’
+  116 |   virtual bool Evaluate(const EvaluateOptions& evaluate_options,
+      |                ^~~~~~~~
+/work/ceres-solver/internal/ceres/evaluator.h:146:16: note:     ‘virtual bool ceres::internal::Evaluator::Plus(const double*, const double*, double*) const’
+  146 |   virtual bool Plus(const double* state,
+      |                ^~~~
+/work/ceres-solver/internal/ceres/evaluator.h:151:15: note:     ‘virtual int ceres::internal::Evaluator::NumParameters() const’
+  151 |   virtual int NumParameters() const = 0;
+      |               ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/evaluator.h:155:15: note:     ‘virtual int ceres::internal::Evaluator::NumEffectiveParameters() const’
+  155 |   virtual int NumEffectiveParameters() const = 0;
+      |               ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/evaluator.h:158:15: note:     ‘virtual int ceres::internal::Evaluator::NumResiduals() const’
+  158 |   virtual int NumResiduals() const = 0;
+      |               ^~~~~~~~~~~~

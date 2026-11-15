@@ -1,0 +1,14 @@
+{
+  "id": "u1205",
+  "name": "ceres::ConditionedCostFunction::ConditionedCostFunction",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1205/u1205_test.cc:8:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u1205/u1205_test.cc:9:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1205/u1205_test.cc:15:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u1205/u1205_test.cc:16:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’",
+    "units/u1205/u1205_test.cc:22:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u1205/u1205_test.cc:23:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’"
+  ]
+}

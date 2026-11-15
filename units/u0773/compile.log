@@ -1,0 +1,86 @@
+/work/repo/units/u0773/u0773_test.cc: In member function ‘virtual void Unit_u0773_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0773/u0773_test.cc:8:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+    8 |   std::vector<Block> row_blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+In file included from /work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:37,
+                 from /work/repo/units/u0773/u0773_test.cc:3:
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u0773/u0773_test.cc:8:20: error: template argument 1 is invalid
+    8 |   std::vector<Block> row_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:8:20: error: template argument 2 is invalid
+/work/repo/units/u0773/u0773_test.cc:9:20: error: template argument 2 is invalid
+    9 |   std::vector<Block> col_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:10:80: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   10 |   ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
+      |                                                                                ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:56:31: note: in passing argument 3 of ‘void ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(const int*, const int*, const std::vector<Block>&, const std::vector<Block>&, std::vector<int>*, std::vector<int>*)’
+   56 |     const std::vector<Block>& row_blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/work/repo/units/u0773/u0773_test.cc: In member function ‘virtual void Unit_u0773_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0773/u0773_test.cc:15:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+   15 |   std::vector<Block> row_blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u0773/u0773_test.cc:15:20: error: template argument 1 is invalid
+   15 |   std::vector<Block> row_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:15:20: error: template argument 2 is invalid
+/work/repo/units/u0773/u0773_test.cc:16:20: error: template argument 2 is invalid
+   16 |   std::vector<Block> col_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:17:80: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   17 |   ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
+      |                                                                                ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:56:31: note: in passing argument 3 of ‘void ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(const int*, const int*, const std::vector<Block>&, const std::vector<Block>&, std::vector<int>*, std::vector<int>*)’
+   56 |     const std::vector<Block>& row_blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/work/repo/units/u0773/u0773_test.cc: In member function ‘virtual void Unit_u0773_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0773/u0773_test.cc:22:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+   22 |   std::vector<Block> row_blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u0773/u0773_test.cc:22:20: error: template argument 1 is invalid
+   22 |   std::vector<Block> row_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:22:20: error: template argument 2 is invalid
+/work/repo/units/u0773/u0773_test.cc:23:20: error: template argument 2 is invalid
+   23 |   std::vector<Block> col_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:24:80: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   24 |   ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
+      |                                                                                ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:56:31: note: in passing argument 3 of ‘void ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(const int*, const int*, const std::vector<Block>&, const std::vector<Block>&, std::vector<int>*, std::vector<int>*)’
+   56 |     const std::vector<Block>& row_blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/work/repo/units/u0773/u0773_test.cc: In member function ‘virtual void Unit_u0773_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0773/u0773_test.cc:29:15: error: ‘Block’ was not declared in this scope; did you mean ‘ceres::internal::Block’?
+   29 |   std::vector<Block> row_blocks{};
+      |               ^~~~~
+      |               ceres::internal::Block
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note: ‘ceres::internal::Block’ declared here
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u0773/u0773_test.cc:29:20: error: template argument 1 is invalid
+   29 |   std::vector<Block> row_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:29:20: error: template argument 2 is invalid
+/work/repo/units/u0773/u0773_test.cc:30:20: error: template argument 2 is invalid
+   30 |   std::vector<Block> col_blocks{};
+      |                    ^
+/work/repo/units/u0773/u0773_test.cc:31:80: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::Block>&’ from expression of type ‘int’
+   31 |   ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
+      |                                                                                ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_col_sparse_matrix_utils.h:56:31: note: in passing argument 3 of ‘void ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(const int*, const int*, const std::vector<Block>&, const std::vector<Block>&, std::vector<int>*, std::vector<int>*)’
+   56 |     const std::vector<Block>& row_blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~

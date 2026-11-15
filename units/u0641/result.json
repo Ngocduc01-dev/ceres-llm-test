@@ -1,0 +1,9 @@
+{
+  "id": "u0641",
+  "name": "ceres::NumericDiffFirstOrderFunction::NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "include/ceres/numeric_diff_first_order_function.h:162:21: error: no match for call to ‘(LocalFirstOrderFunctor) (const double* const&, double*&)’"
+  ]
+}

@@ -1,0 +1,9 @@
+/work/repo/units/u0989/u0989_test.cc: In member function ‘virtual void Unit_u0989_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0989/u0989_test.cc:8:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::BlockRandomAccessDiagonalMatrix object{};
+      |                                                           ^
+In file included from /work/repo/units/u0989/u0989_test.cc:3:
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:55:3: note: candidate: ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(const std::vector<ceres::internal::Block>&, ceres::internal::ContextImpl*, int)’
+   55 |   BlockRandomAccessDiagonalMatrix(const std::vector<Block>& blocks,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:55:3: note:   candidate expects 3 arguments, 0 provided

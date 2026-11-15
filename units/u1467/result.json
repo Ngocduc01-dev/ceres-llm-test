@@ -1,0 +1,11 @@
+{
+  "id": "u1467",
+  "name": "ceres::internal::StateUpdatingCallback::operator()",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1467/u1467_test.cc:8:3: error: expected primary-expression before ‘)’ token",
+    "units/u1467/u1467_test.cc:9:49: error: no matching function for call to ‘ceres::internal::StateUpdatingCallback::StateUpdatingCallback(<brace-enclosed initializer list>)’",
+    "units/u1467/u1467_test.cc:10:10: error: ‘arg0’ was not declared in this scope"
+  ]
+}

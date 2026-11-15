@@ -1,0 +1,13 @@
+{
+  "id": "u0774",
+  "name": "ceres::internal::SchurEliminatorForOneFBlock::Init",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0774/u0774_test.cc:11:37: error: expected primary-expression before ‘bool’",
+    "units/u0774/u0774_test.cc:19:37: error: expected primary-expression before ‘bool’",
+    "units/u0774/u0774_test.cc:27:37: error: expected primary-expression before ‘bool’",
+    "units/u0774/u0774_test.cc:35:37: error: expected primary-expression before ‘bool’",
+    "units/u0774/u0774_test.cc:43:37: error: expected primary-expression before ‘bool’"
+  ]
+}

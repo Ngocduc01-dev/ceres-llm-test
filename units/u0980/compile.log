@@ -1,0 +1,34 @@
+/work/repo/units/u0980/u0980_test.cc: In member function ‘virtual void Unit_u0980_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0980/u0980_test.cc:7:38: error: class template argument deduction failed:
+    7 |   ceres::internal::FixedArray object{};
+      |                                      ^
+/work/repo/units/u0980/u0980_test.cc:7:38: error: no matching function for call to ‘FixedArray()’
+In file included from /work/repo/units/u0980/u0980_test.cc:3:
+/work/ceres-solver/include/ceres/internal/fixed_array.h:156:3: note: candidate: ‘template<class T, long unsigned int N, class A, class Iterator, ceres::internal::FixedArray<T, N, A>::EnableIfForwardIterator<Iterator>* <anonymous> > FixedArray(Iterator, Iterator, const typename std::allocator_traits<_Allocator>::allocator_type&)-> ceres::internal::FixedArray<T, N, A>’
+  156 |   FixedArray(Iterator first,
+      |   ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:156:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/include/ceres/internal/fixed_array.h:148:3: note: candidate: ‘template<class T, long unsigned int N, class A> FixedArray(std::initializer_list<typename std::allocator_traits<_Allocator>::value_type>, const typename std::allocator_traits<_Allocator>::allocator_type&)-> ceres::internal::FixedArray<T, N, A>’
+  148 |   FixedArray(std::initializer_list<value_type> init_list,
+      |   ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:148:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/internal/fixed_array.h:140:3: note: candidate: ‘template<class T, long unsigned int N, class A> FixedArray(typename std::allocator_traits<_Allocator>::size_type, const typename std::allocator_traits<_Allocator>::value_type&, const typename std::allocator_traits<_Allocator>::allocator_type&)-> ceres::internal::FixedArray<T, N, A>’
+  140 |   FixedArray(size_type n,
+      |   ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:140:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/include/ceres/internal/fixed_array.h:132:12: note: candidate: ‘template<class T, long unsigned int N, class A> FixedArray(typename std::allocator_traits<_Allocator>::size_type, const typename std::allocator_traits<_Allocator>::allocator_type&)-> ceres::internal::FixedArray<T, N, A>’
+  132 |   explicit FixedArray(size_type n, const allocator_type& a = allocator_type())
+      |            ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:132:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/internal/fixed_array.h:125:3: note: candidate: ‘template<class T, long unsigned int N, class A> FixedArray(ceres::internal::FixedArray<T, N, A>&&, const typename std::allocator_traits<_Allocator>::allocator_type&)-> ceres::internal::FixedArray<T, N, A>’
+  125 |   FixedArray(FixedArray&& other, const allocator_type& a = allocator_type())
+      |   ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:125:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/internal/fixed_array.h:121:3: note: candidate: ‘template<class T, long unsigned int N, class A> FixedArray(const ceres::internal::FixedArray<T, N, A>&, const typename std::allocator_traits<_Allocator>::allocator_type&)-> ceres::internal::FixedArray<T, N, A>’
+  121 |   FixedArray(const FixedArray& other,
+      |   ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:121:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/internal/fixed_array.h:86:7: note: candidate: ‘template<class T, long unsigned int N, class A> FixedArray(ceres::internal::FixedArray<T, N, A>)-> ceres::internal::FixedArray<T, N, A>’
+   86 | class FixedArray {
+      |       ^~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/fixed_array.h:86:7: note:   candidate expects 1 argument, 0 provided

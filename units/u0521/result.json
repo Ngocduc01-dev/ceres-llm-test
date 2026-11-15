@@ -1,0 +1,9 @@
+{
+  "id": "u0521",
+  "name": "ceres::EuclideanManifold::EuclideanManifold<Size>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0521/u0521_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

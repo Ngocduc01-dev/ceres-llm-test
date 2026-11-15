@@ -1,35 +1,44 @@
-# Unit u0553
-## A. Test paths
+**A. Test paths**
+
+Các điểm rẽ nhánh: node 1, 2, 4, 6, 9, 11 (6 điểm, 12 nhánh).
 
 | Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → END | Theo CFG của prompt.md. |
-| P2 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → END | Theo CFG của prompt.md. |
-| P3 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → END | Theo CFG của prompt.md. |
-| P4 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → END | Theo CFG của prompt.md. |
-| P5 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → END | Theo CFG của prompt.md. |
-| P6 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → 10 → 11 → 12 → 13 → 14 → 15 → END | Theo CFG của prompt.md. |
+| P1 | START → 1 → 2 → 3 → END | node 1: đúng, node 2: đúng |
+| P2 | START → 1 → 15 → 4 → 9 → 14 → END | node 1: sai, node 4: sai, node 9: sai |
+| P3 | START → 1 → 2 → 4 → 5 → (6 → 7 → 8)×1 → 6 → 9 → 10 → (11 → 12 → 13)×1 → 11 → 14 → END | node 1: đúng, node 2: sai, node 4: đúng, node 6: đúng×1 rồi sai, node 9: đúng, node 11: đúng×1 rồi sai |
+| P4 | START → 1 → 15 → 4 → 5 → (6 → 7 → 8)×2 → 6 → 9 → 10 → (11 → 12 → 13)×2 → 11 → 14 → END | node 1: sai, node 4: đúng, node 6: đúng×2 rồi sai, node 9: đúng, node 11: đúng×2 rồi sai |
+| P5 | Như P3 nhưng lặp ×3 ở cả hai vòng for | node 1: đúng, node 2: sai, node 4: đúng, node 6: đúng×3 rồi sai, node 9: đúng, node 11: đúng×3 rồi sai |
+| P6 | Như P4 nhưng lặp ×5 ở cả hai vòng for | node 1: sai, node 4: đúng, node 6: đúng×5 rồi sai, node 9: đúng, node 11: đúng×5 rồi sai |
 
-## B. Bộ test case
+**B. Bộ test case**
+
+Số lần lặp của vòng for bằng `size_`. Khi có bound, `size_` ≥ 1 vì `SetLowerBound` và `SetUpperBound` yêu cầu `index < size_`. Vì vậy các số lần lặp thử là 1, 2, 3 (giữa), 5 (tối đa, n). Số lần lặp bằng 0 và n+1 không làm được (xem mục C).
 
 | Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC3 | P3 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC4 | P4 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC5 | P5 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
-| TC6 | P6 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC1 | P1 | manifold có `Plus` trả về false; size = 2; x, delta ∈ [-5, 5] | size = 2; x, delta lấy từ mt19937 seed 1 |
+| TC2 | P2 | manifold = nullptr; không đặt bound; size ∈ [1, 5]; x, delta ∈ [-5, 5] | size = 3; x, delta lấy từ mt19937 seed 2 |
+| TC3 | P3 | manifold `EuclideanManifold<1>`; size = 1 (1 lần lặp); lower ∈ [-10, -6]; upper ∈ [6, 10] | size = 1; giá trị lấy từ seed 3 |
+| TC4 | P4 | manifold = nullptr; size = 2 (2 lần lặp); lower, upper như trên | size = 2; giá trị lấy từ seed 4 |
+| TC5 | P5 | manifold `EuclideanManifold<3>`; size = 3 (số giữa); lower, upper như trên | size = 3; giá trị lấy từ seed 5 |
+| TC6 | P6 | manifold = nullptr; size = 5 (n); lower, upper như trên | size = 5; giá trị lấy từ seed 6 |
 
-## C. Nhánh không test
+**C. Nhánh không test**
 
-Không ghi nhận nhánh không thể test từ CFG cung cấp.
-C2 dự kiến = 12 / 12.
+- Node 6 và node 11 với 0 lần lặp: không làm được. Khi `lower_bounds_` hoặc `upper_bounds_` khác null thì `size_` ≥ 1, vì `SetLowerBound` và `SetUpperBound` có `CHECK` với `index < size_`. Cả hai nhánh "sai" của node 6 và node 11 vẫn được phủ khi thoát vòng lặp sau n lần.
+- Số lần lặp n+1: không làm được vì số lần lặp bằng `size_`, cố định theo block.
+- Số lần lặp n−1: được phủ gián tiếp bởi các size khác nhau (1, 2, 3, 5); không có test riêng cho size = 4.
+- Không có nhánh nào bị bỏ vì thuộc `CHECK`.
 
-## D. File test
+C2 dự kiến = 12 / 12
+
+**D. File test**
 
 ```cpp
 // FILE: u0553_test.cc
+#include <random>
+
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
 #include "ceres/parameter_block.h"
@@ -75,7 +84,6 @@ class FailingManifold final : public Manifold {
 }  // namespace
 
 // P1: node 1: đúng, node 2: đúng -> return false
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC1_ManifoldPlusFails) {
   std::mt19937 gen(1);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -89,7 +97,6 @@ TEST(ParameterBlockPlusTest, TC1_ManifoldPlusFails) {
 }
 
 // P2: node 1: sai, node 4: sai, node 9: sai -> return true
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC2_NoManifoldNoBounds) {
   std::mt19937 gen(2);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -103,7 +110,6 @@ TEST(ParameterBlockPlusTest, TC2_NoManifoldNoBounds) {
 
 // P3: node 1: đúng, node 2: sai, node 4: đúng, node 6: đúng x1 rồi sai,
 //     node 9: đúng, node 11: đúng x1 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC3_ManifoldBoundsSize1) {
   std::mt19937 gen(3);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -122,7 +128,6 @@ TEST(ParameterBlockPlusTest, TC3_ManifoldBoundsSize1) {
 
 // P4: node 1: sai, node 4: đúng, node 6: đúng x2 rồi sai,
 //     node 9: đúng, node 11: đúng x2 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC4_NoManifoldBoundsSize2) {
   std::mt19937 gen(4);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -142,7 +147,6 @@ TEST(ParameterBlockPlusTest, TC4_NoManifoldBoundsSize2) {
 
 // P5: node 1: đúng, node 2: sai, node 4: đúng, node 6: đúng x3 rồi sai,
 //     node 9: đúng, node 11: đúng x3 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC5_ManifoldBoundsSize3) {
   std::mt19937 gen(5);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);
@@ -163,7 +167,6 @@ TEST(ParameterBlockPlusTest, TC5_ManifoldBoundsSize3) {
 
 // P6: node 1: sai, node 4: đúng, node 6: đúng x5 rồi sai,
 //     node 9: đúng, node 11: đúng x5 rồi sai
-// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockPlusTest, TC6_NoManifoldBoundsSize5) {
   std::mt19937 gen(6);
   std::uniform_real_distribution<double> dist(-5.0, 5.0);

@@ -1,0 +1,29 @@
+/work/repo/units/u1237/u1237_test.cc: In member function ‘virtual void Unit_u1237_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1237/u1237_test.cc:13:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   13 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+In file included from /work/repo/units/u1237/u1237_test.cc:5:
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1237/u1237_test.cc:14:30: error: ‘void ceres::internal::IterativeSchurComplementSolver::CreatePreconditioner(ceres::internal::BlockSparseMatrix*)’ is private within this context
+   14 |   object.CreatePreconditioner(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:88:8: note: declared private here
+   88 |   void CreatePreconditioner(BlockSparseMatrix* A);
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1237/u1237_test.cc: In member function ‘virtual void Unit_u1237_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1237/u1237_test.cc:19:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1237/u1237_test.cc:20:30: error: ‘void ceres::internal::IterativeSchurComplementSolver::CreatePreconditioner(ceres::internal::BlockSparseMatrix*)’ is private within this context
+   20 |   object.CreatePreconditioner(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:88:8: note: declared private here
+   88 |   void CreatePreconditioner(BlockSparseMatrix* A);
+      |        ^~~~~~~~~~~~~~~~~~~~

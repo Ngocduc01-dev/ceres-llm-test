@@ -1,0 +1,39 @@
+{
+  "id": "u0498",
+  "name": "ceres::QuaternionToAngleAxis",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u0498.PathP1": "crash",
+    "Unit_u0498.PathP2": "crash",
+    "Unit_u0498.PathP3": "crash",
+    "Unit_u0498.PathP4": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 4,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 19
+  },
+  "c2": {
+    "covered": 0,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 355,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (fpclassify(sin_theta) != FP_ZERO) {"
+    }
+  ]
+}

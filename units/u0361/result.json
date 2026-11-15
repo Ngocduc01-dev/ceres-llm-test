@@ -1,0 +1,27 @@
+{
+  "id": "u0361",
+  "name": "ceres::internal::ParameterBlock::SetConstant",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "ParameterBlockSetConstantTest.TC1_SetConstantPathP1": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 1,
+    "total": 1
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

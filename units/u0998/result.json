@@ -1,0 +1,9 @@
+{
+  "id": "u0998",
+  "name": "ceres::internal::ScopedExecutionTimer::~ScopedExecutionTimer",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0998/u0998_test.cc:7:48: error: no matching function for call to ‘ceres::internal::ScopedExecutionTimer::ScopedExecutionTimer(<brace-enclosed initializer list>)’"
+  ]
+}

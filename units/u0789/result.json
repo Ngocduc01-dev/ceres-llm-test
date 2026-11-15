@@ -1,0 +1,11 @@
+{
+  "id": "u0789",
+  "name": "ceres::internal::DoglegStrategy::EvaluateSubspaceModel",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0789/u0789_test.cc:7:3: error: ‘Vector2d’ was not declared in this scope; did you mean ‘Eigen::Vector2d’?",
+    "units/u0789/u0789_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u0789/u0789_test.cc:9:32: error: ‘x’ was not declared in this scope"
+  ]
+}

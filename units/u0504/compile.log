@@ -1,0 +1,13 @@
+/work/repo/units/u0504/u0504_test.cc: In member function ‘virtual void ceres::internal::Unit_u0504_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0504/u0504_test.cc:9:10: error: scalar object ‘rows_data’ requires one element in initializer
+    9 |   double rows_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0504/u0504_test.cc:10:10: error: scalar object ‘cols_data’ requires one element in initializer
+   10 |   double cols_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0504/u0504_test.cc:11:10: error: scalar object ‘values_data’ requires one element in initializer
+   11 |   double values_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~
+/work/repo/units/u0504/u0504_test.cc:12:10: error: scalar object ‘rhs_and_solution_data’ requires one element in initializer
+   12 |   double rhs_and_solution_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~~~~~

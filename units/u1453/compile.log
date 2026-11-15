@@ -1,0 +1,75 @@
+/work/repo/units/u1453/u1453_test.cc: In member function ‘virtual void Unit_u1453_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1453/u1453_test.cc:12:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean ‘ceres::LinearSolverOrderingType’?
+   12 |   LinearSolverOrderingType ordering_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverOrderingType
+In file included from /work/ceres-solver/internal/ceres/linear_operator.h:38,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:40,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/linear_solver.h:43,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:38,
+                 from /work/repo/units/u1453/u1453_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:204:6: note: ‘ceres::LinearSolverOrderingType’ declared here
+  204 | enum LinearSolverOrderingType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:14:3: error: ‘ProblemImpl’ has not been declared
+   14 |   ProblemImpl::ParameterMap arg2{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:15:60: error: ‘ordering_type’ was not declared in this scope
+   15 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                            ^~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:15:108: error: ‘arg2’ was not declared in this scope
+   15 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                                                                            ^~~~
+/work/repo/units/u1453/u1453_test.cc: In member function ‘virtual void Unit_u1453_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1453/u1453_test.cc:20:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean ‘ceres::LinearSolverOrderingType’?
+   20 |   LinearSolverOrderingType ordering_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverOrderingType
+/work/ceres-solver/include/ceres/types.h:204:6: note: ‘ceres::LinearSolverOrderingType’ declared here
+  204 | enum LinearSolverOrderingType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:22:3: error: ‘ProblemImpl’ has not been declared
+   22 |   ProblemImpl::ParameterMap arg2{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:23:60: error: ‘ordering_type’ was not declared in this scope
+   23 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                            ^~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:23:108: error: ‘arg2’ was not declared in this scope
+   23 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                                                                            ^~~~
+/work/repo/units/u1453/u1453_test.cc: In member function ‘virtual void Unit_u1453_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1453/u1453_test.cc:28:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean ‘ceres::LinearSolverOrderingType’?
+   28 |   LinearSolverOrderingType ordering_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverOrderingType
+/work/ceres-solver/include/ceres/types.h:204:6: note: ‘ceres::LinearSolverOrderingType’ declared here
+  204 | enum LinearSolverOrderingType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:30:3: error: ‘ProblemImpl’ has not been declared
+   30 |   ProblemImpl::ParameterMap arg2{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:31:60: error: ‘ordering_type’ was not declared in this scope
+   31 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                            ^~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:31:108: error: ‘arg2’ was not declared in this scope
+   31 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                                                                            ^~~~
+/work/repo/units/u1453/u1453_test.cc: In member function ‘virtual void Unit_u1453_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1453/u1453_test.cc:36:3: error: ‘LinearSolverOrderingType’ was not declared in this scope; did you mean ‘ceres::LinearSolverOrderingType’?
+   36 |   LinearSolverOrderingType ordering_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverOrderingType
+/work/ceres-solver/include/ceres/types.h:204:6: note: ‘ceres::LinearSolverOrderingType’ declared here
+  204 | enum LinearSolverOrderingType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:38:3: error: ‘ProblemImpl’ has not been declared
+   38 |   ProblemImpl::ParameterMap arg2{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:39:60: error: ‘ordering_type’ was not declared in this scope
+   39 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                            ^~~~~~~~~~~~~
+/work/repo/units/u1453/u1453_test.cc:39:108: error: ‘arg2’ was not declared in this scope
+   39 |   ceres::internal::ReorderSchurComplementColumnsUsingEigen(ordering_type, size_of_first_elimination_group, arg2, nullptr);
+      |                                                                                                            ^~~~

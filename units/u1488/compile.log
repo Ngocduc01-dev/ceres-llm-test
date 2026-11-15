@@ -1,0 +1,300 @@
+/work/repo/units/u1488/u1488_test.cc: In member function ‘virtual void Unit_u1488_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1488/u1488_test.cc:8:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?
+    8 |   LineSearchInterpolationType interpolation_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LineSearchInterpolationType
+In file included from /work/ceres-solver/internal/ceres/line_search.h:43,
+                 from /work/repo/units/u1488/u1488_test.cc:4:
+/work/ceres-solver/include/ceres/types.h:459:6: note: ‘ceres::LineSearchInterpolationType’ declared here
+  459 | enum LineSearchInterpolationType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:9:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+    9 |   FunctionSample lowerbound{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+In file included from /work/repo/units/u1488/u1488_test.cc:3:
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:10:17: error: expected ‘;’ before ‘previous’
+   10 |   FunctionSample previous{};
+      |                 ^~~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:11:17: error: expected ‘;’ before ‘current’
+   11 |   FunctionSample current{};
+      |                 ^~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:14:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1488/u1488_test.cc:14:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   14 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   because the following virtual functions are pure within ‘ceres::internal::LineSearch’:
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:197:16: note:     ‘virtual void ceres::internal::LineSearch::DoSearch(double, double, double, Summary*) const’
+  197 |   virtual void DoSearch(double step_size_estimate,
+      |                ^~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:15:52: error: ‘interpolation_type’ was not declared in this scope
+   15 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:15:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?
+   15 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                        ^~~~~~~~~~
+      |                                                                        lround
+/work/repo/units/u1488/u1488_test.cc:15:84: error: ‘previous’ was not declared in this scope
+   15 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                    ^~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:15:94: error: ‘current’ was not declared in this scope
+   15 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                              ^~~~~~~
+/work/repo/units/u1488/u1488_test.cc: In member function ‘virtual void Unit_u1488_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1488/u1488_test.cc:20:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?
+   20 |   LineSearchInterpolationType interpolation_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LineSearchInterpolationType
+/work/ceres-solver/include/ceres/types.h:459:6: note: ‘ceres::LineSearchInterpolationType’ declared here
+  459 | enum LineSearchInterpolationType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:21:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   21 |   FunctionSample lowerbound{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:22:17: error: expected ‘;’ before ‘previous’
+   22 |   FunctionSample previous{};
+      |                 ^~~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:23:17: error: expected ‘;’ before ‘current’
+   23 |   FunctionSample current{};
+      |                 ^~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:26:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   26 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1488/u1488_test.cc:26:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   26 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/repo/units/u1488/u1488_test.cc:27:52: error: ‘interpolation_type’ was not declared in this scope
+   27 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:27:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?
+   27 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                        ^~~~~~~~~~
+      |                                                                        lround
+/work/repo/units/u1488/u1488_test.cc:27:84: error: ‘previous’ was not declared in this scope
+   27 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                    ^~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:27:94: error: ‘current’ was not declared in this scope
+   27 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                              ^~~~~~~
+/work/repo/units/u1488/u1488_test.cc: In member function ‘virtual void Unit_u1488_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1488/u1488_test.cc:32:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?
+   32 |   LineSearchInterpolationType interpolation_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LineSearchInterpolationType
+/work/ceres-solver/include/ceres/types.h:459:6: note: ‘ceres::LineSearchInterpolationType’ declared here
+  459 | enum LineSearchInterpolationType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:33:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   33 |   FunctionSample lowerbound{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:34:17: error: expected ‘;’ before ‘previous’
+   34 |   FunctionSample previous{};
+      |                 ^~~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:35:17: error: expected ‘;’ before ‘current’
+   35 |   FunctionSample current{};
+      |                 ^~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:38:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   38 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1488/u1488_test.cc:38:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   38 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/repo/units/u1488/u1488_test.cc:39:52: error: ‘interpolation_type’ was not declared in this scope
+   39 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:39:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?
+   39 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                        ^~~~~~~~~~
+      |                                                                        lround
+/work/repo/units/u1488/u1488_test.cc:39:84: error: ‘previous’ was not declared in this scope
+   39 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                    ^~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:39:94: error: ‘current’ was not declared in this scope
+   39 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                              ^~~~~~~
+/work/repo/units/u1488/u1488_test.cc: In member function ‘virtual void Unit_u1488_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1488/u1488_test.cc:44:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?
+   44 |   LineSearchInterpolationType interpolation_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LineSearchInterpolationType
+/work/ceres-solver/include/ceres/types.h:459:6: note: ‘ceres::LineSearchInterpolationType’ declared here
+  459 | enum LineSearchInterpolationType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:45:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   45 |   FunctionSample lowerbound{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:46:17: error: expected ‘;’ before ‘previous’
+   46 |   FunctionSample previous{};
+      |                 ^~~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:47:17: error: expected ‘;’ before ‘current’
+   47 |   FunctionSample current{};
+      |                 ^~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:50:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   50 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1488/u1488_test.cc:50:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   50 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/repo/units/u1488/u1488_test.cc:51:52: error: ‘interpolation_type’ was not declared in this scope
+   51 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:51:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?
+   51 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                        ^~~~~~~~~~
+      |                                                                        lround
+/work/repo/units/u1488/u1488_test.cc:51:84: error: ‘previous’ was not declared in this scope
+   51 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                    ^~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:51:94: error: ‘current’ was not declared in this scope
+   51 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                              ^~~~~~~
+/work/repo/units/u1488/u1488_test.cc: In member function ‘virtual void Unit_u1488_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1488/u1488_test.cc:56:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?
+   56 |   LineSearchInterpolationType interpolation_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LineSearchInterpolationType
+/work/ceres-solver/include/ceres/types.h:459:6: note: ‘ceres::LineSearchInterpolationType’ declared here
+  459 | enum LineSearchInterpolationType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:57:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   57 |   FunctionSample lowerbound{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:58:17: error: expected ‘;’ before ‘previous’
+   58 |   FunctionSample previous{};
+      |                 ^~~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:59:17: error: expected ‘;’ before ‘current’
+   59 |   FunctionSample current{};
+      |                 ^~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:62:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   62 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1488/u1488_test.cc:62:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   62 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/repo/units/u1488/u1488_test.cc:63:52: error: ‘interpolation_type’ was not declared in this scope
+   63 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:63:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?
+   63 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                        ^~~~~~~~~~
+      |                                                                        lround
+/work/repo/units/u1488/u1488_test.cc:63:84: error: ‘previous’ was not declared in this scope
+   63 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                    ^~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:63:94: error: ‘current’ was not declared in this scope
+   63 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                                                              ^~~~~~~
+/work/repo/units/u1488/u1488_test.cc: In member function ‘virtual void Unit_u1488_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1488/u1488_test.cc:68:3: error: ‘LineSearchInterpolationType’ was not declared in this scope; did you mean ‘ceres::LineSearchInterpolationType’?
+   68 |   LineSearchInterpolationType interpolation_type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::LineSearchInterpolationType
+/work/ceres-solver/include/ceres/types.h:459:6: note: ‘ceres::LineSearchInterpolationType’ declared here
+  459 | enum LineSearchInterpolationType {
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:69:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   69 |   FunctionSample lowerbound{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:70:17: error: expected ‘;’ before ‘previous’
+   70 |   FunctionSample previous{};
+      |                 ^~~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:71:17: error: expected ‘;’ before ‘current’
+   71 |   FunctionSample current{};
+      |                 ^~~~~~~~
+      |                 ;
+/work/repo/units/u1488/u1488_test.cc:74:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+   74 |   ceres::internal::LineSearch object{};
+      |                                      ^
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1488/u1488_test.cc:74:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+   74 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/repo/units/u1488/u1488_test.cc:75:52: error: ‘interpolation_type’ was not declared in this scope
+   75 |   object.InterpolatingPolynomialMinimizingStepSize(interpolation_type, lowerbound, previous, current, min_step_size, max_step_size);
+      |                                                    ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1488/u1488_test.cc:75:72: error: ‘lowerbound’ was not declared in this scope; did you mean ‘lround’?

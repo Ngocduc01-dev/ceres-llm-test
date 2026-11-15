@@ -1,17 +1,33 @@
-# Unit u0329
+**A. Test paths**
 
-## Test path
+Hàm không có điểm rẽ nhánh nào (0 điểm rẽ nhánh), chỉ có node 1 (khởi tạo các thành viên mặc định). CFG khớp với mã nguồn `= default`.
 
-The unit has a single straight-line path (no control-flow branches). The test invokes the API with a valid construction, including concrete adapters where the production type is abstract, and exercises the target declaration.
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
+|---|---|---|
+| P1 | START → 1 → END | Không có nhánh nào (không có điểm rẽ nhánh) |
 
-## Test source
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | Không có đầu vào (constructor mặc định không tham số) | Không có |
+
+**C. Nhánh không test**
+
+Không có nhánh nào bị bỏ qua, vì hàm không có điểm rẽ nhánh.
+
+`C2 dự kiến = 0 / 0` (tổng số nhánh = 0; coi như phủ toàn bộ, 100% với path P1 đi qua node 1).
+
+**D. File test**
 
 ```cpp
+// FILE: u0329_test.cc
 #include "gtest/gtest.h"
 #include "ceres/linear_least_squares_problems.h"
 
-TEST(Unit_u0329, PathP1) {
-  ceres::internal::LinearLeastSquaresProblem target;
-  EXPECT_EQ(target.num_eliminate_blocks, 0);
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(LinearLeastSquaresProblemCtor, DefaultConstruct) {
+  ceres::internal::LinearLeastSquaresProblem problem;
+  (void)problem;
 }
 ```

@@ -1,0 +1,9 @@
+{
+  "id": "u0975",
+  "name": "ceres::DynamicCostFunction::AddParameterBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0975/u0975_test.cc:9:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::DynamicCostFunction’"
+  ]
+}

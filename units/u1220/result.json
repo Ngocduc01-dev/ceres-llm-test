@@ -1,0 +1,10 @@
+{
+  "id": "u1220",
+  "name": "ceres::internal::(anonymous)::SetupEvaluator",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1220/u1220_test.cc:11:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1220/u1220_test.cc:11:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

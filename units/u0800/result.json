@@ -1,0 +1,11 @@
+{
+  "id": "u0800",
+  "name": "ceres::internal::(anonymous)::BuildCompanionMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0800/u0800_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0800/u0800_test.cc:9:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0800/u0800_test.cc:9:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

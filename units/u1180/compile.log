@@ -1,0 +1,127 @@
+/work/repo/units/u1180/u1180_test.cc: In member function ‘virtual void Unit_u1180_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1180/u1180_test.cc:8:15: error: ‘Block’ was not declared in this scope
+    8 |   std::vector<Block> column_blocks{};
+      |               ^~~~~
+/work/repo/units/u1180/u1180_test.cc:8:15: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:163,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:38,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/repo/units/u1180/u1180_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+In file included from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:40:
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1180/u1180_test.cc:8:20: error: template argument 1 is invalid
+    8 |   std::vector<Block> column_blocks{};
+      |                    ^
+/work/repo/units/u1180/u1180_test.cc:8:20: error: template argument 2 is invalid
+/work/repo/units/u1180/u1180_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1180/u1180_test.cc:10:40: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   10 |   object.CreateDiagonalMatrix(nullptr, column_blocks);
+      |                                        ^~~~~~~~~~~~~
+      |                                        |
+      |                                        int
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:135:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::BlockSparseMatrix> ceres::internal::BlockSparseMatrix::CreateDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  135 |       const double* diagonal, const std::vector<Block>& column_blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/work/repo/units/u1180/u1180_test.cc: In member function ‘virtual void Unit_u1180_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1180/u1180_test.cc:15:15: error: ‘Block’ was not declared in this scope
+   15 |   std::vector<Block> column_blocks{};
+      |               ^~~~~
+/work/repo/units/u1180/u1180_test.cc:15:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1180/u1180_test.cc:15:20: error: template argument 1 is invalid
+   15 |   std::vector<Block> column_blocks{};
+      |                    ^
+/work/repo/units/u1180/u1180_test.cc:15:20: error: template argument 2 is invalid
+/work/repo/units/u1180/u1180_test.cc:16:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1180/u1180_test.cc:17:40: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   17 |   object.CreateDiagonalMatrix(nullptr, column_blocks);
+      |                                        ^~~~~~~~~~~~~
+      |                                        |
+      |                                        int
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:135:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::BlockSparseMatrix> ceres::internal::BlockSparseMatrix::CreateDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  135 |       const double* diagonal, const std::vector<Block>& column_blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/work/repo/units/u1180/u1180_test.cc: In member function ‘virtual void Unit_u1180_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1180/u1180_test.cc:22:15: error: ‘Block’ was not declared in this scope
+   22 |   std::vector<Block> column_blocks{};
+      |               ^~~~~
+/work/repo/units/u1180/u1180_test.cc:22:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1180/u1180_test.cc:22:20: error: template argument 1 is invalid
+   22 |   std::vector<Block> column_blocks{};
+      |                    ^
+/work/repo/units/u1180/u1180_test.cc:22:20: error: template argument 2 is invalid
+/work/repo/units/u1180/u1180_test.cc:23:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1180/u1180_test.cc:24:40: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   24 |   object.CreateDiagonalMatrix(nullptr, column_blocks);
+      |                                        ^~~~~~~~~~~~~
+      |                                        |
+      |                                        int
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:135:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::BlockSparseMatrix> ceres::internal::BlockSparseMatrix::CreateDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  135 |       const double* diagonal, const std::vector<Block>& column_blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/work/repo/units/u1180/u1180_test.cc: In member function ‘virtual void Unit_u1180_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1180/u1180_test.cc:29:15: error: ‘Block’ was not declared in this scope
+   29 |   std::vector<Block> column_blocks{};
+      |               ^~~~~
+/work/repo/units/u1180/u1180_test.cc:29:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1180/u1180_test.cc:29:20: error: template argument 1 is invalid
+   29 |   std::vector<Block> column_blocks{};
+      |                    ^
+/work/repo/units/u1180/u1180_test.cc:29:20: error: template argument 2 is invalid
+/work/repo/units/u1180/u1180_test.cc:30:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1180/u1180_test.cc:31:40: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’
+   31 |   object.CreateDiagonalMatrix(nullptr, column_blocks);
+      |                                        ^~~~~~~~~~~~~
+      |                                        |
+      |                                        int
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:135:57: note:   initializing argument 2 of ‘static std::unique_ptr<ceres::internal::BlockSparseMatrix> ceres::internal::BlockSparseMatrix::CreateDiagonalMatrix(const double*, const std::vector<ceres::internal::Block>&)’
+  135 |       const double* diagonal, const std::vector<Block>& column_blocks);
+      |                               ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~

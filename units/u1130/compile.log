@@ -1,0 +1,300 @@
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:10:45: error: class template argument deduction failed:
+   10 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:10:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+In file included from /work/repo/units/u1130/u1130_test.cc:4:
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:16:45: error: class template argument deduction failed:
+   16 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:16:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:22:45: error: class template argument deduction failed:
+   22 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:22:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:28:45: error: class template argument deduction failed:
+   28 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:28:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:34:45: error: class template argument deduction failed:
+   34 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:34:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:40:45: error: class template argument deduction failed:
+   40 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:40:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:46:45: error: class template argument deduction failed:
+   46 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:46:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:52:45: error: class template argument deduction failed:
+   52 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:52:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:58:45: error: class template argument deduction failed:
+   58 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:58:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:64:45: error: class template argument deduction failed:
+   64 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:64:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:70:45: error: class template argument deduction failed:
+   70 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:70:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:76:45: error: class template argument deduction failed:
+   76 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:76:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:82:45: error: class template argument deduction failed:
+   82 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:82:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC14_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:88:45: error: class template argument deduction failed:
+   88 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:88:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>&&)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   87 |   DynamicAutoDiffCostFunction(DynamicAutoDiffCostFunction&& other)
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:87:3: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(CostFunctor*, ceres::Ownership)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   83 |   explicit DynamicAutoDiffCostFunction(CostFunctor* functor,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note: candidate: ‘template<class CostFunctor, int Stride> DynamicAutoDiffCostFunction(ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>)-> ceres::DynamicAutoDiffCostFunction<CostFunctor, Stride>’
+   80 | class DynamicAutoDiffCostFunction final : public DynamicCostFunction {
+      |                                   ^~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:80:35: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note: candidate: ‘template<class CostFunctor> ceres::DynamicAutoDiffCostFunction(CostFunctor*, Ownership)-> DynamicAutoDiffCostFunction<CostFunctor>’
+  281 | DynamicAutoDiffCostFunction(CostFunctor* functor, Ownership ownership)
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_autodiff_cost_function.h:281:1: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1130/u1130_test.cc: In member function ‘virtual void Unit_u1130_TC15_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1130/u1130_test.cc:94:45: error: class template argument deduction failed:
+   94 |   ceres::DynamicAutoDiffCostFunction object{};
+      |                                             ^
+/work/repo/units/u1130/u1130_test.cc:94:45: error: no matching function for call to ‘DynamicAutoDiffCostFunction()’

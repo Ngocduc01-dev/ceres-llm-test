@@ -1,0 +1,9 @@
+{
+  "id": "u0965",
+  "name": "ceres::internal::ThreadPool::Stop",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0965/u0965_test.cc:9:14: error: ‘void ceres::internal::ThreadPool::Stop()’ is private within this context"
+  ]
+}

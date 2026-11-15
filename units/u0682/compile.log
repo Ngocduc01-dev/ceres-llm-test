@@ -1,0 +1,4 @@
+/work/repo/units/u0682/u0682_test.cc: In member function ‘virtual void Unit_u0682_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0682/u0682_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.NonlinearConjugateGradient({}, 1.0);
+      |   ^~~~~~

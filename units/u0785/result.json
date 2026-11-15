@@ -1,0 +1,16 @@
+{
+  "id": "u0785",
+  "name": "ceres::internal::DetectStructure",
+  "status": "compile_fail",
+  "cfg_branches": 22,
+  "errors": [
+    "units/u0785/u0785_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0785/u0785_test.cc:10:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u0785/u0785_test.cc:15:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0785/u0785_test.cc:17:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u0785/u0785_test.cc:22:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0785/u0785_test.cc:24:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u0785/u0785_test.cc:29:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0785/u0785_test.cc:31:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?"
+  ]
+}

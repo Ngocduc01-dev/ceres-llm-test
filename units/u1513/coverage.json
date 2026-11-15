@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "internal/ceres/problem_impl.cc", "lines": [{"line_number": 371, "count": 1, "branches": []}, {"line_number": 374, "count": 1, "branches": []}, {"line_number": 375, "count": 0, "branches": []}, {"line_number": 376, "count": 0, "branches": []}], "functions": []}]}

@@ -1,0 +1,19 @@
+/work/repo/units/u1219/u1219_test.cc: In member function ‘virtual void Unit_u1219_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1219/u1219_test.cc:10:9: error: ‘CompressedRowSparseMatrix’ does not name a type
+   10 |   const CompressedRowSparseMatrix::StorageType storage_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1219/u1219_test.cc:12:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   12 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+In file included from /work/repo/units/u1219/u1219_test.cc:6:
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1219/u1219_test.cc:13:29: error: ‘storage_type’ was not declared in this scope
+   13 |   object.CreateResultMatrix(storage_type, num_nonzeros);
+      |                             ^~~~~~~~~~~~

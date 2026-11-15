@@ -1,0 +1,16 @@
+{
+  "id": "u1459",
+  "name": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1459/u1459_test.cc:10:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u1459/u1459_test.cc:11:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context",
+    "units/u1459/u1459_test.cc:16:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u1459/u1459_test.cc:17:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context",
+    "units/u1459/u1459_test.cc:22:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u1459/u1459_test.cc:23:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context",
+    "units/u1459/u1459_test.cc:28:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u1459/u1459_test.cc:29:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context"
+  ]
+}

@@ -1,20 +1,49 @@
-# Unit u0321
+**A. Test paths**
 
-## Test path
+Hàm có 0 điểm rẽ nhánh, nên chỉ có một đường đi duy nhất. Mã nguồn khớp với CFG: dòng 66 là `= default`, không có lệnh nào.
 
-The unit has a single straight-line path (no control-flow branches). The test supplies the required concrete linear solver through `TrustRegionStrategy::Options`, constructs the strategy, and invokes the target API.
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
+|---|---|---|
+| P1 | START → END | Không có nhánh nào (0 điểm rẽ nhánh) |
 
-## Test source
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | `options.linear_solver` phải khác `nullptr` (constructor có `CHECK`). Các trường còn lại dùng giá trị mặc định hợp lệ của `TrustRegionStrategy::Options`. `LinearSolver::Options::type` thuộc tập kiểu solver hợp lệ. | `linear_solver` = solver `DENSE_QR`, các trường khác mặc định. Không dùng số ngẫu nhiên nên không cần seed. |
+
+**C. Nhánh không test**
+
+- Không có nhánh nào cần loại, vì hàm không có điểm rẽ nhánh.
+- Các `CHECK` trong constructor không được tính vào tổng số nhánh và không bị làm sai.
+- `C2 dự kiến = 0 / 0` (không có nhánh nào, coi như đạt 100%). Đây là giá trị dự kiến, chưa chạy thật.
+
+**D. File test**
 
 ```cpp
+// FILE: u0321_test.cc
 #include "gtest/gtest.h"
 #include "ceres/levenberg_marquardt_strategy.h"
 
-TEST(Unit_u0321, PathP1) {
-  ceres::internal::TrustRegionStrategy::Options options;
-  ceres::internal::LinearSolver::Options solver_options;
-  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
+namespace ceres {
+namespace internal {
+
+// TC1 - Path P1: START -> END (destructor mặc định, không có nhánh)
+TEST(LevenbergMarquardtStrategyDestructorTest, P1_StartToEnd) {
+  LinearSolver::Options linear_solver_options;
+  linear_solver_options.type = DENSE_QR;
+  std::unique_ptr<LinearSolver> linear_solver(
+      LinearSolver::Create(linear_solver_options));
+
+  TrustRegionStrategy::Options options;
   options.linear_solver = linear_solver.get();
-  { ceres::internal::LevenbergMarquardtStrategy target(options); }
+
+  std::unique_ptr<LevenbergMarquardtStrategy> strategy(
+      new LevenbergMarquardtStrategy(options));
+  // Gọi destructor đúng một lần.
+  strategy.reset();
 }
+
+}  // namespace internal
+}  // namespace ceres
 ```

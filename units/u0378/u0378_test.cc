@@ -1,6 +1,34 @@
 // FILE: u0378_test.cc
 #include "gtest/gtest.h"
 #include "ceres/partitioned_matrix_view.h"
-#include "ceres/block_sparse_matrix.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0378, PathP1) { ceres::LinearSolver::Options options; ceres::internal::CompressedRowBlockStructure* bs = new ceres::internal::CompressedRowBlockStructure; ceres::internal::BlockSparseMatrix matrix(bs); ceres::internal::PartitionedMatrixView<2> target(options, matrix); target.f_cols_partition(); }
+
+namespace ceres {
+namespace internal {
+
+// TC1 - P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(PartitionedMatrixViewFColsPartition, ReturnsFColsPartition) {
+  // Ma trận khối: 1 hàng khối (kích thước 2), 2 khối cột (mỗi khối kích thước 2).
+  auto* bs = new CompressedRowBlockStructure;
+  bs->cols.push_back(Block(2, 0));
+  bs->cols.push_back(Block(2, 2));
+
+  CompressedRow row;
+  row.block = Block(2, 0);
+  row.cells.push_back(Cell(0, 0));  // khối E
+  row.cells.push_back(Cell(1, 2));  // khối F
+  bs->rows.push_back(row);
+
+  BlockSparseMatrix matrix(bs);  // matrix sở hữu bs
+
+  LinearSolver::Options options;
+  options.elimination_groups.push_back(1);  // 1 khối cột thuộc phần E
+
+  PartitionedMatrixView<2, 2, 2> view(options, matrix);
+
+  // Gọi unit một lần, không kiểm tra kết quả trả về.
+  const std::vector<int>& f_cols = view.f_cols_partition();
+  (void)f_cols;
+}
+
+}  // namespace internal
+}  // namespace ceres

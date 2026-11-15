@@ -1,0 +1,11 @@
+{
+  "id": "u1206",
+  "name": "ceres::TinySolverCostFunctionAdapter::TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1206/u1206_test.cc:8:3: error: ‘CostFunction’ was not declared in this scope; did you mean ‘ceres::CostFunction’?",
+    "units/u1206/u1206_test.cc:9:3: error: ‘TinySolverCostFunctionAdapter’ was not declared in this scope; did you mean ‘ceres::TinySolverCostFunctionAdapter’?",
+    "units/u1206/u1206_test.cc:9:39: error: ‘object’ was not declared in this scope"
+  ]
+}

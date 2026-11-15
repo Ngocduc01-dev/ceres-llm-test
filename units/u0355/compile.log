@@ -1,0 +1,36 @@
+In file included from /work/repo/units/u0355/u0355_test.cc:3:
+/work/ceres-solver/internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  165 | void ParallelInvoke(ContextImpl* context,
+      |      ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:165:21: error: ‘ContextImpl’ was not declared in this scope
+  165 | void ParallelInvoke(ContextImpl* context,
+      |                     ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:165:34: error: ‘context’ was not declared in this scope; did you mean ‘ucontext_t’?
+  165 | void ParallelInvoke(ContextImpl* context,
+      |                                  ^~~~~~~
+      |                                  ucontext_t
+/work/ceres-solver/internal/ceres/parallel_invoke.h:166:21: error: expected primary-expression before ‘int’
+  166 |                     int start,
+      |                     ^~~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:167:21: error: expected primary-expression before ‘int’
+  167 |                     int end,
+      |                     ^~~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:168:21: error: expected primary-expression before ‘int’
+  168 |                     int num_threads,
+      |                     ^~~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:169:22: error: expected primary-expression before ‘&&’ token
+  169 |                     F&& function,
+      |                      ^~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:169:25: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?
+  169 |                     F&& function,
+      |                         ^~~~~~~~
+      |                         std::function
+In file included from /usr/include/c++/14/functional:59,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:5162,
+                 from /work/repo/units/u0355/u0355_test.cc:2:
+/usr/include/c++/14/bits/std_function.h:111:11: note: ‘std::function’ declared here
+  111 |     class function;
+      |           ^~~~~~~~
+/work/ceres-solver/internal/ceres/parallel_invoke.h:170:21: error: expected primary-expression before ‘int’
+  170 |                     int min_block_size) {
+      |                     ^~~

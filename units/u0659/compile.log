@@ -1,0 +1,13 @@
+/work/repo/units/u0659/u0659_test.cc: In member function ‘virtual void Unit_u0659_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0659/u0659_test.cc:7:10: error: scalar object ‘rhs_data’ requires one element in initializer
+    7 |   double rhs_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~
+/work/repo/units/u0659/u0659_test.cc:8:10: error: scalar object ‘solution_data’ requires one element in initializer
+    8 |   double solution_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~
+/work/repo/units/u0659/u0659_test.cc:9:10: error: scalar object ‘message_data’ requires one element in initializer
+    9 |   double message_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~
+/work/repo/units/u0659/u0659_test.cc:10:3: error: ‘object’ was not declared in this scope
+   10 |   object.Solve(rhs_data, solution_data, message_data);
+      |   ^~~~~~

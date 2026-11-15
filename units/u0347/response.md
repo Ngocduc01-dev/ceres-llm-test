@@ -1,26 +1,38 @@
-# Unit u0347
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+Hàm không có điểm rẽ nhánh nào (0 điểm rẽ nhánh, 0 vòng lặp), nên chỉ có một đường đi duy nhất.
+
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `bool PlusJacobian(const double * x, double * jacobian) const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `x`: mảng 4 double (quaternion), không có ràng buộc từ điều kiện đường đi, chọn trong [-1, 1]; `jacobian`: mảng 4×3 = 12 double (ghi ra, giá trị ban đầu không quan trọng) | `x` = {0.5, -0.5, 0.5, 0.5} (sinh bằng seed cố định rồi chọn; đã chọn sẵn một quaternion đơn vị); `jacobian` = 12 phần tử khởi tạo 0 |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. CFG khớp với mã nguồn (dòng 299–300: gọi `QuaternionPlusJacobianImpl<EigenQuaternionOrder>` rồi `return true`).
 
-## D. File test
+`C2 dự kiến = 0 / 0` (không có nhánh nào; tổng số nhánh = 2 × 0 = 0, nên coi như phủ đầy đủ khi node 1 được chạy qua).
+
+**D. File test**
 
 ```cpp
 // FILE: u0347_test.cc
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0347, PathP1) { double x[4] = {1,0,0,0}; double d[3] = {0,0,0}; double out[4] = {}; ceres::EigenQuaternionManifold target; target.PlusJacobian(x, out); }
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(EigenQuaternionManifoldPlusJacobianTest, P1_SingleStraightLinePath) {
+  ceres::EigenQuaternionManifold manifold;
+  // Thứ tự Eigen: (x, y, z, w). Quaternion đơn vị.
+  const double x[4] = {0.5, -0.5, 0.5, 0.5};
+  // Jacobian kích thước AmbientSize x TangentSize = 4 x 3, lưu theo hàng.
+  double jacobian[12] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                         0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+  manifold.PlusJacobian(x, jacobian);
+}
 ```

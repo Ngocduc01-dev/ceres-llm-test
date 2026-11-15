@@ -1,0 +1,47 @@
+/work/repo/units/u1203/u1203_test.cc: In member function ‘virtual void Unit_u1203_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1203/u1203_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+   10 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1203/u1203_test.cc:11:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’
+   11 |   ceres::internal::SparseCholesky object{};
+      |                                   ^~~~~~
+In file included from /work/ceres-solver/internal/ceres/eigensparse.h:47,
+                 from /work/repo/units/u1203/u1203_test.cc:3:
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:72:23: note:   because the following virtual functions are pure within ‘ceres::internal::SparseCholesky’:
+   72 | class CERES_NO_EXPORT SparseCholesky {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:86:50: note:     ‘virtual ceres::internal::CompressedRowSparseMatrix::StorageType ceres::internal::SparseCholesky::StorageType() const’
+   86 |   virtual CompressedRowSparseMatrix::StorageType StorageType() const = 0;
+      |                                                  ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:96:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::SparseCholesky::Factorize(ceres::internal::CompressedRowSparseMatrix*, std::string*)’
+   96 |   virtual LinearSolverTerminationType Factorize(CompressedRowSparseMatrix* lhs,
+      |                                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:102:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::SparseCholesky::Solve(const double*, double*, std::string*)’
+  102 |   virtual LinearSolverTerminationType Solve(const double* rhs,
+      |                                       ^~~~~
+/work/repo/units/u1203/u1203_test.cc:12:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   12 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u1203/u1203_test.cc: In member function ‘virtual void Unit_u1203_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1203/u1203_test.cc:17:3: error: ‘LinearSolver’ has not been declared
+   17 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1203/u1203_test.cc:18:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’
+   18 |   ceres::internal::SparseCholesky object{};
+      |                                   ^~~~~~
+/work/repo/units/u1203/u1203_test.cc:19:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   19 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u1203/u1203_test.cc: In member function ‘virtual void Unit_u1203_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1203/u1203_test.cc:24:3: error: ‘LinearSolver’ has not been declared
+   24 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1203/u1203_test.cc:25:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’
+   25 |   ceres::internal::SparseCholesky object{};
+      |                                   ^~~~~~
+/work/repo/units/u1203/u1203_test.cc:26:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   26 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

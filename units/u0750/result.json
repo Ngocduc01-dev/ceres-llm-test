@@ -1,0 +1,49 @@
+{
+  "id": "u0750",
+  "name": "ceres::internal::operator<<",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u0750.PathP1": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 6,
+    "total": 14
+  },
+  "c2": {
+    "covered": 2,
+    "total": 5,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 118,
+      "missing": [
+        "case"
+      ],
+      "code": "case OrderingType::AMD:"
+    },
+    {
+      "line": 121,
+      "missing": [
+        "case"
+      ],
+      "code": "case OrderingType::NESDIS:"
+    },
+    {
+      "line": 124,
+      "missing": [
+        "case"
+      ],
+      "code": "default:"
+    }
+  ]
+}

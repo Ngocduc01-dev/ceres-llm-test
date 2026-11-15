@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "include/ceres/jet.h", "lines": [{"line_number": 815, "count": 1, "branches": []}, {"line_number": 819, "count": 1, "branches": [], "gcovr/decision": {"count_false": 0, "count_true": 1, "type": "conditional"}}, {"line_number": 820, "count": 1, "branches": []}, {"line_number": 826, "count": 0, "branches": []}], "functions": []}]}

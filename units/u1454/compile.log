@@ -1,0 +1,57 @@
+/work/repo/units/u1454/u1454_test.cc: In member function ‘virtual void Unit_u1454_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1454/u1454_test.cc:12:3: error: ‘LinearSolver’ has not been declared
+   12 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc:13:54: error: no matching function for call to ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   13 |   ceres::internal::SparseNormalCholeskySolver object{};
+      |                                                      ^
+In file included from /work/repo/units/u1454/u1454_test.cc:7:
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(const ceres::internal::LinearSolver::Options&)’
+   59 |   explicit SparseNormalCholeskySolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1454/u1454_test.cc:14:38: error: ‘per_solve_options’ was not declared in this scope
+   14 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc: In member function ‘virtual void Unit_u1454_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1454/u1454_test.cc:19:3: error: ‘LinearSolver’ has not been declared
+   19 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc:20:54: error: no matching function for call to ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::SparseNormalCholeskySolver object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(const ceres::internal::LinearSolver::Options&)’
+   59 |   explicit SparseNormalCholeskySolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1454/u1454_test.cc:21:38: error: ‘per_solve_options’ was not declared in this scope
+   21 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc: In member function ‘virtual void Unit_u1454_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1454/u1454_test.cc:26:3: error: ‘LinearSolver’ has not been declared
+   26 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc:27:54: error: no matching function for call to ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   27 |   ceres::internal::SparseNormalCholeskySolver object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(const ceres::internal::LinearSolver::Options&)’
+   59 |   explicit SparseNormalCholeskySolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1454/u1454_test.cc:28:38: error: ‘per_solve_options’ was not declared in this scope
+   28 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc: In member function ‘virtual void Unit_u1454_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1454/u1454_test.cc:33:3: error: ‘LinearSolver’ has not been declared
+   33 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1454/u1454_test.cc:34:54: error: no matching function for call to ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   34 |   ceres::internal::SparseNormalCholeskySolver object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(const ceres::internal::LinearSolver::Options&)’
+   59 |   explicit SparseNormalCholeskySolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1454/u1454_test.cc:35:38: error: ‘per_solve_options’ was not declared in this scope
+   35 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~

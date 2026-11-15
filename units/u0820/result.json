@@ -1,0 +1,10 @@
+{
+  "id": "u0820",
+  "name": "ceres::ScaledLoss::ScaledLoss",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0820/u0820_test.cc:8:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u0820/u0820_test.cc:9:28: error: no matching function for call to ‘ceres::ScaledLoss::ScaledLoss(<brace-enclosed initializer list>)’"
+  ]
+}

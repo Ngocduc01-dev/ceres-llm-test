@@ -1,0 +1,9 @@
+{
+  "id": "u0623",
+  "name": "ceres::DynamicNumericDiffCostFunction::DynamicNumericDiffCostFunction<CostFunctor, kMethod>",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u0623/u0623_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,49 @@
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+   13 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:13:21: error: ‘anonymous’ was not declared in this scope
+   13 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:18:20: error: expected unqualified-id before ‘(’ token
+   18 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:18:21: error: ‘anonymous’ was not declared in this scope
+   18 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:23:20: error: expected unqualified-id before ‘(’ token
+   23 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:23:21: error: ‘anonymous’ was not declared in this scope
+   23 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:28:20: error: expected unqualified-id before ‘(’ token
+   28 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:28:21: error: ‘anonymous’ was not declared in this scope
+   28 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:33:20: error: expected unqualified-id before ‘(’ token
+   33 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:33:21: error: ‘anonymous’ was not declared in this scope
+   33 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:38:20: error: expected unqualified-id before ‘(’ token
+   38 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:38:21: error: ‘anonymous’ was not declared in this scope
+   38 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1506/u1506_test.cc: In member function ‘virtual void Unit_u1506_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1506/u1506_test.cc:43:20: error: expected unqualified-id before ‘(’ token
+   43 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                    ^
+/work/repo/units/u1506/u1506_test.cc:43:21: error: ‘anonymous’ was not declared in this scope
+   43 |   ceres::internal::(anonymous)::SetupInnerIterationMinimizer(nullptr);
+      |                     ^~~~~~~~~

@@ -1,0 +1,113 @@
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:14:3: error: ‘LinearSolver’ has not been declared
+   14 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:15:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   15 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+In file included from /work/repo/units/u1461/u1461_test.cc:6:
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:16:38: error: ‘per_solve_options’ was not declared in this scope
+   16 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:21:3: error: ‘LinearSolver’ has not been declared
+   21 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:22:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   22 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:23:38: error: ‘per_solve_options’ was not declared in this scope
+   23 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:28:3: error: ‘LinearSolver’ has not been declared
+   28 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:29:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   29 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:30:38: error: ‘per_solve_options’ was not declared in this scope
+   30 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:35:3: error: ‘LinearSolver’ has not been declared
+   35 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:36:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   36 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:37:38: error: ‘per_solve_options’ was not declared in this scope
+   37 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:42:3: error: ‘LinearSolver’ has not been declared
+   42 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:43:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   43 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:44:38: error: ‘per_solve_options’ was not declared in this scope
+   44 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:49:3: error: ‘LinearSolver’ has not been declared
+   49 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:50:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   50 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:51:38: error: ‘per_solve_options’ was not declared in this scope
+   51 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:56:3: error: ‘LinearSolver’ has not been declared
+   56 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:57:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   57 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:58:38: error: ‘per_solve_options’ was not declared in this scope
+   58 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc: In member function ‘virtual void Unit_u1461_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1461/u1461_test.cc:63:3: error: ‘LinearSolver’ has not been declared
+   63 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1461/u1461_test.cc:64:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’
+   64 |   ceres::internal::IterativeSchurComplementSolver object{};
+      |                                                          ^
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note: candidate: ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(ceres::internal::LinearSolver::Options)’
+   75 |   explicit IterativeSchurComplementSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_schur_complement_solver.h:75:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1461/u1461_test.cc:65:38: error: ‘per_solve_options’ was not declared in this scope
+   65 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~

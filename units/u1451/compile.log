@@ -1,0 +1,15 @@
+/work/repo/units/u1451/u1451_test.cc: In member function ‘virtual void Unit_u1451_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1451/u1451_test.cc:10:29: error: ‘void ceres::internal::ProblemImpl::InternalSetManifold(double*, ceres::internal::ParameterBlock*, ceres::Manifold*)’ is private within this context
+   10 |   object.InternalSetManifold(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u1451/u1451_test.cc:5:
+/work/ceres-solver/internal/ceres/problem_impl.h:175:8: note: declared private here
+  175 |   void InternalSetManifold(double* values,
+      |        ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1451/u1451_test.cc: In member function ‘virtual void Unit_u1451_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1451/u1451_test.cc:16:29: error: ‘void ceres::internal::ProblemImpl::InternalSetManifold(double*, ceres::internal::ParameterBlock*, ceres::Manifold*)’ is private within this context
+   16 |   object.InternalSetManifold(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:175:8: note: declared private here
+  175 |   void InternalSetManifold(double* values,
+      |        ^~~~~~~~~~~~~~~~~~~

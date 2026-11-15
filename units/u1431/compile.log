@@ -1,0 +1,7 @@
+/work/repo/units/u1431/u1431_test.cc: In member function ‘virtual void Unit_u1431_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1431/u1431_test.cc:7:9: error: ‘ResidualBlockId’ does not name a type
+    7 |   const ResidualBlockId residual_block{};
+      |         ^~~~~~~~~~~~~~~
+/work/repo/units/u1431/u1431_test.cc:9:45: error: ‘residual_block’ was not declared in this scope
+    9 |   object.GetParameterBlocksForResidualBlock(residual_block, nullptr);
+      |                                             ^~~~~~~~~~~~~~

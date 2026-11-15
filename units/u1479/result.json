@@ -1,0 +1,11 @@
+{
+  "id": "u1479",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterTridiagonalSparsity",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1479/u1479_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1479/u1479_test.cc:11:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1479/u1479_test.cc:12:44: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "u0757",
+  "name": "ceres::NumericDiffMethodTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 3,
+  "errors": [
+    "units/u0757/u0757_test.cc:6:3: error: ‘NumericDiffMethodType’ was not declared in this scope",
+    "units/u0757/u0757_test.cc:7:3: error: ‘ceres’ has not been declared",
+    "units/u0757/u0757_test.cc:7:40: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?",
+    "units/u0757/u0757_test.cc:12:3: error: ‘NumericDiffMethodType’ was not declared in this scope",
+    "units/u0757/u0757_test.cc:13:3: error: ‘ceres’ has not been declared",
+    "units/u0757/u0757_test.cc:13:40: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?"
+  ]
+}

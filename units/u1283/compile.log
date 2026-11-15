@@ -1,0 +1,22 @@
+/work/repo/units/u1283/u1283_test.cc: In member function ‘virtual void Unit_u1283_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1283/u1283_test.cc:8:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()’ is private within this context
+    8 |   object.GradientToleranceReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1283/u1283_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:77:8: note: declared private here
+   77 |   bool GradientToleranceReached();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1283/u1283_test.cc: In member function ‘virtual void Unit_u1283_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1283/u1283_test.cc:14:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()’ is private within this context
+   14 |   object.GradientToleranceReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:77:8: note: declared private here
+   77 |   bool GradientToleranceReached();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1283/u1283_test.cc: In member function ‘virtual void Unit_u1283_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1283/u1283_test.cc:20:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()’ is private within this context
+   20 |   object.GradientToleranceReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:77:8: note: declared private here
+   77 |   bool GradientToleranceReached();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~

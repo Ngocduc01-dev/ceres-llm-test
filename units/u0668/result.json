@@ -1,0 +1,9 @@
+{
+  "id": "u0668",
+  "name": "ceres::internal::DenseSparseMatrix::mutable_matrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0668/u0668_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,125 @@
+/work/repo/units/u1137/u1137_test.cc: In member function ‘virtual void Unit_u1137_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1137/u1137_test.cc:8:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+    8 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+In file included from /work/repo/units/u1137/u1137_test.cc:4:
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc:8:48: error: template argument 1 is invalid
+    8 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1137/u1137_test.cc:8:48: error: template argument 2 is invalid
+/work/repo/units/u1137/u1137_test.cc:9:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1137/u1137_test.cc:10:26: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::InnerProductComputer::ProductTerm>&’
+   10 |   object.ComputeNonzeros(product_terms, nullptr);
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int
+/work/ceres-solver/internal/ceres/inner_product_computer.h:134:55: note:   initializing argument 1 of ‘int ceres::internal::InnerProductComputer::ComputeNonzeros(const std::vector<ProductTerm>&, std::vector<int>*)’
+  134 |   int ComputeNonzeros(const std::vector<ProductTerm>& product_terms,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc: In member function ‘virtual void Unit_u1137_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1137/u1137_test.cc:15:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   15 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc:15:48: error: template argument 1 is invalid
+   15 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1137/u1137_test.cc:15:48: error: template argument 2 is invalid
+/work/repo/units/u1137/u1137_test.cc:16:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1137/u1137_test.cc:17:26: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::InnerProductComputer::ProductTerm>&’
+   17 |   object.ComputeNonzeros(product_terms, nullptr);
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int
+/work/ceres-solver/internal/ceres/inner_product_computer.h:134:55: note:   initializing argument 1 of ‘int ceres::internal::InnerProductComputer::ComputeNonzeros(const std::vector<ProductTerm>&, std::vector<int>*)’
+  134 |   int ComputeNonzeros(const std::vector<ProductTerm>& product_terms,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc: In member function ‘virtual void Unit_u1137_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1137/u1137_test.cc:22:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   22 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc:22:48: error: template argument 1 is invalid
+   22 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1137/u1137_test.cc:22:48: error: template argument 2 is invalid
+/work/repo/units/u1137/u1137_test.cc:23:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1137/u1137_test.cc:24:26: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::InnerProductComputer::ProductTerm>&’
+   24 |   object.ComputeNonzeros(product_terms, nullptr);
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int
+/work/ceres-solver/internal/ceres/inner_product_computer.h:134:55: note:   initializing argument 1 of ‘int ceres::internal::InnerProductComputer::ComputeNonzeros(const std::vector<ProductTerm>&, std::vector<int>*)’
+  134 |   int ComputeNonzeros(const std::vector<ProductTerm>& product_terms,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc: In member function ‘virtual void Unit_u1137_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1137/u1137_test.cc:29:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?
+   29 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |               ^~~~~~~~~~~~~~~~~~~~
+      |               ceres::internal::InnerProductComputer
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: ‘ceres::internal::InnerProductComputer’ declared here
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1137/u1137_test.cc:29:48: error: template argument 1 is invalid
+   29 |   std::vector<InnerProductComputer::ProductTerm> product_terms{};
+      |                                                ^
+/work/repo/units/u1137/u1137_test.cc:29:48: error: template argument 2 is invalid
+/work/repo/units/u1137/u1137_test.cc:30:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::InnerProductComputer object{};
+      |                                                ^
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(const ceres::internal::BlockSparseMatrix&, int, int)’
+  124 |   InnerProductComputer(const BlockSparseMatrix& m,
+      |   ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:124:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note: candidate: ‘ceres::internal::InnerProductComputer::InnerProductComputer(ceres::internal::InnerProductComputer&&)’
+   64 | class CERES_NO_EXPORT InnerProductComputer {
+      |                       ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/inner_product_computer.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1137/u1137_test.cc:31:26: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::InnerProductComputer::ProductTerm>&’
+   31 |   object.ComputeNonzeros(product_terms, nullptr);
+      |                          ^~~~~~~~~~~~~
+      |                          |
+      |                          int
+/work/ceres-solver/internal/ceres/inner_product_computer.h:134:55: note:   initializing argument 1 of ‘int ceres::internal::InnerProductComputer::ComputeNonzeros(const std::vector<ProductTerm>&, std::vector<int>*)’
+  134 |   int ComputeNonzeros(const std::vector<ProductTerm>& product_terms,
+      |                       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~

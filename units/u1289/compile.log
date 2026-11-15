@@ -1,0 +1,37 @@
+/work/repo/units/u1289/u1289_test.cc: In member function ‘virtual void Unit_u1289_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1289/u1289_test.cc:9:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?
+    9 |   ResidualBlock block{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::ResidualBlock
+In file included from /work/repo/units/u1289/u1289_test.cc:5:
+/work/ceres-solver/internal/ceres/residual_block.h:69:23: note: ‘ceres::internal::ResidualBlock’ declared here
+   69 | class CERES_NO_EXPORT ResidualBlock {
+      |                       ^~~~~~~~~~~~~
+/work/repo/units/u1289/u1289_test.cc:10:41: error: ‘block’ was not declared in this scope; did you mean ‘clock’?
+   10 |   ceres::internal::InvalidateEvaluation(block, nullptr, nullptr, nullptr);
+      |                                         ^~~~~
+      |                                         clock
+/work/repo/units/u1289/u1289_test.cc: In member function ‘virtual void Unit_u1289_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1289/u1289_test.cc:15:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?
+   15 |   ResidualBlock block{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::ResidualBlock
+/work/ceres-solver/internal/ceres/residual_block.h:69:23: note: ‘ceres::internal::ResidualBlock’ declared here
+   69 | class CERES_NO_EXPORT ResidualBlock {
+      |                       ^~~~~~~~~~~~~
+/work/repo/units/u1289/u1289_test.cc:16:41: error: ‘block’ was not declared in this scope; did you mean ‘clock’?
+   16 |   ceres::internal::InvalidateEvaluation(block, nullptr, nullptr, nullptr);
+      |                                         ^~~~~
+      |                                         clock
+/work/repo/units/u1289/u1289_test.cc: In member function ‘virtual void Unit_u1289_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1289/u1289_test.cc:21:3: error: ‘ResidualBlock’ was not declared in this scope; did you mean ‘ceres::internal::ResidualBlock’?
+   21 |   ResidualBlock block{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::ResidualBlock
+/work/ceres-solver/internal/ceres/residual_block.h:69:23: note: ‘ceres::internal::ResidualBlock’ declared here
+   69 | class CERES_NO_EXPORT ResidualBlock {
+      |                       ^~~~~~~~~~~~~
+/work/repo/units/u1289/u1289_test.cc:22:41: error: ‘block’ was not declared in this scope; did you mean ‘clock’?
+   22 |   ceres::internal::InvalidateEvaluation(block, nullptr, nullptr, nullptr);
+      |                                         ^~~~~
+      |                                         clock

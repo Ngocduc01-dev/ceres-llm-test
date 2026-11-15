@@ -1,0 +1,16 @@
+{
+  "id": "u0781",
+  "name": "ceres::internal::ComputeSingleLinkageClustering",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u0781/u0781_test.cc:9:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?",
+    "units/u0781/u0781_test.cc:10:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?",
+    "units/u0781/u0781_test.cc:10:17: error: expected primary-expression before ‘int’",
+    "units/u0781/u0781_test.cc:11:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0781/u0781_test.cc:11:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?",
+    "units/u0781/u0781_test.cc:16:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?",
+    "units/u0781/u0781_test.cc:17:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?",
+    "units/u0781/u0781_test.cc:17:17: error: expected primary-expression before ‘int’"
+  ]
+}

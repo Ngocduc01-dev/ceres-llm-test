@@ -1,0 +1,4 @@
+/work/repo/units/u0521/u0521_test.cc: In member function ‘virtual void Unit_u0521_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0521/u0521_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.EuclideanManifold(1);
+      |   ^~~~~~

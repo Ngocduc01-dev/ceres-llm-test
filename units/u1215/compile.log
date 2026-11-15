@@ -1,0 +1,161 @@
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+In file included from /work/repo/units/u1215/u1215_test.cc:3:
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:13:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   13 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:19:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:25:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   25 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:31:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   31 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:37:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   37 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:43:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   43 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:49:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   49 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:55:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   55 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1215/u1215_test.cc: In member function ‘virtual void Unit_u1215_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1215/u1215_test.cc:61:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’
+   61 |   ceres::internal::CompressedRowSparseMatrix object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const double*, int)’
+  101 |   CompressedRowSparseMatrix(const double* diagonal, int num_rows);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:101:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(int, int, int)’
+   95 |   CompressedRowSparseMatrix(int num_rows, int num_cols, int max_num_nonzeros);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:95:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: candidate: ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(const ceres::internal::CompressedRowSparseMatrix&)’
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note:   candidate expects 1 argument, 0 provided

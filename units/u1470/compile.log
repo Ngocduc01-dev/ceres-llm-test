@@ -1,0 +1,250 @@
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:11:9: error: ‘LinearSolverType’ does not name a type
+   11 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:12:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   12 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:13:9: error: ‘LinearSolverOrderingType’ does not name a type
+   13 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:14:3: error: ‘ProblemImpl’ has not been declared
+   14 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:15:59: error: ‘linear_solver_type’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:15:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:15:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:15:144: error: ‘parameter_map’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:20:9: error: ‘LinearSolverType’ does not name a type
+   20 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:21:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   21 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:22:9: error: ‘LinearSolverOrderingType’ does not name a type
+   22 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:23:3: error: ‘ProblemImpl’ has not been declared
+   23 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:24:59: error: ‘linear_solver_type’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:24:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:24:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:24:144: error: ‘parameter_map’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:29:9: error: ‘LinearSolverType’ does not name a type
+   29 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:30:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   30 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:31:9: error: ‘LinearSolverOrderingType’ does not name a type
+   31 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:32:3: error: ‘ProblemImpl’ has not been declared
+   32 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:33:59: error: ‘linear_solver_type’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:33:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:33:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:33:144: error: ‘parameter_map’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:38:9: error: ‘LinearSolverType’ does not name a type
+   38 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:39:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   39 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:40:9: error: ‘LinearSolverOrderingType’ does not name a type
+   40 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:41:3: error: ‘ProblemImpl’ has not been declared
+   41 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:42:59: error: ‘linear_solver_type’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:42:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:42:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:42:144: error: ‘parameter_map’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:47:9: error: ‘LinearSolverType’ does not name a type
+   47 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:48:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   48 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:49:9: error: ‘LinearSolverOrderingType’ does not name a type
+   49 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:50:3: error: ‘ProblemImpl’ has not been declared
+   50 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:51:59: error: ‘linear_solver_type’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:51:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:51:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:51:144: error: ‘parameter_map’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:56:9: error: ‘LinearSolverType’ does not name a type
+   56 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:57:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   57 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:58:9: error: ‘LinearSolverOrderingType’ does not name a type
+   58 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:59:3: error: ‘ProblemImpl’ has not been declared
+   59 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:60:59: error: ‘linear_solver_type’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:60:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:60:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:60:144: error: ‘parameter_map’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:65:9: error: ‘LinearSolverType’ does not name a type
+   65 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:66:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   66 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:67:9: error: ‘LinearSolverOrderingType’ does not name a type
+   67 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:68:3: error: ‘ProblemImpl’ has not been declared
+   68 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:69:59: error: ‘linear_solver_type’ was not declared in this scope
+   69 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:69:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   69 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:69:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   69 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:69:144: error: ‘parameter_map’ was not declared in this scope
+   69 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:74:9: error: ‘LinearSolverType’ does not name a type
+   74 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:75:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   75 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:76:9: error: ‘LinearSolverOrderingType’ does not name a type
+   76 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:77:3: error: ‘ProblemImpl’ has not been declared
+   77 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:78:59: error: ‘linear_solver_type’ was not declared in this scope
+   78 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:78:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   78 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:78:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   78 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:78:144: error: ‘parameter_map’ was not declared in this scope
+   78 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:83:9: error: ‘LinearSolverType’ does not name a type
+   83 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:84:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   84 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:85:9: error: ‘LinearSolverOrderingType’ does not name a type
+   85 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:86:3: error: ‘ProblemImpl’ has not been declared
+   86 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:87:59: error: ‘linear_solver_type’ was not declared in this scope
+   87 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:87:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   87 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:87:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   87 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:87:144: error: ‘parameter_map’ was not declared in this scope
+   87 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc: In member function ‘virtual void Unit_u1470_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1470/u1470_test.cc:92:9: error: ‘LinearSolverType’ does not name a type
+   92 |   const LinearSolverType linear_solver_type{};
+      |         ^~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:93:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   93 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:94:9: error: ‘LinearSolverOrderingType’ does not name a type
+   94 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:95:3: error: ‘ProblemImpl’ has not been declared
+   95 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:96:59: error: ‘linear_solver_type’ was not declared in this scope
+   96 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                           ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:96:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   96 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:96:115: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   96 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1470/u1470_test.cc:96:144: error: ‘parameter_map’ was not declared in this scope
+   96 |   ceres::internal::ReorderProgramForSchurTypeLinearSolver(linear_solver_type, sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_map, nullptr, nullptr, nullptr);
+      |                                                                                                                                                ^~~~~~~~~~~~~

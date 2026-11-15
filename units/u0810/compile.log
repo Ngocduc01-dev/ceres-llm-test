@@ -1,0 +1,14 @@
+/work/repo/units/u0810/u0810_test.cc: In member function ‘virtual void Unit_u0810_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0810/u0810_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::WriteArrayToFileOrDie(filename, nullptr, size);
+      |                    ^
+/work/repo/units/u0810/u0810_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::WriteArrayToFileOrDie(filename, nullptr, size);
+      |                     ^~~~~~~~~
+/work/repo/units/u0810/u0810_test.cc: In member function ‘virtual void Unit_u0810_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0810/u0810_test.cc:17:20: error: expected unqualified-id before ‘(’ token
+   17 |   ceres::internal::(anonymous)::WriteArrayToFileOrDie(filename, nullptr, size);
+      |                    ^
+/work/repo/units/u0810/u0810_test.cc:17:21: error: ‘anonymous’ was not declared in this scope
+   17 |   ceres::internal::(anonymous)::WriteArrayToFileOrDie(filename, nullptr, size);
+      |                     ^~~~~~~~~

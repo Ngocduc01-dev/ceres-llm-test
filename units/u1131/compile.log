@@ -1,0 +1,11 @@
+/work/repo/units/u1131/u1131_test.cc: In member function ‘virtual void Unit_u1131_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1131/u1131_test.cc:9:21: error: call of overloaded ‘DeleteBlock(std::nullptr_t)’ is ambiguous
+    9 |   object.DeleteBlock(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+In file included from /work/repo/units/u1131/u1131_test.cc:4:
+/work/ceres-solver/internal/ceres/problem_impl.h:187:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ResidualBlock*)’
+  187 |   void DeleteBlock(ResidualBlock* residual_block);
+      |        ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/problem_impl.h:188:8: note: candidate: ‘void ceres::internal::ProblemImpl::DeleteBlock(ceres::internal::ParameterBlock*)’
+  188 |   void DeleteBlock(ParameterBlock* parameter_block);
+      |        ^~~~~~~~~~~

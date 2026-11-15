@@ -1,0 +1,16 @@
+{
+  "id": "u1395",
+  "name": "ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1395/u1395_test.cc:7:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1395/u1395_test.cc:8:35: error: ‘void ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep(double*)’ is private within this context",
+    "units/u1395/u1395_test.cc:13:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1395/u1395_test.cc:14:35: error: ‘void ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep(double*)’ is private within this context",
+    "units/u1395/u1395_test.cc:19:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1395/u1395_test.cc:20:35: error: ‘void ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep(double*)’ is private within this context",
+    "units/u1395/u1395_test.cc:25:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1395/u1395_test.cc:26:35: error: ‘void ceres::internal::DoglegStrategy::ComputeSubspaceDoglegStep(double*)’ is private within this context"
+  ]
+}

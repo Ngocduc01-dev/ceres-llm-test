@@ -1,0 +1,41 @@
+/work/repo/units/u0508/u0508_test.cc: In member function ‘virtual void Unit_u0508_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0508/u0508_test.cc:7:3: error: ‘ComposedLoss’ was not declared in this scope; did you mean ‘ceres::ComposedLoss’?
+    7 |   ComposedLoss object(f_data, {}, g_data, {});
+      |   ^~~~~~~~~~~~
+      |   ceres::ComposedLoss
+In file included from /work/repo/units/u0508/u0508_test.cc:3:
+/work/ceres-solver/include/ceres/loss_function.h:299:20: note: ‘ceres::ComposedLoss’ declared here
+  299 | class CERES_EXPORT ComposedLoss final : public LossFunction {
+      |                    ^~~~~~~~~~~~
+/work/repo/units/u0508/u0508_test.cc:7:33: error: expected primary-expression before ‘,’ token
+    7 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                 ^
+/work/repo/units/u0508/u0508_test.cc:7:35: error: ‘g_data’ was not declared in this scope
+    7 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                   ^~~~~~
+/work/repo/units/u0508/u0508_test.cc:7:43: error: expected primary-expression before ‘{’ token
+    7 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                           ^
+/work/repo/units/u0508/u0508_test.cc:7:45: error: expected primary-expression before ‘)’ token
+    7 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                             ^
+/work/repo/units/u0508/u0508_test.cc: In member function ‘virtual void Unit_u0508_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0508/u0508_test.cc:11:3: error: ‘ComposedLoss’ was not declared in this scope; did you mean ‘ceres::ComposedLoss’?
+   11 |   ComposedLoss object(f_data, {}, g_data, {});
+      |   ^~~~~~~~~~~~
+      |   ceres::ComposedLoss
+/work/ceres-solver/include/ceres/loss_function.h:299:20: note: ‘ceres::ComposedLoss’ declared here
+  299 | class CERES_EXPORT ComposedLoss final : public LossFunction {
+      |                    ^~~~~~~~~~~~
+/work/repo/units/u0508/u0508_test.cc:11:33: error: expected primary-expression before ‘,’ token
+   11 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                 ^
+/work/repo/units/u0508/u0508_test.cc:11:35: error: ‘g_data’ was not declared in this scope
+   11 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                   ^~~~~~
+/work/repo/units/u0508/u0508_test.cc:11:43: error: expected primary-expression before ‘{’ token
+   11 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                           ^
+/work/repo/units/u0508/u0508_test.cc:11:45: error: expected primary-expression before ‘)’ token
+   11 |   ComposedLoss object(f_data, {}, g_data, {});
+      |                                             ^

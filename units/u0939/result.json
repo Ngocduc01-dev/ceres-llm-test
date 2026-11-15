@@ -1,0 +1,11 @@
+{
+  "id": "u0939",
+  "name": "ceres::internal::SchurComplementSolver::SchurComplementSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0939/u0939_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u0939/u0939_test.cc:9:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u0939/u0939_test.cc:9:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’"
+  ]
+}

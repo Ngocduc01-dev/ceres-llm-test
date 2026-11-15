@@ -1,26 +1,34 @@
-# Unit u0345
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh; đi tuần tự node 1 (gọi `QuaternionMinusJacobianImpl`, `return true`) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `bool MinusJacobian(const double * x, double * jacobian) const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `x`: mảng 4 double (quaternion), không có điều kiện đường đi ràng buộc; chọn trong [-1, 1]. `jacobian`: mảng 12 double (ma trận 4×3), giá trị khởi tạo bất kỳ | `x = {0.5, -0.5, 0.5, -0.5}` (seed cố định 0 với ngẫu nhiên, ở đây ghi trực tiếp giá trị); `jacobian` khởi tạo 0 |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có (hàm không có điểm rẽ nhánh, tổng số nhánh = 0). Ghi chú: CFG khớp với mã nguồn.
 
-## D. File test
+`C2 dự kiến = 0 / 0` (không có nhánh; toàn bộ câu lệnh node 1 được thực thi bởi TC1, tức phủ 100% câu lệnh)
+
+**D. File test**
 
 ```cpp
 // FILE: u0345_test.cc
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0345, PathP1) { double x[4] = {1,0,0,0}; double d[3] = {0,0,0}; double out[4] = {}; ceres::QuaternionManifold target; target.MinusJacobian(x, out); }
+
+// Path P1: START -> 1 -> END
+TEST(QuaternionManifoldMinusJacobian, TC1_P1_SequentialPath) {
+  ceres::QuaternionManifold manifold;
+  const double x[4] = {0.5, -0.5, 0.5, -0.5};
+  double jacobian[12] = {0.0, 0.0, 0.0, 0.0, 0.0, 0.0,
+                         0.0, 0.0, 0.0, 0.0, 0.0, 0.0};
+  manifold.MinusJacobian(x, jacobian);
+}
 ```

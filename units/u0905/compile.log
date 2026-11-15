@@ -1,0 +1,38 @@
+/work/repo/units/u0905/u0905_test.cc: In member function ‘virtual void Unit_u0905_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0905/u0905_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+    7 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+In file included from /work/ceres-solver/include/ceres/loss_function.h:82,
+                 from /work/repo/units/u0905/u0905_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u0905/u0905_test.cc:8:37: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunctionWrapper(<brace-enclosed initializer list>)’
+    8 |   ceres::LossFunctionWrapper object{};
+      |                                     ^
+/work/ceres-solver/include/ceres/loss_function.h:394:3: note: candidate: ‘ceres::LossFunctionWrapper::LossFunctionWrapper(ceres::LossFunction*, ceres::Ownership)’
+  394 |   LossFunctionWrapper(LossFunction* rho, Ownership ownership)
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/loss_function.h:394:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0905/u0905_test.cc:9:25: error: ‘ownership’ was not declared in this scope
+    9 |   object.Reset(nullptr, ownership);
+      |                         ^~~~~~~~~
+/work/repo/units/u0905/u0905_test.cc: In member function ‘virtual void Unit_u0905_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0905/u0905_test.cc:14:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+   14 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u0905/u0905_test.cc:15:37: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunctionWrapper(<brace-enclosed initializer list>)’
+   15 |   ceres::LossFunctionWrapper object{};
+      |                                     ^
+/work/ceres-solver/include/ceres/loss_function.h:394:3: note: candidate: ‘ceres::LossFunctionWrapper::LossFunctionWrapper(ceres::LossFunction*, ceres::Ownership)’
+  394 |   LossFunctionWrapper(LossFunction* rho, Ownership ownership)
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/loss_function.h:394:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0905/u0905_test.cc:16:25: error: ‘ownership’ was not declared in this scope
+   16 |   object.Reset(nullptr, ownership);
+      |                         ^~~~~~~~~

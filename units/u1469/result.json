@@ -1,0 +1,14 @@
+{
+  "id": "u1469",
+  "name": "ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1469/u1469_test.cc:12:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1469/u1469_test.cc:13:53: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’",
+    "units/u1469/u1469_test.cc:19:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1469/u1469_test.cc:20:53: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’",
+    "units/u1469/u1469_test.cc:26:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1469/u1469_test.cc:27:53: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’"
+  ]
+}

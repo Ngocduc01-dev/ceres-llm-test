@@ -1,0 +1,8 @@
+/work/repo/units/u0965/u0965_test.cc: In member function ‘virtual void Unit_u0965_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0965/u0965_test.cc:9:14: error: ‘void ceres::internal::ThreadPool::Stop()’ is private within this context
+    9 |   object.Stop();
+      |   ~~~~~~~~~~~^~
+In file included from /work/repo/units/u0965/u0965_test.cc:4:
+/work/ceres-solver/internal/ceres/thread_pool.h:108:8: note: declared private here
+  108 |   void Stop();
+      |        ^~~~

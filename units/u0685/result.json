@@ -1,0 +1,9 @@
+{
+  "id": "u0685",
+  "name": "ceres::internal::Minimizer::Options::Init",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0685/u0685_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

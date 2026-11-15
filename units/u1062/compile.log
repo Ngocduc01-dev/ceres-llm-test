@@ -1,0 +1,110 @@
+/work/repo/units/u1062/u1062_test.cc:8:16: error: extended character – is not valid in an identifier
+    8 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:14:16: error: extended character – is not valid in an identifier
+   14 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:20:16: error: extended character – is not valid in an identifier
+   20 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:26:16: error: extended character – is not valid in an identifier
+   26 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:32:16: error: extended character – is not valid in an identifier
+   32 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:38:16: error: extended character – is not valid in an identifier
+   38 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:44:16: error: extended character – is not valid in an identifier
+   44 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:50:16: error: extended character – is not valid in an identifier
+   50 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:56:16: error: extended character – is not valid in an identifier
+   56 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:62:16: error: extended character – is not valid in an identifier
+   62 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc:68:16: error: extended character – is not valid in an identifier
+   68 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |                ^
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:8:3: error: ‘xem’ was not declared in this scope
+    8 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:9:55: error: ‘macro’ was not declared in this scope
+    9 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:14:3: error: ‘xem’ was not declared in this scope
+   14 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:15:55: error: ‘macro’ was not declared in this scope
+   15 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:20:3: error: ‘xem’ was not declared in this scope
+   20 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:21:55: error: ‘macro’ was not declared in this scope
+   21 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:26:3: error: ‘xem’ was not declared in this scope
+   26 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:27:55: error: ‘macro’ was not declared in this scope
+   27 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:32:3: error: ‘xem’ was not declared in this scope
+   32 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:33:55: error: ‘macro’ was not declared in this scope
+   33 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:38:3: error: ‘xem’ was not declared in this scope
+   38 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:39:55: error: ‘macro’ was not declared in this scope
+   39 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:44:3: error: ‘xem’ was not declared in this scope
+   44 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:45:55: error: ‘macro’ was not declared in this scope
+   45 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:50:3: error: ‘xem’ was not declared in this scope
+   50 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:51:55: error: ‘macro’ was not declared in this scope
+   51 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:56:3: error: ‘xem’ was not declared in this scope
+   56 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:57:55: error: ‘macro’ was not declared in this scope
+   57 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:62:3: error: ‘xem’ was not declared in this scope
+   62 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:63:55: error: ‘macro’ was not declared in this scope
+   63 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~
+/work/repo/units/u1062/u1062_test.cc: In member function ‘virtual void Unit_u1062_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1062/u1062_test.cc:68:3: error: ‘xem’ was not declared in this scope
+   68 |   xem mã nguồn – hàm được sinh ra từ macro{};
+      |   ^~~
+/work/repo/units/u1062/u1062_test.cc:69:55: error: ‘macro’ was not declared in this scope
+   69 |   ceres::internal::MatrixTransposeMatrixMultiplyNaive(macro);
+      |                                                       ^~~~~

@@ -1,0 +1,12 @@
+/work/repo/units/u0846/u0846_test.cc: In member function ‘virtual void Unit_u0846_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0846/u0846_test.cc:8:3: error: ‘Covariance’ has not been declared
+    8 |   Covariance::Options options{};
+      |   ^~~~~~~~~~
+/work/repo/units/u0846/u0846_test.cc:9:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+In file included from /work/repo/units/u0846/u0846_test.cc:4:
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided

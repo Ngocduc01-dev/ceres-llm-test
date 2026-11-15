@@ -1,0 +1,4 @@
+/work/repo/units/u0734/u0734_test.cc: In member function ‘virtual void ceres::Unit_u0734_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0734/u0734_test.cc:7:3: error: ‘LineSearchTypeToString’ was not declared in this scope
+    7 |   LineSearchTypeToString({});
+      |   ^~~~~~~~~~~~~~~~~~~~~~

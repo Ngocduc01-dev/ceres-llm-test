@@ -2,7 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/linear_least_squares_problems.h"
 
-TEST(Unit_u0329, PathP1) {
-  ceres::internal::LinearLeastSquaresProblem target;
-  EXPECT_EQ(target.num_eliminate_blocks, 0);
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(LinearLeastSquaresProblemCtor, DefaultConstruct) {
+  ceres::internal::LinearLeastSquaresProblem problem;
+  (void)problem;
 }

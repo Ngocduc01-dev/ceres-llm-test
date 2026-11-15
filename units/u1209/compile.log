@@ -1,0 +1,14 @@
+/work/repo/units/u1209/u1209_test.cc: In member function ‘virtual void Unit_u1209_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1209/u1209_test.cc:11:3: error: ‘F’ was not declared in this scope
+   11 |   F function{};
+      |   ^
+/work/repo/units/u1209/u1209_test.cc:13:69: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?
+   13 |   ceres::internal::ParallelInvoke(nullptr, start, end, num_threads, function, min_block_size);
+      |                                                                     ^~~~~~~~
+      |                                                                     std::function
+In file included from /usr/include/c++/14/functional:59,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:5162,
+                 from /work/repo/units/u1209/u1209_test.cc:2:
+/usr/include/c++/14/bits/std_function.h:111:11: note: ‘std::function’ declared here
+  111 |     class function;
+      |           ^~~~~~~~

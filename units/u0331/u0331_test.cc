@@ -1,15 +1,31 @@
 // FILE: u0331_test.cc
 #include "gtest/gtest.h"
+#include "ceres/execution_summary.h"
 #include "ceres/linear_solver.h"
 
-class Unit0331Solver final : public ceres::internal::LinearSolver {
+namespace ceres {
+namespace internal {
+
+namespace {
+
+// Lớp con cụ thể để tạo được object (LinearSolver có hàm thuần ảo Solve).
+class TestLinearSolver : public LinearSolver {
  public:
-  Summary Solve(LinearOperator*, const double*, const PerSolveOptions&, double*) override {
-    return {};
+  Summary Solve(LinearOperator* A,
+                const double* b,
+                const PerSolveOptions& per_solve_options,
+                double* x) override {
+    return Summary();
   }
 };
 
-TEST(Unit_u0331, PathP1) {
-  Unit0331Solver target;
-  EXPECT_TRUE(target.Statistics().empty());
+}  // namespace
+
+// Path P1: START -> END (không có điểm rẽ nhánh)
+TEST(LinearSolverStatisticsTest, P1_DefaultReturnsWithoutBranch) {
+  TestLinearSolver solver;
+  solver.Statistics();
 }
+
+}  // namespace internal
+}  // namespace ceres

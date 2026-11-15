@@ -1,0 +1,27 @@
+{
+  "id": "u1524",
+  "name": "ceres::Problem::AddResidualBlock",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u1524.TC1_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 1,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 3
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

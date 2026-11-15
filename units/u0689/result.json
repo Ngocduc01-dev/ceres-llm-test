@@ -1,0 +1,10 @@
+{
+  "id": "u0689",
+  "name": "ceres::internal::SparseMatrixPreconditionerWrapper::~SparseMatrixPreconditionerWrapper",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0689/u0689_test.cc:7:3: error: ‘SparseMatrixPreconditionerWrapper’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrixPreconditionerWrapper’?",
+    "units/u0689/u0689_test.cc:7:59: error: expected primary-expression before ‘)’ token"
+  ]
+}

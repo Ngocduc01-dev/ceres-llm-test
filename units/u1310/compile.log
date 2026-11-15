@@ -1,0 +1,16 @@
+/work/repo/units/u1310/u1310_test.cc: In member function ‘virtual void Unit_u1310_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1310/u1310_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1310/u1310_test.cc:9:40: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   ceres::OptionsAreValidForDenseSolver(options, nullptr);
+      |                                        ^~~~~~~
+      |                                        optind
+/work/repo/units/u1310/u1310_test.cc: In member function ‘virtual void Unit_u1310_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1310/u1310_test.cc:14:3: error: ‘Solver’ has not been declared
+   14 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1310/u1310_test.cc:15:40: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   ceres::OptionsAreValidForDenseSolver(options, nullptr);
+      |                                        ^~~~~~~
+      |                                        optind

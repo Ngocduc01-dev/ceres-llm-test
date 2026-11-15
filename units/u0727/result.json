@@ -1,0 +1,10 @@
+{
+  "id": "u0727",
+  "name": "ceres::internal::InnerProductComputer::ProductTerm::operator<",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0727/u0727_test.cc:7:3: error: ‘object’ was not declared in this scope",
+    "units/u0727/u0727_test.cc:11:3: error: ‘object’ was not declared in this scope"
+  ]
+}

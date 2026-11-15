@@ -1,0 +1,12 @@
+/work/repo/units/u1098/u1098_test.cc: In member function ‘virtual void Unit_u1098_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1098/u1098_test.cc:7:3: error: ‘ceres’ has not been declared
+    7 |   ceres::StringToCovarianceAlgorithmType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1098/u1098_test.cc: In member function ‘virtual void Unit_u1098_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1098/u1098_test.cc:13:3: error: ‘ceres’ has not been declared
+   13 |   ceres::StringToCovarianceAlgorithmType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1098/u1098_test.cc: In member function ‘virtual void Unit_u1098_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1098/u1098_test.cc:19:3: error: ‘ceres’ has not been declared
+   19 |   ceres::StringToCovarianceAlgorithmType(value, nullptr);
+      |   ^~~~~

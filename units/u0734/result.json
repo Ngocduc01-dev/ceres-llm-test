@@ -1,0 +1,9 @@
+{
+  "id": "u0734",
+  "name": "ceres::LineSearchTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0734/u0734_test.cc:7:3: error: ‘LineSearchTypeToString’ was not declared in this scope"
+  ]
+}

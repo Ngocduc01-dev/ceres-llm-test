@@ -1,0 +1,10 @@
+{
+  "id": "u0896",
+  "name": "ceres::internal::SparseMatrix::SetZero",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0896/u0896_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseMatrix’",
+    "units/u0896/u0896_test.cc:10:27: error: expected primary-expression before ‘int’"
+  ]
+}

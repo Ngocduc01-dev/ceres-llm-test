@@ -1,0 +1,35 @@
+{
+  "id": "u0715",
+  "name": "ceres::internal::WeightedGraph::EdgeWeight",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0715.PathP1": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 6
+  },
+  "c2": {
+    "covered": 1,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 179,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (vertex1 < vertex2) {"
+    }
+  ]
+}

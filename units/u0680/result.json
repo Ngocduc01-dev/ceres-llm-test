@@ -1,0 +1,12 @@
+{
+  "id": "u0680",
+  "name": "ceres::internal::LineSearchFunction::Init",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0680/u0680_test.cc:8:20: error: ‘Vector’ is not a member of ‘ceres::internal’",
+    "units/u0680/u0680_test.cc:9:20: error: ‘Vector’ is not a member of ‘ceres::internal’",
+    "units/u0680/u0680_test.cc:10:15: error: ‘position’ was not declared in this scope",
+    "units/u0680/u0680_test.cc:10:25: error: ‘direction’ was not declared in this scope; did you mean ‘sigaction’?"
+  ]
+}

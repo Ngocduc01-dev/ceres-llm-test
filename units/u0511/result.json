@@ -1,0 +1,9 @@
+{
+  "id": "u0511",
+  "name": "ceres::internal::MatrixTransposeMatrixMultiplyEigen",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0511/u0511_test.cc:10:37: error: no matching function for call to ‘MatrixTransposeMatrixMultiplyEigen(<brace-enclosed initializer list>)’"
+  ]
+}

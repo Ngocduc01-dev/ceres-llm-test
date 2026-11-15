@@ -1,0 +1,4 @@
+/work/repo/units/u0550/u0550_test.cc: In member function ‘virtual void Unit_u0550_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0550/u0550_test.cc:9:3: error: ‘object’ was not declared in this scope
+    9 |   object.RightMultiplyAndAccumulate(x_ptr_data, y_ptr_data);
+      |   ^~~~~~

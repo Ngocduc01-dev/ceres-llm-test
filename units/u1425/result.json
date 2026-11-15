@@ -1,0 +1,10 @@
+{
+  "id": "u1425",
+  "name": "ceres::internal::PartitionedMatrixView::CreateBlockDiagonalFtF",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1425/u1425_test.cc:9:49: error: class template argument deduction failed:",
+    "units/u1425/u1425_test.cc:9:49: error: no matching function for call to ‘PartitionedMatrixView()’"
+  ]
+}

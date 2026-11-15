@@ -1,0 +1,11 @@
+{
+  "id": "u0596",
+  "name": "ceres::(anonymous)::QuaternionPlusImpl",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0596/u0596_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer",
+    "units/u0596/u0596_test.cc:9:10: error: scalar object ‘delta_data’ requires one element in initializer",
+    "units/u0596/u0596_test.cc:10:10: error: scalar object ‘x_plus_delta_data’ requires one element in initializer"
+  ]
+}

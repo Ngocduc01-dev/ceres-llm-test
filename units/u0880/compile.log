@@ -1,0 +1,12 @@
+/work/repo/units/u0880/u0880_test.cc: In member function ‘virtual void Unit_u0880_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0880/u0880_test.cc:7:3: error: ‘Problem’ was not declared in this scope; did you mean ‘ceres::Problem’?
+    7 |   Problem arg0{};
+      |   ^~~~~~~
+      |   ceres::Problem
+In file included from /work/repo/units/u0880/u0880_test.cc:3:
+/work/ceres-solver/include/ceres/problem.h:120:20: note: ‘ceres::Problem’ declared here
+  120 | class CERES_EXPORT Problem {
+      |                    ^~~~~~~
+/work/repo/units/u0880/u0880_test.cc:9:10: error: ‘arg0’ was not declared in this scope
+    9 |   object(arg0);
+      |          ^~~~

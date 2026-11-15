@@ -1,0 +1,9 @@
+{
+  "id": "u0892",
+  "name": "ceres::internal::RefinedSparseCholesky::Factorize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0892/u0892_test.cc:8:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky(<brace-enclosed initializer list>)’"
+  ]
+}

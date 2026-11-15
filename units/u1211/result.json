@@ -1,0 +1,16 @@
+{
+  "id": "u1211",
+  "name": "ceres::internal::BlockSparseMatrix::AppendRows",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1211/u1211_test.cc:8:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1211/u1211_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1211/u1211_test.cc:10:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?",
+    "units/u1211/u1211_test.cc:15:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1211/u1211_test.cc:16:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1211/u1211_test.cc:17:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?",
+    "units/u1211/u1211_test.cc:22:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u1211/u1211_test.cc:23:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

@@ -1,0 +1,13 @@
+/work/repo/units/u0904/u0904_test.cc: In member function ‘virtual void Unit_u0904_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0904/u0904_test.cc:8:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’
+    8 |   ceres::DynamicCostFunctionToFunctor object{};
+      |                                              ^
+In file included from /work/repo/units/u0904/u0904_test.cc:4:
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::CostFunction*)’
+  108 |   explicit DynamicCostFunctionToFunctor(CostFunction* cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:108:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note: candidate: ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(ceres::DynamicCostFunctionToFunctor&&)’
+  105 | class CERES_EXPORT DynamicCostFunctionToFunctor {
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_cost_function_to_functor.h:105:20: note:   candidate expects 1 argument, 0 provided

@@ -1,0 +1,8 @@
+In file included from /work/repo/units/u0641/u0641_test.cc:3:
+/work/ceres-solver/include/ceres/numeric_diff_first_order_function.h: In instantiation of ‘bool ceres::NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>::Evaluate(const double*, double*, double*) const [with FirstOrderFunctor = LocalFirstOrderFunctor; ceres::NumericDiffMethodType kMethod = ceres::CENTRAL; int kNumParameters = 4]’:
+/work/ceres-solver/include/ceres/numeric_diff_first_order_function.h:158:8:   required from here
+  158 |   bool Evaluate(const double* const parameters,
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/numeric_diff_first_order_function.h:162:21: error: no match for call to ‘(LocalFirstOrderFunctor) (const double* const&, double*&)’
+  162 |     if (!(*functor_)(parameters, cost)) {
+      |          ~~~~~~~~~~~^~~~~~~~~~~~~~~~~~

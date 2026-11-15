@@ -1,0 +1,10 @@
+{
+  "id": "u1325",
+  "name": "ceres::internal::DenseQRSolver::DenseQRSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1325/u1325_test.cc:9:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1325/u1325_test.cc:10:41: error: no matching function for call to ‘ceres::internal::DenseQRSolver::DenseQRSolver(<brace-enclosed initializer list>)’"
+  ]
+}

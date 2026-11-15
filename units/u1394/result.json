@@ -1,0 +1,16 @@
+{
+  "id": "u1394",
+  "name": "ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1394/u1394_test.cc:9:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:15:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:21:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:27:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:33:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:39:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:45:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context",
+    "units/u1394/u1394_test.cc:51:57: error: ‘bool ceres::internal::TrustRegionMinimizer::FinalizeIterationAndCheckIfMinimizerCanContinue()’ is private within this context"
+  ]
+}

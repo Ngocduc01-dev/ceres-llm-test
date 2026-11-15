@@ -1,0 +1,45 @@
+{
+  "id": "u0940",
+  "name": "ceres::internal::TripletSparseMatrix::Reserve",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u0940.TC1_CallsTarget": "pass",
+    "Unit_u0940.TC2_CallsTarget": "pass",
+    "Unit_u0940.TC3_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 3,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 16
+  },
+  "c2": {
+    "covered": 1,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 126,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (new_max_num_nonzeros <= max_num_nonzeros_) return;"
+    },
+    {
+      "line": 135,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < num_nonzeros_; ++i) {"
+    }
+  ]
+}

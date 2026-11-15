@@ -1,0 +1,97 @@
+{
+  "id": "u0784",
+  "name": "ceres::internal::CreateSchurComplementGraph",
+  "status": "ok",
+  "cfg_branches": 20,
+  "tests": {
+    "Unit_u0784.TC1_CallsTarget": "pass",
+    "Unit_u0784.TC2_CallsTarget": "pass",
+    "Unit_u0784.TC3_CallsTarget": "pass",
+    "Unit_u0784.TC4_CallsTarget": "pass",
+    "Unit_u0784.TC5_CallsTarget": "pass",
+    "Unit_u0784.TC6_CallsTarget": "pass",
+    "Unit_u0784.TC7_CallsTarget": "pass",
+    "Unit_u0784.TC8_CallsTarget": "pass",
+    "Unit_u0784.TC9_CallsTarget": "pass",
+    "Unit_u0784.TC10_CallsTarget": "pass",
+    "Unit_u0784.TC11_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 11,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 14,
+    "total": 35
+  },
+  "c2": {
+    "covered": 5,
+    "total": 16,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 83,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (const auto& visible : visibility) {"
+    },
+    {
+      "line": 84,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (!visible.empty()) {"
+    },
+    {
+      "line": 95,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (int i = 0; i < visibility.size(); i++) {"
+    },
+    {
+      "line": 97,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int v : visibility_set) {"
+    },
+    {
+      "line": 107,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (const auto& inverse_visibility_set : inverse_visibility) {"
+    },
+    {
+      "line": 112,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (++camera2; camera2 != inverse_visibility_set.end(); ++camera2) {"
+    },
+    {
+      "line": 124,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (int i = 0; i < visibility.size(); ++i) {"
+    },
+    {
+      "line": 130,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (const auto& camera_pair_count : camera_pairs) {"
+    }
+  ]
+}

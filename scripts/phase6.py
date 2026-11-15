@@ -304,6 +304,7 @@ def main():
     ap.add_argument("-j", type=int, default=4, help="số unit chạy song song (RAM ~1 GB/unit khi compile)")
     ap.add_argument("--keep", action="store_true", help="giữ thư mục build/gcda của unit (để soát lỗi)")
     ap.add_argument("--report-only", action="store_true", help="không chạy, chỉ dựng lại báo cáo từ result.json")
+    ap.add_argument("--first", type=int, help="báo cáo chỉ tính N unit đầu theo thứ tự sinh test")
     a = ap.parse_args()
     KEEP = a.keep
     units = json.loads((REPO / "data" / "units.json").read_text(encoding="utf-8"))
@@ -327,9 +328,13 @@ def main():
 
         with ThreadPoolExecutor(a.j) as ex:
             list(ex.map(job, todo))
-    # báo cáo luôn gộp MỌI unit đã có result.json (không chỉ lần chạy này)
+    # báo cáo gộp mọi unit đã có result.json (không chỉ lần chạy này);
+    # --first N: chỉ tính N unit đầu theo thứ tự sinh test (topo_level, order)
+    scope = units
+    if a.first:
+        scope = sorted(units, key=lambda u: (u["topo_level"], u["order"]))[:a.first]
     results = [json.loads(p.read_text(encoding="utf-8"))
-               for u in units if (p := REPO / "units" / u["id"] / "result.json").exists()]
+               for u in scope if (p := REPO / "units" / u["id"] / "result.json").exists()]
     write_summary(results)
     write_html(results)
 

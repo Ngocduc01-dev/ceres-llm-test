@@ -1,0 +1,11 @@
+{
+  "id": "u1359",
+  "name": "ceres::internal::ScratchEvaluatePreparer::Prepare",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1359/u1359_test.cc:12:27: error: expected primary-expression before ‘int’",
+    "units/u1359/u1359_test.cc:19:27: error: expected primary-expression before ‘int’",
+    "units/u1359/u1359_test.cc:26:27: error: expected primary-expression before ‘int’"
+  ]
+}

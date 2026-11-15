@@ -1,0 +1,9 @@
+{
+  "id": "u0903",
+  "name": "ceres::internal::TrustRegionStrategy::~TrustRegionStrategy",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0903/u0903_test.cc:7:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::TrustRegionStrategy’"
+  ]
+}

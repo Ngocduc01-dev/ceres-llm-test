@@ -1,0 +1,78 @@
+/work/repo/units/u1443/u1443_test.cc: In member function ‘virtual void Unit_u1443_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1443/u1443_test.cc:13:3: error: ‘LinearSolver’ has not been declared
+   13 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc:14:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::SchurComplementSolver object{};
+      |                                                 ^
+In file included from /work/repo/units/u1443/u1443_test.cc:7:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note: candidate: ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  115 |   explicit SchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1443/u1443_test.cc:14:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’
+   14 |   ceres::internal::SchurComplementSolver object{};
+      |                                          ^~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:113:23: note:   because the following virtual functions are pure within ‘ceres::internal::SchurComplementSolver’:
+  113 | class CERES_NO_EXPORT SchurComplementSolver : public BlockSparseMatrixSolver {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:137:16: note:     ‘virtual void ceres::internal::SchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’
+  137 |   virtual void InitStorage(const CompressedRowBlockStructure* bs) = 0;
+      |                ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:138:33: note:     ‘virtual ceres::internal::LinearSolver::Summary ceres::internal::SchurComplementSolver::SolveReducedLinearSystem(const ceres::internal::LinearSolver::PerSolveOptions&, double*)’
+  138 |   virtual LinearSolver::Summary SolveReducedLinearSystem(
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc:15:38: error: ‘per_solve_options’ was not declared in this scope
+   15 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc: In member function ‘virtual void Unit_u1443_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1443/u1443_test.cc:20:3: error: ‘LinearSolver’ has not been declared
+   20 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc:21:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’
+   21 |   ceres::internal::SchurComplementSolver object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note: candidate: ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  115 |   explicit SchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1443/u1443_test.cc:21:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’
+   21 |   ceres::internal::SchurComplementSolver object{};
+      |                                          ^~~~~~
+/work/repo/units/u1443/u1443_test.cc:22:38: error: ‘per_solve_options’ was not declared in this scope
+   22 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc: In member function ‘virtual void Unit_u1443_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1443/u1443_test.cc:27:3: error: ‘LinearSolver’ has not been declared
+   27 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc:28:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’
+   28 |   ceres::internal::SchurComplementSolver object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note: candidate: ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  115 |   explicit SchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1443/u1443_test.cc:28:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’
+   28 |   ceres::internal::SchurComplementSolver object{};
+      |                                          ^~~~~~
+/work/repo/units/u1443/u1443_test.cc:29:38: error: ‘per_solve_options’ was not declared in this scope
+   29 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc: In member function ‘virtual void Unit_u1443_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1443/u1443_test.cc:34:3: error: ‘LinearSolver’ has not been declared
+   34 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1443/u1443_test.cc:35:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::SchurComplementSolver object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note: candidate: ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  115 |   explicit SchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1443/u1443_test.cc:35:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’
+   35 |   ceres::internal::SchurComplementSolver object{};
+      |                                          ^~~~~~
+/work/repo/units/u1443/u1443_test.cc:36:38: error: ‘per_solve_options’ was not declared in this scope
+   36 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~

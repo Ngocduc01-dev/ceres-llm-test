@@ -1,0 +1,9 @@
+/work/repo/units/u0988/u0988_test.cc: In member function ‘virtual void Unit_u0988_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0988/u0988_test.cc:8:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::BlockCRSJacobiPreconditioner object{};
+      |                                                        ^
+In file included from /work/repo/units/u0988/u0988_test.cc:3:
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note: candidate: ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::CompressedRowSparseMatrix&)’
+   82 |   explicit BlockCRSJacobiPreconditioner(Preconditioner::Options options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note:   candidate expects 2 arguments, 0 provided

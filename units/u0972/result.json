@@ -1,0 +1,12 @@
+{
+  "id": "u0972",
+  "name": "ceres::internal::DoglegStrategy::ComputeSubspaceModel",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0972/u0972_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u0972/u0972_test.cc:9:30: error: ‘bool ceres::internal::DoglegStrategy::ComputeSubspaceModel(ceres::internal::SparseMatrix*)’ is private within this context",
+    "units/u0972/u0972_test.cc:14:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u0972/u0972_test.cc:15:30: error: ‘bool ceres::internal::DoglegStrategy::ComputeSubspaceModel(ceres::internal::SparseMatrix*)’ is private within this context"
+  ]
+}

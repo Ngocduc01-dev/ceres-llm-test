@@ -1,0 +1,29 @@
+/work/repo/units/u1229/u1229_test.cc: In member function ‘virtual void Unit_u1229_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1229/u1229_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+   10 |   LinearSolver::PerSolveOptions arg0{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1229/u1229_test.cc:11:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::DenseSchurComplementSolver object{};
+      |                                                      ^
+In file included from /work/repo/units/u1229/u1229_test.cc:6:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note: candidate: ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  153 |   explicit DenseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1229/u1229_test.cc:12:35: error: ‘arg0’ was not declared in this scope
+   12 |   object.SolveReducedLinearSystem(arg0, nullptr);
+      |                                   ^~~~
+/work/repo/units/u1229/u1229_test.cc: In member function ‘virtual void Unit_u1229_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1229/u1229_test.cc:17:3: error: ‘LinearSolver’ has not been declared
+   17 |   LinearSolver::PerSolveOptions arg0{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1229/u1229_test.cc:18:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’
+   18 |   ceres::internal::DenseSchurComplementSolver object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note: candidate: ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  153 |   explicit DenseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1229/u1229_test.cc:19:35: error: ‘arg0’ was not declared in this scope
+   19 |   object.SolveReducedLinearSystem(arg0, nullptr);
+      |                                   ^~~~

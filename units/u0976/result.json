@@ -1,0 +1,9 @@
+{
+  "id": "u0976",
+  "name": "ceres::DynamicCostFunction::SetNumResiduals",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0976/u0976_test.cc:9:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::DynamicCostFunction’"
+  ]
+}

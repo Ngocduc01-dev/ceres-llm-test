@@ -1,0 +1,9 @@
+{
+  "id": "u1072",
+  "name": "ceres::internal::BlockRandomAccessDiagonalMatrix::Invert",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1072/u1072_test.cc:9:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

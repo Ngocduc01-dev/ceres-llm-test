@@ -1,0 +1,116 @@
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+    7 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:7:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/polynomial.h:38,
+                 from /work/repo/units/u1304/u1304_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:10:39: error: ‘polynomial’ was not declared in this scope
+   10 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:15:3: error: ‘Vector’ was not declared in this scope
+   15 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:15:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:18:39: error: ‘polynomial’ was not declared in this scope
+   18 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:23:3: error: ‘Vector’ was not declared in this scope
+   23 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:23:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:26:39: error: ‘polynomial’ was not declared in this scope
+   26 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:31:3: error: ‘Vector’ was not declared in this scope
+   31 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:31:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:34:39: error: ‘polynomial’ was not declared in this scope
+   34 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:39:3: error: ‘Vector’ was not declared in this scope
+   39 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:39:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:42:39: error: ‘polynomial’ was not declared in this scope
+   42 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:47:3: error: ‘Vector’ was not declared in this scope
+   47 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:47:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:50:39: error: ‘polynomial’ was not declared in this scope
+   50 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:55:3: error: ‘Vector’ was not declared in this scope
+   55 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:55:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:58:39: error: ‘polynomial’ was not declared in this scope
+   58 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~
+/work/repo/units/u1304/u1304_test.cc: In member function ‘virtual void Unit_u1304_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1304/u1304_test.cc:63:3: error: ‘Vector’ was not declared in this scope
+   63 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:63:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1304/u1304_test.cc:66:39: error: ‘polynomial’ was not declared in this scope
+   66 |   ceres::internal::MinimizePolynomial(polynomial, x_min, x_max, nullptr, nullptr);
+      |                                       ^~~~~~~~~~

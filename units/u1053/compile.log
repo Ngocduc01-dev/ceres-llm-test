@@ -1,0 +1,65 @@
+/work/repo/units/u1053/u1053_test.cc: In member function ‘virtual void Unit_u1053_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1053/u1053_test.cc:7:31: error: class template argument deduction failed:
+    7 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1053/u1053_test.cc:7:31: error: no matching function for call to ‘OrderedGroups()’
+In file included from /work/repo/units/u1053/u1053_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1053/u1053_test.cc:7:31: note:   couldn’t deduce template parameter ‘T’
+    7 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1053/u1053_test.cc: In member function ‘virtual void Unit_u1053_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1053/u1053_test.cc:13:31: error: class template argument deduction failed:
+   13 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1053/u1053_test.cc:13:31: error: no matching function for call to ‘OrderedGroups()’
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1053/u1053_test.cc:13:31: note:   couldn’t deduce template parameter ‘T’
+   13 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1053/u1053_test.cc: In member function ‘virtual void Unit_u1053_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1053/u1053_test.cc:19:31: error: class template argument deduction failed:
+   19 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1053/u1053_test.cc:19:31: error: no matching function for call to ‘OrderedGroups()’
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1053/u1053_test.cc:19:31: note:   couldn’t deduce template parameter ‘T’
+   19 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1053/u1053_test.cc: In member function ‘virtual void Unit_u1053_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1053/u1053_test.cc:25:31: error: class template argument deduction failed:
+   25 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1053/u1053_test.cc:25:31: error: no matching function for call to ‘OrderedGroups()’
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1053/u1053_test.cc:25:31: note:   couldn’t deduce template parameter ‘T’
+   25 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided

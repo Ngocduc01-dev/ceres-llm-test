@@ -1,0 +1,9 @@
+{
+  "id": "u0736",
+  "name": "ceres::VisibilityClusteringTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0736/u0736_test.cc:7:3: error: ‘VisibilityClusteringTypeToString’ was not declared in this scope"
+  ]
+}

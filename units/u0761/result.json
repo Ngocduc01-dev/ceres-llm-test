@@ -1,0 +1,16 @@
+{
+  "id": "u0761",
+  "name": "ceres::internal::WeightedGraph::AddEdge",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0761/u0761_test.cc:7:3: error: ‘Vertex’ was not declared in this scope",
+    "units/u0761/u0761_test.cc:8:9: error: expected ‘;’ before ‘vertex2’",
+    "units/u0761/u0761_test.cc:10:41: error: class template argument deduction failed:",
+    "units/u0761/u0761_test.cc:10:41: error: no matching function for call to ‘WeightedGraph()’",
+    "units/u0761/u0761_test.cc:11:18: error: ‘vertex1’ was not declared in this scope",
+    "units/u0761/u0761_test.cc:11:27: error: ‘vertex2’ was not declared in this scope",
+    "units/u0761/u0761_test.cc:16:3: error: ‘Vertex’ was not declared in this scope",
+    "units/u0761/u0761_test.cc:17:9: error: expected ‘;’ before ‘vertex2’"
+  ]
+}

@@ -1,0 +1,11 @@
+/work/repo/units/u0873/u0873_test.cc: In member function ‘virtual void Unit_u0873_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0873/u0873_test.cc:7:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’
+    7 |   ceres::internal::Minimizer object{};
+      |                              ^~~~~~
+In file included from /work/repo/units/u0873/u0873_test.cc:3:
+/work/ceres-solver/internal/ceres/minimizer.h:53:23: note:   because the following virtual functions are pure within ‘ceres::internal::Minimizer’:
+   53 | class CERES_NO_EXPORT Minimizer {
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/minimizer.h:192:16: note:     ‘virtual void ceres::internal::Minimizer::Minimize(const Options&, double*, ceres::Solver::Summary*)’
+  192 |   virtual void Minimize(const Options& options,
+      |                ^~~~~~~~

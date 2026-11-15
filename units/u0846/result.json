@@ -1,0 +1,10 @@
+{
+  "id": "u0846",
+  "name": "ceres::internal::CovarianceImpl::CovarianceImpl",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0846/u0846_test.cc:8:3: error: ‘Covariance’ has not been declared",
+    "units/u0846/u0846_test.cc:9:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’"
+  ]
+}

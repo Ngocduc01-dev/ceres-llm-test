@@ -1,0 +1,17 @@
+/work/repo/units/u1008/u1008_test.cc: In member function ‘virtual void Unit_u1008_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1008/u1008_test.cc:8:45: error: class template argument deduction failed:
+    8 |   ceres::internal::TypedLinearSolver object{};
+      |                                             ^
+/work/repo/units/u1008/u1008_test.cc:8:45: error: no matching function for call to ‘TypedLinearSolver()’
+In file included from /work/repo/units/u1008/u1008_test.cc:4:
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note: candidate: ‘template<class MatrixType> TypedLinearSolver()-> ceres::internal::TypedLinearSolver<MatrixType>’
+  364 | class TypedLinearSolver : public LinearSolver {
+      |       ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1008/u1008_test.cc:8:45: note:   couldn’t deduce template parameter ‘MatrixType’
+    8 |   ceres::internal::TypedLinearSolver object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note: candidate: ‘template<class MatrixType> TypedLinearSolver(ceres::internal::TypedLinearSolver<MatrixType>)-> ceres::internal::TypedLinearSolver<MatrixType>’
+  364 | class TypedLinearSolver : public LinearSolver {
+      |       ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note:   candidate expects 1 argument, 0 provided

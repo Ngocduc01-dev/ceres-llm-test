@@ -1,0 +1,9 @@
+{
+  "id": "u0888",
+  "name": "ceres::internal::ResidualBlock::cost_function",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0888/u0888_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’"
+  ]
+}

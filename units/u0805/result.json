@@ -1,0 +1,12 @@
+{
+  "id": "u0805",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::ComputeClusterVisibility",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0805/u0805_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0805/u0805_test.cc:9:34: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ComputeClusterVisibility(const std::vector<std::set<int> >&, std::vector<std::set<int> >*) const’ is private within this context",
+    "units/u0805/u0805_test.cc:15:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0805/u0805_test.cc:16:34: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ComputeClusterVisibility(const std::vector<std::set<int> >&, std::vector<std::set<int> >*) const’ is private within this context"
+  ]
+}

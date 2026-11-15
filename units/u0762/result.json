@@ -1,0 +1,16 @@
+{
+  "id": "u0762",
+  "name": "ceres::internal::NonlinearConjugateGradient::NextDirection",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0762/u0762_test.cc:8:3: error: ‘LineSearchMinimizer’ has not been declared",
+    "units/u0762/u0762_test.cc:9:3: error: ‘LineSearchMinimizer’ has not been declared",
+    "units/u0762/u0762_test.cc:10:20: error: ‘NonlinearConjugateGradient’ is not a member of ‘ceres::internal’",
+    "units/u0762/u0762_test.cc:11:3: error: ‘object’ was not declared in this scope",
+    "units/u0762/u0762_test.cc:11:24: error: ‘previous’ was not declared in this scope",
+    "units/u0762/u0762_test.cc:11:34: error: ‘current’ was not declared in this scope",
+    "units/u0762/u0762_test.cc:16:3: error: ‘LineSearchMinimizer’ has not been declared",
+    "units/u0762/u0762_test.cc:17:3: error: ‘LineSearchMinimizer’ has not been declared"
+  ]
+}

@@ -1,0 +1,16 @@
+/work/repo/units/u1112/u1112_test.cc: In member function ‘virtual void Unit_u1112_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1112/u1112_test.cc:7:3: error: ‘ceres’ has not been declared
+    7 |   ceres::StringToNonlinearConjugateGradientType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1112/u1112_test.cc: In member function ‘virtual void Unit_u1112_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1112/u1112_test.cc:13:3: error: ‘ceres’ has not been declared
+   13 |   ceres::StringToNonlinearConjugateGradientType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1112/u1112_test.cc: In member function ‘virtual void Unit_u1112_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1112/u1112_test.cc:19:3: error: ‘ceres’ has not been declared
+   19 |   ceres::StringToNonlinearConjugateGradientType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1112/u1112_test.cc: In member function ‘virtual void Unit_u1112_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1112/u1112_test.cc:25:3: error: ‘ceres’ has not been declared
+   25 |   ceres::StringToNonlinearConjugateGradientType(value, nullptr);
+      |   ^~~~~

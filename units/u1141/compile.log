@@ -1,0 +1,183 @@
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:10:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+In file included from /work/repo/units/u1141/u1141_test.cc:6:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:11:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   11 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:16:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:17:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   17 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:22:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   22 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:23:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   23 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:28:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   28 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:29:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   29 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:34:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   34 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:35:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   35 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:40:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   40 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:41:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   41 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:46:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   46 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:47:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   47 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:52:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   52 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:53:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   53 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:58:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   58 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:59:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   59 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:64:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   64 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:65:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   65 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:70:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   70 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:71:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   71 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:76:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   76 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:77:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   77 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~
+/work/repo/units/u1141/u1141_test.cc: In member function ‘virtual void Unit_u1141_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1141/u1141_test.cc:82:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’
+   82 |   ceres::internal::SparseSchurComplementSolver object{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note: candidate: ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  172 |   explicit SparseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:172:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1141/u1141_test.cc:83:21: error: ‘virtual void ceres::internal::SparseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   83 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:179:8: note: declared private here
+  179 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~

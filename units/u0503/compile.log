@@ -1,0 +1,12 @@
+/work/repo/units/u0503/u0503_test.cc: In member function ‘virtual void Unit_u0503_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0503/u0503_test.cc:7:3: error: ‘CgnrSolver’ was not declared in this scope; did you mean ‘ceres::internal::CgnrSolver’?
+    7 |   CgnrSolver object({});
+      |   ^~~~~~~~~~
+      |   ceres::internal::CgnrSolver
+In file included from /work/repo/units/u0503/u0503_test.cc:3:
+/work/ceres-solver/internal/ceres/cgnr_solver.h:55:23: note: ‘ceres::internal::CgnrSolver’ declared here
+   55 | class CERES_NO_EXPORT CgnrSolver final : public BlockSparseMatrixSolver {
+      |                       ^~~~~~~~~~
+/work/repo/units/u0503/u0503_test.cc:7:23: error: expected primary-expression before ‘)’ token
+    7 |   CgnrSolver object({});
+      |                       ^

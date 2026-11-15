@@ -1,0 +1,12 @@
+/work/repo/units/u0523/u0523_test.cc: In member function ‘virtual void ceres::Unit_u0523_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0523/u0523_test.cc:8:12: error: no matching function for call to ‘down_cast(<brace-enclosed initializer list>)’
+    8 |   down_cast({});
+      |   ~~~~~~~~~^~~~
+In file included from /work/repo/units/u0523/u0523_test.cc:3:
+/work/ceres-solver/internal/ceres/casts.h:90:11: note: candidate: ‘template<class To, class From> To ceres::down_cast(From*)’
+   90 | inline To down_cast(From* f) {         // so we only accept pointers
+      |           ^~~~~~~~~
+/work/ceres-solver/internal/ceres/casts.h:90:11: note:   template argument deduction/substitution failed:
+/work/repo/units/u0523/u0523_test.cc:8:12: note:   couldn’t deduce template parameter ‘To’
+    8 |   down_cast({});
+      |   ~~~~~~~~~^~~~

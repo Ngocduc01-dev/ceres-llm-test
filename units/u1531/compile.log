@@ -1,0 +1,15 @@
+/work/repo/units/u1531/u1531_test.cc: In member function ‘virtual void Unit_u1531_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1531/u1531_test.cc:8:3: error: ‘CovarianceBlocks’ was not declared in this scope
+    8 |   CovarianceBlocks covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1531/u1531_test.cc:9:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+In file included from /work/repo/units/u1531/u1531_test.cc:3:
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1531/u1531_test.cc:10:18: error: ‘covariance_blocks’ was not declared in this scope
+   10 |   object.Compute(covariance_blocks, nullptr);
+      |                  ^~~~~~~~~~~~~~~~~

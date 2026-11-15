@@ -1,0 +1,16 @@
+{
+  "id": "u1504",
+  "name": "ceres::internal::WolfeLineSearch::ZoomPhase",
+  "status": "compile_fail",
+  "cfg_branches": 26,
+  "errors": [
+    "units/u1504/u1504_test.cc:8:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1504/u1504_test.cc:9:17: error: expected ‘;’ before ‘bracket_low’",
+    "units/u1504/u1504_test.cc:10:17: error: expected ‘;’ before ‘bracket_high’",
+    "units/u1504/u1504_test.cc:11:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1504/u1504_test.cc:12:20: error: ‘initial_position’ was not declared in this scope",
+    "units/u1504/u1504_test.cc:12:38: error: ‘bracket_low’ was not declared in this scope",
+    "units/u1504/u1504_test.cc:12:51: error: ‘bracket_high’ was not declared in this scope",
+    "units/u1504/u1504_test.cc:17:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?"
+  ]
+}

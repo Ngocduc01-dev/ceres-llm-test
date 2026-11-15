@@ -1,25 +1,46 @@
-# Unit u0410: `ceres::internal::ScratchEvaluatePreparer::Init`
+**A. Test paths**
 
-## A. Test paths
+Hàm không có điểm rẽ nhánh nào (0 điểm rẽ nhánh, 0 nhánh). Chỉ có một đường đi duy nhất.
 
-| Path | ???ng ?i | Nh?nh |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Theo CFG trong prompt. |
+| P1 | START → 1 → END | Không có nhánh nào (không có điểm rẽ nhánh) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | D? li?u |
-|---|---|---|
-| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | `max_derivatives_per_residual_block` từ 1 đến 5 (không có điều kiện đường đi; chọn giá trị dương nhỏ để cấp phát hợp lệ) | 3 (chọn ngẫu nhiên với seed cố định trong khoảng 1–5) |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
+Không có. Hàm không có điểm rẽ nhánh và không có vòng lặp, `CHECK` cũng không có.
 
-## D. File test
+C2 dự kiến = 0 / 0 (không có nhánh nào; mọi câu lệnh ở node 1 đều được chạy qua bởi TC1, nên coi như phủ đầy đủ 100%).
+
+**D. File test**
+
 ```cpp
 // FILE: u0410_test.cc
-#include "gtest/gtest.h"
+#include <random>
+
 #include "ceres/scratch_evaluate_preparer.h"
-TEST(Unit_u0410, Init) { ceres::internal::ScratchEvaluatePreparer target; target.Init(1); }
+#include "gtest/gtest.h"
+
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> 1 -> END (hàm không có điểm rẽ nhánh)
+TEST(ScratchEvaluatePreparerInitTest, TC1_AllocatesScratchBuffer) {
+  // Seed cố định để giá trị luôn giống nhau giữa các lần chạy.
+  std::mt19937 rng(12345);
+  std::uniform_int_distribution<int> dist(1, 5);
+  const int max_derivatives_per_residual_block = dist(rng);
+
+  ScratchEvaluatePreparer obj;
+  obj.Init(max_derivatives_per_residual_block);
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

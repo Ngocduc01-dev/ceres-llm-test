@@ -1,0 +1,50 @@
+/work/repo/units/u1104/u1104_test.cc: In member function ‘virtual void Unit_u1104_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1104/u1104_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+    8 |   CompressedRowBlockStructure bs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+In file included from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:40,
+                 from /work/repo/units/u1104/u1104_test.cc:3:
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1104/u1104_test.cc:9:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?
+    9 |   ceres::internal::CreateTranspose(bs);
+      |                                    ^~
+      |                                    abs
+/work/repo/units/u1104/u1104_test.cc: In member function ‘virtual void Unit_u1104_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1104/u1104_test.cc:14:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   14 |   CompressedRowBlockStructure bs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1104/u1104_test.cc:15:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?
+   15 |   ceres::internal::CreateTranspose(bs);
+      |                                    ^~
+      |                                    abs
+/work/repo/units/u1104/u1104_test.cc: In member function ‘virtual void Unit_u1104_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1104/u1104_test.cc:20:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   20 |   CompressedRowBlockStructure bs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1104/u1104_test.cc:21:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?
+   21 |   ceres::internal::CreateTranspose(bs);
+      |                                    ^~
+      |                                    abs
+/work/repo/units/u1104/u1104_test.cc: In member function ‘virtual void Unit_u1104_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1104/u1104_test.cc:26:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   26 |   CompressedRowBlockStructure bs{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1104/u1104_test.cc:27:36: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?
+   27 |   ceres::internal::CreateTranspose(bs);
+      |                                    ^~
+      |                                    abs

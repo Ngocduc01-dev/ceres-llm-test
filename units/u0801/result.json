@@ -1,0 +1,10 @@
+{
+  "id": "u0801",
+  "name": "ceres::(anonymous)::IsIterativeSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0801/u0801_test.cc:7:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?",
+    "units/u0801/u0801_test.cc:8:28: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?"
+  ]
+}

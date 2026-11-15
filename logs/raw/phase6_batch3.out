@@ -1,0 +1,432 @@
+Phase 6: 1270 unit, 4 song song
+  u0252 ok            C1    –  C2    –
+  u0251 ok            C1 100%  C2    –
+  u0253 ok            C1 100%  C2    –
+  u0254 ok            C1 100%  C2    –
+  u0255 ok            C1 100%  C2    –
+  u0256 ok            C1 100%  C2    –
+  u0257 ok            C1 100%  C2    –
+  u0258 ok            C1 100%  C2    –
+  u0260 ok            C1 100%  C2    –
+  u0259 ok            C1 100%  C2    –
+  u0262 ok            C1 100%  C2    –
+  u0261 ok            C1 100%  C2    –
+  u0264 ok            C1 100%  C2    –
+  u0263 ok            C1 100%  C2    –
+  u0265 ok            C1 100%  C2    –
+  u0266 ok            C1 100%  C2    –
+  u0268 ok            C1 100%  C2    –
+  u0267 ok            C1 100%  C2    –
+  u0269 ok            C1 100%  C2    –
+  u0270 ok            C1 100%  C2    –
+  u0271 ok            C1 100%  C2    –
+  u0272 ok            C1 100%  C2    –
+  u0273 ok            C1 100%  C2    –
+  u0277 compile_fail  C1    –  C2    –  /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres:
+  u0276 ok            C1    –  C2    –
+  u0279 ok            C1 100%  C2    –
+  u0278 ok            C1    –  C2    –
+  u0275 ok            C1 100%  C2    –
+  u0281 compile_fail  C1    –  C2    –  units/u0281/u0281_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0280 ok            C1 100%  C2    –
+  u0282 compile_fail  C1    –  C2    –  units/u0282/u0282_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0283 compile_fail  C1    –  C2    –  units/u0283/u0283_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0274 ok            C1   0%  C2    –
+  u0284 compile_fail  C1    –  C2    –  units/u0284/u0284_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0285 compile_fail  C1    –  C2    –  units/u0285/u0285_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0286 compile_fail  C1    –  C2    –  units/u0286/u0286_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0287 compile_fail  C1    –  C2    –  units/u0287/u0287_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0288 compile_fail  C1    –  C2    –  units/u0288/u0288_test.cc:7:10: error: ‘ceres::TrustRegionStrategy’ has not been declared
+  u0289 ok            C1    –  C2    –
+  u0292 ok            C1    –  C2    –
+  u0290 ok            C1    –  C2    –
+  u0291 ok            C1 100%  C2    –
+  u0293 ok            C1    –  C2    –
+  u0294 ok            C1    –  C2    –
+  u0295 ok            C1 100%  C2    –
+  u0296 ok            C1    –  C2    –
+  u0297 ok            C1 100%  C2    –
+  u0298 ok            C1 100%  C2    –
+  u0299 ok            C1 100%  C2    –
+  u0303 compile_fail  C1    –  C2    –  units/u0303/u0303_test.cc:8:26: error: no matching function for call to ‘ceres::GradientProblem::GradientProbl
+  u0301 ok            C1 100%  C2    –
+  u0302 ok            C1 100%  C2    –
+  u0300 ok            C1 100%  C2    –
+  u0304 compile_fail  C1    –  C2    –  units/u0304/u0304_test.cc:8:26: error: no matching function for call to ‘ceres::GradientProblem::GradientProbl
+  u0305 compile_fail  C1    –  C2    –  units/u0305/u0305_test.cc:11:52: error: no matching function for call to ‘ceres::GradientProblem::GradientProb
+  u0306 compile_fail  C1    –  C2    –  units/u0306/u0306_test.cc:7:45: error: no matching function for call to ‘ceres::internal::GradientProblemEvalu
+  u0309 compile_fail  C1    –  C2    –  units/u0309/u0309_test.cc:7:10: error: ‘Graph’ is not a member of ‘ceres’; did you mean ‘ceres::internal::Grap
+  u0310 compile_fail  C1    –  C2    –  units/u0310/u0310_test.cc:7:10: error: ‘WeightedGraph’ is not a member of ‘ceres’; did you mean ‘ceres::intern
+  u0311 compile_fail  C1    –  C2    –  units/u0311/u0311_test.cc:7:10: error: ‘WeightedGraph’ is not a member of ‘ceres’; did you mean ‘ceres::intern
+  u0312 compile_fail  C1    –  C2    –  units/u0312/u0312_test.cc:8:44: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u0313 compile_fail  C1    –  C2    –  units/u0313/u0313_test.cc:8:44: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u0314 compile_fail  C1    –  C2    –  units/u0314/u0314_test.cc:7:44: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplem
+  u0315 compile_fail  C1    –  C2    –  units/u0315/u0315_test.cc:10:42: error: ‘struct ceres::internal::InnerProductComputer::ProductTerm’ is private
+  u0316 compile_fail  C1    –  C2    –  units/u0316/u0316_test.cc:9:10: error: invalid use of ‘ceres::internal::SparseIterativeRefiner::SparseIterativ
+  u0317 compile_fail  C1    –  C2    –  units/u0317/u0317_test.cc:7:45: error: no matching function for call to ‘ceres::internal::SparseIterativeRefin
+  u0318 compile_fail  C1    –  C2    –  units/u0318/u0318_test.cc:9:10: error: invalid use of ‘ceres::internal::DenseIterativeRefiner::DenseIterativeR
+  u0319 compile_fail  C1    –  C2    –  units/u0319/u0319_test.cc:7:44: error: no matching function for call to ‘ceres::internal::DenseIterativeRefine
+  u0307 ok            C1 100%  C2    –
+  u0308 ok            C1 100%  C2    –
+  u0320 compile_fail  C1    –  C2    –  units/u0320/u0320_test.cc:7:53: error: no matching function for call to ‘ceres::internal::IterativeSchurComple
+  u0321 compile_fail  C1    –  C2    –  units/u0321/u0321_test.cc:7:49: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtSt
+  u0324 compile_fail  C1    –  C2    –  units/u0324/u0324_test.cc:7:39: error: no matching function for call to ‘ceres::internal::LineSearchFunction::
+  u0322 compile_fail  C1    –  C2    –  units/u0322/u0322_test.cc:8:59: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtSt
+  u0323 compile_fail  C1    –  C2    –  units/u0323/u0323_test.cc:7:47: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtSt
+  u0325 compile_fail  C1    –  C2    –  units/u0325/u0325_test.cc:7:39: error: no matching function for call to ‘ceres::internal::LineSearchFunction::
+  u0326 compile_fail  C1    –  C2    –  units/u0326/u0326_test.cc:7:39: error: no matching function for call to ‘ceres::internal::LineSearchFunction::
+  u0327 compile_fail  C1    –  C2    –  units/u0327/u0327_test.cc:7:42: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0328 compile_fail  C1    –  C2    –  units/u0328/u0328_test.cc:10:10: error: invalid use of ‘ceres::internal::LineSearchMinimizer::State::State’
+  u0329 compile_fail  C1    –  C2    –  units/u0329/u0329_test.cc:8:10: error: request for member ‘LinearLeastSquaresProblem’ in ‘target’, which is of
+  u0330 compile_fail  C1    –  C2    –  units/u0330/u0330_test.cc:7:37: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0331 compile_fail  C1    –  C2    –  units/u0331/u0331_test.cc:8:33: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0332 ok            C1 100%  C2    –
+  u0333 ok            C1 100%  C2    –
+  u0334 ok            C1 100%  C2    –
+  u0336 ok            C1 100%  C2    –
+  u0335 ok            C1 100%  C2    –
+  u0337 compile_fail  C1    –  C2    –  units/u0337/u0337_test.cc:11:10: error: invalid use of ‘ceres::internal::LowRankInverseHessian::LowRankInverse
+  u0338 compile_fail  C1    –  C2    –  units/u0338/u0338_test.cc:7:42: error: no matching function for call to ‘ceres::internal::LowRankInverseHessia
+  u0339 compile_fail  C1    –  C2    –  units/u0339/u0339_test.cc:7:42: error: no matching function for call to ‘ceres::internal::LowRankInverseHessia
+  u0340 compile_fail  C1    –  C2    –  units/u0340/u0340_test.cc:7:25: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u0341 compile_fail  C1    –  C2    –  units/u0341/u0341_test.cc:7:25: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold
+  u0342 compile_fail  C1    –  C2    –  units/u0342/u0342_test.cc:10:55: error: no matching function for call to ‘ceres::QuaternionManifold::Quaternio
+  u0343 compile_fail  C1    –  C2    –  units/u0343/u0343_test.cc:9:48: error: no matching function for call to ‘ceres::QuaternionManifold::Quaternion
+  u0344 compile_fail  C1    –  C2    –  units/u0344/u0344_test.cc:10:55: error: no matching function for call to ‘ceres::QuaternionManifold::Quaternio
+  u0345 compile_fail  C1    –  C2    –  units/u0345/u0345_test.cc:9:48: error: no matching function for call to ‘ceres::QuaternionManifold::Quaternion
+  u0346 compile_fail  C1    –  C2    –  units/u0346/u0346_test.cc:10:60: error: no matching function for call to ‘ceres::EigenQuaternionManifold::Eige
+  u0347 compile_fail  C1    –  C2    –  units/u0347/u0347_test.cc:9:53: error: no matching function for call to ‘ceres::EigenQuaternionManifold::Eigen
+  u0348 compile_fail  C1    –  C2    –  units/u0348/u0348_test.cc:10:60: error: no matching function for call to ‘ceres::EigenQuaternionManifold::Eige
+  u0349 compile_fail  C1    –  C2    –  units/u0349/u0349_test.cc:9:53: error: no matching function for call to ‘ceres::EigenQuaternionManifold::Eigen
+  u0352 compile_fail  C1    –  C2    –  units/u0352/u0352_test.cc:7:20: error: cannot bind non-const lvalue reference of type ‘uint32_t&’ {aka ‘unsign
+  u0350 ok            C1 100%  C2    –
+  u0351 ok            C1 100%  C2    –
+  u0353 compile_fail  C1    –  C2    –  units/u0353/u0353_test.cc:7:20: error: cannot bind non-const lvalue reference of type ‘uint64_t&’ {aka ‘long u
+  u0354 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0355 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0356 compile_fail  C1    –  C2    –  units/u0356/u0356_test.cc:11:10: error: invalid use of ‘ceres::internal::ParameterBlock::ParameterBlock’
+  u0357 compile_fail  C1    –  C2    –  units/u0357/u0357_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0358 compile_fail  C1    –  C2    –  units/u0358/u0358_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0359 compile_fail  C1    –  C2    –  units/u0359/u0359_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0360 compile_fail  C1    –  C2    –  units/u0360/u0360_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0361 compile_fail  C1    –  C2    –  units/u0361/u0361_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0362 compile_fail  C1    –  C2    –  units/u0362/u0362_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0363 compile_fail  C1    –  C2    –  units/u0363/u0363_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0364 compile_fail  C1    –  C2    –  units/u0364/u0364_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0365 compile_fail  C1    –  C2    –  units/u0365/u0365_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0366 compile_fail  C1    –  C2    –  units/u0366/u0366_test.cc:8:47: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0367 compile_fail  C1    –  C2    –  units/u0367/u0367_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0368 compile_fail  C1    –  C2    –  units/u0368/u0368_test.cc:8:47: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0369 compile_fail  C1    –  C2    –  units/u0369/u0369_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0370 compile_fail  C1    –  C2    –  units/u0370/u0370_test.cc:8:47: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0371 compile_fail  C1    –  C2    –  units/u0371/u0371_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0372 compile_fail  C1    –  C2    –  units/u0372/u0372_test.cc:7:35: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0373 compile_fail  C1    –  C2    –  units/u0373/u0373_test.cc:7:10: error: ‘PartitionedMatrixView’ is not a member of ‘ceres’; did you mean ‘ceres
+  u0374 compile_fail  C1    –  C2    –  units/u0374/u0374_test.cc:7:10: error: ‘PartitionedMatrixView’ is not a member of ‘ceres’; did you mean ‘ceres
+  u0375 compile_fail  C1    –  C2    –  units/u0375/u0375_test.cc:7:10: error: ‘PartitionedMatrixView’ is not a member of ‘ceres’; did you mean ‘ceres
+  u0376 compile_fail  C1    –  C2    –  units/u0376/u0376_test.cc:7:10: error: ‘PartitionedMatrixView’ is not a member of ‘ceres’; did you mean ‘ceres
+  u0377 compile_fail  C1    –  C2    –  units/u0377/u0377_test.cc:7:10: error: ‘PartitionedMatrixView’ is not a member of ‘ceres’; did you mean ‘ceres
+  u0378 compile_fail  C1    –  C2    –  units/u0378/u0378_test.cc:7:10: error: ‘PartitionedMatrixView’ is not a member of ‘ceres’; did you mean ‘ceres
+  u0379 compile_fail  C1    –  C2    –  units/u0379/u0379_test.cc:7:57: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansion
+  u0380 compile_fail  C1    –  C2    –  units/u0380/u0380_test.cc:7:37: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0381 compile_fail  C1    –  C2    –  units/u0381/u0381_test.cc:8:10: error: request for member ‘Options’ in ‘target’, which is of non-class type ‘c
+  u0382 compile_fail  C1    –  C2    –  units/u0382/u0382_test.cc:9:54: error: no matching function for call to ‘ceres::internal::Preconditioner::Prec
+  u0383 compile_fail  C1    –  C2    –  units/u0383/u0383_test.cc:7:35: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0384 compile_fail  C1    –  C2    –  units/u0384/u0384_test.cc:9:10: error: invalid use of ‘ceres::internal::IdentityPreconditioner::IdentityPrecon
+  u0385 compile_fail  C1    –  C2    –  units/u0385/u0385_test.cc:9:62: error: no matching function for call to ‘ceres::internal::IdentityPrecondition
+  u0386 compile_fail  C1    –  C2    –  units/u0386/u0386_test.cc:7:43: error: no matching function for call to ‘ceres::internal::IdentityPrecondition
+  u0387 compile_fail  C1    –  C2    –  units/u0387/u0387_test.cc:7:35: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0389 compile_fail  C1    –  C2    –  units/u0389/u0389_test.cc:8:44: error: no matching function for call to ‘ceres::internal::ProblemImpl::Problem
+  u0388 compile_fail  C1    –  C2    –  units/u0388/u0388_test.cc:8:10: error: request for member ‘PreprocessedProblem’ in ‘target’, which is of non-c
+  u0393 ok            C1 100%  C2    –
+  u0390 ok            C1 100%  C2    –
+  u0391 ok            C1 100%  C2    –
+  u0392 ok            C1 100%  C2    –
+  u0394 ok            C1 100%  C2    –
+  u0396 ok            C1 100%  C2    –
+  u0395 ok            C1 100%  C2    –
+  u0397 ok            C1 100%  C2    –
+  u0398 ok            C1 100%  C2    –
+  u0399 ok            C1 100%  C2    –
+  u0400 compile_fail  C1    –  C2    –  internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  u0401 compile_fail  C1    –  C2    –  units/u0401/u0401_test.cc:8:34: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u0402 compile_fail  C1    –  C2    –  units/u0402/u0402_test.cc:7:34: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u0403 compile_fail  C1    –  C2    –  units/u0403/u0403_test.cc:8:46: error: no matching function for call to ‘ceres::internal::ResidualBlock::Resid
+  u0405 compile_fail  C1    –  C2    –  units/u0405/u0405_test.cc:7:42: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0404 compile_fail  C1    –  C2    –  units/u0404/u0404_test.cc:7:49: error: no matching function for call to ‘ceres::internal::DenseSchurComplement
+  u0406 compile_fail  C1    –  C2    –  units/u0406/u0406_test.cc:8:43: error: qualified-id in declaration before ‘target’
+  u0407 compile_fail  C1    –  C2    –  units/u0407/u0407_test.cc:9:12: error: ‘SchurEliminator’ is not a member of ‘ceres’; did you mean ‘ceres::inte
+  u0409 compile_fail  C1    –  C2    –  units/u0409/u0409_test.cc:7:38: error: no matching function for call to ‘ceres::internal::ScopedThreadToken::S
+  u0410 compile_fail  C1    –  C2    –  units/u0410/u0410_test.cc:8:56: error: no matching function for call to ‘ceres::internal::ScratchEvaluatePrepa
+  u0408 compile_fail  C1    –  C2    –  units/u0408/u0408_test.cc:7:48: error: no matching function for call to ‘ceres::internal::SchurJacobiPrecondit
+  u0413 ok            C1 100%  C2    –
+  u0414 compile_fail  C1    –  C2    –  units/u0414/u0414_test.cc:7:37: error: cannot declare variable ‘target’ to be of abstract type ‘ceres::interna
+  u0415 compile_fail  C1    –  C2    –  units/u0415/u0415_test.cc:7:44: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesk
+  u0416 compile_fail  C1    –  C2    –  units/u0416/u0416_test.cc:7:49: error: no matching function for call to ‘ceres::internal::SparseNormalCholesky
+  u0417 compile_fail  C1    –  C2    –  units/u0417/u0417_test.cc:7:43: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner
+  u0418 compile_fail  C1    –  C2    –  units/u0418/u0418_test.cc:7:41: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner
+  u0419 compile_fail  C1    –  C2    –  units/u0419/u0419_test.cc:7:41: error: no matching function for call to ‘ceres::internal::SubsetPreconditioner
+  u0420 compile_fail  C1    –  C2    –  internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteS
+  u0421 compile_fail  C1    –  C2    –  internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteS
+  u0422 ok            C1 100%  C2    –
+  u0423 ok            C1 100%  C2    –
+  u0412 ok            C1 100%  C2    –
+  u0411 ok            C1 100%  C2    –
+  u0424 ok            C1 100%  C2    –
+  u0425 ok            C1 100%  C2    –
+  u0426 ok            C1 100%  C2    –
+  u0427 ok            C1 100%  C2    –
+  u0428 ok            C1 100%  C2    –
+  u0429 ok            C1 100%  C2    –
+  u0430 ok            C1 100%  C2    –
+  u0431 ok            C1 100%  C2    –
+  u0433 compile_fail  C1    –  C2    –  units/u0433/u0433_test.cc:10:10: error: invalid use of ‘ceres::internal::TrustRegionStepEvaluator::TrustRegion
+  u0432 ok            C1 100%  C2    –
+  u0435 ok            C1 100%  C2    –
+  u0434 compile_fail  C1    –  C2    –  units/u0434/u0434_test.cc:7:52: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreco
+  u0437 compile_fail  C1    –  C2    –  units/u0437/u0437_test.cc:11:31: error: ‘BinaryScalarCost’ was not declared in this scope
+  u0438 compile_fail  C1    –  C2    –  units/u0438/u0438_test.cc:9:27: error: ‘EuclideanFunctor’ was not declared in this scope
+  u0439 compile_fail  C1    –  C2    –  units/u0439/u0439_test.cc:7:9: error: ‘JetT’ does not name a type
+  u0440 compile_fail  C1    –  C2    –  units/u0440/u0440_test.cc:7:9: error: ‘T’ does not name a type
+  u0441 compile_fail  C1    –  C2    –  units/u0441/u0441_test.cc:12:30: error: ‘Grid2D’ was not declared in this scope; did you mean ‘ceres::Grid2D’?
+  u0442 compile_fail  C1    –  C2    –  units/u0442/u0442_test.cc:7:9: error: ‘JetT’ does not name a type
+  u0443 compile_fail  C1    –  C2    –  units/u0443/u0443_test.cc:7:40: error: ‘DynamicTwoParameterBlockFunctor’ was not declared in this scope
+  u0444 compile_fail  C1    –  C2    –  units/u0444/u0444_test.cc:7:43: error: ‘PlusFunctor’ was not declared in this scope
+  u0445 compile_fail  C1    –  C2    –  units/u0445/u0445_test.cc:8:10: error: ‘ArraySelector’ is not a member of ‘ceres’; did you mean ‘ceres::intern
+  u0446 compile_fail  C1    –  C2    –  units/u0446/u0446_test.cc:8:10: error: ‘ArraySelector’ is not a member of ‘ceres’; did you mean ‘ceres::intern
+  u0447 compile_fail  C1    –  C2    –  units/u0447/u0447_test.cc:8:3: error: ‘JetT’ was not declared in this scope
+  u0448 compile_fail  C1    –  C2    –  units/u0448/u0448_test.cc:7:12: error: ‘FixedArray’ is not a member of ‘ceres’; did you mean ‘ceres::internal:
+  u0451 compile_fail  C1    –  C2    –  units/u0451/u0451_test.cc:7:9: error: ‘Jet’ does not name a type
+  u0452 compile_fail  C1    –  C2    –  units/u0452/u0452_test.cc:7:23: error: no matching function for call to ‘ceres::ScaledLoss::ScaledLoss()’
+  u0449 ok            C1 100%  C2 100%
+  u0450 ok            C1 100%  C2 100%
+  u0453 compile_fail  C1    –  C2    –  units/u0453/u0453_test.cc:7:32: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunct
+  u0455 compile_fail  C1    –  C2    –  units/u0455/u0455_test.cc:7:36: error: ‘EasyFunctor’ was not declared in this scope
+  u0457 compile_fail  C1    –  C2    –  units/u0457/u0457_test.cc:7:9: error: ‘T’ does not name a type
+  u0456 compile_fail  C1    –  C2    –  units/u0456/u0456_test.cc:7:42: error: ‘QuadraticCostFunctor’ was not declared in this scope
+  u0458 compile_fail  C1    –  C2    –  units/u0458/u0458_test.cc:8:46: error: no matching function for call to ‘ceres::OrderedGroups<double*>::Ordere
+  u0461 ok            C1 100%  C2    –
+  u0460 ok            C1 100%  C2    –
+  u0459 ok            C1  28%  C2   0%
+  u0465 compile_fail  C1    –  C2    –  units/u0465/u0465_test.cc:8:36: error: no matching function for call to ‘ceres::ConditionedCostFunction::Condi
+  u0466 ok            C1   0%  C2    –
+  u0463 compile_fail  C1    –  C2    –  units/u0463/u0463_test.cc:10:54: error: no matching function for call to ‘ceres::SphereManifold<4>::SphereMani
+  u0462 ok            C1 100%  C2    –
+  u0468 compile_fail  C1    –  C2    –  units/u0468/u0468_test.cc:9:20: error: ‘BFGS’ is not a member of ‘ceres::internal’; did you mean ‘ceres::BFGS’
+  u0472 ok            C1 100%  C2 100%
+  u0473 ok            C1 100%  C2    –
+  u0474 ok            C1  80%  C2  50%
+  u0475 ok            C1  80%  C2  50%
+  u0476 ok            C1  75%  C2    –
+  u0477 compile_fail  C1    –  C2    –  units/u0477/u0477_test.cc:7:22: error: cannot bind non-const lvalue reference of type ‘std::mutex&’ to an rval
+  u0478 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0479 compile_fail  C1    –  C2    –  units/u0479/u0479_test.cc:8:47: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0486 compile_fail  C1    –  C2    –  internal/ceres/solver_utils.h:53:12: error: request for member ‘final_cost’ in ‘* summary’, which is of non-cl
+  u0480 compile_fail  C1    –  C2    –  units/u0480/u0480_test.cc:8:47: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0481 compile_fail  C1    –  C2    –  units/u0481/u0481_test.cc:8:47: error: no matching function for call to ‘ceres::internal::ParameterBlock::Para
+  u0487 compile_fail  C1    –  C2    –  internal/ceres/stl_util.h:53:12: error: invalid type argument of unary ‘*’ (have ‘double’)
+  u0488 compile_fail  C1    –  C2    –  internal/ceres/stl_util.h:62:7: error: ‘sort’ was not declared in this scope; did you mean ‘std::sort’?
+  u0489 compile_fail  C1    –  C2    –  internal/ceres/stl_util.h:84:41: error: request for member ‘begin’ in ‘* container’, which is of non-class typ
+  u0490 compile_fail  C1    –  C2    –  units/u0490/u0490_test.cc:10:10: error: invalid use of ‘ceres::internal::ThreadTokenProvider::ThreadTokenProvi
+  u0491 compile_fail  C1    –  C2    –  units/u0491/u0491_test.cc:8:40: error: no matching function for call to ‘ceres::internal::ThreadTokenProvider:
+  u0492 ok            C1  88%  C2  50%
+  u0493 compile_fail  C1    –  C2    –  units/u0493/u0493_test.cc:9:27: error: ‘EuclideanFunctor’ was not declared in this scope
+  u0494 compile_fail  C1    –  C2    –  units/u0494/u0494_test.cc:7:31: error: ‘kDataDimension’ was not declared in this scope
+  u0495 compile_fail  C1    –  C2    –  include/ceres/internal/autodiff.h:243:8: error: subscripted value is neither array nor pointer
+  u0497 compile_fail  C1    –  C2    –  units/u0497/u0497_test.cc:7:23: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = ch
+  u0496 compile_fail  C1    –  C2    –  units/u0496/u0496_test.cc:8:9: error: ‘NumericDiffOptions’ does not name a type
+  u0498 ok            C1  26%  C2   0%
+  u0499 ok            C1 100%  C2    –
+  u0501 compile_fail  C1    –  C2    –  units/u0501/u0501_test.cc:8:10: error: scalar object ‘angle_axis_data’ requires one element in initializer
+  u0500 ok            C1 100%  C2    –
+  u0504 compile_fail  C1    –  C2    –  units/u0504/u0504_test.cc:9:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0503 compile_fail  C1    –  C2    –  units/u0503/u0503_test.cc:7:3: error: ‘CgnrSolver’ was not declared in this scope; did you mean ‘ceres::intern
+  u0505 compile_fail  C1    –  C2    –  units/u0505/u0505_test.cc:9:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0506 compile_fail  C1    –  C2    –  units/u0506/u0506_test.cc:9:10: error: scalar object ‘union_find_data’ requires one element in initializer
+  u0508 compile_fail  C1    –  C2    –  units/u0508/u0508_test.cc:7:3: error: ‘ComposedLoss’ was not declared in this scope; did you mean ‘ceres::Comp
+  u0510 compile_fail  C1    –  C2    –  units/u0510/u0510_test.cc:10:28: error: no matching function for call to ‘MatrixMatrixMultiplyEigen(<brace-enc
+  u0512 compile_fail  C1    –  C2    –  units/u0512/u0512_test.cc:9:19: error: no matching function for call to ‘IsSolutionUsable(<brace-enclosed init
+  u0511 compile_fail  C1    –  C2    –  units/u0511/u0511_test.cc:10:37: error: no matching function for call to ‘MatrixTransposeMatrixMultiplyEigen(<
+  u0509 compile_fail  C1    –  C2    –  units/u0509/u0509_test.cc:7:3: error: ‘SparseSchurComplementSolver’ was not declared in this scope; did you me
+  u0514 compile_fail  C1    –  C2    –  units/u0514/u0514_test.cc:7:10: error: scalar object ‘f_data’ requires one element in initializer
+  u0515 compile_fail  C1    –  C2    –  units/u0515/u0515_test.cc:7:10: error: scalar object ‘data_data’ requires one element in initializer
+  u0513 compile_fail  C1    –  C2    –  units/u0513/u0513_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0516 compile_fail  C1    –  C2    –  units/u0516/u0516_test.cc:9:10: error: scalar object ‘src_data’ requires one element in initializer
+  u0519 compile_fail  C1    –  C2    –  units/u0519/u0519_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0518 ok            C1  75%  C2  50%
+  u0520 compile_fail  C1    –  C2    –  units/u0520/u0520_test.cc:8:10: error: scalar object ‘delta_ptr_data’ requires one element in initializer
+  u0517 ok            C1  85%  C2  50%
+  u0521 compile_fail  C1    –  C2    –  units/u0521/u0521_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0523 compile_fail  C1    –  C2    –  units/u0523/u0523_test.cc:8:12: error: no matching function for call to ‘down_cast(<brace-enclosed initializer
+  u0522 compile_fail  C1    –  C2    –  units/u0522/u0522_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0524 compile_fail  C1    –  C2    –  units/u0524/u0524_test.cc:9:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0527 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0525 compile_fail  C1    –  C2    –  units/u0525/u0525_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0528 compile_fail  C1    –  C2    –  internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void
+  u0526 compile_fail  C1    –  C2    –  units/u0526/u0526_test.cc:10:18: error: no matching function for call to ‘InvertPSDMatrix(bool, <brace-enclose
+  u0530 compile_fail  C1    –  C2    –  units/u0530/u0530_test.cc:9:10: error: scalar object ‘cumulative_cost_data_data’ requires one element in initi
+  u0531 compile_fail  C1    –  C2    –  units/u0531/u0531_test.cc:9:10: error: scalar object ‘cumulative_cost_data_data’ requires one element in initi
+  u0532 compile_fail  C1    –  C2    –  units/u0532/u0532_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0538 compile_fail  C1    –  C2    –  units/u0538/u0538_test.cc:7:10: error: scalar object ‘rho_data’ requires one element in initializer
+  u0535 compile_fail  C1    –  C2    –  units/u0535/u0535_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0533 compile_fail  C1    –  C2    –  units/u0533/u0533_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0534 compile_fail  C1    –  C2    –  units/u0534/u0534_test.cc:7:10: error: scalar object ‘f_data’ requires one element in initializer
+  u0542 compile_fail  C1    –  C2    –  units/u0542/u0542_test.cc:9:23: error: no matching function for call to ‘MatrixMatrixMultiply(<brace-enclosed 
+  u0543 compile_fail  C1    –  C2    –  units/u0543/u0543_test.cc:9:32: error: no matching function for call to ‘MatrixTransposeMatrixMultiply(<brace-
+  u0544 ok            C1 100%  C2 100%
+  u0545 ok            C1 100%  C2 100%
+  u0548 compile_fail  C1    –  C2    –  units/u0548/u0548_test.cc:7:10: error: scalar object ‘jacobian_data’ requires one element in initializer
+  u0546 ok            C1  75%  C2  50%
+  u0547 ok            C1  75%  C2  50%
+  u0549 compile_fail  C1    –  C2    –  units/u0549/u0549_test.cc:9:3: error: ‘CheckForDuplicates’ was not declared in this scope
+  u0550 compile_fail  C1    –  C2    –  units/u0550/u0550_test.cc:9:3: error: ‘object’ was not declared in this scope
+  u0552 compile_fail  C1    –  C2    –  units/u0552/u0552_test.cc:7:10: error: scalar object ‘residuals_data’ requires one element in initializer
+  u0554 compile_fail  C1    –  C2    –  units/u0554/u0554_test.cc:9:10: error: scalar object ‘v_data’ requires one element in initializer
+  u0551 ok            C1  58%  C2  25%
+  u0556 compile_fail  C1    –  C2    –  units/u0556/u0556_test.cc:10:31: error: no matching function for call to ‘Degree2MaximumSpanningForest(<brace-
+  u0557 compile_fail  C1    –  C2    –  units/u0557/u0557_test.cc:10:10: error: scalar object ‘ordering_data’ requires one element in initializer
+  u0558 compile_fail  C1    –  C2    –  units/u0558/u0558_test.cc:10:10: error: scalar object ‘ordering_data’ requires one element in initializer
+  u0555 ok            C1  53%  C2  20%
+  u0559 compile_fail  C1    –  C2    –  units/u0559/u0559_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0560 compile_fail  C1    –  C2    –  units/u0560/u0560_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0561 compile_fail  C1    –  C2    –  units/u0561/u0561_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0562 compile_fail  C1    –  C2    –  units/u0562/u0562_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0563 compile_fail  C1    –  C2    –  units/u0563/u0563_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0564 compile_fail  C1    –  C2    –  units/u0564/u0564_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0565 compile_fail  C1    –  C2    –  units/u0565/u0565_test.cc:7:10: error: scalar object ‘ptr_data’ requires one element in initializer
+  u0566 compile_fail  C1    –  C2    –  units/u0566/u0566_test.cc:11:49: error: ‘ceres::ProductManifold<Manifold0, Manifold1, ManifoldN>::ProductManif
+  u0567 compile_fail  C1    –  C2    –  units/u0567/u0567_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer
+  u0568 compile_fail  C1    –  C2    –  units/u0568/u0568_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer
+  u0569 compile_fail  C1    –  C2    –  units/u0569/u0569_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0570 compile_fail  C1    –  C2    –  units/u0570/u0570_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0571 compile_fail  C1    –  C2    –  units/u0571/u0571_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0572 compile_fail  C1    –  C2    –  units/u0572/u0572_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0573 compile_fail  C1    –  C2    –  units/u0573/u0573_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer
+  u0574 compile_fail  C1    –  C2    –  units/u0574/u0574_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0575 compile_fail  C1    –  C2    –  units/u0575/u0575_test.cc:7:10: error: scalar object ‘row_data’ requires one element in initializer
+  u0576 compile_fail  C1    –  C2    –  units/u0576/u0576_test.cc:8:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0577 compile_fail  C1    –  C2    –  units/u0577/u0577_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0579 compile_fail  C1    –  C2    –  units/u0579/u0579_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0578 compile_fail  C1    –  C2    –  units/u0578/u0578_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0580 compile_fail  C1    –  C2    –  units/u0580/u0580_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0581 compile_fail  C1    –  C2    –  units/u0581/u0581_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0582 compile_fail  C1    –  C2    –  units/u0582/u0582_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0583 compile_fail  C1    –  C2    –  units/u0583/u0583_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0584 compile_fail  C1    –  C2    –  units/u0584/u0584_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0585 compile_fail  C1    –  C2    –  units/u0585/u0585_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0586 compile_fail  C1    –  C2    –  units/u0586/u0586_test.cc:7:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0587 compile_fail  C1    –  C2    –  units/u0587/u0587_test.cc:7:10: error: scalar object ‘y_data’ requires one element in initializer
+  u0588 compile_fail  C1    –  C2    –  units/u0588/u0588_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0589 compile_fail  C1    –  C2    –  units/u0589/u0589_test.cc:7:10: error: scalar object ‘p_data’ requires one element in initializer
+  u0590 compile_fail  C1    –  C2    –  units/u0590/u0590_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0591 compile_fail  C1    –  C2    –  units/u0591/u0591_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0592 compile_fail  C1    –  C2    –  units/u0592/u0592_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0593 compile_fail  C1    –  C2    –  units/u0593/u0593_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer
+  u0594 compile_fail  C1    –  C2    –  units/u0594/u0594_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0595 compile_fail  C1    –  C2    –  units/u0595/u0595_test.cc:7:10: error: scalar object ‘value_data’ requires one element in initializer
+  u0596 compile_fail  C1    –  C2    –  units/u0596/u0596_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer
+  u0597 compile_fail  C1    –  C2    –  units/u0597/u0597_test.cc:8:10: error: scalar object ‘y_data’ requires one element in initializer
+  u0598 compile_fail  C1    –  C2    –  units/u0598/u0598_test.cc:10:10: error: scalar object ‘a_data’ requires one element in initializer
+  u0599 compile_fail  C1    –  C2    –  units/u0599/u0599_test.cc:10:10: error: scalar object ‘container_data’ requires one element in initializer
+  u0601 compile_fail  C1    –  C2    –  units/u0601/u0601_test.cc:7:10: error: scalar object ‘mutable_blocks_data’ requires one element in initializer
+  u0602 compile_fail  C1    –  C2    –  units/u0602/u0602_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0603 compile_fail  C1    –  C2    –  units/u0603/u0603_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0604 compile_fail  C1    –  C2    –  units/u0604/u0604_test.cc:9:3: error: ‘object’ was not declared in this scope
+  u0607 compile_fail  C1    –  C2    –  units/u0607/u0607_test.cc:9:10: error: scalar object ‘a_data’ requires one element in initializer
+  u0605 compile_fail  C1    –  C2    –  units/u0605/u0605_test.cc:10:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0606 compile_fail  C1    –  C2    –  units/u0606/u0606_test.cc:10:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0608 compile_fail  C1    –  C2    –  units/u0608/u0608_test.cc:9:10: error: scalar object ‘a_data’ requires one element in initializer
+  u0609 compile_fail  C1    –  C2    –  units/u0609/u0609_test.cc:9:10: error: scalar object ‘a_data’ requires one element in initializer
+  u0600 ok            C1 100%  C2 100%
+  u0610 compile_fail  C1    –  C2    –  units/u0610/u0610_test.cc:9:10: error: scalar object ‘a_data’ requires one element in initializer
+  u0611 compile_fail  C1    –  C2    –  units/u0611/u0611_test.cc:10:10: error: scalar object ‘rows_data’ requires one element in initializer
+  u0613 compile_fail  C1    –  C2    –  units/u0613/u0613_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer
+  u0614 compile_fail  C1    –  C2    –  units/u0614/u0614_test.cc:8:10: error: scalar object ‘functor_data’ requires one element in initializer
+  u0612 compile_fail  C1    –  C2    –  units/u0612/u0612_test.cc:7:10: error: scalar object ‘dogleg_data’ requires one element in initializer
+  u0615 compile_fail  C1    –  C2    –  units/u0615/u0615_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0616 compile_fail  C1    –  C2    –  units/u0616/u0616_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer
+  u0617 compile_fail  C1    –  C2    –  units/u0617/u0617_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer
+  u0618 compile_fail  C1    –  C2    –  units/u0618/u0618_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0619 compile_fail  C1    –  C2    –  units/u0619/u0619_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0620 compile_fail  C1    –  C2    –  units/u0620/u0620_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer
+  u0621 compile_fail  C1    –  C2    –  units/u0621/u0621_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0622 compile_fail  C1    –  C2    –  include/ceres/internal/variadic_evaluate.h:65:17: error: no match for call to ‘(const LocalCostFunctor) (const
+  u0624 compile_fail  C1    –  C2    –  units/u0624/u0624_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0623 compile_fail  C1    –  C2    –  units/u0623/u0623_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0625 compile_fail  C1    –  C2    –  units/u0625/u0625_test.cc:7:10: error: scalar object ‘arg0_data’ requires one element in initializer
+  u0626 ok            C1 100%  C2    –
+  u0627 ok            C1 100%  C2    –
+  u0628 ok            C1 100%  C2    –
+  u0629 ok            C1 100%  C2    –
+  u0630 ok            C1 100%  C2    –
+  u0631 ok            C1 100%  C2    –
+  u0632 ok            C1 100%  C2    –
+  u0633 ok            C1 100%  C2    –
+  u0635 compile_fail  C1    –  C2    –  units/u0635/u0635_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0634 ok            C1 100%  C2    –
+  u0636 compile_fail  C1    –  C2    –  units/u0636/u0636_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0637 compile_fail  C1    –  C2    –  units/u0637/u0637_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0638 compile_fail  C1    –  C2    –  units/u0638/u0638_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0639 compile_fail  C1    –  C2    –  units/u0639/u0639_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0640 compile_fail  C1    –  C2    –  units/u0640/u0640_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0641 compile_fail  C1    –  C2    –  include/ceres/numeric_diff_first_order_function.h:162:21: error: no match for call to ‘(LocalFirstOrderFunctor
+  u0642 compile_fail  C1    –  C2    –  units/u0642/u0642_test.cc:8:10: error: scalar object ‘pointer_data’ requires one element in initializer
+  u0643 compile_fail  C1    –  C2    –  units/u0643/u0643_test.cc:8:10: error: scalar object ‘pointer_data’ requires one element in initializer
+  u0644 compile_fail  C1    –  C2    –  units/u0644/u0644_test.cc:8:10: error: scalar object ‘angle_axis_data’ requires one element in initializer
+  u0645 compile_fail  C1    –  C2    –  units/u0645/u0645_test.cc:8:10: error: scalar object ‘euler_data’ requires one element in initializer
+  u0646 compile_fail  C1    –  C2    –  units/u0646/u0646_test.cc:8:10: error: scalar object ‘q_data’ requires one element in initializer
+  u0647 compile_fail  C1    –  C2    –  units/u0647/u0647_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0649 compile_fail  C1    –  C2    –  units/u0649/u0649_test.cc:8:10: error: scalar object ‘row_data’ requires one element in initializer
+  u0650 compile_fail  C1    –  C2    –  units/u0650/u0650_test.cc:7:3: error: ‘BlockRandomAccessMatrix’ was not declared in this scope; did you mean ‘
+  u0648 compile_fail  C1    –  C2    –  units/u0648/u0648_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0652 compile_fail  C1    –  C2    –  units/u0652/u0652_test.cc:8:10: error: scalar object ‘program_data’ requires one element in initializer
+  u0653 compile_fail  C1    –  C2    –  units/u0653/u0653_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0651 compile_fail  C1    –  C2    –  units/u0651/u0651_test.cc:8:10: error: scalar object ‘block_structure_data’ requires one element in initialize
+  u0654 compile_fail  C1    –  C2    –  units/u0654/u0654_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0655 compile_fail  C1    –  C2    –  units/u0655/u0655_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0657 compile_fail  C1    –  C2    –  units/u0657/u0657_test.cc:7:10: error: scalar object ‘lhs_data’ requires one element in initializer
+  u0656 ok            C1 100%  C2    –
+  u0658 compile_fail  C1    –  C2    –  units/u0658/u0658_test.cc:7:10: error: scalar object ‘lhs_data’ requires one element in initializer
+  u0660 compile_fail  C1    –  C2    –  units/u0660/u0660_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0659 compile_fail  C1    –  C2    –  units/u0659/u0659_test.cc:7:10: error: scalar object ‘rhs_data’ requires one element in initializer
+  u0662 compile_fail  C1    –  C2    –  units/u0662/u0662_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0661 compile_fail  C1    –  C2    –  units/u0661/u0661_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0663 compile_fail  C1    –  C2    –  units/u0663/u0663_test.cc:7:10: error: scalar object ‘dense_matrix_data’ requires one element in initializer
+  u0664 compile_fail  C1    –  C2    –  units/u0664/u0664_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0665 compile_fail  C1    –  C2    –  units/u0665/u0665_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0666 compile_fail  C1    –  C2    –  units/u0666/u0666_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0667 compile_fail  C1    –  C2    –  units/u0667/u0667_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0668 compile_fail  C1    –  C2    –  units/u0668/u0668_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0669 compile_fail  C1    –  C2    –  units/u0669/u0669_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0670 compile_fail  C1    –  C2    –  units/u0670/u0670_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0672 compile_fail  C1    –  C2    –  units/u0672/u0672_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0671 compile_fail  C1    –  C2    –  units/u0671/u0671_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0673 compile_fail  C1    –  C2    –  units/u0673/u0673_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0675 compile_fail  C1    –  C2    –  units/u0675/u0675_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0676 compile_fail  C1    –  C2    –  units/u0676/u0676_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0677 compile_fail  C1    –  C2    –  units/u0677/u0677_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0674 ok            C1 100%  C2    –
+  u0678 compile_fail  C1    –  C2    –  units/u0678/u0678_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0679 compile_fail  C1    –  C2    –  units/u0679/u0679_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0680 compile_fail  C1    –  C2    –  units/u0680/u0680_test.cc:8:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+  u0681 compile_fail  C1    –  C2    –  units/u0681/u0681_test.cc:8:20: error: ‘SteepestDescent’ is not a member of ‘ceres::internal’
+  u0683 compile_fail  C1    –  C2    –  units/u0683/u0683_test.cc:15:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+  u0682 compile_fail  C1    –  C2    –  units/u0682/u0682_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0684 compile_fail  C1    –  C2    –  units/u0684/u0684_test.cc:15:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+  u0685 compile_fail  C1    –  C2    –  units/u0685/u0685_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0686 compile_fail  C1    –  C2    –  units/u0686/u0686_test.cc:7:3: error: ‘PartitionedMatrixViewBase’ was not declared in this scope; did you mean
+  u0687 compile_fail  C1    –  C2    –  units/u0687/u0687_test.cc:9:10: error: scalar object ‘isc_data’ requires one element in initializer
+  u0688 compile_fail  C1    –  C2    –  units/u0688/u0688_test.cc:8:10: error: scalar object ‘arg1_data’ requires one element in initializer
+  u0689 compile_fail  C1    –  C2    –  units/u0689/u0689_test.cc:7:3: error: ‘SparseMatrixPreconditionerWrapper’ was not declared in this scope; did 
+  u0690 compile_fail  C1    –  C2    –  units/u0690/u0690_test.cc:8:3: error: ‘object’ was not declared in this scope
+  u0691 compile_fail  C1    –  C2    –  units/u0691/u0691_test.cc:8:10: error: scalar object ‘arg1_data’ requires one element in initializer
+  u0692 compile_fail  C1    –  C2    –  units/u0692/u0692_test.cc:8:10: error: scalar object ‘D_data’ requires one element in initializer
+  u0694 compile_fail  C1    –  C2    –  units/u0694/u0694_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0695 compile_fail  C1    –  C2    –  units/u0695/u0695_test.cc:7:3: error: ‘object’ was not declared in this scope
+  u0693 ok            C1 100%  C2    –
+  u0696 compile_fail  C1    –  C2    –  units/u0696/u0696_test.cc:9:10: error: scalar object ‘functor_data’ requires one element in initializer
+  u0698 compile_fail  C1    –  C2    –  units/u0698/u0698_test.cc:8:10: error: scalar object ‘angle_axis_data’ requires one element in initializer
+  u0697 compile_fail  C1    –  C2    –  include/ceres/numeric_diff_first_order_function.h:162:21: error: no match for call to ‘(LocalDynamicFirstOrder
+  u0699 ok            C1  75%  C2  50%
+  u0700 ok            C1  80%  C2  50%
+time="2026-11-15T17:22:59+07:00" level=error msg="error waiting for container: unexpected EOF"

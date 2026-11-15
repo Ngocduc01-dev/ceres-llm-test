@@ -1,0 +1,4 @@
+/work/repo/units/u0731/u0731_test.cc: In member function ‘virtual void ceres::Unit_u0731_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0731/u0731_test.cc:7:3: error: ‘TrustRegionStrategyTypeToString’ was not declared in this scope
+    7 |   TrustRegionStrategyTypeToString({});
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

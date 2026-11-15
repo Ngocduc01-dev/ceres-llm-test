@@ -1,0 +1,35 @@
+{
+  "id": "u0710",
+  "name": "ceres::internal::WriteStringToFileOrDie",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u0710.CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 1,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 7
+  },
+  "c2": {
+    "covered": 1,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 45,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (!file_descriptor) {"
+    }
+  ]
+}

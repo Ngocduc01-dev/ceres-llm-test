@@ -1,0 +1,8 @@
+/work/repo/units/u1170/u1170_test.cc: In member function ‘virtual void Unit_u1170_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1170/u1170_test.cc:8:20: error: ‘EigenSparseCholeskyTemplate’ is not a member of ‘ceres::internal’; did you mean ‘EigenSparseCholesky’?
+    8 |   ceres::internal::EigenSparseCholeskyTemplate object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                    EigenSparseCholesky
+/work/repo/units/u1170/u1170_test.cc:9:3: error: ‘object’ was not declared in this scope
+    9 |   object.Factorize(nullptr, nullptr);
+      |   ^~~~~~

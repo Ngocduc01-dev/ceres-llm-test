@@ -1,0 +1,9 @@
+{
+  "id": "u1284",
+  "name": "ceres::internal::BlockRandomAccessSparseMatrix::SetZero",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1284/u1284_test.cc:7:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

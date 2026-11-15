@@ -1,0 +1,27 @@
+{
+  "id": "u0797",
+  "name": "ceres::UpperCase",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u0797.TC1_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 1,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 3
+  },
+  "c2": {
+    "covered": 1,
+    "total": 1,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

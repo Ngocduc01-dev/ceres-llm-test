@@ -1,20 +1,32 @@
 // FILE: u0419_test.cc
 #include "gtest/gtest.h"
-#include "ceres/block_sparse_matrix.h"
 #include "ceres/subset_preconditioner.h"
 
-TEST(Unit_u0419, NumCols) {
-  if (!ceres::IsSparseLinearAlgebraLibraryTypeAvailable(ceres::EIGEN_SPARSE)) {
-    GTEST_SKIP() << "Eigen sparse support is unavailable";
-  }
-  auto* structure = new ceres::internal::CompressedRowBlockStructure;
-  structure->cols.emplace_back(3, 0);
-  ceres::internal::BlockSparseMatrix matrix(structure);
+namespace ceres {
+namespace internal {
 
-  ceres::Preconditioner::Options options;
+// P1: START -> 1 -> END (hàm không có điểm rẽ nhánh)
+TEST(SubsetPreconditionerNumCols, ReturnsNumCols) {
+  // Ma trận khối thưa: 1 khối hàng (cỡ 1), 1 khối cột (cỡ 3), 1 cell.
+  auto* bs = new CompressedRowBlockStructure;
+  bs->cols.emplace_back();
+  bs->cols[0].size = 3;
+  bs->cols[0].position = 0;
+
+  bs->rows.emplace_back();
+  CompressedRow& row = bs->rows[0];
+  row.block.size = 1;
+  row.block.position = 0;
+  row.cells.emplace_back(0, 0);
+
+  BlockSparseMatrix A(bs);  // A nhận quyền sở hữu bs
+
+  Preconditioner::Options options;
   options.subset_preconditioner_start_row_block = 0;
-  options.sparse_linear_algebra_library_type = ceres::EIGEN_SPARSE;
-  ceres::internal::SubsetPreconditioner target(options, matrix);
 
-  EXPECT_EQ(target.num_cols(), 3);
+  SubsetPreconditioner preconditioner(options, A);
+  preconditioner.num_cols();  // không kiểm tra kết quả trả về
 }
+
+}  // namespace internal
+}  // namespace ceres

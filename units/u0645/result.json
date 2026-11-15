@@ -1,0 +1,9 @@
+{
+  "id": "u0645",
+  "name": "ceres::EulerAnglesToRotationMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0645/u0645_test.cc:8:10: error: scalar object ‘euler_data’ requires one element in initializer"
+  ]
+}

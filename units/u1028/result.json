@@ -1,0 +1,14 @@
+{
+  "id": "u1028",
+  "name": "ceres::internal::FixedArray::Storage::~Storage",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1028/u1028_test.cc:7:40: error: qualified-id in declaration before ‘object’",
+    "units/u1028/u1028_test.cc:8:3: error: ‘object’ was not declared in this scope",
+    "units/u1028/u1028_test.cc:8:18: error: expected class-name before ‘(’ token",
+    "units/u1028/u1028_test.cc:13:40: error: qualified-id in declaration before ‘object’",
+    "units/u1028/u1028_test.cc:14:3: error: ‘object’ was not declared in this scope",
+    "units/u1028/u1028_test.cc:14:18: error: expected class-name before ‘(’ token"
+  ]
+}

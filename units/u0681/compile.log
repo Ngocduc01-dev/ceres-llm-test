@@ -1,0 +1,54 @@
+/work/repo/units/u0681/u0681_test.cc: In member function ‘virtual void Unit_u0681_PathP1_Test::TestBody()’:
+/work/repo/units/u0681/u0681_test.cc:8:20: error: ‘SteepestDescent’ is not a member of ‘ceres::internal’
+    8 |   ceres::internal::SteepestDescent target;
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u0681/u0681_test.cc:9:56: error: no matching function for call to ‘ceres::internal::LineSearchMinimizer::State::State(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::LineSearchMinimizer::State previous{};
+      |                                                        ^
+In file included from /work/ceres-solver/internal/ceres/line_search_direction.h:38,
+                 from /work/repo/units/u0681/u0681_test.cc:3:
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:49:5: note: candidate: ‘ceres::internal::LineSearchMinimizer::State::State(int, int)’
+   49 |     State(int /*num_parameters*/, int num_effective_parameters)
+      |     ^~~~~
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:49:5: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note: candidate: ‘ceres::internal::LineSearchMinimizer::State::State(const ceres::internal::LineSearchMinimizer::State&)’
+   48 |   struct State {
+      |          ^~~~~
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note: candidate: ‘ceres::internal::LineSearchMinimizer::State::State(ceres::internal::LineSearchMinimizer::State&&)’
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0681/u0681_test.cc:10:55: error: no matching function for call to ‘ceres::internal::LineSearchMinimizer::State::State(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::LineSearchMinimizer::State current{};
+      |                                                       ^
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:49:5: note: candidate: ‘ceres::internal::LineSearchMinimizer::State::State(int, int)’
+   49 |     State(int /*num_parameters*/, int num_effective_parameters)
+      |     ^~~~~
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:49:5: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note: candidate: ‘ceres::internal::LineSearchMinimizer::State::State(const ceres::internal::LineSearchMinimizer::State&)’
+   48 |   struct State {
+      |          ^~~~~
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note: candidate: ‘ceres::internal::LineSearchMinimizer::State::State(ceres::internal::LineSearchMinimizer::State&&)’
+/work/ceres-solver/internal/ceres/line_search_minimizer.h:48:10: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0681/u0681_test.cc:11:39: error: ‘ceres::internal::Vector’ has not been declared
+   11 |   current.gradient = ceres::internal::Vector::Zero(1);
+      |                                       ^~~~~~
+/work/repo/units/u0681/u0681_test.cc:12:20: error: ‘Vector’ is not a member of ‘ceres::internal’
+   12 |   ceres::internal::Vector search_direction(1);
+      |                    ^~~~~~
+/work/repo/units/u0681/u0681_test.cc:12:20: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/line_search_direction.h:36:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0681/u0681_test.cc:13:3: error: ‘target’ was not declared in this scope
+   13 |   target.NextDirection(previous, current, &search_direction);
+      |   ^~~~~~
+/work/repo/units/u0681/u0681_test.cc:13:44: error: ‘search_direction’ was not declared in this scope
+   13 |   target.NextDirection(previous, current, &search_direction);
+      |                                            ^~~~~~~~~~~~~~~~

@@ -1,0 +1,11 @@
+{
+  "id": "u1133",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::InitStorage",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1133/u1133_test.cc:9:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1133/u1133_test.cc:10:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1133/u1133_test.cc:11:22: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?"
+  ]
+}

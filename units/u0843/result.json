@@ -1,0 +1,9 @@
+{
+  "id": "u0843",
+  "name": "ceres::CostFunction::~CostFunction",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0843/u0843_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::CostFunction’"
+  ]
+}

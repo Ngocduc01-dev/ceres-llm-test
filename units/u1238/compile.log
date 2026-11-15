@@ -1,0 +1,50 @@
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:9:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+    9 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+In file included from /work/repo/units/u1238/u1238_test.cc:5:
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:14:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+   14 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:19:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+   19 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:24:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+   24 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:29:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+   29 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:34:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+   34 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/repo/units/u1238/u1238_test.cc: In member function ‘virtual void Unit_u1238_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1238/u1238_test.cc:39:49: error: invalid initialization of reference of type ‘const std::vector<const ceres::Manifold*>&’ from expression of type ‘std::nullptr_t’
+   39 |   ceres::EvaluateCostFunction(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+      |                                                 ^~~~~~~
+/work/ceres-solver/internal/ceres/gradient_checker.cc:57:63: note: in passing argument 3 of ‘bool ceres::{anonymous}::EvaluateCostFunction(const ceres::CostFunction*, const double* const*, const std::vector<const ceres::Manifold*>&, ceres::Vector*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*, std::vector<Eigen::Matrix<double, -1, -1, 1> >*)’
+   57 |                           const std::vector<const Manifold*>& manifolds,
+      |                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~

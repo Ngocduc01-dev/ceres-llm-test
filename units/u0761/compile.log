@@ -1,0 +1,88 @@
+/work/repo/units/u0761/u0761_test.cc: In member function ‘virtual void Unit_u0761_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0761/u0761_test.cc:7:3: error: ‘Vertex’ was not declared in this scope
+    7 |   Vertex vertex1{};
+      |   ^~~~~~
+/work/repo/units/u0761/u0761_test.cc:8:9: error: expected ‘;’ before ‘vertex2’
+    8 |   Vertex vertex2{};
+      |         ^~~~~~~~
+      |         ;
+/work/repo/units/u0761/u0761_test.cc:10:41: error: class template argument deduction failed:
+   10 |   ceres::internal::WeightedGraph object{};
+      |                                         ^
+/work/repo/units/u0761/u0761_test.cc:10:41: error: no matching function for call to ‘WeightedGraph()’
+In file included from /work/repo/units/u0761/u0761_test.cc:3:
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: candidate: ‘template<class Vertex> WeightedGraph()-> ceres::internal::WeightedGraph<Vertex>’
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph.h:105:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u0761/u0761_test.cc:10:41: note:   couldn’t deduce template parameter ‘Vertex’
+   10 |   ceres::internal::WeightedGraph object{};
+      |                                         ^
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: candidate: ‘template<class Vertex> WeightedGraph(ceres::internal::WeightedGraph<Vertex>)-> ceres::internal::WeightedGraph<Vertex>’
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph.h:105:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0761/u0761_test.cc:11:18: error: ‘vertex1’ was not declared in this scope
+   11 |   object.AddEdge(vertex1, vertex2, weight);
+      |                  ^~~~~~~
+/work/repo/units/u0761/u0761_test.cc:11:27: error: ‘vertex2’ was not declared in this scope
+   11 |   object.AddEdge(vertex1, vertex2, weight);
+      |                           ^~~~~~~
+/work/repo/units/u0761/u0761_test.cc: In member function ‘virtual void Unit_u0761_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0761/u0761_test.cc:16:3: error: ‘Vertex’ was not declared in this scope
+   16 |   Vertex vertex1{};
+      |   ^~~~~~
+/work/repo/units/u0761/u0761_test.cc:17:9: error: expected ‘;’ before ‘vertex2’
+   17 |   Vertex vertex2{};
+      |         ^~~~~~~~
+      |         ;
+/work/repo/units/u0761/u0761_test.cc:19:41: error: class template argument deduction failed:
+   19 |   ceres::internal::WeightedGraph object{};
+      |                                         ^
+/work/repo/units/u0761/u0761_test.cc:19:41: error: no matching function for call to ‘WeightedGraph()’
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: candidate: ‘template<class Vertex> WeightedGraph()-> ceres::internal::WeightedGraph<Vertex>’
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph.h:105:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u0761/u0761_test.cc:19:41: note:   couldn’t deduce template parameter ‘Vertex’
+   19 |   ceres::internal::WeightedGraph object{};
+      |                                         ^
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: candidate: ‘template<class Vertex> WeightedGraph(ceres::internal::WeightedGraph<Vertex>)-> ceres::internal::WeightedGraph<Vertex>’
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph.h:105:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0761/u0761_test.cc:20:18: error: ‘vertex1’ was not declared in this scope
+   20 |   object.AddEdge(vertex1, vertex2, weight);
+      |                  ^~~~~~~
+/work/repo/units/u0761/u0761_test.cc:20:27: error: ‘vertex2’ was not declared in this scope
+   20 |   object.AddEdge(vertex1, vertex2, weight);
+      |                           ^~~~~~~
+/work/repo/units/u0761/u0761_test.cc: In member function ‘virtual void Unit_u0761_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0761/u0761_test.cc:25:3: error: ‘Vertex’ was not declared in this scope
+   25 |   Vertex vertex1{};
+      |   ^~~~~~
+/work/repo/units/u0761/u0761_test.cc:26:9: error: expected ‘;’ before ‘vertex2’
+   26 |   Vertex vertex2{};
+      |         ^~~~~~~~
+      |         ;
+/work/repo/units/u0761/u0761_test.cc:28:41: error: class template argument deduction failed:
+   28 |   ceres::internal::WeightedGraph object{};
+      |                                         ^
+/work/repo/units/u0761/u0761_test.cc:28:41: error: no matching function for call to ‘WeightedGraph()’
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: candidate: ‘template<class Vertex> WeightedGraph()-> ceres::internal::WeightedGraph<Vertex>’
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph.h:105:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u0761/u0761_test.cc:28:41: note:   couldn’t deduce template parameter ‘Vertex’
+   28 |   ceres::internal::WeightedGraph object{};
+      |                                         ^
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: candidate: ‘template<class Vertex> WeightedGraph(ceres::internal::WeightedGraph<Vertex>)-> ceres::internal::WeightedGraph<Vertex>’
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/graph.h:105:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0761/u0761_test.cc:29:18: error: ‘vertex1’ was not declared in this scope
+   29 |   object.AddEdge(vertex1, vertex2, weight);
+      |                  ^~~~~~~
+/work/repo/units/u0761/u0761_test.cc:29:27: error: ‘vertex2’ was not declared in this scope
+   29 |   object.AddEdge(vertex1, vertex2, weight);
+      |                           ^~~~~~~

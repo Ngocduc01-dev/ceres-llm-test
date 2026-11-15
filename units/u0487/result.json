@@ -1,0 +1,32 @@
+{
+  "id": "u0487",
+  "name": "ceres::STLDeleteContainerPointers",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "STLDeleteContainerPointersTest.TC1_ZeroIterations": "pass",
+    "STLDeleteContainerPointersTest.TC2_OneIteration": "pass",
+    "STLDeleteContainerPointersTest.TC3_TwoIterations": "pass",
+    "STLDeleteContainerPointersTest.TC4_ThreeIterations": "pass",
+    "STLDeleteContainerPointersTest.TC5_FourIterations": "pass",
+    "STLDeleteContainerPointersTest.TC6_FiveIterations": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 6,
+    "total": 6
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

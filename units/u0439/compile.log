@@ -1,0 +1,19 @@
+/work/repo/units/u0439/u0439_test.cc: In member function ‘virtual void CubicInterpolatorEvaluateJet_TC1_LoopTwoIterations_Test::TestBody()’:
+/work/repo/units/u0439/u0439_test.cc:12:10: error: ‘Jet’ is not a member of ‘ceres’
+   12 |   ceres::Jet<double, 4> x(0.5, 0);
+      |          ^~~
+/work/repo/units/u0439/u0439_test.cc:12:14: error: expected primary-expression before ‘double’
+   12 |   ceres::Jet<double, 4> x(0.5, 0);
+      |              ^~~~~~
+/work/repo/units/u0439/u0439_test.cc:13:10: error: ‘Jet’ is not a member of ‘ceres’
+   13 |   ceres::Jet<double, 4> f[2];
+      |          ^~~
+/work/repo/units/u0439/u0439_test.cc:13:14: error: expected primary-expression before ‘double’
+   13 |   ceres::Jet<double, 4> f[2];
+      |              ^~~~~~
+/work/repo/units/u0439/u0439_test.cc:15:25: error: ‘x’ was not declared in this scope
+   15 |   interpolator.Evaluate(x, f);
+      |                         ^
+/work/repo/units/u0439/u0439_test.cc:15:28: error: ‘f’ was not declared in this scope
+   15 |   interpolator.Evaluate(x, f);
+      |                            ^

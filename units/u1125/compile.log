@@ -1,0 +1,32 @@
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:7:3: error: ‘ceres’ has not been declared
+    7 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:13:3: error: ‘ceres’ has not been declared
+   13 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:19:3: error: ‘ceres’ has not been declared
+   19 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:25:3: error: ‘ceres’ has not been declared
+   25 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:31:3: error: ‘ceres’ has not been declared
+   31 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:37:3: error: ‘ceres’ has not been declared
+   37 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:43:3: error: ‘ceres’ has not been declared
+   43 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1125/u1125_test.cc: In member function ‘virtual void Unit_u1125_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1125/u1125_test.cc:49:3: error: ‘ceres’ has not been declared
+   49 |   ceres::StringToPreconditionerType(value, nullptr);
+      |   ^~~~~

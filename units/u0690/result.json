@@ -1,0 +1,9 @@
+{
+  "id": "u0690",
+  "name": "ceres::internal::SparseMatrixPreconditionerWrapper::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0690/u0690_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

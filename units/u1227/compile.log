@@ -1,0 +1,14 @@
+/work/repo/units/u1227/u1227_test.cc: In member function ‘virtual void Unit_u1227_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1227/u1227_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+   11 |   ceres::internal::(anonymous)::InitializeContext(nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1227/u1227_test.cc:11:21: error: ‘anonymous’ was not declared in this scope
+   11 |   ceres::internal::(anonymous)::InitializeContext(nullptr, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1227/u1227_test.cc: In member function ‘virtual void Unit_u1227_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1227/u1227_test.cc:16:20: error: expected unqualified-id before ‘(’ token
+   16 |   ceres::internal::(anonymous)::InitializeContext(nullptr, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u1227/u1227_test.cc:16:21: error: ‘anonymous’ was not declared in this scope
+   16 |   ceres::internal::(anonymous)::InitializeContext(nullptr, nullptr, nullptr);
+      |                     ^~~~~~~~~

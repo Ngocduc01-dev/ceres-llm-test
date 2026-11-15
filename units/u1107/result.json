@@ -1,0 +1,11 @@
+{
+  "id": "u1107",
+  "name": "ceres::NormalPrior::NormalPrior",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1107/u1107_test.cc:8:3: error: ‘Matrix’ was not declared in this scope",
+    "units/u1107/u1107_test.cc:9:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1107/u1107_test.cc:10:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brace-enclosed initializer list>)’"
+  ]
+}

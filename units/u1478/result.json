@@ -1,0 +1,16 @@
+{
+  "id": "u1478",
+  "name": "ceres::(anonymous)::PostSolveSummarize",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1478/u1478_test.cc:14:3: error: ‘internal’ has not been declared",
+    "units/u1478/u1478_test.cc:15:29: error: ‘pp’ was not declared in this scope",
+    "units/u1478/u1478_test.cc:20:3: error: ‘internal’ has not been declared",
+    "units/u1478/u1478_test.cc:21:29: error: ‘pp’ was not declared in this scope",
+    "units/u1478/u1478_test.cc:26:3: error: ‘internal’ has not been declared",
+    "units/u1478/u1478_test.cc:27:29: error: ‘pp’ was not declared in this scope",
+    "units/u1478/u1478_test.cc:32:3: error: ‘internal’ has not been declared",
+    "units/u1478/u1478_test.cc:33:29: error: ‘pp’ was not declared in this scope"
+  ]
+}

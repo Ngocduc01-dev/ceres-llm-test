@@ -1,0 +1,76 @@
+/work/repo/units/u1534/u1534_test.cc: In member function ‘virtual void Unit_u1534_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1534/u1534_test.cc:8:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+In file included from /work/repo/units/u1534/u1534_test.cc:3:
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1534/u1534_test.cc:9:17: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Compute(std::nullptr_t, std::nullptr_t)’
+    9 |   object.Compute(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:55:8: note: candidate: ‘bool ceres::internal::CovarianceImpl::Compute(const std::vector<std::pair<const double*, const double*> >&, ceres::internal::ProblemImpl*)’
+   55 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |        ^~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:56:20: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<std::pair<const double*, const double*> >&’
+   55 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                    covariance_blocks,
+      |                    ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:59:8: note: candidate: ‘bool ceres::internal::CovarianceImpl::Compute(const std::vector<const double*>&, ceres::internal::ProblemImpl*)’
+   59 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |        ^~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:59:50: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+   59 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/work/repo/units/u1534/u1534_test.cc: In member function ‘virtual void Unit_u1534_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1534/u1534_test.cc:14:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1534/u1534_test.cc:15:17: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Compute(std::nullptr_t, std::nullptr_t)’
+   15 |   object.Compute(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:55:8: note: candidate: ‘bool ceres::internal::CovarianceImpl::Compute(const std::vector<std::pair<const double*, const double*> >&, ceres::internal::ProblemImpl*)’
+   55 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |        ^~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:56:20: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<std::pair<const double*, const double*> >&’
+   55 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                    covariance_blocks,
+      |                    ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:59:8: note: candidate: ‘bool ceres::internal::CovarianceImpl::Compute(const std::vector<const double*>&, ceres::internal::ProblemImpl*)’
+   59 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |        ^~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:59:50: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+   59 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+/work/repo/units/u1534/u1534_test.cc: In member function ‘virtual void Unit_u1534_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1534/u1534_test.cc:20:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1534/u1534_test.cc:21:17: error: no matching function for call to ‘ceres::internal::CovarianceImpl::Compute(std::nullptr_t, std::nullptr_t)’
+   21 |   object.Compute(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:55:8: note: candidate: ‘bool ceres::internal::CovarianceImpl::Compute(const std::vector<std::pair<const double*, const double*> >&, ceres::internal::ProblemImpl*)’
+   55 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |        ^~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:56:20: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<std::pair<const double*, const double*> >&’
+   55 |   bool Compute(const std::vector<std::pair<const double*, const double*>>&
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   56 |                    covariance_blocks,
+      |                    ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:59:8: note: candidate: ‘bool ceres::internal::CovarianceImpl::Compute(const std::vector<const double*>&, ceres::internal::ProblemImpl*)’
+   59 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |        ^~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:59:50: note:   no known conversion for argument 1 from ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+   59 |   bool Compute(const std::vector<const double*>& parameter_blocks,
+      |                ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~

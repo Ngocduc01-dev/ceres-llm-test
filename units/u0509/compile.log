@@ -1,0 +1,12 @@
+/work/repo/units/u0509/u0509_test.cc: In member function ‘virtual void Unit_u0509_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0509/u0509_test.cc:7:3: error: ‘SparseSchurComplementSolver’ was not declared in this scope; did you mean ‘ceres::internal::SparseSchurComplementSolver’?
+    7 |   SparseSchurComplementSolver object({});
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SparseSchurComplementSolver
+In file included from /work/repo/units/u0509/u0509_test.cc:3:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:169:23: note: ‘ceres::internal::SparseSchurComplementSolver’ declared here
+  169 | class CERES_NO_EXPORT SparseSchurComplementSolver final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0509/u0509_test.cc:7:40: error: expected primary-expression before ‘)’ token
+    7 |   SparseSchurComplementSolver object({});
+      |                                        ^

@@ -1,0 +1,10 @@
+{
+  "id": "u1087",
+  "name": "ceres::internal::DenseIterativeRefiner::Refine",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1087/u1087_test.cc:9:49: error: no matching function for call to ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(<brace-enclosed initializer list>)’",
+    "units/u1087/u1087_test.cc:16:49: error: no matching function for call to ‘ceres::internal::DenseIterativeRefiner::DenseIterativeRefiner(<brace-enclosed initializer list>)’"
+  ]
+}

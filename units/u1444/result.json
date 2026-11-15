@@ -1,0 +1,12 @@
+{
+  "id": "u1444",
+  "name": "ceres::internal::BlockSparseMatrix::BlockSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1444/u1444_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1444/u1444_test.cc:16:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1444/u1444_test.cc:23:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1444/u1444_test.cc:30:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

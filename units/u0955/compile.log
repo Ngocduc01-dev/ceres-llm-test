@@ -1,0 +1,20 @@
+/work/repo/units/u0955/u0955_test.cc: In member function ‘virtual void Unit_u0955_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0955/u0955_test.cc:14:3: error: ‘LinearSolver’ has not been declared
+   14 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u0955/u0955_test.cc:15:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+   15 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+In file included from /work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:46,
+                 from /work/ceres-solver/internal/ceres/cgnr_solver.h:36,
+                 from /work/repo/units/u0955/u0955_test.cc:3:
+/work/ceres-solver/internal/ceres/linear_solver.h:148:23: note:   because the following virtual functions are pure within ‘ceres::internal::LinearSolver’:
+  148 | class CERES_NO_EXPORT LinearSolver {
+      |                       ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:339:19: note:     ‘virtual ceres::internal::LinearSolver::Summary ceres::internal::LinearSolver::Solve(ceres::internal::LinearOperator*, const double*, const PerSolveOptions&, double*)’
+  339 |   virtual Summary Solve(LinearOperator* A,
+      |                   ^~~~~
+/work/repo/units/u0955/u0955_test.cc:16:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   16 |   object.Create(options);
+      |                 ^~~~~~~
+      |                 optind

@@ -1,0 +1,9 @@
+/work/repo/units/u1070/u1070_test.cc: In member function ‘virtual void Unit_u1070_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1070/u1070_test.cc:7:56: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDenseMatrix::BlockRandomAccessDenseMatrix(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::BlockRandomAccessDenseMatrix object{};
+      |                                                        ^
+In file included from /work/repo/units/u1070/u1070_test.cc:3:
+/work/ceres-solver/internal/ceres/block_random_access_dense_matrix.h:60:12: note: candidate: ‘ceres::internal::BlockRandomAccessDenseMatrix::BlockRandomAccessDenseMatrix(std::vector<ceres::internal::Block>, ceres::internal::ContextImpl*, int)’
+   60 |   explicit BlockRandomAccessDenseMatrix(std::vector<Block> blocks,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_dense_matrix.h:60:12: note:   candidate expects 3 arguments, 0 provided

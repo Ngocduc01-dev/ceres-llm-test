@@ -1,0 +1,10 @@
+{
+  "id": "u0918",
+  "name": "ceres::internal::CompressedRowSparseMatrix::ScaleColumns",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0918/u0918_test.cc:7:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0918/u0918_test.cc:13:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

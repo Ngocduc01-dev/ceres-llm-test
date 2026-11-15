@@ -1,0 +1,16 @@
+{
+  "id": "u1314",
+  "name": "ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1314/u1314_test.cc:7:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1314/u1314_test.cc:8:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context",
+    "units/u1314/u1314_test.cc:13:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1314/u1314_test.cc:14:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context",
+    "units/u1314/u1314_test.cc:19:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1314/u1314_test.cc:20:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context",
+    "units/u1314/u1314_test.cc:25:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1314/u1314_test.cc:26:42: error: ‘bool ceres::internal::DoglegStrategy::FindMinimumOnTrustRegionBoundary(Vector2d*) const’ is private within this context"
+  ]
+}

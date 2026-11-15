@@ -1,0 +1,11 @@
+{
+  "id": "u1282",
+  "name": "ceres::internal::TrustRegionMinimizer::FunctionToleranceReached",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1282/u1282_test.cc:8:34: error: ‘bool ceres::internal::TrustRegionMinimizer::FunctionToleranceReached()’ is private within this context",
+    "units/u1282/u1282_test.cc:14:34: error: ‘bool ceres::internal::TrustRegionMinimizer::FunctionToleranceReached()’ is private within this context",
+    "units/u1282/u1282_test.cc:20:34: error: ‘bool ceres::internal::TrustRegionMinimizer::FunctionToleranceReached()’ is private within this context"
+  ]
+}

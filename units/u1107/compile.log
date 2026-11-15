@@ -1,0 +1,33 @@
+/work/repo/units/u1107/u1107_test.cc: In member function ‘virtual void Unit_u1107_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1107/u1107_test.cc:8:3: error: ‘Matrix’ was not declared in this scope
+    8 |   Matrix A{};
+      |   ^~~~~~
+/work/repo/units/u1107/u1107_test.cc:8:3: note: suggested alternatives:
+In file included from /work/ceres-solver/include/ceres/normal_prior.h:39,
+                 from /work/repo/units/u1107/u1107_test.cc:4:
+/work/ceres-solver/include/ceres/internal/eigen.h:39:7: note:   ‘ceres::Matrix’
+   39 | using Matrix =
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:163,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:70:9: note:   ‘Eigen::Matrix’
+   70 | > class Matrix;
+      |         ^~~~~~
+/work/repo/units/u1107/u1107_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+    9 |   Vector b{};
+      |   ^~~~~~
+/work/repo/units/u1107/u1107_test.cc:9:3: note: suggested alternatives:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:295:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u1107/u1107_test.cc:10:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brace-enclosed initializer list>)’
+   10 |   ceres::NormalPrior object{};
+      |                             ^
+/work/ceres-solver/include/ceres/normal_prior.h:64:3: note: candidate: ‘ceres::NormalPrior::NormalPrior(const ceres::Matrix&, ceres::Vector)’
+   64 |   NormalPrior(const Matrix& A, Vector b);
+      |   ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/normal_prior.h:64:3: note:   candidate expects 2 arguments, 0 provided

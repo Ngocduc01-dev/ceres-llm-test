@@ -1,0 +1,11 @@
+{
+  "id": "u0575",
+  "name": "ceres::internal::BlockRandomAccessSparseMatrix::Int64ToIntPair",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0575/u0575_test.cc:7:10: error: scalar object ‘row_data’ requires one element in initializer",
+    "units/u0575/u0575_test.cc:8:10: error: scalar object ‘col_data’ requires one element in initializer",
+    "units/u0575/u0575_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

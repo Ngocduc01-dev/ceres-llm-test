@@ -1,0 +1,14 @@
+{
+  "id": "u1030",
+  "name": "CallbackCostFunction::CallbackCostFunction",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1030/u1030_test.cc:7:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?",
+    "units/u1030/u1030_test.cc:10:3: error: ‘CallbackCostFunction’ was not declared in this scope",
+    "units/u1030/u1030_test.cc:11:9: error: ‘object’ was not declared in this scope",
+    "units/u1030/u1030_test.cc:16:3: error: ‘ceres_cost_function_t’ was not declared in this scope; did you mean ‘cookie_close_function_t’?",
+    "units/u1030/u1030_test.cc:19:3: error: ‘CallbackCostFunction’ was not declared in this scope",
+    "units/u1030/u1030_test.cc:20:9: error: ‘object’ was not declared in this scope"
+  ]
+}

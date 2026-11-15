@@ -1,0 +1,10 @@
+{
+  "id": "u1438",
+  "name": "ceres::internal::DumpLinearLeastSquaresProblem",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1438/u1438_test.cc:9:3: error: ‘DumpFormatType’ was not declared in this scope; did you mean ‘ceres::DumpFormatType’?",
+    "units/u1438/u1438_test.cc:11:65: error: ‘dump_format_type’ was not declared in this scope"
+  ]
+}

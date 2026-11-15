@@ -1,0 +1,10 @@
+{
+  "id": "u0910",
+  "name": "ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0910/u0910_test.cc:8:3: error: ‘Preconditioner’ has not been declared",
+    "units/u0910/u0910_test.cc:9:61: error: no matching function for call to ‘ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper(<brace-enclosed initializer list>)’"
+  ]
+}

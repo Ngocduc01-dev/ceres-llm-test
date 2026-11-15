@@ -1,0 +1,37 @@
+{
+  "id": "u1517",
+  "name": "ceres::internal::ProblemImpl::AddResidualBlock",
+  "status": "ok",
+  "cfg_branches": 20,
+  "tests": {
+    "Unit_u1517.TC1_CallsTarget": "check_fail",
+    "Unit_u1517.TC2_CallsTarget": "check_fail",
+    "Unit_u1517.TC3_CallsTarget": "check_fail",
+    "Unit_u1517.TC4_CallsTarget": "check_fail",
+    "Unit_u1517.TC5_CallsTarget": "check_fail",
+    "Unit_u1517.TC6_CallsTarget": "check_fail",
+    "Unit_u1517.TC7_CallsTarget": "check_fail",
+    "Unit_u1517.TC8_CallsTarget": "check_fail",
+    "Unit_u1517.TC9_CallsTarget": "check_fail",
+    "Unit_u1517.TC10_CallsTarget": "check_fail",
+    "Unit_u1517.TC11_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 11,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 45
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

@@ -1,0 +1,10 @@
+{
+  "id": "u1048",
+  "name": "ceres::internal::ConcurrentQueue::Wait",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1048/u1048_test.cc:7:43: error: class template argument deduction failed:",
+    "units/u1048/u1048_test.cc:7:43: error: no matching function for call to ‘ConcurrentQueue()’"
+  ]
+}

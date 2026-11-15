@@ -1,0 +1,11 @@
+{
+  "id": "u0652",
+  "name": "ceres::internal::StateUpdatingCallback::StateUpdatingCallback",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0652/u0652_test.cc:8:10: error: scalar object ‘program_data’ requires one element in initializer",
+    "units/u0652/u0652_test.cc:9:10: error: scalar object ‘parameters_data’ requires one element in initializer",
+    "units/u0652/u0652_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

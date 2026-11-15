@@ -1,0 +1,23 @@
+/work/repo/units/u1398/u1398_test.cc: In member function ‘virtual void Unit_u1398_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1398/u1398_test.cc:8:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+    8 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1398/u1398_test.cc:3:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1398/u1398_test.cc:11:17: error: ‘program’ was not declared in this scope
+   11 |   object.Create(program, num_threads);
+      |                 ^~~~~~~
+/work/repo/units/u1398/u1398_test.cc: In member function ‘virtual void Unit_u1398_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1398/u1398_test.cc:16:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   16 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1398/u1398_test.cc:19:17: error: ‘program’ was not declared in this scope
+   19 |   object.Create(program, num_threads);
+      |                 ^~~~~~~

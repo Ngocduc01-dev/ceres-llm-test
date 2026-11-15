@@ -1,0 +1,12 @@
+{
+  "id": "u0911",
+  "name": "ceres::internal::SchurEliminator::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0911/u0911_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u0911/u0911_test.cc:9:3: error: ‘SchurEliminator’ was not declared in this scope; did you mean ‘ceres::internal::SchurEliminator’?",
+    "units/u0911/u0911_test.cc:9:19: error: expected primary-expression before ‘>’ token",
+    "units/u0911/u0911_test.cc:9:21: error: ‘object’ was not declared in this scope"
+  ]
+}

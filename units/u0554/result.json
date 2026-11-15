@@ -1,0 +1,12 @@
+{
+  "id": "u0554",
+  "name": "ceres::internal::ComputeHouseholderVector",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0554/u0554_test.cc:9:10: error: scalar object ‘v_data’ requires one element in initializer",
+    "units/u0554/u0554_test.cc:10:10: error: scalar object ‘beta_data’ requires one element in initializer",
+    "units/u0554/u0554_test.cc:15:10: error: scalar object ‘v_data’ requires one element in initializer",
+    "units/u0554/u0554_test.cc:16:10: error: scalar object ‘beta_data’ requires one element in initializer"
+  ]
+}

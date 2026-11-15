@@ -1,0 +1,23 @@
+In file included from /work/ceres-solver/include/ceres/internal/numeric_diff.h:45,
+                 from /work/ceres-solver/include/ceres/dynamic_numeric_diff_cost_function.h:44,
+                 from /work/repo/units/u0622/u0622_test.cc:3:
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h: In instantiation of ‘bool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, std::true_type, std::integer_sequence<int>) [with Functor = LocalCostFunctor; T = double; std::true_type = std::true_type]’:
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:77:30:   required from ‘bool ceres::internal::VariadicEvaluateImpl(const Functor&, const T* const*, T*, const void*) [with ParameterDims = ParameterDims<true>; Functor = LocalCostFunctor; T = double]’
+   77 |   return VariadicEvaluateImpl(
+      |          ~~~~~~~~~~~~~~~~~~~~^
+   78 |       functor, input, output, IsDynamic(), ParameterBlockIndices());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:106:45:   required from ‘bool ceres::internal::VariadicEvaluate(const Functor&, const T* const*, T*) [with ParameterDims = ParameterDims<true>; Functor = LocalCostFunctor; T = double]’
+  106 |   return VariadicEvaluateImpl<ParameterDims>(functor, input, output, &functor);
+      |          ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/dynamic_numeric_diff_cost_function.h:111:67:   required from ‘bool ceres::DynamicNumericDiffCostFunction<CostFunctor, kMethod>::Evaluate(const double* const*, double*, double**) const [with CostFunctor = LocalCostFunctor; ceres::NumericDiffMethodType kMethod = ceres::RIDDERS]’
+  111 |         internal::VariadicEvaluate<internal::DynamicParameterDims>(
+      |         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+  112 |             *functor_.get(), parameters, residuals);
+      |             ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~                
+/work/ceres-solver/include/ceres/dynamic_numeric_diff_cost_function.h:97:8:   required from here
+   97 |   bool Evaluate(double const* const* parameters,
+      |        ^~~~~~~~
+/work/ceres-solver/include/ceres/internal/variadic_evaluate.h:65:17: error: no match for call to ‘(const LocalCostFunctor) (const double* const*&, double*&)’
+   65 |   return functor(input, output);
+      |          ~~~~~~~^~~~~~~~~~~~~~~

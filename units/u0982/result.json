@@ -1,0 +1,10 @@
+{
+  "id": "u0982",
+  "name": "ceres::SizedCostFunction::SizedCostFunction<kNumResiduals, Ns...>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0982/u0982_test.cc:8:3: error: ‘SizedCostFunction’ was not declared in this scope; did you mean ‘ceres::SizedCostFunction’?",
+    "units/u0982/u0982_test.cc:8:30: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "u1398",
+  "name": "ceres::internal::ScratchEvaluatePreparer::Create",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1398/u1398_test.cc:8:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1398/u1398_test.cc:11:17: error: ‘program’ was not declared in this scope",
+    "units/u1398/u1398_test.cc:16:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1398/u1398_test.cc:19:17: error: ‘program’ was not declared in this scope"
+  ]
+}

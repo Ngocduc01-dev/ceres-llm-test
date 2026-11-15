@@ -1,0 +1,17 @@
+/work/repo/units/u0511/u0511_test.cc: In member function ‘virtual void ceres::internal::Unit_u0511_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0511/u0511_test.cc:10:37: error: no matching function for call to ‘MatrixTransposeMatrixMultiplyEigen(<brace-enclosed initializer list>)’
+   10 |   MatrixTransposeMatrixMultiplyEigen({});
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /work/repo/units/u0511/u0511_test.cc:4:
+/work/ceres-solver/internal/ceres/small_blas.h:264:18: note: candidate: ‘template<int kRowA, int kColA, int kRowB, int kColB, int kOperation> void ceres::internal::MatrixTransposeMatrixMultiplyEigen(const double*, int, int, const double*, int, int, double*, int, int, int, int)’
+  264 | CERES_GEMM_BEGIN(MatrixTransposeMatrixMultiplyEigen) {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/small_blas.h:49:15: note: in definition of macro ‘CERES_GEMM_BEGIN’
+   49 |   inline void name(const double* A,                                     \
+      |               ^~~~
+/work/ceres-solver/internal/ceres/small_blas.h:264:18: note:   candidate expects 11 arguments, 1 provided
+  264 | CERES_GEMM_BEGIN(MatrixTransposeMatrixMultiplyEigen) {
+      |                  ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/small_blas.h:49:15: note: in definition of macro ‘CERES_GEMM_BEGIN’
+   49 |   inline void name(const double* A,                                     \
+      |               ^~~~

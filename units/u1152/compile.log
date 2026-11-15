@@ -1,0 +1,18 @@
+/work/repo/units/u1152/u1152_test.cc: In member function ‘virtual void Unit_u1152_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1152/u1152_test.cc:7:3: error: ‘LineSearch’ has not been declared
+    7 |   LineSearch::Options options{};
+      |   ^~~~~~~~~~
+/work/repo/units/u1152/u1152_test.cc:8:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+In file included from /work/repo/units/u1152/u1152_test.cc:3:
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided

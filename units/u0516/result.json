@@ -1,0 +1,10 @@
+{
+  "id": "u0516",
+  "name": "ceres::internal::Take1stOrderPart",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0516/u0516_test.cc:9:10: error: scalar object ‘src_data’ requires one element in initializer",
+    "units/u0516/u0516_test.cc:10:10: error: scalar object ‘dst_data’ requires one element in initializer"
+  ]
+}

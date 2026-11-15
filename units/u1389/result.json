@@ -1,0 +1,9 @@
+{
+  "id": "u1389",
+  "name": "ceres::internal::EventLogger::~EventLogger",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1389/u1389_test.cc:7:39: error: no matching function for call to ‘ceres::internal::EventLogger::EventLogger(<brace-enclosed initializer list>)’"
+  ]
+}

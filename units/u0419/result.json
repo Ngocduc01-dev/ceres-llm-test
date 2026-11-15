@@ -1,0 +1,27 @@
+{
+  "id": "u0419",
+  "name": "ceres::internal::SubsetPreconditioner::num_cols",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "SubsetPreconditionerNumCols.ReturnsNumCols": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 1,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 0,
+    "total": 1
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

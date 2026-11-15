@@ -1,0 +1,24 @@
+/work/repo/units/u0803/u0803_test.cc: In member function ‘virtual void Unit_u0803_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0803/u0803_test.cc:8:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+    8 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0803/u0803_test.cc:9:3: error: ‘object’ was not declared in this scope
+    9 |   object.FindValidViews(nullptr);
+      |   ^~~~~~
+/work/repo/units/u0803/u0803_test.cc: In member function ‘virtual void Unit_u0803_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0803/u0803_test.cc:14:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   14 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0803/u0803_test.cc:15:3: error: ‘object’ was not declared in this scope
+   15 |   object.FindValidViews(nullptr);
+      |   ^~~~~~
+/work/repo/units/u0803/u0803_test.cc: In member function ‘virtual void Unit_u0803_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0803/u0803_test.cc:20:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   20 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u0803/u0803_test.cc:21:3: error: ‘object’ was not declared in this scope
+   21 |   object.FindValidViews(nullptr);
+      |   ^~~~~~

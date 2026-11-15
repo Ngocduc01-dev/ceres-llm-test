@@ -1,0 +1,146 @@
+/work/repo/units/u1212/u1212_test.cc: In member function ‘virtual void Unit_u1212_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1212/u1212_test.cc:11:3: error: ‘LinearSolver’ has not been declared
+   11 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:12:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   12 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u1212/u1212_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:13:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?
+   13 |   PartitionedMatrixView<> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixView
+In file included from /work/repo/units/u1212/u1212_test.cc:6:
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: ‘ceres::internal::PartitionedMatrixView’ declared here
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/repo/units/u1212/u1212_test.cc:13:25: error: expected primary-expression before ‘>’ token
+   13 |   PartitionedMatrixView<> object{};
+      |                         ^
+/work/repo/units/u1212/u1212_test.cc:13:27: error: ‘object’ was not declared in this scope
+   13 |   PartitionedMatrixView<> object{};
+      |                           ^~~~~~
+/work/repo/units/u1212/u1212_test.cc: In member function ‘virtual void Unit_u1212_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1212/u1212_test.cc:19:3: error: ‘LinearSolver’ has not been declared
+   19 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:20:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   20 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:21:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?
+   21 |   PartitionedMatrixView<> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixView
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: ‘ceres::internal::PartitionedMatrixView’ declared here
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/repo/units/u1212/u1212_test.cc:21:25: error: expected primary-expression before ‘>’ token
+   21 |   PartitionedMatrixView<> object{};
+      |                         ^
+/work/repo/units/u1212/u1212_test.cc:21:27: error: ‘object’ was not declared in this scope
+   21 |   PartitionedMatrixView<> object{};
+      |                           ^~~~~~
+/work/repo/units/u1212/u1212_test.cc: In member function ‘virtual void Unit_u1212_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1212/u1212_test.cc:27:3: error: ‘LinearSolver’ has not been declared
+   27 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:28:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   28 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:29:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?
+   29 |   PartitionedMatrixView<> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixView
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: ‘ceres::internal::PartitionedMatrixView’ declared here
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/repo/units/u1212/u1212_test.cc:29:25: error: expected primary-expression before ‘>’ token
+   29 |   PartitionedMatrixView<> object{};
+      |                         ^
+/work/repo/units/u1212/u1212_test.cc:29:27: error: ‘object’ was not declared in this scope
+   29 |   PartitionedMatrixView<> object{};
+      |                           ^~~~~~
+/work/repo/units/u1212/u1212_test.cc: In member function ‘virtual void Unit_u1212_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1212/u1212_test.cc:35:3: error: ‘LinearSolver’ has not been declared
+   35 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:36:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   36 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:37:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?
+   37 |   PartitionedMatrixView<> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixView
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: ‘ceres::internal::PartitionedMatrixView’ declared here
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/repo/units/u1212/u1212_test.cc:37:25: error: expected primary-expression before ‘>’ token
+   37 |   PartitionedMatrixView<> object{};
+      |                         ^
+/work/repo/units/u1212/u1212_test.cc:37:27: error: ‘object’ was not declared in this scope
+   37 |   PartitionedMatrixView<> object{};
+      |                           ^~~~~~
+/work/repo/units/u1212/u1212_test.cc: In member function ‘virtual void Unit_u1212_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1212/u1212_test.cc:43:3: error: ‘LinearSolver’ has not been declared
+   43 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:44:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   44 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:45:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?
+   45 |   PartitionedMatrixView<> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixView
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: ‘ceres::internal::PartitionedMatrixView’ declared here
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/repo/units/u1212/u1212_test.cc:45:25: error: expected primary-expression before ‘>’ token
+   45 |   PartitionedMatrixView<> object{};
+      |                         ^
+/work/repo/units/u1212/u1212_test.cc:45:27: error: ‘object’ was not declared in this scope
+   45 |   PartitionedMatrixView<> object{};
+      |                           ^~~~~~
+/work/repo/units/u1212/u1212_test.cc: In member function ‘virtual void Unit_u1212_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1212/u1212_test.cc:51:3: error: ‘LinearSolver’ has not been declared
+   51 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:52:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   52 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1212/u1212_test.cc:53:3: error: ‘PartitionedMatrixView’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixView’?
+   53 |   PartitionedMatrixView<> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::PartitionedMatrixView
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: ‘ceres::internal::PartitionedMatrixView’ declared here
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/repo/units/u1212/u1212_test.cc:53:25: error: expected primary-expression before ‘>’ token
+   53 |   PartitionedMatrixView<> object{};
+      |                         ^
+/work/repo/units/u1212/u1212_test.cc:53:27: error: ‘object’ was not declared in this scope
+   53 |   PartitionedMatrixView<> object{};
+      |                           ^~~~~~

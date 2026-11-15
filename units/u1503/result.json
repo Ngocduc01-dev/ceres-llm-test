@@ -1,0 +1,16 @@
+{
+  "id": "u1503",
+  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValuesUsingDenseSVD",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u1503/u1503_test.cc:10:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:16:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:22:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:28:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:34:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:40:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:46:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1503/u1503_test.cc:52:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’"
+  ]
+}

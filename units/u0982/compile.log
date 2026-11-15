@@ -1,0 +1,12 @@
+/work/repo/units/u0982/u0982_test.cc: In member function ‘virtual void Unit_u0982_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0982/u0982_test.cc:8:3: error: ‘SizedCostFunction’ was not declared in this scope; did you mean ‘ceres::SizedCostFunction’?
+    8 |   SizedCostFunction<1, 2, 2> object{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::SizedCostFunction
+In file included from /work/repo/units/u0982/u0982_test.cc:4:
+/work/ceres-solver/include/ceres/sized_cost_function.h:49:7: note: ‘ceres::SizedCostFunction’ declared here
+   49 | class SizedCostFunction : public CostFunction {
+      |       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u0982/u0982_test.cc:8:30: error: ‘object’ was not declared in this scope
+    8 |   SizedCostFunction<1, 2, 2> object{};
+      |                              ^~~~~~

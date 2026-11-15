@@ -1,0 +1,7 @@
+/work/repo/units/u1220/u1220_test.cc: In member function ‘virtual void Unit_u1220_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1220/u1220_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+   11 |   ceres::internal::(anonymous)::SetupEvaluator(nullptr);
+      |                    ^
+/work/repo/units/u1220/u1220_test.cc:11:21: error: ‘anonymous’ was not declared in this scope
+   11 |   ceres::internal::(anonymous)::SetupEvaluator(nullptr);
+      |                     ^~~~~~~~~

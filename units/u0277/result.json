@@ -1,0 +1,10 @@
+{
+  "id": "u0277",
+  "name": "ceres::internal::RefinedDenseCholesky::~RefinedDenseCholesky",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0277/u0277_test.cc:14:77: error: invalid use of incomplete type ‘class ceres::internal::DenseIterativeRefiner’",
+    "/usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal::DenseIterativeRefiner’"
+  ]
+}

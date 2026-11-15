@@ -1,0 +1,4 @@
+/work/repo/units/u0642/u0642_test.cc: In member function ‘virtual void ceres::Unit_u0642_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0642/u0642_test.cc:8:10: error: scalar object ‘pointer_data’ requires one element in initializer
+    8 |   double pointer_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~

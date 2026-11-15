@@ -1,24 +1,38 @@
 // FILE: u0305_test.cc
 #include "gtest/gtest.h"
-#include "ceres/first_order_function.h"
 #include "ceres/gradient_problem.h"
+#include "ceres/manifold.h"
 
-class Unit0305Function final : public ceres::FirstOrderFunction {
+namespace ceres {
+namespace {
+
+// Hàm mục tiêu đơn giản với 2 tham số, chỉ dùng để dựng GradientProblem.
+class SimpleFirstOrderFunction final : public FirstOrderFunction {
  public:
-  int NumParameters() const override { return 2; }
-  bool Evaluate(const double*, double* cost, double* gradient) const override {
-    *cost = 0.0;
-    if (gradient != nullptr) { gradient[0] = 0.0; gradient[1] = 0.0; }
+  bool Evaluate(const double* const parameters,
+                double* cost,
+                double* gradient) const override {
+    cost[0] = parameters[0] * parameters[0] + parameters[1] * parameters[1];
+    if (gradient != nullptr) {
+      gradient[0] = 2.0 * parameters[0];
+      gradient[1] = 2.0 * parameters[1];
+    }
     return true;
   }
+
+  int NumParameters() const override { return 2; }
 };
 
-TEST(Unit_u0305, PathP1) {
-  ceres::GradientProblem target(new Unit0305Function);
-  const double x[2] = {1.0, 2.0};
-  const double delta[2] = {0.5, -1.0};
-  double result[2] = {};
-  EXPECT_TRUE(target.Plus(x, delta, result));
-  EXPECT_DOUBLE_EQ(result[0], 1.5);
-  EXPECT_DOUBLE_EQ(result[1], 1.0);
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(GradientProblemPlusTest, P1_SingleStatementReturn) {
+  GradientProblem problem(new SimpleFirstOrderFunction());
+
+  const double x[2] = {0.7, -1.3};
+  const double delta[2] = {0.4, 2.1};
+  double x_plus_delta[2] = {0.0, 0.0};
+
+  problem.Plus(x, delta, x_plus_delta);
 }
+
+}  // namespace
+}  // namespace ceres

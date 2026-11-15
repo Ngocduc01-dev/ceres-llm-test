@@ -1,0 +1,48 @@
+/work/repo/units/u1533/u1533_test.cc: In member function ‘virtual void Unit_u1533_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1533/u1533_test.cc:13:3: error: ‘Solver’ has not been declared
+   13 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1533/u1533_test.cc:15:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   object.Solve(options, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1533/u1533_test.cc: In member function ‘virtual void Unit_u1533_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1533/u1533_test.cc:20:3: error: ‘Solver’ has not been declared
+   20 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1533/u1533_test.cc:22:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   22 |   object.Solve(options, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1533/u1533_test.cc: In member function ‘virtual void Unit_u1533_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1533/u1533_test.cc:27:3: error: ‘Solver’ has not been declared
+   27 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1533/u1533_test.cc:29:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   29 |   object.Solve(options, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1533/u1533_test.cc: In member function ‘virtual void Unit_u1533_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1533/u1533_test.cc:34:3: error: ‘Solver’ has not been declared
+   34 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1533/u1533_test.cc:36:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   36 |   object.Solve(options, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1533/u1533_test.cc: In member function ‘virtual void Unit_u1533_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1533/u1533_test.cc:41:3: error: ‘Solver’ has not been declared
+   41 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1533/u1533_test.cc:43:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   43 |   object.Solve(options, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1533/u1533_test.cc: In member function ‘virtual void Unit_u1533_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1533/u1533_test.cc:48:3: error: ‘Solver’ has not been declared
+   48 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1533/u1533_test.cc:50:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   50 |   object.Solve(options, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind

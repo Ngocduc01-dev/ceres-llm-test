@@ -1,0 +1,34 @@
+/work/repo/units/u1210/u1210_test.cc: In member function ‘virtual void Unit_u1210_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1210/u1210_test.cc:9:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ceres::CostFunctionToFunctor’?
+    9 |   CostFunctionToFunctor<2, 2> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::CostFunctionToFunctor
+In file included from /work/repo/units/u1210/u1210_test.cc:4:
+/work/ceres-solver/include/ceres/cost_function_to_functor.h:106:7: note: ‘ceres::CostFunctionToFunctor’ declared here
+  106 | class CostFunctionToFunctor {
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1210/u1210_test.cc:9:31: error: ‘object’ was not declared in this scope
+    9 |   CostFunctionToFunctor<2, 2> object{};
+      |                               ^~~~~~
+/work/repo/units/u1210/u1210_test.cc: In member function ‘virtual void Unit_u1210_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1210/u1210_test.cc:15:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ceres::CostFunctionToFunctor’?
+   15 |   CostFunctionToFunctor<2, 2> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::CostFunctionToFunctor
+/work/ceres-solver/include/ceres/cost_function_to_functor.h:106:7: note: ‘ceres::CostFunctionToFunctor’ declared here
+  106 | class CostFunctionToFunctor {
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1210/u1210_test.cc:15:31: error: ‘object’ was not declared in this scope
+   15 |   CostFunctionToFunctor<2, 2> object{};
+      |                               ^~~~~~
+/work/repo/units/u1210/u1210_test.cc: In member function ‘virtual void Unit_u1210_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1210/u1210_test.cc:21:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ceres::CostFunctionToFunctor’?
+   21 |   CostFunctionToFunctor<2, 2> object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::CostFunctionToFunctor
+/work/ceres-solver/include/ceres/cost_function_to_functor.h:106:7: note: ‘ceres::CostFunctionToFunctor’ declared here
+  106 | class CostFunctionToFunctor {
+      |       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1210/u1210_test.cc:21:31: error: ‘object’ was not declared in this scope
+   21 |   CostFunctionToFunctor<2, 2> object{};
+      |                               ^~~~~~

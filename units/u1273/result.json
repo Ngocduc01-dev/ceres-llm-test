@@ -1,0 +1,10 @@
+{
+  "id": "u1273",
+  "name": "ceres::internal::TrustRegionMinimizer::HandleSuccessfulStep",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1273/u1273_test.cc:10:30: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleSuccessfulStep()’ is private within this context",
+    "units/u1273/u1273_test.cc:16:30: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleSuccessfulStep()’ is private within this context"
+  ]
+}

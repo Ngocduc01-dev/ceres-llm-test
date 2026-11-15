@@ -1,0 +1,32 @@
+{
+  "id": "u0486",
+  "name": "ceres::internal::SetSummaryFinalCost",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "SetSummaryFinalCostTest.TC1_ZeroIterations": "pass",
+    "SetSummaryFinalCostTest.TC2_OneIteration": "pass",
+    "SetSummaryFinalCostTest.TC3_TwoIterations": "pass",
+    "SetSummaryFinalCostTest.TC4_ThreeIterations": "pass",
+    "SetSummaryFinalCostTest.TC5_FourIterations": "pass",
+    "SetSummaryFinalCostTest.TC6_FiveIterations": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 6,
+    "total": 6
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

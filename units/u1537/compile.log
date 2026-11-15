@@ -1,0 +1,91 @@
+/work/repo/units/u1537/u1537_test.cc: In member function ‘virtual void Unit_u1537_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1537/u1537_test.cc:17:3: error: ‘GradientProblemSolver’ has not been declared
+   17 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:18:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?
+   18 |   GradientProblem problem{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::GradientProblem
+In file included from /work/repo/units/u1537/u1537_test.cc:3:
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: ‘ceres::GradientProblem’ declared here
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:20:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   20 |   object.Solve(options, problem, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1537/u1537_test.cc:20:25: error: ‘problem’ was not declared in this scope
+   20 |   object.Solve(options, problem, nullptr, nullptr);
+      |                         ^~~~~~~
+/work/repo/units/u1537/u1537_test.cc: In member function ‘virtual void Unit_u1537_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1537/u1537_test.cc:25:3: error: ‘GradientProblemSolver’ has not been declared
+   25 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:26:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?
+   26 |   GradientProblem problem{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::GradientProblem
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: ‘ceres::GradientProblem’ declared here
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:28:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   28 |   object.Solve(options, problem, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1537/u1537_test.cc:28:25: error: ‘problem’ was not declared in this scope
+   28 |   object.Solve(options, problem, nullptr, nullptr);
+      |                         ^~~~~~~
+/work/repo/units/u1537/u1537_test.cc: In member function ‘virtual void Unit_u1537_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1537/u1537_test.cc:33:3: error: ‘GradientProblemSolver’ has not been declared
+   33 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:34:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?
+   34 |   GradientProblem problem{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::GradientProblem
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: ‘ceres::GradientProblem’ declared here
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:36:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   36 |   object.Solve(options, problem, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1537/u1537_test.cc:36:25: error: ‘problem’ was not declared in this scope
+   36 |   object.Solve(options, problem, nullptr, nullptr);
+      |                         ^~~~~~~
+/work/repo/units/u1537/u1537_test.cc: In member function ‘virtual void Unit_u1537_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1537/u1537_test.cc:41:3: error: ‘GradientProblemSolver’ has not been declared
+   41 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:42:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?
+   42 |   GradientProblem problem{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::GradientProblem
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: ‘ceres::GradientProblem’ declared here
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:44:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   44 |   object.Solve(options, problem, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1537/u1537_test.cc:44:25: error: ‘problem’ was not declared in this scope
+   44 |   object.Solve(options, problem, nullptr, nullptr);
+      |                         ^~~~~~~
+/work/repo/units/u1537/u1537_test.cc: In member function ‘virtual void Unit_u1537_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1537/u1537_test.cc:49:3: error: ‘GradientProblemSolver’ has not been declared
+   49 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:50:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?
+   50 |   GradientProblem problem{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::GradientProblem
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: ‘ceres::GradientProblem’ declared here
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1537/u1537_test.cc:52:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   52 |   object.Solve(options, problem, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1537/u1537_test.cc:52:25: error: ‘problem’ was not declared in this scope
+   52 |   object.Solve(options, problem, nullptr, nullptr);
+      |                         ^~~~~~~

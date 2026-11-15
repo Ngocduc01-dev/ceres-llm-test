@@ -1,0 +1,16 @@
+{
+  "id": "u0809",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0809/u0809_test.cc:9:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0809/u0809_test.cc:10:28: error: ‘std::unique_ptr<ceres::internal::WeightedGraph<int> > ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph(const std::vector<std::set<int> >&) const’ is private within this context",
+    "units/u0809/u0809_test.cc:16:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0809/u0809_test.cc:17:28: error: ‘std::unique_ptr<ceres::internal::WeightedGraph<int> > ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph(const std::vector<std::set<int> >&) const’ is private within this context",
+    "units/u0809/u0809_test.cc:23:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0809/u0809_test.cc:24:28: error: ‘std::unique_ptr<ceres::internal::WeightedGraph<int> > ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph(const std::vector<std::set<int> >&) const’ is private within this context",
+    "units/u0809/u0809_test.cc:30:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0809/u0809_test.cc:31:28: error: ‘std::unique_ptr<ceres::internal::WeightedGraph<int> > ceres::internal::VisibilityBasedPreconditioner::CreateClusterGraph(const std::vector<std::set<int> >&) const’ is private within this context"
+  ]
+}

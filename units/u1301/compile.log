@@ -1,0 +1,300 @@
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:12:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   12 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1301/u1301_test.cc:7:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:13:3: error: ‘ProblemImpl’ has not been declared
+   13 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:14:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   14 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+In file included from /work/repo/units/u1301/u1301_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:15:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   15 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+In file included from /work/repo/units/u1301/u1301_test.cc:4:
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:16:15: error: ‘program’ was not declared in this scope
+   16 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:16:24: error: ‘parameter_map’ was not declared in this scope
+   16 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:16:39: error: ‘ordering’ was not declared in this scope
+   16 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:21:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   21 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:22:3: error: ‘ProblemImpl’ has not been declared
+   22 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:23:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   23 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:24:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   24 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:25:15: error: ‘program’ was not declared in this scope
+   25 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:25:24: error: ‘parameter_map’ was not declared in this scope
+   25 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:25:39: error: ‘ordering’ was not declared in this scope
+   25 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:30:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   30 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:31:3: error: ‘ProblemImpl’ has not been declared
+   31 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:32:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   32 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:33:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   33 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:34:15: error: ‘program’ was not declared in this scope
+   34 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:34:24: error: ‘parameter_map’ was not declared in this scope
+   34 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:34:39: error: ‘ordering’ was not declared in this scope
+   34 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:39:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   39 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:40:3: error: ‘ProblemImpl’ has not been declared
+   40 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:41:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   41 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:42:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   42 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:43:15: error: ‘program’ was not declared in this scope
+   43 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:43:24: error: ‘parameter_map’ was not declared in this scope
+   43 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:43:39: error: ‘ordering’ was not declared in this scope
+   43 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:48:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   48 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:49:3: error: ‘ProblemImpl’ has not been declared
+   49 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:50:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   50 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:51:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   51 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:52:15: error: ‘program’ was not declared in this scope
+   52 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:52:24: error: ‘parameter_map’ was not declared in this scope
+   52 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:52:39: error: ‘ordering’ was not declared in this scope
+   52 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:57:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   57 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:58:3: error: ‘ProblemImpl’ has not been declared
+   58 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:59:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   59 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:60:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   60 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:61:15: error: ‘program’ was not declared in this scope
+   61 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:61:24: error: ‘parameter_map’ was not declared in this scope
+   61 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:61:39: error: ‘ordering’ was not declared in this scope
+   61 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:66:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   66 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:67:3: error: ‘ProblemImpl’ has not been declared
+   67 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:68:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   68 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:69:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   69 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:70:15: error: ‘program’ was not declared in this scope
+   70 |   object.Init(program, parameter_map, ordering, nullptr);
+      |               ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:70:24: error: ‘parameter_map’ was not declared in this scope
+   70 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                        ^~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:70:39: error: ‘ordering’ was not declared in this scope
+   70 |   object.Init(program, parameter_map, ordering, nullptr);
+      |                                       ^~~~~~~~
+/work/repo/units/u1301/u1301_test.cc: In member function ‘virtual void Unit_u1301_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1301/u1301_test.cc:75:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   75 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1301/u1301_test.cc:76:3: error: ‘ProblemImpl’ has not been declared
+   76 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:77:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   77 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1301/u1301_test.cc:78:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   78 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1301/u1301_test.cc:79:15: error: ‘program’ was not declared in this scope
+   79 |   object.Init(program, parameter_map, ordering, nullptr);

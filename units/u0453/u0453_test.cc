@@ -2,12 +2,21 @@
 #include "gtest/gtest.h"
 #include "ceres/loss_function.h"
 
-TEST(Unit_u0453, ReleasesNonOwnedLoss) {
-  ceres::TrivialLoss loss;
+namespace ceres {
+
+// Path P1: START -> 1 -> 2 -> END (node 1: đúng)
+TEST(LossFunctionWrapperDestructorTest, DoNotTakeOwnership) {
+  TrivialLoss loss;
   {
-    ceres::LossFunctionWrapper target(&loss, ceres::DO_NOT_TAKE_OWNERSHIP);
-    double rho[3] = {};
-    target.Evaluate(3.0, rho);
-    EXPECT_DOUBLE_EQ(rho[0], 3.0);
-  }
+    LossFunctionWrapper wrapper(&loss, DO_NOT_TAKE_OWNERSHIP);
+  }  // destructor được gọi tại đây
 }
+
+// Path P2: START -> 1 -> END (node 1: sai)
+TEST(LossFunctionWrapperDestructorTest, TakeOwnership) {
+  {
+    LossFunctionWrapper wrapper(new TrivialLoss(), TAKE_OWNERSHIP);
+  }  // destructor được gọi tại đây, rho_ tự giải phóng
+}
+
+}  // namespace ceres

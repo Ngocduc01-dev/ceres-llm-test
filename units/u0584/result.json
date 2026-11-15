@@ -1,0 +1,9 @@
+{
+  "id": "u0584",
+  "name": "ceres::internal::SchurComplementSolver::rhs",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0584/u0584_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

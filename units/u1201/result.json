@@ -1,0 +1,16 @@
+{
+  "id": "u1201",
+  "name": "ceres::internal::CreateFakeBundleAdjustmentJacobian",
+  "status": "link_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o): in function `std::__detail::_MakeUniq<ceres::internal::PartitionedMatrixView<2, -1, -1> >::__single_object std::make_unique<ceres::internal::PartitionedMatrixView<2, -1, -1>, ceres::internal::LinearSolver::Optio",
+    "/usr/include/c++/14/bits/unique_ptr.h:1076:(.text._ZSt11make_uniqueIN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEEJRNS1_12LinearSolver7OptionsERNS1_17BlockSparseMatrixEEENSt8__detail9_MakeUniqIT_E15__single_objectEDpOT0_[_ZSt11make_uniqueIN5ceres8internal21PartitionedMatrixViewILi2ELin1ELi",
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o):(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE]+0x20): undefined reference to `ceres::internal::PartitionedMatrixView<2, -1",
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o):(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE]+0x28): undefined reference to `ceres::internal::PartitionedMatrixView<2, -1",
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o):(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE]+0x30): undefined reference to `ceres::internal::PartitionedMatrixView<2, -1",
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o):(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE]+0x38): undefined reference to `ceres::internal::PartitionedMatrixView<2, -1",
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o):(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE]+0x40): undefined reference to `ceres::internal::PartitionedMatrixView<2, -1",
+    "/usr/bin/ld: /work/build-cov/lib/libceres-debug.a(fake_bundle_adjustment_jacobian.cc.o):(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELin1ELin1EEE]+0x48): undefined reference to `ceres::internal::PartitionedMatrixView<2, -1"
+  ]
+}

@@ -1,0 +1,4 @@
+/work/repo/units/u0737/u0737_test.cc: In member function ‘virtual void ceres::Unit_u0737_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0737/u0737_test.cc:7:3: error: ‘LoggingTypeToString’ was not declared in this scope
+    7 |   LoggingTypeToString({});
+      |   ^~~~~~~~~~~~~~~~~~~

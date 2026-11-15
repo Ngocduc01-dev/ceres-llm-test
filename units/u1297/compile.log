@@ -1,0 +1,88 @@
+/work/repo/units/u1297/u1297_test.cc: In member function ‘virtual void Unit_u1297_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1297/u1297_test.cc:11:3: error: ‘ProblemImpl’ has not been declared
+   11 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:12:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   12 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+In file included from /work/ceres-solver/internal/ceres/parameter_block_ordering.h:40,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:39,
+                 from /work/repo/units/u1297/u1297_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:13:34: error: ‘parameter_map’ was not declared in this scope
+   13 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                  ^~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:13:49: error: ‘ordering’ was not declared in this scope
+   13 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                                 ^~~~~~~~
+/work/repo/units/u1297/u1297_test.cc: In member function ‘virtual void Unit_u1297_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1297/u1297_test.cc:18:3: error: ‘ProblemImpl’ has not been declared
+   18 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:19:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   19 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:20:34: error: ‘parameter_map’ was not declared in this scope
+   20 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                  ^~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:20:49: error: ‘ordering’ was not declared in this scope
+   20 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                                 ^~~~~~~~
+/work/repo/units/u1297/u1297_test.cc: In member function ‘virtual void Unit_u1297_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1297/u1297_test.cc:25:3: error: ‘ProblemImpl’ has not been declared
+   25 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:26:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   26 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:27:34: error: ‘parameter_map’ was not declared in this scope
+   27 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                  ^~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:27:49: error: ‘ordering’ was not declared in this scope
+   27 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                                 ^~~~~~~~
+/work/repo/units/u1297/u1297_test.cc: In member function ‘virtual void Unit_u1297_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1297/u1297_test.cc:32:3: error: ‘ProblemImpl’ has not been declared
+   32 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:33:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   33 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:34:34: error: ‘parameter_map’ was not declared in this scope
+   34 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                  ^~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:34:49: error: ‘ordering’ was not declared in this scope
+   34 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                                 ^~~~~~~~
+/work/repo/units/u1297/u1297_test.cc: In member function ‘virtual void Unit_u1297_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1297/u1297_test.cc:39:3: error: ‘ProblemImpl’ has not been declared
+   39 |   ProblemImpl::ParameterMap parameter_map{};
+      |   ^~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:40:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   40 |   ParameterBlockOrdering ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:41:34: error: ‘parameter_map’ was not declared in this scope
+   41 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                  ^~~~~~~~~~~~~
+/work/repo/units/u1297/u1297_test.cc:41:49: error: ‘ordering’ was not declared in this scope
+   41 |   ceres::internal::ApplyOrdering(parameter_map, ordering, nullptr, nullptr);
+      |                                                 ^~~~~~~~

@@ -1,0 +1,23 @@
+/work/repo/units/u1363/u1363_test.cc: In member function ‘virtual void Unit_u1363_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1363/u1363_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1363/u1363_test.cc:10:45: error: class template argument deduction failed:
+   10 |   ceres::internal::TypedLinearSolver object{};
+      |                                             ^
+/work/repo/units/u1363/u1363_test.cc:10:45: error: no matching function for call to ‘TypedLinearSolver()’
+In file included from /work/repo/units/u1363/u1363_test.cc:5:
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note: candidate: ‘template<class MatrixType> TypedLinearSolver()-> ceres::internal::TypedLinearSolver<MatrixType>’
+  364 | class TypedLinearSolver : public LinearSolver {
+      |       ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1363/u1363_test.cc:10:45: note:   couldn’t deduce template parameter ‘MatrixType’
+   10 |   ceres::internal::TypedLinearSolver object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note: candidate: ‘template<class MatrixType> TypedLinearSolver(ceres::internal::TypedLinearSolver<MatrixType>)-> ceres::internal::TypedLinearSolver<MatrixType>’
+  364 | class TypedLinearSolver : public LinearSolver {
+      |       ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:364:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1363/u1363_test.cc:11:34: error: ‘per_solve_options’ was not declared in this scope
+   11 |   object.Solve(nullptr, nullptr, per_solve_options, nullptr);
+      |                                  ^~~~~~~~~~~~~~~~~

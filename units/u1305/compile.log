@@ -1,0 +1,83 @@
+/work/repo/units/u1305/u1305_test.cc: In member function ‘virtual void Unit_u1305_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1305/u1305_test.cc:9:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?
+    9 |   NumericDiffOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::NumericDiffOptions
+In file included from /work/ceres-solver/include/ceres/internal/numeric_diff.h:46,
+                 from /work/repo/units/u1305/u1305_test.cc:4:
+/work/ceres-solver/include/ceres/numeric_diff_options.h:42:21: note: ‘ceres::NumericDiffOptions’ declared here
+   42 | struct CERES_EXPORT NumericDiffOptions {
+      |                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1305/u1305_test.cc:13:39: error: class template argument deduction failed:
+   13 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/repo/units/u1305/u1305_test.cc:13:39: error: no matching function for call to ‘NumericDiff()’
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff()-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   template argument deduction/substitution failed:
+/work/repo/units/u1305/u1305_test.cc:13:39: note:   couldn’t deduce template parameter ‘CostFunctor’
+   13 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff(ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>)-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1305/u1305_test.cc:14:62: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   14 |   object.EvaluateJacobianForParameterBlock(nullptr, nullptr, options, num_residuals, parameter_block_index, parameter_block_size, nullptr, nullptr);
+      |                                                              ^~~~~~~
+      |                                                              optind
+/work/repo/units/u1305/u1305_test.cc: In member function ‘virtual void Unit_u1305_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1305/u1305_test.cc:19:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?
+   19 |   NumericDiffOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::NumericDiffOptions
+/work/ceres-solver/include/ceres/numeric_diff_options.h:42:21: note: ‘ceres::NumericDiffOptions’ declared here
+   42 | struct CERES_EXPORT NumericDiffOptions {
+      |                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1305/u1305_test.cc:23:39: error: class template argument deduction failed:
+   23 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/repo/units/u1305/u1305_test.cc:23:39: error: no matching function for call to ‘NumericDiff()’
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff()-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   template argument deduction/substitution failed:
+/work/repo/units/u1305/u1305_test.cc:23:39: note:   couldn’t deduce template parameter ‘CostFunctor’
+   23 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff(ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>)-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1305/u1305_test.cc:24:62: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   24 |   object.EvaluateJacobianForParameterBlock(nullptr, nullptr, options, num_residuals, parameter_block_index, parameter_block_size, nullptr, nullptr);
+      |                                                              ^~~~~~~
+      |                                                              optind
+/work/repo/units/u1305/u1305_test.cc: In member function ‘virtual void Unit_u1305_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1305/u1305_test.cc:29:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?
+   29 |   NumericDiffOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::NumericDiffOptions
+/work/ceres-solver/include/ceres/numeric_diff_options.h:42:21: note: ‘ceres::NumericDiffOptions’ declared here
+   42 | struct CERES_EXPORT NumericDiffOptions {
+      |                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1305/u1305_test.cc:33:39: error: class template argument deduction failed:
+   33 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/repo/units/u1305/u1305_test.cc:33:39: error: no matching function for call to ‘NumericDiff()’
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff()-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   template argument deduction/substitution failed:
+/work/repo/units/u1305/u1305_test.cc:33:39: note:   couldn’t deduce template parameter ‘CostFunctor’
+   33 |   ceres::internal::NumericDiff object{};
+      |                                       ^
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note: candidate: ‘template<class CostFunctor, ceres::NumericDiffMethodType kMethod, int kNumResiduals, class ParameterDims, int kParameterBlock, int kParameterBlockSize> NumericDiff(ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>)-> ceres::internal::NumericDiff<CostFunctor, kMethod, kNumResiduals, ParameterDims, kParameterBlock, kParameterBlockSize>’
+   61 | struct NumericDiff {
+      |        ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/internal/numeric_diff.h:61:8: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1305/u1305_test.cc:34:62: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   34 |   object.EvaluateJacobianForParameterBlock(nullptr, nullptr, options, num_residuals, parameter_block_index, parameter_block_size, nullptr, nullptr);
+      |                                                              ^~~~~~~
+      |                                                              optind

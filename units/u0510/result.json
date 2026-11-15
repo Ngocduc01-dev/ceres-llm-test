@@ -1,0 +1,10 @@
+{
+  "id": "u0510",
+  "name": "ceres::internal::MatrixMatrixMultiplyEigen",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0510/u0510_test.cc:10:28: error: no matching function for call to ‘MatrixMatrixMultiplyEigen(<brace-enclosed initializer list>)’",
+    "units/u0510/u0510_test.cc:14:28: error: no matching function for call to ‘MatrixMatrixMultiplyEigen(<brace-enclosed initializer list>)’"
+  ]
+}

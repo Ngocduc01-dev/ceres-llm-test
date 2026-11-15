@@ -1,0 +1,28 @@
+{
+  "id": "u0456",
+  "name": "ceres::NumericDiffFirstOrderFunction::~NumericDiffFirstOrderFunction<FirstOrderFunctor, kMethod, kNumParameters>",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "NumericDiffFirstOrderFunctionDtorTest.DoNotTakeOwnership": "pass",
+    "NumericDiffFirstOrderFunctionDtorTest.TakeOwnership": "pass"
+  },
+  "run": {
+    "pass": 2,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 4
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 1
+  },
+  "uncovered": []
+}

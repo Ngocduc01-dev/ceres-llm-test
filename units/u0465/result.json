@@ -1,0 +1,28 @@
+{
+  "id": "u0465",
+  "name": "ceres::ConditionedCostFunction::~ConditionedCostFunction",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "ConditionedCostFunctionDestructorTest.TakeOwnership": "pass",
+    "ConditionedCostFunctionDestructorTest.DoNotTakeOwnership": "pass"
+  },
+  "run": {
+    "pass": 2,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 5
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

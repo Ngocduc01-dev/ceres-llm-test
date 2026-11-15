@@ -1,0 +1,14 @@
+/work/repo/units/u0530/u0530_test.cc: In member function ‘virtual void ceres::internal::Unit_u0530_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0530/u0530_test.cc:9:10: error: scalar object ‘cumulative_cost_data_data’ requires one element in initializer
+    9 |   double cumulative_cost_data_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0530/u0530_test.cc:10:10: error: scalar object ‘partition_data’ requires one element in initializer
+   10 |   double partition_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~
+/work/repo/units/u0530/u0530_test.cc: In member function ‘virtual void ceres::internal::Unit_u0530_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0530/u0530_test.cc:15:10: error: scalar object ‘cumulative_cost_data_data’ requires one element in initializer
+   15 |   double cumulative_cost_data_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0530/u0530_test.cc:16:10: error: scalar object ‘partition_data’ requires one element in initializer
+   16 |   double partition_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~

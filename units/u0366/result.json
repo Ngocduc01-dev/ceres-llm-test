@@ -1,0 +1,27 @@
+{
+  "id": "u0366",
+  "name": "ceres::internal::ParameterBlock::set_index",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "ParameterBlockSetIndexTest.SetsIndexOnce": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 1,
+    "total": 1
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

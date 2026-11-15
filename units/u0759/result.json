@@ -1,0 +1,14 @@
+{
+  "id": "u0759",
+  "name": "ceres::internal::NumericDiff::EvaluateJacobianColumn",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0759/u0759_test.cc:11:39: error: class template argument deduction failed:",
+    "units/u0759/u0759_test.cc:11:39: error: no matching function for call to ‘NumericDiff()’",
+    "units/u0759/u0759_test.cc:21:39: error: class template argument deduction failed:",
+    "units/u0759/u0759_test.cc:21:39: error: no matching function for call to ‘NumericDiff()’",
+    "units/u0759/u0759_test.cc:31:39: error: class template argument deduction failed:",
+    "units/u0759/u0759_test.cc:31:39: error: no matching function for call to ‘NumericDiff()’"
+  ]
+}

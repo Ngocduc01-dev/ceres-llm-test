@@ -1,0 +1,9 @@
+{
+  "id": "u0878",
+  "name": "ceres::internal::Preconditioner::Options::Options",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0878/u0878_test.cc:8:3: error: ‘LinearSolver’ has not been declared"
+  ]
+}

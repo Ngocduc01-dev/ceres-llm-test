@@ -1,0 +1,9 @@
+{
+  "id": "u0818",
+  "name": "ceres::GradientProblem::mutable_manifold",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0818/u0818_test.cc:8:33: error: no matching function for call to ‘ceres::GradientProblem::GradientProblem(<brace-enclosed initializer list>)’"
+  ]
+}

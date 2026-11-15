@@ -1,0 +1,11 @@
+{
+  "id": "u1278",
+  "name": "ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1278/u1278_test.cc:8:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is private within this context",
+    "units/u1278/u1278_test.cc:14:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is private within this context",
+    "units/u1278/u1278_test.cc:20:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is private within this context"
+  ]
+}

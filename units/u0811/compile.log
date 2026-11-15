@@ -1,0 +1,86 @@
+/work/repo/units/u0811/u0811_test.cc: In member function ‘virtual void Unit_u0811_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0811/u0811_test.cc:9:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+    9 |   WeightedGraph<int> forest{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+In file included from /work/repo/units/u0811/u0811_test.cc:3:
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0811/u0811_test.cc:9:17: error: expected primary-expression before ‘int’
+    9 |   WeightedGraph<int> forest{};
+      |                 ^~~
+/work/repo/units/u0811/u0811_test.cc:10:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u0811/u0811_test.cc:5:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0811/u0811_test.cc:11:31: error: ‘forest’ was not declared in this scope
+   11 |   object.ForestToClusterPairs(forest, nullptr);
+      |                               ^~~~~~
+/work/repo/units/u0811/u0811_test.cc: In member function ‘virtual void Unit_u0811_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0811/u0811_test.cc:16:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   16 |   WeightedGraph<int> forest{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0811/u0811_test.cc:16:17: error: expected primary-expression before ‘int’
+   16 |   WeightedGraph<int> forest{};
+      |                 ^~~
+/work/repo/units/u0811/u0811_test.cc:17:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0811/u0811_test.cc:18:31: error: ‘forest’ was not declared in this scope
+   18 |   object.ForestToClusterPairs(forest, nullptr);
+      |                               ^~~~~~
+/work/repo/units/u0811/u0811_test.cc: In member function ‘virtual void Unit_u0811_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0811/u0811_test.cc:23:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   23 |   WeightedGraph<int> forest{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0811/u0811_test.cc:23:17: error: expected primary-expression before ‘int’
+   23 |   WeightedGraph<int> forest{};
+      |                 ^~~
+/work/repo/units/u0811/u0811_test.cc:24:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   24 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0811/u0811_test.cc:25:31: error: ‘forest’ was not declared in this scope
+   25 |   object.ForestToClusterPairs(forest, nullptr);
+      |                               ^~~~~~
+/work/repo/units/u0811/u0811_test.cc: In member function ‘virtual void Unit_u0811_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0811/u0811_test.cc:30:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   30 |   WeightedGraph<int> forest{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0811/u0811_test.cc:30:17: error: expected primary-expression before ‘int’
+   30 |   WeightedGraph<int> forest{};
+      |                 ^~~
+/work/repo/units/u0811/u0811_test.cc:31:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   31 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0811/u0811_test.cc:32:31: error: ‘forest’ was not declared in this scope
+   32 |   object.ForestToClusterPairs(forest, nullptr);
+      |                               ^~~~~~

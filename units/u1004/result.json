@@ -1,0 +1,9 @@
+{
+  "id": "u1004",
+  "name": "ceres::internal::LevenbergMarquardtStrategy::StepIsInvalid",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1004/u1004_test.cc:7:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’"
+  ]
+}

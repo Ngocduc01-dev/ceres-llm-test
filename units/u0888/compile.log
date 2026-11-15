@@ -1,0 +1,13 @@
+/work/repo/units/u0888/u0888_test.cc: In member function ‘virtual void Unit_u0888_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0888/u0888_test.cc:8:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::ResidualBlock object{};
+      |                                         ^
+In file included from /work/repo/units/u0888/u0888_test.cc:4:
+/work/ceres-solver/internal/ceres/residual_block.h:74:3: note: candidate: ‘ceres::internal::ResidualBlock::ResidualBlock(const ceres::CostFunction*, const ceres::LossFunction*, const std::vector<ceres::internal::ParameterBlock*>&, int)’
+   74 |   ResidualBlock(const CostFunction* cost_function,
+      |   ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/residual_block.h:74:3: note:   candidate expects 4 arguments, 0 provided
+/work/ceres-solver/internal/ceres/residual_block.h:69:23: note: candidate: ‘ceres::internal::ResidualBlock::ResidualBlock(ceres::internal::ResidualBlock&&)’
+   69 | class CERES_NO_EXPORT ResidualBlock {
+      |                       ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/residual_block.h:69:23: note:   candidate expects 1 argument, 0 provided

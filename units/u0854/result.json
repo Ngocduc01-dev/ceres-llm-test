@@ -1,0 +1,12 @@
+{
+  "id": "u0854",
+  "name": "ceres::internal::Dot",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0854/u0854_test.cc:9:3: error: ‘VectorLikeX’ was not declared in this scope",
+    "units/u0854/u0854_test.cc:10:3: error: ‘VectorLikeY’ was not declared in this scope",
+    "units/u0854/u0854_test.cc:12:24: error: ‘x’ was not declared in this scope",
+    "units/u0854/u0854_test.cc:12:27: error: ‘y’ was not declared in this scope; did you mean ‘yn’?"
+  ]
+}

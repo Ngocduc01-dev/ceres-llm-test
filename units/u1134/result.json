@@ -1,0 +1,14 @@
+{
+  "id": "u1134",
+  "name": "ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1134/u1134_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1134/u1134_test.cc:12:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1134/u1134_test.cc:12:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1134/u1134_test.cc:17:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1134/u1134_test.cc:18:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1134/u1134_test.cc:18:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

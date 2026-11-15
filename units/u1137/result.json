@@ -1,0 +1,16 @@
+{
+  "id": "u1137",
+  "name": "ceres::internal::InnerProductComputer::ComputeNonzeros",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1137/u1137_test.cc:8:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?",
+    "units/u1137/u1137_test.cc:8:48: error: template argument 1 is invalid",
+    "units/u1137/u1137_test.cc:8:48: error: template argument 2 is invalid",
+    "units/u1137/u1137_test.cc:9:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1137/u1137_test.cc:10:26: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::InnerProductComputer::ProductTerm>&’",
+    "units/u1137/u1137_test.cc:15:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?",
+    "units/u1137/u1137_test.cc:15:48: error: template argument 1 is invalid",
+    "units/u1137/u1137_test.cc:15:48: error: template argument 2 is invalid"
+  ]
+}

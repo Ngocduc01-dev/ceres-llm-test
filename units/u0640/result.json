@@ -1,0 +1,9 @@
+{
+  "id": "u0640",
+  "name": "ceres::NumericDiffCostFunction::NumericDiffCostFunction<CostFunctor, kMethod, kNumResiduals, Ns...>",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u0640/u0640_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

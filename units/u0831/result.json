@@ -1,0 +1,9 @@
+{
+  "id": "u0831",
+  "name": "ceres::internal::BlockSparseMatrix::transpose_block_structure",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0831/u0831_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

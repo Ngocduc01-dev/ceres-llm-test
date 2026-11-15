@@ -1,0 +1,10 @@
+{
+  "id": "u0616",
+  "name": "ceres::AutoDiffFirstOrderFunction::AutoDiffFirstOrderFunction<FirstOrderFunctor, kNumParameters>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0616/u0616_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer",
+    "units/u0616/u0616_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

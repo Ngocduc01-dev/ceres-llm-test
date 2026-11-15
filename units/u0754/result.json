@@ -1,0 +1,14 @@
+{
+  "id": "u0754",
+  "name": "ceres::DenseLinearAlgebraLibraryTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 3,
+  "errors": [
+    "units/u0754/u0754_test.cc:6:3: error: ‘DenseLinearAlgebraLibraryType’ was not declared in this scope",
+    "units/u0754/u0754_test.cc:7:3: error: ‘ceres’ has not been declared",
+    "units/u0754/u0754_test.cc:7:48: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?",
+    "units/u0754/u0754_test.cc:12:3: error: ‘DenseLinearAlgebraLibraryType’ was not declared in this scope",
+    "units/u0754/u0754_test.cc:13:3: error: ‘ceres’ has not been declared",
+    "units/u0754/u0754_test.cc:13:48: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "id": "u0944",
+  "name": "ceres::internal::BlockSparseMatrix::ToTextFile",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0944/u0944_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0944/u0944_test.cc:13:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0944/u0944_test.cc:19:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0944/u0944_test.cc:25:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0944/u0944_test.cc:31:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

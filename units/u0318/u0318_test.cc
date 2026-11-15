@@ -2,6 +2,15 @@
 #include "gtest/gtest.h"
 #include "ceres/iterative_refiner.h"
 
-TEST(Unit_u0318, PathP1) {
-  ceres::internal::DenseIterativeRefiner target(1);
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(DenseIterativeRefinerConstructor, TC1_SinglePath) {
+  const int max_num_iterations = 4;
+  DenseIterativeRefiner refiner(max_num_iterations);
+  (void)refiner;
 }
+
+}  // namespace internal
+}  // namespace ceres

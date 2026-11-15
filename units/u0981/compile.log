@@ -1,0 +1,7 @@
+/work/repo/units/u0981/u0981_test.cc: In member function ‘virtual void Unit_u0981_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0981/u0981_test.cc:7:40: error: qualified-id in declaration before ‘object’
+    7 |   ceres::internal::FixedArray::Storage object{};
+      |                                        ^~~~~~
+/work/repo/units/u0981/u0981_test.cc:8:3: error: ‘object’ was not declared in this scope
+    8 |   object.end();
+      |   ^~~~~~

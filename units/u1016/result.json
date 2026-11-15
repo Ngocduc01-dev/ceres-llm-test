@@ -1,0 +1,9 @@
+{
+  "id": "u1016",
+  "name": "ceres::internal::PowerSeriesExpansionPreconditioner::num_rows",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1016/u1016_test.cc:8:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

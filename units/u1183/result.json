@@ -1,0 +1,11 @@
+{
+  "id": "u1183",
+  "name": "ceres::internal::DenseQR::Create",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u1183/u1183_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1183/u1183_test.cc:9:28: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::DenseQR’",
+    "units/u1183/u1183_test.cc:10:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

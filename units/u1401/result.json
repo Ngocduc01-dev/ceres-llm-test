@@ -1,0 +1,14 @@
+{
+  "id": "u1401",
+  "name": "ceres::internal::ComputeSchurOrdering",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1401/u1401_test.cc:10:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1401/u1401_test.cc:11:41: error: ‘program’ was not declared in this scope",
+    "units/u1401/u1401_test.cc:16:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1401/u1401_test.cc:17:41: error: ‘program’ was not declared in this scope",
+    "units/u1401/u1401_test.cc:22:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1401/u1401_test.cc:23:41: error: ‘program’ was not declared in this scope"
+  ]
+}

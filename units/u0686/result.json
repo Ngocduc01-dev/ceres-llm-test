@@ -1,0 +1,9 @@
+{
+  "id": "u0686",
+  "name": "ceres::internal::PartitionedMatrixViewBase::~PartitionedMatrixViewBase",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0686/u0686_test.cc:7:3: error: ‘PartitionedMatrixViewBase’ was not declared in this scope; did you mean ‘ceres::internal::PartitionedMatrixViewBase’?"
+  ]
+}

@@ -1,0 +1,40 @@
+/work/repo/units/u0953/u0953_test.cc: In member function ‘virtual void Unit_u0953_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0953/u0953_test.cc:7:3: error: ‘TripletSparseMatrix’ has not been declared
+    7 |   TripletSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0953/u0953_test.cc:10:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u0953/u0953_test.cc: In member function ‘virtual void Unit_u0953_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0953/u0953_test.cc:15:3: error: ‘TripletSparseMatrix’ has not been declared
+   15 |   TripletSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0953/u0953_test.cc:18:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   18 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u0953/u0953_test.cc: In member function ‘virtual void Unit_u0953_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0953/u0953_test.cc:23:3: error: ‘TripletSparseMatrix’ has not been declared
+   23 |   TripletSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0953/u0953_test.cc:26:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   26 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u0953/u0953_test.cc: In member function ‘virtual void Unit_u0953_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0953/u0953_test.cc:31:3: error: ‘TripletSparseMatrix’ has not been declared
+   31 |   TripletSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0953/u0953_test.cc:34:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   34 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u0953/u0953_test.cc: In member function ‘virtual void Unit_u0953_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0953/u0953_test.cc:39:3: error: ‘TripletSparseMatrix’ has not been declared
+   39 |   TripletSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0953/u0953_test.cc:42:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   42 |   object.CreateRandomMatrix(options, prng);
+      |                             ^~~~~~~
+      |                             optind

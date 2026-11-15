@@ -1,0 +1,19 @@
+/work/repo/units/u1063/u1063_test.cc: In member function ‘virtual void Unit_u1063_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1063/u1063_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::ImplicitSchurComplement object{};
+      |                                                   ^
+In file included from /work/repo/units/u1063/u1063_test.cc:3:
+/work/ceres-solver/internal/ceres/implicit_schur_complement.h:102:12: note: candidate: ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(const ceres::internal::LinearSolver::Options&)’
+  102 |   explicit ImplicitSchurComplement(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/implicit_schur_complement.h:102:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/implicit_schur_complement.h:91:23: note: candidate: ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(ceres::internal::ImplicitSchurComplement&&)’
+   91 | class CERES_NO_EXPORT ImplicitSchurComplement final : public LinearOperator {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/implicit_schur_complement.h:91:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1063/u1063_test.cc:10:19: error: ‘void ceres::internal::ImplicitSchurComplement::UpdateRhs()’ is private within this context
+   10 |   object.UpdateRhs();
+      |   ~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/implicit_schur_complement.h:152:8: note: declared private here
+  152 |   void UpdateRhs();
+      |        ^~~~~~~~~

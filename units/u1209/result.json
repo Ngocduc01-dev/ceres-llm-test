@@ -1,0 +1,10 @@
+{
+  "id": "u1209",
+  "name": "ceres::internal::ParallelInvoke",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1209/u1209_test.cc:11:3: error: ‘F’ was not declared in this scope",
+    "units/u1209/u1209_test.cc:13:69: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?"
+  ]
+}

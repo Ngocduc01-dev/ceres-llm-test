@@ -1,0 +1,7 @@
+/work/repo/units/u1222/u1222_test.cc: In member function ‘virtual void Unit_u1222_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1222/u1222_test.cc:9:20: error: expected unqualified-id before ‘(’ token
+    9 |   ceres::internal::(anonymous)::GetNumAllowedThreads(requested_num_threads);
+      |                    ^
+/work/repo/units/u1222/u1222_test.cc:9:21: error: ‘anonymous’ was not declared in this scope
+    9 |   ceres::internal::(anonymous)::GetNumAllowedThreads(requested_num_threads);
+      |                     ^~~~~~~~~

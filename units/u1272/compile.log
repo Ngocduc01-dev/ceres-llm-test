@@ -1,0 +1,15 @@
+/work/repo/units/u1272/u1272_test.cc: In member function ‘virtual void Unit_u1272_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1272/u1272_test.cc:9:27: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleInvalidStep()’ is private within this context
+    9 |   object.HandleInvalidStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1272/u1272_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:84:8: note: declared private here
+   84 |   bool HandleInvalidStep();
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1272/u1272_test.cc: In member function ‘virtual void Unit_u1272_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1272/u1272_test.cc:15:27: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleInvalidStep()’ is private within this context
+   15 |   object.HandleInvalidStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:84:8: note: declared private here
+   84 |   bool HandleInvalidStep();
+      |        ^~~~~~~~~~~~~~~~~

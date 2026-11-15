@@ -1,0 +1,14 @@
+{
+  "id": "u1210",
+  "name": "ceres::CostFunctionToFunctor::CostFunctionToFunctor<kNumResiduals, Ns...>",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1210/u1210_test.cc:9:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ceres::CostFunctionToFunctor’?",
+    "units/u1210/u1210_test.cc:9:31: error: ‘object’ was not declared in this scope",
+    "units/u1210/u1210_test.cc:15:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ceres::CostFunctionToFunctor’?",
+    "units/u1210/u1210_test.cc:15:31: error: ‘object’ was not declared in this scope",
+    "units/u1210/u1210_test.cc:21:3: error: ‘CostFunctionToFunctor’ was not declared in this scope; did you mean ‘ceres::CostFunctionToFunctor’?",
+    "units/u1210/u1210_test.cc:21:31: error: ‘object’ was not declared in this scope"
+  ]
+}

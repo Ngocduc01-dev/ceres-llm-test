@@ -1,0 +1,38 @@
+/work/repo/units/u1307/u1307_test.cc: In member function ‘virtual void Unit_u1307_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1307/u1307_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+    8 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1307/u1307_test.cc:8:3: note: suggested alternatives:
+In file included from /work/ceres-solver/internal/ceres/sparse_matrix.h:38,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:40,
+                 from /work/ceres-solver/internal/ceres/schur_complement_solver.h:39,
+                 from /work/repo/units/u1307/u1307_test.cc:3:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u1307/u1307_test.cc:9:9: error: expected ‘;’ before ‘y’
+    9 |   Vector y{};
+      |         ^~
+      |         ;
+/work/repo/units/u1307/u1307_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::BlockRandomAccessSparseMatrixAdapter object{};
+      |                    ^
+/work/repo/units/u1307/u1307_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::BlockRandomAccessSparseMatrixAdapter object{};
+      |                     ^~~~~~~~~
+/work/repo/units/u1307/u1307_test.cc:11:3: error: ‘object’ was not declared in this scope
+   11 |   object.RightMultiplyAndAccumulate(x, y);
+      |   ^~~~~~
+/work/repo/units/u1307/u1307_test.cc:11:37: error: ‘x’ was not declared in this scope
+   11 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                     ^
+/work/repo/units/u1307/u1307_test.cc:11:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   11 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                        ^
+      |                                        yn

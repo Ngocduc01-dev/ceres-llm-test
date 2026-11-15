@@ -1,0 +1,16 @@
+/work/repo/units/u0943/u0943_test.cc: In member function ‘virtual void Unit_u0943_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0943/u0943_test.cc:8:3: error: ‘TrustRegionStrategy’ has not been declared
+    8 |   TrustRegionStrategy::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0943/u0943_test.cc:9:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+In file included from /work/repo/units/u0943/u0943_test.cc:3:
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided

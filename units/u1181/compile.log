@@ -1,0 +1,12 @@
+/work/repo/units/u1181/u1181_test.cc: In member function ‘virtual void Unit_u1181_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1181/u1181_test.cc:8:3: error: ‘LinearSolver’ has not been declared
+    8 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1181/u1181_test.cc:9:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::CgnrSolver object{};
+      |                                      ^
+In file included from /work/repo/units/u1181/u1181_test.cc:3:
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note: candidate: ‘ceres::internal::CgnrSolver::CgnrSolver(ceres::internal::LinearSolver::Options)’
+   57 |   explicit CgnrSolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/cgnr_solver.h:57:12: note:   candidate expects 1 argument, 0 provided

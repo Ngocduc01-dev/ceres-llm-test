@@ -1,0 +1,10 @@
+{
+  "id": "u1451",
+  "name": "ceres::internal::ProblemImpl::InternalSetManifold",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1451/u1451_test.cc:10:29: error: ‘void ceres::internal::ProblemImpl::InternalSetManifold(double*, ceres::internal::ParameterBlock*, ceres::Manifold*)’ is private within this context",
+    "units/u1451/u1451_test.cc:16:29: error: ‘void ceres::internal::ProblemImpl::InternalSetManifold(double*, ceres::internal::ParameterBlock*, ceres::Manifold*)’ is private within this context"
+  ]
+}

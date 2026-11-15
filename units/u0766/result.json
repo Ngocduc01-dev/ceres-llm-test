@@ -1,0 +1,14 @@
+{
+  "id": "u0766",
+  "name": "ceres::LineSearchDirectionTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0766/u0766_test.cc:6:3: error: ‘LineSearchDirectionType’ was not declared in this scope",
+    "units/u0766/u0766_test.cc:7:3: error: ‘ceres’ has not been declared",
+    "units/u0766/u0766_test.cc:7:42: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?",
+    "units/u0766/u0766_test.cc:12:3: error: ‘LineSearchDirectionType’ was not declared in this scope",
+    "units/u0766/u0766_test.cc:13:3: error: ‘ceres’ has not been declared",
+    "units/u0766/u0766_test.cc:13:42: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?"
+  ]
+}

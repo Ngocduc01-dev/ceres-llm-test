@@ -1,0 +1,14 @@
+{
+  "id": "u0752",
+  "name": "ceres::internal::DifferentiatePolynomial",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0752/u0752_test.cc:7:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0752/u0752_test.cc:8:44: error: ‘polynomial’ was not declared in this scope",
+    "units/u0752/u0752_test.cc:13:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0752/u0752_test.cc:14:44: error: ‘polynomial’ was not declared in this scope",
+    "units/u0752/u0752_test.cc:19:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0752/u0752_test.cc:20:44: error: ‘polynomial’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "u0597",
+  "name": "ceres::(anonymous)::QuaternionMinusImpl",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0597/u0597_test.cc:8:10: error: scalar object ‘y_data’ requires one element in initializer",
+    "units/u0597/u0597_test.cc:9:10: error: scalar object ‘x_data’ requires one element in initializer",
+    "units/u0597/u0597_test.cc:10:10: error: scalar object ‘y_minus_x_data’ requires one element in initializer"
+  ]
+}

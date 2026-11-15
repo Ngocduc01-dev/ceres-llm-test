@@ -1,0 +1,12 @@
+/work/repo/units/u1483/u1483_test.cc: In member function ‘virtual void Unit_u1483_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1483/u1483_test.cc:7:3: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::ResidualBlockId’?
+    7 |   ResidualBlockId residual_block_id{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::ResidualBlockId
+In file included from /work/repo/units/u1483/u1483_test.cc:3:
+/work/ceres-solver/include/ceres/problem.h:69:7: note: ‘ceres::ResidualBlockId’ declared here
+   69 | using ResidualBlockId = internal::ResidualBlock*;
+      |       ^~~~~~~~~~~~~~~
+/work/repo/units/u1483/u1483_test.cc:10:32: error: ‘residual_block_id’ was not declared in this scope
+   10 |   object.EvaluateResidualBlock(residual_block_id, apply_loss_function, nullptr, nullptr, nullptr);
+      |                                ^~~~~~~~~~~~~~~~~

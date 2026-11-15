@@ -1,0 +1,67 @@
+/work/repo/units/u1047/u1047_test.cc: In member function ‘virtual void Unit_u1047_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1047/u1047_test.cc:7:9: error: ‘T’ does not name a type
+    7 |   const T element{};
+      |         ^
+/work/repo/units/u1047/u1047_test.cc:8:31: error: class template argument deduction failed:
+    8 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1047/u1047_test.cc:8:31: error: no matching function for call to ‘OrderedGroups()’
+In file included from /work/repo/units/u1047/u1047_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1047/u1047_test.cc:8:31: note:   couldn’t deduce template parameter ‘T’
+    8 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1047/u1047_test.cc:9:17: error: ‘element’ was not declared in this scope
+    9 |   object.Remove(element);
+      |                 ^~~~~~~
+/work/repo/units/u1047/u1047_test.cc: In member function ‘virtual void Unit_u1047_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1047/u1047_test.cc:14:9: error: ‘T’ does not name a type
+   14 |   const T element{};
+      |         ^
+/work/repo/units/u1047/u1047_test.cc:15:31: error: class template argument deduction failed:
+   15 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1047/u1047_test.cc:15:31: error: no matching function for call to ‘OrderedGroups()’
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1047/u1047_test.cc:15:31: note:   couldn’t deduce template parameter ‘T’
+   15 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1047/u1047_test.cc:16:17: error: ‘element’ was not declared in this scope
+   16 |   object.Remove(element);
+      |                 ^~~~~~~
+/work/repo/units/u1047/u1047_test.cc: In member function ‘virtual void Unit_u1047_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1047/u1047_test.cc:21:9: error: ‘T’ does not name a type
+   21 |   const T element{};
+      |         ^
+/work/repo/units/u1047/u1047_test.cc:22:31: error: class template argument deduction failed:
+   22 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/repo/units/u1047/u1047_test.cc:22:31: error: no matching function for call to ‘OrderedGroups()’
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups()-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   template argument deduction/substitution failed:
+/work/repo/units/u1047/u1047_test.cc:22:31: note:   couldn’t deduce template parameter ‘T’
+   22 |   ceres::OrderedGroups object{};
+      |                               ^
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note: candidate: ‘template<class T> OrderedGroups(ceres::OrderedGroups<T>)-> ceres::OrderedGroups<T>’
+   55 | class OrderedGroups {
+      |       ^~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/ordered_groups.h:55:7: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1047/u1047_test.cc:23:17: error: ‘element’ was not declared in this scope
+   23 |   object.Remove(element);
+      |                 ^~~~~~~

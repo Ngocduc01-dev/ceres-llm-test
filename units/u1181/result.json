@@ -1,0 +1,10 @@
+{
+  "id": "u1181",
+  "name": "ceres::internal::CgnrSolver::CgnrSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1181/u1181_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1181/u1181_test.cc:9:38: error: no matching function for call to ‘ceres::internal::CgnrSolver::CgnrSolver(<brace-enclosed initializer list>)’"
+  ]
+}

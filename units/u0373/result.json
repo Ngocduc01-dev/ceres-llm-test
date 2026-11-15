@@ -1,0 +1,16 @@
+{
+  "id": "u0373",
+  "name": "ceres::internal::PartitionedMatrixView::num_col_blocks_e",
+  "status": "link_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o: in function `ceres::internal::PartitionedMatrixViewNumColBlocksE_TC1_P1_ReturnNumColBlocksE_Test::TestBody()':",
+    "units/u0373/u0373_test.cc:34:(.text+0x394): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::PartitionedMatrixView(ceres::internal::LinearSolver::Options const&, ceres::internal::BlockSparseMatrix const&)'",
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE]+0x20): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::LeftMultiplyAndAccumulateE(double const*,",
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE]+0x28): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::LeftMultiplyAndAccumulateESingleThreaded(",
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE]+0x30): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::LeftMultiplyAndAccumulateEMultiThreaded(d",
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE]+0x38): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::LeftMultiplyAndAccumulateF(double const*,",
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE]+0x40): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::LeftMultiplyAndAccumulateFSingleThreaded(",
+    "/usr/bin/ld: /work/build-cov/gen/u0373/test.o:(.data.rel.ro._ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE[_ZTVN5ceres8internal21PartitionedMatrixViewILi2ELi2ELi2EEE]+0x48): undefined reference to `ceres::internal::PartitionedMatrixView<2, 2, 2>::LeftMultiplyAndAccumulateFMultiThreaded(d"
+  ]
+}

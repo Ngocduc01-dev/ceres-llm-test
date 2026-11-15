@@ -1,0 +1,11 @@
+{
+  "id": "u0920",
+  "name": "ceres::Manifold::RightMultiplyByPlusJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0920/u0920_test.cc:8:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifold’",
+    "units/u0920/u0920_test.cc:15:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifold’",
+    "units/u0920/u0920_test.cc:22:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifold’"
+  ]
+}

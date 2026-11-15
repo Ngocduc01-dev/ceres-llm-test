@@ -1,0 +1,16 @@
+{
+  "id": "u1494",
+  "name": "ceres::internal::DynamicSparseNormalCholeskySolver::SolveImpl",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1494/u1494_test.cc:9:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1494/u1494_test.cc:10:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u1494/u1494_test.cc:11:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1494/u1494_test.cc:16:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1494/u1494_test.cc:17:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’",
+    "units/u1494/u1494_test.cc:18:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1494/u1494_test.cc:23:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1494/u1494_test.cc:24:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’"
+  ]
+}

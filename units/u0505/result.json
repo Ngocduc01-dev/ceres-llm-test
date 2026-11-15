@@ -1,0 +1,12 @@
+{
+  "id": "u0505",
+  "name": "ceres::internal::SolveUpperTriangularTransposeInPlace",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0505/u0505_test.cc:9:10: error: scalar object ‘rows_data’ requires one element in initializer",
+    "units/u0505/u0505_test.cc:10:10: error: scalar object ‘cols_data’ requires one element in initializer",
+    "units/u0505/u0505_test.cc:11:10: error: scalar object ‘values_data’ requires one element in initializer",
+    "units/u0505/u0505_test.cc:12:10: error: scalar object ‘rhs_and_solution_data’ requires one element in initializer"
+  ]
+}

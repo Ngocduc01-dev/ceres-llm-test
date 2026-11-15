@@ -1,0 +1,32 @@
+{
+  "id": "u0448",
+  "name": "ceres::internal::FixedArray::~FixedArray<T, N, A>",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "FixedArrayDestructorTest.ZeroIterations": "pass",
+    "FixedArrayDestructorTest.OneIteration": "pass",
+    "FixedArrayDestructorTest.TwoIterations": "pass",
+    "FixedArrayDestructorTest.MiddleIterations": "pass",
+    "FixedArrayDestructorTest.NMinusOneIterations": "pass",
+    "FixedArrayDestructorTest.NIterations": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 4
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

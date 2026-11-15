@@ -1,5 +1,15 @@
 // FILE: u0381_test.cc
 #include "gtest/gtest.h"
 #include "ceres/preconditioner.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0381, PathP1) { ceres::internal::Preconditioner::Options target; }
+
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(PreconditionerOptionsConstructorTest, DefaultConstructor_P1) {
+  Preconditioner::Options options;
+  (void)options;
+}
+
+}  // namespace internal
+}  // namespace ceres

@@ -1,0 +1,10 @@
+{
+  "id": "u0712",
+  "name": "ceres::GradientProblem::GradientProblem",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0712/u0712_test.cc:9:10: error: scalar object ‘function_data’ requires one element in initializer",
+    "units/u0712/u0712_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

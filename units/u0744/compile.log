@@ -1,0 +1,8 @@
+/work/repo/units/u0744/u0744_test.cc: In member function ‘virtual void ceres::Unit_u0744_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0744/u0744_test.cc:8:10: error: scalar object ‘quaternion_data’ requires one element in initializer
+    8 |   double quaternion_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~
+/work/repo/units/u0744/u0744_test.cc: In member function ‘virtual void ceres::Unit_u0744_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0744/u0744_test.cc:13:10: error: scalar object ‘quaternion_data’ requires one element in initializer
+   13 |   double quaternion_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~

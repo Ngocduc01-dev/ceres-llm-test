@@ -1,0 +1,28 @@
+/work/repo/units/u1375/u1375_test.cc: In member function ‘virtual void Unit_u1375_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1375/u1375_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+   11 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u1375/u1375_test.cc:11:21: error: ‘anonymous’ was not declared in this scope
+   11 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~
+/work/repo/units/u1375/u1375_test.cc: In member function ‘virtual void Unit_u1375_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1375/u1375_test.cc:18:20: error: expected unqualified-id before ‘(’ token
+   18 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u1375/u1375_test.cc:18:21: error: ‘anonymous’ was not declared in this scope
+   18 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~
+/work/repo/units/u1375/u1375_test.cc: In member function ‘virtual void Unit_u1375_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1375/u1375_test.cc:25:20: error: expected unqualified-id before ‘(’ token
+   25 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u1375/u1375_test.cc:25:21: error: ‘anonymous’ was not declared in this scope
+   25 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~
+/work/repo/units/u1375/u1375_test.cc: In member function ‘virtual void Unit_u1375_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1375/u1375_test.cc:32:20: error: expected unqualified-id before ‘(’ token
+   32 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                    ^
+/work/repo/units/u1375/u1375_test.cc:32:21: error: ‘anonymous’ was not declared in this scope
+   32 |   ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToTextFile(filename_base, nullptr, nullptr, nullptr, nullptr, int);
+      |                     ^~~~~~~~~

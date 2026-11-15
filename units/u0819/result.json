@@ -1,0 +1,10 @@
+{
+  "id": "u0819",
+  "name": "ceres::internal::VariadicEvaluateImpl",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0819/u0819_test.cc:8:3: error: ‘Functor’ was not declared in this scope",
+    "units/u0819/u0819_test.cc:9:41: error: ‘functor’ was not declared in this scope"
+  ]
+}

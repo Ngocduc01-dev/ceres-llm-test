@@ -1,0 +1,9 @@
+{
+  "id": "u0857",
+  "name": "ceres::internal::Evaluator::~Evaluator",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0857/u0857_test.cc:7:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Evaluator’"
+  ]
+}

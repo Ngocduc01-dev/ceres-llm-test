@@ -1,0 +1,10 @@
+{
+  "id": "u0943",
+  "name": "ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0943/u0943_test.cc:8:3: error: ‘TrustRegionStrategy’ has not been declared",
+    "units/u0943/u0943_test.cc:9:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’"
+  ]
+}

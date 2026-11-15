@@ -1,0 +1,41 @@
+/work/repo/units/u0972/u0972_test.cc: In member function ‘virtual void Unit_u0972_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0972/u0972_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+In file included from /work/repo/units/u0972/u0972_test.cc:3:
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0972/u0972_test.cc:9:30: error: ‘bool ceres::internal::DoglegStrategy::ComputeSubspaceModel(ceres::internal::SparseMatrix*)’ is private within this context
+    9 |   object.ComputeSubspaceModel(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:88:8: note: declared private here
+   88 |   bool ComputeSubspaceModel(SparseMatrix* jacobian);
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0972/u0972_test.cc: In member function ‘virtual void Unit_u0972_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0972/u0972_test.cc:14:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0972/u0972_test.cc:15:30: error: ‘bool ceres::internal::DoglegStrategy::ComputeSubspaceModel(ceres::internal::SparseMatrix*)’ is private within this context
+   15 |   object.ComputeSubspaceModel(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:88:8: note: declared private here
+   88 |   bool ComputeSubspaceModel(SparseMatrix* jacobian);
+      |        ^~~~~~~~~~~~~~~~~~~~

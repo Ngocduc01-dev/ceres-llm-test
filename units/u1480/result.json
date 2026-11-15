@@ -1,0 +1,10 @@
+{
+  "id": "u1480",
+  "name": "ceres::(anonymous)::OptionsAreValidForLinearSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1480/u1480_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1480/u1480_test.cc:9:41: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

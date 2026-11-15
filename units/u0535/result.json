@@ -1,0 +1,10 @@
+{
+  "id": "u0535",
+  "name": "ceres::OrderedGroups::AddElementToGroup",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0535/u0535_test.cc:7:3: error: ‘object’ was not declared in this scope",
+    "units/u0535/u0535_test.cc:11:3: error: ‘object’ was not declared in this scope"
+  ]
+}

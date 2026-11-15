@@ -1,0 +1,16 @@
+{
+  "id": "u1368",
+  "name": "ceres::internal::BlockJacobianWriter::CreateJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1368/u1368_test.cc:12:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:18:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:24:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:30:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:36:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:42:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:48:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1368/u1368_test.cc:54:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’"
+  ]
+}

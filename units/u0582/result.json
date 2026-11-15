@@ -1,0 +1,10 @@
+{
+  "id": "u0582",
+  "name": "ceres::(anonymous)::QuaternionMinusJacobianImpl",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0582/u0582_test.cc:8:10: error: scalar object ‘x_data’ requires one element in initializer",
+    "units/u0582/u0582_test.cc:9:10: error: scalar object ‘jacobian_ptr_data’ requires one element in initializer"
+  ]
+}

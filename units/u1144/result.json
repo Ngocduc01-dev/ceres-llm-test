@@ -1,0 +1,9 @@
+{
+  "id": "u1144",
+  "name": "ceres::internal::BlockSparseMatrix::~BlockSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1144/u1144_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

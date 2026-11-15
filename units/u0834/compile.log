@@ -1,0 +1,22 @@
+/work/repo/units/u0834/u0834_test.cc: In member function ‘virtual void Unit_u0834_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0834/u0834_test.cc:8:10: error: expected identifier before numeric constant
+    8 |   double[3] out{};
+      |          ^
+/work/repo/units/u0834/u0834_test.cc:8:10: error: expected ‘]’ before numeric constant
+    8 |   double[3] out{};
+      |          ^
+      |          ]
+/work/repo/units/u0834/u0834_test.cc:8:9: error: structured binding declaration cannot have type ‘double’
+    8 |   double[3] out{};
+      |         ^
+/work/repo/units/u0834/u0834_test.cc:8:9: note: type must be cv-qualified ‘auto’ or reference to cv-qualified ‘auto’
+/work/repo/units/u0834/u0834_test.cc:8:9: error: empty structured binding declaration
+/work/repo/units/u0834/u0834_test.cc:8:13: error: expected initializer before ‘out’
+    8 |   double[3] out{};
+      |             ^~~
+/work/repo/units/u0834/u0834_test.cc:9:52: error: ‘out’ was not declared in this scope
+    9 |   ceres_stock_loss_function(nullptr, squared_norm, out);
+      |                                                    ^~~
+/work/repo/units/u0834/u0834_test.cc:9:3: error: ‘ceres_stock_loss_function’ was not declared in this scope
+    9 |   ceres_stock_loss_function(nullptr, squared_norm, out);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~

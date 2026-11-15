@@ -1,0 +1,10 @@
+{
+  "id": "u1290",
+  "name": "ceres::internal::RefinedSparseCholesky::Solve",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1290/u1290_test.cc:7:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky(<brace-enclosed initializer list>)’",
+    "units/u1290/u1290_test.cc:13:49: error: no matching function for call to ‘ceres::internal::RefinedSparseCholesky::RefinedSparseCholesky(<brace-enclosed initializer list>)’"
+  ]
+}

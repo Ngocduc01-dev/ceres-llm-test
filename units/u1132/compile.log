@@ -1,0 +1,15 @@
+/work/repo/units/u1132/u1132_test.cc: In member function ‘virtual void Unit_u1132_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1132/u1132_test.cc:10:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::DenseSchurComplementSolver object{};
+      |                                                      ^
+In file included from /work/repo/units/u1132/u1132_test.cc:6:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note: candidate: ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  153 |   explicit DenseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1132/u1132_test.cc:11:21: error: ‘virtual void ceres::internal::DenseSchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’ is private within this context
+   11 |   object.InitStorage(nullptr);
+      |   ~~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:160:8: note: declared private here
+  160 |   void InitStorage(const CompressedRowBlockStructure* bs) final;
+      |        ^~~~~~~~~~~

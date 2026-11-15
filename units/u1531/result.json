@@ -1,0 +1,11 @@
+{
+  "id": "u1531",
+  "name": "ceres::internal::CovarianceImpl::Compute",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1531/u1531_test.cc:8:3: error: ‘CovarianceBlocks’ was not declared in this scope",
+    "units/u1531/u1531_test.cc:9:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1531/u1531_test.cc:10:18: error: ‘covariance_blocks’ was not declared in this scope"
+  ]
+}

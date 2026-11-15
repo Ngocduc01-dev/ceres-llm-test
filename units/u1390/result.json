@@ -1,0 +1,31 @@
+{
+  "id": "u1390",
+  "name": "ceres::internal::Program::IsValid",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u1390.TC1_CallsTarget": "pass",
+    "Unit_u1390.TC2_CallsTarget": "pass",
+    "Unit_u1390.TC3_CallsTarget": "pass",
+    "Unit_u1390.TC4_CallsTarget": "pass",
+    "Unit_u1390.TC5_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 5,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 6,
+    "total": 20
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

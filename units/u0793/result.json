@@ -1,0 +1,12 @@
+{
+  "id": "u0793",
+  "name": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::BlockRandomAccessDiagonalMatrixAdapter",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0793/u0793_test.cc:9:3: error: ‘BlockRandomAccessDiagonalMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessDiagonalMatrix’?",
+    "units/u0793/u0793_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0793/u0793_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0793/u0793_test.cc:11:9: error: ‘object’ was not declared in this scope"
+  ]
+}

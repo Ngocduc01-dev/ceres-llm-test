@@ -1,0 +1,10 @@
+{
+  "id": "u0984",
+  "name": "ceres::TinySolverCostFunctionAdapter::NumResiduals",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0984/u0984_test.cc:8:47: error: class template argument deduction failed:",
+    "units/u0984/u0984_test.cc:8:47: error: no matching function for call to ‘TinySolverCostFunctionAdapter()’"
+  ]
+}

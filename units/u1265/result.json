@@ -1,0 +1,29 @@
+{
+  "id": "u1265",
+  "name": "ceres::internal::Program::MaxDerivativesPerResidualBlock",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u1265.TC1_CallsTarget": "pass",
+    "Unit_u1265.TC2_CallsTarget": "pass",
+    "Unit_u1265.TC3_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 3,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 10
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

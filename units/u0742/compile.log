@@ -1,0 +1,26 @@
+/work/repo/units/u0742/u0742_test.cc: In member function ‘virtual void Unit_u0742_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0742/u0742_test.cc:10:10: error: scalar object ‘parameters_data’ requires one element in initializer
+   10 |   double parameters_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~
+/work/repo/units/u0742/u0742_test.cc:11:10: error: scalar object ‘residuals_data’ requires one element in initializer
+   11 |   double residuals_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~
+/work/repo/units/u0742/u0742_test.cc:12:10: error: scalar object ‘jacobians_data’ requires one element in initializer
+   12 |   double jacobians_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~
+/work/repo/units/u0742/u0742_test.cc:13:3: error: ‘object’ was not declared in this scope
+   13 |   object.Evaluate(parameters_data, residuals_data, jacobians_data);
+      |   ^~~~~~
+/work/repo/units/u0742/u0742_test.cc: In member function ‘virtual void Unit_u0742_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0742/u0742_test.cc:17:10: error: scalar object ‘parameters_data’ requires one element in initializer
+   17 |   double parameters_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~
+/work/repo/units/u0742/u0742_test.cc:18:10: error: scalar object ‘residuals_data’ requires one element in initializer
+   18 |   double residuals_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~
+/work/repo/units/u0742/u0742_test.cc:19:10: error: scalar object ‘jacobians_data’ requires one element in initializer
+   19 |   double jacobians_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~
+/work/repo/units/u0742/u0742_test.cc:20:3: error: ‘object’ was not declared in this scope
+   20 |   object.Evaluate(parameters_data, residuals_data, jacobians_data);
+      |   ^~~~~~

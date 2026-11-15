@@ -1,0 +1,16 @@
+{
+  "id": "u1127",
+  "name": "ceres::internal::NumericDiff::EvaluateRiddersJacobianColumn",
+  "status": "compile_fail",
+  "cfg_branches": 18,
+  "errors": [
+    "units/u1127/u1127_test.cc:10:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1127/u1127_test.cc:13:39: error: class template argument deduction failed:",
+    "units/u1127/u1127_test.cc:13:39: error: no matching function for call to ‘NumericDiff()’",
+    "units/u1127/u1127_test.cc:14:73: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1127/u1127_test.cc:21:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1127/u1127_test.cc:24:39: error: class template argument deduction failed:",
+    "units/u1127/u1127_test.cc:24:39: error: no matching function for call to ‘NumericDiff()’",
+    "units/u1127/u1127_test.cc:25:73: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

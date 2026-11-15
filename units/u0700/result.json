@@ -1,0 +1,35 @@
+{
+  "id": "u0700",
+  "name": "ceres::internal::SumSquaredSizes",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0700.CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 5
+  },
+  "c2": {
+    "covered": 1,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 64,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (const auto& b : blocks) {"
+    }
+  ]
+}

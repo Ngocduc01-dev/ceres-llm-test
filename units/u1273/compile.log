@@ -1,0 +1,15 @@
+/work/repo/units/u1273/u1273_test.cc: In member function ‘virtual void Unit_u1273_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1273/u1273_test.cc:10:30: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleSuccessfulStep()’ is private within this context
+   10 |   object.HandleSuccessfulStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1273/u1273_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:83:8: note: declared private here
+   83 |   bool HandleSuccessfulStep();
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1273/u1273_test.cc: In member function ‘virtual void Unit_u1273_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1273/u1273_test.cc:16:30: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleSuccessfulStep()’ is private within this context
+   16 |   object.HandleSuccessfulStep();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:83:8: note: declared private here
+   83 |   bool HandleSuccessfulStep();
+      |        ^~~~~~~~~~~~~~~~~~~~

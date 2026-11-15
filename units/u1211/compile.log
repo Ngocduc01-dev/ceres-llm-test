@@ -1,0 +1,134 @@
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:8:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+    8 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u1211/u1211_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:10:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   10 |   object.AppendRows(m);
+      |                     ^
+      |                     tm
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:15:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   15 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:16:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:17:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   17 |   object.AppendRows(m);
+      |                     ^
+      |                     tm
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:22:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   22 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:23:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:24:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   24 |   object.AppendRows(m);
+      |                     ^
+      |                     tm
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:29:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   29 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:30:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:31:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   31 |   object.AppendRows(m);
+      |                     ^
+      |                     tm
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:36:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   36 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:37:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   37 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:38:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   38 |   object.AppendRows(m);
+      |                     ^
+      |                     tm
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:43:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   43 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:44:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   44 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:45:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   45 |   object.AppendRows(m);
+      |                     ^
+      |                     tm
+/work/repo/units/u1211/u1211_test.cc: In member function ‘virtual void Unit_u1211_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1211/u1211_test.cc:50:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   50 |   BlockSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1211/u1211_test.cc:51:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   51 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1211/u1211_test.cc:52:21: error: ‘m’ was not declared in this scope; did you mean ‘tm’?
+   52 |   object.AppendRows(m);
+      |                     ^
+      |                     tm

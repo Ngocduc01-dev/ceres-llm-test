@@ -1,0 +1,16 @@
+{
+  "id": "u1060",
+  "name": "ceres::internal::MatrixTransposeVectorMultiply",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1060/u1060_test.cc:10:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:17:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:24:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:31:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:38:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:45:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:52:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’",
+    "units/u1060/u1060_test.cc:59:49: error: no matching function for call to ‘MatrixTransposeVectorMultiply(std::nullptr_t, const int&, const int&, std::nullptr_t, std::nullptr_t)’"
+  ]
+}

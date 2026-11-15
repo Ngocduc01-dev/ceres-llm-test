@@ -1,0 +1,55 @@
+/work/repo/units/u1361/u1361_test.cc: In member function ‘virtual void Unit_u1361_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1361/u1361_test.cc:12:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?
+   12 |   NumericDiffOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::NumericDiffOptions
+In file included from /work/ceres-solver/include/ceres/internal/numeric_diff.h:46,
+                 from /work/ceres-solver/include/ceres/dynamic_numeric_diff_cost_function.h:44,
+                 from /work/repo/units/u1361/u1361_test.cc:5:
+/work/ceres-solver/include/ceres/numeric_diff_options.h:42:21: note: ‘ceres::NumericDiffOptions’ declared here
+   42 | struct CERES_EXPORT NumericDiffOptions {
+      |                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1361/u1361_test.cc:13:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   13 |   ceres::GradientChecker object{};
+      |                                 ^
+In file included from /work/repo/units/u1361/u1361_test.cc:6:
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1361/u1361_test.cc:13:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   13 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1361/u1361_test.cc: In member function ‘virtual void Unit_u1361_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1361/u1361_test.cc:19:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?
+   19 |   NumericDiffOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::NumericDiffOptions
+/work/ceres-solver/include/ceres/numeric_diff_options.h:42:21: note: ‘ceres::NumericDiffOptions’ declared here
+   42 | struct CERES_EXPORT NumericDiffOptions {
+      |                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1361/u1361_test.cc:20:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   20 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1361/u1361_test.cc:20:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   20 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/repo/units/u1361/u1361_test.cc: In member function ‘virtual void Unit_u1361_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1361/u1361_test.cc:26:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?
+   26 |   NumericDiffOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::NumericDiffOptions
+/work/ceres-solver/include/ceres/numeric_diff_options.h:42:21: note: ‘ceres::NumericDiffOptions’ declared here
+   42 | struct CERES_EXPORT NumericDiffOptions {
+      |                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1361/u1361_test.cc:27:33: error: use of deleted function ‘ceres::GradientChecker::GradientChecker()’
+   27 |   ceres::GradientChecker object{};
+      |                                 ^
+/work/ceres-solver/include/ceres/gradient_checker.h:141:3: note: declared here
+  141 |   GradientChecker() = delete;
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1361/u1361_test.cc:27:33: note: use ‘-fdiagnostics-all-candidates’ to display considered candidates
+   27 |   ceres::GradientChecker object{};
+      |                                 ^

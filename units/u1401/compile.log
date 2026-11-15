@@ -1,0 +1,34 @@
+/work/repo/units/u1401/u1401_test.cc: In member function ‘virtual void Unit_u1401_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1401/u1401_test.cc:10:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   10 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1401/u1401_test.cc:6:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1401/u1401_test.cc:11:41: error: ‘program’ was not declared in this scope
+   11 |   ceres::internal::ComputeSchurOrdering(program, nullptr);
+      |                                         ^~~~~~~
+/work/repo/units/u1401/u1401_test.cc: In member function ‘virtual void Unit_u1401_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1401/u1401_test.cc:16:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   16 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1401/u1401_test.cc:17:41: error: ‘program’ was not declared in this scope
+   17 |   ceres::internal::ComputeSchurOrdering(program, nullptr);
+      |                                         ^~~~~~~
+/work/repo/units/u1401/u1401_test.cc: In member function ‘virtual void Unit_u1401_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1401/u1401_test.cc:22:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   22 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1401/u1401_test.cc:23:41: error: ‘program’ was not declared in this scope
+   23 |   ceres::internal::ComputeSchurOrdering(program, nullptr);
+      |                                         ^~~~~~~

@@ -1,0 +1,12 @@
+{
+  "id": "u1396",
+  "name": "ceres::internal::operator<<",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1396/u1396_test.cc:8:19: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = char; _Traits = std::char_traits<char>]’ is protected within this context",
+    "units/u1396/u1396_test.cc:9:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1396/u1396_test.cc:10:20: error: ‘operator<<’ is not a member of ‘ceres::internal’",
+    "units/u1396/u1396_test.cc:10:35: error: ‘sample’ was not declared in this scope; did you mean ‘std::sample’?"
+  ]
+}

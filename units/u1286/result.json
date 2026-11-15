@@ -1,0 +1,13 @@
+{
+  "id": "u1286",
+  "name": "ceres::internal::ComputeCanonicalViewsClustering",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1286/u1286_test.cc:8:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?",
+    "units/u1286/u1286_test.cc:9:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?",
+    "units/u1286/u1286_test.cc:9:17: error: expected primary-expression before ‘int’",
+    "units/u1286/u1286_test.cc:10:52: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1286/u1286_test.cc:10:61: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?"
+  ]
+}

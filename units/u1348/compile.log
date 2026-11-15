@@ -1,0 +1,51 @@
+/work/repo/units/u1348/u1348_test.cc: In member function ‘virtual void Unit_u1348_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1348/u1348_test.cc:11:15: error: ‘Block’ was not declared in this scope
+   11 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1348/u1348_test.cc:11:15: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:163,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:38,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:40,
+                 from /work/repo/units/u1348/u1348_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+In file included from /work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:39:
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1348/u1348_test.cc:11:20: error: template argument 1 is invalid
+   11 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1348/u1348_test.cc:11:20: error: template argument 2 is invalid
+/work/repo/units/u1348/u1348_test.cc:13:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’
+   13 |   ceres::internal::BlockRandomAccessDiagonalMatrix object{};
+      |                                                           ^
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:55:3: note: candidate: ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(const std::vector<ceres::internal::Block>&, ceres::internal::ContextImpl*, int)’
+   55 |   BlockRandomAccessDiagonalMatrix(const std::vector<Block>& blocks,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:55:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1348/u1348_test.cc: In member function ‘virtual void Unit_u1348_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1348/u1348_test.cc:19:15: error: ‘Block’ was not declared in this scope
+   19 |   std::vector<Block> blocks{};
+      |               ^~~~~
+/work/repo/units/u1348/u1348_test.cc:19:15: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/util/ForwardDeclarations.h:81:105: note:   ‘Eigen::Block’
+   81 | template<typename XprType, int BlockRows=Dynamic, int BlockCols=Dynamic, bool InnerPanel = false> class Block;
+      |                                                                                                         ^~~~~
+/work/ceres-solver/internal/ceres/block_structure.h:54:24: note:   ‘ceres::internal::Block’
+   54 | struct CERES_NO_EXPORT Block {
+      |                        ^~~~~
+/work/repo/units/u1348/u1348_test.cc:19:20: error: template argument 1 is invalid
+   19 |   std::vector<Block> blocks{};
+      |                    ^
+/work/repo/units/u1348/u1348_test.cc:19:20: error: template argument 2 is invalid
+/work/repo/units/u1348/u1348_test.cc:21:59: error: no matching function for call to ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(<brace-enclosed initializer list>)’
+   21 |   ceres::internal::BlockRandomAccessDiagonalMatrix object{};
+      |                                                           ^
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:55:3: note: candidate: ‘ceres::internal::BlockRandomAccessDiagonalMatrix::BlockRandomAccessDiagonalMatrix(const std::vector<ceres::internal::Block>&, ceres::internal::ContextImpl*, int)’
+   55 |   BlockRandomAccessDiagonalMatrix(const std::vector<Block>& blocks,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:55:3: note:   candidate expects 3 arguments, 0 provided

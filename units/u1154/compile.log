@@ -1,0 +1,44 @@
+/work/repo/units/u1154/u1154_test.cc: In member function ‘virtual void Unit_u1154_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1154/u1154_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+    8 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1154/u1154_test.cc:8:3: note: suggested alternatives:
+In file included from /work/ceres-solver/internal/ceres/linear_operator.h:36,
+                 from /work/repo/units/u1154/u1154_test.cc:4:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u1154/u1154_test.cc:9:9: error: expected ‘;’ before ‘y’
+    9 |   Vector y{};
+      |         ^~
+      |         ;
+/work/repo/units/u1154/u1154_test.cc:11:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’
+   11 |   ceres::internal::LinearOperator object{};
+      |                                   ^~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:46:23: note:   because the following virtual functions are pure within ‘ceres::internal::LinearOperator’:
+   46 | class CERES_NO_EXPORT LinearOperator {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:51:16: note:     ‘virtual void ceres::internal::LinearOperator::RightMultiplyAndAccumulate(const double*, double*) const’
+   51 |   virtual void RightMultiplyAndAccumulate(const double* x, double* y) const = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:57:16: note:     ‘virtual void ceres::internal::LinearOperator::LeftMultiplyAndAccumulate(const double*, double*) const’
+   57 |   virtual void LeftMultiplyAndAccumulate(const double* x, double* y) const = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:85:15: note:     ‘virtual int ceres::internal::LinearOperator::num_rows() const’
+   85 |   virtual int num_rows() const = 0;
+      |               ^~~~~~~~
+/work/ceres-solver/internal/ceres/linear_operator.h:86:15: note:     ‘virtual int ceres::internal::LinearOperator::num_cols() const’
+   86 |   virtual int num_cols() const = 0;
+      |               ^~~~~~~~
+/work/repo/units/u1154/u1154_test.cc:12:36: error: ‘x’ was not declared in this scope
+   12 |   object.LeftMultiplyAndAccumulate(x, y, nullptr, num_threads);
+      |                                    ^
+/work/repo/units/u1154/u1154_test.cc:12:39: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   12 |   object.LeftMultiplyAndAccumulate(x, y, nullptr, num_threads);
+      |                                       ^
+      |                                       yn

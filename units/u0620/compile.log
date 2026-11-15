@@ -1,0 +1,7 @@
+/work/repo/units/u0620/u0620_test.cc: In member function ‘virtual void Unit_u0620_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0620/u0620_test.cc:7:10: error: scalar object ‘functor_data’ requires one element in initializer
+    7 |   double functor_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~
+/work/repo/units/u0620/u0620_test.cc:8:3: error: ‘object’ was not declared in this scope
+    8 |   object.DynamicAutoDiffCostFunction(functor_data, {});
+      |   ^~~~~~

@@ -2,27 +2,36 @@
 #include "gtest/gtest.h"
 #include "ceres/dynamic_autodiff_cost_function.h"
 
+namespace ceres {
 namespace {
-struct CostFunctor {
+
+// Functor dùng để khởi tạo DynamicAutoDiffCostFunction (hai khối tham số).
+struct DynamicTwoParameterBlockFunctor {
   template <typename T>
   bool operator()(T const* const* parameters, T* residuals) const {
-    residuals[0] = parameters[0][0] * parameters[0][0];
+    residuals[0] = parameters[0][0] + parameters[1][0];
     return true;
   }
 };
-}  // namespace
 
-TEST(Unit_u0443, ReleasesNonOwnedFunctor) {
-  CostFunctor functor;
+// Path P1: node 1: đúng -> node 2 -> END
+TEST(DynamicAutoDiffCostFunctionDestructorTest, DoNotTakeOwnershipReleasesFunctor) {
+  DynamicTwoParameterBlockFunctor functor;  // đối tượng trên stack, không được delete
   {
-    ceres::DynamicAutoDiffCostFunction<CostFunctor> target(
-        &functor, ceres::DO_NOT_TAKE_OWNERSHIP);
-    target.AddParameterBlock(1);
-    target.SetNumResiduals(1);
-    double value = 2.0;
-    double* parameters[] = {&value};
-    double residuals[1] = {};
-    EXPECT_TRUE(target.Evaluate(parameters, residuals, nullptr));
-    EXPECT_DOUBLE_EQ(residuals[0], 4.0);
-  }
+    DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor> cost_function(
+        &functor, DO_NOT_TAKE_OWNERSHIP);
+  }  // destructor chạy ở đây
+  SUCCEED();
 }
+
+// Path P2: node 1: sai -> END
+TEST(DynamicAutoDiffCostFunctionDestructorTest, TakeOwnershipDeletesFunctor) {
+  {
+    DynamicAutoDiffCostFunction<DynamicTwoParameterBlockFunctor> cost_function(
+        new DynamicTwoParameterBlockFunctor, TAKE_OWNERSHIP);
+  }  // destructor chạy ở đây, functor được xoá tự động
+  SUCCEED();
+}
+
+}  // namespace
+}  // namespace ceres

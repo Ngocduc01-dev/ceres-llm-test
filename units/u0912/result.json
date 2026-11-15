@@ -1,0 +1,10 @@
+{
+  "id": "u0912",
+  "name": "ceres::internal::SparseCholesky::FactorAndSolve",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0912/u0912_test.cc:8:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’",
+    "units/u0912/u0912_test.cc:14:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’"
+  ]
+}

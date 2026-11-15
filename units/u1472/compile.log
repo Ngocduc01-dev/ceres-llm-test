@@ -1,0 +1,8 @@
+/work/repo/units/u1472/u1472_test.cc: In member function ‘virtual void Unit_u1472_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1472/u1472_test.cc:9:3: error: ‘Solver’ has not been declared
+    9 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1472/u1472_test.cc:10:28: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   ceres::PreSolveSummarize(options, nullptr, nullptr);
+      |                            ^~~~~~~
+      |                            optind

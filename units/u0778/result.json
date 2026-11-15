@@ -1,0 +1,16 @@
+{
+  "id": "u0778",
+  "name": "ceres::internal::FindInterpolatingPolynomial",
+  "status": "compile_fail",
+  "cfg_branches": 16,
+  "errors": [
+    "units/u0778/u0778_test.cc:8:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u0778/u0778_test.cc:8:29: error: template argument 1 is invalid",
+    "units/u0778/u0778_test.cc:8:29: error: template argument 2 is invalid",
+    "units/u0778/u0778_test.cc:9:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’",
+    "units/u0778/u0778_test.cc:14:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u0778/u0778_test.cc:14:29: error: template argument 1 is invalid",
+    "units/u0778/u0778_test.cc:14:29: error: template argument 2 is invalid",
+    "units/u0778/u0778_test.cc:15:48: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’"
+  ]
+}

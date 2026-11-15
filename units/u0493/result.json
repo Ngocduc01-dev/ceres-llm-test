@@ -1,0 +1,16 @@
+{
+  "id": "u0493",
+  "name": "ceres::AutoDiffManifold::PlusJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<1>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<2>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<3>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<4>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<5>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::TestPlusFunctor<5>’ has no member named ‘Plus’",
+    "include/ceres/autodiff_manifold.h:169:22: error: ‘struct ceres::{anonymous}::TestPlusFunctor<5>’ has no member named ‘Minus’",
+    "include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::TestPlusFunctor<4>’ has no member named ‘Plus’"
+  ]
+}

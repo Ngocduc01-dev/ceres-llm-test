@@ -1,0 +1,4 @@
+/work/repo/units/u0666/u0666_test.cc: In member function ‘virtual void Unit_u0666_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0666/u0666_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.num_nonzeros();
+      |   ^~~~~~

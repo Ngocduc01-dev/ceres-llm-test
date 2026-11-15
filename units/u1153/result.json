@@ -1,0 +1,13 @@
+{
+  "id": "u1153",
+  "name": "ceres::internal::LinearOperator::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1153/u1153_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1153/u1153_test.cc:9:9: error: expected ‘;’ before ‘y’",
+    "units/u1153/u1153_test.cc:11:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’",
+    "units/u1153/u1153_test.cc:12:37: error: ‘x’ was not declared in this scope",
+    "units/u1153/u1153_test.cc:12:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "u1189",
+  "name": "ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1189/u1189_test.cc:9:3: error: ‘Preconditioner’ has not been declared",
+    "units/u1189/u1189_test.cc:10:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?",
+    "units/u1189/u1189_test.cc:11:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1189/u1189_test.cc:17:3: error: ‘Preconditioner’ has not been declared",
+    "units/u1189/u1189_test.cc:18:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?",
+    "units/u1189/u1189_test.cc:19:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1189/u1189_test.cc:25:3: error: ‘Preconditioner’ has not been declared",
+    "units/u1189/u1189_test.cc:26:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?"
+  ]
+}

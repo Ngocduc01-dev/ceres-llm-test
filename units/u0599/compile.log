@@ -1,0 +1,4 @@
+/work/repo/units/u0599/u0599_test.cc: In member function ‘virtual void ceres::internal::Unit_u0599_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0599/u0599_test.cc:10:10: error: scalar object ‘container_data’ requires one element in initializer
+   10 |   double container_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~

@@ -1,0 +1,4 @@
+/work/repo/units/u0569/u0569_test.cc: In member function ‘virtual void Unit_u0569_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0569/u0569_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.Dereference({});
+      |   ^~~~~~

@@ -1,0 +1,141 @@
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:10:3: error: ‘PerSolveOptions’ was not declared in this scope
+   10 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:11:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+In file included from /work/repo/units/u1497/u1497_test.cc:3:
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:12:33: error: ‘per_solve_options’ was not declared in this scope
+   12 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:17:3: error: ‘PerSolveOptions’ was not declared in this scope
+   17 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:18:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   18 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:19:33: error: ‘per_solve_options’ was not declared in this scope
+   19 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:24:3: error: ‘PerSolveOptions’ was not declared in this scope
+   24 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:25:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   25 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:26:33: error: ‘per_solve_options’ was not declared in this scope
+   26 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:31:3: error: ‘PerSolveOptions’ was not declared in this scope
+   31 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:32:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   32 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:33:33: error: ‘per_solve_options’ was not declared in this scope
+   33 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:38:3: error: ‘PerSolveOptions’ was not declared in this scope
+   38 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:39:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   39 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:40:33: error: ‘per_solve_options’ was not declared in this scope
+   40 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:45:3: error: ‘PerSolveOptions’ was not declared in this scope
+   45 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:46:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   46 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:47:33: error: ‘per_solve_options’ was not declared in this scope
+   47 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc: In member function ‘virtual void Unit_u1497_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1497/u1497_test.cc:52:3: error: ‘PerSolveOptions’ was not declared in this scope
+   52 |   PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~
+/work/repo/units/u1497/u1497_test.cc:53:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+   53 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1497/u1497_test.cc:54:33: error: ‘per_solve_options’ was not declared in this scope
+   54 |   object.ComputeGaussNewtonStep(per_solve_options, nullptr, nullptr);
+      |                                 ^~~~~~~~~~~~~~~~~

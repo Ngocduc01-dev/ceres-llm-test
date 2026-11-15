@@ -1,0 +1,16 @@
+{
+  "id": "u1379",
+  "name": "ceres::internal::InnerProductComputer::ComputeOffsetsAndCreateResultMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 20,
+  "errors": [
+    "units/u1379/u1379_test.cc:9:9: error: ‘CompressedRowSparseMatrix’ does not name a type",
+    "units/u1379/u1379_test.cc:10:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?",
+    "units/u1379/u1379_test.cc:10:48: error: template argument 1 is invalid",
+    "units/u1379/u1379_test.cc:10:48: error: template argument 2 is invalid",
+    "units/u1379/u1379_test.cc:11:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1379/u1379_test.cc:12:46: error: ‘product_storage_type’ was not declared in this scope",
+    "units/u1379/u1379_test.cc:17:9: error: ‘CompressedRowSparseMatrix’ does not name a type",
+    "units/u1379/u1379_test.cc:18:15: error: ‘InnerProductComputer’ was not declared in this scope; did you mean ‘ceres::internal::InnerProductComputer’?"
+  ]
+}

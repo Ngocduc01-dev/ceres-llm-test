@@ -1,0 +1,9 @@
+{
+  "id": "u1078",
+  "name": "ceres::internal::Minimizer::Options::Options",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1078/u1078_test.cc:8:3: error: ‘Solver’ has not been declared"
+  ]
+}

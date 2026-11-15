@@ -1,0 +1,10 @@
+{
+  "id": "u0696",
+  "name": "ceres::NumericDiffCostFunction::NumericDiffCostFunction<CostFunctor, kMethod, kNumResiduals, Ns...>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0696/u0696_test.cc:9:10: error: scalar object ‘functor_data’ requires one element in initializer",
+    "units/u0696/u0696_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "u1355",
+  "name": "ceres::internal::GradientProblemEvaluator::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1355/u1355_test.cc:10:3: error: ‘EvaluateOptions’ was not declared in this scope",
+    "units/u1355/u1355_test.cc:11:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(<brace-enclosed initializer list>)’",
+    "units/u1355/u1355_test.cc:12:19: error: ‘arg0’ was not declared in this scope",
+    "units/u1355/u1355_test.cc:17:3: error: ‘EvaluateOptions’ was not declared in this scope",
+    "units/u1355/u1355_test.cc:18:52: error: no matching function for call to ‘ceres::internal::GradientProblemEvaluator::GradientProblemEvaluator(<brace-enclosed initializer list>)’",
+    "units/u1355/u1355_test.cc:19:19: error: ‘arg0’ was not declared in this scope"
+  ]
+}

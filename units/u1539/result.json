@@ -1,0 +1,9 @@
+{
+  "id": "u1539",
+  "name": "ceres_solve",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1539/u1539_test.cc:8:3: error: ‘ceres_solve’ was not declared in this scope"
+  ]
+}

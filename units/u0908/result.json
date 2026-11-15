@@ -1,0 +1,9 @@
+{
+  "id": "u0908",
+  "name": "ceres::internal::ImplicitSchurComplement::block_diagonal_FtF_inverse",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0908/u0908_test.cc:8:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’"
+  ]
+}

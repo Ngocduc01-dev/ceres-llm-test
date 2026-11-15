@@ -1,0 +1,16 @@
+{
+  "id": "u1420",
+  "name": "ceres::(anonymous)::OptionsAreValidForIterativeSchur",
+  "status": "compile_fail",
+  "cfg_branches": 22,
+  "errors": [
+    "units/u1420/u1420_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1420/u1420_test.cc:9:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1420/u1420_test.cc:14:3: error: ‘Solver’ has not been declared",
+    "units/u1420/u1420_test.cc:15:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1420/u1420_test.cc:20:3: error: ‘Solver’ has not been declared",
+    "units/u1420/u1420_test.cc:21:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1420/u1420_test.cc:26:3: error: ‘Solver’ has not been declared",
+    "units/u1420/u1420_test.cc:27:43: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

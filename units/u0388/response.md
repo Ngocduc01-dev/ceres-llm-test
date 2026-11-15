@@ -1,26 +1,33 @@
-# Unit u0388
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh nào (node 1 chỉ gồm các member initializer chạy tuần tự) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `PreprocessedProblem()` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | Không có tham số đầu vào (constructor mặc định) | Không có |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có nhánh nào, vì hàm có 0 điểm rẽ nhánh và không có vòng lặp hay `CHECK`.
 
-## D. File test
+Ghi chú: CFG khớp với mã nguồn. Dòng 83 là `= default`, nên các member initializer là do trình biên dịch sinh ra.
+
+`C2 dự kiến = 0 / 0` (tổng số nhánh bằng 0, nên C2 coi như đạt 100% khi node 1 được chạy qua).
+
+**D. File test**
 
 ```cpp
 // FILE: u0388_test.cc
 #include "gtest/gtest.h"
 #include "ceres/preprocessor.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0388, PathP1) { ceres::internal::PreprocessedProblem target; }
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(PreprocessedProblemConstructorTest, DefaultConstructor) {
+  ceres::internal::PreprocessedProblem preprocessed_problem;
+  (void)preprocessed_problem;
+}
 ```

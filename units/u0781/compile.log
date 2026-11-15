@@ -1,0 +1,236 @@
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:9:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+    9 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+In file included from /work/repo/units/u0781/u0781_test.cc:5:
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:10:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   10 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+In file included from /work/repo/units/u0781/u0781_test.cc:3:
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:10:17: error: expected primary-expression before ‘int’
+   10 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:11:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   11 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:11:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   11 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:16:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   16 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:17:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   17 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:17:17: error: expected primary-expression before ‘int’
+   17 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:18:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   18 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:18:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   18 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:23:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   23 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:24:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   24 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:24:17: error: expected primary-expression before ‘int’
+   24 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:25:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   25 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:25:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   25 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:30:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   30 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:31:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   31 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:31:17: error: expected primary-expression before ‘int’
+   31 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:32:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   32 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:32:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   32 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:37:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   37 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:38:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   38 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:38:17: error: expected primary-expression before ‘int’
+   38 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:39:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   39 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:39:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   39 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:44:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   44 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:45:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   45 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:45:17: error: expected primary-expression before ‘int’
+   45 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:46:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   46 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:46:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   46 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:51:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   51 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:52:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   52 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:52:17: error: expected primary-expression before ‘int’
+   52 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:53:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   53 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:53:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   53 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:58:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   58 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:59:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   59 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:59:17: error: expected primary-expression before ‘int’
+   59 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:60:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   60 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:60:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   60 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph
+/work/repo/units/u0781/u0781_test.cc: In member function ‘virtual void Unit_u0781_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0781/u0781_test.cc:65:3: error: ‘SingleLinkageClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::SingleLinkageClusteringOptions’?
+   65 |   SingleLinkageClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SingleLinkageClusteringOptions
+/work/ceres-solver/internal/ceres/single_linkage_clustering.h:42:8: note: ‘ceres::internal::SingleLinkageClusteringOptions’ declared here
+   42 | struct SingleLinkageClusteringOptions {
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:66:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   66 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0781/u0781_test.cc:66:17: error: expected primary-expression before ‘int’
+   66 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u0781/u0781_test.cc:67:51: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   67 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                   ^~~~~~~
+      |                                                   optind
+/work/repo/units/u0781/u0781_test.cc:67:60: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   67 |   ceres::internal::ComputeSingleLinkageClustering(options, graph, nullptr);
+      |                                                            ^~~~~
+      |                                                            isgraph

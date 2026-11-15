@@ -1,0 +1,9 @@
+{
+  "id": "u0872",
+  "name": "ceres::Manifold::~Manifold",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0872/u0872_test.cc:7:19: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::Manifold’"
+  ]
+}

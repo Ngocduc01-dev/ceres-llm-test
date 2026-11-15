@@ -1,0 +1,18 @@
+/work/repo/units/u0792/u0792_test.cc: In member function ‘virtual void Unit_u0792_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0792/u0792_test.cc:9:3: error: ‘BlockRandomAccessSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessSparseMatrix’?
+    9 |   BlockRandomAccessSparseMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockRandomAccessSparseMatrix
+In file included from /work/repo/units/u0792/u0792_test.cc:4:
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:56:23: note: ‘ceres::internal::BlockRandomAccessSparseMatrix’ declared here
+   56 | class CERES_NO_EXPORT BlockRandomAccessSparseMatrix
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0792/u0792_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::BlockRandomAccessSparseMatrixAdapter object{};
+      |                    ^
+/work/repo/units/u0792/u0792_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::BlockRandomAccessSparseMatrixAdapter object{};
+      |                     ^~~~~~~~~
+/work/repo/units/u0792/u0792_test.cc:11:9: error: ‘object’ was not declared in this scope
+   11 |   (void)object;
+      |         ^~~~~~

@@ -1,0 +1,16 @@
+{
+  "id": "u1521",
+  "name": "ceres::internal::TrustRegionPreprocessor::Preprocess",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1521/u1521_test.cc:11:3: error: ‘Solver’ has not been declared",
+    "units/u1521/u1521_test.cc:13:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1521/u1521_test.cc:18:3: error: ‘Solver’ has not been declared",
+    "units/u1521/u1521_test.cc:20:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1521/u1521_test.cc:25:3: error: ‘Solver’ has not been declared",
+    "units/u1521/u1521_test.cc:27:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1521/u1521_test.cc:32:3: error: ‘Solver’ has not been declared",
+    "units/u1521/u1521_test.cc:34:21: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

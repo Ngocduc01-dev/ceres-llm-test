@@ -1,0 +1,10 @@
+{
+  "id": "u0468",
+  "name": "ceres::internal::BFGS::BFGS",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0468/u0468_test.cc:12:7: error: expected ‘;’ before ‘bfgs’",
+    "units/u0468/u0468_test.cc:19:7: error: expected ‘;’ before ‘bfgs’"
+  ]
+}

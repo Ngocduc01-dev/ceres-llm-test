@@ -1,0 +1,16 @@
+{
+  "id": "u1457",
+  "name": "ceres::internal::InnerProductComputer::Init",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1457/u1457_test.cc:9:9: error: ‘CompressedRowSparseMatrix’ does not name a type",
+    "units/u1457/u1457_test.cc:10:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1457/u1457_test.cc:11:15: error: ‘product_storage_type’ was not declared in this scope",
+    "units/u1457/u1457_test.cc:16:9: error: ‘CompressedRowSparseMatrix’ does not name a type",
+    "units/u1457/u1457_test.cc:17:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’",
+    "units/u1457/u1457_test.cc:18:15: error: ‘product_storage_type’ was not declared in this scope",
+    "units/u1457/u1457_test.cc:23:9: error: ‘CompressedRowSparseMatrix’ does not name a type",
+    "units/u1457/u1457_test.cc:24:48: error: no matching function for call to ‘ceres::internal::InnerProductComputer::InnerProductComputer(<brace-enclosed initializer list>)’"
+  ]
+}

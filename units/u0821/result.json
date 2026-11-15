@@ -1,0 +1,10 @@
+{
+  "id": "u0821",
+  "name": "ceres::LossFunctionWrapper::LossFunctionWrapper",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0821/u0821_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u0821/u0821_test.cc:8:37: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunctionWrapper(<brace-enclosed initializer list>)’"
+  ]
+}

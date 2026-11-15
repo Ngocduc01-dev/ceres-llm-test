@@ -1,0 +1,13 @@
+{
+  "id": "u0704",
+  "name": "ceres::internal::DenseCholesky::FactorAndSolve",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0704/u0704_test.cc:7:10: error: scalar object ‘lhs_data’ requires one element in initializer",
+    "units/u0704/u0704_test.cc:8:10: error: scalar object ‘rhs_data’ requires one element in initializer",
+    "units/u0704/u0704_test.cc:9:10: error: scalar object ‘solution_data’ requires one element in initializer",
+    "units/u0704/u0704_test.cc:10:10: error: scalar object ‘message_data’ requires one element in initializer",
+    "units/u0704/u0704_test.cc:11:3: error: ‘object’ was not declared in this scope"
+  ]
+}

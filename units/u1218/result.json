@@ -1,0 +1,16 @@
+{
+  "id": "u1218",
+  "name": "ceres::internal::BlockSparseMatrix::CreateRandomMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1218/u1218_test.cc:8:3: error: ‘BlockSparseMatrix’ has not been declared",
+    "units/u1218/u1218_test.cc:11:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1218/u1218_test.cc:12:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1218/u1218_test.cc:17:3: error: ‘BlockSparseMatrix’ has not been declared",
+    "units/u1218/u1218_test.cc:20:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1218/u1218_test.cc:21:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1218/u1218_test.cc:26:3: error: ‘BlockSparseMatrix’ has not been declared",
+    "units/u1218/u1218_test.cc:29:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

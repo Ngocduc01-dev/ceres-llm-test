@@ -1,0 +1,18 @@
+/work/repo/units/u1435/u1435_test.cc: In member function ‘virtual void Unit_u1435_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1435/u1435_test.cc:9:3: error: ‘Evaluator’ has not been declared
+    9 |   Evaluator::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1435/u1435_test.cc:10:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::BlockJacobianWriter object{};
+      |                                               ^
+In file included from /work/repo/units/u1435/u1435_test.cc:3:
+/work/ceres-solver/internal/ceres/block_jacobian_writer.h:67:3: note: candidate: ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(const ceres::internal::Evaluator::Options&, ceres::internal::Program*)’
+   67 |   BlockJacobianWriter(const Evaluator::Options& options, Program* program);
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobian_writer.h:67:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/block_jacobian_writer.h:54:23: note: candidate: ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(const ceres::internal::BlockJacobianWriter&)’
+   54 | class CERES_NO_EXPORT BlockJacobianWriter {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobian_writer.h:54:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/block_jacobian_writer.h:54:23: note: candidate: ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(ceres::internal::BlockJacobianWriter&&)’
+/work/ceres-solver/internal/ceres/block_jacobian_writer.h:54:23: note:   candidate expects 1 argument, 0 provided

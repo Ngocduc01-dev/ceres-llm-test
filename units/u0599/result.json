@@ -1,0 +1,9 @@
+{
+  "id": "u0599",
+  "name": "ceres::internal::(anonymous)::DecrementValueOrDeleteKey",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0599/u0599_test.cc:10:10: error: scalar object ‘container_data’ requires one element in initializer"
+  ]
+}

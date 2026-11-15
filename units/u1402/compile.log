@@ -1,0 +1,34 @@
+/work/repo/units/u1402/u1402_test.cc: In member function ‘virtual void Unit_u1402_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1402/u1402_test.cc:12:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   12 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1402/u1402_test.cc:8:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1402/u1402_test.cc:13:59: error: ‘program’ was not declared in this scope
+   13 |   ceres::internal::ComputeRecursiveIndependentSetOrdering(program, nullptr);
+      |                                                           ^~~~~~~
+/work/repo/units/u1402/u1402_test.cc: In member function ‘virtual void Unit_u1402_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1402/u1402_test.cc:18:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   18 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1402/u1402_test.cc:19:59: error: ‘program’ was not declared in this scope
+   19 |   ceres::internal::ComputeRecursiveIndependentSetOrdering(program, nullptr);
+      |                                                           ^~~~~~~
+/work/repo/units/u1402/u1402_test.cc: In member function ‘virtual void Unit_u1402_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1402/u1402_test.cc:24:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   24 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1402/u1402_test.cc:25:59: error: ‘program’ was not declared in this scope
+   25 |   ceres::internal::ComputeRecursiveIndependentSetOrdering(program, nullptr);
+      |                                                           ^~~~~~~

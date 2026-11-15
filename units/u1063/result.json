@@ -1,0 +1,10 @@
+{
+  "id": "u1063",
+  "name": "ceres::internal::ImplicitSchurComplement::UpdateRhs",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1063/u1063_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’",
+    "units/u1063/u1063_test.cc:10:19: error: ‘void ceres::internal::ImplicitSchurComplement::UpdateRhs()’ is private within this context"
+  ]
+}

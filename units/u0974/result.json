@@ -1,0 +1,16 @@
+{
+  "id": "u0974",
+  "name": "ceres::internal::(anonymous)::DumpLinearLeastSquaresProblemToConsole",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0974/u0974_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0974/u0974_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0974/u0974_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0974/u0974_test.cc:16:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0974/u0974_test.cc:22:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0974/u0974_test.cc:22:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0974/u0974_test.cc:28:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0974/u0974_test.cc:28:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

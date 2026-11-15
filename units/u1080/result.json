@@ -1,0 +1,9 @@
+{
+  "id": "u1080",
+  "name": "ceres::internal::SparseMatrixPreconditionerWrapper::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1080/u1080_test.cc:7:61: error: no matching function for call to ‘ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper(<brace-enclosed initializer list>)’"
+  ]
+}

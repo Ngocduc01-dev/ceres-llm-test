@@ -1,0 +1,106 @@
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:8:3: error: ‘BlockSparseMatrix’ has not been declared
+    8 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:11:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+In file included from /work/repo/units/u1218/u1218_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:12:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   12 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:17:3: error: ‘BlockSparseMatrix’ has not been declared
+   17 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:20:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:21:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   21 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:26:3: error: ‘BlockSparseMatrix’ has not been declared
+   26 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:29:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   29 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:30:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   30 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:35:3: error: ‘BlockSparseMatrix’ has not been declared
+   35 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:38:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   38 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:39:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   39 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:44:3: error: ‘BlockSparseMatrix’ has not been declared
+   44 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:47:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   47 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:48:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   48 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:53:3: error: ‘BlockSparseMatrix’ has not been declared
+   53 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:56:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   56 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:57:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   57 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind
+/work/repo/units/u1218/u1218_test.cc: In member function ‘virtual void Unit_u1218_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1218/u1218_test.cc:62:3: error: ‘BlockSparseMatrix’ has not been declared
+   62 |   BlockSparseMatrix::RandomMatrixOptions options{};
+      |   ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1218/u1218_test.cc:65:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+   65 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1218/u1218_test.cc:66:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   66 |   object.CreateRandomMatrix(options, prng, use_page_locked_memory);
+      |                             ^~~~~~~
+      |                             optind

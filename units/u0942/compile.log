@@ -1,0 +1,18 @@
+/work/repo/units/u0942/u0942_test.cc: In member function ‘virtual void Unit_u0942_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0942/u0942_test.cc:8:3: error: ‘TrustRegionStrategy’ has not been declared
+    8 |   TrustRegionStrategy::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0942/u0942_test.cc:9:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::DoglegStrategy object{};
+      |                                          ^
+In file included from /work/repo/units/u0942/u0942_test.cc:3:
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   58 |   explicit DoglegStrategy(const TrustRegionStrategy::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:58:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(const ceres::internal::DoglegStrategy&)’
+   56 | class CERES_NO_EXPORT DoglegStrategy final : public TrustRegionStrategy {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note: candidate: ‘ceres::internal::DoglegStrategy::DoglegStrategy(ceres::internal::DoglegStrategy&&)’
+/work/ceres-solver/internal/ceres/dogleg_strategy.h:56:23: note:   candidate expects 1 argument, 0 provided

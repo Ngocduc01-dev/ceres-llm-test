@@ -1,0 +1,11 @@
+{
+  "id": "u1353",
+  "name": "ceres::internal::CompressedRowJacobianWriter::PopulateJacobianRowAndColumnBlockVectors",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1353/u1353_test.cc:11:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobianWriter::CompressedRowJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1353/u1353_test.cc:17:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobianWriter::CompressedRowJacobianWriter(<brace-enclosed initializer list>)’",
+    "units/u1353/u1353_test.cc:23:55: error: no matching function for call to ‘ceres::internal::CompressedRowJacobianWriter::CompressedRowJacobianWriter(<brace-enclosed initializer list>)’"
+  ]
+}

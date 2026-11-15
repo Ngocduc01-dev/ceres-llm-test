@@ -1,0 +1,10 @@
+{
+  "id": "u0957",
+  "name": "ceres::internal::DoglegStrategy::ComputeGradient",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0957/u0957_test.cc:8:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u0957/u0957_test.cc:9:25: error: ‘void ceres::internal::DoglegStrategy::ComputeGradient(ceres::internal::SparseMatrix*, const double*)’ is private within this context"
+  ]
+}

@@ -1,0 +1,54 @@
+/work/repo/units/u1373/u1373_test.cc: In member function ‘virtual void Unit_u1373_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1373/u1373_test.cc:9:9: error: ‘LinearSolverOrderingType’ does not name a type
+    9 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc:10:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+   10 |   TripletSparseMatrix tsm_block_jacobian_transpose{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+In file included from /work/ceres-solver/internal/ceres/linear_solver.h:51,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:38,
+                 from /work/repo/units/u1373/u1373_test.cc:3:
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc:11:20: error: expected unqualified-id before ‘(’ token
+   11 |   ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr);
+      |                    ^
+/work/repo/units/u1373/u1373_test.cc:11:21: error: ‘anonymous’ was not declared in this scope
+   11 |   ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc: In member function ‘virtual void Unit_u1373_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1373/u1373_test.cc:16:9: error: ‘LinearSolverOrderingType’ does not name a type
+   16 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc:17:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+   17 |   TripletSparseMatrix tsm_block_jacobian_transpose{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc:18:20: error: expected unqualified-id before ‘(’ token
+   18 |   ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr);
+      |                    ^
+/work/repo/units/u1373/u1373_test.cc:18:21: error: ‘anonymous’ was not declared in this scope
+   18 |   ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc: In member function ‘virtual void Unit_u1373_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1373/u1373_test.cc:23:9: error: ‘LinearSolverOrderingType’ does not name a type
+   23 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc:24:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+   24 |   TripletSparseMatrix tsm_block_jacobian_transpose{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1373/u1373_test.cc:25:20: error: expected unqualified-id before ‘(’ token
+   25 |   ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr);
+      |                    ^
+/work/repo/units/u1373/u1373_test.cc:25:21: error: ‘anonymous’ was not declared in this scope
+   25 |   ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingEigenSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr);
+      |                     ^~~~~~~~~

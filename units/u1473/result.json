@@ -1,0 +1,14 @@
+{
+  "id": "u1473",
+  "name": "ceres::internal::(anonymous)::IsProgramValid",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1473/u1473_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1473/u1473_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1473/u1473_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1473/u1473_test.cc:15:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1473/u1473_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1473/u1473_test.cc:16:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

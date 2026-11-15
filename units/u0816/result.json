@@ -1,0 +1,16 @@
+{
+  "id": "u0816",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::ComputeBlockPairsInPreconditioner",
+  "status": "compile_fail",
+  "cfg_branches": 28,
+  "errors": [
+    "units/u0816/u0816_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0816/u0816_test.cc:9:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0816/u0816_test.cc:10:44: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u0816/u0816_test.cc:15:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0816/u0816_test.cc:16:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0816/u0816_test.cc:17:44: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?",
+    "units/u0816/u0816_test.cc:22:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u0816/u0816_test.cc:23:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

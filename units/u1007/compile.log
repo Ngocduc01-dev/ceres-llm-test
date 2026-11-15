@@ -1,0 +1,15 @@
+/work/repo/units/u1007/u1007_test.cc: In member function ‘virtual void Unit_u1007_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1007/u1007_test.cc:10:20: error: ‘LBFGS’ is not a member of ‘ceres::internal’; did you mean ‘ceres::LBFGS’?
+   10 |   ceres::internal::LBFGS object{};
+      |                    ^~~~~
+In file included from /work/ceres-solver/include/ceres/iteration_callback.h:40,
+                 from /work/ceres-solver/internal/ceres/minimizer.h:40,
+                 from /work/ceres-solver/internal/ceres/line_search_minimizer.h:36,
+                 from /work/ceres-solver/internal/ceres/line_search_direction.h:38,
+                 from /work/repo/units/u1007/u1007_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:293:3: note: ‘ceres::LBFGS’ declared here
+  293 |   LBFGS,
+      |   ^~~~~
+/work/repo/units/u1007/u1007_test.cc:11:9: error: ‘object’ was not declared in this scope
+   11 |   (void)object;
+      |         ^~~~~~

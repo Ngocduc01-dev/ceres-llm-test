@@ -1,0 +1,13 @@
+{
+  "id": "u1067",
+  "name": "ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1067/u1067_test.cc:9:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context",
+    "units/u1067/u1067_test.cc:15:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context",
+    "units/u1067/u1067_test.cc:21:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context",
+    "units/u1067/u1067_test.cc:27:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context",
+    "units/u1067/u1067_test.cc:33:46: error: ‘void ceres::internal::TrustRegionMinimizer::ComputeCandidatePointAndEvaluateCost()’ is private within this context"
+  ]
+}

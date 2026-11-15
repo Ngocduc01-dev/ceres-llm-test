@@ -1,0 +1,9 @@
+{
+  "id": "u1254",
+  "name": "ceres::internal::SchurJacobiPreconditioner::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1254/u1254_test.cc:7:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

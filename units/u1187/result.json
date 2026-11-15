@@ -1,0 +1,30 @@
+{
+  "id": "u1187",
+  "name": "ceres::internal::LinearLeastSquaresProblem5",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u1187.TC1_CallsTarget": "pass",
+    "Unit_u1187.TC2_CallsTarget": "pass",
+    "Unit_u1187.TC3_CallsTarget": "pass",
+    "Unit_u1187.TC4_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 77,
+    "total": 77
+  },
+  "c2": {
+    "covered": 6,
+    "total": 6,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

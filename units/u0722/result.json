@@ -1,0 +1,10 @@
+{
+  "id": "u0722",
+  "name": "ceres::internal::DenseSparseMatrix::SquaredColumnNorm",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0722/u0722_test.cc:7:10: error: scalar object ‘x_data’ requires one element in initializer",
+    "units/u0722/u0722_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "u0923",
+  "name": "ceres::internal::SchurEliminatorBase::Create",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0923/u0923_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u0923/u0923_test.cc:9:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurEliminatorBase’",
+    "units/u0923/u0923_test.cc:10:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

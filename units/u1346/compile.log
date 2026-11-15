@@ -1,0 +1,12 @@
+/work/repo/units/u1346/u1346_test.cc: In member function ‘virtual void Unit_u1346_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1346/u1346_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1346/u1346_test.cc:10:54: error: no matching function for call to ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::SparseNormalCholeskySolver object{};
+      |                                                      ^
+In file included from /work/repo/units/u1346/u1346_test.cc:5:
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::SparseNormalCholeskySolver::SparseNormalCholeskySolver(const ceres::internal::LinearSolver::Options&)’
+   59 |   explicit SparseNormalCholeskySolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided

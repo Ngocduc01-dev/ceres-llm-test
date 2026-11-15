@@ -1,0 +1,20 @@
+/work/repo/units/u0774/u0774_test.cc: In member function ‘virtual void Unit_u0774_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0774/u0774_test.cc:11:37: error: expected primary-expression before ‘bool’
+   11 |   object.Init(num_eliminate_blocks, bool, nullptr);
+      |                                     ^~~~
+/work/repo/units/u0774/u0774_test.cc: In member function ‘virtual void Unit_u0774_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0774/u0774_test.cc:19:37: error: expected primary-expression before ‘bool’
+   19 |   object.Init(num_eliminate_blocks, bool, nullptr);
+      |                                     ^~~~
+/work/repo/units/u0774/u0774_test.cc: In member function ‘virtual void Unit_u0774_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0774/u0774_test.cc:27:37: error: expected primary-expression before ‘bool’
+   27 |   object.Init(num_eliminate_blocks, bool, nullptr);
+      |                                     ^~~~
+/work/repo/units/u0774/u0774_test.cc: In member function ‘virtual void Unit_u0774_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0774/u0774_test.cc:35:37: error: expected primary-expression before ‘bool’
+   35 |   object.Init(num_eliminate_blocks, bool, nullptr);
+      |                                     ^~~~
+/work/repo/units/u0774/u0774_test.cc: In member function ‘virtual void Unit_u0774_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0774/u0774_test.cc:43:37: error: expected primary-expression before ‘bool’
+   43 |   object.Init(num_eliminate_blocks, bool, nullptr);
+      |                                     ^~~~

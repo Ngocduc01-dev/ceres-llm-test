@@ -1,0 +1,31 @@
+/work/repo/units/u1473/u1473_test.cc: In member function ‘virtual void Unit_u1473_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1473/u1473_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+    9 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/ceres-solver/internal/ceres/preprocessor.h:47,
+                 from /work/ceres-solver/internal/ceres/line_search_preprocessor.h:36,
+                 from /work/repo/units/u1473/u1473_test.cc:3:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1473/u1473_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::IsProgramValid(program, nullptr);
+      |                    ^
+/work/repo/units/u1473/u1473_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::IsProgramValid(program, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u1473/u1473_test.cc: In member function ‘virtual void Unit_u1473_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1473/u1473_test.cc:15:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   15 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1473/u1473_test.cc:16:20: error: expected unqualified-id before ‘(’ token
+   16 |   ceres::internal::(anonymous)::IsProgramValid(program, nullptr);
+      |                    ^
+/work/repo/units/u1473/u1473_test.cc:16:21: error: ‘anonymous’ was not declared in this scope
+   16 |   ceres::internal::(anonymous)::IsProgramValid(program, nullptr);
+      |                     ^~~~~~~~~

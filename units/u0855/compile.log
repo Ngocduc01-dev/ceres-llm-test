@@ -1,0 +1,27 @@
+/work/repo/units/u0855/u0855_test.cc: In member function ‘virtual void Unit_u0855_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0855/u0855_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+    9 |   Vector from{};
+      |   ^~~~~~
+/work/repo/units/u0855/u0855_test.cc:9:3: note: suggested alternatives:
+In file included from /work/ceres-solver/internal/ceres/eigen_vector_ops.h:36,
+                 from /work/repo/units/u0855/u0855_test.cc:4:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u0855/u0855_test.cc:10:9: error: expected ‘;’ before ‘to’
+   10 |   Vector to{};
+      |         ^~~
+      |         ;
+/work/repo/units/u0855/u0855_test.cc:12:25: error: ‘from’ was not declared in this scope; did you mean ‘fromfp’?
+   12 |   ceres::internal::Copy(from, to, nullptr, num_threads);
+      |                         ^~~~
+      |                         fromfp
+/work/repo/units/u0855/u0855_test.cc:12:31: error: ‘to’ was not declared in this scope; did you mean ‘tm’?
+   12 |   ceres::internal::Copy(from, to, nullptr, num_threads);
+      |                               ^~
+      |                               tm

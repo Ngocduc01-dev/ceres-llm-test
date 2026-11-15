@@ -1,0 +1,30 @@
+/work/repo/units/u0935/u0935_test.cc: In member function ‘virtual void Unit_u0935_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0935/u0935_test.cc:7:18: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = char; _Traits = std::char_traits<char>]’ is protected within this context
+    7 |   std::ostream s{};
+      |                  ^
+In file included from /work/ceres-solver/internal/ceres/gtest/gtest.h:58,
+                 from /work/repo/units/u0935/u0935_test.cc:2:
+/usr/include/c++/14/ostream:437:7: note: declared protected here
+  437 |       basic_ostream()
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0935/u0935_test.cc:8:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+    8 |   CompressedRowSparseMatrix::StorageType type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0935/u0935_test.cc:9:34: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?
+    9 |   ceres::internal::operator<<(s, type);
+      |                                  ^~~~
+      |                                  wctype
+/work/repo/units/u0935/u0935_test.cc: In member function ‘virtual void Unit_u0935_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0935/u0935_test.cc:14:18: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = char; _Traits = std::char_traits<char>]’ is protected within this context
+   14 |   std::ostream s{};
+      |                  ^
+/usr/include/c++/14/ostream:437:7: note: declared protected here
+  437 |       basic_ostream()
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u0935/u0935_test.cc:15:3: error: ‘CompressedRowSparseMatrix’ has not been declared
+   15 |   CompressedRowSparseMatrix::StorageType type{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0935/u0935_test.cc:16:34: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?
+   16 |   ceres::internal::operator<<(s, type);
+      |                                  ^~~~
+      |                                  wctype

@@ -1,0 +1,16 @@
+{
+  "id": "u1061",
+  "name": "ceres::internal::MatrixMatrixMultiplyNaive",
+  "status": "compile_fail",
+  "cfg_branches": 20,
+  "errors": [
+    "units/u1061/u1061_test.cc:8:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:14:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:20:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:26:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:32:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:38:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:44:16: error: extended character – is not valid in an identifier",
+    "units/u1061/u1061_test.cc:50:16: error: extended character – is not valid in an identifier"
+  ]
+}

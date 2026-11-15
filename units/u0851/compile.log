@@ -1,0 +1,18 @@
+/work/repo/units/u0851/u0851_test.cc: In member function ‘virtual void Unit_u0851_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0851/u0851_test.cc:9:20: error: ‘Derived’ was not declared in this scope
+    9 |   Eigen::DenseBase<Derived> x{};
+      |                    ^~~~~~~
+/work/repo/units/u0851/u0851_test.cc:9:27: error: template argument 1 is invalid
+    9 |   Eigen::DenseBase<Derived> x{};
+      |                           ^
+/work/repo/units/u0851/u0851_test.cc:11:24: error: no matching function for call to ‘Norm(int&, std::nullptr_t, int&)’
+   11 |   ceres::internal::Norm(x, nullptr, num_threads);
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u0851/u0851_test.cc:5:
+/work/ceres-solver/internal/ceres/eigen_vector_ops.h:47:15: note: candidate: ‘template<class Derived> double ceres::internal::Norm(const Eigen::DenseBase<Derived>&, ContextImpl*, int)’
+   47 | inline double Norm(const Eigen::DenseBase<Derived>& x,
+      |               ^~~~
+/work/ceres-solver/internal/ceres/eigen_vector_ops.h:47:15: note:   template argument deduction/substitution failed:
+/work/repo/units/u0851/u0851_test.cc:11:24: note:   mismatched types ‘const Eigen::DenseBase<Derived>’ and ‘int’
+   11 |   ceres::internal::Norm(x, nullptr, num_threads);
+      |   ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~

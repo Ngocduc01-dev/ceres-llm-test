@@ -1,0 +1,11 @@
+{
+  "id": "u0796",
+  "name": "ceres::internal::SchurComplementSolver::mutable_lhs",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0796/u0796_test.cc:8:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u0796/u0796_test.cc:8:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’",
+    "units/u0796/u0796_test.cc:9:21: error: ‘ceres::internal::BlockRandomAccessMatrix* ceres::internal::SchurComplementSolver::mutable_lhs()’ is protected within this context"
+  ]
+}

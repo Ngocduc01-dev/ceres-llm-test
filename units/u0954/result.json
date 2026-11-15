@@ -1,0 +1,16 @@
+{
+  "id": "u0954",
+  "name": "ceres::internal::Evaluator::Create",
+  "status": "compile_fail",
+  "cfg_branches": 11,
+  "errors": [
+    "units/u0954/u0954_test.cc:16:3: error: ‘Evaluator’ has not been declared",
+    "units/u0954/u0954_test.cc:17:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Evaluator’",
+    "units/u0954/u0954_test.cc:18:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0954/u0954_test.cc:23:3: error: ‘Evaluator’ has not been declared",
+    "units/u0954/u0954_test.cc:24:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Evaluator’",
+    "units/u0954/u0954_test.cc:25:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0954/u0954_test.cc:30:3: error: ‘Evaluator’ has not been declared",
+    "units/u0954/u0954_test.cc:31:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Evaluator’"
+  ]
+}

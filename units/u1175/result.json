@@ -1,0 +1,10 @@
+{
+  "id": "u1175",
+  "name": "ceres::internal::PartitionedMatrixView::UpdateBlockDiagonalEtEMultiThreaded",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1175/u1175_test.cc:9:49: error: class template argument deduction failed:",
+    "units/u1175/u1175_test.cc:9:49: error: no matching function for call to ‘PartitionedMatrixView()’"
+  ]
+}

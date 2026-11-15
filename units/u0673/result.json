@@ -1,0 +1,9 @@
+{
+  "id": "u0673",
+  "name": "ceres::internal::WeightedGraph::AddVertex",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0673/u0673_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

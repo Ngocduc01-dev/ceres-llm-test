@@ -1,0 +1,9 @@
+{
+  "id": "u1326",
+  "name": "ceres::internal::DynamicCompressedRowJacobianFinalizer::operator()",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1326/u1326_test.cc:11:9: error: no match for call to ‘(ceres::internal::DynamicCompressedRowJacobianFinalizer) (std::nullptr_t)’"
+  ]
+}

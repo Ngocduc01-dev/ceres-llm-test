@@ -1,0 +1,10 @@
+{
+  "id": "u0880",
+  "name": "ceres::Problem::operator=",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0880/u0880_test.cc:7:3: error: ‘Problem’ was not declared in this scope; did you mean ‘ceres::Problem’?",
+    "units/u0880/u0880_test.cc:9:10: error: ‘arg0’ was not declared in this scope"
+  ]
+}

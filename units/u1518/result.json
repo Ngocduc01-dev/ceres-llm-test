@@ -1,0 +1,13 @@
+{
+  "id": "u1518",
+  "name": "ceres::internal::CovarianceImpl::ComputeCovarianceValues",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1518/u1518_test.cc:7:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1518/u1518_test.cc:13:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1518/u1518_test.cc:19:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1518/u1518_test.cc:25:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’",
+    "units/u1518/u1518_test.cc:31:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’"
+  ]
+}

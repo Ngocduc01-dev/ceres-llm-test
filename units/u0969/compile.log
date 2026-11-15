@@ -1,0 +1,38 @@
+/work/repo/units/u0969/u0969_test.cc: In member function ‘virtual void Unit_u0969_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0969/u0969_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+    9 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u0969/u0969_test.cc:9:3: note: suggested alternatives:
+In file included from /work/ceres-solver/internal/ceres/line_search_minimizer.h:34,
+                 from /work/repo/units/u0969/u0969_test.cc:4:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u0969/u0969_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::EvaluateGradientNorms(nullptr, x, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0969/u0969_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::EvaluateGradientNorms(nullptr, x, nullptr, nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0969/u0969_test.cc: In member function ‘virtual void Unit_u0969_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0969/u0969_test.cc:15:3: error: ‘Vector’ was not declared in this scope
+   15 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u0969/u0969_test.cc:15:3: note: suggested alternatives:
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/repo/units/u0969/u0969_test.cc:16:20: error: expected unqualified-id before ‘(’ token
+   16 |   ceres::internal::(anonymous)::EvaluateGradientNorms(nullptr, x, nullptr, nullptr);
+      |                    ^
+/work/repo/units/u0969/u0969_test.cc:16:21: error: ‘anonymous’ was not declared in this scope
+   16 |   ceres::internal::(anonymous)::EvaluateGradientNorms(nullptr, x, nullptr, nullptr);
+      |                     ^~~~~~~~~

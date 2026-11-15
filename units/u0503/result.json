@@ -1,0 +1,10 @@
+{
+  "id": "u0503",
+  "name": "ceres::internal::CgnrSolver::~CgnrSolver",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0503/u0503_test.cc:7:3: error: ‘CgnrSolver’ was not declared in this scope; did you mean ‘ceres::internal::CgnrSolver’?",
+    "units/u0503/u0503_test.cc:7:23: error: expected primary-expression before ‘)’ token"
+  ]
+}

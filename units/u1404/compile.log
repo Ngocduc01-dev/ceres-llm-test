@@ -1,0 +1,74 @@
+/work/repo/units/u1404/u1404_test.cc: In member function ‘virtual void Unit_u1404_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1404/u1404_test.cc:8:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+    8 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+In file included from /work/repo/units/u1404/u1404_test.cc:3:
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1404/u1404_test.cc:8:29: error: template argument 1 is invalid
+    8 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u1404/u1404_test.cc:8:29: error: template argument 2 is invalid
+/work/repo/units/u1404/u1404_test.cc:11:52: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   11 |   ceres::internal::MinimizeInterpolatingPolynomial(samples, x_min, x_max, nullptr, nullptr);
+      |                                                    ^~~~~~~
+In file included from /work/repo/units/u1404/u1404_test.cc:4:
+/work/ceres-solver/internal/ceres/polynomial.h:112:40: note: in passing argument 1 of ‘void ceres::internal::MinimizeInterpolatingPolynomial(const std::vector<FunctionSample>&, double, double, double*, double*)’
+  112 |     const std::vector<FunctionSample>& samples,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u1404/u1404_test.cc: In member function ‘virtual void Unit_u1404_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1404/u1404_test.cc:16:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   16 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1404/u1404_test.cc:16:29: error: template argument 1 is invalid
+   16 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u1404/u1404_test.cc:16:29: error: template argument 2 is invalid
+/work/repo/units/u1404/u1404_test.cc:19:52: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   19 |   ceres::internal::MinimizeInterpolatingPolynomial(samples, x_min, x_max, nullptr, nullptr);
+      |                                                    ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:112:40: note: in passing argument 1 of ‘void ceres::internal::MinimizeInterpolatingPolynomial(const std::vector<FunctionSample>&, double, double, double*, double*)’
+  112 |     const std::vector<FunctionSample>& samples,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u1404/u1404_test.cc: In member function ‘virtual void Unit_u1404_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1404/u1404_test.cc:24:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   24 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1404/u1404_test.cc:24:29: error: template argument 1 is invalid
+   24 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u1404/u1404_test.cc:24:29: error: template argument 2 is invalid
+/work/repo/units/u1404/u1404_test.cc:27:52: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   27 |   ceres::internal::MinimizeInterpolatingPolynomial(samples, x_min, x_max, nullptr, nullptr);
+      |                                                    ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:112:40: note: in passing argument 1 of ‘void ceres::internal::MinimizeInterpolatingPolynomial(const std::vector<FunctionSample>&, double, double, double*, double*)’
+  112 |     const std::vector<FunctionSample>& samples,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/repo/units/u1404/u1404_test.cc: In member function ‘virtual void Unit_u1404_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1404/u1404_test.cc:32:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   32 |   std::vector<FunctionSample> samples{};
+      |               ^~~~~~~~~~~~~~
+      |               ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1404/u1404_test.cc:32:29: error: template argument 1 is invalid
+   32 |   std::vector<FunctionSample> samples{};
+      |                             ^
+/work/repo/units/u1404/u1404_test.cc:32:29: error: template argument 2 is invalid
+/work/repo/units/u1404/u1404_test.cc:35:52: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’
+   35 |   ceres::internal::MinimizeInterpolatingPolynomial(samples, x_min, x_max, nullptr, nullptr);
+      |                                                    ^~~~~~~
+/work/ceres-solver/internal/ceres/polynomial.h:112:40: note: in passing argument 1 of ‘void ceres::internal::MinimizeInterpolatingPolynomial(const std::vector<FunctionSample>&, double, double, double*, double*)’
+  112 |     const std::vector<FunctionSample>& samples,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~

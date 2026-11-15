@@ -1,26 +1,37 @@
-# Unit u0381
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh (chỉ khởi tạo các member) |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `Options()` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | Không có tham số đầu vào (constructor mặc định) | Không có |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có. Unit không có điểm rẽ nhánh nên tổng số nhánh là 0, không có nhánh nào bị bỏ qua. Ghi chú: node 1 chỉ gồm các member initializer, không có lệnh điều khiển. Mã nguồn `Options() = default;` khớp với CFG.
 
-## D. File test
+`C2 dự kiến = 0 / 0` (không có nhánh nào; coi như đạt 100% vì mọi node đều được chạy qua).
+
+**D. File test**
 
 ```cpp
 // FILE: u0381_test.cc
 #include "gtest/gtest.h"
 #include "ceres/preconditioner.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0381, PathP1) { ceres::internal::Preconditioner::Options target; }
+
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(PreconditionerOptionsConstructorTest, DefaultConstructor_P1) {
+  Preconditioner::Options options;
+  (void)options;
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

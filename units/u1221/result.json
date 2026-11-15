@@ -1,0 +1,11 @@
+{
+  "id": "u1221",
+  "name": "ceres::internal::SchurJacobiPreconditioner::InitEliminator",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1221/u1221_test.cc:10:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?",
+    "units/u1221/u1221_test.cc:11:53: error: no matching function for call to ‘ceres::internal::SchurJacobiPreconditioner::SchurJacobiPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1221/u1221_test.cc:12:25: error: ‘bs’ was not declared in this scope; did you mean ‘abs’?"
+  ]
+}

@@ -1,0 +1,11 @@
+/work/repo/units/u0871/u0871_test.cc: In member function ‘virtual void Unit_u0871_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0871/u0871_test.cc:7:23: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::LossFunction’
+    7 |   ceres::LossFunction object{};
+      |                       ^~~~~~
+In file included from /work/repo/units/u0871/u0871_test.cc:3:
+/work/ceres-solver/include/ceres/loss_function.h:87:20: note:   because the following virtual functions are pure within ‘ceres::LossFunction’:
+   87 | class CERES_EXPORT LossFunction {
+      |                    ^~~~~~~~~~~~
+/work/ceres-solver/include/ceres/loss_function.h:115:16: note:     ‘virtual void ceres::LossFunction::Evaluate(double, double*) const’
+  115 |   virtual void Evaluate(double sq_norm, double out[3]) const = 0;
+      |                ^~~~~~~~

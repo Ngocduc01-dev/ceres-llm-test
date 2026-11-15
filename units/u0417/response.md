@@ -1,26 +1,59 @@
-# Unit u0417: `ceres::internal::SubsetPreconditioner::~SubsetPreconditioner`
+**A. Test paths**
 
-## A. Test paths
-
-| Path | ???ng ?i | Nh?nh |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Theo CFG trong prompt. |
+| P1 | START → END | Không có điểm rẽ nhánh nào |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | D? li?u |
-|---|---|---|
-| TC1 | P1 | D? li?u h?p l?, k?ch th??c nh?. |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | Số row block: 2–5. Số col block: 2–5. Kích thước block: 1–3. `subset_preconditioner_start_row_block` phải nhỏ hơn số row block, tức từ 0 đến (số row block − 1). Seed cố định. | 3 row block, 3 col block, kích thước block 2, mật độ 1.0, `start_row_block = 1`, seed 42, `EIGEN_SPARSE` |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test:** không có, vì hàm không có điểm rẽ nhánh.
+`C2 dự kiến = 0 / 0` (tổng số nhánh bằng 0, coi như đạt 100%; test chỉ cần chạy qua START → END).
 
-Kh?ng c? t?nh l?m sai CHECK. C2 d? ki?n theo cfg.txt.
+Ghi chú: Constructor cần một `BlockSparseMatrix`. Để tạo ma trận này, tôi thêm `#include "ceres/block_sparse_matrix.h"` và `<random>` ngoài các include ở mục 3.3. Tôi chưa biên dịch hay chạy file test.
 
-## D. File test
+**D. File test**
+
 ```cpp
 // FILE: u0417_test.cc
-#include <memory>
+#include <random>
+
 #include "gtest/gtest.h"
+#include "ceres/block_sparse_matrix.h"
 #include "ceres/subset_preconditioner.h"
-TEST(Unit_u0417, Destruction) { std::unique_ptr<ceres::internal::SubsetPreconditioner> target; }
+
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> END (hàm không có điểm rẽ nhánh)
+TEST(SubsetPreconditionerDestructorTest, TC1_P1_StartToEnd) {
+  std::mt19937 prng(42);
+
+  BlockSparseMatrix::RandomMatrixOptions matrix_options;
+  matrix_options.num_row_blocks = 3;
+  matrix_options.min_row_block_size = 2;
+  matrix_options.max_row_block_size = 2;
+  matrix_options.num_col_blocks = 3;
+  matrix_options.min_col_block_size = 2;
+  matrix_options.max_col_block_size = 2;
+  matrix_options.block_density = 1.0;
+
+  std::unique_ptr<BlockSparseMatrix> A =
+      BlockSparseMatrix::CreateRandomMatrix(matrix_options, prng);
+
+  Preconditioner::Options options;
+  options.subset_preconditioner_start_row_block = 1;
+  options.sparse_linear_algebra_library_type = EIGEN_SPARSE;
+
+  // Tạo object trên heap rồi delete để gọi destructor đúng một lần.
+  SubsetPreconditioner* preconditioner =
+      new SubsetPreconditioner(options, *A);
+  delete preconditioner;
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

@@ -1,0 +1,19 @@
+/work/repo/units/u1538/u1538_test.cc: In member function ‘virtual void Unit_u1538_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1538/u1538_test.cc:8:3: error: ‘GradientProblemSolver’ has not been declared
+    8 |   GradientProblemSolver::Options options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1538/u1538_test.cc:9:3: error: ‘GradientProblem’ was not declared in this scope; did you mean ‘ceres::GradientProblem’?
+    9 |   GradientProblem problem{};
+      |   ^~~~~~~~~~~~~~~
+      |   ceres::GradientProblem
+In file included from /work/repo/units/u1538/u1538_test.cc:3:
+/work/ceres-solver/include/ceres/gradient_problem.h:92:20: note: ‘ceres::GradientProblem’ declared here
+   92 | class CERES_EXPORT GradientProblem {
+      |                    ^~~~~~~~~~~~~~~
+/work/repo/units/u1538/u1538_test.cc:10:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   10 |   ceres::Solve(options, problem, nullptr, nullptr);
+      |                ^~~~~~~
+      |                optind
+/work/repo/units/u1538/u1538_test.cc:10:25: error: ‘problem’ was not declared in this scope
+   10 |   ceres::Solve(options, problem, nullptr, nullptr);
+      |                         ^~~~~~~

@@ -2,11 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/dogleg_strategy.h"
 
-TEST(Unit_u0286, PathP1) {
-  ceres::internal::TrustRegionStrategy::Options options;
-  ceres::internal::LinearSolver::Options solver_options;
-  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
-  options.linear_solver = linear_solver.get();
-  ceres::internal::DoglegStrategy target(options);
-  EXPECT_EQ(target.subspace_basis().rows(), 0);
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> END (không có điểm rẽ nhánh)
+TEST(DoglegStrategySubspaceBasisTest, P1_ReturnsSubspaceBasis) {
+  TrustRegionStrategy::Options options;
+  DoglegStrategy strategy(options);
+  Matrix basis = strategy.subspace_basis();
+  (void)basis;
 }
+
+}  // namespace internal
+}  // namespace ceres

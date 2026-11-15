@@ -1,0 +1,9 @@
+{
+  "id": "u0676",
+  "name": "ceres::internal::WeightedGraph::Neighbors",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0676/u0676_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

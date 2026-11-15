@@ -1,0 +1,57 @@
+/work/repo/units/u0812/u0812_test.cc: In member function ‘virtual void Unit_u0812_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0812/u0812_test.cc:9:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u0812/u0812_test.cc:4:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0812/u0812_test.cc:10:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context
+   10 |   object.FlattenMembershipMap(membership_map, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:159:8: note: declared private here
+  159 |   void FlattenMembershipMap(const std::unordered_map<int, int>& membership_map,
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0812/u0812_test.cc: In member function ‘virtual void Unit_u0812_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0812/u0812_test.cc:16:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0812/u0812_test.cc:17:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context
+   17 |   object.FlattenMembershipMap(membership_map, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:159:8: note: declared private here
+  159 |   void FlattenMembershipMap(const std::unordered_map<int, int>& membership_map,
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0812/u0812_test.cc: In member function ‘virtual void Unit_u0812_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0812/u0812_test.cc:23:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0812/u0812_test.cc:24:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context
+   24 |   object.FlattenMembershipMap(membership_map, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:159:8: note: declared private here
+  159 |   void FlattenMembershipMap(const std::unordered_map<int, int>& membership_map,
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0812/u0812_test.cc: In member function ‘virtual void Unit_u0812_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0812/u0812_test.cc:30:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0812/u0812_test.cc:31:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context
+   31 |   object.FlattenMembershipMap(membership_map, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:159:8: note: declared private here
+  159 |   void FlattenMembershipMap(const std::unordered_map<int, int>& membership_map,
+      |        ^~~~~~~~~~~~~~~~~~~~

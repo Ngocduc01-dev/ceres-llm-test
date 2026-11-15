@@ -1,0 +1,15 @@
+/work/repo/units/u0970/u0970_test.cc: In member function ‘virtual void Unit_u0970_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0970/u0970_test.cc:9:24: error: ‘void ceres::internal::ThreadPool::ThreadMainLoop()’ is private within this context
+    9 |   object.ThreadMainLoop();
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u0970/u0970_test.cc:4:
+/work/ceres-solver/internal/ceres/thread_pool.h:104:8: note: declared private here
+  104 |   void ThreadMainLoop();
+      |        ^~~~~~~~~~~~~~
+/work/repo/units/u0970/u0970_test.cc: In member function ‘virtual void Unit_u0970_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0970/u0970_test.cc:15:24: error: ‘void ceres::internal::ThreadPool::ThreadMainLoop()’ is private within this context
+   15 |   object.ThreadMainLoop();
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/thread_pool.h:104:8: note: declared private here
+  104 |   void ThreadMainLoop();
+      |        ^~~~~~~~~~~~~~

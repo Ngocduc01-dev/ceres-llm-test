@@ -1,0 +1,167 @@
+/work/repo/units/u1126/u1126_test.cc: In member function ‘virtual void Unit_u1126_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1126/u1126_test.cc:8:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?
+    8 |   CanonicalViewsClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CanonicalViewsClusteringOptions
+In file included from /work/repo/units/u1126/u1126_test.cc:3:
+/work/ceres-solver/internal/ceres/canonical_views_clustering.h:104:24: note: ‘ceres::internal::CanonicalViewsClusteringOptions’ declared here
+  104 | struct CERES_NO_EXPORT CanonicalViewsClusteringOptions {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:9:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+    9 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+In file included from /work/ceres-solver/internal/ceres/canonical_views_clustering.h:47:
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:9:17: error: expected primary-expression before ‘int’
+    9 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u1126/u1126_test.cc:10:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   10 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u1126/u1126_test.cc:11:3: error: ‘object’ was not declared in this scope
+   11 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1126/u1126_test.cc:11:28: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   11 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                            ^~~~~~~
+      |                            optind
+/work/repo/units/u1126/u1126_test.cc:11:37: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   11 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                                     ^~~~~
+      |                                     isgraph
+/work/repo/units/u1126/u1126_test.cc: In member function ‘virtual void Unit_u1126_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1126/u1126_test.cc:16:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?
+   16 |   CanonicalViewsClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CanonicalViewsClusteringOptions
+/work/ceres-solver/internal/ceres/canonical_views_clustering.h:104:24: note: ‘ceres::internal::CanonicalViewsClusteringOptions’ declared here
+  104 | struct CERES_NO_EXPORT CanonicalViewsClusteringOptions {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:17:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   17 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:17:17: error: expected primary-expression before ‘int’
+   17 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u1126/u1126_test.cc:18:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   18 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u1126/u1126_test.cc:19:3: error: ‘object’ was not declared in this scope
+   19 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1126/u1126_test.cc:19:28: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   19 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                            ^~~~~~~
+      |                            optind
+/work/repo/units/u1126/u1126_test.cc:19:37: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   19 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                                     ^~~~~
+      |                                     isgraph
+/work/repo/units/u1126/u1126_test.cc: In member function ‘virtual void Unit_u1126_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1126/u1126_test.cc:24:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?
+   24 |   CanonicalViewsClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CanonicalViewsClusteringOptions
+/work/ceres-solver/internal/ceres/canonical_views_clustering.h:104:24: note: ‘ceres::internal::CanonicalViewsClusteringOptions’ declared here
+  104 | struct CERES_NO_EXPORT CanonicalViewsClusteringOptions {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:25:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   25 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:25:17: error: expected primary-expression before ‘int’
+   25 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u1126/u1126_test.cc:26:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   26 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u1126/u1126_test.cc:27:3: error: ‘object’ was not declared in this scope
+   27 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1126/u1126_test.cc:27:28: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   27 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                            ^~~~~~~
+      |                            optind
+/work/repo/units/u1126/u1126_test.cc:27:37: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   27 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                                     ^~~~~
+      |                                     isgraph
+/work/repo/units/u1126/u1126_test.cc: In member function ‘virtual void Unit_u1126_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1126/u1126_test.cc:32:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?
+   32 |   CanonicalViewsClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CanonicalViewsClusteringOptions
+/work/ceres-solver/internal/ceres/canonical_views_clustering.h:104:24: note: ‘ceres::internal::CanonicalViewsClusteringOptions’ declared here
+  104 | struct CERES_NO_EXPORT CanonicalViewsClusteringOptions {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:33:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   33 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:33:17: error: expected primary-expression before ‘int’
+   33 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u1126/u1126_test.cc:34:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   34 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u1126/u1126_test.cc:35:3: error: ‘object’ was not declared in this scope
+   35 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1126/u1126_test.cc:35:28: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   35 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                            ^~~~~~~
+      |                            optind
+/work/repo/units/u1126/u1126_test.cc:35:37: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   35 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                                     ^~~~~
+      |                                     isgraph
+/work/repo/units/u1126/u1126_test.cc: In member function ‘virtual void Unit_u1126_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1126/u1126_test.cc:40:3: error: ‘CanonicalViewsClusteringOptions’ was not declared in this scope; did you mean ‘ceres::internal::CanonicalViewsClusteringOptions’?
+   40 |   CanonicalViewsClusteringOptions options{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CanonicalViewsClusteringOptions
+/work/ceres-solver/internal/ceres/canonical_views_clustering.h:104:24: note: ‘ceres::internal::CanonicalViewsClusteringOptions’ declared here
+  104 | struct CERES_NO_EXPORT CanonicalViewsClusteringOptions {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:41:3: error: ‘WeightedGraph’ was not declared in this scope; did you mean ‘ceres::internal::WeightedGraph’?
+   41 |   WeightedGraph<int> graph{};
+      |   ^~~~~~~~~~~~~
+      |   ceres::internal::WeightedGraph
+/work/ceres-solver/internal/ceres/graph.h:105:7: note: ‘ceres::internal::WeightedGraph’ declared here
+  105 | class WeightedGraph {
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1126/u1126_test.cc:41:17: error: expected primary-expression before ‘int’
+   41 |   WeightedGraph<int> graph{};
+      |                 ^~~
+/work/repo/units/u1126/u1126_test.cc:42:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?
+   42 |   ceres::internal::CanonicalViewsClustering object{};
+      |                    ^~~~~~~~~~~~~~~~~~~~~~~~
+      |                    ComputeCanonicalViewsClustering
+/work/repo/units/u1126/u1126_test.cc:43:3: error: ‘object’ was not declared in this scope
+   43 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |   ^~~~~~
+/work/repo/units/u1126/u1126_test.cc:43:28: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   43 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                            ^~~~~~~
+      |                            optind
+/work/repo/units/u1126/u1126_test.cc:43:37: error: ‘graph’ was not declared in this scope; did you mean ‘isgraph’?
+   43 |   object.ComputeClustering(options, graph, nullptr, nullptr);
+      |                                     ^~~~~
+      |                                     isgraph

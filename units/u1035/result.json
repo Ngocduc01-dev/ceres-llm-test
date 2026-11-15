@@ -1,0 +1,27 @@
+{
+  "id": "u1035",
+  "name": "ceres::internal::ProblemImpl::SetParameterBlockConstant",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u1035.TC1_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 1,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 8
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

@@ -1,0 +1,16 @@
+{
+  "id": "u1522",
+  "name": "ceres::internal::WolfeLineSearch::DoSearch",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1522/u1522_test.cc:11:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1522/u1522_test.cc:12:18: error: ‘virtual void ceres::internal::WolfeLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context",
+    "units/u1522/u1522_test.cc:20:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1522/u1522_test.cc:21:18: error: ‘virtual void ceres::internal::WolfeLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context",
+    "units/u1522/u1522_test.cc:29:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1522/u1522_test.cc:30:18: error: ‘virtual void ceres::internal::WolfeLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context",
+    "units/u1522/u1522_test.cc:38:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1522/u1522_test.cc:39:18: error: ‘virtual void ceres::internal::WolfeLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context"
+  ]
+}

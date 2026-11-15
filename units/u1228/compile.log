@@ -1,0 +1,31 @@
+/work/repo/units/u1228/u1228_test.cc: In member function ‘virtual void Unit_u1228_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1228/u1228_test.cc:9:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+    9 |   TripletSparseMatrix block_jacobian_transpose{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+In file included from /work/ceres-solver/internal/ceres/linear_solver.h:51,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:38,
+                 from /work/repo/units/u1228/u1228_test.cc:3:
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1228/u1228_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::CreateBlockJacobian(block_jacobian_transpose);
+      |                    ^
+/work/repo/units/u1228/u1228_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::CreateBlockJacobian(block_jacobian_transpose);
+      |                     ^~~~~~~~~
+/work/repo/units/u1228/u1228_test.cc: In member function ‘virtual void Unit_u1228_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1228/u1228_test.cc:15:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?
+   15 |   TripletSparseMatrix block_jacobian_transpose{};
+      |   ^~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::TripletSparseMatrix
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:51:23: note: ‘ceres::internal::TripletSparseMatrix’ declared here
+   51 | class CERES_NO_EXPORT TripletSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1228/u1228_test.cc:16:20: error: expected unqualified-id before ‘(’ token
+   16 |   ceres::internal::(anonymous)::CreateBlockJacobian(block_jacobian_transpose);
+      |                    ^
+/work/repo/units/u1228/u1228_test.cc:16:21: error: ‘anonymous’ was not declared in this scope
+   16 |   ceres::internal::(anonymous)::CreateBlockJacobian(block_jacobian_transpose);
+      |                     ^~~~~~~~~

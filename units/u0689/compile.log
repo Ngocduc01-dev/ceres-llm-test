@@ -1,0 +1,12 @@
+/work/repo/units/u0689/u0689_test.cc: In member function ‘virtual void Unit_u0689_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0689/u0689_test.cc:7:3: error: ‘SparseMatrixPreconditionerWrapper’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrixPreconditionerWrapper’?
+    7 |   SparseMatrixPreconditionerWrapper object(matrix_data, {});
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::SparseMatrixPreconditionerWrapper
+In file included from /work/repo/units/u0689/u0689_test.cc:3:
+/work/ceres-solver/internal/ceres/preconditioner.h:201:23: note: ‘ceres::internal::SparseMatrixPreconditionerWrapper’ declared here
+  201 | class CERES_NO_EXPORT SparseMatrixPreconditionerWrapper final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0689/u0689_test.cc:7:59: error: expected primary-expression before ‘)’ token
+    7 |   SparseMatrixPreconditionerWrapper object(matrix_data, {});
+      |                                                           ^

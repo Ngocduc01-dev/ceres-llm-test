@@ -2,7 +2,9 @@
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-TEST(Unit_u0310, PathP1) {
-  ceres::internal::WeightedGraph<int> target;
-  EXPECT_TRUE(target.vertices().empty());
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(WeightedGraphVerticesTest, P1_ReturnVerticesOfDefaultGraph) {
+  ceres::internal::WeightedGraph<int> graph;
+  const auto& vertices = graph.vertices();
+  (void)vertices;
 }

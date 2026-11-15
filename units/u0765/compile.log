@@ -1,0 +1,106 @@
+/work/repo/units/u0765/u0765_test.cc: In member function ‘virtual void Unit_u0765_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0765/u0765_test.cc:7:3: error: ‘Vector’ was not declared in this scope
+    7 |   Vector delta_x{};
+      |   ^~~~~~
+/work/repo/units/u0765/u0765_test.cc:7:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:39,
+                 from /work/repo/units/u0765/u0765_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0765/u0765_test.cc:8:9: error: expected ‘;’ before ‘delta_gradient’
+    8 |   Vector delta_gradient{};
+      |         ^~~~~~~~~~~~~~~
+      |         ;
+/work/repo/units/u0765/u0765_test.cc:9:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::LowRankInverseHessian object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:73:3: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(int, int, bool)’
+   73 |   LowRankInverseHessian(int num_parameters,
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:73:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(const ceres::internal::LowRankInverseHessian&)’
+   62 | class CERES_NO_EXPORT LowRankInverseHessian final : public LinearOperator {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(ceres::internal::LowRankInverseHessian&&)’
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0765/u0765_test.cc:10:17: error: ‘delta_x’ was not declared in this scope
+   10 |   object.Update(delta_x, delta_gradient);
+      |                 ^~~~~~~
+/work/repo/units/u0765/u0765_test.cc:10:26: error: ‘delta_gradient’ was not declared in this scope
+   10 |   object.Update(delta_x, delta_gradient);
+      |                          ^~~~~~~~~~~~~~
+/work/repo/units/u0765/u0765_test.cc: In member function ‘virtual void Unit_u0765_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0765/u0765_test.cc:15:3: error: ‘Vector’ was not declared in this scope
+   15 |   Vector delta_x{};
+      |   ^~~~~~
+/work/repo/units/u0765/u0765_test.cc:15:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0765/u0765_test.cc:16:9: error: expected ‘;’ before ‘delta_gradient’
+   16 |   Vector delta_gradient{};
+      |         ^~~~~~~~~~~~~~~
+      |         ;
+/work/repo/units/u0765/u0765_test.cc:17:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::LowRankInverseHessian object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:73:3: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(int, int, bool)’
+   73 |   LowRankInverseHessian(int num_parameters,
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:73:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(const ceres::internal::LowRankInverseHessian&)’
+   62 | class CERES_NO_EXPORT LowRankInverseHessian final : public LinearOperator {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(ceres::internal::LowRankInverseHessian&&)’
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0765/u0765_test.cc:18:17: error: ‘delta_x’ was not declared in this scope
+   18 |   object.Update(delta_x, delta_gradient);
+      |                 ^~~~~~~
+/work/repo/units/u0765/u0765_test.cc:18:26: error: ‘delta_gradient’ was not declared in this scope
+   18 |   object.Update(delta_x, delta_gradient);
+      |                          ^~~~~~~~~~~~~~
+/work/repo/units/u0765/u0765_test.cc: In member function ‘virtual void Unit_u0765_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0765/u0765_test.cc:23:3: error: ‘Vector’ was not declared in this scope
+   23 |   Vector delta_x{};
+      |   ^~~~~~
+/work/repo/units/u0765/u0765_test.cc:23:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0765/u0765_test.cc:24:9: error: expected ‘;’ before ‘delta_gradient’
+   24 |   Vector delta_gradient{};
+      |         ^~~~~~~~~~~~~~~
+      |         ;
+/work/repo/units/u0765/u0765_test.cc:25:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(<brace-enclosed initializer list>)’
+   25 |   ceres::internal::LowRankInverseHessian object{};
+      |                                                 ^
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:73:3: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(int, int, bool)’
+   73 |   LowRankInverseHessian(int num_parameters,
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:73:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(const ceres::internal::LowRankInverseHessian&)’
+   62 | class CERES_NO_EXPORT LowRankInverseHessian final : public LinearOperator {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note: candidate: ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(ceres::internal::LowRankInverseHessian&&)’
+/work/ceres-solver/internal/ceres/low_rank_inverse_hessian.h:62:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0765/u0765_test.cc:26:17: error: ‘delta_x’ was not declared in this scope
+   26 |   object.Update(delta_x, delta_gradient);
+      |                 ^~~~~~~
+/work/repo/units/u0765/u0765_test.cc:26:26: error: ‘delta_gradient’ was not declared in this scope
+   26 |   object.Update(delta_x, delta_gradient);
+      |                          ^~~~~~~~~~~~~~

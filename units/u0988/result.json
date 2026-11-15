@@ -1,0 +1,9 @@
+{
+  "id": "u0988",
+  "name": "ceres::internal::BlockCRSJacobiPreconditioner::num_cols",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0988/u0988_test.cc:8:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

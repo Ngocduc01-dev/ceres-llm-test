@@ -1,0 +1,16 @@
+{
+  "id": "u1393",
+  "name": "ceres::internal::(anonymous)::GradientCheckingCostFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1393/u1393_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1393/u1393_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1393/u1393_test.cc:11:3: error: ‘object’ was not declared in this scope",
+    "units/u1393/u1393_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1393/u1393_test.cc:16:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1393/u1393_test.cc:17:3: error: ‘object’ was not declared in this scope",
+    "units/u1393/u1393_test.cc:22:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1393/u1393_test.cc:22:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

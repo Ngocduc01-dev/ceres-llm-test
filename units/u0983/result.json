@@ -1,0 +1,10 @@
+{
+  "id": "u0983",
+  "name": "ceres::SphereManifold::TangentSize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0983/u0983_test.cc:7:32: error: class template argument deduction failed:",
+    "units/u0983/u0983_test.cc:7:32: error: no matching function for call to ‘SphereManifold()’"
+  ]
+}

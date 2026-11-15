@@ -1,0 +1,184 @@
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:8:3: error: ‘Solver’ has not been declared
+    8 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:9:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+    9 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:14:3: error: ‘Solver’ has not been declared
+   14 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:15:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   15 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:20:3: error: ‘Solver’ has not been declared
+   20 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:21:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   21 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:26:3: error: ‘Solver’ has not been declared
+   26 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:27:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   27 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:32:3: error: ‘Solver’ has not been declared
+   32 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:33:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   33 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:38:3: error: ‘Solver’ has not been declared
+   38 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:39:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   39 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:44:3: error: ‘Solver’ has not been declared
+   44 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:45:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   45 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:50:3: error: ‘Solver’ has not been declared
+   50 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:51:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   51 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:56:3: error: ‘Solver’ has not been declared
+   56 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:57:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   57 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:62:3: error: ‘Solver’ has not been declared
+   62 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:63:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   63 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:68:3: error: ‘Solver’ has not been declared
+   68 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:69:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   69 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:74:3: error: ‘Solver’ has not been declared
+   74 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:75:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   75 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:80:3: error: ‘Solver’ has not been declared
+   80 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:81:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   81 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC14_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:86:3: error: ‘Solver’ has not been declared
+   86 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:87:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   87 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC15_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:92:3: error: ‘Solver’ has not been declared
+   92 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:93:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   93 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC16_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:98:3: error: ‘Solver’ has not been declared
+   98 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:99:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   99 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC17_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:104:3: error: ‘Solver’ has not been declared
+  104 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:105:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  105 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC18_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:110:3: error: ‘Solver’ has not been declared
+  110 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:111:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  111 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC19_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:116:3: error: ‘Solver’ has not been declared
+  116 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:117:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  117 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC20_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:122:3: error: ‘Solver’ has not been declared
+  122 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:123:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  123 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC21_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:128:3: error: ‘Solver’ has not been declared
+  128 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:129:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  129 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC22_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:134:3: error: ‘Solver’ has not been declared
+  134 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:135:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  135 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind
+/work/repo/units/u1508/u1508_test.cc: In member function ‘virtual void Unit_u1508_TC23_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1508/u1508_test.cc:140:3: error: ‘Solver’ has not been declared
+  140 |   Solver::Options options{};
+      |   ^~~~~~
+/work/repo/units/u1508/u1508_test.cc:141:37: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  141 |   ceres::TrustRegionOptionsAreValid(options, nullptr);
+      |                                     ^~~~~~~
+      |                                     optind

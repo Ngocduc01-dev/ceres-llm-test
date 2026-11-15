@@ -1,0 +1,23 @@
+/work/repo/units/u1081/u1081_test.cc: In member function ‘virtual void Unit_u1081_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1081/u1081_test.cc:9:22: error: ‘ResidualBlockId’ was not declared in this scope; did you mean ‘ceres::ResidualBlockId’?
+    9 |   std::unordered_set<ResidualBlockId> bottom_residual_blocks{};
+      |                      ^~~~~~~~~~~~~~~
+      |                      ceres::ResidualBlockId
+In file included from /work/ceres-solver/internal/ceres/problem_impl.h:54,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:40,
+                 from /work/repo/units/u1081/u1081_test.cc:3:
+/work/ceres-solver/include/ceres/problem.h:69:7: note: ‘ceres::ResidualBlockId’ declared here
+   69 | using ResidualBlockId = internal::ResidualBlock*;
+      |       ^~~~~~~~~~~~~~~
+/work/repo/units/u1081/u1081_test.cc:9:37: error: template argument 1 is invalid
+    9 |   std::unordered_set<ResidualBlockId> bottom_residual_blocks{};
+      |                                     ^
+/work/repo/units/u1081/u1081_test.cc:9:37: error: template argument 2 is invalid
+/work/repo/units/u1081/u1081_test.cc:9:37: error: template argument 3 is invalid
+/work/repo/units/u1081/u1081_test.cc:9:37: error: template argument 4 is invalid
+/work/repo/units/u1081/u1081_test.cc:10:53: error: invalid initialization of reference of type ‘const std::unordered_set<ceres::internal::ResidualBlock*>&’ from expression of type ‘int’
+   10 |   ceres::internal::ReorderResidualBlocksByPartition(bottom_residual_blocks, nullptr);
+      |                                                     ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/reorder_program.h:114:48: note: in passing argument 1 of ‘int ceres::internal::ReorderResidualBlocksByPartition(const std::unordered_set<ResidualBlock*>&, Program*)’
+  114 |     const std::unordered_set<ResidualBlockId>& bottom_residual_blocks,
+      |     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~

@@ -1,0 +1,11 @@
+{
+  "id": "u0767",
+  "name": "ceres::SubsetManifold::SubsetManifold",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0767/u0767_test.cc:9:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u0767/u0767_test.cc:17:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u0767/u0767_test.cc:25:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’"
+  ]
+}

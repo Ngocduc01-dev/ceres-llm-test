@@ -1,0 +1,21 @@
+/work/repo/units/u0919/u0919_test.cc: In member function ‘virtual void Unit_u0919_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0919/u0919_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+    7 |   Ownership ownership_f{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+In file included from /work/ceres-solver/include/ceres/loss_function.h:82,
+                 from /work/repo/units/u0919/u0919_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u0919/u0919_test.cc:8:12: error: expected ‘;’ before ‘ownership_g’
+    8 |   Ownership ownership_g{};
+      |            ^~~~~~~~~~~~
+      |            ;
+/work/repo/units/u0919/u0919_test.cc:9:30: error: no matching function for call to ‘ceres::ComposedLoss::ComposedLoss(<brace-enclosed initializer list>)’
+    9 |   ceres::ComposedLoss object{};
+      |                              ^
+/work/ceres-solver/include/ceres/loss_function.h:301:12: note: candidate: ‘ceres::ComposedLoss::ComposedLoss(const ceres::LossFunction*, ceres::Ownership, const ceres::LossFunction*, ceres::Ownership)’
+  301 |   explicit ComposedLoss(const LossFunction* f,
+      |            ^~~~~~~~~~~~
+/work/ceres-solver/include/ceres/loss_function.h:301:12: note:   candidate expects 4 arguments, 0 provided

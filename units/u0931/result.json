@@ -1,0 +1,11 @@
+{
+  "id": "u0931",
+  "name": "ceres::internal::BlockSparseMatrix::ScaleColumns",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0931/u0931_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0931/u0931_test.cc:13:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u0931/u0931_test.cc:19:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

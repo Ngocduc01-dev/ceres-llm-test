@@ -1,0 +1,10 @@
+{
+  "id": "u0688",
+  "name": "ceres::internal::PowerSeriesExpansionPreconditioner::Update",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0688/u0688_test.cc:8:10: error: scalar object ‘arg1_data’ requires one element in initializer",
+    "units/u0688/u0688_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

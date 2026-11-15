@@ -1,21 +1,38 @@
-# Unit u0288
+**A. Test paths**
 
-## Test path
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
+|---|---|---|
+| P1 | START → END | Không có điểm rẽ nhánh nào |
 
-The unit has a single straight-line path (no control-flow branches). The test supplies the required concrete linear solver through `TrustRegionStrategy::Options`, constructs the strategy, and invokes the target API.
+CFG khớp với mã nguồn: hàm chỉ có một câu lệnh `return subspace_B_;`. Không có vòng lặp và không có `CHECK`.
 
-## Test source
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | Không có tham số đầu vào. Object được tạo từ `TrustRegionStrategy::Options` mặc định. | Options mặc định (`linear_solver = nullptr`) |
+
+**C. Nhánh không test:** không có.
+`C2 dự kiến = 0 / 0` (hàm không có điểm rẽ nhánh nên mọi đường đi đều được phủ, coi như 100%; dự kiến, chưa chạy thật).
+
+**D. File test**
 
 ```cpp
+// FILE: u0288_test.cc
 #include "gtest/gtest.h"
 #include "ceres/dogleg_strategy.h"
 
-TEST(Unit_u0288, PathP1) {
-  ceres::internal::TrustRegionStrategy::Options options;
-  ceres::internal::LinearSolver::Options solver_options;
-  auto linear_solver = ceres::internal::LinearSolver::Create(solver_options);
-  options.linear_solver = linear_solver.get();
-  ceres::internal::DoglegStrategy target(options);
-  EXPECT_EQ(target.subspace_B().rows(), 0);
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> END
+TEST(DoglegStrategySubspaceBTest, P1_ReturnSubspaceB) {
+  TrustRegionStrategy::Options options;
+  DoglegStrategy strategy(options);
+  Matrix b = strategy.subspace_B();
+  (void)b;
 }
+
+}  // namespace internal
+}  // namespace ceres
 ```

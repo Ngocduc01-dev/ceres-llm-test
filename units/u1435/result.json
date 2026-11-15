@@ -1,0 +1,10 @@
+{
+  "id": "u1435",
+  "name": "ceres::internal::BlockJacobianWriter::BlockJacobianWriter",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1435/u1435_test.cc:9:3: error: ‘Evaluator’ has not been declared",
+    "units/u1435/u1435_test.cc:10:47: error: no matching function for call to ‘ceres::internal::BlockJacobianWriter::BlockJacobianWriter(<brace-enclosed initializer list>)’"
+  ]
+}

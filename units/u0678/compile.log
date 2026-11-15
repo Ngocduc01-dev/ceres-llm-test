@@ -1,0 +1,4 @@
+/work/repo/units/u0678/u0678_test.cc: In member function ‘virtual void Unit_u0678_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0678/u0678_test.cc:8:3: error: ‘object’ was not declared in this scope
+    8 |   object.VertexDegreeLessThan({});
+      |   ^~~~~~

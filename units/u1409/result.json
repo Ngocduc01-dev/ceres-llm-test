@@ -1,0 +1,33 @@
+{
+  "id": "u1409",
+  "name": "ceres::internal::Program::IsFeasible",
+  "status": "ok",
+  "cfg_branches": 12,
+  "tests": {
+    "Unit_u1409.TC1_CallsTarget": "check_fail",
+    "Unit_u1409.TC2_CallsTarget": "check_fail",
+    "Unit_u1409.TC3_CallsTarget": "check_fail",
+    "Unit_u1409.TC4_CallsTarget": "check_fail",
+    "Unit_u1409.TC5_CallsTarget": "check_fail",
+    "Unit_u1409.TC6_CallsTarget": "check_fail",
+    "Unit_u1409.TC7_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 7,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 24
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

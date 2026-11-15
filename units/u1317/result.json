@@ -1,0 +1,16 @@
+{
+  "id": "u1317",
+  "name": "ceres::internal::(anonymous)::BuildJacobianLayout",
+  "status": "compile_fail",
+  "cfg_branches": 22,
+  "errors": [
+    "units/u1317/u1317_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1317/u1317_test.cc:13:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1317/u1317_test.cc:13:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1317/u1317_test.cc:18:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1317/u1317_test.cc:20:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1317/u1317_test.cc:20:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1317/u1317_test.cc:25:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?",
+    "units/u1317/u1317_test.cc:27:20: error: expected unqualified-id before ‘(’ token"
+  ]
+}

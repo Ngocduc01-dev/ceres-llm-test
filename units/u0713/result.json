@@ -1,0 +1,9 @@
+{
+  "id": "u0713",
+  "name": "ceres::internal::Graph::AddVertex",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0713/u0713_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

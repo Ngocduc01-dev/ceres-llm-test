@@ -1,0 +1,50 @@
+/work/repo/units/u1162/u1162_test.cc: In member function ‘virtual void Unit_u1162_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1162/u1162_test.cc:9:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrix’?
+    9 |   SparseMatrix lhs{};
+      |   ^~~~~~~~~~~~
+      |   ceres::internal::SparseMatrix
+In file included from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/linear_solver.h:43,
+                 from /work/ceres-solver/internal/ceres/sparse_cholesky.h:43,
+                 from /work/repo/units/u1162/u1162_test.cc:4:
+/work/ceres-solver/internal/ceres/sparse_matrix.h:67:23: note: ‘ceres::internal::SparseMatrix’ declared here
+   67 | class CERES_NO_EXPORT SparseMatrix : public LinearOperator {
+      |                       ^~~~~~~~~~~~
+/work/repo/units/u1162/u1162_test.cc:10:50: error: no matching function for call to ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::SparseIterativeRefiner object{};
+      |                                                  ^
+In file included from /work/repo/units/u1162/u1162_test.cc:3:
+/work/ceres-solver/internal/ceres/iterative_refiner.h:65:12: note: candidate: ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(int)’
+   65 |   explicit SparseIterativeRefiner(int max_num_iterations);
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:65:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/iterative_refiner.h:61:23: note: candidate: ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(const ceres::internal::SparseIterativeRefiner&)’
+   61 | class CERES_NO_EXPORT SparseIterativeRefiner {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:61:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1162/u1162_test.cc:11:17: error: ‘lhs’ was not declared in this scope
+   11 |   object.Refine(lhs, nullptr, nullptr, nullptr);
+      |                 ^~~
+/work/repo/units/u1162/u1162_test.cc: In member function ‘virtual void Unit_u1162_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1162/u1162_test.cc:16:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrix’?
+   16 |   SparseMatrix lhs{};
+      |   ^~~~~~~~~~~~
+      |   ceres::internal::SparseMatrix
+/work/ceres-solver/internal/ceres/sparse_matrix.h:67:23: note: ‘ceres::internal::SparseMatrix’ declared here
+   67 | class CERES_NO_EXPORT SparseMatrix : public LinearOperator {
+      |                       ^~~~~~~~~~~~
+/work/repo/units/u1162/u1162_test.cc:17:50: error: no matching function for call to ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(<brace-enclosed initializer list>)’
+   17 |   ceres::internal::SparseIterativeRefiner object{};
+      |                                                  ^
+/work/ceres-solver/internal/ceres/iterative_refiner.h:65:12: note: candidate: ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(int)’
+   65 |   explicit SparseIterativeRefiner(int max_num_iterations);
+      |            ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:65:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/iterative_refiner.h:61:23: note: candidate: ‘ceres::internal::SparseIterativeRefiner::SparseIterativeRefiner(const ceres::internal::SparseIterativeRefiner&)’
+   61 | class CERES_NO_EXPORT SparseIterativeRefiner {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/iterative_refiner.h:61:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1162/u1162_test.cc:18:17: error: ‘lhs’ was not declared in this scope
+   18 |   object.Refine(lhs, nullptr, nullptr, nullptr);
+      |                 ^~~

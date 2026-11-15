@@ -1,0 +1,73 @@
+/work/repo/units/u1300/u1300_test.cc: In member function ‘virtual void Unit_u1300_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1300/u1300_test.cc:8:3: error: expected primary-expression before ‘)’ token
+    8 |   )(const IterationSummary summary{};
+      |   ^
+/work/repo/units/u1300/u1300_test.cc:9:43: error: no matching function for call to ‘ceres::internal::LoggingCallback::LoggingCallback(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::LoggingCallback object{};
+      |                                           ^
+In file included from /work/repo/units/u1300/u1300_test.cc:4:
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note: candidate: ‘ceres::internal::LoggingCallback::LoggingCallback(ceres::MinimizerType, bool)’
+   77 |   LoggingCallback(MinimizerType minimizer_type, bool log_to_stdout);
+      |   ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note: candidate: ‘constexpr ceres::internal::LoggingCallback::LoggingCallback(const ceres::internal::LoggingCallback&)’
+   75 | class CERES_NO_EXPORT LoggingCallback final : public IterationCallback {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1300/u1300_test.cc:10:10: error: ‘summary’ was not declared in this scope
+   10 |   object(summary);
+      |          ^~~~~~~
+/work/repo/units/u1300/u1300_test.cc: In member function ‘virtual void Unit_u1300_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1300/u1300_test.cc:15:3: error: expected primary-expression before ‘)’ token
+   15 |   )(const IterationSummary summary{};
+      |   ^
+/work/repo/units/u1300/u1300_test.cc:16:43: error: no matching function for call to ‘ceres::internal::LoggingCallback::LoggingCallback(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::LoggingCallback object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note: candidate: ‘ceres::internal::LoggingCallback::LoggingCallback(ceres::MinimizerType, bool)’
+   77 |   LoggingCallback(MinimizerType minimizer_type, bool log_to_stdout);
+      |   ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note: candidate: ‘constexpr ceres::internal::LoggingCallback::LoggingCallback(const ceres::internal::LoggingCallback&)’
+   75 | class CERES_NO_EXPORT LoggingCallback final : public IterationCallback {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1300/u1300_test.cc:17:10: error: ‘summary’ was not declared in this scope
+   17 |   object(summary);
+      |          ^~~~~~~
+/work/repo/units/u1300/u1300_test.cc: In member function ‘virtual void Unit_u1300_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1300/u1300_test.cc:22:3: error: expected primary-expression before ‘)’ token
+   22 |   )(const IterationSummary summary{};
+      |   ^
+/work/repo/units/u1300/u1300_test.cc:23:43: error: no matching function for call to ‘ceres::internal::LoggingCallback::LoggingCallback(<brace-enclosed initializer list>)’
+   23 |   ceres::internal::LoggingCallback object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note: candidate: ‘ceres::internal::LoggingCallback::LoggingCallback(ceres::MinimizerType, bool)’
+   77 |   LoggingCallback(MinimizerType minimizer_type, bool log_to_stdout);
+      |   ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note: candidate: ‘constexpr ceres::internal::LoggingCallback::LoggingCallback(const ceres::internal::LoggingCallback&)’
+   75 | class CERES_NO_EXPORT LoggingCallback final : public IterationCallback {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1300/u1300_test.cc:24:10: error: ‘summary’ was not declared in this scope
+   24 |   object(summary);
+      |          ^~~~~~~
+/work/repo/units/u1300/u1300_test.cc: In member function ‘virtual void Unit_u1300_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1300/u1300_test.cc:29:3: error: expected primary-expression before ‘)’ token
+   29 |   )(const IterationSummary summary{};
+      |   ^
+/work/repo/units/u1300/u1300_test.cc:30:43: error: no matching function for call to ‘ceres::internal::LoggingCallback::LoggingCallback(<brace-enclosed initializer list>)’
+   30 |   ceres::internal::LoggingCallback object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note: candidate: ‘ceres::internal::LoggingCallback::LoggingCallback(ceres::MinimizerType, bool)’
+   77 |   LoggingCallback(MinimizerType minimizer_type, bool log_to_stdout);
+      |   ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:77:3: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note: candidate: ‘constexpr ceres::internal::LoggingCallback::LoggingCallback(const ceres::internal::LoggingCallback&)’
+   75 | class CERES_NO_EXPORT LoggingCallback final : public IterationCallback {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/callbacks.h:75:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1300/u1300_test.cc:31:10: error: ‘summary’ was not declared in this scope
+   31 |   object(summary);
+      |          ^~~~~~~

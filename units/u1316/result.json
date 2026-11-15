@@ -1,0 +1,16 @@
+{
+  "id": "u1316",
+  "name": "ceres::(anonymous)::OptionsAreValidForSparseCholeskyBasedSolver",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1316/u1316_test.cc:8:3: error: ‘Solver’ has not been declared",
+    "units/u1316/u1316_test.cc:9:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1316/u1316_test.cc:14:3: error: ‘Solver’ has not been declared",
+    "units/u1316/u1316_test.cc:15:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1316/u1316_test.cc:20:3: error: ‘Solver’ has not been declared",
+    "units/u1316/u1316_test.cc:21:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1316/u1316_test.cc:26:3: error: ‘Solver’ has not been declared",
+    "units/u1316/u1316_test.cc:27:54: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

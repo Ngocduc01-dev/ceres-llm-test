@@ -1,0 +1,7 @@
+/work/repo/units/u1258/u1258_test.cc: In member function ‘virtual void Unit_u1258_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1258/u1258_test.cc:7:3: error: expected primary-expression before ‘)’ token
+    7 |   )(const std::pair<T, T> p{};
+      |   ^
+/work/repo/units/u1258/u1258_test.cc:9:10: error: ‘p’ was not declared in this scope
+    9 |   object(p);
+      |          ^

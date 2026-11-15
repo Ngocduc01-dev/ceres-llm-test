@@ -1,0 +1,14 @@
+/work/repo/units/u0554/u0554_test.cc: In member function ‘virtual void ceres::internal::Unit_u0554_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0554/u0554_test.cc:9:10: error: scalar object ‘v_data’ requires one element in initializer
+    9 |   double v_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~
+/work/repo/units/u0554/u0554_test.cc:10:10: error: scalar object ‘beta_data’ requires one element in initializer
+   10 |   double beta_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0554/u0554_test.cc: In member function ‘virtual void ceres::internal::Unit_u0554_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0554/u0554_test.cc:15:10: error: scalar object ‘v_data’ requires one element in initializer
+   15 |   double v_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~
+/work/repo/units/u0554/u0554_test.cc:16:10: error: scalar object ‘beta_data’ requires one element in initializer
+   16 |   double beta_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~

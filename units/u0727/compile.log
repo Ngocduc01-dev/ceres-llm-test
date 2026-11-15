@@ -1,0 +1,8 @@
+/work/repo/units/u0727/u0727_test.cc: In member function ‘virtual void Unit_u0727_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0727/u0727_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.operator<({});
+      |   ^~~~~~
+/work/repo/units/u0727/u0727_test.cc: In member function ‘virtual void Unit_u0727_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0727/u0727_test.cc:11:3: error: ‘object’ was not declared in this scope
+   11 |   object.operator<({});
+      |   ^~~~~~

@@ -1,0 +1,28 @@
+/work/repo/units/u0961/u0961_test.cc: In member function ‘virtual void Unit_u0961_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0961/u0961_test.cc:7:38: error: no matching function for call to ‘ceres::internal::LineSearch::LineSearch(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::LineSearch object{};
+      |                                      ^
+In file included from /work/repo/units/u0961/u0961_test.cc:3:
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note: candidate: ‘ceres::internal::LineSearch::LineSearch(const Options&)’
+  163 |   explicit LineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:163:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note: candidate: ‘constexpr ceres::internal::LineSearch::LineSearch(const ceres::internal::LineSearch&)’
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0961/u0961_test.cc:7:31: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LineSearch’
+    7 |   ceres::internal::LineSearch object{};
+      |                               ^~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:60:23: note:   because the following virtual functions are pure within ‘ceres::internal::LineSearch’:
+   60 | class CERES_NO_EXPORT LineSearch {
+      |                       ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:197:16: note:     ‘virtual void ceres::internal::LineSearch::DoSearch(double, double, double, Summary*) const’
+  197 |   virtual void DoSearch(double step_size_estimate,
+      |                ^~~~~~~~
+/work/repo/units/u0961/u0961_test.cc:8:17: error: ‘const ceres::internal::LineSearch::Options& ceres::internal::LineSearch::options() const’ is protected within this context
+    8 |   object.options();
+      |   ~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/line_search.h:194:30: note: declared protected here
+  194 |   const LineSearch::Options& options() const { return options_; }
+      |                              ^~~~~~~

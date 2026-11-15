@@ -1,0 +1,14 @@
+{
+  "id": "u0753",
+  "name": "ceres::internal::Preconditioner::PreconditionerForZeroEBlocks",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0753/u0753_test.cc:7:3: error: ‘PreconditionerType’ was not declared in this scope; did you mean ‘ceres::PreconditionerType’?",
+    "units/u0753/u0753_test.cc:8:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Preconditioner’",
+    "units/u0753/u0753_test.cc:9:39: error: ‘preconditioner_type’ was not declared in this scope",
+    "units/u0753/u0753_test.cc:14:3: error: ‘PreconditionerType’ was not declared in this scope; did you mean ‘ceres::PreconditionerType’?",
+    "units/u0753/u0753_test.cc:15:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Preconditioner’",
+    "units/u0753/u0753_test.cc:16:39: error: ‘preconditioner_type’ was not declared in this scope"
+  ]
+}

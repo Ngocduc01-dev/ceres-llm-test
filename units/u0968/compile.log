@@ -1,0 +1,21 @@
+/work/repo/units/u0968/u0968_test.cc: In member function ‘virtual void Unit_u0968_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0968/u0968_test.cc:7:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’
+    7 |   ceres::internal::BlockSparseMatrix object{};
+      |                                             ^
+In file included from /work/repo/units/u0968/u0968_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note: candidate: ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(ceres::internal::CompressedRowBlockStructure*, bool)’
+   68 |   explicit BlockSparseMatrix(CompressedRowBlockStructure* block_structure,
+      |            ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:68:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0968/u0968_test.cc:8:20: error: ‘void ceres::internal::BlockSparseMatrix::FreeValues(double*&)’ is private within this context
+    8 |   object.FreeValues(nullptr);
+      |   ~~~~~~~~~~~~~~~~~^~~~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:166:8: note: declared private here
+  166 |   void FreeValues(double*& values);
+      |        ^~~~~~~~~~
+/work/repo/units/u0968/u0968_test.cc:8:21: error: cannot bind non-const lvalue reference of type ‘double*&’ to a value of type ‘std::nullptr_t’
+    8 |   object.FreeValues(nullptr);
+      |                     ^~~~~~~
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:166:28: note:   initializing argument 1 of ‘void ceres::internal::BlockSparseMatrix::FreeValues(double*&)’
+  166 |   void FreeValues(double*& values);
+      |                   ~~~~~~~~~^~~~~~

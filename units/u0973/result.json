@@ -1,0 +1,10 @@
+{
+  "id": "u0973",
+  "name": "ceres::internal::TrustRegionMinimizer::Init",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0973/u0973_test.cc:10:3: error: ‘Minimizer’ has not been declared",
+    "units/u0973/u0973_test.cc:12:15: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

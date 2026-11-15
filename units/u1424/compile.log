@@ -1,0 +1,15 @@
+/work/repo/units/u1424/u1424_test.cc: In member function ‘virtual void Unit_u1424_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1424/u1424_test.cc:9:49: error: class template argument deduction failed:
+    9 |   ceres::internal::PartitionedMatrixView object{};
+      |                                                 ^
+/work/repo/units/u1424/u1424_test.cc:9:49: error: no matching function for call to ‘PartitionedMatrixView()’
+In file included from /work/repo/units/u1424/u1424_test.cc:5:
+/work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:48:1: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> PartitionedMatrixView(const ceres::internal::LinearSolver::Options&, const ceres::internal::BlockSparseMatrix&)-> ceres::internal::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>’
+   48 | PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>::
+      | ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view_impl.h:48:1: note:   candidate expects 2 arguments, 0 provided
+In file included from /work/repo/units/u1424/u1424_test.cc:4:
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> PartitionedMatrixView(ceres::internal::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                                             ^~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:45: note:   candidate expects 1 argument, 0 provided

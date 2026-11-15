@@ -1,0 +1,16 @@
+{
+  "id": "u0813",
+  "name": "ceres::internal::(anonymous)::BalanceCompanionMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0813/u0813_test.cc:8:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0813/u0813_test.cc:8:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0813/u0813_test.cc:13:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0813/u0813_test.cc:13:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0813/u0813_test.cc:18:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0813/u0813_test.cc:18:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0813/u0813_test.cc:23:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0813/u0813_test.cc:23:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

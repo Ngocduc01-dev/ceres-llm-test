@@ -1,0 +1,16 @@
+{
+  "id": "u1497",
+  "name": "ceres::internal::DoglegStrategy::ComputeGaussNewtonStep",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1497/u1497_test.cc:10:3: error: ‘PerSolveOptions’ was not declared in this scope",
+    "units/u1497/u1497_test.cc:11:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1497/u1497_test.cc:12:33: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1497/u1497_test.cc:17:3: error: ‘PerSolveOptions’ was not declared in this scope",
+    "units/u1497/u1497_test.cc:18:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’",
+    "units/u1497/u1497_test.cc:19:33: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1497/u1497_test.cc:24:3: error: ‘PerSolveOptions’ was not declared in this scope",
+    "units/u1497/u1497_test.cc:25:42: error: no matching function for call to ‘ceres::internal::DoglegStrategy::DoglegStrategy(<brace-enclosed initializer list>)’"
+  ]
+}

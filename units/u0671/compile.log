@@ -1,0 +1,4 @@
+/work/repo/units/u0671/u0671_test.cc: In member function ‘virtual void Unit_u0671_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0671/u0671_test.cc:8:3: error: ‘object’ was not declared in this scope
+    8 |   object.GradientProblemEvaluator({});
+      |   ^~~~~~

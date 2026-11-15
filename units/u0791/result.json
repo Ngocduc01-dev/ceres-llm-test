@@ -1,0 +1,10 @@
+{
+  "id": "u0791",
+  "name": "ceres::internal::ReorderSchurComplementColumnsUsingSuiteSparse",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0791/u0791_test.cc:9:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?",
+    "units/u0791/u0791_test.cc:10:66: error: ‘parameter_block_ordering’ was not declared in this scope"
+  ]
+}

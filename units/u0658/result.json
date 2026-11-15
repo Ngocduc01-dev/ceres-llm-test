@@ -1,0 +1,11 @@
+{
+  "id": "u0658",
+  "name": "ceres::internal::EigenDenseQR::Factorize",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0658/u0658_test.cc:7:10: error: scalar object ‘lhs_data’ requires one element in initializer",
+    "units/u0658/u0658_test.cc:8:10: error: scalar object ‘message_data’ requires one element in initializer",
+    "units/u0658/u0658_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,17 @@
+/work/repo/units/u1086/u1086_test.cc: In member function ‘virtual void Unit_u1086_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1086/u1086_test.cc:10:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+In file included from /work/repo/units/u1086/u1086_test.cc:4:
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided
+/work/repo/units/u1086/u1086_test.cc: In member function ‘virtual void Unit_u1086_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1086/u1086_test.cc:18:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’
+   18 |   ceres::internal::BlockRandomAccessSparseMatrix object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note: candidate: ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(const std::vector<ceres::internal::Block>&, const std::set<std::pair<int, int> >&, ceres::internal::ContextImpl*, int)’
+   62 |   BlockRandomAccessSparseMatrix(
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_random_access_sparse_matrix.h:62:3: note:   candidate expects 4 arguments, 0 provided

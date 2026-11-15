@@ -1,0 +1,30 @@
+{
+  "id": "u1268",
+  "name": "ceres::internal::Program::SetParameterOffsetsAndIndex",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u1268.TC1_CallsTarget": "pass",
+    "Unit_u1268.TC2_CallsTarget": "pass",
+    "Unit_u1268.TC3_CallsTarget": "pass",
+    "Unit_u1268.TC4_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 6,
+    "total": 13
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

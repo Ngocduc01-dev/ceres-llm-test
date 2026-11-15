@@ -1,0 +1,14 @@
+/work/repo/units/u1064/u1064_test.cc: In member function ‘virtual void Unit_u1064_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1064/u1064_test.cc:7:40: error: qualified-id in declaration before ‘object’
+    7 |   ceres::internal::FixedArray::Storage object{};
+      |                                        ^~~~~~
+/work/repo/units/u1064/u1064_test.cc:8:3: error: ‘object’ was not declared in this scope
+    8 |   object.InitializeData();
+      |   ^~~~~~
+/work/repo/units/u1064/u1064_test.cc: In member function ‘virtual void Unit_u1064_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1064/u1064_test.cc:13:40: error: qualified-id in declaration before ‘object’
+   13 |   ceres::internal::FixedArray::Storage object{};
+      |                                        ^~~~~~
+/work/repo/units/u1064/u1064_test.cc:14:3: error: ‘object’ was not declared in this scope
+   14 |   object.InitializeData();
+      |   ^~~~~~

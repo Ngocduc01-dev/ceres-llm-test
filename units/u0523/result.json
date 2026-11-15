@@ -1,0 +1,9 @@
+{
+  "id": "u0523",
+  "name": "ceres::down_cast",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u0523/u0523_test.cc:8:12: error: no matching function for call to ‘down_cast(<brace-enclosed initializer list>)’"
+  ]
+}

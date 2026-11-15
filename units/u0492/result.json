@@ -1,0 +1,36 @@
+{
+  "id": "u0492",
+  "name": "ceres::internal::TrustRegionStepEvaluator::StepQuality",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0492.PathP1": "pass",
+    "Unit_u0492.PathP2": "pass"
+  },
+  "run": {
+    "pass": 2,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 7,
+    "total": 8
+  },
+  "c2": {
+    "covered": 1,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 58,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (cost >= std::numeric_limits<double>::max()) {"
+    }
+  ]
+}

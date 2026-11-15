@@ -1,0 +1,11 @@
+/work/repo/units/u0870/u0870_test.cc: In member function ‘virtual void Unit_u0870_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0870/u0870_test.cc:7:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+    7 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+In file included from /work/repo/units/u0870/u0870_test.cc:3:
+/work/ceres-solver/internal/ceres/linear_solver.h:148:23: note:   because the following virtual functions are pure within ‘ceres::internal::LinearSolver’:
+  148 | class CERES_NO_EXPORT LinearSolver {
+      |                       ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:339:19: note:     ‘virtual ceres::internal::LinearSolver::Summary ceres::internal::LinearSolver::Solve(ceres::internal::LinearOperator*, const double*, const PerSolveOptions&, double*)’
+  339 |   virtual Summary Solve(LinearOperator* A,
+      |                   ^~~~~

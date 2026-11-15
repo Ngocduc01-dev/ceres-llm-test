@@ -1,0 +1,45 @@
+{
+  "id": "u0751",
+  "name": "ceres::internal::OrderingToGroupSizes",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u0751.TC1_CallsTarget": "pass",
+    "Unit_u0751.TC2_CallsTarget": "pass",
+    "Unit_u0751.TC3_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 3,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 5,
+    "total": 8
+  },
+  "c2": {
+    "covered": 1,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 166,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (ordering == nullptr) {"
+    },
+    {
+      "line": 174,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (const auto& g_t_e : group_to_elements) {"
+    }
+  ]
+}

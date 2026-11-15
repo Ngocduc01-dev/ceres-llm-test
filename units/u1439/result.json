@@ -1,0 +1,54 @@
+{
+  "id": "u1439",
+  "name": "ceres::internal::BlockEvaluatePreparer::Prepare",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u1439.TC1_CallsTarget": "crash",
+    "Unit_u1439.TC2_CallsTarget": "crash",
+    "Unit_u1439.TC3_CallsTarget": "crash",
+    "Unit_u1439.TC4_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 4,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 12
+  },
+  "c2": {
+    "covered": 1,
+    "total": 6,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 55,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (jacobian == nullptr) {"
+    },
+    {
+      "line": 66,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int j = 0; j < num_parameter_blocks; ++j) {"
+    },
+    {
+      "line": 67,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (!residual_block->parameter_blocks()[j]->IsConstant()) {"
+    }
+  ]
+}

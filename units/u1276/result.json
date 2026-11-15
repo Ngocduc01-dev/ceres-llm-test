@@ -1,0 +1,12 @@
+{
+  "id": "u1276",
+  "name": "ceres::internal::TrustRegionMinimizer::IterationZero",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1276/u1276_test.cc:10:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context",
+    "units/u1276/u1276_test.cc:16:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context",
+    "units/u1276/u1276_test.cc:22:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context",
+    "units/u1276/u1276_test.cc:28:23: error: ‘bool ceres::internal::TrustRegionMinimizer::IterationZero()’ is private within this context"
+  ]
+}

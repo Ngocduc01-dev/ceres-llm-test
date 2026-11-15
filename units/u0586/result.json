@@ -1,0 +1,12 @@
+{
+  "id": "u0586",
+  "name": "ceres::ProductManifold::PlusImpl",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0586/u0586_test.cc:7:10: error: scalar object ‘x_data’ requires one element in initializer",
+    "units/u0586/u0586_test.cc:8:10: error: scalar object ‘delta_data’ requires one element in initializer",
+    "units/u0586/u0586_test.cc:9:10: error: scalar object ‘x_plus_delta_data’ requires one element in initializer",
+    "units/u0586/u0586_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

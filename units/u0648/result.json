@@ -1,0 +1,9 @@
+{
+  "id": "u0648",
+  "name": "ceres::internal::BlockSparseJacobiPreconditioner::matrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0648/u0648_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

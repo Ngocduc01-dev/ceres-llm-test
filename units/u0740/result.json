@@ -1,0 +1,16 @@
+{
+  "id": "u0740",
+  "name": "ceres::AutoDiffFirstOrderFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0740/u0740_test.cc:9:10: error: scalar object ‘parameters_data’ requires one element in initializer",
+    "units/u0740/u0740_test.cc:10:10: error: scalar object ‘cost_data’ requires one element in initializer",
+    "units/u0740/u0740_test.cc:11:10: error: scalar object ‘gradient_data’ requires one element in initializer",
+    "units/u0740/u0740_test.cc:12:3: error: ‘object’ was not declared in this scope",
+    "units/u0740/u0740_test.cc:16:10: error: scalar object ‘parameters_data’ requires one element in initializer",
+    "units/u0740/u0740_test.cc:17:10: error: scalar object ‘cost_data’ requires one element in initializer",
+    "units/u0740/u0740_test.cc:18:10: error: scalar object ‘gradient_data’ requires one element in initializer",
+    "units/u0740/u0740_test.cc:19:3: error: ‘object’ was not declared in this scope"
+  ]
+}

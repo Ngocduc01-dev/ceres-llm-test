@@ -1,0 +1,16 @@
+{
+  "id": "u1470",
+  "name": "ceres::internal::ReorderProgramForSchurTypeLinearSolver",
+  "status": "compile_fail",
+  "cfg_branches": 18,
+  "errors": [
+    "units/u1470/u1470_test.cc:11:9: error: ‘LinearSolverType’ does not name a type",
+    "units/u1470/u1470_test.cc:12:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type",
+    "units/u1470/u1470_test.cc:13:9: error: ‘LinearSolverOrderingType’ does not name a type",
+    "units/u1470/u1470_test.cc:14:3: error: ‘ProblemImpl’ has not been declared",
+    "units/u1470/u1470_test.cc:15:59: error: ‘linear_solver_type’ was not declared in this scope",
+    "units/u1470/u1470_test.cc:15:79: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope",
+    "units/u1470/u1470_test.cc:15:115: error: ‘linear_solver_ordering_type’ was not declared in this scope",
+    "units/u1470/u1470_test.cc:15:144: error: ‘parameter_map’ was not declared in this scope"
+  ]
+}

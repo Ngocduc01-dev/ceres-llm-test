@@ -1,0 +1,141 @@
+/work/repo/units/u1442/u1442_test.cc: In member function ‘virtual void Unit_u1442_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1442/u1442_test.cc:11:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   11 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:12:9: error: ‘LinearSolverOrderingType’ does not name a type
+   12 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:13:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   13 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+In file included from /work/ceres-solver/internal/ceres/parameter_block_ordering.h:40,
+                 from /work/ceres-solver/internal/ceres/reorder_program.h:39,
+                 from /work/repo/units/u1442/u1442_test.cc:3:
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:15:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:15:88: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:15:117: error: ‘parameter_block_ordering’ was not declared in this scope
+   15 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc: In member function ‘virtual void Unit_u1442_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1442/u1442_test.cc:20:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   20 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:21:9: error: ‘LinearSolverOrderingType’ does not name a type
+   21 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:22:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   22 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:24:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:24:88: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:24:117: error: ‘parameter_block_ordering’ was not declared in this scope
+   24 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc: In member function ‘virtual void Unit_u1442_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1442/u1442_test.cc:29:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   29 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:30:9: error: ‘LinearSolverOrderingType’ does not name a type
+   30 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:31:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   31 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:33:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:33:88: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:33:117: error: ‘parameter_block_ordering’ was not declared in this scope
+   33 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc: In member function ‘virtual void Unit_u1442_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1442/u1442_test.cc:38:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   38 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:39:9: error: ‘LinearSolverOrderingType’ does not name a type
+   39 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:40:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   40 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:42:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:42:88: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:42:117: error: ‘parameter_block_ordering’ was not declared in this scope
+   42 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc: In member function ‘virtual void Unit_u1442_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1442/u1442_test.cc:47:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   47 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:48:9: error: ‘LinearSolverOrderingType’ does not name a type
+   48 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:49:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   49 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:51:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:51:88: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:51:117: error: ‘parameter_block_ordering’ was not declared in this scope
+   51 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc: In member function ‘virtual void Unit_u1442_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1442/u1442_test.cc:56:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type
+   56 |   const SparseLinearAlgebraLibraryType sparse_linear_algebra_library_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:57:9: error: ‘LinearSolverOrderingType’ does not name a type
+   57 |   const LinearSolverOrderingType linear_solver_ordering_type{};
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:58:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?
+   58 |   ParameterBlockOrdering parameter_block_ordering{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::ParameterBlockOrdering
+/work/ceres-solver/include/ceres/ordered_groups.h:193:7: note: ‘ceres::ParameterBlockOrdering’ declared here
+  193 | using ParameterBlockOrdering = OrderedGroups<double*>;
+      |       ^~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:60:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:60:88: error: ‘linear_solver_ordering_type’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1442/u1442_test.cc:60:117: error: ‘parameter_block_ordering’ was not declared in this scope
+   60 |   ceres::internal::ReorderProgramForSparseCholesky(sparse_linear_algebra_library_type, linear_solver_ordering_type, parameter_block_ordering, start_row_block, nullptr, nullptr);
+      |                                                                                                                     ^~~~~~~~~~~~~~~~~~~~~~~~

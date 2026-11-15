@@ -1,0 +1,12 @@
+{
+  "id": "u1027",
+  "name": "ceres::internal::FixedArray::operator[]",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1027/u1027_test.cc:7:3: error: ‘size_type’ was not declared in this scope; did you mean ‘size_t’?",
+    "units/u1027/u1027_test.cc:8:38: error: class template argument deduction failed:",
+    "units/u1027/u1027_test.cc:8:38: error: no matching function for call to ‘FixedArray()’",
+    "units/u1027/u1027_test.cc:9:10: error: ‘i’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,14 @@
+/work/repo/units/u0985/u0985_test.cc: In member function ‘virtual void Unit_u0985_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0985/u0985_test.cc:8:47: error: class template argument deduction failed:
+    8 |   ceres::TinySolverCostFunctionAdapter object{};
+      |                                               ^
+/work/repo/units/u0985/u0985_test.cc:8:47: error: no matching function for call to ‘TinySolverCostFunctionAdapter()’
+In file included from /work/repo/units/u0985/u0985_test.cc:4:
+/work/ceres-solver/include/ceres/tiny_solver_cost_function_adapter.h:88:12: note: candidate: ‘template<int kNumResiduals, int kNumParameters> TinySolverCostFunctionAdapter(const ceres::CostFunction&)-> ceres::TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>’
+   88 |   explicit TinySolverCostFunctionAdapter(const CostFunction& cost_function)
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/tiny_solver_cost_function_adapter.h:88:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/include/ceres/tiny_solver_cost_function_adapter.h:76:7: note: candidate: ‘template<int kNumResiduals, int kNumParameters> TinySolverCostFunctionAdapter(ceres::TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>)-> ceres::TinySolverCostFunctionAdapter<kNumResiduals, kNumParameters>’
+   76 | class TinySolverCostFunctionAdapter {
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/tiny_solver_cost_function_adapter.h:76:7: note:   candidate expects 1 argument, 0 provided

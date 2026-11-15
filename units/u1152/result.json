@@ -1,0 +1,10 @@
+{
+  "id": "u1152",
+  "name": "ceres::internal::WolfeLineSearch::WolfeLineSearch",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1152/u1152_test.cc:7:3: error: ‘LineSearch’ has not been declared",
+    "units/u1152/u1152_test.cc:8:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’"
+  ]
+}

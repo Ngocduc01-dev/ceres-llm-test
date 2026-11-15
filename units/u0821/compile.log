@@ -1,0 +1,17 @@
+/work/repo/units/u0821/u0821_test.cc: In member function ‘virtual void Unit_u0821_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0821/u0821_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+    7 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+In file included from /work/ceres-solver/include/ceres/loss_function.h:82,
+                 from /work/repo/units/u0821/u0821_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u0821/u0821_test.cc:8:37: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunctionWrapper(<brace-enclosed initializer list>)’
+    8 |   ceres::LossFunctionWrapper object{};
+      |                                     ^
+/work/ceres-solver/include/ceres/loss_function.h:394:3: note: candidate: ‘ceres::LossFunctionWrapper::LossFunctionWrapper(ceres::LossFunction*, ceres::Ownership)’
+  394 |   LossFunctionWrapper(LossFunction* rho, Ownership ownership)
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/loss_function.h:394:3: note:   candidate expects 2 arguments, 0 provided

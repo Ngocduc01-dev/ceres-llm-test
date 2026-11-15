@@ -1,0 +1,17 @@
+/work/repo/units/u1052/u1052_test.cc: In member function ‘virtual void Unit_u1052_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1052/u1052_test.cc:8:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brace-enclosed initializer list>)’
+    8 |   ceres::NormalPrior object{};
+      |                             ^
+In file included from /work/repo/units/u1052/u1052_test.cc:4:
+/work/ceres-solver/include/ceres/normal_prior.h:64:3: note: candidate: ‘ceres::NormalPrior::NormalPrior(const ceres::Matrix&, ceres::Vector)’
+   64 |   NormalPrior(const Matrix& A, Vector b);
+      |   ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/normal_prior.h:64:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1052/u1052_test.cc: In member function ‘virtual void Unit_u1052_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1052/u1052_test.cc:14:29: error: no matching function for call to ‘ceres::NormalPrior::NormalPrior(<brace-enclosed initializer list>)’
+   14 |   ceres::NormalPrior object{};
+      |                             ^
+/work/ceres-solver/include/ceres/normal_prior.h:64:3: note: candidate: ‘ceres::NormalPrior::NormalPrior(const ceres::Matrix&, ceres::Vector)’
+   64 |   NormalPrior(const Matrix& A, Vector b);
+      |   ^~~~~~~~~~~
+/work/ceres-solver/include/ceres/normal_prior.h:64:3: note:   candidate expects 2 arguments, 0 provided

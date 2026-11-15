@@ -1,0 +1,15 @@
+{
+  "id": "u1308",
+  "name": "ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1308/u1308_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1308/u1308_test.cc:9:9: error: expected ‘;’ before ‘y’",
+    "units/u1308/u1308_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1308/u1308_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1308/u1308_test.cc:11:3: error: ‘object’ was not declared in this scope",
+    "units/u1308/u1308_test.cc:11:37: error: ‘x’ was not declared in this scope",
+    "units/u1308/u1308_test.cc:11:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?"
+  ]
+}

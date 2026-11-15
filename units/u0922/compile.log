@@ -1,0 +1,86 @@
+/work/repo/units/u0922/u0922_test.cc: In member function ‘virtual void Unit_u0922_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0922/u0922_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u0922/u0922_test.cc:10:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   10 |   BlockSparseMatrix matrix{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/repo/units/u0922/u0922_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u0922/u0922_test.cc:11:46: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::PartitionedMatrixViewBase’
+   11 |   ceres::internal::PartitionedMatrixViewBase object{};
+      |                                              ^~~~~~
+In file included from /work/repo/units/u0922/u0922_test.cc:5:
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:67:23: note:   because the following virtual functions are pure within ‘ceres::internal::PartitionedMatrixViewBase’:
+   67 | class CERES_NO_EXPORT PartitionedMatrixViewBase {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:72:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::LeftMultiplyAndAccumulateE(const double*, double*) const’
+   72 |   virtual void LeftMultiplyAndAccumulateE(const double* x, double* y) const = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:73:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::LeftMultiplyAndAccumulateESingleThreaded(const double*, double*) const’
+   73 |   virtual void LeftMultiplyAndAccumulateESingleThreaded(const double* x,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:75:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::LeftMultiplyAndAccumulateEMultiThreaded(const double*, double*) const’
+   75 |   virtual void LeftMultiplyAndAccumulateEMultiThreaded(const double* x,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:79:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::LeftMultiplyAndAccumulateF(const double*, double*) const’
+   79 |   virtual void LeftMultiplyAndAccumulateF(const double* x, double* y) const = 0;
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:80:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::LeftMultiplyAndAccumulateFSingleThreaded(const double*, double*) const’
+   80 |   virtual void LeftMultiplyAndAccumulateFSingleThreaded(const double* x,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:82:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::LeftMultiplyAndAccumulateFMultiThreaded(const double*, double*) const’
+   82 |   virtual void LeftMultiplyAndAccumulateFMultiThreaded(const double* x,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:86:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::RightMultiplyAndAccumulateE(const double*, double*) const’
+   86 |   virtual void RightMultiplyAndAccumulateE(const double* x,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:90:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::RightMultiplyAndAccumulateF(const double*, double*) const’
+   90 |   virtual void RightMultiplyAndAccumulateF(const double* x,
+      |                ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:94:46: note:     ‘virtual std::unique_ptr<ceres::internal::BlockSparseMatrix> ceres::internal::PartitionedMatrixViewBase::CreateBlockDiagonalEtE() const’
+   94 |   virtual std::unique_ptr<BlockSparseMatrix> CreateBlockDiagonalEtE() const = 0;
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:98:46: note:     ‘virtual std::unique_ptr<ceres::internal::BlockSparseMatrix> ceres::internal::PartitionedMatrixViewBase::CreateBlockDiagonalFtF() const’
+   98 |   virtual std::unique_ptr<BlockSparseMatrix> CreateBlockDiagonalFtF() const = 0;
+      |                                              ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:105:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::UpdateBlockDiagonalEtE(ceres::internal::BlockSparseMatrix*) const’
+  105 |   virtual void UpdateBlockDiagonalEtE(
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:113:16: note:     ‘virtual void ceres::internal::PartitionedMatrixViewBase::UpdateBlockDiagonalFtF(ceres::internal::BlockSparseMatrix*) const’
+  113 |   virtual void UpdateBlockDiagonalFtF(
+      |                ^~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:117:15: note:     ‘virtual int ceres::internal::PartitionedMatrixViewBase::num_col_blocks_e() const’
+  117 |   virtual int num_col_blocks_e() const = 0;
+      |               ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:118:15: note:     ‘virtual int ceres::internal::PartitionedMatrixViewBase::num_col_blocks_f() const’
+  118 |   virtual int num_col_blocks_f() const = 0;
+      |               ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:119:15: note:     ‘virtual int ceres::internal::PartitionedMatrixViewBase::num_cols_e() const’
+  119 |   virtual int num_cols_e()       const = 0;
+      |               ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:120:15: note:     ‘virtual int ceres::internal::PartitionedMatrixViewBase::num_cols_f() const’
+  120 |   virtual int num_cols_f()       const = 0;
+      |               ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:121:15: note:     ‘virtual int ceres::internal::PartitionedMatrixViewBase::num_rows() const’
+  121 |   virtual int num_rows()         const = 0;
+      |               ^~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:122:15: note:     ‘virtual int ceres::internal::PartitionedMatrixViewBase::num_cols() const’
+  122 |   virtual int num_cols()         const = 0;
+      |               ^~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:123:35: note:     ‘virtual const std::vector<int>& ceres::internal::PartitionedMatrixViewBase::e_cols_partition() const’
+  123 |   virtual const std::vector<int>& e_cols_partition() const = 0;
+      |                                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:124:35: note:     ‘virtual const std::vector<int>& ceres::internal::PartitionedMatrixViewBase::f_cols_partition() const’
+  124 |   virtual const std::vector<int>& f_cols_partition() const = 0;
+      |                                   ^~~~~~~~~~~~~~~~
+/work/repo/units/u0922/u0922_test.cc:12:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   12 |   object.Create(options, matrix);
+      |                 ^~~~~~~
+      |                 optind
+/work/repo/units/u0922/u0922_test.cc:12:26: error: ‘matrix’ was not declared in this scope
+   12 |   object.Create(options, matrix);
+      |                          ^~~~~~

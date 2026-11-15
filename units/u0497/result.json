@@ -1,0 +1,32 @@
+{
+  "id": "u0497",
+  "name": "ceres::operator<<",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "JetOutputStreamCFT.TC1_ZeroIterations": "pass",
+    "JetOutputStreamCFT.TC2_OneIteration": "pass",
+    "JetOutputStreamCFT.TC3_TwoIterations": "pass",
+    "JetOutputStreamCFT.TC4_MiddleIterations": "pass",
+    "JetOutputStreamCFT.TC5_NMinusOneIterations": "pass",
+    "JetOutputStreamCFT.TC6_NIterations": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 8,
+    "total": 8
+  },
+  "c2": {
+    "covered": 2,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 1
+  },
+  "uncovered": []
+}

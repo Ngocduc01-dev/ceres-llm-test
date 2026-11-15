@@ -1,0 +1,10 @@
+{
+  "id": "u0970",
+  "name": "ceres::internal::ThreadPool::ThreadMainLoop",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0970/u0970_test.cc:9:24: error: ‘void ceres::internal::ThreadPool::ThreadMainLoop()’ is private within this context",
+    "units/u0970/u0970_test.cc:15:24: error: ‘void ceres::internal::ThreadPool::ThreadMainLoop()’ is private within this context"
+  ]
+}

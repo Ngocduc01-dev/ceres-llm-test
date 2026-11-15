@@ -1,0 +1,16 @@
+{
+  "id": "u1121",
+  "name": "ceres::DynamicCostFunctionToFunctor::operator()",
+  "status": "compile_fail",
+  "cfg_branches": 12,
+  "errors": [
+    "units/u1121/u1121_test.cc:9:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’",
+    "units/u1121/u1121_test.cc:10:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’",
+    "units/u1121/u1121_test.cc:15:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’",
+    "units/u1121/u1121_test.cc:16:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’",
+    "units/u1121/u1121_test.cc:21:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’",
+    "units/u1121/u1121_test.cc:22:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’",
+    "units/u1121/u1121_test.cc:27:46: error: no matching function for call to ‘ceres::DynamicCostFunctionToFunctor::DynamicCostFunctionToFunctor(<brace-enclosed initializer list>)’",
+    "units/u1121/u1121_test.cc:28:9: error: no match for call to ‘(ceres::DynamicCostFunctionToFunctor) (std::nullptr_t)’"
+  ]
+}

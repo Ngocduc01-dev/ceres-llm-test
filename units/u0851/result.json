@@ -1,0 +1,11 @@
+{
+  "id": "u0851",
+  "name": "ceres::internal::Norm",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0851/u0851_test.cc:9:20: error: ‘Derived’ was not declared in this scope",
+    "units/u0851/u0851_test.cc:9:27: error: template argument 1 is invalid",
+    "units/u0851/u0851_test.cc:11:24: error: no matching function for call to ‘Norm(int&, std::nullptr_t, int&)’"
+  ]
+}

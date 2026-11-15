@@ -1,0 +1,4 @@
+/work/repo/units/u0739/u0739_test.cc: In member function ‘virtual void ceres::Unit_u0739_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0739/u0739_test.cc:7:3: error: ‘IsSchurType’ was not declared in this scope
+    7 |   IsSchurType({});
+      |   ^~~~~~~~~~~

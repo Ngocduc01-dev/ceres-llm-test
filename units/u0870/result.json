@@ -1,0 +1,9 @@
+{
+  "id": "u0870",
+  "name": "ceres::internal::LinearSolver::~LinearSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0870/u0870_test.cc:7:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’"
+  ]
+}

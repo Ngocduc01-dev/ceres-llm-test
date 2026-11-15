@@ -1,0 +1,11 @@
+{
+  "id": "u1093",
+  "name": "ceres::StringToLinearSolverOrderingType",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1093/u1093_test.cc:7:3: error: ‘ceres’ has not been declared",
+    "units/u1093/u1093_test.cc:13:3: error: ‘ceres’ has not been declared",
+    "units/u1093/u1093_test.cc:19:3: error: ‘ceres’ has not been declared"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "u0794",
+  "name": "ceres::internal::SchurComplementSolver::set_lhs",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0794/u0794_test.cc:8:19: error: ‘BlockRandomAccessMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessMatrix’?",
+    "units/u0794/u0794_test.cc:8:42: error: template argument 1 is invalid",
+    "units/u0794/u0794_test.cc:8:42: error: template argument 2 is invalid",
+    "units/u0794/u0794_test.cc:9:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u0794/u0794_test.cc:9:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’",
+    "units/u0794/u0794_test.cc:10:18: error: cannot convert ‘int’ to ‘std::unique_ptr<ceres::internal::BlockRandomAccessMatrix>’"
+  ]
+}

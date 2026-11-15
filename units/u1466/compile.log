@@ -1,0 +1,43 @@
+/work/repo/units/u1466/u1466_test.cc: In member function ‘virtual void Unit_u1466_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1466/u1466_test.cc:10:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context
+   10 |   object.DoInnerIterationsIfNeeded();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1466/u1466_test.cc:5:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:73:8: note: declared private here
+   73 |   void DoInnerIterationsIfNeeded();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1466/u1466_test.cc: In member function ‘virtual void Unit_u1466_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1466/u1466_test.cc:16:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context
+   16 |   object.DoInnerIterationsIfNeeded();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:73:8: note: declared private here
+   73 |   void DoInnerIterationsIfNeeded();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1466/u1466_test.cc: In member function ‘virtual void Unit_u1466_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1466/u1466_test.cc:22:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context
+   22 |   object.DoInnerIterationsIfNeeded();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:73:8: note: declared private here
+   73 |   void DoInnerIterationsIfNeeded();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1466/u1466_test.cc: In member function ‘virtual void Unit_u1466_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1466/u1466_test.cc:28:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context
+   28 |   object.DoInnerIterationsIfNeeded();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:73:8: note: declared private here
+   73 |   void DoInnerIterationsIfNeeded();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1466/u1466_test.cc: In member function ‘virtual void Unit_u1466_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1466/u1466_test.cc:34:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context
+   34 |   object.DoInnerIterationsIfNeeded();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:73:8: note: declared private here
+   73 |   void DoInnerIterationsIfNeeded();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1466/u1466_test.cc: In member function ‘virtual void Unit_u1466_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1466/u1466_test.cc:40:35: error: ‘void ceres::internal::TrustRegionMinimizer::DoInnerIterationsIfNeeded()’ is private within this context
+   40 |   object.DoInnerIterationsIfNeeded();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:73:8: note: declared private here
+   73 |   void DoInnerIterationsIfNeeded();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~

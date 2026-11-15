@@ -1,0 +1,10 @@
+{
+  "id": "u0861",
+  "name": "ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0861/u0861_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u0861/u0861_test.cc:9:51: error: no matching function for call to ‘ceres::internal::ImplicitSchurComplement::ImplicitSchurComplement(<brace-enclosed initializer list>)’"
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "id": "u1128",
+  "name": "ceres::TinySolver::Solve",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u1128/u1128_test.cc:7:3: error: ‘Function’ was not declared in this scope; did you mean ‘union’?",
+    "units/u1128/u1128_test.cc:8:28: error: class template argument deduction failed:",
+    "units/u1128/u1128_test.cc:8:28: error: no matching function for call to ‘TinySolver()’",
+    "units/u1128/u1128_test.cc:9:16: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?"
+  ]
+}

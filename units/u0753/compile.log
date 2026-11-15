@@ -1,0 +1,45 @@
+/work/repo/units/u0753/u0753_test.cc: In member function ‘virtual void Unit_u0753_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0753/u0753_test.cc:7:3: error: ‘PreconditionerType’ was not declared in this scope; did you mean ‘ceres::PreconditionerType’?
+    7 |   PreconditionerType preconditioner_type{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::PreconditionerType
+In file included from /work/ceres-solver/internal/ceres/linear_operator.h:38,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:40,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/preconditioner.h:37,
+                 from /work/repo/units/u0753/u0753_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:93:6: note: ‘ceres::PreconditionerType’ declared here
+   93 | enum PreconditionerType {
+      |      ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0753/u0753_test.cc:8:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Preconditioner’
+    8 |   ceres::internal::Preconditioner object{};
+      |                                   ^~~~~~
+/work/ceres-solver/internal/ceres/preconditioner.h:51:23: note:   because the following virtual functions are pure within ‘ceres::internal::Preconditioner’:
+   51 | class CERES_NO_EXPORT Preconditioner : public LinearOperator {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/preconditioner.h:150:8: note:     ‘virtual void ceres::internal::Preconditioner::RightMultiplyAndAccumulate(const double*, double*) const’
+  150 |   void RightMultiplyAndAccumulate(const double* x,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/preconditioner.h:156:7: note:     ‘virtual int ceres::internal::Preconditioner::num_rows() const’
+  156 |   int num_rows() const override = 0;
+      |       ^~~~~~~~
+/work/ceres-solver/internal/ceres/preconditioner.h:144:16: note:     ‘virtual bool ceres::internal::Preconditioner::Update(const ceres::internal::LinearOperator&, const double*)’
+  144 |   virtual bool Update(const LinearOperator& A, const double* D) = 0;
+      |                ^~~~~~
+/work/repo/units/u0753/u0753_test.cc:9:39: error: ‘preconditioner_type’ was not declared in this scope
+    9 |   object.PreconditionerForZeroEBlocks(preconditioner_type);
+      |                                       ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0753/u0753_test.cc: In member function ‘virtual void Unit_u0753_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0753/u0753_test.cc:14:3: error: ‘PreconditionerType’ was not declared in this scope; did you mean ‘ceres::PreconditionerType’?
+   14 |   PreconditionerType preconditioner_type{};
+      |   ^~~~~~~~~~~~~~~~~~
+      |   ceres::PreconditionerType
+/work/ceres-solver/include/ceres/types.h:93:6: note: ‘ceres::PreconditionerType’ declared here
+   93 | enum PreconditionerType {
+      |      ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u0753/u0753_test.cc:15:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Preconditioner’
+   15 |   ceres::internal::Preconditioner object{};
+      |                                   ^~~~~~
+/work/repo/units/u0753/u0753_test.cc:16:39: error: ‘preconditioner_type’ was not declared in this scope
+   16 |   object.PreconditionerForZeroEBlocks(preconditioner_type);
+      |                                       ^~~~~~~~~~~~~~~~~~~

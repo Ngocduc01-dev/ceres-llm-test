@@ -1,0 +1,11 @@
+{
+  "id": "u1283",
+  "name": "ceres::internal::TrustRegionMinimizer::GradientToleranceReached",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1283/u1283_test.cc:8:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()’ is private within this context",
+    "units/u1283/u1283_test.cc:14:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()’ is private within this context",
+    "units/u1283/u1283_test.cc:20:34: error: ‘bool ceres::internal::TrustRegionMinimizer::GradientToleranceReached()’ is private within this context"
+  ]
+}

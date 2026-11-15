@@ -1,0 +1,41 @@
+/work/repo/units/u1502/u1502_test.cc: In member function ‘virtual void Unit_u1502_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1502/u1502_test.cc:13:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   13 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+In file included from /work/repo/units/u1502/u1502_test.cc:6:
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1502/u1502_test.cc: In member function ‘virtual void Unit_u1502_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1502/u1502_test.cc:19:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1502/u1502_test.cc: In member function ‘virtual void Unit_u1502_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1502/u1502_test.cc:25:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   25 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1502/u1502_test.cc: In member function ‘virtual void Unit_u1502_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1502/u1502_test.cc:31:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   31 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1502/u1502_test.cc: In member function ‘virtual void Unit_u1502_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1502/u1502_test.cc:37:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   37 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided

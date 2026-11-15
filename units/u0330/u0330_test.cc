@@ -2,15 +2,27 @@
 #include "gtest/gtest.h"
 #include "ceres/linear_operator.h"
 
-class Unit0330Operator final : public ceres::internal::LinearOperator {
+namespace ceres {
+namespace internal {
+
+namespace {
+
+// Lớp con tối thiểu để tạo được object của LinearOperator (lớp có hàm thuần ảo).
+class TestLinearOperator : public LinearOperator {
  public:
-  ~Unit0330Operator() override = default;
-  void RightMultiplyAndAccumulate(const double*, double*) const override {}
-  void LeftMultiplyAndAccumulate(const double*, double*) const override {}
-  int num_rows() const override { return 0; }
-  int num_cols() const override { return 0; }
+  void RightMultiplyAndAccumulate(const double* x, double* y) const final {}
+  void LeftMultiplyAndAccumulate(const double* x, double* y) const final {}
+  int num_rows() const final { return 0; }
+  int num_cols() const final { return 0; }
 };
 
-TEST(Unit_u0330, PathP1) {
-  { Unit0330Operator target; }
+}  // namespace
+
+// P1: START -> END (destructor ~LinearOperator() = default, không có nhánh)
+TEST(LinearOperatorDestructorTest, TC1_DestroyDerivedObjectThroughBasePointer) {
+  LinearOperator* op = new TestLinearOperator();
+  delete op;  // gọi ~LinearOperator() qua con trỏ lớp cơ sở (destructor ảo)
 }
+
+}  // namespace internal
+}  // namespace ceres

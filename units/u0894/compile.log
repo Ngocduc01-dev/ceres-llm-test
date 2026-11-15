@@ -1,0 +1,44 @@
+/work/repo/units/u0894/u0894_test.cc: In member function ‘virtual void Unit_u0894_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0894/u0894_test.cc:9:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseMatrix’
+    9 |   ceres::internal::SparseMatrix object{};
+      |                                 ^~~~~~
+In file included from /work/repo/units/u0894/u0894_test.cc:4:
+/work/ceres-solver/internal/ceres/sparse_matrix.h:67:23: note:   because the following virtual functions are pure within ‘ceres::internal::SparseMatrix’:
+   67 | class CERES_NO_EXPORT SparseMatrix : public LinearOperator {
+      |                       ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:73:8: note:     ‘virtual void ceres::internal::SparseMatrix::RightMultiplyAndAccumulate(const double*, double*) const’
+   73 |   void RightMultiplyAndAccumulate(const double* x,
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:77:8: note:     ‘virtual void ceres::internal::SparseMatrix::LeftMultiplyAndAccumulate(const double*, double*) const’
+   77 |   void LeftMultiplyAndAccumulate(const double* x, double* y) const override = 0;
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:113:7: note:     ‘virtual int ceres::internal::SparseMatrix::num_rows() const’
+  113 |   int num_rows() const override = 0;
+      |       ^~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:114:7: note:     ‘virtual int ceres::internal::SparseMatrix::num_cols() const’
+  114 |   int num_cols() const override = 0;
+      |       ^~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:80:16: note:     ‘virtual void ceres::internal::SparseMatrix::SquaredColumnNorm(double*) const’
+   80 |   virtual void SquaredColumnNorm(double* x) const = 0;
+      |                ^~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:85:16: note:     ‘virtual void ceres::internal::SparseMatrix::ScaleColumns(const double*)’
+   85 |   virtual void ScaleColumns(const double* scale) = 0;
+      |                ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:92:16: note:     ‘virtual void ceres::internal::SparseMatrix::SetZero()’
+   92 |   virtual void SetZero() = 0;
+      |                ^~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:99:16: note:     ‘virtual void ceres::internal::SparseMatrix::ToDenseMatrix(ceres::Matrix*) const’
+   99 |   virtual void ToDenseMatrix(Matrix* dense_matrix) const = 0;
+      |                ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:104:16: note:     ‘virtual void ceres::internal::SparseMatrix::ToTextFile(FILE*) const’
+  104 |   virtual void ToTextFile(FILE* file) const = 0;
+      |                ^~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:110:19: note:     ‘virtual double* ceres::internal::SparseMatrix::mutable_values()’
+  110 |   virtual double* mutable_values() = 0;
+      |                   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:111:25: note:     ‘virtual const double* ceres::internal::SparseMatrix::values() const’
+  111 |   virtual const double* values() const = 0;
+      |                         ^~~~~~
+/work/ceres-solver/internal/ceres/sparse_matrix.h:115:15: note:     ‘virtual int ceres::internal::SparseMatrix::num_nonzeros() const’
+  115 |   virtual int num_nonzeros() const = 0;
+      |               ^~~~~~~~~~~~

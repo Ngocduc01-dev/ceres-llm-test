@@ -1,0 +1,16 @@
+{
+  "id": "u1305",
+  "name": "ceres::internal::NumericDiff::EvaluateJacobianForParameterBlock",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1305/u1305_test.cc:9:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1305/u1305_test.cc:13:39: error: class template argument deduction failed:",
+    "units/u1305/u1305_test.cc:13:39: error: no matching function for call to ‘NumericDiff()’",
+    "units/u1305/u1305_test.cc:14:62: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1305/u1305_test.cc:19:3: error: ‘NumericDiffOptions’ was not declared in this scope; did you mean ‘ceres::NumericDiffOptions’?",
+    "units/u1305/u1305_test.cc:23:39: error: class template argument deduction failed:",
+    "units/u1305/u1305_test.cc:23:39: error: no matching function for call to ‘NumericDiff()’",
+    "units/u1305/u1305_test.cc:24:62: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

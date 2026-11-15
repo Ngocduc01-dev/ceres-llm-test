@@ -1,0 +1,24 @@
+/work/repo/units/u1468/u1468_test.cc: In member function ‘virtual void Unit_u1468_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1468/u1468_test.cc:9:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+    9 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1468/u1468_test.cc:5:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1468/u1468_test.cc:10:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+In file included from /work/repo/units/u1468/u1468_test.cc:4:
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1468/u1468_test.cc:11:25: error: ‘program’ was not declared in this scope
+   11 |   object.CreateOrdering(program);
+      |                         ^~~~~~~

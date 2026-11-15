@@ -1,12 +1,15 @@
 // FILE: u0315_test.cc
 #include "gtest/gtest.h"
-#define private public
 #include "ceres/inner_product_computer.h"
-#undef private
 
-TEST(Unit_u0315, PathP1) {
-  ceres::internal::InnerProductComputer::ProductTerm target(1, 2, 3);
-  EXPECT_EQ(target.row, 1);
-  EXPECT_EQ(target.col, 2);
-  EXPECT_EQ(target.index, 3);
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ProductTermTest, ConstructorTC1) {
+  InnerProductComputer::ProductTerm term(3, 1, 4);
+  (void)term;
 }
+
+}  // namespace internal
+}  // namespace ceres

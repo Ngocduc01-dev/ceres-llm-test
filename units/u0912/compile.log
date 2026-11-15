@@ -1,0 +1,21 @@
+/work/repo/units/u0912/u0912_test.cc: In member function ‘virtual void Unit_u0912_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0912/u0912_test.cc:8:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’
+    8 |   ceres::internal::SparseCholesky object{};
+      |                                   ^~~~~~
+In file included from /work/repo/units/u0912/u0912_test.cc:4:
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:72:23: note:   because the following virtual functions are pure within ‘ceres::internal::SparseCholesky’:
+   72 | class CERES_NO_EXPORT SparseCholesky {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:86:50: note:     ‘virtual ceres::internal::CompressedRowSparseMatrix::StorageType ceres::internal::SparseCholesky::StorageType() const’
+   86 |   virtual CompressedRowSparseMatrix::StorageType StorageType() const = 0;
+      |                                                  ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:96:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::SparseCholesky::Factorize(ceres::internal::CompressedRowSparseMatrix*, std::string*)’
+   96 |   virtual LinearSolverTerminationType Factorize(CompressedRowSparseMatrix* lhs,
+      |                                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/sparse_cholesky.h:102:39: note:     ‘virtual ceres::internal::LinearSolverTerminationType ceres::internal::SparseCholesky::Solve(const double*, double*, std::string*)’
+  102 |   virtual LinearSolverTerminationType Solve(const double* rhs,
+      |                                       ^~~~~
+/work/repo/units/u0912/u0912_test.cc: In member function ‘virtual void Unit_u0912_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0912/u0912_test.cc:14:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’
+   14 |   ceres::internal::SparseCholesky object{};
+      |                                   ^~~~~~

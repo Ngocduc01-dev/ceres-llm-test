@@ -1,0 +1,280 @@
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:14:3: error: ‘Minimizer’ has not been declared
+   14 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:16:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   16 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:21:3: error: ‘Minimizer’ has not been declared
+   21 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:23:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   23 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:28:3: error: ‘Minimizer’ has not been declared
+   28 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:30:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   30 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:35:3: error: ‘Minimizer’ has not been declared
+   35 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:37:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   37 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:42:3: error: ‘Minimizer’ has not been declared
+   42 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:44:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   44 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:49:3: error: ‘Minimizer’ has not been declared
+   49 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:51:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   51 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:56:3: error: ‘Minimizer’ has not been declared
+   56 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:58:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   58 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:63:3: error: ‘Minimizer’ has not been declared
+   63 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:65:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   65 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:70:3: error: ‘Minimizer’ has not been declared
+   70 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:72:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   72 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:77:3: error: ‘Minimizer’ has not been declared
+   77 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:79:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   79 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:84:3: error: ‘Minimizer’ has not been declared
+   84 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:86:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   86 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:91:3: error: ‘Minimizer’ has not been declared
+   91 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:93:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   93 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:98:3: error: ‘Minimizer’ has not been declared
+   98 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:100:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  100 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC14_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:105:3: error: ‘Minimizer’ has not been declared
+  105 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:107:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  107 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC15_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:112:3: error: ‘Minimizer’ has not been declared
+  112 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:114:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  114 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC16_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:119:3: error: ‘Minimizer’ has not been declared
+  119 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:121:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  121 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC17_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:126:3: error: ‘Minimizer’ has not been declared
+  126 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:128:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  128 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC18_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:133:3: error: ‘Minimizer’ has not been declared
+  133 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:135:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  135 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC19_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:140:3: error: ‘Minimizer’ has not been declared
+  140 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:142:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  142 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC20_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:147:3: error: ‘Minimizer’ has not been declared
+  147 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:149:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  149 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC21_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:154:3: error: ‘Minimizer’ has not been declared
+  154 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:156:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  156 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC22_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:161:3: error: ‘Minimizer’ has not been declared
+  161 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:163:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  163 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC23_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:168:3: error: ‘Minimizer’ has not been declared
+  168 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:170:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  170 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC24_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:175:3: error: ‘Minimizer’ has not been declared
+  175 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:177:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  177 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC25_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:182:3: error: ‘Minimizer’ has not been declared
+  182 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:184:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  184 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC26_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:189:3: error: ‘Minimizer’ has not been declared
+  189 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:191:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  191 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC27_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:196:3: error: ‘Minimizer’ has not been declared
+  196 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:198:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  198 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC28_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:203:3: error: ‘Minimizer’ has not been declared
+  203 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:205:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  205 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC29_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:210:3: error: ‘Minimizer’ has not been declared
+  210 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:212:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  212 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC30_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:217:3: error: ‘Minimizer’ has not been declared
+  217 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:219:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  219 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC31_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:224:3: error: ‘Minimizer’ has not been declared
+  224 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:226:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  226 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC32_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:231:3: error: ‘Minimizer’ has not been declared
+  231 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:233:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  233 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC33_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:238:3: error: ‘Minimizer’ has not been declared
+  238 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:240:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  240 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC34_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:245:3: error: ‘Minimizer’ has not been declared
+  245 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:247:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  247 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind
+/work/repo/units/u1447/u1447_test.cc: In member function ‘virtual void Unit_u1447_TC35_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1447/u1447_test.cc:252:3: error: ‘Minimizer’ has not been declared
+  252 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u1447/u1447_test.cc:254:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+  254 |   object.Minimize(options, nullptr, nullptr);
+      |                   ^~~~~~~
+      |                   optind

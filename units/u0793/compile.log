@@ -1,0 +1,19 @@
+/work/repo/units/u0793/u0793_test.cc: In member function ‘virtual void Unit_u0793_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0793/u0793_test.cc:9:3: error: ‘BlockRandomAccessDiagonalMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessDiagonalMatrix’?
+    9 |   BlockRandomAccessDiagonalMatrix m{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockRandomAccessDiagonalMatrix
+In file included from /work/ceres-solver/internal/ceres/schur_complement_solver.h:39,
+                 from /work/repo/units/u0793/u0793_test.cc:3:
+/work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:51:23: note: ‘ceres::internal::BlockRandomAccessDiagonalMatrix’ declared here
+   51 | class CERES_NO_EXPORT BlockRandomAccessDiagonalMatrix
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0793/u0793_test.cc:10:20: error: expected unqualified-id before ‘(’ token
+   10 |   ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter object{};
+      |                    ^
+/work/repo/units/u0793/u0793_test.cc:10:21: error: ‘anonymous’ was not declared in this scope
+   10 |   ceres::internal::(anonymous)::BlockRandomAccessDiagonalMatrixAdapter object{};
+      |                     ^~~~~~~~~
+/work/repo/units/u0793/u0793_test.cc:11:9: error: ‘object’ was not declared in this scope
+   11 |   (void)object;
+      |         ^~~~~~

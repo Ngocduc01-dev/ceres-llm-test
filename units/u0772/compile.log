@@ -1,0 +1,21 @@
+/work/repo/units/u0772/u0772_test.cc: In member function ‘virtual void Unit_u0772_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0772/u0772_test.cc:9:3: error: ‘Functor’ was not declared in this scope
+    9 |   Functor functor{};
+      |   ^~~~~~~
+/work/repo/units/u0772/u0772_test.cc:11:38: error: ‘functor’ was not declared in this scope
+   11 |   ceres::internal::AutoDifferentiate(functor, nullptr, dynamic_num_outputs, nullptr, nullptr);
+      |                                      ^~~~~~~
+/work/repo/units/u0772/u0772_test.cc: In member function ‘virtual void Unit_u0772_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0772/u0772_test.cc:16:3: error: ‘Functor’ was not declared in this scope
+   16 |   Functor functor{};
+      |   ^~~~~~~
+/work/repo/units/u0772/u0772_test.cc:18:38: error: ‘functor’ was not declared in this scope
+   18 |   ceres::internal::AutoDifferentiate(functor, nullptr, dynamic_num_outputs, nullptr, nullptr);
+      |                                      ^~~~~~~
+/work/repo/units/u0772/u0772_test.cc: In member function ‘virtual void Unit_u0772_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0772/u0772_test.cc:23:3: error: ‘Functor’ was not declared in this scope
+   23 |   Functor functor{};
+      |   ^~~~~~~
+/work/repo/units/u0772/u0772_test.cc:25:38: error: ‘functor’ was not declared in this scope
+   25 |   ceres::internal::AutoDifferentiate(functor, nullptr, dynamic_num_outputs, nullptr, nullptr);
+      |                                      ^~~~~~~

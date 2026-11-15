@@ -1,0 +1,16 @@
+{
+  "id": "u1304",
+  "name": "ceres::internal::MinimizePolynomial",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1304/u1304_test.cc:7:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:10:39: error: ‘polynomial’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:15:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:18:39: error: ‘polynomial’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:23:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:26:39: error: ‘polynomial’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:31:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1304/u1304_test.cc:34:39: error: ‘polynomial’ was not declared in this scope"
+  ]
+}

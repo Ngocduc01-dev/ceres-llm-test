@@ -1,0 +1,78 @@
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:11:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   11 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u1481/u1481_test.cc:5:
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:17:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   17 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:23:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   23 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:29:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   29 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:35:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   35 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:41:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   41 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:47:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   47 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:53:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   53 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:59:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   59 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:65:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   65 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1481/u1481_test.cc: In member function ‘virtual void Unit_u1481_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1481/u1481_test.cc:71:27: error: ‘bool ceres::internal::Program::RemoveFixedBlocks(std::vector<double*>*, double*, std::string*)’ is private within this context
+   71 |   object.RemoveFixedBlocks(nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program.h:185:8: note: declared private here
+  185 |   bool RemoveFixedBlocks(std::vector<double*>* removed_parameter_blocks,
+      |        ^~~~~~~~~~~~~~~~~

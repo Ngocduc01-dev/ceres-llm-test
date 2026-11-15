@@ -1,0 +1,10 @@
+{
+  "id": "u1272",
+  "name": "ceres::internal::TrustRegionMinimizer::HandleInvalidStep",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1272/u1272_test.cc:9:27: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleInvalidStep()’ is private within this context",
+    "units/u1272/u1272_test.cc:15:27: error: ‘bool ceres::internal::TrustRegionMinimizer::HandleInvalidStep()’ is private within this context"
+  ]
+}

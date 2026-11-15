@@ -1,0 +1,8 @@
+/work/repo/units/u0966/u0966_test.cc: In member function ‘virtual void Unit_u0966_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0966/u0966_test.cc:8:24: error: ‘void ceres::internal::TripletSparseMatrix::AllocateMemory()’ is private within this context
+    8 |   object.AllocateMemory();
+      |   ~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u0966/u0966_test.cc:3:
+/work/ceres-solver/internal/ceres/triplet_sparse_matrix.h:146:8: note: declared private here
+  146 |   void AllocateMemory();
+      |        ^~~~~~~~~~~~~~

@@ -1,0 +1,9 @@
+{
+  "id": "u0646",
+  "name": "ceres::QuaternionToScaledRotation",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0646/u0646_test.cc:8:10: error: scalar object ‘q_data’ requires one element in initializer"
+  ]
+}

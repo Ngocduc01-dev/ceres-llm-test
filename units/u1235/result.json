@@ -1,0 +1,16 @@
+{
+  "id": "u1235",
+  "name": "ceres::internal::(anonymous)::CreateStructureOfCompressedRowSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1235/u1235_test.cc:13:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1235/u1235_test.cc:13:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1235/u1235_test.cc:21:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1235/u1235_test.cc:21:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1235/u1235_test.cc:29:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1235/u1235_test.cc:29:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1235/u1235_test.cc:37:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1235/u1235_test.cc:37:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

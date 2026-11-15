@@ -1,0 +1,163 @@
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:11:3: error: ‘TrustRegionStrategy’ has not been declared
+   11 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:12:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   12 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+In file included from /work/repo/units/u1489/u1489_test.cc:3:
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:13:22: error: ‘per_solve_options’ was not declared in this scope
+   13 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:18:3: error: ‘TrustRegionStrategy’ has not been declared
+   18 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:19:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:20:22: error: ‘per_solve_options’ was not declared in this scope
+   20 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:25:3: error: ‘TrustRegionStrategy’ has not been declared
+   25 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:26:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   26 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:27:22: error: ‘per_solve_options’ was not declared in this scope
+   27 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:32:3: error: ‘TrustRegionStrategy’ has not been declared
+   32 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:33:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   33 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:34:22: error: ‘per_solve_options’ was not declared in this scope
+   34 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:39:3: error: ‘TrustRegionStrategy’ has not been declared
+   39 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:40:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   40 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:41:22: error: ‘per_solve_options’ was not declared in this scope
+   41 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:46:3: error: ‘TrustRegionStrategy’ has not been declared
+   46 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:47:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   47 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:48:22: error: ‘per_solve_options’ was not declared in this scope
+   48 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:53:3: error: ‘TrustRegionStrategy’ has not been declared
+   53 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:54:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   54 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:55:22: error: ‘per_solve_options’ was not declared in this scope
+   55 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:60:3: error: ‘TrustRegionStrategy’ has not been declared
+   60 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:61:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   61 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:62:22: error: ‘per_solve_options’ was not declared in this scope
+   62 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc: In member function ‘virtual void Unit_u1489_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1489/u1489_test.cc:67:3: error: ‘TrustRegionStrategy’ has not been declared
+   67 |   TrustRegionStrategy::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1489/u1489_test.cc:68:54: error: no matching function for call to ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(<brace-enclosed initializer list>)’
+   68 |   ceres::internal::LevenbergMarquardtStrategy object{};
+      |                                                      ^
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::TrustRegionStrategy::Options&)’
+   51 |   explicit LevenbergMarquardtStrategy(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:51:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note: candidate: ‘ceres::internal::LevenbergMarquardtStrategy::LevenbergMarquardtStrategy(const ceres::internal::LevenbergMarquardtStrategy&)’
+   48 | class CERES_NO_EXPORT LevenbergMarquardtStrategy final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/levenberg_marquardt_strategy.h:48:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1489/u1489_test.cc:69:22: error: ‘per_solve_options’ was not declared in this scope
+   69 |   object.ComputeStep(per_solve_options, nullptr, nullptr, nullptr);
+      |                      ^~~~~~~~~~~~~~~~~

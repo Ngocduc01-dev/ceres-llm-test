@@ -1,0 +1,12 @@
+/work/repo/units/u1345/u1345_test.cc: In member function ‘virtual void Unit_u1345_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1345/u1345_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1345/u1345_test.cc:10:54: error: no matching function for call to ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::DenseSchurComplementSolver object{};
+      |                                                      ^
+In file included from /work/repo/units/u1345/u1345_test.cc:5:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note: candidate: ‘ceres::internal::DenseSchurComplementSolver::DenseSchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  153 |   explicit DenseSchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:153:12: note:   candidate expects 1 argument, 0 provided

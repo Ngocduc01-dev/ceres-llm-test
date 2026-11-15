@@ -1,0 +1,9 @@
+{
+  "id": "u0506",
+  "name": "ceres::internal::FindConnectedComponent",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0506/u0506_test.cc:9:10: error: scalar object ‘union_find_data’ requires one element in initializer"
+  ]
+}

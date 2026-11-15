@@ -1,0 +1,22 @@
+/work/repo/units/u1278/u1278_test.cc: In member function ‘virtual void Unit_u1278_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1278/u1278_test.cc:8:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is private within this context
+    8 |   object.MaxSolverTimeReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1278/u1278_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:78:8: note: declared private here
+   78 |   bool MaxSolverTimeReached();
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1278/u1278_test.cc: In member function ‘virtual void Unit_u1278_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1278/u1278_test.cc:14:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is private within this context
+   14 |   object.MaxSolverTimeReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:78:8: note: declared private here
+   78 |   bool MaxSolverTimeReached();
+      |        ^~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1278/u1278_test.cc: In member function ‘virtual void Unit_u1278_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1278/u1278_test.cc:20:30: error: ‘bool ceres::internal::TrustRegionMinimizer::MaxSolverTimeReached()’ is private within this context
+   20 |   object.MaxSolverTimeReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:78:8: note: declared private here
+   78 |   bool MaxSolverTimeReached();
+      |        ^~~~~~~~~~~~~~~~~~~~

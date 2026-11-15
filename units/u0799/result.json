@@ -1,0 +1,16 @@
+{
+  "id": "u0799",
+  "name": "ceres::ProductManifold::MinusJacobianImpl",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0799/u0799_test.cc:8:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixRef’?",
+    "units/u0799/u0799_test.cc:9:3: error: ‘internal’ has not been declared",
+    "units/u0799/u0799_test.cc:9:24: error: expected primary-expression before ‘double’",
+    "units/u0799/u0799_test.cc:11:33: error: class template argument deduction failed:",
+    "units/u0799/u0799_test.cc:11:33: error: no matching function for call to ‘ProductManifold()’",
+    "units/u0799/u0799_test.cc:12:37: error: ‘jacobian’ was not declared in this scope",
+    "units/u0799/u0799_test.cc:12:47: error: ‘buffer’ was not declared in this scope; did you mean ‘setbuffer’?",
+    "units/u0799/u0799_test.cc:17:3: error: ‘MatrixRef’ was not declared in this scope; did you mean ‘ceres::MatrixRef’?"
+  ]
+}

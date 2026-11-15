@@ -1,0 +1,14 @@
+{
+  "id": "u0945",
+  "name": "ceres::internal::ParallelFor",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0945/u0945_test.cc:11:3: error: ‘F’ was not declared in this scope",
+    "units/u0945/u0945_test.cc:13:66: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?",
+    "units/u0945/u0945_test.cc:21:3: error: ‘F’ was not declared in this scope",
+    "units/u0945/u0945_test.cc:23:66: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?",
+    "units/u0945/u0945_test.cc:31:3: error: ‘F’ was not declared in this scope",
+    "units/u0945/u0945_test.cc:33:66: error: ‘function’ was not declared in this scope; did you mean ‘std::function’?"
+  ]
+}

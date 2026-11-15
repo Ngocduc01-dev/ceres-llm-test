@@ -1,0 +1,12 @@
+{
+  "id": "u0971",
+  "name": "ceres::internal::TripletSparseMatrix::CopyData",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0971/u0971_test.cc:7:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u0971/u0971_test.cc:9:19: error: ‘orig’ was not declared in this scope",
+    "units/u0971/u0971_test.cc:14:3: error: ‘TripletSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::TripletSparseMatrix’?",
+    "units/u0971/u0971_test.cc:16:19: error: ‘orig’ was not declared in this scope"
+  ]
+}

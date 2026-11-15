@@ -1,0 +1,42 @@
+{
+  "id": "u0719",
+  "name": "ceres::TinySolver::Update",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u0719.PathP1": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 11,
+    "total": 12
+  },
+  "c2": {
+    "covered": 2,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 191,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (!function(x.data(), residuals_.data(), jacobian_.data())) {"
+    },
+    {
+      "line": 199,
+      "missing": [
+        "sai"
+      ],
+      "code": "if (summary.iterations == 0) {"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "u0962",
+  "name": "ceres::internal::SparseMatrixPreconditionerWrapper::UpdateImpl",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0962/u0962_test.cc:8:3: error: ‘SparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::SparseMatrix’?",
+    "units/u0962/u0962_test.cc:9:61: error: no matching function for call to ‘ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper(<brace-enclosed initializer list>)’",
+    "units/u0962/u0962_test.cc:10:21: error: ‘arg0’ was not declared in this scope"
+  ]
+}

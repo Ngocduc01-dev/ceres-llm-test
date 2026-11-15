@@ -1,0 +1,9 @@
+/work/repo/units/u0650/u0650_test.cc: In member function ‘virtual void Unit_u0650_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0650/u0650_test.cc:7:3: error: ‘BlockRandomAccessMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessMatrix’?
+    7 |   BlockRandomAccessMatrix object{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockRandomAccessMatrix
+In file included from /work/repo/units/u0650/u0650_test.cc:3:
+/work/ceres-solver/internal/ceres/block_random_access_matrix.h:95:23: note: ‘ceres::internal::BlockRandomAccessMatrix’ declared here
+   95 | class CERES_NO_EXPORT BlockRandomAccessMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~

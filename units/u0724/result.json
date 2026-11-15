@@ -1,0 +1,9 @@
+{
+  "id": "u0724",
+  "name": "ceres::internal::FloatEigenSparseCholesky::Create",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0724/u0724_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

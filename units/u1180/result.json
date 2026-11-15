@@ -1,0 +1,16 @@
+{
+  "id": "u1180",
+  "name": "ceres::internal::BlockSparseMatrix::CreateDiagonalMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1180/u1180_test.cc:8:15: error: ‘Block’ was not declared in this scope",
+    "units/u1180/u1180_test.cc:8:20: error: template argument 1 is invalid",
+    "units/u1180/u1180_test.cc:8:20: error: template argument 2 is invalid",
+    "units/u1180/u1180_test.cc:9:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1180/u1180_test.cc:10:40: error: cannot convert ‘int’ to ‘const std::vector<ceres::internal::Block>&’",
+    "units/u1180/u1180_test.cc:15:15: error: ‘Block’ was not declared in this scope",
+    "units/u1180/u1180_test.cc:15:20: error: template argument 1 is invalid",
+    "units/u1180/u1180_test.cc:15:20: error: template argument 2 is invalid"
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "id": "u0663",
+  "name": "ceres::internal::DenseSparseMatrix::ToDenseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0663/u0663_test.cc:7:10: error: scalar object ‘dense_matrix_data’ requires one element in initializer",
+    "units/u0663/u0663_test.cc:8:3: error: ‘object’ was not declared in this scope"
+  ]
+}

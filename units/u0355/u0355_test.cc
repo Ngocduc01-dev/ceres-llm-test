@@ -1,5 +1,9 @@
 // FILE: u0355_test.cc
 #include "gtest/gtest.h"
 #include "ceres/parallel_invoke.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0355, PathP1) { ceres::internal::BlockUntilFinished target(0); target.Block(); }
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(BlockUntilFinishedBlock, TC1_NoJobsReturnsImmediately) {
+  ceres::internal::BlockUntilFinished block_until_finished(0);
+  block_until_finished.Block();
+}

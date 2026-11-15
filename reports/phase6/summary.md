@@ -4,16 +4,17 @@ Trang tổng quan độ phủ: [gen_coverage.html](gen_coverage.html). Cách đo
 
 | Trạng thái | Số unit |
 |---|---|
-| `ok` | 253 |
-| `compile_fail` | 17 |
+| `ok` | 464 |
+| `compile_fail` | 32 |
+| `link_fail` | 4 |
 
-**Test case** (trong 253 unit chạy được): pass 294, fail 0, check_fail 2, crash 0, timeout 0
+**Test case** (trong 464 unit chạy được): pass 513, fail 0, check_fail 16, crash 14, timeout 0
 
 **Độ phủ trên các dòng của unit** (gộp các unit chạy được):
 
-- C1 (dòng): 648/661 = 98%
-- C2 (nhánh, đếm theo điểm rẽ nhánh như CFG): 59/60 = 98%; điểm rẽ nhánh không đo được (uncheckable): 0
-- Unit có nhánh: 16; phủ đủ 100% nhánh: 15; tổng nhánh đo được khớp số nhánh CFG: 15/16
+- C1 (dòng): 1174/1241 = 95%
+- C2 (nhánh, đếm theo điểm rẽ nhánh như CFG): 82/89 = 92%; điểm rẽ nhánh không đo được (uncheckable): 0
+- Unit có nhánh: 44; phủ đủ 100% nhánh: 39; tổng nhánh đo được khớp số nhánh CFG: 39/44
 
 | Unit | Trạng thái | Test (pass/tổng) | C1 | C2 | Nhánh CFG | Nhánh chưa phủ / lỗi đầu tiên |
 |---|---|---|---|---|---|---|
@@ -267,23 +268,253 @@ Trang tổng quan độ phủ: [gen_coverage.html](gen_coverage.html). Cách đo
 | u0248 | ok | 1/1 | 100% | – | 0 |  |
 | u0249 | ok | 1/1 | 100% | – | 0 |  |
 | u0250 | ok | 1/1 | 100% | – | 0 |  |
+| u0251 | ok | 1/1 | 100% | – | 0 |  |
+| u0252 | ok | 1/1 | – | – | 0 |  |
+| u0253 | ok | 1/1 | 100% | – | 0 |  |
+| u0254 | ok | 1/1 | 100% | – | 0 |  |
+| u0255 | ok | 1/1 | 100% | – | 0 |  |
+| u0256 | ok | 1/1 | 100% | – | 0 |  |
+| u0257 | ok | 1/1 | 100% | – | 0 |  |
+| u0258 | ok | 1/1 | 100% | – | 0 |  |
+| u0259 | ok | 1/1 | 100% | – | 0 |  |
+| u0260 | ok | 1/1 | 100% | – | 0 |  |
+| u0261 | ok | 1/1 | 100% | – | 0 |  |
+| u0262 | ok | 1/1 | 100% | – | 0 |  |
+| u0263 | ok | 1/1 | 100% | – | 0 |  |
+| u0264 | ok | 1/1 | 100% | – | 0 |  |
+| u0265 | ok | 1/1 | 100% | – | 0 |  |
+| u0266 | ok | 1/1 | 100% | – | 0 |  |
+| u0267 | ok | 1/1 | 100% | – | 0 |  |
+| u0268 | ok | 1/1 | 100% | – | 0 |  |
+| u0269 | ok | 1/1 | 100% | – | 0 |  |
+| u0270 | ok | 1/1 | 100% | – | 0 |  |
+| u0271 | ok | 1/1 | 100% | – | 0 |  |
+| u0272 | ok | 1/1 | 100% | – | 0 |  |
+| u0273 | ok | 1/1 | 100% | – | 0 |  |
+| u0274 | ok | 0/1 | 0% | – | 0 |  |
+| u0275 | ok | 1/1 | 100% | – | 0 |  |
+| u0276 | ok | 0/1 | – | – | 0 |  |
+| u0277 | compile_fail | /0 | – | – | 0 | units/u0277/u0277_test.cc:14:77: error: invalid use of incomplete type ‘class ceres::internal::DenseIterativeRefiner’ |
+| u0278 | ok | 0/1 | – | – | 0 |  |
+| u0279 | ok | 1/1 | 100% | – | 0 |  |
+| u0280 | ok | 1/1 | 100% | – | 0 |  |
+| u0281 | ok | 0/1 | 0% | – | 0 |  |
+| u0282 | ok | 0/1 | 0% | – | 0 |  |
+| u0283 | ok | 0/1 | 0% | – | 0 |  |
+| u0284 | ok | 0/1 | 0% | – | 0 |  |
+| u0285 | ok | 1/1 | 100% | – | 0 |  |
+| u0286 | ok | 0/1 | 0% | – | 0 |  |
+| u0287 | ok | 1/1 | 100% | – | 0 |  |
+| u0288 | ok | 0/1 | 0% | – | 0 |  |
+| u0289 | ok | 0/1 | – | – | 0 |  |
+| u0290 | ok | 0/1 | – | – | 0 |  |
+| u0291 | ok | 1/1 | 100% | – | 0 |  |
+| u0292 | ok | 0/1 | – | – | 0 |  |
+| u0293 | ok | 0/1 | – | – | 0 |  |
+| u0294 | ok | 1/1 | – | – | 0 |  |
+| u0295 | ok | 1/1 | 100% | – | 0 |  |
+| u0296 | ok | 0/1 | – | – | 0 |  |
+| u0297 | ok | 1/1 | 100% | – | 0 |  |
+| u0298 | ok | 1/1 | 100% | – | 0 |  |
+| u0299 | ok | 1/1 | 100% | – | 0 |  |
+| u0300 | ok | 1/1 | 100% | – | 0 |  |
+| u0301 | ok | 1/1 | 100% | – | 0 |  |
+| u0302 | ok | 1/1 | 100% | – | 0 |  |
+| u0303 | ok | 1/1 | 100% | – | 0 |  |
+| u0304 | ok | 1/1 | 100% | – | 0 |  |
+| u0305 | ok | 1/1 | 100% | – | 0 |  |
+| u0306 | ok | 1/1 | 100% | – | 0 |  |
+| u0307 | ok | 1/1 | 100% | – | 0 |  |
+| u0308 | ok | 1/1 | 100% | – | 0 |  |
+| u0309 | ok | 1/1 | 100% | – | 0 |  |
+| u0310 | ok | 1/1 | 100% | – | 0 |  |
+| u0311 | ok | 1/1 | 100% | – | 0 |  |
+| u0312 | ok | 1/1 | 100% | – | 0 |  |
+| u0313 | ok | 1/1 | 100% | – | 0 |  |
+| u0314 | ok | 1/1 | 100% | – | 0 |  |
+| u0315 | compile_fail | /0 | – | – | 0 | units/u0315/u0315_test.cc:10:25: error: ‘struct ceres::internal::InnerProductComputer::ProductTerm’ is private within th |
+| u0316 | ok | 1/1 | 100% | – | 0 |  |
+| u0317 | ok | 1/1 | 100% | – | 0 |  |
+| u0318 | ok | 1/1 | 100% | – | 0 |  |
+| u0319 | ok | 1/1 | 100% | – | 0 |  |
+| u0320 | ok | 1/1 | 100% | – | 0 |  |
+| u0321 | ok | 0/1 | 0% | – | 0 |  |
+| u0322 | ok | 1/1 | 100% | – | 0 |  |
+| u0323 | ok | 0/1 | 0% | – | 0 |  |
+| u0324 | compile_fail | /0 | – | – | 0 | /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal: |
+| u0325 | compile_fail | /0 | – | – | 0 | /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal: |
+| u0326 | compile_fail | /0 | – | – | 0 | /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal: |
+| u0327 | ok | 1/1 | 100% | – | 0 |  |
+| u0328 | ok | 1/1 | 100% | – | 0 |  |
+| u0329 | ok | 1/1 | – | – | 0 |  |
+| u0330 | ok | 1/1 | 100% | – | 0 |  |
+| u0331 | ok | 1/1 | 100% | 1/1 | 0 |  |
+| u0332 | ok | 1/1 | 100% | – | 0 |  |
+| u0333 | ok | 1/1 | 100% | – | 0 |  |
+| u0334 | ok | 1/1 | 100% | – | 0 |  |
+| u0335 | ok | 1/1 | 100% | – | 0 |  |
+| u0336 | ok | 1/1 | 100% | – | 0 |  |
+| u0337 | ok | 1/1 | 100% | – | 0 |  |
+| u0338 | ok | 1/1 | 100% | – | 0 |  |
+| u0339 | ok | 1/1 | 100% | – | 0 |  |
+| u0340 | ok | 1/1 | 100% | – | 0 |  |
+| u0341 | ok | 1/1 | 100% | – | 0 |  |
+| u0342 | ok | 1/1 | 100% | – | 0 |  |
+| u0343 | ok | 1/1 | 100% | – | 0 |  |
+| u0344 | ok | 1/1 | 100% | – | 0 |  |
+| u0345 | ok | 1/1 | 100% | – | 0 |  |
+| u0346 | ok | 1/1 | 100% | – | 0 |  |
+| u0347 | ok | 1/1 | 100% | – | 0 |  |
+| u0348 | ok | 1/1 | 100% | – | 0 |  |
+| u0349 | ok | 1/1 | 100% | – | 0 |  |
+| u0350 | ok | 1/1 | 100% | – | 0 |  |
+| u0351 | ok | 1/1 | 100% | – | 0 |  |
+| u0352 | ok | 1/1 | 100% | – | 0 |  |
+| u0353 | ok | 1/1 | 100% | – | 0 |  |
+| u0354 | compile_fail | /0 | – | – | 0 | internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void |
+| u0355 | compile_fail | /0 | – | – | 0 | internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void |
+| u0356 | ok | 1/1 | 100% | – | 0 |  |
+| u0357 | ok | 1/1 | 100% | – | 0 |  |
+| u0358 | ok | 1/1 | 100% | – | 0 |  |
+| u0359 | ok | 1/1 | 100% | – | 0 |  |
+| u0360 | ok | 1/1 | 100% | – | 0 |  |
+| u0361 | ok | 1/1 | 100% | – | 0 |  |
+| u0362 | ok | 1/1 | 100% | – | 0 |  |
+| u0363 | ok | 1/1 | 100% | – | 0 |  |
+| u0364 | ok | 1/1 | 100% | – | 0 |  |
+| u0365 | ok | 1/1 | 100% | – | 0 |  |
+| u0366 | ok | 1/1 | 100% | – | 0 |  |
+| u0367 | ok | 1/1 | 100% | – | 0 |  |
+| u0368 | ok | 1/1 | 100% | – | 0 |  |
+| u0369 | ok | 1/1 | 100% | – | 0 |  |
+| u0370 | ok | 1/1 | 100% | – | 0 |  |
+| u0371 | ok | 1/1 | 100% | – | 0 |  |
+| u0372 | ok | 1/1 | 100% | – | 0 |  |
+| u0373 | link_fail | /0 | – | – | 0 | /usr/bin/ld: /work/build-cov/gen/u0373/test.o: in function `ceres::internal::PartitionedMatrixViewNumColBlocksE_TC1_P1_R |
+| u0374 | ok | 1/1 | 100% | – | 0 |  |
+| u0375 | ok | 1/1 | 100% | – | 0 |  |
+| u0376 | link_fail | /0 | – | – | 0 | /usr/bin/ld: /work/build-cov/gen/u0376/test.o: in function `ceres::internal::PartitionedMatrixViewNumColsF_TC1_ReturnNum |
+| u0377 | link_fail | /0 | – | – | 0 | /usr/bin/ld: /work/build-cov/gen/u0377/test.o: in function `ceres::internal::PartitionedMatrixViewETest_ECColsPartitionP |
+| u0378 | link_fail | /0 | – | – | 0 | /usr/bin/ld: /work/build-cov/gen/u0378/test.o: in function `ceres::internal::PartitionedMatrixViewFColsPartition_Returns |
+| u0379 | ok | 1/1 | 100% | – | 0 |  |
+| u0380 | ok | 1/1 | 100% | – | 0 |  |
+| u0381 | ok | 1/1 | 100% | – | 0 |  |
+| u0382 | ok | 1/1 | 100% | – | 0 |  |
+| u0383 | ok | 1/1 | 100% | – | 0 |  |
+| u0384 | ok | 1/1 | 100% | – | 0 |  |
+| u0385 | ok | 1/1 | 100% | – | 0 |  |
+| u0386 | ok | 1/1 | 100% | – | 0 |  |
+| u0387 | ok | 1/1 | 100% | – | 0 |  |
+| u0388 | ok | 1/1 | 100% | – | 0 |  |
+| u0389 | ok | 1/1 | 100% | – | 0 |  |
+| u0390 | ok | 1/1 | 100% | – | 0 |  |
+| u0391 | ok | 1/1 | 100% | – | 0 |  |
+| u0392 | ok | 1/1 | 100% | – | 0 |  |
+| u0393 | ok | 1/1 | 100% | – | 0 |  |
+| u0394 | ok | 1/1 | 100% | – | 0 |  |
+| u0395 | ok | 1/1 | 100% | – | 0 |  |
+| u0396 | ok | 1/1 | 100% | – | 0 |  |
+| u0397 | ok | 1/1 | 100% | – | 0 |  |
+| u0398 | ok | 1/1 | 100% | – | 0 |  |
+| u0399 | ok | 1/1 | 100% | – | 0 |  |
+| u0400 | compile_fail | /0 | – | – | 0 | internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared |
+| u0401 | ok | 1/1 | 100% | – | 0 |  |
+| u0402 | ok | 1/1 | 100% | – | 0 |  |
+| u0403 | ok | 1/1 | 100% | – | 0 |  |
+| u0404 | ok | 0/1 | 0% | – | 0 |  |
+| u0405 | ok | 1/1 | 100% | – | 0 |  |
+| u0406 | ok | 1/1 | 100% | – | 0 |  |
+| u0407 | ok | 1/1 | 100% | – | 0 |  |
+| u0408 | ok | 0/1 | 0% | – | 0 |  |
+| u0409 | ok | 1/1 | 100% | – | 0 |  |
+| u0410 | ok | 1/1 | 100% | – | 0 |  |
+| u0411 | ok | 1/1 | 100% | – | 0 |  |
+| u0412 | ok | 1/1 | 100% | – | 0 |  |
+| u0413 | ok | 1/1 | 100% | – | 0 |  |
+| u0414 | ok | 1/1 | 100% | – | 0 |  |
+| u0415 | compile_fail | /0 | – | – | 0 | /usr/include/c++/14/bits/unique_ptr.h:91:23: error: invalid application of ‘sizeof’ to incomplete type ‘ceres::internal: |
+| u0416 | ok | 0/1 | 0% | – | 0 |  |
+| u0417 | ok | 1/1 | 100% | – | 0 |  |
+| u0418 | ok | 1/1 | 100% | – | 0 |  |
+| u0419 | ok | 0/1 | 0% | – | 0 |  |
+| u0420 | compile_fail | /0 | – | – | 0 | internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteSparse’ has |
+| u0421 | compile_fail | /0 | – | – | 0 | internal/ceres/suitesparse.h:284:23: error: variable ‘ceres::internal::CERES_NO_EXPORT ceres::internal::SuiteSparse’ has |
+| u0422 | ok | 1/1 | 100% | – | 0 |  |
+| u0423 | ok | 1/1 | 100% | – | 0 |  |
+| u0424 | ok | 1/1 | 100% | – | 0 |  |
+| u0425 | ok | 1/1 | 100% | – | 0 |  |
+| u0426 | ok | 1/1 | 100% | – | 0 |  |
+| u0427 | ok | 1/1 | 100% | – | 0 |  |
+| u0428 | ok | 1/1 | 100% | – | 0 |  |
+| u0429 | ok | 1/1 | 100% | – | 0 |  |
+| u0430 | ok | 1/1 | 100% | – | 0 |  |
+| u0431 | ok | 1/1 | 100% | – | 0 |  |
+| u0432 | ok | 1/1 | 100% | – | 0 |  |
+| u0433 | ok | 1/1 | 100% | – | 0 |  |
+| u0434 | ok | 0/1 | 0% | – | 0 |  |
+| u0435 | ok | 1/1 | 100% | – | 0 |  |
 | u0436 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0437 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0438 | compile_fail | /0 | – | – | 2 | include/ceres/autodiff_manifold.h:161:22: error: ‘struct ceres::{anonymous}::EuclideanFunctorN<5>’ has no member named ‘ |
+| u0439 | compile_fail | /0 | – | – | 2 | units/u0439/u0439_test.cc:12:10: error: ‘Jet’ is not a member of ‘ceres’ |
+| u0440 | ok | 1/1 | 100% | – | 0 |  |
+| u0441 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0442 | ok | 1/1 | 100% | 2/2 | 2 |  |
+| u0443 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0444 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0445 | ok | 1/1 | 100% | – | 0 |  |
+| u0446 | ok | 1/1 | 100% | – | 0 |  |
+| u0447 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0448 | ok | 6/6 | 100% | 2/2 | 2 |  |
+| u0449 | ok | 1/1 | 100% | 2/2 | 2 |  |
+| u0450 | ok | 1/1 | 100% | 2/2 | 2 |  |
+| u0451 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0452 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0453 | ok | 2/2 | 100% | 2/2 | 2 |  |
 | u0454 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0455 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0456 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0457 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0458 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0459 | ok | 0/2 | 28% | 0/2 | 2 | dòng 324: đúng/sai |
+| u0460 | ok | 1/1 | 100% | – | 0 |  |
+| u0461 | ok | 1/1 | 100% | – | 0 |  |
+| u0462 | ok | 1/1 | 100% | – | 0 |  |
+| u0463 | ok | 2/2 | 100% | 2/2 | 2 |  |
 | u0464 | ok | 6/6 | 100% | 2/2 | 2 |  |
+| u0465 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0466 | ok | 0/1 | 0% | – | 0 |  |
 | u0467 | ok | 0/1 | 0% | – | 0 |  |
+| u0468 | compile_fail | /0 | – | – | 2 | units/u0468/u0468_test.cc:12:7: error: expected ‘;’ before ‘bfgs’ |
 | u0469 | ok | 2/2 | 100% | 2/2 | 2 |  |
 | u0470 | ok | 2/2 | 100% | 2/2 | 4 |  |
 | u0471 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0472 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0473 | ok | 1/1 | 100% | – | 0 |  |
+| u0474 | ok | 1/1 | 80% | 1/2 | 2 | dòng 76: sai |
+| u0475 | ok | 1/1 | 80% | 1/2 |  | dòng 104: đúng |
+| u0476 | ok | 0/1 | 75% | – | 0 |  |
+| u0477 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0478 | compile_fail | /0 | – | – | 0 | internal/ceres/parallel_invoke.h:165:6: error: variable or field ‘ParallelInvoke’ declared void |
+| u0479 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0480 | ok | 2/2 | 100% | – | 2 |  |
+| u0481 | ok | 2/2 | 100% | – | 2 |  |
 | u0482 | ok | 2/2 | 100% | 2/2 | 2 |  |
 | u0483 | ok | 2/2 | 100% | 2/2 | 2 |  |
 | u0484 | ok | 2/2 | 100% | 2/2 | 2 |  |
 | u0485 | ok | 1/1 | 75% | – | 0 |  |
-| u0502 | ok | 7/7 | 100% | 4/4 | 4 |  |
-| u0507 | ok | 1/1 | 100% | – | 0 |  |
-| u0529 | ok | 4/4 | 100% | 6/6 | 6 |  |
-| u0536 | compile_fail | /0 | – | – | 6 | units/u0536/u0536_test.cc:70:36: error: ‘kImpossibleValue’ was not declared in this scope |
-| u0537 | ok | 10/10 | 100% | 6/6 | 6 |  |
-| u0539 | ok | 2/2 | 100% | 6/6 | 6 |  |
-| u0540 | ok | 3/3 | 100% | 4/4 | 4 |  |
-| u0541 | ok | 3/3 | 100% | 4/4 | 4 |  |
-| u0553 | ok | 5/6 | 92% | 11/12 | 12 | dòng 229: đúng |
+| u0486 | ok | 6/6 | 100% | 2/2 | 2 |  |
+| u0487 | ok | 6/6 | 100% | 2/2 | 2 |  |
+| u0488 | ok | 6/6 | 100% | 2/2 | 2 |  |
+| u0489 | ok | 2/2 | 100% | 2/2 | 2 |  |
+| u0490 | ok | 7/7 | 100% | 2/2 | 2 |  |
+| u0491 | ok | 1/1 | 100% | – | 0 |  |
+| u0492 | ok | 2/2 | 88% | 1/2 | 2 | dòng 58: đúng |
+| u0493 | compile_fail | /0 | – | – | 4 | include/ceres/autodiff_manifold.h:190:20: error: ‘const struct ceres::{anonymous}::TestPlusFunctor<1>’ has no member nam |
+| u0494 | ok | 2/2 | 100% | 4/4 | 4 |  |
+| u0495 | ok | 6/6 | 100% | 2/2 | 2 |  |
+| u0496 | ok | 3/3 | 100% | – | 4 |  |
+| u0497 | ok | 6/6 | 100% | 2/2 | 4 |  |
+| u0498 | ok | 0/4 | 26% | 0/2 | 4 | dòng 355: đúng/sai |
+| u0499 | ok | 1/1 | 100% | – | 0 |  |
+| u0500 | ok | 1/1 | 100% | – |  |  |

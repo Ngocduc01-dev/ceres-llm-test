@@ -1,0 +1,211 @@
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:13:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   13 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:14:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+In file included from /work/repo/units/u1446/u1446_test.cc:4:
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:15:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   15 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:20:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   20 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:21:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   21 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:22:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   22 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:27:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   27 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:28:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   28 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:29:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   29 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:34:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   34 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:35:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:36:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   36 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:41:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   41 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:42:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   42 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:43:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   43 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:48:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   48 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:49:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   49 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:50:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   50 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:55:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   55 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:56:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   56 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:57:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   57 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:62:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   62 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:63:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   63 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:64:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   64 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC9_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:69:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   69 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:70:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   70 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:71:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   71 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC10_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:76:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   76 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:77:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   77 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:78:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   78 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC11_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:83:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   83 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:84:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   84 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:85:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   85 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC12_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:90:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   90 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:91:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   91 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:92:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   92 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC13_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:97:3: error: ‘CovarianceBlocks’ was not declared in this scope
+   97 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:98:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   98 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:99:36: error: ‘original_covariance_blocks’ was not declared in this scope
+   99 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC14_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:104:3: error: ‘CovarianceBlocks’ was not declared in this scope
+  104 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:105:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+  105 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:106:36: error: ‘original_covariance_blocks’ was not declared in this scope
+  106 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc: In member function ‘virtual void Unit_u1446_TC15_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1446/u1446_test.cc:111:3: error: ‘CovarianceBlocks’ was not declared in this scope
+  111 |   CovarianceBlocks original_covariance_blocks{};
+      |   ^~~~~~~~~~~~~~~~
+/work/repo/units/u1446/u1446_test.cc:112:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+  112 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1446/u1446_test.cc:113:36: error: ‘original_covariance_blocks’ was not declared in this scope
+  113 |   object.ComputeCovarianceSparsity(original_covariance_blocks, nullptr);
+      |                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~

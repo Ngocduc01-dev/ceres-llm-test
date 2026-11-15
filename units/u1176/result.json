@@ -1,0 +1,45 @@
+{
+  "id": "u1176",
+  "name": "ceres::internal::ChangeNumThreadsIfNeeded",
+  "status": "ok",
+  "cfg_branches": 4,
+  "tests": {
+    "Unit_u1176.TC1_CallsTarget": "crash",
+    "Unit_u1176.TC2_CallsTarget": "crash",
+    "Unit_u1176.TC3_CallsTarget": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 3,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 9
+  },
+  "c2": {
+    "covered": 1,
+    "total": 4,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 62,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (options->num_threads == 1) {"
+    },
+    {
+      "line": 66,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (options->num_threads > num_threads_available) {"
+    }
+  ]
+}

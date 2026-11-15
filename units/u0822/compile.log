@@ -1,0 +1,22 @@
+/work/repo/units/u0822/u0822_test.cc: In member function ‘virtual void Unit_u0822_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0822/u0822_test.cc:10:26: error: no matching function for call to ‘ceres::Problem::AddResidualBlock(std::nullptr_t, std::nullptr_t, std::nullptr_t, std::nullptr_t)’
+   10 |   object.AddResidualBlock(nullptr, nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/repo/units/u0822/u0822_test.cc:5:
+/work/ceres-solver/include/ceres/problem.h:232:19: note: candidate: ‘template<class ... Ts> ceres::internal::ResidualBlock* ceres::Problem::AddResidualBlock(ceres::CostFunction*, ceres::LossFunction*, double*, Ts* ...)’
+  232 |   ResidualBlockId AddResidualBlock(CostFunction* cost_function,
+      |                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/problem.h:232:19: note:   template argument deduction/substitution failed:
+/work/repo/units/u0822/u0822_test.cc:10:26: note:   mismatched types ‘Ts*’ and ‘std::nullptr_t’
+   10 |   object.AddResidualBlock(nullptr, nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/problem.h:244:19: note: candidate: ‘ceres::internal::ResidualBlock* ceres::Problem::AddResidualBlock(ceres::CostFunction*, ceres::LossFunction*, const std::vector<double*>&)’
+  244 |   ResidualBlockId AddResidualBlock(
+      |                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/problem.h:244:19: note:   candidate expects 3 arguments, 4 provided
+/work/ceres-solver/include/ceres/problem.h:251:19: note: candidate: ‘ceres::internal::ResidualBlock* ceres::Problem::AddResidualBlock(ceres::CostFunction*, ceres::LossFunction*, double* const*, int)’
+  251 |   ResidualBlockId AddResidualBlock(CostFunction* cost_function,
+      |                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/problem.h:254:40: note:   no known conversion for argument 4 from ‘std::nullptr_t’ to ‘int’
+  254 |                                    int num_parameter_blocks);
+      |                                    ~~~~^~~~~~~~~~~~~~~~~~~~

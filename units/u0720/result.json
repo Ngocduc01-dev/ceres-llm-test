@@ -1,0 +1,36 @@
+{
+  "id": "u0720",
+  "name": "ceres::internal::Tail",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0720.CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 1,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 12
+  },
+  "c2": {
+    "covered": 0,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 54,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = start; i < num_blocks; ++i) {"
+    }
+  ]
+}

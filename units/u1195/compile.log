@@ -1,0 +1,82 @@
+/work/repo/units/u1195/u1195_test.cc: In member function ‘virtual void Unit_u1195_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1195/u1195_test.cc:7:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?
+    7 |   LinearSolverType linear_solver_type{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverType
+In file included from /work/ceres-solver/internal/ceres/linear_operator.h:38,
+                 from /work/ceres-solver/internal/ceres/sparse_matrix.h:40,
+                 from /work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/block_sparse_matrix.h:41,
+                 from /work/ceres-solver/internal/ceres/linear_solver.h:43,
+                 from /work/repo/units/u1195/u1195_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:57:6: note: ‘ceres::LinearSolverType’ declared here
+   57 | enum LinearSolverType {
+      |      ^~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc:8:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+    8 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:148:23: note:   because the following virtual functions are pure within ‘ceres::internal::LinearSolver’:
+  148 | class CERES_NO_EXPORT LinearSolver {
+      |                       ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/linear_solver.h:339:19: note:     ‘virtual ceres::internal::LinearSolver::Summary ceres::internal::LinearSolver::Solve(ceres::internal::LinearOperator*, const double*, const PerSolveOptions&, double*)’
+  339 |   virtual Summary Solve(LinearOperator* A,
+      |                   ^~~~~
+/work/repo/units/u1195/u1195_test.cc:9:37: error: ‘linear_solver_type’ was not declared in this scope
+    9 |   object.LinearSolverForZeroEBlocks(linear_solver_type);
+      |                                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc: In member function ‘virtual void Unit_u1195_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1195/u1195_test.cc:14:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?
+   14 |   LinearSolverType linear_solver_type{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverType
+/work/ceres-solver/include/ceres/types.h:57:6: note: ‘ceres::LinearSolverType’ declared here
+   57 | enum LinearSolverType {
+      |      ^~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc:15:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+   15 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+/work/repo/units/u1195/u1195_test.cc:16:37: error: ‘linear_solver_type’ was not declared in this scope
+   16 |   object.LinearSolverForZeroEBlocks(linear_solver_type);
+      |                                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc: In member function ‘virtual void Unit_u1195_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1195/u1195_test.cc:21:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?
+   21 |   LinearSolverType linear_solver_type{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverType
+/work/ceres-solver/include/ceres/types.h:57:6: note: ‘ceres::LinearSolverType’ declared here
+   57 | enum LinearSolverType {
+      |      ^~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc:22:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+   22 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+/work/repo/units/u1195/u1195_test.cc:23:37: error: ‘linear_solver_type’ was not declared in this scope
+   23 |   object.LinearSolverForZeroEBlocks(linear_solver_type);
+      |                                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc: In member function ‘virtual void Unit_u1195_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1195/u1195_test.cc:28:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?
+   28 |   LinearSolverType linear_solver_type{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverType
+/work/ceres-solver/include/ceres/types.h:57:6: note: ‘ceres::LinearSolverType’ declared here
+   57 | enum LinearSolverType {
+      |      ^~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc:29:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+   29 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+/work/repo/units/u1195/u1195_test.cc:30:37: error: ‘linear_solver_type’ was not declared in this scope
+   30 |   object.LinearSolverForZeroEBlocks(linear_solver_type);
+      |                                     ^~~~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc: In member function ‘virtual void Unit_u1195_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1195/u1195_test.cc:35:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?
+   35 |   LinearSolverType linear_solver_type{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverType
+/work/ceres-solver/include/ceres/types.h:57:6: note: ‘ceres::LinearSolverType’ declared here
+   57 | enum LinearSolverType {
+      |      ^~~~~~~~~~~~~~~~
+/work/repo/units/u1195/u1195_test.cc:36:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearSolver’
+   36 |   ceres::internal::LinearSolver object{};
+      |                                 ^~~~~~
+/work/repo/units/u1195/u1195_test.cc:37:37: error: ‘linear_solver_type’ was not declared in this scope
+   37 |   object.LinearSolverForZeroEBlocks(linear_solver_type);
+      |                                     ^~~~~~~~~~~~~~~~~~

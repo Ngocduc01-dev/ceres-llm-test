@@ -1,0 +1,11 @@
+{
+  "id": "u0741",
+  "name": "ceres::internal::Make1stOrderPerturbation::Apply",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0741/u0741_test.cc:7:10: error: scalar object ‘src_data’ requires one element in initializer",
+    "units/u0741/u0741_test.cc:8:10: error: scalar object ‘dst_data’ requires one element in initializer",
+    "units/u0741/u0741_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "u1455",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::Factorize",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1455/u1455_test.cc:12:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1455/u1455_test.cc:13:19: error: ‘ceres::internal::LinearSolverTerminationType ceres::internal::VisibilityBasedPreconditioner::Factorize()’ is private within this context",
+    "units/u1455/u1455_test.cc:18:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1455/u1455_test.cc:19:19: error: ‘ceres::internal::LinearSolverTerminationType ceres::internal::VisibilityBasedPreconditioner::Factorize()’ is private within this context",
+    "units/u1455/u1455_test.cc:24:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1455/u1455_test.cc:25:19: error: ‘ceres::internal::LinearSolverTerminationType ceres::internal::VisibilityBasedPreconditioner::Factorize()’ is private within this context",
+    "units/u1455/u1455_test.cc:30:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1455/u1455_test.cc:31:19: error: ‘ceres::internal::LinearSolverTerminationType ceres::internal::VisibilityBasedPreconditioner::Factorize()’ is private within this context"
+  ]
+}

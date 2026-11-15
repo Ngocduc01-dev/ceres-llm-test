@@ -1,0 +1,16 @@
+{
+  "id": "u1203",
+  "name": "ceres::internal::SparseCholesky::Create",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1203/u1203_test.cc:10:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1203/u1203_test.cc:11:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’",
+    "units/u1203/u1203_test.cc:12:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1203/u1203_test.cc:17:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1203/u1203_test.cc:18:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’",
+    "units/u1203/u1203_test.cc:19:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1203/u1203_test.cc:24:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1203/u1203_test.cc:25:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseCholesky’"
+  ]
+}

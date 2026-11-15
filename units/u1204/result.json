@@ -1,0 +1,11 @@
+{
+  "id": "u1204",
+  "name": "ceres::internal::BlockSparseMatrix::LeftMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1204/u1204_test.cc:11:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1204/u1204_test.cc:18:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1204/u1204_test.cc:25:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

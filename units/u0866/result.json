@@ -1,0 +1,10 @@
+{
+  "id": "u0866",
+  "name": "ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0866/u0866_test.cc:8:3: error: ‘LinearSolver’ has not been declared",
+    "units/u0866/u0866_test.cc:9:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’"
+  ]
+}

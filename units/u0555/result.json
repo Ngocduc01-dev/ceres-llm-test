@@ -1,0 +1,66 @@
+{
+  "id": "u0555",
+  "name": "ceres::pow",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u0555.PathP1": "pass"
+  },
+  "run": {
+    "pass": 1,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 9,
+    "total": 17
+  },
+  "c2": {
+    "covered": 2,
+    "total": 10,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 1242,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (fpclassify(f) == FP_ZERO && g >= 1) {"
+    },
+    {
+      "line": 1244,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (g > 1) {"
+    },
+    {
+      "line": 1251,
+      "missing": [
+        "đúng"
+      ],
+      "code": "if (f < 0 && g == floor(g.a)) {"
+    },
+    {
+      "line": 1255,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < N; i++) {"
+    },
+    {
+      "line": 1256,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (fpclassify(g.v[i]) != FP_ZERO) {"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+/work/repo/units/u1288/u1288_test.cc: In member function ‘virtual void Unit_u1288_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1288/u1288_test.cc:9:9: error: ‘ResidualBlockId’ does not name a type
+    9 |   const ResidualBlockId residual_block{};
+      |         ^~~~~~~~~~~~~~~
+/work/repo/units/u1288/u1288_test.cc:11:45: error: ‘residual_block’ was not declared in this scope
+   11 |   object.GetParameterBlocksForResidualBlock(residual_block, nullptr);
+      |                                             ^~~~~~~~~~~~~~
+/work/repo/units/u1288/u1288_test.cc: In member function ‘virtual void Unit_u1288_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1288/u1288_test.cc:16:9: error: ‘ResidualBlockId’ does not name a type
+   16 |   const ResidualBlockId residual_block{};
+      |         ^~~~~~~~~~~~~~~
+/work/repo/units/u1288/u1288_test.cc:18:45: error: ‘residual_block’ was not declared in this scope
+   18 |   object.GetParameterBlocksForResidualBlock(residual_block, nullptr);
+      |                                             ^~~~~~~~~~~~~~

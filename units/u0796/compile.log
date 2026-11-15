@@ -1,0 +1,27 @@
+/work/repo/units/u0796/u0796_test.cc: In member function ‘virtual void Unit_u0796_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0796/u0796_test.cc:8:49: error: no matching function for call to ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::SchurComplementSolver object{};
+      |                                                 ^
+In file included from /work/repo/units/u0796/u0796_test.cc:4:
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note: candidate: ‘ceres::internal::SchurComplementSolver::SchurComplementSolver(const ceres::internal::LinearSolver::Options&)’
+  115 |   explicit SchurComplementSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:115:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u0796/u0796_test.cc:8:42: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SchurComplementSolver’
+    8 |   ceres::internal::SchurComplementSolver object{};
+      |                                          ^~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:113:23: note:   because the following virtual functions are pure within ‘ceres::internal::SchurComplementSolver’:
+  113 | class CERES_NO_EXPORT SchurComplementSolver : public BlockSparseMatrixSolver {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:137:16: note:     ‘virtual void ceres::internal::SchurComplementSolver::InitStorage(const ceres::internal::CompressedRowBlockStructure*)’
+  137 |   virtual void InitStorage(const CompressedRowBlockStructure* bs) = 0;
+      |                ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:138:33: note:     ‘virtual ceres::internal::LinearSolver::Summary ceres::internal::SchurComplementSolver::SolveReducedLinearSystem(const ceres::internal::LinearSolver::PerSolveOptions&, double*)’
+  138 |   virtual LinearSolver::Summary SolveReducedLinearSystem(
+      |                                 ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0796/u0796_test.cc:9:21: error: ‘ceres::internal::BlockRandomAccessMatrix* ceres::internal::SchurComplementSolver::mutable_lhs()’ is protected within this context
+    9 |   object.mutable_lhs();
+      |   ~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/schur_complement_solver.h:132:28: note: declared protected here
+  132 |   BlockRandomAccessMatrix* mutable_lhs() { return lhs_.get(); }
+      |                            ^~~~~~~~~~~

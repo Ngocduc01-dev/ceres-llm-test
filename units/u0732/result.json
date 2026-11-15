@@ -1,0 +1,9 @@
+{
+  "id": "u0732",
+  "name": "ceres::DoglegTypeToString",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0732/u0732_test.cc:7:3: error: ‘DoglegTypeToString’ was not declared in this scope"
+  ]
+}

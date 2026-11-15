@@ -1,0 +1,16 @@
+{
+  "id": "u1442",
+  "name": "ceres::internal::ReorderProgramForSparseCholesky",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1442/u1442_test.cc:11:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type",
+    "units/u1442/u1442_test.cc:12:9: error: ‘LinearSolverOrderingType’ does not name a type",
+    "units/u1442/u1442_test.cc:13:3: error: ‘ParameterBlockOrdering’ was not declared in this scope; did you mean ‘ceres::ParameterBlockOrdering’?",
+    "units/u1442/u1442_test.cc:15:52: error: ‘sparse_linear_algebra_library_type’ was not declared in this scope",
+    "units/u1442/u1442_test.cc:15:88: error: ‘linear_solver_ordering_type’ was not declared in this scope",
+    "units/u1442/u1442_test.cc:15:117: error: ‘parameter_block_ordering’ was not declared in this scope",
+    "units/u1442/u1442_test.cc:20:9: error: ‘SparseLinearAlgebraLibraryType’ does not name a type",
+    "units/u1442/u1442_test.cc:21:9: error: ‘LinearSolverOrderingType’ does not name a type"
+  ]
+}

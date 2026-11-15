@@ -1,0 +1,9 @@
+{
+  "id": "u1322",
+  "name": "ceres::Covariance::GetCovarianceBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1322/u1322_test.cc:7:28: error: no matching function for call to ‘ceres::Covariance::Covariance(<brace-enclosed initializer list>)’"
+  ]
+}

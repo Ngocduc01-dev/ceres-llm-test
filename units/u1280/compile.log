@@ -1,0 +1,22 @@
+/work/repo/units/u1280/u1280_test.cc: In member function ‘virtual void Unit_u1280_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1280/u1280_test.cc:8:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached()’ is private within this context
+    8 |   object.MinTrustRegionRadiusReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+In file included from /work/repo/units/u1280/u1280_test.cc:3:
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:80:8: note: declared private here
+   80 |   bool MinTrustRegionRadiusReached();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1280/u1280_test.cc: In member function ‘virtual void Unit_u1280_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1280/u1280_test.cc:14:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached()’ is private within this context
+   14 |   object.MinTrustRegionRadiusReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:80:8: note: declared private here
+   80 |   bool MinTrustRegionRadiusReached();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1280/u1280_test.cc: In member function ‘virtual void Unit_u1280_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1280/u1280_test.cc:20:37: error: ‘bool ceres::internal::TrustRegionMinimizer::MinTrustRegionRadiusReached()’ is private within this context
+   20 |   object.MinTrustRegionRadiusReached();
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~
+/work/ceres-solver/internal/ceres/trust_region_minimizer.h:80:8: note: declared private here
+   80 |   bool MinTrustRegionRadiusReached();
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~

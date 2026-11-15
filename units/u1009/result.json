@@ -1,0 +1,9 @@
+{
+  "id": "u1009",
+  "name": "ceres::internal::LowRankInverseHessian::LeftMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1009/u1009_test.cc:7:49: error: no matching function for call to ‘ceres::internal::LowRankInverseHessian::LowRankInverseHessian(<brace-enclosed initializer list>)’"
+  ]
+}

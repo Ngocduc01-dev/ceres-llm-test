@@ -1,0 +1,4 @@
+/work/repo/units/u0561/u0561_test.cc: In member function ‘virtual void Unit_u0561_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0561/u0561_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.GetParameterPointers(1, 1);
+      |   ^~~~~~

@@ -1,0 +1,13 @@
+{
+  "id": "u0922",
+  "name": "ceres::internal::PartitionedMatrixViewBase::Create",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0922/u0922_test.cc:9:3: error: ‘LinearSolver’ has not been declared",
+    "units/u0922/u0922_test.cc:10:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?",
+    "units/u0922/u0922_test.cc:11:46: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::PartitionedMatrixViewBase’",
+    "units/u0922/u0922_test.cc:12:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0922/u0922_test.cc:12:26: error: ‘matrix’ was not declared in this scope"
+  ]
+}

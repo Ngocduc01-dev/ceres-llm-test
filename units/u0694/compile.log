@@ -1,0 +1,4 @@
+/work/repo/units/u0694/u0694_test.cc: In member function ‘virtual void Unit_u0694_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0694/u0694_test.cc:7:3: error: ‘object’ was not declared in this scope
+    7 |   object.CubicInterpolator({});
+      |   ^~~~~~

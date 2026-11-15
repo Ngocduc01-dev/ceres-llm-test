@@ -1,0 +1,16 @@
+{
+  "id": "u1447",
+  "name": "ceres::internal::LineSearchMinimizer::Minimize",
+  "status": "compile_fail",
+  "cfg_branches": 68,
+  "errors": [
+    "units/u1447/u1447_test.cc:14:3: error: ‘Minimizer’ has not been declared",
+    "units/u1447/u1447_test.cc:16:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1447/u1447_test.cc:21:3: error: ‘Minimizer’ has not been declared",
+    "units/u1447/u1447_test.cc:23:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1447/u1447_test.cc:28:3: error: ‘Minimizer’ has not been declared",
+    "units/u1447/u1447_test.cc:30:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1447/u1447_test.cc:35:3: error: ‘Minimizer’ has not been declared",
+    "units/u1447/u1447_test.cc:37:19: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

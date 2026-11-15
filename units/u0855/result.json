@@ -1,0 +1,12 @@
+{
+  "id": "u0855",
+  "name": "ceres::internal::Copy",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0855/u0855_test.cc:9:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0855/u0855_test.cc:10:9: error: expected ‘;’ before ‘to’",
+    "units/u0855/u0855_test.cc:12:25: error: ‘from’ was not declared in this scope; did you mean ‘fromfp’?",
+    "units/u0855/u0855_test.cc:12:31: error: ‘to’ was not declared in this scope; did you mean ‘tm’?"
+  ]
+}

@@ -1,0 +1,37 @@
+/work/repo/units/u1295/u1295_test.cc: In member function ‘virtual void Unit_u1295_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1295/u1295_test.cc:10:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’
+   10 |   object.IsParameterBlockSetIndependent(nullptr);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         std::nullptr_t
+In file included from /work/repo/units/u1295/u1295_test.cc:4:
+/work/ceres-solver/internal/ceres/program.h:128:32: note:   initializing argument 1 of ‘bool ceres::internal::Program::IsParameterBlockSetIndependent(const std::set<double*>&) const’
+  128 |       const std::set<double*>& independent_set) const;
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/repo/units/u1295/u1295_test.cc: In member function ‘virtual void Unit_u1295_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1295/u1295_test.cc:16:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’
+   16 |   object.IsParameterBlockSetIndependent(nullptr);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         std::nullptr_t
+/work/ceres-solver/internal/ceres/program.h:128:32: note:   initializing argument 1 of ‘bool ceres::internal::Program::IsParameterBlockSetIndependent(const std::set<double*>&) const’
+  128 |       const std::set<double*>& independent_set) const;
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/repo/units/u1295/u1295_test.cc: In member function ‘virtual void Unit_u1295_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1295/u1295_test.cc:22:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’
+   22 |   object.IsParameterBlockSetIndependent(nullptr);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         std::nullptr_t
+/work/ceres-solver/internal/ceres/program.h:128:32: note:   initializing argument 1 of ‘bool ceres::internal::Program::IsParameterBlockSetIndependent(const std::set<double*>&) const’
+  128 |       const std::set<double*>& independent_set) const;
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+/work/repo/units/u1295/u1295_test.cc: In member function ‘virtual void Unit_u1295_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1295/u1295_test.cc:28:41: error: cannot convert ‘std::nullptr_t’ to ‘const std::set<double*>&’
+   28 |   object.IsParameterBlockSetIndependent(nullptr);
+      |                                         ^~~~~~~
+      |                                         |
+      |                                         std::nullptr_t
+/work/ceres-solver/internal/ceres/program.h:128:32: note:   initializing argument 1 of ‘bool ceres::internal::Program::IsParameterBlockSetIndependent(const std::set<double*>&) const’
+  128 |       const std::set<double*>& independent_set) const;
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~

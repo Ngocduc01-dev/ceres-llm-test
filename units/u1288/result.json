@@ -1,0 +1,12 @@
+{
+  "id": "u1288",
+  "name": "ceres::internal::ProblemImpl::GetParameterBlocksForResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1288/u1288_test.cc:9:9: error: ‘ResidualBlockId’ does not name a type",
+    "units/u1288/u1288_test.cc:11:45: error: ‘residual_block’ was not declared in this scope",
+    "units/u1288/u1288_test.cc:16:9: error: ‘ResidualBlockId’ does not name a type",
+    "units/u1288/u1288_test.cc:18:45: error: ‘residual_block’ was not declared in this scope"
+  ]
+}

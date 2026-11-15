@@ -1,0 +1,16 @@
+{
+  "id": "u0956",
+  "name": "ceres::internal::Minimizer::RunCallbacks",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0956/u0956_test.cc:9:3: error: ‘Minimizer’ has not been declared",
+    "units/u0956/u0956_test.cc:10:3: error: ‘IterationSummary’ was not declared in this scope; did you mean ‘ceres::IterationSummary’?",
+    "units/u0956/u0956_test.cc:11:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’",
+    "units/u0956/u0956_test.cc:12:23: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u0956/u0956_test.cc:12:32: error: ‘iteration_summary’ was not declared in this scope",
+    "units/u0956/u0956_test.cc:17:3: error: ‘Minimizer’ has not been declared",
+    "units/u0956/u0956_test.cc:18:3: error: ‘IterationSummary’ was not declared in this scope; did you mean ‘ceres::IterationSummary’?",
+    "units/u0956/u0956_test.cc:19:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’"
+  ]
+}

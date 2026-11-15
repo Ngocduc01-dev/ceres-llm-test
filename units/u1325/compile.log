@@ -1,0 +1,12 @@
+/work/repo/units/u1325/u1325_test.cc: In member function ‘virtual void Unit_u1325_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1325/u1325_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1325/u1325_test.cc:10:41: error: no matching function for call to ‘ceres::internal::DenseQRSolver::DenseQRSolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::DenseQRSolver object{};
+      |                                         ^
+In file included from /work/repo/units/u1325/u1325_test.cc:4:
+/work/ceres-solver/internal/ceres/dense_qr_solver.h:87:12: note: candidate: ‘ceres::internal::DenseQRSolver::DenseQRSolver(const ceres::internal::LinearSolver::Options&)’
+   87 |   explicit DenseQRSolver(const LinearSolver::Options& options);
+      |            ^~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_qr_solver.h:87:12: note:   candidate expects 1 argument, 0 provided

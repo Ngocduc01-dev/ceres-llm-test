@@ -1,0 +1,9 @@
+{
+  "id": "u0893",
+  "name": "ceres::internal::SparseMatrix::~SparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0893/u0893_test.cc:7:33: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::SparseMatrix’"
+  ]
+}

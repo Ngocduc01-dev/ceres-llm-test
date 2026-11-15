@@ -1,0 +1,12 @@
+{
+  "id": "u1452",
+  "name": "ceres::internal::(anonymous)::SetupMinimizerOptions",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1452/u1452_test.cc:13:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1452/u1452_test.cc:13:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1452/u1452_test.cc:18:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1452/u1452_test.cc:18:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

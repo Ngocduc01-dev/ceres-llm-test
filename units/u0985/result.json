@@ -1,0 +1,10 @@
+{
+  "id": "u0985",
+  "name": "ceres::TinySolverCostFunctionAdapter::NumParameters",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0985/u0985_test.cc:8:47: error: class template argument deduction failed:",
+    "units/u0985/u0985_test.cc:8:47: error: no matching function for call to ‘TinySolverCostFunctionAdapter()’"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "u1507",
+  "name": "ceres::internal::ArmijoLineSearch::DoSearch",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1507/u1507_test.cc:11:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1507/u1507_test.cc:12:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context",
+    "units/u1507/u1507_test.cc:20:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1507/u1507_test.cc:21:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context",
+    "units/u1507/u1507_test.cc:29:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1507/u1507_test.cc:30:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context",
+    "units/u1507/u1507_test.cc:38:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’",
+    "units/u1507/u1507_test.cc:39:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "id": "u0835",
+  "name": "ceres::internal::CgnrLinearOperator::CgnrLinearOperator",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0835/u0835_test.cc:9:3: error: ‘LinearOperator’ was not declared in this scope; did you mean ‘ceres::internal::LinearOperator’?",
+    "units/u0835/u0835_test.cc:11:20: error: ‘CgnrLinearOperator’ is not a member of ‘ceres::internal’; did you mean ‘LinearOperator’?",
+    "units/u0835/u0835_test.cc:12:9: error: ‘object’ was not declared in this scope"
+  ]
+}

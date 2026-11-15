@@ -1,0 +1,14 @@
+{
+  "id": "u1122",
+  "name": "ceres::internal::LineSearchFunction::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1122/u1122_test.cc:11:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’",
+    "units/u1122/u1122_test.cc:19:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’",
+    "units/u1122/u1122_test.cc:27:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’",
+    "units/u1122/u1122_test.cc:35:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’",
+    "units/u1122/u1122_test.cc:43:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’",
+    "units/u1122/u1122_test.cc:51:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’"
+  ]
+}

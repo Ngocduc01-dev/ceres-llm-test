@@ -1,0 +1,7 @@
+/work/repo/units/u0594/u0594_test.cc: In member function ‘virtual void Unit_u0594_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0594/u0594_test.cc:8:3: error: ‘object’ was not declared in this scope
+    8 |   object.operator(1);
+      |   ^~~~~~
+/work/repo/units/u0594/u0594_test.cc:8:18: error: expected type-specifier before ‘(’ token
+    8 |   object.operator(1);
+      |                  ^

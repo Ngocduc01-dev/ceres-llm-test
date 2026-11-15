@@ -1,0 +1,10 @@
+{
+  "id": "u0744",
+  "name": "ceres::RotationMatrixToQuaternion",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0744/u0744_test.cc:8:10: error: scalar object ‘quaternion_data’ requires one element in initializer",
+    "units/u0744/u0744_test.cc:13:10: error: scalar object ‘quaternion_data’ requires one element in initializer"
+  ]
+}

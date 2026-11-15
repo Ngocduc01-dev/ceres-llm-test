@@ -1,0 +1,10 @@
+{
+  "id": "u1267",
+  "name": "ceres::internal::PowerSeriesExpansionPreconditioner::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1267/u1267_test.cc:10:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u1267/u1267_test.cc:16:62: error: no matching function for call to ‘ceres::internal::PowerSeriesExpansionPreconditioner::PowerSeriesExpansionPreconditioner(<brace-enclosed initializer list>)’"
+  ]
+}

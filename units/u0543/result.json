@@ -1,0 +1,9 @@
+{
+  "id": "u0543",
+  "name": "ceres::internal::MatrixTransposeMatrixMultiply",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0543/u0543_test.cc:9:32: error: no matching function for call to ‘MatrixTransposeMatrixMultiply(<brace-enclosed initializer list>)’"
+  ]
+}

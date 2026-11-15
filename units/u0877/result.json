@@ -1,0 +1,9 @@
+{
+  "id": "u0877",
+  "name": "ceres::internal::ParameterBlock::mutable_manifold",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0877/u0877_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’"
+  ]
+}

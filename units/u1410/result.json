@@ -1,0 +1,64 @@
+{
+  "id": "u1410",
+  "name": "ceres::internal::LexicographicallyOrderResidualBlocks",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u1410.TC1_CallsTarget": "check_fail",
+    "Unit_u1410.TC2_CallsTarget": "check_fail",
+    "Unit_u1410.TC3_CallsTarget": "check_fail",
+    "Unit_u1410.TC4_CallsTarget": "check_fail",
+    "Unit_u1410.TC5_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 5,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 35
+  },
+  "c2": {
+    "covered": 0,
+    "total": 8,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 269,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < residual_blocks->size(); ++i) {"
+    },
+    {
+      "line": 304,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < residual_blocks->size(); ++i) {"
+    },
+    {
+      "line": 320,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < size_of_first_elimination_group; ++i) {"
+    },
+    {
+      "line": 326,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (auto* residual_block : reordered_residual_blocks) {"
+    }
+  ]
+}

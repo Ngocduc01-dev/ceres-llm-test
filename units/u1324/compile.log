@@ -1,0 +1,12 @@
+/work/repo/units/u1324/u1324_test.cc: In member function ‘virtual void Unit_u1324_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1324/u1324_test.cc:9:3: error: ‘LinearSolver’ has not been declared
+    9 |   LinearSolver::Options options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1324/u1324_test.cc:10:53: error: no matching function for call to ‘ceres::internal::DenseNormalCholeskySolver::DenseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::DenseNormalCholeskySolver object{};
+      |                                                     ^
+In file included from /work/repo/units/u1324/u1324_test.cc:4:
+/work/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:83:12: note: candidate: ‘ceres::internal::DenseNormalCholeskySolver::DenseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   83 |   explicit DenseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:83:12: note:   candidate expects 1 argument, 0 provided

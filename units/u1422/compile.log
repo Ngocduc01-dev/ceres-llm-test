@@ -1,0 +1,8 @@
+In file included from /work/repo/units/u1422/u1422_test.cc:3:
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h:53:23: error: ‘Evaluator’ has not been declared
+   53 |   DenseJacobianWriter(Evaluator::Options /* ignored */, Program* program)
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_jacobian_writer.h:53:41: error: expected ‘)’ before ‘,’ token
+   53 |   DenseJacobianWriter(Evaluator::Options /* ignored */, Program* program)
+      |                      ~                  ^             ~
+      |                                         )

@@ -1,0 +1,16 @@
+{
+  "id": "u1404",
+  "name": "ceres::internal::MinimizeInterpolatingPolynomial",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1404/u1404_test.cc:8:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1404/u1404_test.cc:8:29: error: template argument 1 is invalid",
+    "units/u1404/u1404_test.cc:8:29: error: template argument 2 is invalid",
+    "units/u1404/u1404_test.cc:11:52: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’",
+    "units/u1404/u1404_test.cc:16:15: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?",
+    "units/u1404/u1404_test.cc:16:29: error: template argument 1 is invalid",
+    "units/u1404/u1404_test.cc:16:29: error: template argument 2 is invalid",
+    "units/u1404/u1404_test.cc:19:52: error: invalid initialization of reference of type ‘const std::vector<ceres::internal::FunctionSample>&’ from expression of type ‘int’"
+  ]
+}

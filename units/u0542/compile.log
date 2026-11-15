@@ -1,0 +1,17 @@
+/work/repo/units/u0542/u0542_test.cc: In member function ‘virtual void ceres::internal::Unit_u0542_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0542/u0542_test.cc:9:23: error: no matching function for call to ‘MatrixMatrixMultiply(<brace-enclosed initializer list>)’
+    9 |   MatrixMatrixMultiply({});
+      |   ~~~~~~~~~~~~~~~~~~~~^~~~
+In file included from /work/repo/units/u0542/u0542_test.cc:3:
+/work/ceres-solver/internal/ceres/small_blas.h:246:18: note: candidate: ‘template<int kRowA, int kColA, int kRowB, int kColB, int kOperation> void ceres::internal::MatrixMatrixMultiply(const double*, int, int, const double*, int, int, double*, int, int, int, int)’
+  246 | CERES_GEMM_BEGIN(MatrixMatrixMultiply) {
+      |                  ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/small_blas.h:49:15: note: in definition of macro ‘CERES_GEMM_BEGIN’
+   49 |   inline void name(const double* A,                                     \
+      |               ^~~~
+/work/ceres-solver/internal/ceres/small_blas.h:246:18: note:   candidate expects 11 arguments, 1 provided
+  246 | CERES_GEMM_BEGIN(MatrixMatrixMultiply) {
+      |                  ^~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/small_blas.h:49:15: note: in definition of macro ‘CERES_GEMM_BEGIN’
+   49 |   inline void name(const double* A,                                     \
+      |               ^~~~

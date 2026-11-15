@@ -1,0 +1,9 @@
+{
+  "id": "u0621",
+  "name": "ceres::DynamicAutoDiffCostFunction::DynamicAutoDiffCostFunction<CostFunctor, Stride>",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u0621/u0621_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

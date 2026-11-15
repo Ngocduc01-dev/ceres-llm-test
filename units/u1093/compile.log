@@ -1,0 +1,12 @@
+/work/repo/units/u1093/u1093_test.cc: In member function ‘virtual void Unit_u1093_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1093/u1093_test.cc:7:3: error: ‘ceres’ has not been declared
+    7 |   ceres::StringToLinearSolverOrderingType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1093/u1093_test.cc: In member function ‘virtual void Unit_u1093_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1093/u1093_test.cc:13:3: error: ‘ceres’ has not been declared
+   13 |   ceres::StringToLinearSolverOrderingType(value, nullptr);
+      |   ^~~~~
+/work/repo/units/u1093/u1093_test.cc: In member function ‘virtual void Unit_u1093_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1093/u1093_test.cc:19:3: error: ‘ceres’ has not been declared
+   19 |   ceres::StringToLinearSolverOrderingType(value, nullptr);
+      |   ^~~~~

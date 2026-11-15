@@ -1,0 +1,29 @@
+/work/repo/units/u1448/u1448_test.cc: In member function ‘virtual void Unit_u1448_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1448/u1448_test.cc:10:3: error: ‘LinearSolver’ has not been declared
+   10 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1448/u1448_test.cc:11:53: error: no matching function for call to ‘ceres::internal::DenseNormalCholeskySolver::DenseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::DenseNormalCholeskySolver object{};
+      |                                                     ^
+In file included from /work/repo/units/u1448/u1448_test.cc:3:
+/work/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:83:12: note: candidate: ‘ceres::internal::DenseNormalCholeskySolver::DenseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   83 |   explicit DenseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1448/u1448_test.cc:12:38: error: ‘per_solve_options’ was not declared in this scope
+   12 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1448/u1448_test.cc: In member function ‘virtual void Unit_u1448_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1448/u1448_test.cc:17:3: error: ‘LinearSolver’ has not been declared
+   17 |   LinearSolver::PerSolveOptions per_solve_options{};
+      |   ^~~~~~~~~~~~
+/work/repo/units/u1448/u1448_test.cc:18:53: error: no matching function for call to ‘ceres::internal::DenseNormalCholeskySolver::DenseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   18 |   ceres::internal::DenseNormalCholeskySolver object{};
+      |                                                     ^
+/work/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:83:12: note: candidate: ‘ceres::internal::DenseNormalCholeskySolver::DenseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   83 |   explicit DenseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dense_normal_cholesky_solver.h:83:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1448/u1448_test.cc:19:38: error: ‘per_solve_options’ was not declared in this scope
+   19 |   object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
+      |                                      ^~~~~~~~~~~~~~~~~

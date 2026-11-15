@@ -1,0 +1,36 @@
+{
+  "id": "u0913",
+  "name": "ceres::internal::ThreadPool::MaxNumThreadsAvailable",
+  "status": "ok",
+  "cfg_branches": 2,
+  "tests": {
+    "Unit_u0913.TC1_CallsTarget": "pass",
+    "Unit_u0913.TC2_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 2,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 4,
+    "total": 4
+  },
+  "c2": {
+    "covered": 1,
+    "total": 2,
+    "uncheckable": 0,
+    "inferred": 1
+  },
+  "uncovered": [
+    {
+      "line": 52,
+      "missing": [
+        "đúng"
+      ],
+      "code": "return num_hardware_threads == 0 ? std::numeric_limits<int>::max()"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+/work/repo/units/u1469/u1469_test.cc: In member function ‘virtual void Unit_u1469_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1469/u1469_test.cc:12:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   12 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+In file included from /work/repo/units/u1469/u1469_test.cc:3:
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1469/u1469_test.cc:13:53: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+   13 |   object.GetCovarianceMatrixInTangentOrAmbientSpace(nullptr, lift_covariance_to_ambient_space, nullptr);
+      |                                                     ^~~~~~~
+      |                                                     |
+      |                                                     std::nullptr_t
+/work/ceres-solver/internal/ceres/covariance_impl.h:69:41: note:   initializing argument 1 of ‘bool ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace(const std::vector<const double*>&, bool, double*) const’
+   69 |       const std::vector<const double*>& parameters,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/work/repo/units/u1469/u1469_test.cc: In member function ‘virtual void Unit_u1469_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1469/u1469_test.cc:19:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1469/u1469_test.cc:20:53: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+   20 |   object.GetCovarianceMatrixInTangentOrAmbientSpace(nullptr, lift_covariance_to_ambient_space, nullptr);
+      |                                                     ^~~~~~~
+      |                                                     |
+      |                                                     std::nullptr_t
+/work/ceres-solver/internal/ceres/covariance_impl.h:69:41: note:   initializing argument 1 of ‘bool ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace(const std::vector<const double*>&, bool, double*) const’
+   69 |       const std::vector<const double*>& parameters,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~
+/work/repo/units/u1469/u1469_test.cc: In member function ‘virtual void Unit_u1469_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1469/u1469_test.cc:26:42: error: no matching function for call to ‘ceres::internal::CovarianceImpl::CovarianceImpl(<brace-enclosed initializer list>)’
+   26 |   ceres::internal::CovarianceImpl object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note: candidate: ‘ceres::internal::CovarianceImpl::CovarianceImpl(const ceres::Covariance::Options&)’
+   52 |   explicit CovarianceImpl(const Covariance::Options& options);
+      |            ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/covariance_impl.h:52:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1469/u1469_test.cc:27:53: error: cannot convert ‘std::nullptr_t’ to ‘const std::vector<const double*>&’
+   27 |   object.GetCovarianceMatrixInTangentOrAmbientSpace(nullptr, lift_covariance_to_ambient_space, nullptr);
+      |                                                     ^~~~~~~
+      |                                                     |
+      |                                                     std::nullptr_t
+/work/ceres-solver/internal/ceres/covariance_impl.h:69:41: note:   initializing argument 1 of ‘bool ceres::internal::CovarianceImpl::GetCovarianceMatrixInTangentOrAmbientSpace(const std::vector<const double*>&, bool, double*) const’
+   69 |       const std::vector<const double*>& parameters,
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~

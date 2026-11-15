@@ -1,0 +1,9 @@
+{
+  "id": "u0619",
+  "name": "ceres::internal::MinusWrapper::MinusWrapper<Functor>",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0619/u0619_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

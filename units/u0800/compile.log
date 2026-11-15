@@ -1,0 +1,21 @@
+/work/repo/units/u0800/u0800_test.cc: In member function ‘virtual void Unit_u0800_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0800/u0800_test.cc:8:3: error: ‘Vector’ was not declared in this scope
+    8 |   Vector polynomial{};
+      |   ^~~~~~
+/work/repo/units/u0800/u0800_test.cc:8:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/polynomial.h:38,
+                 from /work/repo/units/u0800/u0800_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u0800/u0800_test.cc:9:20: error: expected unqualified-id before ‘(’ token
+    9 |   ceres::internal::(anonymous)::BuildCompanionMatrix(polynomial, nullptr);
+      |                    ^
+/work/repo/units/u0800/u0800_test.cc:9:21: error: ‘anonymous’ was not declared in this scope
+    9 |   ceres::internal::(anonymous)::BuildCompanionMatrix(polynomial, nullptr);
+      |                     ^~~~~~~~~

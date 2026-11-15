@@ -1,0 +1,14 @@
+{
+  "id": "u0969",
+  "name": "ceres::internal::(anonymous)::EvaluateGradientNorms",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0969/u0969_test.cc:9:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0969/u0969_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0969/u0969_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0969/u0969_test.cc:15:3: error: ‘Vector’ was not declared in this scope",
+    "units/u0969/u0969_test.cc:16:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0969/u0969_test.cc:16:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

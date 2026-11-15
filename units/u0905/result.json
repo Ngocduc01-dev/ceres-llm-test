@@ -1,0 +1,14 @@
+{
+  "id": "u0905",
+  "name": "ceres::LossFunctionWrapper::Reset",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0905/u0905_test.cc:7:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u0905/u0905_test.cc:8:37: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunctionWrapper(<brace-enclosed initializer list>)’",
+    "units/u0905/u0905_test.cc:9:25: error: ‘ownership’ was not declared in this scope",
+    "units/u0905/u0905_test.cc:14:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?",
+    "units/u0905/u0905_test.cc:15:37: error: no matching function for call to ‘ceres::LossFunctionWrapper::LossFunctionWrapper(<brace-enclosed initializer list>)’",
+    "units/u0905/u0905_test.cc:16:25: error: ‘ownership’ was not declared in this scope"
+  ]
+}

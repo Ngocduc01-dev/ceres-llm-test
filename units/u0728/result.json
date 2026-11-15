@@ -1,0 +1,9 @@
+{
+  "id": "u0728",
+  "name": "ceres::internal::Preprocessor::Create",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0728/u0728_test.cc:9:3: error: ‘object’ was not declared in this scope"
+  ]
+}

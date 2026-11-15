@@ -1,0 +1,16 @@
+/work/repo/units/u0910/u0910_test.cc: In member function ‘virtual void Unit_u0910_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0910/u0910_test.cc:8:3: error: ‘Preconditioner’ has not been declared
+    8 |   Preconditioner::Options options{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u0910/u0910_test.cc:9:61: error: no matching function for call to ‘ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper(<brace-enclosed initializer list>)’
+    9 |   ceres::internal::SparseMatrixPreconditionerWrapper object{};
+      |                                                             ^
+In file included from /work/repo/units/u0910/u0910_test.cc:3:
+/work/ceres-solver/internal/ceres/preconditioner.h:205:12: note: candidate: ‘ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper(const ceres::internal::SparseMatrix*, const ceres::internal::Preconditioner::Options&)’
+  205 |   explicit SparseMatrixPreconditionerWrapper(
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/preconditioner.h:205:12: note:   candidate expects 2 arguments, 0 provided
+/work/ceres-solver/internal/ceres/preconditioner.h:201:23: note: candidate: ‘ceres::internal::SparseMatrixPreconditionerWrapper::SparseMatrixPreconditionerWrapper(const ceres::internal::SparseMatrixPreconditionerWrapper&)’
+  201 | class CERES_NO_EXPORT SparseMatrixPreconditionerWrapper final
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/preconditioner.h:201:23: note:   candidate expects 1 argument, 0 provided

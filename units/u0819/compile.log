@@ -1,0 +1,7 @@
+/work/repo/units/u0819/u0819_test.cc: In member function ‘virtual void Unit_u0819_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0819/u0819_test.cc:8:3: error: ‘Functor’ was not declared in this scope
+    8 |   Functor functor{};
+      |   ^~~~~~~
+/work/repo/units/u0819/u0819_test.cc:9:41: error: ‘functor’ was not declared in this scope
+    9 |   ceres::internal::VariadicEvaluateImpl(functor, nullptr, nullptr, nullptr);
+      |                                         ^~~~~~~

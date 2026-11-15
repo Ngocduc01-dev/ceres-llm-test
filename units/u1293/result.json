@@ -1,0 +1,54 @@
+{
+  "id": "u1293",
+  "name": "ceres::internal::AppendArrayToString",
+  "status": "ok",
+  "cfg_branches": 6,
+  "tests": {
+    "Unit_u1293.TC1_CallsTarget": "pass",
+    "Unit_u1293.TC2_CallsTarget": "pass",
+    "Unit_u1293.TC3_CallsTarget": "pass",
+    "Unit_u1293.TC4_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 8
+  },
+  "c2": {
+    "covered": 1,
+    "total": 6,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 80,
+      "missing": [
+        "đúng"
+      ],
+      "code": "for (int64_t i = 0; i < size; ++i) {"
+    },
+    {
+      "line": 81,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (x == nullptr) {"
+    },
+    {
+      "line": 84,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (x[i] == kImpossibleValue) {"
+    }
+  ]
+}

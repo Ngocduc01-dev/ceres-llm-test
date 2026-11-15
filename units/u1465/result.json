@@ -1,0 +1,16 @@
+{
+  "id": "u1465",
+  "name": "ceres::internal::ProblemImpl::InternalAddParameterBlock",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1465/u1465_test.cc:10:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:17:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:24:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:31:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:38:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:45:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:52:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context",
+    "units/u1465/u1465_test.cc:59:35: error: ‘ceres::internal::ParameterBlock* ceres::internal::ProblemImpl::InternalAddParameterBlock(double*, int)’ is private within this context"
+  ]
+}

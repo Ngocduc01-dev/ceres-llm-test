@@ -1,0 +1,89 @@
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:11:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   11 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+In file included from /work/repo/units/u1303/u1303_test.cc:6:
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:12:39: error: ‘program’ was not declared in this scope
+   12 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:17:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   17 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:18:39: error: ‘program’ was not declared in this scope
+   18 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:23:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   23 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:24:39: error: ‘program’ was not declared in this scope
+   24 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:29:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   29 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:30:39: error: ‘program’ was not declared in this scope
+   30 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:35:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   35 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:36:39: error: ‘program’ was not declared in this scope
+   36 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:41:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   41 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:42:39: error: ‘program’ was not declared in this scope
+   42 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:47:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   47 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:48:39: error: ‘program’ was not declared in this scope
+   48 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc: In member function ‘virtual void Unit_u1303_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1303/u1303_test.cc:53:3: error: ‘Program’ was not declared in this scope; did you mean ‘ceres::internal::Program’?
+   53 |   Program program{};
+      |   ^~~~~~~
+      |   ceres::internal::Program
+/work/ceres-solver/internal/ceres/program.h:61:23: note: ‘ceres::internal::Program’ declared here
+   61 | class CERES_NO_EXPORT Program {
+      |                       ^~~~~~~
+/work/repo/units/u1303/u1303_test.cc:54:39: error: ‘program’ was not declared in this scope
+   54 |   ceres::internal::CreateHessianGraph(program);
+      |                                       ^~~~~~~

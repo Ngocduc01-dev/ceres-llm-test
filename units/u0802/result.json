@@ -1,0 +1,16 @@
+{
+  "id": "u0802",
+  "name": "ceres::internal::(anonymous)::ComputeCumulativeNumberOfNonZeros",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0802/u0802_test.cc:9:15: error: ‘CompressedList’ was not declared in this scope; did you mean ‘ceres::internal::CompressedList’?",
+    "units/u0802/u0802_test.cc:9:29: error: template argument 1 is invalid",
+    "units/u0802/u0802_test.cc:9:29: error: template argument 2 is invalid",
+    "units/u0802/u0802_test.cc:10:20: error: expected unqualified-id before ‘(’ token",
+    "units/u0802/u0802_test.cc:10:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u0802/u0802_test.cc:15:15: error: ‘CompressedList’ was not declared in this scope; did you mean ‘ceres::internal::CompressedList’?",
+    "units/u0802/u0802_test.cc:15:29: error: template argument 1 is invalid",
+    "units/u0802/u0802_test.cc:15:29: error: template argument 2 is invalid"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "u1213",
+  "name": "ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1213/u1213_test.cc:11:15: error: ‘Block’ was not declared in this scope",
+    "units/u1213/u1213_test.cc:11:20: error: template argument 1 is invalid",
+    "units/u1213/u1213_test.cc:11:20: error: template argument 2 is invalid",
+    "units/u1213/u1213_test.cc:14:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1213/u1213_test.cc:20:15: error: ‘Block’ was not declared in this scope",
+    "units/u1213/u1213_test.cc:20:20: error: template argument 1 is invalid",
+    "units/u1213/u1213_test.cc:20:20: error: template argument 2 is invalid",
+    "units/u1213/u1213_test.cc:23:57: error: no matching function for call to ‘ceres::internal::BlockRandomAccessSparseMatrix::BlockRandomAccessSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

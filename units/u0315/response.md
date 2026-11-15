@@ -1,21 +1,39 @@
-# Unit u0315
+**A. Test paths**
 
-## Test path
+Hàm có 0 điểm rẽ nhánh, nên chỉ có một đường đi. CFG khớp với mã nguồn.
 
-The unit has a single straight-line path (no control-flow branches). The test uses the concrete/public API required by the declaration and invokes the target.
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
+|---|---|---|
+| P1 | START → 1 → END | Không có điểm rẽ nhánh |
 
-## Test source
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
+|---|---|---|---|
+| TC1 | P1 | row, col, index: số nguyên bất kỳ, chọn trong [0, 5] | row = 3, col = 1, index = 4 |
+
+**C. Nhánh không test**
+
+Không có. Hàm không có điểm rẽ nhánh và không có vòng lặp hay `CHECK`.
+
+C2 dự kiến = 0 / 0 (tổng số nhánh bằng 0, mọi câu lệnh ở node 1 đều được chạy bởi TC1, nên coi là phủ đủ 100%).
+
+**D. File test**
 
 ```cpp
+// FILE: u0315_test.cc
 #include "gtest/gtest.h"
-#define private public
 #include "ceres/inner_product_computer.h"
-#undef private
 
-TEST(Unit_u0315, PathP1) {
-  ceres::internal::InnerProductComputer::ProductTerm target(1, 2, 3);
-  EXPECT_EQ(target.row, 1);
-  EXPECT_EQ(target.col, 2);
-  EXPECT_EQ(target.index, 3);
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ProductTermTest, ConstructorTC1) {
+  InnerProductComputer::ProductTerm term(3, 1, 4);
+  (void)term;
 }
+
+}  // namespace internal
+}  // namespace ceres
 ```

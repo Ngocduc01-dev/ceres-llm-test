@@ -2,25 +2,40 @@
 #include "gtest/gtest.h"
 #include "ceres/numeric_diff_first_order_function.h"
 
+namespace ceres {
 namespace {
-struct CostFunctor {
+
+// Functor 4 tham số, trả về cost = tổng bình phương các tham số.
+struct QuadraticCostFunctor {
   bool operator()(const double* parameters, double* cost) const {
-    *cost = parameters[0] * parameters[0];
+    double sum = 0.0;
+    for (int i = 0; i < 4; ++i) {
+      sum += parameters[i] * parameters[i];
+    }
+    *cost = sum;
     return true;
   }
 };
-}  // namespace
 
-TEST(Unit_u0456, ReleasesNonOwnedFunctor) {
-  CostFunctor functor;
+// P1: node 1: đúng (ownership_ != TAKE_OWNERSHIP) -> node 2 -> END
+TEST(NumericDiffFirstOrderFunctionDtorTest, DoNotTakeOwnership) {
+  QuadraticCostFunctor functor;  // sống trên stack, destructor không được delete
   {
-    ceres::NumericDiffFirstOrderFunction<CostFunctor, ceres::CENTRAL, 1> target(
-        &functor, ceres::DO_NOT_TAKE_OWNERSHIP);
-    const double parameters[1] = {2.0};
-    double cost = 0.0;
-    double gradient[1] = {};
-    EXPECT_TRUE(target.Evaluate(parameters, &cost, gradient));
-    EXPECT_DOUBLE_EQ(cost, 4.0);
-    EXPECT_NEAR(gradient[0], 4.0, 1e-6);
-  }
+    NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4> function(
+        &functor, DO_NOT_TAKE_OWNERSHIP, NumericDiffOptions());
+  }  // destructor chạy tại đây
+  SUCCEED();
 }
+
+// P2: node 1: sai (ownership_ == TAKE_OWNERSHIP) -> END
+TEST(NumericDiffFirstOrderFunctionDtorTest, TakeOwnership) {
+  QuadraticCostFunctor* functor = new QuadraticCostFunctor();
+  {
+    NumericDiffFirstOrderFunction<QuadraticCostFunctor, CENTRAL, 4> function(
+        functor, TAKE_OWNERSHIP, NumericDiffOptions());
+  }  // destructor chạy tại đây, functor_ (unique_ptr) tự giải phóng
+  SUCCEED();
+}
+
+}  // namespace
+}  // namespace ceres

@@ -1,5 +1,12 @@
 // FILE: u0385_test.cc
 #include "gtest/gtest.h"
 #include "ceres/preconditioner.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0385, PathP1) { ceres::internal::IdentityPreconditioner target(1); double x[1]={0}, y[1]={0}; target.RightMultiplyAndAccumulate(x,y); }
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(IdentityPreconditionerRightMultiplyAndAccumulate, TC1_P1) {
+  const int num_rows = 3;
+  ceres::internal::IdentityPreconditioner preconditioner(num_rows);
+  const double x[3] = {1.0, -2.0, 3.0};
+  double y[3] = {0.5, 4.0, -1.5};
+  preconditioner.RightMultiplyAndAccumulate(x, y);
+}

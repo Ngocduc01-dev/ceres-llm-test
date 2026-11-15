@@ -1,0 +1,16 @@
+{
+  "id": "u1370",
+  "name": "ceres::internal::CompressedRowSparseMatrix::CreateRandomMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 20,
+  "errors": [
+    "units/u1370/u1370_test.cc:9:3: error: ‘CompressedRowSparseMatrix’ has not been declared",
+    "units/u1370/u1370_test.cc:11:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1370/u1370_test.cc:12:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1370/u1370_test.cc:17:3: error: ‘CompressedRowSparseMatrix’ has not been declared",
+    "units/u1370/u1370_test.cc:19:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
+    "units/u1370/u1370_test.cc:20:29: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1370/u1370_test.cc:25:3: error: ‘CompressedRowSparseMatrix’ has not been declared",
+    "units/u1370/u1370_test.cc:27:53: error: no matching function for call to ‘ceres::internal::CompressedRowSparseMatrix::CompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
+  ]
+}

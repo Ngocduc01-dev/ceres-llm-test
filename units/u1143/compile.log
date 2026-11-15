@@ -1,0 +1,22 @@
+/work/repo/units/u1143/u1143_test.cc: In member function ‘virtual void Unit_u1143_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1143/u1143_test.cc:10:3: error: ‘Preconditioner’ has not been declared
+   10 |   Preconditioner::Options options{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u1143/u1143_test.cc:11:3: error: ‘BlockSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrix’?
+   11 |   BlockSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrix
+In file included from /work/ceres-solver/internal/ceres/linear_solver.h:43,
+                 from /work/ceres-solver/internal/ceres/preconditioner.h:42,
+                 from /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:39,
+                 from /work/repo/units/u1143/u1143_test.cc:3:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:60:23: note: ‘ceres::internal::BlockSparseMatrix’ declared here
+   60 | class CERES_NO_EXPORT BlockSparseMatrix final : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~
+/work/repo/units/u1143/u1143_test.cc:12:59: error: no matching function for call to ‘ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner(<brace-enclosed initializer list>)’
+   12 |   ceres::internal::BlockSparseJacobiPreconditioner object{};
+      |                                                           ^
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:59:12: note: candidate: ‘ceres::internal::BlockSparseJacobiPreconditioner::BlockSparseJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::BlockSparseMatrix&)’
+   59 |   explicit BlockSparseJacobiPreconditioner(Preconditioner::Options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:59:12: note:   candidate expects 2 arguments, 0 provided

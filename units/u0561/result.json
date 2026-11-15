@@ -1,0 +1,9 @@
+{
+  "id": "u0561",
+  "name": "ceres::CostFunctionToFunctor::GetParameterPointers",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0561/u0561_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

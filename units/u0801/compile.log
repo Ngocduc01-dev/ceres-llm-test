@@ -1,0 +1,16 @@
+/work/repo/units/u0801/u0801_test.cc: In member function ‘virtual void Unit_u0801_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0801/u0801_test.cc:7:3: error: ‘LinearSolverType’ was not declared in this scope; did you mean ‘ceres::LinearSolverType’?
+    7 |   LinearSolverType type{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::LinearSolverType
+In file included from /work/ceres-solver/include/ceres/iteration_callback.h:40,
+                 from /work/ceres-solver/include/ceres/solver.h:44,
+                 from /work/ceres-solver/internal/ceres/solver.cc:32,
+                 from /work/repo/units/u0801/u0801_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:57:6: note: ‘ceres::LinearSolverType’ declared here
+   57 | enum LinearSolverType {
+      |      ^~~~~~~~~~~~~~~~
+/work/repo/units/u0801/u0801_test.cc:8:28: error: ‘type’ was not declared in this scope; did you mean ‘wctype’?
+    8 |   ceres::IsIterativeSolver(type);
+      |                            ^~~~
+      |                            wctype

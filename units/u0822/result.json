@@ -1,0 +1,9 @@
+{
+  "id": "u0822",
+  "name": "ceres::Problem::AddResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0822/u0822_test.cc:10:26: error: no matching function for call to ‘ceres::Problem::AddResidualBlock(std::nullptr_t, std::nullptr_t, std::nullptr_t, std::nullptr_t)’"
+  ]
+}

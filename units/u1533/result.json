@@ -1,0 +1,16 @@
+{
+  "id": "u1533",
+  "name": "ceres::Solver::Solve",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1533/u1533_test.cc:13:3: error: ‘Solver’ has not been declared",
+    "units/u1533/u1533_test.cc:15:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1533/u1533_test.cc:20:3: error: ‘Solver’ has not been declared",
+    "units/u1533/u1533_test.cc:22:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1533/u1533_test.cc:27:3: error: ‘Solver’ has not been declared",
+    "units/u1533/u1533_test.cc:29:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?",
+    "units/u1533/u1533_test.cc:34:3: error: ‘Solver’ has not been declared",
+    "units/u1533/u1533_test.cc:36:16: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

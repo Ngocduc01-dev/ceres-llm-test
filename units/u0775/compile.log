@@ -1,0 +1,45 @@
+/work/repo/units/u0775/u0775_test.cc: In member function ‘virtual void Unit_u0775_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0775/u0775_test.cc:8:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+    8 |   CompressedRowBlockStructure block_structure{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+In file included from /work/repo/units/u0775/u0775_test.cc:4:
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc:10:38: error: ‘block_structure’ was not declared in this scope
+   10 |   ceres::internal::ComputeVisibility(block_structure, num_eliminate_blocks, nullptr);
+      |                                      ^~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc: In member function ‘virtual void Unit_u0775_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0775/u0775_test.cc:15:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   15 |   CompressedRowBlockStructure block_structure{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc:17:38: error: ‘block_structure’ was not declared in this scope
+   17 |   ceres::internal::ComputeVisibility(block_structure, num_eliminate_blocks, nullptr);
+      |                                      ^~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc: In member function ‘virtual void Unit_u0775_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0775/u0775_test.cc:22:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   22 |   CompressedRowBlockStructure block_structure{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc:24:38: error: ‘block_structure’ was not declared in this scope
+   24 |   ceres::internal::ComputeVisibility(block_structure, num_eliminate_blocks, nullptr);
+      |                                      ^~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc: In member function ‘virtual void Unit_u0775_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0775/u0775_test.cc:29:3: error: ‘CompressedRowBlockStructure’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowBlockStructure’?
+   29 |   CompressedRowBlockStructure block_structure{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowBlockStructure
+/work/ceres-solver/internal/ceres/block_structure.h:174:24: note: ‘ceres::internal::CompressedRowBlockStructure’ declared here
+  174 | struct CERES_NO_EXPORT CompressedRowBlockStructure {
+      |                        ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0775/u0775_test.cc:31:38: error: ‘block_structure’ was not declared in this scope
+   31 |   ceres::internal::ComputeVisibility(block_structure, num_eliminate_blocks, nullptr);
+      |                                      ^~~~~~~~~~~~~~~

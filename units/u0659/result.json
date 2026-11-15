@@ -1,0 +1,12 @@
+{
+  "id": "u0659",
+  "name": "ceres::internal::EigenDenseQR::Solve",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0659/u0659_test.cc:7:10: error: scalar object ‘rhs_data’ requires one element in initializer",
+    "units/u0659/u0659_test.cc:8:10: error: scalar object ‘solution_data’ requires one element in initializer",
+    "units/u0659/u0659_test.cc:9:10: error: scalar object ‘message_data’ requires one element in initializer",
+    "units/u0659/u0659_test.cc:10:3: error: ‘object’ was not declared in this scope"
+  ]
+}

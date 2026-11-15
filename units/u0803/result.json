@@ -1,0 +1,14 @@
+{
+  "id": "u0803",
+  "name": "ceres::internal::CanonicalViewsClustering::FindValidViews",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u0803/u0803_test.cc:8:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0803/u0803_test.cc:9:3: error: ‘object’ was not declared in this scope",
+    "units/u0803/u0803_test.cc:14:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0803/u0803_test.cc:15:3: error: ‘object’ was not declared in this scope",
+    "units/u0803/u0803_test.cc:20:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0803/u0803_test.cc:21:3: error: ‘object’ was not declared in this scope"
+  ]
+}

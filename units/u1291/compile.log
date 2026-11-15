@@ -1,0 +1,13 @@
+/work/repo/units/u1291/u1291_test.cc: In member function ‘virtual void Unit_u1291_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1291/u1291_test.cc:8:39: error: no matching function for call to ‘ceres::internal::EventLogger::EventLogger(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::EventLogger object{};
+      |                                       ^
+In file included from /work/repo/units/u1291/u1291_test.cc:3:
+/work/ceres-solver/internal/ceres/wall_time.h:74:12: note: candidate: ‘ceres::internal::EventLogger::EventLogger(const std::string&)’
+   74 |   explicit EventLogger(const std::string& logger_name);
+      |            ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/wall_time.h:74:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/wall_time.h:72:23: note: candidate: ‘ceres::internal::EventLogger::EventLogger(const ceres::internal::EventLogger&)’
+   72 | class CERES_NO_EXPORT EventLogger {
+      |                       ^~~~~~~~~~~
+/work/ceres-solver/internal/ceres/wall_time.h:72:23: note:   candidate expects 1 argument, 0 provided

@@ -1,0 +1,14 @@
+{
+  "id": "u1377",
+  "name": "ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1377/u1377_test.cc:11:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context",
+    "units/u1377/u1377_test.cc:17:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context",
+    "units/u1377/u1377_test.cc:23:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context",
+    "units/u1377/u1377_test.cc:29:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context",
+    "units/u1377/u1377_test.cc:35:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context",
+    "units/u1377/u1377_test.cc:41:32: error: ‘bool ceres::internal::TrustRegionMinimizer::ComputeTrustRegionStep()’ is private within this context"
+  ]
+}

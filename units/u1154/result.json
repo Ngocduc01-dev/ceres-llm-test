@@ -1,0 +1,13 @@
+{
+  "id": "u1154",
+  "name": "ceres::internal::LinearOperator::LeftMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1154/u1154_test.cc:8:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1154/u1154_test.cc:9:9: error: expected ‘;’ before ‘y’",
+    "units/u1154/u1154_test.cc:11:35: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::LinearOperator’",
+    "units/u1154/u1154_test.cc:12:36: error: ‘x’ was not declared in this scope",
+    "units/u1154/u1154_test.cc:12:39: error: ‘y’ was not declared in this scope; did you mean ‘yn’?"
+  ]
+}

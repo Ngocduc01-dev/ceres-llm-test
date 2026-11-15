@@ -1,0 +1,99 @@
+In file included from /work/repo/units/u1135/u1135_test.cc:8:
+/work/ceres-solver/internal/ceres/schur_eliminator_impl.h:46:9: warning: "EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD" redefined
+   46 | #define EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD 10
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:205,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/repo/units/u1135/u1135_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/arch/SSE/PacketMath.h:18:9: note: this is the location of the previous definition
+   18 | #define EIGEN_CACHEFRIENDLY_PRODUCT_THRESHOLD 8
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1135/u1135_test.cc: In member function ‘virtual void Unit_u1135_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1135/u1135_test.cc:12:3: error: ‘Chunk’ was not declared in this scope
+   12 |   Chunk chunk{};
+      |   ^~~~~
+/work/repo/units/u1135/u1135_test.cc:13:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   13 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+In file included from /work/repo/units/u1135/u1135_test.cc:4:
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1135/u1135_test.cc:15:43: error: class template argument deduction failed:
+   15 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1135/u1135_test.cc:15:43: error: no matching function for call to ‘SchurEliminator()’
+In file included from /work/repo/units/u1135/u1135_test.cc:7:
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1135/u1135_test.cc:16:20: error: ‘chunk’ was not declared in this scope
+   16 |   object.UpdateRhs(chunk, A, nullptr, row_block_counter, nullptr, nullptr);
+      |                    ^~~~~
+/work/repo/units/u1135/u1135_test.cc:16:27: error: ‘A’ was not declared in this scope
+   16 |   object.UpdateRhs(chunk, A, nullptr, row_block_counter, nullptr, nullptr);
+      |                           ^
+/work/repo/units/u1135/u1135_test.cc: In member function ‘virtual void Unit_u1135_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1135/u1135_test.cc:21:3: error: ‘Chunk’ was not declared in this scope
+   21 |   Chunk chunk{};
+      |   ^~~~~
+/work/repo/units/u1135/u1135_test.cc:22:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   22 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1135/u1135_test.cc:24:43: error: class template argument deduction failed:
+   24 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1135/u1135_test.cc:24:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1135/u1135_test.cc:25:20: error: ‘chunk’ was not declared in this scope
+   25 |   object.UpdateRhs(chunk, A, nullptr, row_block_counter, nullptr, nullptr);
+      |                    ^~~~~
+/work/repo/units/u1135/u1135_test.cc:25:27: error: ‘A’ was not declared in this scope
+   25 |   object.UpdateRhs(chunk, A, nullptr, row_block_counter, nullptr, nullptr);
+      |                           ^
+/work/repo/units/u1135/u1135_test.cc: In member function ‘virtual void Unit_u1135_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1135/u1135_test.cc:30:3: error: ‘Chunk’ was not declared in this scope
+   30 |   Chunk chunk{};
+      |   ^~~~~
+/work/repo/units/u1135/u1135_test.cc:31:3: error: ‘BlockSparseMatrixData’ was not declared in this scope; did you mean ‘ceres::internal::BlockSparseMatrixData’?
+   31 |   BlockSparseMatrixData A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::BlockSparseMatrixData
+/work/ceres-solver/internal/ceres/block_sparse_matrix.h:184:23: note: ‘ceres::internal::BlockSparseMatrixData’ declared here
+  184 | class CERES_NO_EXPORT BlockSparseMatrixData {
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1135/u1135_test.cc:33:43: error: class template argument deduction failed:
+   33 |   ceres::internal::SchurEliminator object{};
+      |                                           ^
+/work/repo/units/u1135/u1135_test.cc:33:43: error: no matching function for call to ‘SchurEliminator()’
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(const ceres::internal::LinearSolver::Options&)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  229 |   explicit SchurEliminator(const LinearSolver::Options& options)
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:229:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note: candidate: ‘template<int kRowBlockSize, int kEBlockSize, int kFBlockSize> SchurEliminator(ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>)-> ceres::internal::SchurEliminator<kRowBlockSize, kEBlockSize, kFBlockSize>’
+  227 | class CERES_NO_EXPORT SchurEliminator final : public SchurEliminatorBase {
+      |                                       ^~~~~
+/work/ceres-solver/internal/ceres/schur_eliminator.h:227:39: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1135/u1135_test.cc:34:20: error: ‘chunk’ was not declared in this scope
+   34 |   object.UpdateRhs(chunk, A, nullptr, row_block_counter, nullptr, nullptr);
+      |                    ^~~~~
+/work/repo/units/u1135/u1135_test.cc:34:27: error: ‘A’ was not declared in this scope
+   34 |   object.UpdateRhs(chunk, A, nullptr, row_block_counter, nullptr, nullptr);
+      |                           ^

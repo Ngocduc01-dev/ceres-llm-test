@@ -1,0 +1,64 @@
+/work/repo/units/u1285/u1285_test.cc: In member function ‘virtual void Unit_u1285_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1285/u1285_test.cc:9:3: error: ‘Vector’ was not declared in this scope
+    9 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1285/u1285_test.cc:9:3: note: suggested alternatives:
+In file included from /usr/include/eigen3/Eigen/Core:295,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/eigen_vector_ops.h:36,
+                 from /work/ceres-solver/internal/ceres/conjugate_gradients_solver.h:41,
+                 from /work/ceres-solver/internal/ceres/cgnr_solver.h:36,
+                 from /work/repo/units/u1285/u1285_test.cc:3:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1285/u1285_test.cc:10:9: error: expected ‘;’ before ‘y’
+   10 |   Vector y{};
+      |         ^~
+      |         ;
+/work/repo/units/u1285/u1285_test.cc:11:20: error: ‘CgnrLinearOperator’ is not a member of ‘ceres::internal’; did you mean ‘LinearOperator’?
+   11 |   ceres::internal::CgnrLinearOperator object{};
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    LinearOperator
+/work/repo/units/u1285/u1285_test.cc:12:3: error: ‘object’ was not declared in this scope
+   12 |   object.RightMultiplyAndAccumulate(x, y);
+      |   ^~~~~~
+/work/repo/units/u1285/u1285_test.cc:12:37: error: ‘x’ was not declared in this scope
+   12 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                     ^
+/work/repo/units/u1285/u1285_test.cc:12:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   12 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                        ^
+      |                                        yn
+/work/repo/units/u1285/u1285_test.cc: In member function ‘virtual void Unit_u1285_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1285/u1285_test.cc:17:3: error: ‘Vector’ was not declared in this scope
+   17 |   Vector x{};
+      |   ^~~~~~
+/work/repo/units/u1285/u1285_test.cc:17:3: note: suggested alternatives:
+/usr/include/eigen3/Eigen/src/Core/Matrix.h:551:7: note:   ‘Eigen::Vector’
+  551 | using Vector = Matrix<Type, Size, 1>;
+      |       ^~~~~~
+/work/ceres-solver/include/ceres/internal/eigen.h:38:7: note:   ‘ceres::Vector’
+   38 | using Vector = Eigen::Matrix<double, Eigen::Dynamic, 1>;
+      |       ^~~~~~
+/work/repo/units/u1285/u1285_test.cc:18:9: error: expected ‘;’ before ‘y’
+   18 |   Vector y{};
+      |         ^~
+      |         ;
+/work/repo/units/u1285/u1285_test.cc:19:20: error: ‘CgnrLinearOperator’ is not a member of ‘ceres::internal’; did you mean ‘LinearOperator’?
+   19 |   ceres::internal::CgnrLinearOperator object{};
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    LinearOperator
+/work/repo/units/u1285/u1285_test.cc:20:3: error: ‘object’ was not declared in this scope
+   20 |   object.RightMultiplyAndAccumulate(x, y);
+      |   ^~~~~~
+/work/repo/units/u1285/u1285_test.cc:20:37: error: ‘x’ was not declared in this scope
+   20 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                     ^
+/work/repo/units/u1285/u1285_test.cc:20:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?
+   20 |   object.RightMultiplyAndAccumulate(x, y);
+      |                                        ^
+      |                                        yn

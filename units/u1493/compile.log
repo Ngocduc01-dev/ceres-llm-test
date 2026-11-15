@@ -1,0 +1,19 @@
+/work/repo/units/u1493/u1493_test.cc: In member function ‘virtual void Unit_u1493_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1493/u1493_test.cc:14:54: error: no matching function for call to ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::CoordinateDescentMinimizer object{};
+      |                                                      ^
+In file included from /work/repo/units/u1493/u1493_test.cc:4:
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(ceres::internal::ContextImpl*)’
+   61 |   explicit CoordinateDescentMinimizer(ContextImpl* context);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:61:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note: candidate: ‘ceres::internal::CoordinateDescentMinimizer::CoordinateDescentMinimizer(const ceres::internal::CoordinateDescentMinimizer&)’
+   59 | class CERES_NO_EXPORT CoordinateDescentMinimizer final : public Minimizer {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:59:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1493/u1493_test.cc:15:15: error: ‘void ceres::internal::CoordinateDescentMinimizer::Solve(ceres::internal::Program*, ceres::internal::LinearSolver*, double*, ceres::Solver::Summary*)’ is private within this context
+   15 |   object.Solve(nullptr, nullptr, nullptr, nullptr);
+      |   ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/coordinate_descent_minimizer.h:88:8: note: declared private here
+   88 |   void Solve(Program* program,
+      |        ^~~~~

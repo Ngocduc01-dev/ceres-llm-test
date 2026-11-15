@@ -1,0 +1,9 @@
+{
+  "id": "u0542",
+  "name": "ceres::internal::MatrixMatrixMultiply",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0542/u0542_test.cc:9:23: error: no matching function for call to ‘MatrixMatrixMultiply(<brace-enclosed initializer list>)’"
+  ]
+}

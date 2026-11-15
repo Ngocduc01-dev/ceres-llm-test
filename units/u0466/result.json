@@ -1,0 +1,27 @@
+{
+  "id": "u0466",
+  "name": "ceres::internal::Corrector::CorrectResiduals",
+  "status": "ok",
+  "cfg_branches": 0,
+  "tests": {
+    "Unit_u0466.PathP1": "crash"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 1,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 0,
+    "total": 4
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

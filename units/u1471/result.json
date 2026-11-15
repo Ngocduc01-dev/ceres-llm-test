@@ -1,0 +1,16 @@
+{
+  "id": "u1471",
+  "name": "ceres::internal::ResidualBlock::Evaluate",
+  "status": "compile_fail",
+  "cfg_branches": 36,
+  "errors": [
+    "units/u1471/u1471_test.cc:14:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:21:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:28:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:35:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:42:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:49:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:56:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’",
+    "units/u1471/u1471_test.cc:63:41: error: no matching function for call to ‘ceres::internal::ResidualBlock::ResidualBlock(<brace-enclosed initializer list>)’"
+  ]
+}

@@ -1,0 +1,12 @@
+/work/repo/units/u1359/u1359_test.cc: In member function ‘virtual void Unit_u1359_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1359/u1359_test.cc:12:27: error: expected primary-expression before ‘int’
+   12 |   object.Prepare(nullptr, int, nullptr, nullptr);
+      |                           ^~~
+/work/repo/units/u1359/u1359_test.cc: In member function ‘virtual void Unit_u1359_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1359/u1359_test.cc:19:27: error: expected primary-expression before ‘int’
+   19 |   object.Prepare(nullptr, int, nullptr, nullptr);
+      |                           ^~~
+/work/repo/units/u1359/u1359_test.cc: In member function ‘virtual void Unit_u1359_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1359/u1359_test.cc:26:27: error: expected primary-expression before ‘int’
+   26 |   object.Prepare(nullptr, int, nullptr, nullptr);
+      |                           ^~~

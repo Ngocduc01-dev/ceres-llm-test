@@ -1,0 +1,16 @@
+{
+  "id": "u1285",
+  "name": "ceres::internal::CgnrLinearOperator::RightMultiplyAndAccumulate",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u1285/u1285_test.cc:9:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1285/u1285_test.cc:10:9: error: expected ‘;’ before ‘y’",
+    "units/u1285/u1285_test.cc:11:20: error: ‘CgnrLinearOperator’ is not a member of ‘ceres::internal’; did you mean ‘LinearOperator’?",
+    "units/u1285/u1285_test.cc:12:3: error: ‘object’ was not declared in this scope",
+    "units/u1285/u1285_test.cc:12:37: error: ‘x’ was not declared in this scope",
+    "units/u1285/u1285_test.cc:12:40: error: ‘y’ was not declared in this scope; did you mean ‘yn’?",
+    "units/u1285/u1285_test.cc:17:3: error: ‘Vector’ was not declared in this scope",
+    "units/u1285/u1285_test.cc:18:9: error: expected ‘;’ before ‘y’"
+  ]
+}

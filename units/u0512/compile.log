@@ -1,0 +1,12 @@
+/work/repo/units/u0512/u0512_test.cc: In member function ‘virtual void ceres::internal::Unit_u0512_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0512/u0512_test.cc:9:19: error: no matching function for call to ‘IsSolutionUsable(<brace-enclosed initializer list>)’
+    9 |   IsSolutionUsable({});
+      |   ~~~~~~~~~~~~~~~~^~~~
+In file included from /work/repo/units/u0512/u0512_test.cc:3:
+/work/ceres-solver/internal/ceres/solver_utils.h:45:6: note: candidate: ‘template<class SummaryType> bool ceres::internal::IsSolutionUsable(const SummaryType&)’
+   45 | bool IsSolutionUsable(const SummaryType& summary) {
+      |      ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/solver_utils.h:45:6: note:   template argument deduction/substitution failed:
+/work/repo/units/u0512/u0512_test.cc:9:19: note:   couldn’t deduce template parameter ‘SummaryType’
+    9 |   IsSolutionUsable({});
+      |   ~~~~~~~~~~~~~~~~^~~~

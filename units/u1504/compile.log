@@ -1,0 +1,300 @@
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:8:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+    8 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+In file included from /work/repo/units/u1504/u1504_test.cc:3:
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:9:17: error: expected ‘;’ before ‘bracket_low’
+    9 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:10:17: error: expected ‘;’ before ‘bracket_high’
+   10 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:11:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+In file included from /work/repo/units/u1504/u1504_test.cc:4:
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:12:20: error: ‘initial_position’ was not declared in this scope
+   12 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:12:38: error: ‘bracket_low’ was not declared in this scope
+   12 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:12:51: error: ‘bracket_high’ was not declared in this scope
+   12 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:17:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   17 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:18:17: error: expected ‘;’ before ‘bracket_low’
+   18 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:19:17: error: expected ‘;’ before ‘bracket_high’
+   19 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:20:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:21:20: error: ‘initial_position’ was not declared in this scope
+   21 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:21:38: error: ‘bracket_low’ was not declared in this scope
+   21 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:21:51: error: ‘bracket_high’ was not declared in this scope
+   21 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:26:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   26 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:27:17: error: expected ‘;’ before ‘bracket_low’
+   27 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:28:17: error: expected ‘;’ before ‘bracket_high’
+   28 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:29:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   29 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:30:20: error: ‘initial_position’ was not declared in this scope
+   30 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:30:38: error: ‘bracket_low’ was not declared in this scope
+   30 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:30:51: error: ‘bracket_high’ was not declared in this scope
+   30 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:35:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   35 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:36:17: error: expected ‘;’ before ‘bracket_low’
+   36 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:37:17: error: expected ‘;’ before ‘bracket_high’
+   37 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:38:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   38 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:39:20: error: ‘initial_position’ was not declared in this scope
+   39 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:39:38: error: ‘bracket_low’ was not declared in this scope
+   39 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:39:51: error: ‘bracket_high’ was not declared in this scope
+   39 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:44:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   44 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:45:17: error: expected ‘;’ before ‘bracket_low’
+   45 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:46:17: error: expected ‘;’ before ‘bracket_high’
+   46 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:47:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   47 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:48:20: error: ‘initial_position’ was not declared in this scope
+   48 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:48:38: error: ‘bracket_low’ was not declared in this scope
+   48 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:48:51: error: ‘bracket_high’ was not declared in this scope
+   48 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:53:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   53 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:54:17: error: expected ‘;’ before ‘bracket_low’
+   54 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:55:17: error: expected ‘;’ before ‘bracket_high’
+   55 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:56:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   56 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:57:20: error: ‘initial_position’ was not declared in this scope
+   57 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:57:38: error: ‘bracket_low’ was not declared in this scope
+   57 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:57:51: error: ‘bracket_high’ was not declared in this scope
+   57 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:62:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   62 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:63:17: error: expected ‘;’ before ‘bracket_low’
+   63 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:64:17: error: expected ‘;’ before ‘bracket_high’
+   64 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:65:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   65 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:66:20: error: ‘initial_position’ was not declared in this scope
+   66 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:66:38: error: ‘bracket_low’ was not declared in this scope
+   66 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                      ^~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:66:51: error: ‘bracket_high’ was not declared in this scope
+   66 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                                                   ^~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc: In member function ‘virtual void Unit_u1504_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1504/u1504_test.cc:71:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+   71 |   FunctionSample initial_position{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1504/u1504_test.cc:72:17: error: expected ‘;’ before ‘bracket_low’
+   72 |   FunctionSample bracket_low{};
+      |                 ^~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:73:17: error: expected ‘;’ before ‘bracket_high’
+   73 |   FunctionSample bracket_high{};
+      |                 ^~~~~~~~~~~~~
+      |                 ;
+/work/repo/units/u1504/u1504_test.cc:74:43: error: no matching function for call to ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(<brace-enclosed initializer list>)’
+   74 |   ceres::internal::WolfeLineSearch object{};
+      |                                           ^
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note: candidate: ‘ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::LineSearch::Options&)’
+  281 |   explicit WolfeLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:281:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(const ceres::internal::WolfeLineSearch&)’
+  279 | class CERES_NO_EXPORT WolfeLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note: candidate: ‘constexpr ceres::internal::WolfeLineSearch::WolfeLineSearch(ceres::internal::WolfeLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:279:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1504/u1504_test.cc:75:20: error: ‘initial_position’ was not declared in this scope
+   75 |   object.ZoomPhase(initial_position, bracket_low, bracket_high, nullptr, nullptr);
+      |                    ^~~~~~~~~~~~~~~~

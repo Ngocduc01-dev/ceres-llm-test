@@ -1,0 +1,9 @@
+{
+  "id": "u0749",
+  "name": "ceres::internal::WeightedGraph::RemoveVertex",
+  "status": "compile_fail",
+  "cfg_branches": null,
+  "errors": [
+    "units/u0749/u0749_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

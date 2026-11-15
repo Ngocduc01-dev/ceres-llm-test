@@ -1,0 +1,16 @@
+{
+  "id": "u0808",
+  "name": "ceres::internal::CanonicalViewsClustering::ComputeClusterMembership",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u0808/u0808_test.cc:10:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0808/u0808_test.cc:11:3: error: ‘object’ was not declared in this scope",
+    "units/u0808/u0808_test.cc:17:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0808/u0808_test.cc:18:3: error: ‘object’ was not declared in this scope",
+    "units/u0808/u0808_test.cc:24:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0808/u0808_test.cc:25:3: error: ‘object’ was not declared in this scope",
+    "units/u0808/u0808_test.cc:31:20: error: ‘CanonicalViewsClustering’ is not a member of ‘ceres::internal’; did you mean ‘ComputeCanonicalViewsClustering’?",
+    "units/u0808/u0808_test.cc:32:3: error: ‘object’ was not declared in this scope"
+  ]
+}

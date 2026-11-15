@@ -1,0 +1,9 @@
+{
+  "id": "u0603",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::IsBlockPairInPreconditioner",
+  "status": "compile_fail",
+  "cfg_branches": 2,
+  "errors": [
+    "units/u0603/u0603_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

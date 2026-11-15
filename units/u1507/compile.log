@@ -1,0 +1,161 @@
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:11:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+In file included from /work/repo/units/u1507/u1507_test.cc:4:
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:12:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   12 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:20:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:21:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   21 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:29:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   29 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:30:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   30 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:38:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   38 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:39:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   39 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:47:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   47 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:48:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   48 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC6_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:56:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   56 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:57:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   57 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC7_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:65:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   65 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:66:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   66 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~
+/work/repo/units/u1507/u1507_test.cc: In member function ‘virtual void Unit_u1507_TC8_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1507/u1507_test.cc:74:44: error: no matching function for call to ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(<brace-enclosed initializer list>)’
+   74 |   ceres::internal::ArmijoLineSearch object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note: candidate: ‘ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::LineSearch::Options&)’
+  263 |   explicit ArmijoLineSearch(const LineSearch::Options& options);
+      |            ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:263:12: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(const ceres::internal::ArmijoLineSearch&)’
+  261 | class CERES_NO_EXPORT ArmijoLineSearch final : public LineSearch {
+      |                       ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note: candidate: ‘constexpr ceres::internal::ArmijoLineSearch::ArmijoLineSearch(ceres::internal::ArmijoLineSearch&&)’
+/work/ceres-solver/internal/ceres/line_search.h:261:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1507/u1507_test.cc:75:18: error: ‘virtual void ceres::internal::ArmijoLineSearch::DoSearch(double, double, double, ceres::internal::LineSearch::Summary*) const’ is private within this context
+   75 |   object.DoSearch(step_size_estimate, initial_cost, initial_gradient, nullptr);
+      |   ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/line_search.h:266:8: note: declared private here
+  266 |   void DoSearch(double step_size_estimate,
+      |        ^~~~~~~~

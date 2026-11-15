@@ -1,27 +1,42 @@
-# Unit u0409
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh |
 
-## B. B? test case
+CFG khớp với mã nguồn (`return token_;`).
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+**B. Bộ test case**
+
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `int token() const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `num_threads` của `ThreadTokenProvider` thuộc [1, 5] | 3 |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+- Không có nhánh nào, vì hàm không có điểm rẽ nhánh và không có vòng lặp.
+- `C2 dự kiến = 0 / 0` (tổng số nhánh bằng 0, nên mọi dòng lệnh của hàm đều được chạy qua test P1).
 
-## D. File test
+**D. File test**
 
 ```cpp
 // FILE: u0409_test.cc
 #include "gtest/gtest.h"
 #include "ceres/scoped_thread_token.h"
-#include "ceres/thread_token_provider.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0409, PathP1) { ceres::internal::ThreadTokenProvider provider(1); ceres::internal::ScopedThreadToken target(&provider); target.token(); }
+
+namespace ceres {
+namespace internal {
+
+// P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ScopedThreadTokenTokenTest, P1_ReturnToken) {
+  ThreadTokenProvider provider(3);
+  ScopedThreadToken scoped_token(&provider);
+  int value = scoped_token.token();
+  (void)value;
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```
+
+Lưu ý: `ThreadTokenProvider` không nằm trong danh sách `#include` ở mục 3.3, nhưng được khai báo trong `scoped_thread_token.h` (qua `thread_token_provider.h`). Kiểu này cần có để tạo `ScopedThreadToken`.

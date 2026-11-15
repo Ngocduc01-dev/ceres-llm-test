@@ -1,0 +1,75 @@
+/work/repo/units/u1189/u1189_test.cc: In member function ‘virtual void Unit_u1189_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1189/u1189_test.cc:9:3: error: ‘Preconditioner’ has not been declared
+    9 |   Preconditioner::Options options{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:10:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?
+   10 |   CompressedRowSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowSparseMatrix
+In file included from /work/ceres-solver/internal/ceres/block_random_access_diagonal_matrix.h:40,
+                 from /work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:36,
+                 from /work/repo/units/u1189/u1189_test.cc:3:
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: ‘ceres::internal::CompressedRowSparseMatrix’ declared here
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:11:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’
+   11 |   ceres::internal::BlockCRSJacobiPreconditioner object{};
+      |                                                        ^
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note: candidate: ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::CompressedRowSparseMatrix&)’
+   82 |   explicit BlockCRSJacobiPreconditioner(Preconditioner::Options options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1189/u1189_test.cc: In member function ‘virtual void Unit_u1189_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1189/u1189_test.cc:17:3: error: ‘Preconditioner’ has not been declared
+   17 |   Preconditioner::Options options{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:18:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?
+   18 |   CompressedRowSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowSparseMatrix
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: ‘ceres::internal::CompressedRowSparseMatrix’ declared here
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:19:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’
+   19 |   ceres::internal::BlockCRSJacobiPreconditioner object{};
+      |                                                        ^
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note: candidate: ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::CompressedRowSparseMatrix&)’
+   82 |   explicit BlockCRSJacobiPreconditioner(Preconditioner::Options options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1189/u1189_test.cc: In member function ‘virtual void Unit_u1189_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1189/u1189_test.cc:25:3: error: ‘Preconditioner’ has not been declared
+   25 |   Preconditioner::Options options{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:26:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?
+   26 |   CompressedRowSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowSparseMatrix
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: ‘ceres::internal::CompressedRowSparseMatrix’ declared here
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:27:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’
+   27 |   ceres::internal::BlockCRSJacobiPreconditioner object{};
+      |                                                        ^
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note: candidate: ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::CompressedRowSparseMatrix&)’
+   82 |   explicit BlockCRSJacobiPreconditioner(Preconditioner::Options options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u1189/u1189_test.cc: In member function ‘virtual void Unit_u1189_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1189/u1189_test.cc:33:3: error: ‘Preconditioner’ has not been declared
+   33 |   Preconditioner::Options options{};
+      |   ^~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:34:3: error: ‘CompressedRowSparseMatrix’ was not declared in this scope; did you mean ‘ceres::internal::CompressedRowSparseMatrix’?
+   34 |   CompressedRowSparseMatrix A{};
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+      |   ceres::internal::CompressedRowSparseMatrix
+/work/ceres-solver/internal/ceres/compressed_row_sparse_matrix.h:54:23: note: ‘ceres::internal::CompressedRowSparseMatrix’ declared here
+   54 | class CERES_NO_EXPORT CompressedRowSparseMatrix : public SparseMatrix {
+      |                       ^~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1189/u1189_test.cc:35:56: error: no matching function for call to ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(<brace-enclosed initializer list>)’
+   35 |   ceres::internal::BlockCRSJacobiPreconditioner object{};
+      |                                                        ^
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note: candidate: ‘ceres::internal::BlockCRSJacobiPreconditioner::BlockCRSJacobiPreconditioner(ceres::internal::Preconditioner::Options, const ceres::internal::CompressedRowSparseMatrix&)’
+   82 |   explicit BlockCRSJacobiPreconditioner(Preconditioner::Options options,
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/block_jacobi_preconditioner.h:82:12: note:   candidate expects 2 arguments, 0 provided

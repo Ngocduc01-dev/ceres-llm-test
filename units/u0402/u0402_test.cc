@@ -1,8 +1,37 @@
 // FILE: u0402_test.cc
 #include "gtest/gtest.h"
 #include "ceres/residual_block.h"
-#include "ceres/cost_function.h"
+
 #include <vector>
-class TestCost_u0402 : public ceres::SizedCostFunction<1,1> { public: bool Evaluate(double const* const*, double*, double**) const override { return true; } };
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0402, PathP1) { TestCost_u0402 cost; ceres::internal::ResidualBlock target(&cost, nullptr, {}, 0); target.index(); }
+
+namespace ceres {
+namespace internal {
+
+namespace {
+
+// CostFunction không có parameter block nào, chỉ dùng để dựng ResidualBlock.
+class EmptyCostFunction : public CostFunction {
+ public:
+  EmptyCostFunction() { set_num_residuals(1); }
+  bool Evaluate(double const* const* parameters,
+                double* residuals,
+                double** jacobians) const override {
+    residuals[0] = 0.0;
+    return true;
+  }
+};
+
+}  // namespace
+
+// P1: START -> 1 -> END
+TEST(ResidualBlockIndexTest, ReturnsIndex_P1) {
+  EmptyCostFunction cost_function;
+  std::vector<ParameterBlock*> parameter_blocks;
+  const int index = 37;
+  ResidualBlock residual_block(
+      &cost_function, nullptr, parameter_blocks, index);
+  residual_block.index();
+}
+
+}  // namespace internal
+}  // namespace ceres

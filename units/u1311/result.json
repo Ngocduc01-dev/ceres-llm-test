@@ -1,0 +1,14 @@
+{
+  "id": "u1311",
+  "name": "ceres::internal::(anonymous)::MinParameterBlock",
+  "status": "compile_fail",
+  "cfg_branches": 4,
+  "errors": [
+    "units/u1311/u1311_test.cc:11:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1311/u1311_test.cc:11:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1311/u1311_test.cc:17:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1311/u1311_test.cc:17:21: error: ‘anonymous’ was not declared in this scope",
+    "units/u1311/u1311_test.cc:23:20: error: expected unqualified-id before ‘(’ token",
+    "units/u1311/u1311_test.cc:23:21: error: ‘anonymous’ was not declared in this scope"
+  ]
+}

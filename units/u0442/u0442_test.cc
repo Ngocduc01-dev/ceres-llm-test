@@ -2,19 +2,29 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-TEST(Unit_u0442, EvaluatesJet) {
-  const double data[16] = {0.0, 1.0, 2.0, 3.0, 1.0, 2.0, 3.0, 4.0,
-                           2.0, 3.0, 4.0, 5.0, 3.0, 4.0, 5.0, 6.0};
-  ceres::Grid2D<double, 1> grid(data, 0, 4, 0, 4);
-  ceres::BiCubicInterpolator<ceres::Grid2D<double, 1>> interpolator(grid);
+namespace ceres {
+namespace {
 
-  ceres::Jet<double, 1> r(1.4);
-  ceres::Jet<double, 1> c(1.6);
-  r.v[0] = 1.0;
-  c.v[0] = 2.0;
-  ceres::Jet<double, 1> f[1];
+// Kiểu thay thế Jet: chỉ cần thành viên a và v mà Evaluate sử dụng.
+struct TestJet {
+  double a;
+  double v;
+};
+
+// P1: START -> 1 -> 2(đúng) -> 3 -> 4 -> 2(đúng) -> 3 -> 4 -> 2(sai) -> END
+TEST(BiCubicInterpolatorEvaluateJet, TwoIterationsLoop) {
+  const double data[8] = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0};
+  Grid2D<double, 2> grid(data, 0, 2, 0, 2);
+  BiCubicInterpolator<Grid2D<double, 2>> interpolator(grid);
+
+  TestJet r = {0.5, 1.0};
+  TestJet c = {0.5, 2.0};
+  TestJet f[2];
+  f[0] = {0.0, 0.0};
+  f[1] = {0.0, 0.0};
+
   interpolator.Evaluate(r, c, f);
-
-  EXPECT_NEAR(f[0].a, 3.0, 1e-12);
-  EXPECT_NEAR(f[0].v[0], 3.0, 1e-12);
 }
+
+}  // namespace
+}  // namespace ceres

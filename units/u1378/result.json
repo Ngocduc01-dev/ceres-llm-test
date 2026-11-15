@@ -1,0 +1,16 @@
+{
+  "id": "u1378",
+  "name": "ceres::internal::SparseSchurComplementSolver::SolveReducedLinearSystemUsingConjugateGradients",
+  "status": "compile_fail",
+  "cfg_branches": 10,
+  "errors": [
+    "units/u1378/u1378_test.cc:13:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1378/u1378_test.cc:14:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1378/u1378_test.cc:15:58: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1378/u1378_test.cc:20:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1378/u1378_test.cc:21:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1378/u1378_test.cc:22:58: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1378/u1378_test.cc:27:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1378/u1378_test.cc:28:55: error: no matching function for call to ‘ceres::internal::SparseSchurComplementSolver::SparseSchurComplementSolver(<brace-enclosed initializer list>)’"
+  ]
+}

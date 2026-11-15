@@ -1,0 +1,9 @@
+{
+  "id": "u1482",
+  "name": "ceres_create_problem",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1482/u1482_test.cc:7:3: error: ‘ceres_create_problem’ was not declared in this scope"
+  ]
+}

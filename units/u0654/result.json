@@ -1,0 +1,9 @@
+{
+  "id": "u0654",
+  "name": "ceres::internal::CompressedRowSparseMatrix::set_storage_type",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0654/u0654_test.cc:7:3: error: ‘object’ was not declared in this scope"
+  ]
+}

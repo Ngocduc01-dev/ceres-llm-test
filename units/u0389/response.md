@@ -1,26 +1,40 @@
-# Unit u0389
-## A. Test paths
+**A. Test paths**
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+CFG không có điểm rẽ nhánh nào. Biểu thức `find(...) != end()` chỉ là một biểu thức so sánh trong node 1, không phải điểm rẽ nhánh. Vì vậy chỉ có một đường đi.
+
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh trong CFG. |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh |
 
-## B. B? test case
+**B. Bộ test case**
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Theo ch? k? `bool HasParameterBlock(const double * values) const` | Gi? tr? h?p l? trong file test |
+| TC1 | P1 | `values`: bất kỳ con trỏ `const double*` nào (kể cả `nullptr`), không có điều kiện ràng buộc. Mảng tối đa 5 phần tử. | `double x[3] = {1.0, 2.0, 3.0}` (giá trị cố định, không dùng số ngẫu nhiên). Truyền `x` vào `HasParameterBlock`. |
 
-## C. Nh?nh kh?ng test
+**C. Nhánh không test**
 
-Kh?ng c? nh?nh ?i?u khi?n. C2 d? ki?n = 0 / 0.
+Không có nhánh nào bị bỏ qua, vì hàm không có điểm rẽ nhánh.
 
-## D. File test
+`C2 dự kiến = 0 / 0` (không có nhánh nào cần phủ, nên coi như đạt 100%; dự kiến, chưa chạy thật).
+
+**D. File test**
 
 ```cpp
 // FILE: u0389_test.cc
 #include "gtest/gtest.h"
 #include "ceres/problem_impl.h"
-// Path P1: START -> 1 -> END.
-TEST(Unit_u0389, PathP1) { ceres::internal::ProblemImpl target; target.HasParameterBlock(nullptr); }
+
+namespace ceres {
+namespace internal {
+
+// Path P1: START -> 1 -> END (không có điểm rẽ nhánh)
+TEST(ProblemImplHasParameterBlockTest, P1_SingleStatementPath) {
+  ProblemImpl problem;
+  double x[3] = {1.0, 2.0, 3.0};
+  problem.HasParameterBlock(x);
+}
+
+}  // namespace internal
+}  // namespace ceres
 ```

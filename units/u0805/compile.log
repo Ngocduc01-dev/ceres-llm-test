@@ -1,0 +1,29 @@
+/work/repo/units/u0805/u0805_test.cc: In member function ‘virtual void Unit_u0805_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0805/u0805_test.cc:8:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+In file included from /work/repo/units/u0805/u0805_test.cc:3:
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0805/u0805_test.cc:9:34: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ComputeClusterVisibility(const std::vector<std::set<int> >&, std::vector<std::set<int> >*) const’ is private within this context
+    9 |   object.ComputeClusterVisibility(visibility, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:161:8: note: declared private here
+  161 |   void ComputeClusterVisibility(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u0805/u0805_test.cc: In member function ‘virtual void Unit_u0805_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0805/u0805_test.cc:15:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’
+   15 |   ceres::internal::VisibilityBasedPreconditioner object{};
+      |                                                         ^
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note: candidate: ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(const ceres::internal::CompressedRowBlockStructure&, ceres::internal::Preconditioner::Options)’
+  136 |   VisibilityBasedPreconditioner(const CompressedRowBlockStructure& bs,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:136:3: note:   candidate expects 2 arguments, 0 provided
+/work/repo/units/u0805/u0805_test.cc:16:34: error: ‘void ceres::internal::VisibilityBasedPreconditioner::ComputeClusterVisibility(const std::vector<std::set<int> >&, std::vector<std::set<int> >*) const’ is private within this context
+   16 |   object.ComputeClusterVisibility(visibility, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/visibility_based_preconditioner.h:161:8: note: declared private here
+  161 |   void ComputeClusterVisibility(
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~

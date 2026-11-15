@@ -1,0 +1,71 @@
+/work/repo/units/u0956/u0956_test.cc: In member function ‘virtual void Unit_u0956_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0956/u0956_test.cc:9:3: error: ‘Minimizer’ has not been declared
+    9 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:10:3: error: ‘IterationSummary’ was not declared in this scope; did you mean ‘ceres::IterationSummary’?
+   10 |   IterationSummary iteration_summary{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::IterationSummary
+In file included from /work/repo/units/u0956/u0956_test.cc:3:
+/work/ceres-solver/include/ceres/iteration_callback.h:46:21: note: ‘ceres::IterationSummary’ declared here
+   46 | struct CERES_EXPORT IterationSummary {
+      |                     ^~~~~~~~~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:11:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’
+   11 |   ceres::internal::Minimizer object{};
+      |                              ^~~~~~
+In file included from /work/repo/units/u0956/u0956_test.cc:5:
+/work/ceres-solver/internal/ceres/minimizer.h:53:23: note:   because the following virtual functions are pure within ‘ceres::internal::Minimizer’:
+   53 | class CERES_NO_EXPORT Minimizer {
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/minimizer.h:192:16: note:     ‘virtual void ceres::internal::Minimizer::Minimize(const Options&, double*, ceres::Solver::Summary*)’
+  192 |   virtual void Minimize(const Options& options,
+      |                ^~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:12:23: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   12 |   object.RunCallbacks(options, iteration_summary, nullptr);
+      |                       ^~~~~~~
+      |                       optind
+/work/repo/units/u0956/u0956_test.cc:12:32: error: ‘iteration_summary’ was not declared in this scope
+   12 |   object.RunCallbacks(options, iteration_summary, nullptr);
+      |                                ^~~~~~~~~~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc: In member function ‘virtual void Unit_u0956_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0956/u0956_test.cc:17:3: error: ‘Minimizer’ has not been declared
+   17 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:18:3: error: ‘IterationSummary’ was not declared in this scope; did you mean ‘ceres::IterationSummary’?
+   18 |   IterationSummary iteration_summary{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::IterationSummary
+/work/ceres-solver/include/ceres/iteration_callback.h:46:21: note: ‘ceres::IterationSummary’ declared here
+   46 | struct CERES_EXPORT IterationSummary {
+      |                     ^~~~~~~~~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:19:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’
+   19 |   ceres::internal::Minimizer object{};
+      |                              ^~~~~~
+/work/repo/units/u0956/u0956_test.cc:20:23: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   20 |   object.RunCallbacks(options, iteration_summary, nullptr);
+      |                       ^~~~~~~
+      |                       optind
+/work/repo/units/u0956/u0956_test.cc:20:32: error: ‘iteration_summary’ was not declared in this scope
+   20 |   object.RunCallbacks(options, iteration_summary, nullptr);
+      |                                ^~~~~~~~~~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc: In member function ‘virtual void Unit_u0956_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0956/u0956_test.cc:25:3: error: ‘Minimizer’ has not been declared
+   25 |   Minimizer::Options options{};
+      |   ^~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:26:3: error: ‘IterationSummary’ was not declared in this scope; did you mean ‘ceres::IterationSummary’?
+   26 |   IterationSummary iteration_summary{};
+      |   ^~~~~~~~~~~~~~~~
+      |   ceres::IterationSummary
+/work/ceres-solver/include/ceres/iteration_callback.h:46:21: note: ‘ceres::IterationSummary’ declared here
+   46 | struct CERES_EXPORT IterationSummary {
+      |                     ^~~~~~~~~~~~~~~~
+/work/repo/units/u0956/u0956_test.cc:27:30: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::Minimizer’
+   27 |   ceres::internal::Minimizer object{};
+      |                              ^~~~~~
+/work/repo/units/u0956/u0956_test.cc:28:23: error: ‘options’ was not declared in this scope; did you mean ‘optind’?
+   28 |   object.RunCallbacks(options, iteration_summary, nullptr);
+      |                       ^~~~~~~
+      |                       optind
+/work/repo/units/u0956/u0956_test.cc:28:32: error: ‘iteration_summary’ was not declared in this scope
+   28 |   object.RunCallbacks(options, iteration_summary, nullptr);
+      |                                ^~~~~~~~~~~~~~~~~

@@ -1,0 +1,11 @@
+{
+  "id": "u0928",
+  "name": "ceres::internal::TrustRegionStrategy::Create",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0928/u0928_test.cc:9:3: error: ‘Options’ was not declared in this scope",
+    "units/u0928/u0928_test.cc:10:40: error: cannot declare variable ‘object’ to be of abstract type ‘ceres::internal::TrustRegionStrategy’",
+    "units/u0928/u0928_test.cc:11:17: error: ‘options’ was not declared in this scope; did you mean ‘optind’?"
+  ]
+}

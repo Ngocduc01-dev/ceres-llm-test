@@ -1,0 +1,10 @@
+{
+  "id": "u1342",
+  "name": "ceres::Problem::GetLossFunctionForResidualBlock",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1342/u1342_test.cc:8:9: error: ‘ResidualBlockId’ does not name a type",
+    "units/u1342/u1342_test.cc:10:42: error: ‘residual_block’ was not declared in this scope"
+  ]
+}

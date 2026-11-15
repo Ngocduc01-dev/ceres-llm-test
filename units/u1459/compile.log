@@ -1,0 +1,57 @@
+/work/repo/units/u1459/u1459_test.cc: In member function ‘virtual void Unit_u1459_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1459/u1459_test.cc:10:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   10 |   ceres::internal::DynamicSparseNormalCholeskySolver object{};
+      |                                                             ^
+In file included from /work/repo/units/u1459/u1459_test.cc:4:
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   59 |   explicit DynamicSparseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1459/u1459_test.cc:11:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context
+   11 |   object.SolveImplUsingEigen(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:73:25: note: declared private here
+   73 |   LinearSolver::Summary SolveImplUsingEigen(CompressedRowSparseMatrix* A,
+      |                         ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1459/u1459_test.cc: In member function ‘virtual void Unit_u1459_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1459/u1459_test.cc:16:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   16 |   ceres::internal::DynamicSparseNormalCholeskySolver object{};
+      |                                                             ^
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   59 |   explicit DynamicSparseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1459/u1459_test.cc:17:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context
+   17 |   object.SolveImplUsingEigen(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:73:25: note: declared private here
+   73 |   LinearSolver::Summary SolveImplUsingEigen(CompressedRowSparseMatrix* A,
+      |                         ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1459/u1459_test.cc: In member function ‘virtual void Unit_u1459_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1459/u1459_test.cc:22:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   22 |   ceres::internal::DynamicSparseNormalCholeskySolver object{};
+      |                                                             ^
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   59 |   explicit DynamicSparseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1459/u1459_test.cc:23:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context
+   23 |   object.SolveImplUsingEigen(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:73:25: note: declared private here
+   73 |   LinearSolver::Summary SolveImplUsingEigen(CompressedRowSparseMatrix* A,
+      |                         ^~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1459/u1459_test.cc: In member function ‘virtual void Unit_u1459_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1459/u1459_test.cc:28:61: error: no matching function for call to ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(<brace-enclosed initializer list>)’
+   28 |   ceres::internal::DynamicSparseNormalCholeskySolver object{};
+      |                                                             ^
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note: candidate: ‘ceres::internal::DynamicSparseNormalCholeskySolver::DynamicSparseNormalCholeskySolver(ceres::internal::LinearSolver::Options)’
+   59 |   explicit DynamicSparseNormalCholeskySolver(LinearSolver::Options options);
+      |            ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:59:12: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1459/u1459_test.cc:29:29: error: ‘ceres::internal::LinearSolver::Summary ceres::internal::DynamicSparseNormalCholeskySolver::SolveImplUsingEigen(ceres::internal::CompressedRowSparseMatrix*, double*)’ is private within this context
+   29 |   object.SolveImplUsingEigen(nullptr, nullptr);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/dynamic_sparse_normal_cholesky_solver.h:73:25: note: declared private here
+   73 |   LinearSolver::Summary SolveImplUsingEigen(CompressedRowSparseMatrix* A,
+      |                         ^~~~~~~~~~~~~~~~~~~

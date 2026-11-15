@@ -1,0 +1,74 @@
+{
+  "id": "u1529",
+  "name": "ceres::internal::CreateGradientCheckingProblemImpl",
+  "status": "ok",
+  "cfg_branches": 12,
+  "tests": {
+    "Unit_u1529.TC1_CallsTarget": "check_fail",
+    "Unit_u1529.TC2_CallsTarget": "check_fail",
+    "Unit_u1529.TC3_CallsTarget": "check_fail",
+    "Unit_u1529.TC4_CallsTarget": "check_fail",
+    "Unit_u1529.TC5_CallsTarget": "check_fail",
+    "Unit_u1529.TC6_CallsTarget": "check_fail",
+    "Unit_u1529.TC7_CallsTarget": "check_fail"
+  },
+  "run": {
+    "pass": 0,
+    "fail": 0,
+    "check_fail": 7,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 2,
+    "total": 44
+  },
+  "c2": {
+    "covered": 0,
+    "total": 10,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": [
+    {
+      "line": 198,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (auto* parameter_block : parameter_blocks) {"
+    },
+    {
+      "line": 204,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "if (parameter_block->IsConstant()) {"
+    },
+    {
+      "line": 209,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < parameter_block->Size(); ++i) {"
+    },
+    {
+      "line": 226,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int i = 0; i < residual_blocks.size(); ++i) {"
+    },
+    {
+      "line": 238,
+      "missing": [
+        "đúng",
+        "sai"
+      ],
+      "code": "for (int j = 0; j < residual_block->NumParameterBlocks(); ++j) {"
+    }
+  ]
+}

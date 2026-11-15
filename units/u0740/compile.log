@@ -1,0 +1,26 @@
+/work/repo/units/u0740/u0740_test.cc: In member function ‘virtual void Unit_u0740_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0740/u0740_test.cc:9:10: error: scalar object ‘parameters_data’ requires one element in initializer
+    9 |   double parameters_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~
+/work/repo/units/u0740/u0740_test.cc:10:10: error: scalar object ‘cost_data’ requires one element in initializer
+   10 |   double cost_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0740/u0740_test.cc:11:10: error: scalar object ‘gradient_data’ requires one element in initializer
+   11 |   double gradient_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~
+/work/repo/units/u0740/u0740_test.cc:12:3: error: ‘object’ was not declared in this scope
+   12 |   object.Evaluate(parameters_data, cost_data, gradient_data);
+      |   ^~~~~~
+/work/repo/units/u0740/u0740_test.cc: In member function ‘virtual void Unit_u0740_CallsTargetAlternate_Test::TestBody()’:
+/work/repo/units/u0740/u0740_test.cc:16:10: error: scalar object ‘parameters_data’ requires one element in initializer
+   16 |   double parameters_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~~~
+/work/repo/units/u0740/u0740_test.cc:17:10: error: scalar object ‘cost_data’ requires one element in initializer
+   17 |   double cost_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~
+/work/repo/units/u0740/u0740_test.cc:18:10: error: scalar object ‘gradient_data’ requires one element in initializer
+   18 |   double gradient_data = {1.0, 2.0, 3.0, 4.0, 5.0};
+      |          ^~~~~~~~~~~~~
+/work/repo/units/u0740/u0740_test.cc:19:3: error: ‘object’ was not declared in this scope
+   19 |   object.Evaluate(parameters_data, cost_data, gradient_data);
+      |   ^~~~~~

@@ -1,0 +1,49 @@
+/work/repo/units/u1366/u1366_test.cc: In member function ‘virtual void Unit_u1366_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1366/u1366_test.cc:8:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’
+    8 |   ceres::internal::ParameterBlock object{};
+      |                                          ^
+In file included from /work/repo/units/u1366/u1366_test.cc:4:
+/work/ceres-solver/internal/ceres/parameter_block.h:77:3: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(double*, int, int, ceres::Manifold*)’
+   77 |   ParameterBlock(double* user_state, int size, int index, Manifold* manifold)
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:77:3: note:   candidate expects 4 arguments, 0 provided
+/work/ceres-solver/internal/ceres/parameter_block.h:71:3: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(double*, int, int)’
+   71 |   ParameterBlock(double* user_state, int size, int index)
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:71:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/parameter_block.h:64:23: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(ceres::internal::ParameterBlock&&)’
+   64 | class CERES_NO_EXPORT ParameterBlock {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1366/u1366_test.cc: In member function ‘virtual void Unit_u1366_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1366/u1366_test.cc:14:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’
+   14 |   ceres::internal::ParameterBlock object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/parameter_block.h:77:3: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(double*, int, int, ceres::Manifold*)’
+   77 |   ParameterBlock(double* user_state, int size, int index, Manifold* manifold)
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:77:3: note:   candidate expects 4 arguments, 0 provided
+/work/ceres-solver/internal/ceres/parameter_block.h:71:3: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(double*, int, int)’
+   71 |   ParameterBlock(double* user_state, int size, int index)
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:71:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/parameter_block.h:64:23: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(ceres::internal::ParameterBlock&&)’
+   64 | class CERES_NO_EXPORT ParameterBlock {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:64:23: note:   candidate expects 1 argument, 0 provided
+/work/repo/units/u1366/u1366_test.cc: In member function ‘virtual void Unit_u1366_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1366/u1366_test.cc:20:42: error: no matching function for call to ‘ceres::internal::ParameterBlock::ParameterBlock(<brace-enclosed initializer list>)’
+   20 |   ceres::internal::ParameterBlock object{};
+      |                                          ^
+/work/ceres-solver/internal/ceres/parameter_block.h:77:3: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(double*, int, int, ceres::Manifold*)’
+   77 |   ParameterBlock(double* user_state, int size, int index, Manifold* manifold)
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:77:3: note:   candidate expects 4 arguments, 0 provided
+/work/ceres-solver/internal/ceres/parameter_block.h:71:3: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(double*, int, int)’
+   71 |   ParameterBlock(double* user_state, int size, int index)
+      |   ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:71:3: note:   candidate expects 3 arguments, 0 provided
+/work/ceres-solver/internal/ceres/parameter_block.h:64:23: note: candidate: ‘ceres::internal::ParameterBlock::ParameterBlock(ceres::internal::ParameterBlock&&)’
+   64 | class CERES_NO_EXPORT ParameterBlock {
+      |                       ^~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/parameter_block.h:64:23: note:   candidate expects 1 argument, 0 provided

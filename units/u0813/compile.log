@@ -1,0 +1,35 @@
+/work/repo/units/u0813/u0813_test.cc: In member function ‘virtual void Unit_u0813_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0813/u0813_test.cc:8:20: error: expected unqualified-id before ‘(’ token
+    8 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                    ^
+/work/repo/units/u0813/u0813_test.cc:8:21: error: ‘anonymous’ was not declared in this scope
+    8 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0813/u0813_test.cc: In member function ‘virtual void Unit_u0813_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0813/u0813_test.cc:13:20: error: expected unqualified-id before ‘(’ token
+   13 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                    ^
+/work/repo/units/u0813/u0813_test.cc:13:21: error: ‘anonymous’ was not declared in this scope
+   13 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0813/u0813_test.cc: In member function ‘virtual void Unit_u0813_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0813/u0813_test.cc:18:20: error: expected unqualified-id before ‘(’ token
+   18 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                    ^
+/work/repo/units/u0813/u0813_test.cc:18:21: error: ‘anonymous’ was not declared in this scope
+   18 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0813/u0813_test.cc: In member function ‘virtual void Unit_u0813_TC4_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0813/u0813_test.cc:23:20: error: expected unqualified-id before ‘(’ token
+   23 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                    ^
+/work/repo/units/u0813/u0813_test.cc:23:21: error: ‘anonymous’ was not declared in this scope
+   23 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                     ^~~~~~~~~
+/work/repo/units/u0813/u0813_test.cc: In member function ‘virtual void Unit_u0813_TC5_CallsTarget_Test::TestBody()’:
+/work/repo/units/u0813/u0813_test.cc:28:20: error: expected unqualified-id before ‘(’ token
+   28 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                    ^
+/work/repo/units/u0813/u0813_test.cc:28:21: error: ‘anonymous’ was not declared in this scope
+   28 |   ceres::internal::(anonymous)::BalanceCompanionMatrix(nullptr);
+      |                     ^~~~~~~~~

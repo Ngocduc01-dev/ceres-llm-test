@@ -1,0 +1,16 @@
+{
+  "id": "u1456",
+  "name": "ceres::internal::DenseQRSolver::SolveImpl",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u1456/u1456_test.cc:10:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1456/u1456_test.cc:11:41: error: no matching function for call to ‘ceres::internal::DenseQRSolver::DenseQRSolver(<brace-enclosed initializer list>)’",
+    "units/u1456/u1456_test.cc:12:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1456/u1456_test.cc:17:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1456/u1456_test.cc:18:41: error: no matching function for call to ‘ceres::internal::DenseQRSolver::DenseQRSolver(<brace-enclosed initializer list>)’",
+    "units/u1456/u1456_test.cc:19:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1456/u1456_test.cc:24:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1456/u1456_test.cc:25:41: error: no matching function for call to ‘ceres::internal::DenseQRSolver::DenseQRSolver(<brace-enclosed initializer list>)’"
+  ]
+}

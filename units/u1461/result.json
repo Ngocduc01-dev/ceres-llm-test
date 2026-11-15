@@ -1,0 +1,16 @@
+{
+  "id": "u1461",
+  "name": "ceres::internal::IterativeSchurComplementSolver::SolveImpl",
+  "status": "compile_fail",
+  "cfg_branches": 14,
+  "errors": [
+    "units/u1461/u1461_test.cc:14:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1461/u1461_test.cc:15:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1461/u1461_test.cc:16:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1461/u1461_test.cc:21:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1461/u1461_test.cc:22:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’",
+    "units/u1461/u1461_test.cc:23:38: error: ‘per_solve_options’ was not declared in this scope",
+    "units/u1461/u1461_test.cc:28:3: error: ‘LinearSolver’ has not been declared",
+    "units/u1461/u1461_test.cc:29:58: error: no matching function for call to ‘ceres::internal::IterativeSchurComplementSolver::IterativeSchurComplementSolver(<brace-enclosed initializer list>)’"
+  ]
+}

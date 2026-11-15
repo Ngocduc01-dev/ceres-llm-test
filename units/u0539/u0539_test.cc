@@ -1,10 +1,11 @@
 // FILE: u0539_test.cc
-#include "gtest/gtest.h"
 #include "ceres/is_close.h"
+#include "gtest/gtest.h"
 
 namespace ceres {
 namespace internal {
-// Path P1: START -> CFG nodes -> END.
+
+// Path P1: node 2: đúng, node 4: đúng, node 7: đúng
 TEST(IsCloseTest, NullErrorPointersAndOneInputIsZero) {
   const double x = 0.0;
   const double y = 3.7;
@@ -12,7 +13,8 @@ TEST(IsCloseTest, NullErrorPointersAndOneInputIsZero) {
   bool result = IsClose(x, y, relative_precision, nullptr, nullptr);
   (void)result;
 }
-// Path P1: START -> CFG nodes -> END.
+
+// Path P2: node 2: sai, node 4: sai, node 7: sai
 TEST(IsCloseTest, NonNullErrorPointersAndNonZeroInputs) {
   const double x = 5.2;
   const double y = 8.4;

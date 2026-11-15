@@ -1,0 +1,63 @@
+/work/repo/units/u1396/u1396_test.cc: In member function ‘virtual void Unit_u1396_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1396/u1396_test.cc:8:19: error: ‘std::basic_ostream<_CharT, _Traits>::basic_ostream() [with _CharT = char; _Traits = std::char_traits<char>]’ is protected within this context
+    8 |   std::ostream os{};
+      |                   ^
+In file included from /work/ceres-solver/internal/ceres/gtest/gtest.h:58,
+                 from /work/repo/units/u1396/u1396_test.cc:2:
+/usr/include/c++/14/ostream:437:7: note: declared protected here
+  437 |       basic_ostream()
+      |       ^~~~~~~~~~~~~
+/work/repo/units/u1396/u1396_test.cc:9:3: error: ‘FunctionSample’ was not declared in this scope; did you mean ‘ceres::internal::FunctionSample’?
+    9 |   FunctionSample sample{};
+      |   ^~~~~~~~~~~~~~
+      |   ceres::internal::FunctionSample
+In file included from /work/ceres-solver/internal/ceres/line_search.h:40,
+                 from /work/repo/units/u1396/u1396_test.cc:3:
+/work/ceres-solver/internal/ceres/function_sample.h:50:24: note: ‘ceres::internal::FunctionSample’ declared here
+   50 | struct CERES_NO_EXPORT FunctionSample {
+      |                        ^~~~~~~~~~~~~~
+/work/repo/units/u1396/u1396_test.cc:10:20: error: ‘operator<<’ is not a member of ‘ceres::internal’
+   10 |   ceres::internal::operator<<(os, sample);
+      |                    ^~~~~~~~~~
+/work/repo/units/u1396/u1396_test.cc:10:20: note: suggested alternatives:
+/work/ceres-solver/internal/ceres/gtest/gtest.h:2722:6: note:   ‘operator<<’
+ 2722 | void operator<<(const testing::internal::Secret&, int);
+      |      ^~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:50,
+                 from /work/ceres-solver/include/ceres/internal/eigen.h:34,
+                 from /work/ceres-solver/internal/ceres/function_sample.h:37:
+/usr/include/c++/14/complex:563:5: note:   ‘std::operator<<’
+  563 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const complex<_Tp>& __x)
+      |     ^~~~~~~~
+/work/ceres-solver/internal/ceres/gtest/gtest.h:7925:15: note:   ‘testing::operator<<’
+ 7925 | std::ostream& operator<<(std::ostream& os, const TestPartResult& result);
+      |               ^~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:269:
+/usr/include/eigen3/Eigen/src/Core/IO.h:249:16: note:   ‘Eigen::operator<<’
+  249 | std::ostream & operator <<
+      |                ^~~~~~~~
+In file included from /usr/include/c++/14/iomanip:50,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:2655:
+/usr/include/c++/14/bits/quoted_string.h:117:7: note:   ‘std::__detail::operator<<’
+  117 |       operator<<(std::basic_ostream<_CharT, _Traits>& __os,
+      |       ^~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:176:
+/usr/include/eigen3/Eigen/src/Core/arch/Default/Half.h:761:35: note:   ‘Eigen::half_impl::operator<<’
+  761 | EIGEN_ALWAYS_INLINE std::ostream& operator << (std::ostream& os, const half& v) {
+      |                                   ^~~~~~~~
+In file included from /usr/include/eigen3/Eigen/Core:177:
+/usr/include/eigen3/Eigen/src/Core/arch/Default/BFloat16.h:594:35: note:   ‘Eigen::bfloat16_impl::operator<<’
+  594 | EIGEN_ALWAYS_INLINE std::ostream& operator << (std::ostream& os, const bfloat16& v) {
+      |                                   ^~~~~~~~
+/work/ceres-solver/internal/ceres/gtest/gtest.h:5257:6: note:   ‘testing::internal::internal_stream_operator_without_lexical_name_lookup::operator<<’
+ 5257 | void operator<<(LookupBlocker, LookupBlocker);
+      |      ^~~~~~~~
+/work/repo/units/u1396/u1396_test.cc:10:35: error: ‘sample’ was not declared in this scope; did you mean ‘std::sample’?
+   10 |   ceres::internal::operator<<(os, sample);
+      |                                   ^~~~~~
+      |                                   std::sample
+In file included from /usr/include/c++/14/algorithm:61,
+                 from /usr/include/eigen3/Eigen/Core:95:
+/usr/include/c++/14/bits/stl_algo.h:5825:5: note: ‘std::sample’ declared here
+ 5825 |     sample(_PopulationIterator __first, _PopulationIterator __last,
+      |     ^~~~~~

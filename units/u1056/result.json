@@ -1,0 +1,13 @@
+{
+  "id": "u1056",
+  "name": "ceres::SubsetManifold::RightMultiplyByPlusJacobian",
+  "status": "compile_fail",
+  "cfg_branches": 8,
+  "errors": [
+    "units/u1056/u1056_test.cc:8:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u1056/u1056_test.cc:15:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u1056/u1056_test.cc:22:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u1056/u1056_test.cc:29:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’",
+    "units/u1056/u1056_test.cc:36:32: error: no matching function for call to ‘ceres::SubsetManifold::SubsetManifold(<brace-enclosed initializer list>)’"
+  ]
+}

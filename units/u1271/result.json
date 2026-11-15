@@ -1,0 +1,31 @@
+{
+  "id": "u1271",
+  "name": "ceres::internal::Program::IsBoundsConstrained",
+  "status": "ok",
+  "cfg_branches": 8,
+  "tests": {
+    "Unit_u1271.TC1_CallsTarget": "pass",
+    "Unit_u1271.TC2_CallsTarget": "pass",
+    "Unit_u1271.TC3_CallsTarget": "pass",
+    "Unit_u1271.TC4_CallsTarget": "pass",
+    "Unit_u1271.TC5_CallsTarget": "pass"
+  },
+  "run": {
+    "pass": 5,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 3,
+    "total": 12
+  },
+  "c2": {
+    "covered": 0,
+    "total": 0,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
+}

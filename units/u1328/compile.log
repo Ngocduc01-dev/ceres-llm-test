@@ -1,0 +1,27 @@
+In file included from /usr/include/c++/14/memory:78,
+                 from /work/ceres-solver/internal/ceres/gtest/gtest.h:57,
+                 from /work/repo/units/u1328/u1328_test.cc:2:
+/usr/include/c++/14/bits/unique_ptr.h: In instantiation of ‘std::__detail::__unique_ptr_t<_Tp> std::make_unique(_Args&& ...) [with _Tp = ceres::internal::PartitionedMatrixView<2, 3, 6>; _Args = {ceres::internal::BlockSparseMatrix&, int&}; __detail::__unique_ptr_t<_Tp> = __detail::__unique_ptr_t<ceres::internal::PartitionedMatrixView<2, 3, 6> >]’:
+/work/ceres-solver/internal/ceres/fake_bundle_adjustment_jacobian.h:61:40:   required from ‘std::pair<std::unique_ptr<ceres::internal::PartitionedMatrixView<2, kEBlockSize, kFBlockSize> >, std::unique_ptr<ceres::internal::BlockSparseMatrix> > ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian(int, int, double, std::mt19937&) [with int kEBlockSize = 3; int kFBlockSize = 6; std::mt19937 = std::mersenne_twister_engine<long unsigned int, 32, 624, 397, 31, 2567483615, 11, 4294967295, 7, 2636928640, 15, 4022730752, 18, 1812433253>]’
+   61 |       std::make_unique<PartitionedView>(*block_sparse_matrix, num_points);
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/work/repo/units/u1328/u1328_test.cc:13:65:   required from here
+   13 |   ceres::internal::CreateFakeBundleAdjustmentPartitionedJacobian(num_cameras, num_points, visibility, rng);
+      |   ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/14/bits/unique_ptr.h:1076:30: error: no matching function for call to ‘ceres::internal::PartitionedMatrixView<2, 3, 6>::PartitionedMatrixView(ceres::internal::BlockSparseMatrix&, int&)’
+ 1076 |     { return unique_ptr<_Tp>(new _Tp(std::forward<_Args>(__args)...)); }
+      |                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from /work/ceres-solver/internal/ceres/fake_bundle_adjustment_jacobian.h:39,
+                 from /work/repo/units/u1328/u1328_test.cc:4:
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:139:3: note: candidate: ‘ceres::internal::PartitionedMatrixView<kRowBlockSize, kEBlockSize, kFBlockSize>::PartitionedMatrixView(const ceres::internal::LinearSolver::Options&, const ceres::internal::BlockSparseMatrix&) [with int kRowBlockSize = 2; int kEBlockSize = 3; int kFBlockSize = 6]’
+  139 |   PartitionedMatrixView(const LinearSolver::Options& options,
+      |   ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:139:54: note:   no known conversion for argument 1 from ‘ceres::internal::BlockSparseMatrix’ to ‘const ceres::internal::LinearSolver::Options&’
+  139 |   PartitionedMatrixView(const LinearSolver::Options& options,
+      |                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:23: note: candidate: ‘ceres::internal::PartitionedMatrixView<2, 3, 6>::PartitionedMatrixView(const ceres::internal::PartitionedMatrixView<2, 3, 6>&)’
+  134 | class CERES_NO_EXPORT PartitionedMatrixView final
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:23: note:   candidate expects 1 argument, 2 provided
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:23: note: candidate: ‘ceres::internal::PartitionedMatrixView<2, 3, 6>::PartitionedMatrixView(ceres::internal::PartitionedMatrixView<2, 3, 6>&&)’
+/work/ceres-solver/internal/ceres/partitioned_matrix_view.h:134:23: note:   candidate expects 1 argument, 2 provided

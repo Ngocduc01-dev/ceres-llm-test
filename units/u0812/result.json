@@ -1,0 +1,16 @@
+{
+  "id": "u0812",
+  "name": "ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap",
+  "status": "compile_fail",
+  "cfg_branches": 6,
+  "errors": [
+    "units/u0812/u0812_test.cc:9:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0812/u0812_test.cc:10:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context",
+    "units/u0812/u0812_test.cc:16:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0812/u0812_test.cc:17:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context",
+    "units/u0812/u0812_test.cc:23:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0812/u0812_test.cc:24:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context",
+    "units/u0812/u0812_test.cc:30:57: error: no matching function for call to ‘ceres::internal::VisibilityBasedPreconditioner::VisibilityBasedPreconditioner(<brace-enclosed initializer list>)’",
+    "units/u0812/u0812_test.cc:31:30: error: ‘void ceres::internal::VisibilityBasedPreconditioner::FlattenMembershipMap(const std::unordered_map<int, int>&, std::vector<int>*) const’ is private within this context"
+  ]
+}

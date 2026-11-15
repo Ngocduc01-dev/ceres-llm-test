@@ -1,0 +1,9 @@
+{
+  "id": "u1005",
+  "name": "ceres::internal::LineSearchFunction::ResetTimeStatistics",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u1005/u1005_test.cc:10:46: error: no matching function for call to ‘ceres::internal::LineSearchFunction::LineSearchFunction(<brace-enclosed initializer list>)’"
+  ]
+}

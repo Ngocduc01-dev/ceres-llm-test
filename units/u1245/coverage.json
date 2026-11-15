@@ -1,0 +1,1 @@
+{"gcovr/format_version": "0.6", "files": [{"file": "internal/ceres/gradient_problem_solver.cc", "lines": [{"line_number": 207, "count": 1, "branches": []}, {"line_number": 214, "count": 1, "branches": []}, {"line_number": 215, "count": 1, "branches": []}, {"line_number": 216, "count": 1, "branches": []}, {"line_number": 217, "count": 1, "branches": []}], "functions": []}]}

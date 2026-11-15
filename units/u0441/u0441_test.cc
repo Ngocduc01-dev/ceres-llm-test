@@ -2,18 +2,25 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-TEST(Unit_u0441, EvaluatesValueAndDerivative) {
-  const double data[16] = {0.0, 1.0, 2.0, 3.0, 1.0, 2.0, 3.0, 4.0,
-                           2.0, 3.0, 4.0, 5.0, 3.0, 4.0, 5.0, 6.0};
-  ceres::Grid2D<double, 1> grid(data, 0, 4, 0, 4);
-  ceres::BiCubicInterpolator<ceres::Grid2D<double, 1>> interpolator(grid);
+// Path P1: START -> 1 -> 2 (đúng) -> 3 -> END
+TEST(BiCubicInterpolatorEvaluate, DfdcNotNull) {
+  const double data[4] = {1.0, 2.0, 3.0, 4.0};
+  ceres::Grid2D<double> grid(data, 0, 2, 0, 2);
+  ceres::BiCubicInterpolator<ceres::Grid2D<double>> interpolator(grid);
 
-  double f[1] = {};
-  double dfdr[1] = {};
-  double dfdc[1] = {};
-  interpolator.Evaluate(1.4, 1.6, f, dfdr, dfdc);
+  double f = 0.0;
+  double dfdr = 0.0;
+  double dfdc = 0.0;
+  interpolator.Evaluate(0.6, 1.3, &f, &dfdr, &dfdc);
+}
 
-  EXPECT_NEAR(f[0], 3.0, 1e-12);
-  EXPECT_NEAR(dfdr[0], 1.0, 1e-12);
-  EXPECT_NEAR(dfdc[0], 1.0, 1e-12);
+// Path P2: START -> 1 -> 2 (sai) -> END
+TEST(BiCubicInterpolatorEvaluate, DfdcNull) {
+  const double data[4] = {1.0, 2.0, 3.0, 4.0};
+  ceres::Grid2D<double> grid(data, 0, 2, 0, 2);
+  ceres::BiCubicInterpolator<ceres::Grid2D<double>> interpolator(grid);
+
+  double f = 0.0;
+  double dfdr = 0.0;
+  interpolator.Evaluate(1.4, 0.7, &f, &dfdr, nullptr);
 }

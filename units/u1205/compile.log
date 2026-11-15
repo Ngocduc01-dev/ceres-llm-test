@@ -1,0 +1,47 @@
+/work/repo/units/u1205/u1205_test.cc: In member function ‘virtual void Unit_u1205_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1205/u1205_test.cc:8:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+    8 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+In file included from /work/ceres-solver/include/ceres/conditioned_cost_function.h:42,
+                 from /work/repo/units/u1205/u1205_test.cc:3:
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u1205/u1205_test.cc:9:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+    9 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1205/u1205_test.cc: In member function ‘virtual void Unit_u1205_TC2_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1205/u1205_test.cc:15:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+   15 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u1205/u1205_test.cc:16:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   16 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided
+/work/repo/units/u1205/u1205_test.cc: In member function ‘virtual void Unit_u1205_TC3_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1205/u1205_test.cc:22:3: error: ‘Ownership’ was not declared in this scope; did you mean ‘ceres::Ownership’?
+   22 |   Ownership ownership{};
+      |   ^~~~~~~~~
+      |   ceres::Ownership
+/work/ceres-solver/include/ceres/types.h:51:6: note: ‘ceres::Ownership’ declared here
+   51 | enum Ownership {
+      |      ^~~~~~~~~
+/work/repo/units/u1205/u1205_test.cc:23:41: error: no matching function for call to ‘ceres::ConditionedCostFunction::ConditionedCostFunction(<brace-enclosed initializer list>)’
+   23 |   ceres::ConditionedCostFunction object{};
+      |                                         ^
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note: candidate: ‘ceres::ConditionedCostFunction::ConditionedCostFunction(ceres::CostFunction*, const std::vector<ceres::CostFunction*>&, ceres::Ownership)’
+   82 |   ConditionedCostFunction(CostFunction* wrapped_cost_function,
+      |   ^~~~~~~~~~~~~~~~~~~~~~~
+/work/ceres-solver/include/ceres/conditioned_cost_function.h:82:3: note:   candidate expects 3 arguments, 0 provided

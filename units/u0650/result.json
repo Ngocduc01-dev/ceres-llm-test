@@ -1,0 +1,9 @@
+{
+  "id": "u0650",
+  "name": "ceres::internal::BlockRandomAccessMatrix::~BlockRandomAccessMatrix",
+  "status": "compile_fail",
+  "cfg_branches": 0,
+  "errors": [
+    "units/u0650/u0650_test.cc:7:3: error: ‘BlockRandomAccessMatrix’ was not declared in this scope; did you mean ‘ceres::internal::BlockRandomAccessMatrix’?"
+  ]
+}

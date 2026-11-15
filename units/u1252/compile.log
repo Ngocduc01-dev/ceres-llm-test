@@ -1,0 +1,73 @@
+In file included from /work/repo/units/u1252/u1252_test.cc:3:
+/work/ceres-solver/internal/ceres/program_evaluator.h:109:19: error: ‘SparseMatrix’ has not been declared
+  109 |   void operator()(SparseMatrix* /*jacobian*/, int /*num_parameters*/) {}
+      |                   ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:49: error: expected class-name before ‘{’ token
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                                                 ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:26: error: ‘Evaluator’ does not name a type
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                          ^~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: expected unqualified-id before ‘&’ token
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                                            ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: expected ‘)’ before ‘&’ token
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                   ~                        ^
+      |                                            )
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: constructors may not be ref-qualified
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:44: error: expected ‘;’ at end of member declaration
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                                            ^
+      |                                             ;
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:46: error: ‘options’ does not name a type
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |                                              ^~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:19: error: ‘SparseMatrix’ was not declared in this scope
+  130 |   std::unique_ptr<SparseMatrix> CreateJacobian() const final {
+      |                   ^~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:31: error: template argument 1 is invalid
+  130 |   std::unique_ptr<SparseMatrix> CreateJacobian() const final {
+      |                               ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:130:31: error: template argument 2 is invalid
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:23: error: ‘Evaluator’ does not name a type
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                       ^~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:49: error: expected unqualified-id before ‘&’ token
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                                                 ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:49: error: expected ‘)’ before ‘&’ token
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                ~                                ^
+      |                                                 )
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:49: error: expected ‘;’ at end of member declaration
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                                                 ^
+      |                                                  ;
+/work/ceres-solver/internal/ceres/program_evaluator.h:134:51: error: ‘evaluate_options’ does not name a type
+  134 |   bool Evaluate(const Evaluator::EvaluateOptions& evaluate_options,
+      |                                                   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:381:3: error: ‘Evaluator’ does not name a type
+  381 |   Evaluator::Options options_;
+      |   ^~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h: In member function ‘bool ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>::Plus(const double*, const double*, double*) const’:
+/work/ceres-solver/internal/ceres/program_evaluator.h:307:41: error: ‘options_’ was not declared in this scope; did you mean ‘optind’?
+  307 |         state, delta, state_plus_delta, options_.context, options_.num_threads);
+      |                                         ^~~~~~~~
+      |                                         optind
+/work/repo/units/u1252/u1252_test.cc: In member function ‘virtual void Unit_u1252_TC1_CallsTarget_Test::TestBody()’:
+/work/repo/units/u1252/u1252_test.cc:7:44: error: class template argument deduction failed:
+    7 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/repo/units/u1252/u1252_test.cc:7:44: error: no matching function for call to ‘ProgramEvaluator()’
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(...)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  117 |   ProgramEvaluator(const Evaluator::Options& options, Program* program)
+      |   ^~~~~~~~~~~~~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:117:3: note:   template argument deduction/substitution failed:
+/work/repo/units/u1252/u1252_test.cc:7:44: note:   couldn’t deduce template parameter ‘EvaluatePreparer’
+    7 |   ceres::internal::ProgramEvaluator object{};
+      |                                            ^
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note: candidate: ‘template<class EvaluatePreparer, class JacobianWriter, class JacobianFinalizer> ProgramEvaluator(ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>)-> ceres::internal::ProgramEvaluator<EvaluatePreparer, JacobianWriter, JacobianFinalizer>’
+  115 | class ProgramEvaluator final : public Evaluator {
+      |                        ^~~~~
+/work/ceres-solver/internal/ceres/program_evaluator.h:115:24: note:   candidate expects 1 argument, 0 provided
