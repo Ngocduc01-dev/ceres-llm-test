@@ -19,6 +19,7 @@ import { fileURLToPath } from "node:url";
 
 const REPO = join(dirname(fileURLToPath(import.meta.url)), "..");
 const MODEL = "claude-sonnet-5-5";
+const SYSTEM = "Bạn là kỹ sư kiểm thử phần mềm C++. Làm đúng theo yêu cầu trong tin nhắn.";
 const EFFORT = "low";
 const TIMEOUT_MS = 15 * 60 * 1000;
 const STOP_PATTERNS = /auth|login|oauth|rate.?limit|usage limit|quota|credit|overloaded|session expired/i;
@@ -62,7 +63,10 @@ if (flag("--dry-run")) {
 // ---- gọi Claude Code CLI: 1 lần gọi = 1 prompt, không tool, không lưu phiên
 function callClaude(prompt) {
   return new Promise((resolve) => {
-    const cmd = `claude -p --model ${MODEL} --effort ${EFFORT} --tools "" --output-format json --no-session-persistence`;
+    // --system-prompt + --setting-sources "" + --strict-mcp-config: KHÔNG gửi kèm system prompt mặc định của Claude Code,
+    // CLAUDE.md, memory, MCP của máy -> model chỉ nhận đúng prompt.md (~65k -> ~1k token phụ mỗi lần gọi)
+    const cmd = `claude -p --model ${MODEL} --effort ${EFFORT} --tools "" --output-format json --no-session-persistence ` +
+      `--system-prompt "${SYSTEM}" --setting-sources "" --strict-mcp-config`;
     const child = spawn(cmd, { shell: true, cwd: REPO });
     let out = "", err = "";
     const timer = setTimeout(() => { child.kill(); err += "\n[timeout]"; }, TIMEOUT_MS);
@@ -113,7 +117,7 @@ for (const [i, u] of todo.entries()) {
   const test = extractTest(r.json.result, u.id);
   if (test) writeFileSync(join(d, test.name), test.code, "utf8");
   ok++;
-  const tok = r.json.usage ? ` ${r.json.usage.input_tokens + (r.json.usage.cache_read_input_tokens || 0)}→${r.json.usage.output_tokens} tok` : "";
+  const tok = r.json.usage ? ` ${r.json.usage.input_tokens + (r.json.usage.cache_read_input_tokens || 0) + (r.json.usage.cache_creation_input_tokens || 0)}→${r.json.usage.output_tokens} tok` : "";
   log(`[${i + 1}/${todo.length}] ${u.id} OK (${secs}s${tok})${test ? "" : " – KHÔNG tìm thấy khối code"}`);
 }
 console.log(`Xong: ${ok} thành công, ${fail} lỗi. Log: logs/raw/generate.log`);

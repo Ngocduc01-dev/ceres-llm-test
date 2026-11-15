@@ -209,9 +209,11 @@ Phase 3  Gom context ─► Phase 4  CFG (Clang) ─► Phase 5  Sinh test (1 pr
 - **Vòng lặp:** có cận → 0, 1, 2, m, n−1, n, n+1 lần; không có cận → 0, 1, 2 lần + mỗi lối thoát 1 test; cận là biến → chọn ngẫu nhiên.
 - **Model:** Claude Sonnet 5.5, effort low, **gọi qua Claude Code CLI** (dùng gói Claude sẵn có, không cần API key):
   ```bash
-  claude -p --model claude-sonnet-5-5 --effort low --tools "" --output-format json --no-session-persistence < units/<id>/prompt.md
+  claude -p --model claude-sonnet-5-5 --effort low --tools "" --output-format json --no-session-persistence \
+    --system-prompt "<1 câu vai trò>" --setting-sources "" --strict-mcp-config < units/<id>/prompt.md
   ```
   - `--tools ""`: tắt mọi tool → model chỉ đọc prompt và trả lời (đúng là "1 lần gọi LLM").
+  - `--system-prompt`, `--setting-sources ""`, `--strict-mcp-config`: không gửi kèm system prompt mặc định của Claude Code, CLAUDE.md, memory, MCP của máy → model chỉ nhận đúng `prompt.md`. Smoke test lần 1 chưa có các cờ này: mỗi lần gọi tốn ~65k token đầu vào; có cờ: ~1k + prompt.
   - Chạy **tuần tự**, gặp giới hạn lượt dùng thì **dừng**; lần sau chạy lại sẽ **bỏ qua unit đã có `response.md`** → gọi được đến đâu thì lưu đến đó.
   - Cần đăng nhập CLI một lần trong terminal (`claude` rồi `/login`).
 - **Thứ tự chạy:** 20 unit smoke test → toàn bộ theo `topo_level` từ 0 lên.
