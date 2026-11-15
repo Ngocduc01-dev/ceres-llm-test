@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/jet.h"
 
-namespace ceres {
-// Path P1 calls fmin(const Lhs& x, const Rhs& y).
-TEST(Unitu0547, CallsTarget) {
-  fmin({}, {});
+// Path P1: START -> 1 -> 2 -> 3 -> END.
+TEST(Unit_u0547, PathP1) {
+  ceres::Jet<double, 2> x(1.0), y(2.0);
+  ceres::fmin(x, y);
 }
-}  // namespace ceres

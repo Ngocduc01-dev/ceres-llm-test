@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls MatrixTransposeMatrixMultiply(xem mã nguồn – hàm được sinh ra từ macro).
-TEST(Unitu0543, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0543, CallsTarget) {
   MatrixTransposeMatrixMultiply({});
 }
 }  // namespace internal

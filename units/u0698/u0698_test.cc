@@ -3,8 +3,8 @@
 #include "ceres/rotation.h"
 
 namespace ceres {
-// Path P1 calls AngleAxisToRotationMatrix(const T* angle_axis, const MatrixAdapter<T, row_stride, col_stride>& R).
-TEST(Unitu0698, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0698, CallsTarget) {
   double angle_axis_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   AngleAxisToRotationMatrix(angle_axis_data, {});
 }

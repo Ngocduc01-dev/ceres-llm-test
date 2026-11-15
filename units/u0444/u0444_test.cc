@@ -2,12 +2,11 @@
 #include "gtest/gtest.h"
 #include "ceres/dynamic_numeric_diff_cost_function.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0444, PathP1) {
   { ceres::DynamicNumericDiffCostFunction<PlusFunctor, RIDDERS> target; }
 }
-
-// Path P2: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0444, PathP2) {
   { ceres::DynamicNumericDiffCostFunction<PlusFunctor, RIDDERS> target; }
 }

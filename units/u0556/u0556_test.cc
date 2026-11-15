@@ -5,13 +5,12 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls Degree2MaximumSpanningForest(const WeightedGraph<Vertex>& graph).
-TEST(Unitu0556, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0556, CallsTarget) {
   Degree2MaximumSpanningForest({});
 }
-
-// Path P2 calls Degree2MaximumSpanningForest(const WeightedGraph<Vertex>& graph) on the alternate CFG path.
-TEST(Unitu0556, CallsTargetAlternate) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0556, CallsTargetAlternate) {
   Degree2MaximumSpanningForest({});
 }
 }  // namespace internal

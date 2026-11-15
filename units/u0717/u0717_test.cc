@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls EvaluatePolynomial(const Vector & polynomial, double x).
-TEST(Unitu0717, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0717, CallsTarget) {
   EvaluatePolynomial({}, 1.0);
 }
 }  // namespace internal

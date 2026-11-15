@@ -4,13 +4,12 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls CheckForDuplicates(std::vector<T> blocks).
-TEST(Unitu0549, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0549, CallsTarget) {
   CheckForDuplicates({});
 }
-
-// Path P2 calls CheckForDuplicates(std::vector<T> blocks) on the alternate CFG path.
-TEST(Unitu0549, CallsTargetAlternate) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0549, CallsTargetAlternate) {
   CheckForDuplicates({});
 }
 }  // namespace internal

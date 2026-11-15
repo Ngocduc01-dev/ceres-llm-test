@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls IsSolutionUsable(const SummaryType& summary).
-TEST(Unitu0512, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0512, CallsTarget) {
   IsSolutionUsable({});
 }
 }  // namespace internal

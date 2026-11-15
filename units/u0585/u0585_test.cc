@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// Path P1 calls IsBlockPairOffDiagonal(const int block1, const int block2) const.
-TEST(Unitu0585, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0585, CallsTarget) {
   object.IsBlockPairOffDiagonal(1, 1);
 }

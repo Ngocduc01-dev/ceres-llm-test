@@ -2,14 +2,10 @@
 #include "gtest/gtest.h"
 #include "ceres/internal/sphere_manifold_functions.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> 1 -> 2 -> 3 -> 4 -> 2 -> 5 -> END.
 TEST(Unit_u0449, PathP1) {
-  const VT& arg_0{}
-  ceres::internal::ComputeSphereManifoldPlusJacobian<double>(arg_0, nullptr);
-}
-
-// Path P2: START -> 1 -> END.
-TEST(Unit_u0449, PathP2) {
-  const VT& arg_0{}
-  ceres::internal::ComputeSphereManifoldPlusJacobian<double>(arg_0, nullptr);
+  Eigen::Matrix<double, 4, 1> x;
+  x << 1.0, 0.0, 0.0, 0.0;
+  Eigen::Matrix<double, 4, 3> jacobian;
+  ceres::internal::ComputeSphereManifoldPlusJacobian(x, &jacobian);
 }

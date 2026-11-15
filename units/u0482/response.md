@@ -1,26 +1,24 @@
-**A. Test paths**
+# Unit u0482
+## A. Test paths
 
 | Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START → 1 → 2 → END | node 1: đúng (`manifold_ == nullptr`) |
-| P2 | START → 1 → 2 → END | node 1: sai (`manifold_ != nullptr`) |
+| P1 | START → 1 → 2 → END | Theo CFG của prompt.md. |
+| P2 | START → 1 → 2 → END | Theo CFG của prompt.md. |
 
-CFG khớp với mã nguồn. Hàm không có vòng lặp và không có `CHECK`.
-
-**B. Bộ test case**
+## B. Bộ test case
 
 | Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | `size` từ 1 đến 5, không truyền manifold (`manifold_ == nullptr`) | `size = 3`, `index = 0`, mảng `{1.0, 2.0, 3.0}` |
-| TC2 | P2 | `size` từ 1 đến 5, truyền manifold khác `nullptr` có `AmbientSize() == size`. Dùng `EuclideanManifold<3>` nên `size = 3` | `size = 3`, `index = 0`, mảng `{1.0, 2.0, 3.0}`, `EuclideanManifold<3>` |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-**C. Nhánh không test**
+## C. Nhánh không test
 
-Không có. Cả 2 nhánh của node 1 đều có test.
+Không ghi nhận nhánh không thể test từ CFG cung cấp.
+C2 dự kiến = 2 / 2.
 
-`C2 dự kiến = 2 / 2`
-
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0482_test.cc
@@ -32,6 +30,7 @@ namespace ceres {
 namespace internal {
 
 // P1: START -> 1 (đúng: manifold_ == nullptr) -> 2 -> END
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockTangentSizeTest, TC1_NoManifold) {
   double values[3] = {1.0, 2.0, 3.0};
   ParameterBlock block(values, 3, 0);
@@ -39,6 +38,7 @@ TEST(ParameterBlockTangentSizeTest, TC1_NoManifold) {
 }
 
 // P2: START -> 1 (sai: manifold_ != nullptr) -> 2 -> END
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockTangentSizeTest, TC2_WithManifold) {
   double values[3] = {1.0, 2.0, 3.0};
   EuclideanManifold<3> manifold;

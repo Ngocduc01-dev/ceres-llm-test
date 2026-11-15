@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/casts.h"
 
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0252, PathP1) {
-  // Path P1: START -> 1 -> END.
   
   ceres::implicit_cast<int>(0);
 }

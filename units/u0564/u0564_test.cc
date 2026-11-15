@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/internal/fixed_array.h"
 
-// Path P1 calls UsingInlinedStorage(size_type n).
-TEST(Unitu0564, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0564, CallsTarget) {
   object.UsingInlinedStorage(1);
 }

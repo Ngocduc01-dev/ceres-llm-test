@@ -7,6 +7,7 @@ namespace ceres {
 namespace internal {
 
 // P1: START -> 1 (đúng: manifold_ == nullptr) -> 2 -> END
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockTangentSizeTest, TC1_NoManifold) {
   double values[3] = {1.0, 2.0, 3.0};
   ParameterBlock block(values, 3, 0);
@@ -14,6 +15,7 @@ TEST(ParameterBlockTangentSizeTest, TC1_NoManifold) {
 }
 
 // P2: START -> 1 (sai: manifold_ != nullptr) -> 2 -> END
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockTangentSizeTest, TC2_WithManifold) {
   double values[3] = {1.0, 2.0, 3.0};
   EuclideanManifold<3> manifold;

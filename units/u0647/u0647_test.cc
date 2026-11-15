@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/tiny_solver_autodiff_function.h"
 
-// Path P1 calls TinySolverAutoDiffFunction(const CostFunctor & cost_functor).
-TEST(Unitu0647, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0647, CallsTarget) {
   object.TinySolverAutoDiffFunction({});
 }

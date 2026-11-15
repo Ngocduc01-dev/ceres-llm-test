@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-// Path P1 calls BiCubicInterpolator(const Grid & grid).
-TEST(Unitu0695, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0695, CallsTarget) {
   object.BiCubicInterpolator({});
 }

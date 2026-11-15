@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/internal/fixed_array.h"
 
-// Path P1 calls FixedArray(std::initializer_list<value_type> init_list, const allocator_type & a).
-TEST(Unitu0628, CallsTarget) {
-  object.FixedArray({}, {});
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0628, PathP1) {
+  ceres::internal::FixedArray<int, 10> target{1, 2};
 }

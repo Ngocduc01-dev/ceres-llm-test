@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 namespace ceres {
-// Path P1 calls DoglegTypeToString(DoglegType type).
-TEST(Unitu0732, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0732, CallsTarget) {
   DoglegTypeToString({});
 }
 }  // namespace ceres

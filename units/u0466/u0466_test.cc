@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/corrector.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0466, PathP1) {
   const int arg_0 = 1;
   double * arg_1 = nullptr;

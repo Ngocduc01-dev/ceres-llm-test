@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/schur_eliminator.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0406, PathP1) {
   int arg_0 = 1;
   ceres::internal::SchurEliminator::Chunk target(arg_0);

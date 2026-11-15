@@ -3,7 +3,7 @@
 #include "ceres/trust_region_minimizer.h"
 #include "ceres/trust_region_step_evaluator.h"
 
-// Path P1 calls IsStepSuccessful().
-TEST(Unitu0602, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0602, CallsTarget) {
   object.IsStepSuccessful();
 }

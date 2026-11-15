@@ -3,7 +3,7 @@
 #include "ceres/conjugate_gradients_solver.h"
 #include "ceres/linear_operator.h"
 
-// Path P1 calls LinearOperatorAdapter(LinearOperator & linear_operator).
-TEST(Unitu0655, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0655, CallsTarget) {
   object.LinearOperatorAdapter({});
 }

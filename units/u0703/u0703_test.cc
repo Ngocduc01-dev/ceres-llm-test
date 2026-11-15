@@ -3,7 +3,7 @@
 #include "ceres/iteration_callback.h"
 #include "ceres/callbacks.h"
 
-// Path P1 calls operator()(const IterationSummary & summary).
-TEST(Unitu0703, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0703, CallsTarget) {
   object.operator({});
 }

@@ -2,21 +2,19 @@
 #include "gtest/gtest.h"
 #include "ceres/parameter_block.h"
 
-// Path P1: START -> 1 -> 2 -> 3 -> END (node 1: đúng, node 2: đúng)
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockSetUpperBound, P1_MaxBoundWithoutExistingBounds) {
   double state[3] = {0.1, 0.2, 0.3};
   ceres::internal::ParameterBlock block(state, 3, 0);
   block.SetUpperBound(2, std::numeric_limits<double>::max());
 }
-
-// Path P2: START -> 1 -> 2 -> 4 -> 5 -> 6 -> END (node 1: đúng, node 2: sai, node 4: đúng)
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockSetUpperBound, P2_AllocateBoundsThenSet) {
   double state[3] = {0.1, 0.2, 0.3};
   ceres::internal::ParameterBlock block(state, 3, 0);
   block.SetUpperBound(0, 5.0);
 }
-
-// Path P3: START -> 1 -> 2 -> 4 -> 6 -> END (node 1: đúng, node 2: sai, node 4: sai)
+// Path P1: START -> CFG nodes -> END.
 TEST(ParameterBlockSetUpperBound, P3_BoundsAlreadyAllocated) {
   double state[3] = {0.1, 0.2, 0.3};
   ceres::internal::ParameterBlock block(state, 3, 0);

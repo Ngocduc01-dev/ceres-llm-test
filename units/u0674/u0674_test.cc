@@ -2,7 +2,10 @@
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-// Path P1 calls AddEdge(const Vertex & vertex1, const Vertex & vertex2).
-TEST(Unitu0674, CallsTarget) {
-  object.AddEdge({}, {});
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0674, PathP1) {
+  ceres::internal::WeightedGraph<int> target;
+  target.AddVertex(1);
+  target.AddVertex(2);
+  target.AddEdge(1, 2);
 }

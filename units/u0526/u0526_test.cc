@@ -5,8 +5,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls InvertPSDMatrix(const bool assume_full_rank, const typename EigenTypes<kSize, kSize>::Matrix& m).
-TEST(Unitu0526, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0526, CallsTarget) {
   InvertPSDMatrix(true, {});
 }
 }  // namespace internal

@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 namespace ceres {
-// Path P1 calls LinearSolverOrderingTypeToString(LinearSolverOrderingType type).
-TEST(Unitu0730, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0730, CallsTarget) {
   LinearSolverOrderingTypeToString({});
 }
 }  // namespace ceres

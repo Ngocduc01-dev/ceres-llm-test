@@ -2,11 +2,9 @@
 #include "gtest/gtest.h"
 #include "ceres/block_structure.h"
 
-namespace ceres {
-namespace internal {
-// Path P1 calls CellLessThan(const Cell & lhs, const Cell & rhs).
-TEST(Unitu0699, CallsTarget) {
-  CellLessThan({}, {});
+// Path P1: START -> 1 -> 2 -> END.
+TEST(Unit_u0699, PathP1) {
+  ceres::internal::Cell left(1, 0);
+  ceres::internal::Cell right(1, 1);
+  ceres::internal::CellLessThan(left, right);
 }
-}  // namespace internal
-}  // namespace ceres

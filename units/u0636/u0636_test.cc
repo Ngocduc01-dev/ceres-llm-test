@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/jet.h"
 
-// Path P1 calls operator+=(const Jet<T, N> & y).
-TEST(Unitu0636, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0636, CallsTarget) {
   object.operator+=({});
 }

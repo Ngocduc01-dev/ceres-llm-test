@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-// Path P1 calls Neighbors(const Vertex & vertex) const.
-TEST(Unitu0676, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0676, CallsTarget) {
   object.Neighbors({});
 }

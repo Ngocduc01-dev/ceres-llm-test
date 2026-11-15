@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/cubic_interpolation.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0440, PathP1) {
   const T * arg_0 = nullptr;
   const int arg_1 = 1;

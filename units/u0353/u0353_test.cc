@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/pair_hash.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0353, PathP1) {
   uint64_t & arg_0{}
   uint64_t & arg_1{}

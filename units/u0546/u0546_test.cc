@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/jet.h"
 
-namespace ceres {
-// Path P1 calls fmax(const Lhs& x, const Rhs& y).
-TEST(Unitu0546, CallsTarget) {
-  fmax({}, {});
+// Path P1: START -> 1 -> 2 -> 3 -> END.
+TEST(Unit_u0546, PathP1) {
+  ceres::Jet<double, 2> x(1.0), y(2.0);
+  ceres::fmax(x, y);
 }
-}  // namespace ceres

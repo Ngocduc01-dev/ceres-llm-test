@@ -1,35 +1,36 @@
-**A. Test paths**
+# Unit u0525
+## A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | CFG branch path 1 |
-| P2 | START ? 1 ? END | CFG branch path 2 |
+| P1 | START → 1 → 2 → 3 → 4 → 5 → 6 → END | Theo CFG của prompt.md. |
+| P2 | START → 1 → 2 → 3 → 4 → 5 → 6 → END | Theo CFG của prompt.md. |
 
-**B. B? test case**
+## B. Bộ test case
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | valid values from prompt signature | deterministic small value |
-| TC2 | P2 | valid values from prompt signature | deterministic small value |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-**C. Nh?nh kh?ng test**
+## C. Nhánh không test
 
-Kh?ng k?ch ho?t nh?nh CHECK l?m d?ng ch??ng tr?nh. C2 d? ki?n = 4 / 4
+Không ghi nhận nhánh không thể test từ CFG cung cấp.
+C2 dự kiến = 4 / 4.
 
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0525_test.cc
 #include "gtest/gtest.h"
 #include "ceres/dogleg_strategy.h"
 
-// Path P1 calls StepAccepted(double step_quality).
-TEST(Unitu0525, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0525, CallsTarget) {
   object.StepAccepted(1.0);
 }
-
-// Path P2 calls StepAccepted(double step_quality) on the alternate CFG path.
-TEST(Unitu0525, CallsTargetAlternate) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0525, CallsTargetAlternate) {
   object.StepAccepted(1.0);
 }
 ```

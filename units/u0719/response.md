@@ -1,35 +1,47 @@
-**A. Test paths**
+# Unit u0719
+## A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | CFG branch path 1 |
-| P2 | START ? 1 ? END | CFG branch path 2 |
+| P1 | START → 1 → 2 → 3 → 4 → 5 → 6 → END | Theo CFG của prompt.md. |
+| P2 | START → 1 → 2 → 3 → 4 → 5 → 6 → END | Theo CFG của prompt.md. |
 
-**B. B? test case**
+## B. Bộ test case
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | valid values from prompt signature | deterministic small value |
-| TC2 | P2 | valid values from prompt signature | deterministic small value |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-**C. Nh?nh kh?ng test**
+## C. Nhánh không test
 
-Kh?ng k?ch ho?t nh?nh CHECK l?m d?ng ch??ng tr?nh. C2 d? ki?n = 4 / 4
+Không ghi nhận nhánh không thể test từ CFG cung cấp.
+C2 dự kiến = 4 / 4.
 
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0719_test.cc
 #include "gtest/gtest.h"
 #include "ceres/tiny_solver.h"
 
-// Path P1 calls Update(const Function & function, const Parameters & x).
-TEST(Unitu0719, CallsTarget) {
-  object.Update({}, {});
-}
-
-// Path P2 calls Update(const Function & function, const Parameters & x) on the alternate CFG path.
-TEST(Unitu0719, CallsTargetAlternate) {
-  object.Update({}, {});
+struct LocalTinyFunction {
+  using Scalar = double;
+  static constexpr int NUM_RESIDUALS = 1;
+  static constexpr int NUM_PARAMETERS = 1;
+  bool operator()(const double*, double* residual, double* jacobian) const {
+    residual[0] = 1.0;
+    jacobian[0] = 1.0;
+    return true;
+  }
+};
+// Path P1: START -> 1 -> 3 -> 4 -> 5 -> 6 -> END.
+TEST(Unit_u0719, PathP1) {
+  ceres::TinySolver<LocalTinyFunction> target;
+  LocalTinyFunction function;
+  ceres::TinySolver<LocalTinyFunction>::Parameters x;
+  x[0] = 0.0;
+  target.summary.iterations = 0;
+  target.Update(function, x);
 }
 ```

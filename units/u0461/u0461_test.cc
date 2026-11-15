@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/rotation.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0461, PathP1) {
   double q_0[4] = {};
   double pt_1[3] = {};

@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls SolveUpperTriangularInPlace(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, double* rhs_and_solution).
-TEST(Unitu0504, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0504, CallsTarget) {
   double rows_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   double cols_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   double values_data = {1.0, 2.0, 3.0, 4.0, 5.0};

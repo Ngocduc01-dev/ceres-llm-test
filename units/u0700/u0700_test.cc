@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls SumSquaredSizes(const std::vector<Block> & blocks).
-TEST(Unitu0700, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0700, CallsTarget) {
   SumSquaredSizes({});
 }
 }  // namespace internal

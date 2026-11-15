@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 namespace ceres {
-// Path P1 calls VisibilityClusteringTypeToString(VisibilityClusteringType type).
-TEST(Unitu0736, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0736, CallsTarget) {
   VisibilityClusteringTypeToString({});
 }
 }  // namespace ceres

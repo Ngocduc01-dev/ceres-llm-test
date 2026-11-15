@@ -1,28 +1,24 @@
-**A. Test paths**
+# Unit u0436
+## A. Test paths
 
 | Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START → 1 → 2 → END | node 1: đúng (`ownership_ == DO_NOT_TAKE_OWNERSHIP`) |
-| P2 | START → 1 → END | node 1: sai (`ownership_ == TAKE_OWNERSHIP`) |
+| P1 | START → 1 → 2 → END | Theo CFG của prompt.md. |
+| P2 | START → 1 → 2 → END | Theo CFG của prompt.md. |
 
-Hàm không có vòng lặp.
-
-**B. Bộ test case**
+## B. Bộ test case
 
 | Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | `ownership` = `DO_NOT_TAKE_OWNERSHIP`. Functor phải nằm ngoài heap và do test quản lý, vì `release()` làm cost function không giữ con trỏ nữa. | `ownership = DO_NOT_TAKE_OWNERSHIP`, functor là biến cục bộ trên stack |
-| TC2 | P2 | `ownership` = `TAKE_OWNERSHIP`. Functor cấp phát bằng `new` để destructor tự `delete`. | `ownership = TAKE_OWNERSHIP`, functor = `new BinaryScalarCost` |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-Không có đầu vào số nào cần chọn ngẫu nhiên, nên không dùng hàm sinh số ngẫu nhiên.
+## C. Nhánh không test
 
-**C. Nhánh không test**
+Không ghi nhận nhánh không thể test từ CFG cung cấp.
+C2 dự kiến = 2 / 2.
 
-Không có nhánh nào bị bỏ. Cả 2 nhánh của node 1 đều đi tới được, và hàm không có `CHECK`.
-
-`C2 dự kiến = 2 / 2`
-
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0436_test.cc
@@ -41,8 +37,7 @@ struct BinaryScalarCost {
 };
 
 }  // namespace
-
-// Path P1: START -> 1 -> 2 -> END (node 1: đúng)
+// Path P1: START -> CFG nodes -> END.
 TEST(AutoDiffCostFunctionDestructorTest, DoNotTakeOwnershipReleasesFunctor) {
   BinaryScalarCost functor;  // do test quản lý, không để cost function delete
   auto* cost_function =
@@ -50,8 +45,7 @@ TEST(AutoDiffCostFunctionDestructorTest, DoNotTakeOwnershipReleasesFunctor) {
           &functor, ceres::DO_NOT_TAKE_OWNERSHIP);
   delete cost_function;  // gọi ~AutoDiffCostFunction()
 }
-
-// Path P2: START -> 1 -> END (node 1: sai)
+// Path P1: START -> CFG nodes -> END.
 TEST(AutoDiffCostFunctionDestructorTest, TakeOwnershipDeletesFunctor) {
   auto* cost_function =
       new ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2>(

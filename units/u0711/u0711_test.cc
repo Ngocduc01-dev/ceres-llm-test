@@ -3,7 +3,7 @@
 #include "ceres/iteration_callback.h"
 #include "ceres/gradient_checking_cost_function.h"
 
-// Path P1 calls operator()(const IterationSummary &).
-TEST(Unitu0711, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0711, CallsTarget) {
   object.operator({});
 }

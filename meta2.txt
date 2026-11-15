@@ -1,0 +1,100 @@
+0251	b=?	58 | template <typename To> 59 | inline To implicit_cast(typename identity_<To>::type to) { 60 |   return to; 61 | }
+0252	b=?	65 | template <typename To, typename From> 66 | inline To implicit_cast(typename identity_<From>::type const& f) { 67 |   return f; 68 | }
+0253	b=?	116 |   int num_rows() const final { return num_rows_; }
+0254	b=?	117 |   int num_cols() const final { return num_cols_; }
+0255	b=?	118 |   int num_nonzeros() const final { return rows_[num_rows_]; }
+0256	b=?	119 |   const double* values() const final { return values_.data(); }
+0257	b=?	120 |   double* mutable_values() final { return values_.data(); }
+0258	b=?	138 |   void set_num_rows(const int num_rows) { num_rows_ = num_rows; }
+0259	b=?	139 |   void set_num_cols(const int num_cols) { num_cols_ = num_cols; }
+0260	b=?	142 |   const int* cols() const { return cols_.data(); }
+0261	b=?	143 |   int* mutable_cols() { return cols_.data(); }
+0262	b=?	145 |   const int* rows() const { return rows_.data(); }
+0263	b=?	146 |   int* mutable_rows() { return rows_.data(); }
+0264	b=?	148 |   StorageType storage_type() const { return storage_type_; }
+0265	b=?	153 |   const std::vector<Block>& row_blocks() const { return row_blocks_; }
+0266	b=?	154 |   std::vector<Block>* mutable_row_blocks() { return &row_blocks_; }
+0267	b=?	156 |   const std::vector<Block>& col_blocks() const { return col_blocks_; }
+0268	b=?	157 |   std::vector<Block>* mutable_col_blocks() { return &col_blocks_; }
+0269	b=?	84 |   void Push(const T& value) { 85 |     std::lock_guard<std::mutex> lock(mutex_); 86 |     queue_.push(value); 87 |     work_pending_condition_.notify_one(); 88 |   }
+0270	b=?	115 |   void StopWaiters() { 116 |     std::lock_guard<std::mutex> lock(mutex_); 117 |     wait_ = false; 118 |     work_pending_condition_.notify_all(); 119 |   }
+0271	b=?	122 |   void EnableWaiters() { 123 |     std::lock_guard<std::mutex> lock(mutex_); 124 |     wait_ = true; 125 |   }
+0272	b=?	37 | Context::Context() = default;
+0273	b=?	39 | Context::~Context() = default;
+0274	b=?	62 | CoordinateDescentMinimizer::~CoordinateDescentMinimizer() = default;
+0275	b=?	70 | CovarianceImpl::~CovarianceImpl() = default;
+0276	b=?	79 | DenseCholesky::~DenseCholesky() = default;
+0277	b=?	325 | RefinedDenseCholesky::~RefinedDenseCholesky() = default;
+0278	b=?	114 | DenseQR::~DenseQR() = default;
+0279	b=?	65 |   const double* values() const final { return m_.data(); }
+0280	b=?	66 |   double* mutable_values() final { return m_.data(); }
+0281	b=?	635 | void DoglegStrategy::StepRejected(double /*step_quality*/) { 636 |   radius_ *= 0.5; 637 |   reuse_ = true; 638 | }
+0282	b=?	640 | void DoglegStrategy::StepIsInvalid() { 641 |   mu_ *= mu_increase_factor_; 642 |   reuse_ = false; 643 | }
+0283	b=?	645 | double DoglegStrategy::Radius() const { return radius_; }
+0284	b=?	71 |   Vector gradient() const { return gradient_; }
+0285	b=?	72 |   Vector gauss_newton_step() const { return gauss_newton_step_; }
+0286	b=?	73 |   Matrix subspace_basis() const { return subspace_basis_; }
+0287	b=?	74 |   Vector subspace_g() const { return subspace_g_; }
+0288	b=?	75 |   Matrix subspace_B() const { return subspace_B_; }
+0289	b=?	174 | EigenSparseCholesky::~EigenSparseCholesky() = default;
+0290	b=?	203 | FloatEigenSparseCholesky::~FloatEigenSparseCholesky() = default;
+0291	b=?	53 |   static constexpr bool IsNestedDissectionAvailable() noexcept { 54 | #ifdef CERES_NO_EIGEN_METIS 55 |     return false; 56 | #else 57 |     return true; 58 | #endif 59 |   }
+0292	b=?	35 | EvaluationCallback::~EvaluationCallback() = default;
+0293	b=?	164 |   virtual std::map<std::string, CallStatistics> Statistics() const { 165 |     return {}; 166 |   }
+0294	b=?	45 |   CallStatistics() = default;
+0295	b=?	61 |   const std::map<std::string, CallStatistics>& statistics() const { 62 |     return statistics_; 63 |   }
+0296	b=?	35 | FirstOrderFunction::~FirstOrderFunction() = default;
+0297	b=?	37 | FunctionSample::FunctionSample() 38 |     : x(0.0), 39 |       vector_x_is_valid(false), 40 |       value(0.0), 41 |       value_is_valid(false), 42 |       vector_gradient_is_valid(false), 43 |       gradient(0.0), 44 |       gradient_is_valid(false) {}
+0298	b=?	46 | FunctionSample::FunctionSample(const double x, const double value) 47 |     : x(x), 48 |       vector_x_is_valid(false), 49 |       value(value), 50 |       value_is_valid(true), 51 |       vector_gradient_is_valid(false), 52 |       gradient(0.0), 53 |       gradient_is_valid(false) {}
+0299	b=?	55 | FunctionSample::FunctionSample(const double x, 56 |                                const double value, 57 |                                const double gradient) 58 |     : x(x), 59 |       vector_x_is_valid(false), 60 |       value(value), 61 |       value_is_valid(true), 62 |       vector_gradient_is_valid(false), 63 |       gradient(gradient), 64 |       gradient_is_valid(true) {}
+0300	b=?	131 | GradientCheckingIterationCallback::GradientCheckingIterationCallback() 132 |     : gradient_error_detected_(false) {}
+0301	b=?	64 |   bool gradient_error_detected() const { return gradient_error_detected_; }
+0302	b=?	65 |   const std::string& error_log() const { return error_log_; }
+0303	b=?	60 | int GradientProblem::NumParameters() const { 61 |   return function_->NumParameters(); 62 | }
+0304	b=?	64 | int GradientProblem::NumTangentParameters() const { 65 |   return manifold_->TangentSize(); 66 | }
+0305	b=?	80 | bool GradientProblem::Plus(const double* x, 81 |                            const double* delta, 82 |                            double* x_plus_delta) const { 83 |   return manifold_->Plus(x, delta, x_plus_delta); 84 | }
+0306	b=?	88 |   int NumResiduals() const final { return 1; }
+0307	b=?	96 | GradientProblemSolver::~GradientProblemSolver() = default;
+0308	b=?	203 | bool GradientProblemSolver::Summary::IsSolutionUsable() const { 204 |   return internal::IsSolutionUsable(*this); 205 | }
+0309	b=?	95 |   const std::unordered_set<Vertex>& vertices() const { return vertices_; }
+0310	b=?	194 |   const std::unordered_set<Vertex>& vertices() const { return vertices_; }
+0311	b=?	196 |   static double InvalidWeight() { 197 |     return std::numeric_limits<double>::quiet_NaN(); 198 |   }
+0312	b=?	137 |   int num_rows() const final { return A_->num_cols_f(); }
+0313	b=?	138 |   int num_cols() const final { return A_->num_cols_f(); }
+0314	b=?	139 |   const Vector& rhs() const { return rhs_; }
+0315	b=?	106 |     ProductTerm(const int row, const int col, const int index) 107 |         : row(row), col(col), index(index) {}
+0316	b=?	42 | SparseIterativeRefiner::SparseIterativeRefiner(const int max_num_iterations) 43 |     : max_num_iterations_(max_num_iterations) {}
+0317	b=?	45 | SparseIterativeRefiner::~SparseIterativeRefiner() = default;
+0318	b=?	73 | DenseIterativeRefiner::DenseIterativeRefiner(const int max_num_iterations) 74 |     : max_num_iterations_(max_num_iterations) {}
+0319	b=?	76 | DenseIterativeRefiner::~DenseIterativeRefiner() = default;
+0320	b=?	61 | IterativeSchurComplementSolver::~IterativeSchurComplementSolver() = default;
+0321	b=?	66 | LevenbergMarquardtStrategy::~LevenbergMarquardtStrategy() = default;
+0322	b=?	166 | void LevenbergMarquardtStrategy::StepRejected(double /*step_quality*/) { 167 |   radius_ = radius_ / decrease_factor_; 168 |   decrease_factor_ *= 2.0; 169 |   reuse_diagonal_ = true; 170 | }
+0323	b=?	172 | double LevenbergMarquardtStrategy::Radius() const { return radius_; }
+0324	b=?	145 | double LineSearchFunction::DirectionInfinityNorm() const { 146 |   return direction_.lpNorm<Eigen::Infinity>(); 147 | }
+0325	b=?	237 |   const Vector& position() const { return position_; }
+0326	b=?	238 |   const Vector& direction() const { return direction_; }
+0327	b=?	339 | LineSearchDirection::~LineSearchDirection() = default;
+0328	b=?	49 |     State(int /*num_parameters*/, int num_effective_parameters) 50 |         : cost(0.0), 51 |           gradient(num_effective_parameters), 52 |           gradient_squared_norm(0.0), 53 |           search_direction(num_effective_parameters), 54 |           directional_derivative(0.0), 55 |           step_size(0.0) {}
+0329	b=?	47 |   LinearLeastSquaresProblem() = default;
+0330	b=?	61 | LinearOperator::~LinearOperator() = default;
+0331	b=?	348 |   virtual std::map<std::string, CallStatistics> Statistics() const { 349 |     return {}; 350 |   }
+0332	b=?	44 | void TrivialLoss::Evaluate(double s, double rho[3]) const { 45 |   rho[0] = s; 46 |   rho[1] = 1.0; 47 |   rho[2] = 0.0; 48 | }
+0333	b=?	66 | void SoftLOneLoss::Evaluate(double s, double rho[3]) const { 67 |   const double sum = 1.0 + s * c_; 68 |   const double tmp = sqrt(sum); 69 |   // 'sum' and 'tmp' are always positive, assuming that 's' is. 70 |   rho[0] = 2.0 * b_ * (tmp - 1.0); 71 |   rho[1] = std::max(std::numeric_limits<double>::min(), 1.0 / tmp); 72 |   rho[2] = -(c_ * rho[1]) / (2.0 * sum); 73 | }
+0334	b=?	75 | void CauchyLoss::Evaluate(double s, double rho[3]) const { 76 |   const double sum = 1.0 + s * c_; 77 |   const double inv = 1.0 / sum; 78 |   // 'sum' and 'inv' are always positive, assuming that 's' is. 79 |   rho[0] = b_ * log(sum); 80 |   rho[1] = std::max(std::numeric_limits<double>::min(), inv); 81 |   rho[2] = -c_ * (inv * inv); 82 | }
+0335	b=?	84 | void ArctanLoss::Evaluate(double s, double rho[3]) const { 85 |   const double sum = 1 + s * s * b_; 86 |   const double inv = 1 / sum; 87 |   // 'sum' and 'inv' are always positive. 88 |   rho[0] = a_ * atan2(s, a_); 89 |   rho[1] = std::max(std::numeric_limits<double>::min(), inv); 90 |   rho[2] = -2.0 * s * b_ * (inv * inv); 91 | }
+0336	b=?	154 | void ComposedLoss::Evaluate(double s, double rho[3]) const { 155 |   double rho_f[3], rho_g[3]; 156 |   g_->Evaluate(s, rho_g); 157 |   f_->Evaluate(rho_g[0], rho_f); 158 |   rho[0] = rho_f[0]; 159 |   // f'(g(s)) * g'(s). 160 |   rho[1] = rho_f[1] * rho_g[1]; 161 |   // f''(g(s)) * g'(s) * g'(s) + f'(g(s)) * g''(s). 162 |   rho[2] = rho_f[2] * rho_g[1] * rho_g[1] + rho_f[1] * rho_g[2]; 163 | }
+0337	b=?	75 | LowRankInverseHessian::LowRankInverseHessian( 76 |     int num_parameters, 77 |     int max_num_corrections, 78 |     bool use_approximate_eigenvalue_scaling) 79 |     : num_parameters_(num_parameters), 80 |       max_num_corrections_(max_num_corrections), 81 |       use_approximate_eigenvalue_scaling_(use_approximate_eigenvalue_scaling), 82 |       approximate_eigenvalue_scale_(1.0), 83 |       delta_x_history_(num_parameters, max_num_corrections), 84 |       delta_gradient_history_(num_parameters, max_num_corrections), 85 |       delta_x_dot_delta_gradient_(max_num_corrections) {}
+0338	b=?	90 |   int num_rows() const final { return num_parameters_; }
+0339	b=?	91 |   int num_cols() const final { return num_parameters_; }
+0340	b=?	181 | int SubsetManifold::AmbientSize() const { return constancy_mask_.size(); }
+0341	b=?	183 | int SubsetManifold::TangentSize() const { return tangent_size_; }
+0342	b=?	265 | bool QuaternionManifold::Plus(const double* x, 266 |                               const double* delta, 267 |                               double* x_plus_delta) const { 268 |   QuaternionPlusImpl<CeresQuaternionOrder>(x, delta, x_plus_delta); 269 |   return true; 270 | }
+0343	b=?	272 | bool QuaternionManifold::PlusJacobian(const double* x, double* jacobian) const { 273 |   QuaternionPlusJacobianImpl<CeresQuaternionOrder>(x, jacobian); 274 |   return true; 275 | }
+0344	b=?	277 | bool QuaternionManifold::Minus(const double* y, 278 |                                const double* x, 279 |                                double* y_minus_x) const { 280 |   QuaternionMinusImpl<CeresQuaternionOrder>(y, x, y_minus_x); 281 |   return true; 282 | }
+0345	b=?	284 | bool QuaternionManifold::MinusJacobian(const double* x, 285 |                                        double* jacobian) const { 286 |   QuaternionMinusJacobianImpl<CeresQuaternionOrder>(x, jacobian); 287 |   return true; 288 | }
+0346	b=?	290 | bool EigenQuaternionManifold::Plus(const double* x, 291 |                                    const double* delta, 292 |                                    double* x_plus_delta) const { 293 |   QuaternionPlusImpl<EigenQuaternionOrder>(x, delta, x_plus_delta); 294 |   return true; 295 | }
+0347	b=?	297 | bool EigenQuaternionManifold::PlusJacobian(const double* x, 298 |                                            double* jacobian) const { 299 |   QuaternionPlusJacobianImpl<EigenQuaternionOrder>(x, jacobian); 300 |   return true; 301 | }
+0348	b=?	303 | bool EigenQuaternionManifold::Minus(const double* y, 304 |                                     const double* x, 305 |                                     double* y_minus_x) const { 306 |   QuaternionMinusImpl<EigenQuaternionOrder>(y, x, y_minus_x); 307 |   return true; 308 | }
+0349	b=?	310 | bool EigenQuaternionManifold::MinusJacobian(const double* x, 311 |                                             double* jacobian) const { 312 |   QuaternionMinusJacobianImpl<EigenQuaternionOrder>(x, jacobian); 313 |   return true; 314 | }
+0350	b=?	86 | template <class Collection> 87 | bool InsertIfNotPresent( 88 |     Collection* const collection, 89 |     const typename Collection::value_type::first_type& key, 90 |     const typename Collection::value_type::second_type& value) { 91 |   std::pair<typename Collection::iterator, bool> ret = 92 |       collection->insert(typename Collection::value_type(key, value)); 93 |   return ret.second; 94 | }

@@ -2,20 +2,17 @@
 #include "gtest/gtest.h"
 #include "ceres/loss_function.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> 1 → 2 → END (rho_ is null).
 TEST(Unit_u0472, PathP1) {
-   double_1[3] = {};
-  double arg_0 = 1.0;
-  double arg_1 = 1.0;
-  ceres::ScaledLoss target(arg_0, arg_1);
-  target.Evaluate(1.0, double_1);
+  double rho[3] = {};
+  ceres::ScaledLoss target(nullptr, 2.0, ceres::DO_NOT_TAKE_OWNERSHIP);
+  target.Evaluate(1.0, rho);
 }
 
-// Path P2: START -> 1 -> END.
+// Path P2: START -> 1 → 3 → END (rho_ is non-null).
 TEST(Unit_u0472, PathP2) {
-   double_1[3] = {};
-  double arg_0 = 1.0;
-  double arg_1 = 1.0;
-  ceres::ScaledLoss target(arg_0, arg_1);
-  target.Evaluate(1.0, double_1);
+  double rho[3] = {};
+  ceres::TrivialLoss inner;
+  ceres::ScaledLoss target(&inner, 2.0, ceres::DO_NOT_TAKE_OWNERSHIP);
+  target.Evaluate(1.0, rho);
 }

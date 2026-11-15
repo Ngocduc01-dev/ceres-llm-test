@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 namespace ceres {
-// Path P1 calls DumpFormatTypeToString(DumpFormatType type).
-TEST(Unitu0738, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0738, CallsTarget) {
   DumpFormatTypeToString({});
 }
 }  // namespace ceres

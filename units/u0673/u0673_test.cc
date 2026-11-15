@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-// Path P1 calls AddVertex(const Vertex & vertex).
-TEST(Unitu0673, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0673, CallsTarget) {
   object.AddVertex({});
 }

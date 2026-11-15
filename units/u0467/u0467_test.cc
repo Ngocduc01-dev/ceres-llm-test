@@ -2,12 +2,11 @@
 #include "gtest/gtest.h"
 #include "ceres/levenberg_marquardt_strategy.h"
 
-#include <memory>
-
 namespace ceres {
 namespace internal {
 
 // TC1 - P1: START -> 1 (CHECK_GT đúng) -> 2 -> END
+// Path P1: START -> CFG nodes -> END.
 TEST(LevenbergMarquardtStrategyStepAcceptedTest, P1_PositiveStepQuality) {
   LinearSolver::Options linear_solver_options;
   linear_solver_options.type = DENSE_QR;

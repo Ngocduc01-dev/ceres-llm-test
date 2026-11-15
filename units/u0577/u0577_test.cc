@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/dogleg_strategy.h"
 
-// Path P1 calls MakePolynomialForBoundaryConstrainedProblem() const.
-TEST(Unitu0577, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0577, CallsTarget) {
   object.MakePolynomialForBoundaryConstrainedProblem();
 }

@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 namespace ceres {
-// Path P1 calls LoggingTypeToString(LoggingType type).
-TEST(Unitu0737, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0737, CallsTarget) {
   LoggingTypeToString({});
 }
 }  // namespace ceres

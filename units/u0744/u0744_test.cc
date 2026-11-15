@@ -3,14 +3,13 @@
 #include "ceres/rotation.h"
 
 namespace ceres {
-// Path P1 calls RotationMatrixToQuaternion(const MatrixAdapter<const T, row_stride, col_stride>& R, T* quaternion).
-TEST(Unitu0744, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0744, CallsTarget) {
   double quaternion_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   RotationMatrixToQuaternion({}, quaternion_data);
 }
-
-// Path P2 calls RotationMatrixToQuaternion(const MatrixAdapter<const T, row_stride, col_stride>& R, T* quaternion) on the alternate CFG path.
-TEST(Unitu0744, CallsTargetAlternate) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0744, CallsTargetAlternate) {
   double quaternion_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   RotationMatrixToQuaternion({}, quaternion_data);
 }

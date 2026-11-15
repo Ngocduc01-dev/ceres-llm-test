@@ -3,8 +3,8 @@
 #include "ceres/numeric_diff_first_order_function.h"
 #include "ceres/numeric_diff_options.h"
 
-// Path P1 calls NumericDiffFirstOrderFunction(FirstOrderFunctor * functor, Ownership ownership, const NumericDiffOptions & options).
-TEST(Unitu0641, CallsTarget) {
-  double functor_data = {1.0, 2.0, 3.0, 4.0, 5.0};
-  object.NumericDiffFirstOrderFunction(functor_data, {}, {});
+struct LocalFirstOrderFunctor {};
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0641, PathP1) {
+  ceres::NumericDiffFirstOrderFunction<LocalFirstOrderFunctor, ceres::CENTRAL, 4> target(nullptr);
 }

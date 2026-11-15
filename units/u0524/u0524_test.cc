@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls SolveRTRWithSparseRHS(IntegerType num_cols, const IntegerType* rows, const IntegerType* cols, const double* values, const int rhs_nonzero_index, double* solution).
-TEST(Unitu0524, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0524, CallsTarget) {
   double rows_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   double cols_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   double values_data = {1.0, 2.0, 3.0, 4.0, 5.0};

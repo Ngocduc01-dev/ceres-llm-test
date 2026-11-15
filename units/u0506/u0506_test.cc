@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls FindConnectedComponent(const Vertex& vertex, std::unordered_map<Vertex, Vertex>* union_find).
-TEST(Unitu0506, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0506, CallsTarget) {
   double union_find_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   FindConnectedComponent({}, union_find_data);
 }

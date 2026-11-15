@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/compressed_row_sparse_matrix.h"
 
-// Path P1 calls set_storage_type(const StorageType storage_type).
-TEST(Unitu0654, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0654, CallsTarget) {
   object.set_storage_type({});
 }

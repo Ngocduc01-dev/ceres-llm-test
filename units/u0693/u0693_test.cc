@@ -2,8 +2,11 @@
 #include "gtest/gtest.h"
 #include "ceres/iterative_refiner.h"
 #include "ceres/sparse_cholesky.h"
+#include <memory>
 
-// Path P1 calls RefinedSparseCholesky(std::unique_ptr<SparseCholesky> sparse_cholesky, std::unique_ptr<SparseIterativeRefiner> iterative_refiner).
-TEST(Unitu0693, CallsTarget) {
-  object.RefinedSparseCholesky({}, {});
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0693, PathP1) {
+  std::unique_ptr<ceres::internal::SparseCholesky> sparse_cholesky;
+  std::unique_ptr<ceres::internal::SparseIterativeRefiner> iterative_refiner;
+  ceres::internal::RefinedSparseCholesky target(std::move(sparse_cholesky), std::move(iterative_refiner));
 }

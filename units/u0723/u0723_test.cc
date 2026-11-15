@@ -3,7 +3,7 @@
 #include "ceres/eigensparse.h"
 #include "ceres/sparse_cholesky.h"
 
-// Path P1 calls Create(const OrderingType ordering_type).
-TEST(Unitu0723, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0723, CallsTarget) {
   object.Create({});
 }

@@ -1,28 +1,34 @@
-**A. Test paths**
+# Unit u0674
+## A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | CFG branch path 1 |
+| P1 | START → 164 → 165 → 166 → END | Không có điểm rẽ nhánh. |
 
-**B. B? test case**
+## B. Bộ test case
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | valid values from prompt signature | deterministic small value |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-**C. Nh?nh kh?ng test**
+## C. Nhánh không test
 
-Kh?ng k?ch ho?t nh?nh CHECK l?m d?ng ch??ng tr?nh. C2 d? ki?n = 2 / 2
+`cfg.txt` không tồn tại cho unit này; không bịa CFG. Các nhánh được đối chiếu theo CFG trong prompt.md.
+Không có nhánh điều khiển trong CFG.
+C2 dự kiến = 0 / 0.
 
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0674_test.cc
 #include "gtest/gtest.h"
 #include "ceres/graph.h"
 
-// Path P1 calls AddEdge(const Vertex & vertex1, const Vertex & vertex2).
-TEST(Unitu0674, CallsTarget) {
-  object.AddEdge({}, {});
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0674, PathP1) {
+  ceres::internal::WeightedGraph<int> target;
+  target.AddVertex(1);
+  target.AddVertex(2);
+  target.AddEdge(1, 2);
 }
 ```

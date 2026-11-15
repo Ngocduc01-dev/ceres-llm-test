@@ -1,21 +1,22 @@
-# A. Test paths
+# Unit u0332
+## A. Test paths
 
 | Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START → 1 → END | Không có điểm rẽ nhánh |
+| P1 | START → 1 → END | Không có điểm rẽ nhánh. |
 
-# B. Bộ test case
+## B. Bộ test case
 
 | Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | Giá trị hợp lệ theo chữ ký unit | Giá trị cố định |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-# C. Nhánh không test
+## C. Nhánh không test
 
-Không có nhánh không test; các nhánh khả thi được gọi qua các test ở trên.
+Không có nhánh điều khiển trong CFG.
 C2 dự kiến = 0 / 0.
 
-# D. File test
+## D. File test
 
 ```cpp
 // FILE: u0332_test.cc
@@ -24,10 +25,8 @@ C2 dự kiến = 0 / 0.
 
 // Path P1: START -> 1 -> END.
 TEST(Unit_u0332, PathP1) {
-   double_1[3] = {};
-  double arg_0 = 1.0;
-  double arg_1 = 1.0;
-  ceres::TrivialLoss target(arg_0, arg_1);
-  target.Evaluate(1.0, double_1);
+  double rho[3] = {};
+  ceres::TrivialLoss target;
+  target.Evaluate(1.0, rho);
 }
 ```

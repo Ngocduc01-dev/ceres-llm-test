@@ -3,8 +3,8 @@
 #include "ceres/manifold.cc"
 
 namespace ceres {
-// Path P1 calls QuaternionPlusImpl(const double* x, const double* delta, double* x_plus_delta).
-TEST(Unitu0596, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0596, CallsTarget) {
   double x_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   double delta_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   double x_plus_delta_data = {1.0, 2.0, 3.0, 4.0, 5.0};

@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls NumScalarEntries(const std::vector<Block> & blocks).
-TEST(Unitu0702, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0702, CallsTarget) {
   NumScalarEntries({});
 }
 }  // namespace internal

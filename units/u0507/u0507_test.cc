@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/loss_function.h"
 
-// Path P1: START -> 1 -> 2 (đúng) -> 3 (đúng) -> END
+// Path P1: START -> CFG nodes -> END.
 TEST(TolerantLossConstructor, ValidParameters) {
   ceres::TolerantLoss loss(2.5, 1.5);
 }

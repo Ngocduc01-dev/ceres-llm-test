@@ -5,14 +5,13 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls IndependentSetOrdering(const Graph<Vertex>& graph, std::vector<Vertex>* ordering).
-TEST(Unitu0557, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0557, CallsTarget) {
   double ordering_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   IndependentSetOrdering({}, ordering_data);
 }
-
-// Path P2 calls IndependentSetOrdering(const Graph<Vertex>& graph, std::vector<Vertex>* ordering) on the alternate CFG path.
-TEST(Unitu0557, CallsTargetAlternate) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0557, CallsTargetAlternate) {
   double ordering_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   IndependentSetOrdering({}, ordering_data);
 }

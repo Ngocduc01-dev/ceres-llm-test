@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 
 namespace ceres {
-// Path P1 calls LineSearchTypeToString(LineSearchType type).
-TEST(Unitu0734, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0734, CallsTarget) {
   LineSearchTypeToString({});
 }
 }  // namespace ceres

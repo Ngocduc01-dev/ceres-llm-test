@@ -3,8 +3,8 @@
 #include "ceres/rotation.h"
 
 namespace ceres {
-// Path P1 calls QuaternionToScaledRotation(const T q[4], const MatrixAdapter<T, row_stride, col_stride>& R).
-TEST(Unitu0646, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0646, CallsTarget) {
   double q_data = {1.0, 2.0, 3.0, 4.0, 5.0};
   QuaternionToScaledRotation(q_data, {});
 }

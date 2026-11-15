@@ -14,8 +14,7 @@ struct BinaryScalarCost {
 };
 
 }  // namespace
-
-// Path P1: START -> 1 -> 2 -> END (node 1: đúng)
+// Path P1: START -> CFG nodes -> END.
 TEST(AutoDiffCostFunctionDestructorTest, DoNotTakeOwnershipReleasesFunctor) {
   BinaryScalarCost functor;  // do test quản lý, không để cost function delete
   auto* cost_function =
@@ -23,8 +22,7 @@ TEST(AutoDiffCostFunctionDestructorTest, DoNotTakeOwnershipReleasesFunctor) {
           &functor, ceres::DO_NOT_TAKE_OWNERSHIP);
   delete cost_function;  // gọi ~AutoDiffCostFunction()
 }
-
-// Path P2: START -> 1 -> END (node 1: sai)
+// Path P1: START -> CFG nodes -> END.
 TEST(AutoDiffCostFunctionDestructorTest, TakeOwnershipDeletesFunctor) {
   auto* cost_function =
       new ceres::AutoDiffCostFunction<BinaryScalarCost, 1, 2, 2>(

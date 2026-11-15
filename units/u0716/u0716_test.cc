@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/graph_algorithms.h"
 
-// Path P1 calls operator()(const Vertex & lhs, const Vertex & rhs) const.
-TEST(Unitu0716, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0716, CallsTarget) {
   object.operator({});
 }

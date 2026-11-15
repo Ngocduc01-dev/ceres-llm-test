@@ -2,11 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/internal/fixed_array.h"
 
-namespace ceres {
-namespace internal {
-// Path P1 calls operator<=(const FixedArray<T, N, A> & lhs, const FixedArray<T, N, A> & rhs).
-TEST(Unitu0633, CallsTarget) {
-  operator<=({}, {});
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0633, PathP1) {
+  ceres::internal::FixedArray<int, 10> left{1}, right{2};
+  left <= right;
 }
-}  // namespace internal
-}  // namespace ceres

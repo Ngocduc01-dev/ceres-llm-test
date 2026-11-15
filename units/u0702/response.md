@@ -1,20 +1,22 @@
-**A. Test paths**
+# Unit u0702
+## A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | CFG branch path 1 |
+| P1 | START → 1 → 2 → 3 → END | Theo CFG của prompt.md. |
 
-**B. B? test case**
+## B. Bộ test case
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | valid values from prompt signature | deterministic small value |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-**C. Nh?nh kh?ng test**
+## C. Nhánh không test
 
-Kh?ng k?ch ho?t nh?nh CHECK l?m d?ng ch??ng tr?nh. C2 d? ki?n = 2 / 2
+Không ghi nhận nhánh không thể test từ CFG cung cấp.
+C2 dự kiến = 2 / 2.
 
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0702_test.cc
@@ -23,8 +25,8 @@ Kh?ng k?ch ho?t nh?nh CHECK l?m d?ng ch??ng tr?nh. C2 d? ki?n = 2 / 2
 
 namespace ceres {
 namespace internal {
-// Path P1 calls NumScalarEntries(const std::vector<Block> & blocks).
-TEST(Unitu0702, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0702, CallsTarget) {
   NumScalarEntries({});
 }
 }  // namespace internal

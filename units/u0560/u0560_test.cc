@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/cost_function.h"
 
-// Path P1 calls set_num_residuals(int num_residuals).
-TEST(Unitu0560, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0560, CallsTarget) {
   object.set_num_residuals(1);
 }

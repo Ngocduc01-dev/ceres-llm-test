@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls Tail(const std::vector<Block> & blocks, int n).
-TEST(Unitu0720, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0720, CallsTarget) {
   Tail({}, 1);
 }
 }  // namespace internal

@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/internal/variadic_evaluate.h"
 
-// Path P1 calls FirstOrderFunctorAdapter(const Functor & functor).
-TEST(Unitu0635, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0635, CallsTarget) {
   object.FirstOrderFunctorAdapter({});
 }

@@ -1,0 +1,100 @@
+0251	- Hàm: `implicit_cast(typename identity_<To>::type to)`, trả về `To`	branches=?	code=
+0252	- Hàm: `implicit_cast(typename identity_<From>::type const& f)`, trả về `To`	branches=?	code=
+0253	- Hàm: `num_rows() const`, trả về `int`	branches=?	code=
+0254	- Hàm: `num_cols() const`, trả về `int`	branches=?	code=
+0255	- Hàm: `num_nonzeros() const`, trả về `int`	branches=?	code=
+0256	- Hàm: `values() const`, trả về `const double *`	branches=?	code=
+0257	- Hàm: `mutable_values()`, trả về `double *`	branches=?	code=
+0258	- Hàm: `set_num_rows(const int num_rows)`, trả về `void`	branches=?	code=
+0259	- Hàm: `set_num_cols(const int num_cols)`, trả về `void`	branches=?	code=
+0260	- Hàm: `cols() const`, trả về `const int *`	branches=?	code=
+0261	- Hàm: `mutable_cols()`, trả về `int *`	branches=?	code=
+0262	- Hàm: `rows() const`, trả về `const int *`	branches=?	code=
+0263	- Hàm: `mutable_rows()`, trả về `int *`	branches=?	code=
+0264	- Hàm: `storage_type() const`, trả về `StorageType`	branches=?	code=
+0265	- Hàm: `row_blocks() const`, trả về `const std::vector<Block> &`	branches=?	code=
+0266	- Hàm: `mutable_row_blocks()`, trả về `std::vector<Block> *`	branches=?	code=
+0267	- Hàm: `col_blocks() const`, trả về `const std::vector<Block> &`	branches=?	code=
+0268	- Hàm: `mutable_col_blocks()`, trả về `std::vector<Block> *`	branches=?	code=
+0269	- Hàm: `Push(const T & value)`, trả về `void`	branches=?	code=
+0270	- Hàm: `StopWaiters()`, trả về `void`	branches=?	code=
+0271	- Hàm: `EnableWaiters()`, trả về `void`	branches=?	code=
+0272	- Hàm: `Context()`	branches=?	code=
+0273	- Hàm: `~Context()`	branches=?	code=
+0274	- Hàm: `~CoordinateDescentMinimizer()`	branches=?	code=
+0275	- Hàm: `~CovarianceImpl()`	branches=?	code=
+0276	- Hàm: `~DenseCholesky()`	branches=?	code=
+0277	- Hàm: `~RefinedDenseCholesky()`	branches=?	code=
+0278	- Hàm: `~DenseQR()`	branches=?	code=
+0279	- Hàm: `values() const`, trả về `const double *`	branches=?	code=
+0280	- Hàm: `mutable_values()`, trả về `double *`	branches=?	code=
+0281	- Hàm: `StepRejected(double)`, trả về `void`	branches=?	code=
+0282	- Hàm: `StepIsInvalid()`, trả về `void`	branches=?	code=
+0283	- Hàm: `Radius() const`, trả về `double`	branches=?	code=
+0284	- Hàm: `gradient() const`, trả về `Vector`	branches=?	code=
+0285	- Hàm: `gauss_newton_step() const`, trả về `Vector`	branches=?	code=
+0286	- Hàm: `subspace_basis() const`, trả về `Matrix`	branches=?	code=
+0287	- Hàm: `subspace_g() const`, trả về `Vector`	branches=?	code=
+0288	- Hàm: `subspace_B() const`, trả về `Matrix`	branches=?	code=
+0289	- Hàm: `~EigenSparseCholesky()`	branches=?	code=
+0290	- Hàm: `~FloatEigenSparseCholesky()`	branches=?	code=
+0291	- Hàm: `IsNestedDissectionAvailable()`, trả về `bool`	branches=?	code=
+0292	- Hàm: `~EvaluationCallback()`	branches=?	code=
+0293	- Hàm: `Statistics() const`, trả về `std::map<std::string, CallStatistics>`	branches=?	code=
+0294	- Hàm: `CallStatistics()`	branches=?	code=
+0295	- Hàm: `statistics() const`, trả về `const std::map<std::string, CallStatistics> &`	branches=?	code=
+0296	- Hàm: `~FirstOrderFunction()`	branches=?	code=
+0297	- Hàm: `FunctionSample()`	branches=?	code=
+0298	- Hàm: `FunctionSample(const double x, const double value)`	branches=?	code=
+0299	- Hàm: `FunctionSample(const double x, const double value, const double gradient)`	branches=?	code=
+0300	- Hàm: `GradientCheckingIterationCallback()`	branches=?	code=
+0301	- Hàm: `gradient_error_detected() const`, trả về `bool`	branches=?	code=
+0302	- Hàm: `error_log() const`, trả về `const std::string &`	branches=?	code=
+0303	- Hàm: `NumParameters() const`, trả về `int`	branches=?	code=
+0304	- Hàm: `NumTangentParameters() const`, trả về `int`	branches=?	code=
+0305	- Hàm: `Plus(const double * x, const double * delta, double * x_plus_delta) const`, trả về `bool`	branches=?	code=
+0306	- Hàm: `NumResiduals() const`, trả về `int`	branches=?	code=
+0307	- Hàm: `~GradientProblemSolver()`	branches=?	code=
+0308	- Hàm: `IsSolutionUsable() const`, trả về `bool`	branches=?	code=
+0309	- Hàm: `vertices() const`, trả về `const std::unordered_set<Vertex> &`	branches=?	code=
+0310	- Hàm: `vertices() const`, trả về `const std::unordered_set<Vertex> &`	branches=?	code=
+0311	- Hàm: `InvalidWeight()`, trả về `double`	branches=?	code=
+0312	- Hàm: `num_rows() const`, trả về `int`	branches=?	code=
+0313	- Hàm: `num_cols() const`, trả về `int`	branches=?	code=
+0314	- Hàm: `rhs() const`, trả về `const Vector &`	branches=?	code=
+0315	- Hàm: `ProductTerm(const int row, const int col, const int index)`	branches=?	code=
+0316	- Hàm: `SparseIterativeRefiner(const int max_num_iterations)`	branches=?	code=
+0317	- Hàm: `~SparseIterativeRefiner()`	branches=?	code=
+0318	- Hàm: `DenseIterativeRefiner(const int max_num_iterations)`	branches=?	code=
+0319	- Hàm: `~DenseIterativeRefiner()`	branches=?	code=
+0320	- Hàm: `~IterativeSchurComplementSolver()`	branches=?	code=
+0321	- Hàm: `~LevenbergMarquardtStrategy()`	branches=?	code=
+0322	- Hàm: `StepRejected(double)`, trả về `void`	branches=?	code=
+0323	- Hàm: `Radius() const`, trả về `double`	branches=?	code=
+0324	- Hàm: `DirectionInfinityNorm() const`, trả về `double`	branches=?	code=
+0325	- Hàm: `position() const`, trả về `const Vector &`	branches=?	code=
+0326	- Hàm: `direction() const`, trả về `const Vector &`	branches=?	code=
+0327	- Hàm: `~LineSearchDirection()`	branches=?	code=
+0328	- Hàm: `State(int, int num_effective_parameters)`	branches=?	code=
+0329	- Hàm: `LinearLeastSquaresProblem()`	branches=?	code=
+0330	- Hàm: `~LinearOperator()`	branches=?	code=
+0331	- Hàm: `Statistics() const`, trả về `std::map<std::string, CallStatistics>`	branches=?	code=
+0332	- Hàm: `Evaluate(double s, double[3] rho) const`, trả về `void`	branches=?	code=
+0333	- Hàm: `Evaluate(double s, double[3] rho) const`, trả về `void`	branches=?	code=
+0334	- Hàm: `Evaluate(double s, double[3] rho) const`, trả về `void`	branches=?	code=
+0335	- Hàm: `Evaluate(double s, double[3] rho) const`, trả về `void`	branches=?	code=
+0336	- Hàm: `Evaluate(double s, double[3] rho) const`, trả về `void`	branches=?	code=
+0337	- Hàm: `LowRankInverseHessian(int num_parameters, int max_num_corrections, bool use_approximate_eigenvalue_scaling)`	branches=?	code=
+0338	- Hàm: `num_rows() const`, trả về `int`	branches=?	code=
+0339	- Hàm: `num_cols() const`, trả về `int`	branches=?	code=
+0340	- Hàm: `AmbientSize() const`, trả về `int`	branches=?	code=
+0341	- Hàm: `TangentSize() const`, trả về `int`	branches=?	code=
+0342	- Hàm: `Plus(const double * x, const double * delta, double * x_plus_delta) const`, trả về `bool`	branches=?	code=
+0343	- Hàm: `PlusJacobian(const double * x, double * jacobian) const`, trả về `bool`	branches=?	code=
+0344	- Hàm: `Minus(const double * y, const double * x, double * y_minus_x) const`, trả về `bool`	branches=?	code=
+0345	- Hàm: `MinusJacobian(const double * x, double * jacobian) const`, trả về `bool`	branches=?	code=
+0346	- Hàm: `Plus(const double * x, const double * delta, double * x_plus_delta) const`, trả về `bool`	branches=?	code=
+0347	- Hàm: `PlusJacobian(const double * x, double * jacobian) const`, trả về `bool`	branches=?	code=
+0348	- Hàm: `Minus(const double * y, const double * x, double * y_minus_x) const`, trả về `bool`	branches=?	code=
+0349	- Hàm: `MinusJacobian(const double * x, double * jacobian) const`, trả về `bool`	branches=?	code=
+0350	- Hàm: `InsertIfNotPresent(Collection* const collection, const typename Collection::value_type::first_type& key, const typename Collection::value_type::second_type& value)`, trả về `bool`	branches=?	code=

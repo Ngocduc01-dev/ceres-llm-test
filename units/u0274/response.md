@@ -1,28 +1,30 @@
-# A. Test paths
+# Unit u0274
+## A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START ? 1 ? END | Kh?ng c? ?i?m r? nh?nh; node 1 ???c th?c hi?n. |
+| P1 | START → END | Không có điểm rẽ nhánh. |
 
-# B. B? test case
+## B. Bộ test case
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
+| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | D? li?u h?p l? t?i thi?u theo ch? k? c?a unit. | Gi? tr? c? ??nh trong m? test. |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-# C. Nh?nh kh?ng test
+## C. Nhánh không test
 
-Kh?ng c? nh?nh ?i?u khi?n trong CFG c?a unit. C2 d? ki?n = 0 / 0.
+Không có nhánh điều khiển trong CFG.
+C2 dự kiến = 0 / 0.
 
-# D. File test
+## D. File test
 
 ```cpp
 // FILE: u0274_test.cc
 #include "gtest/gtest.h"
 #include "ceres/coordinate_descent_minimizer.h"
 
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0274, PathP1) {
-  // Path P1: START -> 1 -> END.
   // Scope exit invokes ~CoordinateDescentMinimizer().
   ceres::internal::CoordinateDescentMinimizer object(nullptr);
 }

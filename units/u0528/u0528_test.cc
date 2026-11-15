@@ -4,8 +4,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls InvokeOnSegment(int thread_id, std::tuple<int, int> range, F&& function).
-TEST(Unitu0528, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0528, CallsTarget) {
   InvokeOnSegment(1, 1, {});
 }
 }  // namespace internal

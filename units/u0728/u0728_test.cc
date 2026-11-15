@@ -4,7 +4,7 @@
 #include "ceres/preprocessor.h"
 #include "ceres/trust_region_preprocessor.h"
 
-// Path P1 calls Create(MinimizerType minimizer_type).
-TEST(Unitu0728, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0728, CallsTarget) {
   object.Create({});
 }

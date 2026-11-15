@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/autodiff_manifold.h"
 
-// Path P1 calls PlusWrapper(const Functor & functor).
-TEST(Unitu0618, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0618, CallsTarget) {
   object.PlusWrapper({});
 }

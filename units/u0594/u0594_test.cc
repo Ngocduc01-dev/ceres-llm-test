@@ -3,7 +3,7 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/compressed_row_sparse_matrix.cc"
 
-// Path P1 calls operator()(const int x, const int y) const.
-TEST(Unitu0594, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0594, CallsTarget) {
   object.operator(1);
 }

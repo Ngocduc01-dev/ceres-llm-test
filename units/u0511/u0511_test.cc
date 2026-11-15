@@ -5,8 +5,8 @@
 
 namespace ceres {
 namespace internal {
-// Path P1 calls MatrixTransposeMatrixMultiplyEigen(xem mã nguồn – hàm được sinh ra từ macro).
-TEST(Unitu0511, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0511, CallsTarget) {
   MatrixTransposeMatrixMultiplyEigen({});
 }
 }  // namespace internal

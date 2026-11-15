@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/jet.h"
 
-namespace ceres {
-// Path P1 calls pow(const Jet<T, N>& f, const Jet<T, N>& g).
-TEST(Unitu0555, CallsTarget) {
-  pow({}, {});
+// Path P1: START -> 1 -> END.
+TEST(Unit_u0555, PathP1) {
+  ceres::Jet<double, 2> base(2.0), exponent(2.0);
+  ceres::pow<double, 2>(base, exponent);
 }
-}  // namespace ceres

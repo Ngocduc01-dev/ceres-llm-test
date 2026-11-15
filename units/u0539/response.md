@@ -1,36 +1,33 @@
-**A. Test paths**
-
-Hàm có 3 điểm rẽ nhánh (node 2, 4, 7), tổng cộng 6 nhánh. Hàm không có vòng lặp. Không có `CHECK` trong hàm.
+# Unit u0539
+## A. Test paths
 
 | Path | Đường đi (theo số node) | Các nhánh đi qua |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → END | node 2: đúng, node 4: đúng, node 7: đúng |
-| P2 | START → 1 → 2 → 4 → 6 → 7 → 9 → END | node 2: sai, node 4: sai, node 7: sai |
+| P1 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → END | Theo CFG của prompt.md. |
+| P2 | START → 1 → 2 → 3 → 4 → 5 → 6 → 7 → 8 → 9 → END | Theo CFG của prompt.md. |
 
-**B. Bộ test case**
+## B. Bộ test case
 
 | Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
 |---|---|---|---|
-| TC1 | P1 | `absolute_error = nullptr`, `relative_error = nullptr`, `x == 0` (hoặc `y == 0`), `y` ∈ [1, 10], `relative_precision` ∈ [1e-6, 1e-1] | `x = 0.0`, `y = 3.7`, `relative_precision = 1e-3`, cả hai con trỏ là `nullptr` |
-| TC2 | P2 | Cả hai con trỏ khác `nullptr`, `x` ∈ [1, 10], `y` ∈ [1, 10] (khác 0), `relative_precision` ∈ [1e-6, 1e-1] | `x = 5.2`, `y = 8.4`, `relative_precision = 1e-3`, hai con trỏ trỏ tới hai biến `double` cục bộ |
+| TC1 | P1 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
+| TC2 | P2 | Theo chữ ký và tiền điều kiện trong prompt.md | Dữ liệu trong TEST tương ứng |
 
-**C. Nhánh không test**
+## C. Nhánh không test
 
-Không có nhánh nào bị bỏ. Cả 6 nhánh đều đi tới được.
+Không ghi nhận nhánh không thể test từ CFG cung cấp.
+C2 dự kiến = 6 / 6.
 
-C2 dự kiến = 6 / 6
-
-**D. File test**
+## D. File test
 
 ```cpp
 // FILE: u0539_test.cc
-#include "ceres/is_close.h"
 #include "gtest/gtest.h"
+#include "ceres/is_close.h"
 
 namespace ceres {
 namespace internal {
-
-// Path P1: node 2: đúng, node 4: đúng, node 7: đúng
+// Path P1: START -> CFG nodes -> END.
 TEST(IsCloseTest, NullErrorPointersAndOneInputIsZero) {
   const double x = 0.0;
   const double y = 3.7;
@@ -38,8 +35,7 @@ TEST(IsCloseTest, NullErrorPointersAndOneInputIsZero) {
   bool result = IsClose(x, y, relative_precision, nullptr, nullptr);
   (void)result;
 }
-
-// Path P2: node 2: sai, node 4: sai, node 7: sai
+// Path P1: START -> CFG nodes -> END.
 TEST(IsCloseTest, NonNullErrorPointersAndNonZeroInputs) {
   const double x = 5.2;
   const double y = 8.4;

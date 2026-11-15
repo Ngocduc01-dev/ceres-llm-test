@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/program_evaluator.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0400, PathP1) {
   int arg_0 = 1;
   int arg_1 = 1;

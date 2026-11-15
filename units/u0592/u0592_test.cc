@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/tiny_solver.h"
 
-// Path P1 calls Initialize(const Function& function).
-TEST(Unitu0592, CallsTarget) {
+// Path P1: START -> CFG nodes -> END.
+TEST(Unit_u0592, CallsTarget) {
   object.Initialize({});
 }

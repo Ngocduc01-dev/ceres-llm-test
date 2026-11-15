@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/eigensparse.h"
 
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0290, PathP1) {
-  // Path P1: START -> 1 -> END.
   ceres::internal::FloatEigenSparseCholesky* object = nullptr;
   object->~FloatEigenSparseCholesky();
 }

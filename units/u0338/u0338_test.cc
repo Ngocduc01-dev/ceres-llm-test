@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/low_rank_inverse_hessian.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0338, PathP1) {
   ceres::internal::LowRankInverseHessian target;
   target.num_rows();

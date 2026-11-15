@@ -2,7 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/internal/array_selector.h"
 
-// Path P1: START -> 1 -> END.
+// Path P1: START -> CFG nodes -> END.
 TEST(Unit_u0445, PathP1) {
   int arg_0 = 1;
   ceres::ArraySelector<int, -1, 20> target(arg_0);
