@@ -4,7 +4,9 @@
 #include "ceres/sparse_cholesky.h"
 #include "ceres/sparse_normal_cholesky_solver.h"
 
-// P1: START -> 1 -> END
-TEST(u1346_Test, TC1_CallsTarget) {
-  ceres::internal::SparseNormalCholeskySolver target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1346, TC1_CallsTarget) {
+  LinearSolver::Options options{};
+  ceres::internal::SparseNormalCholeskySolver object{};
+  (void)object;
 }

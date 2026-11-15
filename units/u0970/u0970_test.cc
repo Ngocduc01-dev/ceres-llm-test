@@ -3,15 +3,14 @@
 #include "ceres/concurrent_queue.h"
 #include "ceres/thread_pool.h"
 
-// P1: START -> 1 -> END
-TEST(ThreadMainLoopTest, TC1_CallsTarget) {
-  ThreadPool object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0970, TC1_CallsTarget) {
+  ceres::internal::ThreadPool object{};
   object.ThreadMainLoop();
 }
 
-// P2: START -> 1 -> END
-TEST(ThreadMainLoopTest, TC2_CallsTarget) {
-  ThreadPool object{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0970, TC2_CallsTarget) {
+  ceres::internal::ThreadPool object{};
   object.ThreadMainLoop();
 }
-

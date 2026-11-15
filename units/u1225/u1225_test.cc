@@ -5,10 +5,8 @@
 #include "ceres/implicit_schur_complement.h"
 #include "ceres/parallel_for.h"
 
-// P1: START -> 1 -> END
-TEST(AddDiagonalAndInvertTest, TC1_CallsTarget) {
-  ImplicitSchurComplement object{};
-  double a0[5] = {};
-  object.AddDiagonalAndInvert(a0, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1225, TC1_CallsTarget) {
+  ceres::internal::ImplicitSchurComplement object{};
+  object.AddDiagonalAndInvert(nullptr, nullptr);
 }
-

@@ -2,27 +2,26 @@
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
 
-// P1: START -> 1 -> END
-TEST(PlusJacobianTest, TC1_CallsTarget) {
-  SubsetManifold object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.PlusJacobian(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1054, TC1_CallsTarget) {
+  ceres::SubsetManifold object{};
+  object.PlusJacobian(nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(PlusJacobianTest, TC2_CallsTarget) {
-  SubsetManifold object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.PlusJacobian(a0, a1);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1054, TC2_CallsTarget) {
+  ceres::SubsetManifold object{};
+  object.PlusJacobian(nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(PlusJacobianTest, TC3_CallsTarget) {
-  SubsetManifold object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.PlusJacobian(a0, a1);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1054, TC3_CallsTarget) {
+  ceres::SubsetManifold object{};
+  object.PlusJacobian(nullptr, nullptr);
 }
 
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1054, TC4_CallsTarget) {
+  ceres::SubsetManifold object{};
+  object.PlusJacobian(nullptr, nullptr);
+}

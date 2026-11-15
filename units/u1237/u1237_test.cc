@@ -8,15 +8,14 @@
 #include "ceres/schur_jacobi_preconditioner.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(CreatePreconditionerTest, TC1_CallsTarget) {
-  IterativeSchurComplementSolver object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1237, TC1_CallsTarget) {
+  ceres::internal::IterativeSchurComplementSolver object{};
   object.CreatePreconditioner(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(CreatePreconditionerTest, TC2_CallsTarget) {
-  IterativeSchurComplementSolver object{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1237, TC2_CallsTarget) {
+  ceres::internal::IterativeSchurComplementSolver object{};
   object.CreatePreconditioner(nullptr);
 }
-

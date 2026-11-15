@@ -3,21 +3,14 @@
 #include "ceres/cost_function.h"
 #include "ceres/normal_prior.h"
 
-// P1: START -> 1 -> END
-TEST(EvaluateTest, TC1_CallsTarget) {
-  NormalPrior object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  double a2[5] = {};
-  object.Evaluate(a0, a1, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1052, TC1_CallsTarget) {
+  ceres::NormalPrior object{};
+  object.Evaluate(nullptr, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(EvaluateTest, TC2_CallsTarget) {
-  NormalPrior object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  double a2[5] = {};
-  object.Evaluate(a0, a1, a2);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1052, TC2_CallsTarget) {
+  ceres::NormalPrior object{};
+  object.Evaluate(nullptr, nullptr, nullptr);
 }
-

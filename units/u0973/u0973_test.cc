@@ -5,11 +5,9 @@
 #include "ceres/minimizer.h"
 #include "ceres/trust_region_minimizer.h"
 
-// P1: START -> 1 -> END
-TEST(InitTest, TC1_CallsTarget) {
-  TrustRegionMinimizer object{};
-  Minimizer::Options & options a0{};
-  double a1[5] = {};
-  object.Init(a0, a1, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0973, TC1_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::TrustRegionMinimizer object{};
+  object.Init(options, nullptr, nullptr);
 }
-

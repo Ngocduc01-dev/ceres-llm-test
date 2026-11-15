@@ -6,15 +6,12 @@
 #include "ceres/context_impl.h"
 #include "ceres/problem_impl.cc"
 
-// P1: START -> 1 -> END
-TEST(InitializeContextTest, TC1_CallsTarget) {
-  bool a2[5] = {};
-  InitializeContext(nullptr, nullptr, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1227, TC1_CallsTarget) {
+  ceres::internal::(anonymous)::InitializeContext(nullptr, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(InitializeContextTest, TC2_CallsTarget) {
-  bool a2[5] = {};
-  InitializeContext(nullptr, nullptr, a2);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1227, TC2_CallsTarget) {
+  ceres::internal::(anonymous)::InitializeContext(nullptr, nullptr, nullptr);
 }
-

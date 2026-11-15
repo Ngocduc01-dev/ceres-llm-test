@@ -11,24 +11,30 @@
 #include "ceres/program_evaluator.h"
 #include "ceres/scratch_evaluate_preparer.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  Evaluator object{};
-  Evaluator::Options & options a0{};
-  object.Create(a0, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0954, TC1_CallsTarget) {
+  Evaluator::Options options{};
+  ceres::internal::Evaluator object{};
+  object.Create(options, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(CreateTest, TC2_CallsTarget) {
-  Evaluator object{};
-  Evaluator::Options & options a0{};
-  object.Create(a0, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0954, TC2_CallsTarget) {
+  Evaluator::Options options{};
+  ceres::internal::Evaluator object{};
+  object.Create(options, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(CreateTest, TC3_CallsTarget) {
-  Evaluator object{};
-  Evaluator::Options & options a0{};
-  object.Create(a0, nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u0954, TC3_CallsTarget) {
+  Evaluator::Options options{};
+  ceres::internal::Evaluator object{};
+  object.Create(options, nullptr, nullptr);
 }
 
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u0954, TC4_CallsTarget) {
+  Evaluator::Options options{};
+  ceres::internal::Evaluator object{};
+  object.Create(options, nullptr, nullptr);
+}

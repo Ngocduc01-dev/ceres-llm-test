@@ -3,11 +3,10 @@
 #include "ceres/context_impl.h"
 #include "ceres/parallel_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(ParallelAssignTest, TC1_CallsTarget) {
-  int a1 = 0;
-  LhsExpression& lhs a2{};
-  RhsExpression& rhs a3{};
-  ceres::internal::ParallelAssign(nullptr, a1, a2, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0909, TC1_CallsTarget) {
+  int num_threads{};
+  LhsExpression lhs{};
+  RhsExpression rhs{};
+  ceres::internal::ParallelAssign(nullptr, num_threads, lhs, rhs);
 }
-

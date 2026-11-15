@@ -4,13 +4,14 @@
 #include "ceres/gradient_problem.h"
 #include "ceres/manifold.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0936, TC1_CallsTarget) {
-  GradientProblem object{};
+  ceres::GradientProblem object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
+// P2: START -> 1 -> END; branch decisions covered by case 2
 TEST(Unit_u0936, TC2_CallsTarget) {
-  GradientProblem object{};
+  ceres::GradientProblem object{};
+  (void)object;
 }
-

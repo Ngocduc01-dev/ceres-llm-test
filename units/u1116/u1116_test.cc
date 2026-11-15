@@ -5,11 +5,8 @@
 #include "ceres/partitioned_matrix_view_impl.h"
 #include "ceres/small_blas.h"
 
-// P1: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateFMultiThreadedTest, TC1_CallsTarget) {
-  PartitionedMatrixView object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulateFMultiThreaded(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1116, TC1_CallsTarget) {
+  ceres::internal::PartitionedMatrixView object{};
+  object.LeftMultiplyAndAccumulateFMultiThreaded(nullptr, nullptr);
 }
-

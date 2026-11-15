@@ -3,15 +3,14 @@
 #include "ceres/polynomial.h"
 #include "ceres/polynomial.cc"
 
-// P1: START -> 1 -> END
-TEST(RemoveLeadingZerosTest, TC1_CallsTarget) {
-  Vector & polynomial_in a0{};
-  RemoveLeadingZeros(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0804, TC1_CallsTarget) {
+  Vector polynomial_in{};
+  ceres::internal::(anonymous)::RemoveLeadingZeros(polynomial_in);
 }
 
-// P2: START -> 1 -> END
-TEST(RemoveLeadingZerosTest, TC2_CallsTarget) {
-  Vector & polynomial_in a0{};
-  RemoveLeadingZeros(a0);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0804, TC2_CallsTarget) {
+  Vector polynomial_in{};
+  ceres::internal::(anonymous)::RemoveLeadingZeros(polynomial_in);
 }
-

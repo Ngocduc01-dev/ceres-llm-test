@@ -4,10 +4,8 @@
 #include "ceres/dynamic_sparse_normal_cholesky_solver.h"
 #include "ceres/linear_solver.h"
 
-// P1: START -> 1 -> END
-TEST(SolveImplUsingSuiteSparseTest, TC1_CallsTarget) {
-  DynamicSparseNormalCholeskySolver object{};
-  double a1[5] = {};
-  object.SolveImplUsingSuiteSparse(nullptr, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0959, TC1_CallsTarget) {
+  ceres::internal::DynamicSparseNormalCholeskySolver object{};
+  object.SolveImplUsingSuiteSparse(nullptr, nullptr);
 }
-

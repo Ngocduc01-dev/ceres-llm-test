@@ -5,13 +5,9 @@
 #include "ceres/parameter_block.h"
 #include "ceres/program.h"
 
-// P1: START -> 1 -> END
-TEST(PlusTest, TC1_CallsTarget) {
-  Program object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  double a2[5] = {};
-  int a4 = 0;
-  object.Plus(a0, a1, a2, nullptr, a4);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1177, TC1_CallsTarget) {
+  int num_threads{};
+  ceres::internal::Program object{};
+  object.Plus(nullptr, nullptr, nullptr, nullptr, num_threads);
 }
-

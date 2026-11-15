@@ -4,11 +4,9 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/parallel_for.h"
 
-// P1: START -> 1 -> END
-TEST(UpdateImplTest, TC1_CallsTarget) {
-  BlockCRSJacobiPreconditioner object{};
-  CompressedRowSparseMatrix & A a0{};
-  double a1[5] = {};
-  object.UpdateImpl(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1231, TC1_CallsTarget) {
+  CompressedRowSparseMatrix A{};
+  ceres::internal::BlockCRSJacobiPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }
-

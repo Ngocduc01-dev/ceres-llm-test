@@ -4,11 +4,10 @@
 #include "ceres/linear_solver.h"
 #include "ceres/partitioned_matrix_view.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  PartitionedMatrixViewBase object{};
-  LinearSolver::Options & options a0{};
-  BlockSparseMatrix & matrix a1{};
-  object.Create(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0922, TC1_CallsTarget) {
+  LinearSolver::Options options{};
+  BlockSparseMatrix matrix{};
+  ceres::internal::PartitionedMatrixViewBase object{};
+  object.Create(options, matrix);
 }
-

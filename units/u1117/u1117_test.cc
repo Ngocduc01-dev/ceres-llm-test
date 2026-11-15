@@ -7,14 +7,9 @@
 #include "ceres/schur_eliminator.h"
 #include "ceres/schur_eliminator_impl.h"
 
-// P1: START -> 1 -> END
-TEST(BackSubstituteTest, TC1_CallsTarget) {
-  SchurEliminator object{};
-  BlockSparseMatrixData & A a0{};
-  double a1[5] = {};
-  double a2[5] = {};
-  double a3[5] = {};
-  double a4[5] = {};
-  object.BackSubstitute(a0, a1, a2, a3, a4);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1117, TC1_CallsTarget) {
+  BlockSparseMatrixData A{};
+  ceres::internal::SchurEliminator object{};
+  object.BackSubstitute(A, nullptr, nullptr, nullptr, nullptr);
 }
-

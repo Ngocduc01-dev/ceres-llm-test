@@ -5,11 +5,8 @@
 #include "ceres/line_search.h"
 #include "ceres/map_util.h"
 
-// P1: START -> 1 -> END
-TEST(TimeStatisticsTest, TC1_CallsTarget) {
-  LineSearchFunction object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.TimeStatistics(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1006, TC1_CallsTarget) {
+  ceres::internal::LineSearchFunction object{};
+  object.TimeStatistics(nullptr, nullptr);
 }
-

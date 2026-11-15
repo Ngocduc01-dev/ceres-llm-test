@@ -4,10 +4,9 @@
 #include "ceres/problem_impl.h"
 #include "ceres/residual_block.h"
 
-// P1: START -> 1 -> END
-TEST(GetLossFunctionForResidualBlockTest, TC1_CallsTarget) {
-  ProblemImpl object{};
-  ResidualBlockId a0{};
-  object.GetLossFunctionForResidualBlock(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1159, TC1_CallsTarget) {
+  const ResidualBlockId residual_block{};
+  ceres::internal::ProblemImpl object{};
+  object.GetLossFunctionForResidualBlock(residual_block);
 }
-

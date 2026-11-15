@@ -3,11 +3,9 @@
 #include "ceres/preconditioner.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(UpdateImplTest, TC1_CallsTarget) {
-  SparseMatrixPreconditionerWrapper object{};
-  SparseMatrix & a0{};
-  double a1[5] = {};
-  object.UpdateImpl(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0962, TC1_CallsTarget) {
+  SparseMatrix arg0{};
+  ceres::internal::SparseMatrixPreconditionerWrapper object{};
+  object.UpdateImpl(arg0, nullptr);
 }
-

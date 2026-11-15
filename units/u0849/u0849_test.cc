@@ -4,9 +4,9 @@
 #include "ceres/evaluator.h"
 #include "ceres/program.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0849, TC1_CallsTarget) {
-  DynamicCompressedRowJacobianWriter object{};
-  Evaluator::Options a0{};
+  Evaluator::Options arg0{};
+  ceres::internal::DynamicCompressedRowJacobianWriter object{};
+  (void)object;
 }
-

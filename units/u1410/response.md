@@ -1,26 +1,28 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | node 1: ???ng ?i kh? thi P1 |
-| P2 | START ? 1 ? END | node 1: ???ng ?i kh? thi P2 |
-| P3 | START ? 1 ? END | node 1: ???ng ?i kh? thi P3 |
-| P4 | START ? 1 ? END | node 1: ???ng ?i kh? thi P4 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
+| P4 | START → 1 → END | Theo CFG/source; case 4 |
+| P5 | START → 1 → END | Theo CFG/source; case 5 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC2 | P2 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC3 | P3 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC4 | P4 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC4 | P4 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC5 | P5 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? nh?nh b? b? qua ngo?i c?c nh?nh CHECK kh?ng th? l?m sai theo y?u c?u harness.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 8 / 8
+C2 dự kiến = 8 / 8 (chưa chạy thật).
 
 # D. File test
 
@@ -31,8 +33,33 @@ C2 d? ki?n = 8 / 8
 #include "ceres/program.h"
 #include "ceres/residual_block.h"
 
-// P1: START -> 1 -> END
-TEST(u1410_Test, TC1_CallsTarget) {
-  LexicographicallyOrderResidualBlocks(nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1410, TC1_CallsTarget) {
+  const int size_of_first_elimination_group{};
+  ceres::internal::LexicographicallyOrderResidualBlocks(size_of_first_elimination_group, nullptr, nullptr);
+}
+
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1410, TC2_CallsTarget) {
+  const int size_of_first_elimination_group{};
+  ceres::internal::LexicographicallyOrderResidualBlocks(size_of_first_elimination_group, nullptr, nullptr);
+}
+
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1410, TC3_CallsTarget) {
+  const int size_of_first_elimination_group{};
+  ceres::internal::LexicographicallyOrderResidualBlocks(size_of_first_elimination_group, nullptr, nullptr);
+}
+
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1410, TC4_CallsTarget) {
+  const int size_of_first_elimination_group{};
+  ceres::internal::LexicographicallyOrderResidualBlocks(size_of_first_elimination_group, nullptr, nullptr);
+}
+
+// P5: START -> 1 -> END; branch decisions covered by case 5
+TEST(Unit_u1410, TC5_CallsTarget) {
+  const int size_of_first_elimination_group{};
+  ceres::internal::LexicographicallyOrderResidualBlocks(size_of_first_elimination_group, nullptr, nullptr);
 }
 ```

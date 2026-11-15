@@ -1,20 +1,20 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | node 1: ???ng ?i kh? thi P1 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? nh?nh b? b? qua ngo?i c?c nh?nh CHECK kh?ng th? l?m sai theo y?u c?u harness.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 0 / 0
+C2 dự kiến = 0 / 0 (chưa chạy thật).
 
 # D. File test
 
@@ -24,8 +24,9 @@ C2 d? ki?n = 0 / 0
 #include "ceres/solver.h"
 #include "ceres/solver.cc"
 
-// P1: START -> 1 -> END
-TEST(u1413_Test, TC1_CallsTarget) {
-  OptionsAreValidForDenseNormalCholesky(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1413, TC1_CallsTarget) {
+  Solver::Options options{};
+  ceres::OptionsAreValidForDenseNormalCholesky(options, nullptr);
 }
 ```

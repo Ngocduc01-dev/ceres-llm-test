@@ -3,9 +3,9 @@
 #include "ceres/solver.h"
 #include "ceres/minimizer.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1078, TC1_CallsTarget) {
-  Options object{};
-  Solver::Options & options a0{};
+  Solver::Options options{};
+  ceres::internal::Minimizer::Options object{};
+  (void)object;
 }
-

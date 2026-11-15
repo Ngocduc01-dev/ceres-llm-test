@@ -4,17 +4,20 @@
 #include "ceres/parameter_block.h"
 #include "ceres/residual_block.h"
 
-// P1: START -> 1 -> END
-TEST(u1289_Test, TC1_CallsTarget) {
-  InvalidateEvaluation(nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1289, TC1_CallsTarget) {
+  ResidualBlock block{};
+  ceres::internal::InvalidateEvaluation(block, nullptr, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1289_Test, TC2_CallsTarget) {
-  InvalidateEvaluation(nullptr, nullptr, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1289, TC2_CallsTarget) {
+  ResidualBlock block{};
+  ceres::internal::InvalidateEvaluation(block, nullptr, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(u1289_Test, TC3_CallsTarget) {
-  InvalidateEvaluation(nullptr, nullptr, nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1289, TC3_CallsTarget) {
+  ResidualBlock block{};
+  ceres::internal::InvalidateEvaluation(block, nullptr, nullptr, nullptr);
 }

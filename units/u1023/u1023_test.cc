@@ -2,9 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/stringprintf.h"
 
-// P1: START -> 1 -> END
-TEST(StringPrintfTest, TC1_CallsTarget) {
-  char a0[8] = {};
-  ceres::internal::StringPrintf(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1023, TC1_CallsTarget) {
+  ceres::internal::StringPrintf(nullptr);
 }
-

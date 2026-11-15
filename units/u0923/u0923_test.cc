@@ -3,10 +3,9 @@
 #include "ceres/linear_solver.h"
 #include "ceres/schur_eliminator.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  SchurEliminatorBase object{};
-  LinearSolver::Options & options a0{};
-  object.Create(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0923, TC1_CallsTarget) {
+  LinearSolver::Options options{};
+  ceres::internal::SchurEliminatorBase object{};
+  object.Create(options);
 }
-

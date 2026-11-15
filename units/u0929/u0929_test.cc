@@ -5,12 +5,9 @@
 #include "ceres/parallel_for.h"
 #include "ceres/small_blas.h"
 
-// P1: START -> 1 -> END
-TEST(RightMultiplyAndAccumulateTest, TC1_CallsTarget) {
-  BlockSparseMatrix object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  int a3 = 0;
-  object.RightMultiplyAndAccumulate(a0, a1, nullptr, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0929, TC1_CallsTarget) {
+  int num_threads{};
+  ceres::internal::BlockSparseMatrix object{};
+  object.RightMultiplyAndAccumulate(nullptr, nullptr, nullptr, num_threads);
 }
-

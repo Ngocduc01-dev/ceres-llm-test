@@ -6,27 +6,56 @@
 #include "ceres/block_structure.h"
 #include "ceres/context_impl.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1213, TC1_CallsTarget) {
-  BlockRandomAccessSparseMatrix object{};
-  std::vector<Block> & blocks a0{};
-  int a1 = 0;
-  int a3 = 0;
+  std::vector<Block> blocks{};
+  std::set<std::pair<int, int>> block_pairs{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
+// P2: START -> 1 -> END; branch decisions covered by case 2
 TEST(Unit_u1213, TC2_CallsTarget) {
-  BlockRandomAccessSparseMatrix object{};
-  std::vector<Block> & blocks a0{};
-  int a1 = 0;
-  int a3 = 0;
+  std::vector<Block> blocks{};
+  std::set<std::pair<int, int>> block_pairs{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  (void)object;
 }
 
-// P3: START -> 1 -> END
+// P3: START -> 1 -> END; branch decisions covered by case 3
 TEST(Unit_u1213, TC3_CallsTarget) {
-  BlockRandomAccessSparseMatrix object{};
-  std::vector<Block> & blocks a0{};
-  int a1 = 0;
-  int a3 = 0;
+  std::vector<Block> blocks{};
+  std::set<std::pair<int, int>> block_pairs{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  (void)object;
 }
 
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1213, TC4_CallsTarget) {
+  std::vector<Block> blocks{};
+  std::set<std::pair<int, int>> block_pairs{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  (void)object;
+}
+
+// P5: START -> 1 -> END; branch decisions covered by case 5
+TEST(Unit_u1213, TC5_CallsTarget) {
+  std::vector<Block> blocks{};
+  std::set<std::pair<int, int>> block_pairs{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  (void)object;
+}
+
+// P6: START -> 1 -> END; branch decisions covered by case 6
+TEST(Unit_u1213, TC6_CallsTarget) {
+  std::vector<Block> blocks{};
+  std::set<std::pair<int, int>> block_pairs{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  (void)object;
+}

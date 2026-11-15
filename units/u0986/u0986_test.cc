@@ -2,11 +2,9 @@
 #include "gtest/gtest.h"
 #include "ceres/block_evaluate_preparer.h"
 
-// P1: START -> 1 -> END
-TEST(InitTest, TC1_CallsTarget) {
-  BlockEvaluatePreparer object{};
-  int a0[5] = {};
-  int a1 = 0;
-  object.Init(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0986, TC1_CallsTarget) {
+  int max_derivatives_per_residual_block{};
+  ceres::internal::BlockEvaluatePreparer object{};
+  object.Init(nullptr, max_derivatives_per_residual_block);
 }
-

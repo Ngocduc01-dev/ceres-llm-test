@@ -4,10 +4,9 @@
 #include "ceres/context_impl.h"
 #include "ceres/eigen_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(NormTest, TC1_CallsTarget) {
-  Eigen::DenseBase<Derived>& x a0{};
-  int a2 = 0;
-  ceres::internal::Norm(a0, nullptr, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0851, TC1_CallsTarget) {
+  Eigen::DenseBase<Derived> x{};
+  int num_threads{};
+  ceres::internal::Norm(x, nullptr, num_threads);
 }
-

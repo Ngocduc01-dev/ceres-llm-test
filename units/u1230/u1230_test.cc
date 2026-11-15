@@ -8,13 +8,12 @@
 #include "ceres/problem_impl.h"
 #include "ceres/trust_region_preprocessor.cc"
 
-// P1: START -> 1 -> END
-TEST(SetupEvaluatorTest, TC1_CallsTarget) {
-  SetupEvaluator(nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1230, TC1_CallsTarget) {
+  ceres::internal::(anonymous)::SetupEvaluator(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(SetupEvaluatorTest, TC2_CallsTarget) {
-  SetupEvaluator(nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1230, TC2_CallsTarget) {
+  ceres::internal::(anonymous)::SetupEvaluator(nullptr);
 }
-

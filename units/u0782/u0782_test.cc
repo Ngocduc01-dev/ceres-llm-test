@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/rotation.h"
 
-// P1: START -> 1 -> END
-TEST(RotationMatrixToEulerAnglesTest, TC1_CallsTarget) {
-  MatrixAdapter< T, row_stride, col_stride>& R a0{};
-  RotationMatrixToEulerAngles(a0, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0782, TC1_CallsTarget) {
+  MatrixAdapter<const T, row_stride, col_stride> R{};
+  ceres::RotationMatrixToEulerAngles(R, nullptr);
 }
-

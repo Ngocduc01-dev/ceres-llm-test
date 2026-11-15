@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/problem_impl.h"
 
-// P1: START -> 1 -> END
-TEST(u1381_Test, TC1_CallsTarget) {
-  ceres::internal::ProblemImpl target{};
-  target.NumResiduals();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1381, TC1_CallsTarget) {
+  ceres::internal::ProblemImpl object{};
+  object.NumResiduals();
 }

@@ -4,14 +4,18 @@
 #include "ceres/linear_operator.h"
 #include "ceres/parallel_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(u1285_Test, TC1_CallsTarget) {
-  ceres::internal::CgnrLinearOperator target{};
-  target.RightMultiplyAndAccumulate(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1285, TC1_CallsTarget) {
+  Vector x{};
+  Vector y{};
+  ceres::internal::CgnrLinearOperator object{};
+  object.RightMultiplyAndAccumulate(x, y);
 }
 
-// P2: START -> 1 -> END
-TEST(u1285_Test, TC2_CallsTarget) {
-  ceres::internal::CgnrLinearOperator target{};
-  target.RightMultiplyAndAccumulate(nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1285, TC2_CallsTarget) {
+  Vector x{};
+  Vector y{};
+  ceres::internal::CgnrLinearOperator object{};
+  object.RightMultiplyAndAccumulate(x, y);
 }

@@ -3,10 +3,9 @@
 #include "ceres/concurrent_queue.h"
 #include "ceres/thread_pool.h"
 
-// P1: START -> 1 -> END
-TEST(AddTaskTest, TC1_CallsTarget) {
-  ThreadPool object{};
-  std::function<void ()> & func a0{};
-  object.AddTask(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0898, TC1_CallsTarget) {
+  std::function<void ()> func{};
+  ceres::internal::ThreadPool object{};
+  object.AddTask(func);
 }
-

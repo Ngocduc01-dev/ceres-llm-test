@@ -9,8 +9,8 @@
 #include "ceres/trust_region_minimizer.h"
 #include "ceres/trust_region_strategy.h"
 
-// P1: START -> 1 -> END
-TEST(u1493_Test, TC1_CallsTarget) {
-  ceres::internal::CoordinateDescentMinimizer target{};
-  target.Solve(nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1493, TC1_CallsTarget) {
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Solve(nullptr, nullptr, nullptr, nullptr);
 }

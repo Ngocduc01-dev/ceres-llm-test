@@ -3,10 +3,9 @@
 #include "ceres/block_sparse_matrix.h"
 #include "ceres/context_impl.h"
 
-// P1: START -> 1 -> END
-TEST(SetZeroTest, TC1_CallsTarget) {
-  BlockSparseMatrix object{};
-  int a1 = 0;
-  object.SetZero(nullptr, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1145, TC1_CallsTarget) {
+  int num_threads{};
+  ceres::internal::BlockSparseMatrix object{};
+  object.SetZero(nullptr, num_threads);
 }
-

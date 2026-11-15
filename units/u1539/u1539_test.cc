@@ -3,7 +3,7 @@
 #include "ceres/problem.h"
 #include "ceres/solver.h"
 
-// P1: START -> 1 -> END
-TEST(u1539_Test, TC1_CallsTarget) {
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1539, TC1_CallsTarget) {
   ceres_solve(nullptr);
 }

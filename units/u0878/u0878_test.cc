@@ -3,9 +3,9 @@
 #include "ceres/linear_solver.h"
 #include "ceres/preconditioner.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0878, TC1_CallsTarget) {
-  Options object{};
-  LinearSolver::Options & linear_solver_options a0{};
+  LinearSolver::Options linear_solver_options{};
+  ceres::internal::Preconditioner::Options object{};
+  (void)object;
 }
-

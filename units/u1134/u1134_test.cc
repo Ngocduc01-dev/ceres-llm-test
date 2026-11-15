@@ -6,15 +6,14 @@
 #include "ceres/program.h"
 #include "ceres/trust_region_preprocessor.cc"
 
-// P1: START -> 1 -> END
-TEST(CreateDefaultLinearSolverOrderingTest, TC1_CallsTarget) {
-  Program & program a0{};
-  CreateDefaultLinearSolverOrdering(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1134, TC1_CallsTarget) {
+  Program program{};
+  ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering(program);
 }
 
-// P2: START -> 1 -> END
-TEST(CreateDefaultLinearSolverOrderingTest, TC2_CallsTarget) {
-  Program & program a0{};
-  CreateDefaultLinearSolverOrdering(a0);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1134, TC2_CallsTarget) {
+  Program program{};
+  ceres::internal::(anonymous)::CreateDefaultLinearSolverOrdering(program);
 }
-

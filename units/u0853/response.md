@@ -1,20 +1,20 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 1 / 1
+C2 dự kiến = 0 / 0 (chưa chạy thật).
 
 # D. File test
 
@@ -25,14 +25,14 @@ C2 d? ki?n = 1 / 1
 #include "ceres/eigen_vector_ops.h"
 #include "ceres/parallel_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(AxpbyTest, TC1_CallsTarget) {
-  double a0 = 0.0;
-  Vector & x a1{};
-  double a2 = 0.0;
-  Vector & y a3{};
-  Vector & z a4{};
-  int a6 = 0;
-  ceres::internal::Axpby(a0, a1, a2, a3, a4, nullptr, a6);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0853, TC1_CallsTarget) {
+  double a{};
+  Vector x{};
+  double b{};
+  Vector y{};
+  Vector z{};
+  int num_threads{};
+  ceres::internal::Axpby(a, x, b, y, z, nullptr, num_threads);
 }
 ```

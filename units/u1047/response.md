@@ -1,24 +1,24 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
-| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
-| P3 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 3 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC3 | P3 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 4 / 4
+C2 dự kiến = 4 / 4 (chưa chạy thật).
 
 # D. File test
 
@@ -27,24 +27,24 @@ C2 d? ki?n = 4 / 4
 #include "gtest/gtest.h"
 #include "ceres/ordered_groups.h"
 
-// P1: START -> 1 -> END
-TEST(RemoveTest, TC1_CallsTarget) {
-  OrderedGroups object{};
-  T a0{};
-  object.Remove(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1047, TC1_CallsTarget) {
+  const T element{};
+  ceres::OrderedGroups object{};
+  object.Remove(element);
 }
 
-// P2: START -> 1 -> END
-TEST(RemoveTest, TC2_CallsTarget) {
-  OrderedGroups object{};
-  T a0{};
-  object.Remove(a0);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1047, TC2_CallsTarget) {
+  const T element{};
+  ceres::OrderedGroups object{};
+  object.Remove(element);
 }
 
-// P3: START -> 1 -> END
-TEST(RemoveTest, TC3_CallsTarget) {
-  OrderedGroups object{};
-  T a0{};
-  object.Remove(a0);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1047, TC3_CallsTarget) {
+  const T element{};
+  ceres::OrderedGroups object{};
+  object.Remove(element);
 }
 ```

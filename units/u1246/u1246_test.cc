@@ -2,11 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/implicit_schur_complement.h"
 
-// P1: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateTest, TC1_CallsTarget) {
-  ImplicitSchurComplement object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulate(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1246, TC1_CallsTarget) {
+  ceres::internal::ImplicitSchurComplement object{};
+  object.LeftMultiplyAndAccumulate(nullptr, nullptr);
 }
-

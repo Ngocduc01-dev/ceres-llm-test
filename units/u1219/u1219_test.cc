@@ -5,11 +5,10 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/inner_product_computer.h"
 
-// P1: START -> 1 -> END
-TEST(CreateResultMatrixTest, TC1_CallsTarget) {
-  InnerProductComputer object{};
-  CompressedRowSparseMatrix::StorageType a0{};
-  int a1 = 0;
-  object.CreateResultMatrix(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1219, TC1_CallsTarget) {
+  const CompressedRowSparseMatrix::StorageType storage_type{};
+  const int num_nonzeros{};
+  ceres::internal::InnerProductComputer object{};
+  object.CreateResultMatrix(storage_type, num_nonzeros);
 }
-

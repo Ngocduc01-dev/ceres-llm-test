@@ -2,17 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(operator=Test, TC1_CallsTarget) {
-  TripletSparseMatrix object{};
-  TripletSparseMatrix & rhs a0{};
-  object.operator=(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1167, TC1_CallsTarget) {
+  TripletSparseMatrix rhs{};
+  ceres::internal::TripletSparseMatrix object{};
+  object(rhs);
 }
 
-// P2: START -> 1 -> END
-TEST(operator=Test, TC2_CallsTarget) {
-  TripletSparseMatrix object{};
-  TripletSparseMatrix & rhs a0{};
-  object.operator=(a0);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1167, TC2_CallsTarget) {
+  TripletSparseMatrix rhs{};
+  ceres::internal::TripletSparseMatrix object{};
+  object(rhs);
 }
-

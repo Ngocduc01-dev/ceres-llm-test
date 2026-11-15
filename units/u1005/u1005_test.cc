@@ -5,9 +5,8 @@
 #include "ceres/line_search.h"
 #include "ceres/map_util.h"
 
-// P1: START -> 1 -> END
-TEST(ResetTimeStatisticsTest, TC1_CallsTarget) {
-  LineSearchFunction object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1005, TC1_CallsTarget) {
+  ceres::internal::LineSearchFunction object{};
   object.ResetTimeStatistics();
 }
-

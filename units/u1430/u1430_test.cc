@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/problem.h"
 
-// P1: START -> 1 -> END
-TEST(u1430_Test, TC1_CallsTarget) {
-  ceres::Problem target{};
-  target.NumParameters();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1430, TC1_CallsTarget) {
+  ceres::Problem object{};
+  object.NumParameters();
 }

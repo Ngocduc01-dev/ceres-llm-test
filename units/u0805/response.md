@@ -1,22 +1,22 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
-| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 2 / 2
+C2 dự kiến = 2 / 2 (chưa chạy thật).
 
 # D. File test
 
@@ -25,19 +25,17 @@ C2 d? ki?n = 2 / 2
 #include "gtest/gtest.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(ComputeClusterVisibilityTest, TC1_CallsTarget) {
-  VisibilityBasedPreconditioner object{};
-  int a0 = 0;
-  int a1[5] = {};
-  object.ComputeClusterVisibility(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0805, TC1_CallsTarget) {
+  std::vector<std::set<int>> visibility{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.ComputeClusterVisibility(visibility, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(ComputeClusterVisibilityTest, TC2_CallsTarget) {
-  VisibilityBasedPreconditioner object{};
-  int a0 = 0;
-  int a1[5] = {};
-  object.ComputeClusterVisibility(a0, a1);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0805, TC2_CallsTarget) {
+  std::vector<std::set<int>> visibility{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.ComputeClusterVisibility(visibility, nullptr);
 }
 ```

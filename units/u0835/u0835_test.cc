@@ -4,11 +4,10 @@
 #include "ceres/context_impl.h"
 #include "ceres/linear_operator.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0835, TC1_CallsTarget) {
-  CgnrLinearOperator object{};
-  LinearOperator & A a0{};
-  double a1[5] = {};
-  int a3 = 0;
+  LinearOperator A{};
+  int num_threads{};
+  ceres::internal::CgnrLinearOperator object{};
+  (void)object;
 }
-

@@ -3,18 +3,17 @@
 #include "ceres/linear_least_squares_problems.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(LinearLeastSquaresProblem0Test, TC1_CallsTarget) {
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1172, TC1_CallsTarget) {
   ceres::internal::LinearLeastSquaresProblem0();
 }
 
-// P2: START -> 1 -> END
-TEST(LinearLeastSquaresProblem0Test, TC2_CallsTarget) {
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1172, TC2_CallsTarget) {
   ceres::internal::LinearLeastSquaresProblem0();
 }
 
-// P3: START -> 1 -> END
-TEST(LinearLeastSquaresProblem0Test, TC3_CallsTarget) {
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1172, TC3_CallsTarget) {
   ceres::internal::LinearLeastSquaresProblem0();
 }
-

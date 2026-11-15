@@ -5,10 +5,10 @@
 #include "ceres/block_sparse_matrix.h"
 #include "ceres/preconditioner.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1143, TC1_CallsTarget) {
-  BlockSparseJacobiPreconditioner object{};
-  Preconditioner::Options a0{};
-  BlockSparseMatrix & A a1{};
+  Preconditioner::Options options{};
+  BlockSparseMatrix A{};
+  ceres::internal::BlockSparseJacobiPreconditioner object{};
+  (void)object;
 }
-

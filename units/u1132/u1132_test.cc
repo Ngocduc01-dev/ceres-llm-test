@@ -5,9 +5,8 @@
 #include "ceres/block_structure.h"
 #include "ceres/schur_complement_solver.h"
 
-// P1: START -> 1 -> END
-TEST(InitStorageTest, TC1_CallsTarget) {
-  DenseSchurComplementSolver object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1132, TC1_CallsTarget) {
+  ceres::internal::DenseSchurComplementSolver object{};
   object.InitStorage(nullptr);
 }
-

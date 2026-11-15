@@ -2,24 +2,26 @@
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0767, TC1_CallsTarget) {
-  SubsetManifold object{};
-  int a0 = 0;
-  int a1 = 0;
+  const int size{};
+  std::vector<int> constant_parameters{};
+  ceres::SubsetManifold object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
+// P2: START -> 1 -> END; branch decisions covered by case 2
 TEST(Unit_u0767, TC2_CallsTarget) {
-  SubsetManifold object{};
-  int a0 = 0;
-  int a1 = 0;
+  const int size{};
+  std::vector<int> constant_parameters{};
+  ceres::SubsetManifold object{};
+  (void)object;
 }
 
-// P3: START -> 1 -> END
+// P3: START -> 1 -> END; branch decisions covered by case 3
 TEST(Unit_u0767, TC3_CallsTarget) {
-  SubsetManifold object{};
-  int a0 = 0;
-  int a1 = 0;
+  const int size{};
+  std::vector<int> constant_parameters{};
+  ceres::SubsetManifold object{};
+  (void)object;
 }
-

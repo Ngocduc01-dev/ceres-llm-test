@@ -4,9 +4,8 @@
 #include "ceres/solver.h"
 #include "ceres/gradient_problem_solver.cc"
 
-// P1: START -> 1 -> END
-TEST(GradientProblemSolverOptionsToSolverOptionsTest, TC1_CallsTarget) {
-  GradientProblemSolver::Options & options a0{};
-  GradientProblemSolverOptionsToSolverOptions(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0790, TC1_CallsTarget) {
+  GradientProblemSolver::Options options{};
+  ceres::GradientProblemSolverOptionsToSolverOptions(options);
 }
-

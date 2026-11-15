@@ -3,14 +3,14 @@
 #include "ceres/program.h"
 #include "ceres/residual_block.h"
 
-// P1: START -> 1 -> END
-TEST(u1261_Test, TC1_CallsTarget) {
-  ceres::internal::Program target{};
-  target.MaxParametersPerResidualBlock();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1261, TC1_CallsTarget) {
+  ceres::internal::Program object{};
+  object.MaxParametersPerResidualBlock();
 }
 
-// P2: START -> 1 -> END
-TEST(u1261_Test, TC2_CallsTarget) {
-  ceres::internal::Program target{};
-  target.MaxParametersPerResidualBlock();
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1261, TC2_CallsTarget) {
+  ceres::internal::Program object{};
+  object.MaxParametersPerResidualBlock();
 }

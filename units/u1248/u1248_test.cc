@@ -2,10 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/problem_impl.h"
 
-// P1: START -> 1 -> END
-TEST(HasManifoldTest, TC1_CallsTarget) {
-  ProblemImpl object{};
-  double a0[5] = {};
-  object.HasManifold(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1248, TC1_CallsTarget) {
+  ceres::internal::ProblemImpl object{};
+  object.HasManifold(nullptr);
 }
-

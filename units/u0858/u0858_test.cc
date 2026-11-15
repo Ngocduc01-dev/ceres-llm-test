@@ -3,13 +3,8 @@
 #include "ceres/evaluator.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(EvaluateTest, TC1_CallsTarget) {
-  Evaluator object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  double a2[5] = {};
-  double a3[5] = {};
-  object.Evaluate(a0, a1, a2, a3, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0858, TC1_CallsTarget) {
+  ceres::internal::Evaluator object{};
+  object.Evaluate(nullptr, nullptr, nullptr, nullptr, nullptr);
 }
-

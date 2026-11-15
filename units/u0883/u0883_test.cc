@@ -4,10 +4,8 @@
 #include "ceres/loss_function.h"
 #include "ceres/problem_impl.h"
 
-// P1: START -> 1 -> END
-TEST(AddResidualBlockTest, TC1_CallsTarget) {
-  ProblemImpl object{};
-  double a2[5] = {};
-  object.AddResidualBlock(nullptr, nullptr, a2, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0883, TC1_CallsTarget) {
+  ceres::internal::ProblemImpl object{};
+  object.AddResidualBlock(nullptr, nullptr, nullptr, nullptr);
 }
-

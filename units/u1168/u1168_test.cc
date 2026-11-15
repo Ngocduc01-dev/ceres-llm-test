@@ -2,19 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(CreateSparseDiagonalMatrixTest, TC1_CallsTarget) {
-  TripletSparseMatrix object{};
-  double a0[5] = {};
-  int a1 = 0;
-  object.CreateSparseDiagonalMatrix(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1168, TC1_CallsTarget) {
+  int num_rows{};
+  ceres::internal::TripletSparseMatrix object{};
+  object.CreateSparseDiagonalMatrix(nullptr, num_rows);
 }
 
-// P2: START -> 1 -> END
-TEST(CreateSparseDiagonalMatrixTest, TC2_CallsTarget) {
-  TripletSparseMatrix object{};
-  double a0[5] = {};
-  int a1 = 0;
-  object.CreateSparseDiagonalMatrix(a0, a1);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1168, TC2_CallsTarget) {
+  int num_rows{};
+  ceres::internal::TripletSparseMatrix object{};
+  object.CreateSparseDiagonalMatrix(nullptr, num_rows);
 }
-

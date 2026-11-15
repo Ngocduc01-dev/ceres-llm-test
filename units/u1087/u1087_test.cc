@@ -3,23 +3,16 @@
 #include "ceres/dense_cholesky.h"
 #include "ceres/iterative_refiner.h"
 
-// P1: START -> 1 -> END
-TEST(RefineTest, TC1_CallsTarget) {
-  DenseIterativeRefiner object{};
-  int a0 = 0;
-  double a1[5] = {};
-  double a2[5] = {};
-  double a4[5] = {};
-  object.Refine(a0, a1, a2, nullptr, a4);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1087, TC1_CallsTarget) {
+  const int num_cols{};
+  ceres::internal::DenseIterativeRefiner object{};
+  object.Refine(num_cols, nullptr, nullptr, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(RefineTest, TC2_CallsTarget) {
-  DenseIterativeRefiner object{};
-  int a0 = 0;
-  double a1[5] = {};
-  double a2[5] = {};
-  double a4[5] = {};
-  object.Refine(a0, a1, a2, nullptr, a4);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1087, TC2_CallsTarget) {
+  const int num_cols{};
+  ceres::internal::DenseIterativeRefiner object{};
+  object.Refine(num_cols, nullptr, nullptr, nullptr, nullptr);
 }
-

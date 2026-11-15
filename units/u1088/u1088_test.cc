@@ -5,19 +5,14 @@
 #include "ceres/partitioned_matrix_view.h"
 #include "ceres/partitioned_matrix_view_impl.h"
 
-// P1: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateESingleThreadedTest, TC1_CallsTarget) {
-  PartitionedMatrixView object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulateESingleThreaded(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1088, TC1_CallsTarget) {
+  ceres::internal::PartitionedMatrixView object{};
+  object.LeftMultiplyAndAccumulateESingleThreaded(nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateESingleThreadedTest, TC2_CallsTarget) {
-  PartitionedMatrixView object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulateESingleThreaded(a0, a1);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1088, TC2_CallsTarget) {
+  ceres::internal::PartitionedMatrixView object{};
+  object.LeftMultiplyAndAccumulateESingleThreaded(nullptr, nullptr);
 }
-

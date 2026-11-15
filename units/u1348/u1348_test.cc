@@ -6,12 +6,18 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/context_impl.h"
 
-// P1: START -> 1 -> END
-TEST(u1348_Test, TC1_CallsTarget) {
-  ceres::internal::BlockRandomAccessDiagonalMatrix target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1348, TC1_CallsTarget) {
+  std::vector<Block> blocks{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessDiagonalMatrix object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
-TEST(u1348_Test, TC2_CallsTarget) {
-  ceres::internal::BlockRandomAccessDiagonalMatrix target{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1348, TC2_CallsTarget) {
+  std::vector<Block> blocks{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessDiagonalMatrix object{};
+  (void)object;
 }

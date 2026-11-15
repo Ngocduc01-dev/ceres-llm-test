@@ -3,9 +3,9 @@
 #include "ceres/dogleg_strategy.h"
 #include "ceres/trust_region_strategy.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0942, TC1_CallsTarget) {
-  DoglegStrategy object{};
-  TrustRegionStrategy::Options & options a0{};
+  TrustRegionStrategy::Options options{};
+  ceres::internal::DoglegStrategy object{};
+  (void)object;
 }
-

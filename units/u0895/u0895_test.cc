@@ -3,11 +3,9 @@
 #include "ceres/context_impl.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(ScaleColumnsTest, TC1_CallsTarget) {
-  SparseMatrix object{};
-  double a0[5] = {};
-  int a2 = 0;
-  object.ScaleColumns(a0, nullptr, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0895, TC1_CallsTarget) {
+  int num_threads{};
+  ceres::internal::SparseMatrix object{};
+  object.ScaleColumns(nullptr, nullptr, num_threads);
 }
-

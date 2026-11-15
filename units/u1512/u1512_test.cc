@@ -3,8 +3,9 @@
 #include "ceres/crs_matrix.h"
 #include "ceres/problem.h"
 
-// P1: START -> 1 -> END
-TEST(u1512_Test, TC1_CallsTarget) {
-  ceres::Problem target{};
-  target.Evaluate(nullptr, nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1512, TC1_CallsTarget) {
+  EvaluateOptions evaluate_options{};
+  ceres::Problem object{};
+  object.Evaluate(evaluate_options, nullptr, nullptr, nullptr, nullptr);
 }

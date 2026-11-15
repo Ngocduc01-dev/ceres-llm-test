@@ -4,20 +4,32 @@
 #include "ceres/internal/numeric_diff.h"
 #include "ceres/numeric_diff_options.h"
 
-// P1: START -> 1 -> END
-TEST(u1305_Test, TC1_CallsTarget) {
-  NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1> target{};
-  target.EvaluateJacobianForParameterBlock(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1305, TC1_CallsTarget) {
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_index{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateJacobianForParameterBlock(nullptr, nullptr, options, num_residuals, parameter_block_index, parameter_block_size, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1305_Test, TC2_CallsTarget) {
-  NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1> target{};
-  target.EvaluateJacobianForParameterBlock(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1305, TC2_CallsTarget) {
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_index{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateJacobianForParameterBlock(nullptr, nullptr, options, num_residuals, parameter_block_index, parameter_block_size, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(u1305_Test, TC3_CallsTarget) {
-  NumericDiff<PlusFunctor, RIDDERS, -1, ParameterDims<true>, -1, -1> target{};
-  target.EvaluateJacobianForParameterBlock(nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1305, TC3_CallsTarget) {
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_index{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateJacobianForParameterBlock(nullptr, nullptr, options, num_residuals, parameter_block_index, parameter_block_size, nullptr, nullptr);
 }

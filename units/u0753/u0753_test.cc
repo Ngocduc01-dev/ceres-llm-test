@@ -2,17 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(PreconditionerForZeroEBlocksTest, TC1_CallsTarget) {
-  Preconditioner object{};
-  PreconditionerType a0{};
-  object.PreconditionerForZeroEBlocks(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0753, TC1_CallsTarget) {
+  PreconditionerType preconditioner_type{};
+  ceres::internal::Preconditioner object{};
+  object.PreconditionerForZeroEBlocks(preconditioner_type);
 }
 
-// P2: START -> 1 -> END
-TEST(PreconditionerForZeroEBlocksTest, TC2_CallsTarget) {
-  Preconditioner object{};
-  PreconditionerType a0{};
-  object.PreconditionerForZeroEBlocks(a0);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0753, TC2_CallsTarget) {
+  PreconditionerType preconditioner_type{};
+  ceres::internal::Preconditioner object{};
+  object.PreconditionerForZeroEBlocks(preconditioner_type);
 }
-

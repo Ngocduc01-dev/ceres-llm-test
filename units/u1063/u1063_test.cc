@@ -4,9 +4,8 @@
 #include "ceres/parallel_vector_ops.h"
 #include "ceres/partitioned_matrix_view.h"
 
-// P1: START -> 1 -> END
-TEST(UpdateRhsTest, TC1_CallsTarget) {
-  ImplicitSchurComplement object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1063, TC1_CallsTarget) {
+  ceres::internal::ImplicitSchurComplement object{};
   object.UpdateRhs();
 }
-

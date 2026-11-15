@@ -1,20 +1,20 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 1 / 1
+C2 dự kiến = 0 / 0 (chưa chạy thật).
 
 # D. File test
 
@@ -25,13 +25,13 @@ C2 d? ki?n = 1 / 1
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/inner_product_computer.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  InnerProductComputer object{};
-  BlockSparseMatrix & m a0{};
-  int a1 = 0;
-  int a2 = 0;
-  CompressedRowSparseMatrix::StorageType a3{};
-  object.Create(a0, a1, a2, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1184, TC1_CallsTarget) {
+  BlockSparseMatrix m{};
+  const int start_row_block{};
+  const int end_row_block{};
+  CompressedRowSparseMatrix::StorageType product_storage_type{};
+  ceres::internal::InnerProductComputer object{};
+  object.Create(m, start_row_block, end_row_block, product_storage_type);
 }
 ```

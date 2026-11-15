@@ -5,12 +5,18 @@
 #include "ceres/block_structure.h"
 #include "ceres/context_impl.h"
 
-// P1: START -> 1 -> END
-TEST(u1347_Test, TC1_CallsTarget) {
-  ceres::internal::BlockRandomAccessDenseMatrix target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1347, TC1_CallsTarget) {
+  std::vector<Block> blocks{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessDenseMatrix object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
-TEST(u1347_Test, TC2_CallsTarget) {
-  ceres::internal::BlockRandomAccessDenseMatrix target{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1347, TC2_CallsTarget) {
+  std::vector<Block> blocks{};
+  int num_threads{};
+  ceres::internal::BlockRandomAccessDenseMatrix object{};
+  (void)object;
 }

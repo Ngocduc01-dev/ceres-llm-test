@@ -2,10 +2,9 @@
 #include "gtest/gtest.h"
 #include "ceres/problem.h"
 
-// P1: START -> 1 -> END
-TEST(operator=Test, TC1_CallsTarget) {
-  Problem object{};
-  Problem && a0{};
-  object.operator=(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0880, TC1_CallsTarget) {
+  Problem arg0{};
+  ceres::Problem object{};
+  object(arg0);
 }
-

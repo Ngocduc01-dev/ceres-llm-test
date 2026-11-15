@@ -4,14 +4,14 @@
 #include "ceres/partitioned_matrix_view.h"
 #include "ceres/partitioned_matrix_view_impl.h"
 
-// P1: START -> 1 -> END
-TEST(u1357_Test, TC1_CallsTarget) {
-  PartitionedMatrixView<> target{};
-  target.UpdateBlockDiagonalFtF(nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1357, TC1_CallsTarget) {
+  ceres::internal::PartitionedMatrixView object{};
+  object.UpdateBlockDiagonalFtF(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1357_Test, TC2_CallsTarget) {
-  PartitionedMatrixView<> target{};
-  target.UpdateBlockDiagonalFtF(nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1357, TC2_CallsTarget) {
+  ceres::internal::PartitionedMatrixView object{};
+  object.UpdateBlockDiagonalFtF(nullptr);
 }

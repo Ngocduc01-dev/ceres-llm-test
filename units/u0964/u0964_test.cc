@@ -3,9 +3,8 @@
 #include "ceres/linear_solver.h"
 #include "ceres/schur_complement_solver.h"
 
-// P1: START -> 1 -> END
-TEST(optionsTest, TC1_CallsTarget) {
-  SchurComplementSolver object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0964, TC1_CallsTarget) {
+  ceres::internal::SchurComplementSolver object{};
   object.options();
 }
-

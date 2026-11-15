@@ -6,7 +6,10 @@
 #include "ceres/sparse_cholesky.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(u1515_Test, TC1_CallsTarget) {
-  ceres::internal::VisibilityBasedPreconditioner target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1515, TC1_CallsTarget) {
+  CompressedRowBlockStructure bs{};
+  Preconditioner::Options options{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  (void)object;
 }

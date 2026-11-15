@@ -3,19 +3,18 @@
 #include "ceres/line_search_direction.h"
 #include "ceres/line_search_minimizer.h"
 
-// P1: START -> 1 -> END
-TEST(NextDirectionTest, TC1_CallsTarget) {
-  NonlinearConjugateGradient object{};
-  LineSearchMinimizer::State & previous a0{};
-  LineSearchMinimizer::State & current a1{};
-  object.NextDirection(a0, a1, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0762, TC1_CallsTarget) {
+  LineSearchMinimizer::State previous{};
+  LineSearchMinimizer::State current{};
+  ceres::internal::NonlinearConjugateGradient object{};
+  object.NextDirection(previous, current, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(NextDirectionTest, TC2_CallsTarget) {
-  NonlinearConjugateGradient object{};
-  LineSearchMinimizer::State & previous a0{};
-  LineSearchMinimizer::State & current a1{};
-  object.NextDirection(a0, a1, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0762, TC2_CallsTarget) {
+  LineSearchMinimizer::State previous{};
+  LineSearchMinimizer::State current{};
+  ceres::internal::NonlinearConjugateGradient object{};
+  object.NextDirection(previous, current, nullptr);
 }
-

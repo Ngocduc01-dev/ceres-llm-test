@@ -7,14 +7,16 @@
 #include "ceres/parallel_for.h"
 #include "ceres/small_blas.h"
 
-// P1: START -> 1 -> END
-TEST(u1372_Test, TC1_CallsTarget) {
-  ceres::internal::BlockSparseJacobiPreconditioner target{};
-  target.UpdateImpl(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1372, TC1_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::BlockSparseJacobiPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1372_Test, TC2_CallsTarget) {
-  ceres::internal::BlockSparseJacobiPreconditioner target{};
-  target.UpdateImpl(nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1372, TC2_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::BlockSparseJacobiPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }

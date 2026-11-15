@@ -2,20 +2,20 @@
 #include "gtest/gtest.h"
 #include "ceres/trust_region_minimizer.h"
 
-// P1: START -> 1 -> END
-TEST(u1278_Test, TC1_CallsTarget) {
-  ceres::internal::TrustRegionMinimizer target{};
-  target.MaxSolverTimeReached();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1278, TC1_CallsTarget) {
+  ceres::internal::TrustRegionMinimizer object{};
+  object.MaxSolverTimeReached();
 }
 
-// P2: START -> 1 -> END
-TEST(u1278_Test, TC2_CallsTarget) {
-  ceres::internal::TrustRegionMinimizer target{};
-  target.MaxSolverTimeReached();
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1278, TC2_CallsTarget) {
+  ceres::internal::TrustRegionMinimizer object{};
+  object.MaxSolverTimeReached();
 }
 
-// P3: START -> 1 -> END
-TEST(u1278_Test, TC3_CallsTarget) {
-  ceres::internal::TrustRegionMinimizer target{};
-  target.MaxSolverTimeReached();
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1278, TC3_CallsTarget) {
+  ceres::internal::TrustRegionMinimizer object{};
+  object.MaxSolverTimeReached();
 }

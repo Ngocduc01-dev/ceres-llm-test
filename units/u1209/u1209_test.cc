@@ -3,13 +3,12 @@
 #include "ceres/context_impl.h"
 #include "ceres/parallel_invoke.h"
 
-// P1: START -> 1 -> END
-TEST(ParallelInvokeTest, TC1_CallsTarget) {
-  int a1 = 0;
-  int a2 = 0;
-  int a3 = 0;
-  F&& function a4{};
-  int a5 = 0;
-  ceres::internal::ParallelInvoke(nullptr, a1, a2, a3, a4, a5);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1209, TC1_CallsTarget) {
+  int start{};
+  int end{};
+  int num_threads{};
+  F function{};
+  int min_block_size{};
+  ceres::internal::ParallelInvoke(nullptr, start, end, num_threads, function, min_block_size);
 }
-

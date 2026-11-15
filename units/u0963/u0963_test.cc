@@ -5,12 +5,10 @@
 #include "ceres/triplet_sparse_matrix.h"
 #include "ceres/reorder_program.cc"
 
-// P1: START -> 1 -> END
-TEST(OrderingForSparseNormalCholeskyUsingSuiteSparseTest, TC1_CallsTarget) {
-  LinearSolverOrderingType a0{};
-  TripletSparseMatrix & tsm_block_jacobian_transpose a1{};
-  ParameterBlockOrdering & parameter_block_ordering a3{};
-  int a4[5] = {};
-  OrderingForSparseNormalCholeskyUsingSuiteSparse(a0, a1, nullptr, a3, a4);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0963, TC1_CallsTarget) {
+  const LinearSolverOrderingType linear_solver_ordering_type{};
+  TripletSparseMatrix tsm_block_jacobian_transpose{};
+  ParameterBlockOrdering parameter_block_ordering{};
+  ceres::internal::(anonymous)::OrderingForSparseNormalCholeskyUsingSuiteSparse(linear_solver_ordering_type, tsm_block_jacobian_transpose, nullptr, parameter_block_ordering, nullptr);
 }
-

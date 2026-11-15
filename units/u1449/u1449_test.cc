@@ -6,7 +6,11 @@
 #include "ceres/gradient_checking_cost_function.h"
 #include "ceres/gradient_checking_cost_function.cc"
 
-// P1: START -> 1 -> END
-TEST(u1449_Test, TC1_CallsTarget) {
-  ceres::internal::(anonymous)::GradientCheckingCostFunction target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1449, TC1_CallsTarget) {
+  NumericDiffOptions options{};
+  double relative_precision{};
+  std::string extra_info{};
+  ceres::internal::(anonymous)::GradientCheckingCostFunction object{};
+  (void)object;
 }

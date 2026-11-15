@@ -4,11 +4,10 @@
 #include "ceres/eigen_vector_ops.h"
 #include "ceres/parallel_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(CopyTest, TC1_CallsTarget) {
-  Vector & from a0{};
-  Vector & to a1{};
-  int a3 = 0;
-  ceres::internal::Copy(a0, a1, nullptr, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0855, TC1_CallsTarget) {
+  Vector from{};
+  Vector to{};
+  int num_threads{};
+  ceres::internal::Copy(from, to, nullptr, num_threads);
 }
-

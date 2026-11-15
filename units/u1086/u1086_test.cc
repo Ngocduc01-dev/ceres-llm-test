@@ -3,27 +3,18 @@
 #include "ceres/block_random_access_matrix.h"
 #include "ceres/block_random_access_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(GetCellTest, TC1_CallsTarget) {
-  BlockRandomAccessSparseMatrix object{};
-  int a0 = 0;
-  int a1 = 0;
-  int a2[5] = {};
-  int a3[5] = {};
-  int a4[5] = {};
-  int a5[5] = {};
-  object.GetCell(a0, a1, a2, a3, a4, a5);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1086, TC1_CallsTarget) {
+  int row_block_id{};
+  int col_block_id{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  object.GetCell(row_block_id, col_block_id, nullptr, nullptr, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(GetCellTest, TC2_CallsTarget) {
-  BlockRandomAccessSparseMatrix object{};
-  int a0 = 0;
-  int a1 = 0;
-  int a2[5] = {};
-  int a3[5] = {};
-  int a4[5] = {};
-  int a5[5] = {};
-  object.GetCell(a0, a1, a2, a3, a4, a5);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1086, TC2_CallsTarget) {
+  int row_block_id{};
+  int col_block_id{};
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
+  object.GetCell(row_block_id, col_block_id, nullptr, nullptr, nullptr, nullptr);
 }
-

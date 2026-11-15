@@ -9,10 +9,9 @@
 #include "ceres/schur_complement_solver.h"
 #include "ceres/sparse_normal_cholesky_solver.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  LinearSolver object{};
-  LinearSolver::Options & options a0{};
-  object.Create(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0955, TC1_CallsTarget) {
+  LinearSolver::Options options{};
+  ceres::internal::LinearSolver object{};
+  object.Create(options);
 }
-

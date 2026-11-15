@@ -2,11 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/dense_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(RightMultiplyAndAccumulateTest, TC1_CallsTarget) {
-  DenseSparseMatrix object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.RightMultiplyAndAccumulate(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1074, TC1_CallsTarget) {
+  ceres::internal::DenseSparseMatrix object{};
+  object.RightMultiplyAndAccumulate(nullptr, nullptr);
 }
-

@@ -3,10 +3,8 @@
 #include "ceres/dogleg_strategy.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(ComputeGradientTest, TC1_CallsTarget) {
-  DoglegStrategy object{};
-  double a1[5] = {};
-  object.ComputeGradient(nullptr, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0957, TC1_CallsTarget) {
+  ceres::internal::DoglegStrategy object{};
+  object.ComputeGradient(nullptr, nullptr);
 }
-

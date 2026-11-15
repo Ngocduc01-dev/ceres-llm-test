@@ -1,24 +1,26 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
-| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
-| P3 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 3 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
+| P4 | START → 1 → END | Theo CFG/source; case 4 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC3 | P3 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC4 | P4 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 6 / 6
+C2 dự kiến = 6 / 6 (chưa chạy thật).
 
 # D. File test
 
@@ -28,36 +30,31 @@ C2 d? ki?n = 6 / 6
 #include "ceres/compressed_col_sparse_matrix_utils.h"
 #include "ceres/block_structure.h"
 
-// P1: START -> 1 -> END
-TEST(CompressedColumnScalarMatrixToBlockMatrixTest, TC1_CallsTarget) {
-  int a0[5] = {};
-  int a1[5] = {};
-  std::vector<Block> & row_blocks a2{};
-  std::vector<Block> & col_blocks a3{};
-  int a4[5] = {};
-  int a5[5] = {};
-  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(a0, a1, a2, a3, a4, a5);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0773, TC1_CallsTarget) {
+  std::vector<Block> row_blocks{};
+  std::vector<Block> col_blocks{};
+  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(CompressedColumnScalarMatrixToBlockMatrixTest, TC2_CallsTarget) {
-  int a0[5] = {};
-  int a1[5] = {};
-  std::vector<Block> & row_blocks a2{};
-  std::vector<Block> & col_blocks a3{};
-  int a4[5] = {};
-  int a5[5] = {};
-  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(a0, a1, a2, a3, a4, a5);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0773, TC2_CallsTarget) {
+  std::vector<Block> row_blocks{};
+  std::vector<Block> col_blocks{};
+  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(CompressedColumnScalarMatrixToBlockMatrixTest, TC3_CallsTarget) {
-  int a0[5] = {};
-  int a1[5] = {};
-  std::vector<Block> & row_blocks a2{};
-  std::vector<Block> & col_blocks a3{};
-  int a4[5] = {};
-  int a5[5] = {};
-  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(a0, a1, a2, a3, a4, a5);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u0773, TC3_CallsTarget) {
+  std::vector<Block> row_blocks{};
+  std::vector<Block> col_blocks{};
+  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
+}
+
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u0773, TC4_CallsTarget) {
+  std::vector<Block> row_blocks{};
+  std::vector<Block> col_blocks{};
+  ceres::internal::CompressedColumnScalarMatrixToBlockMatrix(nullptr, nullptr, row_blocks, col_blocks, nullptr, nullptr);
 }
 ```

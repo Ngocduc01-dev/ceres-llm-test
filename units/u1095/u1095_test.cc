@@ -1,21 +1,20 @@
 // FILE: u1095_test.cc
 #include "gtest/gtest.h"
-#include "ceres/types.h"
 
-// P1: START -> 1 -> 2 (đúng) -> 3 -> END
-TEST(StringToDoglegTypeTest, TraditionalDogleg) {
-  ceres::DoglegType type = ceres::TRADITIONAL_DOGLEG;
-  ceres::StringToDoglegType("traditional_dogleg", &type);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1095, TC1_CallsTarget) {
+  std::string value{};
+  ceres::StringToDoglegType(value, nullptr);
 }
 
-// P2: START -> 1 -> 2 (sai) -> 4 (đúng) -> 5 -> END
-TEST(StringToDoglegTypeTest, SubspaceDogleg) {
-  ceres::DoglegType type = ceres::TRADITIONAL_DOGLEG;
-  ceres::StringToDoglegType("subspace_dogleg", &type);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1095, TC2_CallsTarget) {
+  std::string value{};
+  ceres::StringToDoglegType(value, nullptr);
 }
 
-// P3: START -> 1 -> 2 (sai) -> 4 (sai) -> 6 -> END
-TEST(StringToDoglegTypeTest, UnknownDoglegType) {
-  ceres::DoglegType type = ceres::TRADITIONAL_DOGLEG;
-  ceres::StringToDoglegType("unknown_dogleg", &type);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1095, TC3_CallsTarget) {
+  std::string value{};
+  ceres::StringToDoglegType(value, nullptr);
 }

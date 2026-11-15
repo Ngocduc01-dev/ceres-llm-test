@@ -3,10 +3,8 @@
 #include "ceres/program_evaluator.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(operator()Test, TC1_CallsTarget) {
-  NullJacobianFinalizer object{};
-  i a1{};
-  object.operator()(nullptr, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0886, TC1_CallsTarget) {
+  ceres::internal::NullJacobianFinalizer object{};
+  object(nullptr);
 }
-

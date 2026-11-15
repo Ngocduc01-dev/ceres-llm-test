@@ -1,24 +1,24 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
-| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
-| P3 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 3 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC3 | P3 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 4 / 4
+C2 dự kiến = 4 / 4 (chưa chạy thật).
 
 # D. File test
 
@@ -28,33 +28,33 @@ C2 d? ki?n = 4 / 4
 #include "ceres/context_impl.h"
 #include "ceres/parallel_for.h"
 
-// P1: START -> 1 -> END
-TEST(ParallelForTest, TC1_CallsTarget) {
-  int a1 = 0;
-  int a2 = 0;
-  int a3 = 0;
-  F&& function a4{};
-  int a5 = 0;
-  ceres::internal::ParallelFor(nullptr, a1, a2, a3, a4, a5);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0952, TC1_CallsTarget) {
+  int start{};
+  int end{};
+  int num_threads{};
+  F function{};
+  std::vector<int> partitions{};
+  ceres::internal::ParallelFor(nullptr, start, end, num_threads, function, partitions);
 }
 
-// P2: START -> 1 -> END
-TEST(ParallelForTest, TC2_CallsTarget) {
-  int a1 = 0;
-  int a2 = 0;
-  int a3 = 0;
-  F&& function a4{};
-  int a5 = 0;
-  ceres::internal::ParallelFor(nullptr, a1, a2, a3, a4, a5);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0952, TC2_CallsTarget) {
+  int start{};
+  int end{};
+  int num_threads{};
+  F function{};
+  std::vector<int> partitions{};
+  ceres::internal::ParallelFor(nullptr, start, end, num_threads, function, partitions);
 }
 
-// P3: START -> 1 -> END
-TEST(ParallelForTest, TC3_CallsTarget) {
-  int a1 = 0;
-  int a2 = 0;
-  int a3 = 0;
-  F&& function a4{};
-  int a5 = 0;
-  ceres::internal::ParallelFor(nullptr, a1, a2, a3, a4, a5);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u0952, TC3_CallsTarget) {
+  int start{};
+  int end{};
+  int num_threads{};
+  F function{};
+  std::vector<int> partitions{};
+  ceres::internal::ParallelFor(nullptr, start, end, num_threads, function, partitions);
 }
 ```

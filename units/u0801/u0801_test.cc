@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/solver.cc"
 
-// P1: START -> 1 -> END
-TEST(IsIterativeSolverTest, TC1_CallsTarget) {
-  LinearSolverType a0{};
-  IsIterativeSolver(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0801, TC1_CallsTarget) {
+  LinearSolverType type{};
+  ceres::IsIterativeSolver(type);
 }
-

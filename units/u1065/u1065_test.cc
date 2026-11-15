@@ -3,12 +3,9 @@
 #include "ceres/problem_impl.h"
 #include "ceres/problem_impl.cc"
 
-// P1: START -> 1 -> END
-TEST(CheckForNoAliasingTest, TC1_CallsTarget) {
-  double a0[5] = {};
-  int a1 = 0;
-  double a2[5] = {};
-  int a3 = 0;
-  CheckForNoAliasing(a0, a1, a2, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1065, TC1_CallsTarget) {
+  int existing_block_size{};
+  int new_block_size{};
+  ceres::internal::(anonymous)::CheckForNoAliasing(nullptr, existing_block_size, nullptr, new_block_size);
 }
-

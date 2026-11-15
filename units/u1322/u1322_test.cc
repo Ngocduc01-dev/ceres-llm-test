@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/covariance.h"
 
-// P1: START -> 1 -> END
-TEST(u1322_Test, TC1_CallsTarget) {
-  ceres::Covariance target{};
-  target.GetCovarianceBlock(nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1322, TC1_CallsTarget) {
+  ceres::Covariance object{};
+  object.GetCovarianceBlock(nullptr, nullptr, nullptr);
 }

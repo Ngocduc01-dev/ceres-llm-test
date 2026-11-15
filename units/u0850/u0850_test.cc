@@ -3,9 +3,9 @@
 #include "ceres/dynamic_sparse_normal_cholesky_solver.h"
 #include "ceres/linear_solver.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0850, TC1_CallsTarget) {
-  DynamicSparseNormalCholeskySolver object{};
-  LinearSolver::Options a0{};
+  LinearSolver::Options options{};
+  ceres::internal::DynamicSparseNormalCholeskySolver object{};
+  (void)object;
 }
-

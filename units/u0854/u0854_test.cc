@@ -4,11 +4,10 @@
 #include "ceres/context_impl.h"
 #include "ceres/eigen_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(DotTest, TC1_CallsTarget) {
-  VectorLikeX& x a0{};
-  VectorLikeY& y a1{};
-  int a3 = 0;
-  ceres::internal::Dot(a0, a1, nullptr, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0854, TC1_CallsTarget) {
+  VectorLikeX x{};
+  VectorLikeY y{};
+  int num_threads{};
+  ceres::internal::Dot(x, y, nullptr, num_threads);
 }
-

@@ -4,8 +4,8 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(u1434_Test, TC1_CallsTarget) {
-  ceres::internal::TripletSparseMatrix target{};
-  target.ToCRSMatrix(nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1434, TC1_CallsTarget) {
+  ceres::internal::TripletSparseMatrix object{};
+  object.ToCRSMatrix(nullptr);
 }

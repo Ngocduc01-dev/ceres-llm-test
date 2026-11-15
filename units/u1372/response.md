@@ -1,22 +1,22 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | node 1: ???ng ?i kh? thi P1 |
-| P2 | START ? 1 ? END | node 1: ???ng ?i kh? thi P2 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC2 | P2 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? nh?nh b? b? qua ngo?i c?c nh?nh CHECK kh?ng th? l?m sai theo y?u c?u harness.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 2 / 2
+C2 dự kiến = 2 / 2 (chưa chạy thật).
 
 # D. File test
 
@@ -30,9 +30,17 @@ C2 d? ki?n = 2 / 2
 #include "ceres/parallel_for.h"
 #include "ceres/small_blas.h"
 
-// P1: START -> 1 -> END
-TEST(u1372_Test, TC1_CallsTarget) {
-  ceres::internal::BlockSparseJacobiPreconditioner target{};
-  target.UpdateImpl(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1372, TC1_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::BlockSparseJacobiPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
+}
+
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1372, TC2_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::BlockSparseJacobiPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }
 ```

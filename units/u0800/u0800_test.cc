@@ -3,9 +3,8 @@
 #include "ceres/polynomial.h"
 #include "ceres/polynomial.cc"
 
-// P1: START -> 1 -> END
-TEST(BuildCompanionMatrixTest, TC1_CallsTarget) {
-  Vector & polynomial a0{};
-  BuildCompanionMatrix(a0, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0800, TC1_CallsTarget) {
+  Vector polynomial{};
+  ceres::internal::(anonymous)::BuildCompanionMatrix(polynomial, nullptr);
 }
-

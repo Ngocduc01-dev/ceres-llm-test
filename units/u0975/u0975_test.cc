@@ -3,10 +3,9 @@
 #include "ceres/cost_function.h"
 #include "ceres/dynamic_cost_function.h"
 
-// P1: START -> 1 -> END
-TEST(AddParameterBlockTest, TC1_CallsTarget) {
-  DynamicCostFunction object{};
-  int a0 = 0;
-  object.AddParameterBlock(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0975, TC1_CallsTarget) {
+  int size{};
+  ceres::DynamicCostFunction object{};
+  object.AddParameterBlock(size);
 }
-

@@ -2,33 +2,23 @@
 #include "gtest/gtest.h"
 #include "ceres/manifold.h"
 
-// P1: START -> 1 -> END
-TEST(RightMultiplyByPlusJacobianTest, TC1_CallsTarget) {
-  Manifold object{};
-  double a0[5] = {};
-  int a1 = 0;
-  double a2[5] = {};
-  double a3[5] = {};
-  object.RightMultiplyByPlusJacobian(a0, a1, a2, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0920, TC1_CallsTarget) {
+  const int num_rows{};
+  ceres::Manifold object{};
+  object.RightMultiplyByPlusJacobian(nullptr, num_rows, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(RightMultiplyByPlusJacobianTest, TC2_CallsTarget) {
-  Manifold object{};
-  double a0[5] = {};
-  int a1 = 0;
-  double a2[5] = {};
-  double a3[5] = {};
-  object.RightMultiplyByPlusJacobian(a0, a1, a2, a3);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0920, TC2_CallsTarget) {
+  const int num_rows{};
+  ceres::Manifold object{};
+  object.RightMultiplyByPlusJacobian(nullptr, num_rows, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(RightMultiplyByPlusJacobianTest, TC3_CallsTarget) {
-  Manifold object{};
-  double a0[5] = {};
-  int a1 = 0;
-  double a2[5] = {};
-  double a3[5] = {};
-  object.RightMultiplyByPlusJacobian(a0, a1, a2, a3);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u0920, TC3_CallsTarget) {
+  const int num_rows{};
+  ceres::Manifold object{};
+  object.RightMultiplyByPlusJacobian(nullptr, num_rows, nullptr, nullptr);
 }
-

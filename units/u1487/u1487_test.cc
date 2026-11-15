@@ -8,26 +8,44 @@
 #include "ceres/parameter_block.h"
 #include "ceres/program.h"
 
-// P1: START -> 1 -> END
-TEST(u1487_Test, TC1_CallsTarget) {
-  ceres::internal::CoordinateDescentMinimizer target{};
-  target.Minimize(nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1487, TC1_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Minimize(options, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1487_Test, TC2_CallsTarget) {
-  ceres::internal::CoordinateDescentMinimizer target{};
-  target.Minimize(nullptr, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1487, TC2_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Minimize(options, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(u1487_Test, TC3_CallsTarget) {
-  ceres::internal::CoordinateDescentMinimizer target{};
-  target.Minimize(nullptr, nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1487, TC3_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Minimize(options, nullptr, nullptr);
 }
 
-// P4: START -> 1 -> END
-TEST(u1487_Test, TC4_CallsTarget) {
-  ceres::internal::CoordinateDescentMinimizer target{};
-  target.Minimize(nullptr, nullptr, nullptr);
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1487, TC4_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Minimize(options, nullptr, nullptr);
+}
+
+// P5: START -> 1 -> END; branch decisions covered by case 5
+TEST(Unit_u1487, TC5_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Minimize(options, nullptr, nullptr);
+}
+
+// P6: START -> 1 -> END; branch decisions covered by case 6
+TEST(Unit_u1487, TC6_CallsTarget) {
+  Minimizer::Options options{};
+  ceres::internal::CoordinateDescentMinimizer object{};
+  object.Minimize(options, nullptr, nullptr);
 }

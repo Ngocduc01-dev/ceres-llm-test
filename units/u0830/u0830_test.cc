@@ -3,9 +3,8 @@
 #include "ceres/block_sparse_matrix.h"
 #include "ceres/block_structure.h"
 
-// P1: START -> 1 -> END
-TEST(block_structureTest, TC1_CallsTarget) {
-  BlockSparseMatrix object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0830, TC1_CallsTarget) {
+  ceres::internal::BlockSparseMatrix object{};
   object.block_structure();
 }
-

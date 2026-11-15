@@ -3,9 +3,8 @@
 #include "ceres/thread_pool.h"
 #include "ceres/thread_pool.cc"
 
-// P1: START -> 1 -> END
-TEST(GetNumAllowedThreadsTest, TC1_CallsTarget) {
-  int a0 = 0;
-  GetNumAllowedThreads(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1222, TC1_CallsTarget) {
+  int requested_num_threads{};
+  ceres::internal::(anonymous)::GetNumAllowedThreads(requested_num_threads);
 }
-

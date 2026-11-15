@@ -2,10 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/dense_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(ScaleColumnsTest, TC1_CallsTarget) {
-  DenseSparseMatrix object{};
-  double a0[5] = {};
-  object.ScaleColumns(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1076, TC1_CallsTarget) {
+  ceres::internal::DenseSparseMatrix object{};
+  object.ScaleColumns(nullptr);
 }
-

@@ -3,9 +3,8 @@
 #include "ceres/context.h"
 #include "ceres/context_impl.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  Context object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1148, TC1_CallsTarget) {
+  ceres::Context object{};
   object.Create();
 }
-

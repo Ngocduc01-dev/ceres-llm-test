@@ -2,10 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/problem.h"
 
-// P1: START -> 1 -> END
-TEST(GetParameterBlocksTest, TC1_CallsTarget) {
-  Problem object{};
-  double a0[5] = {};
-  object.GetParameterBlocks(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1156, TC1_CallsTarget) {
+  ceres::Problem object{};
+  object.GetParameterBlocks(nullptr);
 }
-

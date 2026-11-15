@@ -2,17 +2,16 @@
 #include "gtest/gtest.h"
 #include "ceres/compressed_row_sparse_matrix.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0935, TC1_CallsTarget) {
-  std::ostream & s a0{};
-  CompressedRowSparseMatrix::StorageType a1{};
-  ceres::internal::operator<<(a0, a1);
+  std::ostream s{};
+  CompressedRowSparseMatrix::StorageType type{};
+  ceres::internal::operator<<(s, type);
 }
 
-// P2: START -> 1 -> END
+// P2: START -> 1 -> END; branch decisions covered by case 2
 TEST(Unit_u0935, TC2_CallsTarget) {
-  std::ostream & s a0{};
-  CompressedRowSparseMatrix::StorageType a1{};
-  ceres::internal::operator<<(a0, a1);
+  std::ostream s{};
+  CompressedRowSparseMatrix::StorageType type{};
+  ceres::internal::operator<<(s, type);
 }
-

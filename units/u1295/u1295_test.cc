@@ -4,26 +4,26 @@
 #include "ceres/program.h"
 #include "ceres/residual_block.h"
 
-// P1: START -> 1 -> END
-TEST(u1295_Test, TC1_CallsTarget) {
-  ceres::internal::Program target{};
-  target.IsParameterBlockSetIndependent(nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1295, TC1_CallsTarget) {
+  ceres::internal::Program object{};
+  object.IsParameterBlockSetIndependent(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1295_Test, TC2_CallsTarget) {
-  ceres::internal::Program target{};
-  target.IsParameterBlockSetIndependent(nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1295, TC2_CallsTarget) {
+  ceres::internal::Program object{};
+  object.IsParameterBlockSetIndependent(nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(u1295_Test, TC3_CallsTarget) {
-  ceres::internal::Program target{};
-  target.IsParameterBlockSetIndependent(nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1295, TC3_CallsTarget) {
+  ceres::internal::Program object{};
+  object.IsParameterBlockSetIndependent(nullptr);
 }
 
-// P4: START -> 1 -> END
-TEST(u1295_Test, TC4_CallsTarget) {
-  ceres::internal::Program target{};
-  target.IsParameterBlockSetIndependent(nullptr);
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1295, TC4_CallsTarget) {
+  ceres::internal::Program object{};
+  object.IsParameterBlockSetIndependent(nullptr);
 }

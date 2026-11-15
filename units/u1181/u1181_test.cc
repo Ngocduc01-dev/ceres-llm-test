@@ -3,9 +3,9 @@
 #include "ceres/cgnr_solver.h"
 #include "ceres/linear_solver.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1181, TC1_CallsTarget) {
-  CgnrSolver object{};
-  LinearSolver::Options a0{};
+  LinearSolver::Options options{};
+  ceres::internal::CgnrSolver object{};
+  (void)object;
 }
-

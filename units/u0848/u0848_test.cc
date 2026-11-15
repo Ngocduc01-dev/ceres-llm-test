@@ -4,9 +4,9 @@
 #include "ceres/evaluator.h"
 #include "ceres/program.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0848, TC1_CallsTarget) {
-  DenseJacobianWriter object{};
-  Evaluator::Options a0{};
+  Evaluator::Options arg0{};
+  ceres::internal::DenseJacobianWriter object{};
+  (void)object;
 }
-

@@ -3,15 +3,14 @@
 #include "ceres/dogleg_strategy.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(ComputeSubspaceModelTest, TC1_CallsTarget) {
-  DoglegStrategy object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0972, TC1_CallsTarget) {
+  ceres::internal::DoglegStrategy object{};
   object.ComputeSubspaceModel(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(ComputeSubspaceModelTest, TC2_CallsTarget) {
-  DoglegStrategy object{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0972, TC2_CallsTarget) {
+  ceres::internal::DoglegStrategy object{};
   object.ComputeSubspaceModel(nullptr);
 }
-

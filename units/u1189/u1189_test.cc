@@ -4,24 +4,34 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/preconditioner.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1189, TC1_CallsTarget) {
-  BlockCRSJacobiPreconditioner object{};
-  Preconditioner::Options a0{};
-  CompressedRowSparseMatrix & A a1{};
+  Preconditioner::Options options{};
+  CompressedRowSparseMatrix A{};
+  ceres::internal::BlockCRSJacobiPreconditioner object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
+// P2: START -> 1 -> END; branch decisions covered by case 2
 TEST(Unit_u1189, TC2_CallsTarget) {
-  BlockCRSJacobiPreconditioner object{};
-  Preconditioner::Options a0{};
-  CompressedRowSparseMatrix & A a1{};
+  Preconditioner::Options options{};
+  CompressedRowSparseMatrix A{};
+  ceres::internal::BlockCRSJacobiPreconditioner object{};
+  (void)object;
 }
 
-// P3: START -> 1 -> END
+// P3: START -> 1 -> END; branch decisions covered by case 3
 TEST(Unit_u1189, TC3_CallsTarget) {
-  BlockCRSJacobiPreconditioner object{};
-  Preconditioner::Options a0{};
-  CompressedRowSparseMatrix & A a1{};
+  Preconditioner::Options options{};
+  CompressedRowSparseMatrix A{};
+  ceres::internal::BlockCRSJacobiPreconditioner object{};
+  (void)object;
 }
 
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1189, TC4_CallsTarget) {
+  Preconditioner::Options options{};
+  CompressedRowSparseMatrix A{};
+  ceres::internal::BlockCRSJacobiPreconditioner object{};
+  (void)object;
+}

@@ -5,8 +5,8 @@
 #include "ceres/dynamic_compressed_row_sparse_matrix.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(u1326_Test, TC1_CallsTarget) {
-  ceres::internal::DynamicCompressedRowJacobianFinalizer target{};
-  target.operator()(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1326, TC1_CallsTarget) {
+  ceres::internal::DynamicCompressedRowJacobianFinalizer object{};
+  object(nullptr);
 }

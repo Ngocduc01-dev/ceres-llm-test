@@ -3,10 +3,9 @@
 #include "ceres/context_impl.h"
 #include "ceres/parallel_vector_ops.h"
 
-// P1: START -> 1 -> END
-TEST(ParallelSetZeroTest, TC1_CallsTarget) {
-  int a1 = 0;
-  VectorType& vector a2{};
-  ceres::internal::ParallelSetZero(nullptr, a1, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0875, TC1_CallsTarget) {
+  int num_threads{};
+  VectorType vector{};
+  ceres::internal::ParallelSetZero(nullptr, num_threads, vector);
 }
-

@@ -4,10 +4,9 @@
 #include "ceres/levenberg_marquardt_strategy.h"
 #include "ceres/trust_region_strategy.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  TrustRegionStrategy object{};
-  Options & options a0{};
-  object.Create(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0928, TC1_CallsTarget) {
+  Options options{};
+  ceres::internal::TrustRegionStrategy object{};
+  object.Create(options);
 }
-

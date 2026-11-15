@@ -3,9 +3,9 @@
 #include "ceres/linear_solver.h"
 #include "ceres/schur_eliminator.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0911, TC1_CallsTarget) {
-  SchurEliminator object{};
-  LinearSolver::Options & options a0{};
+  LinearSolver::Options options{};
+  SchurEliminator<> object{};
+  (void)object;
 }
-

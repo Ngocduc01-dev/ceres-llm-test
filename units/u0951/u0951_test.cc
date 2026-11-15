@@ -2,10 +2,9 @@
 #include "gtest/gtest.h"
 #include "ceres/eigensparse.h"
 
-// P1: START -> 1 -> END
-TEST(FactorizeTest, TC1_CallsTarget) {
-  EigenSparseCholeskyTemplate object{};
-  Eigen::SparseMatrix<typename Solver::Scalar> & lhs a0{};
-  object.Factorize(a0, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0951, TC1_CallsTarget) {
+  Eigen::SparseMatrix<typename Solver::Scalar> lhs{};
+  ceres::internal::EigenSparseCholeskyTemplate object{};
+  object.Factorize(lhs, nullptr);
 }
-

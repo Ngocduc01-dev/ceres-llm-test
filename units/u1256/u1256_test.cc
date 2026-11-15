@@ -2,8 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/solver.h"
 
-// P1: START -> 1 -> END
-TEST(u1256_Test, TC1_CallsTarget) {
-  ceres::Solver::Summary target{};
-  target.BriefReport();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1256, TC1_CallsTarget) {
+  ceres::Solver::Summary object{};
+  object.BriefReport();
 }

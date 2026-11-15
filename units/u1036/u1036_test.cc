@@ -4,10 +4,8 @@
 #include "ceres/parameter_block.h"
 #include "ceres/problem_impl.h"
 
-// P1: START -> 1 -> END
-TEST(SetParameterBlockVariableTest, TC1_CallsTarget) {
-  ProblemImpl object{};
-  double a0[5] = {};
-  object.SetParameterBlockVariable(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1036, TC1_CallsTarget) {
+  ceres::internal::ProblemImpl object{};
+  object.SetParameterBlockVariable(nullptr);
 }
-

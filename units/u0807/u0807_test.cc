@@ -3,21 +3,20 @@
 #include "ceres/polynomial.h"
 #include "ceres/polynomial.cc"
 
-// P1: START -> 1 -> END
-TEST(FindLinearPolynomialRootsTest, TC1_CallsTarget) {
-  Vector & polynomial a0{};
-  FindLinearPolynomialRoots(a0, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0807, TC1_CallsTarget) {
+  Vector polynomial{};
+  ceres::internal::(anonymous)::FindLinearPolynomialRoots(polynomial, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(FindLinearPolynomialRootsTest, TC2_CallsTarget) {
-  Vector & polynomial a0{};
-  FindLinearPolynomialRoots(a0, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0807, TC2_CallsTarget) {
+  Vector polynomial{};
+  ceres::internal::(anonymous)::FindLinearPolynomialRoots(polynomial, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(FindLinearPolynomialRootsTest, TC3_CallsTarget) {
-  Vector & polynomial a0{};
-  FindLinearPolynomialRoots(a0, nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u0807, TC3_CallsTarget) {
+  Vector polynomial{};
+  ceres::internal::(anonymous)::FindLinearPolynomialRoots(polynomial, nullptr, nullptr);
 }
-

@@ -5,20 +5,23 @@
 #include "ceres/schur_eliminator.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(u1496_Test, TC1_CallsTarget) {
-  ceres::internal::VisibilityBasedPreconditioner target{};
-  target.UpdateImpl(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1496, TC1_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1496_Test, TC2_CallsTarget) {
-  ceres::internal::VisibilityBasedPreconditioner target{};
-  target.UpdateImpl(nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1496, TC2_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(u1496_Test, TC3_CallsTarget) {
-  ceres::internal::VisibilityBasedPreconditioner target{};
-  target.UpdateImpl(nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1496, TC3_CallsTarget) {
+  BlockSparseMatrix A{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.UpdateImpl(A, nullptr);
 }

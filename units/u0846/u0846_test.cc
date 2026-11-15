@@ -3,9 +3,9 @@
 #include "ceres/covariance.h"
 #include "ceres/covariance_impl.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u0846, TC1_CallsTarget) {
-  CovarianceImpl object{};
-  Covariance::Options & options a0{};
+  Covariance::Options options{};
+  ceres::internal::CovarianceImpl object{};
+  (void)object;
 }
-

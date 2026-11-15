@@ -3,15 +3,16 @@
 #include "ceres/dense_sparse_matrix.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1161, TC1_CallsTarget) {
-  DenseSparseMatrix object{};
-  TripletSparseMatrix & m a0{};
+  TripletSparseMatrix m{};
+  ceres::internal::DenseSparseMatrix object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
+// P2: START -> 1 -> END; branch decisions covered by case 2
 TEST(Unit_u1161, TC2_CallsTarget) {
-  DenseSparseMatrix object{};
-  TripletSparseMatrix & m a0{};
+  TripletSparseMatrix m{};
+  ceres::internal::DenseSparseMatrix object{};
+  (void)object;
 }
-

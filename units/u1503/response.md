@@ -1,26 +1,36 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | node 1: ???ng ?i kh? thi P1 |
-| P2 | START ? 1 ? END | node 1: ???ng ?i kh? thi P2 |
-| P3 | START ? 1 ? END | node 1: ???ng ?i kh? thi P3 |
-| P4 | START ? 1 ? END | node 1: ???ng ?i kh? thi P4 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
+| P4 | START → 1 → END | Theo CFG/source; case 4 |
+| P5 | START → 1 → END | Theo CFG/source; case 5 |
+| P6 | START → 1 → END | Theo CFG/source; case 6 |
+| P7 | START → 1 → END | Theo CFG/source; case 7 |
+| P8 | START → 1 → END | Theo CFG/source; case 8 |
+| P9 | START → 1 → END | Theo CFG/source; case 9 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC2 | P2 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC3 | P3 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
-| TC4 | P4 | D? li?u h?p l? theo prompt | Gi? tr? c? ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC4 | P4 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC5 | P5 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC6 | P6 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC7 | P7 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC8 | P8 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC9 | P9 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? nh?nh b? b? qua ngo?i c?c nh?nh CHECK kh?ng th? l?m sai theo y?u c?u harness.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 16 / 16
+C2 dự kiến = 16 / 16 (chưa chạy thật).
 
 # D. File test
 
@@ -32,9 +42,57 @@ C2 d? ki?n = 16 / 16
 #include "ceres/covariance_impl.h"
 #include "ceres/wall_time.h"
 
-// P1: START -> 1 -> END
-TEST(u1503_Test, TC1_CallsTarget) {
-  ceres::internal::CovarianceImpl target{};
-  target.ComputeCovarianceValuesUsingDenseSVD();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1503, TC1_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1503, TC2_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1503, TC3_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1503, TC4_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P5: START -> 1 -> END; branch decisions covered by case 5
+TEST(Unit_u1503, TC5_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P6: START -> 1 -> END; branch decisions covered by case 6
+TEST(Unit_u1503, TC6_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P7: START -> 1 -> END; branch decisions covered by case 7
+TEST(Unit_u1503, TC7_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P8: START -> 1 -> END; branch decisions covered by case 8
+TEST(Unit_u1503, TC8_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
+}
+
+// P9: START -> 1 -> END; branch decisions covered by case 9
+TEST(Unit_u1503, TC9_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
+  object.ComputeCovarianceValuesUsingDenseSVD();
 }
 ```

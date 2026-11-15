@@ -7,20 +7,26 @@
 #include "ceres/residual_block.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(u1437_Test, TC1_CallsTarget) {
-  ceres::internal::CompressedRowJacobianWriter target{};
-  target.Write(nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1437, TC1_CallsTarget) {
+  int residual_id{};
+  int residual_offset{};
+  ceres::internal::CompressedRowJacobianWriter object{};
+  object.Write(residual_id, residual_offset, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1437_Test, TC2_CallsTarget) {
-  ceres::internal::CompressedRowJacobianWriter target{};
-  target.Write(nullptr, nullptr, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1437, TC2_CallsTarget) {
+  int residual_id{};
+  int residual_offset{};
+  ceres::internal::CompressedRowJacobianWriter object{};
+  object.Write(residual_id, residual_offset, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(u1437_Test, TC3_CallsTarget) {
-  ceres::internal::CompressedRowJacobianWriter target{};
-  target.Write(nullptr, nullptr, nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1437, TC3_CallsTarget) {
+  int residual_id{};
+  int residual_offset{};
+  ceres::internal::CompressedRowJacobianWriter object{};
+  object.Write(residual_id, residual_offset, nullptr, nullptr);
 }

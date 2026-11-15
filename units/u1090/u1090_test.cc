@@ -4,11 +4,8 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/parallel_for.h"
 
-// P1: START -> 1 -> END
-TEST(RightMultiplyAndAccumulateTest, TC1_CallsTarget) {
-  BlockRandomAccessDiagonalMatrix object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.RightMultiplyAndAccumulate(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1090, TC1_CallsTarget) {
+  ceres::internal::BlockRandomAccessDiagonalMatrix object{};
+  object.RightMultiplyAndAccumulate(nullptr, nullptr);
 }
-

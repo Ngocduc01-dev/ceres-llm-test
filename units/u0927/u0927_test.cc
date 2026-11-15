@@ -2,15 +2,14 @@
 #include "gtest/gtest.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(ToTextFileTest, TC1_CallsTarget) {
-  TripletSparseMatrix object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0927, TC1_CallsTarget) {
+  ceres::internal::TripletSparseMatrix object{};
   object.ToTextFile(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(ToTextFileTest, TC2_CallsTarget) {
-  TripletSparseMatrix object{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0927, TC2_CallsTarget) {
+  ceres::internal::TripletSparseMatrix object{};
   object.ToTextFile(nullptr);
 }
-

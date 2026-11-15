@@ -3,27 +3,20 @@
 #include "ceres/block_sparse_matrix.h"
 #include "ceres/small_blas.h"
 
-// P1: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateTest, TC1_CallsTarget) {
-  BlockSparseMatrix object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulate(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0941, TC1_CallsTarget) {
+  ceres::internal::BlockSparseMatrix object{};
+  object.LeftMultiplyAndAccumulate(nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateTest, TC2_CallsTarget) {
-  BlockSparseMatrix object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulate(a0, a1);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u0941, TC2_CallsTarget) {
+  ceres::internal::BlockSparseMatrix object{};
+  object.LeftMultiplyAndAccumulate(nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(LeftMultiplyAndAccumulateTest, TC3_CallsTarget) {
-  BlockSparseMatrix object{};
-  double a0[5] = {};
-  double a1[5] = {};
-  object.LeftMultiplyAndAccumulate(a0, a1);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u0941, TC3_CallsTarget) {
+  ceres::internal::BlockSparseMatrix object{};
+  object.LeftMultiplyAndAccumulate(nullptr, nullptr);
 }
-

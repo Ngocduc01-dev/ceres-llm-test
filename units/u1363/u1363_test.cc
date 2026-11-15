@@ -4,8 +4,9 @@
 #include "ceres/linear_operator.h"
 #include "ceres/linear_solver.h"
 
-// P1: START -> 1 -> END
-TEST(u1363_Test, TC1_CallsTarget) {
-  TypedLinearSolver<BlockSparseMatrix> target{};
-  target.Solve(nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1363, TC1_CallsTarget) {
+  LinearSolver::PerSolveOptions per_solve_options{};
+  ceres::internal::TypedLinearSolver object{};
+  object.Solve(nullptr, nullptr, per_solve_options, nullptr);
 }

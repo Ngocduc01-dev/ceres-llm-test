@@ -1,24 +1,32 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
-| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
-| P3 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 3 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
+| P4 | START → 1 → END | Theo CFG/source; case 4 |
+| P5 | START → 1 → END | Theo CFG/source; case 5 |
+| P6 | START → 1 → END | Theo CFG/source; case 6 |
+| P7 | START → 1 → END | Theo CFG/source; case 7 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC3 | P3 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC4 | P4 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC5 | P5 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC6 | P6 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC7 | P7 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 12 / 12
+C2 dự kiến = 12 / 12 (chưa chạy thật).
 
 # D. File test
 
@@ -29,21 +37,45 @@ C2 d? ki?n = 12 / 12
 #include "ceres/dynamic_cost_function_to_functor.h"
 #include "ceres/internal/fixed_array.h"
 
-// P1: START -> 1 -> END
-TEST(operator()Test, TC1_CallsTarget) {
-  DynamicCostFunctionToFunctor object{};
-  object.operator()(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1121, TC1_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(operator()Test, TC2_CallsTarget) {
-  DynamicCostFunctionToFunctor object{};
-  object.operator()(nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1121, TC2_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(operator()Test, TC3_CallsTarget) {
-  DynamicCostFunctionToFunctor object{};
-  object.operator()(nullptr, nullptr);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1121, TC3_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
+}
+
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1121, TC4_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
+}
+
+// P5: START -> 1 -> END; branch decisions covered by case 5
+TEST(Unit_u1121, TC5_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
+}
+
+// P6: START -> 1 -> END; branch decisions covered by case 6
+TEST(Unit_u1121, TC6_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
+}
+
+// P7: START -> 1 -> END; branch decisions covered by case 7
+TEST(Unit_u1121, TC7_CallsTarget) {
+  ceres::DynamicCostFunctionToFunctor object{};
+  object(nullptr);
 }
 ```

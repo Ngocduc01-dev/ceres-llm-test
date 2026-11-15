@@ -2,9 +2,7 @@
 #include "gtest/gtest.h"
 #include "ceres/stringprintf.h"
 
-// P1: START -> 1 -> END
-TEST(StringAppendFTest, TC1_CallsTarget) {
-  char a1[8] = {};
-  ceres::internal::StringAppendF(nullptr, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1084, TC1_CallsTarget) {
+  ceres::internal::StringAppendF(nullptr, nullptr);
 }
-

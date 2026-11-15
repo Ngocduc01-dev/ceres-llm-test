@@ -3,12 +3,11 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/dynamic_compressed_row_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(InsertEntryTest, TC1_CallsTarget) {
-  DynamicCompressedRowSparseMatrix object{};
-  int a0 = 0;
-  int a1 = 0;
-  double a2 = 0.0;
-  object.InsertEntry(a0, a1, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1114, TC1_CallsTarget) {
+  int row{};
+  int col{};
+  double value{};
+  ceres::internal::DynamicCompressedRowSparseMatrix object{};
+  object.InsertEntry(row, col, value);
 }
-

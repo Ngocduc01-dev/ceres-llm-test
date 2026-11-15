@@ -3,8 +3,9 @@
 #include "ceres/covariance_impl.h"
 #include "ceres/problem_impl.h"
 
-// P1: START -> 1 -> END
-TEST(u1531_Test, TC1_CallsTarget) {
-  ceres::internal::CovarianceImpl target{};
-  target.Compute(nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1531, TC1_CallsTarget) {
+  CovarianceBlocks covariance_blocks{};
+  ceres::internal::CovarianceImpl object{};
+  object.Compute(covariance_blocks, nullptr);
 }

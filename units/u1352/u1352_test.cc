@@ -6,7 +6,10 @@
 #include "ceres/sparse_cholesky.h"
 #include "ceres/subset_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(u1352_Test, TC1_CallsTarget) {
-  ceres::internal::SubsetPreconditioner target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1352, TC1_CallsTarget) {
+  Preconditioner::Options options{};
+  BlockSparseMatrix A{};
+  ceres::internal::SubsetPreconditioner object{};
+  (void)object;
 }

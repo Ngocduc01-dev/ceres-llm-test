@@ -3,27 +3,23 @@
 #include "ceres/compressed_col_sparse_matrix_utils.h"
 #include "ceres/block_structure.h"
 
-// P1: START -> 1 -> END
-TEST(BlockOrderingToScalarOrderingTest, TC1_CallsTarget) {
-  std::vector<Block> & blocks a0{};
-  int a1 = 0;
-  int a2[5] = {};
-  ceres::internal::BlockOrderingToScalarOrdering(a0, a1, a2);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1105, TC1_CallsTarget) {
+  std::vector<Block> blocks{};
+  std::vector<int> block_ordering{};
+  ceres::internal::BlockOrderingToScalarOrdering(blocks, block_ordering, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(BlockOrderingToScalarOrderingTest, TC2_CallsTarget) {
-  std::vector<Block> & blocks a0{};
-  int a1 = 0;
-  int a2[5] = {};
-  ceres::internal::BlockOrderingToScalarOrdering(a0, a1, a2);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1105, TC2_CallsTarget) {
+  std::vector<Block> blocks{};
+  std::vector<int> block_ordering{};
+  ceres::internal::BlockOrderingToScalarOrdering(blocks, block_ordering, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(BlockOrderingToScalarOrderingTest, TC3_CallsTarget) {
-  std::vector<Block> & blocks a0{};
-  int a1 = 0;
-  int a2[5] = {};
-  ceres::internal::BlockOrderingToScalarOrdering(a0, a1, a2);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1105, TC3_CallsTarget) {
+  std::vector<Block> blocks{};
+  std::vector<int> block_ordering{};
+  ceres::internal::BlockOrderingToScalarOrdering(blocks, block_ordering, nullptr);
 }
-

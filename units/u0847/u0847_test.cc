@@ -3,9 +3,8 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/covariance_impl.h"
 
-// P1: START -> 1 -> END
-TEST(covariance_matrixTest, TC1_CallsTarget) {
-  CovarianceImpl object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0847, TC1_CallsTarget) {
+  ceres::internal::CovarianceImpl object{};
   object.covariance_matrix();
 }
-

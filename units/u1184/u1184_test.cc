@@ -4,13 +4,12 @@
 #include "ceres/compressed_row_sparse_matrix.h"
 #include "ceres/inner_product_computer.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  InnerProductComputer object{};
-  BlockSparseMatrix & m a0{};
-  int a1 = 0;
-  int a2 = 0;
-  CompressedRowSparseMatrix::StorageType a3{};
-  object.Create(a0, a1, a2, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1184, TC1_CallsTarget) {
+  BlockSparseMatrix m{};
+  const int start_row_block{};
+  const int end_row_block{};
+  CompressedRowSparseMatrix::StorageType product_storage_type{};
+  ceres::internal::InnerProductComputer object{};
+  object.Create(m, start_row_block, end_row_block, product_storage_type);
 }
-

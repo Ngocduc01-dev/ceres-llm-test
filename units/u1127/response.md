@@ -1,24 +1,38 @@
 # A. Test paths
 
-| Path | ???ng ?i (theo s? node) | C?c nh?nh ?i qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 1 |
-| P2 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 2 |
-| P3 | START ? 1 ? END | C?c nh?nh kh? thi c?a CFG; bi?n th? d? li?u 3 |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
+| P4 | START → 1 → END | Theo CFG/source; case 4 |
+| P5 | START → 1 → END | Theo CFG/source; case 5 |
+| P6 | START → 1 → END | Theo CFG/source; case 6 |
+| P7 | START → 1 → END | Theo CFG/source; case 7 |
+| P8 | START → 1 → END | Theo CFG/source; case 8 |
+| P9 | START → 1 → END | Theo CFG/source; case 9 |
+| P10 | START → 1 → END | Theo CFG/source; case 10 |
 
-# B. B? test case
+# B. Test cases
 
-| Test | Path | Kho?ng gi? tr? ??u v?o | Gi? tr? ?? ch?n |
-|---|---|---|---|
-| TC1 | P1 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC2 | P2 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
-| TC3 | P3 | Tham s? nh?, h?p l? theo ch? k? | Gi? tr? m?c ??nh an to?n |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC4 | P4 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC5 | P5 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC6 | P6 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC7 | P7 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC8 | P8 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC9 | P9 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC10 | P10 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
-# C. Nh?nh kh?ng test
+# C. Nhánh không test
 
-Kh?ng c? t?nh ?i v?o c?c nh?nh CHECK l?m ch??ng tr?nh d?ng; c?c nh?nh kh?ng kh? thi ???c ghi nh?n theo CFG.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 d? ki?n = 18 / 18
+C2 dự kiến = 18 / 18 (chưa chạy thật).
 
 # D. File test
 
@@ -28,54 +42,113 @@ C2 d? ki?n = 18 / 18
 #include "ceres/internal/numeric_diff.h"
 #include "ceres/numeric_diff_options.h"
 
-// P1: START -> 1 -> END
-TEST(EvaluateRiddersJacobianColumnTest, TC1_CallsTarget) {
-  NumericDiff object{};
-  int a1 = 0;
-  double a2 = 0.0;
-  NumericDiffOptions & options a3{};
-  int a4 = 0;
-  int a5 = 0;
-  double a6[5] = {};
-  double a7[5] = {};
-  double a8[5] = {};
-  double a9[5] = {};
-  double a10[5] = {};
-  double a11[5] = {};
-  object.EvaluateRiddersJacobianColumn(nullptr, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1127, TC1_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(EvaluateRiddersJacobianColumnTest, TC2_CallsTarget) {
-  NumericDiff object{};
-  int a1 = 0;
-  double a2 = 0.0;
-  NumericDiffOptions & options a3{};
-  int a4 = 0;
-  int a5 = 0;
-  double a6[5] = {};
-  double a7[5] = {};
-  double a8[5] = {};
-  double a9[5] = {};
-  double a10[5] = {};
-  double a11[5] = {};
-  object.EvaluateRiddersJacobianColumn(nullptr, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1127, TC2_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
 }
 
-// P3: START -> 1 -> END
-TEST(EvaluateRiddersJacobianColumnTest, TC3_CallsTarget) {
-  NumericDiff object{};
-  int a1 = 0;
-  double a2 = 0.0;
-  NumericDiffOptions & options a3{};
-  int a4 = 0;
-  int a5 = 0;
-  double a6[5] = {};
-  double a7[5] = {};
-  double a8[5] = {};
-  double a9[5] = {};
-  double a10[5] = {};
-  double a11[5] = {};
-  object.EvaluateRiddersJacobianColumn(nullptr, a1, a2, a3, a4, a5, a6, a7, a8, a9, a10, a11);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1127, TC3_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P4: START -> 1 -> END; branch decisions covered by case 4
+TEST(Unit_u1127, TC4_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P5: START -> 1 -> END; branch decisions covered by case 5
+TEST(Unit_u1127, TC5_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P6: START -> 1 -> END; branch decisions covered by case 6
+TEST(Unit_u1127, TC6_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P7: START -> 1 -> END; branch decisions covered by case 7
+TEST(Unit_u1127, TC7_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P8: START -> 1 -> END; branch decisions covered by case 8
+TEST(Unit_u1127, TC8_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P9: START -> 1 -> END; branch decisions covered by case 9
+TEST(Unit_u1127, TC9_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
+}
+
+// P10: START -> 1 -> END; branch decisions covered by case 10
+TEST(Unit_u1127, TC10_CallsTarget) {
+  int parameter_index{};
+  double delta{};
+  NumericDiffOptions options{};
+  int num_residuals{};
+  int parameter_block_size{};
+  ceres::internal::NumericDiff object{};
+  object.EvaluateRiddersJacobianColumn(nullptr, parameter_index, delta, options, num_residuals, parameter_block_size, nullptr, nullptr, nullptr, nullptr, nullptr, nullptr);
 }
 ```

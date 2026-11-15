@@ -2,11 +2,11 @@
 #include "gtest/gtest.h"
 #include "ceres/parallel_invoke.h"
 
-// P1: START -> 1 -> END
+// P1: START -> 1 -> END; branch decisions covered by case 1
 TEST(Unit_u1013, TC1_CallsTarget) {
-  ParallelInvokeState object{};
-  int a0 = 0;
-  int a1 = 0;
-  int a2 = 0;
+  int start{};
+  int end{};
+  int num_work_blocks{};
+  ceres::internal::ParallelInvokeState object{};
+  (void)object;
 }
-

@@ -5,10 +5,9 @@
 #include "ceres/schur_eliminator.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(InitEliminatorTest, TC1_CallsTarget) {
-  VisibilityBasedPreconditioner object{};
-  CompressedRowBlockStructure & bs a0{};
-  object.InitEliminator(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1223, TC1_CallsTarget) {
+  CompressedRowBlockStructure bs{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.InitEliminator(bs);
 }
-

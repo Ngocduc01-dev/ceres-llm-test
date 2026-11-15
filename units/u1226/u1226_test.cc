@@ -5,19 +5,18 @@
 #include "ceres/partitioned_matrix_view.h"
 #include "ceres/partitioned_matrix_view_impl.h"
 
-// P1: START -> 1 -> END
-TEST(CreateBlockDiagonalMatrixLayoutTest, TC1_CallsTarget) {
-  PartitionedMatrixView object{};
-  int a0 = 0;
-  int a1 = 0;
-  object.CreateBlockDiagonalMatrixLayout(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1226, TC1_CallsTarget) {
+  int start_col_block{};
+  int end_col_block{};
+  ceres::internal::PartitionedMatrixView object{};
+  object.CreateBlockDiagonalMatrixLayout(start_col_block, end_col_block);
 }
 
-// P2: START -> 1 -> END
-TEST(CreateBlockDiagonalMatrixLayoutTest, TC2_CallsTarget) {
-  PartitionedMatrixView object{};
-  int a0 = 0;
-  int a1 = 0;
-  object.CreateBlockDiagonalMatrixLayout(a0, a1);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1226, TC2_CallsTarget) {
+  int start_col_block{};
+  int end_col_block{};
+  ceres::internal::PartitionedMatrixView object{};
+  object.CreateBlockDiagonalMatrixLayout(start_col_block, end_col_block);
 }
-

@@ -4,14 +4,16 @@
 #include "ceres/visibility.h"
 #include "ceres/visibility_based_preconditioner.h"
 
-// P1: START -> 1 -> END
-TEST(u1476_Test, TC1_CallsTarget) {
-  ceres::internal::VisibilityBasedPreconditioner target{};
-  target.ComputeClusterJacobiSparsity(nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1476, TC1_CallsTarget) {
+  CompressedRowBlockStructure bs{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.ComputeClusterJacobiSparsity(bs);
 }
 
-// P2: START -> 1 -> END
-TEST(u1476_Test, TC2_CallsTarget) {
-  ceres::internal::VisibilityBasedPreconditioner target{};
-  target.ComputeClusterJacobiSparsity(nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1476, TC2_CallsTarget) {
+  CompressedRowBlockStructure bs{};
+  ceres::internal::VisibilityBasedPreconditioner object{};
+  object.ComputeClusterJacobiSparsity(bs);
 }

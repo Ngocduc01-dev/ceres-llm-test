@@ -4,11 +4,9 @@
 #include "ceres/parameter_block.h"
 #include "ceres/problem_impl.h"
 
-// P1: START -> 1 -> END
-TEST(GetParameterLowerBoundTest, TC1_CallsTarget) {
-  ProblemImpl object{};
-  double a0[5] = {};
-  int a1 = 0;
-  object.GetParameterLowerBound(a0, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1039, TC1_CallsTarget) {
+  int index{};
+  ceres::internal::ProblemImpl object{};
+  object.GetParameterLowerBound(nullptr, index);
 }
-

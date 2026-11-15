@@ -5,14 +5,16 @@
 #include "ceres/linear_solver.h"
 #include "ceres/wall_time.h"
 
-// P1: START -> 1 -> END
-TEST(u1448_Test, TC1_CallsTarget) {
-  ceres::internal::DenseNormalCholeskySolver target{};
-  target.SolveImpl(nullptr, nullptr, nullptr, nullptr);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1448, TC1_CallsTarget) {
+  LinearSolver::PerSolveOptions per_solve_options{};
+  ceres::internal::DenseNormalCholeskySolver object{};
+  object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
 }
 
-// P2: START -> 1 -> END
-TEST(u1448_Test, TC2_CallsTarget) {
-  ceres::internal::DenseNormalCholeskySolver target{};
-  target.SolveImpl(nullptr, nullptr, nullptr, nullptr);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1448, TC2_CallsTarget) {
+  LinearSolver::PerSolveOptions per_solve_options{};
+  ceres::internal::DenseNormalCholeskySolver object{};
+  object.SolveImpl(nullptr, nullptr, per_solve_options, nullptr);
 }

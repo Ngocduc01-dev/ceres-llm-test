@@ -7,17 +7,23 @@
 #include "ceres/manifold.h"
 #include "ceres/numeric_diff_options.h"
 
-// P1: START -> 1 -> END
-TEST(u1361_Test, TC1_CallsTarget) {
-  ceres::GradientChecker target{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1361, TC1_CallsTarget) {
+  NumericDiffOptions options{};
+  ceres::GradientChecker object{};
+  (void)object;
 }
 
-// P2: START -> 1 -> END
-TEST(u1361_Test, TC2_CallsTarget) {
-  ceres::GradientChecker target{};
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1361, TC2_CallsTarget) {
+  NumericDiffOptions options{};
+  ceres::GradientChecker object{};
+  (void)object;
 }
 
-// P3: START -> 1 -> END
-TEST(u1361_Test, TC3_CallsTarget) {
-  ceres::GradientChecker target{};
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1361, TC3_CallsTarget) {
+  NumericDiffOptions options{};
+  ceres::GradientChecker object{};
+  (void)object;
 }

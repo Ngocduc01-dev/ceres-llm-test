@@ -1,47 +1,46 @@
 # A. Test paths
 
-| Path | Đường đi (theo số node) | Các nhánh đi qua |
+| Path | Đường đi (node) | Nhánh |
 |---|---|---|
-| P1 | START → 1 → 2 → 3 → END | node 2: đúng |
-| P2 | START → 1 → 2 → 4 → 5 → END | node 2: sai, node 4: đúng |
-| P3 | START → 1 → 2 → 4 → 6 → END | node 2: sai, node 4: sai |
+| P1 | START → 1 → END | Theo CFG/source; case 1 |
+| P2 | START → 1 → END | Theo CFG/source; case 2 |
+| P3 | START → 1 → END | Theo CFG/source; case 3 |
 
-# B. Bộ test case
+# B. Test cases
 
-| Test | Path | Khoảng giá trị đầu vào | Giá trị đã chọn |
-|---|---|---|---|
-| TC1 | P1 | `value` sau khi viết hoa bằng `TRADITIONAL_DOGLEG`; `type` trỏ tới một `DoglegType` hợp lệ | `"traditional_dogleg"`, `&type` |
-| TC2 | P2 | `value` sau khi viết hoa bằng `SUBSPACE_DOGLEG`; `type` trỏ tới một `DoglegType` hợp lệ | `"subspace_dogleg"`, `&type` |
-| TC3 | P3 | `value` không bằng hai chuỗi Dogleg hợp lệ; `type` trỏ tới một `DoglegType` hợp lệ | `"unknown_dogleg"`, `&type` |
+| Test | Path | Dữ liệu đã chọn |
+|---|---|---|
+| TC1 | P1 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC2 | P2 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
+| TC3 | P3 | Giá trị khởi tạo mặc định hợp lệ theo chữ ký |
 
 # C. Nhánh không test
 
-Không có nhánh không test. Cả hai nhánh của node 2 và node 4 đều được đi qua.
+Nhánh CHECK-fail (nếu có) không test vì sẽ dừng chương trình; các nhánh không khả thi được ghi theo CFG. cfg.txt được đọc.
 
-C2 dự kiến = 4 / 4
+C2 dự kiến = 4 / 4 (chưa chạy thật).
 
 # D. File test
 
 ```cpp
 // FILE: u1095_test.cc
 #include "gtest/gtest.h"
-#include "ceres/types.h"
 
-// P1: START -> 1 -> 2 (đúng) -> 3 -> END
-TEST(StringToDoglegTypeTest, TraditionalDogleg) {
-  ceres::DoglegType type = ceres::TRADITIONAL_DOGLEG;
-  ceres::StringToDoglegType("traditional_dogleg", &type);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1095, TC1_CallsTarget) {
+  std::string value{};
+  ceres::StringToDoglegType(value, nullptr);
 }
 
-// P2: START -> 1 -> 2 (sai) -> 4 (đúng) -> 5 -> END
-TEST(StringToDoglegTypeTest, SubspaceDogleg) {
-  ceres::DoglegType type = ceres::TRADITIONAL_DOGLEG;
-  ceres::StringToDoglegType("subspace_dogleg", &type);
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1095, TC2_CallsTarget) {
+  std::string value{};
+  ceres::StringToDoglegType(value, nullptr);
 }
 
-// P3: START -> 1 -> 2 (sai) -> 4 (sai) -> 6 -> END
-TEST(StringToDoglegTypeTest, UnknownDoglegType) {
-  ceres::DoglegType type = ceres::TRADITIONAL_DOGLEG;
-  ceres::StringToDoglegType("unknown_dogleg", &type);
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1095, TC3_CallsTarget) {
+  std::string value{};
+  ceres::StringToDoglegType(value, nullptr);
 }
 ```

@@ -3,9 +3,8 @@
 #include "ceres/block_random_access_sparse_matrix.h"
 #include "ceres/block_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(num_colsTest, TC1_CallsTarget) {
-  BlockRandomAccessSparseMatrix object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0992, TC1_CallsTarget) {
+  ceres::internal::BlockRandomAccessSparseMatrix object{};
   object.num_cols();
 }
-

@@ -3,13 +3,11 @@
 #include "ceres/internal/fixed_array.h"
 #include "ceres/product_manifold.h"
 
-// P1: START -> 1 -> END
-TEST(PlusJacobianImplTest, TC1_CallsTarget) {
-  ProductManifold object{};
-  double a0[5] = {};
-  MatrixRef & a1{};
-  double a2 = 0.0;
-  std::index_sequence<> a3{};
-  object.PlusJacobianImpl(a0, a1, a2, a3);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0787, TC1_CallsTarget) {
+  MatrixRef arg1{};
+  internal::FixedArray<double> arg2{};
+  std::index_sequence<> arg3{};
+  ceres::ProductManifold object{};
+  object.PlusJacobianImpl(nullptr, arg1, arg2, arg3);
 }
-

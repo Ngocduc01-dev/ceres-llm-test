@@ -3,9 +3,8 @@
 #include "ceres/eigensparse.h"
 #include "ceres/compressed_row_sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(StorageTypeTest, TC1_CallsTarget) {
-  EigenSparseCholeskyTemplate object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0856, TC1_CallsTarget) {
+  ceres::internal::EigenSparseCholeskyTemplate object{};
   object.StorageType();
 }
-

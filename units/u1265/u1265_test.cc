@@ -4,20 +4,20 @@
 #include "ceres/program.h"
 #include "ceres/residual_block.h"
 
-// P1: START -> 1 -> END
-TEST(u1265_Test, TC1_CallsTarget) {
-  ceres::internal::Program target{};
-  target.MaxDerivativesPerResidualBlock();
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1265, TC1_CallsTarget) {
+  ceres::internal::Program object{};
+  object.MaxDerivativesPerResidualBlock();
 }
 
-// P2: START -> 1 -> END
-TEST(u1265_Test, TC2_CallsTarget) {
-  ceres::internal::Program target{};
-  target.MaxDerivativesPerResidualBlock();
+// P2: START -> 1 -> END; branch decisions covered by case 2
+TEST(Unit_u1265, TC2_CallsTarget) {
+  ceres::internal::Program object{};
+  object.MaxDerivativesPerResidualBlock();
 }
 
-// P3: START -> 1 -> END
-TEST(u1265_Test, TC3_CallsTarget) {
-  ceres::internal::Program target{};
-  target.MaxDerivativesPerResidualBlock();
+// P3: START -> 1 -> END; branch decisions covered by case 3
+TEST(Unit_u1265, TC3_CallsTarget) {
+  ceres::internal::Program object{};
+  object.MaxDerivativesPerResidualBlock();
 }

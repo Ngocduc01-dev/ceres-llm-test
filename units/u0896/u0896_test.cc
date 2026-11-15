@@ -3,10 +3,9 @@
 #include "ceres/context_impl.h"
 #include "ceres/sparse_matrix.h"
 
-// P1: START -> 1 -> END
-TEST(SetZeroTest, TC1_CallsTarget) {
-  SparseMatrix object{};
-  i a1{};
-  object.SetZero(nullptr, a1);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0896, TC1_CallsTarget) {
+   int{};
+  ceres::internal::SparseMatrix object{};
+  object.SetZero(nullptr, int);
 }
-

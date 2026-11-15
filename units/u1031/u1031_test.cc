@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/concurrent_queue.h"
 
-// P1: START -> 1 -> END
-TEST(PopTest, TC1_CallsTarget) {
-  ConcurrentQueue object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1031, TC1_CallsTarget) {
+  ceres::internal::ConcurrentQueue object{};
   object.Pop(nullptr);
 }
-

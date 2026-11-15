@@ -2,9 +2,8 @@
 #include "gtest/gtest.h"
 #include "ceres/sphere_manifold.h"
 
-// P1: START -> 1 -> END
-TEST(TangentSizeTest, TC1_CallsTarget) {
-  SphereManifold object{};
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u0983, TC1_CallsTarget) {
+  ceres::SphereManifold object{};
   object.TangentSize();
 }
-

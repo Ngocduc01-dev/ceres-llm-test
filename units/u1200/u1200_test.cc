@@ -4,10 +4,9 @@
 #include "ceres/iterative_refiner.h"
 #include "ceres/linear_solver.h"
 
-// P1: START -> 1 -> END
-TEST(CreateTest, TC1_CallsTarget) {
-  DenseCholesky object{};
-  LinearSolver::Options & options a0{};
-  object.Create(a0);
+// P1: START -> 1 -> END; branch decisions covered by case 1
+TEST(Unit_u1200, TC1_CallsTarget) {
+  LinearSolver::Options options{};
+  ceres::internal::DenseCholesky object{};
+  object.Create(options);
 }
-
