@@ -3,32 +3,74 @@
 #include "ceres/block_sparse_matrix.h"
 #include "ceres/triplet_sparse_matrix.h"
 
-// P1: START -> 1 -> END; branch decisions covered by case 1
-TEST(Unit_u1199, TC1_CallsTarget) {
-  ceres::internal::BlockSparseMatrix object{};
-  object.ToTripletSparseMatrix(nullptr);
+namespace ceres {
+namespace internal {
+
+// P1: node 1: đúng, node 2: sai (0 hàng)
+TEST(BlockSparseMatrixToTriplet, NoRows) {
+  auto* bs = new CompressedRowBlockStructure;
+  bs->cols.emplace_back();
+  bs->cols[0].size = 1;
+  bs->cols[0].position = 0;
+  BlockSparseMatrix m(bs, false);
+  TripletSparseMatrix t;
+  m.ToTripletSparseMatrix(&t);
 }
 
-// P2: START -> 1 -> END; branch decisions covered by case 2
-TEST(Unit_u1199, TC2_CallsTarget) {
-  ceres::internal::BlockSparseMatrix object{};
-  object.ToTripletSparseMatrix(nullptr);
+// P2: node 2: đúng rồi sai, node 4: sai (hàng không có cell)
+TEST(BlockSparseMatrixToTriplet, OneRowNoCells) {
+  auto* bs = new CompressedRowBlockStructure;
+  bs->cols.emplace_back();
+  bs->cols[0].size = 1;
+  bs->cols[0].position = 0;
+  bs->rows.emplace_back();
+  bs->rows[0].block.size = 1;
+  bs->rows[0].block.position = 0;
+  BlockSparseMatrix m(bs, false);
+  TripletSparseMatrix t;
+  m.ToTripletSparseMatrix(&t);
 }
 
-// P3: START -> 1 -> END; branch decisions covered by case 3
-TEST(Unit_u1199, TC3_CallsTarget) {
-  ceres::internal::BlockSparseMatrix object{};
-  object.ToTripletSparseMatrix(nullptr);
+// P3: node 2, 4, 6, 8: đúng rồi sai (mỗi vòng lặp 1 lần)
+TEST(BlockSparseMatrixToTriplet, OneRowOneCell1x1) {
+  auto* bs = new CompressedRowBlockStructure;
+  bs->cols.emplace_back();
+  bs->cols[0].size = 1;
+  bs->cols[0].position = 0;
+  bs->rows.emplace_back();
+  bs->rows[0].block.size = 1;
+  bs->rows[0].block.position = 0;
+  bs->rows[0].cells.emplace_back(0, 0);
+  BlockSparseMatrix m(bs, false);
+  TripletSparseMatrix t;
+  m.ToTripletSparseMatrix(&t);
 }
 
-// P4: START -> 1 -> END; branch decisions covered by case 4
-TEST(Unit_u1199, TC4_CallsTarget) {
-  ceres::internal::BlockSparseMatrix object{};
-  object.ToTripletSparseMatrix(nullptr);
+// P4: node 2, 4, 6, 8: đúng rồi sai (mỗi vòng lặp 2 lần)
+TEST(BlockSparseMatrixToTriplet, TwoRowsMultipleCells) {
+  auto* bs = new CompressedRowBlockStructure;
+  bs->cols.emplace_back();
+  bs->cols[0].size = 2;
+  bs->cols[0].position = 0;
+  bs->cols.emplace_back();
+  bs->cols[1].size = 1;
+  bs->cols[1].position = 2;
+
+  bs->rows.emplace_back();
+  bs->rows[0].block.size = 2;
+  bs->rows[0].block.position = 0;
+  bs->rows[0].cells.emplace_back(0, 0);  // 2x2 = 4 giá trị
+  bs->rows[0].cells.emplace_back(1, 4);  // 2x1 = 2 giá trị
+
+  bs->rows.emplace_back();
+  bs->rows[1].block.size = 1;
+  bs->rows[1].block.position = 2;
+  bs->rows[1].cells.emplace_back(1, 6);  // 1x1 = 1 giá trị
+
+  BlockSparseMatrix m(bs, false);
+  TripletSparseMatrix t;
+  m.ToTripletSparseMatrix(&t);
 }
 
-// P5: START -> 1 -> END; branch decisions covered by case 5
-TEST(Unit_u1199, TC5_CallsTarget) {
-  ceres::internal::BlockSparseMatrix object{};
-  object.ToTripletSparseMatrix(nullptr);
-}
+}  // namespace internal
+}  // namespace ceres

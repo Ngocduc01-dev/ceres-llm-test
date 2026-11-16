@@ -1,13 +1,30 @@
 {
   "id": "u1199",
   "name": "ceres::internal::BlockSparseMatrix::ToTripletSparseMatrix",
-  "status": "compile_fail",
+  "status": "ok",
   "cfg_branches": 8,
-  "errors": [
-    "units/u1199/u1199_test.cc:8:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1199/u1199_test.cc:14:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1199/u1199_test.cc:20:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1199/u1199_test.cc:26:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1199/u1199_test.cc:32:45: error: no matching function for call to ‘ceres::internal::BlockSparseMatrix::BlockSparseMatrix(<brace-enclosed initializer list>)’"
-  ]
+  "tests": {
+    "BlockSparseMatrixToTriplet.NoRows": "pass",
+    "BlockSparseMatrixToTriplet.OneRowNoCells": "pass",
+    "BlockSparseMatrixToTriplet.OneRowOneCell1x1": "pass",
+    "BlockSparseMatrixToTriplet.TwoRowsMultipleCells": "pass"
+  },
+  "run": {
+    "pass": 4,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 21,
+    "total": 21
+  },
+  "c2": {
+    "covered": 8,
+    "total": 8,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
 }

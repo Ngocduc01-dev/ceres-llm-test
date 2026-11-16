@@ -4,17 +4,17 @@ Trang tổng quan độ phủ: [gen_coverage.html](gen_coverage.html). Cách đo
 
 | Trạng thái | Số unit |
 |---|---|
-| `ok` | 464 |
+| `ok` | 467 |
 | `compile_fail` | 32 |
 | `link_fail` | 4 |
 
-**Test case** (trong 464 unit chạy được): pass 513, fail 0, check_fail 16, crash 14, timeout 0
+**Test case** (trong 467 unit chạy được): pass 528, fail 0, check_fail 17, crash 14, timeout 0
 
 **Độ phủ trên các dòng của unit** (gộp các unit chạy được):
 
-- C1 (dòng): 1174/1241 = 95%
-- C2 (nhánh, đếm theo điểm rẽ nhánh như CFG): 82/89 = 92%; điểm rẽ nhánh không đo được (uncheckable): 0
-- Unit có nhánh: 44; phủ đủ 100% nhánh: 39; tổng nhánh đo được khớp số nhánh CFG: 39/44
+- C1 (dòng): 1228/1297 = 95%
+- C2 (nhánh, đếm theo điểm rẽ nhánh như CFG): 107/115 = 93%; điểm rẽ nhánh không đo được (uncheckable): 0
+- Unit có nhánh: 47; phủ đủ 100% nhánh: 41; tổng nhánh đo được khớp số nhánh CFG: 42/47
 
 | Unit | Trạng thái | Test (pass/tổng) | C1 | C2 | Nhánh CFG | Nhánh chưa phủ / lỗi đầu tiên |
 |---|---|---|---|---|---|---|
@@ -518,3 +518,6 @@ Trang tổng quan độ phủ: [gen_coverage.html](gen_coverage.html). Cách đo
 | u0498 | ok | 0/4 | 26% | 0/2 | 4 | dòng 355: đúng/sai |
 | u0499 | ok | 1/1 | 100% | – | 0 |  |
 | u0500 | ok | 1/1 | 100% | – |  |  |
+| u0553 | ok | 5/6 | 92% | 11/12 | 12 | dòng 229: đúng |
+| u1119 | ok | 6/6 | 95% | 6/6 | 6 |  |
+| u1199 | ok | 4/4 | 100% | 8/8 | 8 |  |

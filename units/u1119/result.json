@@ -1,12 +1,32 @@
 {
   "id": "u1119",
   "name": "ceres::internal::DynamicCompressedRowSparseMatrix::Finalize",
-  "status": "compile_fail",
+  "status": "ok",
   "cfg_branches": 6,
-  "errors": [
-    "units/u1119/u1119_test.cc:9:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1119/u1119_test.cc:16:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1119/u1119_test.cc:23:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’",
-    "units/u1119/u1119_test.cc:30:60: error: no matching function for call to ‘ceres::internal::DynamicCompressedRowSparseMatrix::DynamicCompressedRowSparseMatrix(<brace-enclosed initializer list>)’"
-  ]
+  "tests": {
+    "DynamicCompressedRowSparseMatrixFinalize.ZeroRows": "pass",
+    "DynamicCompressedRowSparseMatrixFinalize.OneRowWithEntry": "pass",
+    "DynamicCompressedRowSparseMatrixFinalize.TwoRowsFirstEmpty": "pass",
+    "DynamicCompressedRowSparseMatrixFinalize.ThreeRowsMiddleEmpty": "pass",
+    "DynamicCompressedRowSparseMatrixFinalize.FourRowsOneEmpty": "pass",
+    "DynamicCompressedRowSparseMatrixFinalize.FiveRowsAllNonEmpty": "pass"
+  },
+  "run": {
+    "pass": 6,
+    "fail": 0,
+    "check_fail": 0,
+    "crash": 0,
+    "timeout": 0
+  },
+  "c1": {
+    "covered": 21,
+    "total": 22
+  },
+  "c2": {
+    "covered": 6,
+    "total": 6,
+    "uncheckable": 0,
+    "inferred": 0
+  },
+  "uncovered": []
 }

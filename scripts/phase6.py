@@ -305,6 +305,7 @@ def main():
     ap.add_argument("--keep", action="store_true", help="giữ thư mục build/gcda của unit (để soát lỗi)")
     ap.add_argument("--report-only", action="store_true", help="không chạy, chỉ dựng lại báo cáo từ result.json")
     ap.add_argument("--first", type=int, help="báo cáo chỉ tính N unit đầu theo thứ tự sinh test")
+    ap.add_argument("--extra", nargs="*", default=[], help="unit tính thêm vào báo cáo ngoài N unit đầu (vd unit ví dụ)")
     a = ap.parse_args()
     KEEP = a.keep
     units = json.loads((REPO / "data" / "units.json").read_text(encoding="utf-8"))
@@ -333,6 +334,7 @@ def main():
     scope = units
     if a.first:
         scope = sorted(units, key=lambda u: (u["topo_level"], u["order"]))[:a.first]
+        scope += [u for u in units if u["id"] in set(a.extra) and u not in scope]
     results = [json.loads(p.read_text(encoding="utf-8"))
                for u in scope if (p := REPO / "units" / u["id"] / "result.json").exists()]
     write_summary(results)
